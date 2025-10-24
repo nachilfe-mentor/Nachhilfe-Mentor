@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nachhilfe Mentor - Gratis Nachhilfe für jeden!</title>
+    <meta name="description" content="Kostenlose Nachhilfe in allen Schulfächern: Automatische Karteikarten, intelligente Zusammenfassungen und personalisierte Tests aus deinen Dokumenten.">
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/onewebmedia/unnamed-3.png">
+    
+    <!-- Meta tags for social sharing -->
+    <meta property="og:title" content="Nachhilfe Mentor - Gratis Nachhilfe für jeden!">
+    <meta property="og:description" content="Kostenlose Nachhilfe in allen Schulfächern: Automatische Karteikarten, intelligente Zusammenfassungen und personalisierte Tests aus deinen Dokumenten.">
+    <meta property="og:image" content="https://nachhilfe-mentor.de/onewebmedia/unnamed-3.png">
+    <meta property="og:url" content="https://nachhilfe-mentor.de">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles/modern-tech.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-icon">
+                    <div class="ai-symbol">
+                        <span class="neural-dot"></span>
+                        <span class="neural-dot"></span>
+                        <span class="neural-dot"></span>
+                    </div>
+                </div>
+                <span class="brand-text">Nachhilfe Mentor</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#how-it-works" class="nav-link">Funktionsweise</a>
+                <a href="#benefits" class="nav-link">Vorteile</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="/blog-1/" class="nav-link">Blog</a>
+                <a href="datenschutzerklaerung.html" class="nav-link">Datenschutz</a>
+                <a href="nutzungsbedingungen.html" class="nav-link">Nutzungsbedingungen</a>
+                <a href="impressum.html" class="nav-link">Impressum</a>
+            </div>
+            
+            <div class="nav-actions">
+                <!-- <a href="https://all-in-one-lernapp.web.app" class="btn btn-primary">
+                    <span>Web App starten</span>
+                    <div class="btn-glow"></div>
+                </a> -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="neural-grid"></div>
+            <div class="floating-particles"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Lernen neu</span>
+                    <span class="title-line highlight">gedacht</span>
+                    <span class="title-line">mit KI-Power</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Verwandle deine Dokumente in intelligente Lernmaterialien. 
+                    Automatische Karteikarten, personalisierte Tests und smarte Zusammenfassungen 
+                    – alles powered by AI.
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="10000">0</span>
+                        <span class="stat-label">Aktive Nutzer</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50000">0</span>
+                        <span class="stat-label">Generierte Karteikarten</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="95">0</span>
+                        <span class="stat-label">% Erfolgsrate</span>
+                    </div>
+                </div>
+                
+                <div class="hero-actions">
+                    <a href="#download"
+                       class="btn btn-primary btn-large">
+                        <span>Jetzt kostenlos starten</span>
+                        <div class="btn-glow"></div>
+                    </a>
+                    <a href="#how-it-works" class="btn btn-secondary btn-large">
+                        <span>Wie es funktioniert</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="app-interface">
+                            <div class="interface-header">
+                                <div class="status-bar"></div>
+                                <h3>KI-Analyse läuft...</h3>
+                            </div>
+                            <div class="interface-content">
+                                <div class="processing-animation">
+                                    <div class="data-flow"></div>
+                                    <div class="ai-processing"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll für mehr</span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <span class="title-accent">Revolutionäre</span> Features
+                </h2>
+                <p class="section-subtitle">
+                    Entdecke die Zukunft des Lernens mit unseren KI-gestützten Tools
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">
+                        <div class="icon-ai-brain"></div>
+                    </div>
+                    <h3 class="feature-title">KI-Dokumentenanalyse</h3>
+                    <p class="feature-description">
+                        Lade PDFs, TXT oder CSV-Dateien hoch und lass unsere KI die wichtigsten 
+                        Inhalte extrahieren und strukturieren.
+                    </p>
+                    <div class="feature-tech">
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">NLP</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">
+                        <div class="icon-cards"></div>
+                    </div>
+                    <h3 class="feature-title">Smart Karteikarten</h3>
+                    <p class="feature-description">
+                        Automatische Generierung von Frage-Antwort-Paaren basierend auf 
+                        deinen Lerninhalten mit adaptivem Wiederholungsalgorithmus.
+                    </p>
+                    <div class="feature-tech">
+                        <span class="tech-tag">Spaced Repetition</span>
+                        <span class="tech-tag">AI Generation</span>
+                    </div>
+                </div>
+                
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">
+                        <div class="icon-quiz"></div>
+                    </div>
+                    <h3 class="feature-title">Intelligente Tests</h3>
+                    <p class="feature-description">
+                        Multiple-Choice-Tests und Quizfragen werden automatisch aus deinen 
+                        Dokumenten erstellt und an dein Lernniveau angepasst.
+                    </p>
+                    <div class="feature-tech">
+                        <span class="tech-tag">Adaptive Testing</span>
+                        <span class="tech-tag">Auto-Generation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Von Datei zu <span class="title-accent">Wissen</span>
+                </h2>
+                <p class="section-subtitle">
+                    In nur wenigen Schritten zu optimierten Lernergebnissen
+                </p>
+            </div>
+            
+            <div class="process-flow">
+                <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Upload & Analyse</h3>
+                        <p class="step-description">
+                            Lade deine Dokumente hoch. Unsere KI analysiert den Inhalt 
+                            und extrahiert die wichtigsten Informationen.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="upload-animation"></div>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3 class="step-title">KI-Verarbeitung</h3>
+                        <p class="step-description">
+                            Machine Learning Algorithmen erstellen automatisch 
+                            Karteikarten, Zusammenfassungen und Testfragen.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="processing-animation"></div>
+                    </div>
+                </div>
+                
+                <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3 class="step-title">Personalisiertes Lernen</h3>
+                        <p class="step-description">
+                            Nutze intelligente Wiederholungen und adaptive Tests 
+                            für maximalen Lernerfolg.
+                        </p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="learning-animation"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">
+                    Warum <span class="title-accent">Nachhilfe Mentor</span>?
+                </h2>
+                <p class="section-subtitle">
+                    Drei unschlagbare Gründe für die Zukunft des Lernens
+                </p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="benefit-icon">
+                        <div class="icon-control"></div>
+                    </div>
+                    <h3 class="benefit-title">Deine Inhalte, deine Kontrolle</h3>
+                    <p class="benefit-description">
+                        Keine vorgefertigten Inhalte – verwandle DEINE Dokumente 
+                        in personalisierte Lernmaterialien.
+                    </p>
+                    <div class="benefit-highlight">100% personalisiert</div>
+                </div>
+                
+                <div class="benefit-card glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="benefit-icon">
+                        <div class="icon-efficiency"></div>
+                    </div>
+                    <h3 class="benefit-title">KI-gestützte Effizienz</h3>
+                    <p class="benefit-description">
+                        Modernste KI-Technologie für strukturiertes, 
+                        wissenschaftlich fundiertes Lernen mit maximaler Behaltensleistung.
+                    </p>
+                    <div class="benefit-highlight">95% Effizienzsteigerung</div>
+                </div>
+                
+                <div class="benefit-card glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="benefit-icon">
+                        <div class="icon-free"></div>
+                    </div>
+                    <h3 class="benefit-title">100% kostenlos</h3>
+                    <p class="benefit-description">
+                        Alle Premium-Features ohne Kosten. 
+                        Bildung soll keine Frage des Geldes sein.
+                    </p>
+                    <div class="benefit-highlight">Für immer kostenlos</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <div class="download-content">
+                <div class="download-text">
+                    <h2 class="download-title">
+                        Starte deine <span class="title-accent">Lernrevolution</span>
+                    </h2>
+                    <p class="download-subtitle">
+                        Lade die App herunter und erlebe die Zukunft des Lernens. 
+                        Verfügbar für alle Plattformen.
+                    </p>
+                    
+                    <div class="download-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.thuemmlerai.nachhilfementor" 
+                           class="download-btn android-btn">
+                            <div class="btn-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text">
+                                <span class="btn-label">Verfügbar bei</span>
+                                <span class="btn-store">Google Play</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://apps.apple.com/de/app/nachhilfe-mentor/id6740411879" class="download-btn ios-btn">
+                            <div class="btn-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text">
+                                <span class="btn-label">Verfügbar im</span>
+                                <span class="btn-store">App Store</span>
+                            </div>
+                        </a>
+                        
+                        <a href="https://all-in-one-lernapp.web.app" class="download-btn web-btn">
+                            <div class="btn-icon">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                                </svg>
+                            </div>
+                            <div class="btn-text">
+                                <span class="btn-label">Sofort nutzen</span>
+                                <span class="btn-store">Web App</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="download-visual">
+                    <div class="devices-showcase">
+                        <div class="device phone">
+                            <div class="device-screen">
+                                <img src="/onewebmedia/image3.png" alt="Nachhilfe Mentor App" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="device tablet">
+                            <div class="device-screen">
+                                <div class="app-preview"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="brand-icon">
+                        <div class="ai-symbol">
+                            <span class="neural-dot"></span>
+                            <span class="neural-dot"></span>
+                            <span class="neural-dot"></span>
+                        </div>
+                    </div>
+                    <span class="brand-text">Nachhilfe Mentor</span>
+                    <p class="brand-tagline">Die Zukunft des Lernens</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Produkt</h4>
+                        <a href="#features">Features</a>
+                        <a href="#how-it-works">Funktionsweise</a>
+                        <a href="https://all-in-one-lernapp.web.app">Web App</a>
+                        <a href="/blog-1/">Blog</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Rechtliches</h4>
+                        <a href="/datenschutzerklaerung.html">Datenschutz</a>
+                        <a href="/nutzungsbedingungen.html">Nutzungsbedingungen</a>
+                        <a href="/impressum.html">Impressum</a>
+                        <a href="/loesche-deinen-account">Account löschen</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="mailto:support@nachhilfe-mentor.de">Kontakt</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Nachhilfe Mentor. Alle Rechte vorbehalten.</p>
+                <div class="footer-tech">
+                    <span>Powered by AI</span>
+                    <span>•</span>
+                    <span>Made with ❤️ in Germany</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/modern-tech.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
