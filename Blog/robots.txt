@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Disallow draft posts
+Disallow: /blog/draft/
+
+# Allow all other blog content
+Allow: /blog/
+
+# Sitemap location
+Sitemap: https://nachhilfe-mentor.de/blog/sitemap-index.xml
