@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Thümmler AI GmbH</title>
+    <meta name="description" content="Privacy Policy for utility and offline apps by Thümmler AI GmbH.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/onewebmedia/unnamed-3.png">
+
+    <link rel="stylesheet" href="styles/modern-tech.css">
+    
+    <style>
+        /* Fallback Styles */
+        :root {
+            --primary-color: #38b838;
+            --text-primary: #0c0c0c;
+            --card-background: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Questrial', 'Inter', sans-serif;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        .nav-brand a { text-decoration: none; color: black; font-weight: bold; font-size: 1.2rem; }
+
+        .legal-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            line-height: 1.6;
+            margin-top: 100px;
+        }
+        
+        .legal-content h1 {
+            color: var(--primary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .legal-content h2 {
+            color: var(--text-primary);
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        .legal-content ul {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            list-style-type: disc;
+        }
+
+        .legal-content a {
+            color: var(--primary-color) !important;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .legal-content a:hover { text-decoration: underline; }
+
+        .context-box {
+            background-color: #f0fdf4;
+            border: 1px solid var(--primary-color);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+        }
+
+        .language-switch {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+        }
+        .language-switch a {
+            padding: 5px 10px;
+            border: 1px solid var(--primary-color);
+            border-radius: 4px;
+            margin: 0 5px;
+        }
+
+        .divider {
+            margin: 4rem 0;
+            border-top: 1px solid #ddd;
+        }
+
+        .footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        .footer p, .footer a { color: white !important; }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">Nachhilfe Mentor</a>
+            </div>
+            <div>
+                <a href="https://all-in-one-lernapp.web.app" style="background: var(--primary-color); color: white; padding: 8px 15px; border-radius: 5px; text-decoration: none;">Web App</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="legal-content">
+        
+        <div class="language-switch">
+            <a href="#english">🇬🇧 English Version</a>
+            <a href="#german">🇩🇪 Deutsche Version</a>
+        </div>
+
+        <div id="english">
+            <h1>Privacy Policy</h1>
+
+            <div class="context-box">
+                <strong>Provider Information:</strong><br>
+                This Privacy Policy applies to mobile applications (Apps) published by <strong>Thümmler AI GmbH</strong>.
+                This page is hosted by <em>Nachhilfe Mentor</em>, a product of Thümmler AI GmbH.
+            </div>
+
+            <h2>1. Scope</h2>
+            <p>This Privacy Policy applies to the following applications developed by Thümmler AI GmbH that are designed for local ("offline") use:</p>
+            <ul>
+                <li><strong>Simple Score Keeper & Counter</strong></li>
+                <li>Any other apps by Thümmler AI GmbH linking to this policy.</li>
+            </ul>
+
+            <h2>2. No Data Collection</h2>
+            <p>We prioritize your privacy. The principle of <strong>data avoidance</strong> applies to the apps listed above.</p>
+            <p><strong>We do not collect, store, or process any personal data through these apps.</strong></p>
+            <p>You can use the app completely without providing any personal information. No registration or login is required.</p>
+
+            <h2>3. Local Data Storage</h2>
+            <p>All data generated by you within the app (e.g., scores, counters, player names) is stored <strong>exclusively locally</strong> on your device.</p>
+            <p>This data is never transmitted to our servers or third-party servers. If you delete the app from your device, this locally stored data is irrevocably removed.</p>
+
+            <h2>4. Permissions</h2>
+            <p>The app only requests permissions that are technically necessary for the app's functionality (e.g., access to local storage to save your score).</p>
+            <p>We do not access location data, contacts, or advertising IDs.</p>
+
+            <h2>5. Analytics and Advertising</h2>
+            <p>In the apps listed above ("Simple Score Keeper & Counter"), we intentionally use:</p>
+            <ul>
+                <li><strong>No</strong> analytics tools (No tracking, e.g., Google Analytics).</li>
+                <li><strong>No</strong> advertising networks or ad banners.</li>
+            </ul>
+
+            <h2>6. Contact</h2>
+            <p>If you have any questions about this Privacy Policy, please contact us:</p>
+            <p>
+                <strong>Thümmler AI GmbH</strong><br>
+                Eisenhartstraße 8<br>
+                14469 Potsdam<br>
+                Germany<br>
+                Email: <a href="mailto:support@nachhilfe-mentor.de">support@nachhilfe-mentor.de</a>
+            </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <div id="german">
+            <h1>Datenschutzerklärung (German)</h1>
+
+            <div class="context-box">
+                <strong>Hinweis zum Anbieter:</strong><br>
+                Diese Datenschutzerklärung gilt für mobile Anwendungen (Apps), die von der <strong>Thümmler AI GmbH</strong> veröffentlicht werden.
+            </div>
+
+            <h2>1. Geltungsbereich</h2>
+            <p>Diese Datenschutzerklärung gilt für folgende Applikationen der Thümmler AI GmbH, die für die lokale Nutzung ("Offline-Nutzung") konzipiert sind:</p>
+            <ul>
+                <li><strong>Simple Score Keeper & Counter</strong></li>
+                <li>Sowie alle weiteren Apps der Thümmler AI GmbH, die auf diese Erklärung verlinken.</li>
+            </ul>
+
+            <h2>2. Grundsatz: Keine Datenerhebung</h2>
+            <p>Wir nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Für die oben genannten Apps gilt der Grundsatz der <strong>Datenvermeidung</strong>.</p>
+            <p><strong>Wir erheben, speichern oder verarbeiten keine personenbezogenen Daten durch diese Apps.</strong></p>
+            <p>Die Nutzung der App ist vollständig ohne Angabe persönlicher Informationen möglich. Es ist keine Registrierung erforderlich.</p>
+
+            <h2>3. Lokale Datenspeicherung</h2>
+            <p>Sämtliche Daten, die Sie in der App generieren (z. B. Spielstände, Punkte), werden <strong>ausschließlich lokal</strong> auf Ihrem eigenen Endgerät gespeichert.</p>
+            <p>Diese Daten werden zu keinem Zeitpunkt an unsere Server übertragen.</p>
+
+            <h2>4. Zugriffsrechte</h2>
+            <p>Die App fordert nur die Zugriffsrechte an, die für die technische Funktionalität der App zwingend erforderlich sind.</p>
+
+            <h2>5. Analyse-Tools und Werbung</h2>
+            <p>In der App "Simple Score Keeper & Counter" setzen wir bewusst:</p>
+            <ul>
+                <li><strong>Keine</strong> Analyse-Tools (Tracking) ein.</li>
+                <li><strong>Keine</strong> Werbung ein.</li>
+            </ul>
+
+            <h2>6. Kontakt & Impressum</h2>
+            <p>
+                <strong>Thümmler AI GmbH</strong><br>
+                Eisenhartstraße 8<br>
+                14469 Potsdam<br>
+                Deutschland<br>
+                <a href="impressum.html">Zum vollständigen Impressum</a>
+            </p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Thümmler AI GmbH. All rights reserved.</p>
+            <div style="margin-top: 10px;">
+                <a href="impressum.html" style="text-decoration: underline; margin: 0 10px;">Legal / Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
