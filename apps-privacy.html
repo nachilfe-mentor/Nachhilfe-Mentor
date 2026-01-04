@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy | Thümmler AI GmbH Apps</title>
-    <meta name="description" content="Privacy Policy for Simple Score Keeper and PlantScan by Thümmler AI GmbH.">
+    <title>Privacy Policy | Simple Score Keeper</title>
+    <meta name="description" content="Privacy Policy for Simple Score Keeper & Counter by Thümmler AI GmbH.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +23,12 @@
             --text-light: #ffffff;
             --warning-bg: #fff7ed;
             --warning-border: #f97316;
-            --section-bg: #f8f9fa;
         }
 
         body {
             font-family: 'Questrial', 'Inter', sans-serif;
-            background-color: var(--light-bg) !important;
-            color: var(--text-dark) !important;
+            background-color: var(--light-bg) !important; /* Erzwingt weißen Hintergrund */
+            color: var(--text-dark) !important; /* Erzwingt schwarze Schrift */
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -65,7 +64,7 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
-            margin-top: 100px;
+            margin-top: 100px; /* Platz für Navbar */
         }
         
         h1 {
@@ -77,23 +76,15 @@
 
         h2 {
             color: var(--text-dark);
-            margin-top: 3rem;
+            margin-top: 2.5rem;
             margin-bottom: 1rem;
             border-bottom: 2px solid var(--primary-color);
             padding-bottom: 0.5rem;
-            font-size: 1.6rem;
-        }
-
-        h3 {
-            color: var(--text-dark);
-            margin-top: 2rem;
-            font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
 
         p, li {
-            color: var(--text-dark) !important;
-            font-size: 0.95rem;
+            color: var(--text-dark) !important; /* Sicherheitsnetz für Lesbarkeit */
         }
 
         ul {
@@ -109,33 +100,7 @@
         }
         a:hover { text-decoration: underline; }
 
-        /* App Sections */
-        .app-section {
-            background-color: var(--section-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            margin-bottom: 3rem;
-            border: 1px solid #e5e7eb;
-        }
-        
-        .app-title {
-            color: var(--primary-color);
-            font-size: 1.4rem;
-            font-weight: bold;
-            margin-top: 0;
-            border-bottom: none;
-        }
-
-        /* Warning Box regarding AI */
-        .ai-warning {
-            background-color: #fff1f2; /* Light Red/Pink */
-            border-left: 4px solid #be123c;
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 4px;
-        }
-
-        /* Clarification Box */
+        /* WICHTIG: Die Box zur Unterscheidung */
         .distinction-box {
             background-color: var(--warning-bg);
             border: 2px solid var(--warning-border);
@@ -143,6 +108,24 @@
             padding: 1.5rem;
             margin-bottom: 3rem;
             font-size: 1rem;
+        }
+        .distinction-box strong {
+            color: #c2410c; /* Dunkles Orange für Warnung */
+        }
+
+        /* Footer Styles */
+        .footer {
+            background-color: var(--dark-bg) !important; /* Schwarzer Hintergrund */
+            color: var(--text-light) !important; /* Weiße Schrift */
+            padding: 3rem 0;
+            margin-top: 4rem;
+            text-align: center;
+        }
+        .footer p, .footer a { 
+            color: var(--text-light) !important; /* Weiß erzwingen */
+        }
+        .footer a:hover {
+            color: var(--primary-color) !important;
         }
 
         /* Language Switcher */
@@ -157,29 +140,10 @@
             border: 1px solid var(--primary-color);
             border-radius: 20px;
         }
-
+        
         .divider {
             border-top: 1px solid #ddd;
             margin: 4rem 0;
-        }
-
-        /* Footer Styles */
-        .footer {
-            background-color: var(--dark-bg) !important;
-            color: var(--text-light) !important;
-            padding: 3rem 0;
-            margin-top: 4rem;
-            text-align: center;
-        }
-        .footer p, .footer a { 
-            color: var(--text-light) !important;
-        }
-        
-        /* Legal small print */
-        .legal-detail {
-            font-size: 0.85rem;
-            color: #555 !important;
-            margin-top: 0.5rem;
         }
     </style>
 </head>
@@ -205,69 +169,68 @@
 
         <div class="distinction-box">
             <p style="margin: 0;">
-                <strong>SCOPE / GELTUNGSBEREICH:</strong><br><br>
-                This Privacy Policy applies to the specific apps listed below (<strong>Simple Score Keeper</strong> and <strong>PlantScan</strong>). It does <strong>NOT</strong> apply to the platform "Nachhilfe Mentor".<br>
+                <strong>⚠️ IMPORTANT / WICHTIG:</strong><br><br>
+                This Privacy Policy applies <strong>exclusively</strong> to the utility app <em>"Simple Score Keeper & Counter"</em>.<br>
+                It does <strong>NOT</strong> apply to the platform "Nachhilfe Mentor".<br>
                 <br>
-                <em>Diese Datenschutzerklärung gilt für die unten aufgeführten Apps (<strong>Simple Score Keeper</strong> und <strong>PlantScan</strong>). Sie gilt <strong>NICHT</strong> für die Plattform "Nachhilfe Mentor".</em>
+                <em>Diese Datenschutzerklärung gilt <strong>ausschließlich</strong> für die App "Simple Score Keeper & Counter".<br>
+                Sie gilt <strong>NICHT</strong> für die Plattform "Nachhilfe Mentor".</em>
             </p>
         </div>
 
         <div id="english">
             <h1>Privacy Policy</h1>
-            <p style="text-align: center; font-style: italic;">Effective Date: January 4, 2026</p>
+            <p style="text-align: center; font-style: italic;">Effective Date: January 1, 2025</p>
 
-            <p><strong>Controller (Data Processor):</strong><br>
-            Thümmler AI GmbH<br>
-            Eisenhartstraße 8, 14469 Potsdam, Germany<br>
-            Email: <a href="mailto:support@nachhilfe-mentor.de">support@nachhilfe-mentor.de</a>
-            </p>
-
-            <h2>I. Specific Policies per App</h2>
-            
-            <div class="app-section">
-                <h3 class="app-title">App 1: Simple Score Keeper & Counter</h3>
-                <p><strong>Status: Offline App (No Data Collection)</strong></p>
-                <p>We do not collect, process, or store any personal data in this app. All data is stored locally on your device.</p>
-            </div>
-
-            <div class="app-section">
-                <h3 class="app-title">App 2: PlantScan: Plant Identifier AI</h3>
-                <p><strong>Status: Online Features & AI Processing</strong></p>
-
-                <h3>1. Data Processing for Plant Identification</h3>
-                <p>
-                    When you use the identification feature, the image you upload is transmitted to the API of <strong>OpenAI, Inc. (USA)</strong>.
-                </p>
-                <ul>
-                    <li><strong>Purpose:</strong> Analysis of the image to identify the plant species.</li>
-                    <li><strong>Legal Basis:</strong> Performance of a contract (Art. 6(1)(b) GDPR) – providing the service you requested.</li>
-                    <li><strong>Data Retention:</strong> We do not store your images permanently. They are processed transiently for the analysis.</li>
-                </ul>
-
-                <h3>2. Payments</h3>
-                <p>
-                    Payments are handled entirely by the App Store provider (Apple/Google). We do not have access to your financial data.
-                </p>
-
-                <div class="ai-warning">
-                    <strong>⚠️ DISCLAIMER</strong><br>
-                    Information is generated by AI. <strong>AI can make mistakes.</strong>
-                    Do not rely on this app to determine if a plant is edible or poisonous. Thümmler AI GmbH assumes no liability for damages resulting from incorrect identifications.
-                </div>
-            </div>
-
-            <h2>II. General Information</h2>
-            
-            <h3>International Data Transfers</h3>
-            <p class="legal-detail">
-                For PlantScan, data (images) is processed by OpenAI in the USA. We ensure data protection through standard contractual clauses or equivalent legal frameworks to ensure an adequate level of data protection.
-            </p>
-
-            <h3>Your Rights</h3>
+            <h2>1. Scope of Application</h2>
             <p>
-                You have the right to access, rectification, and deletion of your data under the GDPR. Contact us at the email above.
+                This Privacy Policy specifically governs the use of the mobile application <strong>"Simple Score Keeper & Counter"</strong> (hereinafter referred to as the "App"), developed and published by <strong>Thümmler AI GmbH</strong>.
+            </p>
+            <p>
+                Please note: This policy does <strong>not</strong> cover our educational platform "Nachhilfe Mentor", which has its own separate privacy policy.
             </p>
 
+            <h2>2. No Data Collection</h2>
+            <p>
+                We respect your privacy. The "Simple Score Keeper & Counter" App is designed to function entirely offline.
+            </p>
+            <p>
+                <strong>We do not collect, process, or store any personal data.</strong>
+            </p>
+            <p>
+                You do not need to create an account, log in, or provide any personal information (such as name, email, or phone number) to use the App.
+            </p>
+
+            <h2>3. Local Data Storage Only</h2>
+            <p>
+                Any data you enter into the App (e.g., player names, scores, counters, game history) is stored <strong>exclusively locally on your device</strong>.
+            </p>
+            <p>
+                This data is never transmitted to Thümmler AI GmbH servers or any third-party servers. 
+                If you uninstall the App or clear the App data in your device settings, all locally stored information will be permanently deleted.
+            </p>
+
+            <h2>4. Third-Party Services & Tracking</h2>
+            <p>
+                To ensure a completely private experience in "Simple Score Keeper & Counter":
+            </p>
+            <ul>
+                <li>We do <strong>not</strong> use any analytics tools (e.g., Google Analytics, Firebase Analytics).</li>
+                <li>We do <strong>not</strong> use any advertising networks or display ads.</li>
+                <li>We do <strong>not</strong> use user tracking or fingerprinting technologies.</li>
+            </ul>
+
+            <h2>5. Contact Information</h2>
+            <p>
+                If you have any questions regarding the privacy of this specific App, please contact the developer:
+            </p>
+            <p>
+                <strong>Thümmler AI GmbH</strong><br>
+                Eisenhartstraße 8<br>
+                14469 Potsdam<br>
+                Germany<br>
+                Email: <a href="mailto:support@nachhilfe-mentor.de">support@nachhilfe-mentor.de</a>
+            </p>
         </div>
 
         <div class="divider"></div>
@@ -275,67 +238,52 @@
         <div id="german">
             <h1>Datenschutzerklärung (German)</h1>
 
-            <p><strong>Verantwortlicher:</strong><br>
-            Thümmler AI GmbH<br>
-            Eisenhartstraße 8, 14469 Potsdam, Deutschland
-            </p>
-
-            <h2>I. Spezifische Bestimmungen je App</h2>
-
-            <div class="app-section">
-                <h3 class="app-title">App 1: Simple Score Keeper & Counter</h3>
-                <p><strong>Status: Offline-App</strong></p>
-                <p>
-                    Für diese App erheben wir keine personenbezogenen Daten. Alle Spielstände werden ausschließlich lokal auf Ihrem Gerät gespeichert.
-                </p>
-            </div>
-
-            <div class="app-section">
-                <h3 class="app-title">App 2: PlantScan: Plant Identifier AI</h3>
-                <p><strong>Status: Online & KI-Verarbeitung</strong></p>
-
-                <h3>1. Datenverarbeitung zur Pflanzenbestimmung</h3>
-                <p>
-                    Zur Bereitstellung der Kernfunktion (Pflanzenerkennung) wird das von Ihnen gewählte Bild an die API von <strong>OpenAI, Inc. (USA)</strong> übermittelt.
-                </p>
-                <ul>
-                    <li><strong>Zweck:</strong> Analyse des Bildinhalts zur Identifikation.</li>
-                    <li><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung zur Bereitstellung der angeforderten Funktion).</li>
-                    <li><strong>Speicherung:</strong> Wir speichern die Bilder nicht dauerhaft. Die Verarbeitung erfolgt flüchtig für den Moment der Analyse.</li>
-                </ul>
-
-                <h3>2. Zahlungen & In-App-Käufe</h3>
-                <p>
-                    Zahlungsvorgänge werden ausschließlich über den Store-Anbieter (Apple App Store / Google Play Store) abgewickelt. Wir verarbeiten keine Finanzdaten.
-                    <br><span class="legal-detail">Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO.</span>
-                </p>
-
-                <div class="ai-warning">
-                    <strong>⚠️ HAFTUNGSAUSSCHLUSS (DISCLAIMER)</strong><br>
-                    Ergebnisse werden durch KI generiert. <strong>KI kann Fehler machen.</strong>
-                    <br>
-                    Verlassen Sie sich nicht auf diese App bei der Einschätzung von <strong>Giftigkeit oder Essbarkeit</strong>. Die Thümmler AI GmbH haftet nicht für Schäden, die aus fehlerhaften KI-Informationen resultieren.
-                </div>
-            </div>
-
-            <h2>II. Allgemeine Informationen (Pflichtangaben)</h2>
-
-            <h3>Internationale Datenübermittlung (USA)</h3>
-            <p class="legal-detail">
-                Für die App <em>PlantScan</em> nutzen wir Dienste von OpenAI (USA). Die USA gelten datenschutzrechtlich teilweise als Drittland mit abweichendem Schutzniveau. Die Übermittlung erfolgt auf Grundlage von Standardvertragsklauseln (SCCs) oder Angemessenheitsbeschlüssen, um den Schutz Ihrer Daten zu gewährleisten.
-            </p>
-
-            <h3>Technische Logfiles</h3>
-            <p class="legal-detail">
-                Bei der Nutzung der Online-Funktionen (API-Aufruf) werden technisch bedingt Verbindungsdaten (z. B. IP-Adresse, Zeitpunkt) kurzzeitig verarbeitet, um die Sicherheit und Stabilität des Dienstes zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO).
-            </p>
-
-            <h3>Ihre Rechte</h3>
+            <h2>1. Geltungsbereich</h2>
             <p>
-                Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Da wir keine Nutzerkonten führen, können wir Anfragen oft nur bearbeiten, wenn Sie uns zusätzliche Informationen zur Identifizierung (z. B. genutzte IP zum Zeitpunkt X) bereitstellen.
+                Diese Datenschutzerklärung gilt ausschließlich für die mobile Anwendung <strong>"Simple Score Keeper & Counter"</strong>, entwickelt von der <strong>Thümmler AI GmbH</strong>.
             </p>
             <p>
-                Kontakt: <a href="mailto:support@nachhilfe-mentor.de">support@nachhilfe-mentor.de</a>
+                Bitte beachten Sie: Diese Erklärung gilt <strong>nicht</strong> für die Plattform "Nachhilfe Mentor".
+            </p>
+
+            <h2>2. Keine Datenerhebung</h2>
+            <p>
+                Der Schutz Ihrer Privatsphäre ist uns wichtig. Die App "Simple Score Keeper & Counter" ist für die reine Offline-Nutzung konzipiert.
+            </p>
+            <p>
+                <strong>Wir erheben, speichern oder verarbeiten keine personenbezogenen Daten.</strong>
+            </p>
+            <p>
+                Eine Nutzung der App ist ohne Angabe von persönlichen Daten (wie Name oder E-Mail) und ohne Registrierung möglich.
+            </p>
+
+            <h2>3. Ausschließliche lokale Speicherung</h2>
+            <p>
+                Alle Daten, die innerhalb der App generiert werden (z. B. Spielernamen, Punktestände, Historie), werden <strong>nur lokal auf Ihrem Endgerät</strong> gespeichert.
+            </p>
+            <p>
+                Es findet keine Übertragung an Server der Thümmler AI GmbH oder Dritter statt. Beim Löschen der App werden diese Daten von Ihrem Gerät entfernt.
+            </p>
+
+            <h2>4. Tracking und Werbung</h2>
+            <p>
+                In dieser App verzichten wir bewusst auf:
+            </p>
+            <ul>
+                <li>Analyse-Tools (kein Tracking).</li>
+                <li>Werbenetzwerke (keine Werbung).</li>
+            </ul>
+
+            <h2>5. Kontakt & Impressum</h2>
+            <p>
+                Verantwortlich im Sinne der Datenschutzgesetze:
+            </p>
+            <p>
+                <strong>Thümmler AI GmbH</strong><br>
+                Eisenhartstraße 8<br>
+                14469 Potsdam<br>
+                Deutschland<br>
+                <a href="impressum.html">Zum vollständigen Impressum</a>
             </p>
         </div>
 
@@ -343,10 +291,13 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <p>&copy; 2026 Thümmler AI GmbH. All rights reserved.</p>
+            <p>&copy; 2025 Thümmler AI GmbH. All rights reserved.</p>
+            <p style="font-size: 0.9rem; opacity: 0.8; margin-top: 10px;">
+                "Simple Score Keeper & Counter" is a product of Thümmler AI GmbH.
+            </p>
             <div style="margin-top: 20px;">
                 <a href="impressum.html" style="text-decoration: underline; margin: 0 10px;">Impressum (Legal)</a>
-                <a href="https://nachhilfe-mentor.de" style="text-decoration: underline; margin: 0 10px;">Home</a>
+                <a href="https://nachhilfe-mentor.de" style="text-decoration: underline; margin: 0 10px;">Nachhilfe Mentor Home</a>
             </div>
         </div>
     </footer>
