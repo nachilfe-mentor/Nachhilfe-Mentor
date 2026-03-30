@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 4
+- Gesamtzahl Artikel: 6
 - Letzte Veröffentlichung: 2026-03-30
 - Nächster geplanter Post: TBD
 
@@ -17,27 +17,35 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 2 | 2026-03-30 | prokrastination-ueberwinden-lernen | Prokrastination überwinden: Warum du nicht lernst und was du dagegen tust | Prokrastination überwinden, Prokrastination Schule, Aufschieben Lernen, Motivation Lernen, Konzentration steigern | Motivation &amp; Produktivität | Erklärt psychologische Ursachen von Prokrastination, Zeigarnik-Effekt, Zwei-Minuten-Regel, Willenskraft, Perfektionismus als Auslöser |
 | 3 | 2026-03-30 | active-recall-lerntechnik | Active Recall: Die Lerntechnik, mit der du Wissen wirklich abspeicherst | Active Recall, aktives Abrufen, Retrieval Practice, Testing Effect, Lerntechnik, Blank Page Method, Feynman-Methode | Lernmethoden | Erklärt die Wissenschaft hinter Active Recall, 4 konkrete Methoden (Blank Page, Karteikarten, Klausuren, Feynman), Kombination mit Spaced Repetition |
 | 4 | 2026-03-30 | lernplan-erstellen-tipps | Lernplan erstellen: So bereitest du dich systematisch auf Prüfungen vor | Lernplan erstellen, Lernplan Vorlage, Prüfungsvorbereitung, Lernplan Schule, Lernplan Student, Zeitmanagement Lernen, Klausurvorbereitung | Prüfungsvorbereitung | Schritt-für-Schritt-Anleitung zum Lernplan erstellen: Stoff einschätzen, Zeit realistisch planen, Aufgaben konkret formulieren, aktive Methoden einsetzen, häufige Fehler vermeiden |
+| 5 | 2026-03-30 | pomodoro-technik-lernen | Pomodoro-Technik: Mit dem Tomaten-Timer endlich fokussiert lernen | Pomodoro Technik, Pomodoro Methode, Pomodoro Timer, fokussiertes Lernen, Konzentration steigern, Zeitmanagement Lernen, Tomaten-Technik, Lernmethoden | Lernmethoden | Erklärt Funktionsweise und Wissenschaft der Pomodoro-Technik, konkreter Ablauf (25-Min-Blöcke, Pausen), häufige Fehler, passende Tools, Kombination mit Active Recall und Lernplan |
+| 6 | 2026-03-30 | konzentration-steigern-lernen | Konzentration steigern beim Lernen: 10 Techniken, die sofort wirken | Konzentration steigern, Konzentration verbessern, fokussiert lernen, Ablenkung vermeiden, Deep Work, Lerntipps Konzentration | Motivation &amp; Produktivität | 10 konkrete Techniken für bessere Konzentration: ablenkungsfreie Umgebung, Zeitblöcke, Zwei-Minuten-Regel, Tagesrhythmus, Ernährung, Bewegung, Lernziele, Active Recall, Musik/Geräusche, Schlaf |
 
 ## Abgedeckte Themen-Cluster
-- Lernmethoden & Techniken: Spaced Repetition, Active Recall
-- Motivation & Produktivität: Prokrastination überwinden
+- Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik
+- Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
 - Prüfungsvorbereitung: Lernplan erstellen
 
 ## Keyword-Pool (noch nicht verwendet)
 - Zusammenfassungen schreiben, Motivation beim Lernen,
-  Konzentration steigern, Lerntypen, Abitur Vorbereitung, Studium Tipps,
-  Zeitmanagement Studium, Pomodoro Technik, Gedächtnistechniken,
+  Lerntypen, Abitur Vorbereitung, Studium Tipps,
+  Zeitmanagement Studium, Gedächtnistechniken,
   digitale Lerntools, Lern-Apps Vergleich, Notizen machen,
   wissenschaftliches Arbeiten,
   Karteikarten lernen, KI Lernen,
   Prüfungsvorbereitung, Klausur bestehen, effektiv lernen,
-  Mind Mapping, Cornell-Methode, Lerngruppe, Hausaufgaben Tipps
+  Mind Mapping, Cornell-Methode, Lerngruppe, Hausaufgaben Tipps,
+  Prüfungsangst überwinden, Lernen mit KI, ChatGPT zum Lernen,
+  Mathe lernen Tipps, Vokabeln lernen schnell, Lernmotivation steigern,
+  Nachhilfe online vs offline, Klausurvorbereitung letzte Woche,
+  Lernumgebung gestalten, Selbstdisziplin aufbauen
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
 - Prokrastination überwinden, Aufschieben Lernen, Motivation Lernen, Zeigarnik-Effekt, Zwei-Minuten-Regel
 - Active Recall, aktives Abrufen, Retrieval Practice, Testing Effect, Blank Page Method, Feynman-Methode
 - Lernplan erstellen, Lernplan Vorlage, Prüfungsvorbereitung, Klausurvorbereitung, Zeitmanagement Lernen
+- Pomodoro Technik, Pomodoro Methode, Pomodoro Timer, fokussiertes Lernen, Tomaten-Technik
+- Konzentration steigern, Konzentration verbessern, fokussiert lernen, Ablenkung vermeiden, Deep Work, Lerntipps Konzentration
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -48,6 +56,17 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lernplan-erstellen-tipps -> active-recall-lerntechnik (aktive Lernmethoden im Tagesblock: Active Recall verlinkt)
 - prokrastination-ueberwinden-lernen -> lernplan-erstellen-tipps (Lernstruktur als Prokrastinations-Lösung: Lernplan als konkreter Tipp)
 - spaced-repetition-lernmethode -> lernplan-erstellen-tipps (Frühzeitig starten: Lernplan als Ergänzung zu SR)
+- prokrastination-ueberwinden-lernen -> pomodoro-technik-lernen (Belohnungen strukturieren: Pomodoro als System für 25-Min-Blöcke)
+- lernplan-erstellen-tipps -> pomodoro-technik-lernen (Lernblöcke strukturieren: Pomodoro als Methode für Tagesblöcke)
+- konzentration-steigern-lernen -> pomodoro-technik-lernen (Zeitblöcke: Pomodoro als bewährtes System)
+- konzentration-steigern-lernen -> prokrastination-ueberwinden-lernen (Zwei-Minuten-Regel: Verweis auf Prokrastinations-Artikel)
+- konzentration-steigern-lernen -> lernplan-erstellen-tipps (Lernziele setzen: Verweis auf Lernplan-Artikel)
+- konzentration-steigern-lernen -> active-recall-lerntechnik (Aktives Lernen: Verweis auf Active Recall)
+- pomodoro-technik-lernen -> konzentration-steigern-lernen (Aufmerksamkeit nachlässt: weitere Konzentrations-Techniken)
+- prokrastination-ueberwinden-lernen -> konzentration-steigern-lernen (Ablenkungen blockieren: mehr Strategien zur Konzentration)
+
+- active-recall-lerntechnik -> lernplan-erstellen-tipps (Alltag einbauen: Lernplan als Rahmen für Active Recall)
+- spaced-repetition-lernmethode -> pomodoro-technik-lernen (Tägliche Wiederholungen: Pomodoro als Struktur für SR-Sitzungen)
 
 ## Learnings / Optimierungen
-- (Wird automatisch ergänzt nach Analytics-Analyse)
+- Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
