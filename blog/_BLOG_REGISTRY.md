@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 11
+- Gesamtzahl Artikel: 12
 - Letzte Veröffentlichung: 2026-03-30
 - Nächster geplanter Post: TBD
 
@@ -24,6 +24,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 9 | 2026-03-30 | gedaechtnis-techniken-lernen | Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst | Gedächtnistechniken, Merktechniken, Loci-Methode, Eselsbrücken, Mnemotechniken, Gedächtnis verbessern, Chunking, Gedächtnispalast | Lernmethoden | 5 Gedächtnistechniken: Loci-Methode (Gedächtnispalast), Eselsbrücken/Akronyme, Chunking, Geschichten-Methode (Narrative Chaining), Visualisierung/Mindmaps. Welche Technik für welchen Stoff, häufige Fehler |
 | 10 | 2026-03-30 | lernen-mit-ki-chatgpt | Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig für Schule und Studium | Lernen mit KI, ChatGPT zum Lernen, KI Lernen, KI Tools Schule, KI Studium | KI &amp; Bildung | 5 Strategien für KI-gestütztes Lernen (Erklärungs-Methode, Quiz-Modus, Lücken finden, Aufgaben-Generator, Zusammenfassen), 4 typische Fehler, Prompt-Tipps, Kombination mit bewährten Lernmethoden |
 | 11 | 2026-03-30 | vokabeln-lernen-tipps | Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst | Vokabeln lernen, Vokabeln lernen Tipps, Vokabeln merken, Vokabeln schnell lernen, Sprachen lernen, Karteikarten Vokabeln, Eselsbrücken Vokabeln | Sprachen lernen | 7 Methoden zum Vokabeln lernen: Karteikarten mit Spaced Repetition, Keyword-Methode/Eselsbrücken, Kontextlernen, 5-Sinne-Methode, Wortfamilien/Wortfelder, Active Recall, regelmäßige kleine Einheiten |
+| 12 | 2026-03-30 | lernmotivation-steigern-tipps | Lernmotivation steigern: 8 Tipps, die wirklich funktionieren | Lernmotivation steigern, Motivation zum Lernen, Lernmotivation Tipps, Motivation Schule, Motivation Studium, Selbstmotivation Lernen | Motivation &amp; Produktivität | 8 Strategien zur Lernmotivation: persönliches Warum finden, Micro-Commitment, Lernplan als System, Belohnungen, Umgebung optimieren, aktive Lernmethoden, Tagesrhythmus finden, Fortschritt sichtbar machen |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -34,8 +35,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Fachspezifische Lerntipps: Vokabeln lernen
 
 ## Keyword-Pool (noch nicht verwendet)
-- Motivation beim Lernen,
-  Lerntypen, Abitur Vorbereitung, Studium Tipps,
+- Lerntypen, Abitur Vorbereitung, Studium Tipps,
   Zeitmanagement Studium,
   digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
@@ -44,7 +44,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Lerngruppe, Hausaufgaben Tipps,
   Mathe lernen Tipps, Lernmotivation steigern,
   Nachhilfe online vs offline, Klausurvorbereitung letzte Woche,
-  Lernumgebung gestalten, Selbstdisziplin aufbauen,
+  Lernumgebung gestalten,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
   Lernblockade lösen, Lernstress bewältigen,
   Englisch lernen Tipps, Referat halten Tipps,
@@ -62,6 +62,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Gedächtnistechniken, Merktechniken, Loci-Methode, Eselsbrücken, Mnemotechniken, Gedächtnis verbessern, Chunking, Gedächtnispalast, Mind Mapping
 - Lernen mit KI, ChatGPT zum Lernen, KI Lernen, KI Tools Schule, KI Studium
 - Vokabeln lernen, Vokabeln lernen Tipps, Vokabeln merken, Vokabeln schnell lernen, Sprachen lernen, Karteikarten Vokabeln, Eselsbrücken Vokabeln
+- Lernmotivation steigern, Motivation zum Lernen, Lernmotivation Tipps, Motivation Schule, Motivation Studium, Selbstmotivation Lernen
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -119,6 +120,14 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - vokabeln-lernen-tipps -> lernplan-erstellen-tipps (Regelmäßige Wiederholung: strukturierter Lernplan)
 - gedaechtnis-techniken-lernen -> vokabeln-lernen-tipps (Crosslink: Vokabel-Lernguide bei Vokabel-Empfehlung)
 - spaced-repetition-lernmethode -> vokabeln-lernen-tipps (Crosslink: Vokabeln lernen als SR-Anwendungsfall)
+
+- lernmotivation-steigern-tipps -> prokrastination-ueberwinden-lernen (Zeigarnik-Effekt: Verweis auf Prokrastinations-Artikel)
+- lernmotivation-steigern-tipps -> lernplan-erstellen-tipps (Plan als Motivationsstütze)
+- lernmotivation-steigern-tipps -> konzentration-steigern-lernen (Fokus-Guide als Ergänzung)
+- lernmotivation-steigern-tipps -> active-recall-lerntechnik (Aktive Methoden gegen Frustration)
+- lernmotivation-steigern-tipps -> pomodoro-technik-lernen (Zeitblöcke für Rhythmus)
+- lernplan-erstellen-tipps -> lernmotivation-steigern-tipps (Crosslink: Motivation im Fazit)
+- prokrastination-ueberwinden-lernen -> lernmotivation-steigern-tipps (Crosslink: Motivation im Fazit)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
