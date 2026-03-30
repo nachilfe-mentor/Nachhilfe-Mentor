@@ -39,20 +39,32 @@
   box-shadow: var(--glow-blue);
 }
 
-.blog-card-img {
+.blog-card-img,
+.blog-card-img-link {
   aspect-ratio: 16 / 9;
   overflow: hidden;
   position: relative;
+  display: block;
 }
 
-.blog-card-img img {
+.blog-card-img img,
+.blog-card-img-link img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s var(--ease);
 }
 
-.blog-card:hover .blog-card-img img {
+img.blog-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--ease);
+}
+
+.blog-card:hover .blog-card-img img,
+.blog-card:hover .blog-card-img-link img,
+.blog-card:hover img.blog-card-img {
   transform: scale(1.05);
 }
 
