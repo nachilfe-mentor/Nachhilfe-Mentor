@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 9
+- Gesamtzahl Artikel: 10
 - Letzte Veröffentlichung: 2026-03-30
 - Nächster geplanter Post: TBD
 
@@ -22,12 +22,14 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 7 | 2026-03-30 | pruefungsangst-ueberwinden | Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit | Prüfungsangst überwinden, Prüfungsangst Tipps, Blackout Prüfung, Klausurangst, Prüfungsstress, Nervosität Prüfung | Prüfungsvorbereitung | 7 Strategien gegen Prüfungsangst: Atemtechnik (4-7-8), Gedanken hinterfragen, Prüfungssimulation, Körper als Verbündeter, strukturierte Vorbereitung, Prüfungstag planen, Reflexion danach |
 | 8 | 2026-03-30 | zusammenfassung-schreiben-lernen | Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen | Zusammenfassung schreiben lernen, Zusammenfassung schreiben, Cornell-Methode, Notizen machen, Lernstoff zusammenfassen | Schule &amp; Studium | 5-Schritte-Methode zum Zusammenfassen, Cornell-Methode, Sketchnote-Methode, Karteikarten-Methode, digital vs. handschriftlich, häufige Fehler beim Zusammenfassen |
 | 9 | 2026-03-30 | gedaechtnis-techniken-lernen | Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst | Gedächtnistechniken, Merktechniken, Loci-Methode, Eselsbrücken, Mnemotechniken, Gedächtnis verbessern, Chunking, Gedächtnispalast | Lernmethoden | 5 Gedächtnistechniken: Loci-Methode (Gedächtnispalast), Eselsbrücken/Akronyme, Chunking, Geschichten-Methode (Narrative Chaining), Visualisierung/Mindmaps. Welche Technik für welchen Stoff, häufige Fehler |
+| 10 | 2026-03-30 | lernen-mit-ki-chatgpt | Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig für Schule und Studium | Lernen mit KI, ChatGPT zum Lernen, KI Lernen, KI Tools Schule, KI Studium | KI &amp; Bildung | 5 Strategien für KI-gestütztes Lernen (Erklärungs-Methode, Quiz-Modus, Lücken finden, Aufgaben-Generator, Zusammenfassen), 4 typische Fehler, Prompt-Tipps, Kombination mit bewährten Lernmethoden |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben
+- KI & Bildung: Lernen mit KI / ChatGPT
 
 ## Keyword-Pool (noch nicht verwendet)
 - Motivation beim Lernen,
@@ -35,13 +37,16 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Zeitmanagement Studium,
   digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
-  Karteikarten lernen, KI Lernen,
+  Karteikarten lernen,
   Prüfungsvorbereitung, Klausur bestehen, effektiv lernen,
   Lerngruppe, Hausaufgaben Tipps,
-  Lernen mit KI, ChatGPT zum Lernen,
   Mathe lernen Tipps, Vokabeln lernen schnell, Lernmotivation steigern,
   Nachhilfe online vs offline, Klausurvorbereitung letzte Woche,
-  Lernumgebung gestalten, Selbstdisziplin aufbauen
+  Lernumgebung gestalten, Selbstdisziplin aufbauen,
+  KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
+  Lernblockade lösen, Lernstress bewältigen,
+  Englisch lernen Tipps, Referat halten Tipps,
+  Mitschriften verbessern, Klausur letzte Nacht
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
@@ -53,6 +58,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsangst überwinden, Prüfungsangst Tipps, Blackout Prüfung, Klausurangst, Prüfungsstress, Nervosität Prüfung
 - Zusammenfassung schreiben lernen, Zusammenfassung schreiben, Cornell-Methode, Notizen machen, Lernstoff zusammenfassen
 - Gedächtnistechniken, Merktechniken, Loci-Methode, Eselsbrücken, Mnemotechniken, Gedächtnis verbessern, Chunking, Gedächtnispalast, Mind Mapping
+- Lernen mit KI, ChatGPT zum Lernen, KI Lernen, KI Tools Schule, KI Studium
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -93,5 +99,17 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - spaced-repetition-lernmethode -> gedaechtnis-techniken-lernen (Crosslink: Gedächtnistechniken als Ergänzung zu SR)
 - active-recall-lerntechnik -> gedaechtnis-techniken-lernen (Crosslink: Gedächtnistechniken kombinieren mit AR)
 
+- lernen-mit-ki-chatgpt -> active-recall-lerntechnik (Feynman-Methode aus Active Recall als KI-Sparringspartner)
+- lernen-mit-ki-chatgpt -> zusammenfassung-schreiben-lernen (Strukturiertes Zusammenfassen mit KI)
+- lernen-mit-ki-chatgpt -> lernplan-erstellen-tipps (KI-Hilfe beim Lernplan erstellen)
+- lernen-mit-ki-chatgpt -> spaced-repetition-lernmethode (KI + Spaced Repetition kombinieren)
+- lernen-mit-ki-chatgpt -> pomodoro-technik-lernen (KI + Pomodoro kombinieren)
+- konzentration-steigern-lernen -> lernen-mit-ki-chatgpt (Crosslink: KI-gestützter Lerncoach)
+- active-recall-lerntechnik -> lernen-mit-ki-chatgpt (Crosslink: KI-generierte Fragen)
+- pruefungsangst-ueberwinden -> gedaechtnis-techniken-lernen (Self-Improvement R2: Gedächtnistechniken zum Abruf-Training)
+- pomodoro-technik-lernen -> prokrastination-ueberwinden-lernen (Self-Improvement R2: Prokrastinations-Probleme verlinkt)
+- zusammenfassung-schreiben-lernen -> lernen-mit-ki-chatgpt (Self-Improvement R2: KI zum Umformulieren)
+
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
+- Self-Improvement Runde 2 (nach Artikel 10): KI & Bildung Cluster eröffnet. 3 fehlende Crosslinks ergänzt (pruefungsangst->gedaechtnis, pomodoro->prokrastination, zusammenfassung->lernen-mit-ki). Lernplan hat die meisten Incoming-Links (9), pruefungsangst/gedaechtnis/prokrastination die wenigsten (je 3 nach Fix). Nächstes Mal: Cluster "Fachspezifische Lerntipps" (z.B. Mathe, Vokabeln) oder "Motivation" (Lernmotivation steigern, Selbstdisziplin) bedienen.
