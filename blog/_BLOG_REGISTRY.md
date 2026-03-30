@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 6
+- Gesamtzahl Artikel: 7
 - Letzte Veröffentlichung: 2026-03-30
 - Nächster geplanter Post: TBD
 
@@ -19,11 +19,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 4 | 2026-03-30 | lernplan-erstellen-tipps | Lernplan erstellen: So bereitest du dich systematisch auf Prüfungen vor | Lernplan erstellen, Lernplan Vorlage, Prüfungsvorbereitung, Lernplan Schule, Lernplan Student, Zeitmanagement Lernen, Klausurvorbereitung | Prüfungsvorbereitung | Schritt-für-Schritt-Anleitung zum Lernplan erstellen: Stoff einschätzen, Zeit realistisch planen, Aufgaben konkret formulieren, aktive Methoden einsetzen, häufige Fehler vermeiden |
 | 5 | 2026-03-30 | pomodoro-technik-lernen | Pomodoro-Technik: Mit dem Tomaten-Timer endlich fokussiert lernen | Pomodoro Technik, Pomodoro Methode, Pomodoro Timer, fokussiertes Lernen, Konzentration steigern, Zeitmanagement Lernen, Tomaten-Technik, Lernmethoden | Lernmethoden | Erklärt Funktionsweise und Wissenschaft der Pomodoro-Technik, konkreter Ablauf (25-Min-Blöcke, Pausen), häufige Fehler, passende Tools, Kombination mit Active Recall und Lernplan |
 | 6 | 2026-03-30 | konzentration-steigern-lernen | Konzentration steigern beim Lernen: 10 Techniken, die sofort wirken | Konzentration steigern, Konzentration verbessern, fokussiert lernen, Ablenkung vermeiden, Deep Work, Lerntipps Konzentration | Motivation &amp; Produktivität | 10 konkrete Techniken für bessere Konzentration: ablenkungsfreie Umgebung, Zeitblöcke, Zwei-Minuten-Regel, Tagesrhythmus, Ernährung, Bewegung, Lernziele, Active Recall, Musik/Geräusche, Schlaf |
+| 7 | 2026-03-30 | pruefungsangst-ueberwinden | Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit | Prüfungsangst überwinden, Prüfungsangst Tipps, Blackout Prüfung, Klausurangst, Prüfungsstress, Nervosität Prüfung | Prüfungsvorbereitung | 7 Strategien gegen Prüfungsangst: Atemtechnik (4-7-8), Gedanken hinterfragen, Prüfungssimulation, Körper als Verbündeter, strukturierte Vorbereitung, Prüfungstag planen, Reflexion danach |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
-- Prüfungsvorbereitung: Lernplan erstellen
+- Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 
 ## Keyword-Pool (noch nicht verwendet)
 - Zusammenfassungen schreiben, Motivation beim Lernen,
@@ -34,7 +35,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Karteikarten lernen, KI Lernen,
   Prüfungsvorbereitung, Klausur bestehen, effektiv lernen,
   Mind Mapping, Cornell-Methode, Lerngruppe, Hausaufgaben Tipps,
-  Prüfungsangst überwinden, Lernen mit KI, ChatGPT zum Lernen,
+  Lernen mit KI, ChatGPT zum Lernen,
   Mathe lernen Tipps, Vokabeln lernen schnell, Lernmotivation steigern,
   Nachhilfe online vs offline, Klausurvorbereitung letzte Woche,
   Lernumgebung gestalten, Selbstdisziplin aufbauen
@@ -46,6 +47,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Lernplan erstellen, Lernplan Vorlage, Prüfungsvorbereitung, Klausurvorbereitung, Zeitmanagement Lernen
 - Pomodoro Technik, Pomodoro Methode, Pomodoro Timer, fokussiertes Lernen, Tomaten-Technik
 - Konzentration steigern, Konzentration verbessern, fokussiert lernen, Ablenkung vermeiden, Deep Work, Lerntipps Konzentration
+- Prüfungsangst überwinden, Prüfungsangst Tipps, Blackout Prüfung, Klausurangst, Prüfungsstress, Nervosität Prüfung
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -67,6 +69,11 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 - active-recall-lerntechnik -> lernplan-erstellen-tipps (Alltag einbauen: Lernplan als Rahmen für Active Recall)
 - spaced-repetition-lernmethode -> pomodoro-technik-lernen (Tägliche Wiederholungen: Pomodoro als Struktur für SR-Sitzungen)
+
+- pruefungsangst-ueberwinden -> lernplan-erstellen-tipps (Fehlende Struktur als Ursache: Lernplan als Lösung)
+- pruefungsangst-ueberwinden -> active-recall-lerntechnik (Prüfungssimulation: Active Recall für tieferes Verankern)
+- lernplan-erstellen-tipps -> pruefungsangst-ueberwinden (Fazit: weniger Prüfungsangst durch guten Plan)
+- prokrastination-ueberwinden-lernen -> pruefungsangst-ueberwinden (Angst vor dem Versagen: Verweis auf Prüfungsangst-Artikel)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
