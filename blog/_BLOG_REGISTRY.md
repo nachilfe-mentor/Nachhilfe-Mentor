@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 8
+- Gesamtzahl Artikel: 9
 - Letzte Veröffentlichung: 2026-03-30
 - Nächster geplanter Post: TBD
 
@@ -21,9 +21,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 6 | 2026-03-30 | konzentration-steigern-lernen | Konzentration steigern beim Lernen: 10 Techniken, die sofort wirken | Konzentration steigern, Konzentration verbessern, fokussiert lernen, Ablenkung vermeiden, Deep Work, Lerntipps Konzentration | Motivation &amp; Produktivität | 10 konkrete Techniken für bessere Konzentration: ablenkungsfreie Umgebung, Zeitblöcke, Zwei-Minuten-Regel, Tagesrhythmus, Ernährung, Bewegung, Lernziele, Active Recall, Musik/Geräusche, Schlaf |
 | 7 | 2026-03-30 | pruefungsangst-ueberwinden | Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit | Prüfungsangst überwinden, Prüfungsangst Tipps, Blackout Prüfung, Klausurangst, Prüfungsstress, Nervosität Prüfung | Prüfungsvorbereitung | 7 Strategien gegen Prüfungsangst: Atemtechnik (4-7-8), Gedanken hinterfragen, Prüfungssimulation, Körper als Verbündeter, strukturierte Vorbereitung, Prüfungstag planen, Reflexion danach |
 | 8 | 2026-03-30 | zusammenfassung-schreiben-lernen | Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen | Zusammenfassung schreiben lernen, Zusammenfassung schreiben, Cornell-Methode, Notizen machen, Lernstoff zusammenfassen | Schule &amp; Studium | 5-Schritte-Methode zum Zusammenfassen, Cornell-Methode, Sketchnote-Methode, Karteikarten-Methode, digital vs. handschriftlich, häufige Fehler beim Zusammenfassen |
+| 9 | 2026-03-30 | gedaechtnis-techniken-lernen | Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst | Gedächtnistechniken, Merktechniken, Loci-Methode, Eselsbrücken, Mnemotechniken, Gedächtnis verbessern, Chunking, Gedächtnispalast | Lernmethoden | 5 Gedächtnistechniken: Loci-Methode (Gedächtnispalast), Eselsbrücken/Akronyme, Chunking, Geschichten-Methode (Narrative Chaining), Visualisierung/Mindmaps. Welche Technik für welchen Stoff, häufige Fehler |
 
 ## Abgedeckte Themen-Cluster
-- Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik
+- Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben
@@ -31,12 +32,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Keyword-Pool (noch nicht verwendet)
 - Motivation beim Lernen,
   Lerntypen, Abitur Vorbereitung, Studium Tipps,
-  Zeitmanagement Studium, Gedächtnistechniken,
+  Zeitmanagement Studium,
   digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
   Karteikarten lernen, KI Lernen,
   Prüfungsvorbereitung, Klausur bestehen, effektiv lernen,
-  Mind Mapping, Lerngruppe, Hausaufgaben Tipps,
+  Lerngruppe, Hausaufgaben Tipps,
   Lernen mit KI, ChatGPT zum Lernen,
   Mathe lernen Tipps, Vokabeln lernen schnell, Lernmotivation steigern,
   Nachhilfe online vs offline, Klausurvorbereitung letzte Woche,
@@ -51,6 +52,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Konzentration steigern, Konzentration verbessern, fokussiert lernen, Ablenkung vermeiden, Deep Work, Lerntipps Konzentration
 - Prüfungsangst überwinden, Prüfungsangst Tipps, Blackout Prüfung, Klausurangst, Prüfungsstress, Nervosität Prüfung
 - Zusammenfassung schreiben lernen, Zusammenfassung schreiben, Cornell-Methode, Notizen machen, Lernstoff zusammenfassen
+- Gedächtnistechniken, Merktechniken, Loci-Methode, Eselsbrücken, Mnemotechniken, Gedächtnis verbessern, Chunking, Gedächtnispalast, Mind Mapping
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -83,6 +85,13 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - zusammenfassung-schreiben-lernen -> lernplan-erstellen-tipps (Fehler vermeiden: Lernplan für Wiederholungstermine)
 - konzentration-steigern-lernen -> zusammenfassung-schreiben-lernen (Nachmittagstief: Zusammenfassungen als Routineaufgabe)
 - active-recall-lerntechnik -> zusammenfassung-schreiben-lernen (Einleitung: Zusammenfassungen als passive Methode)
+
+- gedaechtnis-techniken-lernen -> spaced-repetition-lernmethode (Loci-Methode: Wiederholung mit SR stabilisiert Bilder)
+- gedaechtnis-techniken-lernen -> active-recall-lerntechnik (Mindmaps: aktives Abrufen und Reorganisieren als verwandt mit AR)
+- gedaechtnis-techniken-lernen -> zusammenfassung-schreiben-lernen (Fehler 2: Zusammenfassungen zeigen ob Stoff verstanden)
+- gedaechtnis-techniken-lernen -> lernplan-erstellen-tipps (Fehler 3: Lernplan für Wiederholungstermine)
+- spaced-repetition-lernmethode -> gedaechtnis-techniken-lernen (Crosslink: Gedächtnistechniken als Ergänzung zu SR)
+- active-recall-lerntechnik -> gedaechtnis-techniken-lernen (Crosslink: Gedächtnistechniken kombinieren mit AR)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
