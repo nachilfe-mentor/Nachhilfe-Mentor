@@ -1,0 +1,27 @@
+Auto-blog loop started at Mon Mar 30 04:30:01 PM GMT 2026
+Interval: 86400s (24h)
+[2026-03-30 16:30:01] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Fertig. Zusammenfassung des Durchlaufs:
+
+**Artikel #1 veröffentlicht:** Spaced Repetition: Die Lernmethode, mit der du nie wieder vergisst
+
+- **Focus-Keyword:** Spaced Repetition
+- **Themen-Cluster:** Lernmethoden & Techniken
+- **Länge:** ~900 Wörter, 7 Min. Lesezeit
+- **Cover-Bild:** KI-generiert, Stil gemäß Strategy
+- **CTA:** App-Download-Block am Ende, 1x natürliche App-Erwähnung im Text
+- **Blog-Index:** Neue Card oben eingefügt
+- **Registry:** Auf Artikel 1 aktualisiert
+- **Deployed:** via GitHub Pages (git push erfolgreich)
+[2026-03-30 16:33:15] Blog cycle completed successfully.
+[2026-03-30 16:33:15] Next run in 24 hours.
+---
+Auto-blog loop started at Mon Mar 30 06:20:23 PM GMT 2026
+Interval: 86400s (24h)
+[2026-03-30 18:20:23] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

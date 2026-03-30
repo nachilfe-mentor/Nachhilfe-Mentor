@@ -1,0 +1,139 @@
+
+==============================================
+  BATCH RUN 1/5 — 2026-03-30 17:54:36
+==============================================
+
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alles erledigt. Hier die Zusammenfassung:
+
+**Artikel 6: Konzentration steigern beim Lernen**
+- Slug: `konzentration-steigern-lernen`
+- Tag: Motivation & Produktivität
+- Focus-Keyword: "Konzentration steigern"
+- 10 konkrete Techniken (Umgebung, Zeitblöcke, Zwei-Minuten-Regel, Tagesrhythmus, Ernährung, Bewegung, Lernziele, Active Recall, Musik, Schlaf)
+- 4 interne Links zu bestehenden Artikeln (Pomodoro, Prokrastination, Lernplan, Active Recall)
+
+**Crosslinks gesetzt:**
+- Pomodoro -> Konzentration (Aufmerksamkeit nachlässt)
+- Prokrastination -> Konzentration (Ablenkungen blockieren)
+- Active Recall -> Lernplan (Self-Improvement: fehlender Link)
+- Spaced Repetition -> Pomodoro (Self-Improvement: fehlender Link)
+
+**Self-Improvement (Runde 1 nach 5 Artikeln):**
+- Alle 6 Artikel sind jetzt gut untereinander verlinkt
+- Keyword-Pool um 14 neue Keywords erweitert
+- Learning notiert: Nächste Artikel sollten Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen
+
+Commit gepusht, Deployment läuft automatisch.
+
+>>> Run 1/5 fertig um 17:59:08
+
+
+==============================================
+  BATCH RUN 2/5 — 2026-03-30 17:59:08
+==============================================
+
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Artikel #7 ist live. Zusammenfassung:
+
+- **Thema:** Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit
+- **Slug:** `pruefungsangst-ueberwinden`
+- **Cluster:** Prüfungsvorbereitung
+- **Keywords:** Prüfungsangst überwinden, Blackout Prüfung, Klausurangst, Prüfungsstress
+- **Cover-Bild:** generiert und eingebunden
+- **Interne Links im neuen Artikel:** Lernplan erstellen, Active Recall
+- **Crosslinks in bestehenden Artikeln:**
+  - lernplan-erstellen-tipps → pruefungsangst-ueberwinden (Fazit: "weniger Prüfungsangst")
+  - prokrastination-ueberwinden-lernen → pruefungsangst-ueberwinden ("Angst vor dem Versagen")
+- **Registry:** aktualisiert (7 Artikel, Keyword aus Pool entfernt)
+- **Deployed** via `git push origin main`
+
+>>> Run 2/5 fertig um 18:03:29
+
+
+==============================================
+  BATCH RUN 3/5 — 2026-03-30 18:03:29
+==============================================
+
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Artikel #8 ist live. Hier die Zusammenfassung:
+
+**Neuer Artikel:** Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen
+- **Slug:** `zusammenfassung-schreiben-lernen`
+- **Cluster:** Schule & Studium Alltag (neues Cluster!)
+- **Focus-Keyword:** Zusammenfassung schreiben lernen
+- **Inhalt:** 5-Schritte-Methode, Cornell-Methode, Sketchnote-Methode, Karteikarten-Methode, digital vs. handschriftlich, häufige Fehler
+- **Interne Links im Artikel:** Active Recall, Spaced Repetition, Lernplan erstellen
+- **Crosslinks gesetzt in:** Konzentration steigern (Notizen → Zusammenfassungen), Active Recall (Notizen → Zusammenfassungen)
+- **App-Erwähnung:** natürlich bei der Karteikarten-Methode eingebaut
+
+>>> Run 3/5 fertig um 18:08:16
+
+
+==============================================
+  BATCH RUN 4/5 — 2026-03-30 18:08:16
+==============================================
+
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Artikel #9 ist live. Hier die Zusammenfassung:
+
+**Neuer Artikel:** Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst
+- **Slug:** `gedaechtnis-techniken-lernen`
+- **Cluster:** Lernmethoden
+- **Focus-Keyword:** Gedächtnistechniken
+- **Inhalt:** 5 Methoden (Loci-Methode/Gedächtnispalast, Eselsbrücken/Akronyme, Chunking, Geschichten-Methode, Visualisierung/Mindmaps), Zuordnung Technik-zu-Stoff, 3 häufige Fehler
+
+**Interne Links im neuen Artikel:**
+- Spaced Repetition, Active Recall, Zusammenfassung schreiben, Lernplan erstellen
+
+**Crosslinks in bestehenden Artikeln:**
+- spaced-repetition → gedaechtnis-techniken-lernen (Gedächtnistechniken als Ergänzung)
+- active-recall → gedaechtnis-techniken-lernen (Bonus-Tipp: Loci + Chunking kombinieren)
+
+**Registry:** Aktualisiert (9 Artikel, Keywords verschoben, Verlinkungen dokumentiert)
+
+>>> Run 4/5 fertig um 18:13:01
+
+
+==============================================
+  BATCH RUN 5/5 — 2026-03-30 18:13:01
+==============================================
+
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Fertig! Hier die Zusammenfassung:
+
+**Artikel #10: Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig**
+- Neues Cluster "KI & Bildung" eröffnet
+- Focus-Keyword: "Lernen mit KI"
+- 5 konkrete Strategien, 4 typische Fehler, Prompt-Tipps
+- Interne Links zu: Active Recall, Zusammenfassung, Lernplan, Spaced Repetition, Pomodoro
+- Nachhilfe Mentor App natürlich im Fließtext erwähnt
+
+**Crosslinks (neu gesetzt):**
+- konzentration-steigern → lernen-mit-ki (KI-gestützter Lerncoach)
+- active-recall → lernen-mit-ki (KI-generierte Fragen)
+- pruefungsangst → gedaechtnis-techniken (Abruf trainieren)
+- pomodoro → prokrastination (Prokrastinations-Probleme)
+- zusammenfassung → lernen-mit-ki (KI zum Umformulieren)
+
+**Self-Improvement Runde 2 (Artikel #10):**
+- 3 fehlende Crosslinks in bestehenden Artikeln ergänzt
+- Keyword-Pool um 8 neue Keywords erweitert
+- Learnings dokumentiert
+
+>>> Run 5/5 fertig um 18:20:17
+
+
+==============================================
+  ALLE 5 DURCHLÄUFE ABGESCHLOSSEN
+==============================================

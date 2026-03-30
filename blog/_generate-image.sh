@@ -26,7 +26,7 @@ RESPONSE=$(curl -s -X POST "https://api.openai.com/v1/images/generations" \
   "prompt": "$PROMPT",
   "n": 1,
   "size": "1536x1024",
-  "quality": "medium"
+  "quality": "low"
 }
 ENDJSON
 )")
@@ -57,4 +57,6 @@ else:
     sys.exit(1)
 "
 
-echo "Image saved to: $OUTFILE"
+# Compress: resize to 800px wide, convert to optimized WebP
+WEBP_FILE="$IMG_DIR/${FILENAME}.webp"
+convert "$OUTFILE" -resize 800x -quality 75 "$WEBP_FILE" 2>/dev/null && rm -f "$OUTFILE" && echo "Image saved to: $WEBP_FILE" || echo "Image saved to: $OUTFILE (WebP conversion failed, keeping PNG)"
