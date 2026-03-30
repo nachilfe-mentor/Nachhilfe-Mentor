@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 10
+- Gesamtzahl Artikel: 11
 - Letzte Veröffentlichung: 2026-03-30
 - Nächster geplanter Post: TBD
 
@@ -23,6 +23,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 8 | 2026-03-30 | zusammenfassung-schreiben-lernen | Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen | Zusammenfassung schreiben lernen, Zusammenfassung schreiben, Cornell-Methode, Notizen machen, Lernstoff zusammenfassen | Schule &amp; Studium | 5-Schritte-Methode zum Zusammenfassen, Cornell-Methode, Sketchnote-Methode, Karteikarten-Methode, digital vs. handschriftlich, häufige Fehler beim Zusammenfassen |
 | 9 | 2026-03-30 | gedaechtnis-techniken-lernen | Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst | Gedächtnistechniken, Merktechniken, Loci-Methode, Eselsbrücken, Mnemotechniken, Gedächtnis verbessern, Chunking, Gedächtnispalast | Lernmethoden | 5 Gedächtnistechniken: Loci-Methode (Gedächtnispalast), Eselsbrücken/Akronyme, Chunking, Geschichten-Methode (Narrative Chaining), Visualisierung/Mindmaps. Welche Technik für welchen Stoff, häufige Fehler |
 | 10 | 2026-03-30 | lernen-mit-ki-chatgpt | Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig für Schule und Studium | Lernen mit KI, ChatGPT zum Lernen, KI Lernen, KI Tools Schule, KI Studium | KI &amp; Bildung | 5 Strategien für KI-gestütztes Lernen (Erklärungs-Methode, Quiz-Modus, Lücken finden, Aufgaben-Generator, Zusammenfassen), 4 typische Fehler, Prompt-Tipps, Kombination mit bewährten Lernmethoden |
+| 11 | 2026-03-30 | vokabeln-lernen-tipps | Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst | Vokabeln lernen, Vokabeln lernen Tipps, Vokabeln merken, Vokabeln schnell lernen, Sprachen lernen, Karteikarten Vokabeln, Eselsbrücken Vokabeln | Sprachen lernen | 7 Methoden zum Vokabeln lernen: Karteikarten mit Spaced Repetition, Keyword-Methode/Eselsbrücken, Kontextlernen, 5-Sinne-Methode, Wortfamilien/Wortfelder, Active Recall, regelmäßige kleine Einheiten |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -30,6 +31,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben
 - KI & Bildung: Lernen mit KI / ChatGPT
+- Fachspezifische Lerntipps: Vokabeln lernen
 
 ## Keyword-Pool (noch nicht verwendet)
 - Motivation beim Lernen,
@@ -40,7 +42,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Karteikarten lernen,
   Prüfungsvorbereitung, Klausur bestehen, effektiv lernen,
   Lerngruppe, Hausaufgaben Tipps,
-  Mathe lernen Tipps, Vokabeln lernen schnell, Lernmotivation steigern,
+  Mathe lernen Tipps, Lernmotivation steigern,
   Nachhilfe online vs offline, Klausurvorbereitung letzte Woche,
   Lernumgebung gestalten, Selbstdisziplin aufbauen,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
@@ -59,6 +61,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Zusammenfassung schreiben lernen, Zusammenfassung schreiben, Cornell-Methode, Notizen machen, Lernstoff zusammenfassen
 - Gedächtnistechniken, Merktechniken, Loci-Methode, Eselsbrücken, Mnemotechniken, Gedächtnis verbessern, Chunking, Gedächtnispalast, Mind Mapping
 - Lernen mit KI, ChatGPT zum Lernen, KI Lernen, KI Tools Schule, KI Studium
+- Vokabeln lernen, Vokabeln lernen Tipps, Vokabeln merken, Vokabeln schnell lernen, Sprachen lernen, Karteikarten Vokabeln, Eselsbrücken Vokabeln
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -109,6 +112,13 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - pruefungsangst-ueberwinden -> gedaechtnis-techniken-lernen (Self-Improvement R2: Gedächtnistechniken zum Abruf-Training)
 - pomodoro-technik-lernen -> prokrastination-ueberwinden-lernen (Self-Improvement R2: Prokrastinations-Probleme verlinkt)
 - zusammenfassung-schreiben-lernen -> lernen-mit-ki-chatgpt (Self-Improvement R2: KI zum Umformulieren)
+
+- vokabeln-lernen-tipps -> spaced-repetition-lernmethode (Karteikarten-Methode: Spaced Repetition als Wiederholungsprinzip)
+- vokabeln-lernen-tipps -> gedaechtnis-techniken-lernen (Keyword-Methode: Loci-Methode und Gedächtnistechniken)
+- vokabeln-lernen-tipps -> active-recall-lerntechnik (Active Recall statt passives Lesen)
+- vokabeln-lernen-tipps -> lernplan-erstellen-tipps (Regelmäßige Wiederholung: strukturierter Lernplan)
+- gedaechtnis-techniken-lernen -> vokabeln-lernen-tipps (Crosslink: Vokabel-Lernguide bei Vokabel-Empfehlung)
+- spaced-repetition-lernmethode -> vokabeln-lernen-tipps (Crosslink: Vokabeln lernen als SR-Anwendungsfall)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
