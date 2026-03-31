@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 13
+- Gesamtzahl Artikel: 14
 - Letzte Veröffentlichung: 2026-03-31
 - Nächster geplanter Post: TBD
 
@@ -26,6 +26,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 11 | 2026-03-30 | vokabeln-lernen-tipps | Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst | Vokabeln lernen, Vokabeln lernen Tipps, Vokabeln merken, Vokabeln schnell lernen, Sprachen lernen, Karteikarten Vokabeln, Eselsbrücken Vokabeln | Sprachen lernen | 7 Methoden zum Vokabeln lernen: Karteikarten mit Spaced Repetition, Keyword-Methode/Eselsbrücken, Kontextlernen, 5-Sinne-Methode, Wortfamilien/Wortfelder, Active Recall, regelmäßige kleine Einheiten |
 | 12 | 2026-03-30 | lernmotivation-steigern-tipps | Lernmotivation steigern: 8 Tipps, die wirklich funktionieren | Lernmotivation steigern, Motivation zum Lernen, Lernmotivation Tipps, Motivation Schule, Motivation Studium, Selbstmotivation Lernen | Motivation &amp; Produktivität | 8 Strategien zur Lernmotivation: persönliches Warum finden, Micro-Commitment, Lernplan als System, Belohnungen, Umgebung optimieren, aktive Lernmethoden, Tagesrhythmus finden, Fortschritt sichtbar machen |
 | 13 | 2026-03-31 | mathe-lernen-tipps | Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst | Mathe lernen Tipps, Mathe verstehen, Mathe besser werden, Mathe Nachhilfe, Mathematik lernen | Fachspezifische Lerntipps | 7 Tipps zum Mathe lernen: Verstehen statt auswendig lernen, Grundlagen reparieren, tägliches Üben, Active Recall bei Aufgaben, Fehler-Heft führen, Feynman-Methode, richtige Übungs-Strategie |
+| 14 | 2026-03-31 | englisch-lernen-tipps | Englisch lernen: 8 Tipps, mit denen du schnell besser wirst | Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch Schule, Englisch Grammatik lernen, Englisch sprechen üben | Fachspezifische Lerntipps | 8 Tipps zum Englisch lernen: Alltags-Immersion, Vokabeln mit System, Grammatik durch Beispiele, Sprechen üben, Lesen, Schreiben, Active Recall, Regelmäßigkeit |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -33,7 +34,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben
 - KI & Bildung: Lernen mit KI / ChatGPT
-- Fachspezifische Lerntipps: Vokabeln lernen
+- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen
 
 ## Keyword-Pool (noch nicht verwendet)
 - Lerntypen, Abitur Vorbereitung, Studium Tipps,
@@ -48,7 +49,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Lernumgebung gestalten,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
   Lernblockade lösen, Lernstress bewältigen,
-  Englisch lernen Tipps, Referat halten Tipps,
+  Referat halten Tipps,
   Mitschriften verbessern, Klausur letzte Nacht
 
 ## Verwendete Keywords
@@ -65,6 +66,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Vokabeln lernen, Vokabeln lernen Tipps, Vokabeln merken, Vokabeln schnell lernen, Sprachen lernen, Karteikarten Vokabeln, Eselsbrücken Vokabeln
 - Lernmotivation steigern, Motivation zum Lernen, Lernmotivation Tipps, Motivation Schule, Motivation Studium, Selbstmotivation Lernen
 - Mathe lernen Tipps, Mathe verstehen, Mathe besser werden, Mathe Nachhilfe, Mathematik lernen
+- Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch Schule, Englisch Grammatik lernen, Englisch sprechen üben
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -136,6 +138,13 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - mathe-lernen-tipps -> pomodoro-technik-lernen (Übungszeit mit Pomodoro-Technik strukturieren)
 - konzentration-steigern-lernen -> mathe-lernen-tipps (Crosslink: Matheaufgaben am Morgen)
 - lernplan-erstellen-tipps -> mathe-lernen-tipps (Crosslink: Mathe konkret formulieren)
+
+- englisch-lernen-tipps -> spaced-repetition-lernmethode (Vokabeln mit System: Spaced Repetition verlinkt)
+- englisch-lernen-tipps -> vokabeln-lernen-tipps (Vokabel-Guide als Vertiefung)
+- englisch-lernen-tipps -> active-recall-lerntechnik (Aktiv lernen statt passiv konsumieren)
+- englisch-lernen-tipps -> lernplan-erstellen-tipps (Lernplan für Englisch-Routine)
+- vokabeln-lernen-tipps -> englisch-lernen-tipps (Crosslink: Englisch-Lernguide bei Vertiefung)
+- lernplan-erstellen-tipps -> englisch-lernen-tipps (Crosslink: Englisch bei Konkretisierung)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
