@@ -1,2 +1,8 @@
 .env
 auto-blog.sh
+batch-blog.sh
+start-autoblog-after-batch.sh
+google-analytics-sa.json
+auto-blog.log
+batch-blog.log
+AGENT_SETUP.md

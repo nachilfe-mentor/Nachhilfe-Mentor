@@ -22,7 +22,7 @@ RESPONSE=$(curl -s -X POST "https://api.openai.com/v1/images/generations" \
   -H "Content-Type: application/json" \
   -d "$(cat <<ENDJSON
 {
-  "model": "gpt-image-1",
+  "model": "gpt-image-1.5",
   "prompt": "$PROMPT",
   "n": 1,
   "size": "1536x1024",
