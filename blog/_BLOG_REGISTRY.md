@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 12
-- Letzte Veröffentlichung: 2026-03-30
+- Gesamtzahl Artikel: 13
+- Letzte Veröffentlichung: 2026-03-31
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -25,6 +25,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 10 | 2026-03-30 | lernen-mit-ki-chatgpt | Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig für Schule und Studium | Lernen mit KI, ChatGPT zum Lernen, KI Lernen, KI Tools Schule, KI Studium | KI &amp; Bildung | 5 Strategien für KI-gestütztes Lernen (Erklärungs-Methode, Quiz-Modus, Lücken finden, Aufgaben-Generator, Zusammenfassen), 4 typische Fehler, Prompt-Tipps, Kombination mit bewährten Lernmethoden |
 | 11 | 2026-03-30 | vokabeln-lernen-tipps | Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst | Vokabeln lernen, Vokabeln lernen Tipps, Vokabeln merken, Vokabeln schnell lernen, Sprachen lernen, Karteikarten Vokabeln, Eselsbrücken Vokabeln | Sprachen lernen | 7 Methoden zum Vokabeln lernen: Karteikarten mit Spaced Repetition, Keyword-Methode/Eselsbrücken, Kontextlernen, 5-Sinne-Methode, Wortfamilien/Wortfelder, Active Recall, regelmäßige kleine Einheiten |
 | 12 | 2026-03-30 | lernmotivation-steigern-tipps | Lernmotivation steigern: 8 Tipps, die wirklich funktionieren | Lernmotivation steigern, Motivation zum Lernen, Lernmotivation Tipps, Motivation Schule, Motivation Studium, Selbstmotivation Lernen | Motivation &amp; Produktivität | 8 Strategien zur Lernmotivation: persönliches Warum finden, Micro-Commitment, Lernplan als System, Belohnungen, Umgebung optimieren, aktive Lernmethoden, Tagesrhythmus finden, Fortschritt sichtbar machen |
+| 13 | 2026-03-31 | mathe-lernen-tipps | Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst | Mathe lernen Tipps, Mathe verstehen, Mathe besser werden, Mathe Nachhilfe, Mathematik lernen | Fachspezifische Lerntipps | 7 Tipps zum Mathe lernen: Verstehen statt auswendig lernen, Grundlagen reparieren, tägliches Üben, Active Recall bei Aufgaben, Fehler-Heft führen, Feynman-Methode, richtige Übungs-Strategie |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -42,7 +43,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Karteikarten lernen,
   Prüfungsvorbereitung, Klausur bestehen, effektiv lernen,
   Lerngruppe, Hausaufgaben Tipps,
-  Mathe lernen Tipps, Lernmotivation steigern,
+  Lernmotivation steigern,
   Nachhilfe online vs offline, Klausurvorbereitung letzte Woche,
   Lernumgebung gestalten,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
@@ -63,6 +64,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Lernen mit KI, ChatGPT zum Lernen, KI Lernen, KI Tools Schule, KI Studium
 - Vokabeln lernen, Vokabeln lernen Tipps, Vokabeln merken, Vokabeln schnell lernen, Sprachen lernen, Karteikarten Vokabeln, Eselsbrücken Vokabeln
 - Lernmotivation steigern, Motivation zum Lernen, Lernmotivation Tipps, Motivation Schule, Motivation Studium, Selbstmotivation Lernen
+- Mathe lernen Tipps, Mathe verstehen, Mathe besser werden, Mathe Nachhilfe, Mathematik lernen
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -128,6 +130,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lernmotivation-steigern-tipps -> pomodoro-technik-lernen (Zeitblöcke für Rhythmus)
 - lernplan-erstellen-tipps -> lernmotivation-steigern-tipps (Crosslink: Motivation im Fazit)
 - prokrastination-ueberwinden-lernen -> lernmotivation-steigern-tipps (Crosslink: Motivation im Fazit)
+
+- mathe-lernen-tipps -> lernplan-erstellen-tipps (Tägliches Üben: strukturierter Lernplan)
+- mathe-lernen-tipps -> active-recall-lerntechnik (Aufgaben aktiv lösen: Active Recall Prinzip)
+- mathe-lernen-tipps -> pomodoro-technik-lernen (Übungszeit mit Pomodoro-Technik strukturieren)
+- konzentration-steigern-lernen -> mathe-lernen-tipps (Crosslink: Matheaufgaben am Morgen)
+- lernplan-erstellen-tipps -> mathe-lernen-tipps (Crosslink: Mathe konkret formulieren)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
