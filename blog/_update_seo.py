@@ -89,6 +89,16 @@ def extract_category(filepath):
     return "Lerntipps"
 
 
+def has_noindex(filepath):
+    """Prueft ob eine Seite ein noindex-Tag hat."""
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            head = f.read(3000)
+        return bool(re.search(r'<meta\s+name="robots"\s+content="[^"]*noindex', head))
+    except Exception:
+        return False
+
+
 def scan_pages():
     """Scannt alle HTML-Seiten und kategorisiert sie."""
     pages = {
@@ -116,7 +126,7 @@ def scan_pages():
             path = f"blog/posts/{basename}"
             pages["blog_posts"].append((path, f, 0.7, "monthly"))
 
-    # Legal-Seiten
+    # Legal-Seiten (nur wenn KEIN noindex-Tag)
     legal_pages = [
         "impressum.html",
         "datenschutzerklaerung.html",
@@ -128,7 +138,7 @@ def scan_pages():
     ]
     for name in legal_pages:
         f = os.path.join(SITE_DIR, name)
-        if os.path.exists(f):
+        if os.path.exists(f) and not has_noindex(f):
             pages["legal"].append((name, f, 0.3, "yearly"))
 
     return pages
