@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 14
-- Letzte Veröffentlichung: 2026-03-31
+- Gesamtzahl Artikel: 15
+- Letzte Veröffentlichung: 2026-04-01
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -27,6 +27,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 12 | 2026-03-30 | lernmotivation-steigern-tipps | Lernmotivation steigern: 8 Tipps, die wirklich funktionieren | Lernmotivation steigern, Motivation zum Lernen, Lernmotivation Tipps, Motivation Schule, Motivation Studium, Selbstmotivation Lernen | Motivation &amp; Produktivität | 8 Strategien zur Lernmotivation: persönliches Warum finden, Micro-Commitment, Lernplan als System, Belohnungen, Umgebung optimieren, aktive Lernmethoden, Tagesrhythmus finden, Fortschritt sichtbar machen |
 | 13 | 2026-03-31 | mathe-lernen-tipps | Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst | Mathe lernen Tipps, Mathe verstehen, Mathe besser werden, Mathe Nachhilfe, Mathematik lernen | Fachspezifische Lerntipps | 7 Tipps zum Mathe lernen: Verstehen statt auswendig lernen, Grundlagen reparieren, tägliches Üben, Active Recall bei Aufgaben, Fehler-Heft führen, Feynman-Methode, richtige Übungs-Strategie |
 | 14 | 2026-03-31 | englisch-lernen-tipps | Englisch lernen: 8 Tipps, mit denen du schnell besser wirst | Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch Schule, Englisch Grammatik lernen, Englisch sprechen üben | Fachspezifische Lerntipps | 8 Tipps zum Englisch lernen: Alltags-Immersion, Vokabeln mit System, Grammatik durch Beispiele, Sprechen üben, Lesen, Schreiben, Active Recall, Regelmäßigkeit |
+| 15 | 2026-04-01 | abitur-vorbereitung-tipps | Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst | Abitur Vorbereitung, Abi Vorbereitung, Abitur lernen, Abi Tipps, Abiturvorbereitung, Abitur Lernplan | Prüfungsvorbereitung | 9 Tipps zur Abitur Vorbereitung: früh anfangen, Lernplan erstellen, aktiv lernen, Spaced Repetition, schwache Fächer priorisieren, Prüfungssimulation, Pausen, Lerngruppe, mentale Gesundheit |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -37,7 +38,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen
 
 ## Keyword-Pool (noch nicht verwendet)
-- Lerntypen, Abitur Vorbereitung, Studium Tipps,
+- Lerntypen, Studium Tipps,
   Zeitmanagement Studium,
   digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
@@ -67,6 +68,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Lernmotivation steigern, Motivation zum Lernen, Lernmotivation Tipps, Motivation Schule, Motivation Studium, Selbstmotivation Lernen
 - Mathe lernen Tipps, Mathe verstehen, Mathe besser werden, Mathe Nachhilfe, Mathematik lernen
 - Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch Schule, Englisch Grammatik lernen, Englisch sprechen üben
+- Abitur Vorbereitung, Abi Vorbereitung, Abitur lernen, Abi Tipps, Abiturvorbereitung, Abitur Lernplan
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -146,6 +148,14 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - vokabeln-lernen-tipps -> englisch-lernen-tipps (Crosslink: Englisch-Lernguide bei Vertiefung)
 - lernplan-erstellen-tipps -> englisch-lernen-tipps (Crosslink: Englisch bei Konkretisierung)
 
+- abitur-vorbereitung-tipps -> lernplan-erstellen-tipps (Lernplan fürs Abitur erstellen)
+- abitur-vorbereitung-tipps -> pruefungsangst-ueberwinden (Prüfungsangst beim Abi)
+- lernplan-erstellen-tipps -> abitur-vorbereitung-tipps (Crosslink: Abitur Vorbereitung im Fazit)
+- pruefungsangst-ueberwinden -> abitur-vorbereitung-tipps (Crosslink: Abitur bei Strategie 5)
+- active-recall-lerntechnik -> mathe-lernen-tipps (Self-Improvement R3: Mathe-Aufgaben bei Selbst-Testing)
+- spaced-repetition-lernmethode -> abitur-vorbereitung-tipps (Self-Improvement R3: Abitur bei Fazit)
+
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
 - Self-Improvement Runde 2 (nach Artikel 10): KI & Bildung Cluster eröffnet. 3 fehlende Crosslinks ergänzt (pruefungsangst->gedaechtnis, pomodoro->prokrastination, zusammenfassung->lernen-mit-ki). Lernplan hat die meisten Incoming-Links (9), pruefungsangst/gedaechtnis/prokrastination die wenigsten (je 3 nach Fix). Nächstes Mal: Cluster "Fachspezifische Lerntipps" (z.B. Mathe, Vokabeln) oder "Motivation" (Lernmotivation steigern, Selbstdisziplin) bedienen.
+- Self-Improvement Runde 3 (nach Artikel 15): Analytics erstmals über 50-Views-Schwelle. Pomodoro und SR sind Top-Performer. 2 neue Crosslinks ergänzt (active-recall->mathe, spaced-repetition->abitur). Prüfungsvorbereitung-Cluster jetzt 3 Artikel stark (Lernplan, Prüfungsangst, Abitur). Nächste 5: Longtail-Keywords bedienen (Zeitmanagement Studium, Klausurvorbereitung letzte Woche, Lernblockade lösen, Referat halten, digitale Lerntools).

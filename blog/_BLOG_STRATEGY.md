@@ -33,6 +33,14 @@ Sekundaere Cluster (Longtail, weniger Wettbewerb):
 - **Alle 5 Durchlaeufe:** Bestehende Artikel reviewen, ggf. Keywords und Crosslinks ergaenzen
 - **Alle 10 Durchlaeufe:** Strategie-Review: was laeuft gut, was aendern, Keyword-Pool auffrischen
 
+## Learnings / Analytics
+- Stand 2026-04-01 (61 Pageviews, 30 Tage): Erste Daten knapp über Schwelle (50 Views). Traffic fast ausschließlich direkt, noch kein organischer Google-Traffic messbar. Blog-Index ist die meistbesuchte Seite (28 Views).
+- Top-Performer: Pomodoro-Technik (10 Views, 397s Verweildauer, 0% Bounce) und Spaced Repetition (5 Views, 182s). Lernmethoden-Cluster performt am besten.
+- Zusammenfassung schreiben hat gutes Engagement (111s, 0% Bounce) trotz weniger Views.
+- Fachspezifische Artikel (Mathe, Englisch) und neuere Artikel noch kaum Traffic, brauchen Zeit für Indexierung.
+- Desktop dominiert (8:1 vs. Mobile). Zielgruppe lernt offenbar am Rechner.
+- Empfehlung nächste 5 Artikel: Weiter Lernmethoden/Prüfungsvorbereitung bedienen (performt gut). Mix aus Longtail-Fachthemen und High-Volume-Methoden. Keywords: Zeitmanagement Studium, Klausurvorbereitung letzte Woche, Lernblockade lösen, Referat halten Tipps, digitale Lerntools.
+
 ## Image-Prompt-Style
 Verwende folgenden Stil fuer Bildgenerierung:
 "Modern, clean digital illustration for a German education blog. [THEMA].
