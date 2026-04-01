@@ -1,0 +1,9 @@
+# robots.txt for nachhilfe-mentor.de
+User-agent: *
+Allow: /
+
+# Disallow draft posts
+Disallow: /blog/draft/
+
+# Sitemap
+Sitemap: https://nachhilfe-mentor.de/sitemap.xml
