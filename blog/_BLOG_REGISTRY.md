@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 15
+- Gesamtzahl Artikel: 16
 - Letzte Veröffentlichung: 2026-04-01
 - Nächster geplanter Post: TBD
 
@@ -28,12 +28,13 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 13 | 2026-03-31 | mathe-lernen-tipps | Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst | Mathe lernen Tipps, Mathe verstehen, Mathe besser werden, Mathe Nachhilfe, Mathematik lernen | Fachspezifische Lerntipps | 7 Tipps zum Mathe lernen: Verstehen statt auswendig lernen, Grundlagen reparieren, tägliches Üben, Active Recall bei Aufgaben, Fehler-Heft führen, Feynman-Methode, richtige Übungs-Strategie |
 | 14 | 2026-03-31 | englisch-lernen-tipps | Englisch lernen: 8 Tipps, mit denen du schnell besser wirst | Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch Schule, Englisch Grammatik lernen, Englisch sprechen üben | Fachspezifische Lerntipps | 8 Tipps zum Englisch lernen: Alltags-Immersion, Vokabeln mit System, Grammatik durch Beispiele, Sprechen üben, Lesen, Schreiben, Active Recall, Regelmäßigkeit |
 | 15 | 2026-04-01 | abitur-vorbereitung-tipps | Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst | Abitur Vorbereitung, Abi Vorbereitung, Abitur lernen, Abi Tipps, Abiturvorbereitung, Abitur Lernplan | Prüfungsvorbereitung | 9 Tipps zur Abitur Vorbereitung: früh anfangen, Lernplan erstellen, aktiv lernen, Spaced Repetition, schwache Fächer priorisieren, Prüfungssimulation, Pausen, Lerngruppe, mentale Gesundheit |
+| 16 | 2026-04-01 | referat-halten-tipps | Referat halten: 8 Tipps, mit denen du souverän präsentierst | Referat halten Tipps, Referat halten, Präsentation Schule, Vortrag halten, Referat Aufbau, frei sprechen | Schule & Studium | 8 Tipps zum Referat halten: Thema wählen, 3-Block-Struktur, Stichwortkarten, laut üben, Körpersprache, langsam sprechen, locker mit Fehlern, Medien gezielt einsetzen |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
-- Schule & Studium Alltag: Zusammenfassung schreiben
+- Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten
 - KI & Bildung: Lernen mit KI / ChatGPT
 - Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen
 
@@ -50,7 +51,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Lernumgebung gestalten,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
   Lernblockade lösen, Lernstress bewältigen,
-  Referat halten Tipps,
   Mitschriften verbessern, Klausur letzte Nacht
 
 ## Verwendete Keywords
@@ -69,6 +69,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Mathe lernen Tipps, Mathe verstehen, Mathe besser werden, Mathe Nachhilfe, Mathematik lernen
 - Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch Schule, Englisch Grammatik lernen, Englisch sprechen üben
 - Abitur Vorbereitung, Abi Vorbereitung, Abitur lernen, Abi Tipps, Abiturvorbereitung, Abitur Lernplan
+- Referat halten Tipps, Referat halten, Präsentation Schule, Vortrag halten, Referat Aufbau, frei sprechen, Präsentieren lernen
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -154,6 +155,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - pruefungsangst-ueberwinden -> abitur-vorbereitung-tipps (Crosslink: Abitur bei Strategie 5)
 - active-recall-lerntechnik -> mathe-lernen-tipps (Self-Improvement R3: Mathe-Aufgaben bei Selbst-Testing)
 - spaced-repetition-lernmethode -> abitur-vorbereitung-tipps (Self-Improvement R3: Abitur bei Fazit)
+
+- referat-halten-tipps -> lernplan-erstellen-tipps (Stoff zeitlich einteilen: strukturierter Lernplan)
+- referat-halten-tipps -> active-recall-lerntechnik (Fakten einprägen: Active Recall Methode)
+- referat-halten-tipps -> pruefungsangst-ueberwinden (Nervosität bei Vorträgen: Prüfungsangst-Strategien)
+- pruefungsangst-ueberwinden -> referat-halten-tipps (Crosslink: Tipps zum Referat halten im Fazit)
+- zusammenfassung-schreiben-lernen -> referat-halten-tipps (Crosslink: Referat als Anwendungsfall)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
