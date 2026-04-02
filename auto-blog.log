@@ -25,3 +25,167 @@ Interval: 86400s (24h)
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Fertig! Neuer Blogartikel veröffentlicht:
+
+**Artikel #11: Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst**
+
+- **Slug:** `vokabeln-lernen-tipps`
+- **Cluster:** Fachspezifische Lerntipps (neues Cluster!)
+- **Focus-Keyword:** Vokabeln lernen
+- **7 Methoden:** Karteikarten + Spaced Repetition, Keyword-Methode (Eselsbrücken), Kontextlernen, 5-Sinne-Methode, Wortfamilien/Wortfelder, Active Recall, regelmäßige kleine Einheiten
+- **Interne Links im Artikel:** Spaced Repetition, Gedächtnistechniken, Active Recall, Lernplan erstellen
+- **Crosslinks gesetzt in:** Gedächtnistechniken (Vokabel-Lernguide), Spaced Repetition (Vokabeln als Anwendungsfall)
+- **App-Erwähnung:** Nachhilfe Mentor App bei Karteikarten/Spaced Repetition
+[2026-03-30 18:24:27] Blog cycle completed successfully.
+[2026-03-30 18:24:27] Next run in 24 hours.
+---
+Auto-blog loop started at Mon Mar 30 06:26:42 PM GMT 2026
+Interval: 86400s (24h)
+[2026-03-30 18:26:42] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Fertig. Hier die Zusammenfassung:
+
+**Neuer Artikel #12: Lernmotivation steigern: 8 Tipps, die wirklich funktionieren**
+
+- **Slug:** `lernmotivation-steigern-tipps`
+- **Cluster:** Motivation & Produktivität
+- **Focus-Keyword:** Lernmotivation steigern
+- **Interne Links im Artikel:** Prokrastination, Lernplan, Konzentration steigern, Active Recall, Pomodoro-Technik (5 Links)
+- **Crosslinks in bestehenden Artikeln:**
+  - `lernplan-erstellen-tipps.html` (Fazit: "Motivation kommt und geht")
+  - `prokrastination-ueberwinden-lernen.html` (Fazit: "keine magische Motivation")
+- **Cover-Bild:** generiert und als WebP gespeichert
+- **Registry:** aktualisiert (12 Artikel, Keywords verschoben, Verlinkungen dokumentiert)
+- **Deployed** via `git push origin main`
+[2026-03-30 18:31:00] Blog cycle completed successfully.
+[2026-03-30 18:31:00] Next run in 24 hours.
+---
+Auto-blog loop started at Tue Mar 31 12:06:20 PM GMT 2026
+Interval: 86400s (24h)
+[2026-03-31 12:06:20] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Fertig. Hier die Zusammenfassung:
+
+**Artikel #13: Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst**
+- **Slug:** `mathe-lernen-tipps`
+- **Cluster:** Fachspezifische Lerntipps
+- **Focus-Keyword:** Mathe lernen Tipps
+- **Interne Links im Artikel:** lernplan-erstellen-tipps, active-recall-lerntechnik, pomodoro-technik-lernen
+- **Crosslinks gesetzt in:**
+  - konzentration-steigern-lernen (Matheaufgaben verlinkt)
+  - lernplan-erstellen-tipps (Mathe bei konkreter Formulierung verlinkt)
+- **Cover-Bild:** generiert und als WebP gespeichert
+- **Git:** committed und gepusht, Deployment läuft automatisch
+[2026-03-31 12:10:37] Blog cycle completed successfully.
+[2026-03-31 12:10:37] Next run in 24 hours.
+---
+Auto-blog loop started at Tue Mar 31 12:12:38 PM GMT 2026
+Interval: 86400s (24h)
+[2026-03-31 12:12:38] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Artikel #14 ist live. Zusammenfassung:
+
+**Neuer Artikel:** `englisch-lernen-tipps.html` – "Englisch lernen: 8 Tipps, mit denen du schnell besser wirst"
+- **Cluster:** Fachspezifische Lerntipps (jetzt: Mathe, Vokabeln, Englisch)
+- **Keywords:** Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch sprechen üben
+- **Interne Links im Artikel:** Spaced Repetition, Vokabeln lernen, Active Recall, Lernplan erstellen
+- **Crosslinks gesetzt:** vokabeln-lernen-tipps → englisch-lernen-tipps, lernplan-erstellen-tipps → englisch-lernen-tipps
+- **Registry & Index** aktualisiert, gepusht, deployed.
+[2026-03-31 12:18:02] Blog cycle completed successfully.
+[2026-03-31 12:18:02] Next run in 24 hours.
+---
+[2026-04-01 12:18:02] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Auto-blog loop started at Wed Apr  1 12:20:37 PM GMT 2026
+Interval: 28800s (24h)
+[2026-04-01 12:20:37] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Fertig! Hier die Zusammenfassung:
+
+**Artikel 15: Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst**
+- **Slug:** `abitur-vorbereitung-tipps`
+- **Cluster:** Prüfungsvorbereitung
+- **Focus-Keyword:** Abitur Vorbereitung
+- **Interne Links im Artikel:** lernplan-erstellen-tipps, pruefungsangst-ueberwinden
+- **Crosslinks zu neuem Artikel:** aus lernplan-erstellen-tipps (Fazit) und pruefungsangst-ueberwinden (Strategie 5)
+
+**Self-Improvement Runde 3 (Artikel 15):**
+- 2 zusätzliche Crosslinks ergänzt: active-recall → mathe-lernen-tipps, spaced-repetition → abitur-vorbereitung-tipps
+- Analytics-Learnings in _BLOG_STRATEGY.md dokumentiert (Pomodoro & SR sind Top-Performer, Desktop dominiert)
+- Empfehlungen für nächste 5 Artikel: Zeitmanagement Studium, Klausurvorbereitung letzte Woche, Lernblockade lösen, Referat halten, digitale Lerntools
+[2026-04-01 12:26:23] Blog cycle completed successfully.
+[2026-04-01 12:26:23] Next run in 24 hours.
+---
+[2026-04-01 20:26:23] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Fertig. Hier die Zusammenfassung:
+
+**Artikel 16 veröffentlicht: "Referat halten: 8 Tipps, mit denen du souverän präsentierst"**
+
+- **Slug:** `referat-halten-tipps`
+- **Cluster:** Schule & Studium
+- **Keywords:** Referat halten Tipps, Vortrag halten, Präsentation Schule, frei sprechen
+- **Interne Links im Artikel:** Lernplan erstellen, Active Recall, Prüfungsangst überwinden
+- **Crosslinks in bestehenden Artikeln:**
+  - `pruefungsangst-ueberwinden` → Referat-Tipps (im Fazit bei mündlichen Prüfungen)
+  - `zusammenfassung-schreiben-lernen` → Referat-Tipps (bei "Referat" als Anwendungsfall)
+- **App-Erwähnung:** Natürlich bei Tipp 8 (Kernpunkte aufbereiten)
+- **Cover-Bild:** Generiert und eingebunden
+- **Deployed:** via `git push origin main`
+[2026-04-01 20:30:36] Blog cycle completed successfully.
+[2026-04-01 20:30:36] Next run in 24 hours.
+---
+[2026-04-02 04:30:36] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Fertig! Hier die Zusammenfassung:
+
+**Artikel #17 veröffentlicht: "Klausurvorbereitung letzte Woche: So holst du das Maximum raus"**
+
+- **Thema:** 7-Tage-Notfallplan für Klausurvorbereitung in der letzten Woche
+- **Cluster:** Prüfungsvorbereitung (jetzt 4 Artikel stark)
+- **Keywords:** Klausurvorbereitung letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan
+- **Interne Links im Artikel:** lernplan-erstellen-tipps, active-recall-lerntechnik, pruefungsangst-ueberwinden
+- **Neue Crosslinks:** lernplan-erstellen-tipps → neuer Artikel (Notfallplan bei knapper Zeit), pruefungsangst-ueberwinden → neuer Artikel (7-Tage-Plan beim Schlaf-Tipp)
+- **Git:** committed & pushed, Deployment läuft automatisch über GitHub Pages
+[2026-04-02 04:34:37] Blog cycle completed successfully.
+[2026-04-02 04:34:37] Next run in 24 hours.
+---
+[2026-04-02 12:34:37] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Artikel 18 ist live. Hier die Zusammenfassung:
+
+**Neuer Artikel:** Zeitmanagement im Studium: 8 Tipps, die deinen Alltag verändern
+- **Slug:** `zeitmanagement-studium-tipps`
+- **Cluster:** Motivation & Produktivität
+- **Focus-Keyword:** Zeitmanagement Studium
+- **Inhalt:** Eisenhower-Methode, feste Lernzeiten, biologischer Rhythmus, aktives Lernen, Puffer/Pausen, Nein sagen, wöchentliche Reflexion
+- **Interne Links im Artikel:** Lernplan, Pomodoro-Technik, Active Recall, Prokrastination
+- **Crosslinks gesetzt:**
+  - `konzentration-steigern-lernen` → neuer Artikel (Fazit)
+  - `pomodoro-technik-lernen` → neuer Artikel (Fazit)
+- **App-Erwähnung:** natürlich im Abschnitt "Aktives Lernen"
+
+Deployed via GitHub Pages.
+[2026-04-02 12:38:45] Blog cycle completed successfully.
+[2026-04-02 12:38:45] Next run in 24 hours.
+---
+[2026-04-02 20:38:45] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

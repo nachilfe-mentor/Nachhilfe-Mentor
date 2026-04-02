@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 18
+- Gesamtzahl Artikel: 19
 - Letzte Veröffentlichung: 2026-04-02
 - Nächster geplanter Post: TBD
 
@@ -31,6 +31,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 16 | 2026-04-01 | referat-halten-tipps | Referat halten: 8 Tipps, mit denen du souverän präsentierst | Referat halten Tipps, Referat halten, Präsentation Schule, Vortrag halten, Referat Aufbau, frei sprechen | Schule & Studium | 8 Tipps zum Referat halten: Thema wählen, 3-Block-Struktur, Stichwortkarten, laut üben, Körpersprache, langsam sprechen, locker mit Fehlern, Medien gezielt einsetzen |
 | 17 | 2026-04-02 | klausurvorbereitung-letzte-woche | Klausurvorbereitung letzte Woche: So holst du das Maximum raus | Klausurvorbereitung letzte Woche, Klausur letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan, Prüfung eine Woche vorher | Prüfungsvorbereitung | 7-Tage-Notfallplan: Überblick verschaffen, Themen priorisieren, aktiv lernen (Active Recall, Übungsaufgaben), komprimierte Wiederholungen, Probe-Klausur, Tag vor der Prüfung richtig nutzen, 5 typische Fehler vermeiden |
 | 18 | 2026-04-02 | zeitmanagement-studium-tipps | Zeitmanagement im Studium: 8 Tipps, die deinen Alltag verändern | Zeitmanagement Studium, Zeitmanagement Tipps Studium, Studium organisieren, Studienalltag planen, produktiv studieren | Motivation &amp; Produktivität | 8 Tipps: Aufgaben-Überblick, Eisenhower-Methode, feste Lernzeiten, biologischer Rhythmus, aktives Lernen, Puffer/Pausen, Nein sagen, wöchentliche Reflexion |
+| 19 | 2026-04-02 | lernblockade-loesen-tipps | Lernblockade lösen: 7 Tipps, wenn du einfach nicht anfangen kannst | Lernblockade lösen, Lernblockade, Lernstress bewältigen, nicht lernen können, Lernhemmung, mentale Blockade lernen, Lernblockade Studium | Motivation &amp; Produktivität | 7 Tipps: kleinster Schritt zuerst, 5-Sekunden-Regel, Ortswechsel, Bewegung, Pomodoro-Technik, Ursache identifizieren, frühere Erfolge erinnern. Ursachen von Lernblockaden (Überforderung, Angst, Erschöpfung, Perfektionismus) erklärt |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -47,11 +48,9 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Karteikarten lernen,
   Prüfungsvorbereitung, effektiv lernen,
   Lerngruppe, Hausaufgaben Tipps,
-  Lernmotivation steigern,
   Nachhilfe online vs offline,
   Lernumgebung gestalten,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
-  Lernblockade lösen, Lernstress bewältigen,
   Mitschriften verbessern, Klausur letzte Nacht
 
 ## Verwendete Keywords
@@ -73,6 +72,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Referat halten Tipps, Referat halten, Präsentation Schule, Vortrag halten, Referat Aufbau, frei sprechen, Präsentieren lernen
 - Klausurvorbereitung letzte Woche, Klausur letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan, Prüfung eine Woche vorher
 - Zeitmanagement Studium, Zeitmanagement Tipps Studium, Studium organisieren, Studienalltag planen, produktiv studieren
+- Lernblockade lösen, Lernblockade, Lernstress bewältigen, Lernhemmung, mentale Blockade lernen
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -177,6 +177,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - zeitmanagement-studium-tipps -> prokrastination-ueberwinden-lernen (Fazit: Prokrastination als Hindernis)
 - konzentration-steigern-lernen -> zeitmanagement-studium-tipps (Crosslink: Zeitmanagement im Fazit)
 - pomodoro-technik-lernen -> zeitmanagement-studium-tipps (Crosslink: Zeitmanagement im Fazit)
+
+- lernblockade-loesen-tipps -> pomodoro-technik-lernen (5-Sekunden-Regel: Pomodoro als Einstiegsmethode)
+- lernblockade-loesen-tipps -> prokrastination-ueberwinden-lernen (Ursache identifizieren: Prokrastination als verwandtes Thema)
+- prokrastination-ueberwinden-lernen -> lernblockade-loesen-tipps (Crosslink: Lernblockaden im Fazit-Abschnitt "Was tun wenn nichts hilft")
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
