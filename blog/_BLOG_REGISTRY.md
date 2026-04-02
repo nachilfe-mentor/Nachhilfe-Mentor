@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 17
+- Gesamtzahl Artikel: 18
 - Letzte Veröffentlichung: 2026-04-02
 - Nächster geplanter Post: TBD
 
@@ -30,6 +30,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 15 | 2026-04-01 | abitur-vorbereitung-tipps | Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst | Abitur Vorbereitung, Abi Vorbereitung, Abitur lernen, Abi Tipps, Abiturvorbereitung, Abitur Lernplan | Prüfungsvorbereitung | 9 Tipps zur Abitur Vorbereitung: früh anfangen, Lernplan erstellen, aktiv lernen, Spaced Repetition, schwache Fächer priorisieren, Prüfungssimulation, Pausen, Lerngruppe, mentale Gesundheit |
 | 16 | 2026-04-01 | referat-halten-tipps | Referat halten: 8 Tipps, mit denen du souverän präsentierst | Referat halten Tipps, Referat halten, Präsentation Schule, Vortrag halten, Referat Aufbau, frei sprechen | Schule & Studium | 8 Tipps zum Referat halten: Thema wählen, 3-Block-Struktur, Stichwortkarten, laut üben, Körpersprache, langsam sprechen, locker mit Fehlern, Medien gezielt einsetzen |
 | 17 | 2026-04-02 | klausurvorbereitung-letzte-woche | Klausurvorbereitung letzte Woche: So holst du das Maximum raus | Klausurvorbereitung letzte Woche, Klausur letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan, Prüfung eine Woche vorher | Prüfungsvorbereitung | 7-Tage-Notfallplan: Überblick verschaffen, Themen priorisieren, aktiv lernen (Active Recall, Übungsaufgaben), komprimierte Wiederholungen, Probe-Klausur, Tag vor der Prüfung richtig nutzen, 5 typische Fehler vermeiden |
+| 18 | 2026-04-02 | zeitmanagement-studium-tipps | Zeitmanagement im Studium: 8 Tipps, die deinen Alltag verändern | Zeitmanagement Studium, Zeitmanagement Tipps Studium, Studium organisieren, Studienalltag planen, produktiv studieren | Motivation &amp; Produktivität | 8 Tipps: Aufgaben-Überblick, Eisenhower-Methode, feste Lernzeiten, biologischer Rhythmus, aktives Lernen, Puffer/Pausen, Nein sagen, wöchentliche Reflexion |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -41,7 +42,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Keyword-Pool (noch nicht verwendet)
 - Lerntypen, Studium Tipps,
-  Zeitmanagement Studium,
   digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
   Karteikarten lernen,
@@ -72,6 +72,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Abitur Vorbereitung, Abi Vorbereitung, Abitur lernen, Abi Tipps, Abiturvorbereitung, Abitur Lernplan
 - Referat halten Tipps, Referat halten, Präsentation Schule, Vortrag halten, Referat Aufbau, frei sprechen, Präsentieren lernen
 - Klausurvorbereitung letzte Woche, Klausur letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan, Prüfung eine Woche vorher
+- Zeitmanagement Studium, Zeitmanagement Tipps Studium, Studium organisieren, Studienalltag planen, produktiv studieren
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -169,6 +170,13 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - klausurvorbereitung-letzte-woche -> pruefungsangst-ueberwinden (Probe-Klausur: Prüfungsangst reduzieren)
 - lernplan-erstellen-tipps -> klausurvorbereitung-letzte-woche (Crosslink: Notfallplan bei knapper Zeit)
 - pruefungsangst-ueberwinden -> klausurvorbereitung-letzte-woche (Crosslink: 7-Tage-Plan bei Schlaf-Tipp)
+
+- zeitmanagement-studium-tipps -> lernplan-erstellen-tipps (Überblick: Lernplan als Ergänzung)
+- zeitmanagement-studium-tipps -> pomodoro-technik-lernen (Feste Lernzeiten: Pomodoro als Methode)
+- zeitmanagement-studium-tipps -> active-recall-lerntechnik (Aktives Lernen: Active Recall Methode)
+- zeitmanagement-studium-tipps -> prokrastination-ueberwinden-lernen (Fazit: Prokrastination als Hindernis)
+- konzentration-steigern-lernen -> zeitmanagement-studium-tipps (Crosslink: Zeitmanagement im Fazit)
+- pomodoro-technik-lernen -> zeitmanagement-studium-tipps (Crosslink: Zeitmanagement im Fazit)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
