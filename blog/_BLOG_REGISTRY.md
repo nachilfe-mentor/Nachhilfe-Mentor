@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 16
-- Letzte Veröffentlichung: 2026-04-01
+- Gesamtzahl Artikel: 17
+- Letzte Veröffentlichung: 2026-04-02
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -29,6 +29,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 14 | 2026-03-31 | englisch-lernen-tipps | Englisch lernen: 8 Tipps, mit denen du schnell besser wirst | Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch Schule, Englisch Grammatik lernen, Englisch sprechen üben | Fachspezifische Lerntipps | 8 Tipps zum Englisch lernen: Alltags-Immersion, Vokabeln mit System, Grammatik durch Beispiele, Sprechen üben, Lesen, Schreiben, Active Recall, Regelmäßigkeit |
 | 15 | 2026-04-01 | abitur-vorbereitung-tipps | Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst | Abitur Vorbereitung, Abi Vorbereitung, Abitur lernen, Abi Tipps, Abiturvorbereitung, Abitur Lernplan | Prüfungsvorbereitung | 9 Tipps zur Abitur Vorbereitung: früh anfangen, Lernplan erstellen, aktiv lernen, Spaced Repetition, schwache Fächer priorisieren, Prüfungssimulation, Pausen, Lerngruppe, mentale Gesundheit |
 | 16 | 2026-04-01 | referat-halten-tipps | Referat halten: 8 Tipps, mit denen du souverän präsentierst | Referat halten Tipps, Referat halten, Präsentation Schule, Vortrag halten, Referat Aufbau, frei sprechen | Schule & Studium | 8 Tipps zum Referat halten: Thema wählen, 3-Block-Struktur, Stichwortkarten, laut üben, Körpersprache, langsam sprechen, locker mit Fehlern, Medien gezielt einsetzen |
+| 17 | 2026-04-02 | klausurvorbereitung-letzte-woche | Klausurvorbereitung letzte Woche: So holst du das Maximum raus | Klausurvorbereitung letzte Woche, Klausur letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan, Prüfung eine Woche vorher | Prüfungsvorbereitung | 7-Tage-Notfallplan: Überblick verschaffen, Themen priorisieren, aktiv lernen (Active Recall, Übungsaufgaben), komprimierte Wiederholungen, Probe-Klausur, Tag vor der Prüfung richtig nutzen, 5 typische Fehler vermeiden |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -44,10 +45,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
   Karteikarten lernen,
-  Prüfungsvorbereitung, Klausur bestehen, effektiv lernen,
+  Prüfungsvorbereitung, effektiv lernen,
   Lerngruppe, Hausaufgaben Tipps,
   Lernmotivation steigern,
-  Nachhilfe online vs offline, Klausurvorbereitung letzte Woche,
+  Nachhilfe online vs offline,
   Lernumgebung gestalten,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
   Lernblockade lösen, Lernstress bewältigen,
@@ -70,6 +71,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Englisch lernen Tipps, Englisch besser werden, Englisch verbessern, Englisch Schule, Englisch Grammatik lernen, Englisch sprechen üben
 - Abitur Vorbereitung, Abi Vorbereitung, Abitur lernen, Abi Tipps, Abiturvorbereitung, Abitur Lernplan
 - Referat halten Tipps, Referat halten, Präsentation Schule, Vortrag halten, Referat Aufbau, frei sprechen, Präsentieren lernen
+- Klausurvorbereitung letzte Woche, Klausur letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan, Prüfung eine Woche vorher
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -161,6 +163,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - referat-halten-tipps -> pruefungsangst-ueberwinden (Nervosität bei Vorträgen: Prüfungsangst-Strategien)
 - pruefungsangst-ueberwinden -> referat-halten-tipps (Crosslink: Tipps zum Referat halten im Fazit)
 - zusammenfassung-schreiben-lernen -> referat-halten-tipps (Crosslink: Referat als Anwendungsfall)
+
+- klausurvorbereitung-letzte-woche -> lernplan-erstellen-tipps (Überblick: strukturierter Lernplan als Basis)
+- klausurvorbereitung-letzte-woche -> active-recall-lerntechnik (Aktiv lernen: Active Recall Guide)
+- klausurvorbereitung-letzte-woche -> pruefungsangst-ueberwinden (Probe-Klausur: Prüfungsangst reduzieren)
+- lernplan-erstellen-tipps -> klausurvorbereitung-letzte-woche (Crosslink: Notfallplan bei knapper Zeit)
+- pruefungsangst-ueberwinden -> klausurvorbereitung-letzte-woche (Crosslink: 7-Tage-Plan bei Schlaf-Tipp)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
