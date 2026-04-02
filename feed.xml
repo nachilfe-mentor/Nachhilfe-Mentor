@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 01 Apr 2026 14:04:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Apr 2026 04:08:00 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
+      <pubDate>Wed, 01 Apr 2026 20:29:38 +0000</pubDate>
+      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
+      <pubDate>Wed, 01 Apr 2026 20:29:18 +0000</pubDate>
+      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Referat halten: 8 Tipps, mit denen du souverän präsentierst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</guid>
+      <pubDate>Wed, 01 Apr 2026 20:28:33 +0000</pubDate>
+      <description>Referat halten leicht gemacht: 8 bewährte Tipps für Aufbau, freies Sprechen und souveränes Präsentieren in Schule und Studium.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Spaced Repetition: Die Lernmethode, mit der du nie wieder vergisst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/spaced-repetition-lernmethode.html</link>
@@ -22,14 +46,6 @@
       <pubDate>Wed, 01 Apr 2026 12:25:24 +0000</pubDate>
       <description>Active Recall ist die wissenschaftlich stärkste Lerntechnik überhaupt. Erfahre, wie aktives Abrufen funktioniert, welche Methoden es gibt und wie du sie sofort anwendest.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
-      <pubDate>Wed, 01 Apr 2026 12:23:49 +0000</pubDate>
-      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
     <item>
       <title>Lernplan erstellen: So bereitest du dich systematisch auf Prüfungen vor</title>
@@ -118,14 +134,6 @@
       <pubDate>Mon, 30 Mar 2026 18:21:35 +0000</pubDate>
       <description>Die Pomodoro-Technik erklärt: Wie du mit 25-Minuten-Blöcken konzentrierter lernst, Ablenkungen überwindest und mehr schaffst als je zuvor.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
-      <pubDate>Mon, 30 Mar 2026 18:21:35 +0000</pubDate>
-      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
