@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 21
+- Gesamtzahl Artikel: 22
 - Letzte Veröffentlichung: 2026-04-03
 - Nächster geplanter Post: TBD
 
@@ -34,6 +34,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 19 | 2026-04-02 | lernblockade-loesen-tipps | Lernblockade lösen: 7 Tipps, wenn du einfach nicht anfangen kannst | Lernblockade lösen, Lernblockade, Lernstress bewältigen, nicht lernen können, Lernhemmung, mentale Blockade lernen, Lernblockade Studium | Motivation &amp; Produktivität | 7 Tipps: kleinster Schritt zuerst, 5-Sekunden-Regel, Ortswechsel, Bewegung, Pomodoro-Technik, Ursache identifizieren, frühere Erfolge erinnern. Ursachen von Lernblockaden (Überforderung, Angst, Erschöpfung, Perfektionismus) erklärt |
 | 20 | 2026-04-03 | lernumgebung-gestalten-tipps | Lernumgebung gestalten: 8 Tipps für deinen perfekten Lernplatz | Lernumgebung gestalten, Lernplatz einrichten, Lernumgebung optimieren, Lernplatz Tipps, Lernumgebung Schule, Arbeitsplatz Lernen, Lernzimmer einrichten | Schule &amp; Studium | 8 Tipps: Aufgeräumter Schreibtisch, Licht optimieren, Raumtemperatur, Ablenkungen entfernen, Kontext-Reize/fester Lernort, Ergonomie, Geräusche strategisch nutzen, digitale Tools einsetzen |
 | 21 | 2026-04-03 | hausaufgaben-tipps-schnell-erledigen | Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen | Hausaufgaben Tipps, Hausaufgaben schnell erledigen, Hausaufgaben effektiv machen, Hausaufgaben Schule, Hausaufgaben Strategien, Hausaufgaben Motivation | Schule &amp; Studium | 8 Tipps: sofort nach Schule starten, schwierige Aufgaben zuerst, fester Lernplatz, Pomodoro-Technik, Smartphone blockieren, Aufgaben konkret aufschreiben, Verständnisfragen sofort klären, Aufräum-Ritual |
+| 22 | 2026-04-03 | karteikarten-lernen-tipps | Karteikarten lernen: So nutzt du Lernkarten wirklich effektiv | Karteikarten lernen, Karteikarten richtig nutzen, Lernkarten, Karteikarten Tipps, Karteikarten erstellen, Karteikarten Methode, Leitner-System, Anki Karteikarten | Lernmethoden | Erklärt warum Karteikarten (Active Recall + Spaced Repetition) so effektiv sind, wie man Karten richtig formuliert (Fragen statt Definitionen), das Leitner-System, digital vs. physisch, typische Fehler beim Karteikarten-Lernen |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -47,7 +48,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Lerntypen, Studium Tipps,
   digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
-  Karteikarten lernen,
   Prüfungsvorbereitung, effektiv lernen,
   Lerngruppe,
   Nachhilfe online vs offline,
@@ -76,6 +76,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Lernblockade lösen, Lernblockade, Lernstress bewältigen, Lernhemmung, mentale Blockade lernen
 - Lernumgebung gestalten, Lernplatz einrichten, Lernumgebung optimieren, Lernplatz Tipps, Lernzimmer einrichten
 - Hausaufgaben Tipps, Hausaufgaben schnell erledigen, Hausaufgaben effektiv machen, Hausaufgaben Schule, Hausaufgaben Strategien
+- Karteikarten lernen, Karteikarten richtig nutzen, Lernkarten, Karteikarten Tipps, Karteikarten erstellen, Leitner-System, Anki Karteikarten
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -196,6 +197,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - hausaufgaben-tipps-schnell-erledigen -> pomodoro-technik-lernen (Pomodoro-Technik: Timer-Methode für Hausaufgaben)
 - hausaufgaben-tipps-schnell-erledigen -> konzentration-steigern-lernen (Ablenkungen blockieren: Konzentrations-Guide)
 - prokrastination-ueberwinden-lernen -> hausaufgaben-tipps-schnell-erledigen (Crosslink: Hausaufgaben-Tipps bei "Was tun wenn nichts hilft")
+
+- karteikarten-lernen-tipps -> active-recall-lerntechnik (Warum Karteikarten funktionieren: Active Recall als Kernprinzip)
+- karteikarten-lernen-tipps -> spaced-repetition-lernmethode (Leitner-System und Spaced Repetition als Grundlage)
+- karteikarten-lernen-tipps -> pomodoro-technik-lernen (Typische Fehler: Pomodoro für strukturierte Pausen)
+- spaced-repetition-lernmethode -> karteikarten-lernen-tipps (Crosslink: Wie man Karteikarten richtig erstellt)
+- vokabeln-lernen-tipps -> karteikarten-lernen-tipps (Crosslink: Karteikarten richtig einsetzen bei Methode 1)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
