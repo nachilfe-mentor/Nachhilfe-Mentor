@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 20
+- Gesamtzahl Artikel: 21
 - Letzte Veröffentlichung: 2026-04-03
 - Nächster geplanter Post: TBD
 
@@ -33,6 +33,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 18 | 2026-04-02 | zeitmanagement-studium-tipps | Zeitmanagement im Studium: 8 Tipps, die deinen Alltag verändern | Zeitmanagement Studium, Zeitmanagement Tipps Studium, Studium organisieren, Studienalltag planen, produktiv studieren | Motivation &amp; Produktivität | 8 Tipps: Aufgaben-Überblick, Eisenhower-Methode, feste Lernzeiten, biologischer Rhythmus, aktives Lernen, Puffer/Pausen, Nein sagen, wöchentliche Reflexion |
 | 19 | 2026-04-02 | lernblockade-loesen-tipps | Lernblockade lösen: 7 Tipps, wenn du einfach nicht anfangen kannst | Lernblockade lösen, Lernblockade, Lernstress bewältigen, nicht lernen können, Lernhemmung, mentale Blockade lernen, Lernblockade Studium | Motivation &amp; Produktivität | 7 Tipps: kleinster Schritt zuerst, 5-Sekunden-Regel, Ortswechsel, Bewegung, Pomodoro-Technik, Ursache identifizieren, frühere Erfolge erinnern. Ursachen von Lernblockaden (Überforderung, Angst, Erschöpfung, Perfektionismus) erklärt |
 | 20 | 2026-04-03 | lernumgebung-gestalten-tipps | Lernumgebung gestalten: 8 Tipps für deinen perfekten Lernplatz | Lernumgebung gestalten, Lernplatz einrichten, Lernumgebung optimieren, Lernplatz Tipps, Lernumgebung Schule, Arbeitsplatz Lernen, Lernzimmer einrichten | Schule &amp; Studium | 8 Tipps: Aufgeräumter Schreibtisch, Licht optimieren, Raumtemperatur, Ablenkungen entfernen, Kontext-Reize/fester Lernort, Ergonomie, Geräusche strategisch nutzen, digitale Tools einsetzen |
+| 21 | 2026-04-03 | hausaufgaben-tipps-schnell-erledigen | Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen | Hausaufgaben Tipps, Hausaufgaben schnell erledigen, Hausaufgaben effektiv machen, Hausaufgaben Schule, Hausaufgaben Strategien, Hausaufgaben Motivation | Schule &amp; Studium | 8 Tipps: sofort nach Schule starten, schwierige Aufgaben zuerst, fester Lernplatz, Pomodoro-Technik, Smartphone blockieren, Aufgaben konkret aufschreiben, Verständnisfragen sofort klären, Aufräum-Ritual |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -48,7 +49,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   wissenschaftliches Arbeiten,
   Karteikarten lernen,
   Prüfungsvorbereitung, effektiv lernen,
-  Lerngruppe, Hausaufgaben Tipps,
+  Lerngruppe,
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
   Mitschriften verbessern, Klausur letzte Nacht
@@ -74,6 +75,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Zeitmanagement Studium, Zeitmanagement Tipps Studium, Studium organisieren, Studienalltag planen, produktiv studieren
 - Lernblockade lösen, Lernblockade, Lernstress bewältigen, Lernhemmung, mentale Blockade lernen
 - Lernumgebung gestalten, Lernplatz einrichten, Lernumgebung optimieren, Lernplatz Tipps, Lernzimmer einrichten
+- Hausaufgaben Tipps, Hausaufgaben schnell erledigen, Hausaufgaben effektiv machen, Hausaufgaben Schule, Hausaufgaben Strategien
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -188,6 +190,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lernumgebung-gestalten-tipps -> lernplan-erstellen-tipps (Fazit: Lernplatz + Lernplan als Kombination)
 - konzentration-steigern-lernen -> lernumgebung-gestalten-tipps (Crosslink: Lernplatz optimal einrichten bei Tipp 1)
 - prokrastination-ueberwinden-lernen -> lernumgebung-gestalten-tipps (Crosslink: Lernumgebung gestalten bei "Festen Startort etablieren")
+
+- hausaufgaben-tipps-schnell-erledigen -> prokrastination-ueberwinden-lernen (Sofort starten: Prokrastination als verwandtes Thema)
+- hausaufgaben-tipps-schnell-erledigen -> lernumgebung-gestalten-tipps (Fester Lernplatz: Lernumgebungs-Guide verlinkt)
+- hausaufgaben-tipps-schnell-erledigen -> pomodoro-technik-lernen (Pomodoro-Technik: Timer-Methode für Hausaufgaben)
+- hausaufgaben-tipps-schnell-erledigen -> konzentration-steigern-lernen (Ablenkungen blockieren: Konzentrations-Guide)
+- prokrastination-ueberwinden-lernen -> hausaufgaben-tipps-schnell-erledigen (Crosslink: Hausaufgaben-Tipps bei "Was tun wenn nichts hilft")
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
