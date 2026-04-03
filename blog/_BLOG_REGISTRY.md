@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 19
-- Letzte Veröffentlichung: 2026-04-02
+- Gesamtzahl Artikel: 20
+- Letzte Veröffentlichung: 2026-04-03
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -32,12 +32,13 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 17 | 2026-04-02 | klausurvorbereitung-letzte-woche | Klausurvorbereitung letzte Woche: So holst du das Maximum raus | Klausurvorbereitung letzte Woche, Klausur letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan, Prüfung eine Woche vorher | Prüfungsvorbereitung | 7-Tage-Notfallplan: Überblick verschaffen, Themen priorisieren, aktiv lernen (Active Recall, Übungsaufgaben), komprimierte Wiederholungen, Probe-Klausur, Tag vor der Prüfung richtig nutzen, 5 typische Fehler vermeiden |
 | 18 | 2026-04-02 | zeitmanagement-studium-tipps | Zeitmanagement im Studium: 8 Tipps, die deinen Alltag verändern | Zeitmanagement Studium, Zeitmanagement Tipps Studium, Studium organisieren, Studienalltag planen, produktiv studieren | Motivation &amp; Produktivität | 8 Tipps: Aufgaben-Überblick, Eisenhower-Methode, feste Lernzeiten, biologischer Rhythmus, aktives Lernen, Puffer/Pausen, Nein sagen, wöchentliche Reflexion |
 | 19 | 2026-04-02 | lernblockade-loesen-tipps | Lernblockade lösen: 7 Tipps, wenn du einfach nicht anfangen kannst | Lernblockade lösen, Lernblockade, Lernstress bewältigen, nicht lernen können, Lernhemmung, mentale Blockade lernen, Lernblockade Studium | Motivation &amp; Produktivität | 7 Tipps: kleinster Schritt zuerst, 5-Sekunden-Regel, Ortswechsel, Bewegung, Pomodoro-Technik, Ursache identifizieren, frühere Erfolge erinnern. Ursachen von Lernblockaden (Überforderung, Angst, Erschöpfung, Perfektionismus) erklärt |
+| 20 | 2026-04-03 | lernumgebung-gestalten-tipps | Lernumgebung gestalten: 8 Tipps für deinen perfekten Lernplatz | Lernumgebung gestalten, Lernplatz einrichten, Lernumgebung optimieren, Lernplatz Tipps, Lernumgebung Schule, Arbeitsplatz Lernen, Lernzimmer einrichten | Schule &amp; Studium | 8 Tipps: Aufgeräumter Schreibtisch, Licht optimieren, Raumtemperatur, Ablenkungen entfernen, Kontext-Reize/fester Lernort, Ergonomie, Geräusche strategisch nutzen, digitale Tools einsetzen |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
-- Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten
+- Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten
 - KI & Bildung: Lernen mit KI / ChatGPT
 - Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen
 
@@ -49,7 +50,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Prüfungsvorbereitung, effektiv lernen,
   Lerngruppe, Hausaufgaben Tipps,
   Nachhilfe online vs offline,
-  Lernumgebung gestalten,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
   Mitschriften verbessern, Klausur letzte Nacht
 
@@ -73,6 +73,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Klausurvorbereitung letzte Woche, Klausur letzte Woche, Klausur bestehen, Last-Minute lernen, Klausur Notfallplan, Prüfung eine Woche vorher
 - Zeitmanagement Studium, Zeitmanagement Tipps Studium, Studium organisieren, Studienalltag planen, produktiv studieren
 - Lernblockade lösen, Lernblockade, Lernstress bewältigen, Lernhemmung, mentale Blockade lernen
+- Lernumgebung gestalten, Lernplatz einrichten, Lernumgebung optimieren, Lernplatz Tipps, Lernzimmer einrichten
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -181,6 +182,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lernblockade-loesen-tipps -> pomodoro-technik-lernen (5-Sekunden-Regel: Pomodoro als Einstiegsmethode)
 - lernblockade-loesen-tipps -> prokrastination-ueberwinden-lernen (Ursache identifizieren: Prokrastination als verwandtes Thema)
 - prokrastination-ueberwinden-lernen -> lernblockade-loesen-tipps (Crosslink: Lernblockaden im Fazit-Abschnitt "Was tun wenn nichts hilft")
+
+- lernumgebung-gestalten-tipps -> konzentration-steigern-lernen (Ablenkungen entfernen: Konzentrations-Guide verlinkt)
+- lernumgebung-gestalten-tipps -> pomodoro-technik-lernen (Ergonomie: Pausen bei Pomodoro-Technik)
+- lernumgebung-gestalten-tipps -> lernplan-erstellen-tipps (Fazit: Lernplatz + Lernplan als Kombination)
+- konzentration-steigern-lernen -> lernumgebung-gestalten-tipps (Crosslink: Lernplatz optimal einrichten bei Tipp 1)
+- prokrastination-ueberwinden-lernen -> lernumgebung-gestalten-tipps (Crosslink: Lernumgebung gestalten bei "Festen Startort etablieren")
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
