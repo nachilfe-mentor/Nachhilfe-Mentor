@@ -40,6 +40,7 @@ Sekundaere Cluster (Longtail, weniger Wettbewerb):
 - Fachspezifische Artikel (Mathe, Englisch) und neuere Artikel noch kaum Traffic, brauchen Zeit für Indexierung.
 - Desktop dominiert (8:1 vs. Mobile). Zielgruppe lernt offenbar am Rechner.
 - Empfehlung nächste 5 Artikel: Weiter Lernmethoden/Prüfungsvorbereitung bedienen (performt gut). Mix aus Longtail-Fachthemen und High-Volume-Methoden. Keywords: Zeitmanagement Studium, Klausurvorbereitung letzte Woche, Lernblockade lösen, Referat halten Tipps, digitale Lerntools.
+- Stand 2026-04-04 (76 Pageviews, 30 Tage, 25 Artikel): Lernmethoden-Cluster klar stärkster Performer. Pinterest bringt 4 Sessions (gut, weiter ausbauen). Google organisch erst 1 Session: Blog ist noch zu neu für stabile Rankings. Empfehlung nächste 5 Artikel: Feynman-Technik, KI Prüfungsvorbereitung, wissenschaftliches Arbeiten Einsteiger, Biologie lernen Tipps, Cornell Methode / Mitschriften verbessern.
 
 ## Image-Prompt-Style
 Verwende folgenden Stil fuer Bildgenerierung:
