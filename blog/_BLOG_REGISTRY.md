@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 22
-- Letzte Veröffentlichung: 2026-04-03
+- Gesamtzahl Artikel: 23
+- Letzte Veröffentlichung: 2026-04-04
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -35,6 +35,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 20 | 2026-04-03 | lernumgebung-gestalten-tipps | Lernumgebung gestalten: 8 Tipps für deinen perfekten Lernplatz | Lernumgebung gestalten, Lernplatz einrichten, Lernumgebung optimieren, Lernplatz Tipps, Lernumgebung Schule, Arbeitsplatz Lernen, Lernzimmer einrichten | Schule &amp; Studium | 8 Tipps: Aufgeräumter Schreibtisch, Licht optimieren, Raumtemperatur, Ablenkungen entfernen, Kontext-Reize/fester Lernort, Ergonomie, Geräusche strategisch nutzen, digitale Tools einsetzen |
 | 21 | 2026-04-03 | hausaufgaben-tipps-schnell-erledigen | Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen | Hausaufgaben Tipps, Hausaufgaben schnell erledigen, Hausaufgaben effektiv machen, Hausaufgaben Schule, Hausaufgaben Strategien, Hausaufgaben Motivation | Schule &amp; Studium | 8 Tipps: sofort nach Schule starten, schwierige Aufgaben zuerst, fester Lernplatz, Pomodoro-Technik, Smartphone blockieren, Aufgaben konkret aufschreiben, Verständnisfragen sofort klären, Aufräum-Ritual |
 | 22 | 2026-04-03 | karteikarten-lernen-tipps | Karteikarten lernen: So nutzt du Lernkarten wirklich effektiv | Karteikarten lernen, Karteikarten richtig nutzen, Lernkarten, Karteikarten Tipps, Karteikarten erstellen, Karteikarten Methode, Leitner-System, Anki Karteikarten | Lernmethoden | Erklärt warum Karteikarten (Active Recall + Spaced Repetition) so effektiv sind, wie man Karten richtig formuliert (Fragen statt Definitionen), das Leitner-System, digital vs. physisch, typische Fehler beim Karteikarten-Lernen |
+| 23 | 2026-04-04 | lerngruppe-gruenden-tipps | Lerngruppe gründen: 7 Tipps für effektives gemeinsames Lernen | Lerngruppe, Lerngruppe gründen, Lerngruppe Tipps, gemeinsam lernen, Lerngruppe Schule, Lerngruppe Studium, Gruppenlernen, Lerngruppe effektiv | Schule & Studium | 7 Tipps für eine effektive Lerngruppe: richtige Gruppengröße (3-5 Personen), klare Agenda, Aufgaben vorher aufteilen, gegenseitiges Erklären (Feynman-Methode), Ablenkungen minimieren, regelmäßige Wiederholungen (Spaced Repetition), Session-Reflexion |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -49,7 +50,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
   Prüfungsvorbereitung, effektiv lernen,
-  Lerngruppe,
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
   Mitschriften verbessern, Klausur letzte Nacht
@@ -77,6 +77,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Lernumgebung gestalten, Lernplatz einrichten, Lernumgebung optimieren, Lernplatz Tipps, Lernzimmer einrichten
 - Hausaufgaben Tipps, Hausaufgaben schnell erledigen, Hausaufgaben effektiv machen, Hausaufgaben Schule, Hausaufgaben Strategien
 - Karteikarten lernen, Karteikarten richtig nutzen, Lernkarten, Karteikarten Tipps, Karteikarten erstellen, Leitner-System, Anki Karteikarten
+- Lerngruppe, Lerngruppe gründen, Lerngruppe Tipps, gemeinsam lernen, Gruppenlernen, Lerngruppe Schule, Lerngruppe Studium
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -203,6 +204,11 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - karteikarten-lernen-tipps -> pomodoro-technik-lernen (Typische Fehler: Pomodoro für strukturierte Pausen)
 - spaced-repetition-lernmethode -> karteikarten-lernen-tipps (Crosslink: Wie man Karteikarten richtig erstellt)
 - vokabeln-lernen-tipps -> karteikarten-lernen-tipps (Crosslink: Karteikarten richtig einsetzen bei Methode 1)
+
+- lerngruppe-gruenden-tipps -> pomodoro-technik-lernen (Agenda strukturieren: Pomodoro für Lernblöcke in der Gruppe)
+- lerngruppe-gruenden-tipps -> active-recall-lerntechnik (Gegenseitiges Testen: Active Recall in der Gruppe)
+- lerngruppe-gruenden-tipps -> spaced-repetition-lernmethode (Regelmäßige Wiederholungen: Spaced Repetition als Gruppenroutine)
+- abitur-vorbereitung-tipps -> lerngruppe-gruenden-tipps (Crosslink: Lerngruppe richtig nutzen bei Tipp 8)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
