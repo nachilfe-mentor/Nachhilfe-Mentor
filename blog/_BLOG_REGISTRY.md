@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 23
+- Gesamtzahl Artikel: 24
 - Letzte Veröffentlichung: 2026-04-04
 - Nächster geplanter Post: TBD
 
@@ -36,6 +36,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 21 | 2026-04-03 | hausaufgaben-tipps-schnell-erledigen | Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen | Hausaufgaben Tipps, Hausaufgaben schnell erledigen, Hausaufgaben effektiv machen, Hausaufgaben Schule, Hausaufgaben Strategien, Hausaufgaben Motivation | Schule &amp; Studium | 8 Tipps: sofort nach Schule starten, schwierige Aufgaben zuerst, fester Lernplatz, Pomodoro-Technik, Smartphone blockieren, Aufgaben konkret aufschreiben, Verständnisfragen sofort klären, Aufräum-Ritual |
 | 22 | 2026-04-03 | karteikarten-lernen-tipps | Karteikarten lernen: So nutzt du Lernkarten wirklich effektiv | Karteikarten lernen, Karteikarten richtig nutzen, Lernkarten, Karteikarten Tipps, Karteikarten erstellen, Karteikarten Methode, Leitner-System, Anki Karteikarten | Lernmethoden | Erklärt warum Karteikarten (Active Recall + Spaced Repetition) so effektiv sind, wie man Karten richtig formuliert (Fragen statt Definitionen), das Leitner-System, digital vs. physisch, typische Fehler beim Karteikarten-Lernen |
 | 23 | 2026-04-04 | lerngruppe-gruenden-tipps | Lerngruppe gründen: 7 Tipps für effektives gemeinsames Lernen | Lerngruppe, Lerngruppe gründen, Lerngruppe Tipps, gemeinsam lernen, Lerngruppe Schule, Lerngruppe Studium, Gruppenlernen, Lerngruppe effektiv | Schule & Studium | 7 Tipps für eine effektive Lerngruppe: richtige Gruppengröße (3-5 Personen), klare Agenda, Aufgaben vorher aufteilen, gegenseitiges Erklären (Feynman-Methode), Ablenkungen minimieren, regelmäßige Wiederholungen (Spaced Repetition), Session-Reflexion |
+| 24 | 2026-04-04 | digitale-lerntools-beste-apps | Digitale Lerntools: Die 7 besten Apps für Schüler und Studenten | digitale Lerntools, Lern-Apps, beste Lern-Apps Schüler, Lern-Apps Studenten, Lerntools Vergleich, Anki, Quizlet, Lern-App Vergleich | Digitale Tools | 7 digitale Lerntools vorgestellt: Anki (Spaced Repetition), Quizlet (Karteikarten), Forest/Be Focused (Pomodoro), Notion/Obsidian (Notizen), Todoist/Trello (Planung), Khan Academy/YouTube (Erklärvideos), KI-Tutoren. Welches Tool für welchen Zweck. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken
@@ -44,10 +45,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten
 - KI & Bildung: Lernen mit KI / ChatGPT
 - Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen
+- Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 ## Keyword-Pool (noch nicht verwendet)
 - Lerntypen, Studium Tipps,
-  digitale Lerntools, Lern-Apps Vergleich,
   wissenschaftliches Arbeiten,
   Prüfungsvorbereitung, effektiv lernen,
   Nachhilfe online vs offline,
@@ -78,6 +79,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Hausaufgaben Tipps, Hausaufgaben schnell erledigen, Hausaufgaben effektiv machen, Hausaufgaben Schule, Hausaufgaben Strategien
 - Karteikarten lernen, Karteikarten richtig nutzen, Lernkarten, Karteikarten Tipps, Karteikarten erstellen, Leitner-System, Anki Karteikarten
 - Lerngruppe, Lerngruppe gründen, Lerngruppe Tipps, gemeinsam lernen, Gruppenlernen, Lerngruppe Schule, Lerngruppe Studium
+- digitale Lerntools, Lern-Apps, beste Lern-Apps Schüler, Lern-Apps Studenten, Anki, Quizlet, Lerntools Vergleich
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -209,6 +211,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lerngruppe-gruenden-tipps -> active-recall-lerntechnik (Gegenseitiges Testen: Active Recall in der Gruppe)
 - lerngruppe-gruenden-tipps -> spaced-repetition-lernmethode (Regelmäßige Wiederholungen: Spaced Repetition als Gruppenroutine)
 - abitur-vorbereitung-tipps -> lerngruppe-gruenden-tipps (Crosslink: Lerngruppe richtig nutzen bei Tipp 8)
+
+- digitale-lerntools-beste-apps -> spaced-repetition-lernmethode (Anki-Abschnitt: Spaced Repetition als Grundlage)
+- digitale-lerntools-beste-apps -> karteikarten-lernen-tipps (Quizlet-Abschnitt: richtige Karteikarten-Methode verlinkt)
+- digitale-lerntools-beste-apps -> pomodoro-technik-lernen (Forest/Timer-Abschnitt: Pomodoro-Prinzip verlinkt)
+- karteikarten-lernen-tipps -> digitale-lerntools-beste-apps (Crosslink: Anki/Quizlet-Vergleich bei digital vs. physisch)
+- pomodoro-technik-lernen -> digitale-lerntools-beste-apps (Crosslink: welche App für Pomodoro bei Tools-Abschnitt)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
