@@ -109,9 +109,9 @@ def create_pin(image_ref, title, description, link):
 
     result = resp.json()
     if isinstance(result, list) and len(result) > 0:
-        post_id = result[0].get("id", "?")
+        post_id = result[0].get("postId") or result[0].get("id", "?")
     elif isinstance(result, dict):
-        post_id = result.get("id", "?")
+        post_id = result.get("postId") or result.get("id", "?")
     else:
         post_id = str(result)[:50]
     print(f"[Pinterest] Pin erstellt! Post-ID: {post_id}")
