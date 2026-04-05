@@ -414,3 +414,56 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `ki-pruefungsvorbereitung-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/ki-pruefungsvorbereitung-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (lernen-mit-ki-chatgpt.html -> neuer Artikel; neuer Artikel -> lernen-mit-ki-chatgpt, active-recall, feynman-technik, lernplan-erstellen)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuehrt (33 URLs, 29 IndexNow-Submissions)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuehrt — Pin-ID: `cmnlpmctj02svso0yz6z27atf`
+
+**Artikel-Details:**
+- Thema: KI Prüfungsvorbereitung (7 Strategien)
+- Focus-Keyword: KI Prüfungsvorbereitung
+- Tag: KI & Bildung
+- Länge: ca. 1000 Wörter, 7 H2-Abschnitte
+- Interne Links: lernen-mit-ki-chatgpt, active-recall-lerntechnik, feynman-technik-erklaeren-lernen, lernplan-erstellen-tipps
+[2026-04-05 12:00:40] Blog cycle completed successfully.
+[2026-04-05 12:00:40] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 33 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 29 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 29 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 33 URLs in Sitemap, 20 Artikel im Feed.
+[main b55bf11] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   f76d16d..b55bf11  main -> main
+[2026-04-05 12:00:40] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: ki-pruefungsvorbereitung-tipps
+  Titel: KI Prüfungsvorbereitung: 7 Strategien für bessere Ergebnisse
+  Desc:  KI Prüfungsvorbereitung: Mit diesen 7 Strategien nutzt du ChatGPT und andere KI-...
+[Pinterest] Erstelle Pin fuer: KI Prüfungsvorbereitung: 7 Strategien für bessere Ergebnisse
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/ki-pruefungsvorbereitung-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/ki-pruefungsvorbereitung-tipps.html
+[Pinterest] Uploading ki-pruefungsvorbereitung-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=34319910-e8ee-4659-babc-6c0533bf83c9
+[Pinterest] Pin erstellt! Post-ID: cmnlpmp8202roqi0ywxztv5bd
+[Pinterest] Erfolgreich! Pin-ID: cmnlpmp8202roqi0ywxztv5bd
+
+[Pinterest-Fallback] OK: ki-pruefungsvorbereitung-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-05 12:00:40] Next run in 8 hours.
+---
+[2026-04-05 20:00:43] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
