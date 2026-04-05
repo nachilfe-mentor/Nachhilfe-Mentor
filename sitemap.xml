@@ -61,6 +61,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/ki-pruefungsvorbereitung-tipps.html</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -80,7 +86,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</loc>
-    <lastmod>2026-03-30</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

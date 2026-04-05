@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 05 Apr 2026 03:55:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 12:00:13 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</guid>
+      <pubDate>Sun, 05 Apr 2026 11:58:53 +0000</pubDate>
+      <description>Lernen mit KI: Entdecke, wie du ChatGPT und andere KI-Tools gezielt für Schule und Studium einsetzt, welche Fehler du vermeiden solltest und wo die Grenzen liegen.</description>
+      <category>KI &amp; Bildung</category>
+    </item>
+    <item>
+      <title>KI Prüfungsvorbereitung: 7 Strategien für bessere Ergebnisse</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/ki-pruefungsvorbereitung-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/ki-pruefungsvorbereitung-tipps.html</guid>
+      <pubDate>Sun, 05 Apr 2026 11:58:06 +0000</pubDate>
+      <description>KI Prüfungsvorbereitung: Mit diesen 7 Strategien nutzt du ChatGPT und andere KI-Tools gezielt, um dich effizienter auf Klausuren und Prüfungen vorzubereiten.</description>
+      <category>KI &amp; Bildung</category>
+    </item>
     <item>
       <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 02 Apr 2026 12:36:55 +0000</pubDate>
       <description>Zeitmanagement im Studium verbessern: 8 erprobte Tipps, mit denen du Vorlesungen, Lernen und Freizeit unter einen Hut bekommst.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
-      <pubDate>Thu, 02 Apr 2026 04:33:36 +0000</pubDate>
-      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Lernplan erstellen: So bereitest du dich systematisch auf Prüfungen vor</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernplan-erstellen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernplan-erstellen-tipps.html</guid>
-      <pubDate>Thu, 02 Apr 2026 04:33:34 +0000</pubDate>
-      <description>Lernplan erstellen leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. So planst du deine Prüfungsvorbereitung effektiv und ohne Stress.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
