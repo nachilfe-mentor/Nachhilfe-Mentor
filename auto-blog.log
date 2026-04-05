@@ -365,3 +365,52 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier die Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `feynman-technik-erklaeren-lernen.html`
+- [x] Cover-Bild generiert: `blog/posts/img/feynman-technik-erklaeren-lernen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (active-recall-lerntechnik.html: Feynman-Methode verlinkt; mathe-lernen-tipps.html: Feynman bei "Mit eigenen Worten erklären" verlinkt; neuer Artikel verlinkt auf active-recall, spaced-repetition und mindmap-erstellen-lernen)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (26 Artikel, Keyword-Pool bereinigt, neue Verlinkungen eingetragen)
+- [x] Self-Improvement (25 Artikel = durch 5 teilbar): Analytics-Zusammenfassung in `_BLOG_STRATEGY.md` eingetragen, Keyword-Pool angepasst
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO, Pinterest-Log)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (32 URLs in Sitemap, 28 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmnl8ahwe01i3so0yyljp6j2p`
+[2026-04-05 03:55:32] Blog cycle completed successfully.
+[2026-04-05 03:55:32] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 32 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 28 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 28 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 32 URLs in Sitemap, 20 Artikel im Feed.
+[main a9a24af] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   4729ab3..a9a24af  main -> main
+[2026-04-05 03:55:32] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: feynman-technik-erklaeren-lernen
+  Titel: Feynman-Technik: So erkennst du sofort, was du wirklich verstanden hast
+  Desc:  Die Feynman-Technik zeigt dir in 4 Schritten, wo du noch echte Wissenslücken has...
+[Pinterest] Erstelle Pin fuer: Feynman-Technik: So erkennst du sofort, was du wirklich verstanden hast
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/feynman-technik-erklaeren-lernen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/feynman-technik-erklaeren-lernen.html
+[Pinterest] Uploading feynman-technik-erklaeren-lernen.webp (image/webp)...
+[Pinterest] Upload OK: id=1215490d-5976-423a-ad14-3ae423eedfef
+[Pinterest] Pin erstellt! Post-ID: cmnl8athb01i6so0y66rc4qd8
+[Pinterest] Erfolgreich! Pin-ID: cmnl8athb01i6so0y66rc4qd8
+
+[Pinterest-Fallback] OK: feynman-technik-erklaeren-lernen
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-05 03:55:32] Next run in 8 hours.
+---
+[2026-04-05 11:55:35] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
