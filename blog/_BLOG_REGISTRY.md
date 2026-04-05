@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 27
+- Gesamtzahl Artikel: 28
 - Letzte Veröffentlichung: 2026-04-05
 - Nächster geplanter Post: TBD
 
@@ -40,6 +40,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 25 | 2026-04-04 | mindmap-erstellen-lernen | Mindmap erstellen: So strukturierst du Lernstoff visuell und merkst dir mehr | Mindmap erstellen, Mindmap lernen, Mindmap Methode, Mindmapping, Mindmap Schule, Mindmap Studium, Lernstoff strukturieren, visuell lernen | Lernmethoden | Erklärt warum Mindmaps funktionieren (netzartige Gehirnstruktur), Schritt-für-Schritt-Anleitung zum Erstellen, handschriftlich vs. digital, 5 typische Einsatzsituationen, 5 häufige Fehler, Kombination mit Active Recall, Spaced Repetition und Feynman-Methode, Tool-Übersicht |
 | 26 | 2026-04-05 | feynman-technik-erklaeren-lernen | Feynman-Technik: So erkennst du sofort, was du wirklich verstanden hast | Feynman Technik, Feynman Methode, Feynman Lernmethode, Verstehen statt auswendig lernen, Wissenslücken finden, Lernmethoden | Lernmethoden | 4-Schritte-Methode der Feynman-Technik erklärt (Thema wählen, einfach erklären, Lücken schließen, vereinfachen), Wissenschaft dahinter (Active Recall, Elaboration, Metacognition), Praxisbeispiele (Klausurvorbereitung, Lerngruppe), häufige Fehler, Kombination mit Spaced Repetition und Mindmaps |
 | 27 | 2026-04-05 | ki-pruefungsvorbereitung-tipps | KI Prüfungsvorbereitung: 7 Strategien für bessere Ergebnisse | KI Prüfungsvorbereitung, KI Klausurvorbereitung, ChatGPT Prüfungsvorbereitung, KI lernen Prüfung, KI Tools Schule, KI Studium, künstliche Intelligenz lernen | KI & Bildung | 7 Strategien für KI-gestützte Prüfungsvorbereitung: Erklärungsmethode, Quiz-Modus (Active Recall), Wissenslücken aufdecken, Feynman-Methode mit KI, Übungsaufgaben generieren, Lernplan erstellen, komplexe Texte aufbereiten. Häufige Fehler (zu passiv, KI blind vertrauen, zu spät anfangen). |
+| 28 | 2026-04-05 | cornell-methode-notizen | Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst | Cornell-Methode, Cornell Methode Notizen, Mitschriften verbessern, Cornell Note-Taking, Notizen strukturieren, effektiv Notizen machen, Mitschrift Schule, Mitschrift Studium | Lernmethoden | 3-Zonen-System der Cornell-Methode erklärt (Notiz-Bereich, Stichwort-Spalte/Cue Column, Zusammenfassung), Wissenschaft dahinter (Active Recall, Elaboration), Schritt-für-Schritt-Anleitung, digital vs. Papier, 5 häufige Fehler, Kombination mit Spaced Repetition und Zusammenfassung-Methode |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping
@@ -56,8 +57,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Prüfungsvorbereitung, effektiv lernen,
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe,
-  Mitschriften verbessern, Klausur letzte Nacht,
-  Cornell Methode Notizen,
+  Klausur letzte Nacht,
   Deutsch Aufsatz schreiben, Biologie lernen Tipps,
   Physik lernen Tipps, Chemie lernen Tipps
 
@@ -89,6 +89,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Mindmap erstellen, Mindmap lernen, Mindmap Methode, Mindmapping, Mindmap Schule, Mindmap Studium, visuell lernen, Lernstoff strukturieren
 - Feynman Technik, Feynman Methode, Feynman Lernmethode, Verstehen statt auswendig lernen, Wissenslücken finden
 - KI Prüfungsvorbereitung, KI Klausurvorbereitung, ChatGPT Prüfungsvorbereitung, KI lernen Prüfung, KI Tools Schule, KI Studium
+- Cornell-Methode, Cornell Methode Notizen, Mitschriften verbessern, Cornell Note-Taking, Notizen strukturieren, Mitschrift Schule, Mitschrift Studium
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -242,6 +243,11 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - ki-pruefungsvorbereitung-tipps -> feynman-technik-erklaeren-lernen (Strategie 4: Feynman-Methode mit KI als Zuhörer)
 - ki-pruefungsvorbereitung-tipps -> lernplan-erstellen-tipps (Strategie 6: Lernplan mit KI erstellen)
 - lernen-mit-ki-chatgpt -> ki-pruefungsvorbereitung-tipps (Crosslink: KI Prüfungsvorbereitung als Vertiefung bei KI+Active Recall)
+
+- cornell-methode-notizen -> active-recall-lerntechnik (Cue-Spalte als Active Recall-Werkzeug: Verweis auf AR-Guide)
+- cornell-methode-notizen -> spaced-repetition-lernmethode (Wiederholungs-Zyklus: Spaced Repetition für Cornell-Seiten)
+- cornell-methode-notizen -> zusammenfassung-schreiben-lernen (Summary-Bereich: Verweis auf ausführlichen Zusammenfassungs-Guide)
+- zusammenfassung-schreiben-lernen -> cornell-methode-notizen (Crosslink: ausführlicher Cornell-Guide bei Cornell-Methode-Abschnitt)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
