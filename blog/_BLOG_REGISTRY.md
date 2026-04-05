@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 25
-- Letzte Veröffentlichung: 2026-04-04
+- Gesamtzahl Artikel: 26
+- Letzte Veröffentlichung: 2026-04-05
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -38,6 +38,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 23 | 2026-04-04 | lerngruppe-gruenden-tipps | Lerngruppe gründen: 7 Tipps für effektives gemeinsames Lernen | Lerngruppe, Lerngruppe gründen, Lerngruppe Tipps, gemeinsam lernen, Lerngruppe Schule, Lerngruppe Studium, Gruppenlernen, Lerngruppe effektiv | Schule & Studium | 7 Tipps für eine effektive Lerngruppe: richtige Gruppengröße (3-5 Personen), klare Agenda, Aufgaben vorher aufteilen, gegenseitiges Erklären (Feynman-Methode), Ablenkungen minimieren, regelmäßige Wiederholungen (Spaced Repetition), Session-Reflexion |
 | 24 | 2026-04-04 | digitale-lerntools-beste-apps | Digitale Lerntools: Die 7 besten Apps für Schüler und Studenten | digitale Lerntools, Lern-Apps, beste Lern-Apps Schüler, Lern-Apps Studenten, Lerntools Vergleich, Anki, Quizlet, Lern-App Vergleich | Digitale Tools | 7 digitale Lerntools vorgestellt: Anki (Spaced Repetition), Quizlet (Karteikarten), Forest/Be Focused (Pomodoro), Notion/Obsidian (Notizen), Todoist/Trello (Planung), Khan Academy/YouTube (Erklärvideos), KI-Tutoren. Welches Tool für welchen Zweck. |
 | 25 | 2026-04-04 | mindmap-erstellen-lernen | Mindmap erstellen: So strukturierst du Lernstoff visuell und merkst dir mehr | Mindmap erstellen, Mindmap lernen, Mindmap Methode, Mindmapping, Mindmap Schule, Mindmap Studium, Lernstoff strukturieren, visuell lernen | Lernmethoden | Erklärt warum Mindmaps funktionieren (netzartige Gehirnstruktur), Schritt-für-Schritt-Anleitung zum Erstellen, handschriftlich vs. digital, 5 typische Einsatzsituationen, 5 häufige Fehler, Kombination mit Active Recall, Spaced Repetition und Feynman-Methode, Tool-Übersicht |
+| 26 | 2026-04-05 | feynman-technik-erklaeren-lernen | Feynman-Technik: So erkennst du sofort, was du wirklich verstanden hast | Feynman Technik, Feynman Methode, Feynman Lernmethode, Verstehen statt auswendig lernen, Wissenslücken finden, Lernmethoden | Lernmethoden | 4-Schritte-Methode der Feynman-Technik erklärt (Thema wählen, einfach erklären, Lücken schließen, vereinfachen), Wissenschaft dahinter (Active Recall, Elaboration, Metacognition), Praxisbeispiele (Klausurvorbereitung, Lerngruppe), häufige Fehler, Kombination mit Spaced Repetition und Mindmaps |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping
@@ -55,7 +56,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe, KI Prüfungsvorbereitung,
   Mitschriften verbessern, Klausur letzte Nacht,
-  Cornell Methode Notizen, Feynman Technik,
+  Cornell Methode Notizen,
   Deutsch Aufsatz schreiben, Biologie lernen Tipps,
   Physik lernen Tipps, Chemie lernen Tipps
 
@@ -85,6 +86,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Lerngruppe, Lerngruppe gründen, Lerngruppe Tipps, gemeinsam lernen, Gruppenlernen, Lerngruppe Schule, Lerngruppe Studium
 - digitale Lerntools, Lern-Apps, beste Lern-Apps Schüler, Lern-Apps Studenten, Anki, Quizlet, Lerntools Vergleich
 - Mindmap erstellen, Mindmap lernen, Mindmap Methode, Mindmapping, Mindmap Schule, Mindmap Studium, visuell lernen, Lernstoff strukturieren
+- Feynman Technik, Feynman Methode, Feynman Lernmethode, Verstehen statt auswendig lernen, Wissenslücken finden
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -226,6 +228,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - mindmap-erstellen-lernen -> active-recall-lerntechnik (Mindmap als Active Recall-Variante: Kombination beider Methoden)
 - mindmap-erstellen-lernen -> spaced-repetition-lernmethode (Mindmap als SR-Tool: regelmäßige Wiederholung)
 - gedaechtnis-techniken-lernen -> mindmap-erstellen-lernen (Crosslink: ausführlicher Mindmap-Guide bei Visualisierungs-Abschnitt)
+
+- feynman-technik-erklaeren-lernen -> active-recall-lerntechnik (Feynman + Active Recall: verwandte Methoden)
+- feynman-technik-erklaeren-lernen -> spaced-repetition-lernmethode (Kombination Feynman + SR: Karteikarte aus Feynman-Erklärung)
+- feynman-technik-erklaeren-lernen -> mindmap-erstellen-lernen (Wissensnetzwerk nach Feynman visualisieren)
+- active-recall-lerntechnik -> feynman-technik-erklaeren-lernen (Crosslink: Feynman-Methode bei Methoden-Liste)
+- mathe-lernen-tipps -> feynman-technik-erklaeren-lernen (Crosslink: Feynman bei "Mit eigenen Worten erklären")
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.

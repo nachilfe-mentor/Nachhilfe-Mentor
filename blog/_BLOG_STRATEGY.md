@@ -41,6 +41,7 @@ Sekundaere Cluster (Longtail, weniger Wettbewerb):
 - Desktop dominiert (8:1 vs. Mobile). Zielgruppe lernt offenbar am Rechner.
 - Empfehlung nächste 5 Artikel: Weiter Lernmethoden/Prüfungsvorbereitung bedienen (performt gut). Mix aus Longtail-Fachthemen und High-Volume-Methoden. Keywords: Zeitmanagement Studium, Klausurvorbereitung letzte Woche, Lernblockade lösen, Referat halten Tipps, digitale Lerntools.
 - Stand 2026-04-04 (76 Pageviews, 30 Tage, 25 Artikel): Lernmethoden-Cluster klar stärkster Performer. Pinterest bringt 4 Sessions (gut, weiter ausbauen). Google organisch erst 1 Session: Blog ist noch zu neu für stabile Rankings. Empfehlung nächste 5 Artikel: Feynman-Technik, KI Prüfungsvorbereitung, wissenschaftliches Arbeiten Einsteiger, Biologie lernen Tipps, Cornell Methode / Mitschriften verbessern.
+- Stand 2026-04-05 (77 Pageviews, 30 Tage, 26 Artikel, Self-Improvement R6): Stabiles Wachstum. Pomodoro bleibt Nr. 1 (10 Views, 397s, 0% Bounce). Spaced Repetition Nr. 2 (5 Views). Lernmethoden-Cluster klar stärkster Performer. Karteikarten-Artikel mit überraschend hoher Verweildauer (873s bei 1 Visit) deutet auf tiefes Engagement hin. Pinterest stabil bei 4 Sessions. Desktop dominiert 9:1. Nächste 5: KI-Prüfungsvorbereitung, Cornell-Methode/Mitschriften, wissenschaftliches Arbeiten Einsteiger, Biologie lernen Tipps, Lerntypen. Weiterhin Lernmethoden-Fokus, da der Cluster klar performt.
 
 ## Image-Prompt-Style
 Verwende folgenden Stil fuer Bildgenerierung:
