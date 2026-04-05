@@ -290,3 +290,78 @@ Fertig. Hier eine Zusammenfassung des Durchlaufs:
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Fertig. Zusammenfassung:
+
+**Neuer Artikel #24:** [Digitale Lerntools: Die 7 besten Apps für Schüler und Studenten](https://nachhilfe-mentor.de/blog/posts/digitale-lerntools-beste-apps.html)
+
+**Was wurde gemacht:**
+- Cover-Bild generiert und Artikel mit ~900 Wörtern geschrieben (Anki, Quizlet, Forest, Notion/Obsidian, Todoist, Khan Academy, KI-Tutoren)
+- Neues Themen-Cluster "Digitale Tools" eröffnet
+- Crosslinks in `karteikarten-lernen-tipps.html` und `pomodoro-technik-lernen.html` eingefügt
+- Blog-Index, Sitemap, Feed und Registry aktualisiert
+- Git Push erfolgreich
+
+**Analytics-Stand:** 73 Views, Pomodoro und Spaced Repetition weiterhin Top-Performer. Das neue Digitale-Tools-Cluster ergänzt die bestehenden Lernmethoden-Artikel sinnvoll.
+[2026-04-04 13:07:25] Blog cycle completed successfully.
+[2026-04-04 13:07:25] Next run in 24 hours.
+---
+Auto-blog loop started at Sat Apr  4 07:44:58 PM GMT 2026
+Interval: 28800s (8h)
+[2026-04-04 19:44:58] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt. Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `mindmap-erstellen-lernen.html` (Artikel #25, Lernmethoden-Cluster)
+- [x] Cover-Bild generiert: `blog/posts/img/mindmap-erstellen-lernen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html` (neue Card ganz oben)
+- [x] Crosslinks gesetzt: ja (`gedaechtnis-techniken-lernen.html` verlinkt jetzt auf den neuen Artikel; neuer Artikel verlinkt auf `active-recall-lerntechnik.html` und `spaced-repetition-lernmethode.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (25 Artikel, neues Keyword-Mindmapping, Self-Improvement Runde 5)
+- [x] Self-Improvement: Analytics analysiert, Runde 5 dokumentiert, Keyword-Pool erweitert, Empfehlungen für nächste 5 Artikel in Registry und Strategie eingetragen
+- [x] Git Push: erfolgreich (`18a6921`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (31 URLs in Sitemap, 27 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmnkqyogw00erqi0ycfeojbly`
+
+**Analytics-Zusammenfassung (Self-Improvement Runde 5):**
+- Pinterest liefert messbar 4 Sessions (hoch von 3). Lernmethoden-Cluster klar stärkster Performer.
+- Google organisch noch kaum präsent (1 Session), aber Blog ist erst 5 Wochen alt.
+- **Nächste 5 empfohlene Artikel:** Feynman-Technik, KI Prüfungsvorbereitung, Wissenschaftliches Arbeiten Einsteiger, Biologie lernen Tipps, Cornell Methode/Mitschriften.
+[2026-04-04 19:50:27] Blog cycle completed successfully.
+[2026-04-04 19:50:27] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 31 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 27 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 27 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 31 URLs in Sitemap, 20 Artikel im Feed.
+[main 5d2c480] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   18a6921..5d2c480  main -> main
+[2026-04-04 19:50:27] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: mindmap-erstellen-lernen
+  Titel: Mindmap erstellen: So strukturierst du Lernstoff visuell
+  Desc:  Mindmap erstellen leicht gemacht: Lerne, wie du Lernstoff visuell strukturierst,...
+[Pinterest] Erstelle Pin fuer: Mindmap erstellen: So strukturierst du Lernstoff visuell
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/mindmap-erstellen-lernen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/mindmap-erstellen-lernen.html
+[Pinterest] Uploading mindmap-erstellen-lernen.webp (image/webp)...
+[Pinterest] Upload OK: id=603f7c52-70e8-4716-9bd0-ca3f05ff4d11
+[Pinterest] Pin erstellt! Post-ID: cmnkqyzad00esqi0ytt00fh9a
+[Pinterest] Erfolgreich! Pin-ID: cmnkqyzad00esqi0ytt00fh9a
+
+[Pinterest-Fallback] OK: mindmap-erstellen-lernen
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-04 19:50:27] Next run in 8 hours.
+---
+[2026-04-05 03:50:29] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
