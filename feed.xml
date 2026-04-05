@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 04 Apr 2026 19:50:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 05 Apr 2026 03:55:10 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
+      <pubDate>Sun, 05 Apr 2026 03:53:38 +0000</pubDate>
+      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Active Recall: Die Lerntechnik, mit der du Wissen wirklich abspeicherst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</guid>
+      <pubDate>Sun, 05 Apr 2026 03:53:34 +0000</pubDate>
+      <description>Active Recall ist die wissenschaftlich stärkste Lerntechnik überhaupt. Erfahre, wie aktives Abrufen funktioniert, welche Methoden es gibt und wie du sie sofort anwendest.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Feynman-Technik: So erkennst du sofort, was du wirklich verstanden hast</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/feynman-technik-erklaeren-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/feynman-technik-erklaeren-lernen.html</guid>
+      <pubDate>Sun, 05 Apr 2026 03:52:57 +0000</pubDate>
+      <description>Die Feynman-Technik zeigt dir in 4 Schritten, wo du noch echte Wissenslücken hast. So lernst du Stoff wirklich zu verstehen statt nur auswendig zu lernen.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/gedaechtnis-techniken-lernen.html</link>
@@ -142,30 +166,6 @@
       <pubDate>Thu, 02 Apr 2026 04:33:34 +0000</pubDate>
       <description>Lernplan erstellen leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. So planst du deine Prüfungsvorbereitung effektiv und ohne Stress.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Klausurvorbereitung letzte Woche: So holst du das Maximum raus</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</guid>
-      <pubDate>Thu, 02 Apr 2026 04:33:04 +0000</pubDate>
-      <description>Nur noch eine Woche bis zur Klausur? Kein Grund zur Panik. Mit diesem Notfallplan lernst du gezielt, priorisierst den wichtigsten Stoff und gehst sicher in die Prüfung.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
-      <pubDate>Wed, 01 Apr 2026 20:29:38 +0000</pubDate>
-      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Referat halten: 8 Tipps, mit denen du souverän präsentierst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</guid>
-      <pubDate>Wed, 01 Apr 2026 20:28:33 +0000</pubDate>
-      <description>Referat halten leicht gemacht: 8 bewährte Tipps für Aufbau, freies Sprechen und souveränes Präsentieren in Schule und Studium.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
