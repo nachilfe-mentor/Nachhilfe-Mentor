@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 28
-- Letzte Veröffentlichung: 2026-04-05
+- Gesamtzahl Artikel: 29
+- Letzte Veröffentlichung: 2026-04-06
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -41,9 +41,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 26 | 2026-04-05 | feynman-technik-erklaeren-lernen | Feynman-Technik: So erkennst du sofort, was du wirklich verstanden hast | Feynman Technik, Feynman Methode, Feynman Lernmethode, Verstehen statt auswendig lernen, Wissenslücken finden, Lernmethoden | Lernmethoden | 4-Schritte-Methode der Feynman-Technik erklärt (Thema wählen, einfach erklären, Lücken schließen, vereinfachen), Wissenschaft dahinter (Active Recall, Elaboration, Metacognition), Praxisbeispiele (Klausurvorbereitung, Lerngruppe), häufige Fehler, Kombination mit Spaced Repetition und Mindmaps |
 | 27 | 2026-04-05 | ki-pruefungsvorbereitung-tipps | KI Prüfungsvorbereitung: 7 Strategien für bessere Ergebnisse | KI Prüfungsvorbereitung, KI Klausurvorbereitung, ChatGPT Prüfungsvorbereitung, KI lernen Prüfung, KI Tools Schule, KI Studium, künstliche Intelligenz lernen | KI & Bildung | 7 Strategien für KI-gestützte Prüfungsvorbereitung: Erklärungsmethode, Quiz-Modus (Active Recall), Wissenslücken aufdecken, Feynman-Methode mit KI, Übungsaufgaben generieren, Lernplan erstellen, komplexe Texte aufbereiten. Häufige Fehler (zu passiv, KI blind vertrauen, zu spät anfangen). |
 | 28 | 2026-04-05 | cornell-methode-notizen | Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst | Cornell-Methode, Cornell Methode Notizen, Mitschriften verbessern, Cornell Note-Taking, Notizen strukturieren, effektiv Notizen machen, Mitschrift Schule, Mitschrift Studium | Lernmethoden | 3-Zonen-System der Cornell-Methode erklärt (Notiz-Bereich, Stichwort-Spalte/Cue Column, Zusammenfassung), Wissenschaft dahinter (Active Recall, Elaboration), Schritt-für-Schritt-Anleitung, digital vs. Papier, 5 häufige Fehler, Kombination mit Spaced Repetition und Zusammenfassung-Methode |
+| 29 | 2026-04-06 | lerntypen-vark-test-lerntipps | Lerntypen: Welcher Lernstil passt zu dir? | Lerntypen, Lerntyp Test, VARK Modell, visueller Lerntyp, auditiver Lerntyp, kinästhetischer Lerntyp, Lernstil, welcher Lerntyp bin ich, Lerntypen Schule | Lernmethoden | VARK-Modell erklärt (Visual, Aural, Read/Write, Kinesthetic), Erkennungszeichen und passende Lerntechniken für jeden Typ, gemischte Lerntypen, Kombination mit Active Recall und Pomodoro-Technik |
 
 ## Abgedeckte Themen-Cluster
-- Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping
+- Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten
@@ -52,7 +53,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 ## Keyword-Pool (noch nicht verwendet)
-- Lerntypen, Studium Tipps,
+- Studium Tipps,
   wissenschaftliches Arbeiten,
   Prüfungsvorbereitung, effektiv lernen,
   Nachhilfe online vs offline,
@@ -248,6 +249,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - cornell-methode-notizen -> spaced-repetition-lernmethode (Wiederholungs-Zyklus: Spaced Repetition für Cornell-Seiten)
 - cornell-methode-notizen -> zusammenfassung-schreiben-lernen (Summary-Bereich: Verweis auf ausführlichen Zusammenfassungs-Guide)
 - zusammenfassung-schreiben-lernen -> cornell-methode-notizen (Crosslink: ausführlicher Cornell-Guide bei Cornell-Methode-Abschnitt)
+
+- lerntypen-vark-test-lerntipps -> mindmap-erstellen-lernen (Visueller Lerntyp: Mindmaps als passende Methode)
+- lerntypen-vark-test-lerntipps -> feynman-technik-erklaeren-lernen (Auditiver Lerntyp: laut erklären / Feynman-Technik)
+- lerntypen-vark-test-lerntipps -> cornell-methode-notizen (Lese-/Schreibtyp: Cornell-Notizen als passende Methode)
+- lerntypen-vark-test-lerntipps -> pomodoro-technik-lernen (Fazit: Pomodoro als Rhythmus-Methode für alle Lerntypen)
+- zusammenfassung-schreiben-lernen -> lerntypen-vark-test-lerntipps (Crosslink: Lerntypen bei "Verschiedene Lerntypen" Erwähnung)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
