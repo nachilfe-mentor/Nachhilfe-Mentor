@@ -520,3 +520,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `lerntypen-vark-test-lerntipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/lerntypen-vark-test-lerntipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (lerntypen -> mindmap, feynman-technik, cornell-methode, pomodoro; zusammenfassung-schreiben -> lerntypen)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (35 URLs in Sitemap, 31 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmnmo8kx305mxqi0yxs4zsv8z`
+
+**Artikel-Zusammenfassung:** Artikel #29 erklärt das VARK-Modell (Visual, Aural, Read/Write, Kinesthetic) mit konkreten Erkennungszeichen und passenden Lerntechniken für jeden Lerntyp. Ergänzt den stark performenden Lernmethoden-Cluster. 4 interne Links gesetzt, 1 Rücklink in bestehendem Artikel ergänzt.
+[2026-04-06 04:09:43] Blog cycle completed successfully.
+[2026-04-06 04:09:43] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 35 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 31 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 31 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 35 URLs in Sitemap, 20 Artikel im Feed.
+[main dac1361] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   655be43..dac1361  main -> main
+[2026-04-06 04:09:43] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: lerntypen-vark-test-lerntipps
+  Titel: Lerntypen: Welcher Lernstil passt zu dir? (VARK-Modell erklärt)
+  Desc:  Visuell, auditiv, lese-/schreiborientiert oder kinästhetisch? Finde deinen Lernt...
+[Pinterest] Erstelle Pin fuer: Lerntypen: Welcher Lernstil passt zu dir? (VARK-Modell erklärt)
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lerntypen-vark-test-lerntipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lerntypen-vark-test-lerntipps.html
+[Pinterest] Uploading lerntypen-vark-test-lerntipps.webp (image/webp)...
+[Pinterest] Upload OK: id=d20626e5-05e5-4c44-84a6-1abe91dceb46
+[Pinterest] Pin erstellt! Post-ID: cmnmo8x5205nxso0ypcq7jr51
+[Pinterest] Erfolgreich! Pin-ID: cmnmo8x5205nxso0ypcq7jr51
+
+[Pinterest-Fallback] OK: lerntypen-vark-test-lerntipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-06 04:09:43] Next run in 8 hours.
+---
+[2026-04-06 12:09:46] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
