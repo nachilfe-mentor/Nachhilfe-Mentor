@@ -467,3 +467,56 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier die Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `cornell-methode-notizen.html`
+- [x] Cover-Bild generiert: `blog/posts/img/cornell-methode-notizen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (cornell-methode-notizen -> active-recall-lerntechnik, spaced-repetition, zusammenfassung-schreiben; Rücklink von zusammenfassung-schreiben-lernen.html ergänzt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #28, Keywords verschoben, Verlinkungen dokumentiert)
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO-Update, Pinterest-Log)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (34 URLs in Sitemap, 30 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmnm6xlge04eqqi0ymhumy9lt`
+
+---
+
+**Artikel-Thema:** Cornell-Methode Notizen (Lernmethoden-Cluster)
+**Begründung:** Letzter Keyword-Pool-Eintrag "Cornell Methode Notizen" + Lernmethoden-Cluster ist klar stärkster Traffic-Treiber (Pomodoro 10 Views, SR 5 Views). Artikel war bisher nur kurz in zusammenfassung-schreiben.html erwähnt, verdient einen eigenen Hauptartikel.
+[2026-04-05 20:05:18] Blog cycle completed successfully.
+[2026-04-05 20:05:18] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 34 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 30 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 30 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 34 URLs in Sitemap, 20 Artikel im Feed.
+[main a442ade] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   f750bfc..a442ade  main -> main
+[2026-04-05 20:05:18] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: cornell-methode-notizen
+  Titel: Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst
+  Desc:  Die Cornell-Methode verwandelt chaotische Mitschriften in strukturiertes Wissen....
+[Pinterest] Erstelle Pin fuer: Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/cornell-methode-notizen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/cornell-methode-notizen.html
+[Pinterest] Uploading cornell-methode-notizen.webp (image/webp)...
+[Pinterest] Upload OK: id=0e0aec0b-a078-4dd2-90a2-084ed0c79c96
+[Pinterest] Pin erstellt! Post-ID: cmnm6xy1904esqi0yfvqfe77u
+[Pinterest] Erfolgreich! Pin-ID: cmnm6xy1904esqi0yfvqfe77u
+
+[Pinterest-Fallback] OK: cornell-methode-notizen
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-05 20:05:18] Next run in 8 hours.
+---
+[2026-04-06 04:05:21] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
