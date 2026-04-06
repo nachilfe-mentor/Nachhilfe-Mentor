@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 30
+- Gesamtzahl Artikel: 31
 - Letzte Veröffentlichung: 2026-04-06
 - Nächster geplanter Post: TBD
 
@@ -43,6 +43,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 28 | 2026-04-05 | cornell-methode-notizen | Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst | Cornell-Methode, Cornell Methode Notizen, Mitschriften verbessern, Cornell Note-Taking, Notizen strukturieren, effektiv Notizen machen, Mitschrift Schule, Mitschrift Studium | Lernmethoden | 3-Zonen-System der Cornell-Methode erklärt (Notiz-Bereich, Stichwort-Spalte/Cue Column, Zusammenfassung), Wissenschaft dahinter (Active Recall, Elaboration), Schritt-für-Schritt-Anleitung, digital vs. Papier, 5 häufige Fehler, Kombination mit Spaced Repetition und Zusammenfassung-Methode |
 | 29 | 2026-04-06 | lerntypen-vark-test-lerntipps | Lerntypen: Welcher Lernstil passt zu dir? | Lerntypen, Lerntyp Test, VARK Modell, visueller Lerntyp, auditiver Lerntyp, kinästhetischer Lerntyp, Lernstil, welcher Lerntyp bin ich, Lerntypen Schule | Lernmethoden | VARK-Modell erklärt (Visual, Aural, Read/Write, Kinesthetic), Erkennungszeichen und passende Lerntechniken für jeden Typ, gemischte Lerntypen, Kombination mit Active Recall und Pomodoro-Technik |
 | 30 | 2026-04-06 | wissenschaftliches-arbeiten-tipps | Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben | wissenschaftliches Arbeiten, Hausarbeit schreiben, Seminararbeit schreiben, wissenschaftliches Arbeiten Einsteiger, Hausarbeit Struktur, Hausarbeit Tipps, Quellenarbeit, Zitieren Hausarbeit, Facharbeit schreiben | Schule & Studium | Schritt-für-Schritt-Anleitung zum wissenschaftlichen Arbeiten: Thema eingrenzen, Forschungsfrage formulieren, systematisch recherchieren, Gliederung aufbauen, richtig zitieren (direkt und indirekt), Überarbeitung in 4 Runden, 5 häufige Fehler, digitale Hilfsmittel (Zotero, Citavi) |
+| 31 | 2026-04-06 | biologie-lernen-tipps | Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst | Biologie lernen Tipps, Biologie lernen, Biologie verstehen, Biologie Nachhilfe, Biologie Prüfung, Biologie effektiv lernen, Biologie Abitur, Biologie Klausur | Fachspezifische Lerntipps | 7 Tipps zum Biologie lernen: Zusammenhänge verstehen statt Fakten pauken, Prozesse zeichnen/skizzieren, Active Recall nach jedem Lernblock, Fachbegriffe mit Eselsbrücken und Karteikarten, Spaced Repetition für Definitionen, Feynman-Technik (laut erklären), Üben mit alten Klausuraufgaben. Crosslink zu mathe-lernen-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -50,7 +51,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten
 - KI & Bildung: Lernen mit KI / ChatGPT
-- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen
+- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 ## Keyword-Pool (noch nicht verwendet)
@@ -59,7 +60,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe,
   Klausur letzte Nacht,
-  Deutsch Aufsatz schreiben, Biologie lernen Tipps,
+  Deutsch Aufsatz schreiben,
   Physik lernen Tipps, Chemie lernen Tipps
 
 ## Verwendete Keywords
