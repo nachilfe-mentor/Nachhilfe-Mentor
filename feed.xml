@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 06 Apr 2026 12:15:27 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 20:19:45 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
+      <pubDate>Mon, 06 Apr 2026 20:18:56 +0000</pubDate>
+      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/biologie-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/biologie-lernen-tipps.html</guid>
+      <pubDate>Mon, 06 Apr 2026 20:18:01 +0000</pubDate>
+      <description>Biologie lernen fühlt sich oft wie endloses Pauken an. Mit diesen 7 bewährten Tipps verstehst du Zusammenhänge, merkst dir Fachbegriffe dauerhaft und überzeugst in der nächsten Prüfung.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/cornell-methode-notizen.html</link>
@@ -54,14 +70,6 @@
       <pubDate>Sun, 05 Apr 2026 11:58:06 +0000</pubDate>
       <description>KI Prüfungsvorbereitung: Mit diesen 7 Strategien nutzt du ChatGPT und andere KI-Tools gezielt, um dich effizienter auf Klausuren und Prüfungen vorzubereiten.</description>
       <category>KI &amp; Bildung</category>
-    </item>
-    <item>
-      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
-      <pubDate>Sun, 05 Apr 2026 03:53:38 +0000</pubDate>
-      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
     <item>
       <title>Active Recall: Die Lerntechnik, mit der du Wissen wirklich abspeicherst</title>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 03 Apr 2026 12:51:31 +0000</pubDate>
       <description>Prokrastination überwinden als Schüler oder Student: Verstehe die psychologischen Ursachen und entdecke konkrete Techniken, mit denen du endlich anfängst zu lernen.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</guid>
-      <pubDate>Fri, 03 Apr 2026 12:50:38 +0000</pubDate>
-      <description>Hausaufgaben Tipps, die wirklich funktionieren: Mit diesen 8 Strategien erledigst du deine Aufgaben schneller, konzentrierter und mit weniger Stress.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
