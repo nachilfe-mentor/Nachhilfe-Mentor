@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 06 Apr 2026 04:09:43 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 06 Apr 2026 12:15:06 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/cornell-methode-notizen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/cornell-methode-notizen.html</guid>
+      <pubDate>Mon, 06 Apr 2026 12:13:00 +0000</pubDate>
+      <description>Die Cornell-Methode verwandelt chaotische Mitschriften in strukturiertes Wissen. Lerne, wie du das 3-Zonen-System richtig nutzt und deinen Lernstoff dauerhaft behältst.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</guid>
+      <pubDate>Mon, 06 Apr 2026 12:12:17 +0000</pubDate>
+      <description>Wissenschaftliches Arbeiten leicht gemacht: So schreibst du eine Hausarbeit oder Seminararbeit Schritt für Schritt. Mit Tipps zu Struktur, Quellen und Zitieren.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
       <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
@@ -21,14 +37,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/lerntypen-vark-test-lerntipps.html</guid>
       <pubDate>Mon, 06 Apr 2026 04:07:39 +0000</pubDate>
       <description>Visuell, auditiv, lese-/schreiborientiert oder kinästhetisch? Finde deinen Lerntyp mit dem VARK-Modell und lerne endlich so, wie dein Gehirn es am besten aufnimmt.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/cornell-methode-notizen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/cornell-methode-notizen.html</guid>
-      <pubDate>Sun, 05 Apr 2026 20:03:03 +0000</pubDate>
-      <description>Die Cornell-Methode verwandelt chaotische Mitschriften in strukturiertes Wissen. Lerne, wie du das 3-Zonen-System richtig nutzt und deinen Lernstoff dauerhaft behältst.</description>
       <category>Lernmethoden</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 03 Apr 2026 12:50:38 +0000</pubDate>
       <description>Hausaufgaben Tipps, die wirklich funktionieren: Mit diesen 8 Strategien erledigst du deine Aufgaben schneller, konzentrierter und mit weniger Stress.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Konzentration steigern beim Lernen: 10 Techniken, die sofort wirken</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/konzentration-steigern-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/konzentration-steigern-lernen.html</guid>
-      <pubDate>Fri, 03 Apr 2026 04:46:37 +0000</pubDate>
-      <description>Konzentration steigern beim Lernen: 10 bewährte Techniken gegen Ablenkung. Sofort umsetzbare Tipps für Schüler und Studenten, die fokussierter lernen wollen.</description>
-      <category>Motivation &amp; Produktivität</category>
     </item>
   </channel>
 </rss>
