@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 29
+- Gesamtzahl Artikel: 30
 - Letzte Veröffentlichung: 2026-04-06
 - Nächster geplanter Post: TBD
 
@@ -42,19 +42,19 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 27 | 2026-04-05 | ki-pruefungsvorbereitung-tipps | KI Prüfungsvorbereitung: 7 Strategien für bessere Ergebnisse | KI Prüfungsvorbereitung, KI Klausurvorbereitung, ChatGPT Prüfungsvorbereitung, KI lernen Prüfung, KI Tools Schule, KI Studium, künstliche Intelligenz lernen | KI & Bildung | 7 Strategien für KI-gestützte Prüfungsvorbereitung: Erklärungsmethode, Quiz-Modus (Active Recall), Wissenslücken aufdecken, Feynman-Methode mit KI, Übungsaufgaben generieren, Lernplan erstellen, komplexe Texte aufbereiten. Häufige Fehler (zu passiv, KI blind vertrauen, zu spät anfangen). |
 | 28 | 2026-04-05 | cornell-methode-notizen | Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst | Cornell-Methode, Cornell Methode Notizen, Mitschriften verbessern, Cornell Note-Taking, Notizen strukturieren, effektiv Notizen machen, Mitschrift Schule, Mitschrift Studium | Lernmethoden | 3-Zonen-System der Cornell-Methode erklärt (Notiz-Bereich, Stichwort-Spalte/Cue Column, Zusammenfassung), Wissenschaft dahinter (Active Recall, Elaboration), Schritt-für-Schritt-Anleitung, digital vs. Papier, 5 häufige Fehler, Kombination mit Spaced Repetition und Zusammenfassung-Methode |
 | 29 | 2026-04-06 | lerntypen-vark-test-lerntipps | Lerntypen: Welcher Lernstil passt zu dir? | Lerntypen, Lerntyp Test, VARK Modell, visueller Lerntyp, auditiver Lerntyp, kinästhetischer Lerntyp, Lernstil, welcher Lerntyp bin ich, Lerntypen Schule | Lernmethoden | VARK-Modell erklärt (Visual, Aural, Read/Write, Kinesthetic), Erkennungszeichen und passende Lerntechniken für jeden Typ, gemischte Lerntypen, Kombination mit Active Recall und Pomodoro-Technik |
+| 30 | 2026-04-06 | wissenschaftliches-arbeiten-tipps | Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben | wissenschaftliches Arbeiten, Hausarbeit schreiben, Seminararbeit schreiben, wissenschaftliches Arbeiten Einsteiger, Hausarbeit Struktur, Hausarbeit Tipps, Quellenarbeit, Zitieren Hausarbeit, Facharbeit schreiben | Schule & Studium | Schritt-für-Schritt-Anleitung zum wissenschaftlichen Arbeiten: Thema eingrenzen, Forschungsfrage formulieren, systematisch recherchieren, Gliederung aufbauen, richtig zitieren (direkt und indirekt), Überarbeitung in 4 Runden, 5 häufige Fehler, digitale Hilfsmittel (Zotero, Citavi) |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
-- Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten
+- Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten
 - KI & Bildung: Lernen mit KI / ChatGPT
 - Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
-  wissenschaftliches Arbeiten,
   Prüfungsvorbereitung, effektiv lernen,
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe,
@@ -91,6 +91,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Feynman Technik, Feynman Methode, Feynman Lernmethode, Verstehen statt auswendig lernen, Wissenslücken finden
 - KI Prüfungsvorbereitung, KI Klausurvorbereitung, ChatGPT Prüfungsvorbereitung, KI lernen Prüfung, KI Tools Schule, KI Studium
 - Cornell-Methode, Cornell Methode Notizen, Mitschriften verbessern, Cornell Note-Taking, Notizen strukturieren, Mitschrift Schule, Mitschrift Studium
+- wissenschaftliches Arbeiten, Hausarbeit schreiben, Seminararbeit schreiben, wissenschaftliches Arbeiten Einsteiger, Hausarbeit Tipps, Quellenarbeit, Zitieren Hausarbeit, Facharbeit schreiben
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -256,9 +257,14 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lerntypen-vark-test-lerntipps -> pomodoro-technik-lernen (Fazit: Pomodoro als Rhythmus-Methode für alle Lerntypen)
 - zusammenfassung-schreiben-lernen -> lerntypen-vark-test-lerntipps (Crosslink: Lerntypen bei "Verschiedene Lerntypen" Erwähnung)
 
+- wissenschaftliches-arbeiten-tipps -> cornell-methode-notizen (Recherche-Phase: Cornell-Methode für strukturierte Notizen aus Quellen)
+- wissenschaftliches-arbeiten-tipps -> lernplan-erstellen-tipps (Häufige Fehler: zu spät anfangen, Lernplan als Meilenstein-Rahmen)
+- cornell-methode-notizen -> wissenschaftliches-arbeiten-tipps (Fazit: Cornell für Hausarbeiten / Wissenschaftliches Arbeiten als Vertiefung)
+
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
 - Self-Improvement Runde 2 (nach Artikel 10): KI & Bildung Cluster eröffnet. 3 fehlende Crosslinks ergänzt (pruefungsangst->gedaechtnis, pomodoro->prokrastination, zusammenfassung->lernen-mit-ki). Lernplan hat die meisten Incoming-Links (9), pruefungsangst/gedaechtnis/prokrastination die wenigsten (je 3 nach Fix). Nächstes Mal: Cluster "Fachspezifische Lerntipps" (z.B. Mathe, Vokabeln) oder "Motivation" (Lernmotivation steigern, Selbstdisziplin) bedienen.
 - Self-Improvement Runde 3 (nach Artikel 15): Analytics erstmals über 50-Views-Schwelle. Pomodoro und SR sind Top-Performer. 2 neue Crosslinks ergänzt (active-recall->mathe, spaced-repetition->abitur). Prüfungsvorbereitung-Cluster jetzt 3 Artikel stark (Lernplan, Prüfungsangst, Abitur). Nächste 5: Longtail-Keywords bedienen (Zeitmanagement Studium, Klausurvorbereitung letzte Woche, Lernblockade lösen, Referat halten, digitale Lerntools).
 - Self-Improvement Runde 4 (nach Artikel 20): Alle 5 empfohlenen Longtail-Artikel geschrieben (Zeitmanagement, Klausur letzte Woche, Lernblockade, Referat halten, Lernumgebung). Lernmethoden-Cluster weiterhin stärkster Performer. Keine signifikante Änderung in der Traffic-Quelle (fast alles direkt). Pinterest liefert erste Sessions (3 von 4 Social-Visits). Nächste 5: Lernmethoden-Cluster weiter ausbauen (Karteikarten, Lerngruppe, digitale Tools), plus neues Cluster Mindmapping.
 - Self-Improvement Runde 5 (nach Artikel 25): Analytics 76 Pageviews (30 Tage). Pinterest auf 4 Sessions gestiegen. Google organisch erst 1 Session. Pomodoro bleibt Spitzenreiter (10 Views), SR folgt (5). Lernmethoden-Cluster deutlich stärker als alle anderen. Neue Cluster: Digitale Tools und Karteikarten hinzugekommen. Mindmap-Artikel als neuen Lernmethoden-Artikel gestartet. Nächste 5 Empfehlungen: (1) Feynman-Technik (Lernmethoden, hohes Suchvolumen), (2) KI Prüfungsvorbereitung (KI-Cluster ausbauen), (3) wissenschaftliches Arbeiten Einsteiger (Studium-Nische), (4) Biologie lernen Tipps (fachspezifisch, wenig Konkurrenz), (5) Mitschriften verbessern / Cornell Methode (Lernmethoden, gut verknüpfbar). Pinterest-Pins konsequent weiterführen, da messbar erste Wirkung.
+- Self-Improvement Runde 6 (nach Artikel 30): Analytics 86 Pageviews (30 Tage, +10 seit R5). Google organisch auf 4 Sessions gestiegen: erster SEO-Durchbruch. Pinterest stabil 4 Sessions. Blog-Index als Einstiegsseite weiter dominant. Pomodoro weiterhin Nr. 1 (10 Views, 397s, 0% Bounce). Alle 5 empfohlenen Artikel aus R5 umgesetzt: Feynman, KI-Prüfungsvorbereitung, Cornell, Lerntypen, wissenschaftliches Arbeiten. Schule-Cluster jetzt mit 5 Artikeln stark. Nächste 5: Biologie lernen Tipps, Physik lernen Tipps, Deutsch Aufsatz schreiben, Klausur letzte Nacht, Lernen nach Chronotyp (morgens vs. abends). Fachspezifische Nische testen.
