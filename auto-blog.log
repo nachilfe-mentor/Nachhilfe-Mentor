@@ -670,3 +670,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `physik-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/physik-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja — `physik-lernen-tipps` verlinkt `mathe-lernen-tipps` und `active-recall-lerntechnik`; Rückverlinkung von `mathe-lernen-tipps` auf `physik-lernen-tipps` ergänzt
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (38 URLs, 34 an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmno47onz003ip60ysqe36t97`
+[2026-04-07 04:24:39] Blog cycle completed successfully.
+[2026-04-07 04:24:39] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 38 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 34 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 34 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 38 URLs in Sitemap, 20 Artikel im Feed.
+[main 1f1c6f2] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   21f3235..1f1c6f2  main -> main
+[2026-04-07 04:24:39] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: physik-lernen-tipps
+  Titel: Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst
+  Desc:  Physik lernen leicht gemacht: 7 bewährte Tipps, die dir helfen, Formeln zu verst...
+[Pinterest] Erstelle Pin fuer: Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/physik-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html
+[Pinterest] Uploading physik-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=0da3191e-b208-4e21-b930-e86ee07cc959
+[Pinterest] Pin erstellt! Post-ID: cmno47zaz0034mm0ybhky3kce
+[Pinterest] Erfolgreich! Pin-ID: cmno47zaz0034mm0ybhky3kce
+
+[Pinterest-Fallback] OK: physik-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-07 04:24:39] Next run in 8 hours.
+---
+[2026-04-07 12:24:43] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

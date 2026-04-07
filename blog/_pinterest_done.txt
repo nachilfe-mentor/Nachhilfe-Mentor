@@ -20,6 +20,7 @@ lerntypen-vark-test-lerntipps
 lernumgebung-gestalten-tipps
 mathe-lernen-tipps
 mindmap-erstellen-lernen
+physik-lernen-tipps
 pomodoro-technik-lernen
 prokrastination-ueberwinden-lernen
 pruefungsangst-ueberwinden
