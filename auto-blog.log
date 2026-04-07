@@ -718,3 +718,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `chemie-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/chemie-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (chemie-lernen-tipps -> mathe-lernen-tipps, feynman-technik, active-recall, biologie-lernen-tipps; physik-lernen-tipps -> chemie-lernen-tipps neu ergänzt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuhrt (39 URLs in Sitemap, 35 URLs an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuhrt — Pin-ID: `cmnolj98x009dov0yor28thej`
+[2026-04-07 12:29:43] Blog cycle completed successfully.
+[2026-04-07 12:29:43] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 39 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 35 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 35 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 39 URLs in Sitemap, 20 Artikel im Feed.
+[main d8b3c7e] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   a7c23ed..d8b3c7e  main -> main
+[2026-04-07 12:29:43] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: chemie-lernen-tipps
+  Titel: Chemie lernen: 7 Tipps, mit denen du Chemie endlich verstehst
+  Desc:  Chemie lernen fühlt sich oft überwältigend an: Formeln, Reaktionsgleichungen, Pe...
+[Pinterest] Erstelle Pin fuer: Chemie lernen: 7 Tipps, mit denen du Chemie endlich verstehst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/chemie-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/chemie-lernen-tipps.html
+[Pinterest] Uploading chemie-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=662975f6-7f85-4588-a85e-ad97ef5f1b3c
+[Pinterest] Pin erstellt! Post-ID: cmnoljr8y009koz0ya86o256m
+[Pinterest] Erfolgreich! Pin-ID: cmnoljr8y009koz0ya86o256m
+
+[Pinterest-Fallback] OK: chemie-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-07 12:29:43] Next run in 8 hours.
+---
+[2026-04-07 20:29:45] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
