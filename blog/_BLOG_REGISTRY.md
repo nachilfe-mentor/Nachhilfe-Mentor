@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 33
+- Gesamtzahl Artikel: 34
 - Letzte Veröffentlichung: 2026-04-07
 - Nächster geplanter Post: TBD
 
@@ -46,6 +46,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 31 | 2026-04-06 | biologie-lernen-tipps | Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst | Biologie lernen Tipps, Biologie lernen, Biologie verstehen, Biologie Nachhilfe, Biologie Prüfung, Biologie effektiv lernen, Biologie Abitur, Biologie Klausur | Fachspezifische Lerntipps | 7 Tipps zum Biologie lernen: Zusammenhänge verstehen statt Fakten pauken, Prozesse zeichnen/skizzieren, Active Recall nach jedem Lernblock, Fachbegriffe mit Eselsbrücken und Karteikarten, Spaced Repetition für Definitionen, Feynman-Technik (laut erklären), Üben mit alten Klausuraufgaben. Crosslink zu mathe-lernen-tipps. |
 | 32 | 2026-04-07 | physik-lernen-tipps | Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst | Physik lernen Tipps, Physik lernen, Physik verstehen, Physik Nachhilfe, Physik Prüfung, Physik Abitur, Physik Klausur, Physik Formeln lernen | Fachspezifische Lerntipps | 7 Tipps zum Physik lernen: Grundlagen zuerst, Formeln herleiten statt auswendig lernen, Einheiten immer mitführen, täglich Aufgaben rechnen, Skizzieren und Visualisieren, schwache Themen nicht überspringen, mit alten Klausuraufgaben üben. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu mathe-lernen-tipps und active-recall-lerntechnik. |
 | 33 | 2026-04-07 | chemie-lernen-tipps | Chemie lernen: 7 Tipps, mit denen du Chemie endlich verstehst | Chemie lernen Tipps, Chemie lernen, Chemie verstehen, Chemie Nachhilfe, Chemie Prüfung, Chemie Abitur, Chemie Klausur, Chemie Formeln lernen, Reaktionsgleichungen lernen | Fachspezifische Lerntipps | 7 Tipps zum Chemie lernen: Periodensystem verstehen statt auswendig lernen, Reaktionsgleichungen systematisch herleiten, Konzepte visualisieren und zeichnen, Fachbegriffe wirklich verstehen (Feynman-Technik), Zusammenhänge zwischen Themen erkennen, regelmäßig mit Active Recall üben, alte Klausuren mit Fehleranalyse nutzen. App-Erwähnung (Wissenslücken schließen). Crosslinks zu mathe-lernen-tipps, feynman-technik-erklaeren-lernen, active-recall-lerntechnik, biologie-lernen-tipps. |
+| 34 | 2026-04-07 | deutsch-aufsatz-schreiben-tipps | Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text | Deutsch Aufsatz schreiben, Aufsatz schreiben Tipps, Aufsatz Aufbau, Deutschaufsatz Schule, Aufsatz Einleitung Hauptteil Schluss, Aufsatz besser schreiben, Deutsch Klausur Aufsatz | Schule & Studium | 7 Tipps zum Deutschaufsatz: Aufgabenstellung mit Operator analysieren, Gliederung vor dem Schreiben, Einleitung die neugierig macht, Dreischritt (Behauptung-Begründung-Beispiel) im Hauptteil, Schluss mit klarer Schlussfolgerung, inhaltliche + sprachliche Überarbeitungsrunde, regelmäßiges Schreiben üben. App-Erwähnung (Wissenslücken in Deutsch schließen). Crosslinks zu zusammenfassung-schreiben-lernen, feynman-technik-erklaeren-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -62,7 +63,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe,
   Klausur letzte Nacht,
-  Deutsch Aufsatz schreiben
+  Lernen morgens vs. abends / Chronotyp,
+  Gedächtnis verbessern Übungen,
+  Geschichte lernen Tipps,
+  Erdkunde lernen Tipps
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
@@ -97,6 +101,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Verwendete Keywords (Ergänzung)
 - Chemie lernen Tipps, Chemie lernen, Chemie verstehen, Chemie Nachhilfe, Chemie Prüfung, Chemie Abitur, Chemie Klausur, Reaktionsgleichungen lernen
+- Deutsch Aufsatz schreiben, Aufsatz schreiben Tipps, Aufsatz Aufbau, Deutschaufsatz Schule, Aufsatz Einleitung Hauptteil Schluss, Aufsatz besser schreiben, Deutsch Klausur Aufsatz
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
