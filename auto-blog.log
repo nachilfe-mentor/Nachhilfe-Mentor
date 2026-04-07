@@ -619,3 +619,54 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier das Abschluss-Protokoll:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `biologie-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/biologie-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (in `mathe-lernen-tipps.html` Fazit-Absatz auf neuen Artikel verlinkt; im neuen Artikel Links zu `active-recall-lerntechnik.html` und `spaced-repetition-lernmethode.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (31 Artikel, "Biologie lernen Tipps" aus Keyword-Pool entfernt)
+- [x] Git Push: erfolgreich (3 Commits: Artikel + SEO-Update + Pinterest-Log)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuhrt (37 URLs in Sitemap, 33 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuhrt — Pin-ID: `cmnnmwjjp09asqi0yf8wwkj2r`
+
+**Thema:** Biologie lernen: 7 Tipps (Zusammenhänge verstehen, Skizzen, Active Recall, Eselsbrücken, Spaced Repetition, Feynman-Technik, alte Klausuren)
+**Strategie:** Fachspezifisches Thema aus Keyword-Pool, passend zur Analytics-Empfehlung (Cluster testen)
+[2026-04-06 20:20:09] Blog cycle completed successfully.
+[2026-04-06 20:20:09] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 37 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 33 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 33 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 37 URLs in Sitemap, 20 Artikel im Feed.
+[main 60ed79d] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   dbb290b..60ed79d  main -> main
+[2026-04-06 20:20:09] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: biologie-lernen-tipps
+  Titel: Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst
+  Desc:  Biologie lernen fühlt sich oft wie endloses Pauken an. Mit diesen 7 bewährten Ti...
+[Pinterest] Erstelle Pin fuer: Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/biologie-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/biologie-lernen-tipps.html
+[Pinterest] Uploading biologie-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=1c4d1cbd-d30b-4c37-b816-82a1892b5a12
+[Pinterest] Pin erstellt! Post-ID: cmnnmwwgl09atqi0y20wsdi48
+[Pinterest] Erfolgreich! Pin-ID: cmnnmwwgl09atqi0y20wsdi48
+
+[Pinterest-Fallback] OK: biologie-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-06 20:20:09] Next run in 8 hours.
+---
+[2026-04-07 04:20:12] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
