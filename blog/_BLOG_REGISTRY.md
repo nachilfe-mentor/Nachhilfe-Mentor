@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 32
+- Gesamtzahl Artikel: 33
 - Letzte Veröffentlichung: 2026-04-07
 - Nächster geplanter Post: TBD
 
@@ -45,6 +45,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 30 | 2026-04-06 | wissenschaftliches-arbeiten-tipps | Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben | wissenschaftliches Arbeiten, Hausarbeit schreiben, Seminararbeit schreiben, wissenschaftliches Arbeiten Einsteiger, Hausarbeit Struktur, Hausarbeit Tipps, Quellenarbeit, Zitieren Hausarbeit, Facharbeit schreiben | Schule & Studium | Schritt-für-Schritt-Anleitung zum wissenschaftlichen Arbeiten: Thema eingrenzen, Forschungsfrage formulieren, systematisch recherchieren, Gliederung aufbauen, richtig zitieren (direkt und indirekt), Überarbeitung in 4 Runden, 5 häufige Fehler, digitale Hilfsmittel (Zotero, Citavi) |
 | 31 | 2026-04-06 | biologie-lernen-tipps | Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst | Biologie lernen Tipps, Biologie lernen, Biologie verstehen, Biologie Nachhilfe, Biologie Prüfung, Biologie effektiv lernen, Biologie Abitur, Biologie Klausur | Fachspezifische Lerntipps | 7 Tipps zum Biologie lernen: Zusammenhänge verstehen statt Fakten pauken, Prozesse zeichnen/skizzieren, Active Recall nach jedem Lernblock, Fachbegriffe mit Eselsbrücken und Karteikarten, Spaced Repetition für Definitionen, Feynman-Technik (laut erklären), Üben mit alten Klausuraufgaben. Crosslink zu mathe-lernen-tipps. |
 | 32 | 2026-04-07 | physik-lernen-tipps | Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst | Physik lernen Tipps, Physik lernen, Physik verstehen, Physik Nachhilfe, Physik Prüfung, Physik Abitur, Physik Klausur, Physik Formeln lernen | Fachspezifische Lerntipps | 7 Tipps zum Physik lernen: Grundlagen zuerst, Formeln herleiten statt auswendig lernen, Einheiten immer mitführen, täglich Aufgaben rechnen, Skizzieren und Visualisieren, schwache Themen nicht überspringen, mit alten Klausuraufgaben üben. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu mathe-lernen-tipps und active-recall-lerntechnik. |
+| 33 | 2026-04-07 | chemie-lernen-tipps | Chemie lernen: 7 Tipps, mit denen du Chemie endlich verstehst | Chemie lernen Tipps, Chemie lernen, Chemie verstehen, Chemie Nachhilfe, Chemie Prüfung, Chemie Abitur, Chemie Klausur, Chemie Formeln lernen, Reaktionsgleichungen lernen | Fachspezifische Lerntipps | 7 Tipps zum Chemie lernen: Periodensystem verstehen statt auswendig lernen, Reaktionsgleichungen systematisch herleiten, Konzepte visualisieren und zeichnen, Fachbegriffe wirklich verstehen (Feynman-Technik), Zusammenhänge zwischen Themen erkennen, regelmäßig mit Active Recall üben, alte Klausuren mit Fehleranalyse nutzen. App-Erwähnung (Wissenslücken schließen). Crosslinks zu mathe-lernen-tipps, feynman-technik-erklaeren-lernen, active-recall-lerntechnik, biologie-lernen-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -52,7 +53,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten
 - KI & Bildung: Lernen mit KI / ChatGPT
-- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen
+- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 ## Keyword-Pool (noch nicht verwendet)
@@ -61,8 +62,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe,
   Klausur letzte Nacht,
-  Deutsch Aufsatz schreiben,
-  Chemie lernen Tipps
+  Deutsch Aufsatz schreiben
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
@@ -94,6 +94,9 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - KI Prüfungsvorbereitung, KI Klausurvorbereitung, ChatGPT Prüfungsvorbereitung, KI lernen Prüfung, KI Tools Schule, KI Studium
 - Cornell-Methode, Cornell Methode Notizen, Mitschriften verbessern, Cornell Note-Taking, Notizen strukturieren, Mitschrift Schule, Mitschrift Studium
 - wissenschaftliches Arbeiten, Hausarbeit schreiben, Seminararbeit schreiben, wissenschaftliches Arbeiten Einsteiger, Hausarbeit Tipps, Quellenarbeit, Zitieren Hausarbeit, Facharbeit schreiben
+
+## Verwendete Keywords (Ergänzung)
+- Chemie lernen Tipps, Chemie lernen, Chemie verstehen, Chemie Nachhilfe, Chemie Prüfung, Chemie Abitur, Chemie Klausur, Reaktionsgleichungen lernen
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
