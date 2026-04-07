@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 31
-- Letzte Veröffentlichung: 2026-04-06
+- Gesamtzahl Artikel: 32
+- Letzte Veröffentlichung: 2026-04-07
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -44,6 +44,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 29 | 2026-04-06 | lerntypen-vark-test-lerntipps | Lerntypen: Welcher Lernstil passt zu dir? | Lerntypen, Lerntyp Test, VARK Modell, visueller Lerntyp, auditiver Lerntyp, kinästhetischer Lerntyp, Lernstil, welcher Lerntyp bin ich, Lerntypen Schule | Lernmethoden | VARK-Modell erklärt (Visual, Aural, Read/Write, Kinesthetic), Erkennungszeichen und passende Lerntechniken für jeden Typ, gemischte Lerntypen, Kombination mit Active Recall und Pomodoro-Technik |
 | 30 | 2026-04-06 | wissenschaftliches-arbeiten-tipps | Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben | wissenschaftliches Arbeiten, Hausarbeit schreiben, Seminararbeit schreiben, wissenschaftliches Arbeiten Einsteiger, Hausarbeit Struktur, Hausarbeit Tipps, Quellenarbeit, Zitieren Hausarbeit, Facharbeit schreiben | Schule & Studium | Schritt-für-Schritt-Anleitung zum wissenschaftlichen Arbeiten: Thema eingrenzen, Forschungsfrage formulieren, systematisch recherchieren, Gliederung aufbauen, richtig zitieren (direkt und indirekt), Überarbeitung in 4 Runden, 5 häufige Fehler, digitale Hilfsmittel (Zotero, Citavi) |
 | 31 | 2026-04-06 | biologie-lernen-tipps | Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst | Biologie lernen Tipps, Biologie lernen, Biologie verstehen, Biologie Nachhilfe, Biologie Prüfung, Biologie effektiv lernen, Biologie Abitur, Biologie Klausur | Fachspezifische Lerntipps | 7 Tipps zum Biologie lernen: Zusammenhänge verstehen statt Fakten pauken, Prozesse zeichnen/skizzieren, Active Recall nach jedem Lernblock, Fachbegriffe mit Eselsbrücken und Karteikarten, Spaced Repetition für Definitionen, Feynman-Technik (laut erklären), Üben mit alten Klausuraufgaben. Crosslink zu mathe-lernen-tipps. |
+| 32 | 2026-04-07 | physik-lernen-tipps | Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst | Physik lernen Tipps, Physik lernen, Physik verstehen, Physik Nachhilfe, Physik Prüfung, Physik Abitur, Physik Klausur, Physik Formeln lernen | Fachspezifische Lerntipps | 7 Tipps zum Physik lernen: Grundlagen zuerst, Formeln herleiten statt auswendig lernen, Einheiten immer mitführen, täglich Aufgaben rechnen, Skizzieren und Visualisieren, schwache Themen nicht überspringen, mit alten Klausuraufgaben üben. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu mathe-lernen-tipps und active-recall-lerntechnik. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -61,7 +62,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   KI Hausaufgaben Hilfe,
   Klausur letzte Nacht,
   Deutsch Aufsatz schreiben,
-  Physik lernen Tipps, Chemie lernen Tipps
+  Chemie lernen Tipps
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
@@ -261,6 +262,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - wissenschaftliches-arbeiten-tipps -> cornell-methode-notizen (Recherche-Phase: Cornell-Methode für strukturierte Notizen aus Quellen)
 - wissenschaftliches-arbeiten-tipps -> lernplan-erstellen-tipps (Häufige Fehler: zu spät anfangen, Lernplan als Meilenstein-Rahmen)
 - cornell-methode-notizen -> wissenschaftliches-arbeiten-tipps (Fazit: Cornell für Hausarbeiten / Wissenschaftliches Arbeiten als Vertiefung)
+
+- physik-lernen-tipps -> mathe-lernen-tipps (Grundlagen zuerst: Mathe-Tipps als verwandtes Fach verlinkt)
+- physik-lernen-tipps -> active-recall-lerntechnik (Tipp 4: Active Recall beim täglichen Aufgaben-Training)
+- mathe-lernen-tipps -> physik-lernen-tipps (Fazit: Physik lernen als weiteres Naturwissenschaften-Thema verlinkt)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
