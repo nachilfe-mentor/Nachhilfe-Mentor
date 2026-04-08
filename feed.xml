@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Tue, 07 Apr 2026 20:34:23 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 04:38:43 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Zeitmanagement Studium: 8 Tipps für mehr Produktivität</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/zeitmanagement-studium-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/zeitmanagement-studium-tipps.html</guid>
+      <pubDate>Wed, 08 Apr 2026 04:37:33 +0000</pubDate>
+      <description>Zeitmanagement im Studium verbessern: 8 erprobte Tipps, mit denen du Vorlesungen, Lernen und Freizeit unter einen Hut bekommst.</description>
+      <category>Motivation &amp; Produktivität</category>
+    </item>
+    <item>
+      <title>Lernen morgens oder abends: Wann ist dein Gehirn am leistungsfähigsten?</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernen-morgens-oder-abends-chronotyp.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernen-morgens-oder-abends-chronotyp.html</guid>
+      <pubDate>Wed, 08 Apr 2026 04:37:05 +0000</pubDate>
+      <description>Morgens oder abends lernen? Finde deinen Chronotyp und entdecke, wann dein Gehirn am leistungsfähigsten ist. Mit wissenschaftlich fundierten Tipps für die optimale Lernzeit.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
       <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sat, 04 Apr 2026 13:05:26 +0000</pubDate>
       <description>Welche digitalen Lerntools wirklich helfen: Die 7 besten Apps für Schüler und Studenten im Vergleich. Von Anki bis KI-Tutor.</description>
       <category>Digitale Tools</category>
-    </item>
-    <item>
-      <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</guid>
-      <pubDate>Sat, 04 Apr 2026 05:00:54 +0000</pubDate>
-      <description>Abitur Vorbereitung leicht gemacht: 9 erprobte Tipps für Lernplan, Zeitmanagement und die richtige Strategie. So gehst du entspannt und gut vorbereitet ins Abi.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Lerngruppe gründen: 7 Tipps für effektives gemeinsames Lernen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lerngruppe-gruenden-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lerngruppe-gruenden-tipps.html</guid>
-      <pubDate>Sat, 04 Apr 2026 05:00:18 +0000</pubDate>
-      <description>Lerngruppe gründen und wirklich effektiv nutzen: 7 konkrete Tipps, wie du mit anderen gemeinsam mehr lernst, Stoff besser verstehst und Prüfungen besser meisterst.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
