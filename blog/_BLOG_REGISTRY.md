@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 35
+- Gesamtzahl Artikel: 36
 - Letzte Veröffentlichung: 2026-04-08
 - Nächster geplanter Post: TBD
 
@@ -48,6 +48,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 33 | 2026-04-07 | chemie-lernen-tipps | Chemie lernen: 7 Tipps, mit denen du Chemie endlich verstehst | Chemie lernen Tipps, Chemie lernen, Chemie verstehen, Chemie Nachhilfe, Chemie Prüfung, Chemie Abitur, Chemie Klausur, Chemie Formeln lernen, Reaktionsgleichungen lernen | Fachspezifische Lerntipps | 7 Tipps zum Chemie lernen: Periodensystem verstehen statt auswendig lernen, Reaktionsgleichungen systematisch herleiten, Konzepte visualisieren und zeichnen, Fachbegriffe wirklich verstehen (Feynman-Technik), Zusammenhänge zwischen Themen erkennen, regelmäßig mit Active Recall üben, alte Klausuren mit Fehleranalyse nutzen. App-Erwähnung (Wissenslücken schließen). Crosslinks zu mathe-lernen-tipps, feynman-technik-erklaeren-lernen, active-recall-lerntechnik, biologie-lernen-tipps. |
 | 34 | 2026-04-07 | deutsch-aufsatz-schreiben-tipps | Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text | Deutsch Aufsatz schreiben, Aufsatz schreiben Tipps, Aufsatz Aufbau, Deutschaufsatz Schule, Aufsatz Einleitung Hauptteil Schluss, Aufsatz besser schreiben, Deutsch Klausur Aufsatz | Schule & Studium | 7 Tipps zum Deutschaufsatz: Aufgabenstellung mit Operator analysieren, Gliederung vor dem Schreiben, Einleitung die neugierig macht, Dreischritt (Behauptung-Begründung-Beispiel) im Hauptteil, Schluss mit klarer Schlussfolgerung, inhaltliche + sprachliche Überarbeitungsrunde, regelmäßiges Schreiben üben. App-Erwähnung (Wissenslücken in Deutsch schließen). Crosslinks zu zusammenfassung-schreiben-lernen, feynman-technik-erklaeren-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
 | 35 | 2026-04-08 | lernen-morgens-oder-abends-chronotyp | Lernen morgens oder abends: Wann ist dein Gehirn am leistungsfähigsten? | lernen morgens oder abends, Chronotyp, beste Lernzeit, Lernrhythmus, morgens lernen, abends lernen, innere Uhr Lernen, Lernzeit optimieren, Chronotyp Schüler, wann lernen | Lernmethoden | Erklärt Chronotypen (Lerche, Eule, Zwischentyp), typische Leistungsphasen im Tagesverlauf (Hochphasen, Nachmittagstief), Vorteile des Morgen- vs. Abendlernens für den jeweiligen Typ, Wie man den eigenen Chronotyp herausfindet (4 Selbsttestfragen), Tipps wenn Schule und Chronotyp nicht passen (besonders für Teenager), App-Erwähnung (Nachhilfe Mentor App für flexible Wiederholungen in Zwischenzeiten). Crosslinks zu pomodoro-technik-lernen, konzentration-steigern-lernen. Rückverlinkung von zeitmanagement-studium-tipps. |
+| 36 | 2026-04-08 | geschichte-lernen-tipps | Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst | Geschichte lernen Tipps, Geschichte lernen, Geschichte verstehen, Geschichte Nachhilfe, Geschichte Prüfung, Jahreszahlen merken, Geschichte Abitur, Geschichte Klausur, Geschichte Zusammenhänge verstehen | Fachspezifische Lerntipps | 7 Tipps zum Geschichte lernen: Zusammenhänge vor Daten verstehen, Zeitstrahl erstellen, Jahreszahlen mit Eselsbrücken merken, Narrative Methode (Ereignisse als Geschichte erzählen), Active Recall statt passivem Lesen, Spaced Repetition für Fakten, alte Klausuraufgaben unter Zeitdruck üben. App-Erwähnung (Wissenslücken aufspüren). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode. Rückverlinkung von gedaechtnis-techniken-lernen. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -65,8 +66,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   KI Hausaufgaben Hilfe,
   Klausur letzte Nacht,
   Gedächtnis verbessern Übungen,
-  Geschichte lernen Tipps,
-  Erdkunde lernen Tipps
+  Erdkunde lernen Tipps,
+  Latein lernen Tipps,
+  Informatik lernen Tipps,
+  Französisch lernen Tipps
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
