@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 36
+- Gesamtzahl Artikel: 37
 - Letzte Veröffentlichung: 2026-04-08
 - Nächster geplanter Post: TBD
 
@@ -49,6 +49,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 34 | 2026-04-07 | deutsch-aufsatz-schreiben-tipps | Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text | Deutsch Aufsatz schreiben, Aufsatz schreiben Tipps, Aufsatz Aufbau, Deutschaufsatz Schule, Aufsatz Einleitung Hauptteil Schluss, Aufsatz besser schreiben, Deutsch Klausur Aufsatz | Schule & Studium | 7 Tipps zum Deutschaufsatz: Aufgabenstellung mit Operator analysieren, Gliederung vor dem Schreiben, Einleitung die neugierig macht, Dreischritt (Behauptung-Begründung-Beispiel) im Hauptteil, Schluss mit klarer Schlussfolgerung, inhaltliche + sprachliche Überarbeitungsrunde, regelmäßiges Schreiben üben. App-Erwähnung (Wissenslücken in Deutsch schließen). Crosslinks zu zusammenfassung-schreiben-lernen, feynman-technik-erklaeren-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
 | 35 | 2026-04-08 | lernen-morgens-oder-abends-chronotyp | Lernen morgens oder abends: Wann ist dein Gehirn am leistungsfähigsten? | lernen morgens oder abends, Chronotyp, beste Lernzeit, Lernrhythmus, morgens lernen, abends lernen, innere Uhr Lernen, Lernzeit optimieren, Chronotyp Schüler, wann lernen | Lernmethoden | Erklärt Chronotypen (Lerche, Eule, Zwischentyp), typische Leistungsphasen im Tagesverlauf (Hochphasen, Nachmittagstief), Vorteile des Morgen- vs. Abendlernens für den jeweiligen Typ, Wie man den eigenen Chronotyp herausfindet (4 Selbsttestfragen), Tipps wenn Schule und Chronotyp nicht passen (besonders für Teenager), App-Erwähnung (Nachhilfe Mentor App für flexible Wiederholungen in Zwischenzeiten). Crosslinks zu pomodoro-technik-lernen, konzentration-steigern-lernen. Rückverlinkung von zeitmanagement-studium-tipps. |
 | 36 | 2026-04-08 | geschichte-lernen-tipps | Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst | Geschichte lernen Tipps, Geschichte lernen, Geschichte verstehen, Geschichte Nachhilfe, Geschichte Prüfung, Jahreszahlen merken, Geschichte Abitur, Geschichte Klausur, Geschichte Zusammenhänge verstehen | Fachspezifische Lerntipps | 7 Tipps zum Geschichte lernen: Zusammenhänge vor Daten verstehen, Zeitstrahl erstellen, Jahreszahlen mit Eselsbrücken merken, Narrative Methode (Ereignisse als Geschichte erzählen), Active Recall statt passivem Lesen, Spaced Repetition für Fakten, alte Klausuraufgaben unter Zeitdruck üben. App-Erwähnung (Wissenslücken aufspüren). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode. Rückverlinkung von gedaechtnis-techniken-lernen. |
+| 37 | 2026-04-08 | klausur-letzte-nacht-lernen | Klausur letzte Nacht: Was du jetzt noch tun kannst (und was nicht) | Klausur letzte Nacht, Nacht vor der Klausur, Klausur morgen früh, Last-Minute lernen, Klausur Notfallplan Nacht, Klausur vorbereiten letzte Nacht, Klausur nächsten Tag | Prüfungsvorbereitung | 7 Strategien für die letzte Nacht vor der Klausur: realistische Erwartungen setzen, Themen priorisieren (grün/gelb/rot), Active Recall statt passivem Lesen, Zeitblöcke einhalten (40/10), was man nicht tun sollte (Nacht durchmachen, neue Themen, zu viel Koffein), wann schlafen gehen, morgens vor der Klausur. App-Erwähnung (Lücken aufdecken). Crosslinks zu active-recall-lerntechnik, klausurvorbereitung-letzte-woche, spaced-repetition-lernmethode. Rückverlinkung von klausurvorbereitung-letzte-woche und pruefungsangst-ueberwinden. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -64,7 +65,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Prüfungsvorbereitung, effektiv lernen,
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe,
-  Klausur letzte Nacht,
   Gedächtnis verbessern Übungen,
   Erdkunde lernen Tipps,
   Latein lernen Tipps,
