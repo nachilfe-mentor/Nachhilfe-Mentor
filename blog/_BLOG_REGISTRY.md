@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 34
-- Letzte Veröffentlichung: 2026-04-07
+- Gesamtzahl Artikel: 35
+- Letzte Veröffentlichung: 2026-04-08
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -47,6 +47,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 32 | 2026-04-07 | physik-lernen-tipps | Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst | Physik lernen Tipps, Physik lernen, Physik verstehen, Physik Nachhilfe, Physik Prüfung, Physik Abitur, Physik Klausur, Physik Formeln lernen | Fachspezifische Lerntipps | 7 Tipps zum Physik lernen: Grundlagen zuerst, Formeln herleiten statt auswendig lernen, Einheiten immer mitführen, täglich Aufgaben rechnen, Skizzieren und Visualisieren, schwache Themen nicht überspringen, mit alten Klausuraufgaben üben. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu mathe-lernen-tipps und active-recall-lerntechnik. |
 | 33 | 2026-04-07 | chemie-lernen-tipps | Chemie lernen: 7 Tipps, mit denen du Chemie endlich verstehst | Chemie lernen Tipps, Chemie lernen, Chemie verstehen, Chemie Nachhilfe, Chemie Prüfung, Chemie Abitur, Chemie Klausur, Chemie Formeln lernen, Reaktionsgleichungen lernen | Fachspezifische Lerntipps | 7 Tipps zum Chemie lernen: Periodensystem verstehen statt auswendig lernen, Reaktionsgleichungen systematisch herleiten, Konzepte visualisieren und zeichnen, Fachbegriffe wirklich verstehen (Feynman-Technik), Zusammenhänge zwischen Themen erkennen, regelmäßig mit Active Recall üben, alte Klausuren mit Fehleranalyse nutzen. App-Erwähnung (Wissenslücken schließen). Crosslinks zu mathe-lernen-tipps, feynman-technik-erklaeren-lernen, active-recall-lerntechnik, biologie-lernen-tipps. |
 | 34 | 2026-04-07 | deutsch-aufsatz-schreiben-tipps | Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text | Deutsch Aufsatz schreiben, Aufsatz schreiben Tipps, Aufsatz Aufbau, Deutschaufsatz Schule, Aufsatz Einleitung Hauptteil Schluss, Aufsatz besser schreiben, Deutsch Klausur Aufsatz | Schule & Studium | 7 Tipps zum Deutschaufsatz: Aufgabenstellung mit Operator analysieren, Gliederung vor dem Schreiben, Einleitung die neugierig macht, Dreischritt (Behauptung-Begründung-Beispiel) im Hauptteil, Schluss mit klarer Schlussfolgerung, inhaltliche + sprachliche Überarbeitungsrunde, regelmäßiges Schreiben üben. App-Erwähnung (Wissenslücken in Deutsch schließen). Crosslinks zu zusammenfassung-schreiben-lernen, feynman-technik-erklaeren-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
+| 35 | 2026-04-08 | lernen-morgens-oder-abends-chronotyp | Lernen morgens oder abends: Wann ist dein Gehirn am leistungsfähigsten? | lernen morgens oder abends, Chronotyp, beste Lernzeit, Lernrhythmus, morgens lernen, abends lernen, innere Uhr Lernen, Lernzeit optimieren, Chronotyp Schüler, wann lernen | Lernmethoden | Erklärt Chronotypen (Lerche, Eule, Zwischentyp), typische Leistungsphasen im Tagesverlauf (Hochphasen, Nachmittagstief), Vorteile des Morgen- vs. Abendlernens für den jeweiligen Typ, Wie man den eigenen Chronotyp herausfindet (4 Selbsttestfragen), Tipps wenn Schule und Chronotyp nicht passen (besonders für Teenager), App-Erwähnung (Nachhilfe Mentor App für flexible Wiederholungen in Zwischenzeiten). Crosslinks zu pomodoro-technik-lernen, konzentration-steigern-lernen. Rückverlinkung von zeitmanagement-studium-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -63,7 +64,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe,
   Klausur letzte Nacht,
-  Lernen morgens vs. abends / Chronotyp,
   Gedächtnis verbessern Übungen,
   Geschichte lernen Tipps,
   Erdkunde lernen Tipps
@@ -102,6 +102,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Verwendete Keywords (Ergänzung)
 - Chemie lernen Tipps, Chemie lernen, Chemie verstehen, Chemie Nachhilfe, Chemie Prüfung, Chemie Abitur, Chemie Klausur, Reaktionsgleichungen lernen
 - Deutsch Aufsatz schreiben, Aufsatz schreiben Tipps, Aufsatz Aufbau, Deutschaufsatz Schule, Aufsatz Einleitung Hauptteil Schluss, Aufsatz besser schreiben, Deutsch Klausur Aufsatz
+- lernen morgens oder abends, Chronotyp, beste Lernzeit, Lernrhythmus, morgens lernen, abends lernen, innere Uhr Lernen, Lernzeit optimieren, Chronotyp Schüler, wann lernen
 
 ## Interne Verlinkungen
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
@@ -274,6 +275,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - physik-lernen-tipps -> mathe-lernen-tipps (Grundlagen zuerst: Mathe-Tipps als verwandtes Fach verlinkt)
 - physik-lernen-tipps -> active-recall-lerntechnik (Tipp 4: Active Recall beim täglichen Aufgaben-Training)
 - mathe-lernen-tipps -> physik-lernen-tipps (Fazit: Physik lernen als weiteres Naturwissenschaften-Thema verlinkt)
+
+- lernen-morgens-oder-abends-chronotyp -> pomodoro-technik-lernen (Abschnitt Frühaufsteher: Pomodoro als Rhythmus-Methode)
+- lernen-morgens-oder-abends-chronotyp -> konzentration-steigern-lernen (Selbsttest: Konzentrationsniveau verbessern als verwandtes Thema)
+- zeitmanagement-studium-tipps -> lernen-morgens-oder-abends-chronotyp (Rückverlinkung: biologischer Rhythmus-Abschnitt)
 
 ## Learnings / Optimierungen
 - Self-Improvement Runde 1 (nach Artikel 5): Fehlende Crosslinks zwischen SR/Pomodoro und AR/Lernplan ergänzt. Alle 6 Artikel sind jetzt gut untereinander verlinkt. Nächstes Mal: Cluster "KI & Bildung" oder "Schule & Studium Alltag" bedienen, da bisher nur Lernmethoden und Motivation abgedeckt.
