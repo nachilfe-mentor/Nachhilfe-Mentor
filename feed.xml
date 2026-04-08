@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 08 Apr 2026 12:43:35 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 08 Apr 2026 20:47:58 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
+      <pubDate>Wed, 08 Apr 2026 20:47:15 +0000</pubDate>
+      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Klausurvorbereitung letzte Woche: So holst du das Maximum raus</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</guid>
+      <pubDate>Wed, 08 Apr 2026 20:47:10 +0000</pubDate>
+      <description>Nur noch eine Woche bis zur Klausur? Kein Grund zur Panik. Mit diesem Notfallplan lernst du gezielt, priorisierst den wichtigsten Stoff und gehst sicher in die Prüfung.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Klausur letzte Nacht: Was du jetzt noch tun kannst (und was nicht)</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/klausur-letzte-nacht-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/klausur-letzte-nacht-lernen.html</guid>
+      <pubDate>Wed, 08 Apr 2026 20:46:28 +0000</pubDate>
+      <description>Klausur morgen und du bist nicht vorbereitet? Diese 7 Strategien helfen dir, die letzte Nacht vor der Klausur optimal zu nutzen – ohne die ganze Nacht durchzupauken.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/gedaechtnis-techniken-lernen.html</link>
@@ -141,30 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/feynman-technik-erklaeren-lernen.html</guid>
       <pubDate>Sun, 05 Apr 2026 03:52:57 +0000</pubDate>
       <description>Die Feynman-Technik zeigt dir in 4 Schritten, wo du noch echte Wissenslücken hast. So lernst du Stoff wirklich zu verstehen statt nur auswendig zu lernen.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Mindmap erstellen: So strukturierst du Lernstoff visuell</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mindmap-erstellen-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mindmap-erstellen-lernen.html</guid>
-      <pubDate>Sat, 04 Apr 2026 19:47:40 +0000</pubDate>
-      <description>Mindmap erstellen leicht gemacht: Lerne, wie du Lernstoff visuell strukturierst, Zusammenhänge erkennst und dir mehr merkst. Mit Schritt-für-Schritt-Anleitung.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Pomodoro-Technik: Mit dem Tomaten-Timer endlich fokussiert lernen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</guid>
-      <pubDate>Sat, 04 Apr 2026 13:05:59 +0000</pubDate>
-      <description>Die Pomodoro-Technik erklärt: Wie du mit 25-Minuten-Blöcken konzentrierter lernst, Ablenkungen überwindest und mehr schaffst als je zuvor.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Karteikarten lernen: So nutzt du Lernkarten wirklich effektiv</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/karteikarten-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/karteikarten-lernen-tipps.html</guid>
-      <pubDate>Sat, 04 Apr 2026 13:05:55 +0000</pubDate>
-      <description>Karteikarten lernen richtig gemacht: 8 Tipps für maximale Effizienz. Wie du Lernkarten erstellst, welche Fehler du vermeidest und ob digital oder physisch besser ist.</description>
       <category>Lernmethoden</category>
     </item>
   </channel>
