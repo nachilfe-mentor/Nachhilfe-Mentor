@@ -814,3 +814,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `lernen-morgens-oder-abends-chronotyp.html`
+- [x] Cover-Bild generiert: `blog/posts/img/lernen-morgens-oder-abends-chronotyp.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Artikel verlinkt auf `pomodoro-technik-lernen` und `konzentration-steigern-lernen`; Rückverlinkung in `zeitmanagement-studium-tipps` unter Abschnitt "Nutze deinen biologischen Rhythmus")
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefürt (41 URLs in Sitemap, 37 an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefürt. Pin-ID: `cmnpk61pb00tyov0y138zd33o`
+
+**Artikel-Thema:** Chronotyp und optimale Lernzeit (morgens vs. abends), 7 Min. Lesezeit, Lernmethoden-Cluster. Analytics-Empfehlung umgesetzt: Lernmethoden-Fokus beibehalten, da dieser Cluster mit Abstand am besten performt (Pomodoro 10 Views, SR 5 Views).
+[2026-04-08 04:39:04] Blog cycle completed successfully.
+[2026-04-08 04:39:04] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 41 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 37 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 37 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 41 URLs in Sitemap, 20 Artikel im Feed.
+[main eb2ba88] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   aa8b292..eb2ba88  main -> main
+[2026-04-08 04:39:04] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: lernen-morgens-oder-abends-chronotyp
+  Titel: Lernen morgens oder abends: Wann ist dein Gehirn am leistungsfähigsten?
+  Desc:  Morgens oder abends lernen? Finde deinen Chronotyp und entdecke, wann dein Gehir...
+[Pinterest] Erstelle Pin fuer: Lernen morgens oder abends: Wann ist dein Gehirn am leistungsfähigsten?
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lernen-morgens-oder-abends-chronotyp.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lernen-morgens-oder-abends-chronotyp.html
+[Pinterest] Uploading lernen-morgens-oder-abends-chronotyp.webp (image/webp)...
+[Pinterest] Upload OK: id=ae28eb6b-fd10-406d-902a-f1dd1ea10eeb
+[Pinterest] Pin erstellt! Post-ID: cmnpk6cqm00rboz0y8awj4jb4
+[Pinterest] Erfolgreich! Pin-ID: cmnpk6cqm00rboz0y8awj4jb4
+
+[Pinterest-Fallback] OK: lernen-morgens-oder-abends-chronotyp
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-08 04:39:04] Next run in 8 hours.
+---
+[2026-04-08 12:39:07] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
