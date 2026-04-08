@@ -766,3 +766,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf vollständig abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `deutsch-aufsatz-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/deutsch-aufsatz-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (neuer Artikel verlinkt zu `zusammenfassung-schreiben-lernen` + `feynman-technik-erklaeren-lernen`; Rückverlinkung von `zusammenfassung-schreiben-lernen.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (34 Artikel, Keyword-Pool gepflegt)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (40 URLs in Sitemap, 36 an IndexNow übermittelt)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmnp2us9202baoz0ytns7vpka`
+[2026-04-07 20:34:23] Blog cycle completed successfully.
+[2026-04-07 20:34:23] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 40 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 36 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 36 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 40 URLs in Sitemap, 20 Artikel im Feed.
+[main c884207] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   24bab0b..c884207  main -> main
+[2026-04-07 20:34:23] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: deutsch-aufsatz-schreiben-tipps
+  Titel: Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text
+  Desc:  Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du de...
+[Pinterest] Erstelle Pin fuer: Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/deutsch-aufsatz-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html
+[Pinterest] Uploading deutsch-aufsatz-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=6be4502d-95d0-42ac-87e2-e4bec4f361c7
+[Pinterest] Pin erstellt! Post-ID: cmnp2v20x02bboz0yi7nph86h
+[Pinterest] Erfolgreich! Pin-ID: cmnp2v20x02bboz0yi7nph86h
+
+[Pinterest-Fallback] OK: deutsch-aufsatz-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-07 20:34:23] Next run in 8 hours.
+---
+[2026-04-08 04:34:26] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
