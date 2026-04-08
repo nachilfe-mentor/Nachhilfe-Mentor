@@ -862,3 +862,52 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `geschichte-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/geschichte-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `gedaechtnis-techniken-lernen.html`; Artikel verlinkt auf `active-recall-lerntechnik.html` und `spaced-repetition-lernmethode.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (36 Artikel, neue Keywords ergänzt)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuhrt (42 URLs in Sitemap, 38 URLs an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuhrt — Pin-ID: `cmnq1h0ng02ntov0yvy2cqln8`
+
+**Artikel #36:** "Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst"
+Focus-Keywords: Geschichte lernen Tipps, Jahreszahlen merken, Geschichte Abitur. Thema noch nicht im Blog abgedeckt, hohe Suchnachfrage bei Schülern.
+[2026-04-08 12:43:35] Blog cycle completed successfully.
+[2026-04-08 12:43:35] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 42 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 38 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 38 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 42 URLs in Sitemap, 20 Artikel im Feed.
+[main 3395178] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   a32c9f1..3395178  main -> main
+[2026-04-08 12:43:35] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: geschichte-lernen-tipps
+  Titel: Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst
+  Desc:  Geschichte lernen fällt vielen schwer, weil es so viele Daten und Zusammenhänge ...
+[Pinterest] Erstelle Pin fuer: Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/geschichte-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html
+[Pinterest] Uploading geschichte-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=d2cca606-17ac-465b-85d3-c6333f35216e
+[Pinterest] Pin erstellt! Post-ID: cmnq1hfql02kcoz0ymy67r6gq
+[Pinterest] Erfolgreich! Pin-ID: cmnq1hfql02kcoz0ymy67r6gq
+
+[Pinterest-Fallback] OK: geschichte-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-08 12:43:35] Next run in 8 hours.
+---
+[2026-04-08 20:43:37] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
