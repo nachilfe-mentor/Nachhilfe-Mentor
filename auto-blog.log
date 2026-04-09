@@ -911,3 +911,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `klausur-letzte-nacht-lernen.html`
+- [x] Cover-Bild generiert: `blog/posts/img/klausur-letzte-nacht-lernen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `klausurvorbereitung-letzte-woche.html` und `pruefungsangst-ueberwinden.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (37 Artikel, Keyword aus Pool entfernt)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühzt (43 URLs in Sitemap, 39 URLs an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühzt — Pin-ID: `cmnqisiro046moz0y2esrff7q`
+
+**Artikel #37:** "Klausur letzte Nacht: Was du jetzt noch tun kannst (und was nicht)" — Longtail mit hoher Suchintention für Schüler, die kurz vor der Prüfung in Panik sind. Themen: Priorisieren, Active Recall, Zeitblöcke, was man nicht tun sollte, wann schlafen gehen, Morgen vor der Klausur.
+[2026-04-08 20:48:23] Blog cycle completed successfully.
+[2026-04-08 20:48:23] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 43 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 39 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 39 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 43 URLs in Sitemap, 20 Artikel im Feed.
+[main 50a6236] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   abf0381..50a6236  main -> main
+[2026-04-08 20:48:23] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: klausur-letzte-nacht-lernen
+  Titel: Klausur letzte Nacht: Was du jetzt noch tun kannst (und was nicht)
+  Desc:  Klausur morgen und du bist nicht vorbereitet? Diese 7 Strategien helfen dir, die...
+[Pinterest] Erstelle Pin fuer: Klausur letzte Nacht: Was du jetzt noch tun kannst (und was nicht)
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/klausur-letzte-nacht-lernen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/klausur-letzte-nacht-lernen.html
+[Pinterest] Uploading klausur-letzte-nacht-lernen.webp (image/webp)...
+[Pinterest] Upload OK: id=c15db992-d86d-476e-943b-b5aa4eb42a1b
+[Pinterest] Pin erstellt! Post-ID: cmnqiswh3046ooz0ydce1chc7
+[Pinterest] Erfolgreich! Pin-ID: cmnqiswh3046ooz0ydce1chc7
+
+[Pinterest-Fallback] OK: klausur-letzte-nacht-lernen
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-08 20:48:23] Next run in 8 hours.
+---
+[2026-04-09 04:48:26] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
