@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 08 Apr 2026 20:48:23 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 04:53:16 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-tipps.html</guid>
+      <pubDate>Thu, 09 Apr 2026 04:52:00 +0000</pubDate>
+      <description>Vokabeln lernen leicht gemacht: 7 bewährte Methoden, mit denen du dir neue Wörter schnell und dauerhaft einprägst. Für Schule, Studium und Sprachkurse.</description>
+      <category>Sprachen lernen</category>
+    </item>
+    <item>
+      <title>Französisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</guid>
+      <pubDate>Thu, 09 Apr 2026 04:51:24 +0000</pubDate>
+      <description>Französisch lernen leicht gemacht: 8 bewährte Tipps für Schüler, die schnell besser werden wollen. Von Vokabeln über Grammatik bis zum freien Sprechen.</description>
+      <category>Sprachen lernen</category>
+    </item>
     <item>
       <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
       <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sun, 05 Apr 2026 11:58:06 +0000</pubDate>
       <description>KI Prüfungsvorbereitung: Mit diesen 7 Strategien nutzt du ChatGPT und andere KI-Tools gezielt, um dich effizienter auf Klausuren und Prüfungen vorzubereiten.</description>
       <category>KI &amp; Bildung</category>
-    </item>
-    <item>
-      <title>Active Recall: Die Lerntechnik, mit der du Wissen wirklich abspeicherst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</guid>
-      <pubDate>Sun, 05 Apr 2026 03:53:34 +0000</pubDate>
-      <description>Active Recall ist die wissenschaftlich stärkste Lerntechnik überhaupt. Erfahre, wie aktives Abrufen funktioniert, welche Methoden es gibt und wie du sie sofort anwendest.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Feynman-Technik: So erkennst du sofort, was du wirklich verstanden hast</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/feynman-technik-erklaeren-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/feynman-technik-erklaeren-lernen.html</guid>
-      <pubDate>Sun, 05 Apr 2026 03:52:57 +0000</pubDate>
-      <description>Die Feynman-Technik zeigt dir in 4 Schritten, wo du noch echte Wissenslücken hast. So lernst du Stoff wirklich zu verstehen statt nur auswendig zu lernen.</description>
-      <category>Lernmethoden</category>
     </item>
   </channel>
 </rss>
