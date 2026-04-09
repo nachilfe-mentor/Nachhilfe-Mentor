@@ -157,6 +157,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/lernpausen-richtig-machen.html</loc>
+    <lastmod>2026-04-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/lernplan-erstellen-tipps.html</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -194,7 +200,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</loc>
-    <lastmod>2026-04-04</lastmod>
+    <lastmod>2026-04-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

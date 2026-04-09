@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 09 Apr 2026 12:59:28 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 21:03:37 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Pomodoro-Technik: Mit dem Tomaten-Timer endlich fokussiert lernen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</guid>
+      <pubDate>Thu, 09 Apr 2026 21:02:43 +0000</pubDate>
+      <description>Die Pomodoro-Technik erklärt: Wie du mit 25-Minuten-Blöcken konzentrierter lernst, Ablenkungen überwindest und mehr schaffst als je zuvor.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Lernpausen richtig machen: So erholt sich dein Gehirn</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernpausen-richtig-machen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernpausen-richtig-machen.html</guid>
+      <pubDate>Thu, 09 Apr 2026 21:02:12 +0000</pubDate>
+      <description>Lernpausen richtig machen ist genauso wichtig wie das Lernen selbst. Erfahre, wie lange Pausen sein sollten, was du in der Pause tun solltest und welche Fehler dich Energie kosten.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Mon, 06 Apr 2026 12:12:17 +0000</pubDate>
       <description>Wissenschaftliches Arbeiten leicht gemacht: So schreibst du eine Hausarbeit oder Seminararbeit Schritt für Schritt. Mit Tipps zu Struktur, Quellen und Zitieren.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Lerntypen: Welcher Lernstil passt zu dir? (VARK-Modell erklärt)</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lerntypen-vark-test-lerntipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lerntypen-vark-test-lerntipps.html</guid>
-      <pubDate>Mon, 06 Apr 2026 04:07:39 +0000</pubDate>
-      <description>Visuell, auditiv, lese-/schreiborientiert oder kinästhetisch? Finde deinen Lerntyp mit dem VARK-Modell und lerne endlich so, wie dein Gehirn es am besten aufnimmt.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</guid>
-      <pubDate>Sun, 05 Apr 2026 11:58:53 +0000</pubDate>
-      <description>Lernen mit KI: Entdecke, wie du ChatGPT und andere KI-Tools gezielt für Schule und Studium einsetzt, welche Fehler du vermeiden solltest und wo die Grenzen liegen.</description>
-      <category>KI &amp; Bildung</category>
     </item>
   </channel>
 </rss>
