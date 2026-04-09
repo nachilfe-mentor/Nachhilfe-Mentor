@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 37
-- Letzte Veröffentlichung: 2026-04-08
+- Gesamtzahl Artikel: 38
+- Letzte Veröffentlichung: 2026-04-09
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -50,6 +50,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 35 | 2026-04-08 | lernen-morgens-oder-abends-chronotyp | Lernen morgens oder abends: Wann ist dein Gehirn am leistungsfähigsten? | lernen morgens oder abends, Chronotyp, beste Lernzeit, Lernrhythmus, morgens lernen, abends lernen, innere Uhr Lernen, Lernzeit optimieren, Chronotyp Schüler, wann lernen | Lernmethoden | Erklärt Chronotypen (Lerche, Eule, Zwischentyp), typische Leistungsphasen im Tagesverlauf (Hochphasen, Nachmittagstief), Vorteile des Morgen- vs. Abendlernens für den jeweiligen Typ, Wie man den eigenen Chronotyp herausfindet (4 Selbsttestfragen), Tipps wenn Schule und Chronotyp nicht passen (besonders für Teenager), App-Erwähnung (Nachhilfe Mentor App für flexible Wiederholungen in Zwischenzeiten). Crosslinks zu pomodoro-technik-lernen, konzentration-steigern-lernen. Rückverlinkung von zeitmanagement-studium-tipps. |
 | 36 | 2026-04-08 | geschichte-lernen-tipps | Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst | Geschichte lernen Tipps, Geschichte lernen, Geschichte verstehen, Geschichte Nachhilfe, Geschichte Prüfung, Jahreszahlen merken, Geschichte Abitur, Geschichte Klausur, Geschichte Zusammenhänge verstehen | Fachspezifische Lerntipps | 7 Tipps zum Geschichte lernen: Zusammenhänge vor Daten verstehen, Zeitstrahl erstellen, Jahreszahlen mit Eselsbrücken merken, Narrative Methode (Ereignisse als Geschichte erzählen), Active Recall statt passivem Lesen, Spaced Repetition für Fakten, alte Klausuraufgaben unter Zeitdruck üben. App-Erwähnung (Wissenslücken aufspüren). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode. Rückverlinkung von gedaechtnis-techniken-lernen. |
 | 37 | 2026-04-08 | klausur-letzte-nacht-lernen | Klausur letzte Nacht: Was du jetzt noch tun kannst (und was nicht) | Klausur letzte Nacht, Nacht vor der Klausur, Klausur morgen früh, Last-Minute lernen, Klausur Notfallplan Nacht, Klausur vorbereiten letzte Nacht, Klausur nächsten Tag | Prüfungsvorbereitung | 7 Strategien für die letzte Nacht vor der Klausur: realistische Erwartungen setzen, Themen priorisieren (grün/gelb/rot), Active Recall statt passivem Lesen, Zeitblöcke einhalten (40/10), was man nicht tun sollte (Nacht durchmachen, neue Themen, zu viel Koffein), wann schlafen gehen, morgens vor der Klausur. App-Erwähnung (Lücken aufdecken). Crosslinks zu active-recall-lerntechnik, klausurvorbereitung-letzte-woche, spaced-repetition-lernmethode. Rückverlinkung von klausurvorbereitung-letzte-woche und pruefungsangst-ueberwinden. |
+| 38 | 2026-04-09 | franzoesisch-lernen-tipps | Französisch lernen: 8 Tipps, mit denen du schnell besser wirst | Französisch lernen Tipps, Französisch lernen, Französisch besser werden, Französisch Schule, Französisch Grammatik lernen, Französisch Vokabeln lernen, Französisch sprechen üben, Französisch verbessern | Sprachen lernen | 8 Tipps zum Französisch lernen: Aussprache von Anfang an richtig (Liaison, stumme Konsonanten), Vokabeln mit Leitner-System und Spaced Repetition, Grammatik durch Verstehen statt Auswendiglernen (häufige unregelmäßige Verben, Feynman-Technik), täglich kleine Einheiten, Sprechen trotz Fehlern üben, Immersion im Alltag (Serien, Musik, Smartphone-Sprache), kurze Schreibübungen täglich, aktives Textarbeiten. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -57,7 +58,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten
 - KI & Bildung: Lernen mit KI / ChatGPT
-- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen
+- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 ## Keyword-Pool (noch nicht verwendet)
@@ -68,8 +69,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Gedächtnis verbessern Übungen,
   Erdkunde lernen Tipps,
   Latein lernen Tipps,
-  Informatik lernen Tipps,
-  Französisch lernen Tipps
+  Informatik lernen Tipps
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
@@ -290,3 +290,9 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Self-Improvement Runde 4 (nach Artikel 20): Alle 5 empfohlenen Longtail-Artikel geschrieben (Zeitmanagement, Klausur letzte Woche, Lernblockade, Referat halten, Lernumgebung). Lernmethoden-Cluster weiterhin stärkster Performer. Keine signifikante Änderung in der Traffic-Quelle (fast alles direkt). Pinterest liefert erste Sessions (3 von 4 Social-Visits). Nächste 5: Lernmethoden-Cluster weiter ausbauen (Karteikarten, Lerngruppe, digitale Tools), plus neues Cluster Mindmapping.
 - Self-Improvement Runde 5 (nach Artikel 25): Analytics 76 Pageviews (30 Tage). Pinterest auf 4 Sessions gestiegen. Google organisch erst 1 Session. Pomodoro bleibt Spitzenreiter (10 Views), SR folgt (5). Lernmethoden-Cluster deutlich stärker als alle anderen. Neue Cluster: Digitale Tools und Karteikarten hinzugekommen. Mindmap-Artikel als neuen Lernmethoden-Artikel gestartet. Nächste 5 Empfehlungen: (1) Feynman-Technik (Lernmethoden, hohes Suchvolumen), (2) KI Prüfungsvorbereitung (KI-Cluster ausbauen), (3) wissenschaftliches Arbeiten Einsteiger (Studium-Nische), (4) Biologie lernen Tipps (fachspezifisch, wenig Konkurrenz), (5) Mitschriften verbessern / Cornell Methode (Lernmethoden, gut verknüpfbar). Pinterest-Pins konsequent weiterführen, da messbar erste Wirkung.
 - Self-Improvement Runde 6 (nach Artikel 30): Analytics 86 Pageviews (30 Tage, +10 seit R5). Google organisch auf 4 Sessions gestiegen: erster SEO-Durchbruch. Pinterest stabil 4 Sessions. Blog-Index als Einstiegsseite weiter dominant. Pomodoro weiterhin Nr. 1 (10 Views, 397s, 0% Bounce). Alle 5 empfohlenen Artikel aus R5 umgesetzt: Feynman, KI-Prüfungsvorbereitung, Cornell, Lerntypen, wissenschaftliches Arbeiten. Schule-Cluster jetzt mit 5 Artikeln stark. Nächste 5: Biologie lernen Tipps, Physik lernen Tipps, Deutsch Aufsatz schreiben, Klausur letzte Nacht, Lernen nach Chronotyp (morgens vs. abends). Fachspezifische Nische testen.
+
+## Interne Verlinkungen (Ergänzung Artikel 38)
+- franzoesisch-lernen-tipps -> spaced-repetition-lernmethode (Vokabeln mit Spaced Repetition lernen)
+- franzoesisch-lernen-tipps -> feynman-technik-erklaeren-lernen (Grammatik durch Verstehen: Feynman-Technik)
+- franzoesisch-lernen-tipps -> vokabeln-lernen-tipps (Fazit: strukturierte Vokabellern-Strategie)
+- vokabeln-lernen-tipps -> franzoesisch-lernen-tipps (Rückverlinkung: Französisch-Lernguide bei Vertiefungs-Abschnitt)
