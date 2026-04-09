@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 39
+- Gesamtzahl Artikel: 40
 - Letzte Veröffentlichung: 2026-04-09
 - Nächster geplanter Post: TBD
 
@@ -52,6 +52,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 37 | 2026-04-08 | klausur-letzte-nacht-lernen | Klausur letzte Nacht: Was du jetzt noch tun kannst (und was nicht) | Klausur letzte Nacht, Nacht vor der Klausur, Klausur morgen früh, Last-Minute lernen, Klausur Notfallplan Nacht, Klausur vorbereiten letzte Nacht, Klausur nächsten Tag | Prüfungsvorbereitung | 7 Strategien für die letzte Nacht vor der Klausur: realistische Erwartungen setzen, Themen priorisieren (grün/gelb/rot), Active Recall statt passivem Lesen, Zeitblöcke einhalten (40/10), was man nicht tun sollte (Nacht durchmachen, neue Themen, zu viel Koffein), wann schlafen gehen, morgens vor der Klausur. App-Erwähnung (Lücken aufdecken). Crosslinks zu active-recall-lerntechnik, klausurvorbereitung-letzte-woche, spaced-repetition-lernmethode. Rückverlinkung von klausurvorbereitung-letzte-woche und pruefungsangst-ueberwinden. |
 | 38 | 2026-04-09 | franzoesisch-lernen-tipps | Französisch lernen: 8 Tipps, mit denen du schnell besser wirst | Französisch lernen Tipps, Französisch lernen, Französisch besser werden, Französisch Schule, Französisch Grammatik lernen, Französisch Vokabeln lernen, Französisch sprechen üben, Französisch verbessern | Sprachen lernen | 8 Tipps zum Französisch lernen: Aussprache von Anfang an richtig (Liaison, stumme Konsonanten), Vokabeln mit Leitner-System und Spaced Repetition, Grammatik durch Verstehen statt Auswendiglernen (häufige unregelmäßige Verben, Feynman-Technik), täglich kleine Einheiten, Sprechen trotz Fehlern üben, Immersion im Alltag (Serien, Musik, Smartphone-Sprache), kurze Schreibübungen täglich, aktives Textarbeiten. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
 | 39 | 2026-04-09 | informatik-lernen-tipps | Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen | Informatik lernen Tipps, Informatik Schule, Programmieren lernen Schüler, Algorithmen verstehen, Informatik Klausur, Informatik besser werden, Informatik Gymnasium | Fachspezifisch | 7 Tipps zum Informatik lernen: Verstehen statt auswendig lernen (Feynman-Technik), Code selbst schreiben (Active Recall), Algorithmen visualisieren, kleine Projekte bauen, systematisch debuggen, richtige Ressourcen nutzen, Klausurvorbereitung (Traces, alte Klausuren). App-Erwähnung (KI-Erklärungen). Crosslinks zu feynman-technik-erklaeren-lernen, active-recall-lerntechnik, mathe-lernen-tipps. Rückverlinkung von mathe-lernen-tipps. |
+| 40 | 2026-04-09 | lernpausen-richtig-machen | Lernpausen richtig machen: So erholt sich dein Gehirn | Lernpausen richtig machen, Lernpause, Pause beim Lernen, wie lange Lernpause, Lernpausen Tipps, Erholung beim Lernen, Lernen Pause Gehirn | Lernmethoden | Erklärt warum Lernpausen wichtig sind (Default Mode Network, Konsolidierung), optimale Pausendauern je nach Lernphase (25/5, 50/15, 90/30), was man in guten Pausen tun soll (Bewegung, Natur, Wasser) vs. was schadet (Social Media, Videos), Mikrounterbrechungen, Pausen planen statt spontan. App-Erwähnung (Nachhilfe Mentor App). Crosslinks zu pomodoro-technik-lernen, konzentration-steigern-lernen. Rückverlinkung von pomodoro-technik-lernen. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -70,6 +71,9 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Gedächtnis verbessern Übungen,
   Erdkunde lernen Tipps,
   Latein lernen Tipps,
+  Lernen mit Musik, Musik beim Lernen,
+  Schlaf und Lernen, Schlaf Gedächtnis,
+  Leseverstehen verbessern, schneller lesen,
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
@@ -303,3 +307,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - informatik-lernen-tipps -> active-recall-lerntechnik (Tipp 2: Code selbst schreiben = Active Recall in Informatik)
 - informatik-lernen-tipps -> mathe-lernen-tipps (Fazit: Mathe als verwandtes Fach mit ähnlichen Lernprinzipien)
 - mathe-lernen-tipps -> informatik-lernen-tipps (Rückverlinkung: Andere Fächer im Fazit-Abschnitt ergänzt)
+
+## Interne Verlinkungen (Ergänzung Artikel 40)
+- lernpausen-richtig-machen -> pomodoro-technik-lernen (25/5-Struktur: Pomodoro als Rahmen für Lernpausen erklärt)
+- lernpausen-richtig-machen -> konzentration-steigern-lernen (Einleitung: Pausen und Konzentration als eng verwandte Themen)
+- pomodoro-technik-lernen -> lernpausen-richtig-machen (Rückverlinkung: Was man in 5-Minuten-Pausen tun soll, im Fazit ergänzt)

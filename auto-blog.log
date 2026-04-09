@@ -1007,3 +1007,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Keine weiteren Änderungen. Durchlauf abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `informatik-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/informatik-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`mathe-lernen-tipps.html` -> Informatik im Fazit ergänzt; neuer Artikel verlinkt auf `feynman-technik-erklaeren-lernen.html`, `active-recall-lerntechnik.html`, `mathe-lernen-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #39, Keywords verschoben, Verlinkungen eingetragen)
+- [x] Git Push: erfolgreich (`a0fc278`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (45 URLs in Sitemap, 41 URLs an IndexNow gemeldet)
+- [ ] **PINTEREST: fehlgeschlagen** - 429 Too Many Requests (Rate-Limit der Pinterest-API nach 2 Versuchen). Bild-Upload hat funktioniert, Pin-Erstellung wurde gedrosselt. Fallback-Script holt den Pin im nächsten Zyklus nach.
+[2026-04-09 12:59:28] Blog cycle completed successfully.
+[2026-04-09 12:59:28] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 45 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 41 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 41 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 45 URLs in Sitemap, 20 Artikel im Feed.
+[main 9b8fb9d] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   a0fc278..9b8fb9d  main -> main
+[2026-04-09 12:59:28] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: informatik-lernen-tipps
+  Titel: Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen
+  Desc:  Informatik lernen fällt vielen Schülern schwer. Mit diesen 7 Tipps verstehst du ...
+[Pinterest] Erstelle Pin fuer: Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/informatik-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html
+[Pinterest] Uploading informatik-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=ff7c7e02-8d55-417c-a12f-6e6e9294b51d
+[Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
+[Pinterest] Pin-Erstellung fehlgeschlagen.
+
+[Pinterest-Fallback] FEHLER bei informatik-lernen-tipps: 
+[Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
+[2026-04-09 12:59:28] Next run in 8 hours.
+---
+[2026-04-09 20:59:30] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
