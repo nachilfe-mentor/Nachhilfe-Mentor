@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 38
+- Gesamtzahl Artikel: 39
 - Letzte Veröffentlichung: 2026-04-09
 - Nächster geplanter Post: TBD
 
@@ -51,6 +51,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 36 | 2026-04-08 | geschichte-lernen-tipps | Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst | Geschichte lernen Tipps, Geschichte lernen, Geschichte verstehen, Geschichte Nachhilfe, Geschichte Prüfung, Jahreszahlen merken, Geschichte Abitur, Geschichte Klausur, Geschichte Zusammenhänge verstehen | Fachspezifische Lerntipps | 7 Tipps zum Geschichte lernen: Zusammenhänge vor Daten verstehen, Zeitstrahl erstellen, Jahreszahlen mit Eselsbrücken merken, Narrative Methode (Ereignisse als Geschichte erzählen), Active Recall statt passivem Lesen, Spaced Repetition für Fakten, alte Klausuraufgaben unter Zeitdruck üben. App-Erwähnung (Wissenslücken aufspüren). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode. Rückverlinkung von gedaechtnis-techniken-lernen. |
 | 37 | 2026-04-08 | klausur-letzte-nacht-lernen | Klausur letzte Nacht: Was du jetzt noch tun kannst (und was nicht) | Klausur letzte Nacht, Nacht vor der Klausur, Klausur morgen früh, Last-Minute lernen, Klausur Notfallplan Nacht, Klausur vorbereiten letzte Nacht, Klausur nächsten Tag | Prüfungsvorbereitung | 7 Strategien für die letzte Nacht vor der Klausur: realistische Erwartungen setzen, Themen priorisieren (grün/gelb/rot), Active Recall statt passivem Lesen, Zeitblöcke einhalten (40/10), was man nicht tun sollte (Nacht durchmachen, neue Themen, zu viel Koffein), wann schlafen gehen, morgens vor der Klausur. App-Erwähnung (Lücken aufdecken). Crosslinks zu active-recall-lerntechnik, klausurvorbereitung-letzte-woche, spaced-repetition-lernmethode. Rückverlinkung von klausurvorbereitung-letzte-woche und pruefungsangst-ueberwinden. |
 | 38 | 2026-04-09 | franzoesisch-lernen-tipps | Französisch lernen: 8 Tipps, mit denen du schnell besser wirst | Französisch lernen Tipps, Französisch lernen, Französisch besser werden, Französisch Schule, Französisch Grammatik lernen, Französisch Vokabeln lernen, Französisch sprechen üben, Französisch verbessern | Sprachen lernen | 8 Tipps zum Französisch lernen: Aussprache von Anfang an richtig (Liaison, stumme Konsonanten), Vokabeln mit Leitner-System und Spaced Repetition, Grammatik durch Verstehen statt Auswendiglernen (häufige unregelmäßige Verben, Feynman-Technik), täglich kleine Einheiten, Sprechen trotz Fehlern üben, Immersion im Alltag (Serien, Musik, Smartphone-Sprache), kurze Schreibübungen täglich, aktives Textarbeiten. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
+| 39 | 2026-04-09 | informatik-lernen-tipps | Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen | Informatik lernen Tipps, Informatik Schule, Programmieren lernen Schüler, Algorithmen verstehen, Informatik Klausur, Informatik besser werden, Informatik Gymnasium | Fachspezifisch | 7 Tipps zum Informatik lernen: Verstehen statt auswendig lernen (Feynman-Technik), Code selbst schreiben (Active Recall), Algorithmen visualisieren, kleine Projekte bauen, systematisch debuggen, richtige Ressourcen nutzen, Klausurvorbereitung (Traces, alte Klausuren). App-Erwähnung (KI-Erklärungen). Crosslinks zu feynman-technik-erklaeren-lernen, active-recall-lerntechnik, mathe-lernen-tipps. Rückverlinkung von mathe-lernen-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -69,7 +70,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Gedächtnis verbessern Übungen,
   Erdkunde lernen Tipps,
   Latein lernen Tipps,
-  Informatik lernen Tipps
 
 ## Verwendete Keywords
 - Spaced Repetition, verteiltes Lernen, Ebbinghaus Vergessenskurve, Karteikarten
@@ -104,6 +104,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Verwendete Keywords (Ergänzung)
 - Chemie lernen Tipps, Chemie lernen, Chemie verstehen, Chemie Nachhilfe, Chemie Prüfung, Chemie Abitur, Chemie Klausur, Reaktionsgleichungen lernen
+- Informatik lernen Tipps, Informatik Schule, Programmieren lernen Schüler, Algorithmen verstehen, Informatik Klausur, Informatik besser werden, Informatik Gymnasium
 - Deutsch Aufsatz schreiben, Aufsatz schreiben Tipps, Aufsatz Aufbau, Deutschaufsatz Schule, Aufsatz Einleitung Hauptteil Schluss, Aufsatz besser schreiben, Deutsch Klausur Aufsatz
 - lernen morgens oder abends, Chronotyp, beste Lernzeit, Lernrhythmus, morgens lernen, abends lernen, innere Uhr Lernen, Lernzeit optimieren, Chronotyp Schüler, wann lernen
 
@@ -296,3 +297,9 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - franzoesisch-lernen-tipps -> feynman-technik-erklaeren-lernen (Grammatik durch Verstehen: Feynman-Technik)
 - franzoesisch-lernen-tipps -> vokabeln-lernen-tipps (Fazit: strukturierte Vokabellern-Strategie)
 - vokabeln-lernen-tipps -> franzoesisch-lernen-tipps (Rückverlinkung: Französisch-Lernguide bei Vertiefungs-Abschnitt)
+
+## Interne Verlinkungen (Ergänzung Artikel 39)
+- informatik-lernen-tipps -> feynman-technik-erklaeren-lernen (Tipp 1: Verstehen statt auswendig lernen via Feynman-Technik)
+- informatik-lernen-tipps -> active-recall-lerntechnik (Tipp 2: Code selbst schreiben = Active Recall in Informatik)
+- informatik-lernen-tipps -> mathe-lernen-tipps (Fazit: Mathe als verwandtes Fach mit ähnlichen Lernprinzipien)
+- mathe-lernen-tipps -> informatik-lernen-tipps (Rückverlinkung: Andere Fächer im Fazit-Abschnitt ergänzt)
