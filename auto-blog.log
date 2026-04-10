@@ -1055,3 +1055,143 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Pinterest-API gibt 429 (Rate Limit) zurück. Das Bild-Upload funktioniert (ID wurde zurückgegeben), aber das Posten wird durch das API-Limit blockiert. Wahrscheinlich wurden heute bereits mehrere Pins gepostet (Artikel #38 und #39). Der Fallback wird den Pin beim nächsten Cycle nachholen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `lernpausen-richtig-machen.html`
+- [x] Cover-Bild generiert: `blog/posts/img/lernpausen-richtig-machen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (neuer Artikel -> pomodoro-technik-lernen + konzentration-steigern-lernen; Rückverlinkung in pomodoro-technik-lernen eingefügt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel 40 eingetragen, Keyword-Pool erweitert)
+- [x] Git Push: erfolgreich (2 Commits: Artikel + SEO)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (46 URLs in Sitemap, 42 URLs an IndexNow submitted)
+- [ ] **PINTEREST: fehlgeschlagen — 429 Too Many Requests** (API-Rate-Limit, wahrscheinlich durch Pins #38/#39 heute ausgeschöpft; Bild-Upload war erfolgreich, Pin-Erstellung wurde geblockt; Fallback holt den Pin beim nächsten Cycle nach)
+
+**Artikel #40:** "Lernpausen richtig machen: So erholt sich dein Gehirn" im Cluster Lernmethoden. Ergänzt den Top-Performer Pomodoro-Artikel perfekt und deckt ein häufig gesuchtes Thema ab.
+[2026-04-09 21:04:11] Blog cycle completed successfully.
+[2026-04-09 21:04:11] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 46 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 42 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 42 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 46 URLs in Sitemap, 20 Artikel im Feed.
+[main 310f52c] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   1f97a52..310f52c  main -> main
+[2026-04-09 21:04:11] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: informatik-lernen-tipps
+  Titel: Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen
+  Desc:  Informatik lernen fällt vielen Schülern schwer. Mit diesen 7 Tipps verstehst du ...
+[Pinterest] Erstelle Pin fuer: Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/informatik-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html
+[Pinterest] Uploading informatik-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=3ac02355-f7cc-4d46-b45e-755e37c434ff
+[Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
+[Pinterest] Pin-Erstellung fehlgeschlagen.
+
+[Pinterest-Fallback] FEHLER bei informatik-lernen-tipps: 
+[Pinterest-Fallback] Pinne: lernpausen-richtig-machen
+  Titel: Lernpausen richtig machen: So erholt sich dein Gehirn
+  Desc:  Lernpausen richtig machen ist genauso wichtig wie das Lernen selbst. Erfahre, wi...
+[Pinterest] Erstelle Pin fuer: Lernpausen richtig machen: So erholt sich dein Gehirn
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lernpausen-richtig-machen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lernpausen-richtig-machen.html
+[Pinterest] Uploading lernpausen-richtig-machen.webp (image/webp)...
+[Pinterest] Upload OK: id=00debb70-3013-4baf-929e-6ed1323006d6
+[Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
+[Pinterest] Pin-Erstellung fehlgeschlagen.
+
+[Pinterest-Fallback] FEHLER bei lernpausen-richtig-machen: 
+[Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
+[2026-04-09 21:04:11] Next run in 8 hours.
+---
+[2026-04-10 05:04:15] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `schlaf-und-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/schlaf-und-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Crosslink in `lernpausen-richtig-machen.html`; neuer Artikel verlinkt auf `spaced-repetition-lernmethode`, `lernen-morgens-oder-abends-chronotyp`, `lernpausen-richtig-machen`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (41 Artikel, 2026-04-10)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühurt (47 URLs in Sitemap, 43 URLs an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühurt — Pin-ID: `cmnsg3vcz01qzoe0ybdnj2ani`
+
+---
+
+**Artikel #41:** "Schlaf und Lernen: Wie dein Gehirn nachts Wissen festigt"
+
+Thema aus dem Keyword-Pool (Schlaf Gedächtnis): Erklärt Gedächtniskonsolidierung im Tiefschlaf und REM-Schlaf, optimale Schlafdauer nach Alter, den richtigen Lernrhythmus rund um den Schlaf, Power Naps und was Lernschlaf sabotiert. Analytics-Kontext: Lernmethoden-Cluster performt am besten (Pomodoro, Spaced Repetition, Lerntypen top), daher passt dieses Thema ideal.
+[2026-04-10 05:08:42] Blog cycle completed successfully.
+[2026-04-10 05:08:42] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 47 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 43 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 43 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 47 URLs in Sitemap, 20 Artikel im Feed.
+[main e714753] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   4f67fe9..e714753  main -> main
+[2026-04-10 05:08:42] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: informatik-lernen-tipps
+  Titel: Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen
+  Desc:  Informatik lernen fällt vielen Schülern schwer. Mit diesen 7 Tipps verstehst du ...
+[Pinterest] Erstelle Pin fuer: Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/informatik-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html
+[Pinterest] Uploading informatik-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=c0bf3af1-70e4-4d3c-8eb2-94a5acc270ad
+[Pinterest] Pin erstellt! Post-ID: cmnsg46ct01rzn70y6uko5y9e
+[Pinterest] Erfolgreich! Pin-ID: cmnsg46ct01rzn70y6uko5y9e
+
+[Pinterest-Fallback] OK: informatik-lernen-tipps
+[Pinterest-Fallback] Pinne: schlaf-und-lernen-tipps
+  Titel: Schlaf und Lernen: Wie dein Gehirn nachts Wissen festigt
+  Desc:  Schlaf und Lernen hängen direkt zusammen: Dein Gehirn verarbeitet nachts das Gel...
+[Pinterest] Erstelle Pin fuer: Schlaf und Lernen: Wie dein Gehirn nachts Wissen festigt
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/schlaf-und-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/schlaf-und-lernen-tipps.html
+[Pinterest] Uploading schlaf-und-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=a99b6e16-d135-4701-a0b6-0ea239bc50eb
+[Pinterest] Pin erstellt! Post-ID: cmnsg47e701s0n70y232gdd52
+[Pinterest] Erfolgreich! Pin-ID: cmnsg47e701s0n70y232gdd52
+
+[Pinterest-Fallback] OK: schlaf-und-lernen-tipps
+[Pinterest-Fallback] Pinne: lernpausen-richtig-machen
+  Titel: Lernpausen richtig machen: So erholt sich dein Gehirn
+  Desc:  Lernpausen richtig machen ist genauso wichtig wie das Lernen selbst. Erfahre, wi...
+[Pinterest] Erstelle Pin fuer: Lernpausen richtig machen: So erholt sich dein Gehirn
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lernpausen-richtig-machen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lernpausen-richtig-machen.html
+[Pinterest] Uploading lernpausen-richtig-machen.webp (image/webp)...
+[Pinterest] Upload OK: id=6f6a5830-2291-4a78-8f29-a2c4a31bcb93
+[Pinterest] Pin erstellt! Post-ID: cmnsg48ha01r1oe0y7div3hpr
+[Pinterest] Erfolgreich! Pin-ID: cmnsg48ha01r1oe0y7div3hpr
+
+[Pinterest-Fallback] OK: lernpausen-richtig-machen
+[Pinterest-Fallback] 3 neue Pin(s) erstellt.
+[2026-04-10 05:08:42] Next run in 8 hours.
+---
+[2026-04-10 13:08:48] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

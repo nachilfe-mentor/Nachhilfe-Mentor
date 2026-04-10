@@ -11,6 +11,7 @@ franzoesisch-lernen-tipps
 gedaechtnis-techniken-lernen
 geschichte-lernen-tipps
 hausaufgaben-tipps-schnell-erledigen
+informatik-lernen-tipps
 karteikarten-lernen-tipps
 ki-pruefungsvorbereitung-tipps
 klausur-letzte-nacht-lernen
@@ -21,6 +22,7 @@ lernen-mit-ki-chatgpt
 lernen-morgens-oder-abends-chronotyp
 lerngruppe-gruenden-tipps
 lernmotivation-steigern-tipps
+lernpausen-richtig-machen
 lernplan-erstellen-tipps
 lerntypen-vark-test-lerntipps
 lernumgebung-gestalten-tipps
@@ -31,6 +33,7 @@ pomodoro-technik-lernen
 prokrastination-ueberwinden-lernen
 pruefungsangst-ueberwinden
 referat-halten-tipps
+schlaf-und-lernen-tipps
 spaced-repetition-lernmethode
 vokabeln-lernen-tipps
 wissenschaftliches-arbeiten-tipps
