@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 42
+- Gesamtzahl Artikel: 43
 - Letzte Veröffentlichung: 2026-04-10
 - Nächster geplanter Post: TBD
 
@@ -55,6 +55,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 40 | 2026-04-09 | lernpausen-richtig-machen | Lernpausen richtig machen: So erholt sich dein Gehirn | Lernpausen richtig machen, Lernpause, Pause beim Lernen, wie lange Lernpause, Lernpausen Tipps, Erholung beim Lernen, Lernen Pause Gehirn | Lernmethoden | Erklärt warum Lernpausen wichtig sind (Default Mode Network, Konsolidierung), optimale Pausendauern je nach Lernphase (25/5, 50/15, 90/30), was man in guten Pausen tun soll (Bewegung, Natur, Wasser) vs. was schadet (Social Media, Videos), Mikrounterbrechungen, Pausen planen statt spontan. App-Erwähnung (Nachhilfe Mentor App). Crosslinks zu pomodoro-technik-lernen, konzentration-steigern-lernen. Rückverlinkung von pomodoro-technik-lernen. |
 | 42 | 2026-04-10 | schneller-lesen-lernen-tipps | Schneller lesen: 7 Techniken für besseres Leseverständnis | schneller lesen, Leseverständnis verbessern, Lesetechniken, effektiv lesen, Lesegeschwindigkeit steigern, SQ3R Methode, aktives Lesen, Leseverständnis Schule | Lernmethoden | 7 Lesetechniken: Überblick vor dem Lesen, SQ3R-Methode, Subvokalisierung reduzieren, Chunking (Wortgruppen), aktives Markieren und Kommentieren, Lesestrategien nach Texttyp (Skimming/Scanning/Intensivlesen), Wortschatz durch regelmäßiges Lesen erweitern. Häufige Fehler: Regression, passives Lesen, zu wenig Pausen, keine Nachverarbeitung. App-Erwähnung (Fachbegriffe abfragen). Crosslinks zu active-recall-lerntechnik, zusammenfassung-schreiben-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
 | 41 | 2026-04-10 | schlaf-und-lernen-tipps | Schlaf und Lernen: Wie dein Gehirn nachts Wissen festigt | Schlaf und Lernen, Schlaf Gedächtnis, Schlaf Lernen Tipps, Schlaf Lernleistung, Gedächtniskonsolidierung Schlaf, Schlaf Prüfungsvorbereitung, Lernen vor dem Schlafen, Power Nap lernen | Lernmethoden | Erklärt Gedächtniskonsolidierung im Schlaf (Tiefschlaf für Fakten, REM für Vernetzung), optimale Schlafdauer nach Alter (Schüler 8-10h, Studenten 7-9h), Lernrhythmus rund um Schlaf (abends wiederholen, morgens für komplexe Aufgaben), Power Nap (10-20 Minuten), was Lernschlaf sabotiert (Bildschirmlicht, Koffein, unregelmäßige Zeiten, warmes Zimmer), praktische Tipps. App-Erwähnung (Wiederholsession vor dem Schlafen). Crosslinks zu spaced-repetition-lernmethode, lernen-morgens-oder-abends-chronotyp, lernpausen-richtig-machen. Rückverlinkung von lernpausen-richtig-machen. |
+| 43 | 2026-04-10 | musik-beim-lernen-tipps | Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden | Musik beim Lernen, Lernen mit Musik, Musik Konzentration, Hintergrundmusik lernen, Lo-Fi lernen, Musik Lernleistung, Kopfhörer lernen, Musik Lernen Tipps | Lernmethoden | Erklärt den Mozart-Effekt-Mythos, welche Musiktypen sich eignen (Instrumental, Lo-Fi, Naturgeräusche), welche schaden (Musik mit Text, neue Songs, Podcasts), für welche Aufgaben Musik hilft vs. schadet (Routineaufgaben vs. komplexe Texte/Mathe), Lautstärke-Tipps, Fluency Illusion, Selbsttest-Methode. App-Erwähnung (Quiz-Fragen für echtes Lernfeedback). Crosslinks zu pomodoro-technik-lernen, active-recall-lerntechnik, konzentration-steigern-lernen. Rückverlinkung von konzentration-steigern-lernen und lernumgebung-gestalten-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -73,7 +74,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Gedächtnis verbessern Übungen,
   Erdkunde lernen Tipps,
   Latein lernen Tipps,
-  Lernen mit Musik, Musik beim Lernen,
+  <!-- Lernen mit Musik, Musik beim Lernen → verwendet in Artikel #43 -->
   <!-- Schlaf und Lernen, Schlaf Gedächtnis → verwendet in Artikel #41 -->
   <!-- Leseverstehen verbessern, schneller lesen → verwendet in Artikel #42 -->
 
