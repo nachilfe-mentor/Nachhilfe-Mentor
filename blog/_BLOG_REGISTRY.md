@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 40
-- Letzte Veröffentlichung: 2026-04-09
+- Gesamtzahl Artikel: 41
+- Letzte Veröffentlichung: 2026-04-10
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -53,6 +53,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 38 | 2026-04-09 | franzoesisch-lernen-tipps | Französisch lernen: 8 Tipps, mit denen du schnell besser wirst | Französisch lernen Tipps, Französisch lernen, Französisch besser werden, Französisch Schule, Französisch Grammatik lernen, Französisch Vokabeln lernen, Französisch sprechen üben, Französisch verbessern | Sprachen lernen | 8 Tipps zum Französisch lernen: Aussprache von Anfang an richtig (Liaison, stumme Konsonanten), Vokabeln mit Leitner-System und Spaced Repetition, Grammatik durch Verstehen statt Auswendiglernen (häufige unregelmäßige Verben, Feynman-Technik), täglich kleine Einheiten, Sprechen trotz Fehlern üben, Immersion im Alltag (Serien, Musik, Smartphone-Sprache), kurze Schreibübungen täglich, aktives Textarbeiten. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
 | 39 | 2026-04-09 | informatik-lernen-tipps | Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen | Informatik lernen Tipps, Informatik Schule, Programmieren lernen Schüler, Algorithmen verstehen, Informatik Klausur, Informatik besser werden, Informatik Gymnasium | Fachspezifisch | 7 Tipps zum Informatik lernen: Verstehen statt auswendig lernen (Feynman-Technik), Code selbst schreiben (Active Recall), Algorithmen visualisieren, kleine Projekte bauen, systematisch debuggen, richtige Ressourcen nutzen, Klausurvorbereitung (Traces, alte Klausuren). App-Erwähnung (KI-Erklärungen). Crosslinks zu feynman-technik-erklaeren-lernen, active-recall-lerntechnik, mathe-lernen-tipps. Rückverlinkung von mathe-lernen-tipps. |
 | 40 | 2026-04-09 | lernpausen-richtig-machen | Lernpausen richtig machen: So erholt sich dein Gehirn | Lernpausen richtig machen, Lernpause, Pause beim Lernen, wie lange Lernpause, Lernpausen Tipps, Erholung beim Lernen, Lernen Pause Gehirn | Lernmethoden | Erklärt warum Lernpausen wichtig sind (Default Mode Network, Konsolidierung), optimale Pausendauern je nach Lernphase (25/5, 50/15, 90/30), was man in guten Pausen tun soll (Bewegung, Natur, Wasser) vs. was schadet (Social Media, Videos), Mikrounterbrechungen, Pausen planen statt spontan. App-Erwähnung (Nachhilfe Mentor App). Crosslinks zu pomodoro-technik-lernen, konzentration-steigern-lernen. Rückverlinkung von pomodoro-technik-lernen. |
+| 41 | 2026-04-10 | schlaf-und-lernen-tipps | Schlaf und Lernen: Wie dein Gehirn nachts Wissen festigt | Schlaf und Lernen, Schlaf Gedächtnis, Schlaf Lernen Tipps, Schlaf Lernleistung, Gedächtniskonsolidierung Schlaf, Schlaf Prüfungsvorbereitung, Lernen vor dem Schlafen, Power Nap lernen | Lernmethoden | Erklärt Gedächtniskonsolidierung im Schlaf (Tiefschlaf für Fakten, REM für Vernetzung), optimale Schlafdauer nach Alter (Schüler 8-10h, Studenten 7-9h), Lernrhythmus rund um Schlaf (abends wiederholen, morgens für komplexe Aufgaben), Power Nap (10-20 Minuten), was Lernschlaf sabotiert (Bildschirmlicht, Koffein, unregelmäßige Zeiten, warmes Zimmer), praktische Tipps. App-Erwähnung (Wiederholsession vor dem Schlafen). Crosslinks zu spaced-repetition-lernmethode, lernen-morgens-oder-abends-chronotyp, lernpausen-richtig-machen. Rückverlinkung von lernpausen-richtig-machen. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -72,7 +73,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Erdkunde lernen Tipps,
   Latein lernen Tipps,
   Lernen mit Musik, Musik beim Lernen,
-  Schlaf und Lernen, Schlaf Gedächtnis,
+  <!-- Schlaf und Lernen, Schlaf Gedächtnis → verwendet in Artikel #41 -->
   Leseverstehen verbessern, schneller lesen,
 
 ## Verwendete Keywords
