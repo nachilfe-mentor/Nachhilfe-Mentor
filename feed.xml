@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 10 Apr 2026 13:14:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 21:19:23 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lernumgebung gestalten: 8 Tipps für deinen perfekten Lernplatz</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernumgebung-gestalten-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernumgebung-gestalten-tipps.html</guid>
+      <pubDate>Fri, 10 Apr 2026 21:18:35 +0000</pubDate>
+      <description>Lernumgebung gestalten leicht gemacht: Mit diesen 8 Tipps richtest du deinen Lernplatz so ein, dass du dich sofort konzentrierst. Weniger Ablenkung, mehr Fokus.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Konzentration steigern beim Lernen: 10 Techniken, die sofort wirken</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/konzentration-steigern-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/konzentration-steigern-lernen.html</guid>
+      <pubDate>Fri, 10 Apr 2026 21:18:28 +0000</pubDate>
+      <description>Konzentration steigern beim Lernen: 10 bewährte Techniken gegen Ablenkung. Sofort umsetzbare Tipps für Schüler und Studenten, die fokussierter lernen wollen.</description>
+      <category>Motivation &amp; Produktivität</category>
+    </item>
+    <item>
+      <title>Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/musik-beim-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/musik-beim-lernen-tipps.html</guid>
+      <pubDate>Fri, 10 Apr 2026 21:17:47 +0000</pubDate>
+      <description>Musik beim Lernen: Hilft sie wirklich oder lenkt sie ab? Hier erfährst du, welche Musik für welche Aufgaben geeignet ist und was die Forschung dazu sagt.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
       <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
@@ -142,30 +166,6 @@
       <pubDate>Tue, 07 Apr 2026 20:32:30 +0000</pubDate>
       <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html</guid>
-      <pubDate>Tue, 07 Apr 2026 12:28:15 +0000</pubDate>
-      <description>Physik lernen leicht gemacht: 7 bewährte Tipps, die dir helfen, Formeln zu verstehen statt auswendig zu pauken. Praktisch, direkt umsetzbar und für Schüler und Studenten.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Chemie lernen: 7 Tipps, mit denen du Chemie endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/chemie-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/chemie-lernen-tipps.html</guid>
-      <pubDate>Tue, 07 Apr 2026 12:27:25 +0000</pubDate>
-      <description>Chemie lernen fühlt sich oft überwältigend an: Formeln, Reaktionsgleichungen, Periodensystem. Diese 7 Tipps zeigen dir, wie du Chemie wirklich verstehst statt nur paukst.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/biologie-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/biologie-lernen-tipps.html</guid>
-      <pubDate>Mon, 06 Apr 2026 20:18:01 +0000</pubDate>
-      <description>Biologie lernen fühlt sich oft wie endloses Pauken an. Mit diesen 7 bewährten Tipps verstehst du Zusammenhänge, merkst dir Fachbegriffe dauerhaft und überzeugst in der nächsten Prüfung.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
