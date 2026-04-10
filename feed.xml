@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 10 Apr 2026 05:08:42 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 13:13:34 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
+      <pubDate>Fri, 10 Apr 2026 13:12:35 +0000</pubDate>
+      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Schneller lesen: 7 Techniken für besseres Leseverständnis</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/schneller-lesen-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/schneller-lesen-lernen-tipps.html</guid>
+      <pubDate>Fri, 10 Apr 2026 13:11:56 +0000</pubDate>
+      <description>Schneller lesen und mehr verstehen: 7 bewährte Lesetechniken für Schüler und Studenten. So liest du Texte effizienter und behältst mehr im Gedächtnis.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Lernpausen richtig machen: So erholt sich dein Gehirn</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernpausen-richtig-machen.html</link>
@@ -120,14 +136,6 @@
       <category>Lernmethoden</category>
     </item>
     <item>
-      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
-      <pubDate>Tue, 07 Apr 2026 20:33:11 +0000</pubDate>
-      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
       <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
       <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 06 Apr 2026 20:18:01 +0000</pubDate>
       <description>Biologie lernen fühlt sich oft wie endloses Pauken an. Mit diesen 7 bewährten Tipps verstehst du Zusammenhänge, merkst dir Fachbegriffe dauerhaft und überzeugst in der nächsten Prüfung.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Cornell-Methode: Bessere Mitschriften, die du wirklich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/cornell-methode-notizen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/cornell-methode-notizen.html</guid>
-      <pubDate>Mon, 06 Apr 2026 12:13:00 +0000</pubDate>
-      <description>Die Cornell-Methode verwandelt chaotische Mitschriften in strukturiertes Wissen. Lerne, wie du das 3-Zonen-System richtig nutzt und deinen Lernstoff dauerhaft behältst.</description>
-      <category>Lernmethoden</category>
     </item>
   </channel>
 </rss>
