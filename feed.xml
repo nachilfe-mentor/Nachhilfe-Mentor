@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 11 Apr 2026 05:25:02 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 13:30:10 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Französisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</guid>
+      <pubDate>Sat, 11 Apr 2026 13:28:59 +0000</pubDate>
+      <description>Französisch lernen leicht gemacht: 8 bewährte Tipps für Schüler, die schnell besser werden wollen. Von Vokabeln über Grammatik bis zum freien Sprechen.</description>
+      <category>Sprachen lernen</category>
+    </item>
+    <item>
+      <title>Spanisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/spanisch-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/spanisch-lernen-tipps.html</guid>
+      <pubDate>Sat, 11 Apr 2026 13:28:29 +0000</pubDate>
+      <description>Spanisch lernen mit System: 8 bewährte Tipps für Schüler, die schnell besser werden wollen. Von Aussprache über Vokabeln bis zu Grammatik und Sprechübungen.</description>
+      <category>Sprachen lernen</category>
+    </item>
     <item>
       <title>Lernplan erstellen: So bereitest du dich systematisch auf Prüfungen vor</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernplan-erstellen-tipps.html</link>
@@ -120,14 +136,6 @@
       <category>Sprachen lernen</category>
     </item>
     <item>
-      <title>Französisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</guid>
-      <pubDate>Thu, 09 Apr 2026 04:51:24 +0000</pubDate>
-      <description>Französisch lernen leicht gemacht: 8 bewährte Tipps für Schüler, die schnell besser werden wollen. Von Vokabeln über Grammatik bis zum freien Sprechen.</description>
-      <category>Sprachen lernen</category>
-    </item>
-    <item>
       <title>Klausurvorbereitung letzte Woche: So holst du das Maximum raus</title>
       <link>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 08 Apr 2026 12:41:48 +0000</pubDate>
       <description>Geschichte lernen fällt vielen schwer, weil es so viele Daten und Zusammenhänge gibt. Mit diesen 7 Tipps lernst du Geschichte effizienter, behältst mehr und bestehst deine Prüfung.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Zeitmanagement Studium: 8 Tipps für mehr Produktivität</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zeitmanagement-studium-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zeitmanagement-studium-tipps.html</guid>
-      <pubDate>Wed, 08 Apr 2026 04:37:33 +0000</pubDate>
-      <description>Zeitmanagement im Studium verbessern: 8 erprobte Tipps, mit denen du Vorlesungen, Lernen und Freizeit unter einen Hut bekommst.</description>
-      <category>Motivation &amp; Produktivität</category>
     </item>
   </channel>
 </rss>
