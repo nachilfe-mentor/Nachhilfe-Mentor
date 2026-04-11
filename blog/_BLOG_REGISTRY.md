@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 44
+- Gesamtzahl Artikel: 45
 - Letzte Veröffentlichung: 2026-04-11
 - Nächster geplanter Post: TBD
 
@@ -57,6 +57,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 41 | 2026-04-10 | schlaf-und-lernen-tipps | Schlaf und Lernen: Wie dein Gehirn nachts Wissen festigt | Schlaf und Lernen, Schlaf Gedächtnis, Schlaf Lernen Tipps, Schlaf Lernleistung, Gedächtniskonsolidierung Schlaf, Schlaf Prüfungsvorbereitung, Lernen vor dem Schlafen, Power Nap lernen | Lernmethoden | Erklärt Gedächtniskonsolidierung im Schlaf (Tiefschlaf für Fakten, REM für Vernetzung), optimale Schlafdauer nach Alter (Schüler 8-10h, Studenten 7-9h), Lernrhythmus rund um Schlaf (abends wiederholen, morgens für komplexe Aufgaben), Power Nap (10-20 Minuten), was Lernschlaf sabotiert (Bildschirmlicht, Koffein, unregelmäßige Zeiten, warmes Zimmer), praktische Tipps. App-Erwähnung (Wiederholsession vor dem Schlafen). Crosslinks zu spaced-repetition-lernmethode, lernen-morgens-oder-abends-chronotyp, lernpausen-richtig-machen. Rückverlinkung von lernpausen-richtig-machen. |
 | 43 | 2026-04-10 | musik-beim-lernen-tipps | Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden | Musik beim Lernen, Lernen mit Musik, Musik Konzentration, Hintergrundmusik lernen, Lo-Fi lernen, Musik Lernleistung, Kopfhörer lernen, Musik Lernen Tipps | Lernmethoden | Erklärt den Mozart-Effekt-Mythos, welche Musiktypen sich eignen (Instrumental, Lo-Fi, Naturgeräusche), welche schaden (Musik mit Text, neue Songs, Podcasts), für welche Aufgaben Musik hilft vs. schadet (Routineaufgaben vs. komplexe Texte/Mathe), Lautstärke-Tipps, Fluency Illusion, Selbsttest-Methode. App-Erwähnung (Quiz-Fragen für echtes Lernfeedback). Crosslinks zu pomodoro-technik-lernen, active-recall-lerntechnik, konzentration-steigern-lernen. Rückverlinkung von konzentration-steigern-lernen und lernumgebung-gestalten-tipps. |
 | 44 | 2026-04-11 | noten-verbessern-schule-tipps | Noten verbessern: 8 Tipps für bessere Schulnoten | Noten verbessern, Note verbessern Schule, bessere Noten bekommen, Schulnoten verbessern, Note verbessern Tipps, bessere Noten Schule, schlechte Noten verbessern, Noten steigern | Prüfungsvorbereitung | 8 Tipps zur Notenverbesserung: Schwächen analysieren, Verstehen vor Auswendiglernen, Active Recall aktiv nutzen, Wissenslücken schließen, Lernplan erstellen, Spaced Repetition für regelmäßige Wiederholung, Fehleranalyse nach Klausuren, Lehrergespräch suchen. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, lernplan-erstellen-tipps, spaced-repetition-lernmethode. Rückverlinkung von pruefungsangst-ueberwinden und lernplan-erstellen-tipps. |
+| 45 | 2026-04-11 | spanisch-lernen-tipps | Spanisch lernen: 8 Tipps, mit denen du schnell besser wirst | Spanisch lernen Tipps, Spanisch lernen, Spanisch besser werden, Spanisch Schule, Spanisch Grammatik lernen, Spanisch Vokabeln lernen, Spanisch sprechen üben, Spanisch verbessern | Sprachen lernen | 8 Tipps zum Spanisch lernen: Aussprache von Anfang an richtig (r/rr, Vokale, ll/y), Vokabeln mit Spaced Repetition und Artikeln, Grammatik durch Verstehen (Ser vs. Estar, Feynman-Technik), täglich kleine Einheiten, Sprechen trotz Fehlern üben (Tandem, Selbstgespräche), Immersion im Alltag (Handy-Sprache, Serien, Musik), Schreiben üben (Active Recall), aktives Textarbeiten (SQ3R-ähnlich). App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen, active-recall-lerntechnik, franzoesisch-lernen-tipps. Rückverlinkung von franzoesisch-lernen-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -64,7 +65,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten
 - KI & Bildung: Lernen mit KI / ChatGPT
-- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen
+- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 ## Keyword-Pool (noch nicht verwendet)
@@ -75,6 +76,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Gedächtnis verbessern Übungen,
   Erdkunde lernen Tipps,
   Latein lernen Tipps,
+  Lernstress bewältigen Abitur,
+  Lernmethoden Grundschule,
+  Motivationsschreiben Tipps,
+  <!-- Spanisch lernen Tipps → verwendet in Artikel #45 -->
   <!-- Noten verbessern, bessere Noten Schule → verwendet in Artikel #44 -->
   <!-- Lernen mit Musik, Musik beim Lernen → verwendet in Artikel #43 -->
   <!-- Schlaf und Lernen, Schlaf Gedächtnis → verwendet in Artikel #41 -->
