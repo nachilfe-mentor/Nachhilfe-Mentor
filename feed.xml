@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 10 Apr 2026 21:19:58 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Apr 2026 05:24:40 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lernplan erstellen: So bereitest du dich systematisch auf Prüfungen vor</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernplan-erstellen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernplan-erstellen-tipps.html</guid>
+      <pubDate>Sat, 11 Apr 2026 05:23:31 +0000</pubDate>
+      <description>Lernplan erstellen leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. So planst du deine Prüfungsvorbereitung effektiv und ohne Stress.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
+      <pubDate>Sat, 11 Apr 2026 05:23:27 +0000</pubDate>
+      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Noten verbessern: 8 Tipps für bessere Schulnoten</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</guid>
+      <pubDate>Sat, 11 Apr 2026 05:22:53 +0000</pubDate>
+      <description>Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch bessere Schulnoten, ohne nächtelang zu pauken.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Lernumgebung gestalten: 8 Tipps für deinen perfekten Lernplatz</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernumgebung-gestalten-tipps.html</link>
@@ -104,14 +128,6 @@
       <category>Sprachen lernen</category>
     </item>
     <item>
-      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
-      <pubDate>Wed, 08 Apr 2026 20:47:15 +0000</pubDate>
-      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
       <title>Klausurvorbereitung letzte Woche: So holst du das Maximum raus</title>
       <link>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</guid>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 08 Apr 2026 04:37:33 +0000</pubDate>
       <description>Zeitmanagement im Studium verbessern: 8 erprobte Tipps, mit denen du Vorlesungen, Lernen und Freizeit unter einen Hut bekommst.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Lernen morgens oder abends: Wann ist dein Gehirn am leistungsfähigsten?</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernen-morgens-oder-abends-chronotyp.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernen-morgens-oder-abends-chronotyp.html</guid>
-      <pubDate>Wed, 08 Apr 2026 04:37:05 +0000</pubDate>
-      <description>Morgens oder abends lernen? Finde deinen Chronotyp und entdecke, wann dein Gehirn am leistungsfähigsten ist. Mit wissenschaftlich fundierten Tipps für die optimale Lernzeit.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Tue, 07 Apr 2026 20:32:30 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
