@@ -1195,3 +1195,180 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Der Hintergrundversuch hat ebenfalls mit 429 versagt. Das Pinterest-API-Tageslimit ist erschöpft, weil heute bereits zwei andere Pins erstellt wurden. Der Fallback-Script wird den Pin automatisch beim nächsten Zyklus nachholen.
+
+Der Durchlauf ist ansonsten vollständig abgeschlossen.
+[2026-04-10 13:14:50] Blog cycle completed successfully.
+[2026-04-10 13:14:50] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 48 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 44 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 44 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 48 URLs in Sitemap, 20 Artikel im Feed.
+[main c9aa19f] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   d18f9c4..c9aa19f  main -> main
+[2026-04-10 13:14:50] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: schneller-lesen-lernen-tipps
+  Titel: Schneller lesen: 7 Techniken für besseres Leseverständnis
+  Desc:  Schneller lesen und mehr verstehen: 7 bewährte Lesetechniken für Schüler und Stu...
+[Pinterest] Erstelle Pin fuer: Schneller lesen: 7 Techniken für besseres Leseverständnis
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/schneller-lesen-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/schneller-lesen-lernen-tipps.html
+[Pinterest] Uploading schneller-lesen-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=16b75d3a-b078-4896-8aef-f9b6267a3bb9
+[Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
+[Pinterest] Pin-Erstellung fehlgeschlagen.
+
+[Pinterest-Fallback] FEHLER bei schneller-lesen-lernen-tipps: 
+[Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
+[2026-04-10 13:14:50] Next run in 8 hours.
+---
+[2026-04-10 21:15:05] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-API gibt 429 (Too Many Requests) zurück, das Bild-Upload funktioniert aber korrekt. Das ist ein temporärer Rate-Limit-Fehler der Pinterest-API, nicht ein Problem mit dem Skript oder den Daten.
+
+---
+
+## DURCHLAUF ABGESCHLOSSEN
+
+- [x] Artikel geschrieben: `musik-beim-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/musik-beim-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `konzentration-steigern-lernen.html` bei Punkt 9 "Musik und Geräusche strategisch", und in `lernumgebung-gestalten-tipps.html` bei Punkt 7 "Geräusche: Stille, Natur oder Lo-Fi?")
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #43, Keyword als verwendet markiert)
+- [x] Git Push: erfolgreich (2 Commits: Artikel + SEO)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (49 URLs in Sitemap, 45 URLs an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt, 2 Versuche — **fehlgeschlagen: Pinterest API 429 Too Many Requests** (Bild-Upload erfolgreich, Pin-Erstellung abgebrochen durch Rate-Limit). Fallback-Script holt den Pin beim nächsten Cycle nach.
+
+**Artikel #43:** "Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden"
+Thema: Lernmethoden-Cluster, Focus-Keyword "Musik beim Lernen", ca. 1.000 Wörter. Erklärt den Mozart-Effekt-Mythos, welche Musik sich eignet (Instrumental, Lo-Fi, Naturgeräusche), für welche Aufgaben Musik passt vs. schadet, und die Fluency Illusion als häufige Falle.
+[2026-04-10 21:19:58] Blog cycle completed successfully.
+[2026-04-10 21:19:58] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 49 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 45 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 45 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 49 URLs in Sitemap, 20 Artikel im Feed.
+[main 05ec719] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   2fbc5b2..05ec719  main -> main
+[2026-04-10 21:19:58] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: schneller-lesen-lernen-tipps
+  Titel: Schneller lesen: 7 Techniken für besseres Leseverständnis
+  Desc:  Schneller lesen und mehr verstehen: 7 bewährte Lesetechniken für Schüler und Stu...
+[Pinterest] Erstelle Pin fuer: Schneller lesen: 7 Techniken für besseres Leseverständnis
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/schneller-lesen-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/schneller-lesen-lernen-tipps.html
+[Pinterest] Uploading schneller-lesen-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=7674ee1a-98a5-4074-9111-db4d20347e57
+[Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
+[Pinterest] Pin-Erstellung fehlgeschlagen.
+
+[Pinterest-Fallback] FEHLER bei schneller-lesen-lernen-tipps: 
+[Pinterest-Fallback] Pinne: musik-beim-lernen-tipps
+  Titel: Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden
+  Desc:  Musik beim Lernen: Hilft sie wirklich oder lenkt sie ab? Hier erfährst du, welch...
+[Pinterest] Erstelle Pin fuer: Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/musik-beim-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/musik-beim-lernen-tipps.html
+[Pinterest] Uploading musik-beim-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=a3ffee13-aff1-41b3-8150-68a2ec89ad14
+[Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
+[Pinterest] Pin-Erstellung fehlgeschlagen.
+
+[Pinterest-Fallback] FEHLER bei musik-beim-lernen-tipps: 
+[Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
+[2026-04-10 21:19:58] Next run in 8 hours.
+---
+[2026-04-11 05:20:02] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+---
+
+## DURCHLAUF ABGESCHLOSSEN:
+
+- [x] **Artikel geschrieben:** `noten-verbessern-schule-tipps.html` (Prüfungsvorbereitung, 8 Tipps, ~900 Wörter)
+- [x] **Cover-Bild generiert:** `blog/posts/img/noten-verbessern-schule-tipps.webp`
+- [x] **Blog-Index aktualisiert:** `blog/index.html` (neue Card oben eingefügt)
+- [x] **Crosslinks gesetzt:** ja
+  - `noten-verbessern-schule-tipps.html` verlinkt auf `active-recall-lerntechnik`, `lernplan-erstellen-tipps`, `spaced-repetition-lernmethode`
+  - Rückverlinkung in `pruefungsangst-ueberwinden.html` (Fazit-Abschnitt)
+  - Rückverlinkung in `lernplan-erstellen-tipps.html` (Fazit, "bessere Schulnoten")
+- [x] **Registry aktualisiert:** `blog/_BLOG_REGISTRY.md` (44 Artikel, Datum 2026-04-11)
+- [x] **Git Push:** erfolgreich (`5983a28` und `8797549`)
+- [x] **SEO-Update:** `python3 blog/_update_seo.py` ausgeführt (50 URLs in Sitemap, 46 URLs an IndexNow gemeldet)
+- [x] **PINTEREST:** `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmntw4ol100dste0y4dd8xz3l`
+
+**Analytics-Notiz (für nächsten Durchlauf):** Google organisch auf 9 Sessions gestiegen (von 4 beim letzten Check), das ist ein deutlicher SEO-Fortschritt. Lerntypen-Artikel ist neuer Top-Performer der letzten 7 Tage. Blog gesamt: 95 Pageviews in 30 Tagen. Nächstes Thema: Latein lernen Tipps, KI Hausaufgaben Hilfe oder Erdkunde lernen (alle aus dem Keyword-Pool). Artikel #45 wird der Artikel sein, der den nächsten Self-Improvement-Durchlauf auslöst.
+[2026-04-11 05:25:02] Blog cycle completed successfully.
+[2026-04-11 05:25:02] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 50 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 46 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 46 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 50 URLs in Sitemap, 20 Artikel im Feed.
+[main 774c20f] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   8797549..774c20f  main -> main
+[2026-04-11 05:25:02] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: schneller-lesen-lernen-tipps
+  Titel: Schneller lesen: 7 Techniken für besseres Leseverständnis
+  Desc:  Schneller lesen und mehr verstehen: 7 bewährte Lesetechniken für Schüler und Stu...
+[Pinterest] Erstelle Pin fuer: Schneller lesen: 7 Techniken für besseres Leseverständnis
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/schneller-lesen-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/schneller-lesen-lernen-tipps.html
+[Pinterest] Uploading schneller-lesen-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=badd0bed-e1fa-4aa4-af22-6c692d5dbcc4
+[Pinterest] Pin erstellt! Post-ID: cmntw50ry00dute0yzaxkbfbg
+[Pinterest] Erfolgreich! Pin-ID: cmntw50ry00dute0yzaxkbfbg
+
+[Pinterest-Fallback] OK: schneller-lesen-lernen-tipps
+[Pinterest-Fallback] Pinne: musik-beim-lernen-tipps
+  Titel: Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden
+  Desc:  Musik beim Lernen: Hilft sie wirklich oder lenkt sie ab? Hier erfährst du, welch...
+[Pinterest] Erstelle Pin fuer: Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/musik-beim-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/musik-beim-lernen-tipps.html
+[Pinterest] Uploading musik-beim-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=53855a9c-c01c-41cd-b132-c02e46eac424
+[Pinterest] Pin erstellt! Post-ID: cmntw51qu00dvte0ynhahql0k
+[Pinterest] Erfolgreich! Pin-ID: cmntw51qu00dvte0ynhahql0k
+
+[Pinterest-Fallback] OK: musik-beim-lernen-tipps
+[Pinterest-Fallback] Pinne: noten-verbessern-schule-tipps
+  Titel: Noten verbessern: 8 Tipps für bessere Schulnoten
+  Desc:  Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch be...
+[Pinterest] Erstelle Pin fuer: Noten verbessern: 8 Tipps für bessere Schulnoten
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/noten-verbessern-schule-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html
+[Pinterest] Uploading noten-verbessern-schule-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=24123363-2489-47b1-9aa8-5a0e95d54aca
+[Pinterest] Pin erstellt! Post-ID: cmntw52vb00uhqz0y8blma8vs
+[Pinterest] Erfolgreich! Pin-ID: cmntw52vb00uhqz0y8blma8vs
+
+[Pinterest-Fallback] OK: noten-verbessern-schule-tipps
+[Pinterest-Fallback] 3 neue Pin(s) erstellt.
+[2026-04-11 05:25:02] Next run in 8 hours.
+---
+[2026-04-11 13:25:07] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
