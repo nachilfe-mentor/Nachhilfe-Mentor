@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 43
-- Letzte Veröffentlichung: 2026-04-10
+- Gesamtzahl Artikel: 44
+- Letzte Veröffentlichung: 2026-04-11
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -56,6 +56,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 42 | 2026-04-10 | schneller-lesen-lernen-tipps | Schneller lesen: 7 Techniken für besseres Leseverständnis | schneller lesen, Leseverständnis verbessern, Lesetechniken, effektiv lesen, Lesegeschwindigkeit steigern, SQ3R Methode, aktives Lesen, Leseverständnis Schule | Lernmethoden | 7 Lesetechniken: Überblick vor dem Lesen, SQ3R-Methode, Subvokalisierung reduzieren, Chunking (Wortgruppen), aktives Markieren und Kommentieren, Lesestrategien nach Texttyp (Skimming/Scanning/Intensivlesen), Wortschatz durch regelmäßiges Lesen erweitern. Häufige Fehler: Regression, passives Lesen, zu wenig Pausen, keine Nachverarbeitung. App-Erwähnung (Fachbegriffe abfragen). Crosslinks zu active-recall-lerntechnik, zusammenfassung-schreiben-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
 | 41 | 2026-04-10 | schlaf-und-lernen-tipps | Schlaf und Lernen: Wie dein Gehirn nachts Wissen festigt | Schlaf und Lernen, Schlaf Gedächtnis, Schlaf Lernen Tipps, Schlaf Lernleistung, Gedächtniskonsolidierung Schlaf, Schlaf Prüfungsvorbereitung, Lernen vor dem Schlafen, Power Nap lernen | Lernmethoden | Erklärt Gedächtniskonsolidierung im Schlaf (Tiefschlaf für Fakten, REM für Vernetzung), optimale Schlafdauer nach Alter (Schüler 8-10h, Studenten 7-9h), Lernrhythmus rund um Schlaf (abends wiederholen, morgens für komplexe Aufgaben), Power Nap (10-20 Minuten), was Lernschlaf sabotiert (Bildschirmlicht, Koffein, unregelmäßige Zeiten, warmes Zimmer), praktische Tipps. App-Erwähnung (Wiederholsession vor dem Schlafen). Crosslinks zu spaced-repetition-lernmethode, lernen-morgens-oder-abends-chronotyp, lernpausen-richtig-machen. Rückverlinkung von lernpausen-richtig-machen. |
 | 43 | 2026-04-10 | musik-beim-lernen-tipps | Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden | Musik beim Lernen, Lernen mit Musik, Musik Konzentration, Hintergrundmusik lernen, Lo-Fi lernen, Musik Lernleistung, Kopfhörer lernen, Musik Lernen Tipps | Lernmethoden | Erklärt den Mozart-Effekt-Mythos, welche Musiktypen sich eignen (Instrumental, Lo-Fi, Naturgeräusche), welche schaden (Musik mit Text, neue Songs, Podcasts), für welche Aufgaben Musik hilft vs. schadet (Routineaufgaben vs. komplexe Texte/Mathe), Lautstärke-Tipps, Fluency Illusion, Selbsttest-Methode. App-Erwähnung (Quiz-Fragen für echtes Lernfeedback). Crosslinks zu pomodoro-technik-lernen, active-recall-lerntechnik, konzentration-steigern-lernen. Rückverlinkung von konzentration-steigern-lernen und lernumgebung-gestalten-tipps. |
+| 44 | 2026-04-11 | noten-verbessern-schule-tipps | Noten verbessern: 8 Tipps für bessere Schulnoten | Noten verbessern, Note verbessern Schule, bessere Noten bekommen, Schulnoten verbessern, Note verbessern Tipps, bessere Noten Schule, schlechte Noten verbessern, Noten steigern | Prüfungsvorbereitung | 8 Tipps zur Notenverbesserung: Schwächen analysieren, Verstehen vor Auswendiglernen, Active Recall aktiv nutzen, Wissenslücken schließen, Lernplan erstellen, Spaced Repetition für regelmäßige Wiederholung, Fehleranalyse nach Klausuren, Lehrergespräch suchen. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, lernplan-erstellen-tipps, spaced-repetition-lernmethode. Rückverlinkung von pruefungsangst-ueberwinden und lernplan-erstellen-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -74,6 +75,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Gedächtnis verbessern Übungen,
   Erdkunde lernen Tipps,
   Latein lernen Tipps,
+  <!-- Noten verbessern, bessere Noten Schule → verwendet in Artikel #44 -->
   <!-- Lernen mit Musik, Musik beim Lernen → verwendet in Artikel #43 -->
   <!-- Schlaf und Lernen, Schlaf Gedächtnis → verwendet in Artikel #41 -->
   <!-- Leseverstehen verbessern, schneller lesen → verwendet in Artikel #42 -->
@@ -320,3 +322,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - schneller-lesen-lernen-tipps -> active-recall-lerntechnik (SQ3R Recite-Schritt: Active Recall als Kernprinzip beim Lesen)
 - schneller-lesen-lernen-tipps -> zusammenfassung-schreiben-lernen (Aktives Markieren: Markierungen als Grundlage für Zusammenfassungen)
 - zusammenfassung-schreiben-lernen -> schneller-lesen-lernen-tipps (Rückverlinkung: Schritt 1 Überblick verschaffen, Lesetechniken wie Skimming und SQ3R)
+
+## Interne Verlinkungen (Ergänzung Artikel 44)
+- noten-verbessern-schule-tipps -> active-recall-lerntechnik (Tipp 3: Active Recall aktiv lernen statt passiv lesen)
+- noten-verbessern-schule-tipps -> lernplan-erstellen-tipps (Tipp 5: Lernplan erstellen als strukturierter Weg zur Notenverbesserung)
+- noten-verbessern-schule-tipps -> spaced-repetition-lernmethode (Tipp 6: Spaced Repetition für regelmäßige Wiederholung)
+- pruefungsangst-ueberwinden -> noten-verbessern-schule-tipps (Rückverlinkung: Fazit-Abschnitt, strukturierte Vorbereitung für bessere Noten)
+- lernplan-erstellen-tipps -> noten-verbessern-schule-tipps (Rückverlinkung: Fazit, bessere Schulnoten als Ergebnis eines guten Lernplans)
