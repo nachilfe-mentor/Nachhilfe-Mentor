@@ -1372,3 +1372,152 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `spanisch-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/spanisch-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `franzoesisch-lernen-tipps.html`; der neue Artikel verlinkt auf `spaced-repetition-lernmethode`, `feynman-technik-erklaeren-lernen`, `active-recall-lerntechnik`, `franzoesisch-lernen-tipps`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (45 Artikel)
+- [x] Self-Improvement R9: Analytics analysiert (96 Views, Google organisch auf 9 Sessions gewachsen), Strategie und Keyword-Pool in `_BLOG_STRATEGY.md` und `_BLOG_REGISTRY.md` aktualisiert
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (51 URLs in Sitemap, 47 URLs an IndexNow gesendet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmnudh1op027oqz0ype1jjdl5`
+[2026-04-11 13:30:31] Blog cycle completed successfully.
+[2026-04-11 13:30:31] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 51 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 47 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 47 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 51 URLs in Sitemap, 20 Artikel im Feed.
+[main babfdf8] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   486c4b4..babfdf8  main -> main
+[2026-04-11 13:30:31] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: spanisch-lernen-tipps
+  Titel: Spanisch lernen: 8 Tipps, mit denen du schnell besser wirst
+  Desc:  Spanisch lernen mit System: 8 bewährte Tipps für Schüler, die schnell besser wer...
+[Pinterest] Erstelle Pin fuer: Spanisch lernen: 8 Tipps, mit denen du schnell besser wirst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/spanisch-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/spanisch-lernen-tipps.html
+[Pinterest] Uploading spanisch-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=eaf06f34-9052-4275-aa0c-f5e43c967de2
+[Pinterest] Pin erstellt! Post-ID: cmnudhcj6027pqz0yuj8b3nm6
+[Pinterest] Erfolgreich! Pin-ID: cmnudhcj6027pqz0yuj8b3nm6
+
+[Pinterest-Fallback] OK: spanisch-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-11 13:30:31] Next run in 8 hours.
+---
+[2026-04-11 21:30:33] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt. Durchlauf abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `latein-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/latein-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (latein-lernen-tipps → spaced-repetition-lernmethode, latein-lernen-tipps → vokabeln-lernen-tipps; Rückverlinkung von vokabeln-lernen-tipps ergänzt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich (2 Commits: Artikel + SEO-Update)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (52 URLs in Sitemap, 48 an IndexNow übermittelt)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmnuutxb0032hte0ydntv4zl2`
+
+**Artikel #46:** „Latein lernen: 7 Tipps für Vokabeln, Grammatik und Textübersetzung" (Gymnasium-Nische, Longtail-Keyword mit wenig Wettbewerb, 7 Abschnitte, ca. 1.000 Wörter)
+[2026-04-11 21:36:21] Blog cycle completed successfully.
+[2026-04-11 21:36:21] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 52 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 48 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 48 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 52 URLs in Sitemap, 20 Artikel im Feed.
+[main 69afb26] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   ffea238..69afb26  main -> main
+[2026-04-11 21:36:21] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: latein-lernen-tipps
+  Titel: Latein lernen: 7 Tipps für Vokabeln, Grammatik und Textübersetzung
+  Desc:  Latein lernen im Gymnasium muss nicht quälend sein. 7 konkrete Tipps zu Vokabeln...
+[Pinterest] Erstelle Pin fuer: Latein lernen: 7 Tipps für Vokabeln, Grammatik und Textübersetzung
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/latein-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/latein-lernen-tipps.html
+[Pinterest] Uploading latein-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=769a9741-4894-4478-a0d9-671172426356
+[Pinterest] Pin erstellt! Post-ID: cmnuuu58i03j1qz0y2rqd1hg3
+[Pinterest] Erfolgreich! Pin-ID: cmnuuu58i03j1qz0y2rqd1hg3
+
+[Pinterest-Fallback] OK: latein-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-11 21:36:21] Next run in 8 hours.
+---
+[2026-04-12 05:36:24] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt. Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `erdkunde-lernen-tipps.html` (Artikel #47, 8 Tipps für Erdkunde)
+- [x] Cover-Bild generiert: `blog/posts/img/erdkunde-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html` (neue Card ganz oben)
+- [x] Crosslinks gesetzt: ja (erdkunde -> mindmap-erstellen-lernen, erdkunde -> spaced-repetition-lernmethode; Rückverlinkung von geschichte-lernen-tipps)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (47 Artikel, Keywords vermerkt)
+- [x] Git Push: erfolgreich (commit `a5edd8d`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (53 URLs in Sitemap, 49 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmnvc4zhg007elc0yx80ccev3`
+
+**Analytics-Notiz:** 99 Pageviews (30 Tage), Google organisch bei 10 Sessions (Wachstum von 4 auf 10 in den letzten Tagen). Lerntypen-Artikel dominiert die letzten 7 Tage. Gewähltes Thema "Erdkunde lernen Tipps" bedient den fachspezifischen Cluster und den Keyword-Pool aus der Strategie.
+[2026-04-12 05:40:52] Blog cycle completed successfully.
+[2026-04-12 05:40:52] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 53 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 49 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 49 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 53 URLs in Sitemap, 20 Artikel im Feed.
+[main de486e6] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   7a57a99..de486e6  main -> main
+[2026-04-12 05:40:52] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: erdkunde-lernen-tipps
+  Titel: Erdkunde lernen: 8 Tipps für Karten, Klimazonen und Geografie
+  Desc:  Erdkunde lernen muss nicht trocken sein. Mit diesen 8 Tipps merkst du dir Karten...
+[Pinterest] Erstelle Pin fuer: Erdkunde lernen: 8 Tipps für Karten, Klimazonen und Geografie
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/erdkunde-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/erdkunde-lernen-tipps.html
+[Pinterest] Uploading erdkunde-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=c7fb8f57-4b76-4791-a926-1526d586d951
+[Pinterest] Pin erstellt! Post-ID: cmnvc58n5007ql60yqmweo14y
+[Pinterest] Erfolgreich! Pin-ID: cmnvc58n5007ql60yqmweo14y
+
+[Pinterest-Fallback] OK: erdkunde-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-12 05:40:52] Next run in 8 hours.
+---
+[2026-04-12 13:40:55] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

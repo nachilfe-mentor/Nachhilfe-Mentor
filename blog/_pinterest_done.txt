@@ -6,6 +6,7 @@ cornell-methode-notizen
 deutsch-aufsatz-schreiben-tipps
 digitale-lerntools-beste-apps
 englisch-lernen-tipps
+erdkunde-lernen-tipps
 feynman-technik-erklaeren-lernen
 franzoesisch-lernen-tipps
 gedaechtnis-techniken-lernen
@@ -17,6 +18,7 @@ ki-pruefungsvorbereitung-tipps
 klausur-letzte-nacht-lernen
 klausurvorbereitung-letzte-woche
 konzentration-steigern-lernen
+latein-lernen-tipps
 lernblockade-loesen-tipps
 lernen-mit-ki-chatgpt
 lernen-morgens-oder-abends-chronotyp
@@ -38,6 +40,7 @@ referat-halten-tipps
 schlaf-und-lernen-tipps
 schneller-lesen-lernen-tipps
 spaced-repetition-lernmethode
+spanisch-lernen-tipps
 vokabeln-lernen-tipps
 wissenschaftliches-arbeiten-tipps
 zeitmanagement-studium-tipps
