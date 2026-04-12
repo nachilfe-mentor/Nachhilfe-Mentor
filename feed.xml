@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 12 Apr 2026 05:40:52 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 13:45:22 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</guid>
+      <pubDate>Sun, 12 Apr 2026 13:44:24 +0000</pubDate>
+      <description>Hausaufgaben Tipps, die wirklich funktionieren: Mit diesen 8 Strategien erledigst du deine Aufgaben schneller, konzentrierter und mit weniger Stress.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</guid>
+      <pubDate>Sun, 12 Apr 2026 13:44:19 +0000</pubDate>
+      <description>Lernen mit KI: Entdecke, wie du ChatGPT und andere KI-Tools gezielt für Schule und Studium einsetzt, welche Fehler du vermeiden solltest und wo die Grenzen liegen.</description>
+      <category>KI &amp; Bildung</category>
+    </item>
+    <item>
+      <title>KI Hausaufgaben Hilfe: So nutzt du KI richtig für deine Hausaufgaben</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/ki-hausaufgaben-hilfe.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/ki-hausaufgaben-hilfe.html</guid>
+      <pubDate>Sun, 12 Apr 2026 13:43:38 +0000</pubDate>
+      <description>KI als Hausaufgaben-Hilfe richtig nutzen: 7 Strategien, mit denen du wirklich lernst statt nur abzuschreiben. Tipps für Schüler und Studenten.</description>
+      <category>KI &amp; Bildung</category>
+    </item>
     <item>
       <title>Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</link>
@@ -142,30 +166,6 @@
       <pubDate>Thu, 09 Apr 2026 21:02:43 +0000</pubDate>
       <description>Die Pomodoro-Technik erklärt: Wie du mit 25-Minuten-Blöcken konzentrierter lernst, Ablenkungen überwindest und mehr schaffst als je zuvor.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
-      <pubDate>Thu, 09 Apr 2026 12:57:16 +0000</pubDate>
-      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html</guid>
-      <pubDate>Thu, 09 Apr 2026 12:56:42 +0000</pubDate>
-      <description>Informatik lernen fällt vielen Schülern schwer. Mit diesen 7 Tipps verstehst du Algorithmen, Programmierung und Datenstrukturen wirklich und erzielst bessere Noten.</description>
-      <category>Fachspezifisch</category>
-    </item>
-    <item>
-      <title>Klausurvorbereitung letzte Woche: So holst du das Maximum raus</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</guid>
-      <pubDate>Wed, 08 Apr 2026 20:47:10 +0000</pubDate>
-      <description>Nur noch eine Woche bis zur Klausur? Kein Grund zur Panik. Mit diesem Notfallplan lernst du gezielt, priorisierst den wichtigsten Stoff und gehst sicher in die Prüfung.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
