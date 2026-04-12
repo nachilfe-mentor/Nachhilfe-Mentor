@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 48
+- Gesamtzahl Artikel: 49
 - Letzte Veröffentlichung: 2026-04-12
 - Nächster geplanter Post: TBD
 
@@ -61,6 +61,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 46 | 2026-04-11 | latein-lernen-tipps | Latein lernen: 7 Tipps für Vokabeln, Grammatik und Textübersetzung | Latein lernen, Latein lernen Tipps, Latein Vokabeln lernen, Latein Grammatik, Latein Übersetzung, Latein Gymnasium, Latein besser werden, Latein Klausur | Lernmethoden | 7 Tipps zum Latein lernen für Gymnasiasten: Vokabeln mit Spaced Repetition (Genitiv/Genus mitlernen), Grammatik verstehen statt pauken (Feynman-Ansatz), Übersetzen mit Prädikat-zuerst-Methode (5 Schritte), täglich kleine Einheiten statt Marathons, Latein als Schlüssel zu Fremdsprachen (Wortfamilien/Wurzeln), Karteikarten mit vollständigen Informationen, KI-Unterstützung zum Analysieren und Verstehen. App-Erwähnung (Grammatikfragen klären, Übersetzungsschritte nachvollziehen). Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
 | 47 | 2026-04-12 | erdkunde-lernen-tipps | Erdkunde lernen: 8 Tipps für Karten, Klimazonen und Geografie | Erdkunde lernen, Erdkunde Tipps, Geografie lernen, Erdkunde Klausur, Klimazonen lernen, Karten lernen, Erdkunde Schule, Geografie Tipps | Fachspezifisch | 8 Tipps zum Erdkunde lernen: Karten aus dem Gedächtnis skizzieren, Ursache-Wirkung-Denken (Warum statt Was), Mindmaps für komplexe Themen (Globalisierung, Klimawandel), Klassifikationssysteme verstehen (Klimazonen nach Köppen), aktuelle Ereignisse mit Geografie verknüpfen, Länder in geografischen Clustern lernen mit Spaced Repetition, Klausurformate üben (Kartenbeschreibung, Diagrammauswertung), Feynman-Methode (Themen laut erklären). App-Erwähnung (Wissenslücken systematisch schließen). Crosslinks zu mindmap-erstellen-lernen, spaced-repetition-lernmethode. Rückverlinkung von geschichte-lernen-tipps. |
 | 48 | 2026-04-12 | ki-hausaufgaben-hilfe | KI Hausaufgaben Hilfe: So nutzt du KI richtig für deine Hausaufgaben | KI Hausaufgaben Hilfe, KI Hausaufgaben, ChatGPT Hausaufgaben, KI Schule, Hausaufgaben mit KI, KI Lernen Schüler, KI Schüler Tipps, ChatGPT Schule nutzen | KI & Bildung | 7 Strategien für KI Hausaufgaben Hilfe: erst selbst versuchen (Desirable Difficulty), KI als Erklärungs-Coach (Prinzip dahinter verstehen), Quiz-Master für Active Recall, Wissenslücken aufdecken (Feynman-Technik mit KI), komplizierte Texte aufbereiten lassen, Fehleranalyse nach der Hausaufgabe, KI zur Klausurvorbereitung nutzen. Was man nicht tun sollte: fertige Antworten abschreiben, KI blind vertrauen, zu spät anfangen. App-Erwähnung (Nachhilfe Mentor App für strukturierte Wissenslücken-Analyse). Crosslinks zu active-recall-lerntechnik, feynman-technik-erklaeren-lernen, ki-pruefungsvorbereitung-tipps, lernen-mit-ki-chatgpt. Rückverlinkung von lernen-mit-ki-chatgpt und hausaufgaben-tipps-schnell-erledigen. |
+| 49 | 2026-04-12 | lernstress-bewaeltigen-tipps | Lernstress bewältigen: 8 Tipps, die dir sofort helfen | Lernstress bewältigen, Lernstress, Lernstress Tipps, Stress beim Lernen, Lernstress Schüler, Lernstress Studium, Prüfungsstress bewältigen, Stress Schule, Lernstress abbauen | Motivation & Produktivität | 8 Tipps zum Lernstress bewältigen: Stoff realistisch planen (Lernplan), eine Aufgabe nach der anderen, Pausen ernst nehmen (Pomodoro), Bewegung als Stressventil, negative Gedanken unterbrechen, Schlaf nicht verhandeln, smarte Lernmethoden nutzen (Active Recall statt passives Lesen), soziale Unterstützung suchen. App-Erwähnung (Wissenslücken gezielt trainieren statt alles nochmal). Crosslinks zu lernplan-erstellen-tipps und pruefungsangst-ueberwinden. Rückverlinkung von lernblockade-loesen-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -355,3 +356,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - ki-hausaufgaben-hilfe -> lernen-mit-ki-chatgpt (Fazit: Allgemeiner KI-Lernguide als Vertiefung)
 - lernen-mit-ki-chatgpt -> ki-hausaufgaben-hilfe (Rückverlinkung: Fazit, KI für tägliche Hausaufgaben als praktischer Anwendungsfall)
 - hausaufgaben-tipps-schnell-erledigen -> ki-hausaufgaben-hilfe (Rückverlinkung: Fazit, KI-Tools richtig für Hausaufgaben nutzen)
+
+## Interne Verlinkungen (Ergänzung Artikel 49)
+- lernstress-bewaeltigen-tipps -> lernplan-erstellen-tipps (Tipp 1: strukturierter Lernplan reduziert Stressgefühl)
+- lernstress-bewaeltigen-tipps -> pruefungsangst-ueberwinden (Tipp 5: negative Gedanken stoppen, Verweis auf Prüfungsangst-Guide)
+- lernblockade-loesen-tipps -> lernstress-bewaeltigen-tipps (Rückverlinkung: "Chronischer Lernstress" im Abschnitt "Was tun wenn Blockade länger anhält")
