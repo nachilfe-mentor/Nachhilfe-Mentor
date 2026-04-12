@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 46
-- Letzte Veröffentlichung: 2026-04-11
+- Gesamtzahl Artikel: 47
+- Letzte Veröffentlichung: 2026-04-12
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -59,6 +59,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 44 | 2026-04-11 | noten-verbessern-schule-tipps | Noten verbessern: 8 Tipps für bessere Schulnoten | Noten verbessern, Note verbessern Schule, bessere Noten bekommen, Schulnoten verbessern, Note verbessern Tipps, bessere Noten Schule, schlechte Noten verbessern, Noten steigern | Prüfungsvorbereitung | 8 Tipps zur Notenverbesserung: Schwächen analysieren, Verstehen vor Auswendiglernen, Active Recall aktiv nutzen, Wissenslücken schließen, Lernplan erstellen, Spaced Repetition für regelmäßige Wiederholung, Fehleranalyse nach Klausuren, Lehrergespräch suchen. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, lernplan-erstellen-tipps, spaced-repetition-lernmethode. Rückverlinkung von pruefungsangst-ueberwinden und lernplan-erstellen-tipps. |
 | 45 | 2026-04-11 | spanisch-lernen-tipps | Spanisch lernen: 8 Tipps, mit denen du schnell besser wirst | Spanisch lernen Tipps, Spanisch lernen, Spanisch besser werden, Spanisch Schule, Spanisch Grammatik lernen, Spanisch Vokabeln lernen, Spanisch sprechen üben, Spanisch verbessern | Sprachen lernen | 8 Tipps zum Spanisch lernen: Aussprache von Anfang an richtig (r/rr, Vokale, ll/y), Vokabeln mit Spaced Repetition und Artikeln, Grammatik durch Verstehen (Ser vs. Estar, Feynman-Technik), täglich kleine Einheiten, Sprechen trotz Fehlern üben (Tandem, Selbstgespräche), Immersion im Alltag (Handy-Sprache, Serien, Musik), Schreiben üben (Active Recall), aktives Textarbeiten (SQ3R-ähnlich). App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen, active-recall-lerntechnik, franzoesisch-lernen-tipps. Rückverlinkung von franzoesisch-lernen-tipps. |
 | 46 | 2026-04-11 | latein-lernen-tipps | Latein lernen: 7 Tipps für Vokabeln, Grammatik und Textübersetzung | Latein lernen, Latein lernen Tipps, Latein Vokabeln lernen, Latein Grammatik, Latein Übersetzung, Latein Gymnasium, Latein besser werden, Latein Klausur | Lernmethoden | 7 Tipps zum Latein lernen für Gymnasiasten: Vokabeln mit Spaced Repetition (Genitiv/Genus mitlernen), Grammatik verstehen statt pauken (Feynman-Ansatz), Übersetzen mit Prädikat-zuerst-Methode (5 Schritte), täglich kleine Einheiten statt Marathons, Latein als Schlüssel zu Fremdsprachen (Wortfamilien/Wurzeln), Karteikarten mit vollständigen Informationen, KI-Unterstützung zum Analysieren und Verstehen. App-Erwähnung (Grammatikfragen klären, Übersetzungsschritte nachvollziehen). Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
+| 47 | 2026-04-12 | erdkunde-lernen-tipps | Erdkunde lernen: 8 Tipps für Karten, Klimazonen und Geografie | Erdkunde lernen, Erdkunde Tipps, Geografie lernen, Erdkunde Klausur, Klimazonen lernen, Karten lernen, Erdkunde Schule, Geografie Tipps | Fachspezifisch | 8 Tipps zum Erdkunde lernen: Karten aus dem Gedächtnis skizzieren, Ursache-Wirkung-Denken (Warum statt Was), Mindmaps für komplexe Themen (Globalisierung, Klimawandel), Klassifikationssysteme verstehen (Klimazonen nach Köppen), aktuelle Ereignisse mit Geografie verknüpfen, Länder in geografischen Clustern lernen mit Spaced Repetition, Klausurformate üben (Kartenbeschreibung, Diagrammauswertung), Feynman-Methode (Themen laut erklären). App-Erwähnung (Wissenslücken systematisch schließen). Crosslinks zu mindmap-erstellen-lernen, spaced-repetition-lernmethode. Rückverlinkung von geschichte-lernen-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -75,7 +76,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Nachhilfe online vs offline,
   KI Hausaufgaben Hilfe,
   Gedächtnis verbessern Übungen,
-  Erdkunde lernen Tipps,
+  <!-- Erdkunde lernen Tipps → verwendet in Artikel #47 -->
   <!-- Latein lernen Tipps → verwendet in Artikel #46 -->
   Lernstress bewältigen Abitur,
   Lernmethoden Grundschule,
@@ -340,3 +341,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - latein-lernen-tipps -> spaced-repetition-lernmethode (Tipp 1: Vokabeln mit Spaced Repetition lernen)
 - latein-lernen-tipps -> vokabeln-lernen-tipps (Tipp 6: Karteikarten-Abschnitt, Verweis auf allgemeinen Vokabel-Guide)
 - vokabeln-lernen-tipps -> latein-lernen-tipps (Rückverlinkung: Vertiefungs-Abschnitt, Latein-Lernguide ergänzt)
+
+## Interne Verlinkungen (Ergänzung Artikel 47)
+- erdkunde-lernen-tipps -> mindmap-erstellen-lernen (Tipp 3: Mindmaps für komplexe Themen wie Globalisierung)
+- erdkunde-lernen-tipps -> spaced-repetition-lernmethode (Tipp 6: Länder in Clustern mit Spaced Repetition lernen)
+- geschichte-lernen-tipps -> erdkunde-lernen-tipps (Rückverlinkung: Schlussabsatz, Zusammenhänge-Prinzip gilt auch für Erdkunde)
