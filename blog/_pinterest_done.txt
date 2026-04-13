@@ -14,6 +14,7 @@ geschichte-lernen-tipps
 hausaufgaben-tipps-schnell-erledigen
 informatik-lernen-tipps
 karteikarten-lernen-tipps
+ki-hausaufgaben-hilfe
 ki-pruefungsvorbereitung-tipps
 klausur-letzte-nacht-lernen
 klausurvorbereitung-letzte-woche
@@ -26,11 +27,13 @@ lerngruppe-gruenden-tipps
 lernmotivation-steigern-tipps
 lernpausen-richtig-machen
 lernplan-erstellen-tipps
+lernstress-bewaeltigen-tipps
 lerntypen-vark-test-lerntipps
 lernumgebung-gestalten-tipps
 mathe-lernen-tipps
 mindmap-erstellen-lernen
 musik-beim-lernen-tipps
+nachhilfe-online-vs-offline
 noten-verbessern-schule-tipps
 physik-lernen-tipps
 pomodoro-technik-lernen
