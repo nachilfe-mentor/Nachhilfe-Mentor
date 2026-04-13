@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 50
+- Gesamtzahl Artikel: 51
 - Letzte Veröffentlichung: 2026-04-13
 - Nächster geplanter Post: TBD
 
@@ -61,6 +61,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 46 | 2026-04-11 | latein-lernen-tipps | Latein lernen: 7 Tipps für Vokabeln, Grammatik und Textübersetzung | Latein lernen, Latein lernen Tipps, Latein Vokabeln lernen, Latein Grammatik, Latein Übersetzung, Latein Gymnasium, Latein besser werden, Latein Klausur | Lernmethoden | 7 Tipps zum Latein lernen für Gymnasiasten: Vokabeln mit Spaced Repetition (Genitiv/Genus mitlernen), Grammatik verstehen statt pauken (Feynman-Ansatz), Übersetzen mit Prädikat-zuerst-Methode (5 Schritte), täglich kleine Einheiten statt Marathons, Latein als Schlüssel zu Fremdsprachen (Wortfamilien/Wurzeln), Karteikarten mit vollständigen Informationen, KI-Unterstützung zum Analysieren und Verstehen. App-Erwähnung (Grammatikfragen klären, Übersetzungsschritte nachvollziehen). Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
 | 47 | 2026-04-12 | erdkunde-lernen-tipps | Erdkunde lernen: 8 Tipps für Karten, Klimazonen und Geografie | Erdkunde lernen, Erdkunde Tipps, Geografie lernen, Erdkunde Klausur, Klimazonen lernen, Karten lernen, Erdkunde Schule, Geografie Tipps | Fachspezifisch | 8 Tipps zum Erdkunde lernen: Karten aus dem Gedächtnis skizzieren, Ursache-Wirkung-Denken (Warum statt Was), Mindmaps für komplexe Themen (Globalisierung, Klimawandel), Klassifikationssysteme verstehen (Klimazonen nach Köppen), aktuelle Ereignisse mit Geografie verknüpfen, Länder in geografischen Clustern lernen mit Spaced Repetition, Klausurformate üben (Kartenbeschreibung, Diagrammauswertung), Feynman-Methode (Themen laut erklären). App-Erwähnung (Wissenslücken systematisch schließen). Crosslinks zu mindmap-erstellen-lernen, spaced-repetition-lernmethode. Rückverlinkung von geschichte-lernen-tipps. |
 | 48 | 2026-04-12 | ki-hausaufgaben-hilfe | KI Hausaufgaben Hilfe: So nutzt du KI richtig für deine Hausaufgaben | KI Hausaufgaben Hilfe, KI Hausaufgaben, ChatGPT Hausaufgaben, KI Schule, Hausaufgaben mit KI, KI Lernen Schüler, KI Schüler Tipps, ChatGPT Schule nutzen | KI & Bildung | 7 Strategien für KI Hausaufgaben Hilfe: erst selbst versuchen (Desirable Difficulty), KI als Erklärungs-Coach (Prinzip dahinter verstehen), Quiz-Master für Active Recall, Wissenslücken aufdecken (Feynman-Technik mit KI), komplizierte Texte aufbereiten lassen, Fehleranalyse nach der Hausaufgabe, KI zur Klausurvorbereitung nutzen. Was man nicht tun sollte: fertige Antworten abschreiben, KI blind vertrauen, zu spät anfangen. App-Erwähnung (Nachhilfe Mentor App für strukturierte Wissenslücken-Analyse). Crosslinks zu active-recall-lerntechnik, feynman-technik-erklaeren-lernen, ki-pruefungsvorbereitung-tipps, lernen-mit-ki-chatgpt. Rückverlinkung von lernen-mit-ki-chatgpt und hausaufgaben-tipps-schnell-erledigen. |
+| 51 | 2026-04-13 | selbstdisziplin-aufbauen-tipps | Selbstdisziplin aufbauen: 7 Tipps für Schüler und Studenten | Selbstdisziplin aufbauen, Selbstdisziplin Schüler, Selbstdisziplin lernen, Disziplin beim Lernen, Selbstdisziplin Tipps, Willenskraft stärken, Motivation beim Lernen, Lerngewohnheiten aufbauen | Motivation & Produktivität | 7 Tipps zum Selbstdisziplin aufbauen: Kleinsten Schritt starten (Zeigarnik-Effekt), Ablenkungen präventiv ausräumen, feste Lernzeiten statt warten auf Motivation (Habit Stacking), Pomodoro-Blöcke für Fokus, Fortschritte sichtbar machen (Don't-break-the-chain), Rückschläge konstruktiv verarbeiten, Entscheidungsmüdigkeit reduzieren durch Vorbereitung am Vorabend. App-Erwähnung (zeigt Wissenslücken und priorisiert Themen automatisch). Crosslinks zu lernplan-erstellen-tipps, pomodoro-technik-lernen, prokrastination-ueberwinden-lernen. Rückverlinkung von prokrastination-ueberwinden-lernen. |
 | 50 | 2026-04-13 | nachhilfe-online-vs-offline | Nachhilfe online oder offline: Was passt besser zu dir? | Nachhilfe online oder offline, Online-Nachhilfe Vergleich, Präsenznachhilfe, Nachhilfe Formen, Online-Nachhilfe Vorteile, Nachhilfe zu Hause, Nachhilfe Tipps | Lerntipps & Ratgeber | Ehrlicher Vergleich Online- vs. Offline-Nachhilfe: Vorteile, Nachteile, Kosten, Entscheidungshilfe. Dritte Option: KI-gestützte Lernbegleitung (App). Für wen eignet sich was. Crosslinks zu konzentration-steigern-lernen und lernplan-erstellen-tipps. Rückverlinkung von abitur-vorbereitung-tipps und noten-verbessern-schule-tipps. |
 | 49 | 2026-04-12 | lernstress-bewaeltigen-tipps | Lernstress bewältigen: 8 Tipps, die dir sofort helfen | Lernstress bewältigen, Lernstress, Lernstress Tipps, Stress beim Lernen, Lernstress Schüler, Lernstress Studium, Prüfungsstress bewältigen, Stress Schule, Lernstress abbauen | Motivation & Produktivität | 8 Tipps zum Lernstress bewältigen: Stoff realistisch planen (Lernplan), eine Aufgabe nach der anderen, Pausen ernst nehmen (Pomodoro), Bewegung als Stressventil, negative Gedanken unterbrechen, Schlaf nicht verhandeln, smarte Lernmethoden nutzen (Active Recall statt passives Lesen), soziale Unterstützung suchen. App-Erwähnung (Wissenslücken gezielt trainieren statt alles nochmal). Crosslinks zu lernplan-erstellen-tipps und pruefungsangst-ueberwinden. Rückverlinkung von lernblockade-loesen-tipps. |
 
@@ -79,6 +80,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   <!-- Nachhilfe online vs offline → verwendet in Artikel #50 -->
   <!-- KI Hausaufgaben Hilfe → verwendet in Artikel #48 -->
   Gedächtnis verbessern Übungen,
+  <!-- Selbstdisziplin aufbauen Schüler → verwendet in Artikel #51 -->
   <!-- Erdkunde lernen Tipps → verwendet in Artikel #47 -->
   <!-- Latein lernen Tipps → verwendet in Artikel #46 -->
   Lernstress bewältigen Abitur,
@@ -368,6 +370,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - nachhilfe-online-vs-offline -> lernplan-erstellen-tipps (Tipp 2: klarer Lernplan als Entscheidungshilfe für Nachhilfeform)
 - abitur-vorbereitung-tipps -> nachhilfe-online-vs-offline (Rückverlinkung: Fazit, bei Bedarf externer Nachhilfe)
 - noten-verbessern-schule-tipps -> nachhilfe-online-vs-offline (Rückverlinkung: Fazit, Vergleich der Nachhilfeformen)
+
+## Interne Verlinkungen (Ergänzung Artikel 51)
+- selbstdisziplin-aufbauen-tipps -> lernplan-erstellen-tipps (Tipp 3: feste Lernzeiten, Verweis auf Lernplan-Artikel)
+- selbstdisziplin-aufbauen-tipps -> pomodoro-technik-lernen (Tipp 4: kurze fokussierte Blöcke, Verweis auf Pomodoro)
+- selbstdisziplin-aufbauen-tipps -> prokrastination-ueberwinden-lernen (Fazit: Link zu Prokrastination-Artikel)
+- prokrastination-ueberwinden-lernen -> selbstdisziplin-aufbauen-tipps (Rückverlinkung: Abschnitt "Warum Willenskraft allein nicht reicht")
 
 ## Self-Improvement Runde 10 (nach Artikel 50)
 - Alle 5 Artikel aus R9-Empfehlung umgesetzt: Latein, Erdkunde, KI Hausaufgaben, Nachhilfe online vs. offline, Lernstress bewältigen.
