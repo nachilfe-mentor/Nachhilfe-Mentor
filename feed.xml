@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 12 Apr 2026 21:51:07 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Apr 2026 05:56:11 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Noten verbessern: 8 Tipps für bessere Schulnoten</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</guid>
+      <pubDate>Mon, 13 Apr 2026 05:54:29 +0000</pubDate>
+      <description>Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch bessere Schulnoten, ohne nächtelang zu pauken.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</guid>
+      <pubDate>Mon, 13 Apr 2026 05:54:22 +0000</pubDate>
+      <description>Abitur Vorbereitung leicht gemacht: 9 erprobte Tipps für Lernplan, Zeitmanagement und die richtige Strategie. So gehst du entspannt und gut vorbereitet ins Abi.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Nachhilfe online oder offline: Was passt besser zu dir?</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/nachhilfe-online-vs-offline.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/nachhilfe-online-vs-offline.html</guid>
+      <pubDate>Mon, 13 Apr 2026 05:53:51 +0000</pubDate>
+      <description>Online-Nachhilfe oder Präsenzunterricht? Wir vergleichen beide Formen ehrlich: Vorteile, Nachteile, Kosten und für wen welche Option die bessere Wahl ist.</description>
+      <category>Lerntipps &amp; Ratgeber</category>
+    </item>
     <item>
       <title>Lernblockade lösen: 7 Tipps, wenn du einfach nicht anfangen kannst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernblockade-loesen-tipps.html</link>
@@ -112,14 +136,6 @@
       <category>Prüfungsvorbereitung</category>
     </item>
     <item>
-      <title>Noten verbessern: 8 Tipps für bessere Schulnoten</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</guid>
-      <pubDate>Sat, 11 Apr 2026 05:22:53 +0000</pubDate>
-      <description>Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch bessere Schulnoten, ohne nächtelang zu pauken.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
       <title>Lernumgebung gestalten: 8 Tipps für deinen perfekten Lernplatz</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernumgebung-gestalten-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/lernumgebung-gestalten-tipps.html</guid>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 10 Apr 2026 13:12:35 +0000</pubDate>
       <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Schneller lesen: 7 Techniken für besseres Leseverständnis</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/schneller-lesen-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/schneller-lesen-lernen-tipps.html</guid>
-      <pubDate>Fri, 10 Apr 2026 13:11:56 +0000</pubDate>
-      <description>Schneller lesen und mehr verstehen: 7 bewährte Lesetechniken für Schüler und Studenten. So liest du Texte effizienter und behältst mehr im Gedächtnis.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Lernpausen richtig machen: So erholt sich dein Gehirn</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernpausen-richtig-machen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernpausen-richtig-machen.html</guid>
-      <pubDate>Fri, 10 Apr 2026 05:07:42 +0000</pubDate>
-      <description>Lernpausen richtig machen ist genauso wichtig wie das Lernen selbst. Erfahre, wie lange Pausen sein sollten, was du in der Pause tun solltest und welche Fehler dich Energie kosten.</description>
-      <category>Lernmethoden</category>
     </item>
   </channel>
 </rss>
