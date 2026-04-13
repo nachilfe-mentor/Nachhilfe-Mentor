@@ -1682,3 +1682,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `selbstdisziplin-aufbauen-tipps.html` (Artikel #51, ~950 Wörter, Motivation-Cluster)
+- [x] Cover-Bild generiert: `blog/posts/img/selbstdisziplin-aufbauen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html` (neue Card oben eingefügt)
+- [x] Crosslinks gesetzt: ja (neuer Artikel verlinkt auf `lernplan-erstellen-tipps`, `pomodoro-technik-lernen`, `prokrastination-ueberwinden-lernen`; Rückverlinkung in `prokrastination-ueberwinden-lernen` gesetzt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (51 Artikel, Crosslinks dokumentiert, Keyword-Pool aktualisiert)
+- [x] Git Push: erfolgreich (3 Commits gepusht)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (57 URLs in Sitemap, 53 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt, Pin-ID: `cmnx9glu601q9l60y12htesri`
+
+**Themenwahl-Begründung:** Selbstdisziplin aufbauen wurde basierend auf der Analytics-Empfehlung aus R10 gewählt. Motivation-Cluster noch wenig abgedeckt, hohes Suchvolumen bei Schülern/Studenten, klar unterschieden vom vorhandenen Prokrastination-Artikel. Artikel setzt auf das bewährte "7 Tipps" How-to-Format, das laut Analytics gut rankt.
+[2026-04-13 14:01:32] Blog cycle completed successfully.
+[2026-04-13 14:01:32] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 57 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 53 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 53 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 57 URLs in Sitemap, 20 Artikel im Feed.
+[main 8320d56] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   df2f2d1..8320d56  main -> main
+[2026-04-13 14:01:32] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: selbstdisziplin-aufbauen-tipps
+  Titel: Selbstdisziplin aufbauen: 7 Tipps für Schüler und Studenten
+  Desc:  Selbstdisziplin aufbauen als Schüler oder Student: 7 konkrete Tipps, mit denen d...
+[Pinterest] Erstelle Pin fuer: Selbstdisziplin aufbauen: 7 Tipps für Schüler und Studenten
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/selbstdisziplin-aufbauen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/selbstdisziplin-aufbauen-tipps.html
+[Pinterest] Uploading selbstdisziplin-aufbauen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=46fe0668-a7ab-4bc8-b706-0423d3307e16
+[Pinterest] Pin erstellt! Post-ID: cmnx9gyhm01r0lc0yc4cjbi6b
+[Pinterest] Erfolgreich! Pin-ID: cmnx9gyhm01r0lc0yc4cjbi6b
+
+[Pinterest-Fallback] OK: selbstdisziplin-aufbauen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-13 14:01:32] Next run in 8 hours.
+---
+[2026-04-13 22:01:35] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
