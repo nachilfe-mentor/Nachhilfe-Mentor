@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 53
+- Gesamtzahl Artikel: 54
 - Letzte Veröffentlichung: 2026-04-14
 - Nächster geplanter Post: TBD
 
@@ -65,6 +65,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 52 | 2026-04-13 | konzentration-beim-lesen-verbessern | Konzentration beim Lesen verbessern: 8 Tipps für mehr Fokus | Konzentration beim Lesen verbessern, Konzentration Lesen, Fokus beim Lesen, Leseverständnis verbessern, aktiv lesen, besser lesen lernen, Lesen Tipps Schüler | Lerntipps | 8 Tipps zur Lesekozentration: klares Leseziel vor dem Start, ablenkungsarme Umgebung schaffen, aktiv lesen statt passiv (SQ3R, Randnotizen, Fragen formulieren), Leseblöcke mit Pomodoro-Technik einteilen, mit Finger/Stift mitfahren, Cornell-Notizen beim Lesen machen, Pausen ohne Handy verbringen, Verständnis mit Active Recall sofort testen. App-Erwähnung (generiert Übungsfragen aus Lerninhalten). Crosslinks zu lernumgebung-gestalten-tipps, pomodoro-technik-lernen, active-recall-lerntechnik, cornell-methode-notizen. Rückverlinkung von schneller-lesen-lernen-tipps und konzentration-steigern-lernen. |
 | 50 | 2026-04-13 | nachhilfe-online-vs-offline | Nachhilfe online oder offline: Was passt besser zu dir? | Nachhilfe online oder offline, Online-Nachhilfe Vergleich, Präsenznachhilfe, Nachhilfe Formen, Online-Nachhilfe Vorteile, Nachhilfe zu Hause, Nachhilfe Tipps | Lerntipps & Ratgeber | Ehrlicher Vergleich Online- vs. Offline-Nachhilfe: Vorteile, Nachteile, Kosten, Entscheidungshilfe. Dritte Option: KI-gestützte Lernbegleitung (App). Für wen eignet sich was. Crosslinks zu konzentration-steigern-lernen und lernplan-erstellen-tipps. Rückverlinkung von abitur-vorbereitung-tipps und noten-verbessern-schule-tipps. |
 | 49 | 2026-04-12 | lernstress-bewaeltigen-tipps | Lernstress bewältigen: 8 Tipps, die dir sofort helfen | Lernstress bewältigen, Lernstress, Lernstress Tipps, Stress beim Lernen, Lernstress Schüler, Lernstress Studium, Prüfungsstress bewältigen, Stress Schule, Lernstress abbauen | Motivation & Produktivität | 8 Tipps zum Lernstress bewältigen: Stoff realistisch planen (Lernplan), eine Aufgabe nach der anderen, Pausen ernst nehmen (Pomodoro), Bewegung als Stressventil, negative Gedanken unterbrechen, Schlaf nicht verhandeln, smarte Lernmethoden nutzen (Active Recall statt passives Lesen), soziale Unterstützung suchen. App-Erwähnung (Wissenslücken gezielt trainieren statt alles nochmal). Crosslinks zu lernplan-erstellen-tipps und pruefungsangst-ueberwinden. Rückverlinkung von lernblockade-loesen-tipps. |
+| 54 | 2026-04-14 | hausarbeit-schreiben-tipps | Hausarbeit schreiben: Die Schritt-für-Schritt-Anleitung | Hausarbeit schreiben, Hausarbeit Tipps, Facharbeit schreiben, Seminararbeit schreiben, Hausarbeit Aufbau, Gliederung Hausarbeit, Hausarbeit Einleitung, Hausarbeit Quellen, Zitieren Hausarbeit, wissenschaftliche Hausarbeit | Studium & Schule | Schritt-für-Schritt-Guide zum Hausarbeit schreiben: Thema und Fragestellung festlegen (präzise, beantwortbar, eingegrenzt), Gliederung mit Einleitung/Hauptteil/Schluss, Recherche und Quellen (wissenschaftliche Quellen, Aktualität, sofort notieren), Zeitplanung mit Meilensteinen, Einleitung (Hook, Kontext, Fragestellung, Aufbau), korrektes Zitieren (direkt vs. indirekt, Zitiersysteme), Hauptteil und Schluss gestalten, häufige Fehler vermeiden (zu spät anfangen, fehlende Fragestellung, Quellen vergessen), Abgabe-Checkliste (Zitate, Literaturverzeichnis, Titelblatt, Formatierung). App-Erwähnung (Quellen verstehen, Inhalte strukturieren mit KI). Crosslinks zu cornell-methode-notizen (Notizen aus Quellen), lernplan-erstellen-tipps (Zeitplanung), wissenschaftliches-arbeiten-tipps (Fazit-Rückverlinkung). |
 | 53 | 2026-04-14 | gedaechtnis-verbessern-uebungen | Gedächtnis verbessern: 7 Übungen, die dein Gehirn wirklich trainieren | Gedächtnis verbessern, Gedächtnis verbessern Übungen, Merkfähigkeit steigern, Gedächtnistraining, Gehirn trainieren, Gedächtnis Schüler, Gedächtnis stärken, Lernen Gedächtnis | Lernmethoden | 7 Übungen zum Gedächtnis verbessern: Blank-Page-Methode (Active Recall), Spaced Repetition mit Zeitabständen, Loci-Methode als tägliches Training, Erklären ohne Notizen (Feynman-Technik), Verbindungen herstellen statt isoliert lernen, Schlaf gezielt nutzen (Gedächtniskonsolidierung), Bewegung als Gehirnbooster (BDNF). Kombinations-Lernblock erklärt. App-Erwähnung (Nachhilfe Mentor stellt Rückfragen und deckt Wissenslücken auf). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen. Rückverlinkung von gedaechtnis-techniken-lernen. |
 
 ## Abgedeckte Themen-Cluster
@@ -88,7 +89,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   <!-- Latein lernen Tipps → verwendet in Artikel #46 -->
   Lernstress bewältigen Abitur,
   Lernmethoden Grundschule,
-  Hausarbeit schreiben Tipps,
+  <!-- Hausarbeit schreiben Tipps → verwendet in Artikel #54 -->
   Motivationsschreiben Tipps,
   <!-- Spanisch lernen Tipps → verwendet in Artikel #45 -->
   <!-- Noten verbessern, bessere Noten Schule → verwendet in Artikel #44 -->
@@ -394,6 +395,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - gedaechtnis-verbessern-uebungen -> spaced-repetition-lernmethode (Übung 2: Spaced Repetition mit optimalen Zeitabständen)
 - gedaechtnis-verbessern-uebungen -> feynman-technik-erklaeren-lernen (Übung 4: Erklären ohne Notizen = Feynman-Technik)
 - gedaechtnis-techniken-lernen -> gedaechtnis-verbessern-uebungen (Rückverlinkung im Fazit: Gedächtnis als Fähigkeit trainieren)
+
+## Interne Verlinkungen (Ergänzung Artikel 54)
+- hausarbeit-schreiben-tipps -> cornell-methode-notizen (Recherche: Cornell-Methode für strukturierte Quellen-Notizen, 2x verlinkt)
+- hausarbeit-schreiben-tipps -> lernplan-erstellen-tipps (Zeitplanung: Meilenstein-Lernplan für Hausarbeit)
+- hausarbeit-schreiben-tipps -> wissenschaftliches-arbeiten-tipps (Fazit: Verweis auf Gesamtprozess-Guide)
+- wissenschaftliches-arbeiten-tipps -> hausarbeit-schreiben-tipps (Rückverlinkung: Praxis-Guide für Aufbau und Zitieren im Fazit)
 
 ## Self-Improvement Runde 10 (nach Artikel 50)
 - Alle 5 Artikel aus R9-Empfehlung umgesetzt: Latein, Erdkunde, KI Hausaufgaben, Nachhilfe online vs. offline, Lernstress bewältigen.
