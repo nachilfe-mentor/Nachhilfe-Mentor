@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 51
-- Letzte Veröffentlichung: 2026-04-13
+- Gesamtzahl Artikel: 53
+- Letzte Veröffentlichung: 2026-04-14
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -65,6 +65,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 52 | 2026-04-13 | konzentration-beim-lesen-verbessern | Konzentration beim Lesen verbessern: 8 Tipps für mehr Fokus | Konzentration beim Lesen verbessern, Konzentration Lesen, Fokus beim Lesen, Leseverständnis verbessern, aktiv lesen, besser lesen lernen, Lesen Tipps Schüler | Lerntipps | 8 Tipps zur Lesekozentration: klares Leseziel vor dem Start, ablenkungsarme Umgebung schaffen, aktiv lesen statt passiv (SQ3R, Randnotizen, Fragen formulieren), Leseblöcke mit Pomodoro-Technik einteilen, mit Finger/Stift mitfahren, Cornell-Notizen beim Lesen machen, Pausen ohne Handy verbringen, Verständnis mit Active Recall sofort testen. App-Erwähnung (generiert Übungsfragen aus Lerninhalten). Crosslinks zu lernumgebung-gestalten-tipps, pomodoro-technik-lernen, active-recall-lerntechnik, cornell-methode-notizen. Rückverlinkung von schneller-lesen-lernen-tipps und konzentration-steigern-lernen. |
 | 50 | 2026-04-13 | nachhilfe-online-vs-offline | Nachhilfe online oder offline: Was passt besser zu dir? | Nachhilfe online oder offline, Online-Nachhilfe Vergleich, Präsenznachhilfe, Nachhilfe Formen, Online-Nachhilfe Vorteile, Nachhilfe zu Hause, Nachhilfe Tipps | Lerntipps & Ratgeber | Ehrlicher Vergleich Online- vs. Offline-Nachhilfe: Vorteile, Nachteile, Kosten, Entscheidungshilfe. Dritte Option: KI-gestützte Lernbegleitung (App). Für wen eignet sich was. Crosslinks zu konzentration-steigern-lernen und lernplan-erstellen-tipps. Rückverlinkung von abitur-vorbereitung-tipps und noten-verbessern-schule-tipps. |
 | 49 | 2026-04-12 | lernstress-bewaeltigen-tipps | Lernstress bewältigen: 8 Tipps, die dir sofort helfen | Lernstress bewältigen, Lernstress, Lernstress Tipps, Stress beim Lernen, Lernstress Schüler, Lernstress Studium, Prüfungsstress bewältigen, Stress Schule, Lernstress abbauen | Motivation & Produktivität | 8 Tipps zum Lernstress bewältigen: Stoff realistisch planen (Lernplan), eine Aufgabe nach der anderen, Pausen ernst nehmen (Pomodoro), Bewegung als Stressventil, negative Gedanken unterbrechen, Schlaf nicht verhandeln, smarte Lernmethoden nutzen (Active Recall statt passives Lesen), soziale Unterstützung suchen. App-Erwähnung (Wissenslücken gezielt trainieren statt alles nochmal). Crosslinks zu lernplan-erstellen-tipps und pruefungsangst-ueberwinden. Rückverlinkung von lernblockade-loesen-tipps. |
+| 53 | 2026-04-14 | gedaechtnis-verbessern-uebungen | Gedächtnis verbessern: 7 Übungen, die dein Gehirn wirklich trainieren | Gedächtnis verbessern, Gedächtnis verbessern Übungen, Merkfähigkeit steigern, Gedächtnistraining, Gehirn trainieren, Gedächtnis Schüler, Gedächtnis stärken, Lernen Gedächtnis | Lernmethoden | 7 Übungen zum Gedächtnis verbessern: Blank-Page-Methode (Active Recall), Spaced Repetition mit Zeitabständen, Loci-Methode als tägliches Training, Erklären ohne Notizen (Feynman-Technik), Verbindungen herstellen statt isoliert lernen, Schlaf gezielt nutzen (Gedächtniskonsolidierung), Bewegung als Gehirnbooster (BDNF). Kombinations-Lernblock erklärt. App-Erwähnung (Nachhilfe Mentor stellt Rückfragen und deckt Wissenslücken auf). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen. Rückverlinkung von gedaechtnis-techniken-lernen. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -80,7 +81,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Prüfungsvorbereitung, effektiv lernen,
   <!-- Nachhilfe online vs offline → verwendet in Artikel #50 -->
   <!-- KI Hausaufgaben Hilfe → verwendet in Artikel #48 -->
-  Gedächtnis verbessern Übungen,
+  <!-- Gedächtnis verbessern Übungen → verwendet in Artikel #53 -->
   <!-- Selbstdisziplin aufbauen Schüler → verwendet in Artikel #51 -->
   <!-- Konzentration beim Lesen verbessern → verwendet in Artikel #52 -->
   <!-- Erdkunde lernen Tipps → verwendet in Artikel #47 -->
@@ -387,6 +388,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - konzentration-beim-lesen-verbessern -> active-recall-lerntechnik (Tipp 8: Verständnis sofort mit Active Recall testen)
 - schneller-lesen-lernen-tipps -> konzentration-beim-lesen-verbessern (Fazit: Fokus beim Lesen als verwandtes Thema verlinkt)
 - konzentration-steigern-lernen -> konzentration-beim-lesen-verbessern (Fazit: spezifische Lesekonzentrations-Tipps als Vertiefung)
+
+## Interne Verlinkungen (Ergänzung Artikel 53)
+- gedaechtnis-verbessern-uebungen -> active-recall-lerntechnik (Übung 1: Blank-Page-Methode = Active Recall Prinzip)
+- gedaechtnis-verbessern-uebungen -> spaced-repetition-lernmethode (Übung 2: Spaced Repetition mit optimalen Zeitabständen)
+- gedaechtnis-verbessern-uebungen -> feynman-technik-erklaeren-lernen (Übung 4: Erklären ohne Notizen = Feynman-Technik)
+- gedaechtnis-techniken-lernen -> gedaechtnis-verbessern-uebungen (Rückverlinkung im Fazit: Gedächtnis als Fähigkeit trainieren)
 
 ## Self-Improvement Runde 10 (nach Artikel 50)
 - Alle 5 Artikel aus R9-Empfehlung umgesetzt: Latein, Erdkunde, KI Hausaufgaben, Nachhilfe online vs. offline, Lernstress bewältigen.
