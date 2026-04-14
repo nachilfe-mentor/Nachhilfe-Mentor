@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Tue, 14 Apr 2026 14:18:03 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Apr 2026 22:23:22 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</guid>
+      <pubDate>Tue, 14 Apr 2026 22:22:08 +0000</pubDate>
+      <description>Hausaufgaben Tipps, die wirklich funktionieren: Mit diesen 8 Strategien erledigst du deine Aufgaben schneller, konzentrierter und mit weniger Stress.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Lerntipps Grundschule: 8 Tipps für stressfreies Lernen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lerntipps-grundschule.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lerntipps-grundschule.html</guid>
+      <pubDate>Tue, 14 Apr 2026 22:21:37 +0000</pubDate>
+      <description>Lerntipps Grundschule: 8 bewährte Tipps, die deinem Kind das Lernen erleichtern. Für Eltern, die ihr Grundschulkind richtig unterstützen möchten, ohne Stress und Frust.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben</title>
       <link>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</link>
@@ -120,14 +136,6 @@
       <category>Motivation &amp; Produktivität</category>
     </item>
     <item>
-      <title>Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</guid>
-      <pubDate>Sun, 12 Apr 2026 13:44:24 +0000</pubDate>
-      <description>Hausaufgaben Tipps, die wirklich funktionieren: Mit diesen 8 Strategien erledigst du deine Aufgaben schneller, konzentrierter und mit weniger Stress.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
       <title>Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Sun, 12 Apr 2026 05:38:33 +0000</pubDate>
       <description>Erdkunde lernen muss nicht trocken sein. Mit diesen 8 Tipps merkst du dir Karten, Klimazonen und geografische Fakten viel besser – für Schule und Klausur.</description>
       <category>Fachspezifisch</category>
-    </item>
-    <item>
-      <title>Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-tipps.html</guid>
-      <pubDate>Sat, 11 Apr 2026 21:34:23 +0000</pubDate>
-      <description>Vokabeln lernen leicht gemacht: 7 bewährte Methoden, mit denen du dir neue Wörter schnell und dauerhaft einprägst. Für Schule, Studium und Sprachkurse.</description>
-      <category>Sprachen lernen</category>
     </item>
   </channel>
 </rss>
