@@ -8,13 +8,13 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -98,7 +98,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</loc>
-    <lastmod>2026-04-14</lastmod>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -237,6 +237,12 @@
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/mindmap-erstellen-lernen.html</loc>
     <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</loc>
+    <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
