@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 15 Apr 2026 06:28:45 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 14:33:39 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Pomodoro-Technik: Mit dem Tomaten-Timer endlich fokussiert lernen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</guid>
+      <pubDate>Wed, 15 Apr 2026 14:32:18 +0000</pubDate>
+      <description>Die Pomodoro-Technik erklärt: Wie du mit 25-Minuten-Blöcken konzentrierter lernst, Ablenkungen überwindest und mehr schaffst als je zuvor.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Lerntagebuch führen: Tipps für mehr Lernerfolg</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lerntagebuch-fuehren-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lerntagebuch-fuehren-tipps.html</guid>
+      <pubDate>Wed, 15 Apr 2026 14:31:48 +0000</pubDate>
+      <description>Lerntagebuch führen leicht gemacht: Mit diesen praktischen Tipps reflektierst du deinen Lernfortschritt, erkennst deine Schwächen und wirst langfristig besser in der Schule oder im Studium.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Hausarbeit schreiben: Schritt-für-Schritt-Anleitung</title>
       <link>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sun, 12 Apr 2026 13:44:19 +0000</pubDate>
       <description>Lernen mit KI: Entdecke, wie du ChatGPT und andere KI-Tools gezielt für Schule und Studium einsetzt, welche Fehler du vermeiden solltest und wo die Grenzen liegen.</description>
       <category>KI &amp; Bildung</category>
-    </item>
-    <item>
-      <title>KI Hausaufgaben Hilfe: So nutzt du KI richtig für deine Hausaufgaben</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/ki-hausaufgaben-hilfe.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/ki-hausaufgaben-hilfe.html</guid>
-      <pubDate>Sun, 12 Apr 2026 13:43:38 +0000</pubDate>
-      <description>KI als Hausaufgaben-Hilfe richtig nutzen: 7 Strategien, mit denen du wirklich lernst statt nur abzuschreiben. Tipps für Schüler und Studenten.</description>
-      <category>KI &amp; Bildung</category>
-    </item>
-    <item>
-      <title>Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</guid>
-      <pubDate>Sun, 12 Apr 2026 05:39:25 +0000</pubDate>
-      <description>Geschichte lernen fällt vielen schwer, weil es so viele Daten und Zusammenhänge gibt. Mit diesen 7 Tipps lernst du Geschichte effizienter, behältst mehr und bestehst deine Prüfung.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
