@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 15 Apr 2026 14:34:05 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 22:39:35 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/biologie-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/biologie-lernen-tipps.html</guid>
+      <pubDate>Wed, 15 Apr 2026 22:38:44 +0000</pubDate>
+      <description>Biologie lernen fühlt sich oft wie endloses Pauken an. Mit diesen 7 bewährten Tipps verstehst du Zusammenhänge, merkst dir Fachbegriffe dauerhaft und überzeugst in der nächsten Prüfung.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Biologie Abitur Vorbereitung: Die wichtigsten Themen und Lernstrategien</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/biologie-abitur-vorbereitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/biologie-abitur-vorbereitung.html</guid>
+      <pubDate>Wed, 15 Apr 2026 22:38:17 +0000</pubDate>
+      <description>Biologie Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du sie mit Active Recall und Spaced Repetition lernst, und die 5 häufigsten Fehler, die du vermeiden solltest.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Pomodoro-Technik: Mit dem Tomaten-Timer endlich fokussiert lernen</title>
       <link>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sun, 12 Apr 2026 21:49:51 +0000</pubDate>
       <description>Lernblockade lösen leicht gemacht: 7 konkrete Tipps, die dir helfen, wenn du vor dem Stoff sitzt und einfach nicht anfangen kannst. Ursachen verstehen, Blockaden überwinden.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Lernstress bewältigen: 8 Tipps, die dir sofort helfen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernstress-bewaeltigen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernstress-bewaeltigen-tipps.html</guid>
-      <pubDate>Sun, 12 Apr 2026 21:49:15 +0000</pubDate>
-      <description>Lernstress bewältigen ist leichter als du denkst. Diese 8 bewährten Tipps helfen dir, Druck abzubauen, klarer zu denken und wieder fokussiert zu lernen.</description>
-      <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Lernen mit KI: So nutzt du ChatGPT und KI-Tools richtig</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernen-mit-ki-chatgpt.html</guid>
-      <pubDate>Sun, 12 Apr 2026 13:44:19 +0000</pubDate>
-      <description>Lernen mit KI: Entdecke, wie du ChatGPT und andere KI-Tools gezielt für Schule und Studium einsetzt, welche Fehler du vermeiden solltest und wo die Grenzen liegen.</description>
-      <category>KI &amp; Bildung</category>
     </item>
   </channel>
 </rss>
