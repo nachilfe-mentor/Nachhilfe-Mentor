@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 15 Apr 2026 22:39:59 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 06:44:58 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
+      <pubDate>Thu, 16 Apr 2026 06:44:10 +0000</pubDate>
+      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</guid>
+      <pubDate>Thu, 16 Apr 2026 06:43:34 +0000</pubDate>
+      <description>Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, Stochastik und Geometrie gezielt lernst und typische Fehler vermeidest.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Biologie lernen: 7 Tipps, mit denen du Biologie endlich verstehst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/biologie-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Mon, 13 Apr 2026 05:54:29 +0000</pubDate>
       <description>Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch bessere Schulnoten, ohne nächtelang zu pauken.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Nachhilfe online oder offline: Was passt besser zu dir?</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/nachhilfe-online-vs-offline.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/nachhilfe-online-vs-offline.html</guid>
-      <pubDate>Mon, 13 Apr 2026 05:53:51 +0000</pubDate>
-      <description>Online-Nachhilfe oder Präsenzunterricht? Wir vergleichen beide Formen ehrlich: Vorteile, Nachteile, Kosten und für wen welche Option die bessere Wahl ist.</description>
-      <category>Lerntipps &amp; Ratgeber</category>
-    </item>
-    <item>
-      <title>Lernblockade lösen: 7 Tipps, wenn du einfach nicht anfangen kannst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernblockade-loesen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernblockade-loesen-tipps.html</guid>
-      <pubDate>Sun, 12 Apr 2026 21:49:51 +0000</pubDate>
-      <description>Lernblockade lösen leicht gemacht: 7 konkrete Tipps, die dir helfen, wenn du vor dem Stoff sitzt und einfach nicht anfangen kannst. Ursachen verstehen, Blockaden überwinden.</description>
-      <category>Motivation &amp; Produktivität</category>
     </item>
   </channel>
 </rss>
