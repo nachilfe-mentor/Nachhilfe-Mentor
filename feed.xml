@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 16 Apr 2026 14:51:43 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 22:56:04 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html</guid>
+      <pubDate>Thu, 16 Apr 2026 22:55:34 +0000</pubDate>
+      <description>Physik lernen leicht gemacht: 7 bewährte Tipps, die dir helfen, Formeln zu verstehen statt auswendig zu pauken. Praktisch, direkt umsetzbar und für Schüler und Studenten.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Physik Abitur Vorbereitung: So meisterst du die Physik-Prüfung</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/physik-abitur-vorbereitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/physik-abitur-vorbereitung.html</guid>
+      <pubDate>Thu, 16 Apr 2026 22:55:04 +0000</pubDate>
+      <description>Physik Abitur Vorbereitung mit System: Die wichtigsten Themenblöcke, ein 3-Phasen-Lernplan und 5 Fehler, die du unbedingt vermeiden solltest.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Mon, 13 Apr 2026 22:06:10 +0000</pubDate>
       <description>Schneller lesen und mehr verstehen: 7 bewährte Lesetechniken für Schüler und Studenten. So liest du Texte effizienter und behältst mehr im Gedächtnis.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Konzentration beim Lesen verbessern: 8 Tipps für mehr Fokus</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/konzentration-beim-lesen-verbessern.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/konzentration-beim-lesen-verbessern.html</guid>
-      <pubDate>Mon, 13 Apr 2026 22:05:35 +0000</pubDate>
-      <description>Konzentration beim Lesen verbessern: Mit diesen 8 Tipps behältst du mehr vom Gelesenen, lernst effizienter und verstehst komplexe Texte wirklich. Für Schüler und Studenten.</description>
-      <category>Lerntipps</category>
-    </item>
-    <item>
-      <title>Prokrastination überwinden: Warum du nicht lernst und was du dagegen tust</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/prokrastination-ueberwinden-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/prokrastination-ueberwinden-lernen.html</guid>
-      <pubDate>Mon, 13 Apr 2026 14:00:00 +0000</pubDate>
-      <description>Prokrastination überwinden als Schüler oder Student: Verstehe die psychologischen Ursachen und entdecke konkrete Techniken, mit denen du endlich anfängst zu lernen.</description>
-      <category>Motivation &amp; Produktivität</category>
     </item>
   </channel>
 </rss>
