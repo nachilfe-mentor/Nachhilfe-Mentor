@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 16 Apr 2026 06:45:24 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 14:51:13 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</guid>
+      <pubDate>Thu, 16 Apr 2026 14:50:20 +0000</pubDate>
+      <description>Abitur Vorbereitung leicht gemacht: 9 erprobte Tipps für Lernplan, Zeitmanagement und die richtige Strategie. So gehst du entspannt und gut vorbereitet ins Abi.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
+      <pubDate>Thu, 16 Apr 2026 14:49:58 +0000</pubDate>
+      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Deutsch Abitur Vorbereitung: So meisterst du die Deutsch-Prüfung</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-abitur-vorbereitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-abitur-vorbereitung.html</guid>
+      <pubDate>Thu, 16 Apr 2026 14:49:18 +0000</pubDate>
+      <description>Deutsch Abitur Vorbereitung: Alle wichtigen Aufsatztypen, Literaturepochen und Lerntipps, mit denen du die Deutsch-Prüfung souverän bestehst.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
@@ -62,14 +86,6 @@
       <pubDate>Wed, 15 Apr 2026 06:27:27 +0000</pubDate>
       <description>Hausarbeit schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. Aufbau, Gliederung, Quellen, Zitieren und häufige Fehler vermeiden.</description>
       <category>Studium &amp; Schule</category>
-    </item>
-    <item>
-      <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</guid>
-      <pubDate>Wed, 15 Apr 2026 06:27:21 +0000</pubDate>
-      <description>Abitur Vorbereitung leicht gemacht: 9 erprobte Tipps für Lernplan, Zeitmanagement und die richtige Strategie. So gehst du entspannt und gut vorbereitet ins Abi.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
     <item>
       <title>Motivationsschreiben schreiben: So überzeugst du Hochschulen und Arbeitgeber</title>
@@ -150,22 +166,6 @@
       <pubDate>Mon, 13 Apr 2026 14:00:00 +0000</pubDate>
       <description>Prokrastination überwinden als Schüler oder Student: Verstehe die psychologischen Ursachen und entdecke konkrete Techniken, mit denen du endlich anfängst zu lernen.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Selbstdisziplin aufbauen: 7 Tipps für Schüler und Studenten</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/selbstdisziplin-aufbauen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/selbstdisziplin-aufbauen-tipps.html</guid>
-      <pubDate>Mon, 13 Apr 2026 13:59:31 +0000</pubDate>
-      <description>Selbstdisziplin aufbauen als Schüler oder Student: 7 konkrete Tipps, mit denen du regelmäßig lernst, Ablenkungen vermeidest und deine Ziele wirklich erreichst.</description>
-      <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Noten verbessern: 8 Tipps für bessere Schulnoten</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</guid>
-      <pubDate>Mon, 13 Apr 2026 05:54:29 +0000</pubDate>
-      <description>Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch bessere Schulnoten, ohne nächtelang zu pauken.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
