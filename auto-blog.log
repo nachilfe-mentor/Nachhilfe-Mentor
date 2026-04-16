@@ -2100,3 +2100,51 @@ From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
 [2026-04-16 06:45] Artikel #59: mathe-abitur-vorbereitung.html | Pinterest Pin-ID: cmo1477uv015vmj0yyj1je1zs
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `mathe-abitur-vorbereitung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/mathe-abitur-vorbereitung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `mathe-lernen-tipps.html` auf neuen Artikel; im Artikel selbst Links zu `active-recall-lerntechnik.html`, `lernplan-erstellen-tipps.html`, `biologie-abitur-vorbereitung.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #59 eingetragen, Gesamtzahl auf 59 erhöht)
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO-Update, Log)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefürt (65 URLs in Sitemap, 61 URLs an IndexNow übermittelt)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefürt — Pin-ID: `cmo1477uv015vmj0yyj1je1zs`
+
+**Analytics-Notiz:** Google organisch wächst kontinuierlich (15 Sessions, Stand 16.04.). Lerntypen-Artikel mit 530s Verweildauer zeigt: persönliche Artikel mit Quiz-Charakter performen gut. Mathe-Abitur-Vorbereitung ist ein stark gesuchtes Keyword mit klarer Suchintention und ergänzt den wachsenden Prüfungsvorbereitungs-Cluster.
+[2026-04-16 06:45:24] Blog cycle completed successfully.
+[2026-04-16 06:45:24] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 65 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 61 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 61 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 65 URLs in Sitemap, 20 Artikel im Feed.
+[main b5a69b2] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   5db41ff..b5a69b2  main -> main
+[2026-04-16 06:45:24] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: mathe-abitur-vorbereitung
+  Titel: Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung
+  Desc:  Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, S...
+[Pinterest] Erstelle Pin fuer: Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/mathe-abitur-vorbereitung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html
+[Pinterest] Uploading mathe-abitur-vorbereitung.webp (image/webp)...
+[Pinterest] Upload OK: id=d8e14831-0317-40a2-a5cc-b1634aba4c5a
+[Pinterest] Pin erstellt! Post-ID: cmo147n6e015wmj0y66pgw17l
+[Pinterest] Erfolgreich! Pin-ID: cmo147n6e015wmj0y66pgw17l
+
+[Pinterest-Fallback] OK: mathe-abitur-vorbereitung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-16 06:45:24] Next run in 8 hours.
+---
+[2026-04-16 14:45:27] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
