@@ -2204,3 +2204,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles sauber. Kein weiterer Commit nötig.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `physik-abitur-vorbereitung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/physik-abitur-vorbereitung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`physik-lernen-tipps.html` verlinkt auf neuen Artikel; neuer Artikel verlinkt `feynman-technik-erklaeren-lernen`, `active-recall-lerntechnik`, `mathe-abitur-vorbereitung`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (61 Artikel, Abitur-Cluster ergänzt)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuhrt (67 URLs in Sitemap, 63 URLs an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuhrt — Pin-ID: `cmo22w1ic01n5mr0yd0vlef9d`
+[2026-04-16 22:56:21] Blog cycle completed successfully.
+[2026-04-16 22:56:21] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 67 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 63 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 63 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 67 URLs in Sitemap, 20 Artikel im Feed.
+[main 8f6fe21] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   4df75c3..8f6fe21  main -> main
+[2026-04-16 22:56:21] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: physik-abitur-vorbereitung
+  Titel: Physik Abitur Vorbereitung: So meisterst du die Physik-Prüfung
+  Desc:  Physik Abitur Vorbereitung mit System: Die wichtigsten Themenblöcke, ein 3-Phase...
+[Pinterest] Erstelle Pin fuer: Physik Abitur Vorbereitung: So meisterst du die Physik-Prüfung
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/physik-abitur-vorbereitung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/physik-abitur-vorbereitung.html
+[Pinterest] Uploading physik-abitur-vorbereitung.webp (image/webp)...
+[Pinterest] Upload OK: id=4fcfb02f-7816-479e-8d5a-0ea121771180
+[Pinterest] Pin erstellt! Post-ID: cmo22w9yg01n6mr0yw0i9ul1t
+[Pinterest] Erfolgreich! Pin-ID: cmo22w9yg01n6mr0yw0i9ul1t
+
+[Pinterest-Fallback] OK: physik-abitur-vorbereitung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-16 22:56:21] Next run in 8 hours.
+---
+[2026-04-17 06:56:23] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
