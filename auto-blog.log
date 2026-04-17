@@ -2300,3 +2300,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Pinterest-Pin erfolgreich erstellt.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `englisch-abitur-vorbereitung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/englisch-abitur-vorbereitung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`englisch-lernen-tipps.html` → neuer Artikel im Fazit; neuer Artikel → `active-recall-lerntechnik.html` + `lernplan-erstellen-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #63, Englisch Abitur in Prüfungsvorbereitung-Cluster)
+- [x] Git Push: erfolgreich (Commits `0b60e6f` + `5730b6e`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (69 URLs in Sitemap, 65 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmo31hz38014aqj0ybcea414b`
+
+**Thema:** Englisch Abitur Vorbereitung (Artikel #63). Die Abitur-Serie war bisher für Biologie, Mathe, Physik, Chemie und Deutsch komplett, aber Englisch fehlte. Dieser Artikel schließt die Lücke mit konkreten Aufgabentypen, PEEL-Essay-Struktur und einem 3-Phasen-Lernplan.
+[2026-04-17 15:05:13] Blog cycle completed successfully.
+[2026-04-17 15:05:13] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 69 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 65 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 65 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 69 URLs in Sitemap, 20 Artikel im Feed.
+[main 329b146] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   5730b6e..329b146  main -> main
+[2026-04-17 15:05:13] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: englisch-abitur-vorbereitung
+  Titel: Englisch Abitur Vorbereitung: So meisterst du die Englisch-Prüfung
+  Desc:  Englisch Abitur Vorbereitung: Die wichtigsten Aufgabentypen, Lernstrategien und ...
+[Pinterest] Erstelle Pin fuer: Englisch Abitur Vorbereitung: So meisterst du die Englisch-Prüfung
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/englisch-abitur-vorbereitung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/englisch-abitur-vorbereitung.html
+[Pinterest] Uploading englisch-abitur-vorbereitung.webp (image/webp)...
+[Pinterest] Upload OK: id=504683cf-d693-44af-8728-2e0e3eee5d7d
+[Pinterest] Pin erstellt! Post-ID: cmo31i9lm011qrz0yhesrnj6v
+[Pinterest] Erfolgreich! Pin-ID: cmo31i9lm011qrz0yhesrnj6v
+
+[Pinterest-Fallback] OK: englisch-abitur-vorbereitung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-17 15:05:13] Next run in 8 hours.
+---
+[2026-04-17 23:05:16] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

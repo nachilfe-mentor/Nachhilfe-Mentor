@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 63
+- Gesamtzahl Artikel: 64
 - Letzte Veröffentlichung: 2026-04-17
 - Nächster geplanter Post: TBD
 
@@ -70,6 +70,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 57 | 2026-04-15 | lerntagebuch-fuehren-tipps | Lerntagebuch führen: So reflektierst du dein Lernen und wirst wirklich besser | Lerntagebuch führen, Lerntagebuch Schule, Lernreflexion, Lernfortschritt dokumentieren, Lerntagebuch Vorlage, besser lernen | Lernmethoden | Was ist ein Lerntagebuch und warum funktioniert es (Wissenschaft), was reingehört (6 Punkte: Datum/Zeit, Thema, was gut/schlecht lief, nächste Schritte, Stimmung), Routine aufbauen (4 Tipps), analog vs. digital, Wochenreview als stärkster Eintrag, Lerntyp-Kombination, häufige Fehler (Perfektionismus, nur Positives, keine Konsequenzen, zu selten), Kombination mit Zusammenfassungen. App-Erwähnung (Nachhilfe Mentor trackt Fortschritte und deckt Wissenslücken auf). Crosslinks zu pomodoro-technik-lernen, lerntypen-vark-test-lerntipps, zusammenfassung-schreiben-lernen. Rückverlinkung von pomodoro-technik-lernen. |
 | 58 | 2026-04-15 | biologie-abitur-vorbereitung | Biologie Abitur Vorbereitung: Die wichtigsten Themen und wie du sie wirklich lernst | Biologie Abitur Vorbereitung, Biologie Abitur Themen, Biologie Abitur lernen, Biologie Abitur Tipps, Genetik Abitur, Ökologie Abitur, Neurobiologie Abitur | Prüfungsvorbereitung | Die 6 wichtigsten Themenfelder (Genetik, Ökologie, Neurobiologie, Evolution, Zellbiologie, Immunbiologie), Lernen mit Active Recall statt passivem Lesen, Spaced Repetition für Definitionen, Feynman-Technik für Prozesse verstehen, 3-Phasen-Lernplan (Diagnose/aktive Erarbeitung/Wiederholung), Üben mit alten Abituraufgaben, 5 häufige Fehler (Passivlesen, Fachbegriffe verwechseln, Operatoren ignorieren, keine Prioritäten, zu spät anfangen). App-Erwähnung (KI-generierte Rückfragen für Active Recall). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode. Rückverlinkung von biologie-lernen-tipps. |
 | 59 | 2026-04-16 | mathe-abitur-vorbereitung | Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung | Mathe Abitur Vorbereitung, Mathe Abitur lernen, Mathematik Abitur Tipps, Analysis Abitur, Stochastik Abitur, Analytische Geometrie Abitur, Mathe Abitur bestehen | Prüfungsvorbereitung | Die drei großen Themenblöcke (Analysis, Stochastik, Analytische Geometrie) erklärt, was in jedem Bereich sicher sitzen muss, wie man mit Active Recall und alten Abituraufgaben richtig übt, 3-Phasen-Lernplan (Diagnose/systematisches Üben/Generalprobe), 5 häufige Fehler (zu viel anschauen, Grundlagen übersehen, Aufgabentext nicht lesen, Zeitmanagement, zu spät anfangen). App-Erwähnung (Wissenslücken in Analysis/Stochastik/Geometrie schließen). Crosslinks zu active-recall-lerntechnik, lernplan-erstellen-tipps, biologie-abitur-vorbereitung. Rückverlinkung von mathe-lernen-tipps. |
+| 64 | 2026-04-17 | geschichte-abitur-vorbereitung | Geschichte Abitur Vorbereitung: So meisterst du die Geschichte-Prüfung | Geschichte Abitur Vorbereitung, Geschichte Abitur lernen, Geschichte Abitur Tipps, Geschichte Abitur Themen, Weimarer Republik Abitur, Nationalsozialismus Abitur, Geschichte Abitur bestehen | Prüfungsvorbereitung | Die zentralen Themenfelder (Weimarer Republik, NS, Kalter Krieg, Imperialismus, Demokratiegeschichte), Ursache-Wirkung-Denken statt Daten pauken, Zeitstrahl als Grundgerüst, Quellen auswerten (4 Schritte), Operatoren kennen, alte Abituraufgaben üben, 3-Phasen-Lernplan (Diagnose/Erarbeitung/Generalprobe), 5 häufige Fehler. App-Erwähnung (Wissenslücken aufspüren). Crosslinks zu active-recall-lerntechnik, lernplan-erstellen-tipps. Rückverlinkung von geschichte-lernen-tipps. |
 | 63 | 2026-04-17 | englisch-abitur-vorbereitung | Englisch Abitur Vorbereitung: So meisterst du die Englisch-Prüfung | Englisch Abitur Vorbereitung, Englisch Abitur lernen, Englisch Abitur Tipps, Textanalyse Englisch Abitur, Leseverstehen Englisch Abitur, Writing Abitur, Englisch Abitur bestehen | Prüfungsvorbereitung | Aufgabentypen im Englisch-Abitur (Leseverstehen, Writing, Hörverstehen), Textanalyse-Methode (Skimming, Aufgaben lesen, Intensivlesen), PEEL-Essay-Struktur, Hörverstehen-Training, Academic Word List, Grammatikfehler-Protokoll, 3-Phasen-Lernplan (Diagnose/Aufarbeitung/Generalprobe), 5 häufige Fehler. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, lernplan-erstellen-tipps. Rückverlinkung von englisch-lernen-tipps. |
 | 62 | 2026-04-17 | chemie-abitur-vorbereitung | Chemie Abitur Vorbereitung: So meisterst du die Chemie-Prüfung | Chemie Abitur Vorbereitung, Chemie Abitur lernen, Chemie Abitur Tipps, organische Chemie Abitur, Redoxreaktionen Abitur, Elektrochemie Abitur, Säure-Base Abitur, Chemie Abitur bestehen | Prüfungsvorbereitung | Die wichtigsten Themenblöcke (organische Chemie, Säure-Base, Redox, Elektrochemie, Gleichgewicht), Verstehen statt Formeln pauken (Feynman-Technik), Reaktionsgleichungen als zentrales Übungsfeld, Active Recall für Definitionen, mit alten Abituraufgaben üben, 3-Phasen-Lernplan (Diagnose/Aufarbeiten/Generalprobe), 5 häufige Fehler. App-Erwähnung (KI-Rückfragen für Wissenslücken). Crosslinks zu active-recall-lerntechnik, mathe-abitur-vorbereitung, lernplan-erstellen-tipps. Rückverlinkung von chemie-lernen-tipps. |
 | 61 | 2026-04-16 | physik-abitur-vorbereitung | Physik Abitur Vorbereitung: So meisterst du die Physik-Prüfung | Physik Abitur Vorbereitung, Physik Abitur lernen, Physik Abitur Tipps, Mechanik Abitur, Elektrik Abitur, Schwingungen Wellen Abitur, Quantenphysik Abitur, Physik Abitur bestehen | Prüfungsvorbereitung | Die wichtigsten Themenblöcke (Mechanik, Elektrodynamik, Schwingungen/Wellen, Optik, Quantenphysik), Verstehen statt Auswendiglernen, Aufgaben rechnen als Kernmethode, 3-Phasen-Lernplan (Diagnose/Üben/Generalprobe), 5 häufige Fehler (Formeln auswendig, nicht rechnen, Einheiten, Skizzen, zu spät). App-Erwähnung (Wissenslücken in Physik schließen). Crosslinks zu feynman-technik-erklaeren-lernen, active-recall-lerntechnik, mathe-abitur-vorbereitung. Rückverlinkung von physik-lernen-tipps. |
@@ -80,7 +81,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
-- Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden, Biologie Abitur, Mathe Abitur, Deutsch Abitur, Physik Abitur, Englisch Abitur
+- Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden, Biologie Abitur, Mathe Abitur, Deutsch Abitur, Physik Abitur, Chemie Abitur, Englisch Abitur, Geschichte Abitur
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten
 - KI & Bildung: Lernen mit KI / ChatGPT
 - Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen
@@ -96,6 +97,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   <!-- Konzentration beim Lesen verbessern → verwendet in Artikel #52 -->
   <!-- Erdkunde lernen Tipps → verwendet in Artikel #47 -->
   <!-- Latein lernen Tipps → verwendet in Artikel #46 -->
+  <!-- Geschichte Abitur Vorbereitung → verwendet in Artikel #64 -->
   Lernstress bewältigen Abitur,
   <!-- Deutsch Abitur Vorbereitung → verwendet in Artikel #60 -->
   <!-- Mathe Abitur Vorbereitung → verwendet in Artikel #59 -->
@@ -443,6 +445,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - englisch-abitur-vorbereitung -> active-recall-lerntechnik (Grammatik aktiv üben: Active Recall mit eigenen Beispielsätzen)
 - englisch-abitur-vorbereitung -> lernplan-erstellen-tipps (3-Phasen-Lernplan, Verweis auf Lernplan-Guide)
 - englisch-lernen-tipps -> englisch-abitur-vorbereitung (Rückverlinkung: Fazit, Verweis auf konkreten Abitur-3-Phasen-Plan)
+
+## Interne Verlinkungen (Ergänzung Artikel 64)
+- geschichte-abitur-vorbereitung -> active-recall-lerntechnik (Zusammenhänge aktiv abrufen statt passiv lesen)
+- geschichte-abitur-vorbereitung -> lernplan-erstellen-tipps (3-Phasen-Lernplan, Verweis auf Lernplan-Guide)
+- geschichte-abitur-vorbereitung -> geschichte-lernen-tipps (Fazit: weiterführender Guide für allgemeine Lerntipps)
+- geschichte-lernen-tipps -> geschichte-abitur-vorbereitung (Rückverlinkung: Fazit, Verweis auf konkreten Abitur-3-Phasen-Plan)
 
 ## Self-Improvement Runde 10 (nach Artikel 50)
 - Alle 5 Artikel aus R9-Empfehlung umgesetzt: Latein, Erdkunde, KI Hausaufgaben, Nachhilfe online vs. offline, Lernstress bewältigen.
