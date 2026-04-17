@@ -2,6 +2,7 @@ abitur-vorbereitung-tipps
 active-recall-lerntechnik
 biologie-abitur-vorbereitung
 biologie-lernen-tipps
+chemie-abitur-vorbereitung
 chemie-lernen-tipps
 cornell-methode-notizen
 deutsch-abitur-vorbereitung

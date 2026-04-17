@@ -2252,3 +2252,51 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Pinterest-Pin erfolgreich erstellt. Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `chemie-abitur-vorbereitung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/chemie-abitur-vorbereitung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (chemie-abitur-vorbereitung → active-recall, mathe-abitur-vorbereitung, lernplan-erstellen; Rückverlinkung von chemie-lernen-tipps)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (62 Artikel)
+- [x] Git Push: erfolgreich (2 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (68 URLs in Sitemap, 64 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmo2k6f0y02r2qk0yo5if5j6e`
+[2026-04-17 07:00:16] Blog cycle completed successfully.
+[2026-04-17 07:00:16] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 68 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 64 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 64 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 68 URLs in Sitemap, 20 Artikel im Feed.
+[main d7e4a21] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   60a4a08..d7e4a21  main -> main
+[2026-04-17 07:00:16] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: chemie-abitur-vorbereitung
+  Titel: Chemie Abitur Vorbereitung: So meisterst du die Chemie-Prüfung
+  Desc:  Chemie Abitur Vorbereitung leicht gemacht: die wichtigsten Themenblöcke, ein 3-P...
+[Pinterest] Erstelle Pin fuer: Chemie Abitur Vorbereitung: So meisterst du die Chemie-Prüfung
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/chemie-abitur-vorbereitung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/chemie-abitur-vorbereitung.html
+[Pinterest] Uploading chemie-abitur-vorbereitung.webp (image/webp)...
+[Pinterest] Upload OK: id=fb38f150-a0d9-4e87-aceb-d6508422debe
+[Pinterest] Pin erstellt! Post-ID: cmo2k6lp502r4qk0y5uhehp4r
+[Pinterest] Erfolgreich! Pin-ID: cmo2k6lp502r4qk0y5uhehp4r
+
+[Pinterest-Fallback] OK: chemie-abitur-vorbereitung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-17 07:00:16] Next run in 8 hours.
+---
+[2026-04-17 15:00:19] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
