@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 66
+- Gesamtzahl Artikel: 67
 - Letzte Veröffentlichung: 2026-04-18
 - Nächster geplanter Post: TBD
 
@@ -79,6 +79,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 53 | 2026-04-14 | gedaechtnis-verbessern-uebungen | Gedächtnis verbessern: 7 Übungen, die dein Gehirn wirklich trainieren | Gedächtnis verbessern, Gedächtnis verbessern Übungen, Merkfähigkeit steigern, Gedächtnistraining, Gehirn trainieren, Gedächtnis Schüler, Gedächtnis stärken, Lernen Gedächtnis | Lernmethoden | 7 Übungen zum Gedächtnis verbessern: Blank-Page-Methode (Active Recall), Spaced Repetition mit Zeitabständen, Loci-Methode als tägliches Training, Erklären ohne Notizen (Feynman-Technik), Verbindungen herstellen statt isoliert lernen, Schlaf gezielt nutzen (Gedächtniskonsolidierung), Bewegung als Gehirnbooster (BDNF). Kombinations-Lernblock erklärt. App-Erwähnung (Nachhilfe Mentor stellt Rückfragen und deckt Wissenslücken auf). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen. Rückverlinkung von gedaechtnis-techniken-lernen. |
 | 66 | 2026-04-18 | muendliche-pruefung-vorbereiten | Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest | mündliche Prüfung Tipps, mündliche Prüfung vorbereiten, mündliches Abitur, Prüfungsgespräch Tipps, Lampenfieber Prüfung, mündliche Note verbessern | Prüfungsvorbereitung | 7 Tipps zur Vorbereitung auf mündliche Prüfungen: Stoff aktiv beherrschen (Active Recall), mögliche Fragen antizipieren, laut sprechen üben (Feynman-Technik), klare Antwortstruktur (These-Begründung-Beispiel), Lampenfieber nutzen statt bekämpfen, Prüfungssituation simulieren, Lernplan rechtzeitig starten. App-Erwähnung (Wissenslücken aufdecken vor mündlicher Prüfung). Crosslinks zu active-recall-lerntechnik, feynman-technik-erklaeren-lernen, pruefungsangst-ueberwinden, referat-halten-tipps, lernplan-erstellen-tipps. Rückverlinkung von pruefungsangst-ueberwinden, referat-halten-tipps. |
 | 65 | 2026-04-18 | lernzettel-erstellen-tipps | Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen | Lernzettel erstellen, Lernzettel schreiben, Lernzettel Tipps, gute Lernzettel, Lernzettel Methode, Lernzettel Schule, Lernzettel Struktur, effektive Lernzettel | Lernmethoden | 7 Tipps für effektive Lernzettel: Kürze vor Vollständigkeit, eigene Sprache statt abgeschriebene Sätze, Fragen statt Aussagen formulieren, Hierarchie und Struktur nutzen, Farbe mit Funktion einsetzen, Spaced Repetition kombinieren, aktive Wiederholung (Blank-Page-Methode) statt passives Lesen. Warum die meisten Lernzettel nicht funktionieren (Illusion des Lernens). 5 häufige Fehler. App-Erwähnung (Rückfragen und Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, feynman-technik-erklaeren-lernen, cornell-methode-notizen, spaced-repetition-lernmethode, zusammenfassung-schreiben-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
+| 67 | 2026-04-18 | brainfood-lernen-ernaehrung | Brainfood: Die beste Ernährung fürs Lernen | Brainfood lernen, Brainfood Schüler, Ernährung fürs Lernen, Ernährung Konzentration, Gehirnnahrung, Brainfood Studium, besser lernen Ernährung, Lernfutter, Gedächtnis Ernährung, Omega-3 Gehirn | Lernmethoden | 8 Brainfood-Lebensmittel erklärt (Nüsse, Fisch, Beeren, Eier, dunkle Schokolade, Avocados, Hülsenfrüchte/Vollkorn, Wasser/grüner Tee), was man meiden sollte (Zucker, Fast Food, zu viel Koffein, schwere Mahlzeiten), praktische Brainfood-Routine für den Lerntag, kritischer Blick auf Wirksamkeit. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu lernpausen-richtig-machen, schlaf-und-lernen-tipps. Rückverlinkung von lernpausen-richtig-machen, konzentration-steigern-lernen. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK
@@ -92,6 +93,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
   Prüfungsvorbereitung, effektiv lernen,
+  <!-- Brainfood lernen, Ernährung fürs Lernen → verwendet in Artikel #67 -->
   <!-- Nachhilfe online vs offline → verwendet in Artikel #50 -->
   <!-- KI Hausaufgaben Hilfe → verwendet in Artikel #48 -->
   <!-- Gedächtnis verbessern Übungen → verwendet in Artikel #53 -->
