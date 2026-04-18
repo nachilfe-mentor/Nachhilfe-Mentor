@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 17 Apr 2026 23:10:10 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 07:14:39 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
+      <pubDate>Sat, 18 Apr 2026 07:13:43 +0000</pubDate>
+      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</guid>
+      <pubDate>Sat, 18 Apr 2026 07:13:02 +0000</pubDate>
+      <description>Lernzettel erstellen leicht gemacht: 7 bewährte Tipps, wie du Lernzettel schreibst, die wirklich beim Lernen helfen. Mit konkreten Beispielen und häufigen Fehlern.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 15 Apr 2026 06:27:27 +0000</pubDate>
       <description>Hausarbeit schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. Aufbau, Gliederung, Quellen, Zitieren und häufige Fehler vermeiden.</description>
       <category>Studium &amp; Schule</category>
-    </item>
-    <item>
-      <title>Motivationsschreiben schreiben: So überzeugst du Hochschulen und Arbeitgeber</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</guid>
-      <pubDate>Wed, 15 Apr 2026 06:26:43 +0000</pubDate>
-      <description>Motivationsschreiben schreiben leicht gemacht: Aufbau, Tipps und häufige Fehler vermeiden. So stellst du dich überzeugend vor und bekommst den Studienplatz.</description>
-      <category>Studium &amp; Karriere</category>
-    </item>
-    <item>
-      <title>Hausaufgaben schnell erledigen: 8 Tipps, die wirklich helfen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/hausaufgaben-tipps-schnell-erledigen.html</guid>
-      <pubDate>Tue, 14 Apr 2026 22:22:08 +0000</pubDate>
-      <description>Hausaufgaben Tipps, die wirklich funktionieren: Mit diesen 8 Strategien erledigst du deine Aufgaben schneller, konzentrierter und mit weniger Stress.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
