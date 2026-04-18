@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 18 Apr 2026 07:15:03 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 15:19:11 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Referat halten: 8 Tipps, mit denen du souverän präsentierst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</guid>
+      <pubDate>Sat, 18 Apr 2026 15:18:28 +0000</pubDate>
+      <description>Referat halten leicht gemacht: 8 bewährte Tipps für Aufbau, freies Sprechen und souveränes Präsentieren in Schule und Studium.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
+      <pubDate>Sat, 18 Apr 2026 15:18:21 +0000</pubDate>
+      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/muendliche-pruefung-vorbereiten.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/muendliche-pruefung-vorbereiten.html</guid>
+      <pubDate>Sat, 18 Apr 2026 15:17:52 +0000</pubDate>
+      <description>Mündliche Prüfung vorbereiten: 7 Tipps, mit denen du souverän antwortest, Lampenfieber überwindest und auch bei schwierigen Fragen überzeugst.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
       <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
@@ -142,30 +166,6 @@
       <pubDate>Wed, 15 Apr 2026 22:38:17 +0000</pubDate>
       <description>Biologie Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du sie mit Active Recall und Spaced Repetition lernst, und die 5 häufigsten Fehler, die du vermeiden solltest.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Pomodoro-Technik: Mit dem Tomaten-Timer endlich fokussiert lernen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pomodoro-technik-lernen.html</guid>
-      <pubDate>Wed, 15 Apr 2026 14:32:18 +0000</pubDate>
-      <description>Die Pomodoro-Technik erklärt: Wie du mit 25-Minuten-Blöcken konzentrierter lernst, Ablenkungen überwindest und mehr schaffst als je zuvor.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Lerntagebuch führen: Tipps für mehr Lernerfolg</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lerntagebuch-fuehren-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lerntagebuch-fuehren-tipps.html</guid>
-      <pubDate>Wed, 15 Apr 2026 14:31:48 +0000</pubDate>
-      <description>Lerntagebuch führen leicht gemacht: Mit diesen praktischen Tipps reflektierst du deinen Lernfortschritt, erkennst deine Schwächen und wirst langfristig besser in der Schule oder im Studium.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Hausarbeit schreiben: Schritt-für-Schritt-Anleitung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</guid>
-      <pubDate>Wed, 15 Apr 2026 06:27:27 +0000</pubDate>
-      <description>Hausarbeit schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. Aufbau, Gliederung, Quellen, Zitieren und häufige Fehler vermeiden.</description>
-      <category>Studium &amp; Schule</category>
     </item>
   </channel>
 </rss>
