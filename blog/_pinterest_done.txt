@@ -15,6 +15,7 @@ feynman-technik-erklaeren-lernen
 franzoesisch-lernen-tipps
 gedaechtnis-techniken-lernen
 gedaechtnis-verbessern-uebungen
+geschichte-abitur-vorbereitung
 geschichte-lernen-tipps
 hausarbeit-schreiben-tipps
 hausaufgaben-tipps-schnell-erledigen
@@ -39,6 +40,7 @@ lerntagebuch-fuehren-tipps
 lerntipps-grundschule
 lerntypen-vark-test-lerntipps
 lernumgebung-gestalten-tipps
+lernzettel-erstellen-tipps
 mathe-abitur-vorbereitung
 mathe-lernen-tipps
 mindmap-erstellen-lernen

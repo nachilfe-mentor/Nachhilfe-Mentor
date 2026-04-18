@@ -2350,3 +2350,99 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `geschichte-abitur-vorbereitung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/geschichte-abitur-vorbereitung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (geschichte-lernen-tipps → Geschichte Abitur Artikel im Fazit; Artikel selbst verlinkt active-recall-lerntechnik + lernplan-erstellen-tipps)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (64 Artikel)
+- [x] Git Push: erfolgreich (2 Commits: Artikel + SEO-Update)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (70 URLs in Sitemap, 66 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmo3itmsu02jwqj0y8w12mgjj`
+[2026-04-17 23:10:10] Blog cycle completed successfully.
+[2026-04-17 23:10:10] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 70 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 66 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 66 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 70 URLs in Sitemap, 20 Artikel im Feed.
+[main d2c1600] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   5b2c6a4..d2c1600  main -> main
+[2026-04-17 23:10:10] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: geschichte-abitur-vorbereitung
+  Titel: Geschichte Abitur Vorbereitung: So meisterst du die Geschichte-Prüfung
+  Desc:  Geschichte Abitur Vorbereitung leicht gemacht: Die wichtigsten Themen, effektive...
+[Pinterest] Erstelle Pin fuer: Geschichte Abitur Vorbereitung: So meisterst du die Geschichte-Prüfung
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/geschichte-abitur-vorbereitung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/geschichte-abitur-vorbereitung.html
+[Pinterest] Uploading geschichte-abitur-vorbereitung.webp (image/webp)...
+[Pinterest] Upload OK: id=f790dae6-c61b-4306-aa58-8d17b2f7c4af
+[Pinterest] Pin erstellt! Post-ID: cmo3itwhy02k1qj0yhl3iul7r
+[Pinterest] Erfolgreich! Pin-ID: cmo3itwhy02k1qj0yhl3iul7r
+
+[Pinterest-Fallback] OK: geschichte-abitur-vorbereitung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-17 23:10:10] Next run in 8 hours.
+---
+[2026-04-18 07:10:13] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `lernzettel-erstellen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/lernzettel-erstellen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Crosslinks im Artikel zu active-recall, feynman-technik, cornell-methode, spaced-repetition, zusammenfassung-schreiben; Rückverlinkung in `zusammenfassung-schreiben-lernen.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (65 Artikel)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühirt (71 URLs in Sitemap, 67 URLs an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühirt — Pin-ID: `cmo4059yl03slqj0yqh1zar0e`
+[2026-04-18 07:15:03] Blog cycle completed successfully.
+[2026-04-18 07:15:03] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 71 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 67 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 67 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 71 URLs in Sitemap, 20 Artikel im Feed.
+[main 8edf99e] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   809d2b4..8edf99e  main -> main
+[2026-04-18 07:15:03] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: lernzettel-erstellen-tipps
+  Titel: Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen
+  Desc:  Lernzettel erstellen leicht gemacht: 7 bewährte Tipps, wie du Lernzettel schreib...
+[Pinterest] Erstelle Pin fuer: Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lernzettel-erstellen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html
+[Pinterest] Uploading lernzettel-erstellen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=97bd7769-9c0a-43ee-95d0-052861ae3db4
+[Pinterest] Pin erstellt! Post-ID: cmo405h7c03uqrz0yna23y8zh
+[Pinterest] Erfolgreich! Pin-ID: cmo405h7c03uqrz0yna23y8zh
+
+[Pinterest-Fallback] OK: lernzettel-erstellen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-18 07:15:03] Next run in 8 hours.
+---
+[2026-04-18 15:15:06] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
