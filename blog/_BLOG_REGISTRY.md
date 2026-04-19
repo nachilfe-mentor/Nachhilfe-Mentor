@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 69
+- Gesamtzahl Artikel: 70
 - Letzte Veröffentlichung: 2026-04-19
 - Nächster geplanter Post: TBD
 
@@ -79,6 +79,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 53 | 2026-04-14 | gedaechtnis-verbessern-uebungen | Gedächtnis verbessern: 7 Übungen, die dein Gehirn wirklich trainieren | Gedächtnis verbessern, Gedächtnis verbessern Übungen, Merkfähigkeit steigern, Gedächtnistraining, Gehirn trainieren, Gedächtnis Schüler, Gedächtnis stärken, Lernen Gedächtnis | Lernmethoden | 7 Übungen zum Gedächtnis verbessern: Blank-Page-Methode (Active Recall), Spaced Repetition mit Zeitabständen, Loci-Methode als tägliches Training, Erklären ohne Notizen (Feynman-Technik), Verbindungen herstellen statt isoliert lernen, Schlaf gezielt nutzen (Gedächtniskonsolidierung), Bewegung als Gehirnbooster (BDNF). Kombinations-Lernblock erklärt. App-Erwähnung (Nachhilfe Mentor stellt Rückfragen und deckt Wissenslücken auf). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen. Rückverlinkung von gedaechtnis-techniken-lernen. |
 | 66 | 2026-04-18 | muendliche-pruefung-vorbereiten | Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest | mündliche Prüfung Tipps, mündliche Prüfung vorbereiten, mündliches Abitur, Prüfungsgespräch Tipps, Lampenfieber Prüfung, mündliche Note verbessern | Prüfungsvorbereitung | 7 Tipps zur Vorbereitung auf mündliche Prüfungen: Stoff aktiv beherrschen (Active Recall), mögliche Fragen antizipieren, laut sprechen üben (Feynman-Technik), klare Antwortstruktur (These-Begründung-Beispiel), Lampenfieber nutzen statt bekämpfen, Prüfungssituation simulieren, Lernplan rechtzeitig starten. App-Erwähnung (Wissenslücken aufdecken vor mündlicher Prüfung). Crosslinks zu active-recall-lerntechnik, feynman-technik-erklaeren-lernen, pruefungsangst-ueberwinden, referat-halten-tipps, lernplan-erstellen-tipps. Rückverlinkung von pruefungsangst-ueberwinden, referat-halten-tipps. |
 | 65 | 2026-04-18 | lernzettel-erstellen-tipps | Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen | Lernzettel erstellen, Lernzettel schreiben, Lernzettel Tipps, gute Lernzettel, Lernzettel Methode, Lernzettel Schule, Lernzettel Struktur, effektive Lernzettel | Lernmethoden | 7 Tipps für effektive Lernzettel: Kürze vor Vollständigkeit, eigene Sprache statt abgeschriebene Sätze, Fragen statt Aussagen formulieren, Hierarchie und Struktur nutzen, Farbe mit Funktion einsetzen, Spaced Repetition kombinieren, aktive Wiederholung (Blank-Page-Methode) statt passives Lesen. Warum die meisten Lernzettel nicht funktionieren (Illusion des Lernens). 5 häufige Fehler. App-Erwähnung (Rückfragen und Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, feynman-technik-erklaeren-lernen, cornell-methode-notizen, spaced-repetition-lernmethode, zusammenfassung-schreiben-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
+| 70 | 2026-04-19 | lernstress-abitur-tipps | Lernstress Abitur: 8 Tipps, damit du die Abiturphase übersteht | Lernstress Abitur, Abitur Stress bewältigen, Abiturphase Tipps, Stress Abitur, Burnout Abitur vermeiden, Prüfungsstress Abitur | Prüfungsvorbereitung | 8 Tipps zum Lernstress Abitur: Lernplan für Überblick, Schlaf als Pflicht, Stoff priorisieren, Active Recall statt passivem Lesen, Bewegung zum Stressabbau, inneren Kritiker in Schach halten, soziale Unterstützung suchen, Burnout-Warnsignale ernst nehmen. App-Erwähnung (Wissenslücken gezielt schließen). Crosslinks zu lernplan-erstellen-tipps, active-recall-lerntechnik, pruefungsangst-ueberwinden, abitur-vorbereitung-tipps. Rückverlinkung von pruefungsangst-ueberwinden und abitur-vorbereitung-tipps. |
 | 69 | 2026-04-19 | effektiv-lernen-tipps | Effektiv lernen: 10 Strategien, die wirklich funktionieren | effektiv lernen, effektiv lernen Tipps, effektiv lernen Strategien, Lernstrategien, besser lernen, Lerntipps Schüler, Lerntipps Studenten, effektives Lernen, Lernmethoden | Lernmethoden | Pillar-Artikel: 10 Lernstrategien kompakt erklärt (Active Recall, Spaced Repetition, Feynman-Methode, Pomodoro, Lernplan, konkrete Ziele, Schlaf, Bewegung, Fehlernutzung, Reflexion). Dient als Hub für viele Detailartikel. App-Erwähnung (Wissenslücken erkennen). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode. Rückverlinkung von active-recall-lerntechnik. |
 | 68 | 2026-04-19 | bewegung-und-lernen-sport-tipps | Bewegung und Lernen: Warum Sport deine Noten verbessert | Bewegung und Lernen, Sport und Lernen, Sport Lernleistung, Bewegung Konzentration, Sport Schüler Tipps, lernen nach dem Sport, BDNF Lernen, Sport Noten verbessern | Lernmethoden | 7 Tipps: Bewegungs-Warmup vor schwierigen Themen, aktive Pausen statt passiver, Stoff laut erklären beim Gehen (Feynman), fester Sporttag im Lernplan, Sport in der Prüfungsphase nicht streichen, Stehphasen einbauen, Bewegung in der Lerngruppe. Wissenschaft: BDNF-Ausschüttung, Hippocampus-Wachstum, Neurotransmitter. App-Erwähnung. Crosslinks zu pomodoro-technik-lernen, lernpausen-richtig-machen. Rückverlinkung von lernpausen-richtig-machen, brainfood-lernen-ernaehrung. |
 | 67 | 2026-04-18 | brainfood-lernen-ernaehrung | Brainfood: Die beste Ernährung fürs Lernen | Brainfood lernen, Brainfood Schüler, Ernährung fürs Lernen, Ernährung Konzentration, Gehirnnahrung, Brainfood Studium, besser lernen Ernährung, Lernfutter, Gedächtnis Ernährung, Omega-3 Gehirn | Lernmethoden | 8 Brainfood-Lebensmittel erklärt (Nüsse, Fisch, Beeren, Eier, dunkle Schokolade, Avocados, Hülsenfrüchte/Vollkorn, Wasser/grüner Tee), was man meiden sollte (Zucker, Fast Food, zu viel Koffein, schwere Mahlzeiten), praktische Brainfood-Routine für den Lerntag, kritischer Blick auf Wirksamkeit. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu lernpausen-richtig-machen, schlaf-und-lernen-tipps. Rückverlinkung von lernpausen-richtig-machen, konzentration-steigern-lernen. |
@@ -106,7 +107,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   <!-- Latein lernen Tipps → verwendet in Artikel #46 -->
   <!-- Geschichte Abitur Vorbereitung → verwendet in Artikel #64 -->
   <!-- effektiv lernen, Lernstrategien → verwendet in Artikel #69 -->
-  Lernstress bewältigen Abitur,
+  <!-- Lernstress bewältigen Abitur → verwendet in Artikel #70 -->
   <!-- Deutsch Abitur Vorbereitung → verwendet in Artikel #60 -->
   <!-- Mathe Abitur Vorbereitung → verwendet in Artikel #59 -->
   <!-- Biologie Abitur Vorbereitung → verwendet in Artikel #58 -->
@@ -472,6 +473,14 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - muendliche-pruefung-vorbereiten -> lernplan-erstellen-tipps (Lernplan rechtzeitig starten: Lernplan-Guide verlinkt)
 - pruefungsangst-ueberwinden -> muendliche-pruefung-vorbereiten (Rückverlinkung: Fazit, Prüfungsangst bei mündlichen Prüfungen)
 - referat-halten-tipps -> muendliche-pruefung-vorbereiten (Rückverlinkung: Fazit, spezifische Tipps für mündliche Prüfung)
+
+## Interne Verlinkungen (Ergänzung Artikel 70)
+- lernstress-abitur-tipps -> lernplan-erstellen-tipps (Tipp 1: Lernplan als Basis gegen Überforderung)
+- lernstress-abitur-tipps -> active-recall-lerntechnik (Tipp 4: Active Recall statt passivem Lesen)
+- lernstress-abitur-tipps -> pruefungsangst-ueberwinden (Tipp 6: inneren Kritiker kontrollieren, Verweis auf Prüfungsangst-Guide)
+- lernstress-abitur-tipps -> abitur-vorbereitung-tipps (Fazit: allgemeiner Abitur-Lernguide als Vertiefung)
+- pruefungsangst-ueberwinden -> lernstress-abitur-tipps (Rückverlinkung: Fazit, Lernstress Abitur als Ergänzung)
+- abitur-vorbereitung-tipps -> lernstress-abitur-tipps (Rückverlinkung: Fazit, spezieller Lernstress-Guide für Abiturphase)
 
 ## Self-Improvement Runde 10 (nach Artikel 50)
 - Alle 5 Artikel aus R9-Empfehlung umgesetzt: Latein, Erdkunde, KI Hausaufgaben, Nachhilfe online vs. offline, Lernstress bewältigen.
