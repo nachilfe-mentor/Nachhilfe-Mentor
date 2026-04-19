@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 67
-- Letzte Veröffentlichung: 2026-04-18
+- Gesamtzahl Artikel: 68
+- Letzte Veröffentlichung: 2026-04-19
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -79,6 +79,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 53 | 2026-04-14 | gedaechtnis-verbessern-uebungen | Gedächtnis verbessern: 7 Übungen, die dein Gehirn wirklich trainieren | Gedächtnis verbessern, Gedächtnis verbessern Übungen, Merkfähigkeit steigern, Gedächtnistraining, Gehirn trainieren, Gedächtnis Schüler, Gedächtnis stärken, Lernen Gedächtnis | Lernmethoden | 7 Übungen zum Gedächtnis verbessern: Blank-Page-Methode (Active Recall), Spaced Repetition mit Zeitabständen, Loci-Methode als tägliches Training, Erklären ohne Notizen (Feynman-Technik), Verbindungen herstellen statt isoliert lernen, Schlaf gezielt nutzen (Gedächtniskonsolidierung), Bewegung als Gehirnbooster (BDNF). Kombinations-Lernblock erklärt. App-Erwähnung (Nachhilfe Mentor stellt Rückfragen und deckt Wissenslücken auf). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode, feynman-technik-erklaeren-lernen. Rückverlinkung von gedaechtnis-techniken-lernen. |
 | 66 | 2026-04-18 | muendliche-pruefung-vorbereiten | Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest | mündliche Prüfung Tipps, mündliche Prüfung vorbereiten, mündliches Abitur, Prüfungsgespräch Tipps, Lampenfieber Prüfung, mündliche Note verbessern | Prüfungsvorbereitung | 7 Tipps zur Vorbereitung auf mündliche Prüfungen: Stoff aktiv beherrschen (Active Recall), mögliche Fragen antizipieren, laut sprechen üben (Feynman-Technik), klare Antwortstruktur (These-Begründung-Beispiel), Lampenfieber nutzen statt bekämpfen, Prüfungssituation simulieren, Lernplan rechtzeitig starten. App-Erwähnung (Wissenslücken aufdecken vor mündlicher Prüfung). Crosslinks zu active-recall-lerntechnik, feynman-technik-erklaeren-lernen, pruefungsangst-ueberwinden, referat-halten-tipps, lernplan-erstellen-tipps. Rückverlinkung von pruefungsangst-ueberwinden, referat-halten-tipps. |
 | 65 | 2026-04-18 | lernzettel-erstellen-tipps | Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen | Lernzettel erstellen, Lernzettel schreiben, Lernzettel Tipps, gute Lernzettel, Lernzettel Methode, Lernzettel Schule, Lernzettel Struktur, effektive Lernzettel | Lernmethoden | 7 Tipps für effektive Lernzettel: Kürze vor Vollständigkeit, eigene Sprache statt abgeschriebene Sätze, Fragen statt Aussagen formulieren, Hierarchie und Struktur nutzen, Farbe mit Funktion einsetzen, Spaced Repetition kombinieren, aktive Wiederholung (Blank-Page-Methode) statt passives Lesen. Warum die meisten Lernzettel nicht funktionieren (Illusion des Lernens). 5 häufige Fehler. App-Erwähnung (Rückfragen und Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, feynman-technik-erklaeren-lernen, cornell-methode-notizen, spaced-repetition-lernmethode, zusammenfassung-schreiben-lernen. Rückverlinkung von zusammenfassung-schreiben-lernen. |
+| 68 | 2026-04-19 | bewegung-und-lernen-sport-tipps | Bewegung und Lernen: Warum Sport deine Noten verbessert | Bewegung und Lernen, Sport und Lernen, Sport Lernleistung, Bewegung Konzentration, Sport Schüler Tipps, lernen nach dem Sport, BDNF Lernen, Sport Noten verbessern | Lernmethoden | 7 Tipps: Bewegungs-Warmup vor schwierigen Themen, aktive Pausen statt passiver, Stoff laut erklären beim Gehen (Feynman), fester Sporttag im Lernplan, Sport in der Prüfungsphase nicht streichen, Stehphasen einbauen, Bewegung in der Lerngruppe. Wissenschaft: BDNF-Ausschüttung, Hippocampus-Wachstum, Neurotransmitter. App-Erwähnung. Crosslinks zu pomodoro-technik-lernen, lernpausen-richtig-machen. Rückverlinkung von lernpausen-richtig-machen, brainfood-lernen-ernaehrung. |
 | 67 | 2026-04-18 | brainfood-lernen-ernaehrung | Brainfood: Die beste Ernährung fürs Lernen | Brainfood lernen, Brainfood Schüler, Ernährung fürs Lernen, Ernährung Konzentration, Gehirnnahrung, Brainfood Studium, besser lernen Ernährung, Lernfutter, Gedächtnis Ernährung, Omega-3 Gehirn | Lernmethoden | 8 Brainfood-Lebensmittel erklärt (Nüsse, Fisch, Beeren, Eier, dunkle Schokolade, Avocados, Hülsenfrüchte/Vollkorn, Wasser/grüner Tee), was man meiden sollte (Zucker, Fast Food, zu viel Koffein, schwere Mahlzeiten), praktische Brainfood-Routine für den Lerntag, kritischer Blick auf Wirksamkeit. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu lernpausen-richtig-machen, schlaf-und-lernen-tipps. Rückverlinkung von lernpausen-richtig-machen, konzentration-steigern-lernen. |
 
 ## Abgedeckte Themen-Cluster
@@ -93,6 +94,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
   Prüfungsvorbereitung, effektiv lernen,
+  <!-- Bewegung und Lernen, Sport Lernleistung → verwendet in Artikel #68 -->
   <!-- Brainfood lernen, Ernährung fürs Lernen → verwendet in Artikel #67 -->
   <!-- Nachhilfe online vs offline → verwendet in Artikel #50 -->
   <!-- KI Hausaufgaben Hilfe → verwendet in Artikel #48 -->
@@ -179,6 +181,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - pruefungsangst-ueberwinden -> active-recall-lerntechnik (Prüfungssimulation: Active Recall für tieferes Verankern)
 - lernplan-erstellen-tipps -> pruefungsangst-ueberwinden (Fazit: weniger Prüfungsangst durch guten Plan)
 - prokrastination-ueberwinden-lernen -> pruefungsangst-ueberwinden (Angst vor dem Versagen: Verweis auf Prüfungsangst-Artikel)
+- bewegung-und-lernen-sport-tipps -> pomodoro-technik-lernen (Bewegung als Lernpause zwischen Pomodoro-Blöcken)
+- bewegung-und-lernen-sport-tipps -> lernpausen-richtig-machen (Aktive vs. passive Pausen)
+- lernpausen-richtig-machen -> bewegung-und-lernen-sport-tipps (Kurzer Spaziergang: Bewegung erhöht Durchblutung)
+- brainfood-lernen-ernaehrung -> bewegung-und-lernen-sport-tipps (Bewegung als Teil des Lern-Trios Ernährung/Pausen/Sport)
 
 - zusammenfassung-schreiben-lernen -> active-recall-lerntechnik (Eigene Worte: Active Recall als verwandte Methode)
 - zusammenfassung-schreiben-lernen -> spaced-repetition-lernmethode (Karteikarten-Methode: Spaced Repetition als Ergänzung)
