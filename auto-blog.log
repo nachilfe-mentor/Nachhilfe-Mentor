@@ -2446,3 +2446,101 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `muendliche-pruefung-vorbereiten.html`
+- [x] Cover-Bild generiert: `blog/posts/img/muendliche-pruefung-vorbereiten.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (pruefungsangst-ueberwinden, referat-halten-tipps)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #66, Verlinkungen eingetragen)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (72 URLs in Sitemap, 68 an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt. Pin-ID: `cmo4hg6ny00eqo70y29rn67gx`
+
+**Artikel:** "Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest" (Prüfungsvorbereitung-Cluster, bisher nicht abgedecktes Thema mit hohem Suchvolumen).
+[2026-04-18 15:19:29] Blog cycle completed successfully.
+[2026-04-18 15:19:29] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 72 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 68 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 68 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 72 URLs in Sitemap, 20 Artikel im Feed.
+[main 4540be1] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   3f6a493..4540be1  main -> main
+[2026-04-18 15:19:29] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: muendliche-pruefung-vorbereiten
+  Titel: Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest
+  Desc:  Mündliche Prüfung vorbereiten: 7 Tipps, mit denen du souverän antwortest, Lampen...
+[Pinterest] Erstelle Pin fuer: Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/muendliche-pruefung-vorbereiten.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/muendliche-pruefung-vorbereiten.html
+[Pinterest] Uploading muendliche-pruefung-vorbereiten.webp (image/webp)...
+[Pinterest] Upload OK: id=59440702-4b9b-4db6-9166-b2318e810d95
+[Pinterest] Pin erstellt! Post-ID: cmo4hgg8z00fbph0ygnjyvx1t
+[Pinterest] Erfolgreich! Pin-ID: cmo4hgg8z00fbph0ygnjyvx1t
+
+[Pinterest-Fallback] OK: muendliche-pruefung-vorbereiten
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-18 15:19:29] Next run in 8 hours.
+---
+[2026-04-18 23:19:32] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alles erledigt. Hier das Abschluss-Protokoll:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `brainfood-lernen-ernaehrung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/brainfood-lernen-ernaehrung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`lernpausen-richtig-machen.html` und `konzentration-steigern-lernen.html` verlinken jetzt auf den neuen Artikel; neuer Artikel verlinkt zu `lernpausen-richtig-machen.html` und `schlaf-und-lernen-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #67 eingetragen, Gesamtzahl auf 67)
+- [x] Git Push: erfolgreich (`9b1ff3f`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (73 URLs in Sitemap, 69 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmo4yshtj01mqph0ys3jxcn8b`
+[2026-04-18 23:24:57] Blog cycle completed successfully.
+[2026-04-18 23:24:57] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 73 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 69 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 69 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 73 URLs in Sitemap, 20 Artikel im Feed.
+[main 563f1d1] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   9b1ff3f..563f1d1  main -> main
+[2026-04-18 23:24:57] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: brainfood-lernen-ernaehrung
+  Titel: Brainfood: Die beste Ernährung fürs Lernen
+  Desc:  Brainfood für Schüler und Studenten: Was du essen solltest, um besser zu lernen,...
+[Pinterest] Erstelle Pin fuer: Brainfood: Die beste Ernährung fürs Lernen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/brainfood-lernen-ernaehrung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/brainfood-lernen-ernaehrung.html
+[Pinterest] Uploading brainfood-lernen-ernaehrung.webp (image/webp)...
+[Pinterest] Upload OK: id=45073c87-ff1c-40e3-bfc6-0e5c59419c7e
+[Pinterest] Pin erstellt! Post-ID: cmo4ysrq401mrph0ygn41jc21
+[Pinterest] Erfolgreich! Pin-ID: cmo4ysrq401mrph0ygn41jc21
+
+[Pinterest-Fallback] OK: brainfood-lernen-ernaehrung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-18 23:24:57] Next run in 8 hours.
+---
+[2026-04-19 07:25:00] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
