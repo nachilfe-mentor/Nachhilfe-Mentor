@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 19 Apr 2026 15:33:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 23:38:46 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</guid>
+      <pubDate>Sun, 19 Apr 2026 23:37:50 +0000</pubDate>
+      <description>Abitur Vorbereitung leicht gemacht: 9 erprobte Tipps für Lernplan, Zeitmanagement und die richtige Strategie. So gehst du entspannt und gut vorbereitet ins Abi.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
+      <pubDate>Sun, 19 Apr 2026 23:37:45 +0000</pubDate>
+      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Lernstress Abitur: 8 Tipps, damit du die Abiturphase übersteht</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernstress-abitur-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernstress-abitur-tipps.html</guid>
+      <pubDate>Sun, 19 Apr 2026 23:37:11 +0000</pubDate>
+      <description>Lernstress im Abitur bewältigen: 8 konkrete Tipps für Abiturienten, die Prüfungsphase ohne Burnout zu meistern. Mit Strategien für Schlaf, Zeitplanung und mentale Stärke.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Active Recall: Die Lerntechnik, mit der du Wissen wirklich abspeicherst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</link>
@@ -62,14 +86,6 @@
       <pubDate>Sat, 18 Apr 2026 15:18:28 +0000</pubDate>
       <description>Referat halten leicht gemacht: 8 bewährte Tipps für Aufbau, freies Sprechen und souveränes Präsentieren in Schule und Studium.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
-      <pubDate>Sat, 18 Apr 2026 15:18:21 +0000</pubDate>
-      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
     <item>
       <title>Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest</title>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 16 Apr 2026 22:55:34 +0000</pubDate>
       <description>Physik lernen leicht gemacht: 7 bewährte Tipps, die dir helfen, Formeln zu verstehen statt auswendig zu pauken. Praktisch, direkt umsetzbar und für Schüler und Studenten.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Physik Abitur Vorbereitung: So meisterst du die Physik-Prüfung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/physik-abitur-vorbereitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/physik-abitur-vorbereitung.html</guid>
-      <pubDate>Thu, 16 Apr 2026 22:55:04 +0000</pubDate>
-      <description>Physik Abitur Vorbereitung mit System: Die wichtigsten Themenblöcke, ein 3-Phasen-Lernplan und 5 Fehler, die du unbedingt vermeiden solltest.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</guid>
-      <pubDate>Thu, 16 Apr 2026 14:50:20 +0000</pubDate>
-      <description>Abitur Vorbereitung leicht gemacht: 9 erprobte Tipps für Lernplan, Zeitmanagement und die richtige Strategie. So gehst du entspannt und gut vorbereitet ins Abi.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
