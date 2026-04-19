@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 19 Apr 2026 07:29:20 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 15:33:29 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Active Recall: Die Lerntechnik, mit der du Wissen wirklich abspeicherst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</guid>
+      <pubDate>Sun, 19 Apr 2026 15:32:59 +0000</pubDate>
+      <description>Active Recall ist die wissenschaftlich stärkste Lerntechnik überhaupt. Erfahre, wie aktives Abrufen funktioniert, welche Methoden es gibt und wie du sie sofort anwendest.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Effektiv lernen: 10 Strategien, die wirklich funktionieren</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/effektiv-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/effektiv-lernen-tipps.html</guid>
+      <pubDate>Sun, 19 Apr 2026 15:32:28 +0000</pubDate>
+      <description>Effektiv lernen mit den 10 besten Strategien aus Wissenschaft und Praxis. Konkrete Methoden für Schüler und Studenten, die dauerhaft mehr behalten.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Brainfood: Die beste Ernährung fürs Lernen</title>
       <link>https://nachhilfe-mentor.de/blog/posts/brainfood-lernen-ernaehrung.html</link>
@@ -149,22 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</guid>
       <pubDate>Thu, 16 Apr 2026 14:50:20 +0000</pubDate>
       <description>Abitur Vorbereitung leicht gemacht: 9 erprobte Tipps für Lernplan, Zeitmanagement und die richtige Strategie. So gehst du entspannt und gut vorbereitet ins Abi.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Thu, 16 Apr 2026 14:49:58 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Abitur Vorbereitung: So meisterst du die Deutsch-Prüfung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-abitur-vorbereitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-abitur-vorbereitung.html</guid>
-      <pubDate>Thu, 16 Apr 2026 14:49:18 +0000</pubDate>
-      <description>Deutsch Abitur Vorbereitung: Alle wichtigen Aufsatztypen, Literaturepochen und Lerntipps, mit denen du die Deutsch-Prüfung souverän bestehst.</description>
       <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
