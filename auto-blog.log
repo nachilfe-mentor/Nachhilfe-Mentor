@@ -2544,3 +2544,103 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `bewegung-und-lernen-sport-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/bewegung-und-lernen-sport-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (von `lernpausen-richtig-machen.html` und `brainfood-lernen-ernaehrung.html` auf neuen Artikel)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (68 Artikel, neue Verlinkungen)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (74 URLs in Sitemap, 70 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmo5g3d700031n10yxqaa1p6l`
+
+**Thema Artikel #68:** Bewegung und Lernen (BDNF, Hippocampus, 7 praktische Sport-Tipps). Passt zum performanten Lernmethoden-Cluster und ergänzt die Brainfood/Schlaf-Artikel sinnvoll.
+[2026-04-19 07:29:20] Blog cycle completed successfully.
+[2026-04-19 07:29:20] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 74 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 70 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 70 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 74 URLs in Sitemap, 20 Artikel im Feed.
+[main 39d90f4] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   76d143d..39d90f4  main -> main
+[2026-04-19 07:29:20] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: bewegung-und-lernen-sport-tipps
+  Titel: Bewegung und Lernen: Warum Sport deine Noten verbessert
+  Desc:  Bewegung und Lernen hängen direkt zusammen: Sport steigert BDNF, verbessert Konz...
+[Pinterest] Erstelle Pin fuer: Bewegung und Lernen: Warum Sport deine Noten verbessert
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/bewegung-und-lernen-sport-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/bewegung-und-lernen-sport-tipps.html
+[Pinterest] Uploading bewegung-und-lernen-sport-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=ba3d9f5b-89b0-4da9-af87-fd591be14557
+[Pinterest] Pin erstellt! Post-ID: cmo5g3ok9003wse0ys2gnde2l
+[Pinterest] Erfolgreich! Pin-ID: cmo5g3ok9003wse0ys2gnde2l
+
+[Pinterest-Fallback] OK: bewegung-und-lernen-sport-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-19 07:29:20] Next run in 8 hours.
+---
+[2026-04-19 15:29:22] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `effektiv-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/effektiv-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `active-recall-lerntechnik.html` ergänzt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (75 URLs in Sitemap, 71 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmo5xefez01ctse0y4fa5n5ae`
+
+**Artikel #69:** "Effektiv lernen: 10 Strategien, die wirklich funktionieren" ist ein Pillar-Artikel, der als Hub-Seite alle wichtigen Lernmethoden kompakt zusammenfasst und zu den Detailartikeln verlinkt. Google organisch wächst weiter (18 Sessions), der Blog hat jetzt 122 Pageviews in 30 Tagen.
+[2026-04-19 15:33:44] Blog cycle completed successfully.
+[2026-04-19 15:33:44] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 75 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 71 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 71 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 75 URLs in Sitemap, 20 Artikel im Feed.
+[main 9d469b4] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   87fa5b7..9d469b4  main -> main
+[2026-04-19 15:33:44] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: effektiv-lernen-tipps
+  Titel: Effektiv lernen: 10 Strategien, die wirklich funktionieren
+  Desc:  Effektiv lernen mit den 10 besten Strategien aus Wissenschaft und Praxis. Konkre...
+[Pinterest] Erstelle Pin fuer: Effektiv lernen: 10 Strategien, die wirklich funktionieren
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/effektiv-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/effektiv-lernen-tipps.html
+[Pinterest] Uploading effektiv-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=bf397423-d47d-4188-87da-573ff1825bfa
+[Pinterest] Pin erstellt! Post-ID: cmo5xemhb017un10y8lb5m5kn
+[Pinterest] Erfolgreich! Pin-ID: cmo5xemhb017un10y8lb5m5kn
+
+[Pinterest-Fallback] OK: effektiv-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-19 15:33:44] Next run in 8 hours.
+---
+[2026-04-19 23:33:46] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
