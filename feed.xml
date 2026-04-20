@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 20 Apr 2026 07:44:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 15:49:19 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Konzentration steigern beim Lernen: 10 Techniken, die sofort wirken</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/konzentration-steigern-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/konzentration-steigern-lernen.html</guid>
+      <pubDate>Mon, 20 Apr 2026 15:48:28 +0000</pubDate>
+      <description>Konzentration steigern beim Lernen: 10 bewährte Techniken gegen Ablenkung. Sofort umsetzbare Tipps für Schüler und Studenten, die fokussierter lernen wollen.</description>
+      <category>Motivation &amp; Produktivität</category>
+    </item>
+    <item>
+      <title>Lerntipps für ADHS-Schüler: So lernst du trotz ADHS effektiv</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lerntipps-adhs-schueler.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lerntipps-adhs-schueler.html</guid>
+      <pubDate>Mon, 20 Apr 2026 15:47:36 +0000</pubDate>
+      <description>ADHS und Lernen muss kein Widerspruch sein. 8 konkrete Lerntipps für ADHS-Schüler, die wirklich funktionieren: Struktur, Bewegung, kurze Blöcke und mehr.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</link>
@@ -88,14 +104,6 @@
       <category>Lernmethoden</category>
     </item>
     <item>
-      <title>Konzentration steigern beim Lernen: 10 Techniken, die sofort wirken</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/konzentration-steigern-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/konzentration-steigern-lernen.html</guid>
-      <pubDate>Sat, 18 Apr 2026 23:24:01 +0000</pubDate>
-      <description>Konzentration steigern beim Lernen: 10 bewährte Techniken gegen Ablenkung. Sofort umsetzbare Tipps für Schüler und Studenten, die fokussierter lernen wollen.</description>
-      <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
       <title>Referat halten: 8 Tipps, mit denen du souverän präsentierst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 17 Apr 2026 06:59:17 +0000</pubDate>
       <description>Chemie lernen fühlt sich oft überwältigend an: Formeln, Reaktionsgleichungen, Periodensystem. Diese 7 Tipps zeigen dir, wie du Chemie wirklich verstehst statt nur paukst.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Chemie Abitur Vorbereitung: So meisterst du die Chemie-Prüfung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/chemie-abitur-vorbereitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/chemie-abitur-vorbereitung.html</guid>
-      <pubDate>Fri, 17 Apr 2026 06:58:50 +0000</pubDate>
-      <description>Chemie Abitur Vorbereitung leicht gemacht: die wichtigsten Themenblöcke, ein 3-Phasen-Lernplan und die 5 häufigsten Fehler, die du vermeiden solltest.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
