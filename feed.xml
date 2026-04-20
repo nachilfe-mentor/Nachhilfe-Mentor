@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 19 Apr 2026 23:39:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 07:43:59 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</guid>
+      <pubDate>Mon, 20 Apr 2026 07:43:07 +0000</pubDate>
+      <description>Lernzettel erstellen leicht gemacht: 7 bewährte Tipps, wie du Lernzettel schreibst, die wirklich beim Lernen helfen. Mit konkreten Beispielen und häufigen Fehlern.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Spickzettel schreiben: 7 Tipps für Zettel, die dir wirklich helfen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/spickzettel-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/spickzettel-schreiben-tipps.html</guid>
+      <pubDate>Mon, 20 Apr 2026 07:42:44 +0000</pubDate>
+      <description>Spickzettel schreiben ist mehr als Abschreiben: Lerne, wie du kompakte Lernzettel erstellst, die dir beim Lernen und in der Prüfung wirklich nützen.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
@@ -104,14 +120,6 @@
       <category>Schule &amp; Studium</category>
     </item>
     <item>
-      <title>Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</guid>
-      <pubDate>Sat, 18 Apr 2026 07:13:02 +0000</pubDate>
-      <description>Lernzettel erstellen leicht gemacht: 7 bewährte Tipps, wie du Lernzettel schreibst, die wirklich beim Lernen helfen. Mit konkreten Beispielen und häufigen Fehlern.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
       <title>Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 17 Apr 2026 06:58:50 +0000</pubDate>
       <description>Chemie Abitur Vorbereitung leicht gemacht: die wichtigsten Themenblöcke, ein 3-Phasen-Lernplan und die 5 häufigsten Fehler, die du vermeiden solltest.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html</guid>
-      <pubDate>Thu, 16 Apr 2026 22:55:34 +0000</pubDate>
-      <description>Physik lernen leicht gemacht: 7 bewährte Tipps, die dir helfen, Formeln zu verstehen statt auswendig zu pauken. Praktisch, direkt umsetzbar und für Schüler und Studenten.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
