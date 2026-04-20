@@ -2644,3 +2644,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `lernstress-abitur-tipps.html` (Artikel #70, 8 Tipps für Lernstress in der Abiturphase)
+- [x] Cover-Bild generiert: `blog/posts/img/lernstress-abitur-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`pruefungsangst-ueberwinden.html` → Fazit; `abitur-vorbereitung-tipps.html` → Fazit)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (70 Artikel, neue Verlinkungen)
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (76 URLs in Sitemap, 72 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmo6eqjjh00a9se0y3qfgti1s`
+
+**Self-Improvement R14:** 122 Pageviews (30 Tage), Google organisch auf 18 Sessions gestiegen. Erdkunde-Artikel überraschend stark letzte 7 Tage. Empfehlung nächste 5 Artikel: Vokabeln App Vergleich, Spickzettel schreiben, Lerntipps ADHS, Klausurangst Mathe, Studieren ohne Abitur.
+[2026-04-19 23:39:08] Blog cycle completed successfully.
+[2026-04-19 23:39:08] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 76 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 72 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 72 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 76 URLs in Sitemap, 20 Artikel im Feed.
+[main 19b914b] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   d3adbee..19b914b  main -> main
+[2026-04-19 23:39:08] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: lernstress-abitur-tipps
+  Titel: Lernstress Abitur: 8 Tipps, damit du die Abiturphase übersteht
+  Desc:  Lernstress im Abitur bewältigen: 8 konkrete Tipps für Abiturienten, die Prüfungs...
+[Pinterest] Erstelle Pin fuer: Lernstress Abitur: 8 Tipps, damit du die Abiturphase übersteht
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lernstress-abitur-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lernstress-abitur-tipps.html
+[Pinterest] Uploading lernstress-abitur-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=ee7301c0-d807-46af-a918-7eaea250d63a
+[Pinterest] Pin erstellt! Post-ID: cmo6eqv1m00aase0ysc5pphw5
+[Pinterest] Erfolgreich! Pin-ID: cmo6eqv1m00aase0ysc5pphw5
+
+[Pinterest-Fallback] OK: lernstress-abitur-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-19 23:39:08] Next run in 8 hours.
+---
+[2026-04-20 07:39:11] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
