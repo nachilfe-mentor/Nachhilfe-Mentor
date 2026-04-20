@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 71
+- Gesamtzahl Artikel: 72
 - Letzte Veröffentlichung: 2026-04-20
 - Nächster geplanter Post: TBD
 
@@ -83,6 +83,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 69 | 2026-04-19 | effektiv-lernen-tipps | Effektiv lernen: 10 Strategien, die wirklich funktionieren | effektiv lernen, effektiv lernen Tipps, effektiv lernen Strategien, Lernstrategien, besser lernen, Lerntipps Schüler, Lerntipps Studenten, effektives Lernen, Lernmethoden | Lernmethoden | Pillar-Artikel: 10 Lernstrategien kompakt erklärt (Active Recall, Spaced Repetition, Feynman-Methode, Pomodoro, Lernplan, konkrete Ziele, Schlaf, Bewegung, Fehlernutzung, Reflexion). Dient als Hub für viele Detailartikel. App-Erwähnung (Wissenslücken erkennen). Crosslinks zu active-recall-lerntechnik, spaced-repetition-lernmethode. Rückverlinkung von active-recall-lerntechnik. |
 | 68 | 2026-04-19 | bewegung-und-lernen-sport-tipps | Bewegung und Lernen: Warum Sport deine Noten verbessert | Bewegung und Lernen, Sport und Lernen, Sport Lernleistung, Bewegung Konzentration, Sport Schüler Tipps, lernen nach dem Sport, BDNF Lernen, Sport Noten verbessern | Lernmethoden | 7 Tipps: Bewegungs-Warmup vor schwierigen Themen, aktive Pausen statt passiver, Stoff laut erklären beim Gehen (Feynman), fester Sporttag im Lernplan, Sport in der Prüfungsphase nicht streichen, Stehphasen einbauen, Bewegung in der Lerngruppe. Wissenschaft: BDNF-Ausschüttung, Hippocampus-Wachstum, Neurotransmitter. App-Erwähnung. Crosslinks zu pomodoro-technik-lernen, lernpausen-richtig-machen. Rückverlinkung von lernpausen-richtig-machen, brainfood-lernen-ernaehrung. |
 | 67 | 2026-04-18 | brainfood-lernen-ernaehrung | Brainfood: Die beste Ernährung fürs Lernen | Brainfood lernen, Brainfood Schüler, Ernährung fürs Lernen, Ernährung Konzentration, Gehirnnahrung, Brainfood Studium, besser lernen Ernährung, Lernfutter, Gedächtnis Ernährung, Omega-3 Gehirn | Lernmethoden | 8 Brainfood-Lebensmittel erklärt (Nüsse, Fisch, Beeren, Eier, dunkle Schokolade, Avocados, Hülsenfrüchte/Vollkorn, Wasser/grüner Tee), was man meiden sollte (Zucker, Fast Food, zu viel Koffein, schwere Mahlzeiten), praktische Brainfood-Routine für den Lerntag, kritischer Blick auf Wirksamkeit. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu lernpausen-richtig-machen, schlaf-und-lernen-tipps. Rückverlinkung von lernpausen-richtig-machen, konzentration-steigern-lernen. |
+| 72 | 2026-04-20 | lerntipps-adhs-schueler | Lerntipps für ADHS-Schüler: So lernst du trotz ADHS effektiv | Lerntipps ADHS, ADHS Schüler lernen, ADHS Lernen Tipps, ADHS Lernstrategie, ADHS Schule, ADHS Konzentration, lernen mit ADHS, ADHS Lernmethoden, ADHS Prüfungsvorbereitung, ADHS Hausaufgaben | Lernmethoden | 8 Tipps für ADHS-freundliches Lernen: kurze Lernblöcke (10-15 Min), Bewegung vor und während der Session, Ablenkungen wirklich entfernen, Aufgaben kleinstmöglich formulieren, Active Recall statt passivem Lesen, Timer konsequent nutzen, Tagesstruktur nach außen verlagern (Checkliste, Body Doubling), Hyperfokus-Phasen strategisch nutzen. App-Erwähnung (Wissenslücken in kurzen aktiven Einheiten trainieren). Crosslinks zu pomodoro-technik-lernen, active-recall-lerntechnik, lernmotivation-steigern-tipps. Rückverlinkung von konzentration-steigern-lernen. |
 | 71 | 2026-04-20 | spickzettel-schreiben-tipps | Spickzettel schreiben: 7 Tipps für Zettel, die dir wirklich helfen | Spickzettel schreiben, Spickzettel erstellen, Spickzettel Tipps, Spickzettel Schule, guter Spickzettel, Spickzettel Methode, Spickzettel Lernen, Spickzettel Technik, Spickzettel Klausur | Lernmethoden | 7 Tipps zum Spickzettel schreiben als Lernmethode: erst Stoff lernen, dann schreiben; Kürze durch Stichwörter; Abkürzungen/Symbole entwickeln; Farbsystem und Boxen für Struktur; handschriftlich schreiben für bessere Merkfähigkeit; mit Blank-Page testen; regelmäßig aktualisieren. Warum Spickzettel schreiben lernwirksam ist (Active Recall, Priorisierung). App-Erwähnung (Nachhilfe Mentor App für gezieltes Abfragen). Crosslinks zu active-recall-lerntechnik, lernzettel-erstellen-tipps, spaced-repetition-lernmethode. Rückverlinkung von lernzettel-erstellen-tipps. |
 
 ## Abgedeckte Themen-Cluster
@@ -110,6 +111,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   <!-- effektiv lernen, Lernstrategien → verwendet in Artikel #69 -->
   <!-- Lernstress bewältigen Abitur → verwendet in Artikel #70 -->
   <!-- Spickzettel schreiben, Spickzettel Tipps → verwendet in Artikel #71 -->
+  <!-- Lerntipps ADHS, ADHS Schüler lernen → verwendet in Artikel #72 -->
   <!-- Deutsch Abitur Vorbereitung → verwendet in Artikel #60 -->
   <!-- Mathe Abitur Vorbereitung → verwendet in Artikel #59 -->
   <!-- Biologie Abitur Vorbereitung → verwendet in Artikel #58 -->
@@ -489,6 +491,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lernstress-abitur-tipps -> abitur-vorbereitung-tipps (Fazit: allgemeiner Abitur-Lernguide als Vertiefung)
 - pruefungsangst-ueberwinden -> lernstress-abitur-tipps (Rückverlinkung: Fazit, Lernstress Abitur als Ergänzung)
 - abitur-vorbereitung-tipps -> lernstress-abitur-tipps (Rückverlinkung: Fazit, spezieller Lernstress-Guide für Abiturphase)
+
+## Interne Verlinkungen (Ergänzung Artikel 72)
+- lerntipps-adhs-schueler -> pomodoro-technik-lernen (Tipp 1: kurze Lernblöcke, Pomodoro als Ausgangspunkt)
+- lerntipps-adhs-schueler -> active-recall-lerntechnik (Tipp 5: Active Recall statt passivem Lesen)
+- lerntipps-adhs-schueler -> lernmotivation-steigern-tipps (Tipp 8: Hyperfokus und Motivationsstrategien)
+- konzentration-steigern-lernen -> lerntipps-adhs-schueler (Rückverlinkung im Fazit: spezielle Strategien bei ADHS)
 
 ## Self-Improvement Runde 10 (nach Artikel 50)
 - Alle 5 Artikel aus R9-Empfehlung umgesetzt: Latein, Erdkunde, KI Hausaufgaben, Nachhilfe online vs. offline, Lernstress bewältigen.
