@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Tue, 21 Apr 2026 07:58:39 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 16:03:36 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Motivationsschreiben schreiben: So überzeugst du Hochschulen und Arbeitgeber</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</guid>
+      <pubDate>Tue, 21 Apr 2026 16:02:38 +0000</pubDate>
+      <description>Motivationsschreiben schreiben leicht gemacht: Aufbau, Tipps und häufige Fehler vermeiden. So stellst du dich überzeugend vor und bekommst den Studienplatz.</description>
+      <category>Studium &amp; Karriere</category>
+    </item>
+    <item>
+      <title>Studieren ohne Abitur: 6 Wege ins Studium erklärt</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/studieren-ohne-abitur-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/studieren-ohne-abitur-tipps.html</guid>
+      <pubDate>Tue, 21 Apr 2026 16:01:54 +0000</pubDate>
+      <description>Kein Abitur? Kein Problem. Wir erklären 6 Wege, wie du auch ohne Abi studieren kannst: Fachhochschulreife, Berufsausbildung, Begabtenprüfung und mehr.</description>
+      <category>Studium &amp; Karriere</category>
+    </item>
     <item>
       <title>Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sat, 18 Apr 2026 15:17:52 +0000</pubDate>
       <description>Mündliche Prüfung vorbereiten: 7 Tipps, mit denen du souverän antwortest, Lampenfieber überwindest und auch bei schwierigen Fragen überzeugst.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
-      <pubDate>Sat, 18 Apr 2026 07:13:43 +0000</pubDate>
-      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</guid>
-      <pubDate>Fri, 17 Apr 2026 23:08:56 +0000</pubDate>
-      <description>Geschichte lernen fällt vielen schwer, weil es so viele Daten und Zusammenhänge gibt. Mit diesen 7 Tipps lernst du Geschichte effizienter, behältst mehr und bestehst deine Prüfung.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
