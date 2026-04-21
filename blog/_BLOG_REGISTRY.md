@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 74
+- Gesamtzahl Artikel: 75
 - Letzte Veröffentlichung: 2026-04-21
 - Nächster geplanter Post: TBD
 
@@ -86,6 +86,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 72 | 2026-04-20 | lerntipps-adhs-schueler | Lerntipps für ADHS-Schüler: So lernst du trotz ADHS effektiv | Lerntipps ADHS, ADHS Schüler lernen, ADHS Lernen Tipps, ADHS Lernstrategie, ADHS Schule, ADHS Konzentration, lernen mit ADHS, ADHS Lernmethoden, ADHS Prüfungsvorbereitung, ADHS Hausaufgaben | Lernmethoden | 8 Tipps für ADHS-freundliches Lernen: kurze Lernblöcke (10-15 Min), Bewegung vor und während der Session, Ablenkungen wirklich entfernen, Aufgaben kleinstmöglich formulieren, Active Recall statt passivem Lesen, Timer konsequent nutzen, Tagesstruktur nach außen verlagern (Checkliste, Body Doubling), Hyperfokus-Phasen strategisch nutzen. App-Erwähnung (Wissenslücken in kurzen aktiven Einheiten trainieren). Crosslinks zu pomodoro-technik-lernen, active-recall-lerntechnik, lernmotivation-steigern-tipps. Rückverlinkung von konzentration-steigern-lernen. |
 | 73 | 2026-04-20 | mathe-klausurangst-ueberwinden | Klausurangst Mathe überwinden: 7 Tipps gegen Matheangst vor der Prüfung | Klausurangst Mathe, Matheangst überwinden, Prüfungsangst Mathe, Mathe Klausur Angst, Angst vor Mathe, Blackout Mathe Prüfung | Prüfungsvorbereitung | 7 Tipps gegen Klausurangst in Mathe: Wissenslücken systematisch schließen, Active Recall statt passivem Anschauen, Fehlerprotokoll führen, Körperreaktion stoppen (4-7-8-Atmung), realistische Erwartungen, Lernplan frühzeitig, Prüfungstag bewusst gestalten. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, pruefungsangst-ueberwinden, lernplan-erstellen-tipps, mathe-lernen-tipps. Rückverlinkung von pruefungsangst-ueberwinden und mathe-lernen-tipps. |
 | 74 | 2026-04-21 | vokabeln-lernen-app-vergleich | Vokabeln lernen App Vergleich: Die 5 besten Apps im Test | Vokabeln lernen App Vergleich, beste Vokabel-App, Anki Vergleich, Quizlet Vokabeln, Duolingo Schule, Vokabel-App Schüler, Vokabeln App Test, Sprachen lernen App | Digitale Tools | Ehrlicher Vergleich der 5 beliebtesten Vokabel-Apps: Anki (Spaced Repetition, kostenlos, steilste Lernkurve), Quizlet (einfachste Bedienung, beste für Schule), Duolingo (Einstieg/Motivation), Babbel (strukturierter Kurs, kostenpflichtig), Pons (beste Ergänzung). Empfehlung: Anki + Pons für Schüler. Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
+| 75 | 2026-04-21 | studieren-ohne-abitur-tipps | Studieren ohne Abitur: 6 Wege ins Studium erklärt | studieren ohne Abitur, ohne Abitur studieren, Fachhochschulreife Studium, Studium ohne Abi, Hochschulzugangsberechtigung, Begabtenprüfung, duales Studium ohne Abitur, zweiter Bildungsweg | Studium & Karriere | 6 Wege ins Studium ohne Abitur: Fachhochschulreife (FOS/BOS), Berufsausbildung + Berufserfahrung, Begabtenprüfung/Hochschuleignungsprüfung, duales Studium ohne Abitur, Fernstudium, zweiter Bildungsweg (Abendgymnasium). Entscheidungshilfe welcher Weg zu wem passt. App-Erwähnung (strukturiertes Lernen beim Wiedereinstieg). Crosslinks zu lernplan-erstellen-tipps, active-recall-lerntechnik, abitur-vorbereitung-tipps. Rückverlinkung von motivationsschreiben-tipps. |
 | 71 | 2026-04-20 | spickzettel-schreiben-tipps | Spickzettel schreiben: 7 Tipps für Zettel, die dir wirklich helfen | Spickzettel schreiben, Spickzettel erstellen, Spickzettel Tipps, Spickzettel Schule, guter Spickzettel, Spickzettel Methode, Spickzettel Lernen, Spickzettel Technik, Spickzettel Klausur | Lernmethoden | 7 Tipps zum Spickzettel schreiben als Lernmethode: erst Stoff lernen, dann schreiben; Kürze durch Stichwörter; Abkürzungen/Symbole entwickeln; Farbsystem und Boxen für Struktur; handschriftlich schreiben für bessere Merkfähigkeit; mit Blank-Page testen; regelmäßig aktualisieren. Warum Spickzettel schreiben lernwirksam ist (Active Recall, Priorisierung). App-Erwähnung (Nachhilfe Mentor App für gezieltes Abfragen). Crosslinks zu active-recall-lerntechnik, lernzettel-erstellen-tipps, spaced-repetition-lernmethode. Rückverlinkung von lernzettel-erstellen-tipps. |
 
 ## Abgedeckte Themen-Cluster
@@ -100,6 +101,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
   Prüfungsvorbereitung, effektiv lernen,
+  <!-- Studieren ohne Abitur, zweiter Bildungsweg → verwendet in Artikel #75 -->
   <!-- Bewegung und Lernen, Sport Lernleistung → verwendet in Artikel #68 -->
   <!-- Brainfood lernen, Ernährung fürs Lernen → verwendet in Artikel #67 -->
   <!-- Nachhilfe online vs offline → verwendet in Artikel #50 -->
@@ -166,8 +168,13 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Informatik lernen Tipps, Informatik Schule, Programmieren lernen Schüler, Algorithmen verstehen, Informatik Klausur, Informatik besser werden, Informatik Gymnasium
 - Deutsch Aufsatz schreiben, Aufsatz schreiben Tipps, Aufsatz Aufbau, Deutschaufsatz Schule, Aufsatz Einleitung Hauptteil Schluss, Aufsatz besser schreiben, Deutsch Klausur Aufsatz
 - lernen morgens oder abends, Chronotyp, beste Lernzeit, Lernrhythmus, morgens lernen, abends lernen, innere Uhr Lernen, Lernzeit optimieren, Chronotyp Schüler, wann lernen
+- studieren ohne Abitur, Fachhochschulreife, Begabtenprüfung, duales Studium ohne Abitur, zweiter Bildungsweg, Hochschulzugangsberechtigung
 
 ## Interne Verlinkungen
+- motivationsschreiben-tipps -> studieren-ohne-abitur-tipps (Hinweis auf Zugangswege für Studiumsbewerber ohne Abitur)
+- studieren-ohne-abitur-tipps -> lernplan-erstellen-tipps (Vorbereitung auf Begabtenprüfung)
+- studieren-ohne-abitur-tipps -> active-recall-lerntechnik (Lernmethoden für Prüfungsvorbereitung)
+- studieren-ohne-abitur-tipps -> abitur-vorbereitung-tipps (zweiter Bildungsweg: Abitur nachholen)
 - prokrastination-ueberwinden-lernen -> spaced-repetition-lernmethode (natürliche Erwähnung: tägliche Lerneinheiten + SR als Ergänzung)
 - active-recall-lerntechnik -> spaced-repetition-lernmethode (Kombination beider Methoden, 2x verlinkt)
 - active-recall-lerntechnik -> prokrastination-ueberwinden-lernen (Active Recall hilft auch gegen Prokrastination durch sichtbare Fortschritte)
