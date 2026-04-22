@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Tue, 21 Apr 2026 16:03:54 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 00:08:51 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lernmotivation steigern: 8 Tipps, die wirklich funktionieren</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernmotivation-steigern-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernmotivation-steigern-tipps.html</guid>
+      <pubDate>Wed, 22 Apr 2026 00:07:52 +0000</pubDate>
+      <description>Keine Lust zu lernen? 8 bewährte Strategien, mit denen du deine Lernmotivation steigern kannst. Praxisnahe Tipps für Schüler und Studenten.</description>
+      <category>Motivation &amp; Produktivität</category>
+    </item>
+    <item>
+      <title>Growth Mindset: So veränderst du deine Einstellung zum Lernen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/growth-mindset-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/growth-mindset-lernen.html</guid>
+      <pubDate>Wed, 22 Apr 2026 00:07:15 +0000</pubDate>
+      <description>Was ist ein Growth Mindset und wie setzt du es beim Lernen ein? Mit 7 konkreten Tipps überwindest du Misserfolge, denkst lernförderlich und wirst dauerhaft besser in der Schule.</description>
+      <category>Motivation &amp; Produktivität</category>
+    </item>
     <item>
       <title>Motivationsschreiben schreiben: So überzeugst du Hochschulen und Arbeitgeber</title>
       <link>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sun, 19 Apr 2026 07:27:35 +0000</pubDate>
       <description>Bewegung und Lernen hängen direkt zusammen: Sport steigert BDNF, verbessert Konzentration und hilft dir, Stoff besser zu behalten. 7 praktische Tipps für Schüler und Studenten.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Referat halten: 8 Tipps, mit denen du souverän präsentierst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</guid>
-      <pubDate>Sat, 18 Apr 2026 15:18:28 +0000</pubDate>
-      <description>Referat halten leicht gemacht: 8 bewährte Tipps für Aufbau, freies Sprechen und souveränes Präsentieren in Schule und Studium.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/muendliche-pruefung-vorbereiten.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/muendliche-pruefung-vorbereiten.html</guid>
-      <pubDate>Sat, 18 Apr 2026 15:17:52 +0000</pubDate>
-      <description>Mündliche Prüfung vorbereiten: 7 Tipps, mit denen du souverän antwortest, Lampenfieber überwindest und auch bei schwierigen Fragen überzeugst.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
