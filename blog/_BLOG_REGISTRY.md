@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 75
-- Letzte Veröffentlichung: 2026-04-21
+- Gesamtzahl Artikel: 76
+- Letzte Veröffentlichung: 2026-04-22
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -86,6 +86,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 72 | 2026-04-20 | lerntipps-adhs-schueler | Lerntipps für ADHS-Schüler: So lernst du trotz ADHS effektiv | Lerntipps ADHS, ADHS Schüler lernen, ADHS Lernen Tipps, ADHS Lernstrategie, ADHS Schule, ADHS Konzentration, lernen mit ADHS, ADHS Lernmethoden, ADHS Prüfungsvorbereitung, ADHS Hausaufgaben | Lernmethoden | 8 Tipps für ADHS-freundliches Lernen: kurze Lernblöcke (10-15 Min), Bewegung vor und während der Session, Ablenkungen wirklich entfernen, Aufgaben kleinstmöglich formulieren, Active Recall statt passivem Lesen, Timer konsequent nutzen, Tagesstruktur nach außen verlagern (Checkliste, Body Doubling), Hyperfokus-Phasen strategisch nutzen. App-Erwähnung (Wissenslücken in kurzen aktiven Einheiten trainieren). Crosslinks zu pomodoro-technik-lernen, active-recall-lerntechnik, lernmotivation-steigern-tipps. Rückverlinkung von konzentration-steigern-lernen. |
 | 73 | 2026-04-20 | mathe-klausurangst-ueberwinden | Klausurangst Mathe überwinden: 7 Tipps gegen Matheangst vor der Prüfung | Klausurangst Mathe, Matheangst überwinden, Prüfungsangst Mathe, Mathe Klausur Angst, Angst vor Mathe, Blackout Mathe Prüfung | Prüfungsvorbereitung | 7 Tipps gegen Klausurangst in Mathe: Wissenslücken systematisch schließen, Active Recall statt passivem Anschauen, Fehlerprotokoll führen, Körperreaktion stoppen (4-7-8-Atmung), realistische Erwartungen, Lernplan frühzeitig, Prüfungstag bewusst gestalten. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, pruefungsangst-ueberwinden, lernplan-erstellen-tipps, mathe-lernen-tipps. Rückverlinkung von pruefungsangst-ueberwinden und mathe-lernen-tipps. |
 | 74 | 2026-04-21 | vokabeln-lernen-app-vergleich | Vokabeln lernen App Vergleich: Die 5 besten Apps im Test | Vokabeln lernen App Vergleich, beste Vokabel-App, Anki Vergleich, Quizlet Vokabeln, Duolingo Schule, Vokabel-App Schüler, Vokabeln App Test, Sprachen lernen App | Digitale Tools | Ehrlicher Vergleich der 5 beliebtesten Vokabel-Apps: Anki (Spaced Repetition, kostenlos, steilste Lernkurve), Quizlet (einfachste Bedienung, beste für Schule), Duolingo (Einstieg/Motivation), Babbel (strukturierter Kurs, kostenpflichtig), Pons (beste Ergänzung). Empfehlung: Anki + Pons für Schüler. Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
+| 76 | 2026-04-22 | growth-mindset-lernen | Growth Mindset: So veränderst du deine Einstellung zum Lernen | Growth Mindset, Growth Mindset Lernen, Wachstumsdenken, Fixed Mindset, Growth Mindset Schule, Mindset ändern Lernen, Lerneinstellung verbessern, Growth Mindset Tipps, Misserfolg Lernen | Motivation & Produktivität | Carol Dwecks Growth Mindset erklärt (Fixed vs. Growth Mindset), Neurobiologie hinter neuronaler Plastizität, 7 konkrete Tipps: Noch-nicht-Umformulierung, Prozess-statt-Ergebnis-Fokus, Fehler als Datenpunkte, Diagnose der Lücken, Geschichte hinterfragen, Anstrengung loben, Herausforderungen suchen. Wichtig: Growth Mindset ist kein Schalter, sondern ein dauerhafter Prozess. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, lerntagebuch-fuehren-tipps, prokrastination-ueberwinden-lernen, lernmotivation-steigern-tipps. Rückverlinkung von lernmotivation-steigern-tipps. |
 | 75 | 2026-04-21 | studieren-ohne-abitur-tipps | Studieren ohne Abitur: 6 Wege ins Studium erklärt | studieren ohne Abitur, ohne Abitur studieren, Fachhochschulreife Studium, Studium ohne Abi, Hochschulzugangsberechtigung, Begabtenprüfung, duales Studium ohne Abitur, zweiter Bildungsweg | Studium & Karriere | 6 Wege ins Studium ohne Abitur: Fachhochschulreife (FOS/BOS), Berufsausbildung + Berufserfahrung, Begabtenprüfung/Hochschuleignungsprüfung, duales Studium ohne Abitur, Fernstudium, zweiter Bildungsweg (Abendgymnasium). Entscheidungshilfe welcher Weg zu wem passt. App-Erwähnung (strukturiertes Lernen beim Wiedereinstieg). Crosslinks zu lernplan-erstellen-tipps, active-recall-lerntechnik, abitur-vorbereitung-tipps. Rückverlinkung von motivationsschreiben-tipps. |
 | 71 | 2026-04-20 | spickzettel-schreiben-tipps | Spickzettel schreiben: 7 Tipps für Zettel, die dir wirklich helfen | Spickzettel schreiben, Spickzettel erstellen, Spickzettel Tipps, Spickzettel Schule, guter Spickzettel, Spickzettel Methode, Spickzettel Lernen, Spickzettel Technik, Spickzettel Klausur | Lernmethoden | 7 Tipps zum Spickzettel schreiben als Lernmethode: erst Stoff lernen, dann schreiben; Kürze durch Stichwörter; Abkürzungen/Symbole entwickeln; Farbsystem und Boxen für Struktur; handschriftlich schreiben für bessere Merkfähigkeit; mit Blank-Page testen; regelmäßig aktualisieren. Warum Spickzettel schreiben lernwirksam ist (Active Recall, Priorisierung). App-Erwähnung (Nachhilfe Mentor App für gezieltes Abfragen). Crosslinks zu active-recall-lerntechnik, lernzettel-erstellen-tipps, spaced-repetition-lernmethode. Rückverlinkung von lernzettel-erstellen-tipps. |
 
@@ -97,6 +98,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - KI & Bildung: Lernen mit KI / ChatGPT
 - Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
+
+- lernmotivation-steigern-tipps -> growth-mindset-lernen (Fazit: Growth Mindset als Motor hinter Lernmotivation)
+- growth-mindset-lernen -> active-recall-lerntechnik (Neurobiologie: aktives Abrufen statt passives Konsumieren)
+- growth-mindset-lernen -> lerntagebuch-fuehren-tipps (Fehleranalyse: Muster über Zeit sichtbar machen)
+- growth-mindset-lernen -> prokrastination-ueberwinden-lernen (Prokrastination als lösbares Verhaltensmuster, kein Charakterfehler)
+- growth-mindset-lernen -> lernmotivation-steigern-tipps (Motivation + Methode kombinieren)
 
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
