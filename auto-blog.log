@@ -2990,3 +2990,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier die Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `klausur-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/klausur-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `klausurvorbereitung-letzte-woche.html` auf neuen Artikel; im neuen Artikel Links zu `pruefungsangst-ueberwinden`, `klausurvorbereitung-letzte-woche`, `active-recall-lerntechnik`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich (3 Commits gepusht)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (83 URLs in Sitemap, 79 URLs an IndexNow gemeldet)
+- [x] **PINTEREST:** `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmo9s0f4700d7pb0ywoe6mwto`
+
+**Artikel #77:** "Klausur schreiben: 8 Tipps, damit du in der Prüfung dein Bestes abrufst" füllt eine echte Lücke: Wir hatten Vorbereitung (letzte Woche, letzte Nacht) aber keine Strategien für die Prüfungssituation selbst.
+[2026-04-22 08:14:02] Blog cycle completed successfully.
+[2026-04-22 08:14:02] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 83 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 79 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 79 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 83 URLs in Sitemap, 20 Artikel im Feed.
+[main 5b2f868] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   d05b833..5b2f868  main -> main
+[2026-04-22 08:14:02] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: klausur-schreiben-tipps
+  Titel: Klausur schreiben: 8 Tipps, damit du in der Prüfung dein Bestes abrufst
+  Desc:  Klausur schreiben und nicht wissen wie anfangen? Diese 8 Tipps zeigen dir, wie d...
+[Pinterest] Erstelle Pin fuer: Klausur schreiben: 8 Tipps, damit du in der Prüfung dein Bestes abrufst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/klausur-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/klausur-schreiben-tipps.html
+[Pinterest] Uploading klausur-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=394e856e-6dfe-4045-acd8-6cf885393994
+[Pinterest] Pin erstellt! Post-ID: cmo9s0qj2009opa0yvz11sbyq
+[Pinterest] Erfolgreich! Pin-ID: cmo9s0qj2009opa0yvz11sbyq
+
+[Pinterest-Fallback] OK: klausur-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-22 08:14:02] Next run in 8 hours.
+---
+[2026-04-22 16:14:05] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
