@@ -20,6 +20,7 @@ gedaechtnis-techniken-lernen
 gedaechtnis-verbessern-uebungen
 geschichte-abitur-vorbereitung
 geschichte-lernen-tipps
+growth-mindset-lernen
 hausarbeit-schreiben-tipps
 hausaufgaben-tipps-schnell-erledigen
 informatik-lernen-tipps
@@ -41,11 +42,13 @@ lernplan-erstellen-tipps
 lernstress-abitur-tipps
 lernstress-bewaeltigen-tipps
 lerntagebuch-fuehren-tipps
+lerntipps-adhs-schueler
 lerntipps-grundschule
 lerntypen-vark-test-lerntipps
 lernumgebung-gestalten-tipps
 lernzettel-erstellen-tipps
 mathe-abitur-vorbereitung
+mathe-klausurangst-ueberwinden
 mathe-lernen-tipps
 mindmap-erstellen-lernen
 motivationsschreiben-tipps
@@ -64,6 +67,9 @@ schneller-lesen-lernen-tipps
 selbstdisziplin-aufbauen-tipps
 spaced-repetition-lernmethode
 spanisch-lernen-tipps
+spickzettel-schreiben-tipps
+studieren-ohne-abitur-tipps
+vokabeln-lernen-app-vergleich
 vokabeln-lernen-tipps
 wissenschaftliches-arbeiten-tipps
 zeitmanagement-studium-tipps

@@ -2694,3 +2694,299 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `spickzettel-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/spickzettel-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`lernzettel-erstellen-tipps.html` → Fazit verlinkt auf neuen Artikel; Artikel selbst verlinkt auf `active-recall-lerntechnik`, `lernzettel-erstellen-tipps`, `spaced-repetition-lernmethode`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (77 URLs in Sitemap, 73 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmo6w2khj00pbld0y7j4y8vku`
+[2026-04-20 07:44:21] Blog cycle completed successfully.
+[2026-04-20 07:44:21] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 77 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 73 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 73 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 77 URLs in Sitemap, 20 Artikel im Feed.
+[main 6165cda] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   57c7deb..6165cda  main -> main
+[2026-04-20 07:44:21] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: spickzettel-schreiben-tipps
+  Titel: Spickzettel schreiben: 7 Tipps für Zettel, die dir wirklich helfen
+  Desc:  Spickzettel schreiben ist mehr als Abschreiben: Lerne, wie du kompakte Lernzette...
+[Pinterest] Erstelle Pin fuer: Spickzettel schreiben: 7 Tipps für Zettel, die dir wirklich helfen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/spickzettel-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/spickzettel-schreiben-tipps.html
+[Pinterest] Uploading spickzettel-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=078992f5-976b-41fd-904e-38ee29fe3aaa
+[Pinterest] Pin erstellt! Post-ID: cmo6w2uo600pcld0yw3qk6tmn
+[Pinterest] Erfolgreich! Pin-ID: cmo6w2uo600pcld0yw3qk6tmn
+
+[Pinterest-Fallback] OK: spickzettel-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-20 07:44:21] Next run in 8 hours.
+---
+[2026-04-20 15:44:24] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `lerntipps-adhs-schueler.html`
+- [x] Cover-Bild generiert: `blog/posts/img/lerntipps-adhs-schueler.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `konzentration-steigern-lernen.html`; Links im Artikel zu `pomodoro-technik-lernen`, `active-recall-lerntechnik`, `lernmotivation-steigern-tipps`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (72 Artikel)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefürt (78 URLs in Sitemap, 74 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefürt — Pin-ID: `cmo7denyy02nnld0ya2fhwmhm`
+[2026-04-20 15:49:37] Blog cycle completed successfully.
+[2026-04-20 15:49:37] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 78 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 74 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 74 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 78 URLs in Sitemap, 20 Artikel im Feed.
+[main b3f3fe7] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   81bda9d..b3f3fe7  main -> main
+[2026-04-20 15:49:37] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: lerntipps-adhs-schueler
+  Titel: Lerntipps für ADHS-Schüler: So lernst du trotz ADHS effektiv
+  Desc:  ADHS und Lernen muss kein Widerspruch sein. 8 konkrete Lerntipps für ADHS-Schüle...
+[Pinterest] Erstelle Pin fuer: Lerntipps für ADHS-Schüler: So lernst du trotz ADHS effektiv
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lerntipps-adhs-schueler.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lerntipps-adhs-schueler.html
+[Pinterest] Uploading lerntipps-adhs-schueler.webp (image/webp)...
+[Pinterest] Upload OK: id=93cf5534-9220-4cad-9cc2-52765bf2ad13
+[Pinterest] Pin erstellt! Post-ID: cmo7dewvz02npld0y94qtp9yg
+[Pinterest] Erfolgreich! Pin-ID: cmo7dewvz02npld0y94qtp9yg
+
+[Pinterest-Fallback] OK: lerntipps-adhs-schueler
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-20 15:49:37] Next run in 8 hours.
+---
+[2026-04-20 23:49:40] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt. Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `mathe-klausurangst-ueberwinden.html`
+- [x] Cover-Bild generiert: `blog/posts/img/mathe-klausurangst-ueberwinden.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkungen in `pruefungsangst-ueberwinden.html` und `mathe-lernen-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (73 Artikel, neuer Eintrag, Verlinkungen)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuehrt (79 URLs in Sitemap, 75 URLs an IndexNow übermittelt)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuehrt, Pin-ID: `cmo7upy2z03s6n50yuzfvl2mc`
+
+**Artikel #73:** "Klausurangst Mathe überwinden: 7 Tipps gegen Matheangst vor der Prüfung" (Prüfungsvorbereitung). Thema ist saisonal perfekt (Abiturzeit April/Mai) und kombiniert zwei starke Cluster. 7 konkrete Tipps von Wissenslücken schließen bis Prüfungstag-Gestaltung.
+[2026-04-20 23:54:15] Blog cycle completed successfully.
+[2026-04-20 23:54:15] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 79 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 75 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 75 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 79 URLs in Sitemap, 20 Artikel im Feed.
+[main 2aeaa3a] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   eef652f..2aeaa3a  main -> main
+[2026-04-20 23:54:15] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: mathe-klausurangst-ueberwinden
+  Titel: Klausurangst Mathe überwinden: 7 Tipps gegen Matheangst
+  Desc:  Klausurangst in Mathe? Mit diesen 7 konkreten Tipps überwindest du Matheangst, g...
+[Pinterest] Erstelle Pin fuer: Klausurangst Mathe überwinden: 7 Tipps gegen Matheangst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/mathe-klausurangst-ueberwinden.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/mathe-klausurangst-ueberwinden.html
+[Pinterest] Uploading mathe-klausurangst-ueberwinden.webp (image/webp)...
+[Pinterest] Upload OK: id=0d46ada1-18df-4331-a2f8-b22376081dec
+[Pinterest] Pin erstellt! Post-ID: cmo7uq5km03s7n50yejzljupg
+[Pinterest] Erfolgreich! Pin-ID: cmo7uq5km03s7n50yejzljupg
+
+[Pinterest-Fallback] OK: mathe-klausurangst-ueberwinden
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-20 23:54:15] Next run in 8 hours.
+---
+[2026-04-21 07:54:18] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `vokabeln-lernen-app-vergleich.html`
+- [x] Cover-Bild generiert: `blog/posts/img/vokabeln-lernen-app-vergleich.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `vokabeln-lernen-tipps.html`, Verlinkung zu `spaced-repetition-lernmethode` und `vokabeln-lernen-tipps` im Artikel)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #74, Gesamtzahl 74)
+- [x] Git Push: erfolgreich (`cf401a0`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuehrt (80 URLs in Sitemap, 76 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuehrt — Pin-ID: `cmo8c0ux505e1ld0yw4pmn68q`
+
+**Thema:** Vokabeln lernen App Vergleich (Anki, Quizlet, Duolingo, Babbel, Pons) — ein seit R11 empfohlenes Thema mit Buyer Intent, das den Digitale-Tools-Cluster stärkt. Google organisch bei 19 Sessions, SEO-Wachstum setzt sich fort.
+[2026-04-21 07:58:39] Blog cycle completed successfully.
+[2026-04-21 07:58:39] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 80 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 76 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 76 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 80 URLs in Sitemap, 20 Artikel im Feed.
+[main 4470949] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   cf401a0..4470949  main -> main
+[2026-04-21 07:58:39] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: vokabeln-lernen-app-vergleich
+  Titel: Vokabeln lernen App Vergleich: Die 5 besten Apps im Test
+  Desc:  Vokabeln lernen App Vergleich: Anki, Quizlet, Duolingo, Babbel und mehr im ehrli...
+[Pinterest] Erstelle Pin fuer: Vokabeln lernen App Vergleich: Die 5 besten Apps im Test
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/vokabeln-lernen-app-vergleich.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-app-vergleich.html
+[Pinterest] Uploading vokabeln-lernen-app-vergleich.webp (image/webp)...
+[Pinterest] Upload OK: id=b8c72311-6cbb-4e3a-b494-7ff582cc0a13
+[Pinterest] Pin erstellt! Post-ID: cmo8c12zl04yon50yj92ecnxb
+[Pinterest] Erfolgreich! Pin-ID: cmo8c12zl04yon50yj92ecnxb
+
+[Pinterest-Fallback] OK: vokabeln-lernen-app-vergleich
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-21 07:58:39] Next run in 8 hours.
+---
+[2026-04-21 15:58:41] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt. Der Durchlauf ist vollständig abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `studieren-ohne-abitur-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/studieren-ohne-abitur-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (motivationsschreiben-tipps -> studieren-ohne-abitur-tipps)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (75 Artikel)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (81 URLs in Sitemap, 77 URLs bei IndexNow eingereicht)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmo8tcvu906t9n50yc7yl9is5`
+
+**Artikelthema:** "Studieren ohne Abitur: 6 Wege ins Studium erklärt" mit Focus-Keyword "studieren ohne Abitur". Longtail-Keyword mit klarer Suchintention, passend zum Studium-Cluster. Laut letzter Analytics-Empfehlung (R14) war dieses Thema das letzte noch ausstehende aus dem Empfehlungsblock.
+[2026-04-21 16:03:54] Blog cycle completed successfully.
+[2026-04-21 16:03:54] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 81 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 77 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 77 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 81 URLs in Sitemap, 20 Artikel im Feed.
+[main 9c38f04] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   b61b48e..9c38f04  main -> main
+[2026-04-21 16:03:54] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: studieren-ohne-abitur-tipps
+  Titel: Studieren ohne Abitur: 6 Wege ins Studium erklärt
+  Desc:  Kein Abitur? Kein Problem. Wir erklären 6 Wege, wie du auch ohne Abi studieren k...
+[Pinterest] Erstelle Pin fuer: Studieren ohne Abitur: 6 Wege ins Studium erklärt
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/studieren-ohne-abitur-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/studieren-ohne-abitur-tipps.html
+[Pinterest] Uploading studieren-ohne-abitur-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=abf433c2-11e6-4aec-b885-4839d6038345
+[Pinterest] Pin erstellt! Post-ID: cmo8td4dd06tan50yvrip5dbw
+[Pinterest] Erfolgreich! Pin-ID: cmo8td4dd06tan50yvrip5dbw
+
+[Pinterest-Fallback] OK: studieren-ohne-abitur-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-21 16:03:54] Next run in 8 hours.
+---
+[2026-04-22 00:03:56] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `growth-mindset-lernen.html`
+- [x] Cover-Bild generiert: `blog/posts/img/growth-mindset-lernen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `lernmotivation-steigern-tipps.html`, Artikel verlinkt zu `active-recall-lerntechnik`, `lerntagebuch-fuehren-tipps`, `prokrastination-ueberwinden-lernen`, `lernmotivation-steigern-tipps`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich (`e5ce77e`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (82 URLs in Sitemap, 78 URLs an IndexNow gesendet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmo9aoxbi00x0ld0yrpgb1ihv`
+
+**Analytics-Erkenntnis dieses Durchlaufs:** Google organisch jetzt bei 23 Sessions (kontinuierliches Wachstum). Growth Mindset wurde als neues Cluster eröffnet. Nächste 5 empfohlene Artikel: Klausur schreiben Tipps, Uni Tipps erstes Semester, Lernstil finden, Online studieren Tipps, Notizen Vorlesung Methoden.
+[2026-04-22 00:09:10] Blog cycle completed successfully.
+[2026-04-22 00:09:10] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 82 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 78 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 78 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 82 URLs in Sitemap, 20 Artikel im Feed.
+[main d04aa23] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   e5ce77e..d04aa23  main -> main
+[2026-04-22 00:09:10] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: growth-mindset-lernen
+  Titel: Growth Mindset: So veränderst du deine Einstellung zum Lernen
+  Desc:  Was ist ein Growth Mindset und wie setzt du es beim Lernen ein? Mit 7 konkreten ...
+[Pinterest] Erstelle Pin fuer: Growth Mindset: So veränderst du deine Einstellung zum Lernen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/growth-mindset-lernen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/growth-mindset-lernen.html
+[Pinterest] Uploading growth-mindset-lernen.webp (image/webp)...
+[Pinterest] Upload OK: id=f6501687-1065-4272-84c4-82af50e705e2
+[Pinterest] Pin erstellt! Post-ID: cmo9ap6u700x2ld0yrxchvv0a
+[Pinterest] Erfolgreich! Pin-ID: cmo9ap6u700x2ld0yrxchvv0a
+
+[Pinterest-Fallback] OK: growth-mindset-lernen
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-22 00:09:10] Next run in 8 hours.
+---
+[2026-04-22 08:09:13] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
