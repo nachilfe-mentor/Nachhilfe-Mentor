@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 77
+- Gesamtzahl Artikel: 78
 - Letzte Veröffentlichung: 2026-04-22
 - Nächster geplanter Post: TBD
 
@@ -88,6 +88,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 74 | 2026-04-21 | vokabeln-lernen-app-vergleich | Vokabeln lernen App Vergleich: Die 5 besten Apps im Test | Vokabeln lernen App Vergleich, beste Vokabel-App, Anki Vergleich, Quizlet Vokabeln, Duolingo Schule, Vokabel-App Schüler, Vokabeln App Test, Sprachen lernen App | Digitale Tools | Ehrlicher Vergleich der 5 beliebtesten Vokabel-Apps: Anki (Spaced Repetition, kostenlos, steilste Lernkurve), Quizlet (einfachste Bedienung, beste für Schule), Duolingo (Einstieg/Motivation), Babbel (strukturierter Kurs, kostenpflichtig), Pons (beste Ergänzung). Empfehlung: Anki + Pons für Schüler. Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps. Rückverlinkung von vokabeln-lernen-tipps. |
 | 77 | 2026-04-22 | klausur-schreiben-tipps | Klausur schreiben: 8 Tipps, damit du in der Prüfung dein Bestes abrufst | Klausur schreiben Tipps, Klausur schreiben, Klausur Strategien, Prüfung schreiben Tipps, Klausur Aufgaben lösen, Klausur Zeitmanagement, Klausur Blackout, Prüfung bestehen Tipps, Klausur Struktur | Prüfungsvorbereitung | 8 Tipps für das Klausur schreiben selbst (nicht Vorbereitung): Aufgabenblatt komplett lesen, Zeit nach Punkten aufteilen, mit einfachen Aufgaben beginnen, klare Struktur nutzen, Operatoren beachten, beim Blackout ruhig bleiben (Atemtechnik), rechtzeitig kontrollieren, Handschrift/Präsentation ernst nehmen. App-Erwähnung (Wissenslücken schließen vor der Prüfung). Crosslinks zu pruefungsangst-ueberwinden, klausurvorbereitung-letzte-woche, active-recall-lerntechnik. Rückverlinkung von klausurvorbereitung-letzte-woche. |
 | 76 | 2026-04-22 | growth-mindset-lernen | Growth Mindset: So veränderst du deine Einstellung zum Lernen | Growth Mindset, Growth Mindset Lernen, Wachstumsdenken, Fixed Mindset, Growth Mindset Schule, Mindset ändern Lernen, Lerneinstellung verbessern, Growth Mindset Tipps, Misserfolg Lernen | Motivation & Produktivität | Carol Dwecks Growth Mindset erklärt (Fixed vs. Growth Mindset), Neurobiologie hinter neuronaler Plastizität, 7 konkrete Tipps: Noch-nicht-Umformulierung, Prozess-statt-Ergebnis-Fokus, Fehler als Datenpunkte, Diagnose der Lücken, Geschichte hinterfragen, Anstrengung loben, Herausforderungen suchen. Wichtig: Growth Mindset ist kein Schalter, sondern ein dauerhafter Prozess. App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu active-recall-lerntechnik, lerntagebuch-fuehren-tipps, prokrastination-ueberwinden-lernen, lernmotivation-steigern-tipps. Rückverlinkung von lernmotivation-steigern-tipps. |
+| 78 | 2026-04-22 | erstes-semester-tipps | Erstes Semester Studium: 9 Tipps für einen gelungenen Uni-Start | erstes Semester Tipps, erstes Semester Studium, Uni Start Tipps, Studium Anfang, Erstsemester Tipps, erster Uni-Tag, Studium organisieren, Studium Vorbereitung, Uni Tipps Anfänger, erstes Semester bestehen | Studium & Karriere | 9 Tipps für das erste Semester: Semesterplan komplett überblicken (Prüfungsanmeldungen!), Lernplan von Anfang an, Active Recall statt passivem Lesen, Zeitmanagement als System, Vorlesungen aktiv nachbereiten (Cornell-Methode), Lerngruppen sinnvoll nutzen, Campus-Angebote nutzen (Tutorien, Sprechstunden), Prokrastinations-Systeme statt Willenskraft, Gesundheit (Schlaf, Bewegung, Ernährung). App-Erwähnung (strukturierte aktive Lerneinheiten). Crosslinks zu lernplan-erstellen-tipps, active-recall-lerntechnik, zeitmanagement-studium-tipps, cornell-methode-notizen. Rückverlinkung von zeitmanagement-studium-tipps und wissenschaftliches-arbeiten-tipps. |
 | 75 | 2026-04-21 | studieren-ohne-abitur-tipps | Studieren ohne Abitur: 6 Wege ins Studium erklärt | studieren ohne Abitur, ohne Abitur studieren, Fachhochschulreife Studium, Studium ohne Abi, Hochschulzugangsberechtigung, Begabtenprüfung, duales Studium ohne Abitur, zweiter Bildungsweg | Studium & Karriere | 6 Wege ins Studium ohne Abitur: Fachhochschulreife (FOS/BOS), Berufsausbildung + Berufserfahrung, Begabtenprüfung/Hochschuleignungsprüfung, duales Studium ohne Abitur, Fernstudium, zweiter Bildungsweg (Abendgymnasium). Entscheidungshilfe welcher Weg zu wem passt. App-Erwähnung (strukturiertes Lernen beim Wiedereinstieg). Crosslinks zu lernplan-erstellen-tipps, active-recall-lerntechnik, abitur-vorbereitung-tipps. Rückverlinkung von motivationsschreiben-tipps. |
 | 71 | 2026-04-20 | spickzettel-schreiben-tipps | Spickzettel schreiben: 7 Tipps für Zettel, die dir wirklich helfen | Spickzettel schreiben, Spickzettel erstellen, Spickzettel Tipps, Spickzettel Schule, guter Spickzettel, Spickzettel Methode, Spickzettel Lernen, Spickzettel Technik, Spickzettel Klausur | Lernmethoden | 7 Tipps zum Spickzettel schreiben als Lernmethode: erst Stoff lernen, dann schreiben; Kürze durch Stichwörter; Abkürzungen/Symbole entwickeln; Farbsystem und Boxen für Struktur; handschriftlich schreiben für bessere Merkfähigkeit; mit Blank-Page testen; regelmäßig aktualisieren. Warum Spickzettel schreiben lernwirksam ist (Active Recall, Priorisierung). App-Erwähnung (Nachhilfe Mentor App für gezieltes Abfragen). Crosslinks zu active-recall-lerntechnik, lernzettel-erstellen-tipps, spaced-repetition-lernmethode. Rückverlinkung von lernzettel-erstellen-tipps. |
 
@@ -113,6 +114,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
   Prüfungsvorbereitung, effektiv lernen,
+  <!-- erstes Semester Tipps, Uni Start Tipps, Erstsemester → verwendet in Artikel #78 -->
   <!-- Klausur schreiben Tipps, Klausur Strategien → verwendet in Artikel #77 -->
   <!-- Studieren ohne Abitur, zweiter Bildungsweg → verwendet in Artikel #75 -->
   <!-- Bewegung und Lernen, Sport Lernleistung → verwendet in Artikel #68 -->
@@ -529,6 +531,14 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lerntipps-adhs-schueler -> active-recall-lerntechnik (Tipp 5: Active Recall statt passivem Lesen)
 - lerntipps-adhs-schueler -> lernmotivation-steigern-tipps (Tipp 8: Hyperfokus und Motivationsstrategien)
 - konzentration-steigern-lernen -> lerntipps-adhs-schueler (Rückverlinkung im Fazit: spezielle Strategien bei ADHS)
+
+## Interne Verlinkungen (Ergänzung Artikel 78)
+- erstes-semester-tipps -> lernplan-erstellen-tipps (Tipp 2: strukturierter Lernplan als Grundlage im Studium)
+- erstes-semester-tipps -> active-recall-lerntechnik (Tipp 3: Active Recall statt passivem Lesen)
+- erstes-semester-tipps -> zeitmanagement-studium-tipps (Tipp 4: Zeitmanagement als System im Studium aufbauen)
+- erstes-semester-tipps -> cornell-methode-notizen (Tipp 5: Cornell-Methode für aktive Vorlesungsnachbereitung)
+- zeitmanagement-studium-tipps -> erstes-semester-tipps (Rückverlinkung: Fazit, gelungener Uni-Start als Vertiefung)
+- wissenschaftliches-arbeiten-tipps -> erstes-semester-tipps (Rückverlinkung: Fazit, erster Uni-Start und wissenschaftliches Arbeiten verbunden)
 
 ## Self-Improvement Runde 10 (nach Artikel 50)
 - Alle 5 Artikel aus R9-Empfehlung umgesetzt: Latein, Erdkunde, KI Hausaufgaben, Nachhilfe online vs. offline, Lernstress bewältigen.
