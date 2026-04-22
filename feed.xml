@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 22 Apr 2026 08:14:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Apr 2026 16:19:43 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</guid>
+      <pubDate>Wed, 22 Apr 2026 16:18:52 +0000</pubDate>
+      <description>Wissenschaftliches Arbeiten leicht gemacht: So schreibst du eine Hausarbeit oder Seminararbeit Schritt für Schritt. Mit Tipps zu Struktur, Quellen und Zitieren.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Zeitmanagement Studium: 8 Tipps für mehr Produktivität</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/zeitmanagement-studium-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/zeitmanagement-studium-tipps.html</guid>
+      <pubDate>Wed, 22 Apr 2026 16:18:47 +0000</pubDate>
+      <description>Zeitmanagement im Studium verbessern: 8 erprobte Tipps, mit denen du Vorlesungen, Lernen und Freizeit unter einen Hut bekommst.</description>
+      <category>Motivation &amp; Produktivität</category>
+    </item>
+    <item>
+      <title>Erstes Semester Studium: 9 Tipps für einen gelungenen Uni-Start</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/erstes-semester-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/erstes-semester-tipps.html</guid>
+      <pubDate>Wed, 22 Apr 2026 16:18:11 +0000</pubDate>
+      <description>Das erste Semester ist eine Herausforderung. Mit diesen 9 Tipps meisterst du deinen Uni-Start, lernst effektiv und vermeidest typische Erstsemester-Fehler.</description>
+      <category>Studium &amp; Karriere</category>
+    </item>
     <item>
       <title>Klausurvorbereitung letzte Woche: So holst du das Maximum raus</title>
       <link>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</link>
@@ -142,30 +166,6 @@
       <pubDate>Sun, 19 Apr 2026 23:37:11 +0000</pubDate>
       <description>Lernstress im Abitur bewältigen: 8 konkrete Tipps für Abiturienten, die Prüfungsphase ohne Burnout zu meistern. Mit Strategien für Schlaf, Zeitplanung und mentale Stärke.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Active Recall: Die Lerntechnik, mit der du Wissen wirklich abspeicherst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/active-recall-lerntechnik.html</guid>
-      <pubDate>Sun, 19 Apr 2026 15:32:59 +0000</pubDate>
-      <description>Active Recall ist die wissenschaftlich stärkste Lerntechnik überhaupt. Erfahre, wie aktives Abrufen funktioniert, welche Methoden es gibt und wie du sie sofort anwendest.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Effektiv lernen: 10 Strategien, die wirklich funktionieren</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/effektiv-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/effektiv-lernen-tipps.html</guid>
-      <pubDate>Sun, 19 Apr 2026 15:32:28 +0000</pubDate>
-      <description>Effektiv lernen mit den 10 besten Strategien aus Wissenschaft und Praxis. Konkrete Methoden für Schüler und Studenten, die dauerhaft mehr behalten.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Brainfood: Die beste Ernährung fürs Lernen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/brainfood-lernen-ernaehrung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/brainfood-lernen-ernaehrung.html</guid>
-      <pubDate>Sun, 19 Apr 2026 07:28:12 +0000</pubDate>
-      <description>Brainfood für Schüler und Studenten: Was du essen solltest, um besser zu lernen, die Konzentration zu steigern und dein Gedächtnis zu boosten.</description>
-      <category>Lernmethoden</category>
     </item>
   </channel>
 </rss>
