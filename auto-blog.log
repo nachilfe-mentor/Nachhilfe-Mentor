@@ -3092,3 +3092,103 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Pinterest-Pin erfolgreich erstellt. Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `online-studieren-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/online-studieren-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`zeitmanagement-studium-tipps.html` verlinkt auf neuen Artikel im Fazit)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (79 Artikel, Stand 2026-04-23)
+- [x] Git Push: erfolgreich (Commit `fbba338`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (85 URLs in Sitemap, 81 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoaqoua000tkmt0ypvoy4aov`
+
+**Artikel #79:** "Online studieren: 8 Tipps für ein erfolgreiches Fernstudium" deckt die Fernstudium-Nische ab, die in der Strategie als nächstes empfohlen wurde. 8 Tipps zu Lernroutine, Selbstorganisation, aktiven Lernmethoden und Prokrastination-Bekämpfung, mit natürlichen Crosslinks zum Lernplan- und Prokrastinations-Artikel.
+[2026-04-23 00:24:45] Blog cycle completed successfully.
+[2026-04-23 00:24:45] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 85 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 81 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 81 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 85 URLs in Sitemap, 20 Artikel im Feed.
+[main a018251] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   73daed2..a018251  main -> main
+[2026-04-23 00:24:45] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: online-studieren-tipps
+  Titel: Online studieren: 8 Tipps für ein erfolgreiches Fernstudium
+  Desc:  Online studieren und Fernstudium erfolgreich meistern: 8 konkrete Tipps für Selb...
+[Pinterest] Erstelle Pin fuer: Online studieren: 8 Tipps für ein erfolgreiches Fernstudium
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/online-studieren-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/online-studieren-tipps.html
+[Pinterest] Uploading online-studieren-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=cac222e9-925b-4d9e-882b-aa83ea5d2e7a
+[Pinterest] Pin erstellt! Post-ID: cmoaqp2be00uiq70yvbvw0r7v
+[Pinterest] Erfolgreich! Pin-ID: cmoaqp2be00uiq70yvbvw0r7v
+
+[Pinterest-Fallback] OK: online-studieren-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-23 00:24:45] Next run in 8 hours.
+---
+[2026-04-23 08:24:47] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `zettelkasten-methode-lernen.html`
+- [x] Cover-Bild generiert: `blog/posts/img/zettelkasten-methode-lernen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`karteikarten-lernen-tipps.html` verlinkt auf neuen Artikel; neuer Artikel verlinkt auf `spaced-repetition-lernmethode.html` und `karteikarten-lernen-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (80 Artikel)
+- [x] Git Push: erfolgreich (2 Commits: Artikel + SEO-Update)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (86 URLs in Sitemap, 82 an IndexNow übermittelt)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmob80yeu01ulmt0ylkmatbft`
+
+**Thema:** Zettelkasten Methode (Lernmethoden-Cluster, der stärkste Performer). Der Artikel erklärt das von Niklas Luhmann entwickelte System: vernetzte Notizen in eigenen Worten, 4-Schritte-Prozess, analog vs. digital, Wissenschaft dahinter und Praxisbeispiele für Schüler.
+[2026-04-23 08:30:03] Blog cycle completed successfully.
+[2026-04-23 08:30:03] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 86 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 82 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 82 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 86 URLs in Sitemap, 20 Artikel im Feed.
+[main 50f65e5] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   0a3acf9..50f65e5  main -> main
+[2026-04-23 08:30:03] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: zettelkasten-methode-lernen
+  Titel: Zettelkasten Methode: Wissen vernetzen und dauerhaft behalten
+  Desc:  Die Zettelkasten Methode erklärt: Wie du mit vernetzten Notizen Wissen dauerhaft...
+[Pinterest] Erstelle Pin fuer: Zettelkasten Methode: Wissen vernetzen und dauerhaft behalten
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/zettelkasten-methode-lernen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/zettelkasten-methode-lernen.html
+[Pinterest] Uploading zettelkasten-methode-lernen.webp (image/webp)...
+[Pinterest] Upload OK: id=416b9428-ad5e-4d05-bac8-9b4aca66947b
+[Pinterest] Pin erstellt! Post-ID: cmob816im020cq70yo7uceadv
+[Pinterest] Erfolgreich! Pin-ID: cmob816im020cq70yo7uceadv
+
+[Pinterest-Fallback] OK: zettelkasten-methode-lernen
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-23 08:30:03] Next run in 8 hours.
+---
+[2026-04-23 16:30:06] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

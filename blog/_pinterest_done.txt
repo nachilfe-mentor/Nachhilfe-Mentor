@@ -58,6 +58,7 @@ muendliche-pruefung-vorbereiten
 musik-beim-lernen-tipps
 nachhilfe-online-vs-offline
 noten-verbessern-schule-tipps
+online-studieren-tipps
 physik-abitur-vorbereitung
 physik-lernen-tipps
 pomodoro-technik-lernen
@@ -75,4 +76,5 @@ vokabeln-lernen-app-vergleich
 vokabeln-lernen-tipps
 wissenschaftliches-arbeiten-tipps
 zeitmanagement-studium-tipps
+zettelkasten-methode-lernen
 zusammenfassung-schreiben-lernen
