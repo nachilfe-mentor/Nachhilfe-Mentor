@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 23 Apr 2026 08:30:03 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Apr 2026 16:35:22 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Referat halten: 8 Tipps, mit denen du souverän präsentierst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</guid>
+      <pubDate>Thu, 23 Apr 2026 16:34:45 +0000</pubDate>
+      <description>Referat halten leicht gemacht: 8 bewährte Tipps für Aufbau, freies Sprechen und souveränes Präsentieren in Schule und Studium.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Referat schreiben: So bereitest du ein überzeugendes Referat vor</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/referat-schreiben-anleitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/referat-schreiben-anleitung.html</guid>
+      <pubDate>Thu, 23 Apr 2026 16:34:13 +0000</pubDate>
+      <description>Referat schreiben leicht gemacht: Schritt-für-Schritt-Anleitung von der Themenwahl über die Gliederung bis zur fertigen Ausarbeitung. Mit Tipps für Einleitung, Hauptteil und Schluss.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Karteikarten lernen: So nutzt du Lernkarten wirklich effektiv</title>
       <link>https://nachhilfe-mentor.de/blog/posts/karteikarten-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Mon, 20 Apr 2026 15:48:28 +0000</pubDate>
       <description>Konzentration steigern beim Lernen: 10 bewährte Techniken gegen Ablenkung. Sofort umsetzbare Tipps für Schüler und Studenten, die fokussierter lernen wollen.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Lerntipps für ADHS-Schüler: So lernst du trotz ADHS effektiv</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lerntipps-adhs-schueler.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lerntipps-adhs-schueler.html</guid>
-      <pubDate>Mon, 20 Apr 2026 15:47:36 +0000</pubDate>
-      <description>ADHS und Lernen muss kein Widerspruch sein. 8 konkrete Lerntipps für ADHS-Schüler, die wirklich funktionieren: Struktur, Bewegung, kurze Blöcke und mehr.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Lernzettel erstellen: 7 Tipps für Lernzettel, die wirklich helfen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernzettel-erstellen-tipps.html</guid>
-      <pubDate>Mon, 20 Apr 2026 07:43:07 +0000</pubDate>
-      <description>Lernzettel erstellen leicht gemacht: 7 bewährte Tipps, wie du Lernzettel schreibst, die wirklich beim Lernen helfen. Mit konkreten Beispielen und häufigen Fehlern.</description>
-      <category>Lernmethoden</category>
     </item>
   </channel>
 </rss>
