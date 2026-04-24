@@ -3292,3 +3292,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier die Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `interleaving-methode-lernen.html`
+- [x] Cover-Bild generiert: `blog/posts/img/interleaving-methode-lernen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `spaced-repetition-lernmethode.html`, neue Links zu `active-recall-lerntechnik.html` und `spaced-repetition-lernmethode.html` im Artikel)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #83, Gesamtzahl 83)
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (89 URLs in Sitemap, 85 URLs an IndexNow submitted)
+- [x] **PINTEREST:** `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoco1nwu03clq70y0nz98liw`
+
+**Analytics-Hinweis:** Google organisch auf 26 Sessions gestiegen (von 23), Lernmethoden-Cluster performt klar am besten. Interleaving ist eine gut belegte Methode in diesem Cluster, die noch vollständig fehlte.
+[2026-04-24 08:46:23] Blog cycle completed successfully.
+[2026-04-24 08:46:23] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 89 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 85 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 85 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 89 URLs in Sitemap, 20 Artikel im Feed.
+[main 6160f08] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   c85452c..6160f08  main -> main
+[2026-04-24 08:46:23] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: interleaving-methode-lernen
+  Titel: Interleaving Methode: Warum Themenwechsel beim Lernen mehr bringt
+  Desc:  Interleaving Methode erklärt: Warum Themenwechsel beim Lernen nachweislich besse...
+[Pinterest] Erstelle Pin fuer: Interleaving Methode: Warum Themenwechsel beim Lernen mehr bringt
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/interleaving-methode-lernen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/interleaving-methode-lernen.html
+[Pinterest] Uploading interleaving-methode-lernen.webp (image/webp)...
+[Pinterest] Upload OK: id=f3cc1497-6762-4674-8d65-72e68b47bf94
+[Pinterest] Pin erstellt! Post-ID: cmoco20zk03cnq70y91amcswd
+[Pinterest] Erfolgreich! Pin-ID: cmoco20zk03cnq70y91amcswd
+
+[Pinterest-Fallback] OK: interleaving-methode-lernen
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-24 08:46:23] Next run in 8 hours.
+---
+[2026-04-24 16:46:25] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
