@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 24 Apr 2026 08:46:23 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 16:51:32 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Lerntypen: Welcher Lernstil passt zu dir? (VARK-Modell erklärt)</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lerntypen-vark-test-lerntipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lerntypen-vark-test-lerntipps.html</guid>
+      <pubDate>Fri, 24 Apr 2026 16:50:42 +0000</pubDate>
+      <description>Visuell, auditiv, lese-/schreiborientiert oder kinästhetisch? Finde deinen Lerntyp mit dem VARK-Modell und lerne endlich so, wie dein Gehirn es am besten aufnimmt.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Lernstil finden: So entdeckst du, wie du wirklich am besten lernst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lernstil-finden-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lernstil-finden-tipps.html</guid>
+      <pubDate>Fri, 24 Apr 2026 16:49:49 +0000</pubDate>
+      <description>Welcher Lernstil passt zu dir? In 4 Schritten findest du heraus, wie du am besten lernst und erzielst dauerhaft bessere Ergebnisse in Schule und Studium.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Spaced Repetition: Die Lernmethode, mit der du nie wieder vergisst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/spaced-repetition-lernmethode.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Tue, 21 Apr 2026 16:01:54 +0000</pubDate>
       <description>Kein Abitur? Kein Problem. Wir erklären 6 Wege, wie du auch ohne Abi studieren kannst: Fachhochschulreife, Berufsausbildung, Begabtenprüfung und mehr.</description>
       <category>Studium &amp; Karriere</category>
-    </item>
-    <item>
-      <title>Vokabeln lernen: 7 Methoden, mit denen du dir Wörter dauerhaft merkst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-tipps.html</guid>
-      <pubDate>Tue, 21 Apr 2026 07:57:48 +0000</pubDate>
-      <description>Vokabeln lernen leicht gemacht: 7 bewährte Methoden, mit denen du dir neue Wörter schnell und dauerhaft einprägst. Für Schule, Studium und Sprachkurse.</description>
-      <category>Sprachen lernen</category>
-    </item>
-    <item>
-      <title>Vokabeln lernen App Vergleich: Die 5 besten Apps im Test</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-app-vergleich.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/vokabeln-lernen-app-vergleich.html</guid>
-      <pubDate>Tue, 21 Apr 2026 07:57:14 +0000</pubDate>
-      <description>Vokabeln lernen App Vergleich: Anki, Quizlet, Duolingo, Babbel und mehr im ehrlichen Test. Welche App passt für Schule und Studium wirklich?</description>
-      <category>Digitale Tools</category>
     </item>
   </channel>
 </rss>
