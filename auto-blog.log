@@ -3192,3 +3192,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles abgeschlossen. Hier die vollständige Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `referat-schreiben-anleitung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/referat-schreiben-anleitung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`referat-halten-tipps.html` -> neuer Artikel, bidirektional)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (81 Artikel)
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (87 URLs in Sitemap, 83 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmobpdg4h0075mt0ypmr0rnl3`
+
+**Analytics-Erkenntnis:** 136 Pageviews (30 Tage), Google organisch 26 Sessions. Fachspezifische Artikel ranken schnell. Neues Thema "Referat schreiben" ergänzt den bestehenden Artikel "Referat halten" (#16) als natürliche Vorstufe und schließt eine Inhaltslücke mit hohem Suchvolumen.
+[2026-04-23 16:35:46] Blog cycle completed successfully.
+[2026-04-23 16:35:46] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 87 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 83 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 83 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 87 URLs in Sitemap, 20 Artikel im Feed.
+[main 2543326] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   a084994..2543326  main -> main
+[2026-04-23 16:35:46] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: referat-schreiben-anleitung
+  Titel: Referat schreiben: So bereitest du ein überzeugendes Referat vor
+  Desc:  Referat schreiben leicht gemacht: Schritt-für-Schritt-Anleitung von der Themenwa...
+[Pinterest] Erstelle Pin fuer: Referat schreiben: So bereitest du ein überzeugendes Referat vor
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/referat-schreiben-anleitung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/referat-schreiben-anleitung.html
+[Pinterest] Uploading referat-schreiben-anleitung.webp (image/webp)...
+[Pinterest] Upload OK: id=fdaae0bd-63cb-42cc-bced-5b22b10b9fe2
+[Pinterest] Pin erstellt! Post-ID: cmobpdt610078mt0ymtaeq9xt
+[Pinterest] Erfolgreich! Pin-ID: cmobpdt610078mt0ymtaeq9xt
+
+[Pinterest-Fallback] OK: referat-schreiben-anleitung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-23 16:35:46] Next run in 8 hours.
+---
+[2026-04-24 00:35:49] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
