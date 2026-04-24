@@ -181,6 +181,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/interleaving-methode-lernen.html</loc>
+    <lastmod>2026-04-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/karteikarten-lernen-tipps.html</loc>
     <lastmod>2026-04-23</lastmod>
     <changefreq>monthly</changefreq>
@@ -446,7 +452,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/spaced-repetition-lernmethode.html</loc>
-    <lastmod>2026-04-03</lastmod>
+    <lastmod>2026-04-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

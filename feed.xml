@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 24 Apr 2026 00:40:53 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 08:45:59 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Spaced Repetition: Die Lernmethode, mit der du nie wieder vergisst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/spaced-repetition-lernmethode.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/spaced-repetition-lernmethode.html</guid>
+      <pubDate>Fri, 24 Apr 2026 08:45:06 +0000</pubDate>
+      <description>Spaced Repetition ist die wissenschaftlich bewährteste Lernmethode überhaupt. Erfahre, wie du sie einsetzt, um Wissen dauerhaft zu behalten und Klausuren zu meistern.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Interleaving Methode: Warum Themenwechsel beim Lernen mehr bringt</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/interleaving-methode-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/interleaving-methode-lernen.html</guid>
+      <pubDate>Fri, 24 Apr 2026 08:44:28 +0000</pubDate>
+      <description>Interleaving Methode erklärt: Warum Themenwechsel beim Lernen nachweislich besser funktioniert als Blocklernen. Mit praktischen Tipps für Schule und Studium.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Hausarbeit schreiben: Schritt-für-Schritt-Anleitung</title>
       <link>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Tue, 21 Apr 2026 07:57:14 +0000</pubDate>
       <description>Vokabeln lernen App Vergleich: Anki, Quizlet, Duolingo, Babbel und mehr im ehrlichen Test. Welche App passt für Schule und Studium wirklich?</description>
       <category>Digitale Tools</category>
-    </item>
-    <item>
-      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
-      <pubDate>Mon, 20 Apr 2026 23:53:14 +0000</pubDate>
-      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
-      <pubDate>Mon, 20 Apr 2026 23:53:10 +0000</pubDate>
-      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
