@@ -3242,3 +3242,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Dateien sind bereits committed. Durchlauf abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `bachelorarbeit-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/bachelorarbeit-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `hausarbeit-schreiben-tipps.html` eingefügt; neuer Artikel verlinkt auf `lernplan-erstellen-tipps.html`, `wissenschaftliches-arbeiten-tipps.html`, `hausarbeit-schreiben-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #82 eingetragen, Gesamtzahl 82)
+- [x] Git Push: erfolgreich (2 Commits: Artikel + SEO-Update)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (88 URLs in Sitemap, 84 URLs an IndexNow submitted)
+- [x] **PINTEREST:** `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmoc6pcbz01zwq70y67e12mq1`
+
+**Neuer Artikel:** "Bachelorarbeit schreiben: Schritt-für-Schritt-Anleitung für Studenten" (Studium & Karriere, ~950 Wörter). Thema: 7-Schritte-Fahrplan von Thema finden bis Abgabe, inklusive Zeitplan-Schema und 5 häufigen Fehlern. Fokus-Keyword mit hohem Suchvolumen für Uni-Studenten, klar differenziert von bestehenden Hausarbeit/Wissenschaftliches-Arbeiten-Artikeln.
+[2026-04-24 00:40:53] Blog cycle completed successfully.
+[2026-04-24 00:40:53] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 88 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 84 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 84 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 88 URLs in Sitemap, 20 Artikel im Feed.
+[main 5ba6897] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   0d4dbe5..5ba6897  main -> main
+[2026-04-24 00:40:53] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: bachelorarbeit-schreiben-tipps
+  Titel: Bachelorarbeit schreiben: Schritt-für-Schritt-Anleitung
+  Desc:  Bachelorarbeit schreiben leicht gemacht: So findest du ein Thema, strukturierst ...
+[Pinterest] Erstelle Pin fuer: Bachelorarbeit schreiben: Schritt-für-Schritt-Anleitung
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/bachelorarbeit-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/bachelorarbeit-schreiben-tipps.html
+[Pinterest] Uploading bachelorarbeit-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=ee51635d-40fa-4b09-972f-fd735f85eef7
+[Pinterest] Pin erstellt! Post-ID: cmoc6po0y0201q70y5k4kda2p
+[Pinterest] Erfolgreich! Pin-ID: cmoc6po0y0201q70y5k4kda2p
+
+[Pinterest-Fallback] OK: bachelorarbeit-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-24 00:40:53] Next run in 8 hours.
+---
+[2026-04-24 08:40:55] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
