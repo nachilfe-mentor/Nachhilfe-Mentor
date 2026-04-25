@@ -3442,3 +3442,57 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles abgeschlossen. Hier die Abschlusscheckliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `eroerterung-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/eroerterung-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (in `deutsch-aufsatz-schreiben-tipps.html` und `inhaltsangabe-schreiben-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #86, 86 Gesamtartikel)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (92 URLs, 88 an IndexNow gesendet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoe4avks025amt0y3i52yu7z`
+
+---
+
+**Artikel #86 zusammengefasst:**
+
+Thema "Erörterung schreiben" (Schreibaufgaben-Cluster, Klasse 8-12). Der Artikel erklärt den vollständigen Aufbau (Einleitung, Hauptteil, Schluss), das Dreischritt-Prinzip (These, Begründung, Beispiel), den Unterschied zwischen freier und dialektischer Erörterung, Signalwörter für Übergänge sowie die 5 häufigsten Fehler mit einer Checkliste. Crosslinks zu `deutsch-aufsatz-schreiben-tipps` und `inhaltsangabe-schreiben-tipps` sind gesetzt. Als nächstes empfiehlt sich "Charakterisierung schreiben" oder "Textanalyse schreiben Deutsch".
+[2026-04-25 09:09:17] Blog cycle completed successfully.
+[2026-04-25 09:09:17] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 92 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 88 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 88 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 92 URLs in Sitemap, 20 Artikel im Feed.
+[main 9bc4f43] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   3dc4b1b..9bc4f43  main -> main
+[2026-04-25 09:09:17] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: eroerterung-schreiben-tipps
+  Titel: Erörterung schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und d...
+[Pinterest] Erstelle Pin fuer: Erörterung schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/eroerterung-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html
+[Pinterest] Uploading eroerterung-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=99136982-b78d-47ff-a15c-2e0d7b612c35
+[Pinterest] Pin erstellt! Post-ID: cmoe4bc20025cmt0ytdou1onl
+[Pinterest] Erfolgreich! Pin-ID: cmoe4bc20025cmt0ytdou1onl
+
+[Pinterest-Fallback] OK: eroerterung-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-25 09:09:17] Next run in 8 hours.
+---
+[2026-04-25 17:09:20] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
