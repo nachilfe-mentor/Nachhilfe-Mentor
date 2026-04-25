@@ -3392,3 +3392,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `inhaltsangabe-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/inhaltsangabe-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `deutsch-aufsatz-schreiben-tipps.html` und `zusammenfassung-schreiben-lernen.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO, Pinterest-Log)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefüht (91 URLs, 87 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefürt — Pin-ID: `cmodmscb000ryq70yp2t7mfe9`
+
+**Artikel #85:** "Inhaltsangabe schreiben" richtet sich an Schüler der Klassen 5-10, deckt eine bisher unabgedeckte Nische im Deutschunterricht ab und ergänzt den bestehenden Schreibaufgaben-Cluster optimal. **Self-Improvement R17:** Google organisch auf 30 Sessions gestiegen, nächste 5 Artikel-Empfehlungen auf Schreibaufgaben (Erörterung, Charakterisierung, Textanalyse) fokussiert.
+[2026-04-25 00:58:56] Blog cycle completed successfully.
+[2026-04-25 00:58:56] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 91 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 87 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 87 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 91 URLs in Sitemap, 20 Artikel im Feed.
+[main 792681a] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   5adfb6c..792681a  main -> main
+[2026-04-25 00:58:56] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: inhaltsangabe-schreiben-tipps
+  Titel: Inhaltsangabe schreiben: 7 Tipps für eine perfekte Zusammenfassung
+  Desc:  Inhaltsangabe schreiben leicht gemacht: 7 Tipps für Aufbau, Sprache und häufige ...
+[Pinterest] Erstelle Pin fuer: Inhaltsangabe schreiben: 7 Tipps für eine perfekte Zusammenfassung
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/inhaltsangabe-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/inhaltsangabe-schreiben-tipps.html
+[Pinterest] Uploading inhaltsangabe-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=210d0774-262e-44a0-bc50-5df90a1a69e3
+[Pinterest] Pin erstellt! Post-ID: cmodmsqus00rzq70yh76sobup
+[Pinterest] Erfolgreich! Pin-ID: cmodmsqus00rzq70yh76sobup
+
+[Pinterest-Fallback] OK: inhaltsangabe-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-25 00:58:56] Next run in 8 hours.
+---
+[2026-04-25 08:58:59] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
