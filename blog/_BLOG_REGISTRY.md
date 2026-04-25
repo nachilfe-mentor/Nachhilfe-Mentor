@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 85
+- Gesamtzahl Artikel: 86
 - Letzte Veröffentlichung: 2026-04-25
 - Nächster geplanter Post: TBD
 
@@ -97,6 +97,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 78 | 2026-04-22 | erstes-semester-tipps | Erstes Semester Studium: 9 Tipps für einen gelungenen Uni-Start | erstes Semester Tipps, erstes Semester Studium, Uni Start Tipps, Studium Anfang, Erstsemester Tipps, erster Uni-Tag, Studium organisieren, Studium Vorbereitung, Uni Tipps Anfänger, erstes Semester bestehen | Studium & Karriere | 9 Tipps für das erste Semester: Semesterplan komplett überblicken (Prüfungsanmeldungen!), Lernplan von Anfang an, Active Recall statt passivem Lesen, Zeitmanagement als System, Vorlesungen aktiv nachbereiten (Cornell-Methode), Lerngruppen sinnvoll nutzen, Campus-Angebote nutzen (Tutorien, Sprechstunden), Prokrastinations-Systeme statt Willenskraft, Gesundheit (Schlaf, Bewegung, Ernährung). App-Erwähnung (strukturierte aktive Lerneinheiten). Crosslinks zu lernplan-erstellen-tipps, active-recall-lerntechnik, zeitmanagement-studium-tipps, cornell-methode-notizen. Rückverlinkung von zeitmanagement-studium-tipps und wissenschaftliches-arbeiten-tipps. |
 | 75 | 2026-04-21 | studieren-ohne-abitur-tipps | Studieren ohne Abitur: 6 Wege ins Studium erklärt | studieren ohne Abitur, ohne Abitur studieren, Fachhochschulreife Studium, Studium ohne Abi, Hochschulzugangsberechtigung, Begabtenprüfung, duales Studium ohne Abitur, zweiter Bildungsweg | Studium & Karriere | 6 Wege ins Studium ohne Abitur: Fachhochschulreife (FOS/BOS), Berufsausbildung + Berufserfahrung, Begabtenprüfung/Hochschuleignungsprüfung, duales Studium ohne Abitur, Fernstudium, zweiter Bildungsweg (Abendgymnasium). Entscheidungshilfe welcher Weg zu wem passt. App-Erwähnung (strukturiertes Lernen beim Wiedereinstieg). Crosslinks zu lernplan-erstellen-tipps, active-recall-lerntechnik, abitur-vorbereitung-tipps. Rückverlinkung von motivationsschreiben-tipps. |
 | 71 | 2026-04-20 | spickzettel-schreiben-tipps | Spickzettel schreiben: 7 Tipps für Zettel, die dir wirklich helfen | Spickzettel schreiben, Spickzettel erstellen, Spickzettel Tipps, Spickzettel Schule, guter Spickzettel, Spickzettel Methode, Spickzettel Lernen, Spickzettel Technik, Spickzettel Klausur | Lernmethoden | 7 Tipps zum Spickzettel schreiben als Lernmethode: erst Stoff lernen, dann schreiben; Kürze durch Stichwörter; Abkürzungen/Symbole entwickeln; Farbsystem und Boxen für Struktur; handschriftlich schreiben für bessere Merkfähigkeit; mit Blank-Page testen; regelmäßig aktualisieren. Warum Spickzettel schreiben lernwirksam ist (Active Recall, Priorisierung). App-Erwähnung (Nachhilfe Mentor App für gezieltes Abfragen). Crosslinks zu active-recall-lerntechnik, lernzettel-erstellen-tipps, spaced-repetition-lernmethode. Rückverlinkung von lernzettel-erstellen-tipps. |
+| 86 | 2026-04-25 | eroerterung-schreiben-tipps | Erörterung schreiben: Aufbau, Argumente und die häufigsten Fehler | Erörterung schreiben, Erörterung Aufbau, Erörterung Tipps, Erörterung Schule, Erörterung Einleitung, Erörterung Argumente, freie Erörterung, dialektische Erörterung, Deutsch Klausur Erörterung | Schule & Studium | Vollständiger Guide zum Erörterung schreiben: Was ist eine Erörterung (freie vs. textgebundene), Dreischritt (These-Begründung-Beispiel), lineäre vs. dialektische Erörterung, Einleitung schreiben, Schluss mit klarer Meinung, Signalwörter für Übergänge, 5 häufige Fehler, Checkliste vor Abgabe, praktische Vorbereitungstipps. App-Erwähnung (Nachhilfe Mentor für Rückfragen und Argumentationslücken). Crosslinks zu deutsch-aufsatz-schreiben-tipps, feynman-technik-erklaeren-lernen, inhaltsangabe-schreiben-tipps. Rückverlinkung von deutsch-aufsatz-schreiben-tipps, inhaltsangabe-schreiben-tipps. |
 | 85 | 2026-04-25 | inhaltsangabe-schreiben-tipps | Inhaltsangabe schreiben: 7 Tipps für eine perfekte Zusammenfassung | Inhaltsangabe schreiben, Inhaltsangabe Tipps, Inhaltsangabe Aufbau, Inhaltsangabe schreiben Schule, Inhaltsangabe Einleitung, Inhaltsangabe Präsens, wie schreibt man eine Inhaltsangabe, Inhaltsangabe Klasse 7 8 9 | Schule & Studium | 7 Tipps zum Inhaltsangabe schreiben: immer im Präsens, indirekte statt direkte Rede, Text vorher aktiv lesen und Stichpunkte machen, kurz und präzise formulieren (kein Nacherzählen), keine eigene Meinung oder Wertung, abwechslungsreiche Verben nutzen, Einleitung zuletzt überarbeiten. Aufbau erklärt (Einleitung mit Textsorte/Titel/Autor/Jahr/Thema, Hauptteil chronologisch, Schluss mit Ergebnis). 5 häufige Fehler. Unterschied Inhaltsangabe vs. Zusammenfassung. App-Erwähnung (Nachhilfe Mentor für Textverständnis testen). Crosslinks zu zusammenfassung-schreiben-lernen, deutsch-aufsatz-schreiben-tipps. Rückverlinkung von deutsch-aufsatz-schreiben-tipps, zusammenfassung-schreiben-lernen. |
 
 ## Abgedeckte Themen-Cluster
@@ -137,10 +138,16 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - inhaltsangabe-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Verweis für weiterführende Deutschaufgaben)
 - deutsch-aufsatz-schreiben-tipps -> inhaltsangabe-schreiben-tipps (Rückverlinkung: Inhaltsangabe als häufige Deutschaufgabe)
 - zusammenfassung-schreiben-lernen -> inhaltsangabe-schreiben-tipps (Rückverlinkung: Inhaltsangabe als schulische Sonderform)
+- eroerterung-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Dreischritt und Operatoren als Grundlage)
+- eroerterung-schreiben-tipps -> feynman-technik-erklaeren-lernen (Argumente prüfen mit Feynman)
+- eroerterung-schreiben-tipps -> inhaltsangabe-schreiben-tipps (verwandte Deutschaufgaben, Schreibaufgaben-Cluster)
+- deutsch-aufsatz-schreiben-tipps -> eroerterung-schreiben-tipps (Rückverlinkung: Erörterung als spezifische Aufsatzform)
+- inhaltsangabe-schreiben-tipps -> eroerterung-schreiben-tipps (Rückverlinkung: Erörterung als häufige Schulaufgabe)
 
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
   Prüfungsvorbereitung, effektiv lernen,
+  <!-- Erörterung schreiben, Erörterung Aufbau, Erörterung Tipps → verwendet in Artikel #86 -->
   <!-- Inhaltsangabe schreiben, Inhaltsangabe Tipps → verwendet in Artikel #85 -->
   <!-- Lernstil finden, eigener Lernstil, Lernstrategie entwickeln → verwendet in Artikel #84 -->
   <!-- Bachelorarbeit schreiben, Bachelor Thesis → verwendet in Artikel #82 -->
