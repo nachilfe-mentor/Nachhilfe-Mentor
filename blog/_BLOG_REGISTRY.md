@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 87
-- Letzte Veröffentlichung: 2026-04-25
+- Gesamtzahl Artikel: 88
+- Letzte Veröffentlichung: 2026-04-26
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -100,6 +100,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 86 | 2026-04-25 | eroerterung-schreiben-tipps | Erörterung schreiben: Aufbau, Argumente und die häufigsten Fehler | Erörterung schreiben, Erörterung Aufbau, Erörterung Tipps, Erörterung Schule, Erörterung Einleitung, Erörterung Argumente, freie Erörterung, dialektische Erörterung, Deutsch Klausur Erörterung | Schule & Studium | Vollständiger Guide zum Erörterung schreiben: Was ist eine Erörterung (freie vs. textgebundene), Dreischritt (These-Begründung-Beispiel), lineäre vs. dialektische Erörterung, Einleitung schreiben, Schluss mit klarer Meinung, Signalwörter für Übergänge, 5 häufige Fehler, Checkliste vor Abgabe, praktische Vorbereitungstipps. App-Erwähnung (Nachhilfe Mentor für Rückfragen und Argumentationslücken). Crosslinks zu deutsch-aufsatz-schreiben-tipps, feynman-technik-erklaeren-lernen, inhaltsangabe-schreiben-tipps. Rückverlinkung von deutsch-aufsatz-schreiben-tipps, inhaltsangabe-schreiben-tipps. |
 | 85 | 2026-04-25 | inhaltsangabe-schreiben-tipps | Inhaltsangabe schreiben: 7 Tipps für eine perfekte Zusammenfassung | Inhaltsangabe schreiben, Inhaltsangabe Tipps, Inhaltsangabe Aufbau, Inhaltsangabe schreiben Schule, Inhaltsangabe Einleitung, Inhaltsangabe Präsens, wie schreibt man eine Inhaltsangabe, Inhaltsangabe Klasse 7 8 9 | Schule & Studium | 7 Tipps zum Inhaltsangabe schreiben: immer im Präsens, indirekte statt direkte Rede, Text vorher aktiv lesen und Stichpunkte machen, kurz und präzise formulieren (kein Nacherzählen), keine eigene Meinung oder Wertung, abwechslungsreiche Verben nutzen, Einleitung zuletzt überarbeiten. Aufbau erklärt (Einleitung mit Textsorte/Titel/Autor/Jahr/Thema, Hauptteil chronologisch, Schluss mit Ergebnis). 5 häufige Fehler. Unterschied Inhaltsangabe vs. Zusammenfassung. App-Erwähnung (Nachhilfe Mentor für Textverständnis testen). Crosslinks zu zusammenfassung-schreiben-lernen, deutsch-aufsatz-schreiben-tipps. Rückverlinkung von deutsch-aufsatz-schreiben-tipps, zusammenfassung-schreiben-lernen. |
 | 87 | 2026-04-25 | charakterisierung-schreiben-tipps | Charakterisierung schreiben: Aufbau, Tipps und häufige Fehler | Charakterisierung schreiben, Charakterisierung Aufbau, Charakterisierung Tipps, Charakterisierung Schule, Charakterisierung Einleitung, Charakterisierung Hauptteil, Charakterisierung Schluss, Charakter beschreiben Deutsch, Deutsch Klausur Charakterisierung, Charakterisierung Klasse 8 | Schule & Studium | Vollständiger Guide zum Charakterisierung schreiben für Klasse 7-10: Was ist eine Charakterisierung (Analyse statt Nacherzählung), Dreigliederung (Einleitung/Hauptteil/Schluss), äußere vs. innere Merkmale unterscheiden, Textbelege richtig einbauen mit Behauptung-Beleg-Deutung, Formulierungshilfen für Eigenschaften/Entwicklung/Schluss, 5 häufige Fehler (Nacherzählen, fehlende Belege, Vergangenheitsform, Aufbau durcheinander, nur äußere Merkmale), Klausurvorbereitung, Checkliste vor Abgabe. App-Erwähnung (Nachhilfe Mentor für Active-Recall-Rückfragen zu Figuren). Crosslinks zu eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkung von eroerterung-schreiben-tipps. |
+| 88 | 2026-04-26 | textanalyse-schreiben-tipps | Textanalyse schreiben: Aufbau, Methode und häufige Fehler | Textanalyse schreiben, Textanalyse Aufbau, Textanalyse Deutsch Schule, Textanalyse Einleitung, Textanalyse Hauptteil, sprachliche Mittel analysieren, Textanalyse Tipps, Textanalyse Abitur, literarische Textanalyse, Stilmittel bestimmen | Schule & Studium | Vollständige Anleitung zum Textanalyse schreiben: Textsorte, aktives Lesen mit Markierungen, Einleitungssatz mit W-Fragen und Analysethese, Hauptteil aus Inhaltsangabe + Strukturanalyse + sprachlicher Analyse (Beleg-Mittel-Wirkung-Schema), 8 wichtige Stilmittel mit Beispielen und Formulierungsmuster, Schluss ohne neue Beispiele, Abgrenzung zu Charakterisierung und Erörterung, 5 häufige Fehler, Checkliste vor Abgabe. App-Erwähnung (Stilmittel üben mit Rückfragen). Crosslinks zu inhaltsangabe-schreiben-tipps, charakterisierung-schreiben-tipps, eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK, Interleaving Methode, Lernstil finden
@@ -148,9 +149,18 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - charakterisierung-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Aufsatzkompetenz allgemein vertiefen)
 - eroerterung-schreiben-tipps -> charakterisierung-schreiben-tipps (Rückverlinkung: Figurenanalyse als weitere Deutsch-Aufgabenform)
 
+## Interne Verlinkungen (Ergänzung Artikel 88)
+- textanalyse-schreiben-tipps -> inhaltsangabe-schreiben-tipps (Hauptteil: Inhaltsangabe als erster Schritt der Analyse)
+- textanalyse-schreiben-tipps -> charakterisierung-schreiben-tipps (Abgrenzung: Charakterisierung als verwandte Aufgabenform)
+- textanalyse-schreiben-tipps -> eroerterung-schreiben-tipps (Abgrenzung: Erörterung als weitere Aufsatzform)
+- textanalyse-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Fazit: allgemeine Aufsatztipps als Vertiefung)
+- eroerterung-schreiben-tipps -> textanalyse-schreiben-tipps (Rückverlinkung: Textanalyse als weiterer Schreibaufgaben-Cluster-Artikel)
+- deutsch-aufsatz-schreiben-tipps -> textanalyse-schreiben-tipps (Rückverlinkung: Textanalyse bei "Textanalysen und Interpretationen")
+
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
   Prüfungsvorbereitung, effektiv lernen,
+  <!-- Textanalyse schreiben, Textanalyse Aufbau, sprachliche Mittel analysieren → verwendet in Artikel #88 -->
   <!-- Erörterung schreiben, Erörterung Aufbau, Erörterung Tipps → verwendet in Artikel #86 -->
   <!-- Inhaltsangabe schreiben, Inhaltsangabe Tipps → verwendet in Artikel #85 -->
   <!-- Lernstil finden, eigener Lernstil, Lernstrategie entwickeln → verwendet in Artikel #84 -->
