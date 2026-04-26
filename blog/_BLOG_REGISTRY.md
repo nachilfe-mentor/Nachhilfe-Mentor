@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 89
+- Gesamtzahl Artikel: 90
 - Letzte Veröffentlichung: 2026-04-26
 - Nächster geplanter Post: TBD
 
@@ -102,6 +102,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 87 | 2026-04-25 | charakterisierung-schreiben-tipps | Charakterisierung schreiben: Aufbau, Tipps und häufige Fehler | Charakterisierung schreiben, Charakterisierung Aufbau, Charakterisierung Tipps, Charakterisierung Schule, Charakterisierung Einleitung, Charakterisierung Hauptteil, Charakterisierung Schluss, Charakter beschreiben Deutsch, Deutsch Klausur Charakterisierung, Charakterisierung Klasse 8 | Schule & Studium | Vollständiger Guide zum Charakterisierung schreiben für Klasse 7-10: Was ist eine Charakterisierung (Analyse statt Nacherzählung), Dreigliederung (Einleitung/Hauptteil/Schluss), äußere vs. innere Merkmale unterscheiden, Textbelege richtig einbauen mit Behauptung-Beleg-Deutung, Formulierungshilfen für Eigenschaften/Entwicklung/Schluss, 5 häufige Fehler (Nacherzählen, fehlende Belege, Vergangenheitsform, Aufbau durcheinander, nur äußere Merkmale), Klausurvorbereitung, Checkliste vor Abgabe. App-Erwähnung (Nachhilfe Mentor für Active-Recall-Rückfragen zu Figuren). Crosslinks zu eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkung von eroerterung-schreiben-tipps. |
 | 88 | 2026-04-26 | textanalyse-schreiben-tipps | Textanalyse schreiben: Aufbau, Methode und häufige Fehler | Textanalyse schreiben, Textanalyse Aufbau, Textanalyse Deutsch Schule, Textanalyse Einleitung, Textanalyse Hauptteil, sprachliche Mittel analysieren, Textanalyse Tipps, Textanalyse Abitur, literarische Textanalyse, Stilmittel bestimmen | Schule & Studium | Vollständige Anleitung zum Textanalyse schreiben: Textsorte, aktives Lesen mit Markierungen, Einleitungssatz mit W-Fragen und Analysethese, Hauptteil aus Inhaltsangabe + Strukturanalyse + sprachlicher Analyse (Beleg-Mittel-Wirkung-Schema), 8 wichtige Stilmittel mit Beispielen und Formulierungsmuster, Schluss ohne neue Beispiele, Abgrenzung zu Charakterisierung und Erörterung, 5 häufige Fehler, Checkliste vor Abgabe. App-Erwähnung (Stilmittel üben mit Rückfragen). Crosslinks zu inhaltsangabe-schreiben-tipps, charakterisierung-schreiben-tipps, eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. |
 | 89 | 2026-04-26 | gedichtanalyse-schreiben-tipps | Gedichtanalyse schreiben: Aufbau, Stilmittel und häufige Fehler | Gedichtanalyse schreiben, Gedichtanalyse Aufbau, Gedicht analysieren, Gedichtanalyse Deutsch, Gedicht interpretieren, Stilmittel Gedicht, Gedichtanalyse Tipps, Gedichtanalyse Abitur, lyrische Mittel, Gedicht Analyse Schule | Schule & Studium | Vollständige Anleitung zum Gedichtanalyse schreiben: aktives Lesen mit Leitfragen, formale Analyse (Strophenform, Reimschema, Metrum, Kadenzen, Enjambement mit Wirkungsdeutung), wichtige Stilmittel (Metapher, Personifikation, Vergleich, Anapher, Alliteration, Chiasmus, Oxymoron) mit Beleg-Mittel-Wirkung-Schema, Aufbau (Einleitung mit Analysethese, Hauptteil in drei Teilen, Schluss mit Gesamtaussage), Formulierungshilfen, 5 häufige Fehler, Checkliste. App-Erwähnung (Stilmittel per Active Recall testen). Crosslinks zu textanalyse-schreiben-tipps, charakterisierung-schreiben-tipps, eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps und deutsch-aufsatz-schreiben-tipps. |
+| 90 | 2026-04-26 | bewerbungsschreiben-schreiben-tipps | Bewerbungsschreiben schreiben: Aufbau, Tipps und häufige Fehler | Bewerbungsschreiben schreiben, Bewerbungsschreiben Aufbau, Bewerbungsschreiben Tipps, Bewerbung schreiben Schüler, Bewerbungsschreiben Ausbildung, Bewerbungsschreiben Praktikum, Bewerbung schreiben Tipps, Bewerbungsschreiben Einleitung, gutes Bewerbungsschreiben | Schule & Studium | Vollständiger Guide zum Bewerbungsschreiben schreiben: Unterschied zum Motivationsschreiben, Aufbau (Briefkopf, Betreff, Anrede, Einleitung, Hauptteil, Schlussteil), 7 Tipps (Unternehmensrecherche, starker Einstieg, konkrete Beispiele statt Allgemeinaussagen, zentrale Fragen des Personals beantworten, aktiver Schlussteil, individuelle Anpassung, Gegenlesen), häufige Fehler (Hiermit-Einstieg, Lebenslauf wiederholen, zu lang, fehlender Unternehmensbezug, Konjunktive, falscher Name). App-Erwähnung (Nachhilfe Mentor für Wissenslücken im Schulfach Deutsch). Crosslinks zu motivationsschreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkung von motivationsschreiben-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK, Interleaving Methode, Lernstil finden
@@ -163,10 +164,14 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - gedichtanalyse-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Fazit: allgemeine Aufsatztipps als Vertiefung)
 - eroerterung-schreiben-tipps -> gedichtanalyse-schreiben-tipps (Rückverlinkung: Gedichtanalyse als weiterer Schreibaufgaben-Cluster-Artikel)
 - deutsch-aufsatz-schreiben-tipps -> gedichtanalyse-schreiben-tipps (Rückverlinkung: Gedichtanalyse als spezifischer Aufsatztyp)
+- bewerbungsschreiben-schreiben-tipps -> motivationsschreiben-tipps (Abgrenzung: Motivationsschreiben als persönlichere Alternative für Hochschulen)
+- bewerbungsschreiben-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Allgemeine Schreibkompetenz als Vertiefung)
+- motivationsschreiben-tipps -> bewerbungsschreiben-schreiben-tipps (Rückverlinkung: Bewerbungsschreiben als klassisches Anschreiben für Ausbildung/Job)
 
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
   Prüfungsvorbereitung, effektiv lernen,
+  <!-- Bewerbungsschreiben schreiben, Bewerbungsschreiben Aufbau, Bewerbung Ausbildung → verwendet in Artikel #90 -->
   <!-- Textanalyse schreiben, Textanalyse Aufbau, sprachliche Mittel analysieren → verwendet in Artikel #88 -->
   <!-- Erörterung schreiben, Erörterung Aufbau, Erörterung Tipps → verwendet in Artikel #86 -->
   <!-- Inhaltsangabe schreiben, Inhaltsangabe Tipps → verwendet in Artikel #85 -->
