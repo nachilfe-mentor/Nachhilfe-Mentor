@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 26 Apr 2026 09:26:22 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 17:31:58 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Motivationsschreiben schreiben: So überzeugst du Hochschulen und Arbeitgeber</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</guid>
+      <pubDate>Sun, 26 Apr 2026 17:30:49 +0000</pubDate>
+      <description>Motivationsschreiben schreiben leicht gemacht: Aufbau, Tipps und häufige Fehler vermeiden. So stellst du dich überzeugend vor und bekommst den Studienplatz.</description>
+      <category>Studium &amp; Karriere</category>
+    </item>
+    <item>
+      <title>Bewerbungsschreiben schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/bewerbungsschreiben-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/bewerbungsschreiben-schreiben-tipps.html</guid>
+      <pubDate>Sun, 26 Apr 2026 17:29:57 +0000</pubDate>
+      <description>Bewerbungsschreiben schreiben: So überzeugst du mit Aufbau, Inhalt und den richtigen Formulierungen. Inkl. Schritt-für-Schritt-Anleitung und häufige Fehler.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
       <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 23 Apr 2026 00:23:29 +0000</pubDate>
       <description>Zeitmanagement im Studium verbessern: 8 erprobte Tipps, mit denen du Vorlesungen, Lernen und Freizeit unter einen Hut bekommst.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Online studieren: 8 Tipps für ein erfolgreiches Fernstudium</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/online-studieren-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/online-studieren-tipps.html</guid>
-      <pubDate>Thu, 23 Apr 2026 00:22:40 +0000</pubDate>
-      <description>Online studieren und Fernstudium erfolgreich meistern: 8 konkrete Tipps für Selbstorganisation, Lernroutine und Motivation im digitalen Studium.</description>
-      <category>Studium &amp; Karriere</category>
-    </item>
-    <item>
-      <title>Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</guid>
-      <pubDate>Wed, 22 Apr 2026 16:18:52 +0000</pubDate>
-      <description>Wissenschaftliches Arbeiten leicht gemacht: So schreibst du eine Hausarbeit oder Seminararbeit Schritt für Schritt. Mit Tipps zu Struktur, Quellen und Zitieren.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
