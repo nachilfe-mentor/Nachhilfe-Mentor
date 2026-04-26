@@ -5,14 +5,30 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 25 Apr 2026 17:15:04 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 01:20:46 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
+      <pubDate>Sun, 26 Apr 2026 01:19:27 +0000</pubDate>
+      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</guid>
-      <pubDate>Sat, 25 Apr 2026 17:13:41 +0000</pubDate>
+      <pubDate>Sun, 26 Apr 2026 01:19:16 +0000</pubDate>
       <description>Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und die häufigsten Fehler, die du vermeiden solltest. Mit praktischen Beispielen für Klasse 8-12.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Textanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</guid>
+      <pubDate>Sun, 26 Apr 2026 01:18:45 +0000</pubDate>
+      <description>Textanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Einleitung, Hauptteil und Schluss. Tipps für Schüler der Klassen 8-12 mit konkreten Beispielen.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -29,14 +45,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/inhaltsangabe-schreiben-tipps.html</guid>
       <pubDate>Sat, 25 Apr 2026 09:07:09 +0000</pubDate>
       <description>Inhaltsangabe schreiben leicht gemacht: 7 Tipps für Aufbau, Sprache und häufige Fehler. So schreibst du eine perfekte Inhaltsangabe in der Schule.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Sat, 25 Apr 2026 09:06:45 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 22 Apr 2026 16:18:11 +0000</pubDate>
       <description>Das erste Semester ist eine Herausforderung. Mit diesen 9 Tipps meisterst du deinen Uni-Start, lernst effektiv und vermeidest typische Erstsemester-Fehler.</description>
       <category>Studium &amp; Karriere</category>
-    </item>
-    <item>
-      <title>Klausurvorbereitung letzte Woche: So holst du das Maximum raus</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/klausurvorbereitung-letzte-woche.html</guid>
-      <pubDate>Wed, 22 Apr 2026 08:13:01 +0000</pubDate>
-      <description>Nur noch eine Woche bis zur Klausur? Kein Grund zur Panik. Mit diesem Notfallplan lernst du gezielt, priorisierst den wichtigsten Stoff und gehst sicher in die Prüfung.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
