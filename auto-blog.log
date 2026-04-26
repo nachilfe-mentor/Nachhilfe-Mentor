@@ -3496,3 +3496,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier die abschließende Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `charakterisierung-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/charakterisierung-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `eroerterung-schreiben-tipps.html`, Links im neuen Artikel zu `eroerterung-schreiben-tipps.html` und `deutsch-aufsatz-schreiben-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #87, Gesamtzahl 87)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (93 URLs in Sitemap, 89 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoelnnyu03tiq70yz5v28bi2`
+
+**Analytics-Notiz:** Google organisch auf 32 Sessions (Allzeithoch). Schreibaufgaben-Cluster gut gewählt: `deutsch-aufsatz-schreiben-tipps.html` zeigt 355s Verweildauer trotz nur 1 View. Der neue Artikel "Charakterisierung schreiben" ergänzt den Cluster (Erörterung + Inhaltsangabe + Deutschaufsatz bereits vorhanden) und schließt eine klare Suchlücke für Klasse 7-10.
+[2026-04-25 17:15:04] Blog cycle completed successfully.
+[2026-04-25 17:15:04] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 93 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 89 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 89 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 93 URLs in Sitemap, 20 Artikel im Feed.
+[main 21ddc86] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   471cdf0..21ddc86  main -> main
+[2026-04-25 17:15:04] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: charakterisierung-schreiben-tipps
+  Titel: Charakterisierung schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Charakterisierung schreiben leicht gemacht: Aufbau, Formulierungen und die häufi...
+[Pinterest] Erstelle Pin fuer: Charakterisierung schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/charakterisierung-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/charakterisierung-schreiben-tipps.html
+[Pinterest] Uploading charakterisierung-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=7803b0b0-e7eb-46ae-b983-0a4d39d0130d
+[Pinterest] Pin erstellt! Post-ID: cmoelo2jm03kymt0ydy012gm0
+[Pinterest] Erfolgreich! Pin-ID: cmoelo2jm03kymt0ydy012gm0
+
+[Pinterest-Fallback] OK: charakterisierung-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-25 17:15:04] Next run in 8 hours.
+---
+[2026-04-26 01:15:07] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
