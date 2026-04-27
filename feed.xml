@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 27 Apr 2026 01:38:28 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 09:43:40 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
+      <pubDate>Mon, 27 Apr 2026 09:42:50 +0000</pubDate>
+      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Wirtschaft lernen: 7 Tipps, mit denen du BWL und VWL wirklich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/wirtschaft-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/wirtschaft-lernen-tipps.html</guid>
+      <pubDate>Mon, 27 Apr 2026 09:41:57 +0000</pubDate>
+      <description>Wirtschaft lernen leicht gemacht: Mit diesen 7 Tipps verstehst du BWL, VWL und Wirtschaftskunde wirklich, erkennst Zusammenhänge und holst bessere Noten.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 23 Apr 2026 16:34:13 +0000</pubDate>
       <description>Referat schreiben leicht gemacht: Schritt-für-Schritt-Anleitung von der Themenwahl über die Gliederung bis zur fertigen Ausarbeitung. Mit Tipps für Einleitung, Hauptteil und Schluss.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Karteikarten lernen: So nutzt du Lernkarten wirklich effektiv</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/karteikarten-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/karteikarten-lernen-tipps.html</guid>
-      <pubDate>Thu, 23 Apr 2026 08:29:00 +0000</pubDate>
-      <description>Karteikarten lernen richtig gemacht: 8 Tipps für maximale Effizienz. Wie du Lernkarten erstellst, welche Fehler du vermeidest und ob digital oder physisch besser ist.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Zettelkasten Methode: Wissen vernetzen und dauerhaft behalten</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zettelkasten-methode-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zettelkasten-methode-lernen.html</guid>
-      <pubDate>Thu, 23 Apr 2026 08:28:16 +0000</pubDate>
-      <description>Die Zettelkasten Methode erklärt: Wie du mit vernetzten Notizen Wissen dauerhaft speicherst und schneller lernst. Schritt-für-Schritt-Anleitung für Schüler und Studenten.</description>
-      <category>Lernmethoden</category>
     </item>
   </channel>
 </rss>
