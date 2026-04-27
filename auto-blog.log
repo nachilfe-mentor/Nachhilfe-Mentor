@@ -3698,3 +3698,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `deutsch-grammatik-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/deutsch-grammatik-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rücklinks in `deutsch-aufsatz-schreiben-tipps.html` und `eroerterung-schreiben-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (91 Artikel, Stand 2026-04-27)
+- [x] Git Push: erfolgreich (3 Commits gepusht)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (97 URLs in Sitemap, 93 URLs an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmogj2yu002lwlh0y8qu6alun`
+
+**Analytics-Lage:** 148 Views, 33 Google-Sessions. Schreibaufgaben-Cluster und fachspezifische Artikel performen gut. Artikel #91 bedient den explizit in der Strategie empfohlenen "Deutsch Grammatik lernen"-Longtail mit hohem Suchvolumen für Schüler der Klassen 5-12.
+[2026-04-27 01:38:28] Blog cycle completed successfully.
+[2026-04-27 01:38:28] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 97 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 93 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 93 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 97 URLs in Sitemap, 20 Artikel im Feed.
+[main 417c520] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   c14f549..417c520  main -> main
+[2026-04-27 01:38:28] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: deutsch-grammatik-lernen-tipps
+  Titel: Deutsch Grammatik lernen: 8 Tipps für bessere Sprachkenntnisse
+  Desc:  Deutsch Grammatik lernen leicht gemacht: 8 Tipps für bessere Kommasetzung, Falle...
+[Pinterest] Erstelle Pin fuer: Deutsch Grammatik lernen: 8 Tipps für bessere Sprachkenntnisse
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/deutsch-grammatik-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/deutsch-grammatik-lernen-tipps.html
+[Pinterest] Uploading deutsch-grammatik-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=ef5400bc-08ba-4602-93ea-bc5b5f4f329c
+[Pinterest] Pin erstellt! Post-ID: cmogj3ah502lylh0yoqihqfpb
+[Pinterest] Erfolgreich! Pin-ID: cmogj3ah502lylh0yoqihqfpb
+
+[Pinterest-Fallback] OK: deutsch-grammatik-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-27 01:38:28] Next run in 8 hours.
+---
+[2026-04-27 09:38:31] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
