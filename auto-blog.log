@@ -3648,3 +3648,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `bewerbungsschreiben-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/bewerbungsschreiben-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (in `motivationsschreiben-tipps.html` Link auf neuen Artikel eingefügt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (90 Artikel)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (96 URLs in Sitemap, 92 URLs an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt. Pin-ID: `cmog1pyvg01vcrg0ygef1ugf8`
+
+**Artikel #90:** "Bewerbungsschreiben schreiben: Aufbau, Tipps und häufige Fehler". Thema hat sehr hohes Suchvolumen (Schüler für Ausbildung/Praktikum), ergänzt den Schreibaufgaben-Cluster und grenzt sich klar vom bestehenden Motivationsschreiben-Artikel ab.
+[2026-04-26 17:32:32] Blog cycle completed successfully.
+[2026-04-26 17:32:32] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 96 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 92 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 92 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 96 URLs in Sitemap, 20 Artikel im Feed.
+[main 6d60022] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   14f0d65..6d60022  main -> main
+[2026-04-26 17:32:32] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: bewerbungsschreiben-schreiben-tipps
+  Titel: Bewerbungsschreiben schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Bewerbungsschreiben schreiben: So überzeugst du mit Aufbau, Inhalt und den richt...
+[Pinterest] Erstelle Pin fuer: Bewerbungsschreiben schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/bewerbungsschreiben-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/bewerbungsschreiben-schreiben-tipps.html
+[Pinterest] Uploading bewerbungsschreiben-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=83eec69e-fcbf-4087-a27a-80621d3ac888
+[Pinterest] Pin erstellt! Post-ID: cmog1qdox01vhrg0y43fy859h
+[Pinterest] Erfolgreich! Pin-ID: cmog1qdox01vhrg0y43fy859h
+
+[Pinterest-Fallback] OK: bewerbungsschreiben-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-26 17:32:32] Next run in 8 hours.
+---
+[2026-04-27 01:32:35] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
