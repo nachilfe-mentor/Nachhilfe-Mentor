@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 27 Apr 2026 09:44:04 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 17:49:57 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/gedaechtnis-techniken-lernen.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/gedaechtnis-techniken-lernen.html</guid>
+      <pubDate>Mon, 27 Apr 2026 17:49:06 +0000</pubDate>
+      <description>Lerne 5 bewährte Gedächtnistechniken kennen, mit denen du dir Fakten, Vokabeln und Formeln dauerhaft merkst. Loci-Methode, Eselsbrücken, Chunking und mehr.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Auswendig lernen: 7 Tipps, mit denen du dir Stoff wirklich merkst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/auswendig-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/auswendig-lernen-tipps.html</guid>
+      <pubDate>Mon, 27 Apr 2026 17:48:20 +0000</pubDate>
+      <description>Auswendig lernen fühlt sich mühsam an? Mit diesen 7 Tipps merkst du dir Vokabeln, Gedichte und Fachbegriffe schneller und dauerhaft. Kein stumpfes Wiederholen mehr.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 24 Apr 2026 00:39:15 +0000</pubDate>
       <description>Bachelorarbeit schreiben leicht gemacht: So findest du ein Thema, strukturierst deine Arbeit, recherchierst Quellen und schreibst deine Abschlussarbeit erfolgreich.</description>
       <category>Studium &amp; Karriere</category>
-    </item>
-    <item>
-      <title>Referat halten: 8 Tipps, mit denen du souverän präsentierst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</guid>
-      <pubDate>Thu, 23 Apr 2026 16:34:45 +0000</pubDate>
-      <description>Referat halten leicht gemacht: 8 bewährte Tipps für Aufbau, freies Sprechen und souveränes Präsentieren in Schule und Studium.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Referat schreiben: So bereitest du ein überzeugendes Referat vor</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/referat-schreiben-anleitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/referat-schreiben-anleitung.html</guid>
-      <pubDate>Thu, 23 Apr 2026 16:34:13 +0000</pubDate>
-      <description>Referat schreiben leicht gemacht: Schritt-für-Schritt-Anleitung von der Themenwahl über die Gliederung bis zur fertigen Ausarbeitung. Mit Tipps für Einleitung, Hauptteil und Schluss.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
