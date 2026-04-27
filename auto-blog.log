@@ -3748,3 +3748,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `wirtschaft-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/wirtschaft-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung aus `mathe-lernen-tipps.html` im Fazit ergänzt; neue Artikel verlinkt auf feynman-technik, active-recall, mathe-lernen-tipps, lernplan-erstellen-tipps)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md`
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefürt (98 URLs in Sitemap, 94 an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefürt — Pin-ID: `cmoh0fev500dpo70yu4d0ddgy`
+
+**Analytics-Hinweis:** Fachspezifische Artikel (Erdkunde 6 Views, Latein 2 Views letzte 7 Tage) ranken schnell. Wirtschaft als Gymnasial-Pflichtfach hat hohes Suchpotenzial und war bisher nicht abgedeckt.
+[2026-04-27 09:44:04] Blog cycle completed successfully.
+[2026-04-27 09:44:04] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 98 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 94 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 94 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 98 URLs in Sitemap, 20 Artikel im Feed.
+[main 6655375] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   fc90f8c..6655375  main -> main
+[2026-04-27 09:44:04] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: wirtschaft-lernen-tipps
+  Titel: Wirtschaft lernen: 7 Tipps, mit denen du BWL und VWL wirklich verstehst
+  Desc:  Wirtschaft lernen leicht gemacht: Mit diesen 7 Tipps verstehst du BWL, VWL und W...
+[Pinterest] Erstelle Pin fuer: Wirtschaft lernen: 7 Tipps, mit denen du BWL und VWL wirklich verstehst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/wirtschaft-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/wirtschaft-lernen-tipps.html
+[Pinterest] Uploading wirtschaft-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=382a9270-977f-4033-aa1b-ee17ac717cd7
+[Pinterest] Pin erstellt! Post-ID: cmoh0frno00emo70y2fybza6v
+[Pinterest] Erfolgreich! Pin-ID: cmoh0frno00emo70y2fybza6v
+
+[Pinterest-Fallback] OK: wirtschaft-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-27 09:44:04] Next run in 8 hours.
+---
+[2026-04-27 17:44:07] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
