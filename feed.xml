@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 26 Apr 2026 17:32:32 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Apr 2026 01:38:06 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</guid>
+      <pubDate>Mon, 27 Apr 2026 01:37:15 +0000</pubDate>
+      <description>Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und die häufigsten Fehler, die du vermeiden solltest. Mit praktischen Beispielen für Klasse 8-12.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
+      <pubDate>Mon, 27 Apr 2026 01:37:04 +0000</pubDate>
+      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Deutsch Grammatik lernen: 8 Tipps für bessere Sprachkenntnisse</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-grammatik-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-grammatik-lernen-tipps.html</guid>
+      <pubDate>Mon, 27 Apr 2026 01:36:21 +0000</pubDate>
+      <description>Deutsch Grammatik lernen leicht gemacht: 8 Tipps für bessere Kommasetzung, Fallendungen und Satzbau. So wirst du in Deutsch schnell wirklich besser.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Motivationsschreiben schreiben: So überzeugst du Hochschulen und Arbeitgeber</title>
       <link>https://nachhilfe-mentor.de/blog/posts/motivationsschreiben-tipps.html</link>
@@ -21,22 +45,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/bewerbungsschreiben-schreiben-tipps.html</guid>
       <pubDate>Sun, 26 Apr 2026 17:29:57 +0000</pubDate>
       <description>Bewerbungsschreiben schreiben: So überzeugst du mit Aufbau, Inhalt und den richtigen Formulierungen. Inkl. Schritt-für-Schritt-Anleitung und häufige Fehler.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Sun, 26 Apr 2026 09:25:13 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</guid>
-      <pubDate>Sun, 26 Apr 2026 09:25:02 +0000</pubDate>
-      <description>Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und die häufigsten Fehler, die du vermeiden solltest. Mit praktischen Beispielen für Klasse 8-12.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 23 Apr 2026 08:28:16 +0000</pubDate>
       <description>Die Zettelkasten Methode erklärt: Wie du mit vernetzten Notizen Wissen dauerhaft speicherst und schneller lernst. Schritt-für-Schritt-Anleitung für Schüler und Studenten.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Zeitmanagement Studium: 8 Tipps für mehr Produktivität</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zeitmanagement-studium-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zeitmanagement-studium-tipps.html</guid>
-      <pubDate>Thu, 23 Apr 2026 00:23:29 +0000</pubDate>
-      <description>Zeitmanagement im Studium verbessern: 8 erprobte Tipps, mit denen du Vorlesungen, Lernen und Freizeit unter einen Hut bekommst.</description>
-      <category>Motivation &amp; Produktivität</category>
     </item>
   </channel>
 </rss>
