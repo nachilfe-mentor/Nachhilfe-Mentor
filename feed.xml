@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Tue, 28 Apr 2026 01:55:16 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 10:02:49 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Gedichtanalyse schreiben: Aufbau, Stilmittel und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/gedichtanalyse-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/gedichtanalyse-schreiben-tipps.html</guid>
+      <pubDate>Tue, 28 Apr 2026 10:02:03 +0000</pubDate>
+      <description>Gedichtanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Aufbau, Stilmittel und Interpretation. Mit Formulierungshilfen und Checkliste für Schule und Abitur.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Textanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</guid>
+      <pubDate>Tue, 28 Apr 2026 10:01:56 +0000</pubDate>
+      <description>Textanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Einleitung, Hauptteil und Schluss. Tipps für Schüler der Klassen 8-12 mit konkreten Beispielen.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Stilmittel: Die wichtigsten sprachlichen Mittel mit Beispielen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/stilmittel-liste-beispiele.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/stilmittel-liste-beispiele.html</guid>
+      <pubDate>Tue, 28 Apr 2026 10:01:08 +0000</pubDate>
+      <description>Die wichtigsten Stilmittel und rhetorischen Mittel mit Beispielen und Wirkung erklärt – für Textanalyse, Gedichtanalyse und Deutschklausur. Metapher, Alliteration, Chiasmus und mehr.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
       <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
@@ -88,22 +112,6 @@
       <category>Schule &amp; Studium</category>
     </item>
     <item>
-      <title>Gedichtanalyse schreiben: Aufbau, Stilmittel und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/gedichtanalyse-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/gedichtanalyse-schreiben-tipps.html</guid>
-      <pubDate>Sun, 26 Apr 2026 09:24:29 +0000</pubDate>
-      <description>Gedichtanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Aufbau, Stilmittel und Interpretation. Mit Formulierungshilfen und Checkliste für Schule und Abitur.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Textanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</guid>
-      <pubDate>Sun, 26 Apr 2026 01:18:45 +0000</pubDate>
-      <description>Textanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Einleitung, Hauptteil und Schluss. Tipps für Schüler der Klassen 8-12 mit konkreten Beispielen.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
       <title>Charakterisierung schreiben: Aufbau, Tipps und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/charakterisierung-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/charakterisierung-schreiben-tipps.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 24 Apr 2026 08:44:28 +0000</pubDate>
       <description>Interleaving Methode erklärt: Warum Themenwechsel beim Lernen nachweislich besser funktioniert als Blocklernen. Mit praktischen Tipps für Schule und Studium.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Hausarbeit schreiben: Schritt-für-Schritt-Anleitung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</guid>
-      <pubDate>Fri, 24 Apr 2026 00:39:54 +0000</pubDate>
-      <description>Hausarbeit schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. Aufbau, Gliederung, Quellen, Zitieren und häufige Fehler vermeiden.</description>
-      <category>Studium &amp; Schule</category>
     </item>
   </channel>
 </rss>
