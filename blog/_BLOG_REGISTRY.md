@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 93
-- Letzte Veröffentlichung: 2026-04-27
+- Gesamtzahl Artikel: 94
+- Letzte Veröffentlichung: 2026-04-28
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -106,6 +106,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 92 | 2026-04-27 | wirtschaft-lernen-tipps | Wirtschaft lernen: 7 Tipps, mit denen du BWL und VWL wirklich verstehst | Wirtschaft lernen, Wirtschaft lernen Tipps, BWL lernen, VWL lernen, Wirtschaft Schule, Wirtschaftskunde lernen, Wirtschaft Klausur, Wirtschaft besser verstehen, Wirtschaft Gymnasium | Fachspezifische Lerntipps | 7 Tipps zum Wirtschaft lernen: Zusammenhänge verstehen statt Definitionen auswendig lernen, Wirtschaftsmodelle selbst zeichnen und durchdenken (Feynman-Methode), Nachrichten mit Schulstoff verknüpfen, Fachbegriffe per Active Recall üben, echte Transferaufgaben lösen (Vierschritt-Methode), Rechenaufgaben wirklich verstehen (Prozentrechnungen, Indices), strukturierten Lernplan erstellen (Diagnose/Erarbeitung/Generalprobe). Häufige Fehler: Definitionen ohne Verständnis, Modelle nur anschauen, Alltag und Stoff trennen. App-Erwähnung (Wissenslücken in Wirtschaft gezielt trainieren). Crosslinks zu feynman-technik-erklaeren-lernen, active-recall-lerntechnik, mathe-lernen-tipps, lernplan-erstellen-tipps. Rückverlinkung von mathe-lernen-tipps. |
 | 91 | 2026-04-27 | deutsch-grammatik-lernen-tipps | Deutsch Grammatik lernen: 8 Tipps für bessere Sprachkenntnisse | Deutsch Grammatik lernen, Grammatik lernen Tipps, Grammatik verbessern, Deutsch Grammatik Schule, Grammatikregeln lernen, Deutsch besser werden, Grammatik üben, Rechtschreibung verbessern, Deutsche Grammatik Tipps | Schule & Studium | 8 Tipps zum Deutsch Grammatik lernen: Verstehen statt Auswendiglernen (Fallprinzip), ein Thema nach dem anderen meistern (Mastery Learning), aktiv üben statt passiv lesen (Active Recall, Eigene Sätze), Fehler analysieren statt korrigieren (Fehler-Notizbuch), Grammatik im Kontext lernen (echte Texte analysieren), regelmäßig üben mit Spaced Repetition (Karteikarten 10-15 Min täglich), Schreiben als Grammatiktraining (3 Überarbeitungsdurchgänge), wichtigste Themen priorisieren (Komma, Groß/Klein, Kasus, Zeitformen). App-Erwähnung (Nachhilfe Mentor erkennt Wissenslücken und fragt gezielt nach). Crosslinks zu active-recall-lerntechnik, deutsch-aufsatz-schreiben-tipps, eroerterung-schreiben-tipps, zusammenfassung-schreiben-lernen. Rückverlinkungen von deutsch-aufsatz-schreiben-tipps, eroerterung-schreiben-tipps. |
 | 90 | 2026-04-26 | bewerbungsschreiben-schreiben-tipps | Bewerbungsschreiben schreiben: Aufbau, Tipps und häufige Fehler | Bewerbungsschreiben schreiben, Bewerbungsschreiben Aufbau, Bewerbungsschreiben Tipps, Bewerbung schreiben Schüler, Bewerbungsschreiben Ausbildung, Bewerbungsschreiben Praktikum, Bewerbung schreiben Tipps, Bewerbungsschreiben Einleitung, gutes Bewerbungsschreiben | Schule & Studium | Vollständiger Guide zum Bewerbungsschreiben schreiben: Unterschied zum Motivationsschreiben, Aufbau (Briefkopf, Betreff, Anrede, Einleitung, Hauptteil, Schlussteil), 7 Tipps (Unternehmensrecherche, starker Einstieg, konkrete Beispiele statt Allgemeinaussagen, zentrale Fragen des Personals beantworten, aktiver Schlussteil, individuelle Anpassung, Gegenlesen), häufige Fehler (Hiermit-Einstieg, Lebenslauf wiederholen, zu lang, fehlender Unternehmensbezug, Konjunktive, falscher Name). App-Erwähnung (Nachhilfe Mentor für Wissenslücken im Schulfach Deutsch). Crosslinks zu motivationsschreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkung von motivationsschreiben-tipps. |
+| 94 | 2026-04-28 | kommentar-schreiben-tipps | Kommentar schreiben: Aufbau, Tipps und häufige Fehler | Kommentar schreiben, Kommentar schreiben Tipps, Kommentar Aufbau, Kommentar Deutsch Schule, Kommentar schreiben Klausur, Kommentar Einleitung, Kommentar Argumente, Kommentar Schluss, Kommentar Abitur, meinungsbetonter Kommentar | Schule & Studium | Vollständiger Guide zum Kommentar schreiben: Was ist ein Kommentar (freier vs. textbasierter), Dreigliederung (Einleitung mit These, Hauptteil mit Dreischritt These-Begründung-Beispiel, Schluss mit Fazit), Sanduhr-Prinzip für Argumentreihenfolge, Signalwörter für Übergänge, 4 Tipps für starke Argumente, 5 häufige Fehler (kein Standpunkt, Argumente ohne Begründung, falsche Textsorte, zu viel Ich, neues Argument im Schluss), Checkliste vor Abgabe. App-Erwähnung (Nachhilfe Mentor für Rückfragen zu Aufbau und Argumentationsstruktur). Crosslinks zu eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps, textanalyse-schreiben-tipps, inhaltsangabe-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK, Interleaving Methode, Lernstil finden
@@ -186,10 +187,17 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - auswendig-lernen-tipps -> gedaechtnis-techniken-lernen (Eselsbrücken und Loci-Methode als Gedächtnistechniken)
 - auswendig-lernen-tipps -> karteikarten-lernen-tipps (Karteikarten als praktisches Werkzeug für Spaced Repetition)
 - gedaechtnis-techniken-lernen -> auswendig-lernen-tipps (Rückverlinkung: Gedächtnistechniken konkret beim Auswendiglernen einsetzen)
+- kommentar-schreiben-tipps -> eroerterung-schreiben-tipps (Erörterung als verwandte Aufsatzform mit ähnlicher Argumentationsstruktur)
+- kommentar-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Allgemeine Aufsatzkompetenz als Vertiefung)
+- kommentar-schreiben-tipps -> textanalyse-schreiben-tipps (Textbasierter Kommentar: Ausgangstext analysieren)
+- kommentar-schreiben-tipps -> inhaltsangabe-schreiben-tipps (Textbasierter Kommentar: Inhaltsangabe als Einstieg)
+- eroerterung-schreiben-tipps -> kommentar-schreiben-tipps (Rückverlinkung: Kommentar als meinungsbetonter Schreibaufgaben-Typ)
+- deutsch-aufsatz-schreiben-tipps -> kommentar-schreiben-tipps (Rückverlinkung: Kommentar als spezifischer Aufsatztyp)
 
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
   Prüfungsvorbereitung, effektiv lernen,
+  <!-- Kommentar schreiben, Kommentar Aufbau, meinungsbetonter Kommentar → verwendet in Artikel #94 -->
   <!-- auswendig lernen Tipps, schnell auswendig lernen, Gedicht auswendig lernen → verwendet in Artikel #93 -->
   <!-- Deutsch Grammatik lernen, Grammatikregeln lernen, Grammatik verbessern → verwendet in Artikel #91 -->
   <!-- Bewerbungsschreiben schreiben, Bewerbungsschreiben Aufbau, Bewerbung Ausbildung → verwendet in Artikel #90 -->
