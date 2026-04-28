@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 95
+- Gesamtzahl Artikel: 96
 - Letzte Veröffentlichung: 2026-04-28
 - Nächster geplanter Post: TBD
 
@@ -108,6 +108,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 90 | 2026-04-26 | bewerbungsschreiben-schreiben-tipps | Bewerbungsschreiben schreiben: Aufbau, Tipps und häufige Fehler | Bewerbungsschreiben schreiben, Bewerbungsschreiben Aufbau, Bewerbungsschreiben Tipps, Bewerbung schreiben Schüler, Bewerbungsschreiben Ausbildung, Bewerbungsschreiben Praktikum, Bewerbung schreiben Tipps, Bewerbungsschreiben Einleitung, gutes Bewerbungsschreiben | Schule & Studium | Vollständiger Guide zum Bewerbungsschreiben schreiben: Unterschied zum Motivationsschreiben, Aufbau (Briefkopf, Betreff, Anrede, Einleitung, Hauptteil, Schlussteil), 7 Tipps (Unternehmensrecherche, starker Einstieg, konkrete Beispiele statt Allgemeinaussagen, zentrale Fragen des Personals beantworten, aktiver Schlussteil, individuelle Anpassung, Gegenlesen), häufige Fehler (Hiermit-Einstieg, Lebenslauf wiederholen, zu lang, fehlender Unternehmensbezug, Konjunktive, falscher Name). App-Erwähnung (Nachhilfe Mentor für Wissenslücken im Schulfach Deutsch). Crosslinks zu motivationsschreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkung von motivationsschreiben-tipps. |
 | 95 | 2026-04-28 | stilmittel-liste-beispiele | Stilmittel: Die wichtigsten sprachlichen Mittel mit Beispielen erklärt | Stilmittel, Stilmittel Liste, rhetorische Mittel, sprachliche Mittel, Stilmittel Beispiele, Stilmittel Deutsch, Stilmittel Schule, Stilmittel Textanalyse, Metapher, Alliteration, Personifikation, Chiasmus, Hyperbel, Ironie | Schule & Studium | Vollständige Stilmittel-Referenz: bildhafte Mittel (Metapher, Vergleich, Personifikation, Allegorie, Symbol), klangliche Mittel (Alliteration, Onomatopoesie, Anapher, Epipher, Assonanz), satzstrukturelle Mittel (Chiasmus, Inversion, Ellipse, Klimax, Antiklimax), bedeutungsbezogene Mittel (Ironie, Hyperbel, Litotes, Euphemismus, Antithese, Oxymoron, rhetorische Frage). Beleg-Mittel-Wirkung-Schema erklärt. 4 Lerntipps zum Beherrschen. App-Erwähnung (Active Recall für Stilmittel). Crosslinks zu textanalyse-schreiben-tipps, gedichtanalyse-schreiben-tipps, deutsch-aufsatz-schreiben-tipps, eroerterung-schreiben-tipps. Rückverlinkungen von textanalyse-schreiben-tipps, gedichtanalyse-schreiben-tipps. |
 | 94 | 2026-04-28 | kommentar-schreiben-tipps | Kommentar schreiben: Aufbau, Tipps und häufige Fehler | Kommentar schreiben, Kommentar schreiben Tipps, Kommentar Aufbau, Kommentar Deutsch Schule, Kommentar schreiben Klausur, Kommentar Einleitung, Kommentar Argumente, Kommentar Schluss, Kommentar Abitur, meinungsbetonter Kommentar | Schule & Studium | Vollständiger Guide zum Kommentar schreiben: Was ist ein Kommentar (freier vs. textbasierter), Dreigliederung (Einleitung mit These, Hauptteil mit Dreischritt These-Begründung-Beispiel, Schluss mit Fazit), Sanduhr-Prinzip für Argumentreihenfolge, Signalwörter für Übergänge, 4 Tipps für starke Argumente, 5 häufige Fehler (kein Standpunkt, Argumente ohne Begründung, falsche Textsorte, zu viel Ich, neues Argument im Schluss), Checkliste vor Abgabe. App-Erwähnung (Nachhilfe Mentor für Rückfragen zu Aufbau und Argumentationsstruktur). Crosslinks zu eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps, textanalyse-schreiben-tipps, inhaltsangabe-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. |
+| 96 | 2026-04-28 | sozialkunde-lernen-tipps | Sozialkunde lernen: 7 Tipps für Gemeinschaftskunde und Politik | Sozialkunde lernen, Gemeinschaftskunde lernen, Politik Schule Tipps, Sozialkunde Klausur, Gemeinschaftskunde Tipps, Sozialkunde Abitur | Fachspezifisch | 7 Tipps zum Sozialkunde lernen: Zusammenhänge statt Fakten lernen, Mindmaps für politische Systeme (Verweis auf Mindmap-Guide), aktuelle Ereignisse verknüpfen (Zeitungsartikel), Kerndefinitionen mit Spaced Repetition festigen (Verweis auf SR-Artikel), Klausurformate kennen und üben (Materialanalyse, Erörterung, Begriffserklärung, Diagramm), Argumentation nach PEEL-Schema strukturieren, Verknüpfungen mit Geschichte und Erdkunde suchen (Verweis auf beide Artikel). App-Erwähnung (Nachhilfe Mentor für SR von Fachbegriffen). Crosslinks: mindmap-erstellen-lernen, spaced-repetition-lernmethode, geschichte-lernen-tipps, erdkunde-lernen-tipps. Rückverlinkungen: geschichte-lernen-tipps (Fazit), erdkunde-lernen-tipps (Fazit). |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK, Interleaving Methode, Lernstil finden
@@ -115,7 +116,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden, Biologie Abitur, Mathe Abitur, Deutsch Abitur, Physik Abitur, Chemie Abitur, Englisch Abitur, Geschichte Abitur
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten, Inhaltsangabe schreiben
 - KI & Bildung: Lernen mit KI / ChatGPT
-- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen, Wirtschaft lernen
+- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen, Wirtschaft lernen, Sozialkunde/Gemeinschaftskunde lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 - lernmotivation-steigern-tipps -> growth-mindset-lernen (Fazit: Growth Mindset als Motor hinter Lernmotivation)
@@ -646,6 +647,14 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - online-studieren-tipps -> prokrastination-ueberwinden-lernen (Tipp 5: Prokrastination bekämpfen mit System statt Willenskraft)
 - online-studieren-tipps -> zeitmanagement-studium-tipps (Fazit: Zeitmanagement als komplementäres Thema)
 - zeitmanagement-studium-tipps -> online-studieren-tipps (Rückverlinkung: Fazit, Online-Studium braucht noch mehr Selbstmanagement)
+
+## Interne Verlinkungen (Ergänzung Artikel 96)
+- sozialkunde-lernen-tipps -> mindmap-erstellen-lernen (Tipp 2: Mindmaps für politische Systeme und Organe)
+- sozialkunde-lernen-tipps -> spaced-repetition-lernmethode (Tipp 4: Kerndefinitionen mit Spaced Repetition festigen)
+- sozialkunde-lernen-tipps -> geschichte-lernen-tipps (Tipp 7: Verknüpfungen mit Geschichte und Gesellschaft)
+- sozialkunde-lernen-tipps -> erdkunde-lernen-tipps (Tipp 7: Verknüpfungen mit Erdkunde, Globalisierung und Migration)
+- geschichte-lernen-tipps -> sozialkunde-lernen-tipps (Rückverlinkung: Fazit, Gesellschaftswissenschaften-Cluster)
+- erdkunde-lernen-tipps -> sozialkunde-lernen-tipps (Rückverlinkung: Fazit, Überschneidungen Migration und Globalisierung)
 
 ## Self-Improvement Runde 10 (nach Artikel 50)
 - Alle 5 Artikel aus R9-Empfehlung umgesetzt: Latein, Erdkunde, KI Hausaufgaben, Nachhilfe online vs. offline, Lernstress bewältigen.

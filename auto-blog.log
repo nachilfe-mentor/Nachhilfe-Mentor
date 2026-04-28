@@ -3904,3 +3904,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles abgeschlossen. Hier die Zusammenfassung:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `stilmittel-liste-beispiele.html` (Artikel #95)
+- [x] Cover-Bild generiert: `blog/posts/img/stilmittel-liste-beispiele.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`textanalyse-schreiben-tipps.html` und `gedichtanalyse-schreiben-tipps.html` verlinken jetzt auf den neuen Artikel)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (95 Artikel, neue Verlinkungen)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (101 URLs in Sitemap, 97 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoigjw6p003glv0y5wcwf3z8`
+
+**Thema:** "Stilmittel: Die wichtigsten sprachlichen Mittel mit Beispielen erklärt" wurde gewählt, weil "Stilmittel Liste" ein massenhaft gesuchter Suchbegriff von Deutschschülern ist, der noch nicht abgedeckt war und den wachsenden Schreibaufgaben-Cluster perfekt ergänzt. Google organisch ist auf 37 Sessions gestiegen, starkes Wachstum.
+[2026-04-28 10:03:21] Blog cycle completed successfully.
+[2026-04-28 10:03:21] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 101 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 97 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 97 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 101 URLs in Sitemap, 20 Artikel im Feed.
+[main 34ecb32] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   8c954ae..34ecb32  main -> main
+[2026-04-28 10:03:21] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: stilmittel-liste-beispiele
+  Titel: Stilmittel: Die wichtigsten sprachlichen Mittel mit Beispielen
+  Desc:  Die wichtigsten Stilmittel und rhetorischen Mittel mit Beispielen und Wirkung er...
+[Pinterest] Erstelle Pin fuer: Stilmittel: Die wichtigsten sprachlichen Mittel mit Beispielen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/stilmittel-liste-beispiele.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/stilmittel-liste-beispiele.html
+[Pinterest] Uploading stilmittel-liste-beispiele.webp (image/webp)...
+[Pinterest] Upload OK: id=cc3690d7-bf82-4700-aab0-ccf343d50c68
+[Pinterest] Pin erstellt! Post-ID: cmoigkf7v002to70yghcoaflt
+[Pinterest] Erfolgreich! Pin-ID: cmoigkf7v002to70yghcoaflt
+
+[Pinterest-Fallback] OK: stilmittel-liste-beispiele
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-28 10:03:21] Next run in 8 hours.
+---
+[2026-04-28 18:03:24] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
