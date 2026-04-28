@@ -3852,3 +3852,55 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen. Hier die Zusammenfassung:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `kommentar-schreiben-tipps.html` (Artikel #94)
+- [x] Cover-Bild generiert: `blog/posts/img/kommentar-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkungen in `eroerterung-schreiben-tipps.html` und `deutsch-aufsatz-schreiben-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Gesamtzahl: 94)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (100 URLs in Sitemap, 96 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmohz4dn302b8o70yfuauzrmt`
+
+**Analytics-Erkenntnisse (Stand 28.04.2026):** Google-organisch auf 34 Sessions gestiegen, Gesamtpageviews 150. Fachspezifische Artikel (Erdkunde 6 Views) und Lernmethoden performen am stärksten. Schreibaufgaben-Cluster wird konsequent ausgebaut.
+
+**Thema Artikel #94:** "Kommentar schreiben" mit Fokus auf Aufbau (These-Begründung-Beispiel-Dreischritt), Sanduhr-Prinzip, häufige Fehler und Checkliste. Ergänzt den Schreibaufgaben-Cluster (Erörterung, Inhaltsangabe, Charakterisierung, Textanalyse, Gedichtanalyse, Bewerbungsschreiben) um eine wichtige Form der meinungsbetonten Textsorte.
+[2026-04-28 01:55:16] Blog cycle completed successfully.
+[2026-04-28 01:55:16] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 100 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 96 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 96 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 100 URLs in Sitemap, 20 Artikel im Feed.
+[main 6cb4297] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   b7e5522..6cb4297  main -> main
+[2026-04-28 01:55:16] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: kommentar-schreiben-tipps
+  Titel: Kommentar schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Kommentar schreiben leicht gemacht: So gelingt dir der Aufbau mit These, Argumen...
+[Pinterest] Erstelle Pin fuer: Kommentar schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/kommentar-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html
+[Pinterest] Uploading kommentar-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=235bd640-af70-4e43-bc4d-c731dd5a83a7
+[Pinterest] Pin erstellt! Post-ID: cmohz4qv902b9o70ywoskajvq
+[Pinterest] Erfolgreich! Pin-ID: cmohz4qv902b9o70ywoskajvq
+
+[Pinterest-Fallback] OK: kommentar-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-28 01:55:16] Next run in 8 hours.
+---
+[2026-04-28 09:55:19] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
