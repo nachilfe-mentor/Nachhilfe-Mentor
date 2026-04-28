@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 27 Apr 2026 17:50:23 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Apr 2026 01:54:51 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
+      <pubDate>Tue, 28 Apr 2026 01:54:02 +0000</pubDate>
+      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</guid>
+      <pubDate>Tue, 28 Apr 2026 01:53:57 +0000</pubDate>
+      <description>Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und die häufigsten Fehler, die du vermeiden solltest. Mit praktischen Beispielen für Klasse 8-12.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Kommentar schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</guid>
+      <pubDate>Tue, 28 Apr 2026 01:53:25 +0000</pubDate>
+      <description>Kommentar schreiben leicht gemacht: So gelingt dir der Aufbau mit These, Argumenten und Fazit. Mit Tipps für Deutsch-Klausur, häufigen Fehlern und Checkliste.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Gedächtnistechniken: 5 Methoden, mit denen du dir alles merken kannst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/gedaechtnis-techniken-lernen.html</link>
@@ -38,22 +62,6 @@
       <pubDate>Mon, 27 Apr 2026 09:41:57 +0000</pubDate>
       <description>Wirtschaft lernen leicht gemacht: Mit diesen 7 Tipps verstehst du BWL, VWL und Wirtschaftskunde wirklich, erkennst Zusammenhänge und holst bessere Noten.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</guid>
-      <pubDate>Mon, 27 Apr 2026 01:37:15 +0000</pubDate>
-      <description>Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und die häufigsten Fehler, die du vermeiden solltest. Mit praktischen Beispielen für Klasse 8-12.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Mon, 27 Apr 2026 01:37:04 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
-      <category>Schule &amp; Studium</category>
     </item>
     <item>
       <title>Deutsch Grammatik lernen: 8 Tipps für bessere Sprachkenntnisse</title>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 24 Apr 2026 00:39:54 +0000</pubDate>
       <description>Hausarbeit schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. Aufbau, Gliederung, Quellen, Zitieren und häufige Fehler vermeiden.</description>
       <category>Studium &amp; Schule</category>
-    </item>
-    <item>
-      <title>Bachelorarbeit schreiben: Schritt-für-Schritt-Anleitung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/bachelorarbeit-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/bachelorarbeit-schreiben-tipps.html</guid>
-      <pubDate>Fri, 24 Apr 2026 00:39:15 +0000</pubDate>
-      <description>Bachelorarbeit schreiben leicht gemacht: So findest du ein Thema, strukturierst deine Arbeit, recherchierst Quellen und schreibst deine Abschlussarbeit erfolgreich.</description>
-      <category>Studium &amp; Karriere</category>
     </item>
   </channel>
 </rss>
