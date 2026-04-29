@@ -5,8 +5,8 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 96
-- Letzte Veröffentlichung: 2026-04-28
+- Gesamtzahl Artikel: 97
+- Letzte Veröffentlichung: 2026-04-29
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
@@ -109,6 +109,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 95 | 2026-04-28 | stilmittel-liste-beispiele | Stilmittel: Die wichtigsten sprachlichen Mittel mit Beispielen erklärt | Stilmittel, Stilmittel Liste, rhetorische Mittel, sprachliche Mittel, Stilmittel Beispiele, Stilmittel Deutsch, Stilmittel Schule, Stilmittel Textanalyse, Metapher, Alliteration, Personifikation, Chiasmus, Hyperbel, Ironie | Schule & Studium | Vollständige Stilmittel-Referenz: bildhafte Mittel (Metapher, Vergleich, Personifikation, Allegorie, Symbol), klangliche Mittel (Alliteration, Onomatopoesie, Anapher, Epipher, Assonanz), satzstrukturelle Mittel (Chiasmus, Inversion, Ellipse, Klimax, Antiklimax), bedeutungsbezogene Mittel (Ironie, Hyperbel, Litotes, Euphemismus, Antithese, Oxymoron, rhetorische Frage). Beleg-Mittel-Wirkung-Schema erklärt. 4 Lerntipps zum Beherrschen. App-Erwähnung (Active Recall für Stilmittel). Crosslinks zu textanalyse-schreiben-tipps, gedichtanalyse-schreiben-tipps, deutsch-aufsatz-schreiben-tipps, eroerterung-schreiben-tipps. Rückverlinkungen von textanalyse-schreiben-tipps, gedichtanalyse-schreiben-tipps. |
 | 94 | 2026-04-28 | kommentar-schreiben-tipps | Kommentar schreiben: Aufbau, Tipps und häufige Fehler | Kommentar schreiben, Kommentar schreiben Tipps, Kommentar Aufbau, Kommentar Deutsch Schule, Kommentar schreiben Klausur, Kommentar Einleitung, Kommentar Argumente, Kommentar Schluss, Kommentar Abitur, meinungsbetonter Kommentar | Schule & Studium | Vollständiger Guide zum Kommentar schreiben: Was ist ein Kommentar (freier vs. textbasierter), Dreigliederung (Einleitung mit These, Hauptteil mit Dreischritt These-Begründung-Beispiel, Schluss mit Fazit), Sanduhr-Prinzip für Argumentreihenfolge, Signalwörter für Übergänge, 4 Tipps für starke Argumente, 5 häufige Fehler (kein Standpunkt, Argumente ohne Begründung, falsche Textsorte, zu viel Ich, neues Argument im Schluss), Checkliste vor Abgabe. App-Erwähnung (Nachhilfe Mentor für Rückfragen zu Aufbau und Argumentationsstruktur). Crosslinks zu eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps, textanalyse-schreiben-tipps, inhaltsangabe-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. |
 | 96 | 2026-04-28 | sozialkunde-lernen-tipps | Sozialkunde lernen: 7 Tipps für Gemeinschaftskunde und Politik | Sozialkunde lernen, Gemeinschaftskunde lernen, Politik Schule Tipps, Sozialkunde Klausur, Gemeinschaftskunde Tipps, Sozialkunde Abitur | Fachspezifisch | 7 Tipps zum Sozialkunde lernen: Zusammenhänge statt Fakten lernen, Mindmaps für politische Systeme (Verweis auf Mindmap-Guide), aktuelle Ereignisse verknüpfen (Zeitungsartikel), Kerndefinitionen mit Spaced Repetition festigen (Verweis auf SR-Artikel), Klausurformate kennen und üben (Materialanalyse, Erörterung, Begriffserklärung, Diagramm), Argumentation nach PEEL-Schema strukturieren, Verknüpfungen mit Geschichte und Erdkunde suchen (Verweis auf beide Artikel). App-Erwähnung (Nachhilfe Mentor für SR von Fachbegriffen). Crosslinks: mindmap-erstellen-lernen, spaced-repetition-lernmethode, geschichte-lernen-tipps, erdkunde-lernen-tipps. Rückverlinkungen: geschichte-lernen-tipps (Fazit), erdkunde-lernen-tipps (Fazit). |
+| 97 | 2026-04-29 | philosophie-lernen-tipps | Philosophie lernen: 7 Tipps, mit denen du Philosophie wirklich verstehst | Philosophie lernen, Philosophie lernen Tipps, Philosophie Schule, Philosophie Abitur, Philosophie verstehen, Philosophie Klausur, Philosophen lernen, Ethik Schule, Philosophie Gymnasium, Philosophie Tipps | Fachspezifische Lerntipps | 7 Tipps zum Philosophie lernen: zuerst die Frage hinter dem Gedanken verstehen (nicht die Antwort), Philosophen mit Kernidee lernen (Platon, Aristoteles, Descartes, Kant, Nietzsche), Feynman-Methode für Theorien (in eigenen Worten erklären), in logischen Argumentstrukturen denken (Prämisse 1, Prämisse 2, Schluss), regelmäßig kurze philosophische Texte schreiben (These-Begründung-Einwand), Philosophie mit realen Beispielen verknüpfen, Klausurformate gezielt üben (Textanalyse, Erörterung, Fallanalyse, Operatoren). App-Erwähnung (Nachhilfe Mentor für Active Recall von Philosophen und Theorien). Crosslinks zu feynman-technik-erklaeren-lernen (Feynman für Theorien), active-recall-lerntechnik (aktives Produzieren), wissenschaftliches-arbeiten-tipps (strukturiertes Denken). Rückverlinkungen von geschichte-lernen-tipps (gesellschaftswissenschaftliche Fächer) und sozialkunde-lernen-tipps (argumentatives Denken). |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK, Interleaving Methode, Lernstil finden
@@ -116,7 +117,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden, Biologie Abitur, Mathe Abitur, Deutsch Abitur, Physik Abitur, Chemie Abitur, Englisch Abitur, Geschichte Abitur
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten, Inhaltsangabe schreiben
 - KI & Bildung: Lernen mit KI / ChatGPT
-- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen, Wirtschaft lernen, Sozialkunde/Gemeinschaftskunde lernen
+- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen, Wirtschaft lernen, Sozialkunde/Gemeinschaftskunde lernen, Philosophie lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 - lernmotivation-steigern-tipps -> growth-mindset-lernen (Fazit: Growth Mindset als Motor hinter Lernmotivation)
@@ -201,6 +202,11 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - stilmittel-liste-beispiele -> eroerterung-schreiben-tipps (Erörterung: rhetorische Mittel kennen)
 - textanalyse-schreiben-tipps -> stilmittel-liste-beispiele (Rückverlinkung: vollständige Stilmittel-Referenz)
 - gedichtanalyse-schreiben-tipps -> stilmittel-liste-beispiele (Rückverlinkung: vollständige Stilmittel-Referenz)
+- philosophie-lernen-tipps -> feynman-technik-erklaeren-lernen (Feynman-Methode für Theorien in eigenen Worten erklären)
+- philosophie-lernen-tipps -> active-recall-lerntechnik (aktives Produzieren schlägt passives Lesen)
+- philosophie-lernen-tipps -> wissenschaftliches-arbeiten-tipps (strukturiertes Denken und Schreiben)
+- geschichte-lernen-tipps -> philosophie-lernen-tipps (Rückverlinkung: gesellschaftswissenschaftliche Fächer-Cluster)
+- sozialkunde-lernen-tipps -> philosophie-lernen-tipps (Rückverlinkung: argumentatives Denken aus Philosophie schärft politisches Urteil)
 
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
