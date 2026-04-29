@@ -3954,3 +3954,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Der Durchlauf ist vollständig abgeschlossen. Alle Schritte wurden erfolgreich ausgeführt.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `sozialkunde-lernen-tipps.html` (Artikel #96, 7 Tipps für Gemeinschaftskunde und Politik)
+- [x] Cover-Bild generiert: `blog/posts/img/sozialkunde-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html` (Card ganz oben eingefügt)
+- [x] Crosslinks gesetzt: `geschichte-lernen-tipps.html` (Fazit) und `erdkunde-lernen-tipps.html` (Fazit) verlinken jetzt auf den Sozialkunde-Artikel; der Sozialkunde-Artikel verlinkt auf Mindmap, Spaced Repetition, Geschichte und Erdkunde
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (96 Artikel, Cluster Sozialkunde ergänzt)
+- [x] Git Push: erfolgreich (2 Commits: Artikel + SEO)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (102 URLs in Sitemap, 98 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoiy0r4b02jzlv0yf5bidbfl`
+
+**Analytics-Erkenntnis:** Google organisch auf 38 Sessions gestiegen (Rekord). Fachspezifische Artikel dominieren die letzten 7 Tage, weshalb Sozialkunde als neues Fach-Thema gewählt wurde. Der Cluster Gesellschaftswissenschaften (Erdkunde, Geschichte, Sozialkunde) ist jetzt gut vernetzt.
+[2026-04-28 18:12:16] Blog cycle completed successfully.
+[2026-04-28 18:12:16] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 102 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 98 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 98 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 102 URLs in Sitemap, 20 Artikel im Feed.
+[main 18e2c13] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   edd7420..18e2c13  main -> main
+[2026-04-28 18:12:16] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: sozialkunde-lernen-tipps
+  Titel: Sozialkunde lernen: 7 Tipps für Gemeinschaftskunde und Politik
+  Desc:  Sozialkunde lernen fühlt sich oft wie ein endloser Stoff-Berg an. Mit diesen 7 k...
+[Pinterest] Erstelle Pin fuer: Sozialkunde lernen: 7 Tipps für Gemeinschaftskunde und Politik
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/sozialkunde-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/sozialkunde-lernen-tipps.html
+[Pinterest] Uploading sozialkunde-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=0e04cb49-9ee3-4d32-a775-cd748963ca52
+[Pinterest] Pin erstellt! Post-ID: cmoiy16r102hzo70yk363xvfc
+[Pinterest] Erfolgreich! Pin-ID: cmoiy16r102hzo70yk363xvfc
+
+[Pinterest-Fallback] OK: sozialkunde-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-28 18:12:16] Next run in 8 hours.
+---
+[2026-04-29 02:12:19] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
