@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 100
+- Gesamtzahl Artikel: 101
 - Letzte Veröffentlichung: 2026-04-30
 - Nächster geplanter Post: TBD
 
@@ -113,12 +113,13 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 98 | 2026-04-29 | protokoll-schreiben-anleitung | Protokoll schreiben: Aufbau, Tipps und häufige Fehler | Protokoll schreiben, Protokoll schreiben Tipps, Protokoll Aufbau, Laborprotokoll schreiben, Verlaufsprotokoll, Sitzungsprotokoll, Protokoll Schule, Protokoll Studium, Protokoll Zeitform | Schule & Studium | Schritt-für-Schritt-Anleitung zum Protokoll schreiben: Verlaufsprotokoll, Ergebnisprotokoll und Laborprotokoll erklärt. Aufbau (Kopfteil, Hauptteil, Unterschrift), Sprache (Präteritum, indirekte Rede, sachlicher Ton), Laborprotokoll-Struktur (Fragestellung, Material, Durchführung, Ergebnisse, Auswertung), 5 häufige Fehler, Checkliste vor Abgabe. App-Erwähnung (Nachhilfe Mentor für gezieltes Abfragen). Crosslinks zu feynman-technik-erklaeren-lernen, zusammenfassung-schreiben-lernen, deutsch-aufsatz-schreiben-tipps. Rückverlinkung von zusammenfassung-schreiben-lernen. |
 | 97 | 2026-04-29 | philosophie-lernen-tipps | Philosophie lernen: 7 Tipps, mit denen du Philosophie wirklich verstehst | Philosophie lernen, Philosophie lernen Tipps, Philosophie Schule, Philosophie Abitur, Philosophie verstehen, Philosophie Klausur, Philosophen lernen, Ethik Schule, Philosophie Gymnasium, Philosophie Tipps | Fachspezifische Lerntipps | 7 Tipps zum Philosophie lernen: zuerst die Frage hinter dem Gedanken verstehen (nicht die Antwort), Philosophen mit Kernidee lernen (Platon, Aristoteles, Descartes, Kant, Nietzsche), Feynman-Methode für Theorien (in eigenen Worten erklären), in logischen Argumentstrukturen denken (Prämisse 1, Prämisse 2, Schluss), regelmäßig kurze philosophische Texte schreiben (These-Begründung-Einwand), Philosophie mit realen Beispielen verknüpfen, Klausurformate gezielt üben (Textanalyse, Erörterung, Fallanalyse, Operatoren). App-Erwähnung (Nachhilfe Mentor für Active Recall von Philosophen und Theorien). Crosslinks zu feynman-technik-erklaeren-lernen (Feynman für Theorien), active-recall-lerntechnik (aktives Produzieren), wissenschaftliches-arbeiten-tipps (strukturiertes Denken). Rückverlinkungen von geschichte-lernen-tipps (gesellschaftswissenschaftliche Fächer) und sozialkunde-lernen-tipps (argumentatives Denken). |
 | 100 | 2026-04-30 | leserbrief-schreiben-tipps | Leserbrief schreiben: Aufbau, Tipps und häufige Fehler | Leserbrief schreiben, Leserbrief Aufbau, Leserbrief Tipps, Leserbrief Schule, Leserbrief Beispiel, Leserbrief schreiben Klasse 8, Leserbrief Einleitung, Leserbrief Argumente, Leserbrief Deutsch | Schule & Studium | Vollständige Anleitung zum Leserbrief schreiben: Was ist ein Leserbrief (Reaktion auf Zeitungsartikel), Dreigliederung (Einleitung mit Bezug auf Ausgangstext, Hauptteil mit Dreischritt These-Begründung-Beispiel, Schluss mit Forderung/Appell), formale Elemente (Datum, Ort, Anrede, Grußformel), Schritt-für-Schritt-Vorgehen (Ausgangstext verstehen, Position klären, Argumente sammeln), Sprache und Stil (sachlich, respektvoll, aktive Formulierungen, konkrete Bezüge zum Artikel), Abgrenzung zu Erörterung/Kommentar/Stellungnahme, 6 häufige Fehler, Checkliste vor Abgabe. App-Erwähnung (Active-Recall für Textsortenmerkmale). Crosslinks zu eroerterung-schreiben-tipps, kommentar-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps, kommentar-schreiben-tipps. |
+| 101 | 2026-04-30 | stellungnahme-schreiben-tipps | Stellungnahme schreiben: Aufbau, Tipps und häufige Fehler | Stellungnahme schreiben, Stellungnahme Aufbau, Stellungnahme Tipps, Stellungnahme Schule, Stellungnahme Einleitung, Stellungnahme Argumente, Stellungnahme Schluss, Stellungnahme Klasse 8, Stellungnahme Deutsch Klausur, Stellungnahme schreiben Anleitung | Schule & Studium | Vollständige Anleitung zum Stellungnahme schreiben: Was ist eine Stellungnahme und wann wird sie gefordert, Abgrenzung zu Erörterung/Kommentar/Leserbrief, Dreigliederung (Einleitung mit These, Hauptteil mit Dreischritt These-Begründung-Beispiel, Schluss mit Fazit/Appell), Sprache und Stil (sachlich, Ich erlaubt, Signalwörter), Schritt-für-Schritt-Vorgehen (Position klären, Argumente sammeln, Gliederung, Schreiben, Kontrollieren), 5 häufige Fehler, Checkliste vor Abgabe. App-Erwähnung (Nachhilfe Mentor für Active Recall und Argumentationsstruktur). Crosslinks zu eroerterung-schreiben-tipps, kommentar-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps, kommentar-schreiben-tipps. |
 
 ## Abgedeckte Themen-Cluster
 - Lernmethoden & Techniken: Spaced Repetition, Active Recall, Pomodoro-Technik, Gedächtnistechniken, Mindmapping, Lerntypen/VARK, Interleaving Methode, Lernstil finden
 - Motivation & Produktivität: Prokrastination überwinden, Konzentration steigern
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden, Biologie Abitur, Mathe Abitur, Deutsch Abitur, Physik Abitur, Chemie Abitur, Englisch Abitur, Geschichte Abitur
-- Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten, Inhaltsangabe schreiben, Leserbrief schreiben
+- Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten, Inhaltsangabe schreiben, Leserbrief schreiben, Stellungnahme schreiben
 - KI & Bildung: Lernen mit KI / ChatGPT
 - Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen, Wirtschaft lernen, Sozialkunde/Gemeinschaftskunde lernen, Philosophie lernen
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
@@ -219,6 +220,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - kurzgeschichte-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Allgemeine Aufsatztipps für alle Textsorten)
 - textanalyse-schreiben-tipps -> kurzgeschichte-schreiben-tipps (Rückverlinkung: Kurzgeschichten als häufige literarische Textsorte)
 - deutsch-aufsatz-schreiben-tipps -> kurzgeschichte-schreiben-tipps (Rückverlinkung: Kurzgeschichte als kreative Aufsatzform)
+- stellungnahme-schreiben-tipps -> eroerterung-schreiben-tipps (Abgrenzung: Erörterung als formalere Variante mit Pro/Contra)
+- stellungnahme-schreiben-tipps -> kommentar-schreiben-tipps (Abgrenzung: Kommentar als journalistische Form)
+- eroerterung-schreiben-tipps -> stellungnahme-schreiben-tipps (Rückverlinkung: Stellungnahme als direktere Meinungsäußerung)
+- kommentar-schreiben-tipps -> stellungnahme-schreiben-tipps (Rückverlinkung: Stellungnahme als sachlichere Alternative)
 
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps,
