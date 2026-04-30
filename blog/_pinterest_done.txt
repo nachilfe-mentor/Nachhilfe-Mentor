@@ -43,6 +43,7 @@ klausurvorbereitung-letzte-woche
 kommentar-schreiben-tipps
 konzentration-beim-lesen-verbessern
 konzentration-steigern-lernen
+kurzgeschichte-schreiben-tipps
 latein-lernen-tipps
 lernblockade-loesen-tipps
 lernen-mit-ki-chatgpt
@@ -75,6 +76,7 @@ physik-abitur-vorbereitung
 physik-lernen-tipps
 pomodoro-technik-lernen
 prokrastination-ueberwinden-lernen
+protokoll-schreiben-anleitung
 pruefungsangst-ueberwinden
 referat-halten-tipps
 referat-schreiben-anleitung

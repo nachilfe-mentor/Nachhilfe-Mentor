@@ -4056,3 +4056,101 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `protokoll-schreiben-anleitung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/protokoll-schreiben-anleitung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung aus `zusammenfassung-schreiben-lernen.html`; neue Links im Artikel zu `feynman-technik-erklaeren-lernen.html`, `zusammenfassung-schreiben-lernen.html`, `deutsch-aufsatz-schreiben-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (98 Artikel)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (104 URLs in Sitemap, IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmojwq52o01g5lv0ye9qs6ow6`
+[2026-04-29 10:23:40] Blog cycle completed successfully.
+[2026-04-29 10:23:40] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 104 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 100 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 100 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 104 URLs in Sitemap, 20 Artikel im Feed.
+[main d3034cc] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   019804e..d3034cc  main -> main
+[2026-04-29 10:23:40] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: protokoll-schreiben-anleitung
+  Titel: Protokoll schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Protokoll schreiben leicht gemacht: Aufbau, Sprache und Schritt-für-Schritt-Anle...
+[Pinterest] Erstelle Pin fuer: Protokoll schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/protokoll-schreiben-anleitung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/protokoll-schreiben-anleitung.html
+[Pinterest] Uploading protokoll-schreiben-anleitung.webp (image/webp)...
+[Pinterest] Upload OK: id=ac06c508-acc1-40ae-af30-ca29536f8793
+[Pinterest] Pin erstellt! Post-ID: cmojwqev001lfo70ybre9xcf5
+[Pinterest] Erfolgreich! Pin-ID: cmojwqev001lfo70ybre9xcf5
+
+[Pinterest-Fallback] OK: protokoll-schreiben-anleitung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-29 10:23:40] Next run in 8 hours.
+---
+[2026-04-29 18:23:43] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt. Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `kurzgeschichte-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/kurzgeschichte-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (in `textanalyse-schreiben-tipps.html` bei Kurzgeschichten-Erwähnung + in `deutsch-aufsatz-schreiben-tipps.html` im Fazit)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #99 eingetragen)
+- [x] Git Push: erfolgreich (commit `0720389`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (105 URLs in Sitemap, 101 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoke1wck03ijlv0y9cgfuqxk`
+
+**Artikel #99:** "Kurzgeschichte schreiben: Aufbau, Tipps und häufige Fehler" — Schreibaufgaben-Cluster erweitert, hohe Suchintention für Klasse 7-10. Analytics zeigen Google als stärkste Quelle (38 Sessions), der Schreibaufgaben-Cluster performt gut.
+[2026-04-29 18:28:40] Blog cycle completed successfully.
+[2026-04-29 18:28:40] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 105 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 101 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 101 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 105 URLs in Sitemap, 20 Artikel im Feed.
+[main a968e66] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   8e2b491..a968e66  main -> main
+[2026-04-29 18:28:40] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: kurzgeschichte-schreiben-tipps
+  Titel: Kurzgeschichte schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Du musst eine Kurzgeschichte schreiben und weißt nicht wie? Diese Anleitung erkl...
+[Pinterest] Erstelle Pin fuer: Kurzgeschichte schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/kurzgeschichte-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/kurzgeschichte-schreiben-tipps.html
+[Pinterest] Uploading kurzgeschichte-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=0e9945ce-88de-4793-9581-96a17f56702c
+[Pinterest] Pin erstellt! Post-ID: cmoke24a703ijo70yalgc41rx
+[Pinterest] Erfolgreich! Pin-ID: cmoke24a703ijo70yalgc41rx
+
+[Pinterest-Fallback] OK: kurzgeschichte-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-04-29 18:28:40] Next run in 8 hours.
+---
+[2026-04-30 02:28:43] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
