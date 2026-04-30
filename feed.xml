@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 30 Apr 2026 10:40:33 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 18:45:17 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</guid>
+      <pubDate>Thu, 30 Apr 2026 18:44:38 +0000</pubDate>
+      <description>Wissenschaftliches Arbeiten leicht gemacht: So schreibst du eine Hausarbeit oder Seminararbeit Schritt für Schritt. Mit Tipps zu Struktur, Quellen und Zitieren.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Hausarbeit schreiben: Schritt-für-Schritt-Anleitung</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</guid>
+      <pubDate>Thu, 30 Apr 2026 18:44:30 +0000</pubDate>
+      <description>Hausarbeit schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. Aufbau, Gliederung, Quellen, Zitieren und häufige Fehler vermeiden.</description>
+      <category>Studium &amp; Schule</category>
+    </item>
+    <item>
+      <title>Facharbeit schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/facharbeit-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/facharbeit-schreiben-tipps.html</guid>
+      <pubDate>Thu, 30 Apr 2026 18:43:53 +0000</pubDate>
+      <description>Facharbeit schreiben leicht gemacht: Aufbau, Gliederung, Zitieren und Zeitplanung Schritt für Schritt erklärt. Plus die häufigsten Fehler und eine Checkliste zur Abgabe.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Kommentar schreiben: Aufbau, Tipps und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</link>
@@ -142,30 +166,6 @@
       <pubDate>Mon, 27 Apr 2026 17:48:20 +0000</pubDate>
       <description>Auswendig lernen fühlt sich mühsam an? Mit diesen 7 Tipps merkst du dir Vokabeln, Gedichte und Fachbegriffe schneller und dauerhaft. Kein stumpfes Wiederholen mehr.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
-      <pubDate>Mon, 27 Apr 2026 09:42:50 +0000</pubDate>
-      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Wirtschaft lernen: 7 Tipps, mit denen du BWL und VWL wirklich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/wirtschaft-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/wirtschaft-lernen-tipps.html</guid>
-      <pubDate>Mon, 27 Apr 2026 09:41:57 +0000</pubDate>
-      <description>Wirtschaft lernen leicht gemacht: Mit diesen 7 Tipps verstehst du BWL, VWL und Wirtschaftskunde wirklich, erkennst Zusammenhänge und holst bessere Noten.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Deutsch Grammatik lernen: 8 Tipps für bessere Sprachkenntnisse</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-grammatik-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-grammatik-lernen-tipps.html</guid>
-      <pubDate>Mon, 27 Apr 2026 01:36:21 +0000</pubDate>
-      <description>Deutsch Grammatik lernen leicht gemacht: 8 Tipps für bessere Kommasetzung, Fallendungen und Satzbau. So wirst du in Deutsch schnell wirklich besser.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
