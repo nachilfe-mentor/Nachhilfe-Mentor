@@ -4357,3 +4357,54 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `praesentation-erstellen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/praesentation-erstellen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (von `referat-halten-tipps.html` auf neuen Artikel; neuer Artikel verlinkt `referat-halten-tipps` und `referat-schreiben-anleitung`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #104, Crosslinks, Keyword-Pool)
+- [x] Analytics in `_BLOG_STRATEGY.md` aktualisiert (Google organisch: 41 Sessions, Erdkunde top)
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO, Pinterest)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (110 URLs in Sitemap, 106 an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmomss1r00165md0yuoohfzr1`
+
+**Gewähltes Thema:** Präsentation erstellen für Schüler. Noch nicht abgedecktes Thema mit hoher Suchintention, ergänzt den bestehenden Referat-Cluster gut. Analytics zeigen weiter wachsenden organischen Traffic (41 Google-Sessions).
+[2026-05-01 10:56:31] Blog cycle completed successfully.
+[2026-05-01 10:56:31] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 110 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 106 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 106 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 110 URLs in Sitemap, 20 Artikel im Feed.
+[main d3d4a96] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   5cd226f..d3d4a96  main -> main
+[2026-05-01 10:56:31] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: praesentation-erstellen-tipps
+  Titel: Präsentation erstellen: 7 Tipps für eine überzeugende Schul-Präsentation
+  Desc:  Präsentation erstellen leicht gemacht: 7 konkrete Tipps für überzeugende PowerPo...
+[Pinterest] Erstelle Pin fuer: Präsentation erstellen: 7 Tipps für eine überzeugende Schul-Präsentation
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/praesentation-erstellen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/praesentation-erstellen-tipps.html
+[Pinterest] Uploading praesentation-erstellen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=e7a61094-617f-45c3-842b-a0cdf0ef283b
+[Pinterest] Pin erstellt! Post-ID: cmomssd3a0168md0yvqe5rryk
+[Pinterest] Erfolgreich! Pin-ID: cmomssd3a0168md0yvqe5rryk
+
+[Pinterest-Fallback] OK: praesentation-erstellen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-01 10:56:31] Next run in 8 hours.
+---
+[2026-05-01 18:56:34] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
