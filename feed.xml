@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 01 May 2026 10:56:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 19:01:11 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Noten verbessern: 8 Tipps für bessere Schulnoten</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</guid>
+      <pubDate>Fri, 01 May 2026 18:59:48 +0000</pubDate>
+      <description>Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch bessere Schulnoten, ohne nächtelang zu pauken.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Klassenarbeit vorbereiten: 8 Tipps für bessere Noten</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/klassenarbeit-vorbereiten-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/klassenarbeit-vorbereiten-tipps.html</guid>
+      <pubDate>Fri, 01 May 2026 18:59:17 +0000</pubDate>
+      <description>Klassenarbeit vorbereiten leicht gemacht: 8 bewährte Tipps für Schüler in Klasse 5-10, mit denen du gezielt lernst und bessere Noten schreibst.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
     <item>
       <title>Referat halten: 8 Tipps, mit denen du souverän präsentierst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/referat-halten-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 29 Apr 2026 02:16:15 +0000</pubDate>
       <description>Philosophie lernen leicht gemacht: 7 konkrete Tipps für Gymnasiasten und Abiturienten, mit denen du Philosophen, Argumente und Theorien wirklich verstehst – statt sie nur auswendig zu lernen.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Erdkunde lernen: 8 Tipps für Karten, Klimazonen und Geografie</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/erdkunde-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/erdkunde-lernen-tipps.html</guid>
-      <pubDate>Tue, 28 Apr 2026 18:09:57 +0000</pubDate>
-      <description>Erdkunde lernen muss nicht trocken sein. Mit diesen 8 Tipps merkst du dir Karten, Klimazonen und geografische Fakten viel besser – für Schule und Klausur.</description>
-      <category>Fachspezifisch</category>
-    </item>
-    <item>
-      <title>Gedichtanalyse schreiben: Aufbau, Stilmittel und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/gedichtanalyse-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/gedichtanalyse-schreiben-tipps.html</guid>
-      <pubDate>Tue, 28 Apr 2026 10:02:03 +0000</pubDate>
-      <description>Gedichtanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Aufbau, Stilmittel und Interpretation. Mit Formulierungshilfen und Checkliste für Schule und Abitur.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
