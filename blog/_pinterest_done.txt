@@ -19,8 +19,10 @@ effektiv-lernen-tipps
 englisch-abitur-vorbereitung
 englisch-lernen-tipps
 erdkunde-lernen-tipps
+erlebniserzaehlung-schreiben-tipps
 eroerterung-schreiben-tipps
 erstes-semester-tipps
+facharbeit-schreiben-tipps
 feynman-technik-erklaeren-lernen
 franzoesisch-lernen-tipps
 gedaechtnis-techniken-lernen
@@ -88,6 +90,7 @@ sozialkunde-lernen-tipps
 spaced-repetition-lernmethode
 spanisch-lernen-tipps
 spickzettel-schreiben-tipps
+stellungnahme-schreiben-tipps
 stilmittel-liste-beispiele
 studieren-ohne-abitur-tipps
 textanalyse-schreiben-tipps
