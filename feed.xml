@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 01 May 2026 19:01:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 03:06:39 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Französisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</guid>
+      <pubDate>Sat, 02 May 2026 03:05:18 +0000</pubDate>
+      <description>Französisch lernen leicht gemacht: 8 bewährte Tipps für Schüler, die schnell besser werden wollen. Von Vokabeln über Grammatik bis zum freien Sprechen.</description>
+      <category>Sprachen lernen</category>
+    </item>
+    <item>
+      <title>Russisch lernen: 8 Tipps, mit denen du schnell Fortschritte machst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/russisch-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/russisch-lernen-tipps.html</guid>
+      <pubDate>Sat, 02 May 2026 03:04:27 +0000</pubDate>
+      <description>Russisch lernen als Schüler oder Student? 8 konkrete Tipps für Kyrillisch, Grammatik und Vokabeln – und warum Russisch leichter ist als du denkst.</description>
+      <category>Sprachen lernen</category>
+    </item>
     <item>
       <title>Noten verbessern: 8 Tipps für bessere Schulnoten</title>
       <link>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 29 Apr 2026 02:17:15 +0000</pubDate>
       <description>Sozialkunde lernen fühlt sich oft wie ein endloser Stoff-Berg an. Mit diesen 7 konkreten Tipps meisterst du Gemeinschaftskunde, Politik und Wirtschaft – für Klausuren und Abitur.</description>
       <category>Fachspezifisch</category>
-    </item>
-    <item>
-      <title>Geschichte lernen: 7 Tipps, mit denen du Daten und Zusammenhänge behältst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/geschichte-lernen-tipps.html</guid>
-      <pubDate>Wed, 29 Apr 2026 02:17:06 +0000</pubDate>
-      <description>Geschichte lernen fällt vielen schwer, weil es so viele Daten und Zusammenhänge gibt. Mit diesen 7 Tipps lernst du Geschichte effizienter, behältst mehr und bestehst deine Prüfung.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Philosophie lernen: 7 Tipps, mit denen du Philosophie wirklich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/philosophie-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/philosophie-lernen-tipps.html</guid>
-      <pubDate>Wed, 29 Apr 2026 02:16:15 +0000</pubDate>
-      <description>Philosophie lernen leicht gemacht: 7 konkrete Tipps für Gymnasiasten und Abiturienten, mit denen du Philosophen, Argumente und Theorien wirklich verstehst – statt sie nur auswendig zu lernen.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
