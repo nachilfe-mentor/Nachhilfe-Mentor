@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 02 May 2026 11:13:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 19:18:31 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bewegung und Lernen: Warum Sport deine Noten verbessert</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/bewegung-und-lernen-sport-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/bewegung-und-lernen-sport-tipps.html</guid>
+      <pubDate>Sat, 02 May 2026 19:17:30 +0000</pubDate>
+      <description>Bewegung und Lernen hängen direkt zusammen: Sport steigert BDNF, verbessert Konzentration und hilft dir, Stoff besser zu behalten. 7 praktische Tipps für Schüler und Studenten.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Sport Theorie lernen: 7 Tipps für deine Sportklausur</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/sport-theorie-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/sport-theorie-lernen-tipps.html</guid>
+      <pubDate>Sat, 02 May 2026 19:16:38 +0000</pubDate>
+      <description>Sport Theorie lernen muss kein Mysterium sein. Mit diesen 7 Tipps bereitest du dich gezielt auf deine Sportklausur vor und verstehst Biomechanik, Trainingsplanung und Sportphysiologie wirklich.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Philosophie lernen: 7 Tipps, mit denen du Philosophie wirklich verstehst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/philosophie-lernen-tipps.html</link>
@@ -149,22 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/leserbrief-schreiben-tipps.html</guid>
       <pubDate>Thu, 30 Apr 2026 02:32:44 +0000</pubDate>
       <description>Leserbrief schreiben leicht gemacht: Aufbau, Sprache, Argumente und die häufigsten Fehler. Mit Checkliste für Schüler der Klassen 7 bis 10.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Textanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</guid>
-      <pubDate>Wed, 29 Apr 2026 18:27:25 +0000</pubDate>
-      <description>Textanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Einleitung, Hauptteil und Schluss. Tipps für Schüler der Klassen 8-12 mit konkreten Beispielen.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
-      <pubDate>Wed, 29 Apr 2026 10:22:43 +0000</pubDate>
-      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
