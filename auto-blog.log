@@ -4459,3 +4459,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `russisch-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/russisch-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `franzoesisch-lernen-tipps.html`, neue Links zu `spaced-repetition-lernmethode.html`, `vokabeln-lernen-tipps.html`, `franzoesisch-lernen-tipps.html` im neuen Artikel)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (106 Artikel, Verlinkungen eingetragen)
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt, 112 URLs in Sitemap, 108 URLs an IndexNow gesendet
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmonrg8a601d2p70y0qxu0rbb`
+
+**Thema:** Russisch lernen Tipps (Sprachen-Cluster, 8 Tipps: Kyrillisch, Spaced Repetition für Vokabeln, Fälle schrittweise lernen, Aussprache mit Muttersprachlern, tägliche Einheiten, Verbaspekte, Sprechen üben, Immersion). Schließt die letzte offene Lücke im Sprachen-Cluster (Englisch, Französisch, Spanisch, Latein waren bereits vorhanden).
+[2026-05-02 03:07:13] Blog cycle completed successfully.
+[2026-05-02 03:07:13] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 112 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 108 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 108 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 112 URLs in Sitemap, 20 Artikel im Feed.
+[main c37f5ff] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   5696faf..c37f5ff  main -> main
+[2026-05-02 03:07:13] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: russisch-lernen-tipps
+  Titel: Russisch lernen: 8 Tipps, mit denen du schnell Fortschritte machst
+  Desc:  Russisch lernen als Schüler oder Student? 8 konkrete Tipps für Kyrillisch, Gramm...
+[Pinterest] Erstelle Pin fuer: Russisch lernen: 8 Tipps, mit denen du schnell Fortschritte machst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/russisch-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/russisch-lernen-tipps.html
+[Pinterest] Uploading russisch-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=1d241e6d-1448-4317-b630-5126d7da2a89
+[Pinterest] Pin erstellt! Post-ID: cmonrgoja01d5p70yl8ojb5ol
+[Pinterest] Erfolgreich! Pin-ID: cmonrgoja01d5p70yl8ojb5ol
+
+[Pinterest-Fallback] OK: russisch-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-02 03:07:13] Next run in 8 hours.
+---
+[2026-05-02 11:07:16] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
