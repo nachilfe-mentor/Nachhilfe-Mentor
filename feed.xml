@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 02 May 2026 03:07:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 11:12:32 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Philosophie lernen: 7 Tipps, mit denen du Philosophie wirklich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/philosophie-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/philosophie-lernen-tipps.html</guid>
+      <pubDate>Sat, 02 May 2026 11:11:15 +0000</pubDate>
+      <description>Philosophie lernen leicht gemacht: 7 konkrete Tipps für Gymnasiasten und Abiturienten, mit denen du Philosophen, Argumente und Theorien wirklich verstehst – statt sie nur auswendig zu lernen.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Ethik lernen: 7 Tipps, mit denen du Ethik wirklich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/ethik-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/ethik-lernen-tipps.html</guid>
+      <pubDate>Sat, 02 May 2026 11:10:39 +0000</pubDate>
+      <description>Ethik lernen muss kein Ratespiel sein. Mit diesen 7 Tipps verstehst du ethische Theorien, lernst Argumente sicher zu entwickeln und bekommst in der Klausur eine gute Note.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Französisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/franzoesisch-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 29 Apr 2026 10:22:43 +0000</pubDate>
       <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Protokoll schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/protokoll-schreiben-anleitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/protokoll-schreiben-anleitung.html</guid>
-      <pubDate>Wed, 29 Apr 2026 10:21:55 +0000</pubDate>
-      <description>Protokoll schreiben leicht gemacht: Aufbau, Sprache und Schritt-für-Schritt-Anleitung für Verlaufsprotokoll, Laborprotokoll und Sitzungsprotokoll. Mit Checkliste.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Sozialkunde lernen: 7 Tipps für Gemeinschaftskunde und Politik</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/sozialkunde-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/sozialkunde-lernen-tipps.html</guid>
-      <pubDate>Wed, 29 Apr 2026 02:17:15 +0000</pubDate>
-      <description>Sozialkunde lernen fühlt sich oft wie ein endloser Stoff-Berg an. Mit diesen 7 konkreten Tipps meisterst du Gemeinschaftskunde, Politik und Wirtschaft – für Klausuren und Abitur.</description>
-      <category>Fachspezifisch</category>
     </item>
   </channel>
 </rss>
