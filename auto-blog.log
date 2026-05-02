@@ -4509,3 +4509,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf abgeschlossen. Hier die Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `ethik-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/ethik-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (neuer Artikel verlinkt Philosophie, Active Recall, Feynman, Spaced Repetition; Rückverlinkung in `philosophie-lernen-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (107 Artikel, neuer Eintrag, Cluster + Links ergänzt)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (113 URLs in Sitemap, 109 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoo8t0ns02yzmd0yr7wfmcrl`
+
+**Thema:** Ethik lernen (Fachspezifisch-Cluster, Gymnasium/Schule, 7 Tipps zu Grundpositionen, Feynman-Methode, Argumentationsstrukturen und Klausurformaten). Laut Analytics-Empfehlung priorisiert; dieser Fachspezifik-Cluster (Erdkunde, Latein, Biologie) rankst besonders schnell.
+[2026-05-02 11:13:00] Blog cycle completed successfully.
+[2026-05-02 11:13:00] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 113 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 109 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 109 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 113 URLs in Sitemap, 20 Artikel im Feed.
+[main 380ca73] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   9c6f44e..380ca73  main -> main
+[2026-05-02 11:13:00] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: ethik-lernen-tipps
+  Titel: Ethik lernen: 7 Tipps, mit denen du Ethik wirklich verstehst
+  Desc:  Ethik lernen muss kein Ratespiel sein. Mit diesen 7 Tipps verstehst du ethische ...
+[Pinterest] Erstelle Pin fuer: Ethik lernen: 7 Tipps, mit denen du Ethik wirklich verstehst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/ethik-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/ethik-lernen-tipps.html
+[Pinterest] Uploading ethik-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=8118b820-9192-4f81-a02d-f0077556f469
+[Pinterest] Pin erstellt! Post-ID: cmoo8tf0t031vp70yo72kmde9
+[Pinterest] Erfolgreich! Pin-ID: cmoo8tf0t031vp70yo72kmde9
+
+[Pinterest-Fallback] OK: ethik-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-02 11:13:00] Next run in 8 hours.
+---
+[2026-05-02 19:13:03] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
