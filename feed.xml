@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 03 May 2026 11:31:27 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 19:35:09 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</guid>
+      <pubDate>Sun, 03 May 2026 19:34:30 +0000</pubDate>
+      <description>Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, Stochastik und Geometrie gezielt lernst und typische Fehler vermeidest.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</guid>
+      <pubDate>Sun, 03 May 2026 19:34:04 +0000</pubDate>
+      <description>Kurvendiskussion verstehen und sicher beherrschen: Ableitungen, Nullstellen, Extrempunkte, Wendepunkte. Die vollständige Schritt-für-Schritt-Anleitung für Schüler.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Abitur Prüfungstag: 8 Tipps für einen ruhigen und starken Start</title>
       <link>https://nachhilfe-mentor.de/blog/posts/abitur-pruefungstag-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 01 May 2026 02:49:23 +0000</pubDate>
       <description>Erlebniserzählung schreiben leicht gemacht: Wir zeigen dir den richtigen Aufbau, packende Einstiege, lebendige Beschreibungen und die häufigsten Fehler, die du vermeiden solltest.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Wissenschaftliches Arbeiten: Hausarbeit Schritt für Schritt schreiben</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/wissenschaftliches-arbeiten-tipps.html</guid>
-      <pubDate>Thu, 30 Apr 2026 18:44:38 +0000</pubDate>
-      <description>Wissenschaftliches Arbeiten leicht gemacht: So schreibst du eine Hausarbeit oder Seminararbeit Schritt für Schritt. Mit Tipps zu Struktur, Quellen und Zitieren.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Hausarbeit schreiben: Schritt-für-Schritt-Anleitung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/hausarbeit-schreiben-tipps.html</guid>
-      <pubDate>Thu, 30 Apr 2026 18:44:30 +0000</pubDate>
-      <description>Hausarbeit schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Schüler und Studenten. Aufbau, Gliederung, Quellen, Zitieren und häufige Fehler vermeiden.</description>
-      <category>Studium &amp; Schule</category>
     </item>
   </channel>
 </rss>
