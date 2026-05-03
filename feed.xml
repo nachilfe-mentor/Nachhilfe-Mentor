@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 02 May 2026 19:19:12 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2026 03:23:50 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/musik-beim-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/musik-beim-lernen-tipps.html</guid>
+      <pubDate>Sun, 03 May 2026 03:23:05 +0000</pubDate>
+      <description>Musik beim Lernen: Hilft sie wirklich oder lenkt sie ab? Hier erfährst du, welche Musik für welche Aufgaben geeignet ist und was die Forschung dazu sagt.</description>
+      <category>Lernmethoden</category>
+    </item>
+    <item>
+      <title>Instrument üben: 7 Tipps, mit denen du schnell besser wirst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/instrument-ueben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/instrument-ueben-tipps.html</guid>
+      <pubDate>Sun, 03 May 2026 03:22:35 +0000</pubDate>
+      <description>Instrument üben muss nicht frustrierend sein. Mit diesen 7 Tipps übst du effektiver, machst schneller Fortschritte und bleibst langfristig dabei.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Bewegung und Lernen: Warum Sport deine Noten verbessert</title>
       <link>https://nachhilfe-mentor.de/blog/posts/bewegung-und-lernen-sport-tipps.html</link>
@@ -149,22 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</guid>
       <pubDate>Thu, 30 Apr 2026 10:39:11 +0000</pubDate>
       <description>Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und die häufigsten Fehler, die du vermeiden solltest. Mit praktischen Beispielen für Klasse 8-12.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Stellungnahme schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/stellungnahme-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/stellungnahme-schreiben-tipps.html</guid>
-      <pubDate>Thu, 30 Apr 2026 10:38:44 +0000</pubDate>
-      <description>Stellungnahme schreiben leicht gemacht: Aufbau, Einleitung, Argumente und Schluss erklärt. Mit 5 häufigen Fehlern und einer Checkliste für Schüler in Klasse 8 bis 12.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Leserbrief schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/leserbrief-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/leserbrief-schreiben-tipps.html</guid>
-      <pubDate>Thu, 30 Apr 2026 02:32:44 +0000</pubDate>
-      <description>Leserbrief schreiben leicht gemacht: Aufbau, Sprache, Argumente und die häufigsten Fehler. Mit Checkliste für Schüler der Klassen 7 bis 10.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
