@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler – Nachhilfe Mentor Blog</title>
+  <meta name="description" content="Kurvendiskussion verstehen und sicher beherrschen: Ableitungen, Nullstellen, Extrempunkte, Wendepunkte. Die vollständige Schritt-für-Schritt-Anleitung für Schüler.">
+  <meta name="keywords" content="Kurvendiskussion, Kurvendiskussion Schritt für Schritt, Kurvendiskussion Anleitung, Extrempunkte berechnen, Wendepunkte berechnen, Ableitungen Kurvendiskussion, Kurvendiskussion Mathe, Kurvendiskussion Gymnasium, Kurvendiskussion Abitur, Analysis Kurvendiskussion">
+  <meta property="og:title" content="Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler">
+  <meta property="og:description" content="Kurvendiskussion verstehen und sicher beherrschen: Ableitungen, Nullstellen, Extrempunkte, Wendepunkte. Die vollständige Schritt-für-Schritt-Anleitung für Schüler.">
+  <meta property="og:image" content="/blog/posts/img/kurvendiskussion-tipps.webp">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html">
+  <link rel="alternate" type="application/rss+xml" title="Nachhilfe Mentor Blog" href="https://nachhilfe-mentor.de/feed.xml">
+  <link rel="icon" href="/onewebmedia/logo-ghost.png" type="image/png">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EJGS7V6113');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/modern-tech.css">
+  <link rel="stylesheet" href="/blog/blog.css">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <img src="/onewebmedia/logo-ghost.png" alt="Nachhilfe Mentor Logo">
+      <span class="nav-logo-text">Nachhilfe Mentor</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Startseite</a>
+      <a href="/#features" class="nav-link">Features</a>
+      <a href="/blog/" class="nav-link active">Blog</a>
+      <a href="/#download" class="nav-link">Download</a>
+    </div>
+    <div class="nav-stores">
+      <a href="https://play.google.com/store/apps/details?id=com.thuemmlerai.nachhilfementor" class="nav-store-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+        Google Play
+      </a>
+      <a href="https://apps.apple.com/de/app/nachhilfe-mentor/id6740411879" class="nav-store-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
+        App Store
+      </a>
+    </div>
+    <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<nav class="mobile-nav" aria-label="Mobile Navigation">
+  <a href="/" class="nav-link">Startseite</a>
+  <a href="/#features" class="nav-link">Features</a>
+  <a href="/blog/" class="nav-link active">Blog</a>
+  <a href="/#download" class="nav-link">Download</a>
+</nav>
+
+<section class="blog-post-hero">
+  <div class="hero-bg"><div class="hero-grid"></div><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+  <div class="container">
+    <a href="/blog/" class="blog-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Zurück zum Blog
+    </a>
+    <div class="blog-post-meta">
+      <span class="blog-tag">Fachspezifische Lerntipps</span>
+      <time datetime="2026-05-03">03. Mai 2026</time>
+      <span>7 Min. Lesezeit</span>
+    </div>
+    <h1 class="blog-post-title">Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</h1>
+    <p class="blog-post-subtitle">Ableitungen, Nullstellen, Extrempunkte, Wendepunkte: So gehst du eine Kurvendiskussion systematisch an und verlierst keinen Punkt mehr in der Klausur.</p>
+  </div>
+</section>
+
+<article class="blog-post-content">
+  <div class="container">
+
+    <div class="blog-featured-img">
+      <img src="/blog/posts/img/kurvendiskussion-tipps.webp" alt="Kurvendiskussion Schritt-für-Schritt-Anleitung für Schüler" loading="lazy">
+    </div>
+
+    <p>Die Kurvendiskussion gehört zu den Dauerbrennern im Analysis-Unterricht. Ob Klasse 11, Klasse 12 oder Abitur: Sie taucht fast immer auf, und wer das Schema einmal wirklich verinnerlicht hat, kann sie sicher und zügig abarbeiten. Wer hingegen die Schritte auswendig lernt ohne sie zu verstehen, verliert regelmäßig Punkte bei der Interpretation.</p>
+
+    <p>In dieser Anleitung zeige ich dir, wie du eine Kurvendiskussion Schritt für Schritt angehst, was hinter jedem Schritt steckt und welche Fehler du unbedingt vermeiden solltest.</p>
+
+    <h2>Was ist eine Kurvendiskussion?</h2>
+
+    <p>Bei einer Kurvendiskussion untersuchst du eine Funktion f(x) systematisch auf alle wichtigen Eigenschaften: Definitionsbereich, Symmetrie, Nullstellen, Extrempunkte und Wendepunkte. Am Ende kannst du auf dieser Basis einen genauen Graphen zeichnen.</p>
+
+    <p>Das Wichtigste zuerst: Eine Kurvendiskussion ist kein Selbstzweck. Jeder Schritt beantwortet eine konkrete Frage über den Graphen. Wenn du das im Kopf behältst, macht das Verfahren viel mehr Sinn.</p>
+
+    <h2>Schritt 1: Definitionsbereich bestimmen</h2>
+
+    <p>Zuerst fragst du: Für welche x-Werte ist die Funktion überhaupt definiert? Bei ganzrationalen Funktionen (Polynomen) ist die Antwort immer D = ℝ, also alle reellen Zahlen. Schwieriger wird es bei gebrochen-rationalen Funktionen (Nenner nicht null) oder Wurzelfunktionen (Ausdruck unter der Wurzel muss ≥ 0 sein).</p>
+
+    <p>In der Schule begegnest du am häufigsten Polynomen, also kannst du diesen Schritt oft schnell abhaken.</p>
+
+    <h2>Schritt 2: Symmetrie prüfen</h2>
+
+    <p>Prüfe, ob der Graph achsensymmetrisch zur y-Achse (gerade Funktion) oder punktsymmetrisch zum Ursprung (ungerade Funktion) ist:</p>
+
+    <ul>
+      <li><strong>Achsensymmetrie:</strong> f(-x) = f(x) für alle x</li>
+      <li><strong>Punktsymmetrie:</strong> f(-x) = -f(x) für alle x</li>
+    </ul>
+
+    <p>Praktisch: Enthält die Funktion nur gerade Exponenten (x², x⁴, ...) und eventuell eine Konstante, ist sie achsensymmetrisch. Nur ungerade Exponenten (x, x³, x⁵, ...) bedeuten Punktsymmetrie. Mischungen sind asymmetrisch.</p>
+
+    <h2>Schritt 3: Ableitungen berechnen</h2>
+
+    <p>Das Herzstück jeder Kurvendiskussion. Du brauchst in der Regel:</p>
+
+    <ul>
+      <li><strong>f'(x)</strong>: die erste Ableitung (Steigung des Graphen)</li>
+      <li><strong>f''(x)</strong>: die zweite Ableitung (Krümmung des Graphen)</li>
+      <li><strong>f'''(x)</strong>: die dritte Ableitung (nur für Wendepunkte nötig, wenn f''(x₀) = 0 nicht ausreicht)</li>
+    </ul>
+
+    <p>Berechne alle Ableitungen sorgfältig, bevor du weitermachst. Ein Rechenfehler hier zieht sich durch alle folgenden Schritte.</p>
+
+    <h2>Schritt 4: Nullstellen berechnen</h2>
+
+    <p>Setze f(x) = 0 und löse nach x auf. Die Nullstellen sind die x-Werte, an denen der Graph die x-Achse schneidet.</p>
+
+    <p>Häufige Lösungswege:</p>
+    <ul>
+      <li>Ausklammern (z.B. x³ - 4x = x(x² - 4))</li>
+      <li>Quadratische Formel (bei Grad 2)</li>
+      <li>Substitution (z.B. x⁴ - 5x² + 4 mit u = x²)</li>
+      <li>Polynomdivision (wenn eine Nullstelle bekannt oder geraten)</li>
+    </ul>
+
+    <p>Wichtig: Schreibe nicht nur x = ..., sondern auch die zugehörigen Punkte auf: N₁(x₁|0), N₂(x₂|0).</p>
+
+    <h2>Schritt 5: Extrempunkte bestimmen</h2>
+
+    <p>Extrempunkte sind Hoch- oder Tiefpunkte des Graphen. Das Vorgehen:</p>
+
+    <ol>
+      <li>Setze f'(x) = 0 und löse nach x (notwendige Bedingung)</li>
+      <li>Prüfe für jeden gefundenen x-Wert mit dem hinreichenden Kriterium:</li>
+    </ol>
+
+    <ul>
+      <li><strong>f''(x₀) &lt; 0:</strong> Hochpunkt (Funktion ist dort linksgekrümmt)</li>
+      <li><strong>f''(x₀) &gt; 0:</strong> Tiefpunkt (Funktion ist dort rechtsgekrümmt)</li>
+      <li><strong>f''(x₀) = 0:</strong> Zweite Ableitung reicht nicht, Vorzeichenwechsel von f' prüfen</li>
+    </ul>
+
+    <p>Vergiss nicht, den y-Wert zu berechnen: Setze x₀ in f(x) ein, um den vollständigen Punkt H(x₀|f(x₀)) anzugeben.</p>
+
+    <h2>Schritt 6: Wendepunkte und Krümmungsverhalten</h2>
+
+    <p>Ein Wendepunkt ist der Punkt, an dem der Graph seine Krümmungsrichtung wechselt, also von links- zu rechtsgekrümmt oder umgekehrt. Das Vorgehen:</p>
+
+    <ol>
+      <li>Setze f''(x) = 0 und löse nach x</li>
+      <li>Prüfe, ob f'''(x₀) ≠ 0 (dann liegt tatsächlich ein Wendepunkt vor)</li>
+      <li>Alternativ: Vorzeichenwechsel von f'' an der Stelle x₀ prüfen</li>
+    </ol>
+
+    <p>Berechne auch hier den y-Wert: W(x₀|f(x₀)). Ein Wendepunkt mit waagerechter Tangente (f'(x₀) = 0 und f''(x₀) = 0) heißt Sattelpunkt oder Terrassenpunkt.</p>
+
+    <h2>Schritt 7: Verhalten für x gegen ±∞</h2>
+
+    <p>Wie verhält sich die Funktion für sehr große und sehr kleine x-Werte? Bei Polynomen entscheidet der führende Term:</p>
+
+    <ul>
+      <li>Positiver Koeffizient, gerader Exponent: Graph geht nach oben für x → ±∞</li>
+      <li>Positiver Koeffizient, ungerader Exponent: Graph geht links nach unten, rechts nach oben</li>
+      <li>Negative Koeffizienten: jeweils umgekehrt</li>
+    </ul>
+
+    <p>Diese Information hilft dir, den Graphen grob einzuordnen, bevor du ihn zeichnest.</p>
+
+    <h2>Schritt 8: Graph zeichnen</h2>
+
+    <p>Jetzt trägst du alle berechneten Punkte in ein Koordinatensystem ein: Nullstellen, Hochpunkte, Tiefpunkte, Wendepunkte. Verbinde sie unter Berücksichtigung des Verhaltens für x → ±∞ und des Krümmungsverhaltens. Ein Graph, der alle Punkte korrekt enthält und das richtige Krümmungsverhalten zeigt, bringt volle Punkte.</p>
+
+    <p>Wenn du beim Zeichnen unsicher bist: Berechne ein paar Stützpunkte dazwischen, indem du weitere x-Werte in f(x) einsetzt.</p>
+
+    <h2>Die häufigsten Fehler bei der Kurvendiskussion</h2>
+
+    <p>Aus unzähligen Klausurauswertungen kristallisieren sich immer die gleichen Fehler heraus:</p>
+
+    <ul>
+      <li><strong>Notwendige und hinreichende Bedingung verwechseln:</strong> f'(x₀) = 0 bedeutet nicht automatisch Extrempunkt. Immer das hinreichende Kriterium prüfen.</li>
+      <li><strong>y-Werte vergessen:</strong> x₀ allein ist kein Punkt. Immer f(x₀) ausrechnen.</li>
+      <li><strong>Falsche Ableitung:</strong> Ein Rechenfehler in f'(x) oder f''(x) zieht sich durch alle Schritte. Ableitungen nochmals überprüfen.</li>
+      <li><strong>Wendepunkte als Extrempunkte bezeichnen:</strong> Ein Wendepunkt ist kein Hoch- oder Tiefpunkt. Die Begriffe sauber trennen.</li>
+      <li><strong>Graph ohne Begründung:</strong> In der Klausur reicht es nicht, nur zu zeichnen. Punkte müssen berechnet und benannt sein.</li>
+    </ul>
+
+    <h2>Kurvendiskussion sicher lernen mit Active Recall</h2>
+
+    <p>Die Kurvendiskussion ist ein Verfahren, das du durch Üben verinnerlicherst, nicht durch Lesen. Das bedeutet: Aufgaben rechnen, Fehler analysieren, korrigieren, und wieder rechnen. Wer eine Aufgabe einmal komplett durchrechnet und danach die eigenen Fehler versteht, lernt mehr als jemand, der zehn Aufgaben nur anschaut.</p>
+
+    <p>Nutze <a href="/blog/posts/active-recall-lerntechnik.html">Active Recall</a>: Schließe nach jedem Schritt deine Unterlagen und erkläre dir selbst, was du getan hast und warum. Das festigt das Verfahren nachhaltig. Die Nachhilfe Mentor App kann dich dabei unterstützen, indem sie gezielt Rückfragen zu Ableitungsregeln und den Kriterien für Extrem- und Wendepunkte stellt, genau dort wo deine Lücken sind.</p>
+
+    <p>Wenn du dich gezielt auf das Mathe-Abitur vorbereitest, findest du im Artikel <a href="/blog/posts/mathe-abitur-vorbereitung.html">Mathe Abitur Vorbereitung</a> einen vollständigen Überblick über alle drei Themenbereiche Analysis, Stochastik und Analytische Geometrie.</p>
+
+    <h2>Kurvendiskussion: Das Wichtigste auf einen Blick</h2>
+
+    <p>Wenn du den Ablauf noch einmal kompakt zusammengefasst haben möchtest:</p>
+
+    <ol>
+      <li>Definitionsbereich bestimmen</li>
+      <li>Symmetrie prüfen (gerade/ungerade Funktion)</li>
+      <li>Erste, zweite (und dritte) Ableitung berechnen</li>
+      <li>Nullstellen berechnen: f(x) = 0</li>
+      <li>Extrempunkte: f'(x) = 0 lösen, f''(x₀) prüfen, y-Wert berechnen</li>
+      <li>Wendepunkte: f''(x) = 0 lösen, f'''(x₀) oder VZW prüfen, y-Wert berechnen</li>
+      <li>Verhalten für x → ±∞ beschreiben</li>
+      <li>Graph zeichnen mit allen markierten Punkten</li>
+    </ol>
+
+    <p>Mit diesem Schema kannst du jede Kurvendiskussion systematisch und sicher durcharbeiten. Der Schlüssel liegt darin, das Verfahren so oft zu üben, bis du es ohne nachdenken abrufen kannst und gleichzeitig jeden Schritt wirklich verstehst.</p>
+
+    <div class="blog-cta">
+      <h3>Bereit, smarter zu lernen?</h3>
+      <p>Lade Nachhilfe Mentor kostenlos herunter und erlebe KI-gestuetztes Lernen selbst.</p>
+      <div class="download-btns" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://play.google.com/store/apps/details?id=com.thuemmlerai.nachhilfementor" class="btn-store" target="_blank" rel="noopener">
+          <div class="btn-store-inner">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+            <div class="btn-store-text"><span class="label">Jetzt bei</span><span class="name">Google Play</span></div>
+          </div>
+        </a>
+        <a href="https://apps.apple.com/de/app/nachhilfe-mentor/id6740411879" class="btn-store" target="_blank" rel="noopener">
+          <div class="btn-store-inner">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
+            <div class="btn-store-text"><span class="label">Laden im</span><span class="name">App Store</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="/onewebmedia/logo-ghost.png" alt="Nachhilfe Mentor">
+          <span class="footer-logo-text">Nachhilfe Mentor</span>
+        </div>
+        <p class="footer-tagline">Dein persönlicher KI-Lerncoach. Smarter lernen, mehr behalten.</p>
+      </div>
+      <div class="footer-col"><h4>Produkt</h4><a href="/#features">Features</a><a href="/blog/">Blog</a><a href="/#download">Download</a></div>
+      <div class="footer-col"><h4>Rechtliches</h4><a href="/datenschutzerklaerung.html">Datenschutz</a><a href="/nutzungsbedingungen.html">Nutzungsbedingungen</a><a href="/impressum.html">Impressum</a></div>
+      <div class="footer-col"><h4>Support</h4><a href="mailto:support@nachhilfe-mentor.de">Kontakt</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Thümmler AI GmbH. Alle Rechte vorbehalten.</p>
+      <div class="footer-meta"><span>Powered by AI</span><span>Made with Liebe in Germany</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/scripts/modern-tech.js"></script>
+</body>
+</html>
