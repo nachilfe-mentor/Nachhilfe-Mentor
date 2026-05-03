@@ -4559,3 +4559,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf abgeschlossen. Hier die Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `sport-theorie-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/sport-theorie-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (in `bewegung-und-lernen-sport-tipps.html` Rückverlinkung zum neuen Artikel; im neuen Artikel Links zu `feynman-technik-erklaeren-lernen.html` und `active-recall-lerntechnik.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #108, Verlinkungen, Keyword-Pool)
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO-Update, Pinterest-Log)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (114 URLs in Sitemap, 110 URLs an IndexNow übermittelt)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmooq5yxw04zcp70yagxdikiv`
+
+**Analytics-Erkenntnis:** Google organisch bei 51 Sessions (stärkstes Wachstum bisher). Erdkunde bleibt Top-Fach-Artikel, Kommentar-Schreiben gewinnt an Fahrt. Neues Sport-Theorie-Cluster erschlossen (wenig Wettbewerb, klare Suchintention für Schüler mit Sport als Prüfungsfach).
+[2026-05-02 19:19:12] Blog cycle completed successfully.
+[2026-05-02 19:19:12] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 114 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 110 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 110 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 114 URLs in Sitemap, 20 Artikel im Feed.
+[main 750661c] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   d760a12..750661c  main -> main
+[2026-05-02 19:19:12] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: sport-theorie-lernen-tipps
+  Titel: Sport Theorie lernen: 7 Tipps für deine Sportklausur
+  Desc:  Sport Theorie lernen muss kein Mysterium sein. Mit diesen 7 Tipps bereitest du d...
+[Pinterest] Erstelle Pin fuer: Sport Theorie lernen: 7 Tipps für deine Sportklausur
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/sport-theorie-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/sport-theorie-lernen-tipps.html
+[Pinterest] Uploading sport-theorie-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=17f7b7e5-66b8-43ec-a735-4292cd6e7441
+[Pinterest] Pin erstellt! Post-ID: cmooq6nyx04zgp70y43jlig6f
+[Pinterest] Erfolgreich! Pin-ID: cmooq6nyx04zgp70y43jlig6f
+
+[Pinterest-Fallback] OK: sport-theorie-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-02 19:19:12] Next run in 8 hours.
+---
+[2026-05-03 03:19:15] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
