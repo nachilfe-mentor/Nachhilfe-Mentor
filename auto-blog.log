@@ -4760,3 +4760,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `lernen-keine-lust-motivation.html`
+- [x] Cover-Bild generiert: `blog/posts/img/lernen-keine-lust-motivation.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: Rücklink in `lernblockade-loesen-tipps.html` eingefügt; im neuen Artikel Links zu `active-recall-lerntechnik`, `lernblockade-loesen-tipps` und `prokrastination-ueberwinden-lernen`
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #112, Keyword aus Pool entfernt, Verlinkungen dokumentiert)
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO, Pinterest)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (118 URLs in Sitemap, 114 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoqnjs070b20p70y3gvozacx`
+
+**Analytics-Beobachtung:** Pinterest ist auf 1 Session gesunken (von 4). Wird weiter beobachtet. Google organisch bei 52 Sessions (stärkster Traffic-Kanal). Schreibaufgaben-Cluster (Erlebniserzählung, Kommentar) und Motivationsartikel (Lernblockade) performen am besten — neuer Artikel "Lernen wenn man keine Lust hat" passt direkt in diesen performanten Cluster.
+[2026-05-04 03:41:16] Blog cycle completed successfully.
+[2026-05-04 03:41:16] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 118 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 114 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 114 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 118 URLs in Sitemap, 20 Artikel im Feed.
+[main a7d8353] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   a9553ca..a7d8353  main -> main
+[2026-05-04 03:41:16] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: lernen-keine-lust-motivation
+  Titel: Lernen wenn man keine Lust hat: 7 Tipps, die wirklich helfen
+  Desc:  Keine Lust zum Lernen? Entdecke 7 wissenschaftlich fundierte Tipps, mit denen du...
+[Pinterest] Erstelle Pin fuer: Lernen wenn man keine Lust hat: 7 Tipps, die wirklich helfen
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lernen-keine-lust-motivation.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lernen-keine-lust-motivation.html
+[Pinterest] Uploading lernen-keine-lust-motivation.webp (image/webp)...
+[Pinterest] Upload OK: id=dd844b2c-88e9-4970-a9cf-53c2dc47d232
+[Pinterest] Pin erstellt! Post-ID: cmoqnk5x00b21p70y6dzbxura
+[Pinterest] Erfolgreich! Pin-ID: cmoqnk5x00b21p70y6dzbxura
+
+[Pinterest-Fallback] OK: lernen-keine-lust-motivation
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-04 03:41:16] Next run in 8 hours.
+---
+[2026-05-04 11:41:19] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
