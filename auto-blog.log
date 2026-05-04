@@ -4710,3 +4710,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles abgeschlossen. Hier die Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `kurvendiskussion-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/kurvendiskussion-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung von `mathe-abitur-vorbereitung.html` auf den neuen Artikel; im neuen Artikel Links zu `active-recall-lerntechnik.html` und `mathe-abitur-vorbereitung.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (111 Artikel, Cluster "Kurvendiskussion Analysis" ergänzt)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (117 URLs in Sitemap, 113 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoq675it09gkp70ynla8ufwa`
+
+**Analytics-Notiz:** Google organisch dominiert mit 52 Sessions (stärkstes SEO-Wachstum bisher). Schreibaufgaben-Cluster (Erlebniserzählung, Kommentar) ist aktuell der Top-Performer der letzten 7 Tage. Der neue Kurvendiskussion-Artikel bedient einen hochfrequenten, spezifischen Gymnasium-Suchanfrage (Klasse 11/12) im Mathe-Cluster, der noch nicht abgedeckt war.
+[2026-05-03 19:35:31] Blog cycle completed successfully.
+[2026-05-03 19:35:31] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 117 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 113 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 113 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 117 URLs in Sitemap, 20 Artikel im Feed.
+[main 55adc61] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   234e920..55adc61  main -> main
+[2026-05-03 19:35:31] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: kurvendiskussion-tipps
+  Titel: Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler
+  Desc:  Kurvendiskussion verstehen und sicher beherrschen: Ableitungen, Nullstellen, Ext...
+[Pinterest] Erstelle Pin fuer: Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/kurvendiskussion-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html
+[Pinterest] Uploading kurvendiskussion-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=c4a636ab-4e05-4bdd-89fc-1c3562f3d624
+[Pinterest] Pin erstellt! Post-ID: cmoq67hmu09glp70yk0o39dha
+[Pinterest] Erfolgreich! Pin-ID: cmoq67hmu09glp70yk0o39dha
+
+[Pinterest-Fallback] OK: kurvendiskussion-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-03 19:35:31] Next run in 8 hours.
+---
+[2026-05-04 03:35:34] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
