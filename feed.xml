@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 04 May 2026 03:41:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 11:46:52 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</guid>
+      <pubDate>Mon, 04 May 2026 11:45:48 +0000</pubDate>
+      <description>Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, Stochastik und Geometrie gezielt lernst und typische Fehler vermeidest.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Stochastik lernen: 7 Tipps für Wahrscheinlichkeitsrechnung und Statistik</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</guid>
+      <pubDate>Mon, 04 May 2026 11:45:01 +0000</pubDate>
+      <description>Stochastik lernen leicht gemacht: 7 Tipps für Wahrscheinlichkeitsrechnung, Binomialverteilung und Hypothesentests. So bereitest du dich optimal auf Klausur und Abitur vor.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Lernblockade lösen: 7 Tipps, wenn du einfach nicht anfangen kannst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernblockade-loesen-tipps.html</link>
@@ -22,14 +38,6 @@
       <pubDate>Mon, 04 May 2026 03:39:08 +0000</pubDate>
       <description>Keine Lust zum Lernen? Entdecke 7 wissenschaftlich fundierte Tipps, mit denen du trotzdem anfängst und produktiv bleibst, auch wenn die Motivation fehlt.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</guid>
-      <pubDate>Sun, 03 May 2026 19:34:30 +0000</pubDate>
-      <description>Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, Stochastik und Geometrie gezielt lernst und typische Fehler vermeidest.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
     <item>
       <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</title>
@@ -157,14 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/praesentation-erstellen-tipps.html</guid>
       <pubDate>Fri, 01 May 2026 10:54:40 +0000</pubDate>
       <description>Präsentation erstellen leicht gemacht: 7 konkrete Tipps für überzeugende PowerPoint-Präsentationen in der Schule und im Studium. Mit Struktur, Design und Übung zum Erfolg.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Kurzgeschichte schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/kurzgeschichte-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/kurzgeschichte-schreiben-tipps.html</guid>
-      <pubDate>Fri, 01 May 2026 02:50:17 +0000</pubDate>
-      <description>Du musst eine Kurzgeschichte schreiben und weißt nicht wie? Diese Anleitung erklärt Aufbau, Merkmale und die häufigsten Fehler – für Schüler in Klasse 7–10.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
