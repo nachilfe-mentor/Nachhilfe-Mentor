@@ -4810,3 +4810,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `stochastik-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/stochastik-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (stochastik-lernen-tipps verlinkt zu feynman-technik, active-recall, mathe-abitur-vorbereitung; Rückverlinkung von mathe-abitur-vorbereitung.html in Stochastik-Abschnitt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (113 Artikel, neues Cluster: Stochastik)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: 119 URLs in Sitemap, 115 an IndexNow submitted
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmor4wuos00sxqi0y0p4l0eeg`
+
+**Analytics-Erkenntnisse:** Google organisch dominiert jetzt mit 53 Sessions. Schreibaufgaben-Cluster explodiert (Erlebniserzählung + Kommentar top diese Woche). Pinterest auf 1 Session gefallen. Nächste Empfehlungen: Algebra/Vektorrechnung lernen (Mathe-Untercluster), Abitur Sport Vorbereitung (Lücke), oder weiterer Schreibaufgaben-Artikel (Dramenanalyse schreiben).
+[2026-05-04 11:47:20] Blog cycle completed successfully.
+[2026-05-04 11:47:20] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 119 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 115 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 115 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 119 URLs in Sitemap, 20 Artikel im Feed.
+[main dcc6306] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   708d6c3..dcc6306  main -> main
+[2026-05-04 11:47:20] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: stochastik-lernen-tipps
+  Titel: Stochastik lernen: 7 Tipps für Wahrscheinlichkeitsrechnung und Statistik
+  Desc:  Stochastik lernen leicht gemacht: 7 Tipps für Wahrscheinlichkeitsrechnung, Binom...
+[Pinterest] Erstelle Pin fuer: Stochastik lernen: 7 Tipps für Wahrscheinlichkeitsrechnung und Statistik
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/stochastik-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html
+[Pinterest] Uploading stochastik-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=6add663c-9b25-4470-8467-c1dddbb1c579
+[Pinterest] Pin erstellt! Post-ID: cmor4x9nv00syqi0yeet9x81o
+[Pinterest] Erfolgreich! Pin-ID: cmor4x9nv00syqi0yeet9x81o
+
+[Pinterest-Fallback] OK: stochastik-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-04 11:47:20] Next run in 8 hours.
+---
+[2026-05-04 19:47:23] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
