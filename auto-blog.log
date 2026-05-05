@@ -4910,3 +4910,54 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `sport-abitur-vorbereitung.html`
+- [x] Cover-Bild generiert: `blog/posts/img/sport-abitur-vorbereitung.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`sport-theorie-lernen-tipps.html` Fazit → neuer Artikel; `abitur-vorbereitung-tipps.html` Fazit → neuer Artikel)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (115 Artikel, Verlinkungen ergänzt)
+- [x] Self-Improvement R23 durchgeführt: Analytics-Zusammenfassung in `_BLOG_STRATEGY.md`, Empfehlungen für nächste 5 Artikel notiert
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (121 URLs in Sitemap, 117 URLs an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmos3nzxd05damq0yvvz9aq2c`
+
+**Thema:** Sport Abitur Vorbereitung, da die letzte Lücke im Abitur-Cluster geschlossen wurde und der Mai 2026 (Abitursaison) perfektes Timing bietet. Analytics zeigen: Google wächst auf 54 Sessions, Schreibaufgaben-Cluster rankt aktiv, Pinterest eingebrochen (weiter beobachten).
+[2026-05-05 04:00:12] Blog cycle completed successfully.
+[2026-05-05 04:00:12] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 121 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 117 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 117 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 121 URLs in Sitemap, 20 Artikel im Feed.
+[main 16a7800] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   d69dd6b..16a7800  main -> main
+[2026-05-05 04:00:12] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: sport-abitur-vorbereitung
+  Titel: Sport Abitur Vorbereitung: So meisterst du Theorie und Praxis
+  Desc:  Sport Abitur Vorbereitung: So lernst du Sporttheorie wirklich und überzeugst auc...
+[Pinterest] Erstelle Pin fuer: Sport Abitur Vorbereitung: So meisterst du Theorie und Praxis
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/sport-abitur-vorbereitung.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/sport-abitur-vorbereitung.html
+[Pinterest] Uploading sport-abitur-vorbereitung.webp (image/webp)...
+[Pinterest] Upload OK: id=271eaa45-9553-4af0-a861-36abc59d6a94
+[Pinterest] Pin erstellt! Post-ID: cmos3odsf05dzqi0ykn8x5fja
+[Pinterest] Erfolgreich! Pin-ID: cmos3odsf05dzqi0ykn8x5fja
+
+[Pinterest-Fallback] OK: sport-abitur-vorbereitung
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-05 04:00:12] Next run in 8 hours.
+---
+[2026-05-05 12:00:15] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
