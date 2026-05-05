@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 116
+- Gesamtzahl Artikel: 117
 - Letzte Veröffentlichung: 2026-05-05
 - Nächster geplanter Post: TBD
 
@@ -128,6 +128,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 | 103 | 2026-05-01 | erlebniserzaehlung-schreiben-tipps | Erlebniserzählung schreiben: Aufbau, Tipps und häufige Fehler | Erlebniserzählung schreiben, Erlebniserzählung Aufbau, Erlebniserzählung Tipps, Erlebniserzählung Schule, Erlebniserzählung Einleitung, Erlebniserzählung schreiben Klasse 5 6 7, persönliche Erzählung schreiben, Erlebnisbericht schreiben, Erzählung schreiben Deutsch | Schule & Studium | Vollständige Anleitung zum Erlebniserzählung schreiben: Was ist eine Erlebniserzählung, Dreigliederung (Einleitung/Hauptteil/Schluss), packende Einstiege (in medias res, Sinneseindruck, Gedanke), lebendige Beschreibungen mit allen fünf Sinnen, innere Gedanken (direkte innere Rede, erlebte Rede), 5 häufige Fehler (zu viele Ereignisse, langweiliger Einstieg, keine Gefühle, kein Fokus, falsche Zeitform), Checkliste vor Abgabe. App-Erwähnung (Textsorten per Active Recall üben). Crosslinks zu deutsch-aufsatz-schreiben-tipps, charakterisierung-schreiben-tipps, kurzgeschichte-schreiben-tipps. Rückverlinkungen von deutsch-aufsatz-schreiben-tipps, kurzgeschichte-schreiben-tipps. |
 | 102 | 2026-04-30 | facharbeit-schreiben-tipps | Facharbeit schreiben: Aufbau, Tipps und häufige Fehler | Facharbeit schreiben, Facharbeit Aufbau, Facharbeit Tipps, Facharbeit Schule, Facharbeit Gliederung, Facharbeit Einleitung, Facharbeit Quellen, Facharbeit zitieren, Facharbeit Klasse 11 12 | Schule & Studium | Schritt-für-Schritt-Anleitung zum Facharbeit schreiben: Aufbau (Titelblatt, Inhaltsverzeichnis, Einleitung, Hauptteil, Schluss, Literaturverzeichnis, Selbstständigkeitserklärung), Phasen (Thema/Fragestellung, Zeitplan, Recherche, Gliederung, Schreiben), Quellen richtig zitieren (direkt/indirekt, Einheitlichkeit), Einleitung und Fazit, 5 häufige Fehler (zu spät anfangen, keine Fragestellung, Quellen vergessen, Einleitung zuerst, zu wenig Überarbeitungsrunden), Abgabe-Checkliste. App-Erwähnung (Nachhilfe Mentor für Wissenslücken beim Quellenverständnis). Crosslinks zu wissenschaftliches-arbeiten-tipps, lernplan-erstellen-tipps, feynman-technik-erklaeren-lernen, hausarbeit-schreiben-tipps. Rückverlinkung von hausarbeit-schreiben-tipps und wissenschaftliches-arbeiten-tipps. |
 | 101 | 2026-04-30 | stellungnahme-schreiben-tipps | Stellungnahme schreiben: Aufbau, Tipps und häufige Fehler | Stellungnahme schreiben, Stellungnahme Aufbau, Stellungnahme Tipps, Stellungnahme Schule, Stellungnahme Einleitung, Stellungnahme Argumente, Stellungnahme Schluss, Stellungnahme Klasse 8, Stellungnahme Deutsch Klausur, Stellungnahme schreiben Anleitung | Schule & Studium | Vollständige Anleitung zum Stellungnahme schreiben: Was ist eine Stellungnahme und wann wird sie gefordert, Abgrenzung zu Erörterung/Kommentar/Leserbrief, Dreigliederung (Einleitung mit These, Hauptteil mit Dreischritt These-Begründung-Beispiel, Schluss mit Fazit/Appell), Sprache und Stil (sachlich, Ich erlaubt, Signalwörter), Schritt-für-Schritt-Vorgehen (Position klären, Argumente sammeln, Gliederung, Schreiben, Kontrollieren), 5 häufige Fehler, Checkliste vor Abgabe. App-Erwähnung (Nachhilfe Mentor für Active Recall und Argumentationsstruktur). Crosslinks zu eroerterung-schreiben-tipps, kommentar-schreiben-tipps. Rückverlinkungen von eroerterung-schreiben-tipps, kommentar-schreiben-tipps. |
+| 117 | 2026-05-05 | italienisch-lernen-tipps | Italienisch lernen: 8 Tipps, mit denen du schnell besser wirst | Italienisch lernen, Italienisch lernen Tipps, Italienisch besser werden, Italienisch Schule, Italienisch Grammatik lernen, Italienisch Vokabeln lernen, Italienisch sprechen üben, Italienisch verbessern | Sprachen lernen | 8 Tipps zum Italienisch lernen: Aussprache von Anfang an richtig (Doppelkonsonanten, c/g-Regeln, Betonung), Vokabeln mit Spaced Repetition und Artikeln, Grammatik verstehen statt auswendig (Feynman-Ansatz), täglich kleine Einheiten statt Marathons, Sprechen trotz Fehlern üben (Tandem, Selbstgespräche, Shadowing), Immersion im Alltag (Handy-Sprache, Serien, Musik, Podcasts), aktives Lesen mit Kontexterschließung, Schreiben als tägliches Übungsfeld (Tagebuch, Zusammenfassungen). App-Erwähnung (Wissenslücken aufdecken). Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps, spanisch-lernen-tipps, franzoesisch-lernen-tipps. Rückverlinkungen von spanisch-lernen-tipps (Fazit), franzoesisch-lernen-tipps (Fazit). |
 | 116 | 2026-05-05 | pruefungsangst-abitur-ueberwinden | Prüfungsangst Abitur überwinden: 8 Tipps für einen klaren Kopf in der Prüfung | Prüfungsangst Abitur überwinden, Prüfungsangst Abitur, Abitur Angst, Prüfungsangst Tipps Abitur, Abiturprüfung Nervosität, Blackout Abitur, Prüfungsangst überwinden Schüler, Abitur Angst loswerden, Abitur Stress Angst, mündliches Abitur Angst | Prüfungsvorbereitung | 8 Tipps gegen Prüfungsangst im Abitur: Körperreaktion verstehen und umdeuten (Nervosität als Energie), 4-7-8-Atemtechnik für akute Angst, Wissenslücken systematisch schließen (Active Recall, App), realistische Erwartungen setzen, Prüfungssituation vorher simulieren, Prüfungstag bewusst gestalten (Puffer, Frühstück, kein Panik-Lernen), Blackout-Protokoll (überspringen, atmen, Anker nutzen), nach der Prüfung loslassen. Wann professionelle Hilfe sinnvoll ist. App-Erwähnung (Wissenslücken aufdecken mit Nachhilfe Mentor). Crosslinks zu active-recall-lerntechnik, klausur-schreiben-tipps, abitur-pruefungstag-tipps, lernstress-abitur-tipps, pruefungsangst-ueberwinden. Rückverlinkungen von pruefungsangst-ueberwinden (Fazit), abitur-vorbereitung-tipps (Fazit). |
 
 ## Abgedeckte Themen-Cluster
@@ -136,7 +137,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - Prüfungsvorbereitung: Lernplan erstellen, Prüfungsangst überwinden, Biologie Abitur, Mathe Abitur, Deutsch Abitur, Physik Abitur, Chemie Abitur, Englisch Abitur, Geschichte Abitur
 - Schule & Studium Alltag: Zusammenfassung schreiben, Referat halten, Lernumgebung gestalten, wissenschaftliches Arbeiten, Inhaltsangabe schreiben, Leserbrief schreiben, Stellungnahme schreiben
 - KI & Bildung: Lernen mit KI / ChatGPT
-- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen, Russisch lernen, Türkisch lernen, Wirtschaft lernen, Sozialkunde/Gemeinschaftskunde lernen, Philosophie lernen, Ethik lernen, Instrument üben (Musik), Kurvendiskussion Analysis, Stochastik/Wahrscheinlichkeitsrechnung
+- Fachspezifische Lerntipps: Vokabeln lernen, Mathe lernen, Englisch lernen, Biologie lernen, Chemie lernen, Französisch lernen, Spanisch lernen, Latein lernen, Russisch lernen, Türkisch lernen, Italienisch lernen, Wirtschaft lernen, Sozialkunde/Gemeinschaftskunde lernen, Philosophie lernen, Ethik lernen, Instrument üben (Musik), Kurvendiskussion Analysis, Stochastik/Wahrscheinlichkeitsrechnung
 - Digitale Lerntools: Lern-Apps Vergleich, Anki, Quizlet, Notion
 
 - lernmotivation-steigern-tipps -> growth-mindset-lernen (Fazit: Growth Mindset als Motor hinter Lernmotivation)
@@ -291,6 +292,12 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - tuerkisch-lernen-tipps -> vokabeln-lernen-tipps (richtige Vokabelmethode als Grundlage)
 - tuerkisch-lernen-tipps -> russisch-lernen-tipps (Fazit: methodische Parallelen beim Sprachenlernen)
 - russisch-lernen-tipps -> tuerkisch-lernen-tipps (Rückverlinkung: Türkisch als weitere anspruchsvolle Sprache mit übertragbaren Methoden)
+- italienisch-lernen-tipps -> spaced-repetition-lernmethode (Vokabeln mit Spaced Repetition täglich aufbauen, Artikel mitlernen)
+- italienisch-lernen-tipps -> vokabeln-lernen-tipps (richtige Vokabelmethode als Grundlage, Kontextlernen)
+- italienisch-lernen-tipps -> spanisch-lernen-tipps (Fazit: Methoden übertragen auf Spanisch)
+- italienisch-lernen-tipps -> franzoesisch-lernen-tipps (Fazit: Methoden übertragen auf Französisch)
+- spanisch-lernen-tipps -> italienisch-lernen-tipps (Rückverlinkung: Italiano als weitere romanische Sprache mit übertragbaren Methoden)
+- franzoesisch-lernen-tipps -> italienisch-lernen-tipps (Rückverlinkung: Italiano als weitere romanische Sprache im Fazit)
 
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps, Prüfungsvorbereitung, effektiv lernen,
@@ -304,6 +311,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
   Japanisch lernen Tipps, Arabisch lernen Schule,
   Hausaufgaben vergessen was tun, schlechte Note was jetzt,
   Lernpartner finden Tipps, alleine oder gemeinsam lernen
+  <!-- Italienisch lernen Tipps, Italienisch Grammatik, Italienisch Aussprache → verwendet in Artikel #117 -->
   <!-- Abitur Prüfungstag Tipps, Tag X Abitur, was tun am Abiturtag → verwendet in Artikel #110 -->
   <!-- Sport Theorie lernen, Sportklausur, Biomechanik Schule → verwendet in Artikel #108 -->
   <!-- Ethik lernen Tipps, Ethik Schule, Ethik Klausur, ethische Theorien → verwendet in Artikel #107 -->
