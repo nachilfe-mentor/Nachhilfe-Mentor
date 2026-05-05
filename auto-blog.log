@@ -4860,3 +4860,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen. Hier die Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `tuerkisch-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/tuerkisch-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (russisch-lernen-tipps.html → tuerkisch-lernen-tipps.html; intern: spaced-repetition, vokabeln-lernen-tipps, feynman-technik, russisch-lernen-tipps)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (114 Artikel, Türkisch-Cluster ergänzt)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (120 URLs in Sitemap, 116 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmormalgd03exqi0yj8riuv01`
+
+**Analytics-Notiz:** Google-Traffic dominiert mit 53 Sessions (deutliches Wachstum). Schreibaufgaben-Cluster (Erlebniserzählung, Kommentar) und fachspezifische Artikel (Erdkunde, Biologie, Latein) performen am stärksten. Pinterest auf 2 Sessions gefallen, wird beobachtet.
+[2026-05-04 19:53:55] Blog cycle completed successfully.
+[2026-05-04 19:53:55] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 120 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 116 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 116 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 120 URLs in Sitemap, 20 Artikel im Feed.
+[main 37a39b0] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   9937626..37a39b0  main -> main
+[2026-05-04 19:53:55] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: tuerkisch-lernen-tipps
+  Titel: Türkisch lernen: 8 Tipps, mit denen du schnell besser wirst
+  Desc:  Türkisch lernen leicht gemacht: 8 bewährte Tipps für Vokabeln, Grammatik und Spr...
+[Pinterest] Erstelle Pin fuer: Türkisch lernen: 8 Tipps, mit denen du schnell besser wirst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/tuerkisch-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/tuerkisch-lernen-tipps.html
+[Pinterest] Uploading tuerkisch-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=7aec6140-8440-4371-8b4e-aefde132b5a7
+[Pinterest] Pin erstellt! Post-ID: cmormb0yj03c9mq0yefw1zq26
+[Pinterest] Erfolgreich! Pin-ID: cmormb0yj03c9mq0yefw1zq26
+
+[Pinterest-Fallback] OK: tuerkisch-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-04 19:53:55] Next run in 8 hours.
+---
+[2026-05-05 03:53:59] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
