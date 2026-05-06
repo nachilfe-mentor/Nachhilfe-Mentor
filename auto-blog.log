@@ -5011,3 +5011,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles abgeschlossen. Hier die ausgefüllte Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `italienisch-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/italienisch-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (spanisch-lernen-tipps.html im Fazit + franzoesisch-lernen-tipps.html im Fazit, beide Artikel rückverlinkt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #117, Cluster ergänzt, Verlinkungen eingetragen)
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO-Update, Pinterest-Status)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (123 URLs in Sitemap, 119 an IndexNow gesendet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmot2dqbo02clmq0ytqmbyjbg`
+
+**Analytics-Notiz:** Google dominiert jetzt mit 61 Sessions (von 23 vor drei Wochen). Schreibaufgaben-Cluster performt stark (Erlebniserzählung, Kommentar, Gedichtanalyse mit 2421s Verweildauer). Der Sprachen-Cluster wächst weiter, daher passte Italienisch als nächster Artikel gut.
+[2026-05-05 20:11:58] Blog cycle completed successfully.
+[2026-05-05 20:11:58] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 123 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 119 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 119 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 123 URLs in Sitemap, 20 Artikel im Feed.
+[main 8421912] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   05ecd0f..8421912  main -> main
+[2026-05-05 20:11:58] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: italienisch-lernen-tipps
+  Titel: Italienisch lernen: 8 Tipps, mit denen du schnell besser wirst
+  Desc:  Italienisch lernen leicht gemacht: Diese 8 Tipps helfen dir, Vokabeln, Grammatik...
+[Pinterest] Erstelle Pin fuer: Italienisch lernen: 8 Tipps, mit denen du schnell besser wirst
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/italienisch-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/italienisch-lernen-tipps.html
+[Pinterest] Uploading italienisch-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=1e02d317-448d-4350-a548-5f92fde18148
+[Pinterest] Pin erstellt! Post-ID: cmot2e2uu029tqi0yzjhsssdy
+[Pinterest] Erfolgreich! Pin-ID: cmot2e2uu029tqi0yzjhsssdy
+
+[Pinterest-Fallback] OK: italienisch-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-05 20:11:58] Next run in 8 hours.
+---
+[2026-05-06 04:12:01] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
