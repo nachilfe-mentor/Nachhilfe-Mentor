@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 06 May 2026 12:26:46 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 20:31:17 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Textanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</guid>
+      <pubDate>Wed, 06 May 2026 20:30:25 +0000</pubDate>
+      <description>Textanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Einleitung, Hauptteil und Schluss. Tipps für Schüler der Klassen 8-12 mit konkreten Beispielen.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Sachtextanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/sachtextanalyse-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/sachtextanalyse-schreiben-tipps.html</guid>
+      <pubDate>Wed, 06 May 2026 20:29:54 +0000</pubDate>
+      <description>So schreibst du eine Sachtextanalyse Schritt für Schritt: Aufbau, Methode, sprachliche Mittel und die häufigsten Fehler erklärt. Mit Checkliste für Klausur und Abitur.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Mon, 04 May 2026 03:39:08 +0000</pubDate>
       <description>Keine Lust zum Lernen? Entdecke 7 wissenschaftlich fundierte Tipps, mit denen du trotzdem anfängst und produktiv bleibst, auch wenn die Motivation fehlt.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Abitur Prüfungstag: 8 Tipps für einen ruhigen und starken Start</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/abitur-pruefungstag-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/abitur-pruefungstag-tipps.html</guid>
-      <pubDate>Sun, 03 May 2026 11:28:52 +0000</pubDate>
-      <description>Was tust du am Abitur Prüfungstag? Diese 8 Tipps begleiten dich von der Nacht davor bis zum Ende der Klausur. Ruhiger Kopf, klare Gedanken, starke Leistung.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/musik-beim-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/musik-beim-lernen-tipps.html</guid>
-      <pubDate>Sun, 03 May 2026 03:23:05 +0000</pubDate>
-      <description>Musik beim Lernen: Hilft sie wirklich oder lenkt sie ab? Hier erfährst du, welche Musik für welche Aufgaben geeignet ist und was die Forschung dazu sagt.</description>
-      <category>Lernmethoden</category>
     </item>
   </channel>
 </rss>
