@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 06 May 2026 04:21:46 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 12:26:25 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</guid>
+      <pubDate>Wed, 06 May 2026 12:25:22 +0000</pubDate>
+      <description>Kurvendiskussion verstehen und sicher beherrschen: Ableitungen, Nullstellen, Extrempunkte, Wendepunkte. Die vollständige Schritt-für-Schritt-Anleitung für Schüler.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Ableitung berechnen: Die wichtigsten Ableitungsregeln für Schüler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/ableitung-berechnen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/ableitung-berechnen-tipps.html</guid>
+      <pubDate>Wed, 06 May 2026 12:24:53 +0000</pubDate>
+      <description>Ableitung berechnen: So wendest du Potenzregel, Produktregel, Kettenregel und Quotientenregel richtig an. Mit konkreten Beispielen und den häufigsten Fehlern erklärt.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Lerngruppe gründen: 7 Tipps für effektives gemeinsames Lernen</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lerngruppe-gruenden-tipps.html</link>
@@ -136,14 +152,6 @@
       <category>Motivation &amp; Produktivität</category>
     </item>
     <item>
-      <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</guid>
-      <pubDate>Sun, 03 May 2026 19:34:04 +0000</pubDate>
-      <description>Kurvendiskussion verstehen und sicher beherrschen: Ableitungen, Nullstellen, Extrempunkte, Wendepunkte. Die vollständige Schritt-für-Schritt-Anleitung für Schüler.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
       <title>Abitur Prüfungstag: 8 Tipps für einen ruhigen und starken Start</title>
       <link>https://nachhilfe-mentor.de/blog/posts/abitur-pruefungstag-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/abitur-pruefungstag-tipps.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Sun, 03 May 2026 03:23:05 +0000</pubDate>
       <description>Musik beim Lernen: Hilft sie wirklich oder lenkt sie ab? Hier erfährst du, welche Musik für welche Aufgaben geeignet ist und was die Forschung dazu sagt.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Instrument üben: 7 Tipps, mit denen du schnell besser wirst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/instrument-ueben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/instrument-ueben-tipps.html</guid>
-      <pubDate>Sun, 03 May 2026 03:22:35 +0000</pubDate>
-      <description>Instrument üben muss nicht frustrierend sein. Mit diesen 7 Tipps übst du effektiver, machst schneller Fortschritte und bleibst langfristig dabei.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
