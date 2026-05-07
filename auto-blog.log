@@ -5247,3 +5247,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `integralrechnung-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/integralrechnung-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (in `ableitung-berechnen-tipps.html`, `kurvendiskussion-tipps.html`, `mathe-abitur-vorbereitung.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #122, Crosslinks, Gesamtzahl 122)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (127 URLs in Sitemap, 123 URLs an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmovh9zeo08xnl70yo5gbqtop`
+
+**Thema:** Integralrechnung für Schüler (vervollständigt den Analysis-Cluster: Ableitungen + Kurvendiskussion + Integralrechnung). Gewählt aufgrund der starken Performance von Kurvendiskussion (7 Sessions in 7 Tagen) und Ableitung-Artikel.
+[2026-05-07 12:44:29] Blog cycle completed successfully.
+[2026-05-07 12:44:29] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 127 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 123 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 123 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 127 URLs in Sitemap, 20 Artikel im Feed.
+[main 5e99305] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   dd5e799..5e99305  main -> main
+[2026-05-07 12:44:29] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: integralrechnung-tipps
+  Titel: Integralrechnung lernen: Schritt-für-Schritt-Anleitung für Schüler
+  Desc:  Integralrechnung verstehen und beherrschen: So berechnest du Stammfunktionen, be...
+[Pinterest] Erstelle Pin fuer: Integralrechnung lernen: Schritt-für-Schritt-Anleitung für Schüler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/integralrechnung-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/integralrechnung-tipps.html
+[Pinterest] Uploading integralrechnung-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=d5b965a3-048c-4a7c-8b11-147d7f2ec8fc
+[Pinterest] Pin erstellt! Post-ID: cmovhabp408xol70ykfwj8pm7
+[Pinterest] Erfolgreich! Pin-ID: cmovhabp408xol70ykfwj8pm7
+
+[Pinterest-Fallback] OK: integralrechnung-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-07 12:44:29] Next run in 8 hours.
+---
+[2026-05-07 20:44:33] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
