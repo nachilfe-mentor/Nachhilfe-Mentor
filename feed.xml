@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 07 May 2026 12:44:30 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 20:49:17 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
+      <pubDate>Thu, 07 May 2026 20:48:45 +0000</pubDate>
+      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Lineare Gleichungen lösen: Schritt-für-Schritt-Anleitung für Schüler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/lineare-gleichungen-loesen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/lineare-gleichungen-loesen-tipps.html</guid>
+      <pubDate>Thu, 07 May 2026 20:48:00 +0000</pubDate>
+      <description>Lineare Gleichungen lösen leicht gemacht: Die 3 wichtigsten Methoden mit konkreten Beispielen erklärt. Äquivalenzumformung, Substitution und Additionsverfahren für Klasse 7-10.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Ableitung berechnen: Die wichtigsten Ableitungsregeln für Schüler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/ableitung-berechnen-tipps.html</link>
@@ -37,14 +53,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/integralrechnung-tipps.html</guid>
       <pubDate>Thu, 07 May 2026 12:42:07 +0000</pubDate>
       <description>Integralrechnung verstehen und beherrschen: So berechnest du Stammfunktionen, bestimmte Integrale und Flächeninhalte. Mit klaren Schritten, häufigen Fehlern und Tipps für Klausur und Abitur.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
-      <pubDate>Thu, 07 May 2026 04:36:55 +0000</pubDate>
-      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
       <category>Fachspezifische Lerntipps</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/russisch-lernen-tipps.html</guid>
       <pubDate>Mon, 04 May 2026 19:52:15 +0000</pubDate>
       <description>Russisch lernen als Schüler oder Student? 8 konkrete Tipps für Kyrillisch, Grammatik und Vokabeln – und warum Russisch leichter ist als du denkst.</description>
-      <category>Sprachen lernen</category>
-    </item>
-    <item>
-      <title>Türkisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/tuerkisch-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/tuerkisch-lernen-tipps.html</guid>
-      <pubDate>Mon, 04 May 2026 19:51:32 +0000</pubDate>
-      <description>Türkisch lernen leicht gemacht: 8 bewährte Tipps für Vokabeln, Grammatik und Sprechen. So meisterst du die türkische Sprache Schritt für Schritt.</description>
       <category>Sprachen lernen</category>
     </item>
   </channel>
