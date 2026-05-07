@@ -5111,3 +5111,103 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf vollständig abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `ableitung-berechnen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/ableitung-berechnen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: Rücklink in `kurvendiskussion-tipps.html` eingefügt (direkte Verbindung zwischen den beiden Top-Analysis-Artikeln)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel 119, Cluster erweitert)
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO, Pinterest)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (125 URLs in Sitemap, 121 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt. Pin-ID: `cmou17d9v027ql70yzti9r1gz`
+
+**Analytics-Erkenntnis:** Kurvendiskussion dominiert die letzten 7 Tage (6 Views, 6 Sessions). Der neue Ableitung-Artikel ist der direkte Folge-Artikel dazu und sollte im Abitur-Mai gut ranken.
+[2026-05-06 12:26:46] Blog cycle completed successfully.
+[2026-05-06 12:26:46] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 125 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 121 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 121 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 125 URLs in Sitemap, 20 Artikel im Feed.
+[main dd87541] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   34d0508..dd87541  main -> main
+[2026-05-06 12:26:46] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: ableitung-berechnen-tipps
+  Titel: Ableitung berechnen: Die wichtigsten Ableitungsregeln für Schüler
+  Desc:  Ableitung berechnen: So wendest du Potenzregel, Produktregel, Kettenregel und Qu...
+[Pinterest] Erstelle Pin fuer: Ableitung berechnen: Die wichtigsten Ableitungsregeln für Schüler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/ableitung-berechnen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/ableitung-berechnen-tipps.html
+[Pinterest] Uploading ableitung-berechnen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=60fa9d36-7042-483e-aa70-d4b3196255d9
+[Pinterest] Pin erstellt! Post-ID: cmou17oq6027rl70yhmgipyqq
+[Pinterest] Erfolgreich! Pin-ID: cmou17oq6027rl70yhmgipyqq
+
+[Pinterest-Fallback] OK: ableitung-berechnen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-06 12:26:46] Next run in 8 hours.
+---
+[2026-05-06 20:26:49] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt. Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `sachtextanalyse-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/sachtextanalyse-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`textanalyse-schreiben-tipps.html` verweist nun auf den neuen Artikel; neuer Artikel verlinkt `textanalyse-schreiben-tipps` und `eroerterung-schreiben-tipps`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel 120, Cluster ergänzt)
+- [x] Git Push: erfolgreich (`main -> main`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefügt (126 URLs in Sitemap, 122 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefügt — Pin-ID: `cmouiixj10512ns0yh6vcjici`
+
+**Thema**: Sachtextanalyse schreiben (Schreibaufgaben-Cluster, Klasse 9-12 + Abitur). Der Artikel ergänzt den bestehenden Cluster (Textanalyse, Gedichtanalyse, Charakterisierung) um eine eigenständige Form, die im Abitur häufig geprüft wird und bei Google gut suchbar sein sollte.
+[2026-05-06 20:31:37] Blog cycle completed successfully.
+[2026-05-06 20:31:37] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 126 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 122 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 122 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 126 URLs in Sitemap, 20 Artikel im Feed.
+[main 3aee71f] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   781e718..3aee71f  main -> main
+[2026-05-06 20:31:37] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: sachtextanalyse-schreiben-tipps
+  Titel: Sachtextanalyse schreiben: Aufbau, Methode und häufige Fehler
+  Desc:  So schreibst du eine Sachtextanalyse Schritt für Schritt: Aufbau, Methode, sprac...
+[Pinterest] Erstelle Pin fuer: Sachtextanalyse schreiben: Aufbau, Methode und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/sachtextanalyse-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/sachtextanalyse-schreiben-tipps.html
+[Pinterest] Uploading sachtextanalyse-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=bbbcb03e-c6b2-4ea3-8927-08578375b4dd
+[Pinterest] Pin erstellt! Post-ID: cmouij75d04uyl70y92bepxly
+[Pinterest] Erfolgreich! Pin-ID: cmouij75d04uyl70y92bepxly
+
+[Pinterest-Fallback] OK: sachtextanalyse-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-06 20:31:37] Next run in 8 hours.
+---
+[2026-05-07 04:31:40] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

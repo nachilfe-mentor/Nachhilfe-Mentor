@@ -1,5 +1,6 @@
 abitur-pruefungstag-tipps
 abitur-vorbereitung-tipps
+ableitung-berechnen-tipps
 active-recall-lerntechnik
 auswendig-lernen-tipps
 bachelorarbeit-schreiben-tipps
@@ -94,6 +95,7 @@ pruefungsangst-ueberwinden
 referat-halten-tipps
 referat-schreiben-anleitung
 russisch-lernen-tipps
+sachtextanalyse-schreiben-tipps
 schlaf-und-lernen-tipps
 schneller-lesen-lernen-tipps
 selbstdisziplin-aufbauen-tipps
