@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 06 May 2026 20:31:37 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 04:38:29 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
+      <pubDate>Thu, 07 May 2026 04:36:55 +0000</pubDate>
+      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Stochastik lernen Tipps: Wahrscheinlichkeitsrechnung wirklich verstehen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</guid>
+      <pubDate>Thu, 07 May 2026 04:36:27 +0000</pubDate>
+      <description>Stochastik lernen leicht gemacht: 8 Tipps für Wahrscheinlichkeitsrechnung, Kombinatorik und Stochastik-Abitur. So wirst du in Stochastik wirklich sicher.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Textanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</link>
@@ -144,27 +160,11 @@
       <category>Prüfungsvorbereitung</category>
     </item>
     <item>
-      <title>Stochastik lernen: 7 Tipps für Wahrscheinlichkeitsrechnung und Statistik</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</guid>
-      <pubDate>Mon, 04 May 2026 11:45:01 +0000</pubDate>
-      <description>Stochastik lernen leicht gemacht: 7 Tipps für Wahrscheinlichkeitsrechnung, Binomialverteilung und Hypothesentests. So bereitest du dich optimal auf Klausur und Abitur vor.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
       <title>Lernblockade lösen: 7 Tipps, wenn du einfach nicht anfangen kannst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/lernblockade-loesen-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/lernblockade-loesen-tipps.html</guid>
       <pubDate>Mon, 04 May 2026 03:39:54 +0000</pubDate>
       <description>Lernblockade lösen leicht gemacht: 7 konkrete Tipps, die dir helfen, wenn du vor dem Stoff sitzt und einfach nicht anfangen kannst. Ursachen verstehen, Blockaden überwinden.</description>
-      <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Lernen wenn man keine Lust hat: 7 Tipps, die wirklich helfen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/lernen-keine-lust-motivation.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/lernen-keine-lust-motivation.html</guid>
-      <pubDate>Mon, 04 May 2026 03:39:08 +0000</pubDate>
-      <description>Keine Lust zum Lernen? Entdecke 7 wissenschaftlich fundierte Tipps, mit denen du trotzdem anfängst und produktiv bleibst, auch wenn die Motivation fehlt.</description>
       <category>Motivation &amp; Produktivität</category>
     </item>
   </channel>
