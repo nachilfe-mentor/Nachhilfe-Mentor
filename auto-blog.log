@@ -5347,3 +5347,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `binomische-formeln-lernen.html`
+- [x] Cover-Bild generiert: `blog/posts/img/binomische-formeln-lernen.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (von `mathe-lernen-tipps.html` auf den neuen Artikel; im Artikel selbst Links zu `active-recall-lerntechnik`, `mathe-lernen-tipps`, `kurvendiskussion-tipps`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel 124, Datum 2026-05-08)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (129 URLs in Sitemap, 125 URLs an IndexNow gemeldet)
+- [x] **PINTEREST:** `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmowfxqgl02nzns0yh7wkjuje`
+
+**Analytics-Erkenntnisse** (Stand heute): Google organisch auf 64 Sessions gewachsen (stärkstes Wachstum). Kurvendiskussion (7 Views letzte 7 Tage) und Schreibaufgaben-Cluster (Erlebniserzählung, Kommentar, Inhaltsangabe) performen besonders gut. Mathe-Analysis-Cluster wächst: Binomische Formeln als logische Ergänzung für Klasse 8-10 gewählt.
+[2026-05-08 04:54:48] Blog cycle completed successfully.
+[2026-05-08 04:54:48] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 129 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 125 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 125 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 129 URLs in Sitemap, 20 Artikel im Feed.
+[main 1161067] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   1442e7a..1161067  main -> main
+[2026-05-08 04:54:48] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: binomische-formeln-lernen
+  Titel: Binomische Formeln: Erklärung, Beispiele und Aufgaben
+  Desc:  Binomische Formeln endlich verstehen: Die 3 Formeln einfach erklärt, mit Beispie...
+[Pinterest] Erstelle Pin fuer: Binomische Formeln: Erklärung, Beispiele und Aufgaben
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/binomische-formeln-lernen.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/binomische-formeln-lernen.html
+[Pinterest] Uploading binomische-formeln-lernen.webp (image/webp)...
+[Pinterest] Upload OK: id=2ccf26c7-498c-4e09-9ffe-282304d20180
+[Pinterest] Pin erstellt! Post-ID: cmowfy58o02eil70ymi3ph862
+[Pinterest] Erfolgreich! Pin-ID: cmowfy58o02eil70ymi3ph862
+
+[Pinterest-Fallback] OK: binomische-formeln-lernen
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-08 04:54:48] Next run in 8 hours.
+---
+[2026-05-08 12:54:51] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
