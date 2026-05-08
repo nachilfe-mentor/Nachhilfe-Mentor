@@ -74,6 +74,7 @@ lerntypen-vark-test-lerntipps
 lernumgebung-gestalten-tipps
 lernzettel-erstellen-tipps
 leserbrief-schreiben-tipps
+lineare-gleichungen-loesen-tipps
 mathe-abitur-vorbereitung
 mathe-klausurangst-ueberwinden
 mathe-lernen-tipps

@@ -5297,3 +5297,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier die vollständige Abschlusscheckliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `lineare-gleichungen-loesen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/lineare-gleichungen-loesen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `mathe-lernen-tipps.html` im Fazit-Abschnitt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel 123, Gesamtzahl 123)
+- [x] Git Push: erfolgreich (`5b45fa2` und `74bc8a3` und `88f74b0`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (128 URLs in Sitemap, 124 URLs an IndexNow übermittelt)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmovylwe400oins0y21tq5shd`
+
+**Analytics-Erkenntnisse dieser Runde:** Google organisch ist mit 64 Sessions klar der stärkste Kanal. Lernblockade (11 Views) und Kurvendiskussion (7 Views, 87s Dauer) sind überraschend stark. Gedichtanalyse zeigt mit 2421s Verweildauer extrem hohes Engagement. Pinterest auf 1 Session eingebrochen. Mathe-Analysis-Cluster (Kurvendiskussion, Ableitung, Integral) wächst schnell, weshalb lineare Gleichungen als nächstes logisches Thema gewählt wurde.
+[2026-05-07 20:49:42] Blog cycle completed successfully.
+[2026-05-07 20:49:42] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 128 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 124 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 124 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 128 URLs in Sitemap, 20 Artikel im Feed.
+[main 7eeb24f] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   88f74b0..7eeb24f  main -> main
+[2026-05-07 20:49:42] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: lineare-gleichungen-loesen-tipps
+  Titel: Lineare Gleichungen lösen: Schritt-für-Schritt-Anleitung für Schüler
+  Desc:  Lineare Gleichungen lösen leicht gemacht: Die 3 wichtigsten Methoden mit konkret...
+[Pinterest] Erstelle Pin fuer: Lineare Gleichungen lösen: Schritt-für-Schritt-Anleitung für Schüler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/lineare-gleichungen-loesen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/lineare-gleichungen-loesen-tipps.html
+[Pinterest] Uploading lineare-gleichungen-loesen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=6eadcdae-4f04-4cb8-9d3e-ab19d6245950
+[Pinterest] Pin erstellt! Post-ID: cmovymb3a00ojns0y660j3o4y
+[Pinterest] Erfolgreich! Pin-ID: cmovymb3a00ojns0y660j3o4y
+
+[Pinterest-Fallback] OK: lineare-gleichungen-loesen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-07 20:49:42] Next run in 8 hours.
+---
+[2026-05-08 04:49:45] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
