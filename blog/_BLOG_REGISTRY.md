@@ -319,7 +319,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Keyword-Pool (noch nicht verwendet)
 - Studium Tipps, Prüfungsvorbereitung, effektiv lernen,
   Mathe Kurvendiskussion Tipps, Kurvendiskussion Schritt für Schritt,
-  Stochastik lernen Tipps, Wahrscheinlichkeitsrechnung lernen,
+  <!-- Stochastik lernen Tipps, Wahrscheinlichkeitsrechnung lernen → verwendet in Artikel #113 (aktualisiert 2026-05-08) -->
   <!-- Integralrechnung, Integral berechnen, Stammfunktion → verwendet in Artikel #122 -->
   <!-- Lernen wenn man keine Lust hat, Lernen ohne Motivation → verwendet in Artikel #112 -->
   Abitur Sport Vorbereitung, Sport Abitur Tipps,
