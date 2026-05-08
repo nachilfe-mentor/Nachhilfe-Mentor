@@ -5397,3 +5397,41 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen. Hier die Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] **Artikel überarbeitet:** `stochastik-lernen-tipps.html` (Artikel #113, neu generierter Inhalt mit 7 Tipps: Grundprinzip verstehen, Baumdiagramme, 4 Kernthemen, Kombinatorik-Schema, bedingte Wahrscheinlichkeit, Active Recall, alte Klausuren)
+- [x] **Cover-Bild generiert:** `blog/posts/img/stochastik-lernen-tipps.webp`
+- [x] **Blog-Index bereinigt:** Duplizierten Stochastik-Eintrag (2026-05-04) entfernt, aktueller Eintrag (2026-05-07) bleibt
+- [x] **Crosslinks:** bereits vorhanden (mathe-abitur-vorbereitung, mathe-lernen-tipps, kurvendiskussion-tipps verlinken auf Stochastik; Stochastik verlinkt auf feynman-technik, active-recall, mathe-abitur-vorbereitung)
+- [x] **Registry aktualisiert:** Stochastik-Keywords als verwendet markiert
+- [x] **Git Push:** erfolgreich (3 Commits: Artikel + SEO + Pinterest)
+- [x] **SEO-Update:** 129 URLs in Sitemap, 125 URLs an IndexNow gemeldet
+- [x] **PINTEREST:** Pin-ID `cmowxg19v01itl70yvq6w6tqu` erfolgreich erstellt
+
+**Hinweis:** Der Stochastik-Artikel war bereits als #113 registriert (mit vorangehenden Crosslinks), aber der Inhalt wurde vollständig überarbeitet und das Bild neu generiert. Der vorhandene Duplikat-Card im Blog-Index wurde entfernt.
+[2026-05-08 13:04:59] Blog cycle completed successfully.
+[2026-05-08 13:04:59] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 129 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 125 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 125 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 129 URLs in Sitemap, 20 Artikel im Feed.
+[main 2a83246] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   41f87ff..2a83246  main -> main
+[2026-05-08 13:04:59] Running Pinterest safety fallback...
+[Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
+[2026-05-08 13:04:59] Next run in 8 hours.
+---
+[2026-05-08 21:05:01] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
