@@ -5485,3 +5485,103 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `vektorrechnung-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/vektorrechnung-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `mathe-abitur-vorbereitung.html`, Abschnitt Analytische Geometrie; interne Links im Artikel zu `kurvendiskussion-tipps.html` und `active-recall-lerntechnik.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #126, Gesamtzahl 126)
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt, 131 URLs in Sitemap, 127 URLs an IndexNow übermittelt
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmoxwa9vx053gl70yaz1pjl9g`
+
+**Analytics-Erkenntnis:** Blog wächst stark (155 Views/30 Tage, Google mit 61 Sessions dominant). Lernblockade ist überraschend stärkster Artikel (12 Sessions). Mathe-Cluster wächst (Kurvendiskussion: 7 Sessions), daher Vektorrechnung als logische Erweiterung gewählt.
+[2026-05-09 05:20:12] Blog cycle completed successfully.
+[2026-05-09 05:20:12] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 131 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 127 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 127 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 131 URLs in Sitemap, 20 Artikel im Feed.
+[main 3942108] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   20edc6e..3942108  main -> main
+[2026-05-09 05:20:12] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: vektorrechnung-lernen-tipps
+  Titel: Vektorrechnung lernen: Schritt-für-Schritt-Anleitung für Schüler
+  Desc:  Vektorrechnung lernen leicht gemacht: Vektoren, Skalarprodukt, Geraden und Ebene...
+[Pinterest] Erstelle Pin fuer: Vektorrechnung lernen: Schritt-für-Schritt-Anleitung für Schüler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/vektorrechnung-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/vektorrechnung-lernen-tipps.html
+[Pinterest] Uploading vektorrechnung-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=21ac4c73-28ff-4b97-a940-2e45e6066922
+[Pinterest] Pin erstellt! Post-ID: cmoxwao29053hl70y8v7blcfi
+[Pinterest] Erfolgreich! Pin-ID: cmoxwao29053hl70y8v7blcfi
+
+[Pinterest-Fallback] OK: vektorrechnung-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-09 05:20:12] Next run in 8 hours.
+---
+[2026-05-09 13:20:15] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte abgeschlossen. Hier die Abschluss-Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `bruchrechnung-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/bruchrechnung-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (von `mathe-lernen-tipps.html` auf `bruchrechnung-lernen-tipps.html`; im Artikel Links zu `interleaving-methode-lernen.html` und `mathe-lernen-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (127 Artikel)
+- [x] Git Push: erfolgreich (`5d3d98c`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (132 URLs in Sitemap, 128 URLs an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoydmdxv06hjl70y53o6q2rc`
+
+**Thema dieser Runde:** Bruchrechnung lernen (Mathe-Cluster, Klasse 5-7). Gewählt wegen wachsendem Mathe-Cluster (Kurvendiskussion 7 Views letzte 7 Tage) und fehlender Abdeckung dieses hochfrequenten Schüler-Keywords.
+[2026-05-09 13:25:25] Blog cycle completed successfully.
+[2026-05-09 13:25:25] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 132 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 128 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 128 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 132 URLs in Sitemap, 20 Artikel im Feed.
+[main 04ab0da] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   c048221..04ab0da  main -> main
+[2026-05-09 13:25:25] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: bruchrechnung-lernen-tipps
+  Titel: Bruchrechnung lernen: So rechnest du mit Brüchen sicher und schnell
+  Desc:  Bruchrechnung lernen leicht gemacht: Verstehe Zähler und Nenner, lerne Kürzen, E...
+[Pinterest] Erstelle Pin fuer: Bruchrechnung lernen: So rechnest du mit Brüchen sicher und schnell
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/bruchrechnung-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/bruchrechnung-lernen-tipps.html
+[Pinterest] Uploading bruchrechnung-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=428c21a3-6ba1-42f9-8887-02240121bccf
+[Pinterest] Pin erstellt! Post-ID: cmoydmnkk06d9ns0yuiuoobz7
+[Pinterest] Erfolgreich! Pin-ID: cmoydmnkk06d9ns0yuiuoobz7
+
+[Pinterest-Fallback] OK: bruchrechnung-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-09 13:25:25] Next run in 8 hours.
+---
+[2026-05-09 21:25:28] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.

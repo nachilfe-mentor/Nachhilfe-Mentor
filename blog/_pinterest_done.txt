@@ -10,6 +10,7 @@ binomische-formeln-lernen
 biologie-abitur-vorbereitung
 biologie-lernen-tipps
 brainfood-lernen-ernaehrung
+bruchrechnung-lernen-tipps
 charakterisierung-schreiben-tipps
 chemie-abitur-vorbereitung
 chemie-lernen-tipps
@@ -115,6 +116,7 @@ stochastik-lernen-tipps
 studieren-ohne-abitur-tipps
 textanalyse-schreiben-tipps
 tuerkisch-lernen-tipps
+vektorrechnung-lernen-tipps
 vokabeln-lernen-app-vergleich
 vokabeln-lernen-tipps
 wirtschaft-lernen-tipps
@@ -122,3 +124,4 @@ wissenschaftliches-arbeiten-tipps
 zeitmanagement-studium-tipps
 zettelkasten-methode-lernen
 zusammenfassung-schreiben-lernen
+chinesisch-lernen-tipps
