@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 09 May 2026 05:20:12 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 13:25:04 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
+      <pubDate>Sat, 09 May 2026 13:24:17 +0000</pubDate>
+      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Bruchrechnung lernen: So rechnest du mit Brüchen sicher und schnell</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/bruchrechnung-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/bruchrechnung-lernen-tipps.html</guid>
+      <pubDate>Sat, 09 May 2026 13:23:38 +0000</pubDate>
+      <description>Bruchrechnung lernen leicht gemacht: Verstehe Zähler und Nenner, lerne Kürzen, Erweitern, Addieren, Subtrahieren und Multiplizieren von Brüchen mit klaren Beispielen.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung</title>
       <link>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</link>
@@ -45,14 +61,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</guid>
       <pubDate>Fri, 08 May 2026 13:00:28 +0000</pubDate>
       <description>Stochastik lernen leicht gemacht: 7 bewährte Tipps für Wahrscheinlichkeitsrechnung, Kombinatorik und Statistik. So bereitest du dich optimal auf Klausur und Abitur vor.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</guid>
-      <pubDate>Fri, 08 May 2026 04:53:38 +0000</pubDate>
-      <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
       <category>Fachspezifische Lerntipps</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
       <pubDate>Tue, 05 May 2026 12:04:59 +0000</pubDate>
       <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Prüfungsangst Abitur überwinden: 8 Tipps für einen klaren Kopf</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-abitur-ueberwinden.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-abitur-ueberwinden.html</guid>
-      <pubDate>Tue, 05 May 2026 12:04:02 +0000</pubDate>
-      <description>Prüfungsangst vor dem Abitur? 8 bewährte Tipps, mit denen du deine Prüfungsangst überwindest, ruhig bleibst und im Abitur dein Bestes abrufst.</description>
       <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
