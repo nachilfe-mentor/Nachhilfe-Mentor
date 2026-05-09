@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 08 May 2026 21:14:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 05:19:46 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</guid>
+      <pubDate>Sat, 09 May 2026 05:18:46 +0000</pubDate>
+      <description>Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, Stochastik und Geometrie gezielt lernst und typische Fehler vermeidest.</description>
+      <category>Prüfungsvorbereitung</category>
+    </item>
+    <item>
+      <title>Vektorrechnung lernen: Schritt-für-Schritt-Anleitung für Schüler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/vektorrechnung-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/vektorrechnung-lernen-tipps.html</guid>
+      <pubDate>Sat, 09 May 2026 05:18:16 +0000</pubDate>
+      <description>Vektorrechnung lernen leicht gemacht: Vektoren, Skalarprodukt, Geraden und Ebenen verständlich erklärt. Mit dieser Anleitung beherrschst du Analytische Geometrie für Klausur und Abitur.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</link>
@@ -62,14 +78,6 @@
       <pubDate>Thu, 07 May 2026 12:43:11 +0000</pubDate>
       <description>Ableitung berechnen: So wendest du Potenzregel, Produktregel, Kettenregel und Quotientenregel richtig an. Mit konkreten Beispielen und den häufigsten Fehlern erklärt.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</guid>
-      <pubDate>Thu, 07 May 2026 12:42:56 +0000</pubDate>
-      <description>Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, Stochastik und Geometrie gezielt lernst und typische Fehler vermeidest.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
     <item>
       <title>Integralrechnung lernen: Schritt-für-Schritt-Anleitung für Schüler</title>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 05 May 2026 12:04:02 +0000</pubDate>
       <description>Prüfungsangst vor dem Abitur? 8 bewährte Tipps, mit denen du deine Prüfungsangst überwindest, ruhig bleibst und im Abitur dein Bestes abrufst.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Sport Theorie lernen: 7 Tipps für deine Sportklausur</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/sport-theorie-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/sport-theorie-lernen-tipps.html</guid>
-      <pubDate>Tue, 05 May 2026 03:58:19 +0000</pubDate>
-      <description>Sport Theorie lernen muss kein Mysterium sein. Mit diesen 7 Tipps bereitest du dich gezielt auf deine Sportklausur vor und verstehst Biomechanik, Trainingsplanung und Sportphysiologie wirklich.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
