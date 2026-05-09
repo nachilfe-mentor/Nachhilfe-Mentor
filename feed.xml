@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 09 May 2026 13:25:25 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2026 21:30:48 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Russisch lernen: 8 Tipps, mit denen du schnell Fortschritte machst</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/russisch-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/russisch-lernen-tipps.html</guid>
+      <pubDate>Sat, 09 May 2026 21:29:57 +0000</pubDate>
+      <description>Russisch lernen als Schüler oder Student? 8 konkrete Tipps für Kyrillisch, Grammatik und Vokabeln – und warum Russisch leichter ist als du denkst.</description>
+      <category>Sprachen lernen</category>
+    </item>
+    <item>
+      <title>Chinesisch lernen: 7 Tipps für Schüler und Einsteiger</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/chinesisch-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/chinesisch-lernen-tipps.html</guid>
+      <pubDate>Sat, 09 May 2026 21:29:31 +0000</pubDate>
+      <description>Chinesisch lernen für Schüler und Einsteiger: 7 bewährte Tipps für Töne, Schriftzeichen und Grammatik. So lernst du Mandarin effektiv und dauerhaft.</description>
+      <category>Sprachen lernen</category>
+    </item>
     <item>
       <title>Mathe lernen: 7 Tipps, mit denen du Mathe endlich verstehst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/mathe-lernen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Tue, 05 May 2026 20:09:46 +0000</pubDate>
       <description>Italienisch lernen leicht gemacht: Diese 8 Tipps helfen dir, Vokabeln, Grammatik und Aussprache schnell zu verbessern – für Schule, Urlaub oder einfach aus Freude an der Sprache.</description>
       <category>Sprachen lernen</category>
-    </item>
-    <item>
-      <title>Abitur Vorbereitung: 9 Tipps, mit denen du dein Abi rockst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/abitur-vorbereitung-tipps.html</guid>
-      <pubDate>Tue, 05 May 2026 12:05:05 +0000</pubDate>
-      <description>Abitur Vorbereitung leicht gemacht: 9 erprobte Tipps für Lernplan, Zeitmanagement und die richtige Strategie. So gehst du entspannt und gut vorbereitet ins Abi.</description>
-      <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Prüfungsangst überwinden: 7 Strategien für mehr Gelassenheit</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</guid>
-      <pubDate>Tue, 05 May 2026 12:04:59 +0000</pubDate>
-      <description>Prüfungsangst überwinden: Verstehe die Ursachen von Prüfungsangst und lerne 7 bewährte Strategien, mit denen du gelassener in jede Klausur gehst.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
