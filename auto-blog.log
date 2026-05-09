@@ -5435,3 +5435,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `mathe-klassenarbeit-tipps.html` (Artikel #125, ca. 1.100 Wörter)
+- [x] Cover-Bild generiert: `blog/posts/img/mathe-klassenarbeit-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html` (neue Card oben eingefügt)
+- [x] Crosslinks gesetzt: ja (kurvendiskussion-tipps.html verlinkt jetzt auf den neuen Artikel; neuer Artikel verlinkt zu feynman-technik, active-recall, pomodoro, kurvendiskussion, stochastik, integralrechnung)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Gesamtzahl: 125)
+- [x] Git Push: erfolgreich (3 Commits: Artikel, SEO-Update, Analytics)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (130 URLs in Sitemap, 126 URLs an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmoxey0fi03pbns0y1fu91835`
+
+**Analytics-Erkenntnisse:** Mathe-Cluster nimmt Fahrt auf (Kurvendiskussion 7 Views letzte 7 Tage), Gedichtanalyse mit Rekord-Verweildauer von 2.421s, Pinterest-Rückgang auf 1 Session (beobachten). Nächste empfohlene Themen: Chinesisch lernen Tipps, Deutsch Klausur Tipps, Lerngruppe-Artikel, Vektorrechnung-Tipps.
+[2026-05-08 21:14:55] Blog cycle completed successfully.
+[2026-05-08 21:14:55] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 130 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 126 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 126 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 130 URLs in Sitemap, 20 Artikel im Feed.
+[main 7c762c6] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   d01af09..7c762c6  main -> main
+[2026-05-08 21:14:55] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: mathe-klassenarbeit-tipps
+  Titel: Mathe Klassenarbeit: 8 Tipps für eine bessere Note
+  Desc:  Mathe Klassenarbeit steht bevor? Mit diesen 8 konkreten Tipps bereitest du dich ...
+[Pinterest] Erstelle Pin fuer: Mathe Klassenarbeit: 8 Tipps für eine bessere Note
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/mathe-klassenarbeit-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/mathe-klassenarbeit-tipps.html
+[Pinterest] Uploading mathe-klassenarbeit-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=08d23315-b22a-4f8b-946b-9949a915f0c1
+[Pinterest] Pin erstellt! Post-ID: cmoxeyl6z03rhl70y5kjihr7v
+[Pinterest] Erfolgreich! Pin-ID: cmoxeyl6z03rhl70y5kjihr7v
+
+[Pinterest-Fallback] OK: mathe-klassenarbeit-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-08 21:14:55] Next run in 8 hours.
+---
+[2026-05-09 05:14:58] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
