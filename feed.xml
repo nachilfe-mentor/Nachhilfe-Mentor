@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 09 May 2026 21:31:13 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 May 2026 05:35:42 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</guid>
+      <pubDate>Sun, 10 May 2026 05:34:52 +0000</pubDate>
+      <description>Kurvendiskussion verstehen und sicher beherrschen: Ableitungen, Nullstellen, Extrempunkte, Wendepunkte. Die vollständige Schritt-für-Schritt-Anleitung für Schüler.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
+    <item>
+      <title>Trigonometrie lernen: So verstehst du Sinus, Kosinus und Tangens wirklich</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/trigonometrie-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/trigonometrie-lernen-tipps.html</guid>
+      <pubDate>Sun, 10 May 2026 05:34:16 +0000</pubDate>
+      <description>Trigonometrie lernen leicht gemacht: Sinus, Kosinus und Tangens endlich verstehen statt auswendig lernen. 7 konkrete Tipps für Schüler am Gymnasium.</description>
+      <category>Fachspezifische Lerntipps</category>
+    </item>
     <item>
       <title>Russisch lernen: 8 Tipps, mit denen du schnell Fortschritte machst</title>
       <link>https://nachhilfe-mentor.de/blog/posts/russisch-lernen-tipps.html</link>
@@ -53,14 +69,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/vektorrechnung-lernen-tipps.html</guid>
       <pubDate>Sat, 09 May 2026 05:18:16 +0000</pubDate>
       <description>Vektorrechnung lernen leicht gemacht: Vektoren, Skalarprodukt, Geraden und Ebenen verständlich erklärt. Mit dieser Anleitung beherrschst du Analytische Geometrie für Klausur und Abitur.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Kurvendiskussion: Schritt-für-Schritt-Anleitung für Schüler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/kurvendiskussion-tipps.html</guid>
-      <pubDate>Fri, 08 May 2026 21:12:59 +0000</pubDate>
-      <description>Kurvendiskussion verstehen und sicher beherrschen: Ableitungen, Nullstellen, Extrempunkte, Wendepunkte. Die vollständige Schritt-für-Schritt-Anleitung für Schüler.</description>
       <category>Fachspezifische Lerntipps</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/spanisch-lernen-tipps.html</guid>
       <pubDate>Tue, 05 May 2026 20:10:17 +0000</pubDate>
       <description>Spanisch lernen mit System: 8 bewährte Tipps für Schüler, die schnell besser werden wollen. Von Aussprache über Vokabeln bis zu Grammatik und Sprechübungen.</description>
-      <category>Sprachen lernen</category>
-    </item>
-    <item>
-      <title>Italienisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/italienisch-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/italienisch-lernen-tipps.html</guid>
-      <pubDate>Tue, 05 May 2026 20:09:46 +0000</pubDate>
-      <description>Italienisch lernen leicht gemacht: Diese 8 Tipps helfen dir, Vokabeln, Grammatik und Aussprache schnell zu verbessern – für Schule, Urlaub oder einfach aus Freude an der Sprache.</description>
       <category>Sprachen lernen</category>
     </item>
   </channel>
