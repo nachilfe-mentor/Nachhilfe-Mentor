@@ -5585,3 +5585,41 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `chinesisch-lernen-tipps.html` (Artikel #128)
+- [x] Cover-Bild generiert: `blog/posts/img/chinesisch-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `russisch-lernen-tipps.html` eingefügt; Artikel verlinkt auf `spaced-repetition-lernmethode` und `vokabeln-lernen-tipps`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Gesamtzahl: 128, neue Verlinkungen eingetragen)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (133 URLs in Sitemap, 129 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt, Pin-ID: `cmoyuyzhc08jzl70yb5vmijg2`
+
+**Analytics-Fazit für diesen Durchlauf:** 161 Gesamtviews (30 Tage), Google organisch dominiert mit 62 Sessions. Kurvendiskussion stark (7 Views in 7 Tagen), Schreibaufgaben-Cluster rankt aktiv. Neues Thema: Chinesisch lernen füllt eine Lücke im Sprachen-Cluster (Französisch, Spanisch, Russisch, Latein, Türkisch, Italienisch bereits vorhanden).
+[2026-05-09 21:31:13] Blog cycle completed successfully.
+[2026-05-09 21:31:13] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 133 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 129 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 129 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 133 URLs in Sitemap, 20 Artikel im Feed.
+[main 30c83b2] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   75f9b1a..30c83b2  main -> main
+[2026-05-09 21:31:13] Running Pinterest safety fallback...
+[Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
+[2026-05-09 21:31:13] Next run in 8 hours.
+---
+[2026-05-10 05:31:15] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
