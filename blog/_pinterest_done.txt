@@ -14,6 +14,7 @@ bruchrechnung-lernen-tipps
 charakterisierung-schreiben-tipps
 chemie-abitur-vorbereitung
 chemie-lernen-tipps
+chinesisch-lernen-tipps
 cornell-methode-notizen
 deutsch-abitur-vorbereitung
 deutsch-aufsatz-schreiben-tipps
@@ -115,6 +116,7 @@ stilmittel-liste-beispiele
 stochastik-lernen-tipps
 studieren-ohne-abitur-tipps
 textanalyse-schreiben-tipps
+trigonometrie-lernen-tipps
 tuerkisch-lernen-tipps
 vektorrechnung-lernen-tipps
 vokabeln-lernen-app-vergleich
@@ -124,4 +126,3 @@ wissenschaftliches-arbeiten-tipps
 zeitmanagement-studium-tipps
 zettelkasten-methode-lernen
 zusammenfassung-schreiben-lernen
-chinesisch-lernen-tipps

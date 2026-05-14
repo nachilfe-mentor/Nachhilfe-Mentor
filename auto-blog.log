@@ -5623,3 +5623,55 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles sauber. Durchlauf vollständig abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `trigonometrie-lernen-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/trigonometrie-lernen-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (`kurvendiskussion-tipps.html` → neuer Artikel verlinkt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel #129, 10. Mai 2026)
+- [x] Git Push: erfolgreich (`53568ca`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (134 URLs in Sitemap, 130 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmozcam4k09vzl70y80usu06p`
+
+**Analytics-Notiz:** Kurvendiskussion rankt mit 7 Views in 7 Tagen besonders stark. Der Trigonometrie-Artikel ergänzt den Mathe-Cluster und ist direkt von Kurvendiskussion verlinkt. Pinterest hatte nur noch 1 Session (von 4), weiter beobachten.
+[2026-05-10 05:36:04] Blog cycle completed successfully.
+[2026-05-10 05:36:04] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 134 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 130 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 130 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 134 URLs in Sitemap, 20 Artikel im Feed.
+[main 32b2007] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   b033050..32b2007  main -> main
+[2026-05-10 05:36:04] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: trigonometrie-lernen-tipps
+  Titel: Trigonometrie lernen: So verstehst du Sinus, Kosinus und Tangens wirklich
+  Desc:  Trigonometrie lernen leicht gemacht: Sinus, Kosinus und Tangens endlich verstehe...
+[Pinterest] Erstelle Pin fuer: Trigonometrie lernen: So verstehst du Sinus, Kosinus und Tangens wirklich
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/trigonometrie-lernen-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/trigonometrie-lernen-tipps.html
+[Pinterest] Uploading trigonometrie-lernen-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=83518d3c-9489-4958-b720-79fac4e52213
+[Pinterest] Pin erstellt! Post-ID: cmozcaxhr09w0l70yvt1igcf3
+[Pinterest] Erfolgreich! Pin-ID: cmozcaxhr09w0l70yvt1igcf3
+
+[Pinterest-Fallback] OK: trigonometrie-lernen-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-10 05:36:04] Next run in 8 hours.
+---
+Auto-blog loop started at Thu May 14 12:24:20 PM GMT 2026
+Interval: 28800s (8h)
+[2026-05-14 12:24:20] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
