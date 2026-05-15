@@ -5,22 +5,38 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 15 May 2026 04:40:30 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 May 2026 12:45:34 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
+      <pubDate>Fri, 15 May 2026 12:44:58 +0000</pubDate>
+      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</guid>
+      <pubDate>Fri, 15 May 2026 12:44:52 +0000</pubDate>
+      <description>Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und die häufigsten Fehler, die du vermeiden solltest. Mit praktischen Beispielen für Klasse 8-12.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Argumentation schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/argumentation-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/argumentation-schreiben-tipps.html</guid>
+      <pubDate>Fri, 15 May 2026 12:43:56 +0000</pubDate>
+      <description>Argumentation schreiben leicht gemacht: Aufbau, Dreischritt und häufige Fehler erklärt. Mit diesen Tipps überzeugst du in jeder Deutschklausur.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Interpretation schreiben: Aufbau, Methode und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/interpretation-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/interpretation-schreiben-tipps.html</guid>
       <pubDate>Fri, 15 May 2026 04:39:25 +0000</pubDate>
       <description>Interpretation schreiben leicht gemacht: Aufbau, Methode und die häufigsten Fehler erklärt. Mit Checkliste und konkreten Formulierungstipps für Schule und Abitur.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Fri, 15 May 2026 04:39:08 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -149,22 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/lineare-gleichungen-loesen-tipps.html</guid>
       <pubDate>Thu, 07 May 2026 20:48:00 +0000</pubDate>
       <description>Lineare Gleichungen lösen leicht gemacht: Die 3 wichtigsten Methoden mit konkreten Beispielen erklärt. Äquivalenzumformung, Substitution und Additionsverfahren für Klasse 7-10.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Ableitung berechnen: Die wichtigsten Ableitungsregeln für Schüler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/ableitung-berechnen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/ableitung-berechnen-tipps.html</guid>
-      <pubDate>Thu, 07 May 2026 12:43:11 +0000</pubDate>
-      <description>Ableitung berechnen: So wendest du Potenzregel, Produktregel, Kettenregel und Quotientenregel richtig an. Mit konkreten Beispielen und den häufigsten Fehlern erklärt.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Integralrechnung lernen: Schritt-für-Schritt-Anleitung für Schüler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/integralrechnung-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/integralrechnung-tipps.html</guid>
-      <pubDate>Thu, 07 May 2026 12:42:07 +0000</pubDate>
-      <description>Integralrechnung verstehen und beherrschen: So berechnest du Stammfunktionen, bestimmte Integrale und Flächeninhalte. Mit klaren Schritten, häufigen Fehlern und Tipps für Klausur und Abitur.</description>
       <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
