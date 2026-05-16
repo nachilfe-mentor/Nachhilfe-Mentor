@@ -2,10 +2,13 @@ abitur-pruefungstag-tipps
 abitur-vorbereitung-tipps
 ableitung-berechnen-tipps
 active-recall-lerntechnik
+argumentation-schreiben-tipps
 auswendig-lernen-tipps
 bachelorarbeit-schreiben-tipps
+bericht-schreiben-tipps
 bewegung-und-lernen-sport-tipps
 bewerbungsschreiben-schreiben-tipps
+bildbeschreibung-schreiben-tipps
 binomische-formeln-lernen
 biologie-abitur-vorbereitung
 biologie-lernen-tipps
@@ -20,6 +23,7 @@ deutsch-abitur-vorbereitung
 deutsch-aufsatz-schreiben-tipps
 deutsch-grammatik-lernen-tipps
 digitale-lerntools-beste-apps
+dramenanalyse-schreiben-tipps
 effektiv-lernen-tipps
 englisch-abitur-vorbereitung
 englisch-lernen-tipps
@@ -44,6 +48,7 @@ inhaltsangabe-schreiben-tipps
 instrument-ueben-tipps
 integralrechnung-tipps
 interleaving-methode-lernen
+interpretation-schreiben-tipps
 italienisch-lernen-tipps
 karteikarten-lernen-tipps
 ki-hausaufgaben-hilfe
