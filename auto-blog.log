@@ -5946,3 +5946,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier die vollständige Abschlusscheckliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `rezension-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/rezension-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (Rückverlinkung in `kommentar-schreiben-tipps.html` und `deutsch-aufsatz-schreiben-tipps.html`)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Artikel 135, Verlinkungen, Keyword-Pool)
+- [x] Git Push: erfolgreich (Commit `a42e664`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (140 URLs in Sitemap, 136 URLs an IndexNow submitted)
+- [x] PINTEREST: Pin-ID `cmp8csof000anqh0ysh8ypcjm`
+
+**Artikel:** "Rezension schreiben: Aufbau, Tipps und häufige Fehler" im Schreibaufgaben-Cluster. Der Artikel erklärt die Dreigliederung, Bewertungsaspekte für Buch- und Filmrezensionen, Formulierungshilfen sowie 6 häufige Fehler. Interne Verlinkungen zu `inhaltsangabe-schreiben-tipps`, `kommentar-schreiben-tipps` und `eroerterung-schreiben-tipps`.
+[2026-05-16 13:00:07] Blog cycle completed successfully.
+[2026-05-16 13:00:07] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 140 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 136 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 136 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 140 URLs in Sitemap, 20 Artikel im Feed.
+[main 9fc2618] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   87fb79c..9fc2618  main -> main
+[2026-05-16 13:00:07] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: rezension-schreiben-tipps
+  Titel: Rezension schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Rezension schreiben leicht gemacht: Aufbau, Tipps für Buchrezension und Filmkrit...
+[Pinterest] Erstelle Pin fuer: Rezension schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/rezension-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/rezension-schreiben-tipps.html
+[Pinterest] Uploading rezension-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=4c02092a-5fb1-4b82-95ba-ecc936c87a83
+[Pinterest] Pin erstellt! Post-ID: cmp8ctr7r00bdoh0ypbgx2wjn
+[Pinterest] Erfolgreich! Pin-ID: cmp8ctr7r00bdoh0ypbgx2wjn
+
+[Pinterest-Fallback] OK: rezension-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-16 13:00:07] Next run in 8 hours.
+---
+[2026-05-16 21:00:44] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
