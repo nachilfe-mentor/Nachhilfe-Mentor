@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 134
+- Gesamtzahl Artikel: 135
 - Letzte Veröffentlichung: 2026-05-16
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 135 | 2026-05-16 | rezension-schreiben-tipps | Rezension schreiben: Aufbau, Tipps und häufige Fehler | Rezension schreiben, Rezension Aufbau, Buchrezension schreiben, Filmkritik schreiben, Rezension Tipps, Rezension Deutsch Schule, Rezension schreiben Klasse 8 9 10, Buchrezension Aufbau, Filmrezension schreiben, Rezension Einleitung | Schule &amp; Studium | Vollständige Anleitung zum Rezension schreiben: Was ist eine Rezension (Abgrenzung zur Inhaltsangabe), Dreigliederung (Einleitung mit bibliografischen Angaben, Hauptteil aus kurzer Inhaltsangabe und Bewertung, Schluss mit Empfehlung), Bewertungsaspekte für Buchrezension (Sprachstil, Figurenentwicklung, Spannung, Botschaft) und Filmrezension (Kamera, Musik, Schauspiel, Drehbuch), Behauptung-Begründung-Beleg-Dreischritt, Formulierungshilfen für Lob/Kritik/Empfehlung, Abgrenzung zu Kommentar und Erörterung, 6 häufige Fehler (nur nacherzählen, Meinung ohne Begründung, Spoiler, zu persönlicher Ton, fehlende bibliografische Angaben, kein klares Urteil), Checkliste vor Abgabe. App-Erwähnung (Fachbegriffe per Active Recall üben). Crosslinks zu inhaltsangabe-schreiben-tipps, kommentar-schreiben-tipps, eroerterung-schreiben-tipps, deutsch-aufsatz-schreiben-tipps. Rückverlinkungen von kommentar-schreiben-tipps (Fazit), deutsch-aufsatz-schreiben-tipps (Fazit). |
 | 1 | 2026-03-30 | spaced-repetition-lernmethode | Spaced Repetition: Die Lernmethode, mit der du nie wieder vergisst | Spaced Repetition, verteiltes Lernen, Vergessenskurve, Karteikarten, effektiv lernen | Lernmethoden | Erklärt die Wissenschaft hinter Spaced Repetition (Ebbinghaus-Kurve), zeigt konkrete Wiederholungsintervalle und typische Fehler |
 | 2 | 2026-03-30 | prokrastination-ueberwinden-lernen | Prokrastination überwinden: Warum du nicht lernst und was du dagegen tust | Prokrastination überwinden, Prokrastination Schule, Aufschieben Lernen, Motivation Lernen, Konzentration steigern | Motivation &amp; Produktivität | Erklärt psychologische Ursachen von Prokrastination, Zeigarnik-Effekt, Zwei-Minuten-Regel, Willenskraft, Perfektionismus als Auslöser |
 | 3 | 2026-03-30 | active-recall-lerntechnik | Active Recall: Die Lerntechnik, mit der du Wissen wirklich abspeicherst | Active Recall, aktives Abrufen, Retrieval Practice, Testing Effect, Lerntechnik, Blank Page Method, Feynman-Methode | Lernmethoden | Erklärt die Wissenschaft hinter Active Recall, 4 konkrete Methoden (Blank Page, Karteikarten, Klausuren, Feynman), Kombination mit Spaced Repetition |
@@ -341,7 +342,15 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - eroerterung-schreiben-tipps -> argumentation-schreiben-tipps (Rückverlinkung: Argumentation als Grundlage der Erörterung)
 - deutsch-aufsatz-schreiben-tipps -> argumentation-schreiben-tipps (Rückverlinkung: Argumentation als Grundprinzip aller meinungsbetonten Aufsätze)
 
+- rezension-schreiben-tipps -> inhaltsangabe-schreiben-tipps (Unterschied Rezension vs. Inhaltsangabe: Rezension geht über Zusammenfassung hinaus)
+- rezension-schreiben-tipps -> kommentar-schreiben-tipps (Abgrenzung: Kommentar als meinungsbetonter Text ohne Werkbesprechung)
+- rezension-schreiben-tipps -> eroerterung-schreiben-tipps (Abgrenzung: Erörterung als ausgewogene Untersuchung einer Frage)
+- rezension-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Allgemeine Aufsatzkompetenz als Vertiefung)
+- kommentar-schreiben-tipps -> rezension-schreiben-tipps (Rückverlinkung: Rezension als bewertende Textsorte für Bücher und Filme)
+- deutsch-aufsatz-schreiben-tipps -> rezension-schreiben-tipps (Rückverlinkung: Rezension als bewertende Aufsatzform für Werke)
+
 ## Keyword-Pool (noch nicht verwendet)
+- <!-- Rezension schreiben, Buchrezension schreiben, Filmkritik schreiben → verwendet in Artikel #135 -->
 - Studium Tipps, Prüfungsvorbereitung, effektiv lernen,
   Mathe Kurvendiskussion Tipps, Kurvendiskussion Schritt für Schritt,
   <!-- Stochastik lernen Tipps, Wahrscheinlichkeitsrechnung lernen → verwendet in Artikel #113 (aktualisiert 2026-05-08) -->
