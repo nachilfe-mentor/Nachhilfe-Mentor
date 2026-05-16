@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 16 May 2026 04:54:30 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2026 12:59:36 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
+      <pubDate>Sat, 16 May 2026 12:58:43 +0000</pubDate>
+      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Kommentar schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</guid>
+      <pubDate>Sat, 16 May 2026 12:58:30 +0000</pubDate>
+      <description>Kommentar schreiben leicht gemacht: So gelingt dir der Aufbau mit These, Argumenten und Fazit. Mit Tipps für Deutsch-Klausur, häufigen Fehlern und Checkliste.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Rezension schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/rezension-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/rezension-schreiben-tipps.html</guid>
+      <pubDate>Sat, 16 May 2026 12:58:00 +0000</pubDate>
+      <description>Rezension schreiben leicht gemacht: Aufbau, Tipps für Buchrezension und Filmkritik, häufige Fehler und eine Checkliste für deine nächste Schulaufgabe.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Textanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</link>
@@ -21,14 +45,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/dramenanalyse-schreiben-tipps.html</guid>
       <pubDate>Sat, 16 May 2026 04:52:32 +0000</pubDate>
       <description>Dramenanalyse schreiben Schritt für Schritt: Aufbau, Szenenanalyse, Stilmittel und Formulierungshilfen für Schule und Abitur. Mit konkreten Beispielen.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Fri, 15 May 2026 12:44:58 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 08 May 2026 21:12:31 +0000</pubDate>
       <description>Mathe Klassenarbeit steht bevor? Mit diesen 8 konkreten Tipps bereitest du dich effizient vor, überwindest Rechenfehler und gehst sicher in deine nächste Mathestunde.</description>
       <category>Mathematik</category>
-    </item>
-    <item>
-      <title>Stochastik lernen: 7 Tipps für Wahrscheinlichkeitsrechnung und Statistik</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/stochastik-lernen-tipps.html</guid>
-      <pubDate>Fri, 08 May 2026 13:00:28 +0000</pubDate>
-      <description>Stochastik lernen leicht gemacht: 7 bewährte Tipps für Wahrscheinlichkeitsrechnung, Kombinatorik und Statistik. So bereitest du dich optimal auf Klausur und Abitur vor.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Binomische Formeln: Erklärung, Beispiele und Aufgaben</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/binomische-formeln-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/binomische-formeln-lernen.html</guid>
-      <pubDate>Fri, 08 May 2026 04:52:53 +0000</pubDate>
-      <description>Binomische Formeln endlich verstehen: Die 3 Formeln einfach erklärt, mit Beispielen und typischen Aufgaben für Klasse 8-10. Plus: Die häufigsten Fehler vermeiden.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
