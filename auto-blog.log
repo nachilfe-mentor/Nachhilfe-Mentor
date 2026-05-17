@@ -5996,3 +5996,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles erledigt. Hier das Abschluss-Protokoll:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `romananalyse-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/romananalyse-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (von `dramenanalyse-schreiben-tipps.html` im Schluss, von `textanalyse-schreiben-tipps.html` im Fazit)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (136 Artikel)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (141 URLs in Sitemap, 137 URLs an IndexNow gemeldet)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmp8u4z0j00x0oh0ys1auxc8r`
+
+**Analytics-Fazit:** Der Schreibaufgaben-Cluster dominiert klar (kommentar 26 Views, inhaltsangabe 11 Views, gedichtanalyse 6 Views). Die Romananalyse füllt die letzte große Lücke in diesem Cluster: Dramenanalyse und Textanalyse existieren bereits, Romananalyse fehlte. Mit 136 Artikeln wächst der Blog weiter stabil.
+[2026-05-16 21:05:29] Blog cycle completed successfully.
+[2026-05-16 21:05:29] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 141 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 137 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 137 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 141 URLs in Sitemap, 20 Artikel im Feed.
+[main 933c94d] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   7dd52c0..933c94d  main -> main
+[2026-05-16 21:05:29] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: romananalyse-schreiben-tipps
+  Titel: Romananalyse schreiben: Aufbau, Schritte und häufige Fehler
+  Desc:  Romananalyse schreiben leicht gemacht: Aufbau, Methode, Formulierungstipps und d...
+[Pinterest] Erstelle Pin fuer: Romananalyse schreiben: Aufbau, Schritte und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/romananalyse-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/romananalyse-schreiben-tipps.html
+[Pinterest] Uploading romananalyse-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=ff199355-d7d4-476c-95b2-8c5bea0534e2
+[Pinterest] Pin erstellt! Post-ID: cmp8u5a1500s7qh0ynezj120r
+[Pinterest] Erfolgreich! Pin-ID: cmp8u5a1500s7qh0ynezj120r
+
+[Pinterest-Fallback] OK: romananalyse-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-16 21:05:29] Next run in 8 hours.
+---
+[2026-05-17 05:05:32] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
