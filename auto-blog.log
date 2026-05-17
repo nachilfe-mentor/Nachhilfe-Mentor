@@ -6046,3 +6046,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+**Analytics:** 192 Views gesamt (30 Tage). Google 72 Sessions, Bing 49, Ecosia 12, DuckDuckGo 10. Schreibaufgaben-Cluster klar stärkster Performer: Kommentar (26 Views), Inhaltsangabe (11), Gedichtanalyse/Erlebniserzählung (je 6).
+
+**Themen-Wahl:** Glosse schreiben gewählt, da noch fehlend im Schreibaufgaben-Cluster, häufige Oberstufen-Aufgabe, klarer Longtail mit Suchintention ("Glosse schreiben").
+
+- [x] Artikel geschrieben: `glosse-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/glosse-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: Rückverlinkungen in `kommentar-schreiben-tipps.html` (Fazit-Abschnitt) und `deutsch-aufsatz-schreiben-tipps.html` (Fazit-Abschnitt)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (137 Artikel, 5 neue interne Verlinkungen)
+- [x] Git Push: erfolgreich (`caf1c3e`)
+- [x] SEO-Update: 142 URLs in Sitemap, 138 URLs an IndexNow gemeldet
+- [x] PINTEREST: Pin-ID `cmp9bi3kp00daqh0y53mt6b5j`
+[2026-05-17 05:11:41] Blog cycle completed successfully.
+[2026-05-17 05:11:41] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 142 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 138 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 138 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 142 URLs in Sitemap, 20 Artikel im Feed.
+[main 18de1a0] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   4cd97c7..18de1a0  main -> main
+[2026-05-17 05:11:41] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: glosse-schreiben-tipps
+  Titel: Glosse schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Glosse schreiben leicht gemacht: Aufbau, Stilmittel, Beispiele und die häufigste...
+[Pinterest] Erstelle Pin fuer: Glosse schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/glosse-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/glosse-schreiben-tipps.html
+[Pinterest] Uploading glosse-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=58b356f7-0e1d-48bf-82bf-e75836d357cc
+[Pinterest] Pin erstellt! Post-ID: cmp9biiqw00evoh0ydjhr39q4
+[Pinterest] Erfolgreich! Pin-ID: cmp9biiqw00evoh0ydjhr39q4
+
+[Pinterest-Fallback] OK: glosse-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-17 05:11:41] Next run in 8 hours.
+---
+[2026-05-17 13:11:44] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
