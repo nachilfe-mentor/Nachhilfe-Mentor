@@ -6096,3 +6096,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf vollständig abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `personenbeschreibung-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/personenbeschreibung-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (von `charakterisierung-schreiben-tipps.html` im Schluss auf den neuen Artikel)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (138 Artikel)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefühlt (143 URLs in Sitemap, 139 URLs an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefühlt — Pin-ID: `cmp9sv0jp017fqh0yme3ckha2`
+
+**Analytics-Erkenntnisse aus diesem Durchlauf:** Schreibaufgaben-Cluster dominiert klar. Kommentar-schreiben ist neuer Traffic-König (26 Views, 219s). Google organisch auf 77 Sessions gestiegen, Bing stark auf 51 Sessions. Thema Personenbeschreibung passt ideal: Klasse 5-7, hohes Suchvolumen, noch nicht abgedeckt und direkt verknüpfbar mit dem starken Charakterisierungs-Artikel.
+[2026-05-17 13:17:38] Blog cycle completed successfully.
+[2026-05-17 13:17:38] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 143 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 139 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 139 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 143 URLs in Sitemap, 20 Artikel im Feed.
+[main 97719ac] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   d075137..97719ac  main -> main
+[2026-05-17 13:17:38] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: personenbeschreibung-schreiben-tipps
+  Titel: Personenbeschreibung schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Personenbeschreibung schreiben leicht gemacht: So beschreibst du eine Person ric...
+[Pinterest] Erstelle Pin fuer: Personenbeschreibung schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/personenbeschreibung-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/personenbeschreibung-schreiben-tipps.html
+[Pinterest] Uploading personenbeschreibung-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=86de8f12-d433-41fb-8d78-f7b1c29bc86c
+[Pinterest] Pin erstellt! Post-ID: cmp9svgxk016goh0yvh6iarvj
+[Pinterest] Erfolgreich! Pin-ID: cmp9svgxk016goh0yvh6iarvj
+
+[Pinterest-Fallback] OK: personenbeschreibung-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-17 13:17:38] Next run in 8 hours.
+---
+[2026-05-17 21:17:41] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
