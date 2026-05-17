@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 17 May 2026 05:11:41 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 13:17:09 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Charakterisierung schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/charakterisierung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/charakterisierung-schreiben-tipps.html</guid>
+      <pubDate>Sun, 17 May 2026 13:16:30 +0000</pubDate>
+      <description>Charakterisierung schreiben leicht gemacht: Aufbau, Formulierungen und die häufigsten Fehler vermeiden. Mit konkreten Beispielsätzen für Klasse 7-10.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Personenbeschreibung schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/personenbeschreibung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/personenbeschreibung-schreiben-tipps.html</guid>
+      <pubDate>Sun, 17 May 2026 13:15:48 +0000</pubDate>
+      <description>Personenbeschreibung schreiben leicht gemacht: So beschreibst du eine Person richtig, strukturiert und mit der richtigen Reihenfolge. Mit Aufbau, Beispielen und Checkliste.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
       <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sat, 09 May 2026 13:24:17 +0000</pubDate>
       <description>Mathe lernen leicht gemacht: 7 bewährte Tipps, mit denen du Formeln verstehst, Aufgaben sicher löst und bessere Noten schreibst.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Bruchrechnung lernen: So rechnest du mit Brüchen sicher und schnell</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/bruchrechnung-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/bruchrechnung-lernen-tipps.html</guid>
-      <pubDate>Sat, 09 May 2026 13:23:38 +0000</pubDate>
-      <description>Bruchrechnung lernen leicht gemacht: Verstehe Zähler und Nenner, lerne Kürzen, Erweitern, Addieren, Subtrahieren und Multiplizieren von Brüchen mit klaren Beispielen.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Mathe Abitur Vorbereitung: So meisterst du die Mathematik-Prüfung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</guid>
-      <pubDate>Sat, 09 May 2026 05:18:46 +0000</pubDate>
-      <description>Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, Stochastik und Geometrie gezielt lernst und typische Fehler vermeidest.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
