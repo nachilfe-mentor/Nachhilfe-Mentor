@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 16 May 2026 21:05:29 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 05:11:13 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
+      <pubDate>Sun, 17 May 2026 05:10:16 +0000</pubDate>
+      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Kommentar schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</guid>
+      <pubDate>Sun, 17 May 2026 05:10:05 +0000</pubDate>
+      <description>Kommentar schreiben leicht gemacht: So gelingt dir der Aufbau mit These, Argumenten und Fazit. Mit Tipps für Deutsch-Klausur, häufigen Fehlern und Checkliste.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Glosse schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/glosse-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/glosse-schreiben-tipps.html</guid>
+      <pubDate>Sun, 17 May 2026 05:09:09 +0000</pubDate>
+      <description>Glosse schreiben leicht gemacht: Aufbau, Stilmittel, Beispiele und die häufigsten Fehler erklärt. So schreibst du eine überzeugende Glosse in der Schule.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Textanalyse schreiben: Aufbau, Methode und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</link>
@@ -29,22 +53,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/romananalyse-schreiben-tipps.html</guid>
       <pubDate>Sat, 16 May 2026 21:03:54 +0000</pubDate>
       <description>Romananalyse schreiben leicht gemacht: Aufbau, Methode, Formulierungstipps und die 6 häufigsten Fehler. Mit Schritt-für-Schritt-Anleitung für Schüler.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Sat, 16 May 2026 12:58:43 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Kommentar schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/kommentar-schreiben-tipps.html</guid>
-      <pubDate>Sat, 16 May 2026 12:58:30 +0000</pubDate>
-      <description>Kommentar schreiben leicht gemacht: So gelingt dir der Aufbau mit These, Argumenten und Fazit. Mit Tipps für Deutsch-Klausur, häufigen Fehlern und Checkliste.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 09 May 2026 05:18:46 +0000</pubDate>
       <description>Mathe Abitur Vorbereitung: Welche Themen wirklich drankommen, wie du Analysis, Stochastik und Geometrie gezielt lernst und typische Fehler vermeidest.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Vektorrechnung lernen: Schritt-für-Schritt-Anleitung für Schüler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/vektorrechnung-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/vektorrechnung-lernen-tipps.html</guid>
-      <pubDate>Sat, 09 May 2026 05:18:16 +0000</pubDate>
-      <description>Vektorrechnung lernen leicht gemacht: Vektoren, Skalarprodukt, Geraden und Ebenen verständlich erklärt. Mit dieser Anleitung beherrschst du Analytische Geometrie für Klausur und Abitur.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
