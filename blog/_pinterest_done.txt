@@ -34,6 +34,7 @@ erstes-semester-tipps
 ethik-lernen-tipps
 facharbeit-schreiben-tipps
 feynman-technik-erklaeren-lernen
+formellen-brief-schreiben-tipps
 franzoesisch-lernen-tipps
 gedaechtnis-techniken-lernen
 gedaechtnis-verbessern-uebungen
@@ -130,6 +131,7 @@ tuerkisch-lernen-tipps
 vektorrechnung-lernen-tipps
 vokabeln-lernen-app-vergleich
 vokabeln-lernen-tipps
+vorgangsbeschreibung-schreiben-tipps
 wirtschaft-lernen-tipps
 wissenschaftliches-arbeiten-tipps
 zeitmanagement-studium-tipps

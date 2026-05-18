@@ -6146,3 +6146,103 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles abgeschlossen. Hier die vollständige Checkliste:
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `formellen-brief-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/formellen-brief-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (leserbrief-schreiben-tipps → Fazit; bewerbungsschreiben-schreiben-tipps → Fazit)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (139 Artikel, Verlinkungen eingetragen)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (144 URLs in Sitemap, 140 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmpaa8c1u009aqh0ys75zu9bu`
+
+**Analytics-Highlights (Stand 2026-05-17):** Google organisch auf 79 Sessions gestiegen (Rekord). Schreibaufgaben-Cluster ist klarer Ranking-Motor. Kommentar-schreiben-tipps neuer Spitzenreiter mit 27 Views.
+[2026-05-17 21:23:58] Blog cycle completed successfully.
+[2026-05-17 21:23:58] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 144 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 140 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 140 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 144 URLs in Sitemap, 20 Artikel im Feed.
+[main f0e7a05] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   eafc602..f0e7a05  main -> main
+[2026-05-17 21:23:58] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: formellen-brief-schreiben-tipps
+  Titel: Formellen Brief schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Formellen Brief schreiben leicht gemacht: Aufbau, Pflichtbestandteile, Anrede, G...
+[Pinterest] Erstelle Pin fuer: Formellen Brief schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/formellen-brief-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/formellen-brief-schreiben-tipps.html
+[Pinterest] Uploading formellen-brief-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=3fb643ba-f60e-421d-a4df-dea7df844f5e
+[Pinterest] Pin erstellt! Post-ID: cmpaa8wbi009gqh0ytkkmyar9
+[Pinterest] Erfolgreich! Pin-ID: cmpaa8wbi009gqh0ytkkmyar9
+
+[Pinterest-Fallback] OK: formellen-brief-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-17 21:23:58] Next run in 8 hours.
+---
+[2026-05-18 05:24:01] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich. Alle Schritte abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `vorgangsbeschreibung-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/vorgangsbeschreibung-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (bildbeschreibung-schreiben-tipps -> vorgangsbeschreibung im Fazit; Artikel verlinkt auf active-recall-lerntechnik und deutsch-aufsatz-schreiben-tipps)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (140 Artikel, Verlinkungen eingetragen)
+- [x] Git Push: erfolgreich
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuehrt (145 URLs in Sitemap, 141 URLs an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuehrt — Pin-ID: `cmparkw950220oh0yhr00f3x3`
+
+**Analytics-Highlights (Stand 2026-05-18):** Google organisch auf 83 Sessions gestiegen (neuer Rekord). Schreibaufgaben-Cluster dominiert: Kommentar (27 Views, 20 letzte 7 Tage), Bildbeschreibung (5 Views letzte 7 Tage, 6 Sessions) und Interpretation (4 Views letzte 7 Tage) performen stark. Vorgangsbeschreibung ist eine natürliche Erweiterung des Beschreibungs-Clusters und sollte ähnlich schnell ranken.
+[2026-05-18 05:29:48] Blog cycle completed successfully.
+[2026-05-18 05:29:48] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 145 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 141 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 141 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 145 URLs in Sitemap, 20 Artikel im Feed.
+[main 9ad3182] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   3b4fe72..9ad3182  main -> main
+[2026-05-18 05:29:48] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: vorgangsbeschreibung-schreiben-tipps
+  Titel: Vorgangsbeschreibung schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Vorgangsbeschreibung schreiben leicht gemacht: Aufbau, Sprache, Beispiele und hä...
+[Pinterest] Erstelle Pin fuer: Vorgangsbeschreibung schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/vorgangsbeschreibung-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/vorgangsbeschreibung-schreiben-tipps.html
+[Pinterest] Uploading vorgangsbeschreibung-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=597500eb-3c4c-4ae0-b3e2-4e3375f224de
+[Pinterest] Pin erstellt! Post-ID: cmparloam025zqh0yz35g9ocv
+[Pinterest] Erfolgreich! Pin-ID: cmparloam025zqh0yz35g9ocv
+
+[Pinterest-Fallback] OK: vorgangsbeschreibung-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-18 05:29:48] Next run in 8 hours.
+---
+[2026-05-18 13:29:51] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
