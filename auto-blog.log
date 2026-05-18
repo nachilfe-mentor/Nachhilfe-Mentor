@@ -6246,3 +6246,53 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf vollständig abgeschlossen.
+
+---
+
+**DURCHLAUF ABGESCHLOSSEN:**
+
+- [x] Artikel geschrieben: `zeitungsartikel-schreiben-tipps.html`
+- [x] Cover-Bild generiert: `blog/posts/img/zeitungsartikel-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html`
+- [x] Crosslinks gesetzt: ja (in `kommentar-schreiben-tipps.html` Fazit + `deutsch-aufsatz-schreiben-tipps.html` Fazit)
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (141 Artikel)
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgefuehrt (146 URLs, 142 an IndexNow submitted)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgefuehrt — Pin-ID: `cmpb8y7qv000cpe0y2uv1nxuj`
+
+**Analytics-Zusammenfassung (2026-05-18):** Google organisch bei 92 Sessions (neuer Höchststand), Bing 55. Schreibaufgaben-Cluster dominiert klar: Kommentar (28 Views), Lernblockade (17, aber schwaches Engagement mit 46s), Inhaltsangabe (11). Neuer Artikel "Zeitungsartikel schreiben" ergänzt den Cluster strategisch, da Kommentar-Artikel häufig auf Zeitungsartikel als Ausgangstexte verweist.
+[2026-05-18 13:35:42] Blog cycle completed successfully.
+[2026-05-18 13:35:42] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 146 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 142 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 142 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 146 URLs in Sitemap, 20 Artikel im Feed.
+[main 528ef90] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   cea4f5a..528ef90  main -> main
+[2026-05-18 13:35:42] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: zeitungsartikel-schreiben-tipps
+  Titel: Zeitungsartikel schreiben: Aufbau, Tipps und häufige Fehler
+  Desc:  Zeitungsartikel schreiben lernen: So baust du einen Nachrichtenartikel richtig a...
+[Pinterest] Erstelle Pin fuer: Zeitungsartikel schreiben: Aufbau, Tipps und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/zeitungsartikel-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/zeitungsartikel-schreiben-tipps.html
+[Pinterest] Uploading zeitungsartikel-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=5d250f5e-2f6d-4d82-9509-341a813e5822
+[Pinterest] Pin erstellt! Post-ID: cmpb8yka3000epe0yf2spzegq
+[Pinterest] Erfolgreich! Pin-ID: cmpb8yka3000epe0yf2spzegq
+
+[Pinterest-Fallback] OK: zeitungsartikel-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-18 13:35:42] Next run in 8 hours.
+---
+[2026-05-18 21:35:46] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
