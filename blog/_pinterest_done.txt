@@ -7,6 +7,7 @@ auswendig-lernen-tipps
 bachelorarbeit-schreiben-tipps
 bericht-schreiben-tipps
 bewegung-und-lernen-sport-tipps
+bewerbungsgespraech-vorbereiten-tipps
 bewerbungsschreiben-schreiben-tipps
 bildbeschreibung-schreiben-tipps
 binomische-formeln-lernen
@@ -31,7 +32,9 @@ erdkunde-lernen-tipps
 erlebniserzaehlung-schreiben-tipps
 eroerterung-schreiben-tipps
 erstes-semester-tipps
+essay-schreiben-tipps
 ethik-lernen-tipps
+fabel-schreiben-tipps
 facharbeit-schreiben-tipps
 feynman-technik-erklaeren-lernen
 formellen-brief-schreiben-tipps
@@ -39,6 +42,7 @@ franzoesisch-lernen-tipps
 gedaechtnis-techniken-lernen
 gedaechtnis-verbessern-uebungen
 gedichtanalyse-schreiben-tipps
+gedichtvergleich-schreiben-tipps
 geschichte-abitur-vorbereitung
 geschichte-lernen-tipps
 glosse-schreiben-tipps
@@ -47,6 +51,7 @@ hausarbeit-schreiben-tipps
 hausaufgaben-tipps-schnell-erledigen
 informatik-lernen-tipps
 inhaltsangabe-schreiben-tipps
+innerer-monolog-schreiben-tipps
 instrument-ueben-tipps
 integralrechnung-tipps
 interleaving-methode-lernen
@@ -104,8 +109,10 @@ pomodoro-technik-lernen
 praesentation-erstellen-tipps
 prokrastination-ueberwinden-lernen
 protokoll-schreiben-anleitung
+protokoll-schreiben-tipps
 pruefungsangst-abitur-ueberwinden
 pruefungsangst-ueberwinden
+redeanalyse-schreiben-tipps
 referat-halten-tipps
 referat-schreiben-anleitung
 rezension-schreiben-tipps
@@ -125,7 +132,10 @@ stellungnahme-schreiben-tipps
 stilmittel-liste-beispiele
 stochastik-lernen-tipps
 studieren-ohne-abitur-tipps
+szenenanalyse-schreiben-tipps
+tagebucheintrag-schreiben-tipps
 textanalyse-schreiben-tipps
+textgebundene-eroerterung-schreiben-tipps
 trigonometrie-lernen-tipps
 tuerkisch-lernen-tipps
 vektorrechnung-lernen-tipps
