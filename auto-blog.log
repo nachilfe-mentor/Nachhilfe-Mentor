@@ -6822,3 +6822,50 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Durchlauf vollständig abgeschlossen.
+
+**DURCHLAUF ABGESCHLOSSEN:**
+- [x] Artikel geschrieben: `reizwortgeschichte-schreiben-tipps.html` (Reizwortgeschichte schreiben, ~1150 Wörter, Schreibaufgaben-Cluster, Klasse 5-6)
+- [x] Cover-Bild generiert: `blog/posts/img/reizwortgeschichte-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: neue Card oben in `blog/index.html`
+- [x] Crosslinks gesetzt: ja — Rückverlinkungen aus erlebniserzaehlung, fabel und kurzgeschichte (jeweils Fazit); Vorwärtslinks zu erlebniserzaehlung, kurzgeschichte, deutsch-aufsatz, fabel
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (jetzt 152 Artikel)
+- [x] Git Push: erfolgreich (3 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (157 URLs Sitemap, 153 an IndexNow)
+- [x] PINTEREST: Pin erstellt — Pin-ID: `cmphhijoa02w4pn0yt4wgvl7h`
+
+Themenwahl folgte der R30-Analytics-Empfehlung: Der Analyse-/Schreibaufgaben-Cluster ist klar der stärkste Ranking-Motor (Google organisch auf 194 Sessions), und die Reizwortgeschichte war eine identifizierte Lücke mit hohem Suchvolumen für Klasse 5-6.
+[2026-05-22 22:22:04] Blog cycle completed successfully.
+[2026-05-22 22:22:04] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 157 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 153 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 153 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 157 URLs in Sitemap, 20 Artikel im Feed.
+[main d00d27b] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   fd17db1..d00d27b  main -> main
+[2026-05-22 22:22:04] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: reizwortgeschichte-schreiben-tipps
+  Titel: Reizwortgeschichte schreiben: Aufbau, Tipps und Beispiel
+  Desc:  Reizwortgeschichte schreiben leicht gemacht: Aufbau in Einleitung, Hauptteil und...
+[Pinterest] Erstelle Pin fuer: Reizwortgeschichte schreiben: Aufbau, Tipps und Beispiel
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/reizwortgeschichte-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/reizwortgeschichte-schreiben-tipps.html
+[Pinterest] Uploading reizwortgeschichte-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=58fa3517-629e-493c-b3a7-d449a4dac8ca
+[Pinterest] Pin erstellt! Post-ID: cmphhiv1l041vt60ydavpdmto
+[Pinterest] Erfolgreich! Pin-ID: cmphhiv1l041vt60ydavpdmto
+
+[Pinterest-Fallback] OK: reizwortgeschichte-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-22 22:22:04] Next run in 8 hours.
+---
+[2026-05-23 06:22:07] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
