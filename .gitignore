@@ -6,3 +6,6 @@ google-analytics-sa.json
 auto-blog.log
 batch-blog.log
 AGENT_SETUP.md
+blog/_BLOG_CONTEXT_COMPACT.md
+__pycache__/
+blog/__pycache__/
