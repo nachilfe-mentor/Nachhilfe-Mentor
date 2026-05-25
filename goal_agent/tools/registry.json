@@ -1,0 +1,76 @@
+{
+  "tools": [
+    {
+      "module": "goal_agent.tools.builtin.posthog_conversion_analyzer",
+      "name": "posthog_conversion_analyzer",
+      "sha256": "c3342881e7cbbd176b7e0e3054184cdae659adb2f95a5120d910439c90b1dd7e",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.gsc_query_clusterer",
+      "name": "gsc_query_clusterer",
+      "sha256": "cff59b79da5af9402013b00bb07dc5141a099f615c366f878e6a806f932611ac",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.content_decay_detector",
+      "name": "content_decay_detector",
+      "sha256": "b34946c6978aa4b66860f511408430ad23aec0050973c2f153721fb2a7da17f4",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.internal_link_graph_analyzer",
+      "name": "internal_link_graph_analyzer",
+      "sha256": "0251994c23fef9e3f0fe9fe51c4e61a2e4a46fb4fe04a9c868e185118d7a4b3a",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.serp_gap_scanner",
+      "name": "serp_gap_scanner",
+      "sha256": "4b80917bff281ddb92ca74f79e10a23674a11f98c8b50176a64af5d07ba3a7cb",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.topic_graph_builder",
+      "name": "topic_graph_builder",
+      "sha256": "5cb199d9b9e7cc4f678aceed4eab7b4f8c045895e0e9973ed0e33a4ffcebf2b0",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.blog_prompt_evaluator",
+      "name": "blog_prompt_evaluator",
+      "sha256": "6ef8c149623814d7bbe17631b9747fd1cb96bddf10630062e91d35f7cefcda81",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.interactive_page_generator",
+      "name": "interactive_page_generator",
+      "sha256": "c9e9766cdf55fc958363b012f46977414058b6ab5d91cd54350aab014f54231c",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.sitemap_diff_checker",
+      "name": "sitemap_diff_checker",
+      "sha256": "fce424442c9afc84be15db63911e8d56941abbcf2c3be6b45674310b10b03d0c",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.schema_markup_generator",
+      "name": "schema_markup_generator",
+      "sha256": "9b5e96cb6a93825a3614976f268ff6ff7bebbe32229ae7fbdb5a7a9ca934e9d0",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.cannibalization_detector",
+      "name": "cannibalization_detector",
+      "sha256": "076f3375a913c88edadd98d50d993b0ec31ff8a89eddfbe14df037a7976344b0",
+      "status": "verified"
+    },
+    {
+      "module": "goal_agent.tools.builtin.ranking_anomaly_detector",
+      "name": "ranking_anomaly_detector",
+      "sha256": "bf1fda9fedaf258b0daa0d976a474e40915a47e55ae8e772d26c6bbbc14087b9",
+      "status": "verified"
+    }
+  ]
+}

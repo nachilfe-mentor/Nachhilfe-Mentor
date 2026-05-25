@@ -105,6 +105,7 @@ def scan_pages():
         "main": [],
         "blog_index": None,
         "blog_posts": [],
+        "goal_agent_pages": [],
         "legal": [],
     }
 
@@ -125,6 +126,17 @@ def scan_pages():
             basename = os.path.basename(f)
             path = f"blog/posts/{basename}"
             pages["blog_posts"].append((path, f, 0.7, "monthly"))
+
+    # Goal-Agent SEO/Practice/Interactive pages. Drafts and noindex pages are
+    # intentionally excluded from the sitemap.
+    goal_pages_dir = os.path.join(SITE_DIR, "goal-agent-pages")
+    if os.path.isdir(goal_pages_dir):
+        for f in sorted(glob.glob(os.path.join(goal_pages_dir, "*.html"))):
+            if has_noindex(f):
+                continue
+            basename = os.path.basename(f)
+            path = f"goal-agent-pages/{basename}"
+            pages["goal_agent_pages"].append((path, f, 0.6, "weekly"))
 
     # Legal-Seiten (nur wenn KEIN noindex-Tag)
     legal_pages = [
@@ -152,6 +164,7 @@ def generate_sitemap(pages):
     if pages["blog_index"]:
         all_pages.append(pages["blog_index"])
     all_pages.extend(pages["blog_posts"])
+    all_pages.extend(pages["goal_agent_pages"])
     all_pages.extend(pages["legal"])
 
     for path, filepath, priority, changefreq in all_pages:
@@ -286,6 +299,7 @@ def main():
 
     if not no_ping:
         all_urls = [f"{SITE_URL}/{p[0]}" for p in pages["blog_posts"]]
+        all_urls.extend(f"{SITE_URL}/{p[0]}" for p in pages["goal_agent_pages"])
         all_urls.append(f"{SITE_URL}/")
         if pages["blog_index"]:
             all_urls.append(f"{SITE_URL}/blog/")

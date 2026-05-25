@@ -1047,7 +1047,7 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 [Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
 [Pinterest] Pin-Erstellung fehlgeschlagen.
 
-[Pinterest-Fallback] FEHLER bei informatik-lernen-tipps: 
+[Pinterest-Fallback] FEHLER bei informatik-lernen-tipps:
 [Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
 [2026-04-09 12:59:28] Next run in 8 hours.
 ---
@@ -1097,7 +1097,7 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 [Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
 [Pinterest] Pin-Erstellung fehlgeschlagen.
 
-[Pinterest-Fallback] FEHLER bei informatik-lernen-tipps: 
+[Pinterest-Fallback] FEHLER bei informatik-lernen-tipps:
 [Pinterest-Fallback] Pinne: lernpausen-richtig-machen
   Titel: Lernpausen richtig machen: So erholt sich dein Gehirn
   Desc:  Lernpausen richtig machen ist genauso wichtig wie das Lernen selbst. Erfahre, wi...
@@ -1109,7 +1109,7 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 [Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
 [Pinterest] Pin-Erstellung fehlgeschlagen.
 
-[Pinterest-Fallback] FEHLER bei lernpausen-richtig-machen: 
+[Pinterest-Fallback] FEHLER bei lernpausen-richtig-machen:
 [Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
 [2026-04-09 21:04:11] Next run in 8 hours.
 ---
@@ -1224,7 +1224,7 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 [Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
 [Pinterest] Pin-Erstellung fehlgeschlagen.
 
-[Pinterest-Fallback] FEHLER bei schneller-lesen-lernen-tipps: 
+[Pinterest-Fallback] FEHLER bei schneller-lesen-lernen-tipps:
 [Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
 [2026-04-10 13:14:50] Next run in 8 hours.
 ---
@@ -1275,7 +1275,7 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 [Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
 [Pinterest] Pin-Erstellung fehlgeschlagen.
 
-[Pinterest-Fallback] FEHLER bei schneller-lesen-lernen-tipps: 
+[Pinterest-Fallback] FEHLER bei schneller-lesen-lernen-tipps:
 [Pinterest-Fallback] Pinne: musik-beim-lernen-tipps
   Titel: Musik beim Lernen: Wann Kopfhörer helfen und wann sie schaden
   Desc:  Musik beim Lernen: Hilft sie wirklich oder lenkt sie ab? Hier erfährst du, welch...
@@ -1287,7 +1287,7 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 [Pinterest] Post-Fehler: 429 {"statusCode":429,"message":"ThrottlerException: Too Many Requests"}
 [Pinterest] Pin-Erstellung fehlgeschlagen.
 
-[Pinterest-Fallback] FEHLER bei musik-beim-lernen-tipps: 
+[Pinterest-Fallback] FEHLER bei musik-beim-lernen-tipps:
 [Pinterest-Fallback] Nichts zu pinnen - alle Artikel sind bereits auf Pinterest.
 [2026-04-10 21:19:58] Next run in 8 hours.
 ---
@@ -6869,3 +6869,373 @@ To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
 From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
  * branch            main       -> FETCH_HEAD
 Already up to date.
+Alles sauber, Arbeitsbaum ist clean. Der Durchlauf ist vollständig.
+
+**DURCHLAUF ABGESCHLOSSEN:**
+- [x] Artikel geschrieben: `ballade-analysieren-tipps.html` (#153, ~1.250 Wörter)
+- [x] Cover-Bild generiert: `blog/posts/img/ballade-analysieren-tipps.webp`
+- [x] Blog-Index aktualisiert: `blog/index.html` (Card oben eingefügt)
+- [x] Crosslinks gesetzt: ja, Rückverlinkungen von Gedichtanalyse, Gedichtvergleich und Dramenanalyse (jeweils im Fazit); der neue Artikel verlinkt zu Gedichtanalyse, Stilmittel-Liste, Deutsch-Aufsatz, Interpretation, Dramenanalyse, Gedichtvergleich
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (153 Artikel)
+- [x] Git Push: erfolgreich (2 Commits)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (158 URLs, IndexNow HTTP 200)
+- [x] PINTEREST: ausgeführt, Pin-ID: `cmphysxbc0070qm0y22a8nu3o`
+
+**Themenwahl:** Analytics waren aussagekräftig (Google organisch 194 Sessions, der Analyse-/Schreibaufgaben-Cluster dominiert). "Ballade analysieren" füllt eine Lücke aus der R30-Empfehlung und ergänzt den stärksten Cluster mit guten Crosslink-Partnern (Gedichtanalyse 14 Views, Dramenanalyse 397s Engagement).
+[2026-05-23 06:26:08] Blog cycle completed successfully.
+[2026-05-23 06:26:08] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 158 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 154 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 154 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 158 URLs in Sitemap, 20 Artikel im Feed.
+[main 006cea3] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   0e3d1de..006cea3  main -> main
+[2026-05-23 06:26:08] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: ballade-analysieren-tipps
+  Titel: Ballade analysieren: Aufbau, Merkmale und häufige Fehler
+  Desc:  Ballade analysieren leicht gemacht: Schritt-für-Schritt-Anleitung für Aufbau, Me...
+[Pinterest] Erstelle Pin fuer: Ballade analysieren: Aufbau, Merkmale und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/ballade-analysieren-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/ballade-analysieren-tipps.html
+[Pinterest] Uploading ballade-analysieren-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=bc3b4f9f-6e0a-41df-8c26-d2a6b299f8cf
+[Pinterest] Pin erstellt! Post-ID: cmphytdnk007qmm0yavumngqw
+[Pinterest] Erfolgreich! Pin-ID: cmphytdnk007qmm0yavumngqw
+
+[Pinterest-Fallback] OK: ballade-analysieren-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-23 06:26:08] Next run in 8 hours.
+---
+[2026-05-23 14:26:11] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erstellt. Der Durchlauf ist vollständig abgeschlossen.
+
+DURCHLAUF ABGESCHLOSSEN:
+- [x] Artikel geschrieben: `dialoganalyse-schreiben-tipps.html` (Thema: Dialoganalyse schreiben, Schule & Studium, Oberstufe/Abitur)
+- [x] Cover-Bild generiert: `blog/posts/img/dialoganalyse-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: neue Card oben in `blog/index.html`
+- [x] Crosslinks gesetzt: ja — Rückverlinkungen aus `dramenanalyse-schreiben-tipps.html` (Fazit) und `szenenanalyse-schreiben-tipps.html` (Fazit); im Artikel selbst Links zu szenenanalyse, dramenanalyse, stilmittel-liste, deutsch-aufsatz, active-recall
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (154 Artikel)
+- [x] Git Push: erfolgreich (Commits `e8916d9` + `cda9aff`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (159 URLs Sitemap, 155 an IndexNow)
+- [x] PINTEREST: erfolgreich — Pin-ID: `cmpig2vle01ufmm0y8tigpkwi`
+
+**Themenwahl-Begründung:** Aus der R30-Empfehlung waren noch "Nacherzählung" und "Dialoganalyse" offen. Ich habe Dialoganalyse gewählt, da der Analyse-Cluster laut Analytics das mit Abstand beste Engagement zeigt (dramenanalyse 397s, romananalyse 17% Bounce, interpretation, szenenanalyse) und die Dialoganalyse diese starken Hub-Seiten direkt ergänzt.
+[2026-05-23 14:29:37] Blog cycle completed successfully.
+[2026-05-23 14:29:37] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 159 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 155 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 155 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 159 URLs in Sitemap, 20 Artikel im Feed.
+[main f5e6a7f] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   cda9aff..f5e6a7f  main -> main
+[2026-05-23 14:29:37] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: dialoganalyse-schreiben-tipps
+  Titel: Dialoganalyse schreiben: Aufbau, Schritte und Beispiel
+  Desc:  Dialoganalyse schreiben leicht gemacht: Aufbau, Schritt-für-Schritt-Anleitung, G...
+[Pinterest] Erstelle Pin fuer: Dialoganalyse schreiben: Aufbau, Schritte und Beispiel
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/dialoganalyse-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/dialoganalyse-schreiben-tipps.html
+[Pinterest] Uploading dialoganalyse-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=ffa348e4-70c9-4cb1-b497-ab91664fafa7
+[Pinterest] Pin erstellt! Post-ID: cmpig34ux01ugmm0y7s7heh3q
+[Pinterest] Erfolgreich! Pin-ID: cmpig34ux01ugmm0y7s7heh3q
+
+[Pinterest-Fallback] OK: dialoganalyse-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-23 14:29:37] Next run in 8 hours.
+---
+[2026-05-23 22:29:39] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Alle Schritte erfolgreich abgeschlossen.
+
+DURCHLAUF ABGESCHLOSSEN:
+- [x] Artikel geschrieben: `nacherzaehlung-schreiben-tipps.html` (#155, Thema "Nacherzählung schreiben", Klasse 5-6, Lücke im stärksten Cluster)
+- [x] Cover-Bild generiert: `blog/posts/img/nacherzaehlung-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: neue Card oben in `blog/index.html`
+- [x] Crosslinks gesetzt: ja — Rückverlinkungen von `inhaltsangabe-schreiben-tipps` (Fazit) und `fabel-schreiben-tipps` (Fazit); im Artikel selbst Links zu Inhaltsangabe, Fabel, Deutsch-Aufsatz und Erlebniserzählung
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (155 Artikel, neue Zeile + Self-Improvement-Eintrag R31 in `_BLOG_STRATEGY.md`)
+- [x] Git Push: erfolgreich (Commits `7ff50e3` + `6203e75`)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (160 URLs in Sitemap, 156 an IndexNow)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmpixcjbr03zjqm0yh8k4e5zc`
+
+Kurz zur Strategie: Analytics zeigen weiterhin klare Dominanz des Analyse-/Schreibaufgaben-Clusters (Google organisch 200 Sessions/30 Tage). Auffällig ist das schwache Engagement von `bildbeschreibung` (19 Views, nur 17s, 71% Bounce) trotz hohem Traffic — das ist als nächste Überarbeitungs-Priorität in der Strategie vermerkt.
+[2026-05-23 22:33:00] Blog cycle completed successfully.
+[2026-05-23 22:33:00] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 160 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 156 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 156 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 160 URLs in Sitemap, 20 Artikel im Feed.
+[main 4ffafe6] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   6203e75..4ffafe6  main -> main
+[2026-05-23 22:33:00] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: nacherzaehlung-schreiben-tipps
+  Titel: Nacherzählung schreiben: Aufbau, Tipps und Beispiel
+  Desc:  Nacherzählung schreiben leicht gemacht: Was eine Nacherzählung ausmacht, der ric...
+[Pinterest] Erstelle Pin fuer: Nacherzählung schreiben: Aufbau, Tipps und Beispiel
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/nacherzaehlung-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/nacherzaehlung-schreiben-tipps.html
+[Pinterest] Uploading nacherzaehlung-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=07bacd6e-d861-4058-b56c-06a708166d78
+[Pinterest] Pin erstellt! Post-ID: cmpixcs6303t4mm0y0htsa9y7
+[Pinterest] Erfolgreich! Pin-ID: cmpixcs6303t4mm0y0htsa9y7
+
+[Pinterest-Fallback] OK: nacherzaehlung-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-23 22:33:00] Next run in 8 hours.
+---
+[2026-05-24 06:33:03] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+Pinterest-Pin erfolgreich erstellt. Der Durchlauf ist vollständig.
+
+DURCHLAUF ABGESCHLOSSEN:
+- [x] Artikel geschrieben: `maerchen-schreiben-tipps.html` (#156, Märchen schreiben, Klasse 5-6, ~1100 Wörter)
+- [x] Cover-Bild generiert: `blog/posts/img/maerchen-schreiben-tipps.webp`
+- [x] Blog-Index aktualisiert: neue Card oben in `blog/index.html`
+- [x] Crosslinks gesetzt: ja — neue Links in Fabel, Reizwortgeschichte und Nacherzählung (Fazit-Bereiche) zum Märchen-Artikel; im Artikel selbst Links zu Fabel, Reizwortgeschichte, Erlebniserzählung, Deutsch-Aufsatz
+- [x] Registry aktualisiert: `blog/_BLOG_REGISTRY.md` (Statistik, Tabelle, Keyword-Pool, interne Verlinkungen)
+- [x] Git Push: erfolgreich (Commit 448d0f1)
+- [x] SEO-Update: `python3 blog/_update_seo.py` ausgeführt (161 URLs Sitemap, IndexNow HTTP 200), committed + gepusht (262164f)
+- [x] PINTEREST: `python3 blog/_post_pinterest.py` ausgeführt — Pin-ID: `cmpjem9e80072qt0y8ib5fwlx`
+
+Themenwahl begründet durch Analytics: Der Analyse-/Schreibaufgaben-Cluster ist mit Abstand der stärkste Ranking-Motor (201 Google-Sessions/30 Tage), und Märchen schreiben füllt eine klare Lücke im Erzähl-Cluster für Klasse 5-6 mit hohem Suchvolumen.
+[2026-05-24 06:36:26] Blog cycle completed successfully.
+[2026-05-24 06:36:26] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 161 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 157 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 157 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 161 URLs in Sitemap, 20 Artikel im Feed.
+[main 8ba3d0c] chore: SEO safety update (sitemap + feed)
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   262164f..8ba3d0c  main -> main
+[2026-05-24 06:36:26] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: maerchen-schreiben-tipps
+  Titel: Märchen schreiben: Aufbau, Merkmale und Beispiel
+  Desc:  Märchen schreiben leicht gemacht: typische Merkmale, der richtige Aufbau, Formul...
+[Pinterest] Erstelle Pin fuer: Märchen schreiben: Aufbau, Merkmale und Beispiel
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/maerchen-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/maerchen-schreiben-tipps.html
+[Pinterest] Uploading maerchen-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=fe60ef88-3dc0-4735-9f3c-a57fe9f3073d
+[Pinterest] Pin erstellt! Post-ID: cmpjemh3n0075mp0yneujp043
+[Pinterest] Erfolgreich! Pin-ID: cmpjemh3n0075mp0yneujp043
+
+[Pinterest-Fallback] OK: maerchen-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-24 06:36:26] Next run in 8 hours.
+---
+Auto-blog loop started at Sun May 24 01:11:28 PM GMT 2026
+Interval: 28800s (8h)
+[2026-05-24 13:11:28] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[Context] Wrote blog/_BLOG_CONTEXT_COMPACT.md (68835 bytes)
+Push erfolgreich. Der Durchlauf ist abgeschlossen.
+
+**DURCHLAUF ABGESCHLOSSEN:**
+- [x] Artikel-JSON geschrieben: `blog/articles/karikatur-analysieren-tipps.json`
+- [x] Cover-Bild generiert: `blog/posts/img/karikatur-analysieren-tipps.webp`
+- [x] Publish-Script ausgeführt: `python3 blog/_publish_article.py karikatur-analysieren-tipps`
+- [x] Crosslinks gesetzt: **ja** — Rückverlinkungen im Fazit von `sachtextanalyse-schreiben-tipps` und im Schlussabsatz von `bildbeschreibung-schreiben-tipps`; im Artikel selbst 3 interne Links (Sachtextanalyse, Bildbeschreibung, Stilmittel-Liste)
+- [x] Git Push: **erfolgreich** (Commit #157, `8ba3d0c..5b089fa`)
+- [x] SEO/Pinterest: Supervisor-Fallback übernimmt nach Claude-Ende
+
+**Thema:** "Karikatur analysieren" — füllt eine echte Lücke im Sachtextanalyse-Untercluster (Empfehlung aus R31), der laut Analytics der stärkste Ranking-Motor ist. Hohes Evergreen-Suchvolumen in Geschichte, Politik/Sozialkunde, Deutsch und Kunst. Der Artikel ist als Deutungs-Anleitung (Beschreibung, Deutung, Beurteilung) angelegt, um tieferes Engagement zu erzeugen als die schwach performenden reinen Beschreibungsartikel.
+[2026-05-24 13:14:04] Blog cycle completed successfully.
+[2026-05-24 13:14:04] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 162 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 158 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 158 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 162 URLs in Sitemap, 20 Artikel im Feed.
+[main 777e99d] chore: SEO safety update (sitemap + feed)
+ 2 files changed, 33 insertions(+), 27 deletions(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   5b089fa..777e99d  main -> main
+[2026-05-24 13:14:04] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: karikatur-analysieren-tipps
+  Titel: Karikatur analysieren: Aufbau, Schritte und häufige Fehler
+  Desc:  Karikatur analysieren leicht gemacht: Aufbau, die drei Schritte Beschreibung, De...
+[Pinterest] Erstelle Pin fuer: Karikatur analysieren: Aufbau, Schritte und häufige Fehler
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/karikatur-analysieren-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/karikatur-analysieren-tipps.html
+[Pinterest] Uploading karikatur-analysieren-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=8a250602-1669-4ec3-856f-0081e4f566df
+[Pinterest] Pin erstellt! Post-ID: cmpjstu7701koma0ycy0ear5e
+[Pinterest] Erfolgreich! Pin-ID: cmpjstu7701koma0ycy0ear5e
+
+[Pinterest-Fallback] OK: karikatur-analysieren-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-24 13:14:04] Next run in 8 hours.
+---
+[2026-05-24 21:14:07] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[Context] Wrote blog/_BLOG_CONTEXT_COMPACT.md (70756 bytes)
+Durchlauf erfolgreich abgeschlossen.
+
+**DURCHLAUF ABGESCHLOSSEN:**
+- [x] Artikel-JSON geschrieben: `blog/articles/bildergeschichte-schreiben-tipps.json`
+- [x] Cover-Bild generiert: `blog/posts/img/bildergeschichte-schreiben-tipps.webp`
+- [x] Publish-Script ausgeführt: `python3 blog/_publish_article.py bildergeschichte-schreiben-tipps`
+- [x] Crosslinks gesetzt: **ja** — im Artikel auf `reizwortgeschichte` und `erlebniserzaehlung`; Rückverlinkung von `reizwortgeschichte-schreiben-tipps.html` (im bestehenden Bildergeschichte-Abgrenzungsabschnitt, wo das Wort vorher unverlinkt stand)
+- [x] Git Push: erfolgreich (`6b5bc38`)
+- [x] SEO/Pinterest: Supervisor-Fallback übernimmt nach Claude-Ende
+
+**Thema:** Bildergeschichte schreiben (#158) — Klasse 5-6, hohes Suchvolumen, klare Lücke im stark performenden Erzähl-Cluster (ergänzt die zuletzt veröffentlichten Märchen, Fabel, Reizwortgeschichte, Nacherzählung). Der Analyse-/Schreibaufgaben-Cluster bleibt laut Analytics der verlässlichste Ranking-Motor, deshalb gezielt dort weiter ausgebaut.
+[2026-05-24 21:16:20] Blog cycle completed successfully.
+[2026-05-24 21:16:20] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 163 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 159 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 159 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 163 URLs in Sitemap, 20 Artikel im Feed.
+[main 388a3b9] chore: SEO safety update (sitemap + feed)
+ 2 files changed, 23 insertions(+), 17 deletions(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   6b5bc38..388a3b9  main -> main
+[2026-05-24 21:16:20] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: bildergeschichte-schreiben-tipps
+  Titel: Bildergeschichte schreiben: Aufbau, Tipps und Beispiel
+  Desc:  Bildergeschichte schreiben leicht gemacht: Aufbau, Spannungsbogen, die richtige ...
+[Pinterest] Erstelle Pin fuer: Bildergeschichte schreiben: Aufbau, Tipps und Beispiel
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/bildergeschichte-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/bildergeschichte-schreiben-tipps.html
+[Pinterest] Uploading bildergeschichte-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=2e652a2b-7419-4e6a-af6d-95c8ac5fadf4
+[Pinterest] Pin erstellt! Post-ID: cmpka220x01doma0yqksnog1t
+[Pinterest] Erfolgreich! Pin-ID: cmpka220x01doma0yqksnog1t
+
+[Pinterest-Fallback] OK: bildergeschichte-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-24 21:16:20] Next run in 8 hours.
+---
+[2026-05-25 05:16:24] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[Context] Wrote blog/_BLOG_CONTEXT_COMPACT.md (72269 bytes)
+Push erfolgreich. Der Durchlauf ist abgeschlossen.
+
+**DURCHLAUF ABGESCHLOSSEN:**
+- [x] Artikel-JSON geschrieben: `blog/articles/fantasiegeschichte-schreiben-tipps.json`
+- [x] Cover-Bild generiert: `blog/posts/img/fantasiegeschichte-schreiben-tipps.webp`
+- [x] Publish-Script ausgeführt: `python3 blog/_publish_article.py fantasiegeschichte-schreiben-tipps`
+- [x] Crosslinks gesetzt: ja — Rückverlinkungen im Fazit von `maerchen-schreiben-tipps` und `reizwortgeschichte-schreiben-tipps`; interne Links im Artikel zu Reizwortgeschichte, Märchen und Deutsch-Aufsatz
+- [x] Git Push: erfolgreich (Commit `8453d63`, #159)
+- [x] SEO/Pinterest: Supervisor-Fallback übernimmt nach Claude-Ende
+
+**Thema:** "Fantasiegeschichte schreiben" — gewählt anhand des klaren Analytics-Signals: Der Erzähl-/Schreibaufgaben-Cluster (Klasse 5-6) ist der stärkste Ranking-Motor, neue Artikel dort ranken schnell. Fantasiegeschichte war eine echte Lücke und ergänzt die gut performenden Nachbarartikel (Märchen, Reizwortgeschichte, Bildergeschichte) ohne Themenüberschneidung.
+[2026-05-25 05:18:33] Blog cycle completed successfully.
+[2026-05-25 05:18:33] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 164 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 160 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 160 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 164 URLs in Sitemap, 20 Artikel im Feed.
+[main 50a4e6b] chore: SEO safety update (sitemap + feed)
+ 2 files changed, 32 insertions(+), 26 deletions(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   8453d63..50a4e6b  main -> main
+[2026-05-25 05:18:33] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: fantasiegeschichte-schreiben-tipps
+  Titel: Fantasiegeschichte schreiben: Aufbau, Ideen und Beispiel
+  Desc:  Fantasiegeschichte schreiben leicht gemacht: Merkmale, der richtige Aufbau mit S...
+[Pinterest] Erstelle Pin fuer: Fantasiegeschichte schreiben: Aufbau, Ideen und Beispiel
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/fantasiegeschichte-schreiben-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/fantasiegeschichte-schreiben-tipps.html
+[Pinterest] Uploading fantasiegeschichte-schreiben-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=8b5e6551-3be7-4b6c-92d6-09496c79724f
+[Pinterest] Pin erstellt! Post-ID: cmpkra6zs05u7ql0y6bbwx9y3
+[Pinterest] Erfolgreich! Pin-ID: cmpkra6zs05u7ql0y6bbwx9y3
+
+[Pinterest-Fallback] OK: fantasiegeschichte-schreiben-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-25 05:18:33] Next run in 8 hours.
+---
+[2026-05-25 13:18:37] Starting blog cycle...
+From https://github.com/nachilfe-mentor/Nachhilfe-Mentor
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+[Context] Wrote blog/_BLOG_CONTEXT_COMPACT.md (73974 bytes)
+Push erfolgreich.
+
+DURCHLAUF ABGESCHLOSSEN:
+- [x] Artikel-JSON geschrieben: `blog/articles/kurzgeschichte-analysieren-tipps.json`
+- [x] Cover-Bild generiert: `blog/posts/img/kurzgeschichte-analysieren-tipps.webp`
+- [x] Publish-Script ausgeführt: `python3 blog/_publish_article.py kurzgeschichte-analysieren-tipps`
+- [x] Crosslinks gesetzt: **ja** — Rückverlinkungen aus `kurzgeschichte-schreiben-tipps` (Analyse-Verbinden-Abschnitt) und `interpretation-schreiben-tipps` (Schlussabsatz); interne Links im Artikel zu `inhaltsangabe-schreiben-tipps`, `stilmittel-liste-beispiele`, `interpretation-schreiben-tipps`
+- [x] Git Push: **erfolgreich** (`50a4e6b..2105e03`)
+- [ ] SEO/Pinterest: Supervisor-Fallback übernimmt nach Claude-Ende
+
+**Thema:** Kurzgeschichte analysieren (#160) — füllt eine echte Lücke im stärksten Cluster (Analyse-/Schreibaufgaben). Sehr hohes Suchvolumen Klasse 9 bis Abitur, ergänzt den bestehenden Schreib-Artikel und gehört zu den engagementstarken Analyse-Textsorten.
+[2026-05-25 13:20:48] Blog cycle completed successfully.
+[2026-05-25 13:20:48] Running SEO safety fallback (sitemap + IndexNow)...
+[SEO] Starte SEO-Update fuer https://nachhilfe-mentor.de
+[SEO] Scanne /home/opc/Nachhilfe-Mentor...
+[SEO] sitemap.xml generiert: 165 URLs
+[SEO] feed.xml generiert: 20 Artikel
+[SEO] Submitte 161 URLs an IndexNow (Bing, Yandex, etc.)...
+[SEO] IndexNow: HTTP 200 - 161 URLs submitted
+[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt
+[SEO] Fertig! 165 URLs in Sitemap, 20 Artikel im Feed.
+[main 333f45e] chore: SEO safety update (sitemap + feed)
+ 2 files changed, 33 insertions(+), 27 deletions(-)
+To https://github.com/nachilfe-mentor/Nachhilfe-Mentor.git
+   2105e03..333f45e  main -> main
+[2026-05-25 13:20:48] Running Pinterest safety fallback...
+[Pinterest-Fallback] Pinne: kurzgeschichte-analysieren-tipps
+  Titel: Kurzgeschichte analysieren: Aufbau, Schritte und Beispiel
+  Desc:  Kurzgeschichte analysieren leicht gemacht: Aufbau der Analyse, Merkmale, Schritt...
+[Pinterest] Erstelle Pin fuer: Kurzgeschichte analysieren: Aufbau, Schritte und Beispiel
+[Pinterest] Bild: /home/opc/Nachhilfe-Mentor/blog/posts/img/kurzgeschichte-analysieren-tipps.webp
+[Pinterest] Link: https://nachhilfe-mentor.de/blog/posts/kurzgeschichte-analysieren-tipps.html
+[Pinterest] Uploading kurzgeschichte-analysieren-tipps.webp (image/webp)...
+[Pinterest] Upload OK: id=88597df4-0c16-4862-9d87-2f568a46c922
+[Pinterest] Pin erstellt! Post-ID: cmpl8icy800cima0yq9d2kx18
+[Pinterest] Erfolgreich! Pin-ID: cmpl8icy800cima0yq9d2kx18
+
+[Pinterest-Fallback] OK: kurzgeschichte-analysieren-tipps
+[Pinterest-Fallback] 1 neue Pin(s) erstellt.
+[2026-05-25 13:20:48] Next run in 8 hours.
+---

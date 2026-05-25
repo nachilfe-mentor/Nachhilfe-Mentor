@@ -23,7 +23,8 @@
           </div>
         </a>
       `).join(""),n.classList.remove("hidden"),typeof gtag<"u"&&gtag("event","search_used",{query:e,results_count:s.length})}c.addEventListener("input",e=>{const s=e.target.value;clearTimeout(r),r=setTimeout(()=>{d(s)},300)});document.addEventListener("click",e=>{!c.contains(e.target)&&!n.contains(e.target)&&n.classList.add("hidden")});document.addEventListener("DOMContentLoaded",l);
-</script></head> <body class="font-inter bg-gray-50 text-gray-900 antialiased">  <main class="min-h-screen"> <!-- Header --> <header class="bg-white shadow-sm border-b"> <div class="max-w-6xl mx-auto px-4 py-6"> <div class="flex items-center justify-between"> <div> <h1 class="text-3xl font-bold text-gray-900 mb-2">
+</script>  <script src="/scripts/posthog-tracking.js" defer></script>
+</head> <body class="font-inter bg-gray-50 text-gray-900 antialiased">  <main class="min-h-screen"> <!-- Header --> <header class="bg-white shadow-sm border-b"> <div class="max-w-6xl mx-auto px-4 py-6"> <div class="flex items-center justify-between"> <div> <h1 class="text-3xl font-bold text-gray-900 mb-2">
 Nachhilfe-Mentor Blog
 </h1> <p class="text-gray-600">
 Lerntipps, Nachhilfe-Strategien und Bildungsinhalte für bessere Noten
@@ -78,8 +79,8 @@ Weiter
 <svg class="w-4 h-4 ml-1 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg></a></nav>  </div> <!-- Informations-Sektion --> <section class="bg-gray-50 py-16"> <div class="max-w-4xl mx-auto px-4 text-center"> <h2 class="text-3xl font-bold text-gray-900 mb-4">
 Moderne Lernmethoden für bessere Ergebnisse
 </h2> <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-Die Zukunft des Lernens liegt in personalisierten Ansätzen. KI-gestützte Lernmethoden, 
-          intelligente Wiederholungsalgorithmen und adaptive Übungssysteme können dabei helfen, 
+Die Zukunft des Lernens liegt in personalisierten Ansätzen. KI-gestützte Lernmethoden,
+          intelligente Wiederholungsalgorithmen und adaptive Übungssysteme können dabei helfen,
           den Lernstoff effektiver zu verstehen und langfristig zu behalten.
 </p> <div class="grid md:grid-cols-3 gap-6 mb-8"> <div class="bg-white p-6 rounded-lg shadow-sm"> <h3 class="text-lg font-semibold text-gray-900 mb-2">KI-Karteikarten</h3> <p class="text-gray-600">Automatisch generierte Lernkarten, die sich an deinen Lernfortschritt anpassen.</p> </div> <div class="bg-white p-6 rounded-lg shadow-sm"> <h3 class="text-lg font-semibold text-gray-900 mb-2">Personalisierte Pfade</h3> <p class="text-gray-600">Individuelle Lernwege, die auf deine Stärken und Schwächen zugeschnitten sind.</p> </div> <div class="bg-white p-6 rounded-lg shadow-sm"> <h3 class="text-lg font-semibold text-gray-900 mb-2">Intelligente Tests</h3> <p class="text-gray-600">Adaptive Übungen, die sich automatisch an dein Lernniveau anpassen.</p> </div> </div> <p class="text-gray-600">
 Mehr über innovative Lernmethoden erfährst du auf
@@ -87,7 +88,7 @@ Mehr über innovative Lernmethoden erfährst du auf
 unserer Hauptseite
 </a>, wo wir verschiedene Ansätze für erfolgreiches Lernen vorstellen.
 </p> </div> </section> <!-- Footer --> <footer class="bg-gray-900 text-white py-12"> <div class="max-w-6xl mx-auto px-4"> <div class="grid md:grid-cols-4 gap-8"> <div class="md:col-span-2"> <h4 class="text-xl font-bold mb-4">Nachhilfe-Mentor</h4> <p class="text-gray-300 mb-4 max-w-md">
-Professionelle Nachhilfe und Lernunterstützung für Schüler und Studenten. 
+Professionelle Nachhilfe und Lernunterstützung für Schüler und Studenten.
               Wir helfen dir dabei, deine Noten zu verbessern und deine Lernziele zu erreichen.
 </p> <a href="https://nachhilfe-mentor.de" class="text-blue-400 hover:text-blue-300 transition-colors font-medium" onclick="gtag('event', 'external_link_click', { url: 'https://nachhilfe-mentor.de', anchor_text: 'Nachhilfe-Mentor' })">
 Zur Hauptseite →
@@ -101,19 +102,19 @@ Zur Hauptseite →
       tags: post.tags,
       date: post.date
     }));
-    
+
     // Save to global variable for search
     window.postsData = postsData;
   })();</script>  <!-- Analytics tracking scripts --> <script>
         // Scroll depth tracking
         let scrollPercentages = [25, 50, 75, 100];
         let trackedPercentages = new Set();
-        
+
         function trackScroll() {
           const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
           const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
           const scrollPercent = Math.round((scrollTop / scrollHeight) * 100);
-          
+
           scrollPercentages.forEach(percent => {
             if (scrollPercent >= percent && !trackedPercentages.has(percent)) {
               trackedPercentages.add(percent);
@@ -125,9 +126,9 @@ Zur Hauptseite →
             }
           });
         }
-        
+
         window.addEventListener('scroll', trackScroll, { passive: true });
-        
+
         // Image view tracking
         const imageObserver = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
@@ -135,7 +136,7 @@ Zur Hauptseite →
               const img = entry.target;
               const imagePath = img.src;
               const pageSlug = window.location.pathname.split('/').pop() || '';
-              
+
               gtag('event', 'image_view', {
                 image_path: imagePath,
                 page_slug: pageSlug
@@ -144,11 +145,11 @@ Zur Hauptseite →
             }
           });
         }, { threshold: 0.5 });
-        
+
         // Observe all images when DOM is ready
         document.addEventListener('DOMContentLoaded', () => {
           document.querySelectorAll('img').forEach(img => {
             imageObserver.observe(img);
           });
         });
-      </script> </body> </html> 
+      </script> </body> </html>

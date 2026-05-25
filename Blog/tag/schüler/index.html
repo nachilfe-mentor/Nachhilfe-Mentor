@@ -13,7 +13,8 @@
           });
         </script><link rel="stylesheet" href="/Blog/_astro/_slug_.Cm3J6SQQ.css">
 <style>.line-clamp-2[data-astro-cid-iyiqi2so]{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}.line-clamp-3[data-astro-cid-iyiqi2so]{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
-</style></head> <body class="font-inter bg-gray-50 text-gray-900 antialiased">  <main class="min-h-screen"> <!-- Header --> <header class="bg-white shadow-sm border-b"> <div class="max-w-6xl mx-auto px-4 py-6"> <nav class="flex items-center justify-between"> <div> <a href="/blog" class="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
+</style>  <script src="/scripts/posthog-tracking.js" defer></script>
+</head> <body class="font-inter bg-gray-50 text-gray-900 antialiased">  <main class="min-h-screen"> <!-- Header --> <header class="bg-white shadow-sm border-b"> <div class="max-w-6xl mx-auto px-4 py-6"> <nav class="flex items-center justify-between"> <div> <a href="/blog" class="text-xl font-bold text-blue-600 hover:text-blue-700 transition-colors">
 ← Nachhilfe-Mentor Blog
 </a> </div> <a href="https://nachhilfe-mentor.de" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors" onclick="gtag('event', 'cta_click', { cta_id: 'header_cta', page_slug: 'tag_schüler' })">
 Lernmethoden entdecken
@@ -41,8 +42,8 @@ Artikel lesen
 Artikel lesen
 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" data-astro-cid-iyiqi2so> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" data-astro-cid-iyiqi2so></path> </svg> </div> </div> </a> </article>  </div>   </div> <!-- Informations-Sektion --> <section class="bg-gray-50 py-16"> <div class="max-w-4xl mx-auto px-4 text-center"> <h2 class="text-3xl font-bold text-gray-900 mb-4">
 Moderne Lernmethoden für Schüler </h2> <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-Das Lernen von Schüler kann durch innovative Ansätze deutlich effektiver werden. 
-          KI-gestützte Lernmethoden, personalisierte Übungen und intelligente Wiederholungsalgorithmen 
+Das Lernen von Schüler kann durch innovative Ansätze deutlich effektiver werden.
+          KI-gestützte Lernmethoden, personalisierte Übungen und intelligente Wiederholungsalgorithmen
           helfen dabei, komplexe Themen besser zu verstehen und langfristig zu behalten.
 </p> <p class="text-gray-600">
 Mehr über moderne Lernmethoden für Schüler erfährst du auf
@@ -59,12 +60,12 @@ Fragen zu unseren Nachhilfe-Services? Wir helfen gerne weiter.
         // Scroll depth tracking
         let scrollPercentages = [25, 50, 75, 100];
         let trackedPercentages = new Set();
-        
+
         function trackScroll() {
           const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
           const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
           const scrollPercent = Math.round((scrollTop / scrollHeight) * 100);
-          
+
           scrollPercentages.forEach(percent => {
             if (scrollPercent >= percent && !trackedPercentages.has(percent)) {
               trackedPercentages.add(percent);
@@ -76,9 +77,9 @@ Fragen zu unseren Nachhilfe-Services? Wir helfen gerne weiter.
             }
           });
         }
-        
+
         window.addEventListener('scroll', trackScroll, { passive: true });
-        
+
         // Image view tracking
         const imageObserver = new IntersectionObserver((entries) => {
           entries.forEach(entry => {
@@ -86,7 +87,7 @@ Fragen zu unseren Nachhilfe-Services? Wir helfen gerne weiter.
               const img = entry.target;
               const imagePath = img.src;
               const pageSlug = window.location.pathname.split('/').pop() || '';
-              
+
               gtag('event', 'image_view', {
                 image_path: imagePath,
                 page_slug: pageSlug
@@ -95,11 +96,11 @@ Fragen zu unseren Nachhilfe-Services? Wir helfen gerne weiter.
             }
           });
         }, { threshold: 0.5 });
-        
+
         // Observe all images when DOM is ready
         document.addEventListener('DOMContentLoaded', () => {
           document.querySelectorAll('img').forEach(img => {
             imageObserver.observe(img);
           });
         });
-      </script> </body> </html> 
+      </script> </body> </html>

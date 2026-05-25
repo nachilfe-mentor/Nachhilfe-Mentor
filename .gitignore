@@ -9,3 +9,8 @@ AGENT_SETUP.md
 blog/_BLOG_CONTEXT_COMPACT.md
 __pycache__/
 blog/__pycache__/
+goal_agent/*.db
+goal_agent/*.db-*
+goal_agent/exports/*.md
+goal_agent/queues/*.jsonl
+goal-agent-pages/drafts/

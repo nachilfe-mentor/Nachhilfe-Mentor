@@ -17,6 +17,8 @@ REGISTRY = BLOG_DIR / "_BLOG_REGISTRY.md"
 STRATEGY = BLOG_DIR / "_BLOG_STRATEGY.md"
 OUT = BLOG_DIR / "_BLOG_CONTEXT_COMPACT.md"
 NOTES = BLOG_DIR / "_BLOG_CONTEXT_NOTES.md"
+GOAL_AGENT_TASKS = REPO_DIR / "goal_agent" / "exports" / "blog_task_snapshot.md"
+GOAL_AGENT_GUARDIAN = REPO_DIR / "goal_agent" / "exports" / "blog_agent_guardian.md"
 
 
 def section(text: str, heading: str) -> str:
@@ -60,6 +62,15 @@ def latest_analytics(strategy: str, limit: int = 7) -> list[str]:
     return bullets[-limit:]
 
 
+def compact_goal_agent_file(path: Path, max_chars: int = 5000) -> str:
+    if not path.exists():
+        return "- Keine Goal-Agent-Daten vorhanden."
+    text = path.read_text(encoding="utf-8", errors="ignore").strip()
+    if not text:
+        return "- Goal-Agent-Datei ist leer."
+    return text[:max_chars]
+
+
 def main() -> None:
     registry = REGISTRY.read_text(encoding="utf-8")
     strategy = STRATEGY.read_text(encoding="utf-8")
@@ -83,6 +94,14 @@ def main() -> None:
         "",
         "## Letzte Analytics-Learnings",
         *latest_analytics(strategy),
+        "",
+        "## Goal-Agent-Steuerung",
+        "Nutze diese Hinweise nur fuer Themenwahl, Briefing, interne Links und Qualitaet. Der Blog-Agent bleibt reiner Blog-Autor und schreibt keine Practice-/Tool-Seiten.",
+        "",
+        compact_goal_agent_file(GOAL_AGENT_TASKS),
+        "",
+        "## Goal-Agent-Guardian",
+        compact_goal_agent_file(GOAL_AGENT_GUARDIAN, max_chars=2500),
         "",
         "## Zusatznotizen",
         NOTES.read_text(encoding="utf-8").strip() if NOTES.exists() else "",
