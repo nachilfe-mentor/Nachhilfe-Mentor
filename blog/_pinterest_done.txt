@@ -5,11 +5,13 @@ active-recall-lerntechnik
 argumentation-schreiben-tipps
 auswendig-lernen-tipps
 bachelorarbeit-schreiben-tipps
+ballade-analysieren-tipps
 bericht-schreiben-tipps
 bewegung-und-lernen-sport-tipps
 bewerbungsgespraech-vorbereiten-tipps
 bewerbungsschreiben-schreiben-tipps
 bildbeschreibung-schreiben-tipps
+bildergeschichte-schreiben-tipps
 binomische-formeln-lernen
 biologie-abitur-vorbereitung
 biologie-lernen-tipps
@@ -23,6 +25,7 @@ cornell-methode-notizen
 deutsch-abitur-vorbereitung
 deutsch-aufsatz-schreiben-tipps
 deutsch-grammatik-lernen-tipps
+dialoganalyse-schreiben-tipps
 digitale-lerntools-beste-apps
 dramenanalyse-schreiben-tipps
 effektiv-lernen-tipps
@@ -57,6 +60,7 @@ integralrechnung-tipps
 interleaving-methode-lernen
 interpretation-schreiben-tipps
 italienisch-lernen-tipps
+karikatur-analysieren-tipps
 karteikarten-lernen-tipps
 ki-hausaufgaben-hilfe
 ki-pruefungsvorbereitung-tipps
@@ -90,6 +94,7 @@ lernumgebung-gestalten-tipps
 lernzettel-erstellen-tipps
 leserbrief-schreiben-tipps
 lineare-gleichungen-loesen-tipps
+maerchen-schreiben-tipps
 mathe-abitur-vorbereitung
 mathe-klassenarbeit-tipps
 mathe-klausurangst-ueberwinden
@@ -98,6 +103,7 @@ mindmap-erstellen-lernen
 motivationsschreiben-tipps
 muendliche-pruefung-vorbereiten
 musik-beim-lernen-tipps
+nacherzaehlung-schreiben-tipps
 nachhilfe-online-vs-offline
 noten-verbessern-schule-tipps
 online-studieren-tipps
