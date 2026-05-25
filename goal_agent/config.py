@@ -78,7 +78,7 @@ class Settings:
     allow_autonomous_deploy: bool = False
     codex_enabled: bool = False
     codex_bin: str = "codex"
-    codex_timeout_seconds: int = 900
+    codex_timeout_seconds: int = 21600
     codex_sandbox_mode: str = "workspace-write"
     codex_create_branch: bool = False
     codex_allow_dirty_worktree: bool = False
@@ -141,7 +141,7 @@ def load_settings() -> Settings:
         allow_autonomous_deploy=_bool_value("GOAL_AGENT_ALLOW_AUTONOMOUS_DEPLOY", False, env_file_values),
         codex_enabled=_env("GOAL_AGENT_CODEX_ENABLED", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
         codex_bin=_env("GOAL_AGENT_CODEX_BIN", "codex", env_file_values),
-        codex_timeout_seconds=_int_value("GOAL_AGENT_CODEX_TIMEOUT_SECONDS", 900, env_file_values),
+        codex_timeout_seconds=_int_value("GOAL_AGENT_CODEX_TIMEOUT_SECONDS", 21600, env_file_values),
         codex_sandbox_mode=_env("GOAL_AGENT_CODEX_SANDBOX_MODE", "workspace-write", env_file_values),
         codex_create_branch=_env("GOAL_AGENT_CODEX_CREATE_BRANCH", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
         codex_allow_dirty_worktree=_env("GOAL_AGENT_CODEX_ALLOW_DIRTY_WORKTREE", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
