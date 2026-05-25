@@ -166,11 +166,13 @@ def test_tool_registry_and_learning_storage(tmp_path: Path) -> None:
 
 def test_autonomous_loop_dry_run(tmp_path: Path, monkeypatch) -> None:
     monkeypatch.setenv("GOAL_AGENT_DB_PATH", str(tmp_path / "goal_agent.db"))
+    monkeypatch.setenv("GOAL_AGENT_EXPORTS_DIR", str(tmp_path / "exports"))
     monkeypatch.setenv("GOAL_AGENT_MODE", "dry_run")
     monkeypatch.setenv("GOAL_AGENT_ENV_FILE", str(tmp_path / "missing-goal-agent.env"))
     result = run_cycle("daily")
     assert "Scanned" in result["summary"]
     assert Path(result["report"]).exists()
+    assert str(result["report"]).startswith(str(tmp_path))
     assert Path("goal_agent/queues/blog_tasks.jsonl").exists()
 
 

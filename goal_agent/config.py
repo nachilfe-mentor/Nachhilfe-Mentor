@@ -67,6 +67,7 @@ def _env(name: str, default: str = "", env_file_values: dict[str, str] | None = 
 class Settings:
     repo_root: Path = REPO_ROOT
     env_file_path: Path = Path("/etc/nachhilfe-mentor/goal-agent.env")
+    exports_dir: Path = REPO_ROOT / "goal_agent" / "exports"
     db_path: Path = REPO_ROOT / "goal_agent" / "goal_agent.db"
     enabled: bool = False
     mode: str = "dry_run"
@@ -126,10 +127,12 @@ def load_settings() -> Settings:
     if mode not in {"dry_run", "analyze_only", "queue_only", "write_safe", "autonomous_full"}:
         mode = "dry_run"
     db_path = Path(_env("GOAL_AGENT_DB_PATH", str(REPO_ROOT / "goal_agent" / "goal_agent.db"), env_file_values))
+    exports_dir = Path(_env("GOAL_AGENT_EXPORTS_DIR", str(REPO_ROOT / "goal_agent" / "exports"), env_file_values))
     google_application_credentials = _env("GOOGLE_APPLICATION_CREDENTIALS", "", env_file_values)
     gsc_site_url = _env("GSC_SITE_URL", "", env_file_values)
     return Settings(
         env_file_path=env_file,
+        exports_dir=exports_dir,
         db_path=db_path,
         enabled=_env("GOAL_AGENT_ENABLED", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
         mode=mode,

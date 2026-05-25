@@ -7,7 +7,7 @@ from .storage import Database, utc_now
 
 
 def generate_daily_report(db: Database, settings: Settings, run_id: str, repo_root: Path = REPO_ROOT) -> Path:
-    exports = repo_root / "goal_agent" / "exports"
+    exports = settings.exports_dir
     exports.mkdir(parents=True, exist_ok=True)
     path = exports / "daily_seo_report.md"
     content_count = db.query("select count(*) as c from content_inventory")[0]["c"]

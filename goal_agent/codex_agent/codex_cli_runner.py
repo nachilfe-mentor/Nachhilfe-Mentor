@@ -71,7 +71,8 @@ class CodexCliRunner:
             )
             parsed = parse_result(self.settings.repo_root, proc.stdout, proc.stderr, proc.returncode)
             status = "completed" if proc.returncode == 0 and not parsed.failure_reason else "failed"
-            return self._record_run(task, status, proc.returncode, parsed.stdout_summary, parsed.stderr_summary, parsed.changed_files, parsed.failure_reason, parsed.safety_blocked, started)
+            safety_blocked = parsed.safety_blocked if status != "completed" else False
+            return self._record_run(task, status, proc.returncode, parsed.stdout_summary, parsed.stderr_summary, parsed.changed_files, parsed.failure_reason, safety_blocked, started)
         except subprocess.TimeoutExpired as exc:
             parsed = parse_result(self.settings.repo_root, exc.stdout or "", exc.stderr or "", None, timed_out=True)
             return self._record_run(task, "failed", None, parsed.stdout_summary, parsed.stderr_summary, parsed.changed_files, "timeout", parsed.safety_blocked, started)

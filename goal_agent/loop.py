@@ -84,6 +84,13 @@ def _log_action(db: Database, run_id: str, decision_id: str | None, action_type:
         )
 
 
+def _display_path(path: Path, repo_root: Path) -> str:
+    try:
+        return str(path.relative_to(repo_root))
+    except ValueError:
+        return str(path)
+
+
 def _store_interactive_task(db: Database, run_id: str, opportunity: dict[str, Any]) -> str:
     task_id = "practice_task_" + opportunity["id"].replace("opp_", "")
     now = utc_now()
@@ -353,7 +360,7 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
             },
         })
         report = generate_daily_report(db, settings, run_id, settings.repo_root)
-        _log_action(db, run_id, None, "generate_report", "report", str(report), "completed", [str(report.relative_to(settings.repo_root))], ["Report contains no secret values"])
+        _log_action(db, run_id, None, "generate_report", "report", str(report), "completed", [_display_path(report, settings.repo_root)], ["Report contains no secret values"])
         summary = f"Scanned {len(content_rows)} pages, scored {len(opportunities)} opportunities, exported {len(top_tasks)} blog tasks, queued {codex_tasks_created} Codex tasks."
         _finish_run(db, run_id, "completed", summary)
         notification = notify_daily_update(db, settings, run_id, summary)
