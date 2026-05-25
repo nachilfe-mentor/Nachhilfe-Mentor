@@ -7,6 +7,7 @@ from goal_agent.analytics import GSCConnector, PostHogConnector, parse_gsc_rows,
 from goal_agent.config import Settings
 from goal_agent.interactive import render_interactive_page
 from goal_agent.loop import run_cycle
+from goal_agent.notifications import TelegramNotifier, build_daily_update
 from goal_agent.publishing import AdaptivePublishingThrottle
 from goal_agent.quality import check_interactive_page_quality
 from goal_agent.queue import validate_blog_task
@@ -207,3 +208,36 @@ def test_adaptive_publishing_slows_duplicate_or_risky_assets() -> None:
     decisions = AdaptivePublishingThrottle(emergency_cap=50).decide(opportunities, rows)
     assert decisions[0].action in {"draft_noindex", "hold"}
     assert not decisions[0].indexable
+
+
+def test_telegram_notifier_disabled_is_non_fatal(tmp_path: Path) -> None:
+    cfg = settings(tmp_path)
+    result = TelegramNotifier(cfg).send_text("test")
+    assert result.ok
+    assert not result.configured
+
+
+def test_telegram_notifier_requires_chat_id(tmp_path: Path, monkeypatch) -> None:
+    env_file = tmp_path / "goal-agent.env"
+    env_file.write_text("GOAL_AGENT_TELEGRAM_BOT_TOKEN=redacted\n", encoding="utf-8")
+    cfg = Settings(
+        repo_root=settings(tmp_path).repo_root,
+        env_file_path=env_file,
+        db_path=tmp_path / "goal_agent.db",
+        telegram_enabled=True,
+        telegram_bot_token_present=True,
+    )
+    notifier = TelegramNotifier(cfg)
+    monkeypatch.setattr(notifier, "_discover_chat_ids", lambda token: [])
+    result = notifier.send_text("test")
+    assert not result.ok
+    assert "chat id missing" in result.message.lower()
+
+
+def test_daily_update_message_contains_no_secret_values(tmp_path: Path) -> None:
+    cfg = settings(tmp_path)
+    db = Database(cfg)
+    db.init()
+    message = build_daily_update(db, cfg, "run_test", "Scanned 1 page")
+    assert "Scanned 1 page" in message
+    assert "token" not in message.lower()

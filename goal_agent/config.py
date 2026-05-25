@@ -66,6 +66,7 @@ def _env(name: str, default: str = "", env_file_values: dict[str, str] | None = 
 @dataclass(frozen=True)
 class Settings:
     repo_root: Path = REPO_ROOT
+    env_file_path: Path = Path("/etc/nachhilfe-mentor/goal-agent.env")
     db_path: Path = REPO_ROOT / "goal_agent" / "goal_agent.db"
     enabled: bool = False
     mode: str = "dry_run"
@@ -92,6 +93,10 @@ class Settings:
     google_application_credentials: str = ""
     gsc_site_url: str = ""
     gsc_configured: bool = False
+    telegram_enabled: bool = False
+    telegram_bot_token_present: bool = False
+    telegram_chat_id: str = ""
+    telegram_timeout_seconds: int = 10
 
     @property
     def safe_write_mode(self) -> bool:
@@ -124,6 +129,7 @@ def load_settings() -> Settings:
     google_application_credentials = _env("GOOGLE_APPLICATION_CREDENTIALS", "", env_file_values)
     gsc_site_url = _env("GSC_SITE_URL", "", env_file_values)
     return Settings(
+        env_file_path=env_file,
         db_path=db_path,
         enabled=_env("GOAL_AGENT_ENABLED", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
         mode=mode,
@@ -154,6 +160,10 @@ def load_settings() -> Settings:
         google_application_credentials=google_application_credentials,
         gsc_site_url=gsc_site_url,
         gsc_configured=bool(google_application_credentials and gsc_site_url),
+        telegram_enabled=_bool_value("GOAL_AGENT_TELEGRAM_ENABLED", False, env_file_values),
+        telegram_bot_token_present=bool(_env("GOAL_AGENT_TELEGRAM_BOT_TOKEN", "", env_file_values)),
+        telegram_chat_id=_env("GOAL_AGENT_TELEGRAM_CHAT_ID", "", env_file_values).strip(),
+        telegram_timeout_seconds=_int_value("GOAL_AGENT_TELEGRAM_TIMEOUT_SECONDS", 10, env_file_values),
     )
 
 

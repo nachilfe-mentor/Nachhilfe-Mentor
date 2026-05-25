@@ -7,6 +7,7 @@ from .config import load_settings
 from .codex_agent.dispatcher import build_and_store_tasks, get_task, list_tasks, run_next, run_task
 from .codex_agent.prompt_builder import build_codex_prompt
 from .loop import run_cycle
+from .notifications import TelegramNotifier, build_daily_update
 from .queue import export_blog_tasks
 from .reports import generate_daily_report
 from .scanners import scan_content
@@ -49,6 +50,11 @@ def main(argv: list[str] | None = None) -> int:
     codex_run_next.add_argument("--force-enabled", action="store_true")
     codex_dry = codex_sub.add_parser("dry-run")
     codex_dry.add_argument("--task-id", required=True)
+    telegram_parser = sub.add_parser("telegram")
+    telegram_sub = telegram_parser.add_subparsers(dest="telegram_command", required=True)
+    telegram_sub.add_parser("status")
+    telegram_sub.add_parser("discover-chat")
+    telegram_sub.add_parser("test-message")
     args = parser.parse_args(argv)
     settings = load_settings()
     db = Database(settings)
@@ -149,6 +155,28 @@ def main(argv: list[str] | None = None) -> int:
             print(json.dumps(result.__dict__, ensure_ascii=False))
             return 0 if result.status == "completed" else 1
         return 0
+    if args.command == "telegram":
+        db.init()
+        notifier = TelegramNotifier(settings)
+        if args.telegram_command == "status":
+            print(json.dumps({
+                "enabled": settings.telegram_enabled,
+                "token_present": settings.telegram_bot_token_present,
+                "chat_id_configured": bool(settings.telegram_chat_id),
+                "configured": notifier.configured,
+            }))
+            return 0
+        if args.telegram_command == "discover-chat":
+            result = notifier.discover_chat_ids()
+            print(json.dumps(result.__dict__, ensure_ascii=False))
+            return 0 if result.ok else 1
+        if args.telegram_command == "test-message":
+            recent = db.query("select id, summary from agent_runs order by started_at desc limit 1")
+            run_id = recent[0]["id"] if recent else "manual"
+            summary = recent[0]["summary"] if recent else "Manual Telegram test."
+            result = notifier.send_text(build_daily_update(db, settings, run_id, summary))
+            print(json.dumps(result.__dict__, ensure_ascii=False))
+            return 0 if result.ok else 1
     return 1
 
 

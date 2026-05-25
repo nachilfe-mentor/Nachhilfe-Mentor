@@ -14,6 +14,7 @@ from .config import REPO_ROOT, Settings, load_settings
 from .context_builder import build_context
 from .experiments import create_experiment
 from .interactive import generate_page
+from .notifications import notify_daily_update
 from .queue import export_blog_tasks, store_blog_tasks, task_from_opportunity
 from .publishing import AdaptivePublishingThrottle
 from .reports import generate_daily_report
@@ -355,7 +356,10 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
         _log_action(db, run_id, None, "generate_report", "report", str(report), "completed", [str(report.relative_to(settings.repo_root))], ["Report contains no secret values"])
         summary = f"Scanned {len(content_rows)} pages, scored {len(opportunities)} opportunities, exported {len(top_tasks)} blog tasks, queued {codex_tasks_created} Codex tasks."
         _finish_run(db, run_id, "completed", summary)
+        notification = notify_daily_update(db, settings, run_id, summary)
+        _log_action(db, run_id, None, "send_daily_notification", "telegram", None, "completed" if notification.ok else "skipped", [], [notification.message])
         return {"run_id": run_id, "summary": summary, "context_keys": sorted(context.keys()), "report": str(report)}
     except Exception as exc:  # noqa: BLE001
         _finish_run(db, run_id, "failed", "Run failed", exc.__class__.__name__)
+        notify_daily_update(db, settings, run_id, f"Run failed: {exc.__class__.__name__}")
         raise

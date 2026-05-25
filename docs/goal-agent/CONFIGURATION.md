@@ -40,4 +40,21 @@ GSC:
 - `GOOGLE_APPLICATION_CREDENTIALS`
 - `GSC_SITE_URL`
 
+## Telegram Daily Updates
+
+- `GOAL_AGENT_TELEGRAM_ENABLED=false`
+- `GOAL_AGENT_TELEGRAM_BOT_TOKEN`
+- `GOAL_AGENT_TELEGRAM_CHAT_ID`
+- `GOAL_AGENT_TELEGRAM_TIMEOUT_SECONDS=10`
+
+Commands:
+
+```bash
+python3 -m goal_agent.cli telegram status
+python3 -m goal_agent.cli telegram discover-chat
+python3 -m goal_agent.cli telegram test-message
+```
+
+The Telegram bot token belongs only in the server env file. It must not be written to reports, database summaries, git, or logs. Missing Telegram configuration is non-fatal; the Goal Agent run still completes.
+
 Secret values must never be printed or committed.
