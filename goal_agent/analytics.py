@@ -112,7 +112,7 @@ class GSCConnector:
 
     def analyze(self) -> ConnectorResult:
         if not self.settings.gsc_configured:
-            return ConnectorResult(False, True, {"queries": [], "missing_env": ["GOOGLE_APPLICATION_CREDENTIALS", "GSC_SITE_URL"]}, "GSC not configured")
+            return ConnectorResult(False, True, {"queries": [], "missing_env": ["GOOGLE_APPLICATION_CREDENTIALS or GSC_OAUTH_CREDENTIALS", "GSC_SITE_URL"]}, "GSC not configured")
         try:
             rows = self._query_search_analytics()
         except FileNotFoundError:
@@ -127,17 +127,8 @@ class GSCConnector:
         return ConnectorResult(True, True, {"queries": rows, "row_count": len(rows)})
 
     def _query_search_analytics(self, days: int = 28, row_limit: int = 250) -> list[dict[str, Any]]:
-        try:
-            from google.oauth2 import service_account
-            from google.auth.transport.requests import Request
-        except Exception as exc:  # noqa: BLE001
-            raise RuntimeError("google_auth_missing") from exc
-
-        credentials = service_account.Credentials.from_service_account_file(
-            self.settings.google_application_credentials,
-            scopes=["https://www.googleapis.com/auth/webmasters.readonly"],
-        )
-        credentials.refresh(Request())
+        credentials = self._load_credentials()
+        credentials.refresh(self._google_request())
         end = date.today() - timedelta(days=2)
         start = end - timedelta(days=days)
         payload = {
@@ -164,6 +155,36 @@ class GSCConnector:
         except urllib.error.HTTPError as exc:
             raise RuntimeError(f"http_{exc.code}") from exc
         return parse_gsc_rows(body)
+
+    def _load_credentials(self):
+        mode = self.settings.gsc_auth_mode
+        if mode in {"auto", "oauth"} and self.settings.gsc_oauth_credentials:
+            try:
+                from google.oauth2.credentials import Credentials
+            except Exception as exc:  # noqa: BLE001
+                raise RuntimeError("google_auth_missing") from exc
+            return Credentials.from_authorized_user_file(
+                self.settings.gsc_oauth_credentials,
+                scopes=["https://www.googleapis.com/auth/webmasters.readonly"],
+            )
+        if mode in {"auto", "service_account"} and self.settings.google_application_credentials:
+            try:
+                from google.oauth2 import service_account
+            except Exception as exc:  # noqa: BLE001
+                raise RuntimeError("google_auth_missing") from exc
+            return service_account.Credentials.from_service_account_file(
+                self.settings.google_application_credentials,
+                scopes=["https://www.googleapis.com/auth/webmasters.readonly"],
+            )
+        raise FileNotFoundError("No GSC credentials configured")
+
+    @staticmethod
+    def _google_request():
+        try:
+            from google.auth.transport.requests import Request
+        except Exception as exc:  # noqa: BLE001
+            raise RuntimeError("google_auth_missing") from exc
+        return Request()
 
 
 class SerpConnector:

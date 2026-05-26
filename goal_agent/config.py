@@ -92,6 +92,8 @@ class Settings:
     posthog_project_api_key_present: bool = False
     posthog_personal_api_key_present: bool = False
     google_application_credentials: str = ""
+    gsc_oauth_credentials: str = ""
+    gsc_auth_mode: str = "auto"
     gsc_site_url: str = ""
     gsc_configured: bool = False
     telegram_enabled: bool = False
@@ -129,6 +131,10 @@ def load_settings() -> Settings:
     db_path = Path(_env("GOAL_AGENT_DB_PATH", str(REPO_ROOT / "goal_agent" / "goal_agent.db"), env_file_values))
     exports_dir = Path(_env("GOAL_AGENT_EXPORTS_DIR", str(REPO_ROOT / "goal_agent" / "exports"), env_file_values))
     google_application_credentials = _env("GOOGLE_APPLICATION_CREDENTIALS", "", env_file_values)
+    gsc_oauth_credentials = _env("GSC_OAUTH_CREDENTIALS", "", env_file_values)
+    gsc_auth_mode = _env("GSC_AUTH_MODE", "auto", env_file_values).strip().lower() or "auto"
+    if gsc_auth_mode not in {"auto", "service_account", "oauth"}:
+        gsc_auth_mode = "auto"
     gsc_site_url = _env("GSC_SITE_URL", "", env_file_values)
     return Settings(
         env_file_path=env_file,
@@ -161,8 +167,10 @@ def load_settings() -> Settings:
         posthog_project_api_key_present=bool(_env("POSTHOG_PROJECT_API_KEY", "", env_file_values)),
         posthog_personal_api_key_present=bool(_env("POSTHOG_PERSONAL_API_KEY", "", env_file_values)),
         google_application_credentials=google_application_credentials,
+        gsc_oauth_credentials=gsc_oauth_credentials,
+        gsc_auth_mode=gsc_auth_mode,
         gsc_site_url=gsc_site_url,
-        gsc_configured=bool(google_application_credentials and gsc_site_url),
+        gsc_configured=bool(gsc_site_url and (google_application_credentials or gsc_oauth_credentials)),
         telegram_enabled=_bool_value("GOAL_AGENT_TELEGRAM_ENABLED", False, env_file_values),
         telegram_bot_token_present=bool(_env("GOAL_AGENT_TELEGRAM_BOT_TOKEN", "", env_file_values)),
         telegram_chat_id=_env("GOAL_AGENT_TELEGRAM_CHAT_ID", "", env_file_values).strip(),

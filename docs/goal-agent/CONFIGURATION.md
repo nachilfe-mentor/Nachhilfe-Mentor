@@ -38,6 +38,8 @@ PostHog:
 GSC:
 
 - `GOOGLE_APPLICATION_CREDENTIALS`
+- `GSC_OAUTH_CREDENTIALS`
+- `GSC_AUTH_MODE=auto`
 - `GSC_SITE_URL`
 
 ## Telegram Daily Updates

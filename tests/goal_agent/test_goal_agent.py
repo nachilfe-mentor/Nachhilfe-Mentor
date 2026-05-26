@@ -119,6 +119,46 @@ def test_gsc_connector_skip_and_parse_shape(tmp_path: Path, monkeypatch) -> None
     }]
 
 
+def test_gsc_oauth_credentials_mark_connector_configured(tmp_path: Path) -> None:
+    cfg = Settings(
+        repo_root=Path(__file__).resolve().parents[2],
+        db_path=tmp_path / "goal_agent.db",
+        mode="dry_run",
+        gsc_site_url="https://nachhilfe-mentor.de/",
+        gsc_oauth_credentials=str(tmp_path / "gsc-oauth.json"),
+        gsc_auth_mode="oauth",
+        gsc_configured=True,
+    )
+    assert GSCConnector(cfg).settings.gsc_configured
+
+
+def test_gsc_oauth_credentials_are_preferred_in_auto_mode(tmp_path: Path, monkeypatch) -> None:
+    oauth_file = tmp_path / "gsc-oauth.json"
+    oauth_file.write_text("{}", encoding="utf-8")
+    cfg = Settings(
+        repo_root=Path(__file__).resolve().parents[2],
+        db_path=tmp_path / "goal_agent.db",
+        mode="dry_run",
+        google_application_credentials="/missing-service-account.json",
+        gsc_oauth_credentials=str(oauth_file),
+        gsc_site_url="https://nachhilfe-mentor.de/",
+        gsc_auth_mode="auto",
+        gsc_configured=True,
+    )
+    called = {}
+
+    class FakeCredentials:
+        @staticmethod
+        def from_authorized_user_file(path, scopes):
+            called["path"] = path
+            called["scopes"] = scopes
+            return "oauth-credentials"
+
+    monkeypatch.setattr("google.oauth2.credentials.Credentials", FakeCredentials)
+    assert GSCConnector(cfg)._load_credentials() == "oauth-credentials"
+    assert called["path"] == str(oauth_file)
+
+
 def test_event_schema_has_no_blocked_properties() -> None:
     assert validate_standard_events() == []
 
