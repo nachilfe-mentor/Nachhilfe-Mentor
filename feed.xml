@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Tue, 26 May 2026 13:29:14 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 21:32:36 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Parabel interpretieren: Aufbau, Methode und Beispiel</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/parabel-interpretieren-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/parabel-interpretieren-tipps.html</guid>
+      <pubDate>Tue, 26 May 2026 21:32:23 +0000</pubDate>
+      <description>Parabel interpretieren in der Oberstufe: So findest du Bildebene, Sachebene und das tertium comparationis. Mit Aufbau, Schritten und Beispiel.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Kurzgeschichte analysieren: Aufbau, Schritte und Beispiel</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/kurzgeschichte-analysieren-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/kurzgeschichte-analysieren-tipps.html</guid>
+      <pubDate>Tue, 26 May 2026 21:32:20 +0000</pubDate>
+      <description>Kurzgeschichte analysieren leicht gemacht: Aufbau der Analyse, Merkmale, Schritt-für-Schritt-Anleitung, Beispiel und die häufigsten Fehler.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Perspektivwechsel schreiben: Aufbau, Tipps und Beispiel</title>
       <link>https://nachhilfe-mentor.de/blog/posts/perspektivwechsel-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Mon, 25 May 2026 17:34:47 +0000</pubDate>
       <description>Textgebundene Erörterung schreiben leicht gemacht: Aufbau, Unterschied zur freien Erörterung, Schritt-für-Schritt-Anleitung, Formulierungen und häufige Fehler.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Trigonometrie lernen: So verstehst du Sinus, Kosinus und Tangens wirklich</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/trigonometrie-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/trigonometrie-lernen-tipps.html</guid>
-      <pubDate>Mon, 25 May 2026 17:34:47 +0000</pubDate>
-      <description>Trigonometrie lernen leicht gemacht: Sinus, Kosinus und Tangens endlich verstehen statt auswendig lernen. 7 konkrete Tipps für Schüler am Gymnasium.</description>
-      <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Türkisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/tuerkisch-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/tuerkisch-lernen-tipps.html</guid>
-      <pubDate>Mon, 25 May 2026 17:34:47 +0000</pubDate>
-      <description>Türkisch lernen leicht gemacht: 8 bewährte Tipps für Vokabeln, Grammatik und Sprechen. So meisterst du die türkische Sprache Schritt für Schritt.</description>
-      <category>Sprachen lernen</category>
     </item>
   </channel>
 </rss>
