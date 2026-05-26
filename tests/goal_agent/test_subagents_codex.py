@@ -145,11 +145,15 @@ def test_codex_timeout_is_recorded(tmp_path: Path, monkeypatch) -> None:
     assert result.failure_reason == "timeout"
 
 
-def test_dirty_worktree_blocks_by_default(tmp_path: Path) -> None:
+def test_dirty_worktree_blocks_by_default(tmp_path: Path, monkeypatch) -> None:
     cfg = Settings(repo_root=settings(tmp_path).repo_root, db_path=tmp_path / "goal_agent.db", codex_enabled=True)
     db = Database(cfg)
     db.init()
     task = build_tasks_from_recommendations([sample_recommendation()])[0]
+    monkeypatch.setattr(
+        "goal_agent.codex_agent.codex_cli_runner.dirty_worktree_blockers",
+        lambda repo_root, allowed_paths=(): ["dirty worktree: goal_agent/example.py"],
+    )
     result = CodexCliRunner(db, cfg).run_task(task)
     assert result.status == "blocked_by_safety"
     assert "dirty worktree" in result.failure_reason

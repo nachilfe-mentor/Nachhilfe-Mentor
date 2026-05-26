@@ -138,6 +138,31 @@ def store_coding_tasks(db: Database, tasks: list[CodingTask]) -> int:
             problems = task.validate()
             if problems:
                 continue
+            existing = conn.execute("select status from coding_tasks where id=?", (task.id,)).fetchone()
+            status = task.status
+            if existing:
+                status = existing["status"]
+                latest = conn.execute(
+                    """
+                    select status, failure_reason from coding_task_runs
+                    where task_id=?
+                    order by created_at desc
+                    limit 1
+                    """,
+                    (task.id,),
+                ).fetchone()
+                if latest and latest["status"] == "completed":
+                    status = "completed"
+                elif existing["status"] in {"blocked_by_safety", "failed"}:
+                    reason = (latest["failure_reason"] if latest else "") or ""
+                    retryable_reasons = (
+                        "dirty worktree",
+                        "Codex execution disabled",
+                        "Codex binary not found",
+                        "timeout",
+                    )
+                    if any(marker in reason for marker in retryable_reasons):
+                        status = "queued"
             conn.execute(
                 """
                 insert into coding_tasks (
@@ -152,7 +177,8 @@ def store_coding_tasks(db: Database, tasks: list[CodingTask]) -> int:
                   goal=excluded.goal,
                   context_summary=excluded.context_summary,
                   priority=excluded.priority,
-                  updated_at=excluded.updated_at
+                  updated_at=excluded.updated_at,
+                  status=excluded.status
                 """,
                 (
                     task.id,
@@ -170,7 +196,7 @@ def store_coding_tasks(db: Database, tasks: list[CodingTask]) -> int:
                     task.publish_policy,
                     task.created_at,
                     now,
-                    task.status,
+                    status,
                     task.result_summary,
                     json_dumps(task.changed_files),
                     task.priority,
