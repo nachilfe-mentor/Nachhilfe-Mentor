@@ -12,6 +12,7 @@ from .blog_guardian import maybe_apply_blog_context_note, monitor_blog_agent, re
 from .codex_agent.dispatcher import build_and_store_tasks, run_next
 from .config import REPO_ROOT, Settings, load_settings
 from .context_builder import build_context
+from .draft_promotion import promote_drafts
 from .experiments import create_experiment
 from .interactive import generate_page
 from .notifications import notify_daily_update
@@ -263,6 +264,30 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
                 indexable=publishing_decision.indexable,
             )
             _log_action(db, run_id, None, "generate_interactive_page", "interactive_page", str(path) if path else None, "completed" if path else "skipped", [str(path.relative_to(settings.repo_root))] if path else [], [f"Adaptive publishing: {publishing_decision.action}", f"Quality score: {quality.score}", *publishing_decision.reasons])
+        promotion_results = promote_drafts(settings)
+        promoted_files = [
+            str(result.published_path.relative_to(settings.repo_root))
+            for result in promotion_results
+            if result.status == "promoted" and result.published_path
+        ]
+        held_count = len([result for result in promotion_results if result.status != "promoted"])
+        if promotion_results:
+            _log_action(
+                db,
+                run_id,
+                None,
+                "promote_quality_approved_drafts",
+                "interactive_page",
+                ",".join(promoted_files) if promoted_files else None,
+                "completed" if promoted_files else "skipped",
+                promoted_files,
+                [
+                    "Draft-first promotion gate",
+                    f"Promoted: {len(promoted_files)}",
+                    f"Held: {held_count}",
+                    "Only quality-approved drafts are made indexable",
+                ],
+            )
         guardian_status = monitor_blog_agent(settings.repo_root)
         guardian_recommendations = recommend_blog_agent_adjustments(posthog.summary, opportunities)
         guardian_report = write_guardian_report(guardian_status, guardian_recommendations, settings.repo_root)

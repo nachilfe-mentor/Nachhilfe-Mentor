@@ -5,6 +5,7 @@ from pathlib import Path
 
 from goal_agent.analytics import GSCConnector, PostHogConnector, parse_gsc_rows, validate_standard_events
 from goal_agent.config import Settings
+from goal_agent.draft_promotion import promote_drafts
 from goal_agent.interactive import render_interactive_page
 from goal_agent.loop import run_cycle
 from goal_agent.notifications import TelegramNotifier, build_daily_update
@@ -258,6 +259,40 @@ def test_telegram_notifier_disabled_is_non_fatal(tmp_path: Path) -> None:
     result = TelegramNotifier(cfg).send_text("test")
     assert result.ok
     assert not result.configured
+
+
+def test_draft_promotion_promotes_only_quality_approved_noindex_drafts(tmp_path: Path) -> None:
+    repo = tmp_path / "repo"
+    drafts = repo / "goal-agent-pages" / "drafts"
+    drafts.mkdir(parents=True)
+    html = render_interactive_page(
+        "Mathe Übungen mit Lösungen",
+        "Übungsseite mit Lösungen, Schwierigkeitsprogression und interaktivem Selbstcheck.",
+        "practice_page",
+        "mathematik",
+        "mathe übungen",
+        indexable=False,
+    ).replace(
+        "</main>",
+        '<p><strong>Draft/noindex:</strong> Diese Übungsseite ist ein nicht indexierbarer Entwurf.</p>'
+        '<p><a href="/blog/posts/binomische-formeln-lernen.html">Binomische Formeln üben</a></p></main>',
+    )
+    (drafts / "mathe-uebungen-practice-draft.html").write_text(html, encoding="utf-8")
+    cfg = Settings(
+        repo_root=repo,
+        mode="autonomous_full",
+        allow_production_writes=True,
+        allow_page_generation=True,
+    )
+    results = promote_drafts(cfg)
+    promoted = [result for result in results if result.status == "promoted"]
+    assert len(promoted) == 1
+    published = repo / "goal-agent-pages" / "mathe-uebungen.html"
+    assert published.exists()
+    published_html = published.read_text(encoding="utf-8")
+    assert "noindex" not in published_html
+    assert "nicht indexierbarer Entwurf" not in published_html
+    assert "rel=\"canonical\"" in published_html
 
 
 def test_telegram_notifier_requires_chat_id(tmp_path: Path, monkeypatch) -> None:

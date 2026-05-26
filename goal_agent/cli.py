@@ -6,6 +6,7 @@ import json
 from .config import load_settings
 from .codex_agent.dispatcher import build_and_store_tasks, get_task, list_tasks, run_next, run_task
 from .codex_agent.prompt_builder import build_codex_prompt
+from .draft_promotion import promote_drafts
 from .loop import run_cycle
 from .notifications import TelegramNotifier, build_daily_update
 from .queue import export_blog_tasks
@@ -25,6 +26,8 @@ def main(argv: list[str] | None = None) -> int:
     run_parser.add_argument("--cycle", default="daily", choices=["daily", "weekly", "monthly"])
     run_parser.add_argument("--queue-codex-tasks", action="store_true")
     sub.add_parser("generate-report")
+    promote_parser = sub.add_parser("promote-drafts")
+    promote_parser.add_argument("--limit", type=int)
     sub.add_parser("export-blog-tasks")
     sub.add_parser("show-status")
     subagents_parser = sub.add_parser("subagents")
@@ -76,6 +79,22 @@ def main(argv: list[str] | None = None) -> int:
         db.init()
         path = generate_daily_report(db, settings, "manual")
         print(json.dumps({"ok": True, "path": str(path)}))
+        return 0
+    if args.command == "promote-drafts":
+        results = promote_drafts(settings, args.limit)
+        print(json.dumps({
+            "ok": True,
+            "promoted": [str(result.published_path) for result in results if result.status == "promoted" and result.published_path],
+            "held": [
+                {
+                    "draft": str(result.draft_path),
+                    "quality_score": result.quality.score,
+                    "reasons": result.reasons,
+                }
+                for result in results
+                if result.status != "promoted"
+            ],
+        }, ensure_ascii=False))
         return 0
     if args.command == "export-blog-tasks":
         db.init()
