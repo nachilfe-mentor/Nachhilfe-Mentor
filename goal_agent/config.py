@@ -83,6 +83,14 @@ class Settings:
     codex_sandbox_mode: str = "workspace-write"
     codex_create_branch: bool = False
     codex_allow_dirty_worktree: bool = False
+    codex_dirty_allowed_paths: tuple[str, ...] = (
+        "auto-blog.log",
+        "blog/_pinterest_done.txt",
+        "goal_agent/exports/",
+        "goal_agent/queues/",
+        "goal_agent/goal_agent.db",
+        "goal_agent/goal_agent.db-",
+    )
     codex_max_tasks_per_run: int = 1
     max_actions_per_run: int = 10
     emergency_max_generated_pages_per_run: int = 50
@@ -136,6 +144,15 @@ def load_settings() -> Settings:
     if gsc_auth_mode not in {"auto", "service_account", "oauth"}:
         gsc_auth_mode = "auto"
     gsc_site_url = _env("GSC_SITE_URL", "", env_file_values)
+    dirty_allowed = tuple(
+        item.strip()
+        for item in _env(
+            "GOAL_AGENT_CODEX_DIRTY_ALLOWED_PATHS",
+            "auto-blog.log,blog/_pinterest_done.txt,goal_agent/exports/,goal_agent/queues/,goal_agent/goal_agent.db,goal_agent/goal_agent.db-",
+            env_file_values,
+        ).split(",")
+        if item.strip()
+    )
     return Settings(
         env_file_path=env_file,
         exports_dir=exports_dir,
@@ -154,6 +171,7 @@ def load_settings() -> Settings:
         codex_sandbox_mode=_env("GOAL_AGENT_CODEX_SANDBOX_MODE", "workspace-write", env_file_values),
         codex_create_branch=_env("GOAL_AGENT_CODEX_CREATE_BRANCH", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
         codex_allow_dirty_worktree=_env("GOAL_AGENT_CODEX_ALLOW_DIRTY_WORKTREE", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
+        codex_dirty_allowed_paths=dirty_allowed,
         codex_max_tasks_per_run=_int_value("GOAL_AGENT_CODEX_MAX_TASKS_PER_RUN", 1, env_file_values),
         max_actions_per_run=_int_value("GOAL_AGENT_MAX_ACTIONS_PER_RUN", 10, env_file_values),
         emergency_max_generated_pages_per_run=_int_value(

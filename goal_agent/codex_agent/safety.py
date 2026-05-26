@@ -56,9 +56,27 @@ def git_status_short(repo_root: Path) -> str:
         return ""
 
 
-def dirty_worktree_blockers(repo_root: Path) -> list[str]:
+def _status_path(line: str) -> str:
+    path = line[2:] if len(line) > 2 else line.strip()
+    if " -> " in path:
+        path = path.split(" -> ", 1)[1]
+    return path.strip()
+
+
+def _allowed_dirty_path(path: str, allowed_paths: tuple[str, ...]) -> bool:
+    return any(path == allowed.rstrip("/") or path.startswith(allowed) for allowed in allowed_paths)
+
+
+def dirty_worktree_blockers(repo_root: Path, allowed_paths: tuple[str, ...] = ()) -> list[str]:
     status = git_status_short(repo_root).strip()
-    return ["dirty worktree"] if status else []
+    if not status:
+        return []
+    blocked = [
+        _status_path(line)
+        for line in status.splitlines()
+        if line.strip() and not _allowed_dirty_path(_status_path(line), allowed_paths)
+    ]
+    return [f"dirty worktree: {', '.join(blocked[:8])}"] if blocked else []
 
 
 def sanitize_for_log(text: str, max_chars: int = 4000) -> str:

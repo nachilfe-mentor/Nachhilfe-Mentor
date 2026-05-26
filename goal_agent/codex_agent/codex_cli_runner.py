@@ -40,7 +40,7 @@ class CodexCliRunner:
         if shutil.which(self.settings.codex_bin) is None:
             return self._record_blocked(task, f"Codex binary not found: {self.settings.codex_bin}")
         if not (allow_dirty_worktree or self.settings.codex_allow_dirty_worktree):
-            blockers = dirty_worktree_blockers(self.settings.repo_root)
+            blockers = dirty_worktree_blockers(self.settings.repo_root, self.settings.codex_dirty_allowed_paths)
             if blockers:
                 return self._record_blocked(task, "; ".join(blockers))
         prompt = build_codex_prompt(task)

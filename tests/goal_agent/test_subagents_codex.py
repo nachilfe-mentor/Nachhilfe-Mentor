@@ -8,6 +8,7 @@ from goal_agent.codex_agent.dispatcher import build_and_store_tasks, get_task, r
 from goal_agent.codex_agent.prompt_builder import build_codex_prompt
 from goal_agent.codex_agent.result_parser import parse_result
 from goal_agent.codex_agent.safety import validate_task_safety
+from goal_agent.codex_agent.safety import dirty_worktree_blockers
 from goal_agent.codex_agent.task_builder import build_tasks_from_recommendations, store_coding_tasks
 from goal_agent.codex_agent.task_schema import CodingTask
 from goal_agent.config import Settings
@@ -152,6 +153,24 @@ def test_dirty_worktree_blocks_by_default(tmp_path: Path) -> None:
     result = CodexCliRunner(db, cfg).run_task(task)
     assert result.status == "blocked_by_safety"
     assert "dirty worktree" in result.failure_reason
+
+
+def test_dirty_worktree_allows_configured_runtime_files(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(
+        "goal_agent.codex_agent.safety.git_status_short",
+        lambda repo_root: " M auto-blog.log\n M blog/_pinterest_done.txt\n",
+    )
+    assert dirty_worktree_blockers(tmp_path, ("auto-blog.log", "blog/_pinterest_done.txt")) == []
+
+
+def test_dirty_worktree_still_blocks_source_files(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setattr(
+        "goal_agent.codex_agent.safety.git_status_short",
+        lambda repo_root: " M auto-blog.log\n M goal_agent/config.py\n",
+    )
+    blockers = dirty_worktree_blockers(tmp_path, ("auto-blog.log",))
+    assert blockers
+    assert "goal_agent/config.py" in blockers[0]
 
 
 def test_safety_blocks_push_deploy_publish_commands() -> None:
