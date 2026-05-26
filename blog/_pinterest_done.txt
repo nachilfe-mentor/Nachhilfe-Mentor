@@ -41,6 +41,7 @@ fabel-schreiben-tipps
 facharbeit-schreiben-tipps
 fantasiegeschichte-schreiben-tipps
 feynman-technik-erklaeren-lernen
+filmanalyse-schreiben-tipps
 formellen-brief-schreiben-tipps
 franzoesisch-lernen-tipps
 gedaechtnis-techniken-lernen
@@ -70,6 +71,7 @@ klausur-letzte-nacht-lernen
 klausur-schreiben-tipps
 klausurvorbereitung-letzte-woche
 kommentar-schreiben-tipps
+kommentaranalyse-schreiben-tipps
 konzentration-beim-lesen-verbessern
 konzentration-steigern-lernen
 kurvendiskussion-tipps
@@ -110,6 +112,7 @@ nachhilfe-online-vs-offline
 noten-verbessern-schule-tipps
 online-studieren-tipps
 personenbeschreibung-schreiben-tipps
+perspektivwechsel-schreiben-tipps
 philosophie-lernen-tipps
 physik-abitur-vorbereitung
 physik-lernen-tipps
