@@ -5,6 +5,7 @@ import urllib.parse
 import urllib.request
 from dataclasses import dataclass
 
+from .analytics import GSCConnector
 from .config import Settings
 from .storage import Database
 
@@ -103,11 +104,13 @@ def build_daily_update(db: Database, settings: Settings, run_id: str, summary: s
     queued_blog = blog_rows[0]["c"] if blog_rows else 0
     blocked_rows = db.query("select count(*) as c from coding_task_runs where safety_blocked=1")
     safety_blocks = blocked_rows[0]["c"] if blocked_rows else 0
-    gsc_rows = db.query(
-        "select rationale from subagent_recommendations where rationale=? order by created_at desc limit 1",
-        ("GSC configured, but service account lacks Search Console property access.",),
-    )
-    gsc_status = gsc_rows[0]["rationale"] if gsc_rows else ("configured" if settings.gsc_configured else "not configured")
+    gsc = GSCConnector(settings).analyze()
+    if gsc.ok and gsc.configured:
+        gsc_status = f"ok ({gsc.summary.get('row_count', 0)} rows)"
+    elif gsc.warning:
+        gsc_status = gsc.warning
+    else:
+        gsc_status = "not configured"
     return "\n".join([
         "Nachhilfe Mentor Goal Agent Update",
         f"Run: {run_id}",

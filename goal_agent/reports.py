@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from pathlib import Path
 
+from .analytics import GSCConnector
 from .config import REPO_ROOT, Settings
 from .storage import Database, utc_now
 
@@ -24,11 +25,13 @@ def generate_daily_report(db: Database, settings: Settings, run_id: str, repo_ro
     subagent_runs = db.query("select agent_name, status, recommendation_count from subagent_runs order by created_at desc limit 8")
     top_recs = db.query("select title, source_agent, priority, suggested_publish_decision, safety_risk from subagent_recommendations order by priority desc limit 5")
     blocked_recs = db.query("select count(*) as c from subagent_recommendations where recommendation_type='hold' or safety_risk='high'")[0]["c"]
-    gsc_access_rows = db.query(
-        "select rationale from subagent_recommendations where rationale=? order by created_at desc limit 1",
-        ("GSC configured, but service account lacks Search Console property access.",),
-    )
-    gsc_status = gsc_access_rows[0]["rationale"] if gsc_access_rows else ("configured" if settings.gsc_configured else "not configured")
+    gsc = GSCConnector(settings).analyze()
+    if gsc.ok and gsc.configured:
+        gsc_status = f"ok ({gsc.summary.get('row_count', 0)} rows)"
+    elif gsc.warning:
+        gsc_status = gsc.warning
+    else:
+        gsc_status = "not configured"
     lines = [
         "# Goal Agent Daily SEO Report",
         "",
