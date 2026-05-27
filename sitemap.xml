@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -476,7 +476,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/kurzgeschichte-analysieren-tipps.html</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -685,6 +685,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/novelle-analysieren-tipps.html</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/online-studieren-tipps.html</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>monthly</changefreq>
@@ -800,7 +806,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/romananalyse-schreiben-tipps.html</loc>
-    <lastmod>2026-05-25</lastmod>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -999,6 +1005,12 @@
   <url>
     <loc>https://nachhilfe-mentor.de/goal-agent-pages/chemie-abitur-vorbereitung.html</loc>
     <lastmod>2026-05-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/goal-agent-pages/pruefungsvorbereitung-uebungen-mit-loesungen.html</loc>
+    <lastmod>2026-05-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
