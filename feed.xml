@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 27 May 2026 13:39:45 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 21:43:35 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Romananalyse schreiben: Aufbau, Schritte und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/romananalyse-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/romananalyse-schreiben-tipps.html</guid>
+      <pubDate>Wed, 27 May 2026 21:43:19 +0000</pubDate>
+      <description>Romananalyse schreiben leicht gemacht: Aufbau, Methode, Formulierungstipps und die 6 häufigsten Fehler. Mit Schritt-für-Schritt-Anleitung für Schüler.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Werkvergleich schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/werkvergleich-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/werkvergleich-schreiben-tipps.html</guid>
+      <pubDate>Wed, 27 May 2026 21:43:02 +0000</pubDate>
+      <description>Werkvergleich schreiben fürs Abitur: Aufbau, Vergleichskriterien, Formulierungshilfen und häufige Fehler. Mit Schritt-für-Schritt-Anleitung für die Klausur.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Fabel schreiben: Aufbau, Merkmale und Beispiel</title>
       <link>https://nachhilfe-mentor.de/blog/posts/fabel-schreiben-tipps.html</link>
@@ -29,14 +45,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/kurzgeschichte-analysieren-tipps.html</guid>
       <pubDate>Wed, 27 May 2026 05:35:44 +0000</pubDate>
       <description>Kurzgeschichte analysieren leicht gemacht: Aufbau der Analyse, Merkmale, Schritt-für-Schritt-Anleitung, Beispiel und die häufigsten Fehler.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Romananalyse schreiben: Aufbau, Schritte und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/romananalyse-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/romananalyse-schreiben-tipps.html</guid>
-      <pubDate>Wed, 27 May 2026 05:35:32 +0000</pubDate>
-      <description>Romananalyse schreiben leicht gemacht: Aufbau, Methode, Formulierungstipps und die 6 häufigsten Fehler. Mit Schritt-für-Schritt-Anleitung für Schüler.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 25 May 2026 17:34:47 +0000</pubDate>
       <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Studieren ohne Abitur: 6 Wege ins Studium erklärt</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/studieren-ohne-abitur-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/studieren-ohne-abitur-tipps.html</guid>
-      <pubDate>Mon, 25 May 2026 17:34:47 +0000</pubDate>
-      <description>Kein Abitur? Kein Problem. Wir erklären 6 Wege, wie du auch ohne Abi studieren kannst: Fachhochschulreife, Berufsausbildung, Begabtenprüfung und mehr.</description>
-      <category>Studium &amp; Karriere</category>
     </item>
   </channel>
 </rss>
