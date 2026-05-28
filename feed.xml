@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 27 May 2026 21:43:35 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2026 05:47:10 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Rezension schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/rezension-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/rezension-schreiben-tipps.html</guid>
+      <pubDate>Thu, 28 May 2026 05:46:53 +0000</pubDate>
+      <description>Rezension schreiben leicht gemacht: Aufbau, Tipps für Buchrezension und Filmkritik, häufige Fehler und eine Checkliste für deine nächste Schulaufgabe.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Buchvorstellung schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/buchvorstellung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/buchvorstellung-schreiben-tipps.html</guid>
+      <pubDate>Thu, 28 May 2026 05:46:27 +0000</pubDate>
+      <description>Buchvorstellung schreiben leicht gemacht: Aufbau, Inhalt, Sprache und Vortrag Schritt für Schritt erklärt, inklusive Beispiel und typischer Fehler.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Romananalyse schreiben: Aufbau, Schritte und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/romananalyse-schreiben-tipps.html</link>
@@ -149,22 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/zeitungsartikel-schreiben-tipps.html</guid>
       <pubDate>Mon, 25 May 2026 17:34:47 +0000</pubDate>
       <description>Zeitungsartikel schreiben lernen: So baust du einen Nachrichtenartikel richtig auf, welche W-Fragen du beantwortest und welche Fehler du unbedingt vermeiden solltest.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Zettelkasten Methode: Wissen vernetzen und dauerhaft behalten</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zettelkasten-methode-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zettelkasten-methode-lernen.html</guid>
-      <pubDate>Mon, 25 May 2026 17:34:47 +0000</pubDate>
-      <description>Die Zettelkasten Methode erklärt: Wie du mit vernetzten Notizen Wissen dauerhaft speicherst und schneller lernst. Schritt-für-Schritt-Anleitung für Schüler und Studenten.</description>
-      <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
-      <pubDate>Mon, 25 May 2026 17:34:47 +0000</pubDate>
-      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
