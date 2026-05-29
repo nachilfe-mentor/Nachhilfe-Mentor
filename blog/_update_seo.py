@@ -17,6 +17,7 @@ import re
 import sys
 import glob
 import json
+import subprocess
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone
@@ -99,6 +100,22 @@ def has_noindex(filepath):
         return False
 
 
+def is_git_tracked(filepath):
+    """Only include generated Goal-Agent pages that will actually deploy."""
+    relpath = os.path.relpath(filepath, SITE_DIR)
+    try:
+        result = subprocess.run(
+            ["git", "ls-files", "--error-unmatch", relpath],
+            cwd=SITE_DIR,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            check=False,
+        )
+        return result.returncode == 0
+    except Exception:
+        return False
+
+
 def scan_pages():
     """Scannt alle HTML-Seiten und kategorisiert sie."""
     pages = {
@@ -133,6 +150,8 @@ def scan_pages():
     if os.path.isdir(goal_pages_dir):
         for f in sorted(glob.glob(os.path.join(goal_pages_dir, "*.html"))):
             if has_noindex(f):
+                continue
+            if not is_git_tracked(f):
                 continue
             basename = os.path.basename(f)
             path = f"goal-agent-pages/{basename}"
