@@ -8,6 +8,7 @@ from typing import Any
 
 from . import __version__
 from .analytics import GSCConnector, PostHogConnector, SerpConnector, page_conversion_scores, validate_standard_events
+from .autopublish import auto_publish
 from .blog_guardian import maybe_apply_blog_context_note, monitor_blog_agent, recommend_blog_agent_adjustments, write_guardian_report
 from .codex_agent.dispatcher import build_and_store_tasks, run_next
 from .config import REPO_ROOT, Settings, load_settings
@@ -386,6 +387,22 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
         })
         report = generate_daily_report(db, settings, run_id, settings.repo_root)
         _log_action(db, run_id, None, "generate_report", "report", str(report), "completed", [_display_path(report, settings.repo_root)], ["Report contains no secret values"])
+        publish_result = auto_publish(settings)
+        _log_action(
+            db,
+            run_id,
+            None,
+            "auto_publish_goal_agent_changes",
+            "git",
+            "origin/main",
+            publish_result.status if publish_result.ok else "failed",
+            publish_result.changed_files,
+            [
+                publish_result.message,
+                f"Pushed: {publish_result.pushed}",
+                "Allowed paths only: goal-agent-pages, goal_agent/generated_tools, sitemap.xml, feed.xml",
+            ],
+        )
         summary = f"Scanned {len(content_rows)} pages, scored {len(opportunities)} opportunities, exported {len(top_tasks)} blog tasks, queued {codex_tasks_created} Codex tasks."
         _finish_run(db, run_id, "completed", summary)
         notification = notify_daily_update(db, settings, run_id, summary)

@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 
 from goal_agent.analytics import GSCConnector, PostHogConnector, parse_gsc_rows, validate_standard_events
+from goal_agent.autopublish import auto_publish
 from goal_agent.config import Settings
 from goal_agent.draft_promotion import promote_drafts
 from goal_agent.interactive import render_interactive_page
@@ -293,6 +294,49 @@ def test_draft_promotion_promotes_only_quality_approved_noindex_drafts(tmp_path:
     assert "noindex" not in published_html
     assert "nicht indexierbarer Entwurf" not in published_html
     assert "rel=\"canonical\"" in published_html
+
+
+def test_auto_publish_is_gated_by_autonomous_deploy(tmp_path: Path) -> None:
+    cfg = Settings(repo_root=tmp_path, mode="autonomous_full", allow_autonomous_deploy=False)
+    result = auto_publish(cfg)
+    assert result.ok
+    assert result.status == "skipped"
+    assert not result.pushed
+
+
+def test_auto_publish_pushes_only_allowed_paths(tmp_path: Path, monkeypatch) -> None:
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    calls: list[list[str]] = []
+
+    def fake_run(args, repo_root, timeout=300):
+        calls.append(args)
+
+        class Proc:
+            returncode = 0
+            stdout = ""
+            stderr = ""
+
+        proc = Proc()
+        if args[:3] == ["git", "status", "--short"]:
+            proc.stdout = "?? goal-agent-pages/new.html\n M auto-blog.log\n"
+        if args[:4] == ["git", "diff", "--cached", "--name-only"]:
+            proc.stdout = "goal-agent-pages/new.html\n"
+        return proc
+
+    monkeypatch.setattr("goal_agent.autopublish._run", fake_run)
+    cfg = Settings(
+        repo_root=repo,
+        mode="autonomous_full",
+        allow_autonomous_deploy=True,
+    )
+    result = auto_publish(cfg)
+    assert result.ok
+    assert result.pushed
+    assert result.changed_files == ["goal-agent-pages/new.html"]
+    assert ["git", "push", "origin", "main"] in calls
+    add_call = next(call for call in calls if call[:3] == ["git", "add", "--"])
+    assert "auto-blog.log" not in add_call
 
 
 def test_telegram_notifier_requires_chat_id(tmp_path: Path, monkeypatch) -> None:

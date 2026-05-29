@@ -22,6 +22,8 @@ def generate_daily_report(db: Database, settings: Settings, run_id: str, repo_ro
     blocked_codex_count = db.query("select count(*) as c from coding_task_runs where safety_blocked=1")[0]["c"]
     last_codex_runs = db.query("select * from coding_task_runs order by created_at desc limit 1")
     last_codex = last_codex_runs[0] if last_codex_runs else None
+    last_publish_runs = db.query("select * from actions where action_type='auto_publish_goal_agent_changes' order by created_at desc limit 1")
+    last_publish = last_publish_runs[0] if last_publish_runs else None
     subagent_runs = db.query("select agent_name, status, recommendation_count from subagent_runs order by created_at desc limit 8")
     top_recs = db.query("select title, source_agent, priority, suggested_publish_decision, safety_risk from subagent_recommendations order by priority desc limit 5")
     blocked_recs = db.query("select count(*) as c from subagent_recommendations where recommendation_type='hold' or safety_risk='high'")[0]["c"]
@@ -72,7 +74,7 @@ def generate_daily_report(db: Database, settings: Settings, run_id: str, repo_ro
         "",
         "- Existing Blog Agent was not modified by this run.",
         "- Practice-first SEO assets are owned by the Goal Agent, not the Blog Agent.",
-        "- External outreach, autonomous deploys, and production writes remain blocked unless explicitly enabled.",
+        "- External outreach remains blocked. Goal-Agent publishing uses the explicit autonomous deploy gate.",
         "",
         "## Subagents",
         "",
@@ -94,6 +96,12 @@ def generate_daily_report(db: Database, settings: Settings, run_id: str, repo_ro
         f"- Last exit code: {last_codex['exit_code'] if last_codex else ''}",
         f"- Last changed files: {last_codex['changed_files_json'] if last_codex else '[]'}",
         f"- Last failure reason: {last_codex['failure_reason'] if last_codex else ''}",
+        "",
+        "## Auto Publish",
+        "",
+        f"- Enabled: {settings.deploy_enabled}",
+        f"- Last status: {last_publish['status'] if last_publish else ''}",
+        f"- Last files: {last_publish['files_changed_json'] if last_publish else '[]'}",
     ])
     path.write_text("\n".join(lines), encoding="utf-8")
     return path
