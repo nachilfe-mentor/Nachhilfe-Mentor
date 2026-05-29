@@ -17,6 +17,7 @@ UMLAUT_REPLACEMENT_SUSPECTS = [
     (r"\bPruefung(?:en)?\b", "Prüfung/Prüfungen"),
     (r"\bmuendlich(?:e|er|es|en)?\b", "mündlich"),
     (r"\bspaeter\b", "später"),
+    (r"\bnaechste(?:m|n|r|s)?\b", "nächste/nächster/nächstem"),
     (r"\bwaehle(?:n)?\b", "wähle/wählen"),
     (r"\baehnlich(?:e|er|es|en)?\b", "ähnlich"),
     (r"\n?fuer\b", "für"),

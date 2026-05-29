@@ -56,8 +56,8 @@ class PostHogConnector:
         self.settings = settings
         self.host = settings.posthog_host.rstrip("/")
         self.project_id = settings.posthog_project_id
-        self.project_key = os.environ.get("POSTHOG_PROJECT_API_KEY")
-        self.personal_key = os.environ.get("POSTHOG_PERSONAL_API_KEY")
+        self.project_key = _secret_from_env_or_file("POSTHOG_PROJECT_API_KEY", settings.env_file_path)
+        self.personal_key = _secret_from_env_or_file("POSTHOG_PERSONAL_API_KEY", settings.env_file_path)
 
     @property
     def configured(self) -> bool:
@@ -67,24 +67,25 @@ class PostHogConnector:
         if not self.configured:
             return ConnectorResult(False, True, {"events": {}, "missing": sorted(STANDARD_EVENTS)}, "analytics credentials are not configured")
         # Query Events API with an event list only. Never print or return tokens.
-        after = (date.today() - timedelta(days=days)).isoformat()
         event_counts: dict[str, int] = {}
         for event_name in STANDARD_EVENTS:
             try:
-                count = self._count_event(event_name, after)
+                count = self._count_event(event_name, days)
             except Exception as exc:  # noqa: BLE001 - redacted connector boundary
-                return ConnectorResult(True, False, {"events": event_counts}, f"PostHog query failed: {exc.__class__.__name__}")
+                detail = str(exc) if str(exc).startswith("http_") else exc.__class__.__name__
+                return ConnectorResult(True, False, {"events": event_counts}, f"PostHog query failed: {detail}")
             event_counts[event_name] = count
         missing = [name for name, count in event_counts.items() if count == 0]
         return ConnectorResult(True, True, {"events": event_counts, "missing": missing})
 
-    def _count_event(self, event_name: str, after: str) -> int:
+    def _count_event(self, event_name: str, days: int) -> int:
         # HogQL endpoint shape; if API changes, caller receives a redacted failure.
+        safe_event = "'" + event_name.replace("\\", "\\\\").replace("'", "\\'") + "'"
+        safe_days = max(1, min(int(days), 365))
         payload = {
             "query": {
                 "kind": "HogQLQuery",
-                "query": "select count() from events where event = $event and timestamp >= $after",
-                "values": {"event": event_name, "after": after},
+                "query": f"select count() from events where event = {safe_event} and timestamp >= now() - interval {safe_days} day",
             }
         }
         data = json.dumps(payload).encode("utf-8")
@@ -104,6 +105,22 @@ class PostHogConnector:
             raise RuntimeError(f"http_{exc.code}") from exc
         results = body.get("results") or [[0]]
         return int(results[0][0] or 0)
+
+
+def _secret_from_env_or_file(name: str, env_file_path) -> str:
+    if os.environ.get(name):
+        return os.environ[name]
+    try:
+        for line in env_file_path.read_text(encoding="utf-8", errors="ignore").splitlines():
+            stripped = line.strip()
+            if not stripped or stripped.startswith("#") or "=" not in stripped:
+                continue
+            key, value = stripped.split("=", 1)
+            if key.strip() == name:
+                return value.strip().strip('"').strip("'")
+    except Exception:
+        return ""
+    return ""
 
 
 class GSCConnector:

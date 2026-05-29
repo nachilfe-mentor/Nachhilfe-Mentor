@@ -75,13 +75,26 @@
   }
 
   function pageProps() {
+    var body = document.body || {};
     return {
       site: "nachhilfe-mentor.de",
       page_path: window.location.pathname,
       page_title: document.title,
       page_type: pageType(),
-      canonical_url: getCanonicalUrl()
+      canonical_url: getCanonicalUrl(),
+      page_id: body.dataset ? (body.dataset.pageId || "") : "",
+      slug: body.dataset ? (body.dataset.slug || slugFromPath()) : slugFromPath(),
+      topic_cluster: body.dataset ? (body.dataset.topicCluster || "") : "",
+      primary_keyword: body.dataset ? (body.dataset.primaryKeyword || "") : "",
+      search_intent: body.dataset ? (body.dataset.searchIntent || "") : "",
+      content_type: body.dataset ? (body.dataset.contentType || pageType()) : pageType(),
+      asset_type: body.dataset ? (body.dataset.assetType || "") : "",
+      template_version: body.dataset ? (body.dataset.templateVersion || "") : ""
     };
+  }
+
+  function slugFromPath() {
+    return window.location.pathname.replace(/\/$/, "").split("/").pop() || "home";
   }
 
   function pageType() {
@@ -134,6 +147,19 @@
 
     if (store) {
       capture("app_download_click", Object.assign({ store: store }, props));
+      capture("seo_app_store_clicked", {
+        store: store,
+        cta_location: sectionFor(link),
+        app_variant: "",
+        destination_type: "app_store"
+      });
+      if (pageProps().asset_type) {
+        capture("app_cta_clicked_from_practice", {
+          subject: document.body.dataset.subject || "",
+          grade_level: document.body.dataset.gradeLevel || "",
+          cta_location: sectionFor(link)
+        });
+      }
       return;
     }
 
@@ -157,6 +183,14 @@
       return;
     }
 
+    capture("seo_internal_link_clicked", {
+      target_slug: rawHref.replace(/\/$/, "").split("/").pop() || "",
+      target_content_type: rawHref.indexOf("/blog/posts/") === 0 ? "blog_article" : "internal_page",
+      target_topic_cluster: "",
+      link_position: sectionFor(link),
+      anchor_category: labelFor(link).slice(0, 80)
+    });
+
     if (rawHref.charAt(0) === "#") {
       capture("anchor_click", props);
     }
@@ -177,6 +211,7 @@
       if (percent >= mark && !trackedScrollMarks[mark]) {
         trackedScrollMarks[mark] = true;
         capture("scroll_depth", { percent: mark });
+        capture("seo_scroll_depth_reached", { scroll_depth_percent: mark });
       }
     });
 
@@ -231,8 +266,19 @@
     });
   }
 
+  function trackSeoPageView() {
+    capture("seo_page_view", {
+      agent_version: document.body.dataset.agentVersion || "",
+      agent_run_id: document.body.dataset.agentRunId || "",
+      experiment_id: document.body.dataset.experimentId || "",
+      traffic_source: document.referrer ? "referral_or_search" : "direct",
+      device_type: window.matchMedia && window.matchMedia("(max-width: 760px)").matches ? "mobile" : "desktop"
+    });
+  }
+
   function initTracking() {
     capture("website_page_ready");
+    trackSeoPageView();
     trackBlogPostView();
     trackLandingView();
     trackVisibleImages();

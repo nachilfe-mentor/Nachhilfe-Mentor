@@ -15,7 +15,7 @@ from .config import REPO_ROOT, Settings, load_settings
 from .context_builder import build_context
 from .draft_promotion import promote_drafts
 from .experiments import create_experiment
-from .interactive import generate_page
+from .interactive import display_topic, generate_page
 from .notifications import notify_daily_update
 from .queue import export_blog_tasks, store_blog_tasks, task_from_opportunity
 from .publishing import AdaptivePublishingThrottle
@@ -247,11 +247,12 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
             top = publishable[0]
             publishing_decision = publishing_decisions[top["id"]]
             is_practice = top.get("type") == "practice_asset_opportunity"
-            title = f"{top.get('topic_cluster', 'Lernen')} {'Übungen mit Lösungen' if is_practice else 'Lern-Check'}"
+            topic_label = display_topic(top.get("topic_cluster") or "Lernen")
+            title = f"{topic_label} {'Übungen mit Lösungen' if is_practice else 'Lern-Check'}"
             path, quality = generate_page(
                 settings,
                 title,
-                "Praxisnaher Lern-Check mit Aufgabe, Lösung und naechstem Lernschritt.",
+                "Praxisnaher Lern-Check mit Aufgabe, Lösung und nächstem Lernschritt.",
                 "practice_page" if is_practice else "learning_utility",
                 top.get("topic_cluster") or "allgemein",
                 top.get("primary_keyword") or "lernen",

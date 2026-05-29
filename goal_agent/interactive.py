@@ -11,12 +11,56 @@ from .quality import QualityResult, check_interactive_page_quality
 
 GENERATED_DIR = REPO_ROOT / "goal-agent-pages"
 
+TOPIC_LABELS = {
+    "pruefungsvorbereitung": "Prüfungsvorbereitung",
+    "ki-und-bildung": "KI und Bildung",
+    "lernmethoden": "Lernmethoden",
+    "mathematik": "Mathematik",
+    "sprachen": "Sprachen",
+}
+
+TOPIC_INTERNAL_LINKS = {
+    "pruefungsvorbereitung": [
+        ("/blog/posts/abitur-vorbereitung-tipps.html", "Abitur-Vorbereitung planen"),
+        ("/blog/posts/klausur-letzte-nacht-lernen.html", "kurz vor der Klausur lernen"),
+        ("/blog/posts/pruefungsangst-tipps.html", "Prüfungsangst reduzieren"),
+    ],
+    "lernmethoden": [
+        ("/blog/posts/active-recall-lerntechnik.html", "Active Recall nutzen"),
+        ("/blog/posts/lernplan-erstellen.html", "einen Lernplan erstellen"),
+    ],
+    "mathematik": [
+        ("/blog/posts/binomische-formeln-lernen.html", "Binomische Formeln üben"),
+        ("/blog/posts/kurvendiskussion-tipps.html", "Kurvendiskussion vorbereiten"),
+    ],
+    "sprachen": [
+        ("/blog/posts/vokabeln-lernen-tipps.html", "Vokabeln lernen"),
+        ("/blog/posts/englisch-grammatik-lernen.html", "Englisch-Grammatik wiederholen"),
+    ],
+}
+
 
 def slugify(value: str) -> str:
     value = value.lower()
     value = value.replace("ä", "ae").replace("ö", "oe").replace("ü", "ue").replace("ß", "ss")
     value = re.sub(r"[^a-z0-9]+", "-", value).strip("-")
     return value or "seo-tool"
+
+
+def display_topic(value: str) -> str:
+    return TOPIC_LABELS.get(value, value.replace("-", " ").replace("_", " ").strip().title() or "Lernen")
+
+
+def internal_links_html(topic_cluster: str) -> str:
+    links = TOPIC_INTERNAL_LINKS.get(topic_cluster, TOPIC_INTERNAL_LINKS["lernmethoden"])
+    items = "\n".join(f'        <li><a href="{html.escape(href)}">{html.escape(label)}</a></li>' for href, label in links)
+    return f"""    <section>
+      <h2>Passende nächste Übungen</h2>
+      <p>Vertiefe das Thema mit passenden Erklärungen und Übungsstrategien:</p>
+      <ul>
+{items}
+      </ul>
+    </section>"""
 
 
 def schema_markup(title: str, description: str, page_type: str) -> str:
@@ -51,6 +95,7 @@ def render_interactive_page(
     safe_description = html.escape(description)
     safe_cluster = html.escape(topic_cluster)
     safe_keyword = html.escape(primary_keyword)
+    links_html = internal_links_html(topic_cluster)
     schema = schema_markup(title, description, page_type)
     robots = "" if indexable else '  <meta name="robots" content="noindex,follow">\n'
     return f"""<!doctype html>
@@ -105,10 +150,31 @@ def render_interactive_page(
       <p>Notiere nach der Aufgabe einen Satz: Was war die Regel, woran hast du sie erkannt und welcher Fehler wäre typisch? Wenn du diesen Satz ohne Blick in die Lösung formulieren kannst, ist der Stoff bereit für gemischte Aufgaben. Wenn nicht, wiederhole zuerst ein leichteres Beispiel.</p>
       <p>In der Nachhilfe Mentor App kannst du diesen Lernschritt später mit passenden Wiederholungen verbinden, ohne deine Antworten hier auf der Webseite zu speichern.</p>
     </section>
+{links_html}
   </main>
   <script src="/scripts/posthog-tracking.js" defer></script>
   <script>
+    var practiceStarted = false;
+    function capturePracticeStarted() {{
+      if (practiceStarted) {{
+        return;
+      }}
+      practiceStarted = true;
+      if (window.posthog && window.posthog.capture) {{
+        window.posthog.capture('practice_started', {{
+          page_id: 'tool:{slugify(title)}',
+          slug: '{slugify(title)}',
+          asset_type: '{html.escape(page_type)}',
+          subject: '{html.escape(subject)}',
+          grade_level: '{html.escape(grade_level)}',
+          exam_type: '{html.escape(exam_type)}',
+          difficulty: document.getElementById('difficulty').value,
+          interaction_type: '{html.escape(interaction_type)}'
+        }});
+      }}
+    }}
     document.getElementById('check-result').addEventListener('click', function () {{
+      capturePracticeStarted();
       var value = Number(document.getElementById('confidence').value);
       var result = value < 3 ? 'Wiederhole zuerst die Grundlagen.' : value === 3 ? 'Übe mit zwei gemischten Aufgaben.' : 'Teste dich mit Zeitlimit.';
       document.getElementById('result').textContent = result;
@@ -130,6 +196,7 @@ def render_interactive_page(
       }}
     }});
     document.getElementById('show-solution').addEventListener('click', function () {{
+      capturePracticeStarted();
       document.getElementById('result').textContent = 'Lösung: Schritt markieren, Regel anwenden, Ergebnis prüfen.';
       if (window.posthog && window.posthog.capture) {{
         window.posthog.capture('solution_revealed', {{
