@@ -399,3 +399,36 @@ def test_daily_update_message_contains_no_secret_values(tmp_path: Path) -> None:
     message = build_daily_update(db, cfg, "run_test", "Scanned 1 page")
     assert "Scanned 1 page" in message
     assert "token" not in message.lower()
+
+
+def test_daily_update_reports_real_publish_status(tmp_path: Path) -> None:
+    cfg = Settings(
+        repo_root=settings(tmp_path).repo_root,
+        db_path=tmp_path / "goal_agent.db",
+        mode="autonomous_full",
+        allow_autonomous_deploy=True,
+    )
+    db = Database(cfg)
+    db.init()
+    db.execute(
+        """
+        insert into actions (
+          id, agent_run_id, action_type, target_type, status,
+          files_changed_json, safety_checks_json, created_at, completed_at
+        ) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """,
+        (
+            "action_publish_test",
+            "run_test",
+            "auto_publish_goal_agent_changes",
+            "site",
+            "published",
+            '["goal-agent-pages/test.html"]',
+            '["Pushed: True"]',
+            "2026-05-29T00:00:00Z",
+            "2026-05-29T00:00:00Z",
+        ),
+    )
+    message = build_daily_update(db, cfg, "run_test", "Published 1 page")
+    assert "Deploy: published (1 files, pushed)" in message
+    assert "Deploy: blocked" not in message

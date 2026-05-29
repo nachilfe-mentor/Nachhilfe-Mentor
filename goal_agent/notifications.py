@@ -111,6 +111,7 @@ def build_daily_update(db: Database, settings: Settings, run_id: str, summary: s
         gsc_status = gsc.warning
     else:
         gsc_status = "not configured"
+    deploy_status = _deploy_status_line(db, settings)
     return "\n".join([
         "Nachhilfe Mentor Goal Agent Update",
         f"Run: {run_id}",
@@ -121,12 +122,51 @@ def build_daily_update(db: Database, settings: Settings, run_id: str, summary: s
         f"Codex enabled: {settings.codex_enabled}",
         f"Safety blocks: {safety_blocks}",
         f"GSC: {gsc_status}",
-        "Deploy: blocked",
+        f"Deploy: {deploy_status}",
     ])
 
 
 def notify_daily_update(db: Database, settings: Settings, run_id: str, summary: str) -> NotificationResult:
     return TelegramNotifier(settings).send_text(build_daily_update(db, settings, run_id, summary))
+
+
+def _deploy_status_line(db: Database, settings: Settings) -> str:
+    if not settings.deploy_enabled:
+        return "disabled by safety gate"
+    rows = db.query(
+        """
+        select status, files_changed_json, safety_checks_json, completed_at
+        from actions
+        where action_type='auto_publish_goal_agent_changes'
+        order by created_at desc
+        limit 1
+        """
+    )
+    if not rows:
+        return "enabled, no publish action yet"
+    row = rows[0]
+    files = _json_list(row["files_changed_json"])
+    checks = _json_list(row["safety_checks_json"])
+    pushed = any(str(item).lower() == "pushed: true" for item in checks)
+    if row["status"] == "published":
+        suffix = "pushed" if pushed else "not pushed"
+        return f"published ({len(files)} files, {suffix})"
+    if row["status"] == "noop":
+        return "enabled, no changes to publish"
+    if row["status"] == "blocked":
+        reason = checks[-1] if checks else "safety gate"
+        return f"blocked ({reason})"
+    return str(row["status"])
+
+
+def _json_list(value: str | None) -> list[object]:
+    if not value:
+        return []
+    try:
+        parsed = json.loads(value)
+    except json.JSONDecodeError:
+        return []
+    return parsed if isinstance(parsed, list) else []
 
 
 def _secret_env(name: str, settings: Settings | None = None) -> str:
