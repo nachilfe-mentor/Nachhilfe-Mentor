@@ -29,6 +29,13 @@ UMLAUT_REPLACEMENT_SUSPECTS = [
     (r"\bErklaere\b", "Erkläre"),
 ]
 
+COMMON_ASCII_UMLAUT_REPLACEMENTS = [
+    (r"\bpruefung(?:en|s|stag|svorbereitung)?\b", "Prüfung/Prüfungsvorbereitung"),
+    (r"\buebung(?:en)?\b", "Übung/Übungen"),
+    (r"\bloesung(?:en)?\b", "Lösung/Lösungen"),
+    (r"\berklaer(?:e|ung|ungen)?\b", "erkläre/Erklärung"),
+]
+
 
 @dataclass(frozen=True)
 class QualityResult:
@@ -63,7 +70,7 @@ def check_interactive_page_quality(title: str, body_html: str, page_type: str) -
     visible_text = re.sub(r"<script\b.*?</script>", " ", body_html, flags=re.I | re.S)
     visible_text = re.sub(r"<style\b.*?</style>", " ", visible_text, flags=re.I | re.S)
     visible_text = re.sub(r"<[^>]+>", " ", visible_text)
-    for pattern, preferred in UMLAUT_REPLACEMENT_SUSPECTS:
+    for pattern, preferred in [*UMLAUT_REPLACEMENT_SUSPECTS, *COMMON_ASCII_UMLAUT_REPLACEMENTS]:
         if re.search(pattern, visible_text):
             problems.append(f"visible German text should use umlaut spelling, prefer {preferred}")
             break

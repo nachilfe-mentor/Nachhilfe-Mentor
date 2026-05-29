@@ -21,7 +21,7 @@ from .queue import export_blog_tasks, store_blog_tasks, task_from_opportunity
 from .publishing import AdaptivePublishingThrottle
 from .reports import generate_daily_report
 from .scanners import build_internal_link_graph, read_blog_registry, scan_content
-from .scoring import build_opportunities_from_inventory
+from .scoring import build_gsc_practice_opportunities, build_opportunities_from_inventory
 from .self_improvement import maybe_update_scoring, store_learning
 from .storage import Database, json_dumps, utc_now, write_migration_file
 from .subagents.orchestrator import GoalOrchestrator
@@ -168,7 +168,10 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
         gsc = GSCConnector(settings).analyze()
         serp = SerpConnector().analyze()
         metrics = page_conversion_scores(posthog.summary)
-        opportunities = build_opportunities_from_inventory(content_rows, metrics={})
+        inventory_opportunities = build_opportunities_from_inventory(content_rows, metrics={})
+        gsc_opportunities = build_gsc_practice_opportunities(gsc.summary.get("queries", []), content_rows) if gsc.ok else []
+        opportunities_by_id = {opp["id"]: opp for opp in [*inventory_opportunities, *gsc_opportunities]}
+        opportunities = sorted(opportunities_by_id.values(), key=lambda item: item["expected_value_score"], reverse=True)
         publishing_decisions = {
             item.opportunity_id: item
             for item in AdaptivePublishingThrottle(settings.emergency_max_generated_pages_per_run).decide(
@@ -248,7 +251,12 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
             publishing_decision = publishing_decisions[top["id"]]
             is_practice = top.get("type") == "practice_asset_opportunity"
             topic_label = display_topic(top.get("topic_cluster") or "Lernen")
-            title = f"{topic_label} {'Übungen mit Lösungen' if is_practice else 'Lern-Check'}"
+            title = (top.get("primary_keyword") or "").strip()
+            if is_practice:
+                if not any(term in title.lower() for term in ["übung", "übungen", "aufgabe", "aufgaben", "test"]):
+                    title = f"{title or topic_label} Übungen mit Lösungen"
+            else:
+                title = f"{topic_label} Lern-Check"
             path, quality = generate_page(
                 settings,
                 title,

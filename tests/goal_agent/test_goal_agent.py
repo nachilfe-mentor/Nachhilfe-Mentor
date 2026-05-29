@@ -14,7 +14,7 @@ from goal_agent.publishing import AdaptivePublishingThrottle
 from goal_agent.quality import check_interactive_page_quality
 from goal_agent.queue import validate_blog_task
 from goal_agent.scanners import scan_content
-from goal_agent.scoring import build_opportunities_from_inventory, score_opportunity
+from goal_agent.scoring import build_gsc_practice_opportunities, build_opportunities_from_inventory, score_opportunity
 from goal_agent.self_improvement import store_learning
 from goal_agent.storage import Database
 from goal_agent.toolsmith import ToolRegistry
@@ -76,6 +76,27 @@ def test_opportunity_scoring_and_practice_boost() -> None:
     opps = build_opportunities_from_inventory(rows)
     assert opps[0]["type"] == "practice_asset_opportunity"
     assert opps[0]["asset_type"] == "practice_page"
+
+
+def test_gsc_high_impression_low_ctr_query_creates_practice_opportunity() -> None:
+    inventory = [{
+        "url_path": "/blog/posts/bildbeschreibung-schreiben-tipps.html",
+        "content_type": "blog_article",
+        "topic_cluster": "deutsch",
+    }]
+    gsc_rows = [{
+        "query": "bildbeschreibung",
+        "page": "https://nachhilfe-mentor.de/blog/posts/bildbeschreibung-schreiben-tipps.html",
+        "clicks": 2,
+        "impressions": 1000,
+        "ctr": 0.002,
+        "position": 7.3,
+    }]
+    opps = build_gsc_practice_opportunities(gsc_rows, inventory)
+    assert opps
+    assert opps[0]["type"] == "practice_asset_opportunity"
+    assert opps[0]["primary_keyword"] == "bildbeschreibung Übungen mit Lösungen"
+    assert opps[0]["created_by"] == "goal_agent_gsc"
 
 
 def test_posthog_skip_without_credentials(tmp_path: Path, monkeypatch) -> None:
@@ -192,6 +213,21 @@ def test_quality_gate_rejects_visible_umlaut_replacements() -> None:
         grade_level="klasse_8",
     )
     result = check_interactive_page_quality("Mathe Uebungen mit Loesungen", html, "practice_page")
+    assert not result.ok
+    assert any("umlaut" in problem for problem in result.problems)
+
+
+def test_quality_gate_rejects_pruefung_ascii_replacement() -> None:
+    html = render_interactive_page(
+        "pruefungsvorbereitung Übungen mit Lösungen",
+        "Trainiere eine Aufgabe mit Lösung.",
+        "practice_page",
+        "pruefungsvorbereitung",
+        "prüfungsvorbereitung übungen",
+        subject="pruefungsvorbereitung",
+        grade_level="klasse_12",
+    )
+    result = check_interactive_page_quality("pruefungsvorbereitung Übungen mit Lösungen", html, "practice_page")
     assert not result.ok
     assert any("umlaut" in problem for problem in result.problems)
 

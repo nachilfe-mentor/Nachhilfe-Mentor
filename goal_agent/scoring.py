@@ -3,6 +3,7 @@ from __future__ import annotations
 import hashlib
 from dataclasses import dataclass
 from typing import Any
+from urllib.parse import urlparse
 
 
 DEFAULT_WEIGHTS = {
@@ -29,6 +30,26 @@ PRACTICE_INTENT_TERMS = [
     "abi",
     "abitur",
     "arbeitsblatt",
+]
+
+GSC_PRACTICE_MODIFIERS = [
+    "übung",
+    "übungen",
+    "aufgabe",
+    "aufgaben",
+    "beispiel",
+    "beispiele",
+    "lösung",
+    "lösungen",
+    "aufbau",
+    "schreiben",
+    "analyse",
+    "argumentation",
+    "beschreiben",
+    "beschreibung",
+    "bildbeschreibung",
+    "interpretation",
+    "zeitungsartikel",
 ]
 
 
@@ -135,5 +156,67 @@ def build_opportunities_from_inventory(rows: list[dict[str, Any]], metrics: dict
             "status": "scored",
             "next_action": "queue_blog_task" if kind == "content_refresh" else "review_internal_links",
             "created_by": "goal_agent",
+        })
+    return sorted(opportunities, key=lambda item: item["expected_value_score"], reverse=True)
+
+
+def build_gsc_practice_opportunities(gsc_rows: list[dict[str, Any]], inventory_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    inventory_by_path = {row.get("url_path"): row for row in inventory_rows}
+    opportunities: list[dict[str, Any]] = []
+    seen: set[tuple[str, str]] = set()
+    for row in gsc_rows:
+        query = (row.get("query") or "").strip().lower()
+        if not query:
+            continue
+        impressions = int(row.get("impressions") or 0)
+        ctr = float(row.get("ctr") or 0.0)
+        position = float(row.get("position") or 0.0)
+        if impressions < 20 or position < 3 or position > 18 or ctr > 0.04:
+            continue
+        if not any(term in query for term in GSC_PRACTICE_MODIFIERS):
+            continue
+        path = urlparse(row.get("page") or "").path or "/"
+        inventory = inventory_by_path.get(path)
+        if not inventory:
+            continue
+        key = (query, path)
+        if key in seen:
+            continue
+        seen.add(key)
+        practice_keyword = query
+        if not any(term in query for term in ["übung", "übungen", "aufgabe", "aufgaben", "lösung", "lösungen", "test"]):
+            practice_keyword = f"{query} Übungen mit Lösungen"
+        search_demand = clamp(min(1.0, impressions / 1000))
+        ctr_gap = clamp((0.04 - ctr) / 0.04)
+        position_fit = clamp(1 - abs(position - 8) / 12)
+        score = score_opportunity({
+            "search_demand": max(0.45, search_demand),
+            "serp_weakness": max(0.55, ctr_gap),
+            "topical_authority_fit": 0.75,
+            "posthog_conversion_potential": 0.6,
+            "internal_link_value": 0.7,
+            "interactivity_advantage": 0.95,
+            "execution_complexity": 0.4,
+            "privacy_risk": 0.1,
+            "seo_risk": 0.12,
+            "confidence": max(0.6, position_fit),
+        })
+        opp_id = "opp_gsc_" + hashlib.sha1(f"{query}:{path}".encode("utf-8")).hexdigest()[:16]
+        opportunities.append({
+            "id": opp_id,
+            "type": "practice_asset_opportunity",
+            "asset_type": "practice_page",
+            "topic_cluster": inventory.get("topic_cluster") or "deutsch",
+            "primary_keyword": practice_keyword,
+            "intent": "practice",
+            "target_url": path,
+            "evidence": [{
+                "source": "gsc",
+                "summary": f"query={query}, impressions={impressions}, ctr={ctr:.4f}, position={position:.2f}",
+            }],
+            **score.__dict__,
+            "status": "scored",
+            "next_action": "queue_practice_asset",
+            "created_by": "goal_agent_gsc",
         })
     return sorted(opportunities, key=lambda item: item["expected_value_score"], reverse=True)
