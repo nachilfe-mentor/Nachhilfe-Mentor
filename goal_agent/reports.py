@@ -25,15 +25,17 @@ def generate_daily_report(db: Database, settings: Settings, run_id: str, repo_ro
     last_publish_runs = db.query("select * from actions where action_type='auto_publish_goal_agent_changes' order by created_at desc limit 1")
     last_publish = last_publish_runs[0] if last_publish_runs else None
     subagent_runs = db.query("select agent_name, status, recommendation_count from subagent_runs order by created_at desc limit 8")
-    top_recs = db.query("select title, source_agent, priority, suggested_publish_decision, safety_risk from subagent_recommendations order by priority desc limit 5")
     blocked_recs = db.query("select count(*) as c from subagent_recommendations where recommendation_type='hold' or safety_risk='high'")[0]["c"]
     gsc = GSCConnector(settings).analyze()
     if gsc.ok and gsc.configured:
         gsc_status = f"ok ({gsc.summary.get('row_count', 0)} rows)"
+        top_recs = db.query("select title, source_agent, priority, suggested_publish_decision, safety_risk from subagent_recommendations where title not like 'Fix Google Search Console%' order by priority desc limit 5")
     elif gsc.warning:
         gsc_status = gsc.warning
+        top_recs = db.query("select title, source_agent, priority, suggested_publish_decision, safety_risk from subagent_recommendations order by priority desc limit 5")
     else:
         gsc_status = "not configured"
+        top_recs = db.query("select title, source_agent, priority, suggested_publish_decision, safety_risk from subagent_recommendations order by priority desc limit 5")
     lines = [
         "# Goal Agent Daily SEO Report",
         "",
