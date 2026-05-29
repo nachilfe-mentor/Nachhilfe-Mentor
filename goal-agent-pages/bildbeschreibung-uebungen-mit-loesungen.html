@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bildbeschreibung Übungen mit Lösungen | Nachhilfe Mentor</title>
+  <meta name="description" content="Praxisnaher Lern-Check mit Aufgabe, Lösung und nächstem Lernschritt.">
+  <meta name="quality-policy" content="quality-first, adaptive-publishing">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/goal-agent-pages/bildbeschreibung-uebungen-mit-loesungen.html">
+  <link rel="stylesheet" href="/styles/modern-tech.css">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LearningResource", "name": "bildbeschreibung Übungen mit Lösungen", "description": "Praxisnaher Lern-Check mit Aufgabe, Lösung und nächstem Lernschritt.", "learningResourceType": "practice_page", "inLanguage": "de", "isAccessibleForFree": true}</script>
+</head>
+<body data-page-id="tool:bildbeschreibung-uebungen-mit-loesungen" data-slug="bildbeschreibung-uebungen-mit-loesungen" data-topic-cluster="schreibaufgaben" data-primary-keyword="bildbeschreibung Übungen mit Lösungen" data-search-intent="informational" data-content-type="practice_page" data-asset-type="practice_page" data-subject="schreibaufgaben" data-grade-level="mixed" data-exam-type="practice" data-difficulty="mixed" data-solution-mode="step_by_step" data-interaction-type="self_check" data-expected-learning-outcome="Learner can solve a representative task and understand the solution path." data-template-version="interactive-v1">
+  <main class="container" style="max-width: 920px; margin: 0 auto; padding: 48px 20px;">
+    <h1>bildbeschreibung Übungen mit Lösungen</h1>
+    <p>Praxisnaher Lern-Check mit Aufgabe, Lösung und nächstem Lernschritt.</p>
+    <section aria-labelledby="tool-heading">
+      <h2 id="tool-heading">Lern-Check</h2>
+      <p>Wähle eine Schwierigkeit und markiere, wie sicher du dich fühlst. Das Ergebnis bleibt im Browser.</p>
+      <label for="difficulty">Schwierigkeit</label>
+      <select id="difficulty">
+        <option value="leicht">Leicht</option>
+        <option value="mittel">Mittel</option>
+        <option value="schwer">Schwer</option>
+      </select>
+      <label for="confidence">Sicherheit</label>
+      <input id="confidence" type="range" min="1" max="5" value="3">
+      <button type="button" id="check-result">Auswertung anzeigen</button>
+      <button type="button" id="show-solution">Lösung anzeigen</button>
+      <output id="result" aria-live="polite"></output>
+    </section>
+    <section>
+      <h2>Beispielaufgabe mit Lösung</h2>
+      <p><strong>Aufgabe:</strong> Erkläre den wichtigsten Schritt für: bildbeschreibung Übungen mit Lösungen.</p>
+      <p><strong>Lösung:</strong> Zerlege die Aufgabe in bekannte Teilregeln, prüfe jeden Schritt und formuliere am Ende einen kurzen Merksatz.</p>
+      <p><strong>Typischer Fehler:</strong> Zu früh rechnen oder schreiben, ohne die Aufgabenstellung zu markieren.</p>
+    </section>
+    <section>
+      <h2>So nutzt du das Ergebnis</h2>
+      <p>Plane zuerst die unsicheren Themen, wiederhole sie kurz und prüfe danach mit einer kleinen Aufgabe, ob du den Schritt erklären kannst.</p>
+      <ul>
+        <li>Bei niedriger Sicherheit: Grundlagen wiederholen.</li>
+        <li>Bei mittlerer Sicherheit: zwei gemischte Aufgaben lösen.</li>
+        <li>Bei hoher Sicherheit: eine Prüfungsaufgabe unter Zeitdruck testen.</li>
+      </ul>
+      <p>Diese Reihenfolge verhindert, dass du nur die Lösung liest. Du übst zuerst das Erkennen der Aufgabe, dann den Rechen- oder Schreibweg und am Ende die Kontrolle. Genau diese Abfolge ist wichtig, wenn du später in einer Klassenarbeit, Klausur oder mündlichen Prüfung sicher reagieren willst.</p>
+    </section>
+    <section>
+      <h2>Nächster Lernschritt</h2>
+      <p>Notiere nach der Aufgabe einen Satz: Was war die Regel, woran hast du sie erkannt und welcher Fehler wäre typisch? Wenn du diesen Satz ohne Blick in die Lösung formulieren kannst, ist der Stoff bereit für gemischte Aufgaben. Wenn nicht, wiederhole zuerst ein leichteres Beispiel.</p>
+      <p>In der Nachhilfe Mentor App kannst du diesen Lernschritt später mit passenden Wiederholungen verbinden, ohne deine Antworten hier auf der Webseite zu speichern.</p>
+    </section>
+    <section>
+      <h2>Passende nächste Übungen</h2>
+      <p>Vertiefe das Thema mit passenden Erklärungen und Übungsstrategien:</p>
+      <ul>
+        <li><a href="/blog/posts/active-recall-lerntechnik.html">Active Recall nutzen</a></li>
+        <li><a href="/blog/posts/lernplan-erstellen.html">einen Lernplan erstellen</a></li>
+      </ul>
+    </section>
+  </main>
+  <script src="/scripts/posthog-tracking.js" defer></script>
+  <script>
+    var practiceStarted = false;
+    function capturePracticeStarted() {
+      if (practiceStarted) {
+        return;
+      }
+      practiceStarted = true;
+      if (window.posthog && window.posthog.capture) {
+        window.posthog.capture('practice_started', {
+          page_id: 'tool:bildbeschreibung-uebungen-mit-loesungen',
+          slug: 'bildbeschreibung-uebungen-mit-loesungen',
+          asset_type: 'practice_page',
+          subject: 'schreibaufgaben',
+          grade_level: 'mixed',
+          exam_type: 'practice',
+          difficulty: document.getElementById('difficulty').value,
+          interaction_type: 'self_check'
+        });
+      }
+    }
+    document.getElementById('check-result').addEventListener('click', function () {
+      capturePracticeStarted();
+      var value = Number(document.getElementById('confidence').value);
+      var result = value < 3 ? 'Wiederhole zuerst die Grundlagen.' : value === 3 ? 'Übe mit zwei gemischten Aufgaben.' : 'Teste dich mit Zeitlimit.';
+      document.getElementById('result').textContent = result;
+      if (window.posthog && window.posthog.capture) {
+        window.posthog.capture('practice_completed', {
+          page_id: 'tool:bildbeschreibung-uebungen-mit-loesungen',
+          slug: 'bildbeschreibung-uebungen-mit-loesungen',
+          asset_type: 'practice_page',
+          subject: 'schreibaufgaben',
+          grade_level: 'mixed',
+          exam_type: 'practice',
+          topic_cluster: 'schreibaufgaben',
+          primary_keyword: 'bildbeschreibung Übungen mit Lösungen',
+          content_type: 'practice_page',
+          tool_type: 'practice_page',
+          difficulty_level: document.getElementById('difficulty').value,
+          completion_status: 'completed'
+        });
+      }
+    });
+    document.getElementById('show-solution').addEventListener('click', function () {
+      capturePracticeStarted();
+      document.getElementById('result').textContent = 'Lösung: Schritt markieren, Regel anwenden, Ergebnis prüfen.';
+      if (window.posthog && window.posthog.capture) {
+        window.posthog.capture('solution_revealed', {
+          page_id: 'tool:bildbeschreibung-uebungen-mit-loesungen',
+          slug: 'bildbeschreibung-uebungen-mit-loesungen',
+          asset_type: 'practice_page',
+          solution_mode: 'step_by_step',
+          question_type: 'worked_example'
+        });
+      }
+    });
+  </script>
+</body>
+</html>
