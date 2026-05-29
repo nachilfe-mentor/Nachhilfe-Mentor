@@ -213,7 +213,7 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
                     """
                     insert into ideas (id, type, topic_cluster, primary_keyword, intent, evidence_json, confidence, expected_value_score, money_potential_score, traffic_potential_score, execution_complexity, risk_score, status, next_action, created_by, dedupe_key, created_at, updated_at)
                     values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-                    on conflict(dedupe_key) do update set expected_value_score=excluded.expected_value_score, updated_at=excluded.updated_at
+                    on conflict(id) do update set expected_value_score=excluded.expected_value_score, updated_at=excluded.updated_at
                     """,
                     (
                         idea_id, opp["type"], opp.get("topic_cluster"), opp.get("primary_keyword"), opp.get("intent"), json_dumps(opp.get("evidence", [])),
