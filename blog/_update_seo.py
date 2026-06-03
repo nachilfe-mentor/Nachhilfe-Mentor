@@ -144,18 +144,13 @@ def scan_pages():
             path = f"blog/posts/{basename}"
             pages["blog_posts"].append((path, f, 0.7, "monthly"))
 
-    # Goal-Agent SEO/Practice/Interactive pages. Drafts and noindex pages are
-    # intentionally excluded from the sitemap.
+    # Goal-Agent SEO/Practice/Interactive pages are experimental and must not
+    # be indexed automatically. They can be promoted only through a separate,
+    # reviewed publishing path after product-quality approval.
     goal_pages_dir = os.path.join(SITE_DIR, "goal-agent-pages")
     if os.path.isdir(goal_pages_dir):
         for f in sorted(glob.glob(os.path.join(goal_pages_dir, "*.html"))):
-            if has_noindex(f):
-                continue
-            if not is_git_tracked(f):
-                continue
-            basename = os.path.basename(f)
-            path = f"goal-agent-pages/{basename}"
-            pages["goal_agent_pages"].append((path, f, 0.6, "weekly"))
+            continue
 
     # Legal-Seiten (nur wenn KEIN noindex-Tag)
     legal_pages = [
