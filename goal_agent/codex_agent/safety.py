@@ -42,7 +42,7 @@ def validate_task_safety(task: CodingTask) -> list[str]:
         if re.search(pattern, haystack, flags=re.I):
             problems.append(f"blocked risky instruction: {pattern}")
     if task.publish_policy == "draft_noindex_only" and task.mode == "modify_repo":
-        if not any("draft" in allowed or "goal-agent-pages" in allowed for allowed in task.allowed_paths):
+        if not any("draft" in allowed or "lernmaterialien" in allowed for allowed in task.allowed_paths):
             problems.append("draft_noindex tasks must be limited to draft/generated asset paths")
     if task.task_type != "blog_brief_generation" and any(path == "auto-blog.sh" for path in task.allowed_paths):
         problems.append("auto-blog.sh may only be allowed for explicit blog_agent_improvement tasks")

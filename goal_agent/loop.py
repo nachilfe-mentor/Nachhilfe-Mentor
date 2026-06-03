@@ -15,13 +15,12 @@ from .config import REPO_ROOT, Settings, load_settings
 from .context_builder import build_context
 from .draft_promotion import promote_drafts
 from .experiments import create_experiment
-from .interactive import display_topic, generate_page
 from .notifications import notify_daily_update
 from .queue import export_blog_tasks, store_blog_tasks, task_from_opportunity
 from .publishing import AdaptivePublishingThrottle
 from .reports import generate_daily_report
 from .scanners import build_internal_link_graph, read_blog_registry, scan_content
-from .scoring import build_gsc_practice_opportunities, build_opportunities_from_inventory
+from .scoring import build_gsc_practice_opportunities, build_opportunities_from_inventory, dedupe_opportunities
 from .self_improvement import maybe_update_scoring, store_learning
 from .storage import Database, json_dumps, utc_now, write_migration_file
 from .subagents.orchestrator import GoalOrchestrator
@@ -93,6 +92,47 @@ def _display_path(path: Path, repo_root: Path) -> str:
         return str(path)
 
 
+def _learning_simulation_shape(keyword: str, topic_cluster: str) -> str:
+    text = f"{keyword} {topic_cluster}".lower()
+    if any(term in text for term in ["ableitung", "funktion", "gleichung", "bruch", "mathe", "kurvendiskussion"]):
+        return "Mathe-Trainer mit generierten Aufgaben, Antwortprüfung, Rechenweg-Hinweisen, Fehlertypen und adaptiver Wiederholung."
+    if any(term in text for term in ["vokabel", "englisch", "französisch", "spanisch", "latein"]):
+        return "Vokabel- oder Grammatiktrainer mit Eingabe, Abfrage-Runden, Selbstkorrektur, Wiederholung und Fortschritt im Browser."
+    if any(term in text for term in ["bildbeschreibung", "argumentation", "interpretation", "analyse", "aufsatz", "text"]):
+        return "Deutsch-Trainer mit strukturierter Eingabe, Kriterienprüfung, Beispielbausteinen, Feedback und gezielten Korrekturaufgaben."
+    return "Fokussierte Lernsimulation mit aktiver Eingabe, Prüfung, Feedback, Fehlerkorrektur, Wiederholung und sichtbarem Lernfortschritt."
+
+
+def _interactive_task_spec(opportunity: dict[str, Any]) -> str:
+    keyword = opportunity.get("primary_keyword") or "lernen üben"
+    topic_cluster = opportunity.get("topic_cluster") or "allgemein"
+    target_url = opportunity.get("target_url") or ""
+    shape = _learning_simulation_shape(keyword, topic_cluster)
+    return "\n".join([
+        f"# Lernsimulation: {keyword}",
+        "",
+        f"- Primäres Keyword: {keyword}",
+        f"- Suchintent: {opportunity.get('intent') or 'practice'}",
+        f"- Themencluster: {topic_cluster}",
+        f"- Ausgangsseite für interne Links: {target_url or 'noch festlegen'}",
+        f"- Empfohlene Asset-Form: {shape}",
+        "",
+        "Arbeite in mehreren Zyklen, wenn das Ergebnis sonst nur dünn oder generisch würde:",
+        "1. Research/Spec: Zielgruppe, konkretes Lernproblem, Keyword-Variante, Suchintent und Lernziel festlegen.",
+        "2. Prototyp: unter /lernmaterialien/lernsimulationen/ oder /lernmaterialien/entwuerfe/ als noindex bauen.",
+        "3. QA: mobile Layouts, echte Interaktion, Antwortprüfung, Feedback, Fehlerbehandlung, Wiederholung und korrekte Umlaute prüfen.",
+        "4. Promotion: erst nach Qualitätsgate indexierbar nach /lernmaterialien/ verschieben, mit Canonical, Schema, internen Links und Sitemap.",
+        "",
+        "Mindestanforderungen:",
+        "- Lernende müssen eine eigene Antwort eingeben oder eine echte Entscheidung treffen; reine Lösungskarten reichen nicht.",
+        "- Nach Fehlern muss die Seite erklären, welcher Schritt falsch war und eine passende Wiederholungsaufgabe geben.",
+        "- Das Design muss modern, responsive und passend zu Nachhilfe Mentor sein; keine verschachtelten Karten und keine wackeligen Controls.",
+        "- Sichtbarer deutscher Text muss ä, ö, ü, Ä, Ö, Ü und ß korrekt nutzen.",
+        "- Tracking bleibt privacy-safe und erfasst keine Freitextantworten.",
+        "- SEO ist strategisch: ein klares Hauptkeyword, hilfreicher Titel, Meta Description, LearningResource/Quiz-Schema und interne Links.",
+    ])
+
+
 def _store_interactive_task(db: Database, run_id: str, opportunity: dict[str, Any]) -> str:
     task_id = "practice_task_" + opportunity["id"].replace("opp_", "")
     now = utc_now()
@@ -127,7 +167,7 @@ def _store_interactive_task(db: Database, run_id: str, opportunity: dict[str, An
                 opportunity.get("primary_keyword"),
                 opportunity.get("intent") or "informational",
                 (opportunity.get("target_url") or "practice").rsplit("/", 1)[-1].replace(".html", "") + "-uebungen",
-                "Create a practice-first SEO asset with real exercises, clear solutions, difficulty progression, internal links, metadata, and privacy-safe tracking.",
+                _interactive_task_spec(opportunity),
                 json_dumps(["practice_started", "practice_completed", "answer_checked", "solution_revealed", "retry_clicked", "app_cta_clicked_from_practice"]),
                 json_dumps(["LearningResource", "Quiz"]),
                 "passed_static_rules",
@@ -171,7 +211,7 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
         inventory_opportunities = build_opportunities_from_inventory(content_rows, metrics={})
         gsc_opportunities = build_gsc_practice_opportunities(gsc.summary.get("queries", []), content_rows) if gsc.ok else []
         opportunities_by_id = {opp["id"]: opp for opp in [*inventory_opportunities, *gsc_opportunities]}
-        opportunities = sorted(opportunities_by_id.values(), key=lambda item: item["expected_value_score"], reverse=True)
+        opportunities = dedupe_opportunities(list(opportunities_by_id.values()))
         publishing_decisions = {
             item.opportunity_id: item
             for item in AdaptivePublishingThrottle(settings.emergency_max_generated_pages_per_run).decide(
@@ -249,31 +289,22 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
         if settings.page_generation_enabled and publishable:
             top = publishable[0]
             publishing_decision = publishing_decisions[top["id"]]
-            is_practice = top.get("type") == "practice_asset_opportunity"
-            topic_label = display_topic(top.get("topic_cluster") or "Lernen")
-            title = (top.get("primary_keyword") or "").strip()
-            if is_practice:
-                if not any(term in title.lower() for term in ["übung", "übungen", "aufgabe", "aufgaben", "test"]):
-                    title = f"{title or topic_label} Übungen mit Lösungen"
-            else:
-                title = f"{topic_label} Lern-Check"
-            path, quality = generate_page(
-                settings,
-                title,
-                "Praxisnaher Lern-Check mit Aufgabe, Lösung und nächstem Lernschritt.",
-                "practice_page" if is_practice else "learning_utility",
-                top.get("topic_cluster") or "allgemein",
-                top.get("primary_keyword") or "lernen",
-                subject=top.get("topic_cluster") or "allgemein",
-                grade_level="mixed",
-                exam_type="practice",
-                difficulty="mixed",
-                solution_mode="step_by_step",
-                interaction_type="self_check",
-                expected_learning_outcome="Learner can solve a representative task and understand the solution path.",
-                indexable=publishing_decision.indexable,
+            _log_action(
+                db,
+                run_id,
+                None,
+                "defer_learning_material_generation",
+                "interactive_page",
+                top["id"],
+                "skipped",
+                [],
+                [
+                    "Direct one-cycle HTML generation disabled for learning materials",
+                    f"Adaptive publishing candidate: {publishing_decision.action}",
+                    "Use queued spec/prototype/QA/promotion cycle instead",
+                    *publishing_decision.reasons,
+                ],
             )
-            _log_action(db, run_id, None, "generate_interactive_page", "interactive_page", str(path) if path else None, "completed" if path else "skipped", [str(path.relative_to(settings.repo_root))] if path else [], [f"Adaptive publishing: {publishing_decision.action}", f"Quality score: {quality.score}", *publishing_decision.reasons])
         promotion_results = promote_drafts(settings)
         promoted_files = [
             str(result.published_path.relative_to(settings.repo_root))
@@ -409,7 +440,7 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
             [
                 publish_result.message,
                 f"Pushed: {publish_result.pushed}",
-                "Allowed paths only: goal-agent-pages, goal_agent/generated_tools, sitemap.xml, feed.xml",
+                "Allowed paths only: lernmaterialien, goal_agent/generated_tools, sitemap.xml, feed.xml",
             ],
         )
         summary = f"Scanned {len(content_rows)} pages, scored {len(opportunities)} opportunities, exported {len(top_tasks)} blog tasks, queued {codex_tasks_created} Codex tasks."

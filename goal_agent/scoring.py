@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import re
 from dataclasses import dataclass
 from typing import Any
 from urllib.parse import urlparse
@@ -51,6 +52,37 @@ GSC_PRACTICE_MODIFIERS = [
     "interpretation",
     "zeitungsartikel",
 ]
+
+PRACTICE_KEYWORD_FILLERS = [
+    "übungen",
+    "übung",
+    "uebungen",
+    "uebung",
+    "aufgaben",
+    "aufgabe",
+    "mit lösungen",
+    "mit lösung",
+    "mit loesungen",
+    "mit loesung",
+    "lösungen",
+    "lösung",
+    "loesungen",
+    "loesung",
+    "beispiele",
+    "beispiel",
+    "arbeitsblatt",
+    "klausur",
+    "test",
+]
+
+PRACTICE_KEYWORD_SYNONYMS = {
+    "bild beschreiben": "bildbeschreibung",
+    "bilder beschreiben": "bildbeschreibung",
+    "bildbeschreibung schreiben": "bildbeschreibung",
+    "ableitungen": "ableitung",
+    "vokabel": "vokabeln",
+    "vokabeltraining": "vokabeln",
+}
 
 
 @dataclass(frozen=True)
@@ -114,6 +146,35 @@ def score_opportunity(signals: dict[str, float]) -> OpportunityScore:
     )
 
 
+def normalize_practice_keyword(keyword: str | None) -> str:
+    normalized = (keyword or "").strip().lower()
+    normalized = normalized.replace("ß", "ss")
+    for phrase, replacement in sorted(PRACTICE_KEYWORD_SYNONYMS.items(), key=lambda item: len(item[0]), reverse=True):
+        normalized = re.sub(rf"\b{re.escape(phrase)}\b", replacement, normalized)
+    for filler in sorted(PRACTICE_KEYWORD_FILLERS, key=len, reverse=True):
+        normalized = re.sub(rf"\b{re.escape(filler)}\b", " ", normalized)
+    normalized = re.sub(r"\s+", " ", normalized).strip()
+    return normalized
+
+
+def dedupe_opportunities(opportunities: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    best_by_key: dict[tuple[str, str, str], dict[str, Any]] = {}
+    passthrough: list[dict[str, Any]] = []
+    for opportunity in opportunities:
+        if opportunity.get("type") != "practice_asset_opportunity":
+            passthrough.append(opportunity)
+            continue
+        key = (
+            opportunity.get("type") or "",
+            opportunity.get("target_url") or "",
+            normalize_practice_keyword(opportunity.get("primary_keyword")),
+        )
+        current = best_by_key.get(key)
+        if not current or opportunity.get("expected_value_score", 0) > current.get("expected_value_score", 0):
+            best_by_key[key] = opportunity
+    return sorted([*passthrough, *best_by_key.values()], key=lambda item: item["expected_value_score"], reverse=True)
+
+
 def build_opportunities_from_inventory(rows: list[dict[str, Any]], metrics: dict[str, Any] | None = None) -> list[dict[str, Any]]:
     metrics = metrics or {}
     opportunities: list[dict[str, Any]] = []
@@ -157,7 +218,7 @@ def build_opportunities_from_inventory(rows: list[dict[str, Any]], metrics: dict
             "next_action": "queue_blog_task" if kind == "content_refresh" else "review_internal_links",
             "created_by": "goal_agent",
         })
-    return sorted(opportunities, key=lambda item: item["expected_value_score"], reverse=True)
+    return dedupe_opportunities(opportunities)
 
 
 def build_gsc_practice_opportunities(gsc_rows: list[dict[str, Any]], inventory_rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -179,13 +240,13 @@ def build_gsc_practice_opportunities(gsc_rows: list[dict[str, Any]], inventory_r
         inventory = inventory_by_path.get(path)
         if not inventory:
             continue
-        key = (query, path)
-        if key in seen:
-            continue
-        seen.add(key)
         practice_keyword = query
         if not any(term in query for term in ["übung", "übungen", "aufgabe", "aufgaben", "lösung", "lösungen", "test"]):
             practice_keyword = f"{query} Übungen mit Lösungen"
+        key = (normalize_practice_keyword(practice_keyword), path)
+        if key in seen:
+            continue
+        seen.add(key)
         search_demand = clamp(min(1.0, impressions / 1000))
         ctr_gap = clamp((0.04 - ctr) / 0.04)
         position_fit = clamp(1 - abs(position - 8) / 12)
@@ -219,4 +280,4 @@ def build_gsc_practice_opportunities(gsc_rows: list[dict[str, Any]], inventory_r
             "next_action": "queue_practice_asset",
             "created_by": "goal_agent_gsc",
         })
-    return sorted(opportunities, key=lambda item: item["expected_value_score"], reverse=True)
+    return dedupe_opportunities(opportunities)

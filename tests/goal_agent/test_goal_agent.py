@@ -8,16 +8,79 @@ from goal_agent.autopublish import auto_publish
 from goal_agent.config import Settings
 from goal_agent.draft_promotion import promote_drafts
 from goal_agent.interactive import render_interactive_page
-from goal_agent.loop import run_cycle
+from goal_agent.loop import _interactive_task_spec, run_cycle
 from goal_agent.notifications import TelegramNotifier, build_daily_update
 from goal_agent.publishing import AdaptivePublishingThrottle
 from goal_agent.quality import check_interactive_page_quality
 from goal_agent.queue import validate_blog_task
 from goal_agent.scanners import scan_content
-from goal_agent.scoring import build_gsc_practice_opportunities, build_opportunities_from_inventory, score_opportunity
+from goal_agent.scoring import build_gsc_practice_opportunities, build_opportunities_from_inventory, normalize_practice_keyword, score_opportunity
 from goal_agent.self_improvement import store_learning
 from goal_agent.storage import Database
 from goal_agent.toolsmith import ToolRegistry
+
+
+def high_quality_practice_html(noindex: bool = False) -> str:
+    robots = '<meta name="robots" content="noindex,follow">' if noindex else ""
+    return f"""<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Mathe Ableitungs-Trainer | Nachhilfe Mentor</title>
+  <meta name="description" content="Übe Ableitungsregeln mit aktiver Antwortprüfung, Hinweisen, Fehleranalyse und Wiederholung.">
+  {robots}
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/mathe-ableitungs-trainer.html">
+  <script type="application/ld+json">{{"@context":"https://schema.org","@type":"LearningResource","name":"Mathe Ableitungs-Trainer","learningResourceType":"practice_page","inLanguage":"de"}}</script>
+</head>
+<body data-subject="mathematik" data-grade-level="klasse_10" data-asset-type="practice_page" data-topic-cluster="mathematik" data-primary-keyword="ableitung übungen mit lösungen">
+  <main>
+    <h1>Mathe Ableitungs-Trainer</h1>
+    <p>Diese Lernsimulation hilft beim Ableiten, weil Lernende aktiv antworten, Fehler erkennen und ähnliche Aufgaben wiederholen. Der Ablauf ist: Regel erkennen, Antwort eintippen, prüfen, Hinweis lesen und danach eine neue Aufgabe lösen. So entsteht mehr Lernwert als bei einem reinen Artikel oder einer statischen Musterlösung.</p>
+    <section>
+      <h2>Aufgabe</h2>
+      <p><strong>Leicht:</strong> Leite f(x)=3x² ab. <strong>Mittel:</strong> Leite f(x)=2x³-4x ab. <strong>Schwer:</strong> Nutze die Produktregel für f(x)=x²(x+3).</p>
+      <label for="answer">Deine Antwort</label>
+      <input id="answer" name="answer" autocomplete="off" placeholder="z. B. 6x">
+      <button type="button" id="check">Prüfen</button>
+      <button type="button" id="hint">Hinweis anzeigen</button>
+      <button type="button" id="next">Neue Aufgabe</button>
+      <output id="feedback" aria-live="polite">Noch keine Antwort geprüft.</output>
+    </section>
+    <section>
+      <h2>Fehler und Wiederholung</h2>
+      <p>Wenn eine Antwort falsch ist, landet sie in der Fehlerliste. Danach zeigt die Seite einen Hinweis zur Regel, zum Beispiel: Bei xⁿ wird der Exponent nach vorn gezogen und um eins verringert. Danach folgt eine ähnliche Wiederholung, damit der Fehler nicht nur gelesen, sondern aktiv korrigiert wird.</p>
+      <p>Die Seite erklärt außerdem, warum die Antwort falsch war. Ein typischer Fehler ist, nur den Exponenten zu verändern und den Faktor zu vergessen. Ein anderer Fehler ist, Konstanten weiter mitzuschreiben, obwohl sie beim Ableiten wegfallen. Die Lernsimulation soll deshalb nach jeder falschen Antwort den betroffenen Schritt markieren: Regelwahl, Einsetzen, Vereinfachen oder Kontrolle. Lernende sehen nicht nur die Lösung, sondern üben den nächsten passenden Schritt direkt erneut.</p>
+      <p>Für die Wiederholung erzeugt die Seite mehrere ähnliche Aufgaben. Wer drei Aufgaben in Folge richtig löst, wechselt auf ein höheres Niveau. Wer zweimal denselben Fehlertyp macht, bekommt zuerst eine leichtere Aufgabe mit Hinweis. Dadurch entsteht ein echter Lernpfad: Die Seite reagiert auf Leistung, speichert nur anonyme Fortschrittswerte im Browser und vermeidet Freitext-Tracking. Das Ziel ist, dass Schülerinnen und Schüler die Ableitungsregel selbst anwenden können, nicht nur ein fertiges Ergebnis abschreiben.</p>
+      <p>Die Lernseite ist keyword-orientiert, aber nicht keyword-gestopft. Sie passt zum Suchintent von „Ableitung Übungen mit Lösungen“, verlinkt auf den erklärenden Blogartikel und ergänzt ihn durch aktive Übung. Genau diese Kombination ist der Grund, warum eine spätere indexierbare Version in Google sichtbar sein darf: Der Artikel erklärt, die Lernsimulation trainiert.</p>
+      <ul>
+        <li>Fehler: Exponent nach vorn ziehen vergessen.</li>
+        <li>Hinweis: Erst Regel nennen, dann rechnen.</li>
+        <li>Wiederholung: Ähnliche Aufgabe ohne Lösungshilfe lösen.</li>
+      </ul>
+      <p><a href="/blog/posts/ableitung-berechnen-tipps.html">Ableitungsregeln wiederholen</a></p>
+    </section>
+  </main>
+  <script>
+    const accepted = ["6x"];
+    let practice_started = false;
+    function answer_checked() {{
+      practice_started = true;
+      const value = document.getElementById("answer").value.trim().toLowerCase();
+      const feedback = document.getElementById("feedback");
+      if (accepted.includes(value)) {{
+        feedback.textContent = "Richtig. Nächste Wiederholung: eine ähnliche Aufgabe ohne Hinweis lösen.";
+        window.practice_completed = true;
+      }} else {{
+        feedback.textContent = "Noch nicht. Fehler prüfen: Potenzregel anwenden, dann vereinfachen.";
+      }}
+    }}
+    document.getElementById("check").addEventListener("click", answer_checked);
+    document.getElementById("hint").addEventListener("click", function solution_revealed() {{
+      document.getElementById("feedback").textContent = "Hinweis: x² wird zu 2x, der Faktor 3 bleibt stehen.";
+    }});
+  </script>
+</body>
+</html>"""
 
 
 def settings(tmp_path: Path) -> Settings:
@@ -97,6 +160,53 @@ def test_gsc_high_impression_low_ctr_query_creates_practice_opportunity() -> Non
     assert opps[0]["type"] == "practice_asset_opportunity"
     assert opps[0]["primary_keyword"] == "bildbeschreibung Übungen mit Lösungen"
     assert opps[0]["created_by"] == "goal_agent_gsc"
+
+
+def test_gsc_practice_opportunities_dedupe_same_asset_intent() -> None:
+    inventory = [{
+        "url_path": "/blog/posts/bildbeschreibung-schreiben-tipps.html",
+        "content_type": "blog_article",
+        "topic_cluster": "deutsch",
+    }]
+    gsc_rows = [
+        {
+            "query": "bildbeschreibung",
+            "page": "https://nachhilfe-mentor.de/blog/posts/bildbeschreibung-schreiben-tipps.html",
+            "clicks": 2,
+            "impressions": 1000,
+            "ctr": 0.002,
+            "position": 7.3,
+        },
+        {
+            "query": "bildbeschreibung übungen mit lösungen",
+            "page": "https://nachhilfe-mentor.de/blog/posts/bildbeschreibung-schreiben-tipps.html",
+            "clicks": 1,
+            "impressions": 900,
+            "ctr": 0.001,
+            "position": 8.1,
+        },
+    ]
+    opps = build_gsc_practice_opportunities(gsc_rows, inventory)
+    assert len(opps) == 1
+
+
+def test_practice_keyword_normalization_keeps_valid_stems() -> None:
+    assert normalize_practice_keyword("Vokabeltraining Übungen mit Lösungen") == "vokabeln"
+    assert normalize_practice_keyword("Quelle analysieren Übungen") == "quelle analysieren"
+
+
+def test_interactive_task_spec_requires_learning_simulation_cycles() -> None:
+    spec = _interactive_task_spec({
+        "primary_keyword": "ableitung übungen mit lösungen",
+        "topic_cluster": "mathematik",
+        "target_url": "/blog/posts/ableitung-berechnen-tipps.html",
+        "intent": "practice",
+    })
+    assert "/lernmaterialien/lernsimulationen/" in spec
+    assert "Antwortprüfung" in spec
+    assert "Wiederholungsaufgabe" in spec
+    assert "Promotion" in spec
+    assert "Hauptkeyword" in spec
 
 
 def test_posthog_skip_without_credentials(tmp_path: Path, monkeypatch) -> None:
@@ -187,19 +297,31 @@ def test_event_schema_has_no_blocked_properties() -> None:
 
 
 def test_practice_page_quality_gate() -> None:
-    html = render_interactive_page(
-        "Mathe Übungen mit Lösungen",
-        "Trainiere eine Aufgabe mit Lösung.",
-        "practice_page",
-        "mathematik",
-        "mathe übungen",
-        subject="mathematik",
-        grade_level="klasse_8",
-    )
+    html = high_quality_practice_html()
     result = check_interactive_page_quality("Mathe Übungen mit Lösungen", html, "practice_page")
     assert result.ok, result.problems
-    assert "practice_completed" in html
-    assert "solution_revealed" in html
+    assert "answer_checked" in html
+    assert "Neue Aufgabe" in html
+
+
+def test_quality_gate_rejects_generic_low_value_learning_check() -> None:
+    html = """<!doctype html>
+<html lang="de">
+<head><title>Mathe Übungen mit Lösungen</title><meta name="description" content="Trainiere eine Aufgabe mit Lösung."></head>
+<body data-asset-type="practice_page" data-primary-keyword="mathe übungen">
+  <main>
+    <h1>Mathe Übungen mit Lösungen</h1>
+    <section>
+      <h2>Lern-Check</h2>
+      <p>Wähle eine Schwierigkeit und markiere, wie sicher du dich fühlst.</p>
+      <button type="button">Lösung anzeigen</button>
+    </section>
+  </main>
+</body>
+</html>"""
+    result = check_interactive_page_quality("Mathe Übungen mit Lösungen", html, "practice_page")
+    assert not result.ok
+    assert any("low-value" in problem or "repeated practice" in problem for problem in result.problems)
 
 
 def test_quality_gate_rejects_visible_umlaut_replacements() -> None:
@@ -300,20 +422,9 @@ def test_telegram_notifier_disabled_is_non_fatal(tmp_path: Path) -> None:
 
 def test_draft_promotion_promotes_only_quality_approved_noindex_drafts(tmp_path: Path) -> None:
     repo = tmp_path / "repo"
-    drafts = repo / "goal-agent-pages" / "drafts"
+    drafts = repo / "lernmaterialien" / "entwuerfe"
     drafts.mkdir(parents=True)
-    html = render_interactive_page(
-        "Mathe Übungen mit Lösungen",
-        "Übungsseite mit Lösungen, Schwierigkeitsprogression und interaktivem Selbstcheck.",
-        "practice_page",
-        "mathematik",
-        "mathe übungen",
-        indexable=False,
-    ).replace(
-        "</main>",
-        '<p><strong>Draft/noindex:</strong> Diese Übungsseite ist ein nicht indexierbarer Entwurf.</p>'
-        '<p><a href="/blog/posts/binomische-formeln-lernen.html">Binomische Formeln üben</a></p></main>',
-    )
+    html = high_quality_practice_html(noindex=True)
     (drafts / "mathe-uebungen-practice-draft.html").write_text(html, encoding="utf-8")
     cfg = Settings(
         repo_root=repo,
@@ -324,7 +435,7 @@ def test_draft_promotion_promotes_only_quality_approved_noindex_drafts(tmp_path:
     results = promote_drafts(cfg)
     promoted = [result for result in results if result.status == "promoted"]
     assert len(promoted) == 1
-    published = repo / "goal-agent-pages" / "mathe-uebungen.html"
+    published = repo / "lernmaterialien" / "mathe-uebungen.html"
     assert published.exists()
     published_html = published.read_text(encoding="utf-8")
     assert "noindex" not in published_html
@@ -355,9 +466,9 @@ def test_auto_publish_pushes_only_allowed_paths(tmp_path: Path, monkeypatch) -> 
 
         proc = Proc()
         if args[:3] == ["git", "status", "--short"]:
-            proc.stdout = "?? goal-agent-pages/new.html\n M auto-blog.log\n"
+            proc.stdout = "?? lernmaterialien/new.html\n M auto-blog.log\n"
         if args[:4] == ["git", "diff", "--cached", "--name-only"]:
-            proc.stdout = "goal-agent-pages/new.html\n"
+            proc.stdout = "lernmaterialien/new.html\n"
         return proc
 
     monkeypatch.setattr("goal_agent.autopublish._run", fake_run)
@@ -369,7 +480,7 @@ def test_auto_publish_pushes_only_allowed_paths(tmp_path: Path, monkeypatch) -> 
     result = auto_publish(cfg)
     assert result.ok
     assert result.pushed
-    assert result.changed_files == ["goal-agent-pages/new.html"]
+    assert result.changed_files == ["lernmaterialien/new.html"]
     assert ["git", "push", "origin", "main"] in calls
     add_call = next(call for call in calls if call[:3] == ["git", "add", "--"])
     assert "auto-blog.log" not in add_call
@@ -423,7 +534,7 @@ def test_daily_update_reports_real_publish_status(tmp_path: Path) -> None:
             "auto_publish_goal_agent_changes",
             "site",
             "published",
-            '["goal-agent-pages/test.html"]',
+            '["lernmaterialien/test.html"]',
             '["Pushed: True"]',
             "2026-05-29T00:00:00Z",
             "2026-05-29T00:00:00Z",

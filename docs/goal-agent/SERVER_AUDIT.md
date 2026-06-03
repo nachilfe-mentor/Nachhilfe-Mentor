@@ -237,7 +237,7 @@ The Blog Agent prompt asks the model to:
 Main strategy clusters in the compact context:
 
 - Lernmethoden
-- Pruefungsvorbereitung
+- Prüfungsvorbereitung
 - KI und Bildung
 - Motivation
 - Schule/Studium Alltag

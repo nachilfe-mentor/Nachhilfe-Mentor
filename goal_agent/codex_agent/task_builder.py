@@ -28,15 +28,46 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
             id=_task_id(rec.id),
             source_recommendation_id=rec.id,
             task_type="practice_page",
-            title=f"Draft practice asset: {rec.title}",
-            goal="Create a high-quality draft/noindex practice asset spec or page draft. Do not publish it indexable.",
+            title=f"Draft learning simulation: {rec.title}",
+            goal=(
+                "Build a high-quality interactive learning simulation. "
+                "Follow these steps in order — do NOT skip step 1:\n\n"
+                "STEP 1 — RESEARCH & SPEC (mandatory before any code):\n"
+                "  Research the topic thoroughly. Write a spec file to lernmaterialien/entwuerfe/<slug>-spec.md containing:\n"
+                "  - The exact physical, chemical, or mathematical model (with formula or rule)\n"
+                "  - What the learner will see and interact with (describe the animation/diagram)\n"
+                "  - The active tasks (predictions, inputs) and what correct/incorrect looks like\n"
+                "  - The misconception(s) the simulation addresses\n"
+                "  - Why this is better than a plain article for this keyword\n"
+                "  If you cannot write a convincing spec, STOP. Save a research note to goal_agent/exports/<slug>-research-needed.md "
+                "  explaining what information is missing. Do not build a simulation without a solid spec.\n\n"
+                "STEP 2 — BUILD (only after a solid spec exists):\n"
+                "  Build the simulation as a single self-contained HTML file in lernmaterialien/lernsimulationen/.\n"
+                "  The simulation MUST have: a visible animated model (canvas or DOM), at least one prediction/input task, "
+                "  feedback that names the specific concept or law, and a 2-step progression.\n"
+                "  The underlying model must be factually correct — cross-check against your spec.\n\n"
+                "STEP 3 — SELF-CHECK:\n"
+                "  Before finishing, verify: (a) the simulation is factually correct, (b) it works at 375 px width, "
+                "  (c) all German text uses correct umlauts, (d) noindex is set, (e) tests pass.\n\n"
+                "IMPORTANT: producing something thin, static, or factually wrong is worse than producing nothing. "
+                "If the simulation would not genuinely help a student understand the concept better than reading the blog post, do not publish it."
+            ),
             context_summary=f"{rec.rationale}\nTarget topic: {rec.target_topic}\nTarget URL: {rec.target_url or ''}",
-            allowed_paths=["goal-agent-pages/drafts/", "goal_agent/exports/", "tests/goal_agent/"],
+            allowed_paths=["lernmaterialien/entwuerfe/", "lernmaterialien/lernsimulationen/", "goal_agent/exports/", "tests/goal_agent/"],
             forbidden_paths=["auto-blog.sh", "blog/posts/", "blog/articles/", ".env", "/etc/nachhilfe-mentor", "*service-account*.json", ".git/"],
             acceptance_criteria=[
                 *rec.acceptance_criteria,
-                "Generated asset is draft/noindex or spec only.",
-                "No live publish, push, deploy, or sitemap indexable inclusion.",
+                "A spec file must exist in lernmaterialien/entwuerfe/ before the simulation HTML is created.",
+                "If no convincing spec could be written, a research-needed note must exist in goal_agent/exports/ and no simulation HTML is created.",
+                "The simulation shows a visible animated model — canvas animation, SVG, or DOM-based diagram.",
+                "The learner makes at least one active prediction or input before seeing the result.",
+                "Feedback names the specific concept or physical/chemical law, not just 'richtig' or 'falsch'.",
+                "At least 2-step progression is present.",
+                "The underlying model is factually correct (verified in spec).",
+                "Generated asset uses: lernmaterialien/entwuerfe/ (spec), lernmaterialien/lernsimulationen/ (prototype).",
+                "All user-facing German copy must use correct umlauts; ASCII replacements are forbidden in visible text.",
+                "Do not ship a weak one-cycle result; always write the spec first and leave the simulation noindex until the quality gate passes.",
+                "noindex is set; no push or deploy; sitemap inclusion only after promotion gates pass.",
             ],
             safety_constraints=COMMON_SAFETY,
             test_commands=["python3 -m pytest tests/goal_agent -q"],

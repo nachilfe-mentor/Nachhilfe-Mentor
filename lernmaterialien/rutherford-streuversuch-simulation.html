@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Rutherford-Streuversuch Simulation – Atomkernmodell interaktiv | Nachhilfe Mentor</title>
+  <meta name="description" content="Simuliere den Rutherford-Streuversuch: Verändere Energie, Kernladung und Foliendicke und beobachte, wie Alphateilchen am Atomkern gestreut werden. Mit Histogramm und Vorhersage-Aufgaben.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Rutherford Streuversuch Simulation, Rutherford Experiment interaktiv, Atomkern Modell Schule, Rutherford Streuversuch erklärung, Physik Simulation Schule, Alphateilchen Streuung">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/rutherford-streuversuch-simulation.html">
+  <meta property="og:title" content="Rutherford-Streuversuch: Interaktive Simulation für die Schule">
+  <meta property="og:description" content="Simuliere den Rutherford-Streuversuch: Verändere Energie, Kernladung und Foliendicke und beobachte, wie Alphateilchen am Atomkern gestreut werden. Mit Histogramm und Vorhersage-Aufgaben.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/rutherford-streuversuch-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Rutherford-Streuversuch Simulation",
+  "description":"Interaktive Simulation des Rutherford-Streuversuchs: Energie, Kernladung und Foliendicke veränderbar, Streuwinkel-Histogramm, Vorhersage-Aufgaben.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/rutherford-streuversuch-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "educationLevel":"Gymnasium Klasse 10–13",
+  "about":{"@type":"Thing","name":"Rutherford-Streuversuch, Atomkernmodell"},
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+}</script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #172033;
+      --muted: #5d687c;
+      --line: #d9e1ec;
+      --blue: #0f5fa8;
+      --cyan: #13b7d8;
+      --green: #0b8f6a;
+      --amber: #d18a00;
+      --bg: #f5f8fc;
+      --panel: #ffffff;
+    }
+
+.site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+.site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+.site-nav a:hover{color:#fff}
+.site-footer{max-width:1100px;margin:40px auto 0;padding:28px 22px 40px;border-top:1px solid #d9e1ec}
+.footer-links{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px}
+.footer-links a{display:inline-block;padding:8px 16px;background:#f0f5fc;border:1px solid #d9e1ec;border-radius:6px;color:#0f5fa8;text-decoration:none;font-size:.88rem;font-weight:600}
+.footer-links a:hover{background:#dceeff}
+.footer-meta{font-size:.83rem;color:#8a9ab0}
+.footer-meta a{color:#5d6b7e}
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+    header, main { max-width: 1180px; margin: 0 auto; padding: 22px; }
+    header { display: grid; gap: 8px; }
+    h1 { margin: 0; font-size: clamp(1.8rem, 3vw, 3rem); line-height: 1.05; letter-spacing: 0; }
+    h2 { margin: 0 0 12px; font-size: 1.05rem; }
+    p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1.45fr) 360px; gap: 18px; align-items: start; }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 12px 36px rgba(28, 49, 80, 0.08);
+    }
+    .stage { padding: 14px; }
+    canvas { width: 100%; aspect-ratio: 16 / 10; display: block; border-radius: 6px; background: #08111f; }
+    .controls { padding: 16px; display: grid; gap: 16px; }
+    label { display: grid; gap: 7px; font-weight: 700; font-size: .92rem; }
+    input[type="range"], select, input[type="number"] { width: 100%; }
+    select, input[type="number"] {
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 8px 10px;
+      font: inherit;
+      background: #fff;
+    }
+    .row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    button {
+      min-height: 42px;
+      border: 0;
+      border-radius: 6px;
+      background: var(--blue);
+      color: white;
+      font-weight: 800;
+      cursor: pointer;
+    }
+    button.secondary { background: #e8eef6; color: var(--ink); }
+    .metrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
+    .metric { border: 1px solid var(--line); border-radius: 8px; padding: 12px; background: #fff; }
+    .metric strong { display: block; font-size: 1.4rem; color: var(--blue); }
+    .task { padding: 16px; display: grid; gap: 12px; }
+    output { min-height: 44px; display: block; padding: 11px 12px; border-radius: 6px; background: #eef8fb; color: #10465a; }
+    output.correct { background: #e6f9f2; color: #065c3c; }
+    output.wrong { background: #fef2f2; color: #7b1d1d; }
+    .histogram-wrap { padding: 12px; border-top: 1px solid var(--line); }
+    .histogram-label { display: flex; justify-content: space-between; font-size: .73rem; color: var(--muted); margin-bottom: 4px; padding: 0 2px; }
+    .histogram { height: 130px; display: grid; grid-template-columns: repeat(9, 1fr); gap: 5px; align-items: end; }
+    .bar { min-height: 3px; border-radius: 4px 4px 0 0; background: linear-gradient(180deg, var(--cyan), var(--blue)); }
+    .context-box { margin-top: 14px; padding: 12px 14px; border-radius: 6px; background: #f0f5fc; border-left: 3px solid var(--blue); font-size: .88rem; color: var(--muted); line-height: 1.5; }
+    .progress { display: flex; gap: 6px; align-items: center; }
+    .progress-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--line); border: 2px solid var(--line); transition: background .2s; }
+    .progress-dot.done { background: var(--green); border-color: var(--green); }
+    .progress-dot.active { background: var(--blue); border-color: var(--blue); }
+    .task-label { font-size: .8rem; color: var(--muted); font-weight: 700; }
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+      header, main { padding: 16px; }
+      .metrics { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+  <header>
+    <h1>Rutherford-Versuch: Streuung sichtbar machen</h1>
+    <p>Verändere Energie, Kernladung und Foliendicke. Beobachte, warum die meisten Alphateilchen fast geradeaus fliegen und wenige stark abgelenkt werden.</p>
+  </header>
+  <main class="layout">
+    <section class="panel stage" aria-label="Simulation">
+      <canvas id="sim" width="960" height="600"></canvas>
+      <div class="metrics">
+        <div class="metric"><span>Teilchen</span><strong id="count">0</strong></div>
+        <div class="metric"><span>Stark gestreut (&gt;18°)</span><strong id="strong">0%</strong></div>
+        <div class="metric"><span>Zurückgestreut (&gt;90°)</span><strong id="back">0%</strong></div>
+      </div>
+      <div class="histogram-wrap">
+        <div class="histogram-label">
+          <span>0°</span><span>20°</span><span>40°</span><span>60°</span><span>80°</span><span>100°</span><span>120°</span><span>140°</span><span>160°–180°</span>
+        </div>
+        <div class="histogram" id="histogram" aria-label="Streuwinkel-Verteilung"></div>
+      </div>
+    </section>
+    <aside class="panel controls">
+      <h2>Experiment einstellen</h2>
+      <label>Alphateilchen-Energie <span id="energyLabel">6,0 MeV</span><input id="energy" type="range" min="2" max="10" step="0.5" value="6"></label>
+      <label>Kernladungszahl Z <span id="chargeLabel">Gold: Z = 79</span><input id="charge" type="range" min="20" max="90" step="1" value="79"></label>
+      <label>Foliendicke <span id="thickLabel">4 Atomlagen</span><input id="thickness" type="range" min="1" max="10" step="1" value="4"></label>
+      <div class="row">
+        <button id="run" type="button">Start</button>
+        <button id="reset" type="button" class="secondary">Zurücksetzen</button>
+      </div>
+      <section class="task">
+        <h2>Aufgaben</h2>
+        <div class="progress" id="progressDots"></div>
+        <p id="taskText" style="margin-top:10px"></p>
+        <label style="font-size:.85rem;font-weight:700;color:var(--muted)">Vorhersage<select id="prediction" style="margin-top:5px">
+          <option value="">Antwort wählen</option>
+        </select></label>
+        <button id="check" type="button">Prüfen</button>
+        <output id="feedback">Noch keine Vorhersage geprüft.</output>
+      </section>
+      <div class="context-box">
+        <strong>Historischer Hintergrund:</strong> Vor Rutherfords Versuch (1909) galt das Thomson-Modell: Das Atom sei eine gleichmäßige positive Ladungsmasse mit eingebetteten Elektronen. Das Experiment widerlegte dies — nahezu alle Ladung und Masse ist in einem winzigen Kern konzentriert.
+      </div>
+    </aside>
+  </main>
+  <script>
+    const canvas = document.getElementById("sim");
+    const ctx = canvas.getContext("2d");
+    const energy = document.getElementById("energy");
+    const charge = document.getElementById("charge");
+    const thickness = document.getElementById("thickness");
+    const countEl = document.getElementById("count");
+    const strongEl = document.getElementById("strong");
+    const backEl = document.getElementById("back");
+    const histogram = document.getElementById("histogram");
+    const feedbackEl = document.getElementById("feedback");
+    let running = false;
+    let particles = [];
+    let stats = { count: 0, strong: 0, back: 0, bins: Array(9).fill(0) };
+
+    // Aufgabenprogression
+    const tasks = [
+      {
+        text: "Du erhöhst die Energie der Alphateilchen. Was passiert mit der Rate stark gestreuter Teilchen?",
+        options: [
+          { value:"more", label:"Sie wird größer" },
+          { value:"less", label:"Sie wird kleiner" },
+          { value:"same", label:"Sie bleibt gleich" },
+        ],
+        correct: "less",
+        feedback: {
+          less: "Richtig. Schnellere Teilchen passieren den Kern in kürzerer Zeit; die Coulomb-Abstoßung kann sie weniger stark umlenken.",
+          more: "Nicht ganz. Vergleiche zwei Läufe: niedriger und hoher Energie-Wert. Die Rate stark gestreuter Teilchen sinkt bei höherer Energie.",
+          same: "Nicht ganz. Die Rutherford-Streuformel zeigt: Streuwahrscheinlichkeit ∝ 1/E². Höhere Energie → weniger starke Ablenkung.",
+        },
+      },
+      {
+        text: "Du wählst statt Gold (Z = 79) ein leichteres Metall (z. B. Aluminium, Z ≈ 27). Was erwartest du?",
+        options: [
+          { value:"more",  label:"Mehr starke Ablenkungen" },
+          { value:"less",  label:"Weniger starke Ablenkungen" },
+          { value:"same",  label:"Kein Unterschied" },
+        ],
+        correct: "less",
+        feedback: {
+          less: "Richtig. Ein kleinerer Kern (kleineres Z) erzeugt ein schwächeres Coulomb-Feld. Die Rate stark gestreuter Teilchen ist proportional zu Z².",
+          more: "Nicht ganz. Stell den Z-Regler auf ~27. Die Rate stark gestreuter Teilchen sinkt deutlich gegenüber Gold (Z = 79).",
+          same: "Nicht ganz. Vergleiche Z = 79 (Gold) mit Z = 27 (Aluminium). Die Änderung in der Histogramm-Verteilung ist deutlich sichtbar.",
+        },
+      },
+    ];
+    let taskIndex = 0;
+    const solved = [false, false];
+
+    function renderTasks() {
+      const dots = document.getElementById("progressDots");
+      dots.innerHTML = tasks.map((_, i) => {
+        const cls = solved[i] ? "done" : (i === taskIndex ? "active" : "");
+        return `<div class="progress-dot ${cls}" title="Aufgabe ${i + 1}"></div>`;
+      }).join("") + `<span class="task-label">&nbsp;Aufgabe ${taskIndex + 1} / ${tasks.length}</span>`;
+
+      const t = tasks[taskIndex];
+      document.getElementById("taskText").textContent = t.text;
+      const sel = document.getElementById("prediction");
+      sel.innerHTML = `<option value="">Antwort wählen</option>` +
+        t.options.map(o => `<option value="${o.value}">${o.label}</option>`).join("");
+    }
+
+    function updateLabels() {
+      document.getElementById("energyLabel").textContent = Number(energy.value).toFixed(1).replace(".", ",") + " MeV";
+      const z = Number(charge.value);
+      const metalName = z <= 26 ? "Eisen" : z <= 29 ? "Kupfer" : z <= 47 ? "Silber" : z <= 78 ? "Platin" : "Gold";
+      document.getElementById("chargeLabel").textContent = `${metalName}: Z = ${z}`;
+      document.getElementById("thickLabel").textContent = thickness.value + " Atomlagen";
+    }
+
+    function drawSetup() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const grad = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+      grad.addColorStop(0, "#0a1222");
+      grad.addColorStop(1, "#132d46");
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Goldfolie
+      ctx.fillStyle = "rgba(255,255,255,.07)";
+      ctx.fillRect(450, 80, 28, 440);
+
+      // Kern — Größe proportional zu Z^(1/3) (realistischere Skalierung)
+      const z = Number(charge.value);
+      const kernR = 10 + Math.pow(z / 79, 0.33) * 14;
+      const kernGrad = ctx.createRadialGradient(464, 300, 0, 464, 300, kernR);
+      kernGrad.addColorStop(0, "#ffe97a");
+      kernGrad.addColorStop(1, "#b8730a");
+      ctx.fillStyle = kernGrad;
+      ctx.beginPath();
+      ctx.arc(464, 300, kernR, 0, Math.PI * 2);
+      ctx.fill();
+
+      ctx.fillStyle = "rgba(255,255,255,.7)";
+      ctx.font = "600 15px system-ui";
+      ctx.fillText("Goldfolie  Kern Z = " + z, 372, 62);
+      ctx.fillText("α-Strahl", 52, 80);
+    }
+
+    // Graduelle Coulomb-Ablenkung: Partikel wird schrittweise abgelenkt wenn nahe am Kern
+    function spawn() {
+      const y = 110 + Math.random() * 380;
+      const impact = Math.abs(y - 300) / 190 + 0.05;
+      const z = Number(charge.value);
+      const e = Number(energy.value);
+      const d = Number(thickness.value);
+      const rawScatter = Math.min(Math.PI * .93,
+        (z / 79) * (6 / e) * (d / 4) * (0.18 / impact) * (0.45 + Math.random())
+      );
+      const sign = y < 300 ? -1 : 1;
+      const finalAngle = rawScatter * sign;
+
+      stats.count += 1;
+      if (Math.abs(rawScatter) > 0.32) stats.strong += 1;
+      if (Math.abs(rawScatter) > 1.55) stats.back += 1;
+      const bin = Math.min(8, Math.floor(Math.abs(rawScatter) / (Math.PI / 9)));
+      stats.bins[bin] += 1;
+
+      particles.push({
+        x: 48, y,
+        vx: 5.2, vy: 0,
+        finalAngle,
+        turned: false,
+        deflectProgress: 0,
+        life: 0,
+        trail: [],
+      });
+    }
+
+    function stepParticle(p) {
+      p.trail.push([p.x, p.y]);
+      if (p.trail.length > 35) p.trail.shift();
+
+      // Coulomb-Ablenkung: graduell in einem Bereich um die Folie herum (x 420–510)
+      if (p.x >= 420 && p.x <= 510 && !p.turned) {
+        p.deflectProgress = Math.min(1, (p.x - 420) / 90);
+        const currentAngle = p.finalAngle * p.deflectProgress;
+        const spd = Math.hypot(p.vx, p.vy);
+        p.vx = spd * Math.cos(currentAngle);
+        p.vy = spd * Math.sin(currentAngle);
+      }
+      if (p.x > 510 && !p.turned) {
+        p.turned = true;
+        const spd = Math.hypot(p.vx, p.vy);
+        p.vx = spd * Math.cos(p.finalAngle);
+        p.vy = spd * Math.sin(p.finalAngle);
+      }
+      p.x += p.vx;
+      p.y += p.vy;
+      p.life += 1;
+    }
+
+    function drawParticles() {
+      for (const p of particles) {
+        if (p.trail.length > 1) {
+          ctx.strokeStyle = "rgba(79, 207, 255, .30)";
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          p.trail.forEach(([x, y], i) => i ? ctx.lineTo(x, y) : ctx.moveTo(x, y));
+          ctx.stroke();
+        }
+        ctx.fillStyle = "#59d5ff";
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, 4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function renderHistogram() {
+      const max = Math.max(1, ...stats.bins);
+      histogram.innerHTML = stats.bins.map(value =>
+        `<div class="bar" style="height:${Math.max(3, value / max * 118)}px" title="${value} Teilchen"></div>`
+      ).join("");
+      countEl.textContent = stats.count;
+      strongEl.textContent = stats.count ? Math.round(stats.strong / stats.count * 100) + "%" : "0%";
+      backEl.textContent = stats.count ? Math.round(stats.back / stats.count * 100) + "%" : "0%";
+    }
+
+    function animate() {
+      drawSetup();
+      if (running && stats.count < 600 && Math.random() < .75) spawn();
+      particles.forEach(stepParticle);
+      particles = particles.filter(p =>
+        p.x > -80 && p.x < canvas.width + 80 &&
+        p.y > -80 && p.y < canvas.height + 80 &&
+        p.life < 280
+      );
+      drawParticles();
+      renderHistogram();
+      requestAnimationFrame(animate);
+    }
+
+    document.getElementById("run").addEventListener("click", () => {
+      running = !running;
+      document.getElementById("run").textContent = running ? "Pause" : "Start";
+    });
+    document.getElementById("reset").addEventListener("click", () => {
+      stats = { count: 0, strong: 0, back: 0, bins: Array(9).fill(0) };
+      particles = [];
+    });
+    document.getElementById("check").addEventListener("click", () => {
+      const value = document.getElementById("prediction").value;
+      if (!value) { feedbackEl.textContent = "Bitte wähle zuerst eine Antwort."; return; }
+      const t = tasks[taskIndex];
+      const correct = value === t.correct;
+      feedbackEl.textContent = t.feedback[value] || "";
+      feedbackEl.className = correct ? "correct" : "wrong";
+      if (correct && !solved[taskIndex]) {
+        solved[taskIndex] = true;
+        if (taskIndex < tasks.length - 1) {
+          taskIndex += 1;
+        }
+        renderTasks();
+      }
+    });
+    [energy, charge, thickness].forEach(input => input.addEventListener("input", updateLabels));
+    updateLabels();
+    renderTasks();
+    drawSetup();
+    renderHistogram();
+    animate();
+  </script>
+<footer class="site-footer">
+  <p style="font-weight:700;color:#172033;margin:0 0 6px">Passende Inhalte auf Nachhilfe Mentor:</p>
+  <div class="footer-links">
+  <a href="/blog/posts/physik-lernen-tipps.html">Physik lernen: 7 Tipps</a>
+  <a href="/blog/posts/physik-abitur-vorbereitung.html">Physik Abitur vorbereiten</a>
+  <a href="/blog/posts/chemie-lernen-tipps.html">Chemie lernen Tipps</a>
+  <a href="/lernmaterialien/galvanische-zelle-simulator.html">Galvanische Zelle Simulator</a>
+  <a href="/lernmaterialien/teilchenbewegung-temperatur-simulation.html">Teilchenbewegung Simulation</a>
+  </div>
+  <p class="footer-meta"><a href="/">Nachhilfe Mentor</a> &middot; <a href="/impressum.html">Impressum</a> &middot; <a href="/datenschutz/">Datenschutz</a></p>
+</footer>
+</body>
+</html>

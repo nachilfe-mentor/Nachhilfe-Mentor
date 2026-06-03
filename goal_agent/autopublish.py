@@ -8,7 +8,7 @@ from .config import Settings
 
 
 ALLOWED_PUBLISH_PATHS = (
-    "goal-agent-pages/",
+    "lernmaterialien/",
     "goal_agent/generated_tools/",
     "sitemap.xml",
     "feed.xml",
@@ -53,7 +53,7 @@ def _publishable_changes(repo_root: Path) -> list[str]:
     return [
         path
         for path in changed
-        if path in {"sitemap.xml", "feed.xml"} or path.startswith("goal-agent-pages/") or path.startswith("goal_agent/generated_tools/")
+        if path in {"sitemap.xml", "feed.xml"} or path.startswith("lernmaterialien/") or path.startswith("goal_agent/generated_tools/")
     ]
 
 
@@ -79,7 +79,7 @@ def auto_publish(settings: Settings, commit_message: str = "chore: publish goal 
     staged = [
         path
         for path in staged
-        if path in {"sitemap.xml", "feed.xml"} or path.startswith("goal-agent-pages/") or path.startswith("goal_agent/generated_tools/")
+        if path in {"sitemap.xml", "feed.xml"} or path.startswith("lernmaterialien/") or path.startswith("goal_agent/generated_tools/")
     ]
     if not staged:
         return AutoPublishResult(True, "skipped", [], False, "no allowed staged changes")

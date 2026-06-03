@@ -1117,6 +1117,42 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/bruchrechnung-trainer.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/galvanische-zelle-simulator.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/index.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/lineare-gleichungen-trainer.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/rutherford-streuversuch-simulation.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/teilchenbewegung-temperatur-simulation.html</loc>
+    <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://nachhilfe-mentor.de/impressum.html</loc>
     <lastmod>2026-06-03</lastmod>
     <changefreq>yearly</changefreq>

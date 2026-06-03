@@ -78,9 +78,9 @@ The Blog Agent uses these only for topic choice, briefs, internal-link suggestio
 
 ## Sitemap Integration
 
-`blog/_update_seo.py` includes indexable files from `goal-agent-pages/*.html`.
+`blog/_update_seo.py` includes indexable files from `lernmaterialien/*.html`.
 
 It excludes:
 
-- `goal-agent-pages/drafts/*.html`
+- `lernmaterialien/entwuerfe/*.html`
 - any page with `<meta name="robots" content="noindex,...">`

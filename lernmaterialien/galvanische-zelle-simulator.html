@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Galvanische Zelle Simulator – Zellspannung berechnen & verstehen | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktiver Simulator für galvanische Zellen: Wähle Anode und Kathode, berechne die Zellspannung mit E° = E°Kathode − E°Anode und beobachte Elektronen- und Ionenfluss live.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="galvanische Zelle Simulation, Elektrochemie Simulation, Zellspannung berechnen, Daniell-Element, Standardpotential Übung, Chemie Simulation Schule, galvanische Zelle Aufgaben">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/galvanische-zelle-simulator.html">
+  <meta property="og:title" content="Galvanische Zelle: Interaktiver Simulator für Elektrochemie">
+  <meta property="og:description" content="Interaktiver Simulator für galvanische Zellen: Wähle Anode und Kathode, berechne die Zellspannung mit E° = E°Kathode − E°Anode und beobachte Elektronen- und Ionenfluss live.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/galvanische-zelle-simulator.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Galvanische Zelle Simulator",
+  "description":"Interaktive Simulation: Halbzellen wählen, Zellspannung selbst berechnen, Elektronen- und Ionenfluss beobachten.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/galvanische-zelle-simulator.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "educationLevel":"Gymnasium Klasse 10–13",
+  "about":{"@type":"Thing","name":"Galvanische Zelle, Elektrochemie"},
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+}</script>
+  <style>
+    :root { --ink:#182133; --muted:#607087; --line:#d9e1ec; --blue:#0f5fa8; --green:#0f8a67; --red:#b84646; --bg:#f6f8fb; --panel:#fff; }
+
+.site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+.site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+.site-nav a:hover{color:#fff}
+.site-footer{max-width:1100px;margin:40px auto 0;padding:28px 22px 40px;border-top:1px solid #d9e1ec}
+.footer-links{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px}
+.footer-links a{display:inline-block;padding:8px 16px;background:#f0f5fc;border:1px solid #d9e1ec;border-radius:6px;color:#0f5fa8;text-decoration:none;font-size:.88rem;font-weight:600}
+.footer-links a:hover{background:#dceeff}
+.footer-meta{font-size:.83rem;color:#8a9ab0}
+.footer-meta a{color:#5d6b7e}
+
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:var(--ink); background:var(--bg); }
+    header, main { max-width:1180px; margin:0 auto; padding:22px; }
+    header { display:grid; gap:8px; }
+    h1 { margin:0; font-size:clamp(1.8rem,3vw,3rem); line-height:1.05; letter-spacing:0; }
+    h2 { margin:0 0 12px; font-size:1.05rem; }
+    p { margin:0; color:var(--muted); line-height:1.55; }
+    .layout { display:grid; grid-template-columns:minmax(0,1.35fr) 380px; gap:18px; align-items:start; }
+    .panel { background:var(--panel); border:1px solid var(--line); border-radius:8px; box-shadow:0 12px 36px rgba(28,49,80,.08); }
+    .lab { padding:18px; }
+    .cell { position:relative; min-height:430px; border-radius:8px; background:linear-gradient(180deg,#eef7ff,#ffffff); overflow:hidden; border:1px solid var(--line); }
+    .beaker { position:absolute; bottom:42px; width:31%; height:230px; border:4px solid #6f8aaa; border-top:0; border-radius:0 0 22px 22px; background:linear-gradient(180deg,rgba(74,167,215,.24),rgba(39,128,188,.32)); }
+    .left { left:7%; } .right { right:7%; }
+    .electrode { position:absolute; bottom:92px; width:24px; height:220px; border-radius:5px; background:#7d8794; box-shadow:inset 0 0 0 2px rgba(255,255,255,.2); }
+    .left .electrode { left:44%; } .right .electrode { right:44%; }
+    .bridge { position:absolute; left:31%; right:31%; top:142px; height:58px; border:12px solid #ccb879; border-bottom:0; border-radius:42px 42px 0 0; }
+    .wire { position:absolute; left:22%; right:22%; top:70px; height:4px; background:#28384f; }
+    .meter { position:absolute; left:50%; transform:translateX(-50%); top:35px; min-width:132px; padding:12px; text-align:center; border-radius:8px; background:#142337; color:#fff; font-weight:800; }
+    .label { position:absolute; bottom:12px; width:31%; text-align:center; font-weight:800; }
+    .label.leftLabel { left:7%; } .label.rightLabel { right:7%; }
+    .ion, .electron { position:absolute; border-radius:999px; display:grid; place-items:center; font-size:.72rem; font-weight:900; }
+    .ion { width:28px; height:28px; background:#dff4ff; color:#0f5fa8; border:1px solid #8ec7ed; }
+    .electron { width:14px; height:14px; background:#ffd44d; color:#4d3500; }
+    .controls { padding:16px; display:grid; gap:15px; }
+    label { display:grid; gap:7px; font-size:.92rem; font-weight:800; }
+    select, input[type="number"] { min-height:42px; border:1px solid var(--line); border-radius:6px; padding:8px 10px; font:inherit; background:#fff; width:100%; }
+    button { min-height:42px; border:0; border-radius:6px; background:var(--blue); color:#fff; font-weight:900; cursor:pointer; }
+    .secondary { background:#e8eef6; color:var(--ink); }
+    .row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .result { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .metric { border:1px solid var(--line); border-radius:8px; padding:12px; background:#fff; }
+    .metric strong { display:block; font-size:1.5rem; color:var(--green); }
+    output { min-height:44px; display:block; padding:11px 12px; border-radius:6px; background:#eef8fb; color:#10465a; }
+    .equation { padding:14px; border-top:1px solid var(--line); font-weight:800; color:#30405a; }
+    @media (max-width:900px){ header,main{padding:16px}.layout{grid-template-columns:1fr}.result{grid-template-columns:1fr}.cell{min-height:390px} }
+  </style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+  <header>
+    <h1>Galvanische Zelle: Spannung selbst einstellen</h1>
+    <p>Wähle zwei Halbzellen. Der Simulator ordnet Anode und Kathode nach Standardpotential, zeigt die Zellspannung und macht den Elektronenfluss sichtbar.</p>
+  </header>
+  <main class="layout">
+    <section class="panel lab">
+      <div class="cell" id="cell">
+        <div class="wire"></div>
+        <div class="meter" id="meter">0,00 V</div>
+        <div class="bridge"></div>
+        <div class="beaker left"><div class="electrode" id="leftElectrode"></div></div>
+        <div class="beaker right"><div class="electrode" id="rightElectrode"></div></div>
+        <div class="label leftLabel" id="leftLabel">Anode</div>
+        <div class="label rightLabel" id="rightLabel">Kathode</div>
+      </div>
+      <div class="equation" id="equation">E°Zelle = E°Kathode − E°Anode</div>
+    </section>
+    <aside class="panel controls">
+      <h2>Halbzellen wählen</h2>
+      <label>Metall links<select id="leftMetal"></select></label>
+      <label>Metall rechts<select id="rightMetal"></select></label>
+      <div class="result">
+        <div class="metric"><span>Anode</span><strong id="anodeName">-</strong></div>
+        <div class="metric"><span>Kathode</span><strong id="cathodeName">-</strong></div>
+      </div>
+      <section>
+        <h2>Vorhersage</h2>
+        <p>Gib die erwartete Zellspannung in Volt an. Danach prüfst du Rechnung und Richtung des Elektronenflusses.</p>
+      </section>
+      <label>Deine Spannung<input id="guess" type="number" step="0.01" inputmode="decimal" placeholder="z. B. 1,10"></label>
+      <div class="row">
+        <button id="check" type="button">Prüfen</button>
+        <button id="swap" type="button" class="secondary">Tauschen</button>
+      </div>
+      <output id="feedback">Noch keine Antwort geprüft.</output>
+    </aside>
+  </main>
+  <script>
+    const metals = [
+      { key:"zn", name:"Zink", ion:"Zn²⁺", e:-0.76, color:"#81919c" },
+      { key:"fe", name:"Eisen", ion:"Fe²⁺", e:-0.44, color:"#8a8174" },
+      { key:"pb", name:"Blei", ion:"Pb²⁺", e:-0.13, color:"#6d7380" },
+      { key:"cu", name:"Kupfer", ion:"Cu²⁺", e:0.34, color:"#b96a38" },
+      { key:"ag", name:"Silber", ion:"Ag⁺", e:0.80, color:"#b9c5cf" },
+    ];
+    const leftMetal = document.getElementById("leftMetal");
+    const rightMetal = document.getElementById("rightMetal");
+    const cell = document.getElementById("cell");
+    let particles = [];
+
+    function formatV(value) {
+      return value.toFixed(2).replace(".", ",");
+    }
+
+    function fillSelect(select, value) {
+      select.innerHTML = metals.map(m => `<option value="${m.key}">${m.name} (${formatV(m.e)} V)</option>`).join("");
+      select.value = value;
+    }
+    fillSelect(leftMetal, "zn");
+    fillSelect(rightMetal, "cu");
+
+    function selected() {
+      const left = metals.find(m => m.key === leftMetal.value);
+      const right = metals.find(m => m.key === rightMetal.value);
+      const anode = left.e <= right.e ? left : right;
+      const cathode = left.e <= right.e ? right : left;
+      return { left, right, anode, cathode, voltage: cathode.e - anode.e, anodeSide: anode === left ? "left" : "right" };
+    }
+
+    function update() {
+      const s = selected();
+      document.getElementById("meter").textContent = formatV(s.voltage) + " V";
+      document.getElementById("anodeName").textContent = s.anode.name;
+      document.getElementById("cathodeName").textContent = s.cathode.name;
+      document.getElementById("leftLabel").textContent = (s.anodeSide === "left" ? "Anode: " : "Kathode: ") + s.left.name;
+      document.getElementById("rightLabel").textContent = (s.anodeSide === "right" ? "Anode: " : "Kathode: ") + s.right.name;
+      document.getElementById("leftElectrode").style.background = s.left.color;
+      document.getElementById("rightElectrode").style.background = s.right.color;
+      document.getElementById("equation").textContent = `E°Zelle = ${formatV(s.cathode.e)} V − (${formatV(s.anode.e)} V) = ${formatV(s.voltage)} V. Elektronen fließen außen von ${s.anode.name} zu ${s.cathode.name}.`;
+    }
+
+    function spawnParticle() {
+      const s = selected();
+      const fromLeft = s.anodeSide === "left";
+      particles.push({
+        kind:"e",
+        x: fromLeft ? 230 : 730,
+        y: 70,
+        dx: fromLeft ? 2.8 : -2.8,
+        text:"e⁻",
+      });
+      particles.push({
+        kind:"ion",
+        x: fromLeft ? 185 + Math.random() * 120 : 650 + Math.random() * 120,
+        y: 250 + Math.random() * 90,
+        dx: fromLeft ? .28 : -.28,
+        text: s.anode.ion,
+      });
+    }
+
+    function drawParticles() {
+      cell.querySelectorAll(".electron,.ion").forEach(el => el.remove());
+      if (Math.random() < .15) spawnParticle();
+      particles.forEach(p => {
+        p.x += p.dx;
+        const el = document.createElement("div");
+        el.className = p.kind === "e" ? "electron" : "ion";
+        el.textContent = p.text;
+        el.style.left = p.x + "px";
+        el.style.top = p.y + "px";
+        cell.appendChild(el);
+      });
+      particles = particles.filter(p => p.x > 100 && p.x < 850);
+      requestAnimationFrame(drawParticles);
+    }
+
+    document.getElementById("check").addEventListener("click", () => {
+      const guess = Number(document.getElementById("guess").value.replace(",", "."));
+      const s = selected();
+      if (Number.isFinite(guess) && Math.abs(guess - s.voltage) <= 0.03) {
+        document.getElementById("feedback").textContent = `Richtig. ${s.anode.name} ist die Anode, ${s.cathode.name} die Kathode. Die Potentialdifferenz beträgt ${formatV(s.voltage)} V.`;
+      } else {
+        document.getElementById("feedback").textContent = `Noch nicht. Nutze: E°Zelle = E°Kathode − E°Anode. Die Kathode hat das größere Standardpotential.`;
+      }
+    });
+    document.getElementById("swap").addEventListener("click", () => {
+      const left = leftMetal.value;
+      leftMetal.value = rightMetal.value;
+      rightMetal.value = left;
+      update();
+    });
+    [leftMetal, rightMetal].forEach(select => select.addEventListener("change", update));
+    update();
+    drawParticles();
+  </script>
+<footer class="site-footer">
+  <p style="font-weight:700;color:#172033;margin:0 0 6px">Passende Inhalte auf Nachhilfe Mentor:</p>
+  <div class="footer-links">
+  <a href="/blog/posts/chemie-lernen-tipps.html">Chemie lernen Tipps</a>
+  <a href="/blog/posts/chemie-abitur-vorbereitung.html">Chemie Abitur vorbereiten</a>
+  <a href="/blog/posts/physik-lernen-tipps.html">Physik lernen Tipps</a>
+  <a href="/lernmaterialien/rutherford-streuversuch-simulation.html">Rutherford-Streuversuch Simulation</a>
+  <a href="/lernmaterialien/teilchenbewegung-temperatur-simulation.html">Teilchenbewegung Simulation</a>
+  </div>
+  <p class="footer-meta"><a href="/">Nachhilfe Mentor</a> &middot; <a href="/impressum.html">Impressum</a> &middot; <a href="/datenschutz/">Datenschutz</a></p>
+</footer>
+</body>
+</html>

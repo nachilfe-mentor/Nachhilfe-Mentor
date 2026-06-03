@@ -57,7 +57,7 @@ python3 -m goal_agent.cli mark-blog-task-complete --task-id <id> --url <url>
   "primary_keyword": "lernplan erstellen",
   "search_intent": "informational_to_conversion",
   "target_slug": "lernplan-erstellen",
-  "title_hint": "Lernplan erstellen: einfache Vorlage fuer Schueler",
+  "title_hint": "Lernplan erstellen: einfache Vorlage für Schüler",
   "brief_markdown": "Write a German evergreen article for students and parents. Focus on practical planning steps, common mistakes, and a natural CTA to the app. Do not keyword-stuff.",
   "required_internal_links": [
     {
@@ -186,7 +186,7 @@ Priority: 90
 Cluster: lernmethoden
 Keyword: lernplan erstellen
 Intent: informational_to_conversion
-Title hint: Lernplan erstellen: einfache Vorlage fuer Schueler
+Title hint: Lernplan erstellen: einfache Vorlage für Schüler
 
 Brief:
 ...

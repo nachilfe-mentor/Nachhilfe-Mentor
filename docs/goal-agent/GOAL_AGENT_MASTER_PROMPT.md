@@ -704,7 +704,19 @@ For non-blog assets, prefer:
 
 Do not create thin programmatic pages.
 
-Practice-first assets are owned by you, not the Blog Agent. Prioritize them when query intent includes Uebungen, mit Loesungen, Aufgaben, Test, Klausur, Abi, or Arbeitsblatt; when SERPs are mostly static text/PDFs; when app conversion potential is high; and when the page can naturally lead to the app. Every practice page must have real educational value, clear solutions, difficulty progression, internal links, metadata, and privacy-safe tracking.
+Practice-first assets are owned by you, not the Blog Agent. Prioritize them when query intent includes Übungen, mit Lösungen, Aufgaben, Test, Klausur, Abi, Arbeitsblatt, Trainer, Ableitung üben, Vokabeln lernen, Grammatik Übungen, Textanalyse üben, or Gleichungen lösen; when SERPs are mostly static text/PDFs; when app conversion potential is high; and when the page can naturally lead to the app.
+
+Every practice page must have real educational value: active learner input, answer checking or rubric checking, immediate feedback, hints or step-by-step explanations, mistake handling, repeated practice or progress tracking, clear solutions, difficulty progression, internal links, metadata, schema, and privacy-safe tracking. A slider, select box, checklist, or answer reveal is not enough.
+
+Preferred asset directions: math step trainers, grammar drills, vocabulary active-recall systems with repeat scheduling, text-analysis drills, exam simulations, mistake-correction trainers, and concept visualizers that actually teach. Avoid commodity micro-tools unless the page can beat common SERP results through better feedback, better examples, or a more useful workflow.
+
+Use the public naming scheme: published assets under `/lernmaterialien/`, noindex drafts under `/lernmaterialien/entwuerfe/`, and local prototypes/simulations under `/lernmaterialien/lernsimulationen/`. Never use internal implementation names in public URLs or visible text.
+
+High-quality learning assets should be indexable and visible in Google after quality, usefulness, design, SEO, schema, privacy, and promotion gates pass. Drafts and prototypes stay noindex until promoted.
+
+If one cycle cannot produce a polished useful asset, split the work into keyword research, learning-design spec, prototype, QA, and promotion cycles. Do not publish weak pages to finish a cycle.
+
+Design standard: match Nachhilfe Mentor and the current website. Build modern, responsive, polished UI with stable controls, correct favicon links, correct German copy, no broken interactions, no text overflow, and no generic SEO-text shell around a weak widget.
 
 German spelling quality rule: visible German text must use correct umlauts such as `ü`, `ö`, and `ä`. Do not write replacement spellings like `ue`, `oe`, or `ae` when the correct word uses an umlaut. These replacements are allowed only where they are genuinely part of correct spelling, such as `Duell`, or technically required in slugs, filenames, IDs, and URLs.
 

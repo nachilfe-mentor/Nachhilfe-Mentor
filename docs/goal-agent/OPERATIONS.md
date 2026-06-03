@@ -28,6 +28,6 @@ sqlite3 goal_agent/goal_agent.db 'select id,status,summary from agent_runs order
 
 Generated pages live in:
 
-- `goal-agent-pages/`
+- `lernmaterialien/`
 
 Rollback by removing only generated files from the current action and marking related actions/experiments stopped in the DB.

@@ -24,7 +24,7 @@ Die Subagenten sind normale Python-Module unter `goal_agent/subagents/` und kein
 
 - `SEOIntelligenceAgent`: Sitemap, GSC-Status, Content Scan, SEO-Chancen. GSC 403 bleibt non-fatal und wird als fehlender Search-Console-Zugriff berichtet.
 - `ContentGapAgent`: Themenlücken, dünne Seiten, fehlende Übungen, Beispiele und Lösungen.
-- `PracticeAssetAgent`: hochwertige Practice-first Assets wie Übungsseiten, Mini-Tests, Quiz, Worksheets und interaktive Aufgaben.
+- `PracticeAssetAgent`: hochwertige Lernsimulationen wie Mathe-Schritttrainer, Grammatikdrills, Vokabel-Wiederholung mit Abruflogik, Textanalyse-Drills, Prüfungssimulationen und Fehlerkorrektur-Trainer.
 - `InternalLinkingAgent`: interne Linkchancen zwischen Blog, Lernseiten und Practice Assets.
 - `BlogBriefAgent`: bessere Blog-Agent-Tasks und Briefings, ohne Artikel selbst zu schreiben.
 - `QualityGuardianAgent`: blockiert dünne Seiten, Keyword Stuffing, schlechte Umlaute und Assets ohne Lernwert.
@@ -36,7 +36,7 @@ Recommendations werden in `subagent_recommendations` gespeichert und haben Prior
 
 Ein CodexTask ist eine sichere, überprüfbare Coding-Aufgabe für die lokal eingeloggte Codex CLI. Codex ist hier der ausführende Coding Agent: Repo lesen, Dateien ändern, Tests ausführen, Diff erzeugen, Ergebnis zusammenfassen.
 
-Codex darf nicht automatisch pushen, deployen oder live veröffentlichen. Practice Pages werden standardmäßig nur als Draft, Spec oder `draft_noindex` Aufgabe erzeugt.
+Codex darf nicht automatisch pushen oder deployen. Practice Pages werden zuerst als Spec, Prototyp oder `draft_noindex` Aufgabe erzeugt. Erst nach Qualitäts-, Design-, SEO-, Datenschutz- und Promotion-Gate dürfen sie als indexierbare `/lernmaterialien/`-Seite sichtbar in Google werden.
 
 CLI:
 
@@ -78,7 +78,7 @@ Immer blockiert:
 - Änderungen an `.env`, `/etc/nachhilfe-mentor`, Service-Account-Keys und `.git/`
 - Secret-Ausgabe in Logs oder Reports
 - Änderungen an `auto-blog.sh`, außer eine explizite Blog-Agent-Verbesserungsaufgabe erlaubt es
-- direkte indexierbare Veröffentlichung von Practice Pages
+- direkte indexierbare Veröffentlichung von Practice Pages ohne Promotion-Gate
 - Löschen produktiver Daten
 - ungeprüfte Shell Commands aus Subagenten-Texten
 

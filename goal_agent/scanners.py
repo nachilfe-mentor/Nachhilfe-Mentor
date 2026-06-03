@@ -48,7 +48,7 @@ def _content_type(path: Path) -> str:
         return "blog_index"
     if "/blog/posts/" in "/" + rel:
         return "blog_article"
-    if rel.startswith("goal-agent-pages/"):
+    if rel.startswith("lernmaterialien/"):
         return "interactive_tool"
     if "datenschutz" in rel or "impressum" in rel or "nutzungsbedingungen" in rel:
         return "legal"
@@ -111,7 +111,7 @@ def read_feed(repo_root: Path = REPO_ROOT) -> list[dict[str, str]]:
 
 def scan_content(repo_root: Path = REPO_ROOT) -> list[dict[str, Any]]:
     sitemap_paths = read_sitemap(repo_root)
-    generated_pages = sorted((repo_root / "goal-agent-pages").glob("*.html")) if (repo_root / "goal-agent-pages").exists() else []
+    generated_pages = sorted((repo_root / "lernmaterialien").glob("*.html")) if (repo_root / "lernmaterialien").exists() else []
     html_files = [
         repo_root / "index.html",
         repo_root / "blog" / "index.html",

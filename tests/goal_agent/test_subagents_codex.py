@@ -79,6 +79,13 @@ def test_quality_guardian_blocks_bad_recommendation() -> None:
     assert result.recommendations[0].recommendation_type == "hold"
 
 
+def test_quality_guardian_blocks_weak_practice_asset_brief() -> None:
+    weak = sample_recommendation()
+    result = QualityGuardianAgent().run({"candidate_recommendations": [weak]})
+    assert result.recommendations
+    assert "learning simulation" in result.recommendations[0].rationale
+
+
 def test_practice_asset_agent_creates_recommendation_from_opportunity() -> None:
     result = PracticeAssetAgent().run({"opportunities": [{
         "id": "opp_1",
@@ -90,6 +97,11 @@ def test_practice_asset_agent_creates_recommendation_from_opportunity() -> None:
     }]})
     assert result.recommendations
     assert result.recommendations[0].codex_task_allowed
+    criteria = " ".join(result.recommendations[0].acceptance_criteria).lower()
+    assert "active answer input" in criteria
+    assert "immediate feedback" in criteria
+    assert "primary keyword" in criteria
+    assert "modern responsive" in criteria
 
 
 def test_task_builder_creates_codex_task_and_blocks_high_risk() -> None:
@@ -97,6 +109,9 @@ def test_task_builder_creates_codex_task_and_blocks_high_risk() -> None:
     assert tasks
     assert tasks[0].task_type == "practice_page"
     assert tasks[0].publish_policy == "draft_noindex_only"
+    assert any("correct umlauts" in criterion for criterion in tasks[0].acceptance_criteria)
+    assert any("lernmaterialien/lernsimulationen" in path for path in tasks[0].allowed_paths)
+    assert any("weak one-cycle" in criterion for criterion in tasks[0].acceptance_criteria)
     assert not build_tasks_from_recommendations([sample_recommendation(safety_risk="high")])
 
 

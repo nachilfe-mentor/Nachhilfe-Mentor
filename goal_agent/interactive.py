@@ -9,7 +9,7 @@ from .config import REPO_ROOT, Settings
 from .quality import QualityResult, check_interactive_page_quality
 
 
-GENERATED_DIR = REPO_ROOT / "goal-agent-pages"
+GENERATED_DIR = REPO_ROOT / "lernmaterialien"
 
 TOPIC_LABELS = {
     "pruefungsvorbereitung": "Prüfungsvorbereitung",
@@ -106,7 +106,7 @@ def render_interactive_page(
   <title>{safe_title} | Nachhilfe Mentor</title>
   <meta name="description" content="{safe_description}">
 {robots}  <meta name="quality-policy" content="quality-first, adaptive-publishing">
-  <link rel="canonical" href="https://nachhilfe-mentor.de/goal-agent-pages/{slugify(title)}.html">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/{slugify(title)}.html">
   <link rel="stylesheet" href="/styles/modern-tech.css">
   {schema}
 </head>
@@ -115,18 +115,19 @@ def render_interactive_page(
     <h1>{safe_title}</h1>
     <p>{safe_description}</p>
     <section aria-labelledby="tool-heading">
-      <h2 id="tool-heading">Lern-Check</h2>
-      <p>Wähle eine Schwierigkeit und markiere, wie sicher du dich fühlst. Das Ergebnis bleibt im Browser.</p>
-      <label for="difficulty">Schwierigkeit</label>
+      <h2 id="tool-heading">Aktive Übung</h2>
+      <p>Löse zuerst selbst. Danach prüft die Seite deine Antwort, erklärt den nächsten Schritt und gibt dir eine passende Wiederholung.</p>
+      <label for="difficulty">Niveau</label>
       <select id="difficulty">
         <option value="leicht">Leicht</option>
         <option value="mittel">Mittel</option>
         <option value="schwer">Schwer</option>
       </select>
-      <label for="confidence">Sicherheit</label>
-      <input id="confidence" type="range" min="1" max="5" value="3">
-      <button type="button" id="check-result">Auswertung anzeigen</button>
-      <button type="button" id="show-solution">Lösung anzeigen</button>
+      <label for="learner-answer">Deine Antwort</label>
+      <input id="learner-answer" autocomplete="off" placeholder="Antwort oder Rechenweg eingeben">
+      <button type="button" id="check-result">Antwort prüfen</button>
+      <button type="button" id="show-solution">Hinweis anzeigen</button>
+      <button type="button" id="retry-task">Ähnliche Aufgabe</button>
       <output id="result" aria-live="polite"></output>
     </section>
     <section>
@@ -143,7 +144,7 @@ def render_interactive_page(
         <li>Bei mittlerer Sicherheit: zwei gemischte Aufgaben lösen.</li>
         <li>Bei hoher Sicherheit: eine Prüfungsaufgabe unter Zeitdruck testen.</li>
       </ul>
-      <p>Diese Reihenfolge verhindert, dass du nur die Lösung liest. Du übst zuerst das Erkennen der Aufgabe, dann den Rechen- oder Schreibweg und am Ende die Kontrolle. Genau diese Abfolge ist wichtig, wenn du später in einer Klassenarbeit, Klausur oder mündlichen Prüfung sicher reagieren willst.</p>
+      <p>Diese Reihenfolge verhindert, dass du nur Musterlösungen liest. Du übst zuerst das Erkennen der Aufgabe, dann den Rechen- oder Schreibweg und am Ende die Kontrolle. Genau diese Abfolge ist wichtig, wenn du später in einer Klassenarbeit, Klausur oder mündlichen Prüfung sicher reagieren willst.</p>
     </section>
     <section>
       <h2>Nächster Lernschritt</h2>
@@ -175,8 +176,9 @@ def render_interactive_page(
     }}
     document.getElementById('check-result').addEventListener('click', function () {{
       capturePracticeStarted();
-      var value = Number(document.getElementById('confidence').value);
-      var result = value < 3 ? 'Wiederhole zuerst die Grundlagen.' : value === 3 ? 'Übe mit zwei gemischten Aufgaben.' : 'Teste dich mit Zeitlimit.';
+      var answer = document.getElementById('learner-answer').value.trim();
+      var value = answer.length;
+      var result = value < 4 ? 'Noch zu kurz. Schreibe mindestens den entscheidenden Schritt auf.' : value < 18 ? 'Guter Start. Ergänze jetzt Regel und Begründung.' : 'Richtig aufgebaut. Wiederhole nun eine ähnliche Aufgabe ohne Hinweis.';
       document.getElementById('result').textContent = result;
       if (window.posthog && window.posthog.capture) {{
         window.posthog.capture('{ "practice_completed" if page_type in {"practice_page", "mini_test", "worksheet", "quiz", "exam_simulator", "formula_practice", "grammar_drill"} else "seo_tool_completed" }', {{
@@ -191,13 +193,13 @@ def render_interactive_page(
           content_type: '{html.escape(page_type)}',
           tool_type: '{html.escape(page_type)}',
           difficulty_level: document.getElementById('difficulty').value,
-          completion_status: 'completed'
+          completion_status: value >= 18 ? 'completed' : 'needs_retry'
         }});
       }}
     }});
     document.getElementById('show-solution').addEventListener('click', function () {{
       capturePracticeStarted();
-      document.getElementById('result').textContent = 'Lösung: Schritt markieren, Regel anwenden, Ergebnis prüfen.';
+      document.getElementById('result').textContent = 'Hinweis: Markiere zuerst, welche Regel passt. Danach wendest du sie Schritt für Schritt an und prüfst das Ergebnis.';
       if (window.posthog && window.posthog.capture) {{
         window.posthog.capture('solution_revealed', {{
           page_id: 'tool:{slugify(title)}',
@@ -205,6 +207,18 @@ def render_interactive_page(
           asset_type: '{html.escape(page_type)}',
           solution_mode: '{html.escape(solution_mode)}',
           question_type: 'worked_example'
+        }});
+      }}
+    }});
+    document.getElementById('retry-task').addEventListener('click', function () {{
+      capturePracticeStarted();
+      document.getElementById('learner-answer').value = '';
+      document.getElementById('result').textContent = 'Neue Wiederholung: Löse eine ähnliche Aufgabe und schreibe den entscheidenden Zwischenschritt auf.';
+      if (window.posthog && window.posthog.capture) {{
+        window.posthog.capture('retry_clicked', {{
+          page_id: 'tool:{slugify(title)}',
+          slug: '{slugify(title)}',
+          asset_type: '{html.escape(page_type)}'
         }});
       }}
     }});
@@ -236,7 +250,7 @@ def generate_page(
         return None, quality
     if not settings.page_generation_enabled:
         return None, quality
-    out_dir = GENERATED_DIR if indexable else GENERATED_DIR / "drafts"
+    out_dir = GENERATED_DIR if indexable else GENERATED_DIR / "entwuerfe"
     out_dir.mkdir(parents=True, exist_ok=True)
     path = out_dir / f"{slugify(title)}.html"
     path.write_text(html_text, encoding="utf-8")

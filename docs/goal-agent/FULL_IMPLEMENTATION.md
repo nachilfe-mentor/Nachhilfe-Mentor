@@ -31,7 +31,7 @@ The Goal Agent implementation lives in `goal_agent/` and covers V1-V5 with safe 
 - Adaptive publishing throttle with publish/index, draft/noindex, and hold decisions.
 - Lightweight experiment registry.
 - Schema.org generator.
-- Rollback-safe generated output folder: `goal-agent-pages/`.
+- Rollback-safe generated output folder: `lernmaterialien/`.
 
 ## V4
 

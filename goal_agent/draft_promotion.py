@@ -8,8 +8,8 @@ from .config import REPO_ROOT, Settings
 from .quality import QualityResult, check_interactive_page_quality
 
 
-DRAFTS_DIR = REPO_ROOT / "goal-agent-pages" / "drafts"
-PUBLISHED_DIR = REPO_ROOT / "goal-agent-pages"
+DRAFTS_DIR = REPO_ROOT / "lernmaterialien" / "entwuerfe"
+PUBLISHED_DIR = REPO_ROOT / "lernmaterialien"
 
 
 @dataclass(frozen=True)
@@ -53,7 +53,7 @@ def _make_indexable(html: str, slug: str) -> str:
     if "rel=\"canonical\"" not in html and "rel='canonical'" not in html:
         html = html.replace(
             "</head>",
-            f'  <link rel="canonical" href="https://nachhilfe-mentor.de/goal-agent-pages/{slug}.html">\n</head>',
+            f'  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/{slug}.html">\n</head>',
             1,
         )
     return html
@@ -77,7 +77,7 @@ def _promotion_reasons(html: str, quality: QualityResult, published_path: Path) 
 def promote_drafts(settings: Settings, limit: int | None = None) -> list[PromotionResult]:
     if not settings.page_generation_enabled:
         return []
-    drafts_dir = settings.repo_root / "goal-agent-pages" / "drafts"
+    drafts_dir = settings.repo_root / "lernmaterialien" / "entwuerfe"
     if not drafts_dir.exists():
         return []
     max_promotions = limit if limit is not None else settings.emergency_max_generated_pages_per_run

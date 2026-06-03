@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Lineare Gleichungen üben – Schritt-für-Schritt-Trainer | Nachhilfe Mentor</title>
+  <meta name="description" content="Übe lineare Gleichungen auf 3 Stufen: von x + b = c bis ax + b = cx + d. Bei jedem Fehler siehst du den vollständigen Lösungsweg Schritt für Schritt. Kostenlos, ohne Anmeldung.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="lineare Gleichungen üben, lineare Gleichungen Aufgaben, Gleichungen lösen online, Gleichungen lösen Schritt für Schritt, Mathe Trainer kostenlos, lineare Gleichungen Klasse 7 8 9">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/lineare-gleichungen-trainer.html">
+  <meta property="og:title" content="Lineare Gleichungen üben: Kostenloser Schritt-für-Schritt-Trainer">
+  <meta property="og:description" content="Übe lineare Gleichungen auf 3 Stufen: von x + b = c bis ax + b = cx + d. Bei jedem Fehler siehst du den vollständigen Lösungsweg Schritt für Schritt. Kostenlos, ohne Anmeldung.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/lineare-gleichungen-trainer.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Lineare Gleichungen Trainer – Schritt für Schritt",
+  "description":"Interaktiver Trainer für lineare Gleichungen: 3 Schwierigkeitsstufen, zufällig generierte Aufgaben, vollständiger Lösungsweg bei jedem Fehler.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/lineare-gleichungen-trainer.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "educationLevel":"Gymnasium Klasse 7–10",
+  "about":{"@type":"Thing","name":"Lineare Gleichungen"},
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+}</script>
+  <style>
+    :root {
+      --ink: #172033; --muted: #5d6b7e; --line: #d9e1ec;
+      --blue: #0f5fa8; --green: #0b8f6a; --red: #c0392b;
+      --amber: #b86f00; --bg: #f5f8fc; --panel: #fff;
+    }
+
+.site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+.site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+.site-nav a:hover{color:#fff}
+.site-footer{max-width:1100px;margin:40px auto 0;padding:28px 22px 40px;border-top:1px solid #d9e1ec}
+.footer-links{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px}
+.footer-links a{display:inline-block;padding:8px 16px;background:#f0f5fc;border:1px solid #d9e1ec;border-radius:6px;color:#0f5fa8;text-decoration:none;font-size:.88rem;font-weight:600}
+.footer-links a:hover{background:#dceeff}
+.footer-meta{font-size:.83rem;color:#8a9ab0}
+.footer-meta a{color:#5d6b7e}
+
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
+    header, main { max-width: 1100px; margin: 0 auto; padding: 22px; }
+    header { display: grid; gap: 6px; }
+    h1 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.8rem); line-height: 1.1; }
+    h2 { margin: 0 0 10px; font-size: 1rem; font-weight: 800; }
+    p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 18px; align-items: start; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 8px 28px rgba(28,49,80,.07); }
+    .exercise { padding: 24px; display: grid; gap: 20px; }
+    .sidebar { padding: 20px; display: grid; gap: 18px; }
+
+    /* Level progress */
+    .level-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .level-label { font-size: .88rem; font-weight: 800; color: var(--muted); white-space: nowrap; }
+    .dots { display: flex; gap: 6px; }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--line); transition: background .2s; }
+    .dot.done { background: var(--green); }
+    .dot.active { background: var(--blue); }
+    .dot.next { background: var(--line); }
+
+    /* Equation display */
+    .eq-box { background: #f0f5fc; border-radius: 8px; padding: 24px 16px; text-align: center; }
+    .equation { font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 700; letter-spacing: .03em; line-height: 1.2; }
+
+    /* Input row */
+    .input-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .x-label { font-size: 1.3rem; font-weight: 800; white-space: nowrap; }
+    .x-input { width: 100px; min-height: 48px; border: 2px solid var(--line); border-radius: 8px; padding: 8px 12px; font: 700 1.3rem/1 inherit; text-align: center; transition: border-color .15s; }
+    .x-input:focus { outline: none; border-color: var(--blue); }
+    .x-input.correct { border-color: var(--green); background: #edfaf4; }
+    .x-input.wrong { border-color: var(--red); background: #fdf2f2; }
+    .btn { min-height: 48px; padding: 0 22px; border: 0; border-radius: 8px; font: 800 1rem/1 inherit; cursor: pointer; transition: opacity .15s; }
+    .btn:disabled { opacity: .45; cursor: default; }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-secondary { background: #e8eef6; color: var(--ink); }
+    .btn-next { background: var(--green); color: #fff; }
+
+    /* Feedback */
+    .feedback { border-radius: 8px; padding: 14px 16px; font-size: .95rem; line-height: 1.5; display: none; }
+    .feedback.visible { display: block; }
+    .feedback.correct { background: #e6faf2; color: #065c3c; border-left: 4px solid var(--green); }
+    .feedback.wrong { background: #fdf2f2; color: #7b1d1d; border-left: 4px solid var(--red); }
+    .feedback strong { display: block; margin-bottom: 4px; font-size: 1rem; }
+
+    /* Step-by-step solution */
+    .steps { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+    .steps.visible { display: block; }
+    .steps-title { font-size: .85rem; font-weight: 800; color: var(--muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .04em; }
+    .step { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; align-items: baseline; padding: 8px 0; border-bottom: 1px dashed var(--line); }
+    .step:last-child { border-bottom: 0; }
+    .step-eq { font-size: 1.05rem; font-weight: 700; font-family: "Courier New", monospace; }
+    .step-comment { font-size: .82rem; color: var(--muted); text-align: right; }
+    .probe { margin-top: 10px; padding: 10px 12px; background: #f0f5fc; border-radius: 6px; font-size: .9rem; color: var(--ink); }
+
+    /* Hint */
+    .hint-row { display: flex; gap: 8px; align-items: center; }
+    .hint-text { font-size: .88rem; color: var(--amber); display: none; background: #fff8e6; border-radius: 6px; padding: 8px 12px; border-left: 3px solid var(--amber); flex: 1; }
+    .hint-text.visible { display: block; }
+
+    /* Completed screen */
+    .done-screen { display: none; text-align: center; padding: 32px 16px; }
+    .done-screen.visible { display: block; }
+    .done-score { font-size: 3rem; font-weight: 900; color: var(--blue); }
+    .done-msg { font-size: 1.1rem; color: var(--muted); margin: 8px 0 20px; }
+
+    /* Sidebar */
+    .score-box { text-align: center; padding: 16px; background: #f0f5fc; border-radius: 8px; }
+    .score-num { font-size: 2.2rem; font-weight: 900; color: var(--blue); line-height: 1; }
+    .score-label { font-size: .8rem; color: var(--muted); margin-top: 2px; }
+    .streak { display: inline-flex; align-items: center; gap: 4px; font-size: .88rem; font-weight: 800; color: var(--amber); margin-top: 6px; }
+    .level-info { font-size: .88rem; color: var(--muted); line-height: 1.5; }
+    .tip-box { background: #fff8e6; border-left: 3px solid var(--amber); padding: 12px 14px; border-radius: 0 6px 6px 0; font-size: .88rem; color: #5a3c00; line-height: 1.5; }
+    .tip-title { font-weight: 800; display: block; margin-bottom: 3px; }
+    .golden-rule { background: #eef6ff; border-left: 3px solid var(--blue); padding: 12px 14px; border-radius: 0 6px 6px 0; font-size: .88rem; color: #1a3a5c; line-height: 1.5; }
+    .golden-title { font-weight: 800; display: block; margin-bottom: 3px; }
+
+    @media (max-width: 760px) {
+      .layout { grid-template-columns: 1fr; }
+      header, main { padding: 16px; }
+      .input-row { gap: 8px; }
+      .x-input { width: 80px; }
+    }
+  </style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+  <header>
+    <h1>Lineare Gleichungen: Schritt-für-Schritt-Trainer</h1>
+    <p>3 Stufen, je 3 Aufgaben. Bei jedem Fehler siehst du den vollständigen Lösungsweg.</p>
+  </header>
+  <main class="layout">
+    <section class="panel exercise" id="exercisePanel">
+      <div class="level-bar">
+        <span class="level-label" id="levelLabel">Stufe 1 / 3</span>
+        <div class="dots" id="taskDots"></div>
+        <span class="level-label" id="levelName" style="color:var(--blue)">x + b = c</span>
+      </div>
+
+      <div class="eq-box">
+        <div class="equation" id="eqDisplay">—</div>
+      </div>
+
+      <div class="input-row">
+        <span class="x-label">x =</span>
+        <input class="x-input" id="xInput" type="number" inputmode="numeric" placeholder="?" autocomplete="off">
+        <button class="btn btn-primary" id="checkBtn" type="button">Prüfen</button>
+        <button class="btn btn-next" id="nextBtn" type="button" style="display:none">Weiter →</button>
+      </div>
+
+      <div class="hint-row">
+        <button class="btn btn-secondary" id="hintBtn" type="button" style="font-size:.85rem;padding:0 14px;min-height:36px">Tipp</button>
+        <div class="hint-text" id="hintText"></div>
+      </div>
+
+      <div class="feedback" id="feedback"></div>
+
+      <div class="steps" id="steps">
+        <div class="steps-title">Lösungsweg Schritt für Schritt</div>
+        <div id="stepList"></div>
+        <div class="probe" id="probeBox"></div>
+      </div>
+
+      <div class="done-screen" id="doneScreen">
+        <div class="done-score" id="finalScore"></div>
+        <div class="done-msg" id="doneMsg"></div>
+        <button class="btn btn-primary" id="restartBtn" type="button">Nochmal üben</button>
+      </div>
+    </section>
+
+    <aside class="panel sidebar">
+      <div class="score-box">
+        <div class="score-num"><span id="scoreNum">0</span> / 9</div>
+        <div class="score-label">richtig beantwortet</div>
+        <div class="streak" id="streakEl">🔥 Serie: 0</div>
+      </div>
+
+      <div>
+        <h2>Was wird geübt?</h2>
+        <div class="level-info" id="levelInfo">—</div>
+      </div>
+
+      <div class="tip-box">
+        <span class="tip-title" id="tipTitle">Merke</span>
+        <span id="tipText">—</span>
+      </div>
+
+      <div class="golden-rule">
+        <span class="golden-title">⚖ Goldene Regel</span>
+        Was du auf einer Seite der Gleichung machst, musst du auch auf der anderen Seite machen — sonst ist die Gleichung nicht mehr erfüllt.
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    // ── Unicode minus for clean math display ──
+    const MIN = "−"; // −
+    const MUL = "·"; // ·
+    const CHK = "✓"; // ✓
+
+    const R = (a, b) => Math.floor(Math.random() * (b - a + 1)) + a;
+
+    function fmtN(n) { return n < 0 ? MIN + Math.abs(n) : String(n); }
+    function fmtCoeff(a) {
+      if (a === 1) return "";
+      if (a === -1) return MIN;
+      if (a < 0) return MIN + Math.abs(a);
+      return String(a);
+    }
+    function fmtConst(b) {
+      if (b === 0) return "";
+      return b > 0 ? " + " + b : " " + MIN + " " + Math.abs(b);
+    }
+    function sideLHS(a, b) {
+      const xPart = fmtCoeff(a) + "x";
+      return xPart + fmtConst(b);
+    }
+
+    // ── Level definitions ──
+    const LEVELS = [
+      {
+        name: "x + b = c",
+        info: "Die Variable x steht bereits allein. Du brauchst nur die Zahl auf die andere Seite zu bringen.",
+        tip: "Subtrahiere (oder addiere) die Zahl von beiden Seiten, bis x allein steht.",
+        gen: genL1,
+      },
+      {
+        name: "a·x + b = c",
+        info: "Erst die Zahl b auf die rechte Seite bringen, dann durch den Koeffizienten a teilen.",
+        tip: "Schritt 1: Konstante weg. Schritt 2: Koeffizient weg.",
+        gen: genL2,
+      },
+      {
+        name: "a·x + b = c·x + d",
+        info: "Die Variable x steht auf beiden Seiten. Erst alle x-Terme auf eine Seite, dann alle Zahlen auf die andere.",
+        tip: "Schritt 1: Alle x links. Schritt 2: Alle Zahlen rechts. Schritt 3: Teilen.",
+        gen: genL3,
+      },
+    ];
+
+    function genL1() {
+      const x = R(-10, 10);
+      const b = R(-10, 10);
+      const c = x + b;
+      const display = sideLHS(1, b) + " = " + fmtN(c);
+      const steps = [];
+      if (b !== 0) {
+        const verb = b > 0 ? "Subtrahiere " + b + " von beiden Seiten" : "Addiere " + Math.abs(b) + " zu beiden Seiten";
+        steps.push({ eq: "x = " + fmtN(c) + (b > 0 ? " " + MIN + " " + b : " + " + Math.abs(b)) + " = " + fmtN(x), comment: verb });
+      } else {
+        steps.push({ eq: "x = " + fmtN(x), comment: "x steht bereits allein" });
+      }
+      const probe = fmtN(x) + fmtConst(b) + " = " + fmtN(x + b) + " = " + fmtN(c) + " " + CHK;
+      return { display, solution: x, steps, probe, hint: steps[0].comment };
+    }
+
+    function genL2() {
+      const x = R(-6, 6);
+      const COEFFS = [2, 3, 4, 5, -2, -3, -4];
+      const a = COEFFS[R(0, COEFFS.length - 1)];
+      const b = R(-8, 8);
+      const c = a * x + b;
+      const display = sideLHS(a, b) + " = " + fmtN(c);
+      const steps = [];
+      const cMb = c - b;
+      if (b !== 0) {
+        const verb = b > 0 ? "Subtrahiere " + b + " von beiden Seiten" : "Addiere " + Math.abs(b) + " zu beiden Seiten";
+        steps.push({ eq: fmtCoeff(a) + "x = " + fmtN(cMb), comment: verb });
+      }
+      const divLabel = a < 0 ? "(" + fmtN(a) + ")" : String(a);
+      steps.push({ eq: "x = " + fmtN(cMb) + " ÷ " + divLabel + " = " + fmtN(x), comment: "Dividiere durch " + divLabel });
+      const probeL = fmtN(a) + MUL + "(" + fmtN(x) + ")" + fmtConst(b) + " = " + fmtN(a * x) + fmtConst(b) + " = " + fmtN(c);
+      return { display, solution: x, steps, probe: probeL + " = " + fmtN(c) + " " + CHK, hint: steps[0].comment };
+    }
+
+    function genL3() {
+      const x = R(-5, 5);
+      const AS = [2, 3, 4, -2, -3];
+      const CS = [1, 2, -1, -2, -3];
+      let a, cv;
+      do { a = AS[R(0, AS.length - 1)]; cv = CS[R(0, CS.length - 1)]; } while (a === cv);
+      const b = R(-6, 6);
+      const d = a * x + b - cv * x;
+      const display = sideLHS(a, b) + " = " + sideLHS(cv, d);
+      const steps = [];
+      const aMc = a - cv;
+      const verb1 = cv > 0 ? "Subtrahiere " + fmtCoeff(cv) + "x von beiden Seiten" : "Addiere " + fmtCoeff(Math.abs(cv)) + "x zu beiden Seiten";
+      steps.push({ eq: sideLHS(aMc, b) + " = " + fmtN(d), comment: verb1 });
+      const dMb = d - b;
+      if (b !== 0) {
+        const verb2 = b > 0 ? "Subtrahiere " + b + " von beiden Seiten" : "Addiere " + Math.abs(b) + " zu beiden Seiten";
+        steps.push({ eq: fmtCoeff(aMc) + "x = " + fmtN(dMb), comment: verb2 });
+      }
+      const divLabel = aMc < 0 ? "(" + fmtN(aMc) + ")" : String(aMc);
+      steps.push({ eq: "x = " + fmtN(dMb) + " ÷ " + divLabel + " = " + fmtN(x), comment: "Dividiere durch " + divLabel });
+      const lhsVal = a * x + b, rhsVal = cv * x + d;
+      const probe = fmtN(a) + MUL + "(" + fmtN(x) + ")" + fmtConst(b) + " = " + fmtN(lhsVal) + " | " + fmtN(cv) + MUL + "(" + fmtN(x) + ")" + fmtConst(d) + " = " + fmtN(rhsVal) + " " + CHK;
+      return { display, solution: x, steps, probe, hint: steps[0].comment };
+    }
+
+    // ── State ──
+    let state = { level: 0, taskNum: 0, score: 0, streak: 0, task: null, answered: false };
+
+    function init() {
+      state = { level: 0, taskNum: 0, score: 0, streak: 0, task: null, answered: false };
+      document.getElementById("doneScreen").classList.remove("visible");
+      document.getElementById("exercisePanel").querySelectorAll(".eq-box,.input-row,.hint-row,.feedback,.steps").forEach(el => { el.style.display = ""; });
+      newTask();
+    }
+
+    function newTask() {
+      state.task = LEVELS[state.level].gen();
+      state.answered = false;
+      const xIn = document.getElementById("xInput");
+      xIn.value = "";
+      xIn.className = "x-input";
+      xIn.disabled = false;
+      document.getElementById("checkBtn").disabled = false;
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("hintBtn").disabled = false;
+      document.getElementById("hintText").classList.remove("visible");
+      document.getElementById("feedback").className = "feedback";
+      document.getElementById("steps").classList.remove("visible");
+      document.getElementById("eqDisplay").textContent = state.task.display;
+      renderMeta();
+      xIn.focus();
+    }
+
+    function renderMeta() {
+      const lv = LEVELS[state.level];
+      document.getElementById("levelLabel").textContent = "Stufe " + (state.level + 1) + " / 3";
+      document.getElementById("levelName").textContent = lv.name;
+      document.getElementById("levelInfo").textContent = lv.info;
+      document.getElementById("tipTitle").textContent = "Tipp Stufe " + (state.level + 1);
+      document.getElementById("tipText").textContent = lv.tip;
+      const dots = document.getElementById("taskDots");
+      dots.innerHTML = Array.from({ length: 3 }, (_, i) => {
+        const cls = i < state.taskNum ? "dot done" : i === state.taskNum ? "dot active" : "dot";
+        return "<div class='" + cls + "'></div>";
+      }).join("");
+      document.getElementById("scoreNum").textContent = state.score;
+      document.getElementById("streakEl").textContent = "🔥 Serie: " + state.streak;
+    }
+
+    function check() {
+      if (state.answered) return;
+      const raw = document.getElementById("xInput").value.trim();
+      if (raw === "") { document.getElementById("xInput").focus(); return; }
+      const entered = parseInt(raw, 10);
+      if (isNaN(entered)) {
+        document.getElementById("feedback").textContent = "Bitte eine ganze Zahl eingeben.";
+        document.getElementById("feedback").className = "feedback wrong visible";
+        return;
+      }
+      state.answered = true;
+      document.getElementById("checkBtn").disabled = true;
+      document.getElementById("hintBtn").disabled = true;
+      const correct = entered === state.task.solution;
+      const xIn = document.getElementById("xInput");
+      xIn.className = "x-input " + (correct ? "correct" : "wrong");
+      xIn.disabled = true;
+
+      const fb = document.getElementById("feedback");
+      if (correct) {
+        state.score++;
+        state.streak++;
+        fb.innerHTML = "<strong>✓ Richtig!</strong> x = " + fmtN(state.task.solution) + ". Probe: " + state.task.probe;
+        fb.className = "feedback correct visible";
+      } else {
+        state.streak = 0;
+        // Show check of wrong answer
+        fb.innerHTML = "<strong>✗ Nicht ganz.</strong> x = " + fmtN(entered) + " ist falsch. Unten siehst du den vollständigen Lösungsweg.";
+        fb.className = "feedback wrong visible";
+        renderSteps();
+      }
+      renderMeta();
+      document.getElementById("nextBtn").style.display = "";
+    }
+
+    function renderSteps() {
+      const list = document.getElementById("stepList");
+      list.innerHTML = state.task.steps.map(s =>
+        "<div class='step'><span class='step-eq'>" + s.eq + "</span><span class='step-comment'>" + s.comment + "</span></div>"
+      ).join("");
+      document.getElementById("probeBox").textContent = "Probe: " + state.task.probe;
+      document.getElementById("steps").classList.add("visible");
+    }
+
+    function advance() {
+      state.taskNum++;
+      if (state.taskNum >= 3) {
+        state.taskNum = 0;
+        state.level++;
+        if (state.level >= 3) {
+          showDone();
+          return;
+        }
+      }
+      newTask();
+    }
+
+    function showDone() {
+      document.getElementById("eqDisplay").parentElement.style.display = "none"; // eq-box
+      document.getElementById("xInput").parentElement.parentElement.style.display = "none"; // input-row
+      document.getElementById("hintBtn").parentElement.style.display = "none";
+      document.getElementById("feedback").style.display = "none";
+      document.getElementById("steps").style.display = "none";
+      const done = document.getElementById("doneScreen");
+      const s = state.score;
+      document.getElementById("finalScore").textContent = s + " / 9 richtig";
+      document.getElementById("doneMsg").textContent =
+        s >= 8 ? "Ausgezeichnet! Du hast alle Stufen gemeistert." :
+        s >= 6 ? "Sehr gut! Übe noch ein paar Runden und du hast es drauf." :
+        "Gut gemacht. Die Schritt-für-Schritt-Erklärungen zeigen dir, wo es noch hakt.";
+      done.classList.add("visible");
+    }
+
+    document.getElementById("checkBtn").addEventListener("click", check);
+    document.getElementById("xInput").addEventListener("keydown", e => { if (e.key === "Enter") check(); });
+    document.getElementById("nextBtn").addEventListener("click", advance);
+    document.getElementById("restartBtn").addEventListener("click", init);
+    document.getElementById("hintBtn").addEventListener("click", () => {
+      const ht = document.getElementById("hintText");
+      ht.textContent = state.task.hint;
+      ht.classList.add("visible");
+    });
+
+    init();
+  </script>
+<footer class="site-footer">
+  <p style="font-weight:700;color:#172033;margin:0 0 6px">Mehr Mathe-Hilfe auf Nachhilfe Mentor:</p>
+  <div class="footer-links">
+  <a href="/blog/posts/lineare-gleichungen-loesen-tipps.html">Lineare Gleichungen lösen – Tipps</a>
+  <a href="/blog/posts/mathe-lernen-tipps.html">Mathe lernen Tipps</a>
+  <a href="/blog/posts/mathe-abitur-vorbereitung.html">Mathe Abitur vorbereiten</a>
+  <a href="/blog/posts/mathe-klassenarbeit-tipps.html">Klassenarbeit Mathe Tipps</a>
+  <a href="/lernmaterialien/bruchrechnung-trainer.html">Bruchrechnung Trainer</a>
+  </div>
+  <p class="footer-meta"><a href="/">Nachhilfe Mentor</a> &middot; <a href="/impressum.html">Impressum</a> &middot; <a href="/datenschutz/">Datenschutz</a></p>
+</footer>
+</body>
+</html>

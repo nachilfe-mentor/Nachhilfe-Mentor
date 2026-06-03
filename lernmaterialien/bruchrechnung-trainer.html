@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Bruchrechnung üben – Interaktiver Trainer für alle 4 Rechenarten | Nachhilfe Mentor</title>
+  <meta name="description" content="Übe Brüche addieren, subtrahieren, multiplizieren und dividieren. 4 Stufen, automatisch generierte Aufgaben, vollständiger Rechenweg bei Fehlern und Hinweis auf den häufigsten Denkfehler.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Bruchrechnung üben, Brüche rechnen Aufgaben, Brüche addieren Übung, Brüche multiplizieren, Kehrbruch Übung, Bruchrechnung interaktiv, Mathe Trainer kostenlos, Brüche Klasse 5 6 7">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/bruchrechnung-trainer.html">
+  <meta property="og:title" content="Bruchrechnung üben: Kostenloser interaktiver Trainer">
+  <meta property="og:description" content="Übe Brüche addieren, subtrahieren, multiplizieren und dividieren. 4 Stufen, automatisch generierte Aufgaben, vollständiger Rechenweg bei Fehlern und Hinweis auf den häufigsten Denkfehler.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/bruchrechnung-trainer.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Bruchrechnung Trainer – Alle 4 Rechenarten",
+  "description":"Interaktiver Trainer für Bruchrechnung: 4 Stufen (gleichnamig, ungleichnamig, Multiplikation, Division), automatisch generierte Aufgaben, vollständiger Rechenweg bei Fehlern.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/bruchrechnung-trainer.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "educationLevel":"Gymnasium Klasse 5–8",
+  "about":{"@type":"Thing","name":"Bruchrechnung"},
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+}</script>
+  <style>
+    :root {
+      --ink: #172033; --muted: #5d6b7e; --line: #d9e1ec;
+      --blue: #0f5fa8; --green: #0b8f6a; --red: #c0392b;
+      --amber: #b86f00; --bg: #f5f8fc; --panel: #fff;
+    }
+
+.site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+.site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+.site-nav a:hover{color:#fff}
+.site-footer{max-width:1100px;margin:40px auto 0;padding:28px 22px 40px;border-top:1px solid #d9e1ec}
+.footer-links{display:flex;flex-wrap:wrap;gap:10px;margin:10px 0 18px}
+.footer-links a{display:inline-block;padding:8px 16px;background:#f0f5fc;border:1px solid #d9e1ec;border-radius:6px;color:#0f5fa8;text-decoration:none;font-size:.88rem;font-weight:600}
+.footer-links a:hover{background:#dceeff}
+.footer-meta{font-size:.83rem;color:#8a9ab0}
+.footer-meta a{color:#5d6b7e}
+
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); background: var(--bg); }
+    header, main { max-width: 1100px; margin: 0 auto; padding: 22px; }
+    header { display: grid; gap: 6px; }
+    h1 { margin: 0; font-size: clamp(1.7rem, 3vw, 2.8rem); line-height: 1.1; }
+    h2 { margin: 0 0 10px; font-size: 1rem; font-weight: 800; }
+    p { margin: 0; color: var(--muted); line-height: 1.55; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 18px; align-items: start; }
+    .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; box-shadow: 0 8px 28px rgba(28,49,80,.07); }
+    .exercise { padding: 24px; display: grid; gap: 20px; }
+    .sidebar { padding: 20px; display: grid; gap: 18px; }
+
+    .level-bar { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .level-label { font-size: .88rem; font-weight: 800; color: var(--muted); white-space: nowrap; }
+    .dots { display: flex; gap: 6px; }
+    .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--line); transition: background .2s; }
+    .dot.done { background: var(--green); }
+    .dot.active { background: var(--blue); }
+
+    /* Fraction display */
+    .eq-box { background: #f0f5fc; border-radius: 8px; padding: 24px 16px; text-align: center; min-height: 110px; display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .frac { display: inline-flex; flex-direction: column; align-items: center; font-weight: 700; }
+    .frac .num, .frac .den { padding: 2px 10px; font-size: 1.7rem; line-height: 1.2; }
+    .frac .num { border-bottom: 3px solid var(--ink); }
+    .op-sym { font-size: 2.2rem; font-weight: 900; color: var(--blue); padding: 0 4px; }
+    .eq-sym { font-size: 2rem; font-weight: 700; color: var(--muted); }
+
+    /* Answer input: fraction form */
+    .answer-row { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .answer-frac { display: inline-flex; flex-direction: column; align-items: center; gap: 3px; }
+    .frac-input { width: 72px; min-height: 46px; border: 2px solid var(--line); border-radius: 7px; padding: 6px 8px; font: 700 1.3rem/1 inherit; text-align: center; transition: border-color .15s; }
+    .frac-input:focus { outline: none; border-color: var(--blue); }
+    .frac-bar { height: 3px; width: 72px; background: var(--ink); border-radius: 2px; }
+    .frac-input.correct { border-color: var(--green); background: #edfaf4; }
+    .frac-input.wrong { border-color: var(--red); background: #fdf2f2; }
+    .ans-label { font-size: 1.1rem; font-weight: 800; color: var(--muted); }
+    .btn { min-height: 48px; padding: 0 22px; border: 0; border-radius: 8px; font: 800 1rem/1 inherit; cursor: pointer; transition: opacity .15s; }
+    .btn:disabled { opacity: .45; cursor: default; }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-secondary { background: #e8eef6; color: var(--ink); }
+    .btn-next { background: var(--green); color: #fff; }
+
+    .feedback { border-radius: 8px; padding: 14px 16px; font-size: .95rem; line-height: 1.55; display: none; }
+    .feedback.visible { display: block; }
+    .feedback.correct { background: #e6faf2; color: #065c3c; border-left: 4px solid var(--green); }
+    .feedback.wrong { background: #fdf2f2; color: #7b1d1d; border-left: 4px solid var(--red); }
+    .feedback strong { display: block; margin-bottom: 4px; }
+
+    .steps { display: none; margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--line); }
+    .steps.visible { display: block; }
+    .steps-title { font-size: .85rem; font-weight: 800; color: var(--muted); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .04em; }
+    .step { padding: 8px 0; border-bottom: 1px dashed var(--line); font-size: .97rem; line-height: 1.5; }
+    .step:last-child { border-bottom: 0; }
+    .step-label { font-size: .8rem; font-weight: 800; color: var(--muted); display: block; margin-bottom: 2px; }
+    .step-eq { font-family: "Courier New", monospace; font-weight: 700; }
+    .misconception { margin-top: 12px; padding: 10px 13px; background: #fff8e6; border-left: 3px solid var(--amber); border-radius: 0 6px 6px 0; font-size: .88rem; color: #5a3c00; display: none; }
+    .misconception.visible { display: block; }
+
+    .hint-row { display: flex; gap: 8px; align-items: center; }
+    .hint-text { font-size: .88rem; color: var(--amber); display: none; background: #fff8e6; border-radius: 6px; padding: 8px 12px; border-left: 3px solid var(--amber); flex: 1; }
+    .hint-text.visible { display: block; }
+
+    .done-screen { display: none; text-align: center; padding: 32px 16px; }
+    .done-screen.visible { display: block; }
+    .done-score { font-size: 3rem; font-weight: 900; color: var(--blue); }
+    .done-msg { font-size: 1.1rem; color: var(--muted); margin: 8px 0 20px; }
+
+    .score-box { text-align: center; padding: 16px; background: #f0f5fc; border-radius: 8px; }
+    .score-num { font-size: 2.2rem; font-weight: 900; color: var(--blue); line-height: 1; }
+    .score-label { font-size: .8rem; color: var(--muted); margin-top: 2px; }
+    .streak { display: inline-flex; align-items: center; gap: 4px; font-size: .88rem; font-weight: 800; color: var(--amber); margin-top: 6px; }
+    .level-info { font-size: .88rem; color: var(--muted); line-height: 1.6; }
+    .tip-box { background: #fff8e6; border-left: 3px solid var(--amber); padding: 12px 14px; border-radius: 0 6px 6px 0; font-size: .88rem; color: #5a3c00; line-height: 1.6; }
+    .tip-title { font-weight: 800; display: block; margin-bottom: 3px; }
+    .rule-box { background: #eef6ff; border-left: 3px solid var(--blue); padding: 12px 14px; border-radius: 0 6px 6px 0; font-size: .85rem; color: #1a3a5c; line-height: 1.6; }
+    .rule-title { font-weight: 800; display: block; margin-bottom: 3px; }
+
+    @media (max-width: 760px) {
+      .layout { grid-template-columns: 1fr; }
+      header, main { padding: 16px; }
+      .frac-input { width: 60px; font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+  <header>
+    <h1>Bruchrechnung: Alle vier Rechenarten üben</h1>
+    <p>4 Stufen, je 3 Aufgaben. Bei Fehlern siehst du den vollständigen Rechenweg und den häufigsten Denkfehler.</p>
+  </header>
+  <main class="layout">
+    <section class="panel exercise" id="exercisePanel">
+      <div class="level-bar">
+        <span class="level-label" id="levelLabel">Stufe 1 / 4</span>
+        <div class="dots" id="taskDots"></div>
+        <span class="level-label" id="levelName" style="color:var(--blue)">—</span>
+      </div>
+
+      <div class="eq-box" id="eqBox">
+        <!-- Fraction task rendered here -->
+      </div>
+
+      <div class="answer-row">
+        <span class="ans-label">Ergebnis:</span>
+        <div class="answer-frac">
+          <input class="frac-input" id="numInput" type="number" inputmode="numeric" placeholder="Zähler" autocomplete="off" aria-label="Zähler">
+          <div class="frac-bar"></div>
+          <input class="frac-input" id="denInput" type="number" inputmode="numeric" placeholder="Nenner" autocomplete="off" aria-label="Nenner">
+        </div>
+        <button class="btn btn-primary" id="checkBtn" type="button">Prüfen</button>
+        <button class="btn btn-next" id="nextBtn" type="button" style="display:none">Weiter →</button>
+      </div>
+
+      <div class="hint-row">
+        <button class="btn btn-secondary" id="hintBtn" type="button" style="font-size:.85rem;padding:0 14px;min-height:36px">Tipp</button>
+        <div class="hint-text" id="hintText"></div>
+      </div>
+
+      <div class="feedback" id="feedback"></div>
+
+      <div class="steps" id="steps">
+        <div class="steps-title">Rechenweg Schritt für Schritt</div>
+        <div id="stepList"></div>
+      </div>
+      <div class="misconception" id="misconception"></div>
+
+      <div class="done-screen" id="doneScreen">
+        <div class="done-score" id="finalScore"></div>
+        <div class="done-msg" id="doneMsg"></div>
+        <button class="btn btn-primary" id="restartBtn" type="button">Nochmal üben</button>
+      </div>
+    </section>
+
+    <aside class="panel sidebar">
+      <div class="score-box">
+        <div class="score-num"><span id="scoreNum">0</span> / 12</div>
+        <div class="score-label">richtig beantwortet</div>
+        <div class="streak" id="streakEl">🔥 Serie: 0</div>
+      </div>
+      <div>
+        <h2>Was wird geübt?</h2>
+        <div class="level-info" id="levelInfo">—</div>
+      </div>
+      <div class="tip-box">
+        <span class="tip-title" id="tipTitle">Tipp</span>
+        <span id="tipText">—</span>
+      </div>
+      <div class="rule-box">
+        <span class="rule-title">⚠ Häufiger Fehler</span>
+        <span id="errorRule">—</span>
+      </div>
+    </aside>
+  </main>
+
+  <script>
+    // ── Math helpers ──
+    function gcd(a, b) { a = Math.abs(a); b = Math.abs(b); while (b) { [a, b] = [b, a % b]; } return a; }
+    function lcm(a, b) { return Math.abs(a * b) / gcd(a, b); }
+    function reduce(n, d) {
+      if (d === 0) return [n, d];
+      const g = gcd(Math.abs(n), Math.abs(d));
+      // keep denominator positive
+      if (d < 0) { n = -n; d = -d; }
+      return [n / g, d / g];
+    }
+    function fracEq(n1, d1, n2, d2) { return n1 * d2 === n2 * d1; }
+    const R = (a, b) => Math.floor(Math.random() * (b - a + 1)) + a;
+
+    function fracStr(n, d) {
+      if (d === 1) return String(n);
+      return n + "/" + d;
+    }
+
+    // ── Level definitions ──
+    const LEVELS = [
+      {
+        name: "Gleichnamig +/−",
+        info: "Beide Brüche haben denselben Nenner. Nur die Zähler werden addiert oder subtrahiert — der Nenner bleibt gleich.",
+        tip: "Zähler addieren / subtrahieren, Nenner bleibt. Danach kürzen!",
+        errorRule: "Falsch: a/b + c/b ≠ (a+c)/(2b). Der Nenner bleibt b, nicht 2b.",
+        gen: genL1,
+      },
+      {
+        name: "Ungleichnamig +/−",
+        info: "Verschiedene Nenner: erst den Hauptnenner (kgV) berechnen, Brüche erweitern, dann Zähler addieren/subtrahieren.",
+        tip: "kgV der Nenner finden → erweitern → Zähler addieren/subtrahieren → kürzen.",
+        errorRule: "Falsch: a/b + c/d ≠ (a+c)/(b+d). Zähler UND Nenner dürfen nicht einfach addiert werden.",
+        gen: genL2,
+      },
+      {
+        name: "Multiplizieren",
+        info: "Zähler × Zähler und Nenner × Nenner. Danach kürzen.",
+        tip: "Zähler mal Zähler, Nenner mal Nenner — dann kürzen.",
+        errorRule: "Falsch: a/b × c/d ≠ (a×c)/(b+d). Beim Multiplizieren werden BEIDE Nenner multipliziert.",
+        gen: genL3,
+      },
+      {
+        name: "Dividieren",
+        info: "Den zweiten Bruch umdrehen (Kehrbruch) und dann multiplizieren.",
+        tip: "Kehrbruch des zweiten Bruchs bilden, dann multiplizieren.",
+        errorRule: "Falsch: a/b ÷ c/d ≠ (a×c)/(b×d). Bei der Division wird der ZWEITE Bruch umgedreht, nicht der erste.",
+        gen: genL4,
+      },
+    ];
+
+    function genL1() {
+      const d = R(2, 9);
+      let a = R(1, d - 1), c;
+      const add = Math.random() < 0.5;
+      if (add) {
+        c = R(1, d - a);
+      } else {
+        c = R(1, a - 1) || 1;
+      }
+      const op = add ? "+" : "−";
+      const [rn, rd] = reduce(add ? a + c : a - c, d);
+      const steps = add ? [
+        { label: "Gleicher Nenner", eq: a + "/" + d + " + " + c + "/" + d + " = (" + a + " + " + c + ") / " + d + " = " + (a + c) + "/" + d },
+        { label: "Kürzen", eq: (a + c) + "/" + d + " = " + rn + "/" + rd },
+      ] : [
+        { label: "Gleicher Nenner", eq: a + "/" + d + " − " + c + "/" + d + " = (" + a + " − " + c + ") / " + d + " = " + (a - c) + "/" + d },
+        { label: "Kürzen", eq: (a - c) + "/" + d + " = " + rn + "/" + rd },
+      ];
+      return { a, ab: d, op, b: c, bb: d, rn, rd, steps, hint: "Gleicher Nenner: nur Zähler " + (add ? "addieren" : "subtrahieren") };
+    }
+
+    function genL2() {
+      const DENOMS = [2, 3, 4, 5, 6, 8];
+      let ab, bb;
+      do { ab = DENOMS[R(0, DENOMS.length - 1)]; bb = DENOMS[R(0, DENOMS.length - 1)]; } while (ab === bb);
+      const a = R(1, ab - 1);
+      const add = Math.random() < 0.6;
+      let b;
+      if (add) {
+        b = R(1, bb - 1);
+      } else {
+        b = R(1, bb - 1);
+      }
+      const op = add ? "+" : "−";
+      const hd = lcm(ab, bb);
+      const fa = hd / ab, fb = hd / bb;
+      const numResult = add ? a * fa + b * fb : a * fa - b * fb;
+      const [rn, rd] = reduce(numResult, hd);
+      const steps = [
+        { label: "Hauptnenner (kgV) finden", eq: "kgV(" + ab + ", " + bb + ") = " + hd },
+        { label: "Brüche erweitern", eq: a + "/" + ab + " = " + (a * fa) + "/" + hd + "  |  " + b + "/" + bb + " = " + (b * fb) + "/" + hd },
+        { label: "Zähler " + (add ? "addieren" : "subtrahieren"), eq: "(" + (a * fa) + " " + op + " " + (b * fb) + ") / " + hd + " = " + numResult + "/" + hd },
+        { label: "Kürzen", eq: numResult + "/" + hd + " = " + rn + "/" + rd },
+      ];
+      return { a, ab, op, b, bb, rn, rd, steps, hint: "Hauptnenner: kgV(" + ab + ", " + bb + ") = " + hd };
+    }
+
+    function genL3() {
+      const ab = R(2, 6), bb = R(2, 6);
+      const a = R(1, ab), b = R(1, bb);
+      const [rn, rd] = reduce(a * b, ab * bb);
+      const steps = [
+        { label: "Zähler × Zähler", eq: a + " × " + b + " = " + (a * b) },
+        { label: "Nenner × Nenner", eq: ab + " × " + bb + " = " + (ab * bb) },
+        { label: "Ergebnis", eq: (a * b) + " / " + (ab * bb) },
+        { label: "Kürzen", eq: (a * b) + "/" + (ab * bb) + " = " + rn + "/" + rd },
+      ];
+      return { a, ab, op: "×", b, bb, rn, rd, steps, hint: "Zähler mal Zähler, Nenner mal Nenner" };
+    }
+
+    function genL4() {
+      const ab = R(2, 6), bb = R(2, 6);
+      const a = R(1, ab), b = R(1, bb);
+      // a/ab ÷ b/bb = a/ab × bb/b = (a×bb)/(ab×b)
+      const [rn, rd] = reduce(a * bb, ab * b);
+      const steps = [
+        { label: "Kehrbruch des zweiten Bruchs", eq: b + "/" + bb + " → " + bb + "/" + b },
+        { label: "Multiplizieren", eq: a + "/" + ab + " × " + bb + "/" + b },
+        { label: "Zähler × Zähler, Nenner × Nenner", eq: (a * bb) + " / " + (ab * b) },
+        { label: "Kürzen", eq: (a * bb) + "/" + (ab * b) + " = " + rn + "/" + rd },
+      ];
+      return { a, ab, op: "÷", b, bb, rn, rd, steps, hint: "Kehrbruch des zweiten Bruchs, dann multiplizieren" };
+    }
+
+    // ── State ──
+    let state = { level: 0, taskNum: 0, score: 0, streak: 0, task: null, answered: false };
+
+    function init() {
+      state = { level: 0, taskNum: 0, score: 0, streak: 0, task: null, answered: false };
+      document.getElementById("doneScreen").classList.remove("visible");
+      document.getElementById("eqBox").style.display = "";
+      document.querySelector(".answer-row").style.display = "";
+      document.querySelector(".hint-row").style.display = "";
+      newTask();
+    }
+
+    function renderFrac(n, d, cls = "") {
+      return "<span class='frac " + cls + "'><span class='num'>" + n + "</span><span class='den'>" + d + "</span></span>";
+    }
+
+    function newTask() {
+      state.task = LEVELS[state.level].gen();
+      state.answered = false;
+      ["numInput", "denInput"].forEach(id => {
+        const el = document.getElementById(id);
+        el.value = "";
+        el.className = "frac-input";
+        el.disabled = false;
+      });
+      document.getElementById("checkBtn").disabled = false;
+      document.getElementById("nextBtn").style.display = "none";
+      document.getElementById("hintBtn").disabled = false;
+      document.getElementById("hintText").classList.remove("visible");
+      document.getElementById("feedback").className = "feedback";
+      document.getElementById("steps").classList.remove("visible");
+      document.getElementById("misconception").classList.remove("visible");
+
+      const t = state.task;
+      document.getElementById("eqBox").innerHTML =
+        renderFrac(t.a, t.ab) +
+        "<span class='op-sym'>" + t.op + "</span>" +
+        renderFrac(t.b, t.bb) +
+        "<span class='eq-sym'>=</span>";
+
+      renderMeta();
+      document.getElementById("numInput").focus();
+    }
+
+    function renderMeta() {
+      const lv = LEVELS[state.level];
+      document.getElementById("levelLabel").textContent = "Stufe " + (state.level + 1) + " / 4";
+      document.getElementById("levelName").textContent = lv.name;
+      document.getElementById("levelInfo").textContent = lv.info;
+      document.getElementById("tipTitle").textContent = "Tipp Stufe " + (state.level + 1);
+      document.getElementById("tipText").textContent = lv.tip;
+      document.getElementById("errorRule").textContent = lv.errorRule;
+      const dots = document.getElementById("taskDots");
+      dots.innerHTML = Array.from({ length: 3 }, (_, i) => {
+        const cls = i < state.taskNum ? "dot done" : i === state.taskNum ? "dot active" : "dot";
+        return "<div class='" + cls + "'></div>";
+      }).join("");
+      document.getElementById("scoreNum").textContent = state.score;
+      document.getElementById("streakEl").textContent = "🔥 Serie: " + state.streak;
+    }
+
+    function check() {
+      if (state.answered) return;
+      const numRaw = document.getElementById("numInput").value.trim();
+      const denRaw = document.getElementById("denInput").value.trim();
+      if (numRaw === "" || denRaw === "") {
+        document.getElementById("feedback").textContent = "Bitte Zähler und Nenner eingeben.";
+        document.getElementById("feedback").className = "feedback wrong visible";
+        return;
+      }
+      const num = parseInt(numRaw, 10), den = parseInt(denRaw, 10);
+      if (isNaN(num) || isNaN(den) || den === 0) {
+        document.getElementById("feedback").textContent = "Bitte gültige ganze Zahlen eingeben (Nenner ≠ 0).";
+        document.getElementById("feedback").className = "feedback wrong visible";
+        return;
+      }
+      state.answered = true;
+      document.getElementById("checkBtn").disabled = true;
+      document.getElementById("hintBtn").disabled = true;
+
+      const t = state.task;
+      const correct = fracEq(num, den, t.rn, t.rd);
+      ["numInput", "denInput"].forEach(id => {
+        const el = document.getElementById(id);
+        el.className = "frac-input " + (correct ? "correct" : "wrong");
+        el.disabled = true;
+      });
+
+      const fb = document.getElementById("feedback");
+      const [rn, rd] = reduce(t.rn, t.rd);
+      if (correct) {
+        state.score++;
+        state.streak++;
+        fb.innerHTML = "<strong>✓ Richtig!</strong> " + fracStr(rn, rd) + " ist korrekt.";
+        fb.className = "feedback correct visible";
+      } else {
+        state.streak = 0;
+        fb.innerHTML = "<strong>✗ Nicht ganz.</strong> " + fracStr(num, den) + " ist falsch. Das richtige Ergebnis ist " + fracStr(rn, rd) + ". Der Rechenweg steht unten.";
+        fb.className = "feedback wrong visible";
+        renderSteps();
+        // Show misconception warning
+        const mis = document.getElementById("misconception");
+        mis.textContent = "⚠ Häufiger Fehler: " + LEVELS[state.level].errorRule;
+        mis.classList.add("visible");
+      }
+      renderMeta();
+      document.getElementById("nextBtn").style.display = "";
+    }
+
+    function renderSteps() {
+      const list = document.getElementById("stepList");
+      list.innerHTML = state.task.steps.map(s =>
+        "<div class='step'><span class='step-label'>" + s.label + "</span><span class='step-eq'>" + s.eq + "</span></div>"
+      ).join("");
+      document.getElementById("steps").classList.add("visible");
+    }
+
+    function advance() {
+      state.taskNum++;
+      if (state.taskNum >= 3) {
+        state.taskNum = 0;
+        state.level++;
+        if (state.level >= 4) { showDone(); return; }
+      }
+      newTask();
+    }
+
+    function showDone() {
+      document.getElementById("eqBox").style.display = "none";
+      document.querySelector(".answer-row").style.display = "none";
+      document.querySelector(".hint-row").style.display = "none";
+      document.getElementById("feedback").style.display = "none";
+      document.getElementById("steps").style.display = "none";
+      document.getElementById("misconception").style.display = "none";
+      const s = state.score;
+      document.getElementById("finalScore").textContent = s + " / 12 richtig";
+      document.getElementById("doneMsg").textContent =
+        s >= 11 ? "Ausgezeichnet! Bruchrechnung sitzt." :
+        s >= 8 ? "Sehr gut! Noch eine Runde und du hast es sicher drauf." :
+        "Gut geübt. Schau dir die Rechenwege bei den Fehlern nochmal an.";
+      document.getElementById("doneScreen").classList.add("visible");
+    }
+
+    document.getElementById("checkBtn").addEventListener("click", check);
+    document.getElementById("denInput").addEventListener("keydown", e => { if (e.key === "Enter") check(); });
+    document.getElementById("nextBtn").addEventListener("click", advance);
+    document.getElementById("restartBtn").addEventListener("click", init);
+    document.getElementById("hintBtn").addEventListener("click", () => {
+      const ht = document.getElementById("hintText");
+      ht.textContent = state.task.hint;
+      ht.classList.add("visible");
+    });
+
+    init();
+  </script>
+<footer class="site-footer">
+  <p style="font-weight:700;color:#172033;margin:0 0 6px">Mehr Mathe-Hilfe auf Nachhilfe Mentor:</p>
+  <div class="footer-links">
+  <a href="/blog/posts/bruchrechnung-lernen-tipps.html">Bruchrechnung lernen – Tipps</a>
+  <a href="/blog/posts/mathe-lernen-tipps.html">Mathe lernen Tipps</a>
+  <a href="/blog/posts/mathe-klassenarbeit-tipps.html">Klassenarbeit Mathe Tipps</a>
+  <a href="/lernmaterialien/lineare-gleichungen-trainer.html">Lineare Gleichungen Trainer</a>
+  </div>
+  <p class="footer-meta"><a href="/">Nachhilfe Mentor</a> &middot; <a href="/impressum.html">Impressum</a> &middot; <a href="/datenschutz/">Datenschutz</a></p>
+</footer>
+</body>
+</html>

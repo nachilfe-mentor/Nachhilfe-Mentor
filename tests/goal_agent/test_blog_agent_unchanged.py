@@ -28,12 +28,13 @@ def test_blog_context_reads_goal_agent_exports_without_changing_blog_role() -> N
     assert "Practice-/Tool-Seiten" in text
 
 
-def test_sitemap_includes_only_indexable_goal_agent_pages() -> None:
+def test_sitemap_includes_only_indexable_learning_material_pages() -> None:
     root = Path(__file__).resolve().parents[2]
     text = (root / "blog" / "_update_seo.py").read_text(encoding="utf-8")
-    assert "goal-agent-pages" in text
+    assert "lernmaterialien" in text
     assert "has_noindex(f)" in text
-    assert "goal_agent_pages" in text
+    assert "is_git_tracked(f)" in text
+    assert "learning_material_pages" in text
 
 
 def test_blog_guardian_monitors_without_script_changes() -> None:
