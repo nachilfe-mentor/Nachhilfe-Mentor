@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 03 Jun 2026 16:50:22 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jun 2026 23:09:11 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Buchvorstellung schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/buchvorstellung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/buchvorstellung-schreiben-tipps.html</guid>
+      <pubDate>Wed, 03 Jun 2026 23:08:47 +0000</pubDate>
+      <description>Buchvorstellung schreiben leicht gemacht: Aufbau, Inhalt, Sprache und Vortrag Schritt für Schritt erklärt, inklusive Beispiel und typischer Fehler.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Klappentext schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/klappentext-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/klappentext-schreiben-tipps.html</guid>
+      <pubDate>Wed, 03 Jun 2026 23:08:38 +0000</pubDate>
+      <description>Klappentext schreiben leicht gemacht: Aufbau, Tipps, häufige Fehler und ein Beispiel für Schüler der Klassen 5-8. So schreibst du einen überzeugenden Klappentext.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Sprachanalyse schreiben: Aufbau, Tipps und Formulierungen für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/sprachanalyse-schreiben-tipps.html</link>
@@ -149,22 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/textanalyse-schreiben-tipps.html</guid>
       <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
       <description>Textanalyse schreiben leicht gemacht: Schritt-für-Schritt-Anleitung für Einleitung, Hauptteil und Schluss. Tipps für Schüler der Klassen 8-12 mit konkreten Beispielen.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Textgebundene Erörterung schreiben: Aufbau, Schritte und Beispiel</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/textgebundene-eroerterung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/textgebundene-eroerterung-schreiben-tipps.html</guid>
-      <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
-      <description>Textgebundene Erörterung schreiben leicht gemacht: Aufbau, Unterschied zur freien Erörterung, Schritt-für-Schritt-Anleitung, Formulierungen und häufige Fehler.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Tierbeschreibung schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/tierbeschreibung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/tierbeschreibung-schreiben-tipps.html</guid>
-      <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
-      <description>Tierbeschreibung schreiben leicht gemacht: Aufbau, Sprachtipps und ein vollständiges Beispiel für Klasse 5-7. So gelingt die sachliche Tierbeschreibung.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
