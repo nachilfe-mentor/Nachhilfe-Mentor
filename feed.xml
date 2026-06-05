@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 05 Jun 2026 03:17:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 07:26:05 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Reportage schreiben: Aufbau, Tipps und Merkmale für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/reportage-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/reportage-schreiben-tipps.html</guid>
+      <pubDate>Fri, 05 Jun 2026 07:25:40 +0000</pubDate>
+      <description>Reportage schreiben leicht gemacht: Aufbau, Merkmale, Sprache und die häufigsten Fehler. Mit Checkliste für Klasse 10-12 und Abitur.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Bericht schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/bericht-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/bericht-schreiben-tipps.html</guid>
+      <pubDate>Fri, 05 Jun 2026 07:25:35 +0000</pubDate>
+      <description>Bericht schreiben leicht gemacht: Aufbau, die sieben W-Fragen, die richtige Zeitform und 6 häufige Fehler. Mit Beispiel und Checkliste für die Schule.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Anekdote schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/anekdote-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
       <description>Vokabeln lernen leicht gemacht: 7 bewährte Methoden, mit denen du dir neue Wörter schnell und dauerhaft einprägst. Für Schule, Studium und Sprachkurse.</description>
       <category>Sprachen lernen</category>
-    </item>
-    <item>
-      <title>Vorgangsbeschreibung schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/vorgangsbeschreibung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/vorgangsbeschreibung-schreiben-tipps.html</guid>
-      <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
-      <description>Vorgangsbeschreibung schreiben leicht gemacht: Aufbau, Sprache, Beispiele und häufige Fehler. Mit Schritt-für-Schritt-Anleitung und Checkliste für die Schule.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Werbung analysieren: Aufbau, Tipps und Beispiel für die Schule</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/werbung-analysieren-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/werbung-analysieren-tipps.html</guid>
-      <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
-      <description>Werbung analysieren lernen: Aufbau, Analyseschritte und ein konkretes Beispiel. Mit dieser Anleitung meisterst du jede Werbeanalyse in Deutsch und Medienbildung.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
