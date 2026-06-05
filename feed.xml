@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 05 Jun 2026 15:31:49 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 23:35:52 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Latein Abitur: Vorbereitung, Übersetzung und Lektürearbeit gezielt meistern</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/latein-abitur-vorbereitung.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/latein-abitur-vorbereitung.html</guid>
+      <pubDate>Fri, 05 Jun 2026 23:35:31 +0000</pubDate>
+      <description>Latein Abitur erfolgreich bestehen: So bereitest du dich auf Übersetzungen, Lektüreanalyse und Grammatik vor. Konkrete Strategien für die Oberstufe.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Latein lernen: 7 Tipps für Vokabeln, Grammatik und Textübersetzung</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/latein-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/latein-lernen-tipps.html</guid>
+      <pubDate>Fri, 05 Jun 2026 23:35:26 +0000</pubDate>
+      <description>Latein lernen im Gymnasium muss nicht quälend sein. 7 konkrete Tipps zu Vokabeln, Grammatikverständnis und Textübersetzung, die wirklich funktionieren.</description>
+      <category>Lernmethoden</category>
+    </item>
     <item>
       <title>Überleitung schreiben: Tipps, Beispiele und Formulierungen für den Aufsatz</title>
       <link>https://nachhilfe-mentor.de/blog/posts/ueberleitung-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
       <description>Die Zettelkasten Methode erklärt: Wie du mit vernetzten Notizen Wissen dauerhaft speicherst und schneller lernst. Schritt-für-Schritt-Anleitung für Schüler und Studenten.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Zusammenfassung schreiben: So fasst du Lernstoff wirklich effektiv zusammen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zusammenfassung-schreiben-lernen.html</guid>
-      <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
-      <description>Zusammenfassung schreiben lernen: Mit diesen 5 Schritten fasst du jeden Lernstoff strukturiert und effektiv zusammen. Konkrete Methoden für Schule und Studium.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Türkisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/tuerkisch-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/tuerkisch-lernen-tipps.html</guid>
-      <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
-      <description>Türkisch lernen leicht gemacht: 8 bewährte Tipps für Vokabeln, Grammatik und Sprechen. So meisterst du die türkische Sprache Schritt für Schritt.</description>
-      <category>Sprachen lernen</category>
     </item>
   </channel>
 </rss>
