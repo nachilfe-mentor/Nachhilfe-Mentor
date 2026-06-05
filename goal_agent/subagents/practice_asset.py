@@ -3,67 +3,111 @@ from __future__ import annotations
 from .base import Recommendation, Subagent, SubagentResult, rec_id
 
 
-# Terms that strongly suggest a visual simulation is the right format.
-# These are signals, not a whitelist — any educational topic can qualify.
+# ── Format signals ────────────────────────────────────────────────────────────
+#
+# These are hints, not a whitelist. Any school topic can qualify — but the
+# format decision (simulation / trainer / neither) must be defensible:
+#
+#   Simulation  → topic has a physical, chemical, mathematical, or biological
+#                 MODEL that becomes clearer when animated or interacted with.
+#                 Ask: "Would moving parts / a diagram / a live graph teach
+#                 something a static text cannot?"
+#
+#   Trainer     → topic is a PROCEDURE with unambiguous right/wrong answers
+#                 that can be auto-generated and auto-checked. Ask: "Can I
+#                 generate 50 random tasks and check the answer programmatically?"
+#
+#   Neither     → topic is advice, strategy, tips, writing skill, or meta-
+#                 learning. These belong in blog articles, not interactive tools.
+#                 A bad interactive tool is worse than no tool at all.
+
 SIMULATION_SIGNALS = [
+    # Naturwissenschaften
     "physik", "chemie", "biologie",
     "elektrizität", "mechanik", "optik", "thermodynamik", "kinematik",
     "atom", "molekül", "reaktion", "elektrolyse", "galvanisch",
-    "geometrie", "trigonometrie", "vektor",
-    "stochastik", "wahrscheinlichkeit",
-    "wellen", "schwingung", "magnetfeld", "stromkreis", "linse",
-    "osmose", "diffusion", "fotosynthese", "zellbiologie",
-    "koordinatensystem", "funktionen", "kurvendiskussion",
+    "wellen", "schwingung", "magnetfeld", "stromkreis", "linse", "brechung",
+    "osmose", "diffusion", "fotosynthese", "zellbiologie", "genetik",
+    "radioaktivität", "kernspaltung", "spektrum",
+    # Mathematik mit visuellen Modellen
+    "geometrie", "trigonometrie", "vektor", "koordinatensystem",
+    "funktionen", "kurvendiskussion", "stochastik", "wahrscheinlichkeit",
+    "integral visuali", "ableitung visuali",
 ]
 
-# Terms that suggest a step-by-step procedural trainer fits better.
-# Use trainer only when a visual model would add no real insight.
 TRAINER_SIGNALS = [
-    "gleichung", "gleichungen", "ableitung", "integral", "bruch", "bruchrechnung",
+    # Mathematik: Rechenverfahren mit eindeutigem Ergebnis
+    "gleichung lösen", "gleichungen lösen", "gleichung aufstellen",
+    "ableitung", "integral", "bruch", "bruchrechnung",
     "potenzen", "wurzeln", "dreisatz", "prozentrechnung",
-    "quadratische", "terme", "binomische formeln",
-    "übungen", "aufgaben", "trainer", "üben", "rechnen",
-    "grammatik", "vokabeln", "konjugation", "deklination",
-    "abi", "abitur", "klassenarbeit", "klausur",
+    "quadratische", "terme vereinfachen", "binomische",
     "textaufgaben", "geometrie aufgaben", "statistik aufgaben",
+    # Sprachen: Regelbasierte Verfahren
+    "grammatik", "vokabeln", "konjugation", "deklination", "kasus",
+    "zeitformen", "irregular verbs",
 ]
 
-# Topics that should be evaluated as practice assets regardless of keyword match.
-# Used as an escape hatch for opportunities the scanner already classified.
+# Topics that look educational but are advice/strategy/writing — these belong
+# in blog posts, not interactive tools. Never build a practice asset for these.
+NOT_INTERACTIVE_SIGNALS = [
+    # Schreibkompetenz (zu offen für Auto-Check)
+    "aufsatz schreiben", "essay schreiben", "bildbeschreibung schreiben",
+    "interpretation schreiben", "erörterung schreiben", "analyse schreiben",
+    "zusammenfassung schreiben", "bewerbung schreiben",
+    "wie schreibt man", "aufbau",
+    # Ratgeber / Tipps-Artikel
+    "tipps", "tricks", "ratgeber", "so lernst du", "so meisterst du",
+    "lernmethode", "lernstrategie", "lernplan", "motivation",
+    "prüfungsangst", "prüfungstag", "konzentration",
+    "abitur vorbereitung tipps", "klausur tipps", "abitur tipps",
+    "stress", "schlaf", "ernährung",
+    # Meta-Lernen
+    "wie lerne ich", "besser lernen", "effektiv lernen",
+    "gedächtnis", "gehirn", "feynman", "pomodoro",
+]
+
 ALWAYS_EVALUATE_TYPES = {"practice_asset_opportunity"}
 
 
-def _classify(text: str) -> tuple[bool, bool]:
-    """Return (is_sim_signal, is_trainer_signal) based on keyword overlap."""
+def _classify(text: str) -> tuple[bool, bool, bool]:
+    """Return (is_sim, is_trainer, is_not_interactive)."""
+    is_not = any(term in text for term in NOT_INTERACTIVE_SIGNALS)
     is_sim = any(term in text for term in SIMULATION_SIGNALS)
     is_trainer = any(term in text for term in TRAINER_SIGNALS)
-    return is_sim, is_trainer
+    return is_sim, is_trainer, is_not
 
 
-def _is_educational(opp: dict) -> bool:
+def _is_interactive_topic(opp: dict) -> bool:
     """
-    Return True for any opportunity worth evaluating as a practice asset.
-    The lists above are signals for format choice, not a whitelist.
-    We evaluate everything in the school/education domain; the spec step
-    will decide whether a simulation or trainer is the right format.
+    Return True only for topics where an interactive tool genuinely helps.
+    Topics that are purely advice, tips, or open writing skills return False —
+    those belong in blog articles, not interactive tools.
     """
-    if opp.get("type") in ALWAYS_EVALUATE_TYPES:
-        return True
-    cluster = (opp.get("topic_cluster") or "").lower()
     keyword = (opp.get("primary_keyword") or "").lower()
-    # Exclude pure editorial/news/opinion opportunities
-    if any(x in cluster for x in ("news", "meinung", "kommentar", "aktuell")):
+    cluster = (opp.get("topic_cluster") or "").lower()
+    url = (opp.get("target_url") or "").lower()
+    text = f"{keyword} {cluster} {url}"
+
+    is_sim, is_trainer, is_not = _classify(text)
+
+    # Hard exclusion: tips/advice/writing topics are never interactive tools
+    if is_not and not (is_sim or is_trainer):
         return False
-    # Include anything with a school-subject or learning signal
+
+    # Explicit classification from scanner
+    if opp.get("type") in ALWAYS_EVALUATE_TYPES:
+        return not is_not
+
+    # Include school subjects that have a concrete procedural or model-based angle
     school_signals = [
-        "mathe", "mathematik", "physik", "chemie", "biologie", "deutsch",
-        "englisch", "latein", "geschichte", "erdkunde", "geographie",
-        "informatik", "wirtschaft", "politik", "musik", "kunst",
-        "lernen", "schule", "nachhilfe", "abitur", "klausur", "übung",
-        "aufgaben", "trainer", "simulation", "lernmaterial",
+        "mathe", "mathematik", "physik", "chemie", "biologie",
+        "englisch", "latein", "informatik",
+        "gleichung", "funktion", "integral", "ableitung", "bruch",
+        "übungen", "aufgaben", "trainer", "simulation", "lernmaterial",
+        "rechnen", "berechnen",
     ]
-    text = f"{keyword} {cluster} {opp.get('target_url') or ''}".lower()
-    return any(s in text for s in school_signals) or bool(_classify(text)[0] or _classify(text)[1])
+    has_school = any(s in text for s in school_signals)
+    return has_school and not is_not
 
 
 class PracticeAssetAgent(Subagent):
@@ -72,13 +116,14 @@ class PracticeAssetAgent(Subagent):
     def run(self, context: dict) -> SubagentResult:
         recs: list[Recommendation] = []
         for opp in context.get("opportunities", [])[:50]:
-            if not _is_educational(opp):
+            if not _is_interactive_topic(opp):
                 continue
 
             text = f"{opp.get('primary_keyword') or ''} {opp.get('target_url') or ''}".lower()
-            is_sim, is_trainer = _classify(text)
-            # When neither signal fires, default to simulation-first:
-            # the spec step will decide; trainer only if simulation is unsuitable.
+            is_sim, is_trainer, _ = _classify(text)
+            # Simulation-first: only choose trainer when clear procedural signals
+            # fire and no simulation signal fires. For everything else the spec
+            # step will decide — if no model exists, it must write a research note.
             prefer_sim = is_sim or (not is_trainer)
 
             base_priority = int(opp.get("expected_value_score", 0.5) * 100)

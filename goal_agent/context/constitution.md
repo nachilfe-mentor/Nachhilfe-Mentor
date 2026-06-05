@@ -12,6 +12,18 @@ Learning-material mission: the Goal Agent builds two types of non-blog Lernmater
 
 Decision rule: if a simulation can make the concept visually tangible, build the simulation. Only choose a trainer if the topic is a calculation procedure where a model would just be decoration. Document the choice in the spec.
 
+**Format eligibility — ask these questions before building anything:**
+
+1. *Can the answer be automatically checked?* For a trainer: yes, always (math result, grammar rule, vocabulary). For a simulation: yes, via prediction task. If neither → do not build.
+2. *Is there a concrete model or procedure?* A simulation needs a physical/chemical/mathematical model. A trainer needs a repeatable procedure with a right/wrong answer. "Bildbeschreibung schreiben" has neither — it is open writing skill, not auto-checkable. → Do not build.
+3. *Would a blog article serve this better?* Advice, tips, strategies, writing guides, and exam-day instructions are blog content. An interactive tool for "Abitur Prüfungstag Tipps" adds nothing over a well-written article. → Do not build. Let the Blog Agent handle it.
+
+**Never-build list (route to Blog Agent instead):**
+- Writing skills: Bildbeschreibung, Interpretation, Erörterung, Analyse, Aufsatz
+- Advice/tips articles: Lerntipps, Prüfungstipps, Motivation, Lernstrategien, Stressabbau
+- Meta-learning: Lernmethoden, Gedächtnis, Feynman-Technik, Pomodoro
+- Abitur-Vorbereitung as a general topic (too broad — only build if a specific subject's procedure or model is in scope)
+
 A simulation must make the learner actively do something: adjust parameters and observe results, make a prediction before running the simulation, answer a question based on what they observe, or correct a misconception shown by the simulation. It must show a visible model (canvas animation, DOM diagram, live chart) and give immediate feedback tied to what the learner just did.
 
 Simulation quality bar — all five must be true before building:
