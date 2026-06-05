@@ -84,8 +84,15 @@ class Settings:
     codex_create_branch: bool = False
     codex_allow_dirty_worktree: bool = False
     codex_dirty_allowed_paths: tuple[str, ...] = (
+        # Blog Agent output — committed independently by the Blog Agent
         "auto-blog.log",
+        "blog/",
+        "Blog/",
+        "sitemap.xml",
+        "feed.xml",
         "blog/_pinterest_done.txt",
+        "blog/_BLOG_REGISTRY.md",
+        # Goal Agent runtime files
         "goal_agent/exports/",
         "goal_agent/queues/",
         "goal_agent/goal_agent.db",

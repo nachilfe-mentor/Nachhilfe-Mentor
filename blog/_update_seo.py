@@ -101,7 +101,7 @@ def has_noindex(filepath):
 
 
 def is_git_tracked(filepath):
-    """Only include generated Goal-Agent pages that will actually deploy."""
+    """Only include generated learning-material pages that will actually deploy."""
     relpath = os.path.relpath(filepath, SITE_DIR)
     try:
         result = subprocess.run(
@@ -122,7 +122,7 @@ def scan_pages():
         "main": [],
         "blog_index": None,
         "blog_posts": [],
-        "goal_agent_pages": [],
+        "learning_material_pages": [],
         "legal": [],
     }
 
@@ -144,13 +144,15 @@ def scan_pages():
             path = f"blog/posts/{basename}"
             pages["blog_posts"].append((path, f, 0.7, "monthly"))
 
-    # Goal-Agent SEO/Practice/Interactive pages are experimental and must not
-    # be indexed automatically. They can be promoted only through a separate,
-    # reviewed publishing path after product-quality approval.
-    goal_pages_dir = os.path.join(SITE_DIR, "goal-agent-pages")
-    if os.path.isdir(goal_pages_dir):
-        for f in sorted(glob.glob(os.path.join(goal_pages_dir, "*.html"))):
-            continue
+    # Lernmaterialien are indexed only after promotion to the public folder.
+    # Drafts and simulations stay under subfolders and remain excluded.
+    learning_materials_dir = os.path.join(SITE_DIR, "lernmaterialien")
+    if os.path.isdir(learning_materials_dir):
+        for f in sorted(glob.glob(os.path.join(learning_materials_dir, "*.html"))):
+            if has_noindex(f) or not is_git_tracked(f):
+                continue
+            basename = os.path.basename(f)
+            pages["learning_material_pages"].append((f"lernmaterialien/{basename}", f, 0.65, "monthly"))
 
     # Legal-Seiten (nur wenn KEIN noindex-Tag)
     legal_pages = [
@@ -178,7 +180,7 @@ def generate_sitemap(pages):
     if pages["blog_index"]:
         all_pages.append(pages["blog_index"])
     all_pages.extend(pages["blog_posts"])
-    all_pages.extend(pages["goal_agent_pages"])
+    all_pages.extend(pages["learning_material_pages"])
     all_pages.extend(pages["legal"])
 
     for path, filepath, priority, changefreq in all_pages:
@@ -313,13 +315,13 @@ def main():
 
     if not no_ping:
         all_urls = [f"{SITE_URL}/{p[0]}" for p in pages["blog_posts"]]
-        all_urls.extend(f"{SITE_URL}/{p[0]}" for p in pages["goal_agent_pages"])
+        all_urls.extend(f"{SITE_URL}/{p[0]}" for p in pages["learning_material_pages"])
         all_urls.append(f"{SITE_URL}/")
         if pages["blog_index"]:
             all_urls.append(f"{SITE_URL}/blog/")
         print(f"[SEO] Submitte {len(all_urls)} URLs an IndexNow (Bing, Yandex, etc.)...")
         submit_indexnow(all_urls)
-        print("[SEO] Google erkennt Aenderungen automatisch ueber sitemap.xml + robots.txt")
+        print("[SEO] Google erkennt Änderungen automatisch über sitemap.xml + robots.txt")
     else:
         print("[SEO] IndexNow-Submit uebersprungen (--no-ping)")
 

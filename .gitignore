@@ -13,4 +13,5 @@ goal_agent/*.db
 goal_agent/*.db-*
 goal_agent/exports/*.md
 goal_agent/queues/*.jsonl
-goal-agent-pages/drafts/
+lernmaterialien/entwuerfe/
+lernmaterialien/lernsimulationen/
