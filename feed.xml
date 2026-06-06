@@ -5,13 +5,21 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 06 Jun 2026 07:42:24 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 15:49:18 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Schluss schreiben: Tipps, Techniken und Formulierungen für jeden Aufsatz</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/schluss-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/schluss-schreiben-tipps.html</guid>
+      <pubDate>Sat, 06 Jun 2026 15:48:55 +0000</pubDate>
+      <description>Schluss schreiben leicht gemacht: Techniken und Formulierungen für Erörterung, Analyse, Kommentar und Erzählung. Mit Beispielen und häufigen Fehlern.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Einleitung schreiben: Tipps, Aufbau und Beispiele für jeden Aufsatz</title>
       <link>https://nachhilfe-mentor.de/blog/posts/einleitung-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/einleitung-schreiben-tipps.html</guid>
-      <pubDate>Sat, 06 Jun 2026 07:41:55 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 15:48:51 +0000</pubDate>
       <description>Einleitung schreiben leicht gemacht: So baust du eine überzeugende Einleitung auf, vermeidest typische Fehler und startest stark in jeden Aufsatz.</description>
       <category>Schule &amp; Studium</category>
     </item>
@@ -19,7 +27,7 @@
       <title>Überleitung schreiben: Tipps, Beispiele und Formulierungen für den Aufsatz</title>
       <link>https://nachhilfe-mentor.de/blog/posts/ueberleitung-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/ueberleitung-schreiben-tipps.html</guid>
-      <pubDate>Sat, 06 Jun 2026 07:40:01 +0000</pubDate>
+      <pubDate>Sat, 06 Jun 2026 15:48:38 +0000</pubDate>
       <description>Überleitung schreiben leicht gemacht: 5 Techniken, Formulierungsbeispiele für Erörterung und Analyse und die häufigsten Fehler auf einen Blick.</description>
       <category>Schule &amp; Studium</category>
     </item>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
       <description>Zeitmanagement im Studium verbessern: 8 erprobte Tipps, mit denen du Vorlesungen, Lernen und Freizeit unter einen Hut bekommst.</description>
       <category>Motivation &amp; Produktivität</category>
-    </item>
-    <item>
-      <title>Zeitungsartikel schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zeitungsartikel-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zeitungsartikel-schreiben-tipps.html</guid>
-      <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
-      <description>Zeitungsartikel schreiben lernen: So baust du einen Nachrichtenartikel richtig auf, welche W-Fragen du beantwortest und welche Fehler du unbedingt vermeiden solltest.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
