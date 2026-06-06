@@ -5,8 +5,32 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 06 Jun 2026 03:17:17 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 06 Jun 2026 07:42:24 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Einleitung schreiben: Tipps, Aufbau und Beispiele für jeden Aufsatz</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/einleitung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/einleitung-schreiben-tipps.html</guid>
+      <pubDate>Sat, 06 Jun 2026 07:41:55 +0000</pubDate>
+      <description>Einleitung schreiben leicht gemacht: So baust du eine überzeugende Einleitung auf, vermeidest typische Fehler und startest stark in jeden Aufsatz.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Überleitung schreiben: Tipps, Beispiele und Formulierungen für den Aufsatz</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/ueberleitung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/ueberleitung-schreiben-tipps.html</guid>
+      <pubDate>Sat, 06 Jun 2026 07:40:01 +0000</pubDate>
+      <description>Überleitung schreiben leicht gemacht: 5 Techniken, Formulierungsbeispiele für Erörterung und Analyse und die häufigsten Fehler auf einen Blick.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
+      <pubDate>Sat, 06 Jun 2026 07:39:48 +0000</pubDate>
+      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Latein Abitur: Vorbereitung, Übersetzung und Lektürearbeit gezielt meistern</title>
       <link>https://nachhilfe-mentor.de/blog/posts/latein-abitur-vorbereitung.html</link>
@@ -22,22 +46,6 @@
       <pubDate>Fri, 05 Jun 2026 23:35:26 +0000</pubDate>
       <description>Latein lernen im Gymnasium muss nicht quälend sein. 7 konkrete Tipps zu Vokabeln, Grammatikverständnis und Textübersetzung, die wirklich funktionieren.</description>
       <category>Lernmethoden</category>
-    </item>
-    <item>
-      <title>Überleitung schreiben: Tipps, Beispiele und Formulierungen für den Aufsatz</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/ueberleitung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/ueberleitung-schreiben-tipps.html</guid>
-      <pubDate>Fri, 05 Jun 2026 15:31:25 +0000</pubDate>
-      <description>Überleitung schreiben leicht gemacht: 5 Techniken, Formulierungsbeispiele für Erörterung und Analyse und die häufigsten Fehler auf einen Blick.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Fri, 05 Jun 2026 15:31:18 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
-      <category>Schule &amp; Studium</category>
     </item>
     <item>
       <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
       <description>Zeitungsartikel schreiben lernen: So baust du einen Nachrichtenartikel richtig auf, welche W-Fragen du beantwortest und welche Fehler du unbedingt vermeiden solltest.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Zettelkasten Methode: Wissen vernetzen und dauerhaft behalten</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/zettelkasten-methode-lernen.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/zettelkasten-methode-lernen.html</guid>
-      <pubDate>Wed, 03 Jun 2026 13:25:19 +0000</pubDate>
-      <description>Die Zettelkasten Methode erklärt: Wie du mit vernetzten Notizen Wissen dauerhaft speicherst und schneller lernst. Schritt-für-Schritt-Anleitung für Schüler und Studenten.</description>
-      <category>Lernmethoden</category>
     </item>
   </channel>
 </rss>
