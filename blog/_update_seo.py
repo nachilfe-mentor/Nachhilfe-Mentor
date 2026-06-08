@@ -144,15 +144,17 @@ def scan_pages():
             path = f"blog/posts/{basename}"
             pages["blog_posts"].append((path, f, 0.7, "monthly"))
 
-    # Lernmaterialien are indexed only after promotion to the public folder.
-    # Drafts and simulations stay under subfolders and remain excluded.
+    # Lernmaterialien are indexed only after promotion to public, indexable
+    # files. Drafts stay under /entwuerfe/ and remain excluded.
     learning_materials_dir = os.path.join(SITE_DIR, "lernmaterialien")
     if os.path.isdir(learning_materials_dir):
-        for f in sorted(glob.glob(os.path.join(learning_materials_dir, "*.html"))):
+        for f in sorted(glob.glob(os.path.join(learning_materials_dir, "**", "*.html"), recursive=True)):
+            rel = os.path.relpath(f, SITE_DIR)
+            if "/entwuerfe/" in f or rel.startswith("lernmaterialien/entwuerfe/"):
+                continue
             if has_noindex(f) or not is_git_tracked(f):
                 continue
-            basename = os.path.basename(f)
-            pages["learning_material_pages"].append((f"lernmaterialien/{basename}", f, 0.65, "monthly"))
+            pages["learning_material_pages"].append((rel, f, 0.65, "monthly"))
 
     # Legal-Seiten (nur wenn KEIN noindex-Tag)
     legal_pages = [

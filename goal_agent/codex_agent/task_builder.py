@@ -307,6 +307,8 @@ def store_coding_tasks(db: Database, tasks: list[CodingTask]) -> int:
             status = task.status
             if existing:
                 status = existing["status"]
+                if existing["status"] == "retired" and task.title.lower().startswith("draft guided writing practice page:"):
+                    status = task.status
                 latest = conn.execute(
                     """
                     select status, failure_reason from coding_task_runs

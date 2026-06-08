@@ -35,6 +35,8 @@ def test_sitemap_includes_only_indexable_learning_material_pages() -> None:
     assert "has_noindex(f)" in text
     assert "is_git_tracked(f)" in text
     assert "learning_material_pages" in text
+    assert '"**", "*.html"' in text
+    assert "lernmaterialien/entwuerfe/" in text
 
 
 def test_blog_guardian_monitors_without_script_changes() -> None:

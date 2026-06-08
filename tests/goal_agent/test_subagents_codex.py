@@ -206,6 +206,26 @@ def test_retire_obsolete_coding_tasks_marks_pre_pattern_tasks(tmp_path: Path) ->
     assert rows[fresh.id] == "queued"
 
 
+def test_store_coding_tasks_revives_retired_guided_writing_policy_upgrade(tmp_path: Path) -> None:
+    cfg = settings(tmp_path)
+    db = Database(cfg)
+    db.init()
+    rec = sample_recommendation(
+        id="rec_upgrade",
+        title="Draft practice page: argumentation Übungen mit Lösungen",
+        rationale="Practice page for open German writing skill.",
+        acceptance_criteria=["Include useful exercises with solutions."],
+        required_context=["practice rules"],
+    )
+    task = build_tasks_from_recommendations([rec])[0]
+    store_coding_tasks(db, [task])
+    with db.connect() as conn:
+        conn.execute("update coding_tasks set status='retired' where id=?", (task.id,))
+    store_coding_tasks(db, [task])
+    row = db.query("select status from coding_tasks where id=?", (task.id,))[0]
+    assert row["status"] == "queued"
+
+
 def test_task_builder_creates_codex_task_and_blocks_high_risk() -> None:
     tasks = build_tasks_from_recommendations([sample_recommendation()])
     assert tasks
