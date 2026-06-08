@@ -311,7 +311,7 @@ def store_coding_tasks(db: Database, tasks: list[CodingTask]) -> int:
                     status = task.status
                 latest = conn.execute(
                     """
-                    select status, failure_reason from coding_task_runs
+                    select status, failure_reason, changed_files_json from coding_task_runs
                     where task_id=?
                     order by created_at desc
                     limit 1
@@ -319,7 +319,11 @@ def store_coding_tasks(db: Database, tasks: list[CodingTask]) -> int:
                     (task.id,),
                 ).fetchone()
                 if latest and latest["status"] == "completed":
-                    status = "completed"
+                    changed_files = latest["changed_files_json"] or "[]"
+                    if task.title.lower().startswith("draft guided writing practice page:") and "lernmaterialien/" not in changed_files:
+                        status = task.status
+                    else:
+                        status = "completed"
                 elif existing["status"] in {"blocked_by_safety", "failed"}:
                     reason = (latest["failure_reason"] if latest else "") or ""
                     retryable_reasons = (

@@ -226,6 +226,40 @@ def test_store_coding_tasks_revives_retired_guided_writing_policy_upgrade(tmp_pa
     assert row["status"] == "queued"
 
 
+def test_store_coding_tasks_ignores_old_guided_writing_completion_without_asset(tmp_path: Path) -> None:
+    cfg = settings(tmp_path)
+    db = Database(cfg)
+    db.init()
+    rec = sample_recommendation(
+        id="rec_empty_completion",
+        title="Draft practice page: aufbau interpretation Übungen mit Lösungen",
+        rationale="Practice page for open German writing skill.",
+        acceptance_criteria=["Include useful exercises with solutions."],
+        required_context=["practice rules"],
+    )
+    task = build_tasks_from_recommendations([rec])[0]
+    store_coding_tasks(db, [task])
+    with db.connect() as conn:
+        conn.execute("update coding_tasks set status='completed' where id=?", (task.id,))
+        conn.execute(
+            """
+            insert into coding_task_runs (
+              id, task_id, status, started_at, finished_at, exit_code,
+              stdout_summary, stderr_summary, changed_files_json, git_diff_stat,
+              git_status_short, tests_run_json, failure_reason, safety_blocked,
+              prompt_summary, created_at
+            ) values (
+              'run_empty_completion', ?, 'completed', '2026-06-08T00:00:00+00:00',
+              '2026-06-08T00:00:01+00:00', 0, '', '', '[]', '', '', '[]', '', 0, '', '2026-06-08T00:00:01+00:00'
+            )
+            """,
+            (task.id,),
+        )
+    store_coding_tasks(db, [task])
+    row = db.query("select status from coding_tasks where id=?", (task.id,))[0]
+    assert row["status"] == "queued"
+
+
 def test_task_builder_creates_codex_task_and_blocks_high_risk() -> None:
     tasks = build_tasks_from_recommendations([sample_recommendation()])
     assert tasks
