@@ -167,13 +167,26 @@ def test_task_builder_creates_guided_writing_task() -> None:
     assert "fake AI grader" in task.goal
 
 
+def test_task_builder_treats_argumentation_as_guided_writing_even_from_old_brief() -> None:
+    rec = sample_recommendation(
+        title="Draft practice page: argumentation Übungen mit Lösungen",
+        rationale="Practice page for open German writing skill.",
+        acceptance_criteria=["Include useful exercises with solutions."],
+        required_context=["practice rules"],
+    )
+    task = build_tasks_from_recommendations([rec])[0]
+    assert task.title.startswith("Draft guided writing practice page:")
+    assert "writing textarea" in task.goal
+    assert "Do not pretend to auto-grade open writing" in task.goal
+
+
 def test_retire_obsolete_coding_tasks_marks_pre_pattern_tasks(tmp_path: Path) -> None:
     cfg = settings(tmp_path)
     db = Database(cfg)
     db.init()
     stale = build_tasks_from_recommendations([sample_recommendation(
         id="rec_stale",
-        title="Draft practice page: bildbeschreibung Übungen mit Lösungen",
+        title="Draft practice page: prüfungstag Übungen mit Lösungen",
         rationale="Old pre-pattern task.",
         acceptance_criteria=["Draft only"],
         required_context=["practice rules"],

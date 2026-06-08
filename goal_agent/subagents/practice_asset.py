@@ -133,7 +133,7 @@ class PracticeAssetAgent(Subagent):
             if not _is_interactive_topic(opp):
                 continue
 
-            text = f"{opp.get('primary_keyword') or ''} {opp.get('target_url') or ''}".lower()
+            text = f"{opp.get('primary_keyword') or ''} {opp.get('topic_cluster') or ''} {opp.get('target_url') or ''}".lower()
             is_sim, is_trainer, is_guided_writing, _ = _classify(text)
             if is_guided_writing:
                 base_priority = int(opp.get("expected_value_score", 0.5) * 100)

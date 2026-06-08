@@ -9,7 +9,9 @@ from .task_schema import CodingTask, task_from_row
 
 def build_and_store_tasks(db: Database, limit: int = 10) -> int:
     retire_obsolete_coding_tasks(db)
-    return store_coding_tasks(db, build_tasks_from_state(db, limit))
+    stored = store_coding_tasks(db, build_tasks_from_state(db, limit))
+    retire_obsolete_coding_tasks(db)
+    return stored
 
 
 def list_tasks(db: Database, status: str | None = None) -> list[CodingTask]:

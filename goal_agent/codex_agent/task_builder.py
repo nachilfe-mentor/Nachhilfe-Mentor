@@ -16,6 +16,25 @@ COMMON_SAFETY = [
 ]
 
 
+GUIDED_WRITING_TERMS = (
+    "bildbeschreibung",
+    "bildergeschichte",
+    "argumentation",
+    "erörterung",
+    "eroerterung",
+    "interpretation",
+    "aufsatz",
+    "zusammenfassung",
+    "charakterisierung",
+    "sachtextanalyse",
+    "redeanalyse",
+    "gedichtanalyse",
+    "musterlösung",
+    "musterloesung",
+    "bewertungsraster",
+)
+
+
 def _task_id(seed: str) -> str:
     return "coding_task_" + hashlib.sha1(seed.encode("utf-8")).hexdigest()[:16]
 
@@ -25,7 +44,7 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
         return None
     if rec.recommendation_type == "create_practice_asset":
         rec_text = " ".join([rec.title, rec.rationale, *rec.acceptance_criteria, *rec.required_context]).lower()
-        if "guided writing" in rec_text or "musterlösung" in rec_text or "bewertungsraster" in rec_text:
+        if "guided writing" in rec_text or any(term in rec_text for term in GUIDED_WRITING_TERMS):
             return CodingTask(
                 id=_task_id(rec.id),
                 source_recommendation_id=rec.id,
