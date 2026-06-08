@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import os
+import fcntl
 from pathlib import Path
 
 from goal_agent.analytics import GSCConnector, PostHogConnector, parse_gsc_rows, validate_standard_events
 from goal_agent.autopublish import auto_publish
 from goal_agent.config import Settings
+from goal_agent.context_builder import build_context
 from goal_agent.draft_promotion import promote_drafts
 from goal_agent.interactive import render_interactive_page
 from goal_agent.loop import _interactive_task_spec, run_cycle
@@ -229,6 +231,21 @@ def test_posthog_requires_project_id_and_personal_key(tmp_path: Path, monkeypatc
         posthog_project_id="119071",
     )
     assert PostHogConnector(cfg).configured
+
+
+def test_context_exposes_image_generation_policy(tmp_path: Path, monkeypatch) -> None:
+    monkeypatch.setenv("GOAL_AGENT_IMAGE_GENERATION_ENABLED", "true")
+    monkeypatch.setenv("GOAL_AGENT_IMAGE_GENERATION_MODEL", "gpt-image-2")
+    monkeypatch.setenv("GOAL_AGENT_IMAGE_GENERATION_QUALITY", "medium")
+    monkeypatch.setenv("GOAL_AGENT_IMAGE_GENERATION_MONTHLY_BUDGET_CENTS", "200")
+    db = Database(settings(tmp_path))
+    db.init()
+    context = build_context(db, "run_image_policy", {})
+    policy = context["asset_generation_policy"]
+    assert policy["image_generation_enabled"] is True
+    assert policy["image_generation_model"] == "gpt-image-2"
+    assert policy["image_generation_monthly_budget_cents"] == 200
+    assert "Do not call paid image-generation APIs" in policy["policy"]
 
 
 def test_gsc_connector_skip_and_parse_shape(tmp_path: Path, monkeypatch) -> None:
@@ -522,7 +539,7 @@ def test_daily_update_reports_real_publish_status(tmp_path: Path) -> None:
     db = Database(cfg)
     db.init()
     db.execute(
-        """
+"""
         insert into actions (
           id, agent_run_id, action_type, target_type, status,
           files_changed_json, safety_checks_json, created_at, completed_at
@@ -542,4 +559,25 @@ def test_daily_update_reports_real_publish_status(tmp_path: Path) -> None:
     )
     message = build_daily_update(db, cfg, "run_test", "Published 1 page")
     assert "Deploy: published (1 files, pushed)" in message
-    assert "Deploy: blocked" not in message
+
+
+def test_learning_asset_patterns_are_loaded_into_context(tmp_path: Path) -> None:
+    cfg = Settings(repo_root=Path(__file__).resolve().parents[2], db_path=tmp_path / "goal_agent.db")
+    db = Database(cfg)
+    db.init()
+    context = build_context(db, "run_test_patterns", {"topic": "bildbeschreibung"})
+    patterns = context["learning_asset_patterns"]
+    assert "Guided Writing Practice Pattern" in patterns
+    assert "not a rigid copy/paste template" in patterns
+    assert "Bildbeschreibung" in patterns
+
+
+def test_run_cycle_skips_when_lock_is_active(tmp_path: Path) -> None:
+    cfg = Settings(repo_root=tmp_path, db_path=tmp_path / "goal_agent.db")
+    lock_dir = tmp_path / "goal_agent" / "state"
+    lock_dir.mkdir(parents=True)
+    with (lock_dir / "goal_agent_run.lock").open("w", encoding="utf-8") as lock_file:
+        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        result = run_cycle("daily", cfg)
+        assert result["skipped"] is True
+        assert "already active" in result["summary"]

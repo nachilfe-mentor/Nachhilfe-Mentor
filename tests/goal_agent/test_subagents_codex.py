@@ -9,7 +9,7 @@ from goal_agent.codex_agent.prompt_builder import build_codex_prompt
 from goal_agent.codex_agent.result_parser import parse_result
 from goal_agent.codex_agent.safety import validate_task_safety
 from goal_agent.codex_agent.safety import dirty_worktree_blockers
-from goal_agent.codex_agent.task_builder import build_tasks_from_recommendations, store_coding_tasks
+from goal_agent.codex_agent.task_builder import build_tasks_from_recommendations, retire_obsolete_coding_tasks, store_coding_tasks
 from goal_agent.codex_agent.task_schema import CodingTask
 from goal_agent.config import Settings
 from goal_agent.storage import Database
@@ -102,6 +102,95 @@ def test_practice_asset_agent_creates_recommendation_from_opportunity() -> None:
     assert "immediate feedback" in criteria
     assert "primary keyword" in criteria
     assert "modern responsive" in criteria
+
+
+def test_practice_asset_agent_allows_guided_writing_pages() -> None:
+    result = PracticeAssetAgent().run({"opportunities": [{
+        "id": "opp_bildbeschreibung",
+        "type": "practice_asset_opportunity",
+        "primary_keyword": "bildbeschreibung übung mit lösung",
+        "topic_cluster": "deutsch schreiben",
+        "target_url": "/blog/posts/bildbeschreibung-schreiben-tipps.html",
+        "expected_value_score": 0.82,
+    }]})
+    assert result.recommendations
+    rec = result.recommendations[0]
+    assert "Guided writing" in rec.title
+    criteria = " ".join(rec.acceptance_criteria).lower()
+    assert "musterlösung" in criteria
+    assert "bewertungsraster" in criteria or "rubric" in criteria
+    assert "cost" in criteria
+    assert "no generic landing-page hero" in criteria
+
+
+def test_quality_guardian_accepts_strong_guided_writing_brief() -> None:
+    rec = sample_recommendation(
+        title="Guided writing practice page: bildbeschreibung übung mit lösung",
+        rationale=(
+            "Guided writing asset with image prompt, textarea writing field, self-check rubric, "
+            "Musterlösung, typical mistakes, revision workflow, metadata, license and cost tracking."
+        ),
+        acceptance_criteria=[
+            "Use a concrete image prompt and asset metadata.",
+            "Include learner writing textarea and structure scaffold.",
+            "Use self-check checklist and Bewertungsraster/rubric, not fake auto-grading.",
+            "Include Musterlösung/model solution and typical mistakes.",
+            "Add revision/überarbeiten workflow.",
+            "Track image metadata, license and cost.",
+            "375 px mobile responsive layout with compact hero.",
+            "Include keyword, search intent and SEO metadata.",
+            "Keep draft noindex.",
+        ],
+        required_context=["guided writing practice standard", "image asset policy"],
+    )
+    result = QualityGuardianAgent().run({"candidate_recommendations": [rec]})
+    assert result.recommendations == []
+
+
+def test_task_builder_creates_guided_writing_task() -> None:
+    rec = sample_recommendation(
+        title="Guided writing practice page: bildbeschreibung übung mit lösung",
+        rationale="Build guided writing page with image prompt, Musterlösung, Bewertungsraster and cost metadata.",
+        acceptance_criteria=[
+            "Include image prompt and asset metadata.",
+            "Include writing textarea, self-check, rubric, Musterlösung and revision workflow.",
+        ],
+        required_context=["guided writing practice standard"],
+    )
+    task = build_tasks_from_recommendations([rec])[0]
+    assert task.task_type == "practice_page"
+    assert any(path == "docs/goal-agent/LEARNING_ASSET_PATTERNS.md" for path in task.allowed_paths)
+    assert any(path == "lernmaterialien/deutsch/" for path in task.allowed_paths)
+    assert any(path == "lernmaterialien/assets/" for path in task.allowed_paths)
+    assert "LEARNING_ASSET_PATTERNS.md" in task.goal
+    assert "not as rigid templates" in task.goal
+    assert "fake AI grader" in task.goal
+
+
+def test_retire_obsolete_coding_tasks_marks_pre_pattern_tasks(tmp_path: Path) -> None:
+    cfg = settings(tmp_path)
+    db = Database(cfg)
+    db.init()
+    stale = build_tasks_from_recommendations([sample_recommendation(
+        id="rec_stale",
+        title="Draft practice page: bildbeschreibung Übungen mit Lösungen",
+        rationale="Old pre-pattern task.",
+        acceptance_criteria=["Draft only"],
+        required_context=["practice rules"],
+    )])[0]
+    fresh = build_tasks_from_recommendations([sample_recommendation(
+        id="rec_fresh",
+        title="Guided writing practice page: bildbeschreibung übung mit lösung",
+        rationale="Build guided writing page with image prompt, Musterlösung, Bewertungsraster and cost metadata.",
+        acceptance_criteria=["Include writing textarea, self-check, rubric, Musterlösung and revision workflow."],
+        required_context=["guided writing practice standard"],
+    )])[0]
+    store_coding_tasks(db, [stale, fresh])
+    retired = retire_obsolete_coding_tasks(db)
+    assert retired == 1
+    rows = {row["id"]: row["status"] for row in db.query("select id,status from coding_tasks")}
+    assert rows[stale.id] == "retired"
+    assert rows[fresh.id] == "queued"
 
 
 def test_task_builder_creates_codex_task_and_blocks_high_risk() -> None:

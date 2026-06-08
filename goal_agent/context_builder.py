@@ -4,7 +4,7 @@ import hashlib
 from pathlib import Path
 from typing import Any
 
-from .config import REPO_ROOT
+from .config import REPO_ROOT, load_settings
 from .storage import Database, json_dumps, utc_now
 
 
@@ -36,12 +36,25 @@ def retrieve_memory(db: Database, topic: str = "") -> dict[str, Any]:
 
 
 def build_context(db: Database, run_id: str, task_context: dict[str, Any]) -> dict[str, Any]:
+    settings = load_settings()
     context = {
         "constitution": _read("constitution.md"),
         "strategy_snapshot": _read("strategy_snapshot.md"),
+        "learning_asset_patterns": (REPO_ROOT / "docs" / "goal-agent" / "LEARNING_ASSET_PATTERNS.md").read_text(encoding="utf-8")
+        if (REPO_ROOT / "docs" / "goal-agent" / "LEARNING_ASSET_PATTERNS.md").exists() else "",
         "retrieved_memory": retrieve_memory(db, task_context.get("topic", "")),
         "data_snapshot": task_context.get("data_snapshot", {}),
         "task_context": task_context,
+        "asset_generation_policy": {
+            "image_generation_enabled": settings.image_generation_enabled,
+            "image_generation_model": settings.image_generation_model,
+            "image_generation_quality": settings.image_generation_quality,
+            "image_generation_monthly_budget_cents": settings.image_generation_monthly_budget_cents,
+            "policy": (
+                "Use existing or curated rights-safe assets by default. "
+                "Do not call paid image-generation APIs unless image_generation_enabled is true and the spec records the remaining budget, prompt, model, quality, count and estimated cost."
+            ),
+        },
         "tool_registry": _read("../tools/registry.json"),
         "run_history_summary": retrieve_memory(db).get("recent_runs", []),
     }

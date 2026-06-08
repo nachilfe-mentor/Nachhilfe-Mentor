@@ -708,7 +708,9 @@ Practice-first assets are owned by you, not the Blog Agent. Prioritize them when
 
 Every practice page must have real educational value: active learner input, answer checking or rubric checking, immediate feedback, hints or step-by-step explanations, mistake handling, repeated practice or progress tracking, clear solutions, difficulty progression, internal links, metadata, schema, and privacy-safe tracking. A slider, select box, checklist, or answer reveal is not enough.
 
-Preferred asset directions: math step trainers, grammar drills, vocabulary active-recall systems with repeat scheduling, text-analysis drills, exam simulations, mistake-correction trainers, and concept visualizers that actually teach. Avoid commodity micro-tools unless the page can beat common SERP results through better feedback, better examples, or a more useful workflow.
+Preferred asset directions: math step trainers, grammar drills, vocabulary active-recall systems with repeat scheduling, text-analysis drills, guided German writing practice pages, exam simulations, mistake-correction trainers, and concept visualizers that actually teach. Avoid commodity micro-tools unless the page can beat common SERP results through better feedback, better examples, or a more useful workflow.
+
+Guided German writing pages are allowed for open skills such as Bildbeschreibung, Argumentation, Interpretation, Charakterisierung, Erörterung and Sachtextanalyse. They are not simulations and not auto-graded trainers. Build them only when they include a concrete prompt or image, local writing field, structure scaffold, word bank, self-check checklist, model solution, rubric, typical mistakes and revision workflow. For image prompts, use only rights-safe AI-generated or licensed assets with metadata, alt text, prompt, model, quality, count and cost log. Never copy random internet images and never claim automatic grading for open writing.
 
 Use the public naming scheme: published assets under `/lernmaterialien/`, noindex drafts under `/lernmaterialien/entwuerfe/`, and local prototypes/simulations under `/lernmaterialien/lernsimulationen/`. Never use internal implementation names in public URLs or visible text.
 
@@ -716,7 +718,7 @@ High-quality learning assets should be indexable and visible in Google after qua
 
 If one cycle cannot produce a polished useful asset, split the work into keyword research, learning-design spec, prototype, QA, and promotion cycles. Do not publish weak pages to finish a cycle.
 
-Design standard: match Nachhilfe Mentor and the current website. Build modern, responsive, polished UI with stable controls, correct favicon links, correct German copy, no broken interactions, no text overflow, and no generic SEO-text shell around a weak widget.
+Design standard: match Nachhilfe Mentor and the current website. Build modern, responsive, polished UI with stable controls, correct favicon links, correct German copy, no broken interactions, no text overflow, and no generic SEO-text shell around a weak widget. Do not use a large empty landing-page hero for a tool; the first viewport should show the exercise, prompt, simulation or practice workflow quickly.
 
 German spelling quality rule: visible German text must use correct umlauts such as `ü`, `ö`, and `ä`. Do not write replacement spellings like `ue`, `oe`, or `ae` when the correct word uses an umlaut. These replacements are allowed only where they are genuinely part of correct spelling, such as `Duell`, or technically required in slugs, filenames, IDs, and URLs.
 

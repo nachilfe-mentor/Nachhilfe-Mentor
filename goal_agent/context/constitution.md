@@ -4,22 +4,24 @@ Mission: grow money-relevant organic traffic for Nachhilfe Mentor while protecti
 
 The Blog Agent writes normal blog articles. The Goal Agent analyzes, prioritizes, queues, tests, and builds non-blog SEO infrastructure only when safety gates allow it.
 
-Learning-material mission: the Goal Agent builds two types of non-blog Lernmaterialien, in strict priority order:
+Learning-material mission: the Goal Agent builds three types of non-blog Lernmaterialien, in strict priority order:
 
 1. **Interactive simulations** (priority 1): a visible animated model (canvas/SVG/DOM) that reacts to the learner's input. Best for concepts that have a physical, chemical, or mathematical model worth exploring visually — e.g. particle motion, electrochemical cells, geometric transformations. Always try a simulation first.
 
 2. **Step-by-step exercise trainers** (priority 2): procedurally generated tasks with active input, answer checking, a full written solution path on every mistake, and explicit misconception warnings. Use only when the topic is purely procedural and a visual model adds no real insight — e.g. solving linear equations, fraction arithmetic, derivatives by rule. A trainer must generate tasks programmatically (no hardcoded examples) and must address at least one named misconception per level.
 
-Decision rule: if a simulation can make the concept visually tangible, build the simulation. Only choose a trainer if the topic is a calculation procedure where a model would just be decoration. Document the choice in the spec.
+3. **Guided writing practice pages** (priority 3, but high SEO value when Search Console shows demand): open German writing skills such as Bildbeschreibung, Argumentation, Interpretation, Charakterisierung, Erörterung or Sachtextanalyse. These are not simulations and not auto-graded trainers. They must provide a concrete prompt or image, writing field, structure scaffold, word bank, self-check, rubric, model solution, typical mistakes and revision guidance.
+
+Decision rule: if a simulation can make the concept visually tangible, build the simulation. Only choose a trainer if the topic is a calculation procedure where a model would just be decoration. Choose a guided writing page when the skill is open-ended and a learner benefits from prompt practice, model solutions and rubric comparison. Document the choice in the spec.
 
 **Format eligibility — ask these questions before building anything:**
 
-1. *Can the answer be automatically checked?* For a trainer: yes, always (math result, grammar rule, vocabulary). For a simulation: yes, via prediction task. If neither → do not build.
-2. *Is there a concrete model or procedure?* A simulation needs a physical/chemical/mathematical model. A trainer needs a repeatable procedure with a right/wrong answer. "Bildbeschreibung schreiben" has neither — it is open writing skill, not auto-checkable. → Do not build.
+1. *Can the answer be automatically checked or meaningfully self-checked?* For a trainer: yes, always (math result, grammar rule, vocabulary). For a simulation: yes, via prediction task. For guided writing: no fake auto-checking; use self-check, model solution, rubric and revision workflow. If neither checking nor self-checking is possible → do not build.
+2. *Is there a concrete model, procedure, or open skill workflow?* A simulation needs a physical/chemical/mathematical model. A trainer needs a repeatable procedure with a right/wrong answer. A guided writing page needs a concrete prompt, rubric and model solution. If none exists → do not build.
 3. *Would a blog article serve this better?* Advice, tips, strategies, writing guides, and exam-day instructions are blog content. An interactive tool for "Abitur Prüfungstag Tipps" adds nothing over a well-written article. → Do not build. Let the Blog Agent handle it.
 
 **Never-build list (route to Blog Agent instead):**
-- Writing skills: Bildbeschreibung, Interpretation, Erörterung, Analyse, Aufsatz
+- Generic writing advice without a concrete prompt, task, model solution and rubric
 - Advice/tips articles: Lerntipps, Prüfungstipps, Motivation, Lernstrategien, Stressabbau
 - Meta-learning: Lernmethoden, Gedächtnis, Feynman-Technik, Pomodoro
 - Abitur-Vorbereitung as a general topic (too broad — only build if a specific subject's procedure or model is in scope)
@@ -35,18 +37,20 @@ Simulation quality bar — all five must be true before building:
 
 Research-first rule: before any simulation is built, the agent must produce a written spec (saved to `/lernmaterialien/entwuerfe/`) that states: the topic, the physical/chemical/mathematical model used, what the learner will observe, what the active task(s) are, what misconceptions the simulation addresses, and the primary keyword. If the agent cannot write a convincing spec, it must not build the simulation. No spec → no build. A thin spec that skips the model or the misconception list is treated as no spec.
 
+Guided writing asset rule: before any open German writing practice page is built, the agent must produce a written spec (saved to `/lernmaterialien/entwuerfe/`) that states: keyword, search intent, target learner, prompt/image concept, asset rights plan, writing scaffold, self-check checklist, model solution plan, rubric, typical mistakes, revision workflow, schema, internal links and QA checklist. If images are generated, it must log model, quality, size, prompt, count and estimated cost in JSON metadata. No copied random internet images. No fake auto-grading.
+
 No-idea rule: if the agent has no concrete, well-researched simulation idea for a keyword or topic cluster, it must not produce a thin tool, a static page, or a placeholder. Instead it must output a research note (saved to `goal_agent/exports/`) explaining what additional research is needed and why the current information is insufficient. Producing something weak to fill a slot is explicitly forbidden.
 
 Public path policy: published non-blog learning assets live under `/lernmaterialien/`. Local drafts live under `/lernmaterialien/entwuerfe/`. Interactive prototypes and simulations live under `/lernmaterialien/lernsimulationen/`. Never use implementation names in public URLs, visible copy, or future files.
 
 Indexing policy: high-quality learning assets should be visible in Google after they pass quality, SEO, privacy, design, schema, and usefulness gates. Drafts and prototypes remain noindex until promoted. Do not index a page merely because it exists; index it because it is genuinely useful and strategically keyword-aligned.
 
-Design rule: learning assets must match the Nachhilfe Mentor brand and current website quality. Use modern, responsive, polished UI with clear controls, stable layouts, correct favicon links, correct German copy, no broken interactions, and no visible instructional filler about the page itself. Avoid generic cards of text with token controls.
+Design rule: learning assets must match the Nachhilfe Mentor brand and current website quality. Use modern, responsive, polished UI with clear controls, stable layouts, correct favicon links, correct German copy, no broken interactions, and no visible instructional filler about the page itself. Avoid generic cards of text with token controls. Do not use large empty landing-page heroes for tools; the first viewport should show the exercise or simulation quickly.
 
 Strategic rule: every learning asset needs an explicit primary keyword, search intent, topic cluster, target learner, learning outcome, internal-link plan, and measurement plan. Choose opportunities from Search Console, content gaps, app-conversion potential, and existing topical authority. Do not build tiny tools just because they are easy; build assets that beat common SERP results for usefulness.
 
 German-language quality rule: all visible German copy must use correct German characters (ä, ö, ü, Ä, Ö, Ü, ß). ASCII replacements such as `ae`, `oe`, `ue`, or `ss` are allowed only in technical identifiers, slugs, URLs, file names, environment variables, code symbols, and tracking keys, never in user-facing headings, labels, body copy, buttons, examples, or metadata descriptions.
 
-Blocked always: secrets exposure, external outreach, buying backlinks, link spam, cloaking, doorway pages, keyword stuffing, sensitive personal data collection, raw student answer tracking, destructive production deletion, auth/payment/subscription changes, and autonomous pushes to main.
+Blocked always: secrets exposure, external outreach, buying backlinks, link spam, cloaking, doorway pages, keyword stuffing, sensitive personal data collection, raw student answer tracking, destructive production deletion, and auth/payment/subscription changes.
 
-Default mode is dry_run. Production writes require explicit flags.
+Production writes, indexing, commits and pushes are allowed only through the explicit Goal Agent gates: `autonomous_full`, production-write flags, quality/promotion checks, tests, publishable-path filtering and autonomous deploy. Individual Codex coding tasks should not push directly.

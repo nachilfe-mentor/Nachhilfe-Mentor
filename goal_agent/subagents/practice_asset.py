@@ -17,9 +17,15 @@ from .base import Recommendation, Subagent, SubagentResult, rec_id
 #                 that can be auto-generated and auto-checked. Ask: "Can I
 #                 generate 50 random tasks and check the answer programmatically?"
 #
-#   Neither     → topic is advice, strategy, tips, writing skill, or meta-
-#                 learning. These belong in blog articles, not interactive tools.
-#                 A bad interactive tool is worse than no tool at all.
+#   Guided writing page
+#               → topic is an open writing skill where automatic grading would
+#                 be fake. Build only if the page provides a real prompt,
+#                 learner writing area, self-check, rubric, model solution and
+#                 revision workflow. Never present it as auto-graded.
+#
+#   Neither     → topic is advice, strategy, tips, or meta-learning. These
+#                 belong in blog articles, not interactive tools. A bad
+#                 interactive tool is worse than no tool at all.
 
 SIMULATION_SIGNALS = [
     # Naturwissenschaften
@@ -47,14 +53,18 @@ TRAINER_SIGNALS = [
     "zeitformen", "irregular verbs",
 ]
 
-# Topics that look educational but are advice/strategy/writing — these belong
-# in blog posts, not interactive tools. Never build a practice asset for these.
+GUIDED_WRITING_SIGNALS = [
+    "bildbeschreibung", "bildergeschichte", "tierbeschreibung", "ortsbeschreibung",
+    "argumentation", "erörterung", "interpretation", "analyse schreiben",
+    "aufsatz", "zusammenfassung", "charakterisierung", "sachtextanalyse",
+    "redeanalyse", "karikatur analysieren", "gedichtanalyse",
+    "übung mit lösung", "übungen mit lösungen", "musterlösung", "bewertungsraster",
+]
+
+# Topics that look educational but are advice/strategy — these belong in blog
+# posts, not learning tools. Writing skills are handled separately as guided
+# practice pages, not as simulations or auto-graded trainers.
 NOT_INTERACTIVE_SIGNALS = [
-    # Schreibkompetenz (zu offen für Auto-Check)
-    "aufsatz schreiben", "essay schreiben", "bildbeschreibung schreiben",
-    "interpretation schreiben", "erörterung schreiben", "analyse schreiben",
-    "zusammenfassung schreiben", "bewerbung schreiben",
-    "wie schreibt man", "aufbau",
     # Ratgeber / Tipps-Artikel
     "tipps", "tricks", "ratgeber", "so lernst du", "so meisterst du",
     "lernmethode", "lernstrategie", "lernplan", "motivation",
@@ -69,12 +79,13 @@ NOT_INTERACTIVE_SIGNALS = [
 ALWAYS_EVALUATE_TYPES = {"practice_asset_opportunity"}
 
 
-def _classify(text: str) -> tuple[bool, bool, bool]:
-    """Return (is_sim, is_trainer, is_not_interactive)."""
+def _classify(text: str) -> tuple[bool, bool, bool, bool]:
+    """Return (is_sim, is_trainer, is_guided_writing, is_not_interactive)."""
     is_not = any(term in text for term in NOT_INTERACTIVE_SIGNALS)
     is_sim = any(term in text for term in SIMULATION_SIGNALS)
     is_trainer = any(term in text for term in TRAINER_SIGNALS)
-    return is_sim, is_trainer, is_not
+    is_guided_writing = any(term in text for term in GUIDED_WRITING_SIGNALS)
+    return is_sim, is_trainer, is_guided_writing, is_not
 
 
 def _is_interactive_topic(opp: dict) -> bool:
@@ -88,7 +99,10 @@ def _is_interactive_topic(opp: dict) -> bool:
     url = (opp.get("target_url") or "").lower()
     text = f"{keyword} {cluster} {url}"
 
-    is_sim, is_trainer, is_not = _classify(text)
+    is_sim, is_trainer, is_guided_writing, is_not = _classify(text)
+
+    if is_guided_writing:
+        return True
 
     # Hard exclusion: tips/advice/writing topics are never interactive tools
     if is_not and not (is_sim or is_trainer):
@@ -120,7 +134,52 @@ class PracticeAssetAgent(Subagent):
                 continue
 
             text = f"{opp.get('primary_keyword') or ''} {opp.get('target_url') or ''}".lower()
-            is_sim, is_trainer, _ = _classify(text)
+            is_sim, is_trainer, is_guided_writing, _ = _classify(text)
+            if is_guided_writing:
+                base_priority = int(opp.get("expected_value_score", 0.5) * 100)
+                recs.append(Recommendation(
+                    id=rec_id(self.agent_name, opp["id"]),
+                    source_agent=self.agent_name,
+                    recommendation_type="create_practice_asset",
+                    title=f"Guided writing practice page: {opp.get('primary_keyword')}",
+                    rationale=(
+                        "Topic is an open German writing skill. Do not build a fake simulation or auto-grader. "
+                        "Build a guided practice page with a strong image/text prompt, learner writing area, "
+                        "word bank, self-check checklist, model solution, rubric, typical mistakes and a revision workflow. "
+                        "For Bildbeschreibung-style pages, use AI-generated or licensed image prompts with metadata; "
+                        "never copy random internet images. Prefer the curated local asset set unless image generation is explicitly enabled and budgeted."
+                    ),
+                    priority=min(100, base_priority + 15),
+                    confidence=0.78,
+                    target_topic=opp.get("topic_cluster") or "deutsch schreiben",
+                    target_url=opp.get("target_url"),
+                    suggested_publish_decision="draft_noindex",
+                    codex_task_allowed=True,
+                    safety_risk="low",
+                    acceptance_criteria=[
+                        "FIRST: write a learning-design spec to /lernmaterialien/entwuerfe/ with keyword, target learner, prompt concept, rubric, model solution strategy, image/asset plan and QA checklist.",
+                        "If an image is needed, create or reference only rights-safe assets: existing curated local assets, AI-generated assets with metadata, or licensed sources with source/license/date. Do not copy random internet images.",
+                        "Do not call paid image-generation APIs unless GOAL_AGENT_IMAGE_GENERATION_ENABLED=true and a monthly budget is configured.",
+                        "Track every generated image in a JSON cost/asset log with model, quality, size, prompt, count, estimated cost and remaining budget.",
+                        "Use no more than the minimum necessary image count; prefer 1-2 images per prototype unless the spec justifies more.",
+                        "Build a real learning workflow: prompt, writing textarea, word bank, structure scaffold, self-check checklist, Bewertungsraster/rubric, Musterlösung/model solution, typical mistakes and revision guidance.",
+                        "Do not claim automatic grading for open writing. Use self-check or rubric comparison only.",
+                        "The page must be useful without logging or sending student text anywhere; no raw answer tracking.",
+                        "No generic landing-page hero: the first viewport must show the exercise prompt and image compactly.",
+                        "Layout must work at 375 px width with no horizontal scroll, no text clipping and no oversized empty hero space.",
+                        "Visible German text uses correct umlauts (ä, ö, ü, Ä, Ö, Ü, ß).",
+                        "Start as draft/noindex under /lernmaterialien/entwuerfe/ or /lernmaterialien/deutsch/ until quality gate review.",
+                        "Include primary keyword, search intent, topic cluster, learning outcome, internal links, LearningResource schema and privacy-safe tracking plan.",
+                    ],
+                    required_context=[
+                        "guided writing practice standard",
+                        "image asset policy",
+                        "rubric and model solution standard",
+                        "Nachhilfe Mentor design standard",
+                        "quality rules",
+                    ],
+                ))
+                continue
             # Simulation-first: only choose trainer when clear procedural signals
             # fire and no simulation signal fires. For everything else the spec
             # step will decide — if no model exists, it must write a research note.

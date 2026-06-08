@@ -49,6 +49,15 @@ GOAL_AGENT_MODE=dry_run
 
 The current implementation does not auto-start unless called by CLI, cron, or scheduler.
 
+## Production Cadence
+
+Use two daily runs:
+
+- `03:17` via systemd timer for overnight SEO/GSC-driven planning.
+- `15:17` via user cron for queue continuation.
+
+Keep `GOAL_AGENT_CODEX_MAX_TASKS_PER_RUN=2` for the afternoon run. This gives extra throughput without encouraging overlapping long-running Codex work. The repo-level lock file `goal_agent/state/goal_agent_run.lock` makes a second run skip cleanly if another Goal Agent run is still active. Increase frequency only after the daily reports show that Codex tasks complete reliably and stale/blocked tasks stay near zero.
+
 ## Blog Agent Guardian
 
 The Goal Agent writes a guardian report to:

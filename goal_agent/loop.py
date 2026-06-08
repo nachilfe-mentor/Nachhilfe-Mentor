@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import hashlib
+import fcntl
 import json
 import subprocess
 from pathlib import Path
@@ -11,6 +12,7 @@ from .analytics import GSCConnector, PostHogConnector, SerpConnector, page_conve
 from .autopublish import auto_publish
 from .blog_guardian import maybe_apply_blog_context_note, monitor_blog_agent, recommend_blog_agent_adjustments, write_guardian_report
 from .codex_agent.dispatcher import build_and_store_tasks, run_next
+from .codex_agent.task_builder import retire_obsolete_coding_tasks
 from .config import REPO_ROOT, Settings, load_settings
 from .context_builder import build_context
 from .draft_promotion import promote_drafts
@@ -36,6 +38,20 @@ def _git_commit(repo_root: Path = REPO_ROOT) -> str:
         return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=repo_root, text=True).strip()
     except Exception:  # noqa: BLE001
         return ""
+
+
+def _acquire_run_lock(settings: Settings):
+    lock_dir = settings.repo_root / "goal_agent" / "state"
+    lock_dir.mkdir(parents=True, exist_ok=True)
+    lock_file = (lock_dir / "goal_agent_run.lock").open("w", encoding="utf-8")
+    try:
+        fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except BlockingIOError:
+        lock_file.close()
+        return None
+    lock_file.write(f"{utc_now()}\n")
+    lock_file.flush()
+    return lock_file
 
 
 def _insert_run(db: Database, run_id: str, cycle_type: str, settings: Settings) -> None:
@@ -183,6 +199,15 @@ def _store_interactive_task(db: Database, run_id: str, opportunity: dict[str, An
 
 def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue_codex_tasks: bool = False) -> dict[str, Any]:
     settings = settings or load_settings()
+    run_lock = _acquire_run_lock(settings)
+    if run_lock is None:
+        return {
+            "run_id": "",
+            "summary": "Skipped: another Goal Agent run is already active.",
+            "context_keys": [],
+            "report": "",
+            "skipped": True,
+        }
     db = Database(settings)
     db.init()
     write_migration_file()
@@ -369,6 +394,19 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
             [],
             [f"Agents run: {len(subagent_output['agents_run'])}", f"Recommendations: {len(subagent_output['recommendations'])}"],
         )
+        retired_codex_tasks = retire_obsolete_coding_tasks(db)
+        if retired_codex_tasks:
+            _log_action(
+                db,
+                run_id,
+                None,
+                "retire_obsolete_coding_tasks",
+                "coding_tasks",
+                None,
+                "completed",
+                [],
+                [f"Retired stale pre-pattern Codex tasks: {retired_codex_tasks}", "New tasks are regenerated from current Pattern Library"],
+            )
         if queue_codex_tasks or settings.mode == "autonomous_full":
             codex_tasks_created = build_and_store_tasks(db, limit=settings.max_actions_per_run)
             _log_action(db, run_id, None, "queue_codex_coding_tasks", "coding_tasks", None, "completed", [], ["Codex tasks queued only", "Codex execution remains separately gated"],)
@@ -452,3 +490,9 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
         _finish_run(db, run_id, "failed", "Run failed", exc.__class__.__name__)
         notify_daily_update(db, settings, run_id, f"Run failed: {exc.__class__.__name__}")
         raise
+    finally:
+        try:
+            fcntl.flock(run_lock.fileno(), fcntl.LOCK_UN)
+            run_lock.close()
+        except Exception:
+            pass

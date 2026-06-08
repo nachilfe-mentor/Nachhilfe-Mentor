@@ -92,13 +92,20 @@ class Settings:
         "feed.xml",
         "blog/_pinterest_done.txt",
         "blog/_BLOG_REGISTRY.md",
+        # Site assets and generated learning-material prototypes
+        "favicon.ico",
+        "favicon-16x16.png",
+        "favicon-32x32.png",
+        "apple-touch-icon.png",
+        "onewebmedia/logo-ghost-transparent.png",
+        "lernmaterialien/",
         # Goal Agent runtime files
         "goal_agent/exports/",
         "goal_agent/queues/",
         "goal_agent/goal_agent.db",
         "goal_agent/goal_agent.db-",
     )
-    codex_max_tasks_per_run: int = 1
+    codex_max_tasks_per_run: int = 2
     max_actions_per_run: int = 10
     emergency_max_generated_pages_per_run: int = 50
     max_toolsmith_changes_per_run: int = 1
@@ -115,6 +122,10 @@ class Settings:
     telegram_bot_token_present: bool = False
     telegram_chat_id: str = ""
     telegram_timeout_seconds: int = 10
+    image_generation_enabled: bool = False
+    image_generation_model: str = "gpt-image-2"
+    image_generation_quality: str = "medium"
+    image_generation_monthly_budget_cents: int = 0
 
     @property
     def safe_write_mode(self) -> bool:
@@ -155,7 +166,7 @@ def load_settings() -> Settings:
         item.strip()
         for item in _env(
             "GOAL_AGENT_CODEX_DIRTY_ALLOWED_PATHS",
-            "auto-blog.log,blog/_pinterest_done.txt,goal_agent/exports/,goal_agent/queues/,goal_agent/goal_agent.db,goal_agent/goal_agent.db-",
+            "auto-blog.log,blog/_pinterest_done.txt,blog/_BLOG_REGISTRY.md,sitemap.xml,feed.xml,apple-touch-icon.png,favicon-16x16.png,favicon-32x32.png,favicon.ico,onewebmedia/logo-ghost-transparent.png,lernmaterialien/,goal_agent/exports/,goal_agent/queues/,goal_agent/goal_agent.db,goal_agent/goal_agent.db-",
             env_file_values,
         ).split(",")
         if item.strip()
@@ -179,7 +190,7 @@ def load_settings() -> Settings:
         codex_create_branch=_env("GOAL_AGENT_CODEX_CREATE_BRANCH", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
         codex_allow_dirty_worktree=_env("GOAL_AGENT_CODEX_ALLOW_DIRTY_WORKTREE", "false", env_file_values).strip().lower() in {"1", "true", "yes", "on"},
         codex_dirty_allowed_paths=dirty_allowed,
-        codex_max_tasks_per_run=_int_value("GOAL_AGENT_CODEX_MAX_TASKS_PER_RUN", 1, env_file_values),
+        codex_max_tasks_per_run=_int_value("GOAL_AGENT_CODEX_MAX_TASKS_PER_RUN", 2, env_file_values),
         max_actions_per_run=_int_value("GOAL_AGENT_MAX_ACTIONS_PER_RUN", 10, env_file_values),
         emergency_max_generated_pages_per_run=_int_value(
             "GOAL_AGENT_EMERGENCY_MAX_GENERATED_PAGES_PER_RUN",
@@ -200,6 +211,10 @@ def load_settings() -> Settings:
         telegram_bot_token_present=bool(_env("GOAL_AGENT_TELEGRAM_BOT_TOKEN", "", env_file_values)),
         telegram_chat_id=_env("GOAL_AGENT_TELEGRAM_CHAT_ID", "", env_file_values).strip(),
         telegram_timeout_seconds=_int_value("GOAL_AGENT_TELEGRAM_TIMEOUT_SECONDS", 10, env_file_values),
+        image_generation_enabled=_bool_value("GOAL_AGENT_IMAGE_GENERATION_ENABLED", False, env_file_values),
+        image_generation_model=_env("GOAL_AGENT_IMAGE_GENERATION_MODEL", "gpt-image-2", env_file_values).strip() or "gpt-image-2",
+        image_generation_quality=_env("GOAL_AGENT_IMAGE_GENERATION_QUALITY", "medium", env_file_values).strip() or "medium",
+        image_generation_monthly_budget_cents=_int_value("GOAL_AGENT_IMAGE_GENERATION_MONTHLY_BUDGET_CENTS", 0, env_file_values),
     )
 
 

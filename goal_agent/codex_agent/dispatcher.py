@@ -3,11 +3,12 @@ from __future__ import annotations
 from ..config import Settings
 from ..storage import Database
 from .codex_cli_runner import CodexCliRunner, CodexRunResult
-from .task_builder import build_tasks_from_state, store_coding_tasks
+from .task_builder import build_tasks_from_state, retire_obsolete_coding_tasks, store_coding_tasks
 from .task_schema import CodingTask, task_from_row
 
 
 def build_and_store_tasks(db: Database, limit: int = 10) -> int:
+    retire_obsolete_coding_tasks(db)
     return store_coding_tasks(db, build_tasks_from_state(db, limit))
 
 

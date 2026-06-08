@@ -8,7 +8,7 @@ from .task_schema import CodingTask
 
 
 COMMON_SAFETY = [
-    "Do not deploy, push, or publish live.",
+    "Do not deploy, push, or publish live from this coding task; final promotion/push is handled only by the Goal Agent publishing gate.",
     "Do not read, print, or commit secrets.",
     "Do not modify .env, /etc/nachhilfe-mentor, or service account JSON files.",
     "Do not modify production data.",
@@ -24,6 +24,66 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
     if not rec.codex_task_allowed or rec.safety_risk == "high":
         return None
     if rec.recommendation_type == "create_practice_asset":
+        rec_text = " ".join([rec.title, rec.rationale, *rec.acceptance_criteria, *rec.required_context]).lower()
+        if "guided writing" in rec_text or "musterlösung" in rec_text or "bewertungsraster" in rec_text:
+            return CodingTask(
+                id=_task_id(rec.id),
+                source_recommendation_id=rec.id,
+                task_type="practice_page",
+                title=f"Draft guided writing practice page: {rec.title}",
+                goal=(
+                    "Build a high-quality guided German writing practice page. "
+                    "Follow these steps in order — do NOT skip step 1:\n\n"
+                    "STEP 1 — LEARNING DESIGN SPEC (mandatory before any code):\n"
+                    "  Read docs/goal-agent/LEARNING_ASSET_PATTERNS.md before writing the spec.\n"
+                    "  Treat existing prototypes as quality references, not as rigid templates.\n"
+                    "  Write a spec file to lernmaterialien/entwuerfe/<slug>-spec.md containing:\n"
+                    "  - Primary keyword, search intent, target learner and learning outcome\n"
+                    "  - Prompt concept and why it helps the writing skill\n"
+                    "  - Asset plan: existing curated local asset, AI-generated asset only if explicitly enabled/budgeted, or licensed image/text source; include metadata, alt text, and cost tracking if generated\n"
+                    "  - Writing workflow: scaffold, learner input, self-check, revision step, model solution and rubric\n"
+                    "  - Typical mistakes and how the page helps learners correct them\n"
+                    "  - QA checklist for mobile, desktop, German copy, rights safety and usefulness\n"
+                    "  If you cannot write a convincing spec, STOP. Save a research note to goal_agent/exports/<slug>-research-needed.md.\n\n"
+                    "STEP 2 — BUILD (only after a solid spec exists):\n"
+                    "  Build a noindex guided practice page under lernmaterialien/entwuerfe/ or lernmaterialien/deutsch/.\n"
+                    "  Do not call paid image-generation APIs unless GOAL_AGENT_IMAGE_GENERATION_ENABLED=true and the configured budget is stated in the spec.\n"
+                    "  The first viewport must be compact and exercise-first: prompt/image plus task context, not a large empty landing hero.\n"
+                    "  The page MUST include: writing textarea, structure scaffold, word bank, self-check checklist, rubric, model solution, "
+                    "  typical mistakes and revision guidance. Do not pretend to auto-grade open writing.\n\n"
+                    "STEP 3 — SELF-CHECK:\n"
+                    "  Verify: (a) no horizontal scroll at 375 px, (b) no text clipping, (c) all German text uses correct umlauts, "
+                    "  (d) no visible escaped formatting artifacts such as literal \\\\n in rendered text or textareas, "
+                    "  (e) noindex is set, (f) image metadata/cost log exists for generated assets, (g) tests pass.\n\n"
+                    "IMPORTANT: A good guided writing page helps students compare and revise their own text. "
+                    "A fake AI grader, generic checklist, or copied internet image fails the task."
+                ),
+                context_summary=f"{rec.rationale}\nTarget topic: {rec.target_topic}\nTarget URL: {rec.target_url or ''}",
+                allowed_paths=[
+                    "docs/goal-agent/LEARNING_ASSET_PATTERNS.md",
+                    "lernmaterialien/entwuerfe/",
+                    "lernmaterialien/deutsch/",
+                    "lernmaterialien/assets/",
+                    "goal_agent/exports/",
+                    "tests/goal_agent/",
+                ],
+                forbidden_paths=["auto-blog.sh", "blog/posts/", "blog/articles/", ".env", "/etc/nachhilfe-mentor", "*service-account*.json", ".git/"],
+                acceptance_criteria=[
+                    *rec.acceptance_criteria,
+                    "A spec file must exist in lernmaterialien/entwuerfe/ before the HTML page is created.",
+                    "Generated or referenced images must have metadata, alt text and rights/cost notes; paid generation requires GOAL_AGENT_IMAGE_GENERATION_ENABLED=true and a configured budget.",
+                    "Open writing is not auto-graded; use self-check and rubric comparison.",
+                    "The first viewport is compact and exercise-first, with no large empty hero space.",
+                    "All user-facing German copy must use correct umlauts; ASCII replacements are forbidden in visible text.",
+                    "Rendered page text and textarea presets must not show raw escape sequences such as literal \\\\n; use real line breaks.",
+                    "noindex is set; sitemap inclusion only after promotion gates pass.",
+                ],
+                safety_constraints=COMMON_SAFETY,
+                test_commands=["python3 -m pytest tests/goal_agent -q"],
+                mode="draft_only",
+                publish_policy="draft_noindex_only",
+                priority=rec.priority,
+            )
         return CodingTask(
             id=_task_id(rec.id),
             source_recommendation_id=rec.id,
@@ -32,8 +92,10 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
             goal=(
                 "Build a high-quality interactive learning simulation. "
                 "Follow these steps in order — do NOT skip step 1:\n\n"
-                "STEP 1 — RESEARCH & SPEC (mandatory before any code):\n"
-                "  Research the topic thoroughly. Write a spec file to lernmaterialien/entwuerfe/<slug>-spec.md containing:\n"
+                    "STEP 1 — RESEARCH & SPEC (mandatory before any code):\n"
+                    "  Read docs/goal-agent/LEARNING_ASSET_PATTERNS.md before writing the spec.\n"
+                    "  Treat existing assets as quality references, not as rigid templates.\n"
+                    "  Research the topic thoroughly. Write a spec file to lernmaterialien/entwuerfe/<slug>-spec.md containing:\n"
                 "  - The exact physical, chemical, or mathematical model (with formula or rule)\n"
                 "  - What the learner will see and interact with (describe the animation/diagram)\n"
                 "  - The active tasks (predictions, inputs) and what correct/incorrect looks like\n"
@@ -48,12 +110,13 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
                 "  The underlying model must be factually correct — cross-check against your spec.\n\n"
                 "STEP 3 — SELF-CHECK:\n"
                 "  Before finishing, verify: (a) the simulation is factually correct, (b) it works at 375 px width, "
-                "  (c) all German text uses correct umlauts, (d) noindex is set, (e) tests pass.\n\n"
+                "  (c) all German text uses correct umlauts, (d) no visible escaped formatting artifacts such as literal \\\\n, "
+                "  (e) noindex is set, (f) tests pass.\n\n"
                 "IMPORTANT: producing something thin, static, or factually wrong is worse than producing nothing. "
                 "If the simulation would not genuinely help a student understand the concept better than reading the blog post, do not publish it."
             ),
             context_summary=f"{rec.rationale}\nTarget topic: {rec.target_topic}\nTarget URL: {rec.target_url or ''}",
-            allowed_paths=["lernmaterialien/entwuerfe/", "lernmaterialien/lernsimulationen/", "goal_agent/exports/", "tests/goal_agent/"],
+            allowed_paths=["docs/goal-agent/LEARNING_ASSET_PATTERNS.md", "lernmaterialien/entwuerfe/", "lernmaterialien/lernsimulationen/", "goal_agent/exports/", "tests/goal_agent/"],
             forbidden_paths=["auto-blog.sh", "blog/posts/", "blog/articles/", ".env", "/etc/nachhilfe-mentor", "*service-account*.json", ".git/"],
             acceptance_criteria=[
                 *rec.acceptance_criteria,
@@ -66,6 +129,7 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
                 "The underlying model is factually correct (verified in spec).",
                 "Generated asset uses: lernmaterialien/entwuerfe/ (spec), lernmaterialien/lernsimulationen/ (prototype).",
                 "All user-facing German copy must use correct umlauts; ASCII replacements are forbidden in visible text.",
+                "Rendered page text must not show raw escape sequences such as literal \\\\n; use real line breaks.",
                 "Do not ship a weak one-cycle result; always write the spec first and leave the simulation noindex until the quality gate passes.",
                 "noindex is set; no push or deploy; sitemap inclusion only after promotion gates pass.",
             ],
@@ -159,6 +223,57 @@ def build_tasks_from_state(db: Database, limit: int = 10) -> list[CodingTask]:
         for row in rows
     ]
     return build_tasks_from_recommendations(recs, limit)
+
+
+def retire_obsolete_coding_tasks(db: Database) -> int:
+    """
+    Retire queued/blocked tasks created with older learning-asset prompts.
+
+    These tasks are not useful to rerun after the asset policy changed: they
+    either ask for "learning simulations" around open writing skills or broad
+    exam-advice topics that now belong to guided writing specs or Blog Agent
+    work. Retiring them prevents autonomous runs from spending Codex time on
+    stale prompts while keeping the audit trail in the DB.
+    """
+    stale_title_markers = [
+        "Draft learning simulation: Draft practice page:",
+        "Draft practice asset: Draft practice page:",
+        "Create practice-first asset for bildbeschreibung",
+    ]
+    stale_topic_markers = [
+        "prüfung: so meisterst du",
+        "prüfungstag",
+        "klausur letzte nacht",
+        "ki hausaufgaben hilfe",
+        "abitur vorbereitung: so meisterst du",
+    ]
+    now = utc_now()
+    retired = 0
+    with db.connect() as conn:
+        rows = conn.execute(
+            """
+            select id, title from coding_tasks
+            where status in ('queued', 'blocked_by_safety', 'failed')
+            """
+        ).fetchall()
+        for row in rows:
+            title = (row["title"] or "").lower()
+            is_stale = any(marker.lower() in title for marker in stale_title_markers)
+            is_stale = is_stale or any(marker in title for marker in stale_topic_markers)
+            if not is_stale:
+                continue
+            conn.execute(
+                """
+                update coding_tasks
+                set status='retired',
+                    updated_at=?,
+                    result_summary='retired by learning-asset policy upgrade; regenerate from current Pattern Library'
+                where id=?
+                """,
+                (now, row["id"]),
+            )
+            retired += 1
+    return retired
 
 
 def store_coding_tasks(db: Database, tasks: list[CodingTask]) -> int:

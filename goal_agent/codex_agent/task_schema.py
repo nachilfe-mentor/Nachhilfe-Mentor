@@ -20,7 +20,7 @@ TaskType = Literal[
 ]
 TaskMode = Literal["draft_only", "modify_repo", "tests_only"]
 PublishPolicy = Literal["never_publish", "draft_noindex_only", "queue_for_review"]
-TaskStatus = Literal["queued", "running", "completed", "failed", "blocked_by_safety"]
+TaskStatus = Literal["queued", "running", "completed", "failed", "blocked_by_safety", "retired"]
 
 
 @dataclass(frozen=True)

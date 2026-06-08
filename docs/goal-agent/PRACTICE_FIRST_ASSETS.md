@@ -29,6 +29,7 @@ Practice-first formats include:
 - math step trainers, for example Ableitungs-Trainer, Gleichungen lösen, Bruchrechnung, Kurvendiskussion steps;
 - vocabulary or grammar trainers with active recall, correction, and repeat scheduling;
 - text-analysis drills that ask learners to identify evidence, argument type, rhetorical device, thesis, or structure;
+- guided German writing practice pages for open skills such as Bildbeschreibung, Argumentation, Interpretation or Erörterung when they include a concrete prompt/image, writing field, scaffold, self-check, model solution, rubric, typical mistakes and revision workflow;
 - exam simulations with timed tasks, rubric feedback, and targeted retry;
 - mistake-correction trainers with realistic wrong answers and explanations;
 - worksheet generators only when the worksheet output is actually useful;
@@ -89,6 +90,8 @@ Every practice page must include:
 - a natural app CTA only when useful.
 - correct German visible text with real umlauts such as `ü`, `ö`, and `ä`; replacements like `ue`, `oe`, and `ae` are allowed only where they are genuinely correct German spelling or technically required in slugs, filenames, IDs, or URLs.
 
+Guided writing pages must not pretend to auto-grade open writing. They must help learners compare and revise their own answer through a model solution, rubric and self-check. If they use generated images, each image needs metadata and cost tracking: model, quality, size, prompt, count, estimated cost, alt text and QA status.
+
 The Goal Agent quality gate blocks generated practice assets without active input, solutions, difficulty metadata, useful feedback, mistake handling, repeated practice, interactive controls, or sufficient content.
 
 ## Design Standard
@@ -100,6 +103,7 @@ Learning assets must look and behave like part of Nachhilfe Mentor:
 - correct tab favicon using root favicon assets;
 - no broken buttons, dead controls, or fake interactivity;
 - no generic landing-page hero for a learning tool;
+- no large empty hero area; the exercise, prompt or image should appear quickly in the first viewport;
 - no thin SEO text wrapped around a weak widget;
 - clear visual hierarchy, restrained brand-consistent styling, and accessible form labels.
 

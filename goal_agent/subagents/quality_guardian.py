@@ -56,6 +56,28 @@ class QualityGuardianAgent(Subagent):
 
 def _practice_asset_brief_is_strong(rec: Recommendation) -> bool:
     text = " ".join([rec.rationale, *rec.acceptance_criteria, *rec.required_context]).lower()
+    if "guided writing" in text or "musterlösung" in text or "bewertungsraster" in text:
+        required_groups = [
+            # Prompt/asset plan: open writing needs a concrete image/text prompt.
+            ("prompt", "bild", "image", "asset", "textimpuls"),
+            # Learner writes locally.
+            ("textarea", "writing", "schreib", "learner input", "schreibfeld"),
+            # Self-check/rubric instead of fake auto-grading.
+            ("self-check", "selbstcheck", "rubric", "bewertungsraster"),
+            # Model answer / solution.
+            ("musterlösung", "model solution", "beispiellösung"),
+            # Mistake/revision workflow.
+            ("typical mistakes", "typische fehler", "revision", "überarbeiten"),
+            # Rights/cost metadata for generated images.
+            ("metadata", "kosten", "cost", "license", "lizenz", "rights"),
+            # Mobile/design.
+            ("375", "mobile", "responsive", "hero", "layout"),
+            # SEO.
+            ("keyword", "search intent", "suchintent", "seo"),
+            # Noindex gate.
+            ("noindex", "draft"),
+        ]
+        return all(any(term in text for term in group) for group in required_groups)
     required_groups = [
         # Sichtbare Simulation: animated model muss beschrieben sein
         ("canvas", "animation", "svg", "dom animation", "sichtbar", "visible", "modell", "simulation"),

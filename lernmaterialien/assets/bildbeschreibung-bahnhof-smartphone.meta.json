@@ -1,0 +1,14 @@
+{
+  "source": "ai_generated",
+  "model": "gpt-image-2",
+  "quality": "medium",
+  "size": "1024x1024",
+  "title": "Bahnhofsszene mit Smartphone-Kontrast und Bildwirkung",
+  "prompt": "Realistic educational photograph for an advanced German image description exercise. A busy train station platform in the late afternoon. In the foreground, a teenager looks at a smartphone with headphones, standing close to the platform edge but safely behind the line. Beside them, an elderly person looks confused at a timetable display without readable text; a younger commuter notices and seems about to help. In the middle ground: blurred commuters, luggage, warm light, reflections on the floor. In the background: arriving train shape, station architecture, clock-like round object without numbers. Strong composition with leading lines, contrast between isolation and attention, clear mood for interpretation. No text, no letters, no words, no logos, no brand names, no watermarks. No recognizable real people, no celebrities. Natural documentary style, classroom-safe.",
+  "created_at": "2026-06-08T09:59:30Z",
+  "license_note": "AI-generated internal test asset for Nachhilfe Mentor learning material prototype.",
+  "alt_text": "Bahnhofsszene mit Smartphone-Kontrast und Bildwirkung",
+  "web_asset": "bildbeschreibung-bahnhof-smartphone.webp",
+  "qa_status": "visually_reviewed_local_prototype",
+  "source_file_retention": "PNG original removed after WebP conversion; prompt and generation metadata retained."
+}
