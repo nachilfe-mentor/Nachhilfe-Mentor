@@ -25,6 +25,28 @@ def _run_git(repo_root: Path, args: list[str]) -> str:
         return f"git command failed: {exc.__class__.__name__}"
 
 
+def _ignored_learning_asset_outputs(repo_root: Path) -> list[str]:
+    output = _run_git(
+        repo_root,
+        [
+            "ls-files",
+            "--others",
+            "--ignored",
+            "--exclude-standard",
+            "--",
+            "lernmaterialien/entwuerfe",
+            "lernmaterialien/lernsimulationen",
+        ],
+    )
+    if output.startswith("git command failed:"):
+        return []
+    return [
+        line.strip()
+        for line in output.splitlines()
+        if line.strip().endswith((".html", ".md", ".json", ".css", ".js", ".webp", ".png", ".jpg", ".jpeg"))
+    ]
+
+
 def parse_result(repo_root: Path, stdout: str, stderr: str, exit_code: int | None, timed_out: bool = False) -> ParsedResult:
     status = _run_git(repo_root, ["status", "--short"])
     diff_stat = _run_git(repo_root, ["diff", "--stat"])
@@ -33,6 +55,9 @@ def parse_result(repo_root: Path, stdout: str, stderr: str, exit_code: int | Non
         if not line.strip():
             continue
         changed.append(line[3:] if len(line) > 3 else line.strip())
+    for path in _ignored_learning_asset_outputs(repo_root):
+        if path not in changed:
+            changed.append(path)
     combined = f"{stdout}\n{stderr}".lower()
     safety_blocked = "safety gate" in combined or "blocked_by_safety" in combined or "blocked by safety" in combined
     failure = ""

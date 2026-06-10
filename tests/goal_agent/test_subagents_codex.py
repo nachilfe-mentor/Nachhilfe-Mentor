@@ -377,6 +377,19 @@ def test_result_parser_captures_git_state(tmp_path: Path) -> None:
     assert "a.txt" in parsed.git_status_short
 
 
+def test_result_parser_captures_ignored_learning_asset_outputs(tmp_path: Path) -> None:
+    repo = tmp_path / "repo"
+    repo.mkdir()
+    subprocess.run(["git", "init"], cwd=repo, check=True, stdout=subprocess.DEVNULL)
+    (repo / ".gitignore").write_text("lernmaterialien/entwuerfe/\n", encoding="utf-8")
+    draft = repo / "lernmaterialien" / "entwuerfe" / "argumentation.html"
+    draft.parent.mkdir(parents=True)
+    draft.write_text("<!doctype html>", encoding="utf-8")
+
+    parsed = parse_result(repo, "summary", "", 0)
+    assert "lernmaterialien/entwuerfe/argumentation.html" in parsed.changed_files
+
+
 def test_codex_task_cli_storage_roundtrip(tmp_path: Path) -> None:
     cfg = settings(tmp_path)
     db = Database(cfg)

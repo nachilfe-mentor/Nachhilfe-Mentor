@@ -11,6 +11,7 @@ __pycache__/
 blog/__pycache__/
 goal_agent/*.db
 goal_agent/*.db-*
+goal_agent/state/
 goal_agent/exports/*.md
 goal_agent/queues/*.jsonl
 lernmaterialien/entwuerfe/
