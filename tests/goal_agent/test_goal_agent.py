@@ -477,6 +477,7 @@ def test_draft_promotion_routes_guided_writing_to_deutsch_and_accepts_datalayer(
 <body data-subject="deutsch" data-grade-level="klasse_7_10" data-asset-type="practice_page" data-topic-cluster="deutsch_schreiben" data-primary-keyword="bildbeschreibung übung mit lösung">
   <main>
     <h1>Bildbeschreibung Übung</h1>
+    <span class="pill">Entwurf · noindex</span>
     <p>Diese Schreibaufgabe trainiert Beobachten, Strukturieren, Formulieren und Überarbeiten. Lernende schreiben zuerst selbst, prüfen danach typische Fehler und vergleichen ihre Revision mit einer Musterlösung. Die Übung ist kein Fake-Autograder, sondern ein klarer Schreibprozess mit Wiederholung.</p>
     <section>
       <h2>Aufgabe und Schwierigkeit</h2>
@@ -526,6 +527,7 @@ def test_draft_promotion_routes_guided_writing_to_deutsch_and_accepts_datalayer(
     assert published.exists()
     published_html = published.read_text(encoding="utf-8")
     assert "noindex" not in published_html
+    assert "/lernmaterialien/entwuerfe/" not in published_html
     assert "https://nachhilfe-mentor.de/lernmaterialien/deutsch/bildbeschreibung-schreibaufgaben-uebung.html" in published_html
 
 

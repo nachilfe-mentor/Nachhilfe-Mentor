@@ -65,12 +65,29 @@ def _destination_for(draft_path: Path, html: str = "") -> Path:
 
 
 def _make_indexable(html: str, url_path: str) -> str:
+    html = re.sub(
+        r"https://nachhilfe-mentor\.de/lernmaterialien/entwuerfe/[^\"'\s<>]+\.html",
+        f"https://nachhilfe-mentor.de{url_path}",
+        html,
+        flags=re.I,
+    )
+    html = re.sub(
+        r"/lernmaterialien/entwuerfe/[^\"'\s<>]+\.html",
+        url_path,
+        html,
+        flags=re.I,
+    )
     html = re.sub(r'\s*<meta\s+name=["\']robots["\']\s+content=["\'][^"\']*noindex[^"\']*["\']\s*/?>', "", html, flags=re.I)
     html = re.sub(r'content=["\']Noindex-Draft\s+für\s+', 'content="', html, flags=re.I)
     html = re.sub(r"Draft/noindex practice asset", "Practice asset", html, flags=re.I)
     html = re.sub(r'content=["\']draft-only,\s*noindex,\s*practice-first["\']', 'content="quality-approved, practice-first"', html, flags=re.I)
     html = re.sub(r'content=["\']draft_noindex_only["\']', 'content="publish_indexable_after_quality_gate"', html, flags=re.I)
-    html = re.sub(r"<span\b[^>]*>\s*(?:Entwurf|Draft|Noindex(?:-Entwurf)?)\s*</span>", "", html, flags=re.I)
+    html = re.sub(
+        r"<span\b[^>]*>\s*(?=[^<]*(?:Entwurf|Draft|Noindex))[^<]*(?:Entwurf|Draft|Noindex)[^<]*</span>",
+        "",
+        html,
+        flags=re.I,
+    )
     html = re.sub(r"\s*<p\b[^>]*>[^<]*(?:Draft/noindex|noindex|nicht indexierbar|nicht live veröffentlicht|Sitemap)[\s\S]*?</p>", "", html, flags=re.I)
     html = re.sub(r"\s*<li\b[^>]*>[^<]*(?:Draft/noindex|noindex|nicht indexierbar|nicht live veröffentlicht|Sitemap)[\s\S]*?</li>", "", html, flags=re.I)
     html = "\n".join(
