@@ -165,6 +165,10 @@ def test_task_builder_creates_guided_writing_task() -> None:
     assert "LEARNING_ASSET_PATTERNS.md" in task.goal
     assert "not as rigid templates" in task.goal
     assert "fake AI grader" in task.goal
+    assert "QUALITY PASS" in task.goal
+    assert "improvement pass" in task.goal
+    assert "<slug>-qa.md" in task.goal
+    assert any("QA note" in criterion for criterion in task.acceptance_criteria)
 
 
 def test_task_builder_treats_argumentation_as_guided_writing_even_from_old_brief() -> None:
@@ -268,6 +272,9 @@ def test_task_builder_creates_codex_task_and_blocks_high_risk() -> None:
     assert any("correct umlauts" in criterion for criterion in tasks[0].acceptance_criteria)
     assert any("lernmaterialien/lernsimulationen" in path for path in tasks[0].allowed_paths)
     assert any("weak one-cycle" in criterion for criterion in tasks[0].acceptance_criteria)
+    assert "QUALITY PASS" in tasks[0].goal
+    assert "<slug>-qa.md" in tasks[0].goal
+    assert any("QA note" in criterion for criterion in tasks[0].acceptance_criteria)
     assert not build_tasks_from_recommendations([sample_recommendation(safety_risk="high")])
 
 

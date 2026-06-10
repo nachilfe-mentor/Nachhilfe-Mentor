@@ -74,6 +74,15 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
                     "  Verify: (a) no horizontal scroll at 375 px, (b) no text clipping, (c) all German text uses correct umlauts, "
                     "  (d) no visible escaped formatting artifacts such as literal \\\\n in rendered text or textareas, "
                     "  (e) noindex is set, (f) image metadata/cost log exists for generated assets, (g) tests pass.\n\n"
+                    "STEP 4 — QUALITY PASS (mandatory before finishing):\n"
+                    "  Do one explicit improvement pass after the first working draft. Tighten the learning task, wording, layout density, "
+                    "  mobile behavior, and usefulness. Then write lernmaterialien/entwuerfe/<slug>-qa.md with:\n"
+                    "  - usefulness score and what the page teaches better than a blog article\n"
+                    "  - interaction checks performed, including one happy path and one mistake path\n"
+                    "  - mobile/desktop layout notes, including 375 px result\n"
+                    "  - copy QA for umlauts, visible escape artifacts, and no fake auto-grading\n"
+                    "  - promotion recommendation: promote, hold, or rewrite, with concrete reasons\n"
+                    "  If the page is only minimally acceptable, mark it hold/rewrite in the QA note instead of presenting it as done.\n\n"
                     "IMPORTANT: A good guided writing page helps students compare and revise their own text. "
                     "A fake AI grader, generic checklist, or copied internet image fails the task."
                 ),
@@ -93,6 +102,8 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
                     "Generated or referenced images must have metadata, alt text and rights/cost notes; paid generation requires GOAL_AGENT_IMAGE_GENERATION_ENABLED=true and a configured budget.",
                     "Open writing is not auto-graded; use self-check and rubric comparison.",
                     "The first viewport is compact and exercise-first, with no large empty hero space.",
+                    "After the first working draft, perform one explicit improvement pass before finishing.",
+                    "A QA note must exist in lernmaterialien/entwuerfe/ with usefulness, interaction, mobile, copy and promotion assessment.",
                     "All user-facing German copy must use correct umlauts; ASCII replacements are forbidden in visible text.",
                     "Rendered page text and textarea presets must not show raw escape sequences such as literal \\\\n; use real line breaks.",
                     "noindex is set; sitemap inclusion only after promotion gates pass.",
@@ -131,6 +142,15 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
                 "  Before finishing, verify: (a) the simulation is factually correct, (b) it works at 375 px width, "
                 "  (c) all German text uses correct umlauts, (d) no visible escaped formatting artifacts such as literal \\\\n, "
                 "  (e) noindex is set, (f) tests pass.\n\n"
+                "STEP 4 — QUALITY PASS (mandatory before finishing):\n"
+                "  Do one explicit improvement pass after the first working prototype. Tighten the model, feedback, task progression, "
+                "  layout density, mobile behavior, and educational usefulness. Then write lernmaterialien/entwuerfe/<slug>-qa.md with:\n"
+                "  - usefulness score and what the simulation teaches better than a blog article\n"
+                "  - model/factual checks performed\n"
+                "  - interaction checks, including one correct and one incorrect path\n"
+                "  - mobile/desktop layout notes, including 375 px result\n"
+                "  - promotion recommendation: promote, hold, or rewrite, with concrete reasons\n"
+                "  If the simulation is only minimally acceptable, mark it hold/rewrite in the QA note instead of presenting it as done.\n\n"
                 "IMPORTANT: producing something thin, static, or factually wrong is worse than producing nothing. "
                 "If the simulation would not genuinely help a student understand the concept better than reading the blog post, do not publish it."
             ),
@@ -149,6 +169,8 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
                 "Generated asset uses: lernmaterialien/entwuerfe/ (spec), lernmaterialien/lernsimulationen/ (prototype).",
                 "All user-facing German copy must use correct umlauts; ASCII replacements are forbidden in visible text.",
                 "Rendered page text must not show raw escape sequences such as literal \\\\n; use real line breaks.",
+                "After the first working prototype, perform one explicit improvement pass before finishing.",
+                "A QA note must exist in lernmaterialien/entwuerfe/ with usefulness, model, interaction, mobile and promotion assessment.",
                 "Do not ship a weak one-cycle result; always write the spec first and leave the simulation noindex until the quality gate passes.",
                 "noindex is set; no push or deploy; sitemap inclusion only after promotion gates pass.",
             ],
