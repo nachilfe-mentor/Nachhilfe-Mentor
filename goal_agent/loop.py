@@ -337,6 +337,11 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
             if result.status == "promoted" and result.published_path
         ]
         held_count = len([result for result in promotion_results if result.status != "promoted"])
+        held_details = [
+            f"Held {result.draft_path.name}: {'; '.join(result.reasons[:3])}"
+            for result in promotion_results
+            if result.status != "promoted"
+        ][:5]
         if promotion_results:
             _log_action(
                 db,
@@ -351,6 +356,7 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
                     "Draft-first promotion gate",
                     f"Promoted: {len(promoted_files)}",
                     f"Held: {held_count}",
+                    *held_details,
                     "Only quality-approved drafts are made indexable",
                 ],
             )
