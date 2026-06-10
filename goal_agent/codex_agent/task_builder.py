@@ -69,7 +69,11 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
                     "  Do not call paid image-generation APIs unless GOAL_AGENT_IMAGE_GENERATION_ENABLED=true and the configured budget is stated in the spec.\n"
                     "  The first viewport must be compact and exercise-first: prompt/image plus task context, not a large empty landing hero.\n"
                     "  The page MUST include: writing textarea, structure scaffold, word bank, self-check checklist, rubric, model solution, "
-                    "  typical mistakes and revision guidance. Do not pretend to auto-grade open writing.\n\n"
+                    "  typical mistakes and revision guidance. Do not pretend to auto-grade open writing.\n"
+                    "  The HTML body or main element MUST include machine-readable metadata attributes: "
+                    "data-subject, data-grade-level, data-asset-type, data-topic-cluster and data-primary-keyword.\n"
+                    "  The page MUST include a visible progress/repetition mechanism, for example a Fortschritt panel, "
+                    "Wiederholung step, checklist counter, or next-revision task that changes after learner action.\n\n"
                     "STEP 3 — SELF-CHECK:\n"
                     "  Verify: (a) no horizontal scroll at 375 px, (b) no text clipping, (c) all German text uses correct umlauts, "
                     "  (d) no visible escaped formatting artifacts such as literal \\\\n in rendered text or textareas, "
@@ -101,6 +105,8 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
                     "A spec file must exist in lernmaterialien/entwuerfe/ before the HTML page is created.",
                     "Generated or referenced images must have metadata, alt text and rights/cost notes; paid generation requires GOAL_AGENT_IMAGE_GENERATION_ENABLED=true and a configured budget.",
                     "Open writing is not auto-graded; use self-check and rubric comparison.",
+                    "The HTML includes data-subject, data-grade-level, data-asset-type, data-topic-cluster and data-primary-keyword metadata attributes.",
+                    "The page includes visible progress/repetition support such as a Fortschritt panel, Wiederholung step, checklist counter, or next-revision task.",
                     "The first viewport is compact and exercise-first, with no large empty hero space.",
                     "After the first working draft, perform one explicit improvement pass before finishing.",
                     "A QA note must exist in lernmaterialien/entwuerfe/ with usefulness, interaction, mobile, copy and promotion assessment.",

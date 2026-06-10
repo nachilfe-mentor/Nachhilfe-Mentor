@@ -460,6 +460,75 @@ def test_draft_promotion_promotes_only_quality_approved_noindex_drafts(tmp_path:
     assert "rel=\"canonical\"" in published_html
 
 
+def test_draft_promotion_routes_guided_writing_to_deutsch_and_accepts_datalayer(tmp_path: Path) -> None:
+    repo = tmp_path / "repo"
+    drafts = repo / "lernmaterialien" / "entwuerfe"
+    drafts.mkdir(parents=True)
+    html = """<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Bildbeschreibung Übung mit Musterlösung | Nachhilfe Mentor</title>
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Übe eine Bildbeschreibung mit Schreibplan, Musterlösung und Wiederholung.">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/entwuerfe/bildbeschreibung-schreibaufgaben-uebung.html">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"LearningResource","name":"Bildbeschreibung Übung","learningResourceType":"practice_page","inLanguage":"de"}</script>
+</head>
+<body data-subject="deutsch" data-grade-level="klasse_7_10" data-asset-type="practice_page" data-topic-cluster="deutsch_schreiben" data-primary-keyword="bildbeschreibung übung mit lösung">
+  <main>
+    <h1>Bildbeschreibung Übung</h1>
+    <p>Diese Schreibaufgabe trainiert Beobachten, Strukturieren, Formulieren und Überarbeiten. Lernende schreiben zuerst selbst, prüfen danach typische Fehler und vergleichen ihre Revision mit einer Musterlösung. Die Übung ist kein Fake-Autograder, sondern ein klarer Schreibprozess mit Wiederholung.</p>
+    <section>
+      <h2>Aufgabe und Schwierigkeit</h2>
+      <p><strong>Leicht:</strong> Sammle sichtbare Details. <strong>Mittel:</strong> Ordne sie von vorn nach hinten. <strong>Schwer:</strong> Formuliere Wirkung und Atmosphäre sachlich.</p>
+      <label for="text">Dein Text</label>
+      <textarea id="text">Im Vordergrund sieht man ...</textarea>
+      <button type="button" id="check">Prüfen</button>
+      <button type="button" id="next">Nächste Wiederholung</button>
+      <output id="feedback" aria-live="polite">Noch nicht geprüft.</output>
+    </section>
+    <section>
+      <h2>Struktur-Scaffold, Selbstcheck und Fortschritt</h2>
+      <p>Die Wortbank enthält im Vordergrund, im Hintergrund, links, rechts, auffällig und vermutlich. Der Selbstcheck fragt: Hast du die Einleitung geschrieben, Details geordnet, Präsens genutzt und Deutungen vorsichtig formuliert?</p>
+      <p>Fortschritt: Nach dem Prüfen folgt eine Revision. Bei einem Fehler zeigt die Seite einen Hinweis, warum der Schritt noch nicht passt. Danach kommt eine ähnliche Wiederholung, damit die Verbesserung aktiv geübt wird.</p>
+      <p>Typische Fehler sind Sprünge in der Reihenfolge, zu viele Vermutungen und fehlende Belege. Die Erklärung zeigt Schritt für Schritt, wie du aus einer Beobachtung einen sauberen Satz machst.</p>
+      <p>In der zweiten Runde markiert die Seite, ob der Text eine Einleitung, eine geordnete Beschreibung und eine vorsichtige Deutung enthält. Wenn ein Punkt fehlt, erhalten Lernende eine konkrete Überarbeitungsfrage: Welche Beobachtung belegt deine Aussage? Welche Stelle im Bild beschreibst du zuerst? Welches Verb passt im Präsens besser? Dadurch entsteht aus dem ersten Entwurf eine gezielte Revision statt einer bloßen Musterlösung zum Abschreiben.</p>
+      <p>Die Wiederholung nutzt denselben Ablauf mit einem leicht veränderten Fokus. Einmal steht die Raumordnung im Mittelpunkt, danach die sprachliche Genauigkeit und danach die Wirkung. So üben Schülerinnen und Schüler mehrere ähnliche Schreibhandlungen, erkennen wiederkehrende Fehler und können den eigenen Fortschritt vergleichen.</p>
+    </section>
+    <section>
+      <h2>Bewertungsraster und Musterlösung</h2>
+      <p>Das Bewertungsraster prüft Aufbau, Genauigkeit, Sprache und Überarbeitung. Eine Musterlösung erklärt, wie eine gute Beschreibung aufgebaut ist und warum einzelne Formulierungen funktionieren.</p>
+      <p><a href="/blog/posts/bildbeschreibung-schreiben.html">Bildbeschreibung erklären</a></p>
+    </section>
+  </main>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    document.getElementById("check").addEventListener("click", () => {
+      document.getElementById("feedback").textContent = "Hinweis: Prüfe Reihenfolge, Präsens und Belege. Danach folgt die Wiederholung.";
+      window.dataLayer.push({event: "practice_checked", asset: "bildbeschreibung"});
+    });
+  </script>
+</body>
+</html>"""
+    (drafts / "bildbeschreibung-schreibaufgaben-uebung.html").write_text(html, encoding="utf-8")
+    cfg = Settings(
+        repo_root=repo,
+        mode="autonomous_full",
+        allow_production_writes=True,
+        allow_page_generation=True,
+    )
+
+    results = promote_drafts(cfg)
+
+    promoted = [result for result in results if result.status == "promoted"]
+    assert len(promoted) == 1
+    published = repo / "lernmaterialien" / "deutsch" / "bildbeschreibung-schreibaufgaben-uebung.html"
+    assert published.exists()
+    published_html = published.read_text(encoding="utf-8")
+    assert "noindex" not in published_html
+    assert "https://nachhilfe-mentor.de/lernmaterialien/deutsch/bildbeschreibung-schreibaufgaben-uebung.html" in published_html
+
+
 def test_auto_publish_is_gated_by_autonomous_deploy(tmp_path: Path) -> None:
     cfg = Settings(repo_root=tmp_path, mode="autonomous_full", allow_autonomous_deploy=False)
     result = auto_publish(cfg)
