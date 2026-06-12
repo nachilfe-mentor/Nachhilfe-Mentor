@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interpretation schreiben üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Entwurf: Geführte Schreibübung zur literarischen Interpretation mit Textimpuls, Schreibfeld, Deutungsleiter, Selbstcheck, Musterlösung und Bewertungsraster.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Interpretation schreiben üben",
+    "description": "Geführte Deutsch-Schreibübung zur literarischen Interpretation mit Textimpuls, Deutungsleiter, Schreibgerüst, Wortbank, Selbstcheck, Musterlösung und Bewertungsraster.",
+    "learningResourceType": "PracticePage",
+    "educationalLevel": "Sekundarstufe I",
+    "inLanguage": "de",
+    "isAccessibleForFree": true,
+    "about": ["Interpretation", "Schreibaufgaben", "Deutsch schreiben"],
+    "teaches": ["Deutungshypothese formulieren", "Textbelege auswerten", "Interpretationsabschnitte überarbeiten"],
+    "url": "https://nachhilfe-mentor.de/lernmaterialien/deutsch/interpretation-schreibaufgaben-uebung.html"
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5e6c80;
+      --line: #d8e1ec;
+      --bg: #f5f8fb;
+      --panel: #ffffff;
+      --blue: #0f5fa8;
+      --teal: #0c7f74;
+      --green: #0d835d;
+      --amber: #9a6500;
+      --red: #b63d3d;
+      --violet: #604fa0;
+      --soft-blue: #edf6ff;
+      --soft-green: #edf9f3;
+      --soft-amber: #fff7e8;
+      --soft-red: #fff1f1;
+      --shadow: 0 12px 28px rgba(31, 49, 79, .08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      min-width: 0;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    button,
+    textarea,
+    select {
+      max-width: 100%;
+      font: inherit;
+    }
+
+    .site-nav,
+    header,
+    main,
+    footer {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding-inline: 18px;
+    }
+
+    .site-nav {
+      padding-top: 12px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: .92rem;
+      font-weight: 800;
+    }
+
+    header {
+      padding-top: 18px;
+      padding-bottom: 12px;
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(300px, 1.12fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .kicker {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3.2vw, 2.8rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: .98rem;
+      line-height: 1.35;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      line-height: 1.58;
+      overflow-wrap: break-word;
+    }
+
+    p { margin: 0; }
+    p + p { margin-top: 8px; }
+    ul, ol { margin: 8px 0 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+
+    .lead {
+      margin-top: 10px;
+      max-width: 680px;
+      font-size: 1rem;
+    }
+
+    .meta-row {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #354963;
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .panel {
+      min-width: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .pad { padding: 16px; }
+
+    .prompt {
+      border-left: 5px solid var(--teal);
+      background: #fbfdff;
+    }
+
+    .prompt-text {
+      display: grid;
+      gap: 10px;
+      color: #25384f;
+      line-height: 1.68;
+      font-size: .98rem;
+    }
+
+    .prompt-text p {
+      color: #25384f;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 16px;
+      align-items: start;
+      padding-top: 4px;
+      padding-bottom: 18px;
+    }
+
+    .stack {
+      display: grid;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .task-grid {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .task {
+      border: 1px solid #d7e6f5;
+      background: var(--soft-blue);
+      border-radius: 8px;
+      padding: 11px;
+      color: #233850;
+      line-height: 1.48;
+    }
+
+    .model-stage {
+      position: relative;
+      min-height: 154px;
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(15, 95, 168, .08), rgba(12, 127, 116, .08), rgba(96, 79, 160, .08)),
+        #fff;
+    }
+
+    .ladder-line {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      top: 78px;
+      height: 8px;
+      border-radius: 999px;
+      background: #cfd9e6;
+    }
+
+    .ladder-dot {
+      position: absolute;
+      top: 72px;
+      left: 24px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 6px rgba(13, 131, 93, .13);
+      animation: travel 4.4s linear infinite;
+    }
+
+    .ladder-card {
+      position: absolute;
+      top: 28px;
+      width: 112px;
+      min-height: 58px;
+      display: grid;
+      place-items: center;
+      padding: 8px;
+      border-radius: 8px;
+      border: 2px solid #c8d6e6;
+      background: #fff;
+      color: #20354d;
+      font-size: .82rem;
+      font-weight: 900;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(31, 49, 79, .09);
+      animation: pulseCard 3.8s ease-in-out infinite;
+    }
+
+    .ladder-card:nth-child(2) { left: 5%; }
+    .ladder-card:nth-child(3) { left: calc(34% - 56px); animation-delay: .35s; }
+    .ladder-card:nth-child(4) { left: calc(66% - 56px); animation-delay: .7s; }
+    .ladder-card:nth-child(5) { right: 5%; animation-delay: 1.05s; }
+
+    @keyframes pulseCard {
+      0%, 100% { transform: translateY(0); border-color: #c8d6e6; }
+      45% { transform: translateY(-5px); border-color: var(--teal); }
+    }
+
+    @keyframes travel {
+      0% { left: 24px; opacity: .25; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { left: calc(100% - 44px); opacity: .25; }
+    }
+
+    .choice-grid,
+    .check-grid {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .choice,
+    .check-item {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 9px;
+      align-items: start;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      line-height: 1.5;
+      color: #27394d;
+    }
+
+    .choice input,
+    .check-item input {
+      margin-top: 4px;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 13px;
+      font-weight: 900;
+      cursor: pointer;
+      min-height: 42px;
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: .55;
+    }
+
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-green { background: var(--green); color: #fff; }
+    .btn-secondary { background: #e8eef6; color: #20354d; }
+
+    .feedback {
+      margin-top: 10px;
+      padding: 11px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .feedback.good {
+      border-color: #9ed7bd;
+      background: var(--soft-green);
+      color: #164c38;
+    }
+
+    .feedback.warn {
+      border-color: #efcc8b;
+      background: var(--soft-amber);
+      color: #5c3d00;
+    }
+
+    .feedback.bad {
+      border-color: #efb4b4;
+      background: var(--soft-red);
+      color: #673030;
+    }
+
+    .writing-box {
+      display: grid;
+      gap: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 270px;
+      resize: vertical;
+      border: 1px solid #cbd7e6;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      line-height: 1.55;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    textarea:focus,
+    button:focus-visible,
+    input:focus-visible,
+    select:focus-visible {
+      outline: 3px solid rgba(15, 95, 168, .28);
+      outline-offset: 2px;
+    }
+
+    .writing-tools {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .counter {
+      color: var(--muted);
+      font-weight: 850;
+      font-size: .9rem;
+    }
+
+    .progress-panel {
+      display: grid;
+      gap: 9px;
+    }
+
+    .progress-meter {
+      height: 10px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #dfe8f3;
+    }
+
+    .progress-fill {
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--teal), var(--blue));
+      transition: width .25s ease;
+    }
+
+    .progress-list {
+      display: grid;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .progress-step {
+      display: grid;
+      grid-template-columns: 24px minmax(0, 1fr);
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      font-weight: 800;
+      line-height: 1.4;
+    }
+
+    .progress-dot {
+      display: grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 999px;
+      border: 1px solid #cbd7e6;
+      background: #fff;
+      color: #63758a;
+      font-size: .78rem;
+    }
+
+    .progress-step.is-done {
+      color: #164c38;
+    }
+
+    .progress-step.is-done .progress-dot {
+      border-color: #9ed7bd;
+      background: var(--soft-green);
+      color: var(--green);
+    }
+
+    .scaffold,
+    .rubric,
+    .mistake-list,
+    .revision-panel,
+    .signal-grid {
+      display: grid;
+      gap: 8px;
+    }
+
+    .scaffold-step,
+    .rubric-row,
+    .signal-card {
+      display: grid;
+      grid-template-columns: 98px minmax(0, 1fr);
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .scaffold-step strong,
+    .signal-card strong {
+      color: var(--teal);
+    }
+
+    .word-bank {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    .word {
+      border: 1px solid #cbdced;
+      background: var(--soft-blue);
+      color: #233850;
+      border-radius: 999px;
+      padding: 7px 9px;
+      font-size: .88rem;
+      font-weight: 800;
+    }
+
+    .points {
+      color: var(--violet);
+      font-weight: 900;
+    }
+
+    .mistake {
+      border-left: 4px solid var(--red);
+      padding: 8px 10px;
+      background: #fff4f4;
+      border-radius: 0 8px 8px 0;
+      color: #563232;
+      line-height: 1.5;
+    }
+
+    .revision-panel select {
+      width: 100%;
+      border: 1px solid #cbd7e6;
+      border-radius: 8px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    .sample {
+      display: none;
+      margin-top: 12px;
+      padding: 13px;
+      border: 1px solid #b9d5ee;
+      border-radius: 8px;
+      background: #f7fbff;
+    }
+
+    .sample.is-visible { display: block; }
+
+    .sample-text {
+      color: #304357;
+      line-height: 1.72;
+    }
+
+    footer {
+      color: var(--muted);
+      font-size: .92rem;
+      padding-top: 4px;
+      padding-bottom: 22px;
+    }
+
+    @media (max-width: 900px) {
+      header,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .layout {
+        padding-top: 0;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .site-nav,
+      header,
+      main,
+      footer {
+        padding-inline: 12px;
+      }
+
+      header {
+        padding-top: 14px;
+      }
+
+      .pad {
+        padding: 13px;
+      }
+
+      .task-grid,
+      .scaffold-step,
+      .rubric-row,
+      .signal-card {
+        grid-template-columns: 1fr;
+      }
+
+      .model-stage {
+        min-height: 232px;
+      }
+
+      .ladder-line {
+        left: 30px;
+        top: 24px;
+        bottom: 24px;
+        right: auto;
+        width: 8px;
+        height: auto;
+      }
+
+      .ladder-dot {
+        left: 24px;
+        top: 24px;
+        animation: travelDown 4.4s linear infinite;
+      }
+
+      .ladder-card {
+        left: 58px !important;
+        right: 12px !important;
+        width: auto;
+        min-height: 38px;
+      }
+
+      .ladder-card:nth-child(2) { top: 16px; }
+      .ladder-card:nth-child(3) { top: 68px; }
+      .ladder-card:nth-child(4) { top: 120px; }
+      .ladder-card:nth-child(5) { top: 172px; }
+
+      @keyframes travelDown {
+        0% { top: 24px; opacity: .25; }
+        12% { opacity: 1; }
+        88% { opacity: 1; }
+        100% { top: calc(100% - 44px); opacity: .25; }
+      }
+    }
+  </style>
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/deutsch/interpretation-schreibaufgaben-uebung.html">
+</head>
+<body data-subject="deutsch" data-grade-level="8-10" data-asset-type="guided-writing-practice" data-topic-cluster="schreibaufgaben-interpretation" data-primary-keyword="schreibaufgaben">
+  <nav class="site-nav" aria-label="Entwurfsnavigation">
+    <a href="/">Nachhilfe Mentor</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+    <a href="/blog/posts/interpretation-schreiben-tipps.html">Tipps zur Interpretation</a>
+  </nav>
+
+  <header>
+    <div>
+      <p class="kicker">Deutsch · Klassen 8 bis 10 · Draft</p>
+      <h1>Interpretation schreiben üben</h1>
+      <p class="lead">Entwickle aus Textsignalen eine Deutungshypothese, schreibe einen eigenen Interpretationsabschnitt und überarbeite ihn mit Kriterien. Die Seite bewertet deinen freien Text nicht automatisch.</p>
+      <div class="meta-row" aria-label="Kurzinfos">
+        <span class="pill">Schreibaufgaben</span>
+        <span class="pill">mit Musterlösung</span>
+        
+      </div>
+    </div>
+
+    <section class="panel prompt pad" aria-labelledby="textimpuls-title">
+      <h2 id="textimpuls-title">Textimpuls</h2>
+      <div class="prompt-text" aria-label="Kurzer Prosaausschnitt">
+        <p>Als Mara den Flur betritt, ist das Licht noch grau. Vor der Klassentür hängt die Uhr schief, der Sekundenzeiger ruckt und bleibt für einen Atemzug stehen.</p>
+        <p>In ihrer Jackentasche tastet sie nach dem Schlüssel, obwohl sie weiß, dass sie keinen hat. Hinter der Tür klirrt etwas leise. Mara legt die Hand auf die Klinke, zieht sie aber wieder zurück.</p>
+        <p>Erst als auf dem Hof Stimmen laut werden, richtet sie die Tasche auf, als müsse sie beweisen, dass sie nur zufällig wartet.</p>
+      </div>
+    </section>
+  </header>
+
+  <main class="layout">
+    <div class="stack">
+      <section class="panel pad" aria-labelledby="start-title">
+        <h2 id="start-title">1. Vorhersage: Welche Deutung trägt der Text?</h2>
+        <p>Wähle zuerst die stärkste Deutungshypothese. Achte darauf, welche Aussage durch mehrere Textsignale gestützt wird.</p>
+        <div class="choice-grid">
+          <label class="choice"><input type="radio" name="claim" value="a"> Mara ist wahrscheinlich unsicher, weil Uhr, Schlüssel und zurückgezogene Hand zeigen, dass sie nicht einfach handeln kann.</label>
+          <label class="choice"><input type="radio" name="claim" value="b"> Mara ist fröhlich, weil auf dem Hof Stimmen laut werden und der Schultag beginnt.</label>
+          <label class="choice"><input type="radio" name="claim" value="c"> Mara hat den Schlüssel verloren und wird deshalb später Ärger mit der Lehrkraft bekommen.</label>
+        </div>
+        <div class="btn-row">
+          <button class="btn-primary" type="button" id="checkPrediction">Vorhersage prüfen</button>
+        </div>
+        <div class="feedback" id="predictionFeedback" aria-live="polite">Noch nicht geprüft: Die Musterlösung bleibt verborgen, bis du eine Deutungshypothese ausgewählt hast.</div>
+
+        <div class="model-stage" aria-label="Animiertes Modell der Deutungsleiter">
+          <div class="ladder-line"></div>
+          <div class="ladder-card">Beobachtung</div>
+          <div class="ladder-card">Zitatbeleg</div>
+          <div class="ladder-card">Wirkung</div>
+          <div class="ladder-card">Deutung</div>
+          <div class="ladder-dot" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="signals-title">
+        <h2 id="signals-title">2. Textsignale einordnen</h2>
+        <p>Nutze die Signale als Material für deinen Abschnitt. Sie ersetzen keine Deutung, sondern liefern Belege.</p>
+        <div class="signal-grid">
+          <div class="signal-card"><strong>Motiv</strong><span>Der Schlüssel steht für Zugang, Handlungsmacht und die Frage, ob Mara Kontrolle über die Situation hat.</span></div>
+          <div class="signal-card"><strong>Kontrast</strong><span>Drinnen bleibt etwas verborgen, draußen werden Stimmen laut. Daraus entsteht Spannung zwischen Rückzug und Öffentlichkeit.</span></div>
+          <div class="signal-card"><strong>Atmosphäre</strong><span>Graues Licht, stockender Sekundenzeiger und leises Klirren erzeugen Unsicherheit und Erwartung.</span></div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="write-title">
+        <h2 id="write-title">3. Eigenen Interpretationsabschnitt schreiben</h2>
+        <div class="task-grid" aria-label="Schreibauftrag">
+          <div class="task"><strong>Auftrag A:</strong> Formuliere eine Deutungshypothese zu Maras Situation.</div>
+          <div class="task"><strong>Auftrag B:</strong> Erkläre mindestens zwei Textsignale mit Beleg und Wirkung.</div>
+          <div class="task"><strong>Auftrag C:</strong> Binde am Ende zurück: Was zeigt die Szene über Mara?</div>
+          <div class="task"><strong>Umfang:</strong> 120 bis 180 Wörter, Präsens, keine erfundene Vorgeschichte.</div>
+        </div>
+        <div class="writing-box">
+          <label for="studentText"><strong>Dein Text</strong></label>
+          <textarea id="studentText" aria-label="Eigener Interpretationsabschnitt" placeholder="Schreibe hier deinen Interpretationsabschnitt. Beginne mit einer Deutungshypothese, nenne ein Textsignal, belege es kurz und erkläre die Wirkung."></textarea>
+          <div class="writing-tools">
+            <span class="counter" id="wordCounter">0 Wörter</span>
+            <button class="btn-secondary" type="button" id="clearText">Textfeld leeren</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="check-title">
+        <h2 id="check-title">4. Selbstcheck vor der Musterlösung</h2>
+        <div class="check-grid">
+          <label class="check-item"><input type="checkbox" class="self-check"> Meine Deutungshypothese ist mehr als eine Inhaltsangabe.</label>
+          <label class="check-item"><input type="checkbox" class="self-check"> Ich nenne mindestens zwei konkrete Textsignale.</label>
+          <label class="check-item"><input type="checkbox" class="self-check"> Ein Zitat oder Textverweis ist in meinen Satz eingebettet.</label>
+          <label class="check-item"><input type="checkbox" class="self-check"> Ich erkläre die Wirkung des Signals und behaupte nicht nur etwas über Mara.</label>
+          <label class="check-item"><input type="checkbox" class="self-check"> Ich schreibe im Präsens und vermeide erfundene Vorgeschichte.</label>
+        </div>
+        <div class="btn-row">
+          <button class="btn-green" type="button" id="checkList">Selbstcheck auswerten</button>
+          <button class="btn-primary" type="button" id="showSample" disabled>Musterlösung anzeigen</button>
+        </div>
+        <div class="feedback" id="checkFeedback" aria-live="polite">Die Musterlösung wird freigeschaltet, nachdem du eine Vorhersage geprüft und einen eigenen Text begonnen hast.</div>
+        <div class="sample" id="sampleSolution">
+          <h3>Musterlösung zum Vergleichen</h3>
+          <p class="sample-text">Der Ausschnitt stellt Mara als unsichere Figur dar, die vor einer Entscheidung zurückschreckt. Schon das graue Licht und die schief hängende Uhr erzeugen eine angespannte Atmosphäre. Besonders der Sekundenzeiger, der kurz stehen bleibt, lässt die Situation stockend und belastet wirken. Auch das Schlüsselmotiv stützt diese Deutung: Mara tastet nach einem Schlüssel, obwohl sie keinen besitzt. Dadurch wird sichtbar, dass ihr der Zugang zur Situation fehlt und sie keine klare Handlungsmacht hat. Als hinter der Tür etwas klirrt, legt sie zwar die Hand auf die Klinke, zieht sie aber wieder zurück. Diese Bewegung zeigt den inneren Konflikt zwischen dem Wunsch zu handeln und der Angst vor dem, was sie erwartet. Am Ende richtet sie die Tasche auf, als müsse sie nach außen Ruhe zeigen. Die Szene deutet deshalb darauf hin, dass Mara ihre Unsicherheit vor anderen verbergen will.</p>
+        </div>
+      </section>
+    </div>
+
+    <aside class="stack" aria-label="Hilfen">
+      <section class="panel pad" aria-labelledby="progress-title">
+        <h2 id="progress-title">Fortschritt</h2>
+        <div class="progress-panel" aria-live="polite">
+          <p id="progressSummary">0 von 4 Schritten erledigt. Starte mit der Deutungshypothese.</p>
+          <div class="progress-meter" aria-hidden="true"><div class="progress-fill" id="progressFill"></div></div>
+          <ol class="progress-list">
+            <li class="progress-step" data-progress-step="prediction"><span class="progress-dot">1</span><span>Vorhersage geprüft</span></li>
+            <li class="progress-step" data-progress-step="draft"><span class="progress-dot">2</span><span>Eigenen Text begonnen</span></li>
+            <li class="progress-step" data-progress-step="selfcheck"><span class="progress-dot">3</span><span>Selbstcheck genutzt</span></li>
+            <li class="progress-step" data-progress-step="revision"><span class="progress-dot">4</span><span>Revision ausgewählt</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="scaffold-title">
+        <h2 id="scaffold-title">Schreibgerüst</h2>
+        <div class="scaffold">
+          <div class="scaffold-step"><strong>These</strong><span>Der Ausschnitt zeigt Mara als ..., weil ...</span></div>
+          <div class="scaffold-step"><strong>Signal</strong><span>Auffällig ist das Motiv des ..., zum Beispiel ...</span></div>
+          <div class="scaffold-step"><strong>Wirkung</strong><span>Diese Formulierung wirkt ..., da ...</span></div>
+          <div class="scaffold-step"><strong>Deutung</strong><span>Daran lässt sich erkennen, dass ...</span></div>
+          <div class="scaffold-step"><strong>Rückbindung</strong><span>Damit bestätigt der Text die Deutungshypothese, denn ...</span></div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="wortbank-title">
+        <h2 id="wortbank-title">Wortbank</h2>
+        <div class="word-bank">
+          <span class="word">deutet darauf hin</span>
+          <span class="word">wirkt angespannt</span>
+          <span class="word">das Motiv</span>
+          <span class="word">der Kontrast</span>
+          <span class="word">die Atmosphäre</span>
+          <span class="word">unterstreicht</span>
+          <span class="word">veranschaulicht</span>
+          <span class="word">lässt vermuten</span>
+          <span class="word">Rückzug</span>
+          <span class="word">Handlungsmacht</span>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="revision-title">
+        <h2 id="revision-title">Revision</h2>
+        <div class="revision-panel">
+          <label for="revisionFocus">Wähle deinen nächsten Überarbeitungsschritt.</label>
+          <select id="revisionFocus">
+            <option value="beleg">Belege genauer einbauen</option>
+            <option value="deutung">Deutung vorsichtiger formulieren</option>
+            <option value="aufbau">Abschnitt klarer ordnen</option>
+            <option value="sprache">Sprache verdichten</option>
+          </select>
+          <button class="btn-secondary" type="button" id="revisionButton">Hinweis anzeigen</button>
+          <div class="feedback" id="revisionFeedback" aria-live="polite">Wähle einen Schwerpunkt und überarbeite danach einen konkreten Satz.</div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="progression-title">
+        <h2 id="progression-title">Schwierigkeitsprogression</h2>
+        <ol>
+          <li><strong>Stufe 1:</strong> Deutungshypothese auswählen und Textsignale fachlich einordnen.</li>
+          <li><strong>Stufe 2:</strong> Eigenen Interpretationsabschnitt schreiben, prüfen und mit einem Revisionsschwerpunkt überarbeiten.</li>
+        </ol>
+      </section>
+
+      <section class="panel pad" aria-labelledby="rubric-title">
+        <h2 id="rubric-title">Bewertungsraster</h2>
+        <div class="rubric">
+          <div class="rubric-row"><span class="points">4 P.</span><span>Klare Deutungshypothese, genaue Belege, erklärte Wirkung und überzeugende Rückbindung.</span></div>
+          <div class="rubric-row"><span class="points">3 P.</span><span>Passende Deutung mit Belegen, aber einzelne Wirkungen bleiben noch knapp.</span></div>
+          <div class="rubric-row"><span class="points">2 P.</span><span>Mehr Inhaltsangabe als Interpretation oder Belege werden nur angehängt.</span></div>
+          <div class="rubric-row"><span class="points">1 P.</span><span>Behauptungen ohne Textbezug oder erfundene Vorgeschichte.</span></div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="mistakes-title">
+        <h2 id="mistakes-title">Typische Fehler</h2>
+        <div class="mistake-list">
+          <div class="mistake"><strong>Nur erzählen:</strong> Kürze Inhaltsangabe und ergänze Wirkung: Was macht das Detail mit der Szene?</div>
+          <div class="mistake"><strong>Ohne Beleg:</strong> Jede Deutung braucht ein Textsignal oder ein kurzes eingebettetes Zitat.</div>
+          <div class="mistake"><strong>Zu sicher:</strong> Schreibe "wirkt" oder "lässt vermuten", wenn der Text keine eindeutige Information gibt.</div>
+          <div class="mistake"><strong>Begriff ohne Funktion:</strong> Ein Motiv ist erst nützlich, wenn du erklärst, was es über die Figur zeigt.</div>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script>
+    const predictionFeedback = document.getElementById("predictionFeedback");
+    const checkPrediction = document.getElementById("checkPrediction");
+    const studentText = document.getElementById("studentText");
+    const wordCounter = document.getElementById("wordCounter");
+    const clearText = document.getElementById("clearText");
+    const checkList = document.getElementById("checkList");
+    const checkFeedback = document.getElementById("checkFeedback");
+    const showSample = document.getElementById("showSample");
+    const sampleSolution = document.getElementById("sampleSolution");
+    const revisionFocus = document.getElementById("revisionFocus");
+    const revisionButton = document.getElementById("revisionButton");
+    const revisionFeedback = document.getElementById("revisionFeedback");
+    const progressSummary = document.getElementById("progressSummary");
+    const progressFill = document.getElementById("progressFill");
+    const progressSteps = Array.from(document.querySelectorAll("[data-progress-step]"));
+    const checks = Array.from(document.querySelectorAll(".self-check"));
+    let predictionChecked = false;
+    const progress = {
+      prediction: false,
+      draft: false,
+      selfcheck: false,
+      revision: false
+    };
+
+    function track(name, detail = {}) {
+      if (window.dataLayer && Array.isArray(window.dataLayer)) {
+        window.dataLayer.push({ event: name, ...detail });
+      }
+    }
+
+    function countWords(value) {
+      return value.trim().split(/\s+/).filter(Boolean).length;
+    }
+
+    function updateProgress() {
+      progress.prediction = predictionChecked;
+      progress.draft = countWords(studentText.value) >= 35;
+      const done = Object.values(progress).filter(Boolean).length;
+      progressFill.style.width = `${done * 25}%`;
+      progressSummary.textContent = `${done} von 4 Schritten erledigt. ${done < 4 ? "Bearbeite den nächsten Schritt und überarbeite danach gezielt." : "Alle Schritte erledigt: Vergleiche deinen überarbeiteten Abschnitt mit Raster und Musterlösung."}`;
+      progressSteps.forEach((item) => {
+        item.classList.toggle("is-done", progress[item.dataset.progressStep]);
+      });
+    }
+
+    function updateCounter() {
+      const words = countWords(studentText.value);
+      wordCounter.textContent = `${words} ${words === 1 ? "Wort" : "Wörter"}`;
+      updateSampleGate();
+      updateProgress();
+    }
+
+    function updateSampleGate() {
+      const hasText = countWords(studentText.value) >= 35;
+      showSample.disabled = !(predictionChecked && hasText);
+      if (!showSample.disabled && !sampleSolution.classList.contains("is-visible")) {
+        checkFeedback.textContent = "Du hast eine Vorhersage geprüft und deinen Text begonnen. Nutze die Musterlösung jetzt zum Vergleichen, nicht zum Abschreiben.";
+        checkFeedback.className = "feedback good";
+      }
+    }
+
+    checkPrediction.addEventListener("click", () => {
+      const selected = document.querySelector("input[name='claim']:checked");
+      if (!selected) {
+        predictionFeedback.textContent = "Wähle zuerst eine Deutungshypothese aus. Der Fachbegriff lautet Deutungshypothese: Sie muss mehrere Textsignale erklären.";
+        predictionFeedback.className = "feedback warn";
+        return;
+      }
+
+      predictionChecked = true;
+      if (selected.value === "a") {
+        predictionFeedback.textContent = "Passend. Diese Deutungshypothese verbindet mehrere Textbelege: stockende Uhr, fehlender Schlüssel und zurückgezogene Hand zeigen Unsicherheit und eingeschränkte Handlungsmacht.";
+        predictionFeedback.className = "feedback good";
+        track("interpretation_prediction_checked", { stage: 1, result: "correct" });
+      } else if (selected.value === "b") {
+        predictionFeedback.textContent = "Noch nicht tragfähig. Das ist eine freie Deutung gegen die Atmosphäre des Textes: Die Stimmen auf dem Hof erklären nicht das Schlüsselmotiv und die zurückgezogene Hand.";
+        predictionFeedback.className = "feedback bad";
+        track("interpretation_prediction_checked", { stage: 1, result: "atmosphere_misread" });
+      } else {
+        predictionFeedback.textContent = "Zu sicher. Das wäre eine erfundene Vorgeschichte. Eine Interpretation darf vermuten, muss aber bei belegbaren Textsignalen bleiben.";
+        predictionFeedback.className = "feedback bad";
+        track("interpretation_prediction_checked", { stage: 1, result: "invented_backstory" });
+      }
+      updateSampleGate();
+      updateProgress();
+    });
+
+    studentText.addEventListener("input", updateCounter);
+
+    clearText.addEventListener("click", () => {
+      studentText.value = "";
+      updateCounter();
+      studentText.focus();
+      track("interpretation_text_cleared", { stage: 2 });
+    });
+
+    checkList.addEventListener("click", () => {
+      const done = checks.filter((item) => item.checked).length;
+      if (done >= 4) {
+        checkFeedback.textContent = `Selbstcheck: ${done} von ${checks.length} Kriterien sind erfüllt. Vergleiche jetzt mit der Musterlösung und verbessere danach einen Satz mit Beleg oder Wirkung.`;
+        checkFeedback.className = "feedback good";
+      } else {
+        checkFeedback.textContent = `Selbstcheck: ${done} von ${checks.length} Kriterien sind erfüllt. Prüfe besonders Deutungshypothese, Textbelege und die Erklärung der Wirkung.`;
+        checkFeedback.className = "feedback warn";
+      }
+      track("interpretation_selfcheck_used", { stage: 2, checked_count: done });
+      progress.selfcheck = true;
+      updateSampleGate();
+      updateProgress();
+    });
+
+    showSample.addEventListener("click", () => {
+      sampleSolution.classList.add("is-visible");
+      showSample.disabled = true;
+      track("interpretation_sample_revealed", { stage: 2 });
+    });
+
+    revisionButton.addEventListener("click", () => {
+      const hints = {
+        beleg: "Beleg-Revision: Baue ein kurzes Textsignal in deinen Satz ein, zum Beispiel die stockende Uhr oder die zurückgezogene Hand, und erkläre danach die Wirkung.",
+        deutung: "Deutungs-Revision: Ersetze sichere Behauptungen durch belegnahe Formulierungen wie \"wirkt\" oder \"lässt vermuten\".",
+        aufbau: "Aufbau-Revision: Ordne jeden Analysegedanken als Kette: Aussage, Beleg, Wirkung, Deutung, Rückbindung.",
+        sprache: "Sprach-Revision: Streiche Wiederholungen von \"zeigt\" und nutze präzisere Verben wie \"unterstreicht\", \"veranschaulicht\" oder \"verstärkt\"."
+      };
+      revisionFeedback.textContent = hints[revisionFocus.value];
+      revisionFeedback.className = "feedback good";
+      progress.revision = true;
+      updateProgress();
+      track("interpretation_revision_hint", { stage: 2, focus: revisionFocus.value });
+    });
+
+    updateCounter();
+  </script>
+</body>
+</html>

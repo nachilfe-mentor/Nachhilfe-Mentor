@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 207
+- Gesamtzahl Artikel: 208
 - Letzte Veröffentlichung: 2026-06-12
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 208 | 2026-06-12 | materialgestuetztes-schreiben-tipps | Materialgestütztes Schreiben: Aufbau, Tipps und Beispiel für das Abitur | materialgestütztes Schreiben, materialgestützter Aufsatz Abitur, materialgestütztes Schreiben Tipps | Schule & Studium | Vollständige Anleitung zum materialgestützten Schreiben für das Abitur und die Oberstufe (Klasse 10-12). Erklärt: Was materialgestütztes Schreiben ist (mehrere Materialien als Grundlage für einen eigenen Text einer bestimmten Textsorte), systematisches Sichten der Materialien in vier Schritten, Aufbau von Einleitung/Hauptteil/Schluss, Formulierungshilfen für die Materialeinbindung (laut Material X, wie Autor schreibt), Unterschied zu textgebundener Erörterung / Quellenanalyse / Inhaltsangabe, die vier häufigsten Fehler (keine eigene Position, Materialien werden aufgezählt statt verknüpft, fehlende Quellenbelege, falsche Textsortensprache), Checkliste. App-Erwähnung (Beispieltexte hochladen, gezielte Fragen zu Textsorte und Materialnutzung). Interne Links zu argumentation-schreiben-tipps und sachtextanalyse-schreiben-tipps. |
 | 207 | 2026-06-12 | liedtextanalyse-schreiben-tipps | Liedtextanalyse schreiben: Aufbau, Tipps und Beispiel für die Schule | Liedtextanalyse schreiben, Songtextanalyse Schule, Liedanalyse Aufbau | Schule & Studium | Schritt-für-Schritt-Anleitung zur Liedtextanalyse (Songtextanalyse) für Klasse 9-12. Behandelt: Unterschied zur Gedichtanalyse, aktives Lesen und erste Eindrücke, formale Analyse (Vers/Refrain/Bridge/Hook/Reimschema/Rhythmus), Stilmittel-Analyse mit dem Beleg-Mittel-Wirkung-Schema, inhaltliche Interpretation (Thema, Botschaft, Sprecher, Adressat), fünfschrittiger Aufbau des Aufsatzes (Einleitung/Hauptteil/Schluss), häufige Fehler und vollständige Checkliste. Interne Links zu Gedichtanalyse und Stilmittel-Liste. |
 | 206 | 2026-06-11 | kommunikationsanalyse-schreiben-tipps | Kommunikationsanalyse schreiben: Aufbau, Tipps und Beispiel | Kommunikationsanalyse schreiben, 4-Ohren-Modell Schule, Schulz von Thun Analyse, Kommunikationsanalyse Aufbau, Kommunikationsanalyse Beispiel | Schule & Studium | Vollständige Anleitung zur Kommunikationsanalyse schreiben (Klasse 9-11, Deutsch/Sozialwissenschaften): Erklärung des Vier-Seiten-Modells von Schulz von Thun mit allen vier Ebenen (Sachebene, Selbstoffenbarung, Beziehungsebene, Appell) anhand eines Alltagsbeispiels. Dreiteiliger Aufbau (Einleitung mit Analysethese, Hauptteil nach Beleg-Ebene-Wirkung-Schema für alle vier Ebenen, Schluss mit Gesamtbewertung). Sprachliche Analyse-Hinweise (Tonfall, Wir- vs. Ich-Formulierungen, verdeckte Fragen, Schweigen). Fünf häufige Fehler (nur Sachebene, Ebenen verwechseln, fehlende Belege, Meinung im Hauptteil, Modell falsch anwenden). Achtstufige Checkliste. App-Erwähnung (Dialogzeilen hochladen, gezielte Rückfragen zu vier Ebenen). Crosslinks zu sachtextanalyse-schreiben-tipps und argumentation-schreiben-tipps. |
 | 205 | 2026-06-11 | objektbeschreibung-schreiben-tipps | Objektbeschreibung schreiben: Aufbau, Tipps und Beispiele für Klasse 5–6 | Objektbeschreibung schreiben, Objektbeschreibung Aufbau, Objektbeschreibung Beispiel | Schule & Studium | Artikel erklärt den vollständigen Aufbau einer Objektbeschreibung für Klasse 5–6: Einleitung (Vorstellung), Hauptteil (Form, Farbe, Material, Oberfläche, Funktion) und Schluss (Verwendung). Enthält Formulierungshilfen, typische Fehler, Sprachregeln (Präsens, kein Ich, sachlich) und ein vollständiges Beispiel (Schere). Verlinkt intern auf Personenbeschreibung und Tierbeschreibung. |
@@ -1280,3 +1281,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - liedtextanalyse-schreiben-tipps -> stilmittel-liste-beispiele (Übersicht aller Stilmittel für die Analyse benötigt)
 - gedichtanalyse-schreiben-tipps -> liedtextanalyse-schreiben-tipps (Rückverlinkung im Fazit: Liedtextanalyse als verwandter Analysetyp)
 - stilmittel-liste-beispiele -> liedtextanalyse-schreiben-tipps (Rückverlinkung im Schlussabsatz: Stilmittel im Kontext Liedtextanalyse)
+
+## Interne Verlinkungen (Artikel 208)
+- materialgestuetztes-schreiben-tipps -> argumentation-schreiben-tipps (Link auf Argumentations-Artikel beim Dreischritt These-Begründung-Beleg)
+- materialgestuetztes-schreiben-tipps -> sachtextanalyse-schreiben-tipps (Link im Abschluss auf Sachtextanalyse als verwandtes Format)
+- argumentation-schreiben-tipps -> materialgestuetztes-schreiben-tipps (Rückverlinkung in der Liste verwandter Schreibformate)

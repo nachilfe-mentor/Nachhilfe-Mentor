@@ -1,0 +1,890 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zeitungsartikel schreiben üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Entwurf: Geführte Schreibübung zum Zeitungsartikel mit Recherchezettel, Schreibfeld, Struktur-Scaffold, Wortbank, Selbstcheck, Musterlösung und Bewertungsraster.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Zeitungsartikel schreiben üben",
+    "description": "Geführte Deutsch-Schreibübung zum Zeitungsartikel mit Materialauswahl, Lead, sachlicher Sprache, Selbstcheck, Musterlösung und Bewertungsraster.",
+    "learningResourceType": "PracticePage",
+    "educationalLevel": "Sekundarstufe I",
+    "inLanguage": "de",
+    "isAccessibleForFree": true,
+    "about": ["Zeitungsartikel", "Schreibaufgaben", "Deutsch schreiben"],
+    "teaches": ["W-Fragen auswählen", "Lead formulieren", "sachlich berichten", "Zeitungsartikel überarbeiten"],
+    "url": "https://nachhilfe-mentor.de/lernmaterialien/deutsch/zeitungsartikel-schreibaufgaben-uebung.html"
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5f6f83;
+      --line: #d7e1ec;
+      --bg: #f5f8fb;
+      --panel: #ffffff;
+      --blue: #0f5fa8;
+      --teal: #0b8173;
+      --green: #0d835d;
+      --amber: #986300;
+      --red: #b64242;
+      --soft-blue: #edf6ff;
+      --soft-green: #edf9f3;
+      --soft-amber: #fff7e8;
+      --soft-red: #fff1f1;
+      --shadow: 0 12px 28px rgba(31, 49, 79, .08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      min-width: 0;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    button,
+    textarea,
+    select {
+      max-width: 100%;
+      font: inherit;
+    }
+
+    .site-nav,
+    header,
+    main,
+    footer {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding-inline: 18px;
+    }
+
+    .site-nav {
+      padding-top: 12px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: .92rem;
+      font-weight: 800;
+    }
+
+    header {
+      padding-top: 16px;
+      padding-bottom: 12px;
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(300px, 1.08fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .kicker {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3vw, 2.7rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: .98rem;
+      line-height: 1.35;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      line-height: 1.58;
+      overflow-wrap: break-word;
+    }
+
+    p { margin: 0; }
+    p + p { margin-top: 8px; }
+    ul, ol { margin: 8px 0 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+
+    .lead {
+      margin-top: 10px;
+      max-width: 680px;
+      font-size: 1rem;
+    }
+
+    .meta-row {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #354963;
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .panel {
+      min-width: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .pad { padding: 16px; }
+
+    .prompt {
+      border-left: 5px solid var(--teal);
+      background: #fbfdff;
+    }
+
+    .research-note {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+      padding: 12px;
+      border: 1px solid #d7e6f5;
+      border-radius: 8px;
+      background: var(--soft-blue);
+    }
+
+    .fact-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .fact {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 10px;
+    }
+
+    .fact strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 3px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 16px;
+      align-items: start;
+      padding-top: 4px;
+      padding-bottom: 18px;
+    }
+
+    .stack {
+      display: grid;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .choices {
+      display: grid;
+      gap: 10px;
+    }
+
+    .choice {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 12px;
+      text-align: left;
+      line-height: 1.45;
+      font-weight: 750;
+    }
+
+    .choice:hover,
+    .choice:focus {
+      border-color: var(--blue);
+      outline: 3px solid rgba(15, 95, 168, .14);
+    }
+
+    .choice.correct {
+      border-color: var(--green);
+      background: var(--soft-green);
+    }
+
+    .choice.wrong {
+      border-color: var(--red);
+      background: var(--soft-red);
+    }
+
+    .feedback {
+      min-height: 54px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .feedback.good {
+      border-color: #b9e6d0;
+      background: var(--soft-green);
+      color: #07583a;
+    }
+
+    .feedback.warn {
+      border-color: #f0c9c9;
+      background: var(--soft-red);
+      color: #842a2a;
+    }
+
+    .model-stage {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 12px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(90deg, rgba(15, 95, 168, .08), rgba(11, 129, 115, .08)),
+        #fff;
+    }
+
+    .stage-card {
+      min-height: 108px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .94);
+      padding: 10px;
+      display: grid;
+      gap: 6px;
+      align-content: start;
+    }
+
+    .stage-card span:first-child {
+      color: var(--blue);
+      font-size: .74rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .stage-card strong {
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 250px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.55;
+    }
+
+    textarea:focus {
+      border-color: var(--blue);
+      outline: 3px solid rgba(15, 95, 168, .14);
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .button {
+      border: 0;
+      border-radius: 8px;
+      background: var(--blue);
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 13px;
+      font-weight: 900;
+    }
+
+    .button.secondary {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--blue);
+    }
+
+    .button:disabled {
+      cursor: not-allowed;
+      opacity: .55;
+    }
+
+    .mini-status {
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .progress-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .progress-item {
+      display: grid;
+      grid-template-columns: 24px minmax(0, 1fr);
+      gap: 8px;
+      align-items: start;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .progress-mark {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #e7eef7;
+      color: #49617d;
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .progress-item.done .progress-mark {
+      background: var(--soft-green);
+      color: var(--green);
+    }
+
+    .progress-note {
+      margin-top: 10px;
+      border-top: 1px solid var(--line);
+      padding-top: 10px;
+      color: #334960;
+      font-weight: 850;
+    }
+
+    .scaffold {
+      display: grid;
+      gap: 9px;
+      counter-reset: scaffold;
+    }
+
+    .scaffold li {
+      list-style: none;
+      position: relative;
+      padding: 10px 10px 10px 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--muted);
+    }
+
+    .scaffold li::before {
+      counter-increment: scaffold;
+      content: counter(scaffold);
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--soft-blue);
+      color: var(--blue);
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .wordbank {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .wordbank span {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      padding: 7px 10px;
+      color: #344861;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 9px;
+    }
+
+    .checklist label,
+    .revision-options label {
+      display: grid;
+      grid-template-columns: 22px minmax(0, 1fr);
+      gap: 8px;
+      align-items: start;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .rubric-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .rubric-item {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 11px;
+    }
+
+    .rubric-item strong {
+      display: block;
+      color: var(--ink);
+      margin-bottom: 5px;
+    }
+
+    .mistakes {
+      display: grid;
+      gap: 10px;
+    }
+
+    .mistake {
+      border-left: 4px solid var(--amber);
+      background: var(--soft-amber);
+      border-radius: 8px;
+      padding: 11px;
+    }
+
+    .mistake strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #5f3d00;
+    }
+
+    .revision-options {
+      display: grid;
+      gap: 8px;
+    }
+
+    .solution {
+      border: 1px solid #b9e6d0;
+      background: var(--soft-green);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .solution p {
+      color: #184d39;
+    }
+
+    .notice {
+      border: 1px solid #f0c36a;
+      background: #fff8e6;
+      color: #624000;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    footer {
+      padding-top: 8px;
+      padding-bottom: 26px;
+    }
+
+    @media (max-width: 880px) {
+      header,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .model-stage {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .site-nav,
+      header,
+      main,
+      footer {
+        padding-inline: 12px;
+      }
+
+      .pad {
+        padding: 13px;
+      }
+
+      .fact-grid,
+      .rubric-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 1.62rem;
+      }
+
+      .choice,
+      .button {
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/deutsch/zeitungsartikel-schreibaufgaben-uebung.html">
+</head>
+<body
+  data-subject="Deutsch"
+  data-grade-level="7-9"
+  data-asset-type="guided-writing-practice"
+  data-topic-cluster="schreibaufgaben"
+  data-primary-keyword="schreibaufgaben"
+>
+  <nav class="site-nav" aria-label="Navigation">
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+    <a href="/blog/posts/zeitungsartikel-schreiben-tipps.html">Tipps zum Zeitungsartikel</a>
+    <a href="/lernmaterialien/deutsch/zeitungsartikel-schreibaufgaben-uebung.html">Argumentation üben</a>
+  </nav>
+
+  <header>
+    <section class="panel pad prompt" aria-labelledby="page-title">
+      <p class="kicker">Deutsch · Schreibaufgaben · Draft</p>
+      <h1 id="page-title">Zeitungsartikel schreiben üben</h1>
+      <p class="lead">Schreibe aus einem Recherchezettel einen sachlichen Zeitungsartikel. Deine Aufgabe: wichtige Informationen auswählen, einen starken Lead formulieren und deinen Text mit Kriterien überarbeiten.</p>
+      <div class="meta-row" aria-label="Rahmendaten">
+        <span class="pill">Klasse 7 bis 9</span>
+        <span class="pill">30 bis 45 Minuten</span>
+        <span class="pill">Keine automatische Bewertung</span>
+      </div>
+      <div class="research-note" aria-label="Recherchezettel">
+        <h2>Recherchezettel</h2>
+        <div class="fact-grid">
+          <p class="fact"><strong>Was?</strong>Kleidertausch-Nachmittag mit Spendenaktion für die Schulbibliothek.</p>
+          <p class="fact"><strong>Wann und wo?</strong>Freitag, 14. Juni, 14 bis 17 Uhr, Aula der Marie-Curie-Schule.</p>
+          <p class="fact"><strong>Wer?</strong>Schülervertretung, Umwelt-AG, rund 120 Besucherinnen und Besucher.</p>
+          <p class="fact"><strong>Ergebnis?</strong>210 Kleidungsstücke getauscht, 430 Euro für neue Jugendbücher gesammelt.</p>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel pad" aria-labelledby="lead-check-title">
+      <h2 id="lead-check-title">Vorhersage: Welcher Lead passt?</h2>
+      <p>Wähle den Vorspann, der die wichtigsten W-Fragen knapp, sachlich und ohne Kommentar beantwortet.</p>
+      <div class="choices" data-choices>
+        <button class="choice" type="button" data-choice="a">An der Marie-Curie-Schule war am Freitag richtig viel los, denn die Schülervertretung hatte eine super Aktion vorbereitet.</button>
+        <button class="choice" type="button" data-choice="b">Bei einem Kleidertausch-Nachmittag in der Aula der Marie-Curie-Schule haben Schülerinnen und Schüler am Freitag 210 Kleidungsstücke getauscht und 430 Euro für die Schulbibliothek gesammelt.</button>
+        <button class="choice" type="button" data-choice="c">Die Schülervertretung der Marie-Curie-Schule ist beliebt, weil sie immer gute Ideen hat und sich für die Umwelt einsetzt.</button>
+      </div>
+      <p class="feedback" data-feedback>Prüfen: Ein guter Lead nennt Ereignis, Ort, Zeit, Beteiligte und Ergebnis, ohne Werbung oder Meinung.</p>
+      <div class="model-stage" aria-label="Vom Recherchezettel zum Zeitungsartikel">
+        <div class="stage-card"><span>Material</span><strong>Fakten prüfen</strong><p>Wer, was, wann, wo, warum und mit welchem Ergebnis?</p></div>
+        <div class="stage-card"><span>Lead</span><strong>Wichtigstes zuerst</strong><p>Ein Satz oder kurzer Absatz mit dem Kern.</p></div>
+        <div class="stage-card"><span>Hauptteil</span><strong>Details ordnen</strong><p>Ablauf, Hintergrund, Zahlen und Zitate folgen.</p></div>
+        <div class="stage-card"><span>Schluss</span><strong>Sachlich abrunden</strong><p>Ausblick oder Einordnung ohne Kommentar.</p></div>
+      </div>
+    </aside>
+  </header>
+
+  <main class="layout">
+    <section class="stack" aria-label="Schreibbereich">
+      <article class="panel pad">
+        <h2>Schreibauftrag</h2>
+        <ol>
+          <li>Formuliere eine informative Überschrift und einen sachlichen Lead.</li>
+          <li>Schreibe einen Zeitungsartikel von etwa 180 bis 230 Wörtern.</li>
+          <li>Baue mindestens ein Zitat ein: SV-Sprecherin Lina Vogt sagte, die Aktion zeige, "dass Nachhaltigkeit im Alltag beginnen kann". Bibliotheksleiter Herr Kaya erklärte, mit den Spenden würden neue Jugendbücher gekauft.</li>
+          <li>Überarbeite deinen Text mit Selbstcheck, Bewertungsraster und Musterlösung.</li>
+        </ol>
+      </article>
+
+      <article class="panel pad">
+        <h2>Dein Zeitungsartikel</h2>
+        <textarea id="studentText" aria-label="Eigener Zeitungsartikel" placeholder="Überschrift:
+
+Lead:
+
+Hauptteil:
+
+Schluss:"></textarea>
+        <div class="toolbar">
+          <button class="button" type="button" id="countButton">Wörter zählen</button>
+          <button class="button secondary" type="button" id="solutionButton" disabled>Musterlösung anzeigen</button>
+          <span class="mini-status" id="wordStatus">Noch keine Wortzählung.</span>
+        </div>
+        <p class="notice">Dein Text bleibt in diesem Browser. Die Seite bewertet freie Schreibtexte nicht automatisch; du vergleichst selbst mit Checkliste, Rubrik und Musterlösung.</p>
+      </article>
+
+      <article class="panel pad">
+        <h2>Struktur-Scaffold</h2>
+        <ol class="scaffold">
+          <li><strong>Überschrift:</strong> Nenne Ereignis und Ergebnis knapp, zum Beispiel mit Ort oder Aktion.</li>
+          <li><strong>Lead:</strong> Beantworte die wichtigsten W-Fragen in einem sachlichen Einstieg.</li>
+          <li><strong>Hauptteil:</strong> Erkläre Anlass, Ablauf, Beteiligte und Zahlen in sinnvoller Reihenfolge.</li>
+          <li><strong>Zitat:</strong> Füge ein kurzes Zitat ein und leite es neutral ein.</li>
+          <li><strong>Schluss:</strong> Runde mit Ausblick oder Bedeutung für die Schule ab, ohne persönliche Meinung.</li>
+        </ol>
+      </article>
+
+      <article class="panel pad">
+        <h2>Selbstcheck</h2>
+        <div class="checklist" id="checklist">
+          <label><input type="checkbox"> Mein Lead nennt Ereignis, Ort, Zeit, Beteiligte und Ergebnis.</label>
+          <label><input type="checkbox"> Die wichtigsten Informationen stehen vor den Details.</label>
+          <label><input type="checkbox"> Ich schreibe sachlich und vermeide Wertungen wie "super" oder "langweilig".</label>
+          <label><input type="checkbox"> Mindestens ein Zitat ist sinnvoll eingebettet.</label>
+          <label><input type="checkbox"> Absätze, Zeitform und Überschrift passen zur Textsorte Zeitungsartikel.</label>
+          <label><input type="checkbox"> Ich habe einen Satz überarbeitet, statt nur Rechtschreibung zu prüfen.</label>
+        </div>
+      </article>
+
+      <article class="panel pad">
+        <h2>Revision</h2>
+        <p>Wähle einen Schwerpunkt und überarbeite genau drei Sätze in deinem Text.</p>
+        <div class="revision-options">
+          <label><input type="radio" name="revision" value="lead"> Lead schärfen: Streiche Nebensachen und ergänze fehlende W-Fragen.</label>
+          <label><input type="radio" name="revision" value="ordnung"> Informationen ordnen: Ziehe Ergebnis und Anlass nach oben.</label>
+          <label><input type="radio" name="revision" value="sprache"> Sprache versachlichen: Ersetze Meinungswörter durch beobachtbare Fakten.</label>
+          <label><input type="radio" name="revision" value="zitat"> Zitat einbauen: Leite die Aussage mit einer Person und einem neutralen Verb ein.</label>
+        </div>
+      </article>
+
+      <article class="panel pad" id="solutionPanel">
+        <h2>Musterlösung</h2>
+        <div class="solution">
+          <p><strong>Kleidertausch bringt 430 Euro für Schulbibliothek</strong></p>
+          <p>Bei einem Kleidertausch-Nachmittag in der Aula der Marie-Curie-Schule haben Schülerinnen und Schüler am Freitag 210 Kleidungsstücke getauscht und 430 Euro für die Schulbibliothek gesammelt.</p>
+          <p>Organisiert wurde die Aktion von der Schülervertretung und der Umwelt-AG. Von 14 bis 17 Uhr konnten Besucherinnen und Besucher gut erhaltene Kleidung abgeben, auf Tischen sortieren und gegen andere Stücke tauschen. Nach Angaben der Organisatorinnen kamen rund 120 Personen in die Aula.</p>
+          <p>SV-Sprecherin Lina Vogt erklärte, die Aktion zeige, "dass Nachhaltigkeit im Alltag beginnen kann". Auch die Schulbibliothek profitiert von dem Nachmittag. Bibliotheksleiter Herr Kaya sagte, mit den Spenden würden neue Jugendbücher gekauft.</p>
+          <p>Die Schülervertretung will prüfen, ob der Kleidertausch im kommenden Schuljahr wiederholt werden kann.</p>
+        </div>
+      </article>
+
+      <article class="panel pad">
+        <h2>Bewertungsraster</h2>
+        <div class="rubric-grid">
+          <div class="rubric-item"><strong>Inhalt</strong><p>Alle zentralen W-Fragen sind beantwortet; Zahlen und Zitate werden korrekt genutzt.</p></div>
+          <div class="rubric-item"><strong>Aufbau</strong><p>Überschrift, Lead, Hauptteil und Schluss sind erkennbar; Wichtiges steht zuerst.</p></div>
+          <div class="rubric-item"><strong>Sprache</strong><p>Der Text bleibt sachlich, präzise und verständlich; Redeeinleitungen sind neutral.</p></div>
+          <div class="rubric-item"><strong>Überarbeitung</strong><p>Mindestens ein inhaltlicher oder sprachlicher Schwerpunkt wurde sichtbar verbessert.</p></div>
+        </div>
+      </article>
+    </section>
+
+    <aside class="stack" aria-label="Hilfen">
+      <section class="panel pad" aria-labelledby="progress-title">
+        <h2 id="progress-title">Fortschritt</h2>
+        <p>Arbeite den Schreibzyklus durch. Der Status bewertet deinen Text nicht, sondern zeigt nur die erledigten Schritte.</p>
+        <div class="progress-list" aria-live="polite">
+          <div class="progress-item" data-progress-item="lead"><span class="progress-mark">1</span><span>Lead-Vorhersage geprüft</span></div>
+          <div class="progress-item" data-progress-item="draft"><span class="progress-mark">2</span></div>
+          <div class="progress-item" data-progress-item="check"><span class="progress-mark">3</span><span>Mindestens vier Selbstcheck-Punkte abgehakt</span></div>
+          <div class="progress-item" data-progress-item="revision"><span class="progress-mark">4</span><span>Revisionsschwerpunkt gewählt</span></div>
+        </div>
+        <p class="progress-note" id="progressSummary">0 von 4 Schritten erledigt. Beginne mit der Lead-Vorhersage.</p>
+      </section>
+
+      <section class="panel pad">
+        <h2>Wortbank</h2>
+        <div class="wordbank">
+          <span>berichtete</span>
+          <span>erklärte</span>
+          <span>betonte</span>
+          <span>nach Angaben von</span>
+          <span>organisiert von</span>
+          <span>rund 120 Personen</span>
+          <span>zugunsten der Bibliothek</span>
+          <span>im kommenden Schuljahr</span>
+          <span>gut erhaltene Kleidung</span>
+          <span>sachlich formuliert</span>
+        </div>
+      </section>
+
+      <section class="panel pad">
+        <h2>Typische Fehler</h2>
+        <div class="mistakes">
+          <div class="mistake"><strong>Zu werblich</strong><p>Aus "eine tolle Aktion" wird "eine Aktion der Schülervertretung und Umwelt-AG".</p></div>
+          <div class="mistake"><strong>Lead zu ungenau</strong><p>Nenne nicht nur das Thema, sondern auch Ort, Zeit und Ergebnis.</p></div>
+          <div class="mistake"><strong>Zitat ohne Rahmen</strong><p>Schreibe, wer spricht und warum die Aussage wichtig ist.</p></div>
+          <div class="mistake"><strong>Alles chronologisch</strong><p>Beginne mit dem Ergebnis, danach folgen Ablauf und Hintergrund.</p></div>
+        </div>
+      </section>
+
+      <section class="panel pad">
+        <h2>Schwierigkeitsprogression</h2>
+        <p><strong>Stufe 1:</strong> Lead erkennen und W-Fragen prüfen.</p>
+        <p><strong>Stufe 2:</strong> Eigenen Artikel schreiben, mit Selbstcheck vergleichen und überarbeiten.</p>
+      </section>
+
+      <section class="panel pad">
+        <h2>Weiterlernen</h2>
+        <div class="links">
+          <a href="/blog/posts/zeitungsartikel-schreiben-tipps.html">Zeitungsartikel: Tipps</a>
+          <a href="/lernmaterialien/">Weitere Lernmaterialien</a>
+          <a href="/lernmaterialien/deutsch/zeitungsartikel-schreibaufgaben-uebung.html">Interpretation üben</a>
+        </div>
+      </section>
+    </aside>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script>
+    const feedback = document.querySelector("[data-feedback]");
+    const choices = document.querySelectorAll("[data-choice]");
+    const textArea = document.getElementById("studentText");
+    const countButton = document.getElementById("countButton");
+    const solutionButton = document.getElementById("solutionButton");
+    const wordStatus = document.getElementById("wordStatus");
+    const progressSummary = document.getElementById("progressSummary");
+    const progressItems = document.querySelectorAll("[data-progress-item]");
+    let predictionChecked = false;
+    let countedWords = false;
+    let revisionSelected = false;
+
+    function track(eventName, data = {}) {
+      if (window.dataLayer && typeof window.dataLayer.push === "function") {
+        window.dataLayer.push({ event: eventName, page: "zeitungsartikel-schreibaufgaben-uebung", ...data });
+      }
+    }
+
+    function wordCount() {
+      return textArea.value.trim().split(/\s+/).filter(Boolean).length;
+    }
+
+    function updateProgress() {
+      const words = wordCount();
+      const checked = document.querySelectorAll("#checklist input:checked").length;
+      const progress = {
+        lead: predictionChecked,
+        draft: words >= 20 || countedWords,
+        check: checked >= 4,
+        revision: revisionSelected
+      };
+      progressItems.forEach((item) => {
+        item.classList.toggle("done", Boolean(progress[item.dataset.progressItem]));
+      });
+      const done = Object.values(progress).filter(Boolean).length;
+      const nextStep = !progress.lead
+        ? "Prüfe zuerst den Lead."
+        : !progress.draft
+          ? "Schreibe mindestens einen ersten Absatz."
+          : !progress.check
+            ? "Nutze den Selbstcheck für deinen Entwurf."
+            : !progress.revision
+              ? "Wähle jetzt einen Revisionsschwerpunkt."
+              : "Vergleiche deinen überarbeiteten Text mit Musterlösung und Rubrik.";
+      progressSummary.textContent = `${done} von 4 Schritten erledigt. ${nextStep}`;
+    }
+
+    function updateSolutionState() {
+      const words = wordCount();
+      solutionButton.disabled = !(predictionChecked && words >= 40);
+      if (words > 0) {
+        wordStatus.textContent = `${words} Wörter. Für die Musterlösung: Lead prüfen und mindestens 40 Wörter schreiben.`;
+      }
+      updateProgress();
+    }
+
+    choices.forEach((button) => {
+      button.addEventListener("click", () => {
+        choices.forEach((item) => item.classList.remove("correct", "wrong"));
+        predictionChecked = true;
+        const isCorrect = button.dataset.choice === "b";
+        button.classList.add(isCorrect ? "correct" : "wrong");
+        feedback.className = `feedback ${isCorrect ? "good" : "warn"}`;
+        feedback.textContent = isCorrect
+          ? "Richtig: Dieser Lead nennt Ereignis, Ort, Zeit, Beteiligte und Ergebnis knapp und sachlich."
+          : "Noch nicht tragfähig: Dieser Einstieg ist zu wertend oder beantwortet zu wenige W-Fragen.";
+        track("practice_lead_checked", { choice: button.dataset.choice, correct: isCorrect });
+        updateSolutionState();
+      });
+    });
+
+    countButton.addEventListener("click", () => {
+      const words = wordCount();
+      const checked = document.querySelectorAll("#checklist input:checked").length;
+      countedWords = words > 0;
+      wordStatus.textContent = `${words} Wörter, ${checked} Selbstcheck-Punkte abgehakt.`;
+      track("practice_word_count", { wordRange: words < 80 ? "under_80" : words < 180 ? "80_to_179" : "180_plus", checked });
+      updateSolutionState();
+    });
+
+    textArea.addEventListener("input", updateSolutionState);
+
+    document.querySelectorAll("#checklist input").forEach((input) => {
+      input.addEventListener("change", updateProgress);
+    });
+
+    document.querySelectorAll("input[name='revision']").forEach((input) => {
+      input.addEventListener("change", () => {
+        revisionSelected = true;
+        updateProgress();
+        track("practice_revision_focus", { focus: input.value });
+      });
+    });
+
+    solutionButton.addEventListener("click", () => {
+      document.getElementById("solutionPanel").scrollIntoView({ behavior: "smooth", block: "start" });
+      track("practice_solution_opened");
+    });
+
+    updateProgress();
+  </script>
+</body>
+</html>

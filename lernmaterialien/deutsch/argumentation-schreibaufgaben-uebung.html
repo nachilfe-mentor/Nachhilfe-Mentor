@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Argumentation schreiben üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Entwurf: Geführte Schreibübung zur Argumentation mit Vorhersage, Schreibfeld, Struktur-Scaffold, Wortbank, Selbstcheck, Musterlösung und Bewertungsraster.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Argumentation schreiben üben",
+    "description": "Geführte Deutsch-Schreibübung zu Argumentationsabschnitten mit These, Begründung, Beispiel, Schlussregel, Gegenargument, Selbstcheck und Musterlösung.",
+    "learningResourceType": "PracticePage",
+    "educationalLevel": "Sekundarstufe I",
+    "inLanguage": "de",
+    "isAccessibleForFree": true,
+    "about": ["Argumentation", "Schreibaufgaben", "Deutsch schreiben"],
+    "teaches": ["These begründen", "Schlussregel formulieren", "Gegenargument entkräften", "Argumentationsabschnitte überarbeiten"],
+    "url": "https://nachhilfe-mentor.de/lernmaterialien/deutsch/argumentation-schreibaufgaben-uebung.html"
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5f6f83;
+      --line: #d8e1ec;
+      --bg: #f5f8fb;
+      --panel: #ffffff;
+      --blue: #0f5fa8;
+      --teal: #0b8173;
+      --green: #0d835d;
+      --amber: #9a6500;
+      --red: #b64242;
+      --violet: #6951a8;
+      --soft-blue: #edf6ff;
+      --soft-green: #edf9f3;
+      --soft-amber: #fff7e8;
+      --soft-red: #fff1f1;
+      --shadow: 0 12px 28px rgba(31, 49, 79, .08);
+    }
+
+    * { box-sizing: border-box; }
+
+    html,
+    body {
+      min-width: 0;
+      overflow-x: hidden;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--blue);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 3px;
+    }
+
+    button,
+    textarea,
+    select {
+      max-width: 100%;
+      font: inherit;
+    }
+
+    .site-nav,
+    header,
+    main,
+    footer {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding-inline: 18px;
+    }
+
+    .site-nav {
+      padding-top: 12px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: .92rem;
+      font-weight: 800;
+    }
+
+    header {
+      padding-top: 18px;
+      padding-bottom: 12px;
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(300px, 1.12fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .kicker {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 900;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3.2vw, 2.8rem);
+      line-height: 1.08;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 1.08rem;
+      line-height: 1.3;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: .98rem;
+      line-height: 1.35;
+    }
+
+    p,
+    li {
+      color: var(--muted);
+      line-height: 1.58;
+      overflow-wrap: break-word;
+    }
+
+    p { margin: 0; }
+    p + p { margin-top: 8px; }
+    ul, ol { margin: 8px 0 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+
+    .lead {
+      margin-top: 10px;
+      max-width: 680px;
+      font-size: 1rem;
+    }
+
+    .meta-row {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #354963;
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .panel {
+      min-width: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .pad { padding: 16px; }
+
+    .prompt {
+      border-left: 5px solid var(--teal);
+      background: #fbfdff;
+    }
+
+    .task-list {
+      display: grid;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .task {
+      border: 1px solid #d7e6f5;
+      background: var(--soft-blue);
+      border-radius: 8px;
+      padding: 11px;
+      color: #233850;
+      line-height: 1.48;
+    }
+
+    .model-stage {
+      position: relative;
+      min-height: 170px;
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(15, 95, 168, .08), rgba(11, 129, 115, .08), rgba(105, 81, 168, .08)),
+        #fff;
+    }
+
+    .bridge-line {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      top: 80px;
+      height: 8px;
+      border-radius: 999px;
+      background: #cfd9e6;
+    }
+
+    .bridge-gap {
+      position: absolute;
+      left: 61%;
+      top: 62px;
+      width: 44px;
+      height: 42px;
+      border-left: 3px dashed var(--red);
+      border-right: 3px dashed var(--red);
+      background: #fff;
+    }
+
+    .bridge-dot {
+      position: absolute;
+      top: 72px;
+      left: 18px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 0 7px rgba(15, 95, 168, .13);
+      animation: travel 4.4s linear infinite;
+    }
+
+    .prediction-ok .bridge-gap {
+      border-color: var(--green);
+      background: rgba(13, 131, 93, .13);
+    }
+
+    .prediction-ok .bridge-dot {
+      background: var(--green);
+    }
+
+    @keyframes travel {
+      0% { transform: translateX(0); }
+      54% { transform: translateX(min(520px, 52vw)); }
+      64% { transform: translateX(min(520px, 52vw)); }
+      100% { transform: translateX(calc(100vw + 180px)); }
+    }
+
+    .role-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+      padding: 18px 12px;
+    }
+
+    .role-card {
+      min-height: 104px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .94);
+      padding: 10px;
+      display: grid;
+      gap: 6px;
+      align-content: start;
+      box-shadow: 0 8px 18px rgba(31, 49, 79, .07);
+    }
+
+    .role-card.missing {
+      border-style: dashed;
+      border-color: var(--red);
+      background: var(--soft-red);
+    }
+
+    .prediction-ok .role-card.missing {
+      border-style: solid;
+      border-color: var(--green);
+      background: var(--soft-green);
+    }
+
+    .role-card span:first-child {
+      color: var(--blue);
+      font-size: .74rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .role-card strong {
+      line-height: 1.24;
+      overflow-wrap: anywhere;
+    }
+
+    .role-card span:last-child {
+      color: var(--muted);
+      font-size: .84rem;
+      line-height: 1.35;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 16px;
+      align-items: start;
+      padding-top: 4px;
+      padding-bottom: 18px;
+    }
+
+    .stack {
+      display: grid;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .choices {
+      display: grid;
+      gap: 10px;
+    }
+
+    .choice {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 12px;
+      text-align: left;
+      line-height: 1.45;
+      font-weight: 750;
+    }
+
+    .choice:hover,
+    .choice:focus {
+      border-color: var(--blue);
+      outline: 3px solid rgba(15, 95, 168, .14);
+    }
+
+    .choice.correct {
+      border-color: var(--green);
+      background: var(--soft-green);
+    }
+
+    .choice.wrong {
+      border-color: var(--red);
+      background: var(--soft-red);
+    }
+
+    .feedback {
+      min-height: 54px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .feedback.good {
+      border-color: #b9e6d0;
+      background: var(--soft-green);
+      color: #07583a;
+    }
+
+    .feedback.warn {
+      border-color: #f0c9c9;
+      background: var(--soft-red);
+      color: #842a2a;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 230px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.55;
+    }
+
+    textarea:focus {
+      border-color: var(--blue);
+      outline: 3px solid rgba(15, 95, 168, .14);
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .button {
+      border: 0;
+      border-radius: 8px;
+      background: var(--blue);
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 13px;
+      font-weight: 900;
+    }
+
+    .button.secondary {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--blue);
+    }
+
+    .button:disabled {
+      cursor: not-allowed;
+      opacity: .55;
+    }
+
+    .mini-status {
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .scaffold {
+      display: grid;
+      gap: 9px;
+      counter-reset: scaffold;
+    }
+
+    .scaffold li {
+      list-style: none;
+      position: relative;
+      padding: 10px 10px 10px 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--muted);
+    }
+
+    .scaffold li::before {
+      counter-increment: scaffold;
+      content: counter(scaffold);
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--soft-blue);
+      color: var(--blue);
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .wordbank {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .wordbank span {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      padding: 7px 10px;
+      color: #344861;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 9px;
+    }
+
+    .checklist label {
+      display: grid;
+      grid-template-columns: 22px minmax(0, 1fr);
+      gap: 8px;
+      align-items: start;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .rubric {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .92rem;
+    }
+
+    .rubric th,
+    .rubric td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .rubric th {
+      color: var(--ink);
+      background: var(--soft-blue);
+    }
+
+    .mistakes {
+      display: grid;
+      gap: 10px;
+    }
+
+    .mistake {
+      border-left: 4px solid var(--amber);
+      background: var(--soft-amber);
+      border-radius: 8px;
+      padding: 11px;
+    }
+
+    .mistake strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #5f3d00;
+    }
+
+    .revision-options {
+      display: grid;
+      gap: 8px;
+    }
+
+    .revision-options label {
+      display: grid;
+      grid-template-columns: 20px minmax(0, 1fr);
+      gap: 8px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .solution {
+      border: 1px solid #b9e6d0;
+      background: var(--soft-green);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .solution p {
+      color: #184d39;
+    }
+
+    .notice {
+      border: 1px solid #f0c36a;
+      background: #fff8e6;
+      color: #624000;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+
+    .progress-panel {
+      display: grid;
+      gap: 9px;
+    }
+
+    .progress-meter {
+      height: 10px;
+      border-radius: 999px;
+      background: #dbe5f0;
+      overflow: hidden;
+    }
+
+    .progress-meter span {
+      display: block;
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--blue), var(--teal));
+      transition: width .25s ease;
+    }
+
+    .progress-list {
+      display: grid;
+      gap: 7px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .progress-list li {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 24px minmax(0, 1fr);
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .progress-list span {
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .progress-list li.done {
+      color: #0b6147;
+      font-weight: 800;
+    }
+
+    .progress-list li.done span {
+      border-color: #b9e6d0;
+      background: var(--soft-green);
+      color: var(--green);
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    footer {
+      padding-top: 8px;
+      padding-bottom: 26px;
+    }
+
+    @media (max-width: 880px) {
+      header,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      header {
+        padding-top: 14px;
+      }
+
+      .role-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .model-stage {
+        min-height: auto;
+      }
+
+      .bridge-line,
+      .bridge-gap,
+      .bridge-dot {
+        display: none;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .site-nav,
+      header,
+      main,
+      footer {
+        padding-inline: 12px;
+      }
+
+      .pad {
+        padding: 13px;
+      }
+
+      h1 {
+        font-size: 1.62rem;
+      }
+
+      .rubric {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+  </style>
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/deutsch/argumentation-schreibaufgaben-uebung.html">
+</head>
+<body data-subject="Deutsch" data-grade-level="8-10" data-asset-type="guided-writing-practice" data-topic-cluster="schreibaufgaben-argumentation" data-primary-keyword="schreibaufgaben">
+  <nav class="site-nav" aria-label="Navigation">
+    <a href="/">Nachhilfe Mentor</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+    <a href="/blog/posts/argumentation-schreiben-tipps.html">Argumentation Tipps</a>
+  </nav>
+
+  <header>
+    <section>
+      <p class="kicker">Deutsch Schreibaufgaben · Draft</p>
+      <h1>Argumentation schreiben üben</h1>
+      <p class="lead">Schreibe einen überzeugenden Abschnitt zur Frage, ob Schulen Hausaufgaben teilweise durch betreute Lernzeiten ersetzen sollten. Du vergleichst deinen Text mit Struktur, Rubrik und Musterlösung. Es gibt keine automatische Bewertung deines Freitextes.</p>
+      <div class="meta-row" aria-label="Kurzinfos">
+        <span class="pill">Klasse 8-10</span>
+        <span class="pill">2 Stufen</span>
+        
+      </div>
+    </section>
+
+    <section class="panel prompt pad" aria-labelledby="auftrag">
+      <h2 id="auftrag">Schreibauftrag</h2>
+      <p><strong>Streitfrage:</strong> Sollten Schulen an zwei Tagen pro Woche Hausaufgaben durch betreute Lernzeiten in der Schule ersetzen?</p>
+      <div class="task-list">
+        <div class="task">1. Wähle zuerst die Schlussregel, die These und Beispiel logisch verbindet.</div>
+        <div class="task">2. Schreibe danach einen Argumentationsabschnitt mit Gegenargument und Entkräftung.</div>
+        <div class="task">3. Prüfe deinen Text mit Checkliste und Rubrik, bevor du die Musterlösung vergleichst.</div>
+      </div>
+    </section>
+  </header>
+
+  <main class="layout">
+    <div class="stack">
+      <section class="panel pad" aria-labelledby="modell">
+        <h2 id="modell">Animiertes Schreibmodell: die Argumentationsbrücke</h2>
+        <p>These, Begründung und Beispiel tragen erst dann, wenn die Schlussregel erklärt, warum das Beispiel die These stützt.</p>
+        <div class="model-stage" id="modelStage" role="img" aria-label="These, Begründung, Beispiel, Schlussregel und Rückbindung bilden eine Argumentationsbrücke.">
+          <div class="bridge-line"></div>
+          <div class="bridge-gap" aria-hidden="true"></div>
+          <div class="bridge-dot" aria-hidden="true"></div>
+          <div class="role-grid">
+            <div class="role-card">
+              <span>These</span>
+              <strong>Lernzeiten können sinnvoller sein.</strong>
+              <span>Position zur Streitfrage</span>
+            </div>
+            <div class="role-card">
+              <span>Begründung</span>
+              <strong>Direkte Hilfe verhindert Leerlauf.</strong>
+              <span>eigenständiger Grund</span>
+            </div>
+            <div class="role-card">
+              <span>Beispiel</span>
+              <strong>Unklare Aufgaben werden sofort geklärt.</strong>
+              <span>konkrete Beobachtung</span>
+            </div>
+            <div class="role-card missing">
+              <span>Schlussregel</span>
+              <strong id="warrantLabel">fehlt noch</strong>
+              <span>logische Brücke</span>
+            </div>
+            <div class="role-card">
+              <span>Rückbindung</span>
+              <strong>Darum steigt die Lernqualität.</strong>
+              <span>Folgerung zur These</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="vorhersage">
+        <h2 id="vorhersage">Stufe 1: Vorhersage prüfen</h2>
+        <p><strong>These:</strong> Betreute Lernzeiten können Hausaufgaben an zwei Tagen pro Woche sinnvoll ersetzen.</p>
+        <p><strong>Beispiel:</strong> Wenn jemand eine Matheaufgabe nicht versteht, kann die Lehrkraft direkt eine Rückfrage klären.</p>
+        <h3>Prüfen: Welche Satzkarte ist die passende Schlussregel?</h3>
+        <div class="choices" id="choices">
+          <button class="choice" type="button" data-kind="repeat">Betreute Lernzeiten sind besser als Hausaufgaben.</button>
+          <button class="choice" type="button" data-kind="evidence">Viele Schülerinnen und Schüler berichten, dass sie zu Hause abends müde sind.</button>
+          <button class="choice" type="button" data-kind="warrant">Wenn Verständnisprobleme sofort geklärt werden, bleibt die Übungszeit wirksamer als stilles Rätseln zu Hause.</button>
+        </div>
+        <div class="feedback" id="predictionFeedback" aria-live="polite">Triff zuerst eine Vorhersage. Danach erhältst du Feedback zum Argumentationsbegriff.</div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="schreiben">
+        <h2 id="schreiben">Stufe 2: Eigenen Argumentationsabschnitt schreiben</h2>
+        <p>Schreibe 120 bis 170 Wörter. Nutze mindestens ein Gegenargument und eine Entkräftung. Dein Text bleibt lokal im Browser und erhält keine automatische Note.</p>
+        <textarea id="draftText" aria-label="Eigener Argumentationsabschnitt" placeholder="Formuliere hier deinen Argumentationsabschnitt. Beginne mit deiner Position, führe einen Grund aus, erkläre ein Beispiel und nimm ein Gegenargument fair auf."></textarea>
+        <div class="toolbar">
+          <button class="button" type="button" id="unlockSolution" disabled>Musterlösung freischalten</button>
+          <button class="button secondary" type="button" id="clearText">Textfeld leeren</button>
+          <span class="mini-status" id="wordStatus">0 Wörter · erst Vorhersage prüfen, dann schreiben</span>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="solutionBox" id="solutionSection" hidden>
+        <h2 id="solutionBox">Musterlösung zum Vergleichen</h2>
+        <div class="solution">
+          <p>Betreute Lernzeiten könnten Hausaufgaben an zwei Tagen pro Woche sinnvoll ersetzen, weil Schülerinnen und Schüler bei Schwierigkeiten sofort Unterstützung erhalten. Wer zu Hause an einer Aufgabe hängenbleibt, übt oft nicht weiter, sondern rät oder gibt auf. In einer Lernzeit kann dagegen eine Lehrkraft eine Rückfrage klären, sodass die Übungszeit wirklich zum Verstehen beiträgt. Das Beispiel zeigt: Entscheidend ist nicht nur, dass Aufgaben erledigt werden, sondern ob sie zu sicherem Lernen führen. Zwar könnte man einwenden, dass Hausaufgaben Selbstständigkeit trainieren. Dieses Ziel bleibt wichtig, aber es wird nicht aufgegeben, wenn nur zwei Tage ersetzt werden und die übrigen Aufgaben weiterhin eigenständig bearbeitet werden. Deshalb wäre eine begrenzte Einführung von Lernzeiten ein sinnvoller Kompromiss.</p>
+        </div>
+      </section>
+    </div>
+
+    <aside class="stack" aria-label="Hilfen und Selbstcheck">
+      <section class="panel pad progress-panel" aria-labelledby="fortschritt">
+        <h2 id="fortschritt">Fortschritt</h2>
+        <p id="progressSummary">0 von 4 Arbeitsschritten erledigt. Starte mit der Vorhersage.</p>
+        <div class="progress-meter" aria-hidden="true"><span id="progressBar"></span></div>
+        <ol class="progress-list" id="progressList">
+          <li data-step="prediction"><span>1</span> Vorhersage prüfen</li>
+          <li data-step="writing"><span>2</span> mindestens 40 Wörter schreiben</li>
+          <li data-step="selfcheck"><span>3</span> Selbstcheck beginnen</li>
+          <li data-step="revision"><span>4</span> Revisionsfokus wählen</li>
+        </ol>
+      </section>
+
+      <section class="panel pad">
+        <h2>Struktur-Scaffold</h2>
+        <ol class="scaffold">
+          <li><strong>Position:</strong> Ich vertrete die Ansicht, dass ...</li>
+          <li><strong>Begründung:</strong> Ein wichtiger Grund dafür ist ...</li>
+          <li><strong>Beispiel:</strong> Das zeigt sich zum Beispiel, wenn ...</li>
+          <li><strong>Schlussregel:</strong> Dieses Beispiel stützt die These, weil ...</li>
+          <li><strong>Gegenargument:</strong> Zwar spricht dagegen, dass ...</li>
+          <li><strong>Entkräftung:</strong> Dennoch überzeugt das nur teilweise, denn ...</li>
+          <li><strong>Fazit:</strong> Insgesamt ist deshalb ...</li>
+        </ol>
+      </section>
+
+      <section class="panel pad">
+        <h2>Wortbank</h2>
+        <div class="wordbank" aria-label="Formulierungshilfen">
+          <span>zunächst</span>
+          <span>außerdem</span>
+          <span>dies verdeutlicht</span>
+          <span>daraus folgt</span>
+          <span>zwar</span>
+          <span>dennoch</span>
+          <span>überzeugend ist</span>
+          <span>einzuwenden ist</span>
+          <span>im Ergebnis</span>
+        </div>
+      </section>
+
+      <section class="panel pad">
+        <h2>Selbstcheck</h2>
+        <div class="checklist" id="checklist">
+          <label><input type="checkbox"> Meine These ist eindeutig und passt zur Streitfrage.</label>
+          <label><input type="checkbox"> Meine Begründung nennt einen neuen Grund und wiederholt nicht nur die These.</label>
+          <label><input type="checkbox"> Mein Beispiel ist konkret genug, damit man es sich vorstellen kann.</label>
+          <label><input type="checkbox"> Meine Schlussregel erklärt, warum das Beispiel die These stützt.</label>
+          <label><input type="checkbox"> Mein Gegenargument ist fair formuliert.</label>
+          <label><input type="checkbox"> Meine Entkräftung zeigt eine Grenze des Gegenarguments.</label>
+          <label><input type="checkbox"> Mein Fazit bündelt das Ergebnis, statt nur die Einleitung zu kopieren.</label>
+        </div>
+      </section>
+
+      <section class="panel pad">
+        <h2>Revision</h2>
+        <p>Wähle nach dem Selbstcheck einen Schwerpunkt für die Überarbeitung.</p>
+        <div class="revision-options">
+          <label><input type="radio" name="revision" value="logik"> Logik: Schlussregel ergänzt die Brücke zwischen Beispiel und These.</label>
+          <label><input type="radio" name="revision" value="beispiel"> Beispiel: konkrete Situation statt allgemeiner Behauptung.</label>
+          <label><input type="radio" name="revision" value="gegenargument"> Gegenargument: erst fair darstellen, dann begründet entkräften.</label>
+          <label><input type="radio" name="revision" value="sprache"> Sprache: Verknüpfungen und vorsichtige Formulierungen einsetzen.</label>
+        </div>
+        <div class="feedback" id="revisionFeedback" aria-live="polite">Markiere einen Revisionsfokus, nachdem du deinen ersten Entwurf geschrieben hast.</div>
+      </section>
+    </aside>
+
+    <section class="panel pad" aria-labelledby="rubrik">
+      <h2 id="rubrik">Bewertungsraster</h2>
+      <table class="rubric">
+        <thead>
+          <tr>
+            <th>Kriterium</th>
+            <th>Stark</th>
+            <th>Noch überarbeiten</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Argumentationslogik</td>
+            <td>These, Grund, Beispiel und Schlussregel bauen sichtbar aufeinander auf.</td>
+            <td>Ein Beispiel steht im Text, aber seine Bedeutung für die These bleibt unklar.</td>
+          </tr>
+          <tr>
+            <td>Gegenargument</td>
+            <td>Ein Einwand wird fair genannt und mit einer passenden Einschränkung entkräftet.</td>
+            <td>Der Einwand fehlt oder wird so schwach dargestellt, dass die Entkräftung nicht überzeugt.</td>
+          </tr>
+          <tr>
+            <td>Sprache</td>
+            <td>Verknüpfungen zeigen die Denkschritte: weil, daher, zwar, dennoch, insgesamt.</td>
+            <td>Sätze stehen nebeneinander, ohne dass die logische Verbindung klar wird.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel pad" aria-labelledby="fehler">
+      <h2 id="fehler">Typische Fehler und Korrektur</h2>
+      <div class="mistakes">
+        <div class="mistake">
+          <strong>Fehler: Beispiel ohne Schlussregel</strong>
+          <p>Korrektur: Ergänze einen Satz mit "Das zeigt, dass ...", der die Bedeutung des Beispiels erklärt.</p>
+        </div>
+        <div class="mistake">
+          <strong>Fehler: Begründung wiederholt die These</strong>
+          <p>Korrektur: Frage dich, welcher neue Grund deine Position stützt. Der Grund darf nicht nur die Überschrift deines Textes wiederholen.</p>
+        </div>
+        <div class="mistake">
+          <strong>Fehler: Gegenargument wird abgewertet</strong>
+          <p>Korrektur: Formuliere den Einwand so fair, dass jemand mit anderer Meinung ihn wiedererkennen würde. Entkräfte danach sachlich.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel pad" aria-labelledby="progression">
+      <h2 id="progression">Schwierigkeitsprogression</h2>
+      <p><strong>Stufe 1:</strong> Du erkennst die Schlussregel im Toulmin-Modell und bekommst direktes Feedback zum konkreten Denkfehler.</p>
+      <p><strong>Stufe 2:</strong> Du schreibst einen eigenen Abschnitt, vergleichst ihn mit Rubrik und Musterlösung und überarbeitest gezielt einen Schwerpunkt.</p>
+      <div class="notice">Hinweis: Diese Seite unterstützt Selbstprüfung und Revision. Sie gibt keine automatische Bewertung und keine Note für offene Schreibtexte.</div>
+    </section>
+
+    <section class="panel pad" aria-labelledby="links">
+      <h2 id="links">Weiterüben</h2>
+      <div class="links">
+        <a href="/blog/posts/argumentation-schreiben-tipps.html">Tipps zur Argumentation</a>
+        <a href="/lernmaterialien/">Alle Lernmaterialien</a>
+        <a href="/lernmaterialien/deutsch/argumentation-schreibaufgaben-uebung.html">Interpretation üben</a>
+        <a href="/lernmaterialien/deutsch/argumentation-schreibaufgaben-uebung.html">Bildbeschreibung üben</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script>
+    const modelStage = document.getElementById("modelStage");
+    const warrantLabel = document.getElementById("warrantLabel");
+    const predictionFeedback = document.getElementById("predictionFeedback");
+    const choices = document.querySelectorAll(".choice");
+    const draftText = document.getElementById("draftText");
+    const unlockSolution = document.getElementById("unlockSolution");
+    const clearText = document.getElementById("clearText");
+    const wordStatus = document.getElementById("wordStatus");
+    const solutionSection = document.getElementById("solutionSection");
+    const checklist = document.getElementById("checklist");
+    const revisionFeedback = document.getElementById("revisionFeedback");
+    const revisionOptions = document.querySelectorAll("input[name='revision']");
+    const progressSummary = document.getElementById("progressSummary");
+    const progressBar = document.getElementById("progressBar");
+    const progressItems = document.querySelectorAll("#progressList li");
+    let predictionChecked = false;
+    let hasText = false;
+    let selfcheckStarted = false;
+    let revisionSelected = false;
+
+    function track(eventName, detail) {
+      if (window.dataLayer && typeof window.dataLayer.push === "function") {
+        window.dataLayer.push({
+          event: eventName,
+          detail
+        });
+      }
+    }
+
+    function wordCount() {
+      const words = draftText.value.trim().split(/\s+/).filter(Boolean);
+      return words.length;
+    }
+
+    function updateUnlockState() {
+      const words = wordCount();
+      hasText = words >= 40;
+      unlockSolution.disabled = !(predictionChecked && hasText);
+      wordStatus.textContent = `${words} Wörter · ${predictionChecked ? "Vorhersage geprüft" : "erst Vorhersage prüfen"} · ${hasText ? "Musterlösung bereit" : "mindestens 40 Wörter schreiben"}`;
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const states = {
+        prediction: predictionChecked,
+        writing: hasText,
+        selfcheck: selfcheckStarted,
+        revision: revisionSelected
+      };
+      const completed = Object.values(states).filter(Boolean).length;
+      progressBar.style.width = `${completed * 25}%`;
+      progressSummary.textContent = `${completed} von 4 Arbeitsschritten erledigt. ${completed < 4 ? "Nächsten Schritt bearbeiten und dann gezielt überarbeiten." : "Jetzt Musterlösung und Rubrik zum Vergleichen nutzen."}`;
+      progressItems.forEach((item) => {
+        item.classList.toggle("done", Boolean(states[item.dataset.step]));
+      });
+    }
+
+    choices.forEach((choice) => {
+      choice.addEventListener("click", () => {
+        choices.forEach((item) => item.classList.remove("correct", "wrong"));
+        const kind = choice.dataset.kind;
+        predictionChecked = true;
+
+        if (kind === "warrant") {
+          choice.classList.add("correct");
+          modelStage.classList.add("prediction-ok");
+          warrantLabel.textContent = "Verständnisprobleme werden sofort geklärt.";
+          predictionFeedback.className = "feedback good";
+          predictionFeedback.textContent = "Richtig: Das ist die Schlussregel im Toulmin-Modell. Sie erklärt, warum das Beispiel die These stützt.";
+          track("argumentation_prediction_checked", { stage: 1, result: "warrant" });
+        } else {
+          choice.classList.add("wrong");
+          modelStage.classList.remove("prediction-ok");
+          warrantLabel.textContent = "fehlt noch";
+          predictionFeedback.className = "feedback warn";
+          if (kind === "repeat") {
+            predictionFeedback.textContent = "Das wiederholt vor allem die These. Eine Schlussregel muss die logische Brücke zwischen Beispiel und These erklären.";
+          } else {
+            predictionFeedback.textContent = "Das ist ein zusätzlicher Beleg. Im Toulmin-Modell fehlt noch der Warrant, also die Schlussregel, die den Beleg mit der These verbindet.";
+          }
+          track("argumentation_prediction_checked", { stage: 1, result: kind });
+        }
+
+        updateUnlockState();
+      });
+    });
+
+    draftText.addEventListener("input", updateUnlockState);
+
+    unlockSolution.addEventListener("click", () => {
+      if (predictionChecked && hasText) {
+        solutionSection.hidden = false;
+        solutionSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        track("argumentation_solution_unlocked", { stage: 2, words: wordCount() });
+      }
+    });
+
+    clearText.addEventListener("click", () => {
+      draftText.value = "";
+      solutionSection.hidden = true;
+      updateUnlockState();
+      track("argumentation_text_cleared", { stage: 2 });
+    });
+
+    checklist.addEventListener("change", () => {
+      const checked = checklist.querySelectorAll("input:checked").length;
+      selfcheckStarted = checked > 0;
+      updateProgress();
+      track("argumentation_selfcheck_changed", { stage: 2, checked });
+    });
+
+    revisionOptions.forEach((option) => {
+      option.addEventListener("change", () => {
+        const hints = {
+          logik: "Revisionsfokus Logik: Ergänze nach deinem Beispiel einen Satz, der mit der Schlussregel die Verbindung zur These erklärt.",
+          beispiel: "Revisionsfokus Beispiel: Ersetze allgemeine Aussagen durch eine konkrete Situation aus Schule oder Alltag.",
+          gegenargument: "Revisionsfokus Gegenargument: Formuliere den Einwand zuerst fair und grenze ihn danach mit einem stärkeren Grund ein.",
+          sprache: "Revisionsfokus Sprache: Nutze Verknüpfungen wie zwar, dennoch, deshalb und insgesamt, um deine Denkschritte sichtbar zu machen."
+        };
+        revisionSelected = true;
+        revisionFeedback.className = "feedback good";
+        revisionFeedback.textContent = hints[option.value];
+        updateProgress();
+        track("argumentation_revision_focus", { stage: 2, focus: option.value });
+      });
+    });
+
+    updateUnlockState();
+  </script>
+</body>
+</html>
