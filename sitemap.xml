@@ -56,7 +56,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/argumentation-schreiben-tipps.html</loc>
-    <lastmod>2026-06-04</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -757,6 +757,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/materialgestuetztes-schreiben-tipps.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/mathe-abitur-vorbereitung.html</loc>
     <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -1255,6 +1261,12 @@
     <priority>0.65</priority>
   </url>
   <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/deutsch/argumentation-schreibaufgaben-uebung.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
     <loc>https://nachhilfe-mentor.de/lernmaterialien/deutsch/bildbeschreibung-schreibaufgaben-uebung.html</loc>
     <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
@@ -1269,6 +1281,18 @@
   <url>
     <loc>https://nachhilfe-mentor.de/lernmaterialien/deutsch/bildbeschreibung-uebung-schulhof.html</loc>
     <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/deutsch/interpretation-schreibaufgaben-uebung.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.65</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/lernmaterialien/deutsch/zeitungsartikel-schreibaufgaben-uebung.html</loc>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.65</priority>
   </url>
