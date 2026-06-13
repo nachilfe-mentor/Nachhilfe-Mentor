@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 211
+- Gesamtzahl Artikel: 212
 - Letzte Veröffentlichung: 2026-06-13
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 212 | 2026-06-13 | figurenanalyse-schreiben-tipps | Figurenanalyse schreiben: Aufbau, Merkmale und Tipps für die Oberstufe | Figurenanalyse schreiben, Figurenanalyse Aufbau, Figurenanalyse Tipps Oberstufe | Schule & Studium | Umfassende Anleitung zum Figurenanalyse schreiben für die Oberstufe und Abitur. Erklärt den Unterschied zur Charakterisierung (Mittelstufe), den genauen Aufbau (Einleitung, Hauptteil, Schluss), alle wichtigen Analysemerkmale (äußere/innere Merkmale, Sprache, Beziehungen, Figurendynamik, Funktion im Werk), häufige Fehler und praktische Formulierungshilfen. Mit internen Links zu charakterisierung-schreiben-tipps und dramenanalyse-schreiben-tipps. |
 | 211 | 2026-06-13 | reflexion-schreiben-tipps | Reflexion schreiben: Aufbau, Tipps und Formulierungshilfen für Schule und Studium | Reflexion schreiben, Reflexion Aufbau, Reflexion Formulierungshilfen | Schule & Studium | Erklärt, was eine Reflexion ist und wie sie sich von einem Bericht oder einer Zusammenfassung unterscheidet. Stellt einen klaren vierstufigen Aufbau vor (Beschreibung, Analyse, Bewertung, Schlussfolgerung) mit konkreten Beispielen. Enthält Formulierungshilfen und Satzanfänge für jede Phase sowie häufige Fehler und praktische Tipps. Richtet sich an Schüler und Studierende für Praktikumsberichte, Portfolios, Seminararbeiten und Projekttage. |
 | 210 | 2026-06-13 | gleichungssysteme-loesen-tipps | Gleichungssysteme lösen: Die 3 Methoden einfach erklärt | Gleichungssysteme lösen, Gleichungssystem Methoden, Substitutionsverfahren Mathe, Additionsverfahren lineares Gleichungssystem, LGS lösen Tipps | Schule & Studium | Vollständige Anleitung zum Gleichungssysteme lösen für Klasse 9-10 (lineares Gleichungssystem). Erklärt alle drei Methoden: Additionsverfahren/Eliminationsverfahren (Gleichungen so addieren, dass eine Variable wegfällt), Substitutionsverfahren (eine Variable freistellen und einsetzen), Gleichsetzungsverfahren (beide Gleichungen nach derselben Variable auflösen und gleichsetzen). Konkretes Beispiel (2x+y=7, x-y=2) für alle drei Methoden durchgerechnet. Entscheidungshilfe, welche Methode wann sinnvoll ist. Abschnitt zu Gleichungssystemen mit 3 Unbekannten (Oberstufe). 6 typische Fehler (Vorzeichenfehler, fehlendes y, keine Probe, falsch umgeformt). Crosslinks zu mathe-lernen-tipps und kurvendiskussion-tipps. Füllt eine klare Lücke im Mathematik-Cluster. |
 | 209 | 2026-06-12 | japanisch-lernen-tipps | Japanisch lernen: Die besten Tipps für Schüler und Anime-Fans | Japanisch lernen, Japanisch lernen Tipps, Japanisch Anfänger | Schule & Studium | 8 Tipps zum Japanisch lernen für Anfänger: Hiragana und Katakana mit Spaced Repetition in 2-4 Wochen lernen, Kanji schrittweise angehen (10 Kanji/Tag mit Anki), Vokabeln im Kontext statt Wörterlisten (Keyword-Methode), Grammatik mit Genki oder Tae Kim's Guide (Partikel, Verb-Konjugation, Satzmuster), Immersion mit Anime/Manga auf Japanisch und Handy-Interface umstellen, tägliche 20-Minuten-Routine aufbauen (Morgens Anki, Abends Grammatik/Anime). App-Erwähnung (Nachhilfe Mentor App für gezielte Grammatikerklärungen). Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps. Rückverlinkung von englisch-lernen-tipps oder franzoesisch-lernen-tipps. |
@@ -1303,3 +1304,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - reflexion-schreiben-tipps -> praktikumsbericht-schreiben-tipps (Verlinkung im Abschnitt Typische Anlässe beim Punkt Praktikumsbericht)
 - reflexion-schreiben-tipps -> lerntagebuch-fuehren-tipps (Verlinkung im Abschnitt Typische Anlässe beim Punkt Lerntagebuch)
 - praktikumsbericht-schreiben-tipps -> reflexion-schreiben-tipps (Rückverlinkung im Abschnitt 5. Reflexion und persönliche Bewertung)
+
+## Interne Verlinkungen (Artikel 212)
+- figurenanalyse-schreiben-tipps -> charakterisierung-schreiben-tipps (Abgrenzung Charakterisierung vs. Figurenanalyse im Hauptteil)
+- figurenanalyse-schreiben-tipps -> dramenanalyse-schreiben-tipps (Ergänzender Hinweis auf Dramenanalyse bei Dramen-Texten)
+- charakterisierung-schreiben-tipps -> figurenanalyse-schreiben-tipps (Hinweis im Fazit auf Figurenanalyse für Oberstufe)
