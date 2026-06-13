@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gleichungssysteme lösen: Die 3 Methoden einfach erklärt – Nachhilfe Mentor Blog</title>
+  <meta name="description" content="Gleichungssysteme lösen leicht gemacht: Substitution, Addition und Gleichsetzung Schritt für Schritt erklärt – mit Beispielen und Tipps für Klasse 9 und 10.">
+  <meta name="keywords" content="Gleichungssysteme lösen, Gleichungssystem Methoden, Substitutionsverfahren Mathe, Additionsverfahren lineares Gleichungssystem, LGS lösen Tipps">
+  <meta property="og:title" content="Gleichungssysteme lösen: Die 3 Methoden einfach erklärt">
+  <meta property="og:description" content="Gleichungssysteme lösen leicht gemacht: Substitution, Addition und Gleichsetzung Schritt für Schritt erklärt – mit Beispielen und Tipps für Klasse 9 und 10.">
+  <meta property="og:image" content="/blog/posts/img/gleichungssysteme-loesen-tipps.webp">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/blog/posts/gleichungssysteme-loesen-tipps.html">
+  <meta property="og:type" content="article">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/blog/posts/gleichungssysteme-loesen-tipps.html">
+  <link rel="alternate" type="application/rss+xml" title="Nachhilfe Mentor Blog" href="https://nachhilfe-mentor.de/feed.xml">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EJGS7V6113');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/styles/modern-tech.css">
+  <link rel="stylesheet" href="/blog/blog.css">
+  <script src="/scripts/posthog-tracking.js" defer></script>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="/" class="nav-logo">
+      <img src="/onewebmedia/logo-ghost.png" alt="Nachhilfe Mentor Logo">
+      <span class="nav-logo-text">Nachhilfe Mentor</span>
+    </a>
+    <div class="nav-links">
+      <a href="/" class="nav-link">Startseite</a>
+      <a href="/#features" class="nav-link">Features</a>
+      <a href="/blog/" class="nav-link active">Blog</a>
+      <a href="/#download" class="nav-link">Download</a>
+    </div>
+    <div class="nav-stores">
+      <a href="https://play.google.com/store/apps/details?id=com.thuemmlerai.nachhilfementor" class="nav-store-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+        Google Play
+      </a>
+      <a href="https://apps.apple.com/de/app/nachhilfe-mentor/id6740411879" class="nav-store-btn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
+        App Store
+      </a>
+    </div>
+    <button class="mobile-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<nav class="mobile-nav" aria-label="Mobile Navigation">
+  <a href="/" class="nav-link">Startseite</a>
+  <a href="/#features" class="nav-link">Features</a>
+  <a href="/blog/" class="nav-link active">Blog</a>
+  <a href="/#download" class="nav-link">Download</a>
+</nav>
+
+<section class="blog-post-hero">
+  <div class="hero-bg"><div class="hero-grid"></div><div class="orb orb-1"></div><div class="orb orb-2"></div></div>
+  <div class="container">
+    <a href="/blog/" class="blog-back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Zurück zum Blog
+    </a>
+    <div class="blog-post-meta">
+      <span class="blog-tag">Schule &amp; Studium</span>
+      <time datetime="2026-06-13">13. Juni 2026</time>
+      <span>4 Min. Lesezeit</span>
+    </div>
+    <h1 class="blog-post-title">Gleichungssysteme lösen: Die 3 Methoden einfach erklärt</h1>
+    <p class="blog-post-subtitle">Substitution, Addition und Gleichsetzung – so knackst du jedes LGS</p>
+  </div>
+</section>
+
+<article class="blog-post-content">
+  <div class="container">
+
+    <div class="blog-featured-img">
+      <img src="/blog/posts/img/gleichungssysteme-loesen-tipps.webp" alt="Schüler löst ein lineares Gleichungssystem mit zwei Variablen am Schreibtisch" loading="lazy">
+    </div>
+
+    <p>Du siehst zwei Gleichungen mit zwei Unbekannten und weißt nicht, wo du anfangen sollst? Keine Panik. Gleichungssysteme lösen klingt komplizierter als es ist – wenn du die Methoden einmal verstanden hast, läuft es wie am Schnürchen. In diesem Artikel zeige ich dir die drei wichtigsten Verfahren: Substitution, Addition und Gleichsetzung.</p>
+
+<h2>Was ist ein lineares Gleichungssystem?</h2>
+<p>Ein lineares Gleichungssystem (kurz: LGS) besteht aus zwei oder mehr Gleichungen, in denen mehrere Unbekannte vorkommen, zum Beispiel x und y. Das Ziel ist es, die Werte zu finden, die alle Gleichungen gleichzeitig erfüllen.</p>
+<p>Ein typisches Beispiel für Klasse 9:</p>
+<ul>
+  <li>I: 2x + y = 7</li>
+  <li>II: x - y = 2</li>
+</ul>
+<p>Gesucht sind die Werte für x und y, die beide Gleichungen erfüllen. Dafür gibt es drei bewährte Methoden.</p>
+
+<h2>Methode 1: Das Additionsverfahren (Eliminationsverfahren)</h2>
+<p>Beim Additionsverfahren addierst (oder subtrahierst) du die zwei Gleichungen so, dass eine Unbekannte wegfällt. Das geht am einfachsten, wenn eine Variable in beiden Gleichungen denselben Koeffizienten hat, aber mit unterschiedlichem Vorzeichen.</p>
+<p><strong>Beispiel:</strong></p>
+<ul>
+  <li>I: 2x + y = 7</li>
+  <li>II: x - y = 2</li>
+</ul>
+<p>Hier hast du +y und -y. Addierst du beide Gleichungen, kürzt sich y heraus:</p>
+<ul>
+  <li>3x = 9 → x = 3</li>
+</ul>
+<p>Jetzt setzt du x = 3 in eine der Originalgleichungen ein, zum Beispiel in Gleichung II:</p>
+<ul>
+  <li>3 - y = 2 → y = 1</li>
+</ul>
+<p>Die Lösung ist x = 3, y = 1. Zur Kontrolle immer in beide Gleichungen einsetzen!</p>
+<p><strong>Tipp:</strong> Falls die Koeffizienten nicht passen, multipliziere eine (oder beide) Gleichungen mit einem geeigneten Faktor, bevor du addierst.</p>
+
+<h2>Methode 2: Das Substitutionsverfahren</h2>
+<p>Beim Substitutionsverfahren löst du eine Gleichung nach einer Variablen auf und setzt diesen Ausdruck in die andere Gleichung ein. Das Gleichungssystem lösen wird dadurch zu einer Gleichung mit einer Unbekannten.</p>
+<p><strong>Beispiel:</strong></p>
+<ul>
+  <li>I: 2x + y = 7</li>
+  <li>II: x - y = 2</li>
+</ul>
+<p>Löse Gleichung II nach x auf:</p>
+<ul>
+  <li>x = y + 2</li>
+</ul>
+<p>Setze diesen Ausdruck in Gleichung I ein:</p>
+<ul>
+  <li>2(y + 2) + y = 7</li>
+  <li>2y + 4 + y = 7</li>
+  <li>3y = 3 → y = 1</li>
+</ul>
+<p>Jetzt x berechnen: x = 1 + 2 = 3. Ergebnis: x = 3, y = 1.</p>
+<p><strong>Tipp:</strong> Substitution eignet sich besonders gut, wenn eine Variable bereits mit dem Koeffizienten 1 vorkommt, also leicht freizustellen ist.</p>
+
+<h2>Methode 3: Das Gleichsetzungsverfahren</h2>
+<p>Beim Gleichsetzungsverfahren löst du beide Gleichungen nach derselben Variablen auf und setzt die Ausdrücke gleich. Das funktioniert gut, wenn beide Gleichungen ähnlich aufgebaut sind.</p>
+<p><strong>Beispiel:</strong></p>
+<ul>
+  <li>I: 2x + y = 7 → y = 7 - 2x</li>
+  <li>II: x - y = 2 → y = x - 2</li>
+</ul>
+<p>Da beide Ausdrücke gleich y sind, gilt:</p>
+<ul>
+  <li>7 - 2x = x - 2</li>
+  <li>9 = 3x → x = 3</li>
+</ul>
+<p>Einsetzen: y = 3 - 2 = 1. Ergebnis: x = 3, y = 1.</p>
+
+<h2>Welche Methode wählen?</h2>
+<p>Alle drei Methoden führen zum selben Ergebnis. Die Wahl hängt davon ab, welche Gleichung dir am einfachsten erscheint:</p>
+<ul>
+  <li><strong>Additionsverfahren</strong>: Ideal, wenn Variablen sich direkt wegheben oder nach einer Multiplikation wegheben lassen.</li>
+  <li><strong>Substitution</strong>: Gut, wenn eine Variable schon freigestellt ist oder leicht freigestellt werden kann (Koeffizient 1).</li>
+  <li><strong>Gleichsetzung</strong>: Sinnvoll, wenn beide Gleichungen ähnlich aufgebaut sind und du nach derselben Variable auflösen kannst.</li>
+</ul>
+<p>In der Schule verlangen Lehrpersonen oft, dass du eine bestimmte Methode anwendest. Schau deshalb immer in die Aufgabenstellung.</p>
+
+<h2>Typische Fehler beim Gleichungssysteme lösen</h2>
+<ul>
+  <li><strong>Kein Vorzeichenfehler!</strong> Beim Addieren oder Einsetzen schleichen sich leicht Minuszeichen ein. Arbeite sauber und überprüfe jeden Schritt.</li>
+  <li><strong>Vergessen, zurückzurechnen:</strong> Du findest x, vergisst aber, y zu berechnen. Rechne immer beide Unbekannten aus.</li>
+  <li><strong>Keine Probe:</strong> Setze deine Lösung immer in beide Ausgangsgleichungen ein. Wenn eine nicht stimmt, ist ein Rechenfehler passiert.</li>
+  <li><strong>Falsch umgeformt:</strong> Beim Freistellen einer Variablen (Substitution) passieren schnell Flüchtigkeitsfehler. Schreibe jeden Umformungsschritt auf.</li>
+</ul>
+
+<h2>Gleichungssysteme mit 3 Unbekannten</h2>
+<p>In der Oberstufe begegnest du auch Gleichungssystemen mit drei Unbekannten (x, y, z). Das Prinzip ist dasselbe: Du eliminierst Schritt für Schritt eine Variable, bis du eine einfache Gleichung mit einer Unbekannten übrig hast. Dann rechnest du rückwärts (Rücksubstitution). Mehr dazu findest du in unserem Artikel zu den <a href="/blog/posts/mathe-lernen-tipps.html">allgemeinen Mathe-Lerntipps</a>, der dir zeigt, wie du dich systematisch durch komplexe Themen arbeitest.</p>
+
+<h2>Mit Übung wird es leichter</h2>
+<p>Das Gleichungssysteme lösen ist wie jede Mathe-Methode: Es sitzt nach ein paar Übungsaufgaben wirklich. Fang mit einfachen LGS an (Koeffizienten 1 oder 2), dann steigere die Schwierigkeit. Die Nachhilfe Mentor App kann dir dabei helfen, gezielt Rückfragen zu stellen und deine Rechenwege Schritt für Schritt zu überprüfen. Noch mehr Tipps für Matheprüfungen bekommst du in unserem Artikel zur <a href="/blog/posts/kurvendiskussion-tipps.html">Kurvendiskussion</a>.</p>
+
+<h2>Fazit</h2>
+<p>Gleichungssysteme lösen lässt sich auf drei klare Methoden reduzieren: Additionsverfahren, Substitution und Gleichsetzung. Lerne alle drei, mach die Probe und vermeide typische Vorzeichenfehler. Mit etwas Übung wirst du LGS-Aufgaben sicher und schnell lösen.</p>
+
+    <div class="blog-cta">
+      <h3>Bereit, smarter zu lernen?</h3>
+      <p>Lade Nachhilfe Mentor kostenlos herunter und erlebe KI-gestuetztes Lernen selbst.</p>
+      <div class="download-btns" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+        <a href="https://play.google.com/store/apps/details?id=com.thuemmlerai.nachhilfementor" class="btn-store" target="_blank" rel="noopener">
+          <div class="btn-store-inner">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.61 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/></svg>
+            <div class="btn-store-text"><span class="label">Jetzt bei</span><span class="name">Google Play</span></div>
+          </div>
+        </a>
+        <a href="https://apps.apple.com/de/app/nachhilfe-mentor/id6740411879" class="btn-store" target="_blank" rel="noopener">
+          <div class="btn-store-inner">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"/></svg>
+            <div class="btn-store-text"><span class="label">Laden im</span><span class="name">App Store</span></div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="/onewebmedia/logo-ghost.png" alt="Nachhilfe Mentor">
+          <span class="footer-logo-text">Nachhilfe Mentor</span>
+        </div>
+        <p class="footer-tagline">Dein persönlicher KI-Lerncoach. Smarter lernen, mehr behalten.</p>
+      </div>
+      <div class="footer-col"><h4>Produkt</h4><a href="/#features">Features</a><a href="/blog/">Blog</a><a href="/#download">Download</a></div>
+      <div class="footer-col"><h4>Rechtliches</h4><a href="/datenschutzerklaerung.html">Datenschutz</a><a href="/nutzungsbedingungen.html">Nutzungsbedingungen</a><a href="/impressum.html">Impressum</a></div>
+      <div class="footer-col"><h4>Support</h4><a href="mailto:support@nachhilfe-mentor.de">Kontakt</a></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Thümmler AI GmbH. Alle Rechte vorbehalten.</p>
+      <div class="footer-meta"><span>Powered by AI</span><span>Made with Liebe in Germany</span></div>
+    </div>
+  </div>
+</footer>
+
+<script src="/scripts/modern-tech.js"></script>
+</body>
+</html>

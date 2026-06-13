@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 209
-- Letzte Veröffentlichung: 2026-06-12
+- Gesamtzahl Artikel: 210
+- Letzte Veröffentlichung: 2026-06-13
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 210 | 2026-06-13 | gleichungssysteme-loesen-tipps | Gleichungssysteme lösen: Die 3 Methoden einfach erklärt | Gleichungssysteme lösen, Gleichungssystem Methoden, Substitutionsverfahren Mathe, Additionsverfahren lineares Gleichungssystem, LGS lösen Tipps | Schule & Studium | Vollständige Anleitung zum Gleichungssysteme lösen für Klasse 9-10 (lineares Gleichungssystem). Erklärt alle drei Methoden: Additionsverfahren/Eliminationsverfahren (Gleichungen so addieren, dass eine Variable wegfällt), Substitutionsverfahren (eine Variable freistellen und einsetzen), Gleichsetzungsverfahren (beide Gleichungen nach derselben Variable auflösen und gleichsetzen). Konkretes Beispiel (2x+y=7, x-y=2) für alle drei Methoden durchgerechnet. Entscheidungshilfe, welche Methode wann sinnvoll ist. Abschnitt zu Gleichungssystemen mit 3 Unbekannten (Oberstufe). 6 typische Fehler (Vorzeichenfehler, fehlendes y, keine Probe, falsch umgeformt). Crosslinks zu mathe-lernen-tipps und kurvendiskussion-tipps. Füllt eine klare Lücke im Mathematik-Cluster. |
 | 209 | 2026-06-12 | japanisch-lernen-tipps | Japanisch lernen: Die besten Tipps für Schüler und Anime-Fans | Japanisch lernen, Japanisch lernen Tipps, Japanisch Anfänger | Schule & Studium | 8 Tipps zum Japanisch lernen für Anfänger: Hiragana und Katakana mit Spaced Repetition in 2-4 Wochen lernen, Kanji schrittweise angehen (10 Kanji/Tag mit Anki), Vokabeln im Kontext statt Wörterlisten (Keyword-Methode), Grammatik mit Genki oder Tae Kim's Guide (Partikel, Verb-Konjugation, Satzmuster), Immersion mit Anime/Manga auf Japanisch und Handy-Interface umstellen, tägliche 20-Minuten-Routine aufbauen (Morgens Anki, Abends Grammatik/Anime). App-Erwähnung (Nachhilfe Mentor App für gezielte Grammatikerklärungen). Crosslinks zu spaced-repetition-lernmethode, vokabeln-lernen-tipps. Rückverlinkung von englisch-lernen-tipps oder franzoesisch-lernen-tipps. |
 | 208 | 2026-06-12 | materialgestuetztes-schreiben-tipps | Materialgestütztes Schreiben: Aufbau, Tipps und Beispiel für das Abitur | materialgestütztes Schreiben, materialgestützter Aufsatz Abitur, materialgestütztes Schreiben Tipps | Schule & Studium | Vollständige Anleitung zum materialgestützten Schreiben für das Abitur und die Oberstufe (Klasse 10-12). Erklärt: Was materialgestütztes Schreiben ist (mehrere Materialien als Grundlage für einen eigenen Text einer bestimmten Textsorte), systematisches Sichten der Materialien in vier Schritten, Aufbau von Einleitung/Hauptteil/Schluss, Formulierungshilfen für die Materialeinbindung (laut Material X, wie Autor schreibt), Unterschied zu textgebundener Erörterung / Quellenanalyse / Inhaltsangabe, die vier häufigsten Fehler (keine eigene Position, Materialien werden aufgezählt statt verknüpft, fehlende Quellenbelege, falsche Textsortensprache), Checkliste. App-Erwähnung (Beispieltexte hochladen, gezielte Fragen zu Textsorte und Materialnutzung). Interne Links zu argumentation-schreiben-tipps und sachtextanalyse-schreiben-tipps. |
 | 207 | 2026-06-12 | liedtextanalyse-schreiben-tipps | Liedtextanalyse schreiben: Aufbau, Tipps und Beispiel für die Schule | Liedtextanalyse schreiben, Songtextanalyse Schule, Liedanalyse Aufbau | Schule & Studium | Schritt-für-Schritt-Anleitung zur Liedtextanalyse (Songtextanalyse) für Klasse 9-12. Behandelt: Unterschied zur Gedichtanalyse, aktives Lesen und erste Eindrücke, formale Analyse (Vers/Refrain/Bridge/Hook/Reimschema/Rhythmus), Stilmittel-Analyse mit dem Beleg-Mittel-Wirkung-Schema, inhaltliche Interpretation (Thema, Botschaft, Sprecher, Adressat), fünfschrittiger Aufbau des Aufsatzes (Einleitung/Hauptteil/Schluss), häufige Fehler und vollständige Checkliste. Interne Links zu Gedichtanalyse und Stilmittel-Liste. |
@@ -1292,3 +1293,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - japanisch-lernen-tipps -> spaced-repetition-lernmethode (Kanji und Vokabeln mit Spaced Repetition lernen)
 - japanisch-lernen-tipps -> vokabeln-lernen-tipps (Methoden zum Vokabeln lernen gelten auch für Japanisch)
 - englisch-lernen-tipps -> japanisch-lernen-tipps (Rückverlinkung im Fazit oder Abschnitt über andere Sprachen)
+
+## Interne Verlinkungen (Artikel 210)
+- gleichungssysteme-loesen-tipps -> mathe-lernen-tipps (Allgemeine Mathe-Lerntipps für komplexe Themen)
+- gleichungssysteme-loesen-tipps -> kurvendiskussion-tipps (Weiterführendes Mathe-Thema Oberstufe)
