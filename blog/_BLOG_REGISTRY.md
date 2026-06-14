@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 212
-- Letzte Veröffentlichung: 2026-06-13
+- Gesamtzahl Artikel: 213
+- Letzte Veröffentlichung: 2026-06-14
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 213 | 2026-06-14 | seminararbeit-schreiben-tipps | Seminararbeit schreiben: Aufbau, Tipps und häufige Fehler | Seminararbeit schreiben, Seminararbeit Aufbau, W-Seminar Seminararbeit, Facharbeit Oberstufe, Seminararbeit Tipps | Schule & Studium | Vollständige Anleitung zum Seminararbeit schreiben (Oberstufe, W-Seminar, Bayern und bundesweit): Definition und Abgrenzung zu Schulaufsatz und Uni-Hausarbeit. Achtgliedriger Standardaufbau: Deckblatt, Inhaltsverzeichnis, Einleitung, Hauptteil, Schluss, Literaturverzeichnis, Anhang, Selbstständigkeitserklärung. Fragestellung entwickeln: klar eingegrenzt, beantwortbar, relevant. Quellenrecherche: Bibliothek, Google Scholar, offizielle Statistiken; Zitierstil einheitlich halten. Siebenphasiger Zeitplan von Thema bis Abgabe. Einleitung und Schluss im Detail. Häufige Fehler: zu breites Thema, fehlende Zitate, keine Betreuerabsprache, zu spät anfangen. Formale Anforderungen (Schrift, Rand, Seitenumfang). App-Erwähnung (Nachhilfe Mentor App). Crosslinks zu praesentation-erstellen-tipps und wissenschaftliches-arbeiten-tipps. |
 | 212 | 2026-06-13 | figurenanalyse-schreiben-tipps | Figurenanalyse schreiben: Aufbau, Merkmale und Tipps für die Oberstufe | Figurenanalyse schreiben, Figurenanalyse Aufbau, Figurenanalyse Tipps Oberstufe | Schule & Studium | Umfassende Anleitung zum Figurenanalyse schreiben für die Oberstufe und Abitur. Erklärt den Unterschied zur Charakterisierung (Mittelstufe), den genauen Aufbau (Einleitung, Hauptteil, Schluss), alle wichtigen Analysemerkmale (äußere/innere Merkmale, Sprache, Beziehungen, Figurendynamik, Funktion im Werk), häufige Fehler und praktische Formulierungshilfen. Mit internen Links zu charakterisierung-schreiben-tipps und dramenanalyse-schreiben-tipps. |
 | 211 | 2026-06-13 | reflexion-schreiben-tipps | Reflexion schreiben: Aufbau, Tipps und Formulierungshilfen für Schule und Studium | Reflexion schreiben, Reflexion Aufbau, Reflexion Formulierungshilfen | Schule & Studium | Erklärt, was eine Reflexion ist und wie sie sich von einem Bericht oder einer Zusammenfassung unterscheidet. Stellt einen klaren vierstufigen Aufbau vor (Beschreibung, Analyse, Bewertung, Schlussfolgerung) mit konkreten Beispielen. Enthält Formulierungshilfen und Satzanfänge für jede Phase sowie häufige Fehler und praktische Tipps. Richtet sich an Schüler und Studierende für Praktikumsberichte, Portfolios, Seminararbeiten und Projekttage. |
 | 210 | 2026-06-13 | gleichungssysteme-loesen-tipps | Gleichungssysteme lösen: Die 3 Methoden einfach erklärt | Gleichungssysteme lösen, Gleichungssystem Methoden, Substitutionsverfahren Mathe, Additionsverfahren lineares Gleichungssystem, LGS lösen Tipps | Schule & Studium | Vollständige Anleitung zum Gleichungssysteme lösen für Klasse 9-10 (lineares Gleichungssystem). Erklärt alle drei Methoden: Additionsverfahren/Eliminationsverfahren (Gleichungen so addieren, dass eine Variable wegfällt), Substitutionsverfahren (eine Variable freistellen und einsetzen), Gleichsetzungsverfahren (beide Gleichungen nach derselben Variable auflösen und gleichsetzen). Konkretes Beispiel (2x+y=7, x-y=2) für alle drei Methoden durchgerechnet. Entscheidungshilfe, welche Methode wann sinnvoll ist. Abschnitt zu Gleichungssystemen mit 3 Unbekannten (Oberstufe). 6 typische Fehler (Vorzeichenfehler, fehlendes y, keine Probe, falsch umgeformt). Crosslinks zu mathe-lernen-tipps und kurvendiskussion-tipps. Füllt eine klare Lücke im Mathematik-Cluster. |
@@ -1309,3 +1310,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - figurenanalyse-schreiben-tipps -> charakterisierung-schreiben-tipps (Abgrenzung Charakterisierung vs. Figurenanalyse im Hauptteil)
 - figurenanalyse-schreiben-tipps -> dramenanalyse-schreiben-tipps (Ergänzender Hinweis auf Dramenanalyse bei Dramen-Texten)
 - charakterisierung-schreiben-tipps -> figurenanalyse-schreiben-tipps (Hinweis im Fazit auf Figurenanalyse für Oberstufe)
+
+## Interne Verlinkungen (Artikel 213)
+- seminararbeit-schreiben-tipps -> praesentation-erstellen-tipps (Abschlusspräsentation der Seminararbeit)
+- seminararbeit-schreiben-tipps -> wissenschaftliches-arbeiten-tipps (Weiterführender Artikel zum wissenschaftlichen Schreiben)
+- hausarbeit-schreiben-tipps -> seminararbeit-schreiben-tipps (Rückverlinkung auf Seminararbeit-Artikel im Fazit oder Einleitung)
