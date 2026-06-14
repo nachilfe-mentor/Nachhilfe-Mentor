@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sun, 14 Jun 2026 03:17:17 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jun 2026 09:25:59 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Porträt schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/portraet-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/portraet-schreiben-tipps.html</guid>
+      <pubDate>Sun, 14 Jun 2026 09:25:37 +0000</pubDate>
+      <description>Porträt schreiben leicht gemacht: So beschreibst du echte Personen mit dem richtigen Aufbau, passender Sprache und einem konkreten Beispiel.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Personenbeschreibung schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/personenbeschreibung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/personenbeschreibung-schreiben-tipps.html</guid>
+      <pubDate>Sun, 14 Jun 2026 09:25:28 +0000</pubDate>
+      <description>Personenbeschreibung schreiben leicht gemacht: So beschreibst du eine Person richtig, strukturiert und mit der richtigen Reihenfolge. Mit Aufbau, Beispielen und Checkliste.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Seminararbeit schreiben: Aufbau, Tipps und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/seminararbeit-schreiben-tipps.html</link>
@@ -149,22 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/informatik-abitur-vorbereitung.html</guid>
       <pubDate>Thu, 11 Jun 2026 00:33:00 +0000</pubDate>
       <description>Informatik Abitur erfolgreich bestehen: Die wichtigsten Themen, Lernstrategien, einen 6-Wochen-Lernplan und häufige Fehler erklärt.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html</guid>
-      <pubDate>Thu, 11 Jun 2026 00:32:55 +0000</pubDate>
-      <description>Informatik lernen fällt vielen Schülern schwer. Mit diesen 7 Tipps verstehst du Algorithmen, Programmierung und Datenstrukturen wirklich und erzielst bessere Noten.</description>
-      <category>Fachspezifisch</category>
-    </item>
-    <item>
-      <title>Spanisch Abitur: Vorbereitung, Tipps und die wichtigsten Themen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/spanisch-abitur-vorbereitung.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/spanisch-abitur-vorbereitung.html</guid>
-      <pubDate>Wed, 10 Jun 2026 16:29:21 +0000</pubDate>
-      <description>Spanisch Abitur meistern: Hörverständnis, Textarbeit, freie Produktion und mündliche Prüfung gezielt vorbereiten. Mit 6-Wochen-Lernplan und den häufigsten Fehlern.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
