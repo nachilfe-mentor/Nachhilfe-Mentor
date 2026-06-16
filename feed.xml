@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Tue, 16 Jun 2026 03:17:18 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 16 Jun 2026 10:03:24 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Erlebnisbericht schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/erlebnisbericht-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/erlebnisbericht-schreiben-tipps.html</guid>
+      <pubDate>Tue, 16 Jun 2026 10:01:52 +0000</pubDate>
+      <description>Erlebnisbericht schreiben leicht gemacht: Aufbau, W-Fragen, Zeitform und häufige Fehler. Mit Beispiel und Checkliste für Klasse 5–8.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Erlebniserzählung schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/erlebniserzaehlung-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/erlebniserzaehlung-schreiben-tipps.html</guid>
+      <pubDate>Tue, 16 Jun 2026 09:58:54 +0000</pubDate>
+      <description>Erlebniserzählung schreiben leicht gemacht: Wir zeigen dir den richtigen Aufbau, packende Einstiege, lebendige Beschreibungen und die häufigsten Fehler, die du vermeiden solltest.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Weitererzählung schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/weitererzaehlung-schreiben-tipps.html</link>
@@ -45,14 +61,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/beschwerdebrief-schreiben-tipps.html</guid>
       <pubDate>Mon, 15 Jun 2026 09:41:01 +0000</pubDate>
       <description>Beschwerdebrief schreiben leicht gemacht: Aufbau, Formulierungen und ein Muster für die Schule. Lerne, wie du sachlich und wirkungsvoll Beschwerden formulierst.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Erlebniserzählung schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/erlebniserzaehlung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/erlebniserzaehlung-schreiben-tipps.html</guid>
-      <pubDate>Mon, 15 Jun 2026 01:36:51 +0000</pubDate>
-      <description>Erlebniserzählung schreiben leicht gemacht: Wir zeigen dir den richtigen Aufbau, packende Einstiege, lebendige Beschreibungen und die häufigsten Fehler, die du vermeiden solltest.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 12 Jun 2026 17:03:01 +0000</pubDate>
       <description>Englisch lernen leicht gemacht: 8 bewährte Tipps für Schüler und Studenten. Von Vokabeln über Grammatik bis zum freien Sprechen.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Materialgestütztes Schreiben: Aufbau, Tipps und Beispiel für das Abitur</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/materialgestuetztes-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/materialgestuetztes-schreiben-tipps.html</guid>
-      <pubDate>Fri, 12 Jun 2026 08:57:06 +0000</pubDate>
-      <description>Materialgestütztes Schreiben im Abitur meistern: Schritt-für-Schritt-Anleitung mit Aufbau, Tipps zur Materialnutzung und häufigen Fehlern.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
