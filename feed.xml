@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 18 Jun 2026 03:17:14 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 10:35:29 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Python lernen: Die besten Tipps für Schüler und Einsteiger</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/python-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/python-lernen-tipps.html</guid>
+      <pubDate>Thu, 18 Jun 2026 10:35:00 +0000</pubDate>
+      <description>Python lernen leicht gemacht: So startest du als Schüler oder Einsteiger in die Programmierung. Tipps, Ressourcen und die wichtigsten Grundlagen.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Informatik lernen Tipps: Programmieren, Algorithmen und Co. wirklich verstehen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html</guid>
+      <pubDate>Thu, 18 Jun 2026 10:34:54 +0000</pubDate>
+      <description>Informatik lernen fällt vielen Schülern schwer. Mit diesen 7 Tipps verstehst du Algorithmen, Programmierung und Datenstrukturen wirklich und erzielst bessere Noten.</description>
+      <category>Fachspezifisch</category>
+    </item>
     <item>
       <title>Biografie schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/biografie-schreiben-tipps.html</link>
@@ -149,22 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/gliederung-erstellen-tipps.html</guid>
       <pubDate>Sun, 14 Jun 2026 17:29:37 +0000</pubDate>
       <description>Gliederung erstellen für Aufsätze, Referate und Hausarbeiten – mit Schritt-für-Schritt-Anleitung, Beispielen und typischen Fehlern. Jetzt lesen!</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Deutsch Aufsatz schreiben: 7 Tipps für einen überzeugenden Text</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/deutsch-aufsatz-schreiben-tipps.html</guid>
-      <pubDate>Sun, 14 Jun 2026 17:29:21 +0000</pubDate>
-      <description>Deutsch Aufsatz schreiben leicht gemacht: Mit diesen 7 Tipps strukturierst du deinen Aufsatz sicher, vermeidest typische Fehler und verbesserst deine Note in Deutsch.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Porträt schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/portraet-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/portraet-schreiben-tipps.html</guid>
-      <pubDate>Sun, 14 Jun 2026 09:25:37 +0000</pubDate>
-      <description>Porträt schreiben leicht gemacht: So beschreibst du echte Personen mit dem richtigen Aufbau, passender Sprache und einem konkreten Beispiel.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>

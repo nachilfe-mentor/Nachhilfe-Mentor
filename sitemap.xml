@@ -494,7 +494,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/informatik-lernen-tipps.html</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1023,6 +1023,12 @@
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/pruefungsangst-ueberwinden.html</loc>
     <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/python-lernen-tipps.html</loc>
+    <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
