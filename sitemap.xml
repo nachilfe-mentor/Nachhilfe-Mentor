@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -422,7 +422,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/gedicht-schreiben-tipps.html</loc>
-    <lastmod>2026-06-19</lastmod>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -477,6 +477,12 @@
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/gruselgeschichte-schreiben-tipps.html</loc>
     <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/haiku-schreiben-tipps.html</loc>
+    <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

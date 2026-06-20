@@ -5,22 +5,30 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 19 Jun 2026 18:54:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2026 03:00:42 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Gedicht schreiben: Anleitung, Tipps und Beispiele für Schüler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/gedicht-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/gedicht-schreiben-tipps.html</guid>
+      <pubDate>Sat, 20 Jun 2026 03:00:19 +0000</pubDate>
+      <description>Gedicht schreiben leicht gemacht: Schritt-für-Schritt-Anleitung zu Thema, Aufbau, Reim und Rhythmus, mit Beispielen und Tipps gegen typische Fehler.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Haiku schreiben: Aufbau, Silbenregel und Beispiele für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/haiku-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/haiku-schreiben-tipps.html</guid>
+      <pubDate>Sat, 20 Jun 2026 03:00:10 +0000</pubDate>
+      <description>Haiku schreiben leicht gemacht: Die 5-7-5-Silbenregel, typische Themen, Beispiele und häufige Fehler erklärt. Mit Schritt-für-Schritt-Anleitung für Klasse 5–8.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Elfchen schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/elfchen-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/elfchen-schreiben-tipps.html</guid>
       <pubDate>Fri, 19 Jun 2026 18:54:08 +0000</pubDate>
       <description>Elfchen schreiben leicht erklärt: Aufbau, Beispiele und Schritt-für-Schritt-Tipps für Klasse 5 und 6. So gelingt dir das Elfchen auf Anhieb!</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Gedicht schreiben: Anleitung, Tipps und Beispiele für Schüler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/gedicht-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/gedicht-schreiben-tipps.html</guid>
-      <pubDate>Fri, 19 Jun 2026 18:54:05 +0000</pubDate>
-      <description>Gedicht schreiben leicht gemacht: Schritt-für-Schritt-Anleitung zu Thema, Aufbau, Reim und Rhythmus, mit Beispielen und Tipps gegen typische Fehler.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -157,14 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/abenteuergeschichte-schreiben-tipps.html</guid>
       <pubDate>Tue, 16 Jun 2026 18:07:21 +0000</pubDate>
       <description>Abenteuergeschichte schreiben leicht gemacht: Aufbau, Spannung erzeugen und typische Fehler vermeiden. Mit Beispielen für Klasse 5, 6 und 7.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Detektivgeschichte schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/detektivgeschichte-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/detektivgeschichte-schreiben-tipps.html</guid>
-      <pubDate>Tue, 16 Jun 2026 18:07:09 +0000</pubDate>
-      <description>Detektivgeschichte schreiben leicht gemacht: Aufbau, Rätsel aufbauen, Spuren legen und typische Fehler vermeiden. Mit Beispielen für Klasse 5, 6 und 7.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
