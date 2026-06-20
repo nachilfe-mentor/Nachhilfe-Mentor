@@ -119,12 +119,50 @@ def _learning_simulation_shape(keyword: str, topic_cluster: str) -> str:
     return "Fokussierte Lernsimulation mit aktiver Eingabe, Prüfung, Feedback, Fehlerkorrektur, Wiederholung und sichtbarem Lernfortschritt."
 
 
+def _load_content_registry_for_sim(keyword: str, topic_cluster: str) -> str:
+    """Read the content registry and extract relevant blog posts for cross-linking in simulations."""
+    registry_path = REPO_ROOT / "goal_agent" / "exports" / "content_registry_compact.md"
+    if not registry_path.exists():
+        return ""
+    try:
+        text = registry_path.read_text(encoding="utf-8", errors="ignore")
+        # Extract the blog-articles section
+        blog_start = text.find("## Blog-Artikel")
+        luecken_start = text.find("## Lücken")
+        if blog_start == -1:
+            return ""
+        blog_section = text[blog_start: luecken_start if luecken_start != -1 else blog_start + 3000]
+        # Also find if any existing simulation already covers this topic
+        sim_start = text.find("### Live & indexiert")
+        sim_end = text.find("### Noch nicht")
+        sim_section = ""
+        if sim_start != -1:
+            sim_section = text[sim_start: sim_end if sim_end != -1 else sim_start + 2000]
+        result = [
+            "## Content Registry — vorhandene Inhalte für Verlinkung",
+            "",
+            "Beim Bau dieser Simulation:",
+            "1. Prüfe ob ein passender Blog-Artikel existiert und verlinke ihn als 'Weiterführende Artikel'.",
+            "2. Wenn KEIN Blog-Artikel zum Thema existiert: nach Fertigstellung der Simulation eine Zeile in",
+            "   `goal_agent/exports/content_registry_compact.md` unter '## Lücken' dokumentieren.",
+            "3. Verlinke KEINE Artikel, die thematisch nicht passen — lieber keinen Link als einen falschen.",
+            "",
+        ]
+        if sim_section:
+            result.extend(["### Bereits vorhandene Simulationen (Duplikate vermeiden)", sim_section.strip(), ""])
+        result.extend(["### Vorhandene Blog-Artikel nach Thema", blog_section.strip()])
+        return "\n".join(result)
+    except Exception:
+        return ""
+
+
 def _interactive_task_spec(opportunity: dict[str, Any]) -> str:
     keyword = opportunity.get("primary_keyword") or "lernen üben"
     topic_cluster = opportunity.get("topic_cluster") or "allgemein"
     target_url = opportunity.get("target_url") or ""
     shape = _learning_simulation_shape(keyword, topic_cluster)
-    return "\n".join([
+    registry_context = _load_content_registry_for_sim(keyword, topic_cluster)
+    lines = [
         f"# Lernsimulation: {keyword}",
         "",
         f"- Primäres Keyword: {keyword}",
@@ -146,7 +184,10 @@ def _interactive_task_spec(opportunity: dict[str, Any]) -> str:
         "- Sichtbarer deutscher Text muss ä, ö, ü, Ä, Ö, Ü und ß korrekt nutzen.",
         "- Tracking bleibt privacy-safe und erfasst keine Freitextantworten.",
         "- SEO ist strategisch: ein klares Hauptkeyword, hilfreicher Titel, Meta Description, LearningResource/Quiz-Schema und interne Links.",
-    ])
+    ]
+    if registry_context:
+        lines.extend(["", registry_context])
+    return "\n".join(lines)
 
 
 def _store_interactive_task(db: Database, run_id: str, opportunity: dict[str, Any]) -> str:
@@ -469,6 +510,20 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
                 },
             },
         })
+        # Rebuild content registry after possible simulation promotion/creation so
+        # the Blog Agent and future Goal Agent runs see fresh cross-link data.
+        try:
+            registry_script = settings.repo_root / "blog" / "_update_content_registry.py"
+            if registry_script.exists():
+                subprocess.run(
+                    ["python3", str(registry_script)],
+                    cwd=str(settings.repo_root),
+                    capture_output=True,
+                    timeout=30,
+                )
+        except Exception:
+            pass
+
         report = generate_daily_report(db, settings, run_id, settings.repo_root)
         _log_action(db, run_id, None, "generate_report", "report", str(report), "completed", [_display_path(report, settings.repo_root)], ["Report contains no secret values"])
         publish_result = auto_publish(settings)

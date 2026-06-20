@@ -19,6 +19,7 @@ OUT = BLOG_DIR / "_BLOG_CONTEXT_COMPACT.md"
 NOTES = BLOG_DIR / "_BLOG_CONTEXT_NOTES.md"
 GOAL_AGENT_TASKS = REPO_DIR / "goal_agent" / "exports" / "blog_task_snapshot.md"
 GOAL_AGENT_GUARDIAN = REPO_DIR / "goal_agent" / "exports" / "blog_agent_guardian.md"
+CONTENT_REGISTRY = REPO_DIR / "goal_agent" / "exports" / "content_registry_compact.md"
 
 
 def section(text: str, heading: str) -> str:
@@ -60,6 +61,24 @@ def latest_analytics(strategy: str, limit: int = 7) -> list[str]:
     learnings = section(strategy, "Learnings / Analytics")
     bullets = [line for line in learnings.splitlines() if line.startswith("- Stand ")]
     return bullets[-limit:]
+
+
+def lernmaterialien_section(registry_path: Path) -> str:
+    """Extract just the live-simulations section from the content registry for the blog agent."""
+    if not registry_path.exists():
+        return "- Keine Lernmaterialien-Daten vorhanden. Führe blog/_update_content_registry.py aus."
+    text = registry_path.read_text(encoding="utf-8", errors="ignore")
+    # Extract only the "Live & indexiert" block — skip the rest (blog post list is already in compact context)
+    start = text.find("### Live & indexiert")
+    end = text.find("### Noch nicht indexiert")
+    if start == -1:
+        return "- Keine Live-Lernmaterialien vorhanden."
+    snippet = text[start: end if end != -1 else start + 4000].strip()
+    # Also append the "Lücken" section if present (blog agent should know what to write next)
+    luecken_start = text.find("## Lücken")
+    if luecken_start != -1:
+        snippet += "\n\n" + text[luecken_start:luecken_start + 1500].strip()
+    return snippet
 
 
 def compact_goal_agent_file(path: Path, max_chars: int = 5000) -> str:
@@ -119,6 +138,13 @@ def main() -> None:
         "",
         "## Image-Prompt-Style",
         section(strategy, "Image-Prompt-Style").strip(),
+        "",
+        "## Lernmaterialien — vorhandene Simulationen & Trainer",
+        "Wenn du einen Artikel zu einem dieser Themen schreibst, verlinke die passende Simulation im Fließtext.",
+        "Nutze immer die absolute URL (z.B. `/lernmaterialien/bruchrechnung-trainer.html`).",
+        "Schreibe KEINE neuen Simulations-Seiten — das ist Aufgabe des Goal-Agenten.",
+        "",
+        lernmaterialien_section(CONTENT_REGISTRY),
         "",
     ]
     OUT.write_text("\n".join(part for part in parts if part is not None), encoding="utf-8")
