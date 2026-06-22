@@ -926,7 +926,13 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/muendliche-pruefung-vorbereiten.html</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/muendliches-abitur-vorbereiten.html</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
