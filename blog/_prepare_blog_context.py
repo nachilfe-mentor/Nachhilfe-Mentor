@@ -40,7 +40,10 @@ def latest_article_rows(registry: str, limit: int = 45) -> list[str]:
         if in_table:
             if not line.startswith("|"):
                 break
-            rows.append(line)
+            # Zusammenfassung-Spalte (letzte) weglassen — Claude braucht für
+            # Duplikat-Check nur Slug + Datum, nicht den vollen Artikeltext.
+            parts = line.rstrip(" |").split("|")
+            rows.append("|".join(parts[:-1]) + " |")
             if len(rows) >= limit:
                 break
     return rows
@@ -126,8 +129,8 @@ def main() -> None:
         NOTES.read_text(encoding="utf-8").strip() if NOTES.exists() else "",
         "",
         "## Letzte Artikel",
-        "| # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |",
-        "|---|-------|------|-------|----------|-----|----------------|",
+        "| # | Datum | Slug | Titel | Keywords | Tag |",
+        "|---|-------|------|-------|----------|-----|",
         *latest_article_rows(registry),
         "",
         "## Keyword-Pool",
