@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 240
+- Gesamtzahl Artikel: 241
 - Letzte Veröffentlichung: 2026-06-23
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 241 | 2026-06-23 | slam-poetry-schreiben-tipps | Slam Poetry schreiben: Tipps, Aufbau und Beispiele für die Schule | Slam Poetry schreiben, Poetry Slam Schule, Slam Poetry Tipps, Slam Poetry Aufbau, Slam Text schreiben Schule | Schule & Studium | Artikel über Slam Poetry schreiben für Schüler der Klasse 8-12. Erklärt was Slam Poetry ist (Bühnenpoesie, kein Reimzwang), typische Merkmale (Rhythmus, Bilder, direkte Ansprache), den Aufbau (starker Einstieg, Entfaltung, Kehrzeile, Finale), effektive Stilmittel (Anapher, Metaphern, Paradox, Enjambement), einen 6-Schritt-Prozess vom Freewriting zum fertigen Text sowie Vortragstipps (Tempo, Pausen, Blickkontakt). Interne Links zu kreatives-schreiben-tipps und rede-schreiben-tipps. |
 | 240 | 2026-06-23 | satzanfaenge-variieren-tipps | Satzanfänge variieren: 30+ Ideen für einen besseren Aufsatz | Satzanfänge variieren, abwechslungsreiche Satzanfänge, Satzanfänge Deutsch Aufsatz, verschiedene Satzanfänge, Aufsatz Satzanfänge | Schule & Studium | Artikel über das Variieren von Satzanfängen im Deutschaufsatz. Erklärt, warum gleichförmige Satzanfänge den Text schwächen, und bietet über 30 konkrete Beispiele in sechs Kategorien: Adverbien/Zeitangaben, Ortsangaben, Partizipialkonstruktionen, vorgestellte Nebensätze, Fragen/Ausrufe, Adjektive. Enthält textsortenspezifische Tipps (Erzählung, Erörterung, Analyse) und Übungsempfehlungen. Focus-Keyword: Satzanfänge variieren. |
 | 239 | 2026-06-22 | musik-abitur-vorbereitung | Musik Abitur: Vorbereitung, Tipps und die wichtigsten Themen | Musik Abitur, Musik Abitur Vorbereitung, Musik Abitur Tipps, Musik Abitur Themen, Musikprüfung Abitur vorbereiten | Schule & Studium | Umfassende Vorbereitungsanleitung für das Musik Abitur. Behandelt alle vier Kernbereiche: Musiktheorie (Intervalle, Akkorde, Kadenzen, Formenlehre), Musikgeschichte (Barock bis Moderne mit Stilmerkmalen und Schlüsselwerken), Werkanalyse (5-Schritte-Schema) und Gehörbildung (tägliches Training). Enthält einen 3-Monats-Lernplan, häufige Fehler und Tipps für mündliche und praktische Prüfungsanteile. Interne Links zu muendliches-abitur-vorbereiten und abitur-pruefungstag-tipps. |
 | 238 | 2026-06-22 | muendliches-abitur-vorbereiten | Mündliches Abitur vorbereiten: Tipps für die mündliche Prüfung | mündliches Abitur vorbereiten, mündliche Abiturprüfung Tipps, Abitur mündliche Prüfung, mündliches Abitur Vorbereitung, mündliches Abi meistern | Schule & Studium | Vollständige Anleitung zur Vorbereitung auf das mündliche Abitur. Erklärt den Unterschied zwischen mündlicher und schriftlicher Prüfung, die drei typischen Prüfungsformate (Vortrag + Gespräch, materialgestütztes Gespräch, freies Gespräch), eine vierstufige Methode zur aktiven Stoffstrukturierung (Themenfelder, Kernaussagen, Zusammenhänge, Fachbegriffe), drei konkrete Übungsformate für freies Sprechen (Solo-Vortrag, Mock-Prüfung, Aufnahme), vier Grundregeln für das Prüfungsgespräch (Struktur ankündigen, nachfragen, Lücken benennen, Beispiele), Nervositätsmanagement mit Box-Breathing und Einstiegssätzen, vier häufige Fehler, siebenpunktige Checkliste. App-Erwähnung. Crosslinks zu muendliche-pruefung-vorbereiten. Rückverlinkung in muendliche-pruefung-vorbereiten Fazit. Füllt Lücke im Prüfungsvorbereitung-Cluster: muendliche-pruefung-vorbereiten deckt allgemeine Prüfungen ab, dieser Artikel adressiert spezifisch das Abitur-Format. |
@@ -1474,3 +1475,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - satzanfaenge-variieren-tipps -> erzaehlung-schreiben-tipps (Link bei Textsortenabschnitt: Erzählung)
 - satzanfaenge-variieren-tipps -> deutsch-aufsatz-schreiben-tipps (Link im Üben-Abschnitt: Deutschaufsatz)
 - kreatives-schreiben-tipps -> satzanfaenge-variieren-tipps (Rückverlinkung im Abschnitt über Schreibtechniken)
+
+## Interne Verlinkungen (Artikel 241)
+- slam-poetry-schreiben-tipps -> kreatives-schreiben-tipps (Verweis auf Techniken für ausdrucksstarke Texte nach Stilmittel-Abschnitt)
+- slam-poetry-schreiben-tipps -> rede-schreiben-tipps (Verweis auf Rhetorik und Vortragstechnik im Vortrag-Abschnitt)
