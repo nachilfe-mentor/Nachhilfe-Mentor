@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 241
-- Letzte Veröffentlichung: 2026-06-23
+- Gesamtzahl Artikel: 242
+- Letzte Veröffentlichung: 2026-06-24
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 242 | 2026-06-24 | richtig-zitieren-tipps | Richtig zitieren: Regeln, Beispiele und Tipps für Schule und Studium | richtig zitieren, richtig zitieren Tipps, Zitate richtig angeben, direktes und indirektes Zitat, Quellenangabe Facharbeit | Schule & Studium | Umfassender Ratgeber zum richtigen Zitieren für Schule und Studium. Erklärt direkte Zitate (wörtlich, mit Anführungszeichen, Auslassungen [...], Ergänzungen in eckigen Klammern) und indirekte Zitate (sinngemäß, Konjunktiv, vgl.). Behandelt Quellenangaben, amerikanische (Harvard) vs. deutsche Zitierweise (Fußnoten), vollständige Angaben für Buch, Zeitschrift, Internetquelle und Quelle ohne Autor, sowie 'zitiert nach'. Liste häufiger Fehler (vergessene Quellen, veränderte Zitate, inkonsistente Zitierweise, fehlendes Literaturverzeichnis) und ein 5-Schritte-Fahrplan. Interne Links zu facharbeit-schreiben-tipps und hausarbeit-schreiben-tipps. Ergänzt den wissenschaftliches-Arbeiten-Cluster (facharbeit, seminararbeit, bachelorarbeit, exzerpt, thesenpapier). |
 | 241 | 2026-06-23 | slam-poetry-schreiben-tipps | Slam Poetry schreiben: Tipps, Aufbau und Beispiele für die Schule | Slam Poetry schreiben, Poetry Slam Schule, Slam Poetry Tipps, Slam Poetry Aufbau, Slam Text schreiben Schule | Schule & Studium | Artikel über Slam Poetry schreiben für Schüler der Klasse 8-12. Erklärt was Slam Poetry ist (Bühnenpoesie, kein Reimzwang), typische Merkmale (Rhythmus, Bilder, direkte Ansprache), den Aufbau (starker Einstieg, Entfaltung, Kehrzeile, Finale), effektive Stilmittel (Anapher, Metaphern, Paradox, Enjambement), einen 6-Schritt-Prozess vom Freewriting zum fertigen Text sowie Vortragstipps (Tempo, Pausen, Blickkontakt). Interne Links zu kreatives-schreiben-tipps und rede-schreiben-tipps. |
 | 240 | 2026-06-23 | satzanfaenge-variieren-tipps | Satzanfänge variieren: 30+ Ideen für einen besseren Aufsatz | Satzanfänge variieren, abwechslungsreiche Satzanfänge, Satzanfänge Deutsch Aufsatz, verschiedene Satzanfänge, Aufsatz Satzanfänge | Schule & Studium | Artikel über das Variieren von Satzanfängen im Deutschaufsatz. Erklärt, warum gleichförmige Satzanfänge den Text schwächen, und bietet über 30 konkrete Beispiele in sechs Kategorien: Adverbien/Zeitangaben, Ortsangaben, Partizipialkonstruktionen, vorgestellte Nebensätze, Fragen/Ausrufe, Adjektive. Enthält textsortenspezifische Tipps (Erzählung, Erörterung, Analyse) und Übungsempfehlungen. Focus-Keyword: Satzanfänge variieren. |
 | 239 | 2026-06-22 | musik-abitur-vorbereitung | Musik Abitur: Vorbereitung, Tipps und die wichtigsten Themen | Musik Abitur, Musik Abitur Vorbereitung, Musik Abitur Tipps, Musik Abitur Themen, Musikprüfung Abitur vorbereiten | Schule & Studium | Umfassende Vorbereitungsanleitung für das Musik Abitur. Behandelt alle vier Kernbereiche: Musiktheorie (Intervalle, Akkorde, Kadenzen, Formenlehre), Musikgeschichte (Barock bis Moderne mit Stilmerkmalen und Schlüsselwerken), Werkanalyse (5-Schritte-Schema) und Gehörbildung (tägliches Training). Enthält einen 3-Monats-Lernplan, häufige Fehler und Tipps für mündliche und praktische Prüfungsanteile. Interne Links zu muendliches-abitur-vorbereiten und abitur-pruefungstag-tipps. |
@@ -1479,3 +1480,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 241)
 - slam-poetry-schreiben-tipps -> kreatives-schreiben-tipps (Verweis auf Techniken für ausdrucksstarke Texte nach Stilmittel-Abschnitt)
 - slam-poetry-schreiben-tipps -> rede-schreiben-tipps (Verweis auf Rhetorik und Vortragstechnik im Vortrag-Abschnitt)
+
+## Interne Verlinkungen (Artikel 242)
+- richtig-zitieren-tipps -> facharbeit-schreiben-tipps (Aufbau einer größeren wissenschaftlichen Arbeit)
+- richtig-zitieren-tipps -> hausarbeit-schreiben-tipps (Umgang mit Quellen im Studium)
+- facharbeit-schreiben-tipps -> richtig-zitieren-tipps (Rückverlinkung im Abschnitt zu Quellen/Zitaten)
