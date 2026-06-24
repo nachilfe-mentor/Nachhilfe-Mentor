@@ -1,0 +1,820 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bildbeschreibung schreiben: Tipps und Übungen | Nachhilfe Mentor</title>
+  <meta name="description" content="Entwurf: Bildbeschreibung schreiben üben mit Bildimpuls, Schritt-für-Schritt-Tipps, Schreibfeld, Selbstcheck, Musterlösung und Bewertungsraster für Klasse 7–10.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Bildbeschreibung schreiben: Tipps und Übungen",
+    "description": "Geführte Deutsch-Schreibübung zur Bildbeschreibung mit Bahnhofsbildimpuls, Schreibtipps, Gerüst, Wortbank, Selbstcheck, Musterlösung und Bewertungsraster.",
+    "learningResourceType": "PracticePage",
+    "educationalLevel": "Sekundarstufe I",
+    "inLanguage": "de",
+    "isAccessibleForFree": true,
+    "about": ["Bildbeschreibung", "Schreibaufgaben", "Deutsch schreiben", "Bildbeschreibung Tipps"],
+    "teaches": ["Beobachtung und Deutung trennen", "Bildbeschreibung strukturieren", "eigene Texte überarbeiten", "Bildebenen unterscheiden"],
+    "url": "https://nachhilfe-mentor.de/lernmaterialien/deutsch/bildbeschreibung-schreiben-tipps-uebungen.html"
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5c697c;
+      --line: #d9e1ec;
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --blue: #0f5fa8;
+      --teal: #0c7f74;
+      --green: #0d835d;
+      --amber: #9a6500;
+      --red: #b63d3d;
+      --violet: #6c58a8;
+      --soft-blue: #edf6ff;
+      --soft-green: #edf9f3;
+      --soft-amber: #fff7e8;
+      --shadow: 0 12px 28px rgba(31, 49, 79, .08);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { min-width: 0; overflow-x: hidden; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    a { color: var(--blue); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    img, button, textarea, select { max-width: 100%; }
+
+    .site-nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 12px 18px 0;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: .92rem;
+      font-weight: 800;
+    }
+    .site-nav a:first-child { color: var(--teal); }
+
+    header, main, footer {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(280px, 1.1fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .kicker {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3.1vw, 2.75rem);
+      line-height: 1.16;
+      overflow-wrap: anywhere;
+    }
+
+    h2 { margin: 0 0 10px; font-size: 1.08rem; line-height: 1.3; }
+    h3 { margin: 0 0 8px; font-size: .98rem; line-height: 1.35; }
+
+    p, li { color: var(--muted); line-height: 1.58; overflow-wrap: break-word; }
+    p { margin: 0; }
+    p + p { margin-top: 8px; }
+    ul, ol { margin: 8px 0 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+
+    .lead { margin-top: 10px; max-width: 700px; font-size: 1rem; }
+
+    .meta-row {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #354963;
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .prompt-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .prompt-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+    }
+
+    .prompt-card figcaption {
+      padding: 10px 12px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .86rem;
+      line-height: 1.45;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .stack { display: grid; gap: 14px; min-width: 0; }
+
+    .panel {
+      min-width: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .pad { padding: 16px; }
+
+    .task-grid {
+      display: grid;
+      gap: 8px;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .task {
+      border: 1px solid #d7e6f5;
+      background: var(--soft-blue);
+      border-radius: 8px;
+      padding: 11px;
+      color: #233850;
+      line-height: 1.48;
+    }
+
+    .model-stage {
+      position: relative;
+      min-height: 132px;
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(15, 95, 168, .08), rgba(12, 127, 116, .08), rgba(108, 88, 168, .08)),
+        #fff;
+    }
+
+    .model-line {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      top: 67px;
+      height: 8px;
+      border-radius: 999px;
+      background: #cfdae7;
+    }
+
+    .model-card {
+      position: absolute;
+      top: 28px;
+      width: 120px;
+      min-height: 58px;
+      display: grid;
+      place-items: center;
+      padding: 8px;
+      border-radius: 8px;
+      border: 2px solid #c8d6e6;
+      background: #fff;
+      color: #20354d;
+      font-size: .84rem;
+      font-weight: 900;
+      text-align: center;
+      box-shadow: 0 8px 16px rgba(31, 49, 79, .09);
+    }
+
+    .model-card:nth-child(2) { left: 8%; animation: pulseCard 3.6s ease-in-out infinite; }
+    .model-card:nth-child(3) { left: calc(50% - 60px); animation: pulseCard 3.6s ease-in-out .55s infinite; }
+    .model-card:nth-child(4) { right: 8%; animation: pulseCard 3.6s ease-in-out 1.1s infinite; }
+
+    .model-dot {
+      position: absolute;
+      top: 61px;
+      left: 24px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--green);
+      box-shadow: 0 0 0 6px rgba(13, 131, 93, .13);
+      animation: travel 4.2s linear infinite;
+    }
+
+    @keyframes pulseCard {
+      0%, 100% { transform: translateY(0); border-color: #c8d6e6; }
+      45% { transform: translateY(-5px); border-color: var(--teal); }
+    }
+
+    @keyframes travel {
+      0% { left: 24px; opacity: .2; }
+      12% { opacity: 1; }
+      88% { opacity: 1; }
+      100% { left: calc(100% - 44px); opacity: .2; }
+    }
+
+    .choice-grid { display: grid; gap: 8px; margin-top: 10px; }
+
+    .choice {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 9px;
+      align-items: start;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      line-height: 1.5;
+      color: #27394d;
+    }
+
+    .choice input { margin-top: 4px; }
+
+    .btn-row {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 12px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 13px;
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+      min-height: 42px;
+    }
+
+    button:disabled { cursor: not-allowed; opacity: .55; }
+
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-green { background: var(--green); color: #fff; }
+    .btn-secondary { background: #e8eef6; color: #20354d; }
+
+    .feedback {
+      margin-top: 10px;
+      padding: 11px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .feedback.good { border-color: #9ed7bd; background: var(--soft-green); color: #164c38; }
+    .feedback.warn { border-color: #efcc8b; background: var(--soft-amber); color: #5c3d00; }
+
+    .writing-box { display: grid; gap: 10px; }
+
+    textarea {
+      width: 100%;
+      min-height: 260px;
+      resize: vertical;
+      border: 1px solid #cbd7e6;
+      border-radius: 8px;
+      padding: 12px;
+      font: inherit;
+      line-height: 1.55;
+      color: var(--ink);
+      background: #fff;
+    }
+
+    textarea:focus, button:focus-visible, input:focus-visible, select:focus-visible {
+      outline: 3px solid rgba(15, 95, 168, .28);
+      outline-offset: 2px;
+    }
+
+    .writing-tools {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .counter { color: var(--muted); font-weight: 850; font-size: .9rem; }
+
+    .scaffold { display: grid; gap: 8px; }
+
+    .scaffold-step {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 10px;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+
+    .scaffold-step strong { color: var(--teal); }
+
+    .word-bank { display: flex; flex-wrap: wrap; gap: 7px; }
+
+    .word {
+      border: 1px solid #cbdced;
+      background: var(--soft-blue);
+      color: #233850;
+      border-radius: 999px;
+      padding: 7px 9px;
+      font-size: .88rem;
+      font-weight: 800;
+    }
+
+    .check-grid { display: grid; gap: 8px; }
+
+    .check-item {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 9px;
+      align-items: start;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: #27394d;
+      line-height: 1.5;
+    }
+
+    .check-item input { margin-top: 4px; }
+
+    .rubric { display: grid; gap: 8px; }
+
+    .rubric-row {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .points { color: var(--violet); font-weight: 900; }
+
+    .mistake-list { display: grid; gap: 9px; }
+
+    .mistake {
+      border-left: 4px solid var(--red);
+      padding: 8px 10px;
+      background: #fff4f4;
+      border-radius: 0 8px 8px 0;
+      color: #563232;
+      line-height: 1.5;
+    }
+
+    .asset-note { margin-top: 10px; font-size: .86rem; color: var(--muted); }
+
+    .revision-panel { display: grid; gap: 10px; }
+
+    .revision-panel select {
+      width: 100%;
+      border: 1px solid #cbd7e6;
+      border-radius: 8px;
+      padding: 10px;
+      font: inherit;
+      background: #fff;
+    }
+
+    .sample {
+      display: none;
+      margin-top: 12px;
+      padding: 13px;
+      border: 1px solid #b9d5ee;
+      border-radius: 8px;
+      background: #f7fbff;
+    }
+
+    .sample.is-visible { display: block; }
+
+    .sample-text { color: #304357; line-height: 1.72; }
+
+    .marked { background: #fff1bf; color: #4d3900; padding: 0 3px; border-radius: 4px; }
+
+    .progress-bar-outer {
+      margin-top: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: #d9e1ec;
+      overflow: hidden;
+    }
+
+    .progress-bar-inner {
+      height: 100%;
+      border-radius: 999px;
+      background: var(--green);
+      transition: width .4s ease;
+      width: 0%;
+    }
+
+    footer { color: var(--muted); font-size: .92rem; }
+
+    @media (max-width: 860px) {
+      header, .layout { grid-template-columns: 1fr; }
+      .task-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 520px) {
+      .site-nav, header, main, footer { padding-left: 12px; padding-right: 12px; }
+      .pad { padding: 13px; }
+      .model-card { width: 92px; font-size: .76rem; }
+      .model-card:nth-child(3) { left: calc(50% - 46px); }
+      .scaffold-step, .rubric-row { grid-template-columns: 1fr; gap: 4px; }
+      button { width: 100%; }
+      .writing-tools { align-items: stretch; }
+      .btn-row { width: 100%; }
+    }
+  </style>
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/deutsch/bildbeschreibung-schreiben-tipps-uebungen.html">
+</head>
+<body data-subject="Deutsch" data-grade-level="7-10" data-asset-type="guided-writing-practice" data-topic-cluster="schreibaufgaben-bildbeschreibung" data-primary-keyword="schreibaufgaben">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a href="/">Nachhilfe Mentor</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+  <a href="/blog/posts/bildbeschreibung-schreiben-tipps.html">Tipps zur Bildbeschreibung</a>
+</nav>
+
+<header>
+  <div>
+    <p class="kicker">Deutsch · Schreibaufgaben · Klasse 7–10</p>
+    <h1>Bildbeschreibung schreiben: Tipps und Übungen</h1>
+    <p class="lead">Wähle zuerst, welcher Satz wirklich eine Beobachtung ist. Dann schreibst du deine eigene Bildbeschreibung zur Bahnhofsszene. Die Musterlösung ist ein Vergleich, keine automatische Bewertung.</p>
+    <div class="meta-row" aria-label="Übungsdaten">
+      <span class="pill">30 Minuten</span>
+      
+      <span class="pill">mit Tipps und Selbstcheck</span>
+      <span class="pill">Schwierigkeitsprogression: angeleitet bis selbstständig</span>
+    </div>
+  </div>
+  <figure class="prompt-card">
+    <img src="/lernmaterialien/assets/bildbeschreibung-bahnhof-smartphone.webp"
+         alt="Bahnhofsszene: Ein Jugendlicher mit Kopfhörern und Smartphone steht am Bahnsteig, während eine ältere Person die Abfahrtstafel betrachtet und ein Pendler bereit ist zu helfen."
+         data-asset-source="local-curated"
+         data-asset-cost-usd="0">
+    <figcaption>Bildimpuls: Achte auf Vordergrund, Mittelgrund, Hintergrund, Körperhaltungen, Blickrichtungen und die Stimmung zwischen den Personen.</figcaption>
+  </figure>
+</header>
+
+<main>
+  <section class="layout">
+    <div class="stack">
+
+      <article class="panel pad" aria-labelledby="vorhersage-title">
+        <h2 id="vorhersage-title">Stufe 1: Vorhersage – Beobachtung oder Deutung?</h2>
+        <p>Welcher Satz ist eine echte Beobachtung, die im Bild sichtbar ist? Triff zuerst deine Entscheidung, bevor du das Feedback liest.</p>
+        <div class="model-stage" aria-label="Animiertes Schreibmodell: Beobachten, Ordnen, Vorsichtig deuten">
+          <div class="model-line"></div>
+          <div class="model-card">Beobachten</div>
+          <div class="model-card">Ordnen</div>
+          <div class="model-card">Vorsichtig deuten</div>
+          <div class="model-dot" aria-hidden="true"></div>
+        </div>
+        <div class="choice-grid" role="radiogroup" aria-label="Satz zur Bildbeschreibung auswählen">
+          <label class="choice">
+            <input type="radio" name="prediction" value="good">
+            <span>Im Vordergrund steht ein Jugendlicher mit Kopfhörern und schaut auf ein Smartphone, während er nah am Bahnsteigrand steht.</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="prediction" value="tooCertain">
+            <span>Der Jugendliche ist gleichgültig und interessiert sich nicht für seine Umgebung.</span>
+          </label>
+          <label class="choice">
+            <input type="radio" name="prediction" value="invented">
+            <span>Die ältere Person hat gerade ihren Zug verpasst und ist deshalb verzweifelt.</span>
+          </label>
+        </div>
+        <div class="btn-row">
+          <button class="btn-primary" type="button" id="checkPrediction">Prüfen</button>
+        </div>
+        <div class="feedback" id="predictionFeedback" aria-live="polite">Noch kein Feedback: Wähle eine Vorhersage und prüfe sie.</div>
+      </article>
+
+      <article class="panel pad" aria-labelledby="auftrag-title">
+        <h2 id="auftrag-title">Stufe 2: Schreibauftrag zur Bahnhofsszene</h2>
+        <p><strong>Schwierigkeitsprogression:</strong> Zuerst übst du das Erkennen von Beobachtungen. Dann schreibst du eine vollständige Bildbeschreibung mit Tipps und überarbeitest sie selbstständig.</p>
+        <div class="task-grid">
+          <div class="task">Beschreibe das Bild im Präsens und in einer nachvollziehbaren Reihenfolge von vorne nach hinten.</div>
+          <div class="task">Nutze mindestens sechs genaue Ortsangaben wie: im Vordergrund, links, rechts, im Hintergrund.</div>
+          <div class="task">Trenne sichtbare Beobachtungen von vorsichtigen Deutungen: „wirkt", „vermutlich", „könnte zeigen".</div>
+          <div class="task">Überarbeite am Ende einen Schwerpunkt: Reihenfolge, Deutung oder sprachliche Genauigkeit.</div>
+        </div>
+      </article>
+
+      <article class="panel pad" aria-labelledby="text-title">
+        <h2 id="text-title">Dein Text</h2>
+        <div class="writing-box">
+          <textarea id="studentText" aria-label="Eigene Bildbeschreibung zur Bahnhofsszene" placeholder="Schreibe hier deine Bildbeschreibung. Beginne mit Bildart und Thema, beschreibe dann Vordergrund, Mittelgrund und Hintergrund und formuliere am Ende eine vorsichtige Deutung."></textarea>
+          <div class="writing-tools">
+            <span class="counter" id="wordCounter">0 Wörter</span>
+            <div class="btn-row">
+              <button class="btn-secondary" type="button" id="insertScaffold">Gerüst einfügen</button>
+              <button class="btn-secondary" type="button" id="clearText">Leeren</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="panel pad" aria-labelledby="check-title">
+        <h2 id="check-title">Selbstcheck vor der Musterlösung</h2>
+        <div class="check-grid">
+          <label class="check-item"><input type="checkbox" data-check><span>Meine Einleitung nennt Bildart, Motiv und eine erkennbare Situation.</span></label>
+          <label class="check-item"><input type="checkbox" data-check><span>Ich beschreibe Vordergrund, Mittelgrund und Hintergrund in klarer Reihenfolge.</span></label>
+          <label class="check-item"><input type="checkbox" data-check><span>Ich nutze mindestens sechs genaue Ortsangaben wie links, rechts, im Hintergrund, neben oder hinter.</span></label>
+          <label class="check-item"><input type="checkbox" data-check><span>Ich beschreibe Körperhaltung, Blickrichtung und den Abstand zwischen Personen.</span></label>
+          <label class="check-item"><input type="checkbox" data-check><span>Meine Deutung ist vorsichtig formuliert und direkt am Bild begründet.</span></label>
+          <label class="check-item"><input type="checkbox" data-check><span>Ich erfinde keine Vorgeschichte, die im Bild nicht zu sehen ist.</span></label>
+        </div>
+        <div class="btn-row">
+          <button class="btn-green" type="button" id="checkList">Selbstcheck auswerten</button>
+          <button class="btn-primary" type="button" id="showSample" disabled>Musterlösung anzeigen</button>
+        </div>
+        <div class="feedback" id="checkFeedback" aria-live="polite">Die Musterlösung wird freigeschaltet, sobald du eine Vorhersage geprüft und mindestens 20 Wörter geschrieben hast. Es gibt keine automatische Bewertung deines Textes.</div>
+        <div class="sample" id="sampleSolution">
+          <h3>Musterlösung zum Vergleichen</h3>
+          <p class="sample-text">Das Bild zeigt eine Szene auf einem Bahnsteig, vermutlich am späten Nachmittag. <span class="marked">Im Vordergrund</span> steht ein Jugendlicher mit Kopfhörern am Ohr und hält ein Smartphone in der Hand. Sein Blick ist nach unten gerichtet; er wirkt konzentriert auf das Gerät, während er dicht am Bahnsteigrand steht. <span class="marked">Direkt neben ihm</span>, etwas weiter rechts, steht eine ältere Person. Sie richtet ihren Blick nach oben zur Anzeigetafel. Die Körperhaltung – leicht geneigt und mit angehobener Schulter – lässt vermuten, dass sie die Abfahrtszeiten sucht. <span class="marked">Links im Mittelgrund</span> ist ein weiterer Pendler zu erkennen, der seinen Blick auf die ältere Person richtet und sich leicht in ihre Richtung dreht. Dies könnte zeigen, dass er bereit ist, ihr zu helfen. <span class="marked">Im Hintergrund</span> sind unscharfe Figuren, Gepäck, Lichter und die Silhouette eines einfahrenden Zuges zu erkennen. Die Szene wirkt auf den ersten Blick alltäglich, bekommt aber durch den Gegensatz zwischen dem in sein Gerät versenkten Jugendlichen und der suchenden älteren Person eine nachdenkliche Stimmung. Das Bild könnte zeigen, wie digitale Ablenkung und Hilfsbereitschaft im öffentlichen Raum nebeneinander bestehen.</p>
+        </div>
+      </article>
+
+      <article class="panel pad" aria-labelledby="revision-title">
+        <h2 id="revision-title">Revision: einen Schwerpunkt gezielt verbessern</h2>
+        <div class="revision-panel">
+          <label for="revisionFocus">Wähle deinen wichtigsten Überarbeitungsschwerpunkt:</label>
+          <select id="revisionFocus">
+            <option value="order">Reihenfolge der Beschreibung</option>
+            <option value="evidence">Deutung vorsichtiger und am Bild belegen</option>
+            <option value="language">Genauere Verben und Ortsangaben</option>
+          </select>
+          <button class="btn-secondary" type="button" id="revisionHelp">Tipp anzeigen</button>
+          <div class="feedback" id="revisionFeedback" aria-live="polite">Wähle einen Schwerpunkt und überarbeite danach mindestens drei Sätze in deinem Text.</div>
+        </div>
+      </article>
+
+    </div>
+
+    <aside class="stack">
+
+      <section class="panel pad" aria-labelledby="progress-title">
+        <h2 id="progress-title">Fortschritt</h2>
+        <p id="progressSummary">0 von 4 Arbeitsschritten abgeschlossen.</p>
+        <div class="progress-bar-outer" aria-hidden="true">
+          <div class="progress-bar-inner" id="progressBar"></div>
+        </div>
+        <div class="scaffold" style="margin-top:10px" aria-label="Bearbeitungsfortschritt">
+          <div class="scaffold-step"><strong>1</strong><span id="progressPrediction">Vorhersage noch offen</span></div>
+          <div class="scaffold-step"><strong>2</strong><span id="progressText">Eigener Text: 0 Wörter</span></div>
+          <div class="scaffold-step"><strong>3</strong><span id="progressChecks">Selbstcheck: 0 von 6</span></div>
+          <div class="scaffold-step"><strong>4</strong><span id="progressRevision">Revision noch planen</span></div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="scaffold-title">
+        <h2 id="scaffold-title">Struktur-Scaffold</h2>
+        <div class="scaffold">
+          <div class="scaffold-step"><strong>Einleitung</strong><span>Bildart, Motiv, Ort und erkennbare Situation kurz nennen.</span></div>
+          <div class="scaffold-step"><strong>Vorne</strong><span>Personen, Gegenstände und Handlungen im Vordergrund beschreiben.</span></div>
+          <div class="scaffold-step"><strong>Mitte</strong><span>Blickrichtungen, Haltungen und Beziehungen im Mittelgrund ordnen.</span></div>
+          <div class="scaffold-step"><strong>Hinten</strong><span>Umgebung, weitere Personen und Atmosphäre ergänzen.</span></div>
+          <div class="scaffold-step"><strong>Wirkung</strong><span>Vorsichtig deuten: wirkt, vermutlich, könnte zeigen.</span></div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="wortbank-title">
+        <h2 id="wortbank-title">Wortbank</h2>
+        <div class="word-bank">
+          <span class="word">im Vordergrund</span>
+          <span class="word">im Mittelgrund</span>
+          <span class="word">im Hintergrund</span>
+          <span class="word">links daneben</span>
+          <span class="word">rechts davon</span>
+          <span class="word">starrt auf</span>
+          <span class="word">betrachtet</span>
+          <span class="word">neigt sich zu</span>
+          <span class="word">hält in der Hand</span>
+          <span class="word">angespannt</span>
+          <span class="word">nachdenklich</span>
+          <span class="word">hilfsbereit</span>
+          <span class="word">vermutlich</span>
+          <span class="word">wirkt</span>
+          <span class="word">könnte zeigen</span>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="rubrik-title">
+        <h2 id="rubrik-title">Bewertungsraster</h2>
+        <div class="rubric">
+          <div class="rubric-row"><span class="points">0–2</span><span>Einleitung mit Bildart, Motiv und sachlichem Einstieg.</span></div>
+          <div class="rubric-row"><span class="points">0–4</span><span>Geordnete Beschreibung mit Vordergrund, Mittelgrund und Hintergrund.</span></div>
+          <div class="rubric-row"><span class="points">0–3</span><span>Genaue Details zu Personen, Gegenständen, Haltung und Blickrichtung.</span></div>
+          <div class="rubric-row"><span class="points">0–2</span><span>Vorsichtige, am Bild belegte Deutung der Stimmung.</span></div>
+          <div class="rubric-row"><span class="points">0–2</span><span>Sprache: Präsens, passende Verben, klare Satzverbindungen.</span></div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="fehler-title">
+        <h2 id="fehler-title">Typische Fehler</h2>
+        <div class="mistake-list">
+          <div class="mistake"><strong>Zu sicher deuten:</strong> Schreibe nicht „ist gleichgültig", wenn du nur den Blick auf das Smartphone siehst. Besser: „wirkt konzentriert auf das Gerät, weil ...".</div>
+          <div class="mistake"><strong>Vorgeschichte erfinden:</strong> Erkläre nicht, was vorher passiert ist. Nur beschreiben, was sichtbar ist.</div>
+          <div class="mistake"><strong>Ungeordnet aufzählen:</strong> Führe die lesende Person systematisch durch das Bild – von vorne nach hinten oder von links nach rechts.</div>
+          <div class="mistake"><strong>Unpräzise Verben:</strong> Vermeide „da ist" und „man sieht". Nutze: starrt, betrachtet, neigt sich zu, streckt die Hand aus.</div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="links-title">
+        <h2 id="links-title">Weiterüben</h2>
+        <p><a href="/blog/posts/bildbeschreibung-schreiben-tipps.html">Alle Tipps zur Bildbeschreibung</a></p>
+        <p><a href="/lernmaterialien/deutsch/bildbeschreibung-schreiben-tipps-uebungen.html">Schulhof-Übung (einfachere Szene)</a></p>
+        <p><a href="/lernmaterialien/deutsch/bildbeschreibung-uebung-schulhof.html">Weitere Schulhof-Bildbeschreibung</a></p>
+        <p><a href="/lernmaterialien/">Alle Lernmaterialien</a></p>
+        <p class="asset-note">Bildquelle: lokales kuratiertes AI-generiertes Übungsasset mit Metadaten; für diesen Entwurf wurde kein neues Bild generiert.</p>
+      </section>
+
+    </aside>
+  </section>
+</main>
+
+<footer>
+  <p>Nachhilfe Mentor · Entwurf für die Qualitätsprüfung · keine Veröffentlichung</p>
+</footer>
+
+<script>
+  const track = (name, detail) => {
+    if (window.dataLayer && Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({ event: name, ...detail });
+    }
+  };
+
+  const studentText = document.getElementById("studentText");
+  const wordCounter = document.getElementById("wordCounter");
+  const showSample = document.getElementById("showSample");
+  const predictionFeedback = document.getElementById("predictionFeedback");
+  const checkFeedback = document.getElementById("checkFeedback");
+  const progressBar = document.getElementById("progressBar");
+  const progressPrediction = document.getElementById("progressPrediction");
+  const progressText = document.getElementById("progressText");
+  const progressChecks = document.getElementById("progressChecks");
+  const progressRevision = document.getElementById("progressRevision");
+  const progressSummary = document.getElementById("progressSummary");
+
+  let predictionChecked = false;
+  let checkedCount = 0;
+  let revisionPlanned = false;
+
+  const countWords = (value) => {
+    const trimmed = value.trim();
+    return trimmed ? trimmed.split(/\s+/).length : 0;
+  };
+
+  const refreshProgress = () => {
+    const steps = [
+      predictionChecked,
+      countWords(studentText.value) >= 20,
+      checkedCount >= 4,
+      revisionPlanned
+    ];
+    const done = steps.filter(Boolean).length;
+    progressSummary.textContent = done + " von 4 Arbeitsschritten abgeschlossen.";
+    progressBar.style.width = (done * 25) + "%";
+  };
+
+  const refreshWritingState = () => {
+    const words = countWords(studentText.value);
+    wordCounter.textContent = words + (words === 1 ? " Wort" : " Wörter");
+    showSample.disabled = !(predictionChecked && words >= 20);
+    progressText.textContent = "Eigener Text: " + words + (words === 1 ? " Wort" : " Wörter");
+    refreshProgress();
+  };
+
+  document.getElementById("checkPrediction").addEventListener("click", () => {
+    const selected = document.querySelector("input[name='prediction']:checked");
+    predictionFeedback.classList.remove("good", "warn");
+    if (!selected) {
+      predictionFeedback.classList.add("warn");
+      predictionFeedback.textContent = "Wähle zuerst einen Satz. Das ist deine aktive Vorhersage vor dem Feedback.";
+      return;
+    }
+    predictionChecked = true;
+    if (selected.value === "good") {
+      predictionFeedback.classList.add("good");
+      predictionFeedback.textContent = "Richtig: Das ist eine Beobachtung. Der Satz beschreibt sichtbare Personen, ihre Position und Handlung, ohne eine Vorgeschichte oder ein sicher benanntes Gefühl zu erfinden.";
+    } else if (selected.value === "tooCertain") {
+      predictionFeedback.classList.add("warn");
+      predictionFeedback.textContent = "Noch nicht: Das ist eine zu sichere Deutung. Das Konzept heißt Beobachtung-Deutung-Trennung: Eigenschaften wie Gleichgültigkeit dürfen nur vorsichtig und mit einem sichtbaren Hinweis formuliert werden, zum Beispiel: wirkt abgelenkt, weil der Blick auf das Smartphone gerichtet ist.";
+    } else {
+      predictionFeedback.classList.add("warn");
+      predictionFeedback.textContent = "Noch nicht: Das ist eine erfundene Vorgeschichte. In einer Bildbeschreibung darf nur beschrieben werden, was sichtbar ist. Was vorher passiert ist, lässt sich im Bild nicht belegen.";
+    }
+    track("practice_prediction_checked", { stage: 1, result: selected.value });
+    progressPrediction.textContent = "Vorhersage geprüft";
+    refreshWritingState();
+  });
+
+  document.getElementById("insertScaffold").addEventListener("click", () => {
+    const nl = String.fromCharCode(10);
+    const scaffold = [
+      "Auf dem Bild ist ... zu sehen.",
+      "Im Vordergrund ...",
+      "Im Mittelgrund ...",
+      "Im Hintergrund ...",
+      "Die Szene wirkt ..., weil ...",
+      "Das Bild könnte zeigen, dass ..."
+    ].join(nl);
+    const current = studentText.value.trim();
+    studentText.value = current ? current + nl + nl + scaffold : scaffold;
+    studentText.focus();
+    refreshWritingState();
+    track("practice_scaffold_inserted", { stage: 2 });
+  });
+
+  document.getElementById("clearText").addEventListener("click", () => {
+    studentText.value = "";
+    refreshWritingState();
+    track("practice_text_cleared", { stage: 2 });
+  });
+
+  studentText.addEventListener("input", refreshWritingState);
+
+  document.getElementById("checkList").addEventListener("click", () => {
+    const checks = Array.from(document.querySelectorAll("[data-check]"));
+    const done = checks.filter((el) => el.checked).length;
+    checkedCount = done;
+    progressChecks.textContent = "Selbstcheck: " + done + " von " + checks.length;
+    checkFeedback.classList.remove("good", "warn");
+    if (done >= 5) {
+      checkFeedback.classList.add("good");
+      checkFeedback.textContent = "Selbstcheck: " + done + " von " + checks.length + " Kriterien sind erfüllt. Vergleiche jetzt mit der Musterlösung und überarbeite danach gezielt einen Abschnitt.";
+    } else {
+      checkFeedback.classList.add("warn");
+      checkFeedback.textContent = "Selbstcheck: " + done + " von " + checks.length + " Kriterien erfüllt. Prüfe besonders Reihenfolge, Ortsangaben und die Trennung von Beobachtung und Deutung.";
+    }
+    track("practice_selfcheck_used", { stage: 2, checked: done });
+    refreshProgress();
+  });
+
+  document.getElementById("showSample").addEventListener("click", () => {
+    document.getElementById("sampleSolution").classList.add("is-visible");
+    track("practice_sample_revealed", { stage: 2 });
+  });
+
+  document.getElementById("revisionHelp").addEventListener("click", () => {
+    const focus = document.getElementById("revisionFocus").value;
+    const revisionFeedback = document.getElementById("revisionFeedback");
+    const hints = {
+      order: "Tipp Reihenfolge: Beginne mit dem Vordergrund und leite dann Schritt für Schritt zum Mittelgrund und Hintergrund über. Prüfe, ob jeder Abschnitt die lesende Person wirklich durch das Bild führt.",
+      evidence: "Tipp belegte Deutung: Formuliere zuerst das sichtbare Detail und danach die vorsichtige Wirkung. Beispiel: Die ältere Person hält den Kopf leicht geneigt und richtet den Blick nach oben – das lässt vermuten, dass sie die Anzeigetafel sucht.",
+      language: "Tipp sprachliche Genauigkeit: Ersetze ungenaue Formulierungen wie man sieht oder da ist durch präzise Verben: starrt auf, betrachtet, neigt sich zu, hält in der Hand, wendet sich ab."
+    };
+    revisionFeedback.textContent = hints[focus];
+    revisionPlanned = true;
+    progressRevision.textContent = "Revision geplant";
+    track("practice_revision_hint", { stage: 2, focus: focus });
+    refreshProgress();
+  });
+
+  refreshWritingState();
+</script>
+</body>
+</html>
