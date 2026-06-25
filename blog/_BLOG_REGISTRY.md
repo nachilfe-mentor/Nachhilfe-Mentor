@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 244
+- Gesamtzahl Artikel: 245
 - Letzte Veröffentlichung: 2026-06-25
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 245 | 2026-06-25 | prozentrechnung-lernen-tipps | Prozentrechnung lernen: Formeln, Tipps und Übungen für Klasse 5–9 | Prozentrechnung lernen, Prozentrechnung Formel, Prozentsatz berechnen, Prozentwert berechnen, Prozentrechnung Klasse 6 7 8 | Schule & Studium | Prozentrechnung lernen für Klasse 5-9: Die drei Grundaufgaben (Prozentwert, Prozentsatz, Grundwert berechnen), die Grundformel W = G × p / 100, Kopfrechentricks, häufige Fehler und praktische Übungstipps. Mit Alltags-Beispielen wie Rabatte und Zinsen. Mathe-Cluster, ergänzt Bruchrechnung und allgemeine Mathe-Lerntipps. |
 | 244 | 2026-06-25 | buchbericht-schreiben-tipps | Buchbericht schreiben: Aufbau, Tipps und Beispiel für Klasse 5–8 | Buchbericht schreiben, Buchbericht Aufbau, Buchbericht Schule, Buchbericht schreiben Tipps, Buchbericht Beispiel Klasse 5 | Schule & Studium | Artikel erklärt den Buchbericht als häufige Schulaufgabe in Klasse 5-8: Was er ist (Zusammenfassung + Meinung), der fünfteilige Aufbau (Einleitung mit Bibliografiedaten, Inhaltsangabe im Präsens, Figurenvorstellung, persönliche Meinung, Schluss), Schritt-für-Schritt-Anleitung, häufige Fehler (Ende verraten, falsches Tempus, kein eigener Text) und Abgrenzung zu Buchvorstellung und Rezension. Mit Beispiel-Einleitung zu 'Tschick'. Interne Links zu inhaltsangabe-schreiben-tipps, rezension-schreiben-tipps, buchvorstellung-schreiben-tipps. |
 | 243 | 2026-06-24 | literarische-eroerterung-schreiben-tipps | Literarische Erörterung schreiben: Aufbau, Tipps und Beispiel für das Abitur | literarische Erörterung schreiben, literarische Erörterung Aufbau, literarische Erörterung Abitur, literarische Erörterung Tipps, literarische Erörterung Beispiel | Schule & Studium | Ausführliche Anleitung zur literarischen Erörterung für das Deutschabitur. Erklärt Definition, Aufbau (Einleitung mit These, Hauptteil mit Argumenten und Textbelegen, Schluss mit Fazit), sprachliche Besonderheiten, häufige Fehler und Abgrenzung zu anderen Aufsatztypen wie Interpretation, textgebundener Erörterung und dialektischer Erörterung. Inkl. Beispielformulierungen und Zeitmanagement-Tipps. Verlinkt auf eroerterung-schreiben-tipps und interpretation-schreiben-tipps. |
 | 242 | 2026-06-24 | richtig-zitieren-tipps | Richtig zitieren: Regeln, Beispiele und Tipps für Schule und Studium | richtig zitieren, richtig zitieren Tipps, Zitate richtig angeben, direktes und indirektes Zitat, Quellenangabe Facharbeit | Schule & Studium | Umfassender Ratgeber zum richtigen Zitieren für Schule und Studium. Erklärt direkte Zitate (wörtlich, mit Anführungszeichen, Auslassungen [...], Ergänzungen in eckigen Klammern) und indirekte Zitate (sinngemäß, Konjunktiv, vgl.). Behandelt Quellenangaben, amerikanische (Harvard) vs. deutsche Zitierweise (Fußnoten), vollständige Angaben für Buch, Zeitschrift, Internetquelle und Quelle ohne Autor, sowie 'zitiert nach'. Liste häufiger Fehler (vergessene Quellen, veränderte Zitate, inkonsistente Zitierweise, fehlendes Literaturverzeichnis) und ein 5-Schritte-Fahrplan. Interne Links zu facharbeit-schreiben-tipps und hausarbeit-schreiben-tipps. Ergänzt den wissenschaftliches-Arbeiten-Cluster (facharbeit, seminararbeit, bachelorarbeit, exzerpt, thesenpapier). |
@@ -1499,3 +1500,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - buchbericht-schreiben-tipps -> rezension-schreiben-tipps (Abgrenzung: Buchbericht vs. Rezension für ältere Schüler)
 - buchbericht-schreiben-tipps -> buchvorstellung-schreiben-tipps (Abgrenzung: Buchbericht vs. Buchvorstellung)
 - buchvorstellung-schreiben-tipps -> buchbericht-schreiben-tipps (Rückverlinkung bei der Abgrenzung zu verwandten Textsorten (Zeile 101))
+
+## Interne Verlinkungen (Artikel 245)
+- prozentrechnung-lernen-tipps -> bruchrechnung-lernen-tipps (Prozente bauen auf Brüchen auf, natürlicher Querverweis)
+- prozentrechnung-lernen-tipps -> mathe-lernen-tipps (Allgemeine Mathe-Lernstrategie als weiterführender Link)
