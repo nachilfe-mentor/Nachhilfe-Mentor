@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/</loc>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -999,6 +999,12 @@
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/online-studieren-tipps.html</loc>
     <lastmod>2026-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/operatoren-deutsch-klausur-tipps.html</loc>
+    <lastmod>2026-06-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
