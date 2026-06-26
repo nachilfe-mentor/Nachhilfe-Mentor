@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 245
-- Letzte Veröffentlichung: 2026-06-25
+- Gesamtzahl Artikel: 246
+- Letzte Veröffentlichung: 2026-06-26
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 246 | 2026-06-26 | operatoren-deutsch-klausur-tipps | Operatoren im Deutschaufsatz: Was bedeuten analysieren, erörtern und interpretieren? | Operatoren Deutsch, Operatoren Deutschaufsatz, Operatoren Klausur Deutsch, analysieren erörtern interpretieren Deutsch, Aufgabenoperatoren Deutsch Schule | Schule & Studium | Erklärt alle wichtigen Operatoren im Deutschunterricht (nennen, beschreiben, analysieren, erörtern, interpretieren, bewerten, verfassen). Sortiert nach Niveau: reproduzierend, erklärend, interpretierend, wertend, gestaltend. Mit Praxistipps für die Klausur. Zielgruppe: Schülerinnen und Schüler Klasse 8-13 mit Deutschklausur. Interne Links zu Erörterung schreiben und Interpretation schreiben. |
 | 245 | 2026-06-25 | prozentrechnung-lernen-tipps | Prozentrechnung lernen: Formeln, Tipps und Übungen für Klasse 5–9 | Prozentrechnung lernen, Prozentrechnung Formel, Prozentsatz berechnen, Prozentwert berechnen, Prozentrechnung Klasse 6 7 8 | Schule & Studium | Prozentrechnung lernen für Klasse 5-9: Die drei Grundaufgaben (Prozentwert, Prozentsatz, Grundwert berechnen), die Grundformel W = G × p / 100, Kopfrechentricks, häufige Fehler und praktische Übungstipps. Mit Alltags-Beispielen wie Rabatte und Zinsen. Mathe-Cluster, ergänzt Bruchrechnung und allgemeine Mathe-Lerntipps. |
 | 244 | 2026-06-25 | buchbericht-schreiben-tipps | Buchbericht schreiben: Aufbau, Tipps und Beispiel für Klasse 5–8 | Buchbericht schreiben, Buchbericht Aufbau, Buchbericht Schule, Buchbericht schreiben Tipps, Buchbericht Beispiel Klasse 5 | Schule & Studium | Artikel erklärt den Buchbericht als häufige Schulaufgabe in Klasse 5-8: Was er ist (Zusammenfassung + Meinung), der fünfteilige Aufbau (Einleitung mit Bibliografiedaten, Inhaltsangabe im Präsens, Figurenvorstellung, persönliche Meinung, Schluss), Schritt-für-Schritt-Anleitung, häufige Fehler (Ende verraten, falsches Tempus, kein eigener Text) und Abgrenzung zu Buchvorstellung und Rezension. Mit Beispiel-Einleitung zu 'Tschick'. Interne Links zu inhaltsangabe-schreiben-tipps, rezension-schreiben-tipps, buchvorstellung-schreiben-tipps. |
 | 243 | 2026-06-24 | literarische-eroerterung-schreiben-tipps | Literarische Erörterung schreiben: Aufbau, Tipps und Beispiel für das Abitur | literarische Erörterung schreiben, literarische Erörterung Aufbau, literarische Erörterung Abitur, literarische Erörterung Tipps, literarische Erörterung Beispiel | Schule & Studium | Ausführliche Anleitung zur literarischen Erörterung für das Deutschabitur. Erklärt Definition, Aufbau (Einleitung mit These, Hauptteil mit Argumenten und Textbelegen, Schluss mit Fazit), sprachliche Besonderheiten, häufige Fehler und Abgrenzung zu anderen Aufsatztypen wie Interpretation, textgebundener Erörterung und dialektischer Erörterung. Inkl. Beispielformulierungen und Zeitmanagement-Tipps. Verlinkt auf eroerterung-schreiben-tipps und interpretation-schreiben-tipps. |
@@ -1504,3 +1505,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 245)
 - prozentrechnung-lernen-tipps -> bruchrechnung-lernen-tipps (Prozente bauen auf Brüchen auf, natürlicher Querverweis)
 - prozentrechnung-lernen-tipps -> mathe-lernen-tipps (Allgemeine Mathe-Lernstrategie als weiterführender Link)
+
+## Interne Verlinkungen (Artikel 246)
+- operatoren-deutsch-klausur-tipps -> interpretation-schreiben-tipps (Verweis beim Operator 'interpretieren' auf den Artikel mit Aufbau und Tipps)
+- operatoren-deutsch-klausur-tipps -> eroerterung-schreiben-tipps (Verweis beim Operator 'erörtern' auf den Artikel mit Aufbau und Tipps)
