@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Argumentation schreiben: Tipps und Übungen mit Lösungen | Nachhilfe Mentor</title>
+  <meta name="description" content="Entwurf: Argumentation schreiben üben – Schritt-für-Schritt-Tipps, Schreibübung mit Schlussregel erkennen, Struktur-Scaffold, Wortbank, Selbstcheck, Musterlösung und Bewertungsraster für Klasse 8–10.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Argumentation schreiben: Tipps und Übungen mit Lösungen",
+    "description": "Geführte Deutsch-Schreibübung zur Argumentation mit Toulmin-Modell, Vorhersage-Task, Schreibfeld, Struktur-Scaffold, Wortbank, Selbstcheck, Musterlösung und Bewertungsraster.",
+    "learningResourceType": "PracticePage",
+    "educationalLevel": "Sekundarstufe I",
+    "inLanguage": "de",
+    "isAccessibleForFree": true,
+    "about": ["Argumentation", "Schreibaufgaben", "Deutsch schreiben", "Argumentation Tipps Übungen"],
+    "teaches": ["These begründen", "Schlussregel formulieren", "Gegenargument entkräften", "Argumentationsabschnitte überarbeiten"],
+    "url": "https://nachhilfe-mentor.de/lernmaterialien/deutsch/argumentation-schreiben-tipps-uebungen.html"
+  }
+  </script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #5c697c;
+      --line: #d9e1ec;
+      --bg: #f6f8fb;
+      --panel: #ffffff;
+      --blue: #0f5fa8;
+      --teal: #0c7f74;
+      --green: #0d835d;
+      --amber: #9a6500;
+      --red: #b63d3d;
+      --violet: #6c58a8;
+      --soft-blue: #edf6ff;
+      --soft-green: #edf9f3;
+      --soft-amber: #fff7e8;
+      --soft-red: #fff1f1;
+      --shadow: 0 12px 28px rgba(31, 49, 79, .08);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { min-width: 0; overflow-x: hidden; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+    }
+
+    a { color: var(--blue); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+    button, textarea, select { max-width: 100%; font: inherit; }
+
+    .site-nav {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 12px 18px 0;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      align-items: center;
+      font-size: .92rem;
+      font-weight: 800;
+    }
+    .site-nav a:first-child { color: var(--teal); }
+
+    header, main, footer {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 18px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, .88fr) minmax(300px, 1.12fr);
+      gap: 16px;
+      align-items: start;
+      padding-top: 18px;
+      padding-bottom: 12px;
+    }
+
+    .kicker {
+      margin: 0 0 8px;
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.7rem, 3.1vw, 2.75rem);
+      line-height: 1.1;
+      overflow-wrap: anywhere;
+    }
+
+    h2 { margin: 0 0 10px; font-size: 1.08rem; line-height: 1.3; }
+    h3 { margin: 0 0 8px; font-size: .98rem; line-height: 1.35; }
+
+    p, li { color: var(--muted); line-height: 1.58; overflow-wrap: break-word; }
+    p { margin: 0; }
+    p + p { margin-top: 8px; }
+    ul, ol { margin: 8px 0 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+
+    .lead { margin-top: 10px; max-width: 680px; font-size: 1rem; }
+
+    .meta-row { margin-top: 12px; display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 0 10px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #354963;
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .panel {
+      min-width: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+    }
+
+    .pad { padding: 16px; }
+
+    .prompt { border-left: 5px solid var(--teal); background: #fbfdff; }
+
+    .task-list { display: grid; gap: 8px; margin-top: 12px; }
+
+    .task {
+      border: 1px solid #d7e6f5;
+      background: var(--soft-blue);
+      border-radius: 8px;
+      padding: 11px;
+      color: #233850;
+      line-height: 1.48;
+    }
+
+    .model-stage {
+      position: relative;
+      min-height: 170px;
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background:
+        linear-gradient(90deg, rgba(15, 95, 168, .08), rgba(11, 129, 115, .08), rgba(108, 88, 168, .08)),
+        #fff;
+    }
+
+    .bridge-line {
+      position: absolute;
+      left: 18px;
+      right: 18px;
+      top: 80px;
+      height: 8px;
+      border-radius: 999px;
+      background: #cfd9e6;
+    }
+
+    .bridge-gap {
+      position: absolute;
+      left: 61%;
+      top: 62px;
+      width: 44px;
+      height: 42px;
+      border-left: 3px dashed var(--red);
+      border-right: 3px dashed var(--red);
+      background: #fff;
+    }
+
+    .bridge-dot {
+      position: absolute;
+      top: 72px;
+      left: 18px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 0 7px rgba(15, 95, 168, .13);
+      animation: travel 4.4s linear infinite;
+    }
+
+    .prediction-ok .bridge-gap {
+      border-color: var(--green);
+      background: rgba(13, 131, 93, .13);
+    }
+
+    .prediction-ok .bridge-dot { background: var(--green); }
+
+    @keyframes travel {
+      0% { transform: translateX(0); }
+      54% { transform: translateX(min(520px, 52vw)); }
+      64% { transform: translateX(min(520px, 52vw)); }
+      100% { transform: translateX(calc(100vw + 180px)); }
+    }
+
+    @keyframes pulseGap {
+      0%, 100% { box-shadow: 0 8px 18px rgba(31, 49, 79, .07); }
+      50% { box-shadow: 0 0 0 4px rgba(182, 61, 61, .14), 0 8px 18px rgba(31, 49, 79, .07); }
+    }
+
+    .role-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 8px;
+      padding: 18px 12px;
+    }
+
+    .role-card {
+      min-height: 104px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, .94);
+      padding: 10px;
+      display: grid;
+      gap: 6px;
+      align-content: start;
+      box-shadow: 0 8px 18px rgba(31, 49, 79, .07);
+    }
+
+    .role-card.missing {
+      border-style: dashed;
+      border-color: var(--red);
+      background: var(--soft-red);
+      animation: pulseGap 2.2s ease-in-out infinite;
+    }
+
+    .prediction-ok .role-card.missing {
+      border-style: solid;
+      border-color: var(--green);
+      background: var(--soft-green);
+      animation: none;
+    }
+
+    .role-card span:first-child {
+      color: var(--blue);
+      font-size: .74rem;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+
+    .role-card strong { line-height: 1.24; overflow-wrap: anywhere; }
+    .role-card span:last-child { color: var(--muted); font-size: .84rem; line-height: 1.35; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 340px;
+      gap: 16px;
+      align-items: start;
+      padding-top: 4px;
+      padding-bottom: 18px;
+    }
+
+    .stack { display: grid; gap: 14px; min-width: 0; }
+
+    .choices { display: grid; gap: 10px; }
+
+    .choice {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      cursor: pointer;
+      padding: 12px;
+      text-align: left;
+      line-height: 1.45;
+      font-weight: 750;
+    }
+
+    .choice:hover, .choice:focus {
+      border-color: var(--blue);
+      outline: 3px solid rgba(15, 95, 168, .14);
+    }
+
+    .choice.correct { border-color: var(--green); background: var(--soft-green); }
+    .choice.wrong { border-color: var(--red); background: var(--soft-red); }
+
+    .feedback {
+      min-height: 54px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 12px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .feedback.good { border-color: #b9e6d0; background: var(--soft-green); color: #07583a; }
+    .feedback.warn { border-color: #f0c9c9; background: var(--soft-red); color: #842a2a; }
+
+    textarea {
+      width: 100%;
+      min-height: 230px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 13px;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.55;
+    }
+
+    textarea:focus {
+      border-color: var(--blue);
+      outline: 3px solid rgba(15, 95, 168, .14);
+    }
+
+    .revision-pad { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 12px; }
+    .revision-pad textarea { min-height: 130px; margin-top: 8px; }
+
+    .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 10px; }
+
+    .button {
+      border: 0;
+      border-radius: 8px;
+      background: var(--blue);
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 13px;
+      font-weight: 900;
+    }
+
+    .button.secondary {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--blue);
+    }
+
+    .button:disabled { cursor: not-allowed; opacity: .55; }
+
+    .mini-status { color: var(--muted); font-size: .9rem; font-weight: 750; }
+
+    .scaffold { display: grid; gap: 9px; counter-reset: scaffold; }
+
+    .scaffold li {
+      list-style: none;
+      position: relative;
+      padding: 10px 10px 10px 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--muted);
+    }
+
+    .scaffold li::before {
+      counter-increment: scaffold;
+      content: counter(scaffold);
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 22px;
+      height: 22px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: var(--soft-blue);
+      color: var(--blue);
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .wordbank { display: flex; flex-wrap: wrap; gap: 8px; }
+
+    .wordbank span {
+      display: inline-flex;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      padding: 7px 10px;
+      color: #344861;
+      font-size: .9rem;
+      font-weight: 750;
+    }
+
+    .checklist { display: grid; gap: 9px; }
+
+    .checklist label {
+      display: grid;
+      grid-template-columns: 22px minmax(0, 1fr);
+      gap: 8px;
+      align-items: start;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .rubric { width: 100%; border-collapse: collapse; font-size: .92rem; }
+
+    .rubric th, .rubric td {
+      border: 1px solid var(--line);
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .rubric th { color: var(--ink); background: var(--soft-blue); }
+
+    .mistakes { display: grid; gap: 10px; }
+
+    .mistake {
+      border-left: 4px solid var(--amber);
+      background: var(--soft-amber);
+      border-radius: 8px;
+      padding: 11px;
+    }
+
+    .mistake strong { display: block; margin-bottom: 4px; color: #5f3d00; }
+
+    .revision-options { display: grid; gap: 8px; }
+
+    .revision-options label {
+      display: grid;
+      grid-template-columns: 20px minmax(0, 1fr);
+      gap: 8px;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .solution {
+      border: 1px solid #b9e6d0;
+      background: var(--soft-green);
+      border-radius: 8px;
+      padding: 14px;
+    }
+
+    .solution p { color: #184d39; }
+
+    .notice {
+      border: 1px solid #f0c36a;
+      background: #fff8e6;
+      color: #624000;
+      border-radius: 8px;
+      padding: 10px 12px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+
+    .progress-panel { display: grid; gap: 9px; }
+
+    .progress-meter {
+      height: 10px;
+      border-radius: 999px;
+      background: #dbe5f0;
+      overflow: hidden;
+    }
+
+    .progress-meter span {
+      display: block;
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--blue), var(--teal));
+      transition: width .25s ease;
+    }
+
+    .progress-list { display: grid; gap: 7px; margin: 0; padding: 0; }
+
+    .progress-list li {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 24px minmax(0, 1fr);
+      gap: 8px;
+      align-items: center;
+      color: var(--muted);
+      line-height: 1.35;
+    }
+
+    .progress-list span {
+      width: 24px;
+      height: 24px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 900;
+    }
+
+    .progress-list li.done { color: #0b6147; font-weight: 800; }
+
+    .progress-list li.done span {
+      border-color: #b9e6d0;
+      background: var(--soft-green);
+      color: var(--green);
+    }
+
+    .links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+
+    footer { padding-top: 8px; padding-bottom: 26px; }
+
+    @media (max-width: 880px) {
+      header, .layout { grid-template-columns: 1fr; }
+      header { padding-top: 14px; }
+      .role-grid { grid-template-columns: 1fr; }
+      .model-stage { min-height: auto; }
+      .bridge-line, .bridge-gap, .bridge-dot { display: none; }
+    }
+
+    @media (max-width: 520px) {
+      .site-nav, header, main, footer { padding-inline: 12px; }
+      .pad { padding: 13px; }
+      h1 { font-size: 1.62rem; }
+      .rubric { display: block; overflow-x: auto; }
+    }
+  </style>
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/deutsch/argumentation-schreiben-tipps-uebungen.html">
+</head>
+<body data-subject="Deutsch" data-grade-level="8-10" data-asset-type="guided-writing-practice" data-topic-cluster="schreibaufgaben-argumentation" data-primary-keyword="schreibaufgaben">
+  <nav class="site-nav" aria-label="Navigation">
+    <a href="/">Nachhilfe Mentor</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+    <a href="/blog/posts/argumentation-schreiben-tipps.html">Argumentation Tipps</a>
+  </nav>
+
+  <header>
+    <section>
+      <p class="kicker">Deutsch Schreibaufgaben · Draft</p>
+      <h1>Argumentation schreiben: Tipps und Übungen</h1>
+      <p class="lead">Lerne Schritt für Schritt, wie du einen überzeugenden Argumentationsabschnitt aufbaust. Erkenne zuerst die Schlussregel im Toulmin-Modell, schreibe dann deinen eigenen Text und überarbeite ihn gezielt. Es gibt keine automatische Bewertung deines Freitextes.</p>
+      <div class="meta-row" aria-label="Kurzinfos">
+        <span class="pill">Klasse 8–10</span>
+        <span class="pill">2 Stufen</span>
+        
+      </div>
+    </section>
+
+    <section class="panel prompt pad" aria-labelledby="auftrag">
+      <h2 id="auftrag">Schreibauftrag</h2>
+      <p><strong>Streitfrage:</strong> Sollten Smartphones im Unterricht erlaubt sein?</p>
+      <div class="task-list">
+        <div class="task">1. Erkenne zuerst die Schlussregel, die These und Beispiel logisch verbindet.</div>
+        <div class="task">2. Schreibe danach einen Argumentationsabschnitt mit Gegenargument und Entkräftung (120–170 Wörter).</div>
+        <div class="task">3. Prüfe deinen Text mit Checkliste und Rubrik, bevor du die Musterlösung vergleichst.</div>
+      </div>
+    </section>
+  </header>
+
+  <main class="layout">
+    <div class="stack">
+      <section class="panel pad" aria-labelledby="modell">
+        <h2 id="modell">Tipp 1: Die Argumentationsbrücke – Toulmin-Modell</h2>
+        <p>These, Begründung und Beispiel tragen erst dann, wenn die Schlussregel erklärt, warum das Beispiel die These stützt. Dieses Muster stammt aus dem Toulmin-Modell und hilft dir, deine Argumentation lückenlos aufzubauen.</p>
+        <div class="model-stage" id="modelStage" role="img" aria-label="These, Begründung, Beispiel, Schlussregel und Rückbindung bilden eine Argumentationsbrücke nach dem Toulmin-Modell.">
+          <div class="bridge-line"></div>
+          <div class="bridge-gap" aria-hidden="true"></div>
+          <div class="bridge-dot" aria-hidden="true"></div>
+          <div class="role-grid">
+            <div class="role-card">
+              <span>These</span>
+              <strong>Smartphones können das Lernen unterstützen.</strong>
+              <span>Position zur Streitfrage</span>
+            </div>
+            <div class="role-card">
+              <span>Begründung</span>
+              <strong>Lernmaterialien sind jederzeit verfügbar.</strong>
+              <span>eigenständiger Grund</span>
+            </div>
+            <div class="role-card">
+              <span>Beispiel</span>
+              <strong>Vokabeln werden per App direkt im Unterricht geübt.</strong>
+              <span>konkrete Beobachtung</span>
+            </div>
+            <div class="role-card missing">
+              <span>Schlussregel</span>
+              <strong id="warrantLabel">fehlt noch</strong>
+              <span>logische Brücke</span>
+            </div>
+            <div class="role-card">
+              <span>Rückbindung</span>
+              <strong>Deshalb steigt die Lerneffizienz.</strong>
+              <span>Folgerung zur These</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="vorhersage">
+        <h2 id="vorhersage">Stufe 1: Vorhersage – Schlussregel erkennen</h2>
+        <p><strong>These:</strong> Smartphones können das Lernen im Unterricht unterstützen.</p>
+        <p><strong>Beispiel:</strong> Vokabeln lassen sich mit einer Lern-App direkt im Unterricht üben und sofort überprüfen.</p>
+        <h3>Prüfen: Welche Satzkarte ist die passende Schlussregel?</h3>
+        <div class="choices" id="choices">
+          <button class="choice" type="button" data-kind="repeat">Smartphones im Unterricht sind sinnvoll und sollten erlaubt sein.</button>
+          <button class="choice" type="button" data-kind="evidence">Eine aktuelle Studie zeigt, dass 70 % der Schülerinnen und Schüler ihr Smartphone täglich nutzen.</button>
+          <button class="choice" type="button" data-kind="warrant">Wenn digitale Werkzeuge gezielt eingesetzt werden, kann die Lernzeit produktiver genutzt werden als ohne Hilfsmittel.</button>
+        </div>
+        <div class="feedback" id="predictionFeedback" aria-live="polite">Triff zuerst eine Vorhersage. Danach erhältst du Feedback zum genauen Argumentationsbegriff.</div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="schreiben">
+        <h2 id="schreiben">Stufe 2: Eigenen Argumentationsabschnitt schreiben</h2>
+        <p>Schreibe 120 bis 170 Wörter. Nutze mindestens ein Gegenargument und eine Entkräftung. Dein Text bleibt lokal im Browser und erhält keine automatische Note.</p>
+        <textarea id="draftText" aria-label="Eigener Argumentationsabschnitt" placeholder="Formuliere hier deinen Argumentationsabschnitt. Beginne mit deiner These, führe einen Grund aus, erkläre ein Beispiel, benenne die Schlussregel und nimm ein Gegenargument fair auf."></textarea>
+        <div class="toolbar">
+          <button class="button" type="button" id="unlockSolution" disabled>Musterlösung freischalten</button>
+          <button class="button secondary" type="button" id="clearText">Textfeld leeren</button>
+          <span class="mini-status" id="wordStatus">0 Wörter · erst Vorhersage prüfen, dann schreiben</span>
+        </div>
+      </section>
+
+      <section class="panel pad" aria-labelledby="solutionBox" id="solutionSection" hidden>
+        <h2 id="solutionBox">Musterlösung zum Vergleichen</h2>
+        <div class="solution">
+          <p>Smartphones könnten den Unterricht bereichern, wenn sie gezielt für Lernaufgaben eingesetzt werden. Ein wichtiger Grund ist, dass digitale Lernmaterialien jederzeit verfügbar sind. So lassen sich Vokabeln zum Beispiel direkt mit einer Lern-App üben und sofort überprüfen. Das zeigt, dass der Einsatz moderner Werkzeuge die Lernzeit effizienter nutzt als das reine Merken ohne Hilfsmittel. Zwar könnte man einwenden, dass Smartphones ablenken und der Fokus auf soziale Medien verlagert wird. Dieses Risiko ist berechtigt, aber es lässt sich durch klare Regeln begrenzen: Wenn Lehrkräfte den Einsatz auf bestimmte Phasen beschränken und Apps statt sozialer Netzwerke vorschreiben, bleibt der Fokus auf dem Lernen. Deshalb wäre ein geregelter Smartphone-Einsatz ein sinnvoller Schritt, der sowohl moderne Lernwege öffnet als auch die nötige Struktur wahrt.</p>
+        </div>
+      </section>
+    </div>
+
+    <aside class="stack" aria-label="Hilfen und Selbstcheck">
+      <section class="panel pad progress-panel" aria-labelledby="fortschritt">
+        <h2 id="fortschritt">Fortschritt</h2>
+        <p id="progressSummary">0 von 4 Arbeitsschritten erledigt. Starte mit der Vorhersage.</p>
+        <div class="progress-meter" aria-hidden="true"><span id="progressBar"></span></div>
+        <ol class="progress-list" id="progressList">
+          <li data-step="prediction"><span>1</span> Vorhersage prüfen</li>
+          <li data-step="writing"><span>2</span> mindestens 40 Wörter schreiben</li>
+          <li data-step="selfcheck"><span>3</span> Selbstcheck beginnen</li>
+          <li data-step="revision"><span>4</span> Revisionsfokus wählen</li>
+        </ol>
+      </section>
+
+      <section class="panel pad">
+        <h2>Tipp 2: Struktur-Scaffold</h2>
+        <ol class="scaffold">
+          <li><strong>Position:</strong> Ich vertrete die Ansicht, dass …</li>
+          <li><strong>Begründung:</strong> Ein wichtiger Grund dafür ist …</li>
+          <li><strong>Beispiel:</strong> Das zeigt sich zum Beispiel, wenn …</li>
+          <li><strong>Schlussregel:</strong> Dieses Beispiel stützt die These, weil …</li>
+          <li><strong>Gegenargument:</strong> Zwar spricht dagegen, dass …</li>
+          <li><strong>Entkräftung:</strong> Dennoch überzeugt das nur teilweise, denn …</li>
+          <li><strong>Fazit:</strong> Insgesamt ist deshalb …</li>
+        </ol>
+      </section>
+
+      <section class="panel pad">
+        <h2>Tipp 3: Wortbank</h2>
+        <div class="wordbank" aria-label="Formulierungshilfen">
+          <span>zunächst</span>
+          <span>außerdem</span>
+          <span>dies verdeutlicht</span>
+          <span>daraus folgt</span>
+          <span>zwar</span>
+          <span>dennoch</span>
+          <span>überzeugend ist</span>
+          <span>einzuwenden ist</span>
+          <span>im Ergebnis</span>
+          <span>wenn … dann</span>
+          <span>deshalb</span>
+        </div>
+      </section>
+
+      <section class="panel pad">
+        <h2>Selbstcheck</h2>
+        <div class="checklist" id="checklist">
+          <label><input type="checkbox"> Meine These ist eindeutig und passt zur Streitfrage.</label>
+          <label><input type="checkbox"> Meine Begründung nennt einen neuen Grund und wiederholt nicht nur die These.</label>
+          <label><input type="checkbox"> Mein Beispiel ist konkret genug, damit man es sich vorstellen kann.</label>
+          <label><input type="checkbox"> Meine Schlussregel erklärt, warum das Beispiel die These stützt.</label>
+          <label><input type="checkbox"> Mein Gegenargument ist fair formuliert.</label>
+          <label><input type="checkbox"> Meine Entkräftung zeigt eine Grenze des Gegenarguments.</label>
+          <label><input type="checkbox"> Mein Fazit bündelt das Ergebnis, statt die Einleitung zu kopieren.</label>
+        </div>
+      </section>
+
+      <section class="panel pad">
+        <h2>Revision</h2>
+        <p>Wähle nach dem Selbstcheck einen Schwerpunkt für die Überarbeitung.</p>
+        <div class="revision-options">
+          <label><input type="radio" name="revision" value="logik"> Logik: Schlussregel ergänzt die Brücke zwischen Beispiel und These.</label>
+          <label><input type="radio" name="revision" value="beispiel"> Beispiel: konkrete Situation statt allgemeiner Behauptung.</label>
+          <label><input type="radio" name="revision" value="gegenargument"> Gegenargument: erst fair darstellen, dann begründet entkräften.</label>
+          <label><input type="radio" name="revision" value="sprache"> Sprache: Verknüpfungen und vorsichtige Formulierungen einsetzen.</label>
+        </div>
+        <div class="feedback" id="revisionFeedback" aria-live="polite">Markiere einen Revisionsfokus, nachdem du deinen ersten Entwurf geschrieben hast.</div>
+        <div class="revision-pad">
+          <h3>Überarbeitete Fassung</h3>
+          <p>Schreibe hier zwei bis vier verbesserte Sätze aus deinem Abschnitt neu.</p>
+          <textarea id="revisionText" aria-label="Überarbeitete Fassung" placeholder="Formuliere hier deine überarbeiteten Sätze. Vergleiche: Ist die Schlussregel oder Entkräftung jetzt klarer?"></textarea>
+          <p class="mini-status" id="revisionStatus">Noch keine Überarbeitung begonnen.</p>
+        </div>
+      </section>
+    </aside>
+
+    <section class="panel pad" aria-labelledby="rubrik">
+      <h2 id="rubrik">Bewertungsraster</h2>
+      <table class="rubric">
+        <thead>
+          <tr>
+            <th>Kriterium</th>
+            <th>Stark</th>
+            <th>Noch überarbeiten</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Argumentationslogik</td>
+            <td>These, Begründung, Beispiel und Schlussregel bauen sichtbar aufeinander auf.</td>
+            <td>Ein Beispiel steht im Text, aber seine Bedeutung für die These bleibt unklar.</td>
+          </tr>
+          <tr>
+            <td>Gegenargument</td>
+            <td>Ein Einwand wird fair genannt und mit einer passenden Einschränkung entkräftet.</td>
+            <td>Der Einwand fehlt oder wird so schwach formuliert, dass die Entkräftung nicht überzeugt.</td>
+          </tr>
+          <tr>
+            <td>Sprache</td>
+            <td>Verknüpfungen zeigen die Denkschritte: weil, daher, zwar, dennoch, insgesamt.</td>
+            <td>Sätze stehen nebeneinander, ohne dass die logische Verbindung sichtbar wird.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="panel pad" aria-labelledby="fehler">
+      <h2 id="fehler">Typische Fehler und Korrektur</h2>
+      <div class="mistakes">
+        <div class="mistake">
+          <strong>Fehler: Beispiel ohne Schlussregel</strong>
+          <p>Korrektur: Ergänze nach dem Beispiel einen Satz mit „Das zeigt, dass …", der erklärt, warum das Beispiel die These stützt. Diese Schlussregel schließt die logische Lücke.</p>
+        </div>
+        <div class="mistake">
+          <strong>Fehler: Begründung wiederholt die These</strong>
+          <p>Korrektur: Frage dich, welcher neue Grund deine Position stützt. Der Grund darf nicht nur in anderen Worten dasselbe sagen wie die These.</p>
+        </div>
+        <div class="mistake">
+          <strong>Fehler: Gegenargument wird abgewertet</strong>
+          <p>Korrektur: Formuliere den Einwand so fair, dass jemand mit anderer Meinung ihn wiedererkennen würde. Entkräfte ihn danach sachlich mit einer Einschränkung oder einem stärkeren Gegengrund.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel pad" aria-labelledby="progression">
+      <h2 id="progression">Schwierigkeitsprogression</h2>
+      <p><strong>Stufe 1:</strong> Du erkennst die Schlussregel im Toulmin-Modell und bekommst direktes Feedback zum konkreten Denkfehler – Wiederholung der These, zusätzlicher Beleg oder fehlende logische Brücke.</p>
+      <p><strong>Stufe 2:</strong> Du schreibst einen eigenen Abschnitt, prüfst ihn mit Checkliste und Rubrik, überarbeitest gezielt einen Schwerpunkt und vergleichst mit der Musterlösung.</p>
+      <div class="notice">Hinweis: Diese Seite unterstützt Selbstprüfung und Revision. Sie gibt keine automatische Bewertung und keine automatische Note für offene Schreibtexte.</div>
+    </section>
+
+    <section class="panel pad" aria-labelledby="links">
+      <h2 id="links">Weiterüben</h2>
+      <div class="links">
+        <a href="/blog/posts/argumentation-schreiben-tipps.html">Weitere Tipps zur Argumentation</a>
+        <a href="/lernmaterialien/deutsch/argumentation-schreiben-tipps-uebungen.html">Argumentation schreiben üben</a>
+        <a href="/lernmaterialien/deutsch/argumentation-schreiben-tipps-uebungen.html">Interpretation üben</a>
+        <a href="/lernmaterialien/">Alle Lernmaterialien</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script>
+    const modelStage = document.getElementById("modelStage");
+    const warrantLabel = document.getElementById("warrantLabel");
+    const predictionFeedback = document.getElementById("predictionFeedback");
+    const choices = document.querySelectorAll(".choice");
+    const draftText = document.getElementById("draftText");
+    const unlockSolution = document.getElementById("unlockSolution");
+    const clearText = document.getElementById("clearText");
+    const wordStatus = document.getElementById("wordStatus");
+    const solutionSection = document.getElementById("solutionSection");
+    const checklist = document.getElementById("checklist");
+    const revisionFeedback = document.getElementById("revisionFeedback");
+    const revisionOptions = document.querySelectorAll("input[name='revision']");
+    const revisionText = document.getElementById("revisionText");
+    const revisionStatus = document.getElementById("revisionStatus");
+    const progressSummary = document.getElementById("progressSummary");
+    const progressBar = document.getElementById("progressBar");
+    const progressItems = document.querySelectorAll("#progressList li");
+    let predictionChecked = false;
+    let hasText = false;
+    let selfcheckStarted = false;
+    let revisionSelected = false;
+
+    function track(eventName, detail) {
+      if (window.dataLayer && typeof window.dataLayer.push === "function") {
+        window.dataLayer.push({ event: eventName, detail });
+      }
+    }
+
+    function wordCount() {
+      return draftText.value.trim().split(/\s+/).filter(Boolean).length;
+    }
+
+    function updateUnlockState() {
+      const words = wordCount();
+      hasText = words >= 40;
+      unlockSolution.disabled = !(predictionChecked && hasText);
+      wordStatus.textContent = words + " Wörter · " + (predictionChecked ? "Vorhersage geprüft" : "erst Vorhersage prüfen") + " · " + (hasText ? "Musterlösung bereit" : "mindestens 40 Wörter schreiben");
+      updateProgress();
+    }
+
+    function updateProgress() {
+      const states = {
+        prediction: predictionChecked,
+        writing: hasText,
+        selfcheck: selfcheckStarted,
+        revision: revisionSelected
+      };
+      const completed = Object.values(states).filter(Boolean).length;
+      progressBar.style.width = (completed * 25) + "%";
+      progressSummary.textContent = completed + " von 4 Arbeitsschritten erledigt. " + (completed < 4 ? "Nächsten Schritt bearbeiten und dann gezielt überarbeiten." : "Jetzt Musterlösung und Rubrik zum Vergleichen nutzen.");
+      progressItems.forEach(function(item) {
+        item.classList.toggle("done", Boolean(states[item.dataset.step]));
+      });
+    }
+
+    choices.forEach(function(choice) {
+      choice.addEventListener("click", function() {
+        choices.forEach(function(item) { item.classList.remove("correct", "wrong"); });
+        const kind = choice.dataset.kind;
+        predictionChecked = true;
+
+        if (kind === "warrant") {
+          choice.classList.add("correct");
+          modelStage.classList.add("prediction-ok");
+          warrantLabel.textContent = "Digitale Werkzeuge nutzen die Lernzeit effizienter.";
+          predictionFeedback.className = "feedback good";
+          predictionFeedback.textContent = "Richtig: Das ist die Schlussregel im Toulmin-Modell. Sie erklärt, warum das Beispiel die These stützt – nämlich dass gezielter Werkzeugeinsatz produktiveres Lernen ermöglicht.";
+          track("argumentation_tipps_prediction_checked", { stage: 1, result: "warrant" });
+        } else {
+          choice.classList.add("wrong");
+          modelStage.classList.remove("prediction-ok");
+          warrantLabel.textContent = "fehlt noch";
+          predictionFeedback.className = "feedback warn";
+          if (kind === "repeat") {
+            predictionFeedback.textContent = "Diese Karte wiederholt nur die These in anderen Worten. Eine Schlussregel muss die logische Brücke erklären: warum das Beispiel die These stützt, nicht nur, dass etwas gut ist.";
+          } else {
+            predictionFeedback.textContent = "Das ist ein zusätzlicher Beleg. Im Toulmin-Modell fehlt noch der Warrant – die Schlussregel, die erklärt, warum das Beispiel die These stützt, nicht nur, dass etwas häufig vorkommt.";
+          }
+          track("argumentation_tipps_prediction_checked", { stage: 1, result: kind });
+        }
+
+        updateUnlockState();
+      });
+    });
+
+    draftText.addEventListener("input", updateUnlockState);
+
+    unlockSolution.addEventListener("click", function() {
+      if (predictionChecked && hasText) {
+        solutionSection.hidden = false;
+        solutionSection.scrollIntoView({ behavior: "smooth", block: "start" });
+        track("argumentation_tipps_solution_unlocked", { stage: 2, words: wordCount() });
+      }
+    });
+
+    clearText.addEventListener("click", function() {
+      draftText.value = "";
+      revisionText.value = "";
+      revisionStatus.textContent = "Noch keine Überarbeitung begonnen.";
+      solutionSection.hidden = true;
+      updateUnlockState();
+      track("argumentation_tipps_text_cleared", { stage: 2 });
+    });
+
+    checklist.addEventListener("change", function() {
+      const checked = checklist.querySelectorAll("input:checked").length;
+      selfcheckStarted = checked > 0;
+      updateProgress();
+      track("argumentation_tipps_selfcheck_changed", { stage: 2, checked: checked });
+    });
+
+    revisionOptions.forEach(function(option) {
+      option.addEventListener("change", function() {
+        const hints = {
+          logik: "Revisionsfokus Logik: Ergänze nach deinem Beispiel einen Satz, der mit der Schlussregel die Verbindung zur These erklärt.",
+          beispiel: "Revisionsfokus Beispiel: Ersetze allgemeine Aussagen durch eine konkrete Situation aus dem Unterrichtsalltag.",
+          gegenargument: "Revisionsfokus Gegenargument: Formuliere den Einwand zuerst fair und schränke ihn danach mit einem stärkeren Grund ein.",
+          sprache: "Revisionsfokus Sprache: Nutze Verknüpfungen wie zwar, dennoch, deshalb und insgesamt, um deine Denkschritte sichtbar zu machen."
+        };
+        revisionSelected = true;
+        revisionFeedback.className = "feedback good";
+        revisionFeedback.textContent = hints[option.value];
+        updateProgress();
+        track("argumentation_tipps_revision_focus", { stage: 2, focus: option.value });
+      });
+    });
+
+    revisionText.addEventListener("input", function() {
+      const words = revisionText.value.trim().split(/\s+/).filter(Boolean).length;
+      revisionStatus.textContent = words > 0
+        ? words + " Wörter überarbeitet · vergleiche jetzt Logik, Beispiel und Entkräftung mit deiner Rohfassung."
+        : "Noch keine Überarbeitung begonnen.";
+    });
+
+    updateUnlockState();
+  </script>
+</body>
+</html>
