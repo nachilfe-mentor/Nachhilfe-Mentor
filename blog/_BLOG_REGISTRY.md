@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 246
-- Letzte Veröffentlichung: 2026-06-26
+- Gesamtzahl Artikel: 247
+- Letzte Veröffentlichung: 2026-06-27
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 247 | 2026-06-27 | aufsatz-ueberarbeiten-tipps | Aufsatz überarbeiten: Tipps, Checkliste und häufige Fehler | Aufsatz überarbeiten, Aufsatz verbessern Tipps, Aufsatz überarbeiten Checkliste, Text überarbeiten Schule, Aufsatz korrigieren Tipps | Schule & Studium | Vollständiger Leitfaden zum systematischen Überarbeiten von Schulaufsätzen. Erklärt die drei Überarbeitungsebenen: Inhalt (Aufgabenstellung, Belege, These), Struktur (Einleitung, Übergänge, Schluss) und Sprache (Satzbau, Füllwörter, Stil). 5-Schritte-Plan: Abstand nehmen, laut lesen, Checkliste durchgehen, gezielt verbessern, Rechtschreibung zuletzt. Vollständige Überarbeitungs-Checkliste mit 4 Bereichen (Inhalt, Struktur, Sprache, Formales). Häufige Fehler: zu schnell lesen, nur Rechtschreibung prüfen, nicht kritisch lesen, Schluss vernachlässigen. App-Erwähnung: gezieltes Feedback zu Inhalt und Struktur. Crosslinks zu gliederung-erstellen-tipps und stilmittel-liste-beispiele. Füllt Lücke im Schreibaufgaben-Cluster: Überarbeitungskompetenz als eigenständige Fertigkeit. |
 | 246 | 2026-06-26 | operatoren-deutsch-klausur-tipps | Operatoren im Deutschaufsatz: Was bedeuten analysieren, erörtern und interpretieren? | Operatoren Deutsch, Operatoren Deutschaufsatz, Operatoren Klausur Deutsch, analysieren erörtern interpretieren Deutsch, Aufgabenoperatoren Deutsch Schule | Schule & Studium | Erklärt alle wichtigen Operatoren im Deutschunterricht (nennen, beschreiben, analysieren, erörtern, interpretieren, bewerten, verfassen). Sortiert nach Niveau: reproduzierend, erklärend, interpretierend, wertend, gestaltend. Mit Praxistipps für die Klausur. Zielgruppe: Schülerinnen und Schüler Klasse 8-13 mit Deutschklausur. Interne Links zu Erörterung schreiben und Interpretation schreiben. |
 | 245 | 2026-06-25 | prozentrechnung-lernen-tipps | Prozentrechnung lernen: Formeln, Tipps und Übungen für Klasse 5–9 | Prozentrechnung lernen, Prozentrechnung Formel, Prozentsatz berechnen, Prozentwert berechnen, Prozentrechnung Klasse 6 7 8 | Schule & Studium | Prozentrechnung lernen für Klasse 5-9: Die drei Grundaufgaben (Prozentwert, Prozentsatz, Grundwert berechnen), die Grundformel W = G × p / 100, Kopfrechentricks, häufige Fehler und praktische Übungstipps. Mit Alltags-Beispielen wie Rabatte und Zinsen. Mathe-Cluster, ergänzt Bruchrechnung und allgemeine Mathe-Lerntipps. |
 | 244 | 2026-06-25 | buchbericht-schreiben-tipps | Buchbericht schreiben: Aufbau, Tipps und Beispiel für Klasse 5–8 | Buchbericht schreiben, Buchbericht Aufbau, Buchbericht Schule, Buchbericht schreiben Tipps, Buchbericht Beispiel Klasse 5 | Schule & Studium | Artikel erklärt den Buchbericht als häufige Schulaufgabe in Klasse 5-8: Was er ist (Zusammenfassung + Meinung), der fünfteilige Aufbau (Einleitung mit Bibliografiedaten, Inhaltsangabe im Präsens, Figurenvorstellung, persönliche Meinung, Schluss), Schritt-für-Schritt-Anleitung, häufige Fehler (Ende verraten, falsches Tempus, kein eigener Text) und Abgrenzung zu Buchvorstellung und Rezension. Mit Beispiel-Einleitung zu 'Tschick'. Interne Links zu inhaltsangabe-schreiben-tipps, rezension-schreiben-tipps, buchvorstellung-schreiben-tipps. |
@@ -1509,3 +1510,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 246)
 - operatoren-deutsch-klausur-tipps -> interpretation-schreiben-tipps (Verweis beim Operator 'interpretieren' auf den Artikel mit Aufbau und Tipps)
 - operatoren-deutsch-klausur-tipps -> eroerterung-schreiben-tipps (Verweis beim Operator 'erörtern' auf den Artikel mit Aufbau und Tipps)
+
+## Interne Verlinkungen (Artikel 247)
+- aufsatz-ueberarbeiten-tipps -> gliederung-erstellen-tipps (Verweis auf Gliederung im Abschnitt zur Strukturebene)
+- aufsatz-ueberarbeiten-tipps -> stilmittel-liste-beispiele (Verweis auf Stilmittel im Abschnitt zur Sprachebene)
+- gliederung-erstellen-tipps -> aufsatz-ueberarbeiten-tipps (Rückverlinkung am Ende: nach Gliederung und Schreiben folgt das Überarbeiten)
