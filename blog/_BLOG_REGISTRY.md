@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 247
-- Letzte Veröffentlichung: 2026-06-27
+- Gesamtzahl Artikel: 248
+- Letzte Veröffentlichung: 2026-06-28
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 248 | 2026-06-28 | rechtschreibung-verbessern-tipps | Rechtschreibung verbessern: Tipps und Übungen für Schüler | Rechtschreibung verbessern, Rechtschreibung üben Tipps, Rechtschreibung lernen Schule, Rechtschreibfehler vermeiden, bessere Rechtschreibung Schüler | Schule & Studium | Artikel über das Verbessern der Rechtschreibung für Schüler aller Klassen. Erklärt die häufigsten Fehlerquellen (ss/ß, das/dass, Groß-Kleinschreibung, Fremdwörter), bietet praktische Übungsmethoden (Fehleranalyse, Diktate, Abschreiben, Karteikarten) und einen Wochenplan. Empfiehlt die Nachhilfe Mentor App für gezieltes Feedback. Interner Link zu aufsatz-ueberarbeiten-tipps. |
 | 247 | 2026-06-27 | aufsatz-ueberarbeiten-tipps | Aufsatz überarbeiten: Tipps, Checkliste und häufige Fehler | Aufsatz überarbeiten, Aufsatz verbessern Tipps, Aufsatz überarbeiten Checkliste, Text überarbeiten Schule, Aufsatz korrigieren Tipps | Schule & Studium | Vollständiger Leitfaden zum systematischen Überarbeiten von Schulaufsätzen. Erklärt die drei Überarbeitungsebenen: Inhalt (Aufgabenstellung, Belege, These), Struktur (Einleitung, Übergänge, Schluss) und Sprache (Satzbau, Füllwörter, Stil). 5-Schritte-Plan: Abstand nehmen, laut lesen, Checkliste durchgehen, gezielt verbessern, Rechtschreibung zuletzt. Vollständige Überarbeitungs-Checkliste mit 4 Bereichen (Inhalt, Struktur, Sprache, Formales). Häufige Fehler: zu schnell lesen, nur Rechtschreibung prüfen, nicht kritisch lesen, Schluss vernachlässigen. App-Erwähnung: gezieltes Feedback zu Inhalt und Struktur. Crosslinks zu gliederung-erstellen-tipps und stilmittel-liste-beispiele. Füllt Lücke im Schreibaufgaben-Cluster: Überarbeitungskompetenz als eigenständige Fertigkeit. |
 | 246 | 2026-06-26 | operatoren-deutsch-klausur-tipps | Operatoren im Deutschaufsatz: Was bedeuten analysieren, erörtern und interpretieren? | Operatoren Deutsch, Operatoren Deutschaufsatz, Operatoren Klausur Deutsch, analysieren erörtern interpretieren Deutsch, Aufgabenoperatoren Deutsch Schule | Schule & Studium | Erklärt alle wichtigen Operatoren im Deutschunterricht (nennen, beschreiben, analysieren, erörtern, interpretieren, bewerten, verfassen). Sortiert nach Niveau: reproduzierend, erklärend, interpretierend, wertend, gestaltend. Mit Praxistipps für die Klausur. Zielgruppe: Schülerinnen und Schüler Klasse 8-13 mit Deutschklausur. Interne Links zu Erörterung schreiben und Interpretation schreiben. |
 | 245 | 2026-06-25 | prozentrechnung-lernen-tipps | Prozentrechnung lernen: Formeln, Tipps und Übungen für Klasse 5–9 | Prozentrechnung lernen, Prozentrechnung Formel, Prozentsatz berechnen, Prozentwert berechnen, Prozentrechnung Klasse 6 7 8 | Schule & Studium | Prozentrechnung lernen für Klasse 5-9: Die drei Grundaufgaben (Prozentwert, Prozentsatz, Grundwert berechnen), die Grundformel W = G × p / 100, Kopfrechentricks, häufige Fehler und praktische Übungstipps. Mit Alltags-Beispielen wie Rabatte und Zinsen. Mathe-Cluster, ergänzt Bruchrechnung und allgemeine Mathe-Lerntipps. |
@@ -1515,3 +1516,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - aufsatz-ueberarbeiten-tipps -> gliederung-erstellen-tipps (Verweis auf Gliederung im Abschnitt zur Strukturebene)
 - aufsatz-ueberarbeiten-tipps -> stilmittel-liste-beispiele (Verweis auf Stilmittel im Abschnitt zur Sprachebene)
 - gliederung-erstellen-tipps -> aufsatz-ueberarbeiten-tipps (Rückverlinkung am Ende: nach Gliederung und Schreiben folgt das Überarbeiten)
+
+## Interne Verlinkungen (Artikel 248)
+- rechtschreibung-verbessern-tipps -> aufsatz-ueberarbeiten-tipps (Verlinkung im Abschnitt Flüchtigkeitsfehler vermeiden)
+- deutsch-grammatik-lernen-tipps -> rechtschreibung-verbessern-tipps (Rückverlinkung im Fazit des Grammatik-Artikels bereits gesetzt)
