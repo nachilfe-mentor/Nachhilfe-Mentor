@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Phrasenstruktur und Syntaxbäume im Deutschen üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Baue interaktiv Syntaxbäume auf: Zerlege Sätze in NP und VP, sage Phrasen voraus und verstehe die Phrasenstruktur im Deutschen. Klasse 10-13, Abitur.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Phrasenstruktur, Syntaxbaum, Nominalphrase, Verbalphrase, Phrasenstrukturgrammatik, Konstituentenstruktur">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/phrasenstruktur-syntaxbaum-deutsch-simulation.html">
+  <meta property="og:title" content="Phrasenstruktur und Syntaxbäume im Deutschen üben">
+  <meta property="og:description" content="Baue interaktiv Syntaxbäume auf: Zerlege Sätze in NP und VP, sage Phrasen voraus und verstehe die Phrasenstruktur im Deutschen. Klasse 10-13, Abitur.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/phrasenstruktur-syntaxbaum-deutsch-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Phrasenstruktur und Syntaxbäume im Deutschen üben",
+  "description":"Baue interaktiv Syntaxbäume auf: Zerlege Sätze in NP und VP, sage Phrasen voraus und verstehe die Phrasenstruktur im Deutschen. Klasse 10-13, Abitur.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/phrasenstruktur-syntaxbaum-deutsch-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'page_view',
+      asset_type: 'simulation',
+      topic_cluster: 'sprachen'
+    });
+  </script>
+
+  <style>
+    :root {
+      --ink:      #172033;
+      --muted:    #617087;
+      --line:     #d8e1ed;
+      --blue:     #0f5fa8;
+      --blue-lt:  #e8f0fb;
+      --green:    #0b8f6a;
+      --green-lt: #e3f5ef;
+      --amber:    #b87700;
+      --amber-lt: #fef6e0;
+      --red:      #b5281e;
+      --red-lt:   #fdeaea;
+      --bg:       #f5f8fc;
+      --panel:    #ffffff;
+      --np-color:    #1d4ed8;
+      --vp-color:    #16a34a;
+      --det-color:   #7c3aed;
+      --n-color:     #b45309;
+      --v-color:     #0891b2;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    .site-header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .site-logo { font-weight: 700; font-size: 0.95rem; color: var(--blue); text-decoration: none; }
+    .breadcrumb { font-size: 0.8rem; color: var(--muted); }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .badge-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .badge {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; padding: 3px 10px; border-radius: 4px;
+      background: var(--blue-lt); color: var(--blue);
+    }
+
+    h1 {
+      font-size: clamp(1.35rem, 3.5vw, 1.85rem);
+      font-weight: 700; letter-spacing: -0.02em;
+      color: var(--ink); margin-bottom: 0.5rem;
+    }
+    .subtitle { font-size: 0.95rem; color: var(--muted); margin-bottom: 2rem; }
+
+    /* Progress bar */
+    .progress-bar {
+      display: flex; gap: 8px; margin-bottom: 2rem;
+    }
+    .progress-step {
+      flex: 1; height: 5px; border-radius: 3px;
+      background: var(--line); transition: background 0.35s;
+    }
+    .progress-step.done   { background: var(--green); }
+    .progress-step.active { background: var(--blue); }
+
+    /* Stage sections */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem 1.5rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .card h2 { font-size: 1.05rem; font-weight: 700; margin-bottom: 0.6rem; }
+    .card p { color: var(--muted); font-size: 0.93rem; line-height: 1.55; }
+    .card p + p { margin-top: 0.6rem; }
+
+    /* Step label */
+    .step-label {
+      font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.07em; color: var(--muted); margin-bottom: 0.5rem;
+    }
+
+    /* Sentence display */
+    .sentence-display {
+      font-size: 1.3rem; font-weight: 700;
+      text-align: center; padding: 1rem 0;
+      letter-spacing: 0.01em; color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .word-np  { color: var(--np-color); }
+    .word-vp  { color: var(--vp-color); }
+    .word-det { color: var(--det-color); }
+    .word-n   { color: var(--n-color); }
+    .word-v   { color: var(--v-color); }
+
+    /* Canvas */
+    .canvas-wrap {
+      display: flex; justify-content: center;
+      background: #fff; border: 1px solid var(--line);
+      border-radius: 10px; padding: 1rem 0.5rem;
+      margin-bottom: 1.25rem; overflow: hidden;
+    }
+    canvas {
+      display: block;
+      width: 100%; max-width: 560px;
+      height: auto;
+    }
+
+    /* Task question */
+    .task-question {
+      font-size: 1rem; font-weight: 600;
+      color: var(--ink); margin-bottom: 1rem; line-height: 1.4;
+    }
+
+    /* Option buttons */
+    .options-row {
+      display: flex; flex-wrap: wrap; gap: 10px;
+      margin-bottom: 1rem;
+    }
+    .option-btn {
+      padding: 9px 18px;
+      border: 2px solid var(--line);
+      border-radius: 8px; background: var(--panel);
+      color: var(--ink); font-size: 0.9rem; font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .option-btn:hover { border-color: var(--blue); background: var(--blue-lt); color: var(--blue); }
+    .option-btn.correct { border-color: var(--green); background: var(--green-lt); color: var(--green); cursor: default; }
+    .option-btn.wrong   { border-color: var(--red);   background: var(--red-lt);   color: var(--red);   cursor: default; }
+    .option-btn.disabled { pointer-events: none; opacity: 0.5; }
+
+    /* Feedback */
+    .feedback-box {
+      display: none; padding: 14px 18px;
+      border-radius: 9px; margin-top: 1rem;
+      font-size: 0.92rem; line-height: 1.55;
+    }
+    .feedback-box.correct  { display: block; background: var(--green-lt); border: 1px solid #9bd4bc; }
+    .feedback-box.wrong    { display: block; background: var(--amber-lt); border: 1px solid #e8c84a; }
+    .feedback-box p + p    { margin-top: 0.5rem; }
+
+    /* concept-tag */
+    .concept-tag {
+      display: inline-block; font-size: 0.72rem; font-weight: 700;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      background: var(--blue-lt); color: var(--blue);
+      border-radius: 4px; padding: 2px 8px; margin: 0 2px 2px 0;
+    }
+
+    /* Next button */
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 11px 26px;
+      background: var(--blue); color: #fff;
+      border: none; border-radius: 8px;
+      font-size: 0.9rem; font-weight: 600;
+      cursor: pointer; margin-top: 1.25rem;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #0a4d8a; }
+    .btn-primary.hidden { display: none !important; }
+
+    /* Legend */
+    .legend {
+      display: flex; flex-wrap: wrap; gap: 0.75rem;
+      margin-bottom: 1rem; font-size: 0.82rem;
+    }
+    .legend-item {
+      display: flex; align-items: center; gap: 5px;
+    }
+    .legend-dot {
+      width: 12px; height: 12px; border-radius: 50%;
+      display: inline-block; flex-shrink: 0;
+    }
+
+    /* Summary */
+    .summary-table {
+      width: 100%; border-collapse: collapse;
+      font-size: 0.88rem; margin-top: 0.75rem;
+    }
+    .summary-table th {
+      text-align: left; padding: 6px 10px;
+      background: var(--blue-lt); color: var(--blue);
+      font-size: 0.78rem; text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .summary-table td { padding: 7px 10px; border-bottom: 1px solid var(--line); }
+    .summary-table code {
+      background: var(--bg); border-radius: 3px;
+      padding: 1px 5px; font-size: 0.85em;
+      font-family: "Fira Mono", "Courier New", monospace;
+    }
+
+    /* Responsive */
+    @media (max-width: 440px) {
+      .options-row { flex-direction: column; }
+      .option-btn { max-width: 100%; }
+      .card { padding: 1.1rem 1rem 1rem; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header class="site-header">
+    <a class="site-logo" href="/">Nachhilfe Mentor</a>
+    <span class="breadcrumb">&#8250; Sprache &amp; Linguistik &#8250; Syntaxbäume</span>
+  </header>
+
+  <main>
+    <div class="badge-row">
+      <span class="badge">Klasse 10–13</span>
+      <span class="badge">Linguistik</span>
+      <span class="badge">Phrasenstruktur</span>
+    </div>
+
+    <h1>Phrasenstruktur: Syntaxbäume im Deutschen</h1>
+    <p class="subtitle">Simulation mit 2 Stufen · Sätze hierarchisch zerlegen · Baumstruktur selbst aufbauen</p>
+
+    <!-- Progress -->
+    <div class="progress-bar">
+      <div class="progress-step active" id="step1"></div>
+      <div class="progress-step" id="step2"></div>
+    </div>
+
+    <!-- ====================================================
+         STAGE 1 – S → NP VP  ("Der Hund schläft.")
+         ==================================================== -->
+    <div class="stage active" id="stage1">
+      <p class="step-label">Stufe 1 von 2 &mdash; Vorhersage</p>
+
+      <div class="card">
+        <h2>Satz in Phrasen zerlegen</h2>
+        <p>
+          Sätze bestehen nicht einfach aus einer Wortreihung – sie haben eine
+          <strong>hierarchische Struktur</strong>. Der Satz (S) besteht aus einer
+          <strong>Nominalphrase (NP)</strong> und einer <strong>Verbalphrase (VP)</strong>.
+        </p>
+      </div>
+
+      <div class="card">
+        <!-- Sentence -->
+        <div class="sentence-display" id="sent1">
+          Der &nbsp; Hund &nbsp; schläft.
+        </div>
+
+        <!-- Canvas – Syntaxbaum wächst animiert -->
+        <div class="canvas-wrap">
+          <canvas id="canvas1" width="560" height="240" aria-label="Animierter Syntaxbaum für 'Der Hund schläft'"></canvas>
+        </div>
+
+        <!-- Frage 1a -->
+        <div id="q1a">
+          <p class="task-prompt" style="font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:1rem;">
+            Vorhersage: „Der Hund" ist eine …?
+          </p>
+          <div class="options-row">
+            <button class="option-btn" onclick="checkQ1a('NP', this)">NP – Nominalphrase</button>
+            <button class="option-btn" onclick="checkQ1a('VP', this)">VP – Verbalphrase</button>
+            <button class="option-btn" onclick="checkQ1a('PP', this)">PP – Präpositionalphrase</button>
+            <button class="option-btn" onclick="checkQ1a('S', this)">S – Satz</button>
+          </div>
+          <div class="feedback-box" id="fb1a"></div>
+        </div>
+
+        <!-- Frage 1b (initial hidden) -->
+        <div id="q1b" style="display:none; margin-top:1.5rem;">
+          <p class="task-prompt" style="font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:1rem;">
+            Vorhersage: „schläft" bildet eine …?
+          </p>
+          <div class="options-row">
+            <button class="option-btn" onclick="checkQ1b('VP', this)">VP – Verbalphrase</button>
+            <button class="option-btn" onclick="checkQ1b('NP', this)">NP – Nominalphrase</button>
+            <button class="option-btn" onclick="checkQ1b('AdjP', this)">AdjP – Adjektivphrase</button>
+            <button class="option-btn" onclick="checkQ1b('S', this)">S – Satz</button>
+          </div>
+          <div class="feedback-box" id="fb1b"></div>
+        </div>
+
+        <button class="btn-primary hidden" id="btnNext1" onclick="toStage2()">
+          Weiter zu Stufe 2 &#8594;
+        </button>
+      </div>
+    </div>
+
+    <!-- ====================================================
+         STAGE 2 – NP → Det N / VP → V NP  ("Die Lehrerin liest das Buch.")
+         ==================================================== -->
+    <div class="stage" id="stage2">
+      <p class="step-label">Stufe 2 von 2 &mdash; Tiefere Phrasenstruktur</p>
+
+      <div class="card">
+        <h2>Was steckt in der NP und VP?</h2>
+        <p>
+          Du kennst jetzt die oberste Ebene: S &#8594; NP + VP.
+          Nun schauen wir <em>tiefer</em>: Aus was besteht die NP intern?
+          Und was enthält die VP außer dem Verb?
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="sentence-display" id="sent2">
+          Die &nbsp; Lehrerin &nbsp; liest &nbsp; das &nbsp; Buch.
+        </div>
+
+        <div class="canvas-wrap">
+          <canvas id="canvas2" width="560" height="300" aria-label="Animierter Syntaxbaum für 'Die Lehrerin liest das Buch'"></canvas>
+        </div>
+
+        <!-- Farbliche Legende -->
+        <div class="legend">
+          <span class="legend-item"><span class="legend-dot" style="background:#1d4ed8"></span> NP (Nominalphrase)</span>
+          <span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span> VP (Verbalphrase)</span>
+          <span class="legend-item"><span class="legend-dot" style="background:#7c3aed"></span> Det (Artikel)</span>
+          <span class="legend-item"><span class="legend-dot" style="background:#b45309"></span> N (Nomen)</span>
+          <span class="legend-item"><span class="legend-dot" style="background:#0891b2"></span> V (Verb)</span>
+        </div>
+
+        <!-- Frage 2a -->
+        <div id="q2a">
+          <p class="task-prompt" style="font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:1rem;">
+            Vorhersage: Die NP „Die Lehrerin" besteht intern aus …?
+          </p>
+          <div class="options-row">
+            <button class="option-btn" onclick="checkQ2a('Det+N', this)">Det + N (Artikel + Nomen)</button>
+            <button class="option-btn" onclick="checkQ2a('V+NP', this)">V + NP (Verb + NP)</button>
+            <button class="option-btn" onclick="checkQ2a('Adj+N', this)">Adj + N (Adjektiv + Nomen)</button>
+            <button class="option-btn" onclick="checkQ2a('P+NP', this)">P + NP (Präposition + NP)</button>
+          </div>
+          <div class="feedback-box" id="fb2a"></div>
+        </div>
+
+        <!-- Frage 2b -->
+        <div id="q2b" style="display:none; margin-top:1.5rem;">
+          <p class="task-prompt" style="font-size:1rem;font-weight:600;color:var(--ink);margin-bottom:1rem;">
+            Vorhersage: VP „liest das Buch" besteht aus …?
+          </p>
+          <div class="options-row">
+            <button class="option-btn" onclick="checkQ2b('V+NP', this)">V + NP (Verb + Nominalphrase)</button>
+            <button class="option-btn" onclick="checkQ2b('V+VP', this)">V + VP (Verb + Verbalphrase)</button>
+            <button class="option-btn" onclick="checkQ2b('Det+N', this)">Det + N (Artikel + Nomen)</button>
+            <button class="option-btn" onclick="checkQ2b('NP+VP', this)">NP + VP (Nominalphrase + VP)</button>
+          </div>
+          <div class="feedback-box" id="fb2b"></div>
+        </div>
+
+        <button class="btn-primary hidden" id="btnFinish" onclick="showSummary()">
+          Zusammenfassung ansehen &#8594;
+        </button>
+      </div>
+    </div>
+
+    <!-- SUMMARY (always in DOM, hidden initially) -->
+    <div class="stage" id="stageSummary">
+      <div class="card">
+        <h2>Zusammenfassung: Phrasenstrukturgrammatik</h2>
+        <p>Die <strong>Phrasenstrukturgrammatik</strong> (nach Chomsky 1957/1965) beschreibt
+          Sätze nicht als Wortreihen, sondern als hierarchische Einheiten – sichtbar im
+          <strong>Syntaxbaum</strong>.</p>
+
+        <table class="summary-table">
+          <thead>
+            <tr><th>Regel</th><th>Bedeutung</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>S &#8594; NP VP</code></td><td>Satz = Nominalphrase + Verbalphrase</td></tr>
+            <tr><td><code>NP &#8594; Det N</code></td><td>Nominalphrase = Artikel + Nomen</td></tr>
+            <tr><td><code>VP &#8594; V NP</code></td><td>Verbalphrase = Verb + Nominalphrase</td></tr>
+            <tr><td><code>VP &#8594; V</code></td><td>Verbalphrase = nur Verb (intransitiv)</td></tr>
+          </tbody>
+        </table>
+
+        <p style="margin-top:1rem;">
+          <strong>Wichtiger Unterschied:</strong> Grammatische <em>Kategorien</em> (NP, VP) &ne;
+          grammatische <em>Funktionen</em> (Subjekt, Objekt). Die NP „Die Lehrerin" ist die
+          Kategorie; ihre Funktion ist das Subjekt.
+        </p>
+        <p style="margin-top:0.6rem;">
+          <span class="concept-tag">Phrasenstrukturgrammatik</span>
+          <span class="concept-tag">Syntaxbaum</span>
+          <span class="concept-tag">Phrasenstruktur</span>
+          <span class="concept-tag">Konstituentenstruktur</span>
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // ──────────────────────────────────────────────────────────
+    // CANVAS 1: "Der Hund schläft." – S → NP VP
+    // ──────────────────────────────────────────────────────────
+    var c1 = document.getElementById('canvas1');
+    var ctx1 = c1.getContext('2d');
+    var tree1Phase = 0; // 0=S only, 1=+NP+VP, 2=+leaves
+    var raf1 = null;
+    var t1 = 0;
+
+    var NODES1 = {
+      S:   { x: 0.5,  y: 0.12, label: 'S',        color: '#172033',       phase: 0 },
+      NP:  { x: 0.27, y: 0.40, label: 'NP',       color: '#1d4ed8',       phase: 1 },
+      VP:  { x: 0.73, y: 0.40, label: 'VP',       color: '#16a34a',       phase: 1 },
+      Det: { x: 0.12, y: 0.70, label: 'Det',      color: '#7c3aed',       phase: 2 },
+      N:   { x: 0.42, y: 0.70, label: 'N',        color: '#b45309',       phase: 2 },
+      V:   { x: 0.73, y: 0.70, label: 'V',        color: '#0891b2',       phase: 2 },
+      Der: { x: 0.12, y: 0.93, label: 'Der',      color: '#7c3aed',       phase: 2 },
+      Hund:{ x: 0.42, y: 0.93, label: 'Hund',     color: '#b45309',       phase: 2 },
+      schlF:{ x: 0.73, y: 0.93, label: 'schläft', color: '#0891b2',       phase: 2 }
+    };
+
+    var EDGES1 = [
+      { from: 'S', to: 'NP',   phase: 1 },
+      { from: 'S', to: 'VP',   phase: 1 },
+      { from: 'NP', to: 'Det', phase: 2 },
+      { from: 'NP', to: 'N',   phase: 2 },
+      { from: 'VP', to: 'V',   phase: 2 },
+      { from: 'Det', to: 'Der', phase: 2 },
+      { from: 'N', to: 'Hund', phase: 2 },
+      { from: 'V', to: 'schlF', phase: 2 }
+    ];
+
+    function getCoord(node, W, H, padX, padY) {
+      return {
+        x: padX + node.x * (W - 2 * padX),
+        y: padY + node.y * (H - 2 * padY)
+      };
+    }
+
+    function drawTree(ctx, W, H, nodes, edges, phase, padX, padY, leafItalic) {
+      ctx.clearRect(0, 0, W, H);
+
+      // Draw edges
+      edges.forEach(function(e) {
+        if (e.phase > phase) return;
+        var from = nodes[e.from];
+        var to   = nodes[e.to];
+        var fp = getCoord(from, W, H, padX, padY);
+        var tp = getCoord(to, W, H, padX, padY);
+        ctx.beginPath();
+        ctx.moveTo(fp.x, fp.y + 14);
+        ctx.lineTo(tp.x, tp.y - 14);
+        ctx.strokeStyle = '#94a3b8';
+        ctx.lineWidth = 1.8;
+        ctx.stroke();
+      });
+
+      // Draw nodes
+      Object.keys(nodes).forEach(function(key) {
+        var node = nodes[key];
+        if (node.phase > phase) return;
+        var p = getCoord(node, W, H, padX, padY);
+        var isLeaf = ['Der', 'Hund', 'schlF', 'die_', 'lehr_', 'liest_', 'das_', 'buch_'].includes(key);
+
+        if (isLeaf) {
+          // Leaf: word in italic
+          ctx.font = 'italic 700 13px sans-serif';
+          ctx.fillStyle = node.color;
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(node.label, p.x, p.y);
+        } else {
+          // Inner node: circle
+          ctx.beginPath();
+          ctx.arc(p.x, p.y, 14, 0, Math.PI * 2);
+          ctx.fillStyle = node.color;
+          ctx.fill();
+          ctx.fillStyle = '#fff';
+          ctx.font = 'bold 11px sans-serif';
+          ctx.textAlign = 'center';
+          ctx.textBaseline = 'middle';
+          ctx.fillText(node.label, p.x, p.y);
+        }
+      });
+    }
+
+    // Animated draw: progress from phase 0 → current tree1Phase with fade
+    var tree1AnimPhase = 0; // float 0→1→2 for smooth transitions
+    function animTree1(now) {
+      var W = c1.width, H = c1.height;
+      var padX = 30, padY = 16;
+
+      // Step toward target phase
+      if (tree1AnimPhase < tree1Phase) {
+        tree1AnimPhase = Math.min(tree1AnimPhase + 0.03, tree1Phase);
+      }
+      var showPhase = Math.floor(tree1AnimPhase);
+
+      drawTree(ctx1, W, H, NODES1, EDGES1, showPhase, padX, padY, true);
+      raf1 = requestAnimationFrame(animTree1);
+    }
+    raf1 = requestAnimationFrame(animTree1);
+
+    // ──────────────────────────────────────────────────────────
+    // CANVAS 2: "Die Lehrerin liest das Buch." – S → NP VP
+    //           NP → Det N  /  VP → V NP  /  NP → Det N
+    // ──────────────────────────────────────────────────────────
+    var c2 = document.getElementById('canvas2');
+    var ctx2 = c2.getContext('2d');
+    var tree2Phase = 1; // start with S+NP+VP pre-drawn
+    var raf2 = null;
+
+    var NODES2 = {
+      S:    { x: 0.50, y: 0.08, label: 'S',         color: '#172033',  phase: 1 },
+      NP1:  { x: 0.22, y: 0.28, label: 'NP',        color: '#1d4ed8',  phase: 1 },
+      VP:   { x: 0.70, y: 0.28, label: 'VP',        color: '#16a34a',  phase: 1 },
+      Det1: { x: 0.10, y: 0.52, label: 'Det',       color: '#7c3aed',  phase: 2 },
+      N1:   { x: 0.34, y: 0.52, label: 'N',         color: '#b45309',  phase: 2 },
+      V2:   { x: 0.56, y: 0.52, label: 'V',         color: '#0891b2',  phase: 3 },
+      NP2:  { x: 0.82, y: 0.52, label: 'NP',        color: '#1d4ed8',  phase: 3 },
+      Det2: { x: 0.74, y: 0.74, label: 'Det',       color: '#7c3aed',  phase: 3 },
+      N2:   { x: 0.90, y: 0.74, label: 'N',         color: '#b45309',  phase: 3 },
+      // Leaf words
+      die_: { x: 0.10, y: 0.78, label: 'Die',       color: '#7c3aed',  phase: 2 },
+      lehr_:{ x: 0.34, y: 0.78, label: 'Lehrerin',  color: '#b45309',  phase: 2 },
+      liest_:{ x: 0.56, y: 0.78, label: 'liest',    color: '#0891b2',  phase: 3 },
+      das_: { x: 0.74, y: 0.93, label: 'das',       color: '#7c3aed',  phase: 3 },
+      buch_:{ x: 0.90, y: 0.93, label: 'Buch',      color: '#b45309',  phase: 3 }
+    };
+
+    var EDGES2 = [
+      { from: 'S',   to: 'NP1',  phase: 1 },
+      { from: 'S',   to: 'VP',   phase: 1 },
+      { from: 'NP1', to: 'Det1', phase: 2 },
+      { from: 'NP1', to: 'N1',   phase: 2 },
+      { from: 'Det1',to: 'die_', phase: 2 },
+      { from: 'N1',  to: 'lehr_',phase: 2 },
+      { from: 'VP',  to: 'V2',   phase: 3 },
+      { from: 'VP',  to: 'NP2',  phase: 3 },
+      { from: 'V2',  to: 'liest_',phase: 3 },
+      { from: 'NP2', to: 'Det2', phase: 3 },
+      { from: 'NP2', to: 'N2',   phase: 3 },
+      { from: 'Det2',to: 'das_', phase: 3 },
+      { from: 'N2',  to: 'buch_',phase: 3 }
+    ];
+
+    var tree2AnimPhase = 1;
+    function animTree2(now) {
+      var W = c2.width, H = c2.height;
+      var padX = 24, padY = 14;
+
+      if (tree2AnimPhase < tree2Phase) {
+        tree2AnimPhase = Math.min(tree2AnimPhase + 0.025, tree2Phase);
+      }
+      var showPhase = Math.floor(tree2AnimPhase);
+
+      drawTree(ctx2, W, H, NODES2, EDGES2, showPhase, padX, padY, true);
+      raf2 = requestAnimationFrame(animTree2);
+    }
+    raf2 = requestAnimationFrame(animTree2);
+
+    // ──────────────────────────────────────────────────────────
+    // STAGE 1 LOGIC
+    // ──────────────────────────────────────────────────────────
+    var q1aDone = false;
+    var q1bDone = false;
+
+    function disableBtns(containerSel) {
+      document.querySelectorAll(containerSel + ' .option-btn').forEach(function(b) {
+        b.classList.add('disabled');
+      });
+    }
+
+    function checkQ1a(choice, btn) {
+      if (q1aDone) return;
+      q1aDone = true;
+      disableBtns('#q1a');
+      var fb = document.getElementById('fb1a');
+
+      if (choice === 'NP') {
+        btn.classList.add('correct');
+        fb.className = 'feedback-box correct';
+        fb.innerHTML = '<p><strong>Richtig!</strong> „Der Hund" ist eine <strong>Nominalphrase (NP)</strong> – '
+          + 'eine Phrase, die von einem Nomen angeführt wird. Ihr Kern ist <em>Hund</em>, davor steht der Artikel <em>Der</em>.</p>'
+          + '<p><span class="concept-tag">Phrasenstruktur</span> Regel: NP &#8594; Det N</p>';
+        tree1Phase = 1; // Animate NP+VP into tree
+        setTimeout(function() {
+          document.getElementById('q1b').style.display = 'block';
+        }, 600);
+      } else {
+        btn.classList.add('wrong');
+        fb.className = 'feedback-box wrong';
+        var msgs = {
+          VP: '„Der Hund" enthält kein Verb und ist damit keine Verbalphrase. VP steht für Verb-Phrase – sie wird vom Verb angeführt.',
+          PP: 'Eine Präpositionalphrase (PP) beginnt mit einer Präposition (z. B. <em>in, auf, mit</em>). Hier ist keine Präposition.',
+          S:  '„Der Hund" allein ist kein vollständiger Satz – ein Satz (S) braucht mindestens NP + VP.'
+        };
+        fb.innerHTML = '<p><strong>Noch nicht ganz.</strong> ' + msgs[choice] + '</p>'
+          + '<p>Die Einheit „Der Hund" ist eine <strong>Nominalphrase (NP)</strong>: '
+          + 'Sie wird von einem Nomen (Hund) angeführt, davor steht der Artikel (Det). '
+          + '<span class="concept-tag">Phrasenstruktur</span></p>';
+        tree1Phase = 1;
+        setTimeout(function() {
+          document.getElementById('q1b').style.display = 'block';
+        }, 600);
+      }
+      window.dataLayer.push({ event: 'simulation_answer', stage: 1, question: 'q1a', correct: choice === 'NP' });
+    }
+
+    function checkQ1b(choice, btn) {
+      if (q1bDone) return;
+      q1bDone = true;
+      disableBtns('#q1b');
+      var fb = document.getElementById('fb1b');
+
+      if (choice === 'VP') {
+        btn.classList.add('correct');
+        fb.className = 'feedback-box correct';
+        fb.innerHTML = '<p><strong>Genau!</strong> „schläft" ist eine <strong>Verbalphrase (VP)</strong> – '
+          + 'bei einem intransitiven Verb wie <em>schlafen</em> besteht die VP nur aus dem Verb allein: VP &#8594; V.</p>'
+          + '<p>Der vollständige Baum oben ist jetzt sichtbar: S &#8594; NP + VP. '
+          + '<span class="concept-tag">Phrasenstrukturgrammatik</span></p>';
+        tree1Phase = 2;
+      } else {
+        btn.classList.add('wrong');
+        fb.className = 'feedback-box wrong';
+        fb.innerHTML = '<p><strong>Noch nicht ganz.</strong> „schläft" ist ein Verb – also gehört es zur '
+          + '<strong>Verbalphrase (VP)</strong>. Die VP wird immer vom Verb angeführt. '
+          + 'Regel: VP &#8594; V (bei intransitiven Verben ohne Objekt). '
+          + '<span class="concept-tag">Phrasenstrukturgrammatik</span></p>';
+        tree1Phase = 2;
+      }
+
+      document.getElementById('btnNext1').classList.remove('hidden');
+      window.dataLayer.push({ event: 'simulation_answer', stage: 1, question: 'q1b', correct: choice === 'VP' });
+    }
+
+    // ──────────────────────────────────────────────────────────
+    // STAGE 2 LOGIC
+    // ──────────────────────────────────────────────────────────
+    var q2aDone = false;
+    var q2bDone = false;
+
+    function checkQ2a(choice, btn) {
+      if (q2aDone) return;
+      q2aDone = true;
+      disableBtns('#q2a');
+      var fb = document.getElementById('fb2a');
+
+      if (choice === 'Det+N') {
+        btn.classList.add('correct');
+        fb.className = 'feedback-box correct';
+        fb.innerHTML = '<p><strong>Richtig!</strong> Die NP „Die Lehrerin" besteht aus '
+          + '<strong>Det</strong> (= <em>Die</em>) + <strong>N</strong> (= <em>Lehrerin</em>). '
+          + 'Regel: NP &#8594; Det N. Der Baum zeigt jetzt den NP-Ast ausgebaut.</p>'
+          + '<p><span class="concept-tag">Phrasenstruktur</span></p>';
+        tree2Phase = 2;
+        setTimeout(function() {
+          document.getElementById('q2b').style.display = 'block';
+        }, 700);
+      } else {
+        btn.classList.add('wrong');
+        fb.className = 'feedback-box wrong';
+        fb.innerHTML = '<p><strong>Noch nicht ganz.</strong> '
+          + 'Die NP „Die Lehrerin" besteht aus zwei Teilen: dem Artikel <em>Die</em> (= Determiner, Det) '
+          + 'und dem Nomen <em>Lehrerin</em> (= N). Regel: NP &#8594; Det N. '
+          + '<span class="concept-tag">Phrasenstruktur</span></p>';
+        tree2Phase = 2;
+        setTimeout(function() {
+          document.getElementById('q2b').style.display = 'block';
+        }, 700);
+      }
+      window.dataLayer.push({ event: 'simulation_answer', stage: 2, question: 'q2a', correct: choice === 'Det+N' });
+    }
+
+    function checkQ2b(choice, btn) {
+      if (q2bDone) return;
+      q2bDone = true;
+      disableBtns('#q2b');
+      var fb = document.getElementById('fb2b');
+
+      if (choice === 'V+NP') {
+        btn.classList.add('correct');
+        fb.className = 'feedback-box correct';
+        fb.innerHTML = '<p><strong>Richtig!</strong> VP „liest das Buch" besteht aus '
+          + '<strong>V</strong> (= <em>liest</em>) + <strong>NP</strong> (= <em>das Buch</em>). '
+          + 'Dabei ist <em>das Buch</em> selbst wieder eine NP (Det + N). '
+          + 'Regel: VP &#8594; V NP. Das Objekt gehört <em>in</em> die VP – nicht zur Subjekt-NP!</p>'
+          + '<p><span class="concept-tag">Phrasenstrukturgrammatik</span> '
+          + '<span class="concept-tag">Syntaxbaum</span> '
+          + '<span class="concept-tag">Konstituentenstruktur</span></p>';
+      } else {
+        btn.classList.add('wrong');
+        fb.className = 'feedback-box wrong';
+        fb.innerHTML = '<p><strong>Noch nicht ganz.</strong> '
+          + 'Die VP „liest das Buch" enthält das Verb <em>liest</em> (V) und das Objekt <em>das Buch</em> '
+          + '(das ist eine NP: Det + N). Regel: VP &#8594; V NP. '
+          + 'Ein häufiger Denkfehler: Das Objekt wirkt wie ein eigener Satzteil, gehört aber '
+          + '<em>strukturell</em> zur VP. '
+          + '<span class="concept-tag">Phrasenstrukturgrammatik</span></p>';
+      }
+
+      tree2Phase = 3;
+      document.getElementById('btnFinish').classList.remove('hidden');
+      window.dataLayer.push({ event: 'simulation_answer', stage: 2, question: 'q2b', correct: choice === 'V+NP' });
+    }
+
+    // ──────────────────────────────────────────────────────────
+    // NAVIGATION
+    // ──────────────────────────────────────────────────────────
+    function toStage2() {
+      document.getElementById('stage1').classList.remove('active');
+      document.getElementById('stage2').classList.add('active');
+      document.getElementById('step1').classList.remove('active');
+      document.getElementById('step1').classList.add('done');
+      document.getElementById('step2').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.dataLayer.push({ event: 'simulation_stage', stage: 2, topic_cluster: 'sprachen' });
+    }
+
+    function showSummary() {
+      document.getElementById('stage2').classList.remove('active');
+      document.getElementById('stageSummary').classList.add('active');
+      document.getElementById('step2').classList.remove('active');
+      document.getElementById('step2').classList.add('done');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.dataLayer.push({ event: 'simulation_complete', topic_cluster: 'sprachen' });
+    }
+  </script>
+
+</body>
+</html>

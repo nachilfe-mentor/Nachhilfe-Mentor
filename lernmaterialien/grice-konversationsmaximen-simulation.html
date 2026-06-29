@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Grice Konversationsmaximen interaktiv üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Erkenne in echten Dialogen, welche der vier Konversationsmaximen nach Grice verletzt wird, und verstehe interaktiv, wie konversationelle Implikaturen entstehen.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Konversationsmaximen, Grice, Kooperationsprinzip, konversationelle Implikatur, Pragmatik, Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/grice-konversationsmaximen-simulation.html">
+  <meta property="og:title" content="Grice Konversationsmaximen interaktiv üben">
+  <meta property="og:description" content="Erkenne in echten Dialogen, welche der vier Konversationsmaximen nach Grice verletzt wird, und verstehe interaktiv, wie konversationelle Implikaturen entstehen.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/grice-konversationsmaximen-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Grice Konversationsmaximen interaktiv üben",
+  "description":"Erkenne in echten Dialogen, welche der vier Konversationsmaximen nach Grice verletzt wird, und verstehe interaktiv, wie konversationelle Implikaturen entstehen.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/grice-konversationsmaximen-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    /* ── Header ──────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* ── Main ────────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Progress ────────────────────────────────── */
+    .progress {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .dot.active   { background: var(--blue); }
+    .dot.done     { background: var(--green); }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-left: 0.25rem;
+    }
+
+    /* ── Card / Panel ────────────────────────────── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+    .card h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Dialog ──────────────────────────────────── */
+    .dialog-scene {
+      background: #f0f4f8;
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .speech-row {
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+      margin-bottom: 0.75rem;
+      animation: fadeInUp 0.35s ease both;
+    }
+    .speech-row:last-child { margin-bottom: 0; }
+    .speech-row.right { flex-direction: row-reverse; }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .avatar.a { background: var(--blue); }
+    .avatar.b { background: var(--purple); }
+    .avatar.c { background: var(--cyan); }
+    .avatar.d { background: var(--amber); }
+
+    .bubble {
+      max-width: calc(100% - 52px);
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 0 10px 10px 10px;
+      padding: 0.6rem 0.85rem;
+      font-size: 0.93rem;
+      line-height: 1.5;
+    }
+    .speech-row.right .bubble {
+      border-radius: 10px 0 10px 10px;
+    }
+    .speaker-name {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+    .thought {
+      font-style: italic;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+    .bubble-thought {
+      background: #f8f8f8;
+      border-style: dashed;
+      color: var(--muted);
+    }
+
+    /* ── Maximen-Karten ──────────────────────────── */
+    .maximen-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 480px) {
+      .maximen-grid { grid-template-columns: 1fr; }
+    }
+    .maxim-card {
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      border: 1px solid transparent;
+    }
+    .maxim-card.q  { background: #eff6ff; border-color: #bfdbfe; }
+    .maxim-card.ql { background: #f0fdf4; border-color: #bbf7d0; }
+    .maxim-card.r  { background: #fff7ed; border-color: #fed7aa; }
+    .maxim-card.m  { background: #faf5ff; border-color: #e9d5ff; }
+    .maxim-card strong {
+      display: block;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+    .maxim-card span {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    .maxim-card.q  strong { color: #1d4ed8; }
+    .maxim-card.ql strong { color: #15803d; }
+    .maxim-card.r  strong { color: #c2410c; }
+    .maxim-card.m  strong { color: #7e22ce; }
+
+    /* ── Buttons ─────────────────────────────────── */
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .btn {
+      padding: 0.55rem 1.1rem;
+      border-radius: 7px;
+      border: 1.5px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: #eff6ff;
+    }
+    .btn:disabled { opacity: 0.45; cursor: default; }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      border-color: var(--blue);
+      font-weight: 600;
+    }
+    .btn-primary:hover:not(:disabled) {
+      background: #0d4d8a;
+      border-color: #0d4d8a;
+      color: #fff;
+    }
+
+    /* ── Feedback ────────────────────────────────── */
+    .feedback {
+      border-radius: 9px;
+      padding: 1rem 1.1rem;
+      margin-top: 1rem;
+      font-size: 0.93rem;
+      line-height: 1.6;
+      display: none;
+    }
+    .feedback.correct {
+      background: #f0fdf4;
+      border: 1.5px solid #86efac;
+      color: #14532d;
+    }
+    .feedback.wrong {
+      background: #fff7ed;
+      border: 1.5px solid #fdba74;
+      color: #7c2d12;
+    }
+    .feedback.info {
+      background: #eff6ff;
+      border: 1.5px solid #93c5fd;
+      color: #1e3a5f;
+    }
+    .feedback strong { font-weight: 700; }
+
+    /* ── Aufgabentext ────────────────────────────── */
+    .task-text {
+      font-size: 0.95rem;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+      line-height: 1.6;
+    }
+    .task-text strong { font-weight: 600; }
+
+    /* ── Section-Divider ─────────────────────────── */
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 1.5rem 0;
+    }
+
+    /* ── Step label ──────────────────────────────── */
+    .step-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: #fff;
+      background: var(--blue);
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── Hidden ──────────────────────────────────── */
+    .hidden { display: none !important; }
+
+    /* ── Site-Nav ────────────────────────────────── */
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    /* ── Score / Abschluss ──────────────────────── */
+    .score-box {
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    .score-number {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .score-label {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .key-concepts {
+      text-align: left;
+      background: #f0f4f8;
+      border-radius: 9px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .key-concepts h4 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+    .key-concepts ul {
+      padding-left: 1.1rem;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    /* ── Fortschrittsbalken Stufe 2 ─────────────── */
+    .sub-progress {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Next-Button ─────────────────────────────── */
+    .next-btn-wrap {
+      margin-top: 1.25rem;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Linguistik · Pragmatik · Klasse 10–13</div>
+  <h1>Gricesche Konversationsmaximen</h1>
+  <p>Erkenne in echten Dialogen, welche Kommunikationsregel verletzt wird — und was dabei trotzdem mitgeteilt wird.</p>
+</header>
+
+<main>
+
+  <!-- Fortschrittsanzeige -->
+  <div class="progress">
+    <div class="dot active" id="dot1"></div>
+    <div class="dot" id="dot2"></div>
+    <div class="dot" id="dot3"></div>
+    <span class="progress-label" id="progress-label">Stufe 1 von 3</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- STUFE 1 – Vorhersage                          -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div id="step1">
+    <div class="card">
+      <div class="step-label">Stufe 1 – Vorhersage</div>
+      <h2>Was passiert hier?</h2>
+
+      <div class="dialog-scene">
+        <div class="speech-row">
+          <div class="avatar a">A</div>
+          <div>
+            <div class="speaker-name">Anna</div>
+            <div class="bubble">Magst du mein neues Kleid?</div>
+          </div>
+        </div>
+        <div class="speech-row right">
+          <div class="avatar b">T</div>
+          <div>
+            <div class="speaker-name">Tom</div>
+            <div class="bubble">Der Bus kommt gleich.</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="task-text">Tom antwortet mit einem völlig anderen Satz. Was passiert kommunikativ?</p>
+
+      <div class="btn-group" id="s1-btns">
+        <button class="btn" onclick="checkS1('A')">A) Tom lügt absichtlich</button>
+        <button class="btn" onclick="checkS1('B')">B) Tom ist unhöflich — das ist normal</button>
+        <button class="btn" onclick="checkS1('C')">C) Tom verletzt eine Kommunikationsregel — und teilt damit trotzdem etwas mit</button>
+        <button class="btn" onclick="checkS1('D')">D) Tom ist einfach abgelenkt</button>
+      </div>
+
+      <div class="feedback" id="s1-feedback"></div>
+
+      <div class="next-btn-wrap" id="s1-next">
+        <button class="btn btn-primary" onclick="goToStep2()">Weiter zu den Maximen →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- STUFE 2 – Maxime identifizieren               -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div id="step2" class="hidden">
+    <div class="card">
+      <div class="step-label">Stufe 2 – Diagnose</div>
+      <h2>Welche Maxime wird verletzt?</h2>
+      <p class="task-text">Das <strong>Kooperationsprinzip</strong> nach H. P. Grice (1975) besteht aus vier Maximen. Halte sie im Blick:</p>
+
+      <div class="maximen-grid">
+        <div class="maxim-card q">
+          <strong>Quantität</strong>
+          <span>Sag so viel wie nötig – nicht mehr, nicht weniger.</span>
+        </div>
+        <div class="maxim-card ql">
+          <strong>Qualität</strong>
+          <span>Sag nur, wovon du überzeugt bist und wofür du Belege hast.</span>
+        </div>
+        <div class="maxim-card r">
+          <strong>Relation (Relevanz)</strong>
+          <span>Sag nur Relevantes – bleibe beim Thema.</span>
+        </div>
+        <div class="maxim-card m">
+          <strong>Modalität (Weise)</strong>
+          <span>Sei klar, geordnet und prägnant – vermeide Mehrdeutigkeit.</span>
+        </div>
+      </div>
+
+      <div class="sub-progress" id="s2-progress">Dialog 1 von 4</div>
+
+      <!-- Dialog-Container Stufe 2 -->
+      <div id="s2-dialog-area"></div>
+
+      <div class="next-btn-wrap" id="s2-next">
+        <button class="btn btn-primary" id="s2-next-btn" onclick="nextDialog()">Nächster Dialog →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- STUFE 3 – Implikatur                          -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div id="step3" class="hidden">
+    <div class="card">
+      <div class="step-label">Stufe 3 – Implikatur</div>
+      <h2>Was ist wirklich gemeint?</h2>
+
+      <p class="task-text" style="margin-bottom:1rem;">
+        Manchmal verletzen Sprecher eine Maxime <em>absichtlich und erkennbar</em>. Dann entsteht eine
+        <strong>konversationelle Implikatur</strong> – eine mitgemeinte Botschaft, die nicht wörtlich steht.
+      </p>
+
+      <div class="dialog-scene">
+        <div class="speech-row">
+          <div class="avatar c">K</div>
+          <div>
+            <div class="speaker-name">Kira</div>
+            <div class="bubble">Wie war mein Vortrag?</div>
+          </div>
+        </div>
+        <div class="speech-row right">
+          <div class="avatar d">B</div>
+          <div>
+            <div class="speaker-name">Ben</div>
+            <div class="bubble">Du hattest wirklich schicke Folien.</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="task-text">Was impliziert Bens Antwort – was ist seine eigentliche Botschaft?</p>
+
+      <div class="btn-group" id="s3-btns">
+        <button class="btn" onclick="checkS3('A')">A) Der Vortrag war insgesamt gut</button>
+        <button class="btn" onclick="checkS3('B')">B) Ben lobt nur die Folien — der Vortrag war wohl schwach</button>
+        <button class="btn" onclick="checkS3('C')">C) Ben hat den Vortrag gar nicht gesehen</button>
+        <button class="btn" onclick="checkS3('D')">D) Ben lügt über die Folien</button>
+      </div>
+
+      <div class="feedback" id="s3-feedback"></div>
+
+      <div class="next-btn-wrap" id="s3-next">
+        <button class="btn btn-primary" onclick="goToResult()">Auswertung ansehen →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- ERGEBNIS                                      -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div id="step-result" class="hidden">
+    <div class="card">
+      <div class="score-box">
+        <div class="score-number" id="final-score">–</div>
+        <div class="score-label" id="final-label">von 6 Aufgaben richtig beantwortet</div>
+      </div>
+
+      <div class="key-concepts">
+        <h4>Was du gelernt hast</h4>
+        <ul>
+          <li><strong>Kooperationsprinzip (Grice 1975):</strong> Kommunikation gelingt, weil Sprecher kooperieren wollen.</li>
+          <li><strong>4 Maximen:</strong> Quantität, Qualität, Relation, Modalität — sie beschreiben, wie kooperative Kommunikation aussieht.</li>
+          <li><strong>Konversationelle Implikaturen:</strong> Wenn eine Maxime erkennbar verletzt wird, schließt der Hörer auf eine mitgemeinte Botschaft.</li>
+          <li><strong>Deskriptiv, nicht normativ:</strong> Die Maximen erklären Kommunikation — sie sind keine Verbote.</li>
+        </ul>
+      </div>
+
+      <p style="font-size:0.88rem; color:var(--muted); text-align:center; margin-bottom:1rem;">
+        Quelle: Grice, H. P. (1975). Logic and Conversation. In P. Cole &amp; J. Morgan (Hrsg.), <em>Syntax and Semantics</em>, Bd. 3, S. 41–58.
+      </p>
+
+      <div style="text-align:center;">
+        <button class="btn btn-primary" onclick="restart()">Simulation wiederholen</button>
+        &nbsp;
+        <a class="btn" href="/lernmaterialien/">Mehr Simulationen</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  /* ── State ─────────────────────────────────────── */
+  let score = 0;
+  let s1Done = false;
+  let s3Done = false;
+  let currentDialog = 0;
+  const s2Scores = [false, false, false, false];
+
+  /* ── Stufe-2-Dialoge ────────────────────────────── */
+  const dialogs = [
+    {
+      id: 'q',
+      label: 'Dialog 1 von 4',
+      scene: [
+        { side: 'left',  init: 'L', name: 'Lehrerin', cls: 'a', text: 'Wann wurde Goethe geboren?' },
+        { side: 'right', init: 'S', name: 'Schüler',  cls: 'b', text: 'Goethe wurde am 28. August 1749 in Frankfurt am Main geboren. Er war der Sohn von Johann Caspar Goethe und Catharina Elisabeth Textor. Frankfurt hatte damals etwa 30.000 Einwohner. Goethe hatte auch eine Schwester, Cornelia …' }
+      ],
+      question: 'Welche Maxime verletzt der Schüler?',
+      correct: 'Quantität',
+      options: ['Quantität', 'Qualität', 'Relation', 'Modalität'],
+      feedbackCorrect: 'Richtig! Der Schüler liefert weit mehr Information als gefragt — er verletzt die Maxime der <strong>Quantität</strong> (zu viel). Ein einfaches „1749" hätte gereicht.',
+      feedbackWrong: 'Schau nochmal: Der Inhalt stimmt (keine Lüge), er ist relevant (Goethe-Geburt), und er ist klar formuliert. Aber die Menge ist massiv zu groß — das ist ein Verstoß gegen die Maxime der <strong>Quantität</strong>.'
+    },
+    {
+      id: 'ql',
+      label: 'Dialog 2 von 4',
+      scene: [
+        { side: 'left',  init: 'F', name: 'Freundin', cls: 'c', text: 'Kommst du morgen mit zum Sport?' },
+        { side: 'right', init: 'L', name: 'Lea',      cls: 'd', text: 'Ja, auf jeden Fall, 100 Prozent!' },
+        { side: 'right', init: 'L', name: 'Lea – denkt:', cls: 'd', text: '<span class="thought">… ich bin mir eigentlich gar nicht sicher.</span>' }
+      ],
+      question: 'Welche Maxime verletzt Lea?',
+      correct: 'Qualität',
+      options: ['Quantität', 'Qualität', 'Relation', 'Modalität'],
+      feedbackCorrect: 'Richtig! Lea sagt etwas, wovon sie selbst nicht überzeugt ist. Das verletzt die Maxime der <strong>Qualität</strong> — dem Grundsatz der Aufrichtigkeit.',
+      feedbackWrong: 'Die Aussage ist kurz (keine Quantitäts-Verletzung), sie ist relevant (direkte Antwort) und klar formuliert. Aber Lea ist selbst unsicher — sie verletzt die <strong>Qualitätsmaxime</strong>.'
+    },
+    {
+      id: 'r',
+      label: 'Dialog 3 von 4',
+      scene: [
+        { side: 'left',  init: 'M', name: 'Mutter', cls: 'a', text: 'Hast du deine Hausaufgaben gemacht?' },
+        { side: 'right', init: 'J', name: 'Jonas',  cls: 'b', text: 'Weißt du, ich war heute so müde. Und der Fußballtrainer sagt, wir brauchen viel mehr Schlaf …' }
+      ],
+      question: 'Welche Maxime verletzt Jonas?',
+      correct: 'Relation',
+      options: ['Quantität', 'Qualität', 'Relation', 'Modalität'],
+      feedbackCorrect: 'Perfekt! Jonas lenkt vom Thema ab, ohne die Frage zu beantworten. Das ist ein klassischer Verstoß gegen die Maxime der <strong>Relation (Relevanz)</strong>.',
+      feedbackWrong: 'Jonas lügt nicht (Qualität ok), die Menge stimmt (Quantität ok), und er ist verständlich (Modalität ok). Aber er antwortet auf eine völlig andere Frage — das verletzt die <strong>Maxime der Relation</strong>.'
+    },
+    {
+      id: 'm',
+      label: 'Dialog 4 von 4',
+      scene: [
+        { side: 'left',  init: 'C', name: 'Chef',        cls: 'c', text: 'Was ist das Problem mit dem Projekt?' },
+        { side: 'right', init: 'M', name: 'Mitarbeiterin', cls: 'd', text: 'Es ist so, dass, wenn man die Situation, die entstanden ist, berücksichtigt, im Hinblick auf die zeitlichen Aspekte, die, wenn auch nicht primär kausal, dennoch mitverantwortlich für die Gesamtlage sind …' }
+      ],
+      question: 'Welche Maxime verletzt die Mitarbeiterin?',
+      correct: 'Modalität',
+      options: ['Quantität', 'Qualität', 'Relation', 'Modalität'],
+      feedbackCorrect: 'Exzellent! Die Antwort ist so umständlich und unklar, dass kaum jemand versteht, was gemeint ist. Das ist ein Verstoß gegen die Maxime der <strong>Modalität</strong> — die fordert Klarheit und Prägnanz.',
+      feedbackWrong: 'Die Information ist nicht gelogen (Qualität) und sie bezieht sich auf das Projekt (Relation). Aber die Art und Weise — verschachtelt, umständlich, unklar — verletzt die <strong>Modalitätsmaxime</strong>.'
+    }
+  ];
+
+  /* ── Hilfsfunktionen ────────────────────────────── */
+  function disableBtns(group) {
+    group.querySelectorAll('.btn').forEach(b => b.disabled = true);
+  }
+
+  function showFeedback(id, type, html) {
+    const el = document.getElementById(id);
+    el.className = 'feedback ' + type;
+    el.innerHTML = html;
+    el.style.display = 'block';
+  }
+
+  function showNextBtn(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function updateDots(step) {
+    for (let i = 1; i <= 3; i++) {
+      const d = document.getElementById('dot' + i);
+      d.className = 'dot' + (i < step ? ' done' : i === step ? ' active' : '');
+    }
+    document.getElementById('progress-label').textContent =
+      'Stufe ' + step + ' von 3';
+  }
+
+  function trackEvent(step, result) {
+    if (window.dataLayer) {
+      window.dataLayer.push({ event: 'sim_step', step: step, result: result });
+    }
+  }
+
+  /* ── Stufe 1 ────────────────────────────────────── */
+  function checkS1(choice) {
+    if (s1Done) return;
+    s1Done = true;
+    disableBtns(document.getElementById('s1-btns'));
+
+    if (choice === 'C') {
+      score++;
+      showFeedback('s1-feedback', 'correct',
+        '<strong>Richtig!</strong> Tom verletzt die Maxime der <strong>Relation</strong>: Er sagt nichts Relevantes auf Annas Frage. ' +
+        'Nach Grice schließt Anna daraus: Tom will das Kleid nicht bewerten — wahrscheinlich gefällt es ihm nicht. ' +
+        'Das ist eine <strong>konversationelle Implikatur</strong>.');
+    } else if (choice === 'A') {
+      showFeedback('s1-feedback', 'wrong',
+        'Tom sagt nicht aktiv etwas Falsches — er weicht aus. Das ist eine Verletzung der <strong>Relevanzmaxime</strong>, keine Lüge. ' +
+        'Er könnte das Kleid schlicht nicht kommentieren wollen.');
+    } else if (choice === 'B') {
+      showFeedback('s1-feedback', 'wrong',
+        '„Normal" ja — aber „bedeutungslos" nein. Grice zeigt: Selbst Ausweichen sendet eine Botschaft. ' +
+        'Tom verletzt die <strong>Maxime der Relation</strong> und impliziert dabei etwas.');
+    } else {
+      showFeedback('s1-feedback', 'wrong',
+        'Möglich — aber in der Pragmatik interessiert uns die kommunikative Funktion. ' +
+        'Tom verletzt die <strong>Maxime der Relation</strong>, und dadurch entsteht eine Implikatur, egal ob er abgelenkt ist oder nicht.');
+    }
+    trackEvent('step1', choice === 'C' ? 'correct' : 'wrong');
+    showNextBtn('s1-next');
+  }
+
+  /* ── Stufe 2 – Navigation ────────────────────────── */
+  function goToStep2() {
+    document.getElementById('step1').classList.add('hidden');
+    document.getElementById('step2').classList.remove('hidden');
+    updateDots(2);
+    renderDialog(0);
+  }
+
+  function renderDialog(idx) {
+    currentDialog = idx;
+    const d = dialogs[idx];
+    document.getElementById('s2-progress').textContent = d.label;
+
+    const nextBtn = document.getElementById('s2-next');
+    nextBtn.style.display = 'none';
+
+    const area = document.getElementById('s2-dialog-area');
+    area.innerHTML = '';
+
+    // Dialog-Szene
+    const scene = document.createElement('div');
+    scene.className = 'dialog-scene';
+    d.scene.forEach((line, i) => {
+      const row = document.createElement('div');
+      row.className = 'speech-row' + (line.side === 'right' ? ' right' : '');
+      row.style.animationDelay = (i * 0.1) + 's';
+      const isThought = line.text.includes('class="thought"');
+      row.innerHTML =
+        '<div class="avatar ' + line.cls + '">' + line.init + '</div>' +
+        '<div>' +
+          '<div class="speaker-name">' + line.name + '</div>' +
+          '<div class="bubble' + (isThought ? ' bubble-thought' : '') + '">' + line.text + '</div>' +
+        '</div>';
+      scene.appendChild(row);
+    });
+    area.appendChild(scene);
+
+    // Frage
+    const qEl = document.createElement('p');
+    qEl.className = 'task-text';
+    qEl.innerHTML = '<strong>' + d.question + '</strong>';
+    area.appendChild(qEl);
+
+    // Buttons
+    const btnGroup = document.createElement('div');
+    btnGroup.className = 'btn-group';
+    btnGroup.id = 's2-btn-group';
+    d.options.forEach(opt => {
+      const btn = document.createElement('button');
+      btn.className = 'btn';
+      btn.textContent = opt;
+      btn.onclick = () => checkS2(opt, d);
+      btnGroup.appendChild(btn);
+    });
+    area.appendChild(btnGroup);
+
+    // Feedback-Platzhalter
+    const fb = document.createElement('div');
+    fb.className = 'feedback';
+    fb.id = 's2-feedback';
+    area.appendChild(fb);
+  }
+
+  function checkS2(choice, d) {
+    const group = document.getElementById('s2-btn-group');
+    if (!group) return;
+    disableBtns(group);
+
+    const isCorrect = choice === d.correct;
+    if (isCorrect) {
+      score++;
+      s2Scores[currentDialog] = true;
+    }
+
+    const fb = document.getElementById('s2-feedback');
+    fb.className = 'feedback ' + (isCorrect ? 'correct' : 'wrong');
+    fb.innerHTML = isCorrect ? '<strong>Richtig!</strong> ' + d.feedbackCorrect
+                             : '<strong>Nicht ganz.</strong> ' + d.feedbackWrong;
+    fb.style.display = 'block';
+
+    trackEvent('step2_dialog' + (currentDialog + 1), isCorrect ? 'correct' : 'wrong');
+
+    const nextBtn = document.getElementById('s2-next');
+    nextBtn.style.display = 'block';
+
+    const nextBtnEl = document.getElementById('s2-next-btn');
+    if (currentDialog >= dialogs.length - 1) {
+      nextBtnEl.textContent = 'Weiter zu Stufe 3 →';
+      nextBtnEl.onclick = goToStep3;
+    } else {
+      nextBtnEl.textContent = 'Nächster Dialog →';
+      nextBtnEl.onclick = () => renderDialog(currentDialog + 1);
+    }
+  }
+
+  function nextDialog() {
+    renderDialog(currentDialog + 1);
+  }
+
+  /* ── Stufe 3 ────────────────────────────────────── */
+  function goToStep3() {
+    document.getElementById('step2').classList.add('hidden');
+    document.getElementById('step3').classList.remove('hidden');
+    updateDots(3);
+  }
+
+  function checkS3(choice) {
+    if (s3Done) return;
+    s3Done = true;
+    disableBtns(document.getElementById('s3-btns'));
+
+    if (choice === 'B') {
+      score++;
+      showFeedback('s3-feedback', 'correct',
+        '<strong>Genau!</strong> Ben verletzt die Maxime der <strong>Relation</strong>: Er antwortet nicht auf die Frage nach dem Vortrag, sondern lobt nur die Folien. ' +
+        'Da er sich kooperativ verhält (er schweigt nicht), schlussfolgert Kira: Ben hat Besseres zu sagen vermieden — der Vortrag war wohl nicht überzeugend. ' +
+        'Das ist eine <strong>konversationelle Implikatur</strong>.');
+    } else if (choice === 'A') {
+      showFeedback('s3-feedback', 'wrong',
+        'Wenn der Vortrag gut wäre, hätte Ben das direkt gesagt. Die Tatsache, dass er <em>nur</em> die Folien lobt, erzeugt die Implikatur: Der Rest war wohl nicht gut. ' +
+        'Diesen Schluss nennt Grice <strong>konversationelle Implikatur</strong>.');
+    } else if (choice === 'C') {
+      showFeedback('s3-feedback', 'wrong',
+        'Ben lobt die Folien — er hat den Vortrag gesehen. Aber er weicht der eigentlichen Frage aus. ' +
+        'Dieses Ausweichen erzeugt eine <strong>konversationelle Implikatur</strong>: Der Vortrag selbst war wohl schwach.');
+    } else {
+      showFeedback('s3-feedback', 'wrong',
+        'Ben lügt nicht über die Folien — er lobt sie aufrichtig. Aber er sagt nichts zum Vortrag insgesamt. ' +
+        'Das Schweigen über den Vortrag erzeugt die <strong>Implikatur</strong>: Der Vortrag war nicht gut.');
+    }
+    trackEvent('step3', choice === 'B' ? 'correct' : 'wrong');
+    showNextBtn('s3-next');
+  }
+
+  /* ── Ergebnis ────────────────────────────────────── */
+  function goToResult() {
+    document.getElementById('step3').classList.add('hidden');
+    document.getElementById('step-result').classList.remove('hidden');
+
+    document.getElementById('final-score').textContent = score + '/6';
+    const pct = Math.round((score / 6) * 100);
+    let label = 'von 6 Aufgaben richtig beantwortet';
+    if (pct === 100) label += ' — Ausgezeichnet!';
+    else if (pct >= 67) label += ' — Sehr gut!';
+    else if (pct >= 50) label += ' — Gut gemacht!';
+    else label += ' — Probiere es nochmal!';
+    document.getElementById('final-label').textContent = label;
+
+    // Dot-Fortschritt ausblenden / done setzen
+    for (let i = 1; i <= 3; i++) {
+      document.getElementById('dot' + i).className = 'dot done';
+    }
+    document.getElementById('progress-label').textContent = 'Abgeschlossen';
+  }
+
+  /* ── Neustart ────────────────────────────────────── */
+  function restart() {
+    score = 0; s1Done = false; s3Done = false; currentDialog = 0;
+    s2Scores.fill(false);
+
+    ['step2','step3','step-result'].forEach(id =>
+      document.getElementById(id).classList.add('hidden'));
+    document.getElementById('step1').classList.remove('hidden');
+
+    document.getElementById('s1-btns').querySelectorAll('.btn').forEach(b => b.disabled = false);
+    document.getElementById('s1-feedback').style.display = 'none';
+    document.getElementById('s1-next').style.display = 'none';
+    document.getElementById('s2-dialog-area').innerHTML = '';
+
+    document.getElementById('s3-btns').querySelectorAll('.btn').forEach(b => b.disabled = false);
+    document.getElementById('s3-feedback').style.display = 'none';
+    document.getElementById('s3-next').style.display = 'none';
+
+    updateDots(1);
+  }
+</script>
+
+</body>
+</html>

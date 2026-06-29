@@ -1,0 +1,946 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Übergeneralisierung im Spracherwerb: U-Kurve interaktiv verstehen | Nachhilfe Mentor</title>
+  <meta name="description" content="Warum sagen Kinder plötzlich „gehte“ statt „ging“? In dieser interaktiven Simulation triffst du Vorhersagen, erkundest die U-Kurve und ordnest Behaviorismus vs. Regelbildung zu.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Übergeneralisierung, Spracherwerb, U-Kurve, Regelbildung, Behaviorismus, Erstspracherwerb">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/uebergeneralisierung-spracherwerb-simulation.html">
+  <meta property="og:title" content="Übergeneralisierung im Spracherwerb – interaktiv">
+  <meta property="og:description" content="Warum sagen Kinder plötzlich „gehte“ statt „ging“? Triff Vorhersagen, erkunde die U-Kurve und ordne Behaviorismus vs. Regelbildung zu.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/uebergeneralisierung-spracherwerb-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Übergeneralisierung im Spracherwerb: U-Kurve interaktiv verstehen",
+  "description":"Warum sagen Kinder plötzlich „gehte“ statt „ging“? In dieser interaktiven Simulation triffst du Vorhersagen, erkundest die U-Kurve und ordnest Behaviorismus vs. Regelbildung zu.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/uebergeneralisierung-spracherwerb-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --green:  #0b8f6a;
+      --amber:  #b87700;
+      --red:    #b5281e;
+      --purple: #7c3aed;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Seitenlayout ─────────────────────────────────────────── */
+    header {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 36px 22px 20px;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    header p { color: var(--muted); max-width: 640px; font-size: 0.97rem; }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 22px 60px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* ── Panels ──────────────────────────────────────────────── */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px 26px;
+    }
+
+    .stage-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: var(--ink);
+    }
+
+    p { margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Phasen-Zeitleiste mit Sprechblasen ──────────────────── */
+    .timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .phase-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .phase-dot {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: #fff;
+    }
+    .phase-dot.green  { background: var(--green); }
+    .phase-dot.red    { background: var(--red); }
+    .phase-dot.blue   { background: var(--blue); }
+
+    .phase-content { flex: 1; }
+    .phase-title {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+
+    /* Sprechblase */
+    .speech-bubble {
+      position: relative;
+      background: var(--bg);
+      border: 1.5px solid var(--line);
+      border-radius: 14px;
+      padding: 10px 16px;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--ink);
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 4px;
+    }
+    .speech-bubble::before {
+      content: "";
+      position: absolute;
+      left: 14px;
+      top: -10px;
+      border: 5px solid transparent;
+      border-bottom-color: var(--line);
+    }
+    .speech-bubble::after {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: -8px;
+      border: 4px solid transparent;
+      border-bottom-color: var(--bg);
+    }
+
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-left: 6px;
+    }
+    .badge-correct { background: #d1fae5; color: #065f46; }
+    .badge-wrong   { background: #fee2e2; color: #991b1b; }
+
+    /* ── U-Kurven SVG ────────────────────────────────────────── */
+    .u-curve-wrap {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 16px;
+      margin: 1.5rem 0;
+      overflow: hidden;
+    }
+
+    .u-curve-wrap svg {
+      display: block;
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Animierte U-Kurve */
+    .u-path {
+      fill: none;
+      stroke: var(--blue);
+      stroke-width: 3.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 800;
+      stroke-dashoffset: 800;
+      transition: stroke-dashoffset 1.8s ease-in-out;
+    }
+    .u-path.drawn { stroke-dashoffset: 0; }
+
+    /* ── Vorhersage-Buttons ───────────────────────────────────── */
+    .option-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+
+    .option-btn {
+      width: 100%;
+      text-align: left;
+      padding: 14px 18px;
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+      font-size: 0.97rem;
+      cursor: pointer;
+      color: var(--ink);
+      transition: border-color 0.15s, background 0.15s;
+      font-family: inherit;
+      line-height: 1.45;
+    }
+    .option-btn:hover:not([disabled]) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #f0fdf7;
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fff5f5;
+    }
+    .option-btn[disabled] { cursor: default; }
+
+    /* ── Feedback-Box ────────────────────────────────────────── */
+    .feedback {
+      display: none;
+      margin: 1.5rem 0 0;
+      padding: 16px 20px;
+      border-radius: 10px;
+      border-left: 4px solid var(--green);
+      background: #f0fdf7;
+      font-size: 0.95rem;
+    }
+    .feedback.show { display: block; }
+    .feedback.wrong {
+      border-left-color: var(--red);
+      background: #fff5f5;
+    }
+
+    .concept-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 20px;
+      background: #ede9fe;
+      color: var(--purple);
+      margin: 2px 3px 2px 0;
+    }
+
+    /* ── Stage 2: Theorie-Karten ─────────────────────────────── */
+    .theory-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 1.5rem 0;
+    }
+
+    .theory-card {
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 14px 18px;
+      background: var(--panel);
+    }
+
+    .theory-card .card-text {
+      font-style: italic;
+      margin-bottom: 10px;
+      font-size: 0.97rem;
+      color: var(--ink);
+    }
+
+    .theory-btn-group {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .choice-btn {
+      padding: 7px 16px;
+      border-radius: 7px;
+      border: 1.5px solid var(--line);
+      background: var(--panel);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      color: var(--ink);
+      transition: background 0.12s, border-color 0.12s;
+    }
+    .choice-btn:hover:not([disabled]) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+    }
+    .choice-btn.selected-correct {
+      border-color: var(--green);
+      background: #d1fae5;
+      color: #065f46;
+    }
+    .choice-btn.selected-wrong {
+      border-color: var(--red);
+      background: #fee2e2;
+      color: #991b1b;
+    }
+    .choice-btn[disabled] { cursor: default; }
+
+    .card-feedback {
+      margin-top: 8px;
+      font-size: 0.87rem;
+      color: var(--muted);
+      display: none;
+    }
+    .card-feedback.show { display: block; }
+
+    /* ── Fortschrittsanzeige ─────────────────────────────────── */
+    .progress-bar {
+      height: 5px;
+      background: var(--line);
+      border-radius: 3px;
+      margin-bottom: 28px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 3px;
+      transition: width 0.4s ease;
+      width: 0%;
+    }
+
+    /* ── Weiter-Button ───────────────────────────────────────── */
+    .btn-next {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 12px 28px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 9px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.15s;
+    }
+    .btn-next:hover { background: #0a4a88; }
+    .btn-next.show { display: inline-block; }
+
+    /* ── Stage 3: Zusammenfassung ────────────────────────────── */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+      margin: 1.5rem 0;
+    }
+
+    .summary-card {
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+      background: var(--bg);
+    }
+
+    .summary-card h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--blue);
+    }
+
+    .summary-card p {
+      font-size: 0.88rem;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    .success-banner {
+      background: #f0fdf7;
+      border: 1.5px solid #6ee7b7;
+      border-radius: 10px;
+      padding: 16px 20px;
+      font-size: 0.97rem;
+      margin-top: 1.5rem;
+      color: #065f46;
+    }
+
+    /* ── Hidden/Visible ──────────────────────────────────────── */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    /* ── Responsive 375px ────────────────────────────────────── */
+    @media (max-width: 420px) {
+      header { padding: 24px 16px 14px; }
+      main { padding: 0 16px 48px; gap: 1.5rem; }
+      .panel { padding: 20px 16px; }
+      h2 { font-size: 1.1rem; }
+      .theory-btn-group { flex-direction: column; }
+    }
+
+    /* ── Highlight beim Erscheinen ───────────────────────────── */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .stage.active { animation: fadeIn 0.35s ease; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body
+  data-asset-type="simulation"
+  data-topic-cluster="spracherwerb"
+>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="stage-label">Interaktive Simulation · Spracherwerb</p>
+  <h1>Übergeneralisierung im Spracherwerb</h1>
+  <p>Warum sagen Kinder plötzlich „gehte" statt „ging"? Erkunde die U-Kurve der Übergeneralisierung und entscheide, ob der Behaviorismus dieses Phänomen erklären kann.</p>
+</header>
+
+<main>
+
+  <div class="progress-bar" aria-hidden="true">
+    <div class="progress-fill" id="progFill"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       STUFE 1 – Vorhersage
+       ═══════════════════════════════════════════════════ -->
+  <div id="stage1" class="stage panel active">
+    <p class="stage-label">Stufe 1 von 2 · Vorhersage</p>
+    <h2>Was passiert in Phase 2?</h2>
+
+    <p>
+      Kinder lernen Sprache in Phasen. Schau dir zunächst an, was ein Kind in
+      <strong>Phase 1</strong> sagt – und was das nach der Behaviorismus-Theorie für
+      Phase 2 bedeuten müsste.
+    </p>
+
+    <!-- Phasen-Zeitleiste: nur Phase 1 sichtbar zu Beginn -->
+    <div class="timeline">
+      <div class="phase-row">
+        <div class="phase-dot green">1</div>
+        <div class="phase-content">
+          <div class="phase-title">Phase 1 – Imitation (ca. 2–3 Jahre)</div>
+          <div class="speech-bubble">
+            „Ich ging gestern in den Park."
+            <span class="badge badge-correct">korrekt</span>
+          </div>
+          <p style="font-size:0.85rem; color:var(--muted); margin-top:6px; margin-bottom:0;">
+            Das Kind hat „ging" aus dem Input imitiert, ohne die Regel zu kennen.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p>
+      Wenn der <strong>Behaviorismus</strong> recht hat, lernen Kinder nur durch Imitation
+      und Verstärkung – falsche Formen werden sofort durch Elternkorrekturen ausgelöscht.
+    </p>
+
+    <p>
+      <strong>Vorhersage:</strong> Das Kind entdeckt jetzt eine Muster-Regel:
+      „Vergangenheit bildet man mit Stamm + <em>-te</em>" (z.&nbsp;B. spielen → spielte).
+      Was sagt es nun für „gehen"?
+    </p>
+
+    <div class="option-grid" role="group" aria-label="Wähle deine Vorhersage">
+      <button class="option-btn" id="opt-a" onclick="checkPrediction('a')">
+        <strong>A)</strong> Das Kind sagt weiterhin „ging" – der Behaviorismus hat die korrekte Form gefestigt.
+      </button>
+      <button class="option-btn" id="opt-b" onclick="checkPrediction('b')">
+        <strong>B)</strong> Das Kind sagt jetzt „gehte" oder „gingte" – die neue Regel überschreibt die imitierte Form.
+      </button>
+      <button class="option-btn" id="opt-c" onclick="checkPrediction('c')">
+        <strong>C)</strong> Das Kind verstummt und verwendet „gehen" gar nicht mehr in der Vergangenheit.
+      </button>
+    </div>
+
+    <div class="feedback" id="feedbackStage1Correct">
+      <strong>Richtig!</strong> Das ist die <strong>Übergeneralisierung</strong>: Kinder
+      wenden die produktive Schwachverb-Regel auf alle Verben an – auch auf die irregulären.
+      Dieses Phänomen <em>widerlegt</em> den Behaviorismus:
+      <br><br>
+      <span class="concept-tag">Regelbildung</span>
+      <span class="concept-tag">Übergeneralisierung</span>
+      <span class="concept-tag">U-Kurve</span>
+      <br><br>
+      Obwohl Eltern die Form „ging" vorleben und „gehte" korrigieren, tritt die
+      Übergeneralisierung trotzdem auf – weil Kinder aktiv Regeln abstrahieren,
+      nicht nur imitieren. Das nennt man <strong>Regelbildung</strong> (Pinker 1999,
+      Bybee &amp; Slobin 1982).
+    </div>
+
+    <div class="feedback wrong" id="feedbackStage1Wrong">
+      <strong>Fast – aber nicht ganz.</strong> In Wirklichkeit beobachten Linguistinnen und
+      Linguisten etwas Überraschendes: Kinder, die „ging" zunächst korrekt sagten,
+      wechseln plötzlich zu <em>„gehte"</em> oder <em>„gingte"</em>.
+      <br><br>
+      <span class="concept-tag">Übergeneralisierung</span>
+      <span class="concept-tag">Regelbildung</span>
+      <br><br>
+      Das nennt man <strong>Übergeneralisierung</strong>: Die neu entdeckte Regel
+      (Stamm + <em>-te</em>) wird auf <em>alle</em> Verben angewendet – auch auf Ausnahmen.
+      Das kann der <strong>Behaviorismus</strong> nicht erklären, weil er nur Imitation
+      und Verstärkung kennt, aber keine aktive Regelbildung.
+    </div>
+
+    <button class="btn-next" id="btnNext1" onclick="goToStage2()">
+      Weiter zu Stufe 2 →
+    </button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       STUFE 2 – Mechanismus & U-Kurve
+       ═══════════════════════════════════════════════════ -->
+  <div id="stage2" class="stage panel">
+    <p class="stage-label">Stufe 2 von 2 · Mechanismus verstehen</p>
+    <h2>Die U-Kurve der Übergeneralisierung</h2>
+
+    <p>
+      Die drei Phasen ergeben zusammen eine charakteristische
+      <strong>U-Kurve</strong>: Der Korrektheitsverlauf sinkt in Phase 2 ab, bevor er
+      in Phase 3 wieder steigt. Schau dir die vollständige Zeitleiste an:
+    </p>
+
+    <!-- Vollständige Phasen-Zeitleiste -->
+    <div class="timeline">
+      <div class="phase-row">
+        <div class="phase-dot green">1</div>
+        <div class="phase-content">
+          <div class="phase-title">Phase 1 – Imitation (ca. 2–3 Jahre)</div>
+          <div class="speech-bubble">
+            „Ich <strong>ging</strong> gestern in den Park."
+            <span class="badge badge-correct">korrekt</span>
+          </div>
+          <p style="font-size:0.85rem; color:var(--muted); margin-top:6px; margin-bottom:0;">
+            Form als Ganzes aus dem Input übernommen – ohne Regelwissen.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase-row">
+        <div class="phase-dot red">2</div>
+        <div class="phase-content">
+          <div class="phase-title">Phase 2 – Übergeneralisierung (ca. 3–5 Jahre)</div>
+          <div class="speech-bubble">
+            „Ich <strong>gehte</strong> gestern in den Park."
+            <span class="badge badge-wrong">Übergeneralisierung</span>
+          </div>
+          <div class="speech-bubble" style="margin-top:6px;">
+            Oder auch: „Ich <strong>gingte</strong> gestern in den Park."
+            <span class="badge badge-wrong">Übergeneralisierung</span>
+          </div>
+          <p style="font-size:0.85rem; color:var(--muted); margin-top:6px; margin-bottom:0;">
+            Die Regel „Stamm + <em>-te</em>" wird auf alle Verben angewendet – auch irreguläre.
+          </p>
+        </div>
+      </div>
+
+      <div class="phase-row">
+        <div class="phase-dot blue">3</div>
+        <div class="phase-content">
+          <div class="phase-title">Phase 3 – Regelwissen (ab ca. 5–6 Jahren)</div>
+          <div class="speech-bubble">
+            „Ich <strong>ging</strong> gestern in den Park."
+            <span class="badge badge-correct">korrekt – jetzt regelgeleitet</span>
+          </div>
+          <p style="font-size:0.85rem; color:var(--muted); margin-top:6px; margin-bottom:0;">
+            Irreguläre Formen werden als Ausnahmen gespeichert. Die Regel bleibt erhalten.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SVG: U-Kurve -->
+    <div class="u-curve-wrap">
+      <svg viewBox="0 0 560 220" aria-label="U-Kurve der Übergeneralisierung" role="img">
+        <!-- Achsen -->
+        <line x1="50" y1="180" x2="510" y2="180" stroke="#d8e1ed" stroke-width="1.5"/>
+        <line x1="50" y1="20"  x2="50"  y2="185" stroke="#d8e1ed" stroke-width="1.5"/>
+
+        <!-- Y-Achse Beschriftung -->
+        <text x="14" y="185" font-size="11" fill="#617087" text-anchor="middle">0 %</text>
+        <text x="14" y="100" font-size="11" fill="#617087" text-anchor="middle">50 %</text>
+        <text x="14" y="28"  font-size="11" fill="#617087" text-anchor="middle">100 %</text>
+
+        <!-- X-Achse Phasen -->
+        <text x="130" y="198" font-size="11" fill="#617087" text-anchor="middle">Phase 1</text>
+        <text x="280" y="198" font-size="11" fill="#617087" text-anchor="middle">Phase 2</text>
+        <text x="430" y="198" font-size="11" fill="#617087" text-anchor="middle">Phase 3</text>
+
+        <!-- Trennlinien (gestrichelt) -->
+        <line x1="210" y1="20" x2="210" y2="180" stroke="#d8e1ed" stroke-width="1" stroke-dasharray="4,4"/>
+        <line x1="360" y1="20" x2="360" y2="180" stroke="#d8e1ed" stroke-width="1" stroke-dasharray="4,4"/>
+
+        <!-- Referenzlinie 100% -->
+        <line x1="50" y1="28" x2="510" y2="28" stroke="#d8e1ed" stroke-width="1" stroke-dasharray="3,5"/>
+
+        <!-- U-Kurve Pfad -->
+        <path class="u-path" id="uPath"
+          d="M 60,35 C 110,30 150,28 200,30 C 220,31 230,60 250,110 C 265,148 285,162 300,165 C 315,162 335,148 350,110 C 370,60 380,31 400,30 C 440,28 480,30 500,35"
+        />
+
+        <!-- Punkte an den Phasenmitten -->
+        <circle cx="130" cy="29"  r="5" fill="#0b8f6a" id="dot1"/>
+        <circle cx="280" cy="163" r="5" fill="#b5281e" id="dot2"/>
+        <circle cx="430" cy="29"  r="5" fill="#0f5fa8" id="dot3"/>
+
+        <!-- Labels der Punkte -->
+        <text x="130" y="18" font-size="10" fill="#0b8f6a" text-anchor="middle" font-weight="700">ging ✓</text>
+        <text x="280" y="178" font-size="10" fill="#b5281e" text-anchor="middle" font-weight="700">gehte ✗</text>
+        <text x="430" y="18" font-size="10" fill="#0f5fa8" text-anchor="middle" font-weight="700">ging ✓</text>
+
+        <!-- Achsentitel -->
+        <text x="280" y="215" font-size="11" fill="#617087" text-anchor="middle">Entwicklungsverlauf (Zeit)</text>
+        <text x="8" y="105" font-size="10" fill="#617087" text-anchor="middle"
+              transform="rotate(-90 8 105)">Korrektheit</text>
+      </svg>
+    </div>
+
+    <!-- Stage 2: Theorie-Zuordnung -->
+    <h2 style="margin-top:1rem;">Welche Theorie erklärt die U-Kurve?</h2>
+    <p>
+      Ordne jede Aussage der passenden Theorie zu. Klicke auf <em>Behaviorismus</em>
+      oder <em>Regelbildung</em>:
+    </p>
+
+    <div class="theory-cards">
+
+      <div class="theory-card" id="card1">
+        <div class="card-text">
+          „Das Kind hat von Anfang an 'ging' gehört und imitiert. Weil Eltern
+          Fehler korrigieren, bleibt 'ging' korrekt – Übergeneralisierung tritt
+          nicht auf."
+        </div>
+        <div class="theory-btn-group">
+          <button class="choice-btn" onclick="checkTheory(1,'behaviorismus')">Behaviorismus</button>
+          <button class="choice-btn" onclick="checkTheory(1,'regelbildung')">Regelbildung</button>
+        </div>
+        <div class="card-feedback" id="cf1"></div>
+      </div>
+
+      <div class="theory-card" id="card2">
+        <div class="card-text">
+          „Das Kind abstrahiert aus dem Input die Regel ‚Stamm + -te' und wendet
+          sie konsequent an – auch auf irreguläre Verben. Das führt zu 'gehte'."
+        </div>
+        <div class="theory-btn-group">
+          <button class="choice-btn" onclick="checkTheory(2,'behaviorismus')">Behaviorismus</button>
+          <button class="choice-btn" onclick="checkTheory(2,'regelbildung')">Regelbildung</button>
+        </div>
+        <div class="card-feedback" id="cf2"></div>
+      </div>
+
+      <div class="theory-card" id="card3">
+        <div class="card-text">
+          „Kinder imitieren nur, was sie hören. Neue Verbformen werden durch
+          Nachahmung gespeichert – eine eigene Regelbildung findet nicht statt."
+        </div>
+        <div class="theory-btn-group">
+          <button class="choice-btn" onclick="checkTheory(3,'behaviorismus')">Behaviorismus</button>
+          <button class="choice-btn" onclick="checkTheory(3,'regelbildung')">Regelbildung</button>
+        </div>
+        <div class="card-feedback" id="cf3"></div>
+      </div>
+
+    </div>
+
+    <div class="feedback" id="feedbackStage2" style="display:none;">
+      <strong>Gut gemacht!</strong> Du hast die Kerntheorien korrekt zugeordnet.
+      <br><br>
+      <span class="concept-tag">Behaviorismus</span> behauptet: Nur Imitation und Verstärkung – keine eigenständige Regelbildung.
+      <span class="concept-tag">Regelbildung</span> erklärt: Kinder extrahieren aktiv Muster aus dem Input.
+      <span class="concept-tag">Übergeneralisierung</span> ist der empirische Beweis für Regelbildung – und die Widerlegung des Behaviorismus.
+    </div>
+
+    <button class="btn-next" id="btnNext2" onclick="goToStage3()">
+      Zur Zusammenfassung →
+    </button>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       STUFE 3 – Zusammenfassung
+       ═══════════════════════════════════════════════════ -->
+  <div id="stage3" class="stage panel">
+    <p class="stage-label">Zusammenfassung</p>
+    <h2>Das hast du gelernt</h2>
+
+    <div class="summary-grid">
+      <div class="summary-card">
+        <h3>Übergeneralisierung</h3>
+        <p>
+          Kinder wenden eine neu entdeckte Regel auf Ausnahmen an:
+          „ging" → „gehte". Dies ist kein Rückschritt, sondern ein
+          Zeichen aktiver Regelbildung.
+        </p>
+      </div>
+      <div class="summary-card">
+        <h3>U-Kurve</h3>
+        <p>
+          Phase 1 (korrekt) → Phase 2 (Fehler durch Übergeneralisierung) →
+          Phase 3 (wieder korrekt, jetzt regelgeleitet). Der Verlauf beschreibt
+          eine U-Form.
+        </p>
+      </div>
+      <div class="summary-card">
+        <h3>Behaviorismus – widerlegt</h3>
+        <p>
+          Skinner: Kinder lernen nur durch Imitation und Verstärkung.
+          Prediction: keine Übergeneralisierung. Befund: Übergeneralisierung
+          tritt trotzdem auf → Behaviorismus empirisch widerlegt.
+        </p>
+      </div>
+      <div class="summary-card">
+        <h3>Regelbildung – bestätigt</h3>
+        <p>
+          Pinker, Chomsky: Kinder abstrahieren Regeln aktiv aus dem Input.
+          Übergeneralisierung ist der Beweis. Ab Phase 3 kennen sie
+          auch die Ausnahme-Liste.
+        </p>
+      </div>
+    </div>
+
+    <div class="success-banner">
+      ✓ <strong>Simulation abgeschlossen.</strong> Du kannst jetzt erklären,
+      warum Kinder „gehte" sagen – und warum das ein wichtiges Argument
+      gegen den Behaviorismus ist.
+    </div>
+
+    <p style="margin-top:1.5rem; font-size:0.9rem; color:var(--muted);">
+      <strong>Weiterlesen:</strong>
+      <a href="/lernmaterialien/lernsimulationen/kritische-periode-spracherwerb-simulation.html">Kritische Periode im Spracherwerb</a> ·
+      <a href="/lernmaterialien/lernsimulationen/erstspracherwerb-phasen-simulation.html">Phasen des Erstspracherwerbs</a>
+    </p>
+  </div>
+
+</main>
+
+<script>
+  // ── State ────────────────────────────────────────────────────────────
+  window.dataLayer = window.dataLayer || [];
+  const state = {
+    stage1Done: false,
+    stage2Correct: [false, false, false],
+    stage2Count: 0,
+    stage2Total: 3,
+  };
+
+  function push(evt, data) {
+    window.dataLayer.push({ event: evt, ...data });
+  }
+
+  // ── Fortschritt ──────────────────────────────────────────────────────
+  function setProgress(pct) {
+    document.getElementById('progFill').style.width = pct + '%';
+  }
+
+  // ── Stufe 1: Vorhersage ──────────────────────────────────────────────
+  function checkPrediction(choice) {
+    if (state.stage1Done) return;
+    state.stage1Done = true;
+
+    const opts = ['a','b','c'];
+    opts.forEach(id => {
+      const btn = document.getElementById('opt-' + id);
+      btn.disabled = true;
+    });
+
+    if (choice === 'b') {
+      document.getElementById('opt-b').classList.add('correct');
+      document.getElementById('feedbackStage1Correct').classList.add('show');
+      push('simulation_answer', {
+        asset_type: 'simulation',
+        topic_cluster: 'spracherwerb',
+        stage: 'stage1',
+        correct: true
+      });
+    } else {
+      document.getElementById('opt-' + choice).classList.add('wrong');
+      document.getElementById('opt-b').classList.add('correct');
+      document.getElementById('feedbackStage1Wrong').classList.add('show');
+      push('simulation_answer', {
+        asset_type: 'simulation',
+        topic_cluster: 'spracherwerb',
+        stage: 'stage1',
+        correct: false
+      });
+    }
+
+    document.getElementById('btnNext1').classList.add('show');
+    setProgress(33);
+  }
+
+  // ── Stufe 2: Theorie-Zuordnung ───────────────────────────────────────
+  const correctAnswers = {
+    1: 'behaviorismus',  // "Imitation, keine Übergeneralisierung" → Behaviorismus
+    2: 'regelbildung',   // "Regel abstrahieren, 'gehte'" → Regelbildung
+    3: 'behaviorismus',  // "nur Imitation" → Behaviorismus
+  };
+
+  const explanations = {
+    1: {
+      behaviorismus: 'Richtig! Diese Aussage beschreibt die Vorhersage des Behaviorismus – die empirisch <em>nicht</em> zutrifft.',
+      regelbildung: 'Nein: Diese Aussage ist die Vorhersage des <em>Behaviorismus</em>. Regelbildung sagt dagegen Übergeneralisierung voraus.'
+    },
+    2: {
+      regelbildung: 'Richtig! Die Regelbildungstheorie (Pinker, Chomsky) erklärt genau dies: Das Kind abstrahiert aktiv die Schwachverb-Regel.',
+      behaviorismus: 'Nein: Der Behaviorismus sieht keine eigene Regelbildung vor. Diese Erklärung gehört zur <em>Regelbildungstheorie</em>.'
+    },
+    3: {
+      behaviorismus: 'Richtig! Reine Imitation ohne Regelbildung – das ist die behavioristische Position (Skinner).',
+      regelbildung: 'Nein: Die Regelbildungstheorie sagt gerade, dass Kinder <em>mehr</em> tun als imitieren – sie extrahieren Regeln.'
+    }
+  };
+
+  function checkTheory(cardNr, chosen) {
+    const card = document.getElementById('card' + cardNr);
+    const cf   = document.getElementById('cf' + cardNr);
+    if (card.dataset.done) return;
+    card.dataset.done = '1';
+
+    const btns = card.querySelectorAll('.choice-btn');
+    btns.forEach(b => b.disabled = true);
+
+    const correct = correctAnswers[cardNr];
+    const isCorrect = (chosen === correct);
+
+    // Zeige: gewählter Button (richtig/falsch) und – falls falsch – den richtigen Button
+    btns.forEach(b => {
+      const label = b.textContent.trim().toLowerCase();
+      const isChosen  = (label === chosen);
+      const isCorrectBtn = (label === correct);
+      if (isChosen && isCorrect)     b.classList.add('selected-correct');
+      else if (isChosen && !isCorrect) b.classList.add('selected-wrong');
+      else if (!isChosen && isCorrectBtn && !isCorrect) b.classList.add('selected-correct');
+    });
+
+    cf.innerHTML = (isCorrect ? '✓ ' : '✗ ') + explanations[cardNr][chosen];
+    cf.classList.add('show');
+
+    if (isCorrect) {
+      state.stage2Correct[cardNr - 1] = true;
+    }
+
+    state.stage2Count++;
+    const done = state.stage2Count >= state.stage2Total;
+
+    if (done) {
+      document.getElementById('feedbackStage2').style.display = 'block';
+      document.getElementById('btnNext2').classList.add('show');
+      setProgress(66);
+      push('simulation_stage2_done', {
+        asset_type: 'simulation',
+        topic_cluster: 'spracherwerb',
+        stage: 'stage2',
+        correct_count: state.stage2Correct.filter(Boolean).length
+      });
+    }
+  }
+
+  // ── Navigations-Funktionen ───────────────────────────────────────────
+  function goToStage2() {
+    document.getElementById('stage1').classList.remove('active');
+    document.getElementById('stage2').classList.add('active');
+    setProgress(40);
+
+    // U-Kurve animieren
+    setTimeout(() => {
+      document.querySelector('.u-path').classList.add('drawn');
+    }, 300);
+
+    push('simulation_stage_change', {
+      asset_type: 'simulation',
+      topic_cluster: 'spracherwerb',
+      from_stage: 'stage1',
+      to_stage: 'stage2'
+    });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function goToStage3() {
+    document.getElementById('stage2').classList.remove('active');
+    document.getElementById('stage3').classList.add('active');
+    setProgress(100);
+
+    push('simulation_complete', {
+      asset_type: 'simulation',
+      topic_cluster: 'spracherwerb',
+      stage: 'stage3'
+    });
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── Init ─────────────────────────────────────────────────────────────
+  setProgress(10);
+  push('simulation_start', {
+    asset_type: 'simulation',
+    topic_cluster: 'spracherwerb',
+    simulation_name: 'uebergeneralisierung-spracherwerb'
+  });
+</script>
+
+</body>
+</html>

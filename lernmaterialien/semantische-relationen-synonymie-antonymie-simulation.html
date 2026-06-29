@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Semantische Relationen: Synonymie & Antonymie – Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Übe semantische Relationen interaktiv: klassifiziere Wortpaare nach Synonymie, Antonymie und Hyponymie und baue einen Wortbaum per Klick.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="semantische Relationen, Synonymie, Antonymie, Hyponymie, Wortbeziehungen, Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/semantische-relationen-synonymie-antonymie-simulation.html">
+  <meta property="og:title" content="Semantische Relationen – Interaktive Simulation">
+  <meta property="og:description" content="Übe semantische Relationen interaktiv: klassifiziere Wortpaare nach Synonymie, Antonymie und Hyponymie und baue einen Wortbaum per Klick.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/semantische-relationen-synonymie-antonymie-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Semantische Relationen: Synonymie & Antonymie – Simulation",
+  "description":"Übe semantische Relationen interaktiv: klassifiziere Wortpaare nach Synonymie, Antonymie und Hyponymie und baue einen Wortbaum per Klick.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/semantische-relationen-synonymie-antonymie-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    :root {
+      --c-bg: #f8f9fc;
+      --c-card: #ffffff;
+      --c-border: #e2e6ef;
+      --c-text: #1a1d2e;
+      --c-muted: #6b7280;
+      --c-primary: #2563eb;
+      --c-primary-light: #dbeafe;
+      --c-green: #16a34a;
+      --c-green-light: #dcfce7;
+      --c-red: #dc2626;
+      --c-red-light: #fee2e2;
+      --c-yellow: #ca8a04;
+      --c-yellow-light: #fef9c3;
+      --c-orange: #ea580c;
+      --c-orange-light: #fed7aa;
+      --radius: 10px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--c-bg);
+      color: var(--c-text);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .site-header {
+      background: var(--c-card);
+      border-bottom: 1px solid var(--c-border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .site-header .logo {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--c-primary);
+      text-decoration: none;
+      letter-spacing: -0.3px;
+    }
+
+    .site-header .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--c-muted);
+    }
+
+    .site-header .breadcrumb::before {
+      content: "›";
+      margin-right: 0.5rem;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .page-header {
+      margin-bottom: 2rem;
+    }
+
+    .topic-badge {
+      display: inline-block;
+      background: var(--c-primary-light);
+      color: var(--c-primary);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+      letter-spacing: 0.3px;
+    }
+
+    .page-header h1 {
+      font-size: 1.55rem;
+      font-weight: 800;
+      line-height: 1.25;
+      color: var(--c-text);
+      margin-bottom: 0.6rem;
+    }
+
+    .page-header .subtitle {
+      color: var(--c-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Semantisches Netzwerk Visualisierung */
+    .network-card {
+      background: var(--c-card);
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .network-card h2 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--c-muted);
+      margin-bottom: 1rem;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      margin-bottom: 1rem;
+      font-size: 0.82rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .legend-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    #network-svg {
+      width: 100%;
+      height: 200px;
+      display: block;
+    }
+
+    /* Stufen-Navigation */
+    .stage-nav {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .stage-btn {
+      flex: 1;
+      padding: 0.6rem 0.5rem;
+      border-radius: var(--radius);
+      border: 2px solid var(--c-border);
+      background: var(--c-card);
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--c-muted);
+      cursor: default;
+      text-align: center;
+      transition: all 0.2s;
+    }
+
+    .stage-btn.active {
+      border-color: var(--c-primary);
+      background: var(--c-primary-light);
+      color: var(--c-primary);
+    }
+
+    .stage-btn.done {
+      border-color: var(--c-green);
+      background: var(--c-green-light);
+      color: var(--c-green);
+    }
+
+    /* Aufgaben-Karte */
+    .task-card {
+      background: var(--c-card);
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .task-card h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .task-card .task-meta {
+      font-size: 0.8rem;
+      color: var(--c-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .word-pair {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .word-bubble {
+      background: var(--c-primary-light);
+      color: var(--c-primary);
+      font-size: 1.2rem;
+      font-weight: 800;
+      padding: 0.6rem 1.25rem;
+      border-radius: 8px;
+      border: 2px solid var(--c-primary);
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .word-bubble.highlight-green {
+      background: var(--c-green-light);
+      color: var(--c-green);
+      border-color: var(--c-green);
+    }
+
+    .word-bubble.highlight-red {
+      background: var(--c-red-light);
+      color: var(--c-red);
+      border-color: var(--c-red);
+    }
+
+    .relation-arrow {
+      font-size: 1.2rem;
+      color: var(--c-muted);
+      transition: color 0.3s;
+    }
+
+    .relation-arrow.green { color: var(--c-green); }
+    .relation-arrow.red { color: var(--c-red); }
+
+    .answer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+
+    .answer-btn {
+      padding: 0.6rem 0.75rem;
+      border: 2px solid var(--c-border);
+      border-radius: 8px;
+      background: var(--c-card);
+      color: var(--c-text);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.15s;
+      line-height: 1.35;
+    }
+
+    .answer-btn:hover:not(:disabled) {
+      border-color: var(--c-primary);
+      background: var(--c-primary-light);
+    }
+
+    .answer-btn.correct {
+      border-color: var(--c-green);
+      background: var(--c-green-light);
+      color: var(--c-green);
+    }
+
+    .answer-btn.wrong {
+      border-color: var(--c-red);
+      background: var(--c-red-light);
+      color: var(--c-red);
+    }
+
+    .answer-btn:disabled {
+      cursor: default;
+      opacity: 0.7;
+    }
+
+    /* Feedback */
+    .feedback-box {
+      border-radius: 8px;
+      padding: 1rem 1.1rem;
+      margin-top: 1.25rem;
+      font-size: 0.9rem;
+      line-height: 1.55;
+      display: none;
+      border-left: 4px solid;
+    }
+
+    .feedback-box.correct {
+      background: var(--c-green-light);
+      border-color: var(--c-green);
+      color: #14532d;
+      display: block;
+    }
+
+    .feedback-box.wrong {
+      background: var(--c-red-light);
+      border-color: var(--c-red);
+      color: #7f1d1d;
+      display: block;
+    }
+
+    .feedback-box .concept-name {
+      font-weight: 700;
+    }
+
+    /* Fortschritt */
+    .progress-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.25rem;
+    }
+
+    .progress-dots {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .progress-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--c-border);
+      transition: background 0.3s;
+    }
+
+    .progress-dot.done { background: var(--c-green); }
+    .progress-dot.current { background: var(--c-primary); }
+
+    .next-btn {
+      background: var(--c-primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.55rem 1.25rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: none;
+      transition: opacity 0.2s;
+    }
+
+    .next-btn:hover { opacity: 0.88; }
+
+    /* Stufe 2 – Baum */
+    .tree-container {
+      margin: 1.5rem 0;
+    }
+
+    .tree-instruction {
+      font-size: 0.88rem;
+      color: var(--c-muted);
+      margin-bottom: 1rem;
+      padding: 0.75rem 1rem;
+      background: var(--c-yellow-light);
+      border-radius: 8px;
+      border-left: 3px solid var(--c-yellow);
+    }
+
+    .word-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .word-card {
+      background: var(--c-primary-light);
+      border: 2px solid var(--c-primary);
+      color: var(--c-primary);
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.4rem 0.9rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.15s;
+      user-select: none;
+    }
+
+    .word-card:hover { opacity: 0.8; }
+    .word-card.used { opacity: 0.35; cursor: default; text-decoration: line-through; }
+
+    #tree-svg {
+      width: 100%;
+      height: 280px;
+      display: block;
+      overflow: visible;
+    }
+
+    .tree-node {
+      cursor: pointer;
+    }
+
+    .tree-node rect {
+      transition: fill 0.2s, stroke 0.2s;
+    }
+
+    .tree-node text {
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-weight: 700;
+      pointer-events: none;
+    }
+
+    .tree-node.empty rect { fill: #f1f5f9; stroke: #94a3b8; stroke-width: 2; stroke-dasharray: 5 3; }
+    .tree-node.empty text { fill: #94a3b8; font-weight: 400; font-size: 11px; }
+    .tree-node.filled rect { fill: var(--c-primary-light); stroke: var(--c-primary); stroke-width: 2; }
+    .tree-node.filled text { fill: var(--c-primary); }
+    .tree-node.fixed rect { fill: #e0f2fe; stroke: #0284c7; stroke-width: 2; }
+    .tree-node.fixed text { fill: #0369a1; }
+    .tree-node.correct-final rect { fill: var(--c-green-light); stroke: var(--c-green); stroke-width: 2; }
+    .tree-node.correct-final text { fill: var(--c-green); }
+
+    .tree-edge {
+      stroke: #94a3b8;
+      stroke-width: 2;
+      fill: none;
+      transition: stroke 0.4s;
+    }
+
+    .tree-edge.revealed { stroke: var(--c-green); stroke-width: 2.5; }
+
+    .check-btn {
+      background: var(--c-primary);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      transition: opacity 0.2s;
+    }
+
+    .check-btn:hover { opacity: 0.88; }
+    .check-btn:disabled { opacity: 0.4; cursor: default; }
+
+    /* Info-Panel (Konzept-Überblick) */
+    .info-panel {
+      background: var(--c-card);
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .info-panel h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .relation-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .pill-blue { background: var(--c-primary-light); color: var(--c-primary); }
+    .pill-red { background: var(--c-red-light); color: var(--c-red); }
+    .pill-green { background: var(--c-green-light); color: var(--c-green); }
+    .pill-yellow { background: var(--c-yellow-light); color: var(--c-yellow); }
+
+    .pill-icon { font-size: 0.9rem; }
+
+    /* Abschluss */
+    .completion-card {
+      background: var(--c-green-light);
+      border: 2px solid var(--c-green);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      text-align: center;
+      display: none;
+      margin-bottom: 2rem;
+    }
+
+    .completion-card.show { display: block; }
+
+    .completion-card h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--c-green);
+      margin-bottom: 0.5rem;
+    }
+
+    .completion-card p {
+      color: #14532d;
+      font-size: 0.95rem;
+    }
+
+    /* Weitere Links */
+    .related-links {
+      background: var(--c-card);
+      border: 1px solid var(--c-border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+
+    .related-links h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--c-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 1rem;
+    }
+
+    .related-links ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .related-links a {
+      color: var(--c-primary);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .related-links a::before { content: "→"; }
+    .related-links a:hover { text-decoration: underline; }
+
+    /* Stage visibility */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    @media (max-width: 480px) {
+      .page-header h1 { font-size: 1.25rem; }
+      .answer-grid { grid-template-columns: 1fr; }
+      .word-pair { gap: 0.6rem; }
+      .word-bubble { font-size: 1rem; padding: 0.5rem 0.9rem; }
+      #tree-svg { height: 240px; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="semantik">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+  <header class="site-header">
+    <a href="/" class="logo">Nachhilfe Mentor</a>
+    <span class="breadcrumb">Semantik – Simulation</span>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <span class="topic-badge">Linguistik &amp; Semantik</span>
+      <h1>Semantische Relationen:<br>Synonymie, Antonymie &amp; Hyponymie</h1>
+      <p class="subtitle">Klassifiziere Wortbeziehungen aktiv und baue einen semantischen Wortbaum auf. Klassen 9–12.</p>
+    </div>
+
+    <!-- Konzept-Überblick -->
+    <div class="info-panel">
+      <h3>Was sind semantische Relationen?</h3>
+      <p style="font-size:0.88rem;color:var(--c-muted);margin-bottom:1rem;">
+        Wörter im Lexikon stehen in bedeutungsmäßigen Beziehungen zueinander. Diese semantischen Relationen sind Grundbegriffe der Strukturellen Semantik (Lyons 1977, Cruse 1986).
+      </p>
+      <div class="relation-pills">
+        <span class="pill pill-yellow"><span class="pill-icon">≈</span> Synonymie – gleiche Bedeutung</span>
+        <span class="pill pill-red"><span class="pill-icon">↔</span> Antonymie – Gegensatz</span>
+        <span class="pill pill-blue"><span class="pill-icon">↓</span> Hyponymie – Unterbegriff</span>
+        <span class="pill pill-green"><span class="pill-icon">↑</span> Hyperonymie – Oberbegriff</span>
+      </div>
+    </div>
+
+    <!-- Live-Netzwerk -->
+    <div class="network-card">
+      <h2>Semantisches Netzwerk – wird mit deinen Antworten aufgebaut</h2>
+      <div class="legend">
+        <span class="legend-item"><span class="legend-dot" style="background:#ca8a04"></span>Synonymie</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span>Antonymie</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#2563eb"></span>Hyperonymie</span>
+        <span class="legend-item"><span class="legend-dot" style="background:#16a34a"></span>Hyponymie</span>
+      </div>
+      <svg id="network-svg" viewBox="0 0 700 200" aria-label="Semantisches Netzwerk" style="min-height:140px;"></svg>
+    </div>
+
+    <!-- Stufen-Navigation -->
+    <div class="stage-nav" aria-label="Fortschritt">
+      <div class="stage-btn active" id="nav1">Stufe 1: Klassifikation</div>
+      <div class="stage-btn" id="nav2">Stufe 2: Wortbaum</div>
+    </div>
+
+    <!-- STUFE 1 -->
+    <div class="stage active" id="stage1">
+      <div class="task-card" id="pair-card">
+        <h2 id="pair-title">Aufgabe 1 von 4: Welche Relation verbindet die beiden Wörter?</h2>
+        <p class="task-meta" id="pair-meta">Wähle die passende semantische Relation aus.</p>
+
+        <div class="word-pair">
+          <div class="word-bubble" id="wordA">–</div>
+          <div class="relation-arrow" id="rel-arrow">?</div>
+          <div class="word-bubble" id="wordB">–</div>
+        </div>
+
+        <div class="answer-grid" id="answer-grid"></div>
+
+        <div class="feedback-box" id="pair-feedback"></div>
+
+        <div class="progress-row">
+          <div class="progress-dots" id="progress-dots"></div>
+          <button class="next-btn" id="next-pair-btn" aria-label="Nächste Aufgabe">Weiter →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- STUFE 2 -->
+    <div class="stage" id="stage2">
+      <div class="task-card">
+        <h2>Stufe 2: Semantischen Wortbaum vervollständigen</h2>
+        <p class="task-meta">Wortfeld „Fahrzeug" – ordne die drei Wörter in den richtigen Knoten des Baums ein.</p>
+
+        <div class="tree-instruction">
+          Klicke auf ein <strong>Wort</strong> unten, dann auf den passenden <strong>Knoten</strong> im Baum. Der Satz-Test hilft dir: „Ein [Wort] ist ein [Oberbegriff]" – stimmt das?
+        </div>
+
+        <div class="word-cards" id="word-cards">
+          <div class="word-card" data-word="Fahrzeug">Fahrzeug</div>
+          <div class="word-card" data-word="Fahrrad">Fahrrad</div>
+          <div class="word-card" data-word="Boot">Boot</div>
+        </div>
+
+        <svg id="tree-svg" viewBox="0 0 680 260" aria-label="Semantischer Wortbaum"></svg>
+
+        <div class="feedback-box" id="tree-feedback" style="margin-top:1rem;"></div>
+
+        <div style="display:flex;gap:0.75rem;margin-top:1.25rem;">
+          <button class="check-btn" id="check-tree-btn" disabled style="flex:2;">Baum prüfen</button>
+          <button class="check-btn" id="reset-tree-btn" style="flex:1;background:var(--c-muted);">Zurücksetzen</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Abschluss -->
+    <div class="completion-card" id="completion">
+      <h2>Simulation abgeschlossen!</h2>
+      <p>Du hast alle vier semantischen Relationen klassifiziert und den Wortbaum korrekt aufgebaut. Gut gemacht!</p>
+      <p style="margin-top:0.75rem;font-size:0.85rem;">
+        <strong>Kernbegriffe:</strong> Synonymie · Antonymie (graduell/komplementär) · Hyponymie · Hyperonymie
+      </p>
+    </div>
+
+    <!-- Weiterführende Links -->
+    <div class="related-links">
+      <h3>Weitere Simulationen – Semantik</h3>
+      <ul>
+        <li><a href="/lernmaterialien/lernsimulationen/konnotation-denotation-simulation.html">Konnotation &amp; Denotation – Bedeutungsschichten</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/polysemie-homonymie-simulation.html">Polysemie &amp; Homonymie – Mehrdeutige Wörter</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/bedeutungswandel-simulation.html">Bedeutungswandel – Wie Wörter ihre Bedeutung ändern</a></li>
+      </ul>
+    </div>
+  </main>
+
+  <script>
+    // ============================================================
+    // STUFE 1: Wortpaar-Klassifikation
+    // ============================================================
+
+    const PAIRS = [
+      {
+        a: "schnell",
+        b: "langsam",
+        correct: "Antonymie (graduell)",
+        options: [
+          "Synonymie",
+          "Antonymie (graduell)",
+          "Antonymie (komplementär)",
+          "Hyponymie"
+        ],
+        feedbackCorrect: "<span class='concept-name'>Antonymie (graduell):</span> »schnell« und »langsam« liegen auf einer Skala – von sehr schnell über mittelmäßig bis sehr langsam. Da Zwischenwerte möglich sind, handelt es sich um graduelle Antonyme (Murphy 2003). Die Verneinung »nicht schnell« schließt »langsam« nicht automatisch ein.",
+        feedbackWrong: {
+          "Synonymie": "<span class='concept-name'>Nein – Synonymie:</span> Synonyme sind bedeutungsgleich oder bedeutungsähnlich. »schnell« und »langsam« bedeuten das Gegenteil. Die richtige Relation ist <strong>Antonymie (graduell)</strong>, da beide auf einer Skala liegen (sehr schnell … mittelmäßig … sehr langsam).",
+          "Antonymie (komplementär)": "<span class='concept-name'>Fast richtig – aber:</span> Komplementäre Antonyme schließen sich aus ohne Zwischenwerte (lebendig/tot). »schnell« und »langsam« haben jedoch Zwischenwerte (»mittelmäßig schnell«). Die korrekte Relation ist <strong>Antonymie (graduell)</strong>.",
+          "Hyponymie": "<span class='concept-name'>Nein – Hyponymie:</span> Hyponymie ist ein Über-/Unterordnungsverhältnis (Pudel → Hund). »schnell« und »langsam« sind dagegen Gegensätze: <strong>Antonymie (graduell)</strong>."
+        },
+        netEdge: { from: "schnell", to: "langsam", type: "antonym", label: "Antonym (graduell)" }
+      },
+      {
+        a: "Hund",
+        b: "Pudel",
+        correct: "Hyperonymie (Hund ist Oberbegriff)",
+        options: [
+          "Synonymie",
+          "Antonymie (graduell)",
+          "Hyponymie (Hund ist Unterbegriff)",
+          "Hyperonymie (Hund ist Oberbegriff)"
+        ],
+        feedbackCorrect: "<span class='concept-name'>Hyperonymie / Hyponymie:</span> »Hund« ist das Hyperonym (Oberbegriff), »Pudel« das Hyponym (Unterbegriff). Satz-Test: »Ein Pudel ist ein Hund« – wahr. »Ein Hund ist ein Pudel« – nicht notwendigerweise wahr. Dieses asymmetrische Verhältnis ist das Kennzeichen der Hyponymie-Relation (Cruse 1986).",
+        feedbackWrong: {
+          "Synonymie": "<span class='concept-name'>Nein – Synonymie:</span> Synonyme haben gleiche oder ähnliche Bedeutung. »Hund« und »Pudel« stehen jedoch in einem Über-/Unterordnungsverhältnis: <strong>Hyperonymie/Hyponymie</strong>. Satz-Test: »Ein Pudel ist ein Hund« ist wahr – aber »Ein Hund ist ein Pudel« nicht.",
+          "Antonymie (graduell)": "<span class='concept-name'>Nein – Antonymie:</span> »Hund« und »Pudel« sind keine Gegensätze, sondern stehen in einem Klassifikationsverhältnis. Richtig: <strong>Hyperonymie</strong> – »Hund« ist Oberbegriff, »Pudel« Unterbegriff.",
+          "Hyponymie (Hund ist Unterbegriff)": "<span class='concept-name'>Richtungsumkehr:</span> Die Relation stimmt, aber die Richtung nicht. »Pudel« ist das Hyponym (Unterbegriff), »Hund« ist das <strong>Hyperonym</strong> (Oberbegriff). Satz-Test: »Ein Pudel ist ein Hund« – nicht umgekehrt."
+        },
+        netEdge: { from: "Pudel", to: "Hund", type: "hypo", label: "Hyponym von" }
+      },
+      {
+        a: "anfangen",
+        b: "beginnen",
+        correct: "Synonymie (partiell)",
+        options: [
+          "Synonymie (partiell)",
+          "Antonymie (komplementär)",
+          "Hyponymie",
+          "Hyperonymie"
+        ],
+        feedbackCorrect: "<span class='concept-name'>Synonymie (partiell):</span> »anfangen« und »beginnen« haben dieselbe Denotation (Bedeutungsinhalt), unterscheiden sich aber in Konnotation und Register – »beginnen« klingt formeller. Vollständige Synonymie (in allen Kontexten identisch) ist im Deutschen äußerst selten (Lyons 1977).",
+        feedbackWrong: {
+          "Antonymie (komplementär)": "<span class='concept-name'>Nein – Antonymie:</span> Antonyme sind Gegensätze. »anfangen« und »beginnen« bedeuten dasselbe. Richtig: <strong>Synonymie (partiell)</strong> – gleiche Denotation, aber verschiedenes Register.",
+          "Hyponymie": "<span class='concept-name'>Nein – Hyponymie:</span> Hyponymie ist ein Über-/Unterordnungsverhältnis (Pudel → Hund). »anfangen« und »beginnen« stehen auf gleicher Ebene mit gleicher Bedeutung: <strong>Synonymie</strong>.",
+          "Hyperonymie": "<span class='concept-name'>Nein – Hyperonymie:</span> Hyperonymie wäre »beginnen ist Oberbegriff von anfangen«, was nicht stimmt. Beide bedeuten dasselbe: <strong>Synonymie (partiell)</strong>."
+        },
+        netEdge: { from: "anfangen", to: "beginnen", type: "synonym", label: "Synonym" }
+      },
+      {
+        a: "lebendig",
+        b: "tot",
+        correct: "Antonymie (komplementär)",
+        options: [
+          "Synonymie",
+          "Antonymie (graduell)",
+          "Antonymie (komplementär)",
+          "Hyperonymie"
+        ],
+        feedbackCorrect: "<span class='concept-name'>Antonymie (komplementär):</span> »lebendig« und »tot« schließen sich vollständig aus – es gibt keinen Zwischenwert. Nicht-lebendig = tot, nicht-tot = lebendig. Diese Ausschließlichkeit ohne Skala ist das Merkmal komplementärer Antonyme (Murphy 2003). Vergleich: »schnell/langsam« haben dagegen Zwischenwerte → graduelle Antonyme.",
+        feedbackWrong: {
+          "Synonymie": "<span class='concept-name'>Nein – Synonymie:</span> »lebendig« und »tot« sind Gegensätze. Richtig: <strong>Antonymie (komplementär)</strong> – gegenseitige Ausschließung ohne Zwischenwert.",
+          "Antonymie (graduell)": "<span class='concept-name'>Fast – aber:</span> Bei graduellen Antonymen gibt es Zwischenwerte (sehr schnell … mittelmäßig … sehr langsam). Bei »lebendig/tot« gibt es keinen Mittelwert: entweder lebendig oder tot. Das ist <strong>komplementäre Antonymie</strong>.",
+          "Hyperonymie": "<span class='concept-name'>Nein – Hyperonymie:</span> »lebendig« und »tot« stehen nicht in einem Über-/Unterordnungsverhältnis. Sie sind Gegensätze: <strong>Antonymie (komplementär)</strong>."
+        },
+        netEdge: { from: "lebendig", to: "tot", type: "antonym-comp", label: "Antonym (komplementär)" }
+      }
+    ];
+
+    let currentPair = 0;
+    let pairAnswered = false;
+    const networkNodes = {};
+    const networkEdges = [];
+
+    function renderNetworkSVG() {
+      const svg = document.getElementById("network-svg");
+      svg.innerHTML = "";
+
+      const positions = {
+        "schnell":   { x: 80,  y: 80 },
+        "langsam":   { x: 200, y: 80 },
+        "Hund":      { x: 340, y: 50 },
+        "Pudel":     { x: 340, y: 130 },
+        "anfangen":  { x: 480, y: 80 },
+        "beginnen":  { x: 600, y: 80 },
+        "lebendig":  { x: 540, y: 150 },
+        "tot":       { x: 640, y: 150 }
+      };
+
+      const colorMap = {
+        antonym:       "#dc2626",
+        "antonym-comp":"#dc2626",
+        hypo:          "#2563eb",
+        synonym:       "#ca8a04"
+      };
+
+      // Draw edges
+      networkEdges.forEach(e => {
+        const from = positions[e.from];
+        const to   = positions[e.to];
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", from.x); line.setAttribute("y1", from.y);
+        line.setAttribute("x2", to.x);   line.setAttribute("y2", to.y);
+        line.setAttribute("stroke", colorMap[e.type] || "#888");
+        line.setAttribute("stroke-width", "2.5");
+        if (e.type === "synonym") line.setAttribute("stroke-dasharray", "5 3");
+        svg.appendChild(line);
+
+        // Edge label
+        const mx = (from.x + to.x) / 2;
+        const my = (from.y + to.y) / 2 - 8;
+        const txt = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        txt.setAttribute("x", mx); txt.setAttribute("y", my);
+        txt.setAttribute("text-anchor", "middle");
+        txt.setAttribute("font-size", "9");
+        txt.setAttribute("fill", colorMap[e.type] || "#888");
+        txt.setAttribute("font-family", "sans-serif");
+        txt.textContent = e.label;
+        svg.appendChild(txt);
+      });
+
+      // Draw nodes
+      const allWords = Object.keys(positions);
+      allWords.forEach(w => {
+        const pos = positions[w];
+        const shown = networkNodes[w];
+        const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+
+        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        rect.setAttribute("x", pos.x - 35);
+        rect.setAttribute("y", pos.y - 14);
+        rect.setAttribute("width", 70);
+        rect.setAttribute("height", 28);
+        rect.setAttribute("rx", "6");
+        rect.setAttribute("fill", shown ? "#dbeafe" : "#f1f5f9");
+        rect.setAttribute("stroke", shown ? "#2563eb" : "#cbd5e1");
+        rect.setAttribute("stroke-width", "1.5");
+        g.appendChild(rect);
+
+        const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        text.setAttribute("x", pos.x);
+        text.setAttribute("y", pos.y + 5);
+        text.setAttribute("text-anchor", "middle");
+        text.setAttribute("font-size", "11");
+        text.setAttribute("font-weight", shown ? "700" : "400");
+        text.setAttribute("fill", shown ? "#1e40af" : "#94a3b8");
+        text.setAttribute("font-family", "sans-serif");
+        text.textContent = w;
+        g.appendChild(text);
+
+        svg.appendChild(g);
+      });
+    }
+
+    function buildProgressDots() {
+      const dots = document.getElementById("progress-dots");
+      dots.innerHTML = "";
+      for (let i = 0; i < PAIRS.length; i++) {
+        const d = document.createElement("div");
+        d.className = "progress-dot" + (i < currentPair ? " done" : i === currentPair ? " current" : "");
+        dots.appendChild(d);
+      }
+    }
+
+    function renderPair() {
+      if (currentPair >= PAIRS.length) {
+        // Advance to stage 2
+        document.getElementById("stage1").classList.remove("active");
+        document.getElementById("stage2").classList.add("active");
+        document.getElementById("nav1").classList.remove("active");
+        document.getElementById("nav1").classList.add("done");
+        document.getElementById("nav2").classList.add("active");
+        pushDataLayer("stage_complete", { stage: 1 });
+        return;
+      }
+
+      const pair = PAIRS[currentPair];
+      pairAnswered = false;
+
+      document.getElementById("pair-title").textContent = "Aufgabe " + (currentPair + 1) + " von " + PAIRS.length + ": Welche Relation verbindet die beiden Wörter?";
+      document.getElementById("wordA").textContent = pair.a;
+      document.getElementById("wordB").textContent = pair.b;
+      document.getElementById("rel-arrow").textContent = "?";
+      document.getElementById("rel-arrow").className = "relation-arrow";
+      document.getElementById("wordA").className = "word-bubble";
+      document.getElementById("wordB").className = "word-bubble";
+
+      const feedback = document.getElementById("pair-feedback");
+      feedback.className = "feedback-box";
+      feedback.innerHTML = "";
+
+      const grid = document.getElementById("answer-grid");
+      grid.innerHTML = "";
+      pair.options.forEach(opt => {
+        const btn = document.createElement("button");
+        btn.className = "answer-btn";
+        btn.textContent = opt;
+        btn.addEventListener("click", () => handleAnswer(opt, btn));
+        grid.appendChild(btn);
+      });
+
+      document.getElementById("next-pair-btn").style.display = "none";
+      buildProgressDots();
+    }
+
+    function handleAnswer(choice, btn) {
+      if (pairAnswered) return;
+      pairAnswered = true;
+
+      const pair = PAIRS[currentPair];
+      const allBtns = document.querySelectorAll(".answer-btn");
+      allBtns.forEach(b => { b.disabled = true; });
+
+      const feedback = document.getElementById("pair-feedback");
+      const arrow = document.getElementById("rel-arrow");
+
+      if (choice === pair.correct) {
+        btn.classList.add("correct");
+        arrow.textContent = "✓";
+        arrow.classList.add("green");
+        document.getElementById("wordA").classList.add("highlight-green");
+        document.getElementById("wordB").classList.add("highlight-green");
+        feedback.className = "feedback-box correct";
+        feedback.innerHTML = "✓ Richtig! " + pair.feedbackCorrect;
+        // Add to network
+        networkNodes[pair.a] = true;
+        networkNodes[pair.b] = true;
+        networkEdges.push(pair.netEdge);
+        renderNetworkSVG();
+      } else {
+        btn.classList.add("wrong");
+        arrow.textContent = "✗";
+        arrow.classList.add("red");
+        document.getElementById("wordA").classList.add("highlight-red");
+        document.getElementById("wordB").classList.add("highlight-red");
+        // Show correct answer
+        allBtns.forEach(b => {
+          if (b.textContent === pair.correct) b.classList.add("correct");
+        });
+        feedback.className = "feedback-box wrong";
+        feedback.innerHTML = "✗ " + (pair.feedbackWrong[choice] || "Nicht ganz. Die richtige Relation ist <strong>" + pair.correct + "</strong>.");
+        // Still add to network on wrong answer (show correct)
+        networkNodes[pair.a] = true;
+        networkNodes[pair.b] = true;
+        networkEdges.push(pair.netEdge);
+        renderNetworkSVG();
+      }
+
+      document.getElementById("next-pair-btn").style.display = "inline-block";
+    }
+
+    document.getElementById("next-pair-btn").addEventListener("click", () => {
+      currentPair++;
+      renderPair();
+    });
+
+    // ============================================================
+    // STUFE 2: Semantischer Wortbaum
+    // ============================================================
+
+    // Tree structure:
+    //       [ROOT = ?]
+    //      /          \
+    // [Landfahrzeug] [Wasserfahrzeug]
+    //   /       \          \
+    // [? FAH.] [Motorrad]  [? BOOT]
+
+    // Nodes to fill: ROOT (= Fahrzeug), FAH (= Fahrrad), BOAT (= Boot)
+    const TREE_NODES = {
+      root:   { label: "",        fixed: false, correct: "Fahrzeug",   x: 340, y: 35,  w: 110 },
+      land:   { label: "Landfahrzeug", fixed: true,  correct: null,    x: 190, y: 115, w: 130 },
+      water:  { label: "Wasserfahrzeug", fixed: true, correct: null,   x: 490, y: 115, w: 145 },
+      fahr:   { label: "",        fixed: false, correct: "Fahrrad",    x: 120, y: 200, w: 90 },
+      moto:   { label: "Motorrad", fixed: true, correct: null,         x: 260, y: 200, w: 100 },
+      boot:   { label: "",        fixed: false, correct: "Boot",       x: 490, y: 200, w: 80 }
+    };
+
+    const TREE_EDGES = [
+      { from: "root", to: "land" },
+      { from: "root", to: "water" },
+      { from: "land",  to: "fahr" },
+      { from: "land",  to: "moto" },
+      { from: "water", to: "boot" }
+    ];
+
+    let selectedWord = null;
+    const filledNodes = {};
+
+    function renderTree() {
+      const svg = document.getElementById("tree-svg");
+      svg.innerHTML = "";
+
+      const H = 26; // half-height of node rect
+
+      // Edges
+      TREE_EDGES.forEach(e => {
+        const from = TREE_NODES[e.from];
+        const to   = TREE_NODES[e.to];
+        const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+        line.setAttribute("x1", from.x); line.setAttribute("y1", from.y + H);
+        line.setAttribute("x2", to.x);   line.setAttribute("y2", to.y - H);
+        const allFilled = Object.keys(TREE_NODES).filter(k => !TREE_NODES[k].fixed).every(k => filledNodes[k]);
+        line.setAttribute("class", allFilled ? "tree-edge revealed" : "tree-edge");
+        svg.appendChild(line);
+
+        // Arrow head
+        const dy = to.y - H - (from.y + H);
+        const dx = to.x - from.x;
+        const len = Math.sqrt(dx * dx + dy * dy);
+        const ux = dx / len, uy = dy / len;
+        const ax = to.x - ux * H - ux * 2;
+        const ay = to.y - H - uy * 2;
+        const p1x = ax - uy * 5; const p1y = ay + ux * 5;
+        const p2x = ax + uy * 5; const p2y = ay - ux * 5;
+        const tip = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+        tip.setAttribute("points", `${to.x},${to.y - H} ${p1x},${p1y} ${p2x},${p2y}`);
+        tip.setAttribute("fill", allFilled ? "#16a34a" : "#94a3b8");
+        svg.appendChild(tip);
+      });
+
+      // Nodes
+      Object.entries(TREE_NODES).forEach(([key, node]) => {
+        const g = document.createElementNS("http://www.w3.org/2000/svg", "g");
+        g.setAttribute("class", "tree-node");
+
+        const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+        const hw = node.w / 2;
+        rect.setAttribute("x", node.x - hw);
+        rect.setAttribute("y", node.y - H);
+        rect.setAttribute("width", node.w);
+        rect.setAttribute("height", H * 2);
+        rect.setAttribute("rx", "7");
+
+        const text = document.createElementNS("http://www.w3.org/2000/svg", "text");
+        text.setAttribute("x", node.x);
+        text.setAttribute("y", node.y + 5);
+        text.setAttribute("text-anchor", "middle");
+        text.setAttribute("font-size", "13");
+        text.setAttribute("font-family", "-apple-system, BlinkMacSystemFont, sans-serif");
+
+        const allDone = Object.keys(TREE_NODES).filter(k => !TREE_NODES[k].fixed).every(k => filledNodes[k]);
+
+        if (node.fixed) {
+          rect.setAttribute("fill", "#e0f2fe");
+          rect.setAttribute("stroke", "#0284c7");
+          rect.setAttribute("stroke-width", "2");
+          text.setAttribute("fill", "#0369a1");
+          text.setAttribute("font-weight", "700");
+          text.textContent = node.label;
+        } else if (filledNodes[key]) {
+          if (allDone) {
+            rect.setAttribute("fill", "#dcfce7");
+            rect.setAttribute("stroke", "#16a34a");
+          } else {
+            rect.setAttribute("fill", "#dbeafe");
+            rect.setAttribute("stroke", "#2563eb");
+          }
+          rect.setAttribute("stroke-width", "2");
+          text.setAttribute("fill", allDone ? "#14532d" : "#1e40af");
+          text.setAttribute("font-weight", "700");
+          text.textContent = filledNodes[key];
+        } else {
+          // Empty clickable slot
+          rect.setAttribute("fill", selectedWord ? "#fef9c3" : "#f1f5f9");
+          rect.setAttribute("stroke", selectedWord ? "#ca8a04" : "#94a3b8");
+          rect.setAttribute("stroke-width", "2");
+          rect.setAttribute("stroke-dasharray", "5 3");
+          text.setAttribute("fill", "#94a3b8");
+          text.setAttribute("font-weight", "400");
+          text.setAttribute("font-size", "11");
+          text.textContent = "Hier einfügen";
+
+          if (selectedWord) {
+            g.style.cursor = "pointer";
+            g.addEventListener("click", () => placeWord(key));
+          }
+        }
+
+        g.appendChild(rect);
+        g.appendChild(text);
+        svg.appendChild(g);
+      });
+    }
+
+    function placeWord(nodeKey) {
+      if (!selectedWord) return;
+      filledNodes[nodeKey] = selectedWord;
+
+      // Mark card as used and remove outline
+      document.querySelectorAll(".word-card").forEach(card => {
+        card.style.outline = "none";
+        if (card.dataset.word === selectedWord) card.classList.add("used");
+      });
+
+      selectedWord = null;
+
+      // Check if all filled
+      const emptyKeys = Object.keys(TREE_NODES).filter(k => !TREE_NODES[k].fixed && !filledNodes[k]);
+      if (emptyKeys.length === 0) {
+        document.getElementById("check-tree-btn").disabled = false;
+      }
+
+      renderTree();
+    }
+
+    document.querySelectorAll(".word-card").forEach(card => {
+      card.addEventListener("click", () => {
+        if (card.classList.contains("used")) return;
+        selectedWord = card.dataset.word;
+        document.querySelectorAll(".word-card").forEach(c => c.style.outline = "none");
+        card.style.outline = "3px solid #ca8a04";
+        renderTree();
+      });
+    });
+
+    document.getElementById("check-tree-btn").addEventListener("click", checkTree);
+
+    document.getElementById("reset-tree-btn").addEventListener("click", () => {
+      // Reset all filled (non-fixed) nodes
+      Object.keys(TREE_NODES).forEach(k => {
+        if (!TREE_NODES[k].fixed) delete filledNodes[k];
+      });
+      selectedWord = null;
+      document.querySelectorAll(".word-card").forEach(card => {
+        card.classList.remove("used");
+        card.style.outline = "none";
+      });
+      document.getElementById("check-tree-btn").disabled = true;
+      const fb = document.getElementById("tree-feedback");
+      fb.className = "feedback-box";
+      fb.innerHTML = "";
+      renderTree();
+    });
+
+    function checkTree() {
+      let allCorrect = true;
+      Object.entries(TREE_NODES).forEach(([key, node]) => {
+        if (!node.fixed && filledNodes[key] !== node.correct) {
+          allCorrect = false;
+        }
+      });
+
+      const fb = document.getElementById("tree-feedback");
+
+      if (allCorrect) {
+        fb.className = "feedback-box correct";
+        fb.innerHTML = [
+          "<span class='concept-name'>Perfekt!</span> Alle drei Wörter sind korrekt eingeordnet.",
+          "",
+          "<strong>Satz-Test-Prüfung:</strong>",
+          "• »Ein Fahrrad ist ein Landfahrzeug.« – wahr (Hyponymie ✓)",
+          "• »Ein Landfahrzeug ist ein Fahrrad.« – nicht notwendigerweise wahr (kein Synonym ✓)",
+          "• »Ein Boot ist ein Wasserfahrzeug.« – wahr (Hyponymie ✓)",
+          "• »Fahrzeug« ist Hyperonym: sowohl Landfahrzeuge als auch Wasserfahrzeuge sind Fahrzeuge.",
+          "",
+          "Die Hyperonymie-/Hyponymie-Relation ist <strong>asymmetrisch und transitiv</strong>: Ein Fahrrad ist ein Landfahrzeug ist ein Fahrzeug."
+        ].join("<br>");
+
+        renderTree();
+        document.getElementById("check-tree-btn").disabled = true;
+        document.getElementById("completion").classList.add("show");
+        document.getElementById("nav2").classList.remove("active");
+        document.getElementById("nav2").classList.add("done");
+        pushDataLayer("stage_complete", { stage: 2 });
+        pushDataLayer("simulation_complete", {});
+      } else {
+        // Find wrong nodes and give hints
+        const wrongs = [];
+        Object.entries(TREE_NODES).forEach(([key, node]) => {
+          if (!node.fixed && filledNodes[key] && filledNodes[key] !== node.correct) {
+            wrongs.push("»" + filledNodes[key] + "« gehört nicht an diese Stelle (erwartet: »" + node.correct + "«).");
+          }
+        });
+        fb.className = "feedback-box wrong";
+        fb.innerHTML = "✗ Nicht ganz richtig. " + wrongs.join(" ") + "<br><br><strong>Tipp:</strong> Nutze den Satz-Test: »Ein [Wort] ist ein [Oberbegriff].« – Stimmt dieser Satz?";
+
+        // Reset wrong nodes so learner can re-try
+        Object.entries(TREE_NODES).forEach(([key, node]) => {
+          if (!node.fixed && filledNodes[key] && filledNodes[key] !== node.correct) {
+            const wrongWord = filledNodes[key];
+            delete filledNodes[key];
+            // Reactivate the card
+            document.querySelectorAll(".word-card").forEach(card => {
+              if (card.dataset.word === wrongWord) card.classList.remove("used");
+            });
+          }
+        });
+        document.getElementById("check-tree-btn").disabled = true;
+        selectedWord = null;
+        renderTree();
+      }
+    }
+
+    // ============================================================
+    // Tracking
+    // ============================================================
+    window.dataLayer = window.dataLayer || [];
+
+    function pushDataLayer(event, params) {
+      window.dataLayer.push(Object.assign({ event }, params));
+    }
+
+    // ============================================================
+    // Init
+    // ============================================================
+    renderNetworkSVG();
+    renderPair();
+    renderTree();
+    pushDataLayer("simulation_start", { asset: "semantische-relationen-synonymie-antonymie-simulation" });
+  </script>
+</body>
+</html>

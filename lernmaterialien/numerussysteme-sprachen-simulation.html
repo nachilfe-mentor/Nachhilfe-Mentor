@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Numerussysteme der Sprachen: Singular, Dual, Plural verstehen | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zum grammatischen Numerus: Verschiebe den Regler und vergleiche, wie Arabisch drei, Deutsch zwei und Mandarin keine Numerusformen bildet.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Numerus, Dual, grammatischer Numerus, Sprachtypologie, Arabisch Dual, Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/numerussysteme-sprachen-simulation.html">
+  <meta property="og:title" content="Numerussysteme der Sprachen: Singular, Dual, Plural">
+  <meta property="og:description" content="Interaktive Simulation zum grammatischen Numerus: Verschiebe den Regler und vergleiche, wie Arabisch drei, Deutsch zwei und Mandarin keine Numerusformen bildet.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/numerussysteme-sprachen-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Numerussysteme der Sprachen: Singular, Dual, Plural verstehen",
+  "description":"Interaktive Simulation zum grammatischen Numerus: Verschiebe den Regler und vergleiche, wie Arabisch drei, Deutsch zwei und Mandarin keine Numerusformen bildet.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/numerussysteme-sprachen-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    :root {
+      --blau:        #2563EB;
+      --blau-hell:   #DBEAFE;
+      --gruen:       #16A34A;
+      --gruen-hell:  #DCFCE7;
+      --orange:      #EA580C;
+      --orange-hell: #FED7AA;
+      --lila:        #7C3AED;
+      --lila-hell:   #EDE9FE;
+      --rot:         #DC2626;
+      --rot-hell:    #FEE2E2;
+      --grau:        #6B7280;
+      --grau-hell:   #F3F4F6;
+      --text:        #111827;
+      --rand:        #E5E7EB;
+      --weiss:       #FFFFFF;
+      --radius:      10px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #F9FAFB;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 4rem;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--lila-hell);
+      color: var(--lila);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(1.35rem, 4vw, 1.85rem);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 0.6rem;
+    }
+
+    .header-sub {
+      color: var(--grau);
+      font-size: 0.95rem;
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ── Fortschrittsleiste ── */
+    .progress-wrap {
+      margin-bottom: 2rem;
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--grau);
+      margin-bottom: 0.35rem;
+    }
+
+    .progress-bar-outer {
+      background: var(--rand);
+      border-radius: 999px;
+      height: 6px;
+      overflow: hidden;
+    }
+
+    .progress-bar-inner {
+      background: var(--blau);
+      height: 100%;
+      width: 0%;
+      border-radius: 999px;
+      transition: width 0.4s ease;
+    }
+
+    /* ── Karten ── */
+    .card {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--grau);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── Canvas ── */
+    canvas {
+      display: block;
+      width: 100%;
+      max-width: 680px;
+      border-radius: var(--radius);
+      border: 1px solid var(--rand);
+      background: #fff;
+    }
+
+    /* ── Multiple Choice ── */
+    .frage-block {
+      margin-top: 1.25rem;
+    }
+
+    .frage-text {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .optionen {
+      display: grid;
+      gap: 0.6rem;
+    }
+
+    .option-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.7rem 1rem;
+      border: 2px solid var(--rand);
+      border-radius: var(--radius);
+      background: var(--weiss);
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-family: inherit;
+      text-align: left;
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blau);
+      background: var(--blau-hell);
+    }
+
+    .option-btn.selected {
+      border-color: var(--blau);
+      background: var(--blau-hell);
+    }
+
+    .option-btn.richtig {
+      border-color: var(--gruen);
+      background: var(--gruen-hell);
+    }
+
+    .option-btn.falsch {
+      border-color: var(--rot);
+      background: var(--rot-hell);
+    }
+
+    .option-letter {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--grau-hell);
+      font-size: 0.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    /* ── Feedback ── */
+    .feedback-box {
+      display: none;
+      margin-top: 1rem;
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: 0.93rem;
+      line-height: 1.55;
+    }
+
+    .feedback-box.richtig {
+      background: var(--gruen-hell);
+      border-left: 4px solid var(--gruen);
+    }
+
+    .feedback-box.falsch {
+      background: var(--orange-hell);
+      border-left: 4px solid var(--orange);
+    }
+
+    .feedback-box.info {
+      background: var(--blau-hell);
+      border-left: 4px solid var(--blau);
+    }
+
+    .concept-tag {
+      display: inline-block;
+      background: #fff;
+      border: 1.5px solid currentColor;
+      border-radius: 5px;
+      padding: 0.1rem 0.45rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin: 0.1rem 0.2rem;
+      vertical-align: middle;
+      white-space: nowrap;
+    }
+
+    .gruen .concept-tag  { color: var(--gruen); }
+    .falsch-tag .concept-tag { color: var(--orange); }
+    .info .concept-tag   { color: var(--blau); }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.4rem;
+      border-radius: var(--radius);
+      border: none;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+
+    .btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    .btn-primary {
+      background: var(--blau);
+      color: #fff;
+    }
+
+    .btn-primary:hover:not(:disabled) {
+      opacity: 0.88;
+    }
+
+    .btn-secondary {
+      background: var(--grau-hell);
+      color: var(--text);
+    }
+
+    .btn-secondary:hover:not(:disabled) {
+      opacity: 0.8;
+    }
+
+    .btn-weiter {
+      display: none;
+      margin-top: 1rem;
+    }
+
+    /* ── Schieberegler ── */
+    .slider-wrap {
+      margin: 1rem 0;
+    }
+
+    .slider-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--grau);
+      margin-bottom: 0.4rem;
+    }
+
+    input[type=range] {
+      width: 100%;
+      accent-color: var(--blau);
+      cursor: pointer;
+    }
+
+    /* ── Tabelle ── */
+    .num-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin-top: 1rem;
+    }
+
+    .num-table th {
+      background: var(--grau-hell);
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      color: var(--grau);
+      text-transform: uppercase;
+    }
+
+    .num-table td {
+      padding: 0.55rem 0.75rem;
+      border-top: 1px solid var(--rand);
+      vertical-align: middle;
+    }
+
+    .num-table .lang-flag {
+      font-size: 1.1rem;
+      margin-right: 0.4rem;
+    }
+
+    .form-cell {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .form-cell.highlight {
+      color: var(--blau);
+      background: var(--blau-hell);
+      border-radius: 4px;
+      padding: 0.1rem 0.35rem;
+    }
+
+    /* ── Stufen-Header ── */
+    .stufen-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .stufen-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      background: var(--blau);
+      color: #fff;
+      border-radius: 50%;
+      font-weight: 800;
+      font-size: 0.9rem;
+      flex-shrink: 0;
+    }
+
+    .stufen-titel {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    /* ── Quiz Stufe 2 ── */
+    .quiz-frage {
+      display: none;
+    }
+
+    .quiz-frage.aktiv {
+      display: block;
+    }
+
+    .frage-counter {
+      font-size: 0.8rem;
+      color: var(--grau);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Abschluss ── */
+    .abschluss-box {
+      display: none;
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+
+    .abschluss-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .abschluss-titel {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+    }
+
+    .abschluss-text {
+      color: var(--grau);
+      font-size: 0.95rem;
+      max-width: 480px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .konzept-liste {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .konzept-chip {
+      background: var(--blau-hell);
+      color: var(--blau);
+      border-radius: 999px;
+      padding: 0.3rem 0.9rem;
+      font-size: 0.82rem;
+      font-weight: 700;
+    }
+
+    /* ── Info-Box ── */
+    .info-kasten {
+      background: #F8FAFF;
+      border: 1px solid #BFDBFE;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      font-size: 0.88rem;
+      color: #1E40AF;
+      margin-top: 1rem;
+    }
+
+    .info-kasten strong {
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    /* ── Responsiv ── */
+    @media (max-width: 480px) {
+      .card { padding: 1.1rem; }
+      .option-btn { padding: 0.6rem 0.75rem; font-size: 0.88rem; }
+      h1 { font-size: 1.25rem; }
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+
+<body
+  data-subject="Sprachwissenschaft"
+  data-grade-level="10-13"
+  data-asset-type="simulation"
+  data-topic-cluster="sprachen"
+  data-primary-keyword="sprachen"
+>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="badge">Linguistik · Simulation</div>
+    <h1>Numerussysteme der Sprachen</h1>
+    <p class="header-sub">Singular, Dual, Plural – warum zählen Sprachen so unterschiedlich? Entdecke, wie Arabisch drei Formen kennt, Mandarin keine und was der <em>Dual</em> bedeutet.</p>
+  </div>
+
+  <!-- Fortschritt -->
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>Fortschritt</span>
+      <span id="progress-text">Stufe 1 von 2</span>
+    </div>
+    <div class="progress-bar-outer">
+      <div class="progress-bar-inner" id="progressBar"></div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════
+       STUFE 1 – Vorhersage
+       ════════════════════════════════════════ -->
+  <div id="stage1">
+
+    <div class="card">
+      <div class="stufen-header">
+        <div class="stufen-num">1</div>
+        <div class="stufen-titel">Vorhersage: Wie viele Formen braucht Arabisch?</div>
+      </div>
+
+      <p style="font-size:0.93rem; color:var(--grau); margin-bottom:1.25rem;">
+        Unten siehst du, wie das Deutsche Mengen ausdrückt. Beobachte die Animation – dann beantworte die Frage, bevor du die Auflösung siehst.
+      </p>
+
+      <!-- Canvas Stufe 1: Punkte erscheinen -->
+      <canvas id="canvas1" height="140" aria-label="Punkte erscheinen: 1 bis 10, mit deutschen Wortformen"></canvas>
+
+      <div class="frage-block">
+        <p class="frage-text">
+          Das Deutsche unterscheidet <strong>zwei</strong> Numerus-Kategorien (Singular und Plural).<br>
+          Wie viele grammatische Numerus-Kategorien unterscheidet das <strong>Arabische</strong>?
+        </p>
+
+        <div class="optionen" id="optionen1" role="radiogroup" aria-labelledby="frage1">
+          <button class="option-btn" data-val="2" onclick="waehleOption1(this)">
+            <span class="option-letter">A</span>
+            <span>2 Kategorien (wie Deutsch)</span>
+          </button>
+          <button class="option-btn" data-val="3" onclick="waehleOption1(this)">
+            <span class="option-letter">B</span>
+            <span>3 Kategorien (Singular, Dual, Plural)</span>
+          </button>
+          <button class="option-btn" data-val="4" onclick="waehleOption1(this)">
+            <span class="option-letter">C</span>
+            <span>4 Kategorien (Singular, Dual, Trial, Plural)</span>
+          </button>
+          <button class="option-btn" data-val="1" onclick="waehleOption1(this)">
+            <span class="option-letter">D</span>
+            <span>1 Kategorie (gar keine Unterscheidung)</span>
+          </button>
+        </div>
+
+        <div id="feedback1" class="feedback-box"></div>
+
+        <div style="margin-top:1.25rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <button class="btn btn-primary" id="btn-pruefen1" onclick="pruefen1()" disabled>Prüfen</button>
+          <button class="btn btn-secondary btn-weiter" id="btn-weiter1" onclick="zeigeStudfe2()">Weiter →</button>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /stage1 -->
+
+
+  <!-- ════════════════════════════════════════
+       STUFE 2 – Modell-Explorer + Quiz
+       ════════════════════════════════════════ -->
+  <div id="stage2" style="display:none;">
+
+    <!-- Modell-Explorer -->
+    <div class="card model-stage" id="modell-explorer">
+      <div class="stufen-header">
+        <div class="stufen-num" style="background:var(--gruen);">2</div>
+        <div class="stufen-titel">Modell-Explorer: Sprachen im Vergleich</div>
+      </div>
+
+      <p style="font-size:0.93rem; color:var(--grau); margin-bottom:1.25rem;">
+        Verschiebe den Regler und beobachte, wie drei Sprachen dieselbe Menge ausdrücken.
+      </p>
+
+      <!-- Schieberegler -->
+      <div class="slider-wrap">
+        <div class="slider-label">
+          <span>Anzahl der Gegenstände</span>
+          <span id="anzahl-anzeige" style="font-weight:700; color:var(--blau);">1</span>
+        </div>
+        <input type="range" id="anzahl-slider" min="1" max="10" value="1" oninput="aktualisiereModell(this.value)">
+      </div>
+
+      <!-- Canvas Stufe 2: Sprachvergleich -->
+      <canvas id="canvas2" height="200" aria-label="Vergleich der Numerussysteme in Deutsch, Mandarin und Arabisch"></canvas>
+
+      <!-- Tabelle -->
+      <table class="num-table" id="numTabelle" aria-label="Numerusformen in verschiedenen Sprachen">
+        <thead>
+          <tr>
+            <th>Sprache</th>
+            <th>System</th>
+            <th>Form für <span id="th-anzahl">1</span> Objekt(e)</th>
+          </tr>
+        </thead>
+        <tbody id="tabellenKoerper">
+        </tbody>
+      </table>
+
+      <div class="info-kasten" style="margin-top:1.25rem;">
+        <strong>Wusstest du?</strong>
+        Einige Sprachen gehen sogar noch weiter: Das <strong>Sursurunga</strong> (Melanesien) unterscheidet vier Kategorien – Singular, Dual, Trial (genau 3) und Plural (4+). Greenbergs Universalie Nr. 34 besagt: Jede Sprache mit Dual hat auch Plural.
+      </div>
+    </div>
+
+    <!-- Quiz: 3 Fragen -->
+    <div class="card" id="stage3">
+      <div class="stufen-header">
+        <div class="stufen-num" style="background:var(--lila);">?</div>
+        <div class="stufen-titel">Prüfen: Was hast du verstanden?</div>
+      </div>
+
+      <!-- Frage 1 -->
+      <div class="quiz-frage aktiv" id="qf1">
+        <p class="frage-counter">Frage 1 von 3</p>
+        <p class="frage-text">
+          Du siehst den chinesischen Satz: „我有书" (Wǒ yǒu shū) – Ich habe Bücher.<br>
+          Welche Aussage über Mandarin-Chinesisch ist <strong>korrekt</strong>?
+        </p>
+        <div class="optionen" id="optionen-q1" role="radiogroup">
+          <button class="option-btn" data-val="a" onclick="waehleQuiz('q1', this)">
+            <span class="option-letter">A</span>
+            <span>书 (shū) bedeutet immer „ein Buch" – für Plural braucht man ein anderes Wort.</span>
+          </button>
+          <button class="option-btn" data-val="b" onclick="waehleQuiz('q1', this)">
+            <span class="option-letter">B</span>
+            <span>Mandarin markiert Numerus durch Suffixe wie -men nur bei Substantiven.</span>
+          </button>
+          <button class="option-btn" data-val="c" onclick="waehleQuiz('q1', this)">
+            <span class="option-letter">C</span>
+            <span>书 (shū) kann sowohl „ein Buch" als auch „viele Bücher" bedeuten – Mandarin hat keine grammatische Numerusmarkierung bei Substantiven.</span>
+          </button>
+          <button class="option-btn" data-val="d" onclick="waehleQuiz('q1', this)">
+            <span class="option-letter">D</span>
+            <span>Mandarin hat Singular und Plural wie Deutsch, die Formen sind nur kürzer.</span>
+          </button>
+        </div>
+        <div id="feedback-q1" class="feedback-box"></div>
+        <div style="margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <button class="btn btn-primary" id="btn-q1" onclick="pruefeQuiz('q1', 'c')" disabled>Prüfen</button>
+          <button class="btn btn-secondary btn-weiter" id="btn-weiter-q1" onclick="naechsteFrage('qf1','qf2')">Weiter →</button>
+        </div>
+      </div>
+
+      <!-- Frage 2 -->
+      <div class="quiz-frage" id="qf2">
+        <p class="frage-counter">Frage 2 von 3</p>
+        <p class="frage-text">
+          Im Arabischen gibt es neben Singular und Plural noch eine dritte Form: <em>كتابان</em> (kitābāni).<br>
+          Was bezeichnet der Begriff <strong>Dual</strong>?
+        </p>
+        <div class="optionen" id="optionen-q2" role="radiogroup">
+          <button class="option-btn" data-val="a" onclick="waehleQuiz('q2', this)">
+            <span class="option-letter">A</span>
+            <span>Eine Form für eine gerade Anzahl (2, 4, 6 …)</span>
+          </button>
+          <button class="option-btn" data-val="b" onclick="waehleQuiz('q2', this)">
+            <span class="option-letter">B</span>
+            <span>Eine Form für genau zwei Referenten</span>
+          </button>
+          <button class="option-btn" data-val="c" onclick="waehleQuiz('q2', this)">
+            <span class="option-letter">C</span>
+            <span>Eine Form für zwei oder drei Referenten</span>
+          </button>
+          <button class="option-btn" data-val="d" onclick="waehleQuiz('q2', this)">
+            <span class="option-letter">D</span>
+            <span>Eine veraltete Bezeichnung für den Plural</span>
+          </button>
+        </div>
+        <div id="feedback-q2" class="feedback-box"></div>
+        <div style="margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <button class="btn btn-primary" id="btn-q2" onclick="pruefeQuiz('q2', 'b')" disabled>Prüfen</button>
+          <button class="btn btn-secondary btn-weiter" id="btn-weiter-q2" onclick="naechsteFrage('qf2','qf3')">Weiter →</button>
+        </div>
+      </div>
+
+      <!-- Frage 3 -->
+      <div class="quiz-frage" id="qf3">
+        <p class="frage-counter">Frage 3 von 3</p>
+        <p class="frage-text">
+          Welche Sprache besitzt das Numerussystem: <strong>Singular / Dual / Plural</strong>?
+        </p>
+        <div class="optionen" id="optionen-q3" role="radiogroup">
+          <button class="option-btn" data-val="a" onclick="waehleQuiz('q3', this)">
+            <span class="option-letter">A</span>
+            <span>Deutsch</span>
+          </button>
+          <button class="option-btn" data-val="b" onclick="waehleQuiz('q3', this)">
+            <span class="option-letter">B</span>
+            <span>Mandarin-Chinesisch</span>
+          </button>
+          <button class="option-btn" data-val="c" onclick="waehleQuiz('q3', this)">
+            <span class="option-letter">C</span>
+            <span>Arabisch</span>
+          </button>
+          <button class="option-btn" data-val="d" onclick="waehleQuiz('q3', this)">
+            <span class="option-letter">D</span>
+            <span>Englisch</span>
+          </button>
+        </div>
+        <div id="feedback-q3" class="feedback-box"></div>
+        <div style="margin-top:1rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+          <button class="btn btn-primary" id="btn-q3" onclick="pruefeQuiz('q3', 'c')" disabled>Prüfen</button>
+          <button class="btn btn-secondary btn-weiter" id="btn-weiter-q3" onclick="zeigeAbschluss()">Abschluss →</button>
+        </div>
+      </div>
+
+      <!-- Abschluss -->
+      <div class="abschluss-box" id="abschluss">
+        <div class="abschluss-icon">🎉</div>
+        <div class="abschluss-titel">Simulation abgeschlossen!</div>
+        <p class="abschluss-text">
+          Du hast die wichtigsten Konzepte der grammatischen Numerussysteme erarbeitet. Sprachen sind nicht alle gleich – wie sie Mengen kategorisieren, ist Teil der sprachlichen Vielfalt.
+        </p>
+        <div class="konzept-liste">
+          <span class="konzept-chip">Grammatischer Numerus</span>
+          <span class="konzept-chip">Dual</span>
+          <span class="konzept-chip">Ternärer Numerus</span>
+          <span class="konzept-chip">Isolierende Sprache</span>
+          <span class="konzept-chip">Greenberg Universalien</span>
+        </div>
+        <p style="font-size:0.85rem; color:var(--grau);">
+          Quellen: Greenberg, J. (1963). Universals of Language. · Wright, W. (1896). A Grammar of the Arabic Language. · Li &amp; Thompson (1981). Mandarin Chinese: A Functional Reference Grammar.
+        </p>
+      </div>
+
+    </div>
+
+  </div><!-- /stage2 -->
+
+</div><!-- /container -->
+
+<script>
+/* ═══════════════════════════════════════════════════
+   GTM / dataLayer
+═══════════════════════════════════════════════════ */
+window.dataLayer = window.dataLayer || [];
+function pushEvent(evt, params) {
+  window.dataLayer.push({ event: evt, simulation: 'numerussysteme-sprachen', ...params });
+}
+
+/* ═══════════════════════════════════════════════════
+   CANVAS 1 – Punkte erscheinen, deutsche Wortformen
+═══════════════════════════════════════════════════ */
+(function() {
+  const canvas = document.getElementById('canvas1');
+  const ctx    = canvas.getContext('2d');
+
+  // Physische Pixelgröße
+  function resize() {
+    const w = canvas.offsetWidth;
+    canvas.width  = w * (window.devicePixelRatio || 1);
+    canvas.height = 140 * (window.devicePixelRatio || 1);
+    ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
+  }
+  resize();
+  window.addEventListener('resize', () => { resize(); });
+
+  const CW = () => canvas.offsetWidth;
+  const CH = 140;
+  const COLS  = 10;
+  const PUNKT_R = 10;
+  const ABSTAND = 36;
+
+  let anzahl   = 0;
+  let letzteZeit = 0;
+  const INTERVALL = 600; // ms pro Punkt
+  let richtung = 1; // 1 = aufbau, -1 = abbau
+
+  function zeichne(zeitstempel) {
+    // Zeitsteuerung
+    if (zeitstempel - letzteZeit > INTERVALL) {
+      anzahl += richtung;
+      if (anzahl >= COLS) { anzahl = COLS; richtung = -1; }
+      if (anzahl <= 0)    { anzahl = 0;    richtung =  1; }
+      letzteZeit = zeitstempel;
+    }
+
+    const w = CW();
+    ctx.clearRect(0, 0, w, CH);
+
+    // Wortform
+    const form = anzahl === 1 ? '„Buch"' : (anzahl === 0 ? '–' : '„Bücher"');
+    ctx.fillStyle = '#6B7280';
+    ctx.font = '13px -apple-system, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('Deutsch: ' + form, w / 2, 22);
+
+    // Label
+    ctx.fillStyle = '#374151';
+    ctx.font = 'bold 14px -apple-system, sans-serif';
+    ctx.fillText(anzahl === 0 ? '0' : String(anzahl) + ' Objekt' + (anzahl !== 1 ? 'e' : ''), w / 2, 44);
+
+    // Punkte zeichnen
+    const startX = w / 2 - (COLS - 1) * ABSTAND / 2;
+    const y = 90;
+    for (let i = 0; i < COLS; i++) {
+      const x = startX + i * ABSTAND;
+      ctx.beginPath();
+      ctx.arc(x, y, PUNKT_R, 0, Math.PI * 2);
+      if (i < anzahl) {
+        ctx.fillStyle = '#2563EB';
+      } else {
+        ctx.fillStyle = '#E5E7EB';
+      }
+      ctx.fill();
+    }
+
+    // Strich unter Punkt für SG/PL
+    if (anzahl === 1) {
+      ctx.fillStyle = '#2563EB';
+      ctx.font = '11px -apple-system, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('SG', startX, 118);
+    } else if (anzahl > 1) {
+      ctx.fillStyle = '#7C3AED';
+      ctx.font = '11px -apple-system, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('PL', startX + (anzahl - 1) * ABSTAND / 2, 118);
+    }
+
+    requestAnimationFrame(zeichne);
+  }
+  requestAnimationFrame(zeichne);
+})();
+
+/* ═══════════════════════════════════════════════════
+   CANVAS 2 – Sprachvergleich Balken
+═══════════════════════════════════════════════════ */
+let canvas2Anzahl = 1;
+
+(function() {
+  const canvas = document.getElementById('canvas2');
+  const ctx    = canvas.getContext('2d');
+
+  function resize() {
+    const w = canvas.offsetWidth;
+    canvas.width  = w * (window.devicePixelRatio || 1);
+    canvas.height = 200 * (window.devicePixelRatio || 1);
+    ctx.scale(window.devicePixelRatio || 1, window.devicePixelRatio || 1);
+  }
+  resize();
+  window.addEventListener('resize', () => { resize(); aktualisiereModell(canvas2Anzahl); });
+
+  const CW = () => canvas.offsetWidth;
+  const CH = 200;
+
+  const SPRACHEN = [
+    { name: 'Deutsch',  farbe: '#2563EB', kats: 2 },
+    { name: 'Mandarin', farbe: '#16A34A', kats: 0 },
+    { name: 'Arabisch', farbe: '#EA580C', kats: 3 },
+  ];
+
+  function zeichneCanvas2(n) {
+    const w = CW();
+    ctx.clearRect(0, 0, w, CH);
+
+    const COLS = SPRACHEN.length;
+    const SAP  = w / (COLS + 1);
+    const MAX_H = 120;
+    const BASIS_Y = 160;
+
+    SPRACHEN.forEach((sp, i) => {
+      const x = SAP * (i + 1);
+      // Balken-Höhe proportional zu Anzahl (max 10)
+      let hoeheKoeff = n / 10;
+      const h = Math.max(12, hoeheKoeff * MAX_H);
+
+      // Farbe
+      ctx.fillStyle = sp.farbe + '33'; // leicht transparent
+      ctx.fillRect(x - 28, BASIS_Y - MAX_H, 56, MAX_H);
+
+      ctx.fillStyle = sp.farbe;
+      ctx.fillRect(x - 28, BASIS_Y - h, 56, h);
+
+      // Sprachname
+      ctx.fillStyle = '#374151';
+      ctx.font = 'bold 12px -apple-system, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(sp.name, x, BASIS_Y + 18);
+
+      // Anzahl-Label
+      ctx.fillStyle = sp.farbe;
+      ctx.font = 'bold 14px -apple-system, sans-serif';
+      ctx.fillText(String(n), x, BASIS_Y - h - 7);
+    });
+
+    // Achsenlinie
+    ctx.beginPath();
+    ctx.strokeStyle = '#E5E7EB';
+    ctx.lineWidth = 1;
+    ctx.moveTo(0, BASIS_Y);
+    ctx.lineTo(w, BASIS_Y);
+    ctx.stroke();
+
+    // Titel
+    ctx.fillStyle = '#6B7280';
+    ctx.font = '12px -apple-system, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('Menge: ' + n + ' Objekt' + (n !== 1 ? 'e' : ''), w / 2, 20);
+  }
+
+  window._zeichneCanvas2 = zeichneCanvas2;
+  zeichneCanvas2(1);
+})();
+
+/* ═══════════════════════════════════════════════════
+   Tabellendaten
+═══════════════════════════════════════════════════ */
+function getTabellenDaten(n) {
+  // Deutsch: SG wenn n=1, sonst PL
+  const deutsch = {
+    lang: '🇩🇪 Deutsch',
+    system: 'Binär (SG / PL)',
+    form: n === 1 ? 'Buch' : 'Bücher',
+    kat: n === 1 ? 'SG' : 'PL',
+    highlight: false,
+  };
+
+  // Mandarin: immer 书 (shū)
+  const mandarin = {
+    lang: '🇨🇳 Mandarin',
+    system: 'Kein gram. Numerus',
+    form: '书 (shū)',
+    kat: '–',
+    highlight: false,
+  };
+
+  // Arabisch: كتاب (kitāb) SG / كتابان (kitābāni) DU / كتب (kutub) PL
+  let arabForm, arabKat;
+  if (n === 1) {
+    arabForm = 'كتاب (kitāb)';
+    arabKat  = 'SG';
+  } else if (n === 2) {
+    arabForm = 'كتابان (kitābāni)';
+    arabKat  = 'DU';
+    mandarin.highlight = true;
+  } else {
+    arabForm = 'كتب (kutub)';
+    arabKat  = 'PL';
+  }
+
+  const arabisch = {
+    lang: '🇸🇦 Arabisch',
+    system: 'Ternär (SG / DU / PL)',
+    form: arabForm,
+    kat: arabKat,
+    highlight: arabKat === 'DU',
+  };
+
+  return [deutsch, mandarin, arabisch];
+}
+
+function aktualisiereModell(val) {
+  const n = parseInt(val, 10);
+  canvas2Anzahl = n;
+  document.getElementById('anzahl-anzeige').textContent = n;
+  document.getElementById('th-anzahl').textContent = n;
+
+  if (window._zeichneCanvas2) window._zeichneCanvas2(n);
+
+  const daten = getTabellenDaten(n);
+  const tbody = document.getElementById('tabellenKoerper');
+  tbody.innerHTML = '';
+  daten.forEach(sp => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${sp.lang}</td>
+      <td style="font-size:0.82rem; color:var(--grau);">${sp.system}</td>
+      <td class="form-cell${sp.highlight ? ' highlight' : ''}">${sp.form} <span style="font-size:0.75rem; color:var(--grau); font-weight:400;">[${sp.kat}]</span></td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// Initialaufruf
+aktualisiereModell(1);
+
+/* ═══════════════════════════════════════════════════
+   Stufe 1 – Vorhersage
+═══════════════════════════════════════════════════ */
+let gewaehlteOption1 = null;
+
+function waehleOption1(btn) {
+  if (btn.disabled) return;
+  document.querySelectorAll('#optionen1 .option-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  gewaehlteOption1 = btn.dataset.val;
+  document.getElementById('btn-pruefen1').disabled = false;
+}
+
+function pruefen1() {
+  if (!gewaehlteOption1) return;
+  const richtig = gewaehlteOption1 === '3';
+  const fb = document.getElementById('feedback1');
+  const btns = document.querySelectorAll('#optionen1 .option-btn');
+  btns.forEach(b => {
+    b.disabled = true;
+    if (b.dataset.val === '3') b.classList.add('richtig');
+    if (b === document.querySelector('#optionen1 .option-btn.selected') && !richtig) {
+      b.classList.add('falsch');
+    }
+  });
+
+  if (richtig) {
+    fb.className = 'feedback-box richtig gruen';
+    fb.innerHTML = `
+      ✓ Richtig! Das Arabische hat <strong>drei</strong> Numerus-Kategorien:<br>
+      <span class="concept-tag">Singular</span>
+      <span class="concept-tag">Dual</span>
+      <span class="concept-tag">Plural</span><br><br>
+      Das nennt man einen <span class="concept-tag">Ternären Numerus</span>.
+      Der <strong>Dual</strong> bezeichnet genau zwei Objekte – eine eigene grammatische Form, die das Deutsche nicht kennt.
+    `;
+  } else if (gewaehlteOption1 === '4') {
+    fb.className = 'feedback-box falsch falsch-tag';
+    fb.innerHTML = `
+      Nicht ganz. Vier Kategorien (SG / DU / Trial / PL) hat z.&nbsp;B. das <strong>Sursurunga</strong>. Arabisch hat <strong>drei</strong>:
+      <span class="concept-tag">Singular</span>
+      <span class="concept-tag">Dual</span>
+      <span class="concept-tag">Plural</span>.
+    `;
+  } else if (gewaehlteOption1 === '2') {
+    fb.className = 'feedback-box falsch falsch-tag';
+    fb.innerHTML = `
+      Das stimmt für Deutsch – aber nicht für Arabisch. Arabisch hat zusätzlich den <span class="concept-tag">Dual</span> als dritte Form für genau zwei Referenten.
+    `;
+  } else {
+    fb.className = 'feedback-box falsch falsch-tag';
+    fb.innerHTML = `
+      Nein – Mandarin hat zwar keine Numerusmarkierung, aber Arabisch hat sogar <strong>mehr</strong> Formen als Deutsch. Die korrekte Antwort ist 3 (<span class="concept-tag">Ternärer Numerus</span>).
+    `;
+  }
+
+  fb.style.display = 'block';
+  document.getElementById('btn-pruefen1').disabled = true;
+  document.getElementById('btn-weiter1').style.display = 'inline-flex';
+
+  pushEvent('simulation_step_complete', { step: 1, correct: richtig });
+  aktualisiereProgress(33);
+}
+
+function zeigeStudfe2() {
+  document.getElementById('stage1').style.display = 'none';
+  document.getElementById('stage2').style.display = 'block';
+  aktualisiereProgress(50);
+  document.getElementById('progress-text').textContent = 'Stufe 2 von 2';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  aktualisiereModell(1);
+}
+
+/* ═══════════════════════════════════════════════════
+   Stufe 2 – Quiz
+═══════════════════════════════════════════════════ */
+const quizState = { q1: null, q2: null, q3: null };
+
+function waehleQuiz(id, btn) {
+  if (btn.disabled) return;
+  document.querySelectorAll(`#optionen-${id} .option-btn`).forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+  quizState[id] = btn.dataset.val;
+  document.getElementById('btn-' + id).disabled = false;
+}
+
+const QUIZ_FEEDBACK = {
+  q1: {
+    richtig: `✓ Korrekt! Mandarin ist eine <span class="concept-tag">isolierende Sprache</span> ohne Flexionsmorphologie. Das Substantiv 书 (shū) gilt für Singular und Plural gleichermaßen – die Anzahl ergibt sich aus dem Kontext oder durch Zahlwörter.`,
+    falsch: {
+      a: `Nicht ganz. 书 (shū) ist nicht auf „ein Buch" beschränkt – es wird für beliebige Mengen genutzt, weil Mandarin <span class="concept-tag">keinen grammatischen Numerus</span> bei Substantiven markiert.`,
+      b: `-men (们) ist ein Suffix, das bei bestimmten Personalpronomen und sozialen Rollen Gruppen ausdrückt (wǒmen = wir). Bei normalen Substantiven wie 书 wird es <strong>nicht</strong> genutzt.`,
+      d: `Das stimmt nicht. Deutsch hat SG/PL, Mandarin hingegen hat bei Substantiven <span class="concept-tag">keine grammatische Numerusmarkierung</span>.`,
+    }
+  },
+  q2: {
+    richtig: `✓ Richtig! Der <span class="concept-tag">Dual</span> bezeichnet in Sprachen wie Arabisch oder Slowenisch genau <strong>zwei</strong> Referenten. Es ist eine eigene grammatische Form: كتابان (kitābāni) = „zwei Bücher" – verschieden von Singular und Plural.`,
+    falsch: {
+      a: `Nein – der Dual markiert nicht jede gerade Zahl. Er bezeichnet ausschließlich <strong>genau zwei</strong> Referenten. Ab drei Objekten gilt Plural.`,
+      c: `Nein – zwei oder drei wäre ein „Paukal" (wenige). Der <span class="concept-tag">Dual</span> ist exklusiv für genau zwei.`,
+      d: `Nein – der Dual ist eine lebendige Kategorie in Arabisch (und historisch im Deutschen, z.&nbsp;B. „beide"). Er ist <strong>keine</strong> Bezeichnung für Plural.`,
+    }
+  },
+  q3: {
+    richtig: `✓ Korrekt! Das <span class="concept-tag">Arabische</span> hat drei Numerus-Kategorien: Singular (كتاب kitāb), <span class="concept-tag">Dual</span> (كتابان kitābāni) und Plural (كتب kutub). Das klassische Beispiel für einen <span class="concept-tag">Ternären Numerus</span>.`,
+    falsch: {
+      a: `Deutsch kennt nur Singular und Plural – ein <span class="concept-tag">binärer Numerus</span>.`,
+      b: `Mandarin hat beim Substantiv <span class="concept-tag">keinen grammatischen Numerus</span> – also null grammatische Kategorien.`,
+      d: `Englisch hat ebenfalls nur Singular und Plural – binärer Numerus. Der <span class="concept-tag">Dual</span> ist im Englischen nicht grammatisch markiert.`,
+    }
+  },
+};
+
+function pruefeQuiz(id, korrekt) {
+  const gewählt = quizState[id];
+  if (!gewählt) return;
+  const richtig = gewählt === korrekt;
+
+  const fb = document.getElementById('feedback-' + id);
+  document.querySelectorAll(`#optionen-${id} .option-btn`).forEach(b => {
+    b.disabled = true;
+    if (b.dataset.val === korrekt) b.classList.add('richtig');
+    if (b === document.querySelector(`#optionen-${id} .option-btn.selected`) && !richtig) {
+      b.classList.add('falsch');
+    }
+  });
+
+  if (richtig) {
+    fb.className = 'feedback-box richtig gruen';
+    fb.innerHTML = QUIZ_FEEDBACK[id].richtig;
+  } else {
+    fb.className = 'feedback-box falsch falsch-tag';
+    fb.innerHTML = QUIZ_FEEDBACK[id].falsch[gewählt] ||
+      `Nicht ganz. Die richtige Antwort ist markiert.`;
+  }
+  fb.style.display = 'block';
+
+  document.getElementById('btn-' + id).disabled = true;
+  document.getElementById('btn-weiter-' + id).style.display = 'inline-flex';
+
+  const schrittMap = { q1: 2, q2: 3, q3: 4 };
+  pushEvent('simulation_step_complete', { step: schrittMap[id], correct: richtig });
+
+  const progressMap = { q1: 66, q2: 82, q3: 100 };
+  aktualisiereProgress(progressMap[id]);
+}
+
+function naechsteFrage(aktiv, naechste) {
+  document.getElementById(aktiv).classList.remove('aktiv');
+  document.getElementById(naechste).classList.add('aktiv');
+  window.scrollTo({ top: document.getElementById('stage2').offsetTop - 20, behavior: 'smooth' });
+}
+
+function zeigeAbschluss() {
+  document.getElementById('qf3').classList.remove('aktiv');
+  document.getElementById('abschluss').style.display = 'block';
+  aktualisiereProgress(100);
+  pushEvent('simulation_completed', {});
+  window.scrollTo({ top: document.getElementById('abschluss').offsetTop - 20, behavior: 'smooth' });
+}
+
+/* ═══════════════════════════════════════════════════
+   Fortschrittsanzeige
+═══════════════════════════════════════════════════ */
+function aktualisiereProgress(pct) {
+  document.getElementById('progressBar').style.width = pct + '%';
+}
+</script>
+</body>
+</html>

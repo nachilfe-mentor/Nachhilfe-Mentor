@@ -1,0 +1,856 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Konzeptuelle Metapher einfach erklärt (Lakoff &amp; Johnson) | Nachhilfe Mentor</title>
+  <meta name="description" content="Konzeptuelle Metapher interaktiv üben: Quell- und Zielbereiche erkennen, Mappings zuordnen und Highlighting &amp; Hiding nach Lakoff &amp; Johnson verstehen.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="konzeptuelle Metapher, Lakoff Johnson, kognitive Linguistik, Quellbereich Zielbereich, Mapping, Highlighting und Hiding">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/konzeptuelle-metapher-simulation.html">
+  <meta property="og:title" content="Konzeptuelle Metapher einfach erklärt">
+  <meta property="og:description" content="Konzeptuelle Metapher interaktiv üben: Quell- und Zielbereiche erkennen, Mappings zuordnen und Highlighting &amp; Hiding nach Lakoff &amp; Johnson verstehen.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/konzeptuelle-metapher-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Konzeptuelle Metapher einfach erklärt (Lakoff & Johnson)",
+  "description":"Konzeptuelle Metapher interaktiv üben: Quell- und Zielbereiche erkennen, Mappings zuordnen und Highlighting & Hiding nach Lakoff & Johnson verstehen.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/konzeptuelle-metapher-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Konzeptuelle Metapher – Mapping-Simulator (Lakoff & Johnson)",
+    "description": "Interaktiver Simulator: Quell- und Zielbereiche konzeptueller Metaphern erkennen, Mappings analysieren, Highlighting und Hiding verstehen.",
+    "educationalLevel": "Klasse 10–13",
+    "learningResourceType": "Simulation",
+    "isAccessibleForFree": true,
+    "inLanguage": "de",
+    "about": "Konzeptuelle Metapher, Lakoff Johnson, Kognitive Linguistik, Sprachreflexion, Quellbereich, Zielbereich, Mapping, Highlighting, Hiding"
+  }
+  </script>
+
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --cyan:   #0894aa;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.35rem, 4vw, 1.8rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 620px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    .progress {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .dot.active { background: var(--blue); }
+    .dot.done   { background: var(--green); }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-left: 0.25rem;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .card-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .sentence-box {
+      background: #f0f4f8;
+      border-radius: 10px;
+      padding: 1.1rem 1.4rem;
+      margin-bottom: 1.5rem;
+      font-size: clamp(1rem, 3vw, 1.2rem);
+      font-weight: 600;
+      color: var(--ink);
+      text-align: center;
+      font-style: italic;
+    }
+
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 420px) {
+      .options { grid-template-columns: 1fr; }
+    }
+    .option-btn {
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      font-size: 0.97rem;
+      font-weight: 500;
+      cursor: pointer;
+      text-align: left;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+      line-height: 1.4;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: #eff6ff;
+    }
+    .option-btn:disabled { opacity: 0.55; cursor: default; }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #f0fdf4;
+      color: #14532d;
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fef2f2;
+      color: #7f1d1d;
+    }
+
+    .feedback {
+      border-radius: 9px;
+      padding: 1rem 1.1rem;
+      font-size: 0.93rem;
+      line-height: 1.65;
+      display: none;
+      margin-bottom: 1rem;
+    }
+    .feedback.correct {
+      background: #f0fdf4;
+      border: 1.5px solid #86efac;
+      color: #14532d;
+    }
+    .feedback.wrong {
+      background: #fef2f2;
+      border: 1.5px solid #fca5a5;
+      color: #7f1d1d;
+    }
+    .feedback strong { font-weight: 700; }
+    .concept-tag {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 0.82rem;
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      margin-left: 0.15rem;
+    }
+
+    .btn-next {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: none;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.97rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: none;
+      transition: background 0.15s;
+      margin-top: 0.5rem;
+    }
+    .btn-next:hover { background: #0a4a85; }
+
+    .mapping-diagram {
+      display: none;
+      margin-bottom: 1.75rem;
+    }
+    .mapping-diagram.visible { display: block; }
+
+    .mapping-header {
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+    .metapher-label {
+      display: inline-block;
+      background: linear-gradient(135deg, #eff6ff, #f0fdf4);
+      border: 1.5px solid var(--line);
+      border-radius: 8px;
+      padding: 0.5rem 1.25rem;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0.04em;
+    }
+
+    .mapping-columns {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 0.75rem;
+      align-items: start;
+    }
+    @media (max-width: 520px) {
+      .mapping-columns {
+        grid-template-columns: 1fr;
+      }
+      .mapping-arrows-col { display: none; }
+    }
+
+    .domain-box {
+      background: var(--bg);
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem;
+    }
+    .domain-title {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    .domain-icon {
+      font-size: 1.6rem;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+    .domain-name {
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+    .domain-items {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .domain-items li {
+      font-size: 0.87rem;
+      color: var(--muted);
+      padding: 0.3rem 0.5rem;
+      border-radius: 5px;
+      background: var(--panel);
+      opacity: 0;
+      transform: translateY(4px);
+      transition: opacity 0.4s, transform 0.4s;
+    }
+    .domain-items li.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .mapping-arrows-col {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.55rem;
+      padding-top: 4.8rem;
+    }
+    .arrow-row {
+      display: flex;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .arrow-row.show { opacity: 1; }
+    .arrow-svg {
+      width: 32px;
+      height: 14px;
+    }
+
+    .stage-banner {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .stage-banner h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: var(--blue);
+    }
+    .stage-banner p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .theory-box {
+      background: #fffbeb;
+      border: 1.5px solid #fde68a;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.75rem;
+      display: none;
+    }
+    .theory-box.visible { display: block; }
+    .theory-box h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #92400e;
+      margin-bottom: 0.5rem;
+    }
+    .theory-box p {
+      font-size: 0.87rem;
+      color: #78350f;
+      line-height: 1.6;
+    }
+    .formula {
+      display: block;
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: #92400e;
+      margin-top: 0.5rem;
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+
+    .result-card {
+      display: none;
+      text-align: center;
+      padding: 2rem 1.75rem;
+    }
+    .result-card.visible { display: block; }
+    .result-score {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+    .result-label {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .result-insight {
+      background: #eff6ff;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      font-size: 0.93rem;
+      line-height: 1.65;
+      color: #1e3a5f;
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .btn-restart {
+      padding: 0.75rem 2rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--blue);
+      background: var(--panel);
+      color: var(--blue);
+      font-size: 0.97rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-restart:hover { background: #eff6ff; }
+
+    .score-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .score-badge {
+      font-weight: 700;
+      font-size: 0.95rem;
+      background: #eff6ff;
+      color: var(--blue);
+      border-radius: 6px;
+      padding: 0.2rem 0.6rem;
+    }
+
+    .hint-text {
+      font-size: 0.93rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .stage-block { display: none; }
+    .stage-block.active { display: block; }
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Linguistik &middot; Klasse 10&ndash;13</div>
+  <h1>Konzeptuelle Metapher &ndash; Mapping-Simulator</h1>
+  <p>Erkenne kognitive Muster hinter Alltagssprache. Nach Lakoff &amp; Johnson (1980): Wie strukturieren Metaphern unser Denken?</p>
+</header>
+
+<main>
+
+  <div class="progress" role="progressbar" aria-label="Fortschritt">
+    <div class="dot active" id="dot1"></div>
+    <div class="dot" id="dot2"></div>
+    <div class="dot" id="dot3"></div>
+    <span class="progress-label" id="progress-label">Stufe 1 von 3</span>
+  </div>
+
+  <div class="score-row">
+    <span>Punkte:</span>
+    <span class="score-badge" id="score-display">0 / 3</span>
+  </div>
+
+  <!-- Theorie-Box (erscheint nach Stufe 1) -->
+  <div class="theory-box" id="theory-box">
+    <h3>Konzeptuelle Metapherntheorie (Lakoff &amp; Johnson 1980)</h3>
+    <p>
+      Eine konzeptuelle Metapher ist kein literarisches Stilmittel, sondern ein
+      <strong>kognitives Denkmuster</strong>: Ein abstrakter <em>Zielbereich</em>
+      wird durch einen konkreten <em>Quellbereich</em> strukturiert und verstanden.
+      Die sprachlichen Ausdrücke sind nur die sichtbare Oberfläche dieses Musters.
+    </p>
+    <span class="formula">ZIELBEREICH IST QUELLBEREICH</span>
+  </div>
+
+  <!-- Mapping-Diagramm -->
+  <div class="mapping-diagram card" id="mapping-diagram">
+    <div class="mapping-header">
+      <span class="metapher-label">ARGUMENTATION IST KRIEG</span>
+    </div>
+    <div class="mapping-columns">
+      <div class="domain-box">
+        <div class="domain-title">Quellbereich</div>
+        <span class="domain-icon">&#9876;</span>
+        <div class="domain-name">Krieg / Kampf</div>
+        <ul class="domain-items" id="source-items">
+          <li>Gegner</li>
+          <li>Waffe</li>
+          <li>Angreifen</li>
+          <li>Sieg / Niederlage</li>
+        </ul>
+      </div>
+      <div class="mapping-arrows-col" id="arrows-col">
+        <div class="arrow-row" id="arr1">
+          <svg class="arrow-svg" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="7" x2="24" y2="7" stroke="#0f5fa8" stroke-width="2"/>
+            <polygon points="24,3 32,7 24,11" fill="#0f5fa8"/>
+          </svg>
+        </div>
+        <div class="arrow-row" id="arr2">
+          <svg class="arrow-svg" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="7" x2="24" y2="7" stroke="#0f5fa8" stroke-width="2"/>
+            <polygon points="24,3 32,7 24,11" fill="#0f5fa8"/>
+          </svg>
+        </div>
+        <div class="arrow-row" id="arr3">
+          <svg class="arrow-svg" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="7" x2="24" y2="7" stroke="#0f5fa8" stroke-width="2"/>
+            <polygon points="24,3 32,7 24,11" fill="#0f5fa8"/>
+          </svg>
+        </div>
+        <div class="arrow-row" id="arr4">
+          <svg class="arrow-svg" viewBox="0 0 32 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0" y1="7" x2="24" y2="7" stroke="#0f5fa8" stroke-width="2"/>
+            <polygon points="24,3 32,7 24,11" fill="#0f5fa8"/>
+          </svg>
+        </div>
+      </div>
+      <div class="domain-box">
+        <div class="domain-title">Zielbereich</div>
+        <span class="domain-icon">&#128172;</span>
+        <div class="domain-name">Diskutieren</div>
+        <ul class="domain-items" id="target-items">
+          <li>Gesprächspartner</li>
+          <li>Argument</li>
+          <li>Gegenargumentation</li>
+          <li>Überzeugen / Unterliegen</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- STUFE 1 -->
+  <div class="stage-block active" id="stage1">
+    <div class="stage-banner">
+      <h2>Stufe 1 &ndash; Vorhersage: Erkenne das Muster</h2>
+      <p>Analysiere den Satz und entscheide, welcher Bereich als Quellbereich dient.</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Stufe 1 &middot; Vorhersage</div>
+      <h2>Welcher Quellbereich steckt hinter diesem Satz?</h2>
+      <div class="sentence-box">
+        &bdquo;Ihr habt mich in dieser Diskussion wirklich fertiggemacht.&ldquo;
+      </div>
+      <p class="hint-text">
+        Welchen Quellbereich aktiviert dieser Ausdruck, um Argumentation zu beschreiben?
+      </p>
+      <div class="options" id="s1-options">
+        <button class="option-btn" data-correct="false" onclick="answerS1(this,false)">A) Kochen</button>
+        <button class="option-btn" data-correct="false" onclick="answerS1(this,false)">B) Sport</button>
+        <button class="option-btn" data-correct="true"  onclick="answerS1(this,true)">C) Krieg / Kampf</button>
+        <button class="option-btn" data-correct="false" onclick="answerS1(this,false)">D) Reise</button>
+      </div>
+      <div class="feedback correct" id="s1-correct">
+        <strong>Richtig!</strong> &raquo;Fertigmachen&laquo; entstammt dem Quellbereich
+        <strong>Krieg und Kampf</strong> &mdash; jemanden besiegen, vernichten.
+        Die konzeptuelle Metapher lautet:
+        <span class="concept-tag">ARGUMENTATION IST KRIEG</span>.
+        Sie strukturiert, wie wir über Diskussionen <em>sprechen</em> &mdash; und <em>denken</em>.
+        (Lakoff &amp; Johnson 1980, Kap. 1)
+      </div>
+      <div class="feedback wrong" id="s1-wrong">
+        <strong>Nicht ganz.</strong> &raquo;Fertigmachen&laquo; bedeutet hier:
+        jemanden besiegen oder vernichten. Das ist Kriegssprache.
+        Die konzeptuelle Metapher heißt
+        <span class="concept-tag">ARGUMENTATION IST KRIEG</span> &mdash;
+        nicht Kochen, Sport oder Reise.
+      </div>
+      <button class="btn-next" id="s1-next" onclick="goStage2()">Weiter zu Stufe 2 &rarr;</button>
+    </div>
+  </div>
+
+  <!-- STUFE 2 -->
+  <div class="stage-block" id="stage2">
+    <div class="stage-banner">
+      <h2>Stufe 2 &ndash; Mapping-Analyse: Zuordnen</h2>
+      <p>Welcher Ausdruck passt <em>nicht</em> zur Metapher ZEIT IST GELD?</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Stufe 2 &middot; Mapping</div>
+      <h2>Welcher Ausdruck gehört <em>nicht</em> zur Metapher ZEIT IST GELD?</h2>
+      <p class="hint-text">
+        Drei Sätze aktivieren den Quellbereich <em>Geldwirtschaft</em>.
+        Einer stammt aus einem anderen Quellbereich. Welcher?
+      </p>
+      <div class="options" id="s2-options">
+        <button class="option-btn" data-correct="false" onclick="answerS2(this,false)">A) &bdquo;Du verschwendest meine Zeit.&ldquo;</button>
+        <button class="option-btn" data-correct="false" onclick="answerS2(this,false)">B) &bdquo;Spare deine Zeit für Wichtiges.&ldquo;</button>
+        <button class="option-btn" data-correct="true"  onclick="answerS2(this,true)">C) &bdquo;Die Zeit rennt davon.&ldquo;</button>
+        <button class="option-btn" data-correct="false" onclick="answerS2(this,false)">D) &bdquo;Das hat mich viel Zeit gekostet.&ldquo;</button>
+      </div>
+      <div class="feedback correct" id="s2-correct">
+        <strong>Richtig!</strong> &raquo;Die Zeit rennt davon&laquo; aktiviert einen
+        <strong>Bewegungsquellbereich</strong> &mdash; Zeit als sich bewegendes Objekt.
+        Die anderen drei (verschwenden, sparen, kosten) entstammen der
+        <em>Geldwirtschaft</em> &mdash; das ist das
+        <span class="concept-tag">Highlighting</span> der Metapher
+        <span class="concept-tag">ZEIT IST GELD</span>.
+      </div>
+      <div class="feedback wrong" id="s2-wrong">
+        <strong>Schau nochmal.</strong> &raquo;Verschwenden&laquo;, &raquo;sparen&laquo;
+        und &raquo;kosten&laquo; sind Begriffe aus der Geldwirtschaft &mdash;
+        Mapping auf <span class="concept-tag">ZEIT IST GELD</span>.
+        &raquo;Rennen&laquo; hingegen beschreibt <em>Bewegung</em>, keinen Geldwert.
+        Das gehört zu einem anderen Quellbereich.
+      </div>
+      <button class="btn-next" id="s2-next" onclick="goStage3()">Weiter zu Stufe 3 &rarr;</button>
+    </div>
+  </div>
+
+  <!-- STUFE 3 -->
+  <div class="stage-block" id="stage3">
+    <div class="stage-banner">
+      <h2>Stufe 3 &ndash; Highlighting &amp; Hiding</h2>
+      <p>Was blendet eine konzeptuelle Metapher <em>aus</em>?</p>
+    </div>
+    <div class="card">
+      <div class="card-label">Stufe 3 &middot; Vertiefung</div>
+      <h2>Was blendet ARGUMENTATION IST KRIEG aus?</h2>
+      <p class="hint-text">
+        Konzeptuelle Metaphern <strong>heben bestimmte Aspekte hervor</strong>
+        (Highlighting) und <strong>blenden andere aus</strong> (Hiding).
+        Was wird am Diskutieren durch die Kriegsmetapher <em>nicht</em> erfasst?
+      </p>
+      <div class="options" id="s3-options">
+        <button class="option-btn" data-correct="false" onclick="answerS3(this,false)">A) Diskussionen können Gewinner und Verlierer haben.</button>
+        <button class="option-btn" data-correct="true"  onclick="answerS3(this,true)">B) Diskussionen ermöglichen Zusammenarbeit und gemeinsamen Erkenntnisgewinn.</button>
+        <button class="option-btn" data-correct="false" onclick="answerS3(this,false)">C) Man setzt Argumente ein, um zu überzeugen.</button>
+        <button class="option-btn" data-correct="false" onclick="answerS3(this,false)">D) Man kann eine Diskussion &bdquo;verlieren&ldquo;.</button>
+      </div>
+      <div class="feedback correct" id="s3-correct">
+        <strong>Exzellent!</strong> Die Kriegsmetapher blendet den
+        <strong>kooperativen, erkenntnisorientierten</strong> Charakter von
+        Diskussionen aus &mdash; das nennt man
+        <span class="concept-tag">Hiding</span>.
+        Lakoff &amp; Johnson betonen: Würden wir ARGUMENTATION ALS ZUSAMMENARBEIT
+        framen, würden wir Diskussionen ganz anders führen. Das zeigt die politische
+        und soziale Dimension der
+        <span class="concept-tag">konzeptuellen Metapher</span>.
+      </div>
+      <div class="feedback wrong" id="s3-wrong">
+        <strong>Nicht ganz.</strong> Die genannten Aspekte (Gewinner/Verlierer,
+        Argumente, Verlieren) werden von der Kriegsmetapher gerade
+        <em>hervorgehoben</em> &mdash; das ist
+        <span class="concept-tag">Highlighting</span>.
+        Was <em>ausgeblendet</em> wird (<span class="concept-tag">Hiding</span>),
+        ist der kooperative Aspekt: Diskussionen als gemeinsames Erkunden
+        von Wahrheit passen nicht zum Kriegsbild.
+      </div>
+      <button class="btn-next" id="s3-next" onclick="showResult()">Ergebnis anzeigen &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ERGEBNIS -->
+  <div class="card result-card" id="result-card">
+    <div class="result-score" id="result-score">0 / 3</div>
+    <div class="result-label" id="result-label">Auswertung</div>
+    <div class="result-insight">
+      <strong>Was du gelernt hast:</strong><br>
+      Konzeptuelle Metaphern (Lakoff &amp; Johnson 1980) sind keine Stilmittel &mdash;
+      sie sind kognitive Denkmuster. Der <em>Quellbereich</em> (konkret) strukturiert
+      den <em>Zielbereich</em> (abstrakt) systematisch durch ein <em>Mapping</em>.
+      Das Muster hebt bestimmte Aspekte hervor (<em>Highlighting</em>) und blendet
+      andere aus (<em>Hiding</em>). Beispiele:
+      <strong>ARGUMENTATION IST KRIEG</strong> &middot;
+      <strong>ZEIT IST GELD</strong> &middot;
+      <strong>LEBEN IST EINE REISE</strong>.
+    </div>
+    <button class="btn-restart" onclick="restart()">Nochmal versuchen</button>
+  </div>
+
+</main>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  var score = 0;
+
+  function trackStep(step, result) {
+    window.dataLayer.push({
+      event: 'sim_step',
+      sim_name: 'konzeptuelle-metapher-simulation',
+      step: step,
+      result: result
+    });
+  }
+
+  function updateProgress(stage) {
+    document.getElementById('progress-label').textContent = 'Stufe ' + stage + ' von 3';
+    for (var i = 1; i <= 3; i++) {
+      var dot = document.getElementById('dot' + i);
+      dot.className = 'dot';
+      if (i < stage) dot.classList.add('done');
+      else if (i === stage) dot.classList.add('active');
+    }
+    document.getElementById('score-display').textContent = score + ' / 3';
+  }
+
+  function showMappingDiagram() {
+    document.getElementById('theory-box').classList.add('visible');
+    document.getElementById('mapping-diagram').classList.add('visible');
+    var srcItems = document.querySelectorAll('#source-items li');
+    var tgtItems = document.querySelectorAll('#target-items li');
+    var arrowIds = ['arr1','arr2','arr3','arr4'];
+    for (var i = 0; i < 4; i++) {
+      (function(idx) {
+        setTimeout(function() {
+          if (srcItems[idx]) srcItems[idx].classList.add('show');
+          var a = document.getElementById(arrowIds[idx]);
+          if (a) a.classList.add('show');
+          if (tgtItems[idx]) tgtItems[idx].classList.add('show');
+        }, idx * 350);
+      })(i);
+    }
+  }
+
+  function answerS1(btn, correct) {
+    var opts = document.querySelectorAll('#s1-options .option-btn');
+    opts.forEach(function(b) {
+      b.disabled = true;
+      if (b.dataset.correct === 'true') b.classList.add('correct');
+    });
+    if (!correct) btn.classList.add('wrong');
+    if (correct) score++;
+    document.getElementById('s1-correct').style.display = correct ? 'block' : 'none';
+    document.getElementById('s1-wrong').style.display   = correct ? 'none'  : 'block';
+    document.getElementById('s1-next').style.display    = 'block';
+    showMappingDiagram();
+    trackStep(1, correct ? 'correct' : 'wrong');
+  }
+
+  function goStage2() {
+    document.getElementById('stage1').classList.remove('active');
+    document.getElementById('stage2').classList.add('active');
+    updateProgress(2);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function answerS2(btn, correct) {
+    var opts = document.querySelectorAll('#s2-options .option-btn');
+    opts.forEach(function(b) {
+      b.disabled = true;
+      if (b.dataset.correct === 'true') b.classList.add('correct');
+    });
+    if (!correct) btn.classList.add('wrong');
+    if (correct) score++;
+    document.getElementById('s2-correct').style.display = correct ? 'block' : 'none';
+    document.getElementById('s2-wrong').style.display   = correct ? 'none'  : 'block';
+    document.getElementById('s2-next').style.display    = 'block';
+    trackStep(2, correct ? 'correct' : 'wrong');
+  }
+
+  function goStage3() {
+    document.getElementById('stage2').classList.remove('active');
+    document.getElementById('stage3').classList.add('active');
+    updateProgress(3);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function answerS3(btn, correct) {
+    var opts = document.querySelectorAll('#s3-options .option-btn');
+    opts.forEach(function(b) {
+      b.disabled = true;
+      if (b.dataset.correct === 'true') b.classList.add('correct');
+    });
+    if (!correct) btn.classList.add('wrong');
+    if (correct) score++;
+    document.getElementById('s3-correct').style.display = correct ? 'block' : 'none';
+    document.getElementById('s3-wrong').style.display   = correct ? 'none'  : 'block';
+    document.getElementById('s3-next').style.display    = 'block';
+    trackStep(3, correct ? 'correct' : 'wrong');
+  }
+
+  function showResult() {
+    document.getElementById('stage3').classList.remove('active');
+    var rc = document.getElementById('result-card');
+    rc.classList.add('visible');
+    var scoreEl = document.getElementById('result-score');
+    var labelEl = document.getElementById('result-label');
+    scoreEl.textContent = score + ' / 3 Punkten';
+    if (score === 3) {
+      scoreEl.style.color = 'var(--green)';
+      labelEl.textContent = 'Ausgezeichnet! Alle Konzepte verstanden.';
+    } else if (score >= 2) {
+      scoreEl.style.color = 'var(--amber)';
+      labelEl.textContent = 'Gut! Lies noch einmal die Theorie-Box.';
+    } else {
+      scoreEl.style.color = 'var(--red)';
+      labelEl.textContent = 'Nochmal versuchen — die Theorie hilft!';
+    }
+    for (var i = 1; i <= 3; i++) {
+      document.getElementById('dot' + i).className = 'dot done';
+    }
+    document.getElementById('progress-label').textContent = 'Abgeschlossen';
+    document.getElementById('score-display').textContent = score + ' / 3';
+    trackStep('result', score + '/3');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function restart() {
+    score = 0;
+    ['s1','s2','s3'].forEach(function(id) {
+      document.querySelectorAll('#' + id + '-options .option-btn').forEach(function(b) {
+        b.disabled = false;
+        b.classList.remove('correct','wrong');
+      });
+      document.getElementById(id + '-correct').style.display = 'none';
+      document.getElementById(id + '-wrong').style.display   = 'none';
+      document.getElementById(id + '-next').style.display    = 'none';
+    });
+    document.getElementById('theory-box').classList.remove('visible');
+    document.getElementById('mapping-diagram').classList.remove('visible');
+    document.querySelectorAll('.domain-items li').forEach(function(li) {
+      li.classList.remove('show');
+    });
+    document.querySelectorAll('.arrow-row').forEach(function(a) {
+      a.classList.remove('show');
+    });
+    document.getElementById('stage1').classList.add('active');
+    document.getElementById('stage2').classList.remove('active');
+    document.getElementById('stage3').classList.remove('active');
+    document.getElementById('result-card').classList.remove('visible');
+    updateProgress(1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>

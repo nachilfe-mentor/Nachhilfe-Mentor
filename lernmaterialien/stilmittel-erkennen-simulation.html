@@ -1,0 +1,1077 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Stilmittel erkennen üben – Interaktive Übung | Nachhilfe Mentor</title>
+  <meta name="description" content="Erkenne Metapher, Personifikation, Anapher, Antithese und Klimax in echten Textstellen – interaktive Übung mit sofortigem Feedback und animierten Erklärungen.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Stilmittel erkennen, rhetorische Mittel, Metapher, Personifikation, Anapher, Antithese">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/stilmittel-erkennen-simulation.html">
+  <meta property="og:title" content="Stilmittel erkennen üben – Interaktive Übung">
+  <meta property="og:description" content="Erkenne Metapher, Personifikation, Anapher, Antithese und Klimax in echten Textstellen – interaktive Übung mit sofortigem Feedback und animierten Erklärungen.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/stilmittel-erkennen-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Stilmittel erkennen üben – Interaktive Übung",
+  "description":"Erkenne Metapher, Personifikation, Anapher, Antithese und Klimax in echten Textstellen – interaktive Übung mit sofortigem Feedback und animierten Erklärungen.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/stilmittel-erkennen-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #617087;
+      --line: #d8e1ed;
+      --blue: #0f5fa8;
+      --cyan: #0894aa;
+      --amber: #b87700;
+      --green: #0b8f6a;
+      --red: #b5281e;
+      --purple: #6b3fa0;
+      --bg: #f5f8fc;
+      --panel: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    /* ── Page chrome ────────────────────────────────────────────────── */
+    header {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 22px 20px;
+    }
+    header .breadcrumb {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    header p.subtitle {
+      color: var(--muted);
+      max-width: 600px;
+      font-size: 0.97rem;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 22px 60px;
+    }
+
+    /* ── Progress bar ───────────────────────────────────────────────── */
+    .stage-progress {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+      margin-top: 8px;
+    }
+    .stage-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--line);
+      border: 2px solid var(--line);
+      transition: background 0.25s, border-color 0.25s;
+      flex-shrink: 0;
+    }
+    .stage-dot.active { background: var(--blue); border-color: var(--blue); }
+    .stage-dot.done { background: var(--green); border-color: var(--green); }
+    .stage-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* ── Stage panels ───────────────────────────────────────────────── */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    .stage-heading {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 6px;
+    }
+    .stage-description {
+      font-size: 0.93rem;
+      color: var(--muted);
+      margin-bottom: 28px;
+      max-width: 620px;
+    }
+
+    /* ── Task mini-progress ─────────────────────────────────────────── */
+    .task-progress {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 24px;
+    }
+    .task-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.2s;
+    }
+    .task-dot.done { background: var(--green); }
+    .task-dot.current { background: var(--blue); }
+
+    /* ── Text card (animated model) ─────────────────────────────────── */
+    .text-card {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 14px;
+      padding: 28px 30px;
+      margin-bottom: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+    .text-card .label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+    .text-card .quote {
+      font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+    .text-card .quote .hl {
+      background: transparent;
+      border-radius: 3px;
+      padding: 1px 3px;
+      transition: background 0.4s, color 0.4s;
+      font-style: italic;
+    }
+    .text-card .quote .hl.mark-blue  { background: #daeeff; color: #0a4a8a; }
+    .text-card .quote .hl.mark-green { background: #d4f5e8; color: #0a6b4a; }
+    .text-card .quote .hl.mark-amber { background: #fff3cd; color: #8a5700; }
+    .text-card .quote .hl.mark-red   { background: #ffe0dd; color: #8a1e1e; }
+    .text-card .quote .hl.mark-purple{ background: #ede0ff; color: #52259e; }
+
+    /* Annotation arrows that appear after answer */
+    .annotation {
+      display: none;
+      margin-top: 18px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .annotation.visible { display: block; }
+    .annotation-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+    .annotation-arrow {
+      font-size: 1.1rem;
+      color: var(--blue);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .annotation-text {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .annotation-text strong { color: var(--ink); }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .annotation.visible { animation: slideIn 0.3s ease; }
+
+    /* ── Question ───────────────────────────────────────────────────── */
+    .question {
+      font-size: 1.0rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--ink);
+    }
+
+    /* ── Options ────────────────────────────────────────────────────── */
+    .options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    @media (max-width: 480px) {
+      .options { grid-template-columns: 1fr; }
+    }
+    .opt-btn {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 13px 16px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      font-weight: 500;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 0.18s, background 0.18s, transform 0.1s;
+    }
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+      transform: translateY(-1px);
+    }
+    .opt-btn:disabled { cursor: default; }
+    .opt-btn.correct {
+      border-color: var(--green);
+      background: #edfbf4;
+      color: var(--green);
+    }
+    .opt-btn.wrong {
+      border-color: var(--red);
+      background: #fff5f5;
+      color: var(--red);
+    }
+    .opt-btn .opt-name {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+    .opt-btn .opt-hint {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 400;
+      color: var(--muted);
+    }
+    .opt-btn.correct .opt-hint,
+    .opt-btn.wrong .opt-hint { color: inherit; }
+
+    /* ── Feedback box ───────────────────────────────────────────────── */
+    .feedback-box {
+      display: none;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+    .feedback-box.visible { display: block; animation: slideIn 0.3s ease; }
+    .feedback-box.correct-fb {
+      background: #edfbf4;
+      border: 1.5px solid #a0e8c4;
+      color: #0a5e35;
+    }
+    .feedback-box.wrong-fb {
+      background: #fff5f5;
+      border: 1.5px solid #f5b8b4;
+      color: #7a1a17;
+    }
+    .feedback-box .fb-head {
+      font-weight: 700;
+      margin-bottom: 6px;
+      font-size: 1.0rem;
+    }
+
+    /* ── Nav buttons ────────────────────────────────────────────────── */
+    .nav-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 9px;
+      padding: 12px 24px;
+      font-size: 0.97rem;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s, transform 0.1s;
+    }
+    .btn-primary:hover { background: #0a4c8a; transform: translateY(-1px); }
+    .btn-primary:disabled {
+      background: var(--line);
+      color: var(--muted);
+      cursor: default;
+      transform: none;
+    }
+
+    /* ── Vorhersage label ───────────────────────────────────────────── */
+    .vorhersage-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--amber);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 10px;
+    }
+
+    /* ── Reference card section ─────────────────────────────────────── */
+    .ref-section {
+      display: none;
+      margin-top: 10px;
+    }
+    .ref-section.visible { display: block; animation: slideIn 0.35s ease; }
+    .ref-section h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      color: var(--ink);
+    }
+    .ref-section .ref-intro {
+      font-size: 0.93rem;
+      color: var(--muted);
+      margin-bottom: 24px;
+      max-width: 580px;
+    }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    @media (max-width: 560px) {
+      .ref-grid { grid-template-columns: 1fr; }
+    }
+    .ref-card {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .ref-card .rc-name {
+      font-weight: 700;
+      font-size: 1.0rem;
+      margin-bottom: 6px;
+      color: var(--blue);
+    }
+    .ref-card .rc-def {
+      font-size: 0.87rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+    .ref-card .rc-ex {
+      font-size: 0.87rem;
+      font-style: italic;
+      color: var(--ink);
+      background: var(--bg);
+      border-radius: 6px;
+      padding: 6px 10px;
+    }
+
+    /* ── Completion panel ───────────────────────────────────────────── */
+    .completion-banner {
+      background: linear-gradient(135deg, #edfbf4 0%, #e8f3ff 100%);
+      border: 1.5px solid #a0e8c4;
+      border-radius: 14px;
+      padding: 28px 30px;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+    .completion-banner .cb-icon { font-size: 2.4rem; margin-bottom: 10px; }
+    .completion-banner h2 { font-size: 1.4rem; margin-bottom: 8px; color: var(--ink); }
+    .completion-banner p { color: var(--muted); font-size: 0.95rem; max-width: 480px; margin: 0 auto; }
+
+    /* ── Divider ────────────────────────────────────────────────────── */
+    .divider {
+      height: 1px;
+      background: var(--line);
+      margin: 32px 0;
+    }
+  </style>
+</head>
+<body
+  data-subject="Deutsch"
+  data-grade-level="8-12"
+  data-asset-type="simulation"
+  data-topic-cluster="sprachen-stilmittel"
+  data-primary-keyword="sprachen"
+>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="breadcrumb"><a href="/">Nachhilfe Mentor</a> › <a href="/lernmaterialien/">Lernmaterialien</a> › Stilmittel erkennen</p>
+  <h1>Stilmittel erkennen</h1>
+  <p class="subtitle">Übe, rhetorische Mittel in echten Textstellen zu erkennen — mit sofortigem Feedback und animierten Erklärungen.</p>
+</header>
+
+<main>
+
+  <!-- ── Fortschritt (Stufen) ─────────────────────────────────────── -->
+  <div class="stage-progress" role="status" aria-label="Fortschritt">
+    <div class="stage-dot active" id="dot-s1" aria-hidden="true"></div>
+    <span class="stage-label" id="stage-label-text">Stufe 1 von 2 – Grundlegende Stilmittel</span>
+    <div class="stage-dot" id="dot-s2" aria-hidden="true"></div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- STUFE 1                                                           -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section class="stage active" id="stage-1" aria-label="Stufe 1: Grundlegende Stilmittel">
+    <p class="stage-heading">Stufe 1 – Grundlegende Stilmittel</p>
+    <p class="stage-description">Bestimme das Stilmittel in jeder Textstelle. Triff zuerst deine Vorhersage, dann siehst du die Erklärung.</p>
+
+    <div class="task-progress" aria-label="Aufgabenfortschritt">
+      <div class="task-dot current" id="t1-dot-1"></div>
+      <div class="task-dot" id="t1-dot-2"></div>
+      <div class="task-dot" id="t1-dot-3"></div>
+    </div>
+
+    <!-- Aufgabe 1-A -->
+    <div id="task-1-1" class="task-block">
+      <div class="text-card">
+        <div class="label">Textstelle</div>
+        <div class="quote" id="q1-1-text">
+          „Das Leben ist ein <span class="hl" id="q1-1-hl1">Traum</span>."
+        </div>
+        <div class="annotation" id="q1-1-ann">
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              <strong>„Leben"</strong> und <strong>„Traum"</strong> stammen aus verschiedenen Bedeutungsbereichen.
+              Die Übertragung erfolgt direkt — ohne „wie".
+            </div>
+          </div>
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              Wäre es ein Vergleich, stünde da: „Das Leben ist <em>wie</em> ein Traum."
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="vorhersage-label">Vorhersage</p>
+      <p class="question">Welches Stilmittel wird hier verwendet?</p>
+      <div class="options" id="opts-1-1">
+        <button class="opt-btn" data-correct="true" onclick="checkAnswer(this,'1-1','correct')">
+          <span class="opt-name">Metapher</span>
+          <span class="opt-hint">bildliche Übertragung ohne „wie"</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'1-1','wrong-vergleich')">
+          <span class="opt-name">Vergleich</span>
+          <span class="opt-hint">expliziter Vergleich mit „wie"</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'1-1','wrong-person')">
+          <span class="opt-name">Personifikation</span>
+          <span class="opt-hint">menschliche Eigenschaft auf Nicht-Person</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'1-1','wrong-hyp')">
+          <span class="opt-name">Hyperbel</span>
+          <span class="opt-hint">bewusste Übertreibung</span>
+        </button>
+      </div>
+      <div class="feedback-box" id="fb-1-1"></div>
+      <div class="nav-row">
+        <button class="btn-primary" id="next-1-1" disabled onclick="nextTask('1-1','1-2')">Weiter</button>
+      </div>
+    </div>
+
+    <!-- Aufgabe 1-B -->
+    <div id="task-1-2" class="task-block" style="display:none">
+      <div class="text-card">
+        <div class="label">Textstelle</div>
+        <div class="quote" id="q1-2-text">
+          „Der Wind <span class="hl" id="q1-2-hl1">flüsterte</span> sein Geheimnis durch die Bäume."
+        </div>
+        <div class="annotation" id="q1-2-ann">
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              <strong>„flüstern"</strong> ist eine typisch menschliche Handlung —
+              hier wird sie dem Wind (einem Naturphänomen) zugeschrieben.
+            </div>
+          </div>
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              Nicht-menschliches Subjekt + menschliches Prädikat = Personifikation.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="vorhersage-label">Vorhersage</p>
+      <p class="question">Welches Stilmittel wird hier verwendet?</p>
+      <div class="options" id="opts-1-2">
+        <button class="opt-btn" onclick="checkAnswer(this,'1-2','wrong-meta')">
+          <span class="opt-name">Metapher</span>
+          <span class="opt-hint">bildliche Übertragung ohne „wie"</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'1-2','wrong-vergleich')">
+          <span class="opt-name">Vergleich</span>
+          <span class="opt-hint">expliziter Vergleich mit „wie"</span>
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkAnswer(this,'1-2','correct')">
+          <span class="opt-name">Personifikation</span>
+          <span class="opt-hint">menschliche Eigenschaft auf Nicht-Person</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'1-2','wrong-hyp')">
+          <span class="opt-name">Hyperbel</span>
+          <span class="opt-hint">bewusste Übertreibung</span>
+        </button>
+      </div>
+      <div class="feedback-box" id="fb-1-2"></div>
+      <div class="nav-row">
+        <button class="btn-primary" id="next-1-2" disabled onclick="nextTask('1-2','1-3')">Weiter</button>
+      </div>
+    </div>
+
+    <!-- Aufgabe 1-C -->
+    <div id="task-1-3" class="task-block" style="display:none">
+      <div class="text-card">
+        <div class="label">Textstelle</div>
+        <div class="quote" id="q1-3-text">
+          „Ich habe dir das schon <span class="hl" id="q1-3-hl1">tausendmal</span> erklärt!"
+        </div>
+        <div class="annotation" id="q1-3-ann">
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              <strong>„Tausendmal"</strong> ist keine realistische Zahl — sie dient zur emotionalen Übertreibung.
+            </div>
+          </div>
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              Hyperbeln verstärken einen Ausdruck durch Übertreibung, ohne dass der Leser sie wörtlich nimmt.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="vorhersage-label">Vorhersage</p>
+      <p class="question">Welches Stilmittel wird hier verwendet?</p>
+      <div class="options" id="opts-1-3">
+        <button class="opt-btn" onclick="checkAnswer(this,'1-3','wrong-meta')">
+          <span class="opt-name">Metapher</span>
+          <span class="opt-hint">bildliche Übertragung ohne „wie"</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'1-3','wrong-vergleich')">
+          <span class="opt-name">Vergleich</span>
+          <span class="opt-hint">expliziter Vergleich mit „wie"</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'1-3','wrong-person')">
+          <span class="opt-name">Personifikation</span>
+          <span class="opt-hint">menschliche Eigenschaft auf Nicht-Person</span>
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkAnswer(this,'1-3','correct')">
+          <span class="opt-name">Hyperbel</span>
+          <span class="opt-hint">bewusste Übertreibung</span>
+        </button>
+      </div>
+      <div class="feedback-box" id="fb-1-3"></div>
+      <div class="nav-row">
+        <button class="btn-primary" id="next-1-3" disabled onclick="goToStage2()">Weiter zu Stufe 2</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- STUFE 2                                                           -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section class="stage" id="stage-2" aria-label="Stufe 2: Figurenbasierte Stilmittel">
+    <p class="stage-heading">Stufe 2 – Figurenbasierte Stilmittel</p>
+    <p class="stage-description">Jetzt kommen komplexere Stilmittel, die auf Satzstruktur und Klang beruhen. Achte auf Wiederholungen, Gegensätze und Steigerungen.</p>
+
+    <div class="task-progress" aria-label="Aufgabenfortschritt">
+      <div class="task-dot current" id="t2-dot-1"></div>
+      <div class="task-dot" id="t2-dot-2"></div>
+      <div class="task-dot" id="t2-dot-3"></div>
+    </div>
+
+    <!-- Aufgabe 2-A -->
+    <div id="task-2-1" class="task-block">
+      <div class="text-card">
+        <div class="label">Textstelle</div>
+        <div class="quote" id="q2-1-text">
+          „<span class="hl" id="q2-1-hl1">Ich will</span> Frieden.
+          <span class="hl" id="q2-1-hl2">Ich will</span> Gerechtigkeit.
+          <span class="hl" id="q2-1-hl3">Ich will</span> eine bessere Welt."
+        </div>
+        <div class="annotation" id="q2-1-ann">
+          <div class="annotation-row">
+            <div class="annotation-arrow">↑</div>
+            <div class="annotation-text">
+              <strong>„Ich will"</strong> steht am Anfang jedes Satzes — dreimal wiederholt.
+            </div>
+          </div>
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              Wiederholung am Satzanfang = Anapher. Beim Parallelismus wäre die <em>Struktur</em> gleich, aber nicht notwendigerweise dasselbe Wort.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="vorhersage-label">Vorhersage</p>
+      <p class="question">Welches Stilmittel liegt hier vor?</p>
+      <div class="options" id="opts-2-1">
+        <button class="opt-btn" data-correct="true" onclick="checkAnswer(this,'2-1','correct')">
+          <span class="opt-name">Anapher</span>
+          <span class="opt-hint">gleiches Wort am Satzanfang wiederholt</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'2-1','wrong-para')">
+          <span class="opt-name">Parallelismus</span>
+          <span class="opt-hint">gleiche Satzstruktur, nicht identisches Wort</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'2-1','wrong-anti')">
+          <span class="opt-name">Antithese</span>
+          <span class="opt-hint">Gegenüberstellung von Gegensätzen</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'2-1','wrong-klim')">
+          <span class="opt-name">Klimax</span>
+          <span class="opt-hint">Steigerung in aufsteigender Intensität</span>
+        </button>
+      </div>
+      <div class="feedback-box" id="fb-2-1"></div>
+      <div class="nav-row">
+        <button class="btn-primary" id="next-2-1" disabled onclick="nextTask('2-1','2-2')">Weiter</button>
+      </div>
+    </div>
+
+    <!-- Aufgabe 2-B -->
+    <div id="task-2-2" class="task-block" style="display:none">
+      <div class="text-card">
+        <div class="label">Textstelle</div>
+        <div class="quote" id="q2-2-text">
+          „<span class="hl" id="q2-2-hl1">Die Reichen</span> werden <span class="hl" id="q2-2-hl2">reicher</span>,
+          <span class="hl" id="q2-2-hl3">die Armen</span> <span class="hl" id="q2-2-hl4">ärmer</span>."
+        </div>
+        <div class="annotation" id="q2-2-ann">
+          <div class="annotation-row">
+            <div class="annotation-arrow">←→</div>
+            <div class="annotation-text">
+              <strong>„Reiche / Arme"</strong> und <strong>„reicher / ärmer"</strong> bilden je ein Gegensatzpaar —
+              die Antithese lebt vom Kontrast.
+            </div>
+          </div>
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              Die gleiche Satzstruktur wäre ein Parallelismus — aber hier kommt der inhaltliche Kontrast als zentrales Merkmal dazu.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="vorhersage-label">Vorhersage</p>
+      <p class="question">Welches Stilmittel liegt hier vor?</p>
+      <div class="options" id="opts-2-2">
+        <button class="opt-btn" onclick="checkAnswer(this,'2-2','wrong-ana')">
+          <span class="opt-name">Anapher</span>
+          <span class="opt-hint">gleiches Wort am Satzanfang wiederholt</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'2-2','wrong-para')">
+          <span class="opt-name">Parallelismus</span>
+          <span class="opt-hint">gleiche Satzstruktur, ohne Kontrast</span>
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkAnswer(this,'2-2','correct')">
+          <span class="opt-name">Antithese</span>
+          <span class="opt-hint">Gegenüberstellung von Gegensätzen</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'2-2','wrong-klim')">
+          <span class="opt-name">Klimax</span>
+          <span class="opt-hint">Steigerung in aufsteigender Intensität</span>
+        </button>
+      </div>
+      <div class="feedback-box" id="fb-2-2"></div>
+      <div class="nav-row">
+        <button class="btn-primary" id="next-2-2" disabled onclick="nextTask('2-2','2-3')">Weiter</button>
+      </div>
+    </div>
+
+    <!-- Aufgabe 2-C -->
+    <div id="task-2-3" class="task-block" style="display:none">
+      <div class="text-card">
+        <div class="label">Textstelle</div>
+        <div class="quote" id="q2-3-text">
+          „Er <span class="hl" id="q2-3-hl1">kämpfte</span>,
+          er <span class="hl" id="q2-3-hl2">blutete</span>,
+          er <span class="hl" id="q2-3-hl3">starb</span> für sein Land."
+        </div>
+        <div class="annotation" id="q2-3-ann">
+          <div class="annotation-row">
+            <div class="annotation-arrow">↑↑↑</div>
+            <div class="annotation-text">
+              <strong>„kämpfte → blutete → starb"</strong>: Die drei Verben steigern sich von Aktion über Verletzung bis zum Tod — maximale Intensitätssteigerung.
+            </div>
+          </div>
+          <div class="annotation-row">
+            <div class="annotation-arrow">→</div>
+            <div class="annotation-text">
+              „Er" am Anfang aller drei Satzteile wäre eine Anapher — aber das entscheidende Merkmal hier ist die inhaltliche Steigerung: Klimax.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="vorhersage-label">Vorhersage</p>
+      <p class="question">Welches Stilmittel liegt hier vor?</p>
+      <div class="options" id="opts-2-3">
+        <button class="opt-btn" onclick="checkAnswer(this,'2-3','wrong-ana')">
+          <span class="opt-name">Anapher</span>
+          <span class="opt-hint">gleiches Wort am Satzanfang wiederholt</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'2-3','wrong-para')">
+          <span class="opt-name">Parallelismus</span>
+          <span class="opt-hint">gleiche Satzstruktur, gleiche Intensität</span>
+        </button>
+        <button class="opt-btn" onclick="checkAnswer(this,'2-3','wrong-anti')">
+          <span class="opt-name">Antithese</span>
+          <span class="opt-hint">Gegenüberstellung von Gegensätzen</span>
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkAnswer(this,'2-3','correct')">
+          <span class="opt-name">Klimax</span>
+          <span class="opt-hint">Steigerung in aufsteigender Intensität</span>
+        </button>
+      </div>
+      <div class="feedback-box" id="fb-2-3"></div>
+      <div class="nav-row">
+        <button class="btn-primary" id="next-2-3" disabled onclick="showCompletion()">Zur Referenzkarte</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <!-- ABSCHLUSS + REFERENZKARTE                                         -->
+  <!-- ══════════════════════════════════════════════════════════════════ -->
+  <section class="stage" id="stage-3" aria-label="Abschluss und Referenzkarte">
+    <div class="completion-banner">
+      <div class="cb-icon">&#10003;</div>
+      <h2>Alle 6 Aufgaben abgeschlossen!</h2>
+      <p>Du hast alle grundlegenden und figurenbasierten Stilmittel geübt. Nutze die Referenzkarte unten als Nachschlagewerk.</p>
+    </div>
+
+    <div class="ref-section visible">
+      <h2>Stilmittel – Referenzkarte</h2>
+      <p class="ref-intro">Alle acht Stilmittel aus der Übung kompakt erklärt — mit Strukturmerkmal und Beispiel.</p>
+
+      <div class="ref-grid">
+        <div class="ref-card">
+          <div class="rc-name">Metapher</div>
+          <div class="rc-def">Bildliche Übertragung eines Begriffs auf einen anderen Bereich — direkt, ohne Vergleichspartikel.</div>
+          <div class="rc-ex">„Das Leben ist ein Traum."</div>
+        </div>
+        <div class="ref-card">
+          <div class="rc-name">Vergleich</div>
+          <div class="rc-def">Expliziter Vergleich zweier Dinge mit Vergleichspartikel wie „wie" oder „als ob".</div>
+          <div class="rc-ex">„Er kämpfte wie ein Löwe."</div>
+        </div>
+        <div class="ref-card">
+          <div class="rc-name">Personifikation</div>
+          <div class="rc-def">Menschliche Eigenschaften oder Handlungen werden auf ein nicht-menschliches Subjekt übertragen.</div>
+          <div class="rc-ex">„Der Wind flüsterte sein Geheimnis."</div>
+        </div>
+        <div class="ref-card">
+          <div class="rc-name">Hyperbel</div>
+          <div class="rc-def">Bewusste Übertreibung zur emotionalen Verstärkung — nicht wörtlich gemeint.</div>
+          <div class="rc-ex">„Ich habe das schon tausendmal gesagt."</div>
+        </div>
+        <div class="ref-card">
+          <div class="rc-name">Anapher</div>
+          <div class="rc-def">Wiederholung desselben Wortes oder derselben Wortgruppe am Anfang aufeinanderfolgender Sätze.</div>
+          <div class="rc-ex">„Ich will Frieden. Ich will Gerechtigkeit."</div>
+        </div>
+        <div class="ref-card">
+          <div class="rc-name">Parallelismus</div>
+          <div class="rc-def">Gleiche syntaktische Satzstruktur in aufeinanderfolgenden Sätzen — ohne notwendige Wortwiederholung.</div>
+          <div class="rc-ex">„Sie kam, sie sah, sie siegte."</div>
+        </div>
+        <div class="ref-card">
+          <div class="rc-name">Antithese</div>
+          <div class="rc-def">Gegenüberstellung von Begriffen oder Aussagen mit gegensätzlicher Bedeutung.</div>
+          <div class="rc-ex">„Die Reichen werden reicher, die Armen ärmer."</div>
+        </div>
+        <div class="ref-card">
+          <div class="rc-name">Klimax</div>
+          <div class="rc-def">Steigerung von Begriffen oder Aussagen in aufsteigender Intensität — drei oder mehr Glieder.</div>
+          <div class="rc-ex">„Er kämpfte, er blutete, er starb."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script>
+// ── Feedback-Texte ──────────────────────────────────────────────────────────
+const FEEDBACK = {
+  '1-1': {
+    correct: {
+      head: 'Richtig! Metapher',
+      body: 'Das ist eine <strong>Metapher</strong>: Der Begriff „Traum" wird auf das Leben übertragen — direkt, ohne „wie". Die Metapher schafft eine bildhafte, emotionale Bedeutungsebene, die über die wörtliche Aussage hinausgeht.'
+    },
+    'wrong-vergleich': {
+      head: 'Nicht ganz — das ist kein Vergleich.',
+      body: 'Ein <strong>Vergleich</strong> enthält eine Vergleichspartikel wie „wie" oder „als ob" (z. B. „Das Leben ist <em>wie</em> ein Traum"). Hier fehlt dieses Signal — die Übertragung ist direkt: das ist eine Metapher.'
+    },
+    'wrong-person': {
+      head: 'Nicht ganz — keine Personifikation.',
+      body: 'Eine <strong>Personifikation</strong> überträgt menschliche Eigenschaften auf ein nicht-menschliches Subjekt. Hier wird kein Subjekt vermenschlicht — stattdessen wird „Traum" als Bild für das Leben verwendet: das ist eine Metapher.'
+    },
+    'wrong-hyp': {
+      head: 'Nicht ganz — keine Hyperbel.',
+      body: 'Eine <strong>Hyperbel</strong> übertreibt absichtlich (z. B. „tausendmal"). Hier gibt es keine Übertreibung — der Satz macht eine bildhafte Aussage über das Leben: das ist eine Metapher.'
+    }
+  },
+  '1-2': {
+    correct: {
+      head: 'Richtig! Personifikation',
+      body: 'Das ist eine <strong>Personifikation</strong>: „Flüstern" ist eine menschliche Handlung, die hier dem Wind (einem Naturphänomen) zugeschrieben wird. Immer wenn ein nicht-menschliches Subjekt menschliche Fähigkeiten erhält, liegt eine Personifikation vor.'
+    },
+    'wrong-meta': {
+      head: 'Fast — aber es ist eine Personifikation, keine Metapher.',
+      body: 'Eine <strong>Metapher</strong> überträgt einen Begriff auf einen anderen Bedeutungsbereich. Hier geht es darum, dass der Wind eine menschliche Fähigkeit (Flüstern) ausübt — das ist das Kennzeichen einer Personifikation: menschliche Eigenschaft auf ein nicht-menschliches Subjekt.'
+    },
+    'wrong-vergleich': {
+      head: 'Nein — kein Vergleich hier.',
+      body: 'Ein <strong>Vergleich</strong> braucht ein explizites „wie" oder „als ob". Hier wird der Wind nicht <em>verglichen</em>, sondern direkt vermenschlicht — er <em>flüstert</em>. Das ist eine Personifikation.'
+    },
+    'wrong-hyp': {
+      head: 'Nein — keine Übertreibung hier.',
+      body: 'Eine <strong>Hyperbel</strong> übertreibt eine Aussage absichtlich. Hier gibt es keine Übertreibung — das Stilmittel liegt darin, dass der Wind eine menschliche Eigenschaft (Flüstern) erhält: Personifikation.'
+    }
+  },
+  '1-3': {
+    correct: {
+      head: 'Richtig! Hyperbel',
+      body: 'Das ist eine <strong>Hyperbel</strong>: „Tausendmal" ist eine bewusste Übertreibung. Niemand erklärt wirklich tausendmal — die Zahl wird zur emotionalen Verstärkung eingesetzt. Hyperbeln wirken durch das Unmögliche oder Extreme.'
+    },
+    'wrong-meta': {
+      head: 'Nein — keine Metapher.',
+      body: 'Eine <strong>Metapher</strong> überträgt einen Begriff bildhaft auf einen anderen Bereich. Hier gibt es keine bildhafte Übertragung — „tausendmal" ist eine bewusste Übertreibung zur Verstärkung: das ist eine Hyperbel.'
+    },
+    'wrong-vergleich': {
+      head: 'Nein — kein Vergleich.',
+      body: 'Ein <strong>Vergleich</strong> enthält „wie" oder „als ob". Das fehlt hier. Die Aussage übertreibt absichtlich mit „tausendmal" — das ist eine Hyperbel.'
+    },
+    'wrong-person': {
+      head: 'Nein — keine Personifikation.',
+      body: 'Eine <strong>Personifikation</strong> verleiht einem nicht-menschlichen Ding menschliche Eigenschaften. Hier ist das Subjekt ein Mensch — und das Stilmittel liegt in der Übertreibung „tausendmal": Hyperbel.'
+    }
+  },
+  '2-1': {
+    correct: {
+      head: 'Richtig! Anapher',
+      body: 'Das ist eine <strong>Anapher</strong>: Das Wort „Ich will" steht am Anfang jedes der drei Sätze und wird exakt wiederholt. Diese Wiederholung am Satzanfang erzeugt Nachdruck, Rhythmus und rhetorische Wirkung.'
+    },
+    'wrong-para': {
+      head: 'Fast — aber es ist eine Anapher, kein Parallelismus.',
+      body: 'Ein <strong>Parallelismus</strong> wiederholt die <em>Satzstruktur</em>, nicht unbedingt dasselbe Wort. Eine <strong>Anapher</strong> hingegen wiederholt exakt dasselbe Wort oder dieselbe Phrase am Satzanfang — das ist hier der Fall: „Ich will" erscheint dreimal am Beginn.'
+    },
+    'wrong-anti': {
+      head: 'Nein — keine Antithese.',
+      body: 'Eine <strong>Antithese</strong> stellt Gegensätze gegenüber. Hier gibt es keinen Kontrast — alle drei Sätze haben dieselbe Richtung. Das Stilmittel ist die Wortwiederholung am Satzanfang: Anapher.'
+    },
+    'wrong-klim': {
+      head: 'Nein — keine Klimax.',
+      body: 'Eine <strong>Klimax</strong> steigert die Intensität der Aussagen. Hier ist keine Steigerung erkennbar — alle drei Wünsche sind gleichwertig. Das entscheidende Merkmal ist die Wortwiederholung am Satzanfang: Anapher.'
+    }
+  },
+  '2-2': {
+    correct: {
+      head: 'Richtig! Antithese',
+      body: 'Das ist eine <strong>Antithese</strong>: „Reiche" und „Arme", „reicher" und „ärmer" bilden je ein Gegensatzpaar. Die Antithese lebt vom inhaltlichen Kontrast — gegensätzliche Begriffe werden direkt nebeneinandergestellt, um einen Widerspruch zu verdeutlichen.'
+    },
+    'wrong-ana': {
+      head: 'Nein — keine Anapher.',
+      body: 'Eine <strong>Anapher</strong> wiederholt dasselbe Wort am Satzanfang. Hier beginnen die zwei Hälften mit verschiedenen Wörtern (die Reichen / die Armen). Das zentrale Merkmal ist der Gegensatz: Antithese.'
+    },
+    'wrong-para': {
+      head: 'Fast — die Satzstruktur ist parallel, aber das allein reicht nicht.',
+      body: 'Ein <strong>Parallelismus</strong> nutzt gleiche Satzstruktur ohne inhaltlichen Kontrast. Hier kommt aber entscheidend hinzu, dass „Reiche / Arme" und „reicher / ärmer" Gegensatzpaare sind. Wenn Parallelismus mit Kontrast kombiniert wird, sprechen wir von einer Antithese.'
+    },
+    'wrong-klim': {
+      head: 'Nein — keine Klimax.',
+      body: 'Eine <strong>Klimax</strong> steigert Intensität in eine Richtung. Hier wird nichts gesteigert — stattdessen werden zwei gegensätzliche Aussagen gegenübergestellt: Antithese.'
+    }
+  },
+  '2-3': {
+    correct: {
+      head: 'Richtig! Klimax',
+      body: 'Das ist eine <strong>Klimax</strong>: „kämpfte – blutete – starb" steigert sich in Intensität und emotionaler Schwere. Drei Glieder in aufsteigender Reihenfolge — das erzeugt eine dramatische Wirkung, die den Opfermut des Subjekts eindringlich vermittelt.'
+    },
+    'wrong-ana': {
+      head: 'Fast — „er" am Anfang klingt wie Anapher, aber das ist nicht das zentrale Stilmittel.',
+      body: 'Eine <strong>Anapher</strong> definiert sich allein durch die Wortwiederholung am Satzanfang. Das „er" ist hier tatsächlich wiederholt — aber das entscheidende Merkmal ist die inhaltliche Steigerung der drei Verben: kämpfte → blutete → starb. Das macht es zur Klimax.'
+    },
+    'wrong-para': {
+      head: 'Nicht ganz — die Struktur ist parallel, aber die Intensität steigert sich.',
+      body: 'Ein <strong>Parallelismus</strong> hat gleiche Satzstruktur ohne Intensitätssteigerung. Hier steigern sich die Aussagen inhaltlich: von Kampf über Verletzung bis zum Tod. Diese Steigerung ist das Kennzeichen der Klimax.'
+    },
+    'wrong-anti': {
+      head: 'Nein — keine Antithese.',
+      body: 'Eine <strong>Antithese</strong> stellt Gegensätze gegenüber. Hier gibt es keine gegensätzlichen Paare — alle drei Verben gehen in dieselbe Richtung und werden intensiver: Klimax.'
+    }
+  }
+};
+
+// ── Highlight-Farben pro Aufgabe ────────────────────────────────────────────
+const HL_CONFIGS = {
+  '1-1': [{ id: 'q1-1-hl1', cls: 'mark-blue' }],
+  '1-2': [{ id: 'q1-2-hl1', cls: 'mark-green' }],
+  '1-3': [{ id: 'q1-3-hl1', cls: 'mark-amber' }],
+  '2-1': [
+    { id: 'q2-1-hl1', cls: 'mark-blue' },
+    { id: 'q2-1-hl2', cls: 'mark-blue' },
+    { id: 'q2-1-hl3', cls: 'mark-blue' }
+  ],
+  '2-2': [
+    { id: 'q2-2-hl1', cls: 'mark-red' },
+    { id: 'q2-2-hl2', cls: 'mark-red' },
+    { id: 'q2-2-hl3', cls: 'mark-green' },
+    { id: 'q2-2-hl4', cls: 'mark-green' }
+  ],
+  '2-3': [
+    { id: 'q2-3-hl1', cls: 'mark-amber' },
+    { id: 'q2-3-hl2', cls: 'mark-purple' },
+    { id: 'q2-3-hl3', cls: 'mark-red' }
+  ]
+};
+
+// ── checkAnswer ─────────────────────────────────────────────────────────────
+function checkAnswer(btn, taskId, result) {
+  var opts = document.getElementById('opts-' + taskId);
+  var allBtns = opts.querySelectorAll('.opt-btn');
+  allBtns.forEach(function(b) { b.disabled = true; });
+
+  var isCorrect = (result === 'correct');
+
+  // Mark clicked button
+  btn.classList.add(isCorrect ? 'correct' : 'wrong');
+  // If wrong, also highlight correct
+  if (!isCorrect) {
+    allBtns.forEach(function(b) {
+      if (b.getAttribute('data-correct') === 'true') {
+        b.classList.add('correct');
+      }
+    });
+  }
+
+  // Show feedback
+  var fbData = FEEDBACK[taskId][result];
+  var fbBox = document.getElementById('fb-' + taskId);
+  fbBox.className = 'feedback-box visible ' + (isCorrect ? 'correct-fb' : 'wrong-fb');
+  fbBox.innerHTML = '<div class="fb-head">' + (isCorrect ? '&#10003; ' : '&#10007; ') + fbData.head + '</div>' + fbData.body;
+
+  // Activate highlights + annotation
+  var hls = HL_CONFIGS[taskId];
+  if (hls) {
+    hls.forEach(function(h) {
+      var el = document.getElementById(h.id);
+      if (el) el.classList.add(h.cls);
+    });
+  }
+  var parts = taskId.split('-'); // e.g. ['1','1'] or ['2','3']
+  var annEl = document.getElementById('q' + parts[0] + '-' + parts[1] + '-ann');
+  if (annEl) annEl.classList.add('visible');
+
+  // Enable next button
+  document.getElementById('next-' + taskId).disabled = false;
+
+  // Tracking
+  if (window.dataLayer) {
+    window.dataLayer.push({
+      event: 'sim_step',
+      sim: 'stilmittel-erkennen',
+      task: taskId,
+      result: isCorrect ? 'correct' : 'wrong'
+    });
+  }
+}
+
+// ── nextTask ─────────────────────────────────────────────────────────────────
+function nextTask(currentId, nextId) {
+  document.getElementById('task-' + currentId).style.display = 'none';
+  var nextEl = document.getElementById('task-' + nextId);
+  if (nextEl) nextEl.style.display = 'block';
+
+  // Update mini task dots
+  var stage = currentId.split('-')[0];
+  var taskNum = parseInt(currentId.split('-')[1], 10);
+  var doneEl = document.getElementById('t' + stage + '-dot-' + taskNum);
+  if (doneEl) doneEl.className = 'task-dot done';
+  var nextNum = taskNum + 1;
+  var nextDot = document.getElementById('t' + stage + '-dot-' + nextNum);
+  if (nextDot) nextDot.className = 'task-dot current';
+}
+
+// ── goToStage2 ────────────────────────────────────────────────────────────
+function goToStage2() {
+  // Mark last dot of stage 1
+  document.getElementById('t1-dot-3').className = 'task-dot done';
+
+  document.getElementById('stage-1').classList.remove('active');
+  document.getElementById('stage-2').classList.add('active');
+
+  var d1 = document.getElementById('dot-s1');
+  d1.classList.remove('active');
+  d1.classList.add('done');
+  document.getElementById('dot-s2').classList.add('active');
+  document.getElementById('stage-label-text').textContent = 'Stufe 2 von 2 – Figurenbasierte Stilmittel';
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  if (window.dataLayer) {
+    window.dataLayer.push({ event: 'sim_step', sim: 'stilmittel-erkennen', step: 2 });
+  }
+}
+
+// ── showCompletion ────────────────────────────────────────────────────────
+function showCompletion() {
+  document.getElementById('t2-dot-3').className = 'task-dot done';
+
+  document.getElementById('stage-2').classList.remove('active');
+  document.getElementById('stage-3').classList.add('active');
+
+  var d2 = document.getElementById('dot-s2');
+  d2.classList.remove('active');
+  d2.classList.add('done');
+  document.getElementById('stage-label-text').textContent = 'Abgeschlossen';
+
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+
+  if (window.dataLayer) {
+    window.dataLayer.push({ event: 'sim_complete', sim: 'stilmittel-erkennen' });
+  }
+}
+</script>
+
+</body>
+</html>

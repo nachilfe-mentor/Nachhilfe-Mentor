@@ -1,0 +1,944 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Genus bestimmen mit Suffixregeln: der, die, das erkennen | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Übung: Erkenne an der Wortendung, ob ein Nomen der, die oder das ist. Sage das Genus voraus, bekomme sofort Feedback und lerne die Suffixregeln.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Genus bestimmen, der die das, Suffixregeln Deutsch, Artikel erkennen, deutsche Grammatik, Wortendungen Genus">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/genus-suffixregeln-deutsch-simulation.html">
+  <meta property="og:title" content="Genus bestimmen mit Suffixregeln: der, die, das">
+  <meta property="og:description" content="Interaktive Übung: Erkenne an der Wortendung, ob ein Nomen der, die oder das ist. Sage das Genus voraus, bekomme sofort Feedback und lerne die Suffixregeln.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/genus-suffixregeln-deutsch-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Genus bestimmen mit Suffixregeln: der, die, das erkennen",
+  "description":"Interaktive Übung: Erkenne an der Wortendung, ob ein Nomen der, die oder das ist. Sage das Genus voraus, bekomme sofort Feedback und lerne die Suffixregeln.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/genus-suffixregeln-deutsch-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --amber:  #b87700;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --bg:     #f5f8fc;
+      --panel:  #fff;
+      --fem:    #c2185b;
+      --neu:    #1565c0;
+      --masc:   #2e7d32;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    /* ── Chrome ─────────────────────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 36px 22px 18px;
+    }
+    header .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--line);
+      border-radius: 4px;
+      padding: 3px 8px;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin-bottom: 10px;
+    }
+    header p { color: var(--muted); font-size: 0.96rem; max-width: 620px; }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 22px 60px;
+    }
+
+    /* ── Progress dots ───────────────────────────────────────────── */
+    .progress {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      background: var(--line);
+      border: 2px solid var(--line);
+      transition: background 0.25s, border-color 0.25s;
+    }
+    .dot.active  { background: var(--blue); border-color: var(--blue); }
+    .dot.done    { background: var(--green); border-color: var(--green); }
+    .progress-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-left: 4px;
+    }
+
+    /* ── Stage panels ────────────────────────────────────────────── */
+    .stage {
+      display: none;
+    }
+    .stage.active {
+      display: block;
+    }
+
+    /* ── Stage header ────────────────────────────────────────────── */
+    .stage-header {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+    .stage-num {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      white-space: nowrap;
+    }
+    .stage-title {
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    /* ── Word display ────────────────────────────────────────────── */
+    .word-card {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      padding: 28px 24px 22px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+    .word-display {
+      font-size: clamp(2rem, 6vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 10px;
+      min-height: 3.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .word-display .stem { color: var(--ink); }
+    .word-display .suffix {
+      display: inline-block;
+      color: #7c3600;
+      background: #fff3e0;
+      border-radius: 5px;
+      padding: 0 4px;
+      transition: background 0.3s, color 0.3s;
+    }
+    .word-display .suffix.highlight-fem  { background: #fce4ec; color: var(--fem); }
+    .word-display .suffix.highlight-neu  { background: #e3f2fd; color: var(--neu); }
+    .word-display .suffix.highlight-masc { background: #e8f5e9; color: var(--masc); }
+    .word-display .suffix.hidden-suffix  { background: transparent; color: var(--ink); padding: 0; }
+
+    .examples {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ── Task question ───────────────────────────────────────────── */
+    .task-box {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      padding: 20px 22px;
+      margin-bottom: 18px;
+    }
+    .task-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 8px;
+    }
+    .task-question {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 18px;
+    }
+
+    /* ── Article buttons ─────────────────────────────────────────── */
+    .article-btns {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .art-btn {
+      flex: 1 1 80px;
+      min-width: 80px;
+      padding: 14px 10px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s, color 0.15s, transform 0.1s;
+      letter-spacing: 0.02em;
+    }
+    .art-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eef4fc;
+    }
+    .art-btn:active:not(:disabled) { transform: scale(0.97); }
+    .art-btn:disabled { opacity: 0.55; cursor: not-allowed; }
+    .art-btn.correct {
+      border-color: var(--green);
+      background: #e6f4f0;
+      color: var(--green);
+    }
+    .art-btn.incorrect {
+      border-color: var(--red);
+      background: #fceaea;
+      color: var(--red);
+    }
+    .art-btn.reveal-correct {
+      border-color: var(--green);
+      background: #e6f4f0;
+      color: var(--green);
+    }
+
+    /* ── Feedback ────────────────────────────────────────────────── */
+    .feedback {
+      display: none;
+      border-radius: 10px;
+      padding: 16px 18px;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      margin-top: 16px;
+      border-left: 4px solid transparent;
+    }
+    .feedback.show { display: block; }
+    .feedback.ok   { background: #e6f4f0; border-color: var(--green); color: #0a4f3b; }
+    .feedback.err  { background: #fceaea; border-color: var(--red);   color: #6b1414; }
+    .feedback .rule-name {
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* ── Next button ─────────────────────────────────────────────── */
+    .next-btn {
+      display: none;
+      margin-top: 18px;
+      padding: 12px 26px;
+      font-size: 0.97rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 9px;
+      background: var(--blue);
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+    }
+    .next-btn:hover { background: #0a4d8a; }
+    .next-btn:active { transform: scale(0.97); }
+    .next-btn.show { display: inline-block; }
+
+    /* ── Score card ──────────────────────────────────────────────── */
+    .score-card {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 14px;
+      padding: 30px 28px;
+      margin-top: 10px;
+      text-align: center;
+    }
+    .score-number {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .score-label {
+      font-size: 1.05rem;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .score-msg {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 22px;
+    }
+
+    /* ── Cheat sheet table ───────────────────────────────────────── */
+    .cheatsheet {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 0.9rem;
+      margin-top: 24px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1.5px solid var(--line);
+    }
+    .cheatsheet th {
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.82rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .cheatsheet th.fem  { background: #fce4ec; color: var(--fem); }
+    .cheatsheet th.neu  { background: #e3f2fd; color: var(--neu); }
+    .cheatsheet th.masc { background: #e8f5e9; color: var(--masc); }
+    .cheatsheet td {
+      padding: 9px 14px;
+      border-top: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .cheatsheet code {
+      font-family: monospace;
+      font-size: 0.97em;
+      font-weight: 700;
+      background: #f0f4fa;
+      border-radius: 3px;
+      padding: 1px 5px;
+    }
+
+    /* ── Slide-in animation ──────────────────────────────────────── */
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-18px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .slide-in { animation: slideIn 0.38s ease both; }
+
+    /* ── Restart button ──────────────────────────────────────────── */
+    .restart-btn {
+      margin-top: 16px;
+      padding: 11px 22px;
+      font-size: 0.93rem;
+      font-weight: 700;
+      border: 2px solid var(--line);
+      border-radius: 9px;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s;
+    }
+    .restart-btn:hover { border-color: var(--blue); color: var(--blue); }
+
+    /* ── Misc ───────────────────────────────────────────────────── */
+    .divider {
+      border: none;
+      border-top: 1.5px solid var(--line);
+      margin: 28px 0;
+    }
+    .nav-links {
+      margin-top: 36px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .nav-links a { color: var(--blue); }
+
+    @media (max-width: 480px) {
+      .article-btns { gap: 8px; }
+      .art-btn { padding: 13px 8px; font-size: 1rem; }
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body
+  data-subject="Deutsch"
+  data-grade-level="5-10"
+  data-asset-type="simulation"
+  data-topic-cluster="sprachen-genus"
+  data-primary-keyword="sprachen">
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="badge">Interaktive Simulation · Deutsch</div>
+  <h1>Genus erkennen: Suffixregeln im Deutschen</h1>
+  <p>Lerne, den Artikel (der/die/das) an der Wortendung zu erkennen – eine der verlässlichsten Strategien beim Deutschlernen. Mach deine Vorhersage, bevor du die Antwort siehst.</p>
+</header>
+
+<main>
+  <!-- Progress indicator -->
+  <div class="progress" id="progressBar">
+    <div class="dot active" id="dot0"></div>
+    <div class="dot" id="dot1"></div>
+    <div class="dot" id="dot2"></div>
+    <span class="progress-label" id="progressLabel">Stufe 1 von 3</span>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+       STAGE 1: Suffix kennenlernen (2 Runden)
+  ════════════════════════════════════════════════════════════ -->
+  <div class="stage active" id="stage1">
+    <div class="stage-header">
+      <span class="stage-num">Stufe 1</span>
+      <span class="stage-title">Suffix entdecken</span>
+    </div>
+    <p style="color:var(--muted); font-size:0.92rem; margin-bottom:18px;">
+      Das Suffix ist die Endsilbe eines Wortes. Viele deutsche Nomen folgen festen Genusregeln – entscheide, welchen Artikel das Suffix verlangt.
+    </p>
+
+    <!-- Runde 1a: -ung (feminin) -->
+    <div id="s1r1">
+      <div class="word-card slide-in">
+        <div style="font-size:0.82rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:var(--muted); margin-bottom:10px;">Endung</div>
+        <div class="word-display" style="font-size:2.8rem; justify-content:center; margin-bottom:14px;">
+          -<span class="suffix" id="s1r1_suffix">ung</span>
+        </div>
+        <div class="examples" style="font-size:1rem; line-height:2;">
+          Zeit<span style="font-weight:700; color:#7c3600;">ung</span> &nbsp;·&nbsp;
+          Wohn<span style="font-weight:700; color:#7c3600;">ung</span> &nbsp;·&nbsp;
+          Hoff<span style="font-weight:700; color:#7c3600;">nung</span> &nbsp;·&nbsp;
+          Mein<span style="font-weight:700; color:#7c3600;">ung</span>
+        </div>
+      </div>
+
+      <div class="task-box">
+        <div class="task-label">Vorhersage</div>
+        <div class="task-question">Welchen Artikel haben Nomen mit der Endung <strong>-ung</strong>?</div>
+        <div class="article-btns">
+          <button class="art-btn" onclick="checkS1R1('der')">der</button>
+          <button class="art-btn" onclick="checkS1R1('die')">die</button>
+          <button class="art-btn" onclick="checkS1R1('das')">das</button>
+        </div>
+        <div class="feedback" id="s1r1_fb"></div>
+        <button class="next-btn" id="s1r1_next" onclick="showS1R2()">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- Runde 1b: -chen (neutral) -->
+    <div id="s1r2" style="display:none;">
+      <div class="word-card slide-in">
+        <div style="font-size:0.82rem; font-weight:700; letter-spacing:0.07em; text-transform:uppercase; color:var(--muted); margin-bottom:10px;">Endung (Diminutiv)</div>
+        <div class="word-display" style="font-size:2.8rem; justify-content:center; margin-bottom:14px;">
+          -<span class="suffix" id="s1r2_suffix">chen</span>
+        </div>
+        <div class="examples" style="font-size:1rem; line-height:2;">
+          Mäd<span style="font-weight:700; color:#7c3600;">chen</span> &nbsp;·&nbsp;
+          Häus<span style="font-weight:700; color:#7c3600;">chen</span> &nbsp;·&nbsp;
+          Bröt<span style="font-weight:700; color:#7c3600;">chen</span> &nbsp;·&nbsp;
+          Kätz<span style="font-weight:700; color:#7c3600;">chen</span>
+        </div>
+      </div>
+
+      <div class="task-box">
+        <div class="task-label">Vorhersage</div>
+        <div class="task-question">Welchen Artikel haben Nomen mit der Endung <strong>-chen</strong> (Verkleinerungsformen)?</div>
+        <div class="article-btns">
+          <button class="art-btn" onclick="checkS1R2('der')">der</button>
+          <button class="art-btn" onclick="checkS1R2('die')">die</button>
+          <button class="art-btn" onclick="checkS1R2('das')">das</button>
+        </div>
+        <div class="feedback" id="s1r2_fb"></div>
+        <button class="next-btn" id="s1r2_next" onclick="goToStage2()">Zur nächsten Stufe →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+       STAGE 2: Wörter vorhersagen (3 Runden, Suffix markiert)
+  ════════════════════════════════════════════════════════════ -->
+  <div class="stage" id="stage2">
+    <div class="stage-header">
+      <span class="stage-num">Stufe 2</span>
+      <span class="stage-title">Wörter vorhersagen</span>
+    </div>
+    <p style="color:var(--muted); font-size:0.92rem; margin-bottom:18px;">
+      Die Endung ist hervorgehoben. Erkenne die Regel und wähle den richtigen Artikel.
+    </p>
+
+    <div id="s2words"></div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+       STAGE 3: Meisterprüfung (3 Runden, kein Highlighting)
+  ════════════════════════════════════════════════════════════ -->
+  <div class="stage" id="stage3">
+    <div class="stage-header">
+      <span class="stage-num">Stufe 3</span>
+      <span class="stage-title">Meisterprüfung – ohne Hilfe</span>
+    </div>
+    <p style="color:var(--muted); font-size:0.92rem; margin-bottom:18px;">
+      Jetzt ohne Markierung: Erkenne die Endung selbst und wähle den richtigen Artikel.
+    </p>
+
+    <div id="s3words"></div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+       SCORE SCREEN
+  ════════════════════════════════════════════════════════════ -->
+  <div class="stage" id="stageScore">
+    <div class="score-card slide-in">
+      <div class="score-number" id="scoreNum">0</div>
+      <div class="score-label">von 8 Vorhersagen richtig</div>
+      <div class="score-msg" id="scoreMsg"></div>
+
+      <hr class="divider">
+
+      <p style="font-size:0.95rem; font-weight:600; margin-bottom:14px; text-align:left;">
+        Merkblatt: Suffixregeln auf einen Blick
+      </p>
+      <div style="overflow-x:auto; -webkit-overflow-scrolling:touch;">
+      <table class="cheatsheet">
+        <thead>
+          <tr>
+            <th class="fem">die (feminin)</th>
+            <th class="neu">das (neutral)</th>
+            <th class="masc">der (maskulin)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>-ung</code> Zeitung</td>
+            <td><code>-chen</code> Mädchen</td>
+            <td><code>-ismus</code> Kapitalismus</td>
+          </tr>
+          <tr>
+            <td><code>-heit</code> Freiheit</td>
+            <td><code>-lein</code> Büchlein</td>
+            <td><code>-ist</code> Journalist</td>
+          </tr>
+          <tr>
+            <td><code>-keit</code> Möglichkeit</td>
+            <td><code>-ment</code> Dokument</td>
+            <td><code>-ling</code> Frühling</td>
+          </tr>
+          <tr>
+            <td><code>-schaft</code> Freundschaft</td>
+            <td><code>-um</code> Zentrum</td>
+            <td><code>-ant</code> Praktikant</td>
+          </tr>
+          <tr>
+            <td><code>-tion</code> Information</td>
+            <td></td>
+            <td><code>-or</code> Motor</td>
+          </tr>
+          <tr>
+            <td><code>-tät</code> Qualität</td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div style="margin-top:24px; display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+        <button class="restart-btn" onclick="restart()">Nochmal üben</button>
+      </div>
+    </div>
+
+    <div class="nav-links">
+      <a href="/lernmaterialien/">Alle Lernmaterialien</a> ·
+      <a href="/">Zur Startseite</a>
+    </div>
+  </div>
+</main>
+
+<script>
+(function () {
+  // ── Data ───────────────────────────────────────────────────────────────
+  var score = 0;
+
+  // Stage 2: 3 words with suffix highlighted
+  var s2data = [
+    {
+      stem: 'Freund',
+      suffix: 'schaft',
+      full: 'Freundschaft',
+      correct: 'die',
+      genus: 'fem',
+      ruleName: 'Suffixregel -schaft → die (100 % feminin)',
+      feedbackOk:
+        'Richtig! Die Endung <strong>-schaft</strong> zeigt zuverlässig Femininum an. ' +
+        'Merke: die Freundschaft, die Gesellschaft, die Mannschaft, die Wirtschaft – ' +
+        'kein Nomen auf -schaft ist maskulin oder neutral.',
+      feedbackErr:
+        'Die Endung <strong>-schaft</strong> signalisiert immer Femininum: <em>die</em> Freundschaft. ' +
+        'Diese Regel gilt für 100 % der deutschen Nomen auf -schaft.'
+    },
+    {
+      stem: 'Büch',
+      suffix: 'lein',
+      full: 'Büchlein',
+      correct: 'das',
+      genus: 'neu',
+      ruleName: 'Suffixregel -lein → das (100 % neutral, Diminutiv)',
+      feedbackOk:
+        'Sehr gut! Die Endung <strong>-lein</strong> ist ein Verkleinerungssuffix (Diminutiv) und macht ' +
+        'jedes Nomen neutral: <em>das</em> Büchlein, <em>das</em> Fräulein, <em>das</em> Männlein. ' +
+        'Dasselbe gilt für -chen: <em>das</em> Mädchen.',
+      feedbackErr:
+        '<strong>-lein</strong> ist ein Diminutiv-Suffix – Verkleinerungsformen sind im Deutschen ' +
+        'immer neutral (<em>das</em>). Also: <em>das</em> Büchlein, <em>das</em> Fräulein, <em>das</em> Männlein.'
+    },
+    {
+      stem: 'Kapital',
+      suffix: 'ismus',
+      full: 'Kapitalismus',
+      correct: 'der',
+      genus: 'masc',
+      ruleName: 'Suffixregel -ismus → der (100 % maskulin)',
+      feedbackOk:
+        'Richtig! <strong>-ismus</strong> ist ein griechisches Suffix und im Deutschen ausnahmslos maskulin: ' +
+        '<em>der</em> Tourismus, <em>der</em> Realismus, <em>der</em> Pessimismus, <em>der</em> Kapitalismus.',
+      feedbackErr:
+        'Die Endung <strong>-ismus</strong> kennzeichnet maskuline Nomen: <em>der</em> Kapitalismus. ' +
+        'Das Suffix kommt aus dem Griechischen und ist im Deutschen immer maskulin – keine Ausnahmen.'
+    }
+  ];
+
+  // Stage 3: 3 words WITHOUT suffix highlighting
+  var s3data = [
+    {
+      full: 'Information',
+      suffix: 'tion',
+      correct: 'die',
+      genus: 'fem',
+      ruleName: 'Suffixregel -tion → die (100 % feminin)',
+      feedbackOk:
+        'Gut erkannt! Die Endung <strong>-tion</strong> (und -sion, -ion) ist immer feminin: ' +
+        '<em>die</em> Information, <em>die</em> Nation, <em>die</em> Produktion, <em>die</em> Revision.',
+      feedbackErr:
+        'Schau auf die Endung: <strong>-tion</strong>. Diese Endung ist im Deutschen immer feminin: ' +
+        '<em>die</em> Information, <em>die</em> Produktion, <em>die</em> Nation.'
+    },
+    {
+      full: 'Dokument',
+      suffix: 'ment',
+      correct: 'das',
+      genus: 'neu',
+      ruleName: 'Suffixregel -ment → das (~95 % neutral)',
+      feedbackOk:
+        'Richtig! <strong>-ment</strong> ist fast immer neutral: ' +
+        '<em>das</em> Dokument, <em>das</em> Instrument, <em>das</em> Element, <em>das</em> Fundament.',
+      feedbackErr:
+        'Die Endung <strong>-ment</strong> ist fast immer neutral (<em>das</em>): ' +
+        '<em>das</em> Dokument, <em>das</em> Instrument, <em>das</em> Element.'
+    },
+    {
+      full: 'Journalist',
+      suffix: 'ist',
+      correct: 'der',
+      genus: 'masc',
+      ruleName: 'Suffixregel -ist → der (Personen-Suffix, ~98 % maskulin)',
+      feedbackOk:
+        'Sehr gut! <strong>-ist</strong> bezeichnet meist Personen und ist maskulin: ' +
+        '<em>der</em> Journalist, <em>der</em> Pessimist, <em>der</em> Pianist, <em>der</em> Optimist.',
+      feedbackErr:
+        'Die Endung <strong>-ist</strong> bezeichnet Personen und ist fast immer maskulin: ' +
+        '<em>der</em> Journalist, <em>der</em> Pessimist, <em>der</em> Pianist.'
+    }
+  ];
+
+  // ── Stage 1, Round 1: -ung ─────────────────────────────────────────────
+  window.checkS1R1 = function (chosen) {
+    var correct = 'die';
+    var fb = document.getElementById('s1r1_fb');
+    var suffix = document.getElementById('s1r1_suffix');
+    var btns = document.querySelectorAll('#s1r1 .art-btn');
+    lockButtons(btns, correct, chosen);
+    suffix.classList.add('highlight-fem');
+    if (chosen === correct) {
+      score++;
+      fb.className = 'feedback show ok';
+      fb.innerHTML =
+        '<span class="rule-name">Suffixregel -ung → die (100 % feminin)</span>' +
+        'Richtig! Die Endung <strong>-ung</strong> signalisiert immer Femininum. ' +
+        'Diese Regel gilt für über 98 % aller deutschen Nomen auf -ung – ' +
+        'die Zeitung, die Wohnung, die Hoffnung, die Meinung. ' +
+        'Du musst den Artikel bei solchen Wörtern nie mehr einzeln auswendig lernen.';
+    } else {
+      fb.className = 'feedback show err';
+      fb.innerHTML =
+        '<span class="rule-name">Suffixregel -ung → die (100 % feminin)</span>' +
+        'Nicht ganz. Die Endung <strong>-ung</strong> zeigt zuverlässig Femininum an: <em>die</em> Zeitung, ' +
+        '<em>die</em> Wohnung, <em>die</em> Hoffnung. Kein deutsches Nomen auf -ung ist maskulin oder neutral.';
+    }
+    trackStep(1, chosen === correct);
+    showEl('s1r1_next');
+  };
+
+  // ── Stage 1, Round 2: -chen ────────────────────────────────────────────
+  window.showS1R2 = function () {
+    document.getElementById('s1r1').style.display = 'none';
+    var r2 = document.getElementById('s1r2');
+    r2.style.display = 'block';
+    r2.querySelector('.word-card').classList.remove('slide-in');
+    void r2.querySelector('.word-card').offsetWidth;
+    r2.querySelector('.word-card').classList.add('slide-in');
+  };
+
+  window.checkS1R2 = function (chosen) {
+    var correct = 'das';
+    var fb = document.getElementById('s1r2_fb');
+    var suffix = document.getElementById('s1r2_suffix');
+    var btns = document.querySelectorAll('#s1r2 .art-btn');
+    lockButtons(btns, correct, chosen);
+    suffix.classList.add('highlight-neu');
+    if (chosen === correct) {
+      score++;
+      fb.className = 'feedback show ok';
+      fb.innerHTML =
+        '<span class="rule-name">Suffixregel -chen → das (100 % neutral, Diminutiv)</span>' +
+        'Sehr gut! <strong>-chen</strong> ist ein Verkleinerungssuffix (Diminutiv). ' +
+        'Alle Diminutive auf -chen sind neutral: <em>das</em> Mädchen, <em>das</em> Häuschen, ' +
+        '<em>das</em> Brötchen, <em>das</em> Kätzchen. ' +
+        'Achtung: Das grammatische Genus überschreibt das biologische Geschlecht – ' +
+        'deshalb ist "Mädchen" neutral, nicht feminin.';
+    } else {
+      fb.className = 'feedback show err';
+      fb.innerHTML =
+        '<span class="rule-name">Suffixregel -chen → das (100 % neutral, Diminutiv)</span>' +
+        'Die Endung <strong>-chen</strong> ist ein Verkleinerungssuffix – solche Nomen sind im Deutschen ' +
+        'immer neutral (<em>das</em>): <em>das</em> Mädchen, <em>das</em> Häuschen, <em>das</em> Brötchen. ' +
+        'Das gilt auch dann, wenn das Grundwort ein anderes Genus hätte (das Haus → das Häuschen).';
+    }
+    trackStep(2, chosen === correct);
+    showEl('s1r2_next');
+  };
+
+  window.goToStage2 = function () {
+    switchStage('stage1', 'stage2', 1);
+    buildWordRounds('s2words', s2data, false, goToStage3);
+  };
+
+  function goToStage3 () {
+    switchStage('stage2', 'stage3', 2);
+    buildWordRounds('s3words', s3data, true, showScore);
+  }
+
+  // ── Generic word-round builder ─────────────────────────────────────────
+  function buildWordRounds (containerId, data, hideSuffix, onFinish) {
+    var container = document.getElementById(containerId);
+    container.innerHTML = '';
+
+    function showRound (i) {
+      if (i >= data.length) { onFinish(); return; }
+      var d = data[i];
+      container.innerHTML = '';
+
+      var card = document.createElement('div');
+      card.className = 'word-card slide-in';
+
+      var disp = document.createElement('div');
+      disp.className = 'word-display';
+
+      if (hideSuffix) {
+        // No suffix highlight in stage 3
+        disp.textContent = d.full;
+      } else {
+        var stemSpan = document.createElement('span');
+        stemSpan.className = 'stem';
+        stemSpan.textContent = d.stem;
+        var sfxSpan = document.createElement('span');
+        sfxSpan.className = 'suffix';
+        sfxSpan.textContent = d.suffix;
+        sfxSpan.id = containerId + '_sfx_' + i;
+        disp.appendChild(stemSpan);
+        disp.appendChild(sfxSpan);
+      }
+      card.appendChild(disp);
+      container.appendChild(card);
+
+      var taskBox = document.createElement('div');
+      taskBox.className = 'task-box';
+      taskBox.innerHTML =
+        '<div class="task-label">Vorhersage</div>' +
+        '<div class="task-question">Welcher Artikel gehört zu <strong>' + escHtml(d.full) + '</strong>?</div>';
+
+      var btnRow = document.createElement('div');
+      btnRow.className = 'article-btns';
+      ['der', 'die', 'das'].forEach(function (art) {
+        var btn = document.createElement('button');
+        btn.className = 'art-btn';
+        btn.textContent = art;
+        btn.addEventListener('click', function () {
+          var allBtns = btnRow.querySelectorAll('.art-btn');
+          lockButtons(allBtns, d.correct, art);
+          // Reveal suffix highlight after answer
+          if (!hideSuffix) {
+            var sfxEl = document.getElementById(containerId + '_sfx_' + i);
+            if (sfxEl) {
+              sfxEl.classList.add('highlight-' + d.genus);
+            }
+          }
+          // Feedback
+          var isOk = art === d.correct;
+          if (isOk) score++;
+          var fb = document.createElement('div');
+          fb.className = 'feedback show ' + (isOk ? 'ok' : 'err');
+          fb.innerHTML =
+            '<span class="rule-name">' + escHtml(d.ruleName) + '</span>' +
+            (isOk ? d.feedbackOk : d.feedbackErr);
+          taskBox.appendChild(fb);
+
+          trackStep(3 + (containerId === 's3words' ? 3 : 0) + i, isOk);
+
+          var nx = document.createElement('button');
+          nx.className = 'next-btn show';
+          nx.textContent = (i < data.length - 1) ? 'Weiter →' : 'Ergebnis anzeigen →';
+          nx.addEventListener('click', function () { showRound(i + 1); });
+          taskBox.appendChild(nx);
+        });
+        btnRow.appendChild(btn);
+      });
+
+      taskBox.appendChild(btnRow);
+      container.appendChild(taskBox);
+    }
+
+    showRound(0);
+  }
+
+  // ── Score screen ───────────────────────────────────────────────────────
+  function showScore () {
+    switchStage('stage3', 'stageScore', 3);
+    document.getElementById('scoreNum').textContent = score;
+    var msgs = [
+      'Üb weiter – schau dir das Merkblatt unten genau an und versuche es nochmal.',
+      'Üb weiter – schau dir das Merkblatt unten genau an und versuche es nochmal.',
+      'Schon einige Regeln drauf! Ein weiterer Durchgang festigt die restlichen.',
+      'Schon einige Regeln drauf! Ein weiterer Durchgang festigt die restlichen.',
+      'Ordentlich! Du kennst die meisten Suffixregeln schon gut.',
+      'Ordentlich! Du kennst die meisten Suffixregeln schon gut.',
+      'Starke Leistung! Fast alle Suffixregeln sicher im Griff.',
+      'Starke Leistung! Fast alle Suffixregeln sicher im Griff.',
+      'Perfekt! Du beherrschst alle geübten Suffixregeln – weiter so!'
+    ];
+    document.getElementById('scoreMsg').textContent = msgs[Math.min(score, 8)];
+  }
+
+  window.restart = function () {
+    score = 0;
+    // Reset stage 1
+    document.getElementById('s1r1').style.display = 'block';
+    document.getElementById('s1r2').style.display = 'none';
+    document.querySelectorAll('#s1r1 .art-btn').forEach(function (b) {
+      b.disabled = false;
+      b.className = 'art-btn';
+    });
+    document.querySelectorAll('#s1r2 .art-btn').forEach(function (b) {
+      b.disabled = false;
+      b.className = 'art-btn';
+    });
+    document.getElementById('s1r1_fb').className = 'feedback';
+    document.getElementById('s1r2_fb').className = 'feedback';
+    document.getElementById('s1r1_next').className = 'next-btn';
+    document.getElementById('s1r2_next').className = 'next-btn';
+    document.getElementById('s1r1_suffix').className = 'suffix';
+    document.getElementById('s1r2_suffix').className = 'suffix';
+    document.getElementById('s2words').innerHTML = '';
+    document.getElementById('s3words').innerHTML = '';
+    switchStage('stageScore', 'stage1', 0);
+  };
+
+  // ── Helpers ────────────────────────────────────────────────────────────
+  function switchStage (fromId, toId, newDotIdx) {
+    document.getElementById(fromId).classList.remove('active');
+    document.getElementById(toId).classList.add('active');
+    document.querySelectorAll('.dot').forEach(function (d, i) {
+      d.classList.remove('active', 'done');
+      if (i < newDotIdx) d.classList.add('done');
+      if (i === newDotIdx) d.classList.add('active');
+    });
+    document.getElementById('progressLabel').textContent =
+      'Stufe ' + (newDotIdx + 1) + ' von 3';
+    if (toId === 'stageScore') {
+      document.querySelectorAll('.dot').forEach(function (d) { d.classList.add('done'); });
+      document.getElementById('progressLabel').textContent = 'Abgeschlossen';
+    }
+  }
+
+  function lockButtons (btns, correct, chosen) {
+    btns.forEach(function (b) {
+      b.disabled = true;
+      var art = b.textContent.trim();
+      if (art === chosen && chosen === correct) {
+        b.classList.add('correct');
+      } else if (art === chosen && chosen !== correct) {
+        b.classList.add('incorrect');
+      } else if (art === correct) {
+        b.classList.add('reveal-correct');
+      }
+    });
+  }
+
+  function showEl (id) {
+    var el = document.getElementById(id);
+    if (el) el.classList.add('show');
+  }
+
+  function escHtml (s) {
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function trackStep (step, isCorrect) {
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: 'sim_step',
+        sim_name: 'genus-suffixregeln-deutsch',
+        step: step,
+        result: isCorrect ? 'correct' : 'incorrect'
+      });
+    }
+  }
+
+  // Init dataLayer
+  window.dataLayer = window.dataLayer || [];
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,1346 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Sapir-Whorf-Hypothese: Sprachliche Relativität interaktiv | Nachhilfe Mentor</title>
+  <meta name="description" content="Sapir-Whorf-Hypothese interaktiv erleben: Teste den kategoriellen Wahrnehmungseffekt mit russischen Farbwörtern und unterscheide starke und schwache Sprachrelativität.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sapir-Whorf-Hypothese, sprachliche Relativität, Sprachdeterminismus, kategorieller Wahrnehmungseffekt, Linguistik, Sprache und Denken">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sapir-whorf-sprachliche-relativitaet-simulation.html">
+  <meta property="og:title" content="Sapir-Whorf-Hypothese interaktiv">
+  <meta property="og:description" content="Sapir-Whorf-Hypothese interaktiv erleben: Teste den kategoriellen Wahrnehmungseffekt mit russischen Farbwörtern und unterscheide starke und schwache Sprachrelativität.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sapir-whorf-sprachliche-relativitaet-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sapir-Whorf-Hypothese: Sprachliche Relativität interaktiv",
+  "description":"Sapir-Whorf-Hypothese interaktiv erleben: Teste den kategoriellen Wahrnehmungseffekt mit russischen Farbwörtern und unterscheide starke und schwache Sprachrelativität.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sapir-whorf-sprachliche-relativitaet-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Header ──────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* ── Main ────────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Progress bar ─────────────────────────────── */
+    .progress-bar {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
+
+    .step-dot {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      background: var(--line);
+      color: var(--muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .step-dot.active {
+      background: var(--blue);
+      color: #fff;
+    }
+
+    .step-dot.done {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .step-connector {
+      flex: 1;
+      height: 2px;
+      background: var(--line);
+    }
+
+    .progress-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-left: 0.25rem;
+    }
+
+    /* ── Stage panels ─────────────────────────────── */
+    .stage {
+      display: none;
+    }
+
+    .stage.active {
+      display: block;
+    }
+
+    /* ── Cards ───────────────────────────────────── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .card h3 {
+      font-size: 0.97rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--muted);
+    }
+
+    .card p {
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Stage badge ──────────────────────────────── */
+    .stage-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: #e8f1fb;
+      border-radius: 20px;
+      padding: 0.2rem 0.65rem;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Color preview boxes (Stufe 1) ───────────── */
+    .color-preview {
+      display: flex;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .color-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .color-swatch {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      border: 1px solid rgba(0,0,0,0.1);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .color-label {
+      font-size: 0.85rem;
+      text-align: center;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .color-sublabel {
+      font-size: 0.75rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: -0.4rem;
+    }
+
+    /* ── Language comparison ─────────────────────── */
+    .lang-compare {
+      background: #f0f6ff;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .lang-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .lang-name {
+      font-weight: 700;
+      min-width: 80px;
+      color: var(--blue);
+    }
+
+    .lang-words {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .word-chip {
+      background: var(--blue);
+      color: white;
+      border-radius: 6px;
+      padding: 0.15rem 0.6rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .word-chip.light {
+      background: #63a8e0;
+    }
+
+    .word-chip.dark {
+      background: #1a4d8a;
+    }
+
+    .word-chip.single {
+      background: #4080b8;
+    }
+
+    /* ── Options ─────────────────────────────────── */
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    .option-btn {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 0.9rem 1.25rem;
+      text-align: left;
+      cursor: pointer;
+      font-size: 0.93rem;
+      font-family: inherit;
+      color: var(--ink);
+      transition: border-color 0.2s, background 0.2s, transform 0.1s;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+      transform: translateY(-1px);
+    }
+
+    .option-btn:disabled {
+      cursor: default;
+    }
+
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #edfaf5;
+    }
+
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fdf2f2;
+    }
+
+    .option-letter {
+      font-weight: 700;
+      color: var(--muted);
+      min-width: 1.2rem;
+      margin-top: 0.05rem;
+    }
+
+    .option-btn.correct .option-letter { color: var(--green); }
+    .option-btn.wrong .option-letter { color: var(--red); }
+
+    /* ── Feedback box ─────────────────────────────── */
+    .feedback {
+      display: none;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.25rem;
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    .feedback.show {
+      display: block;
+    }
+
+    .feedback.correct {
+      background: #edfaf5;
+      border: 1px solid #8ad4b8;
+    }
+
+    .feedback.wrong {
+      background: #fdf2f2;
+      border: 1px solid #e8a8a2;
+    }
+
+    .concept-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      font-size: 0.78rem;
+      font-weight: 700;
+      border-radius: 4px;
+      padding: 0.1rem 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .concept-tag.green { background: var(--green); }
+    .concept-tag.red   { background: var(--red); }
+    .concept-tag.amber { background: var(--amber); }
+
+    /* ── Canvas container ─────────────────────────── */
+    .canvas-container {
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+
+    canvas {
+      display: block;
+      margin: 0 auto;
+      border-radius: 8px;
+      max-width: 100%;
+    }
+
+    .canvas-legend {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 0.75rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      padding: 0 0.25rem;
+    }
+
+    /* ── Color matching task ──────────────────────── */
+    .match-task {
+      margin: 1.5rem 0;
+    }
+
+    .match-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .match-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .target-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .match-swatch {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      border: 2px solid rgba(0,0,0,0.12);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .choices-row {
+      display: flex;
+      gap: 1.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .choice-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .choice-btn {
+      width: 70px;
+      height: 70px;
+      border-radius: 10px;
+      border: 3px solid transparent;
+      cursor: pointer;
+      transition: border-color 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .choice-btn:hover:not(:disabled) {
+      transform: scale(1.08);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    }
+
+    .choice-btn:disabled {
+      cursor: default;
+    }
+
+    .choice-btn.selected-correct {
+      border-color: var(--green);
+      box-shadow: 0 0 0 3px rgba(11,143,106,0.25);
+    }
+
+    .choice-btn.selected-wrong {
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(181,40,30,0.2);
+    }
+
+    .choice-btn.reveal-correct {
+      border-color: var(--green);
+    }
+
+    .choice-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    .round-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .round-badge {
+      background: #f0f6ff;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 700;
+      border-radius: 20px;
+      padding: 0.15rem 0.65rem;
+    }
+
+    /* ── Classify task (Stufe 3) ──────────────────── */
+    .classify-task {
+      margin-bottom: 1.5rem;
+    }
+
+    .classify-card {
+      background: #f8fafd;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+
+    .classify-card p {
+      font-style: italic;
+      margin-bottom: 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .classify-options {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .classify-btn {
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.4rem 0.9rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      background: var(--panel);
+      color: var(--ink);
+      transition: border-color 0.2s, background 0.2s, transform 0.1s;
+    }
+
+    .classify-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+      transform: translateY(-1px);
+    }
+
+    .classify-btn:disabled {
+      cursor: default;
+    }
+
+    .classify-btn.correct {
+      border-color: var(--green);
+      background: #edfaf5;
+      color: var(--green);
+    }
+
+    .classify-btn.wrong {
+      border-color: var(--red);
+      background: #fdf2f2;
+      color: var(--red);
+      text-decoration: line-through;
+    }
+
+    /* ── Navigation buttons ───────────────────────── */
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.2s, transform 0.1s;
+      margin-top: 1.25rem;
+    }
+
+    .btn-primary:hover {
+      background: #0a4d8c;
+      transform: translateY(-1px);
+    }
+
+    .btn-primary:disabled {
+      background: #a0b8cc;
+      cursor: default;
+      transform: none;
+    }
+
+    /* ── Info box ─────────────────────────────────── */
+    .info-box {
+      background: #f0f6ff;
+      border: 1px solid #c8def5;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin: 1.25rem 0;
+      font-size: 0.9rem;
+    }
+
+    .info-box strong {
+      color: var(--blue);
+    }
+
+    /* ── Summary ──────────────────────────────────── */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    @media (max-width: 480px) {
+      .summary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .summary-item {
+      background: #f8fafd;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.1rem;
+    }
+
+    .summary-item h4 {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .summary-item p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    /* ── Footer ───────────────────────────────────── */
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+
+    footer a { color: var(--muted); }
+
+    /* ── Responsive ───────────────────────────────── */
+    @media (max-width: 480px) {
+      .color-preview {
+        gap: 1rem;
+      }
+      .color-swatch {
+        width: 65px;
+        height: 65px;
+      }
+      .choices-row {
+        gap: 1rem;
+      }
+      .match-swatch, .choice-btn {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header>
+    <div class="eyebrow">Linguistik · Sprachreflexion · Klasse 10–13</div>
+    <h1>Sapir-Whorf-Hypothese</h1>
+    <p>Beeinflusst unsere Sprache, wie wir die Welt wahrnehmen? Erlebe den kategoriellen Wahrnehmungseffekt und unterscheide starke und schwache Sprachrelativität.</p>
+  </header>
+
+  <main>
+    <!-- Progress -->
+    <div class="progress-bar" aria-label="Fortschritt">
+      <div class="step-dot active" id="dot1">1</div>
+      <div class="step-connector"></div>
+      <div class="step-dot" id="dot2">2</div>
+      <div class="step-connector"></div>
+      <div class="step-dot" id="dot3">3</div>
+      <span class="progress-label" id="progress-label">Stufe 1 von 3</span>
+    </div>
+
+    <!-- ─────────────────────── STAGE 1 ─────────────────────── -->
+    <div class="stage active" id="stage1">
+      <div class="stage-badge">Stufe 1 · Vorhersage</div>
+
+      <div class="card">
+        <h2>Sehen wir, was wir benennen können?</h2>
+        <p>
+          Schau dir die beiden Blautöne unten an. Im Deutschen sagen wir für beide einfach <strong>„blau"</strong>.
+          Im Russischen gibt es jedoch <strong>zwei obligatorische Grundwörter</strong>:
+        </p>
+
+        <div class="color-preview">
+          <div class="color-box">
+            <div class="color-swatch" style="background: #72b8e8;"></div>
+            <div class="color-label">голубой</div>
+            <div class="color-sublabel">(goluboy = Hellblau)</div>
+          </div>
+          <div class="color-box">
+            <div class="color-swatch" style="background: #1a4d9e;"></div>
+            <div class="color-label">синий</div>
+            <div class="color-sublabel">(siniy = Dunkelblau)</div>
+          </div>
+          <div class="color-box" style="opacity: 0.65;">
+            <div class="color-swatch" style="background: linear-gradient(to right, #72b8e8, #1a4d9e);"></div>
+            <div class="color-label">blau</div>
+            <div class="color-sublabel">(Deutsch/Englisch: alles „blau")</div>
+          </div>
+        </div>
+
+        <div class="lang-compare">
+          <div class="lang-row">
+            <span class="lang-name">Russisch</span>
+            <div class="lang-words">
+              <span class="word-chip light">голубой (Hellblau)</span>
+              <span class="word-chip dark">синий (Dunkelblau)</span>
+            </div>
+          </div>
+          <div class="lang-row">
+            <span class="lang-name">Deutsch</span>
+            <div class="lang-words">
+              <span class="word-chip single">blau</span>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          In einem Experiment (Winawer et al., 2007) sollten Probanden so schnell wie möglich entscheiden,
+          ob zwei Blautöne gleich oder verschieden sind.
+        </p>
+
+        <h3>Was sagst du vorher?</h3>
+        <p style="font-weight: 600;">Welche Auswirkung hat es, dass Russischsprachige zwei Wörter für Blau kennen?</p>
+
+        <div class="options" id="opts1">
+          <button class="option-btn" onclick="answer1(this, false)">
+            <span class="option-letter">A</span>
+            <span>Russischsprachige können den Unterschied zwischen den Blautönen <strong>nicht</strong> wahrnehmen — sie sehen beides als „синий".</span>
+          </button>
+          <button class="option-btn" onclick="answer1(this, true)">
+            <span class="option-letter">B</span>
+            <span>Russischsprachige erkennen den Unterschied <strong>schneller</strong>, wenn die Farben in verschiedene russische Kategorien fallen.</span>
+          </button>
+          <button class="option-btn" onclick="answer1(this, false)">
+            <span class="option-letter">C</span>
+            <span>Englischsprachige sind schneller, weil Englisch als Weltsprache das Denken allgemein beschleunigt.</span>
+          </button>
+          <button class="option-btn" onclick="answer1(this, false)">
+            <span class="option-letter">D</span>
+            <span>Es gibt keinen messbaren Unterschied — Sprache hat keinen Einfluss auf unsere Wahrnehmung.</span>
+          </button>
+        </div>
+
+        <div class="feedback" id="fb1"></div>
+        <button class="btn-primary" id="next1-btn" style="display:none;" onclick="goToStage(2)">
+          Weiter zu Stufe 2 →
+        </button>
+      </div>
+    </div>
+
+    <!-- ─────────────────────── STAGE 2 ─────────────────────── -->
+    <div class="stage" id="stage2">
+      <div class="stage-badge">Stufe 2 · Canvas-Experiment</div>
+
+      <div class="card">
+        <h2>Das Farbspektrum-Experiment</h2>
+        <p>
+          Russisch teilt das Blau-Spektrum an einer klaren Stelle: Farben links davon heißen <strong>голубой</strong>, Farben rechts davon heißen <strong>синий</strong>.
+          Deutsch und Englisch kennen diese Grenze nicht — hier ist alles einfach „blau".
+        </p>
+
+        <div class="canvas-container">
+          <canvas id="spectrumCanvas" width="620" height="90" style="width:100%;max-width:620px;"></canvas>
+          <div class="canvas-legend">
+            <span id="legend-left">голубой (Hellblau)</span>
+            <span id="legend-right">синий (Dunkelblau)</span>
+          </div>
+        </div>
+
+        <div class="info-box">
+          <strong>Befund: Kategorieller Wahrnehmungseffekt</strong><br>
+          Winawer et al. (2007) zeigten: Russischsprachige waren beim Vergleich zweier Farben
+          <strong>ca. 100–130 ms schneller</strong>, wenn die Farben auf <em>verschiedenen</em> Seiten
+          der russischen Grenze lagen (голубой vs. синий) als wenn beide auf derselben Seite lagen.
+          Bei Deutschsprachigen zeigte sich kein solcher Effekt — weil die Grenze im mentalen Lexikon fehlt.
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Aufgabe: Farbzuordnung</h2>
+        <p>Zwei Runden: Entscheide jeweils, welches untere Farbfeld dem <strong>Zielfeld</strong> oben näher ist.</p>
+        <p style="color: var(--muted); font-size: 0.88rem; margin-top: -0.25rem; margin-bottom: 1.25rem;">
+          Achte darauf, wie schwer oder leicht dir die Entscheidung fällt.
+        </p>
+
+        <!-- Runde 1 -->
+        <div class="round-header">
+          <span class="round-badge">Runde 1</span>
+          <span style="font-size: 0.9rem; color: var(--muted);">Innerhalb derselben russischen Kategorie</span>
+        </div>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+          Zielfeld und beide Optionen liegen im Bereich <strong>голубой</strong> (Hellblau).
+          Welche Option ist dem Ziel am ähnlichsten?
+        </p>
+
+        <div class="match-task">
+          <div class="match-grid">
+            <div class="target-row">
+              <div class="match-label">Zielfeld</div>
+              <div class="match-swatch" style="background: #60a8dd;"></div>
+            </div>
+            <div class="choices-row">
+              <div class="choice-item">
+                <button class="choice-btn" id="r1a" style="background: #72b4e4;" onclick="roundAnswer(1, 'A', true)" title="Option A"></button>
+                <span class="choice-label">A</span>
+              </div>
+              <div class="choice-item">
+                <button class="choice-btn" id="r1b" style="background: #8fc3eb;" onclick="roundAnswer(1, 'B', false)" title="Option B"></button>
+                <span class="choice-label">B</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback" id="fb-r1"></div>
+
+        <!-- Runde 2 -->
+        <div class="round-header" style="margin-top: 2rem;">
+          <span class="round-badge">Runde 2</span>
+          <span style="font-size: 0.9rem; color: var(--muted);">Über die russische Kategoriengrenze hinweg</span>
+        </div>
+        <p style="font-size: 0.9rem; margin-bottom: 1rem;">
+          Das Zielfeld liegt im <strong>голубой</strong>-Bereich. Eine Option liegt ebenfalls dort —
+          die andere ist <strong>синий</strong>. Welche Option passt?
+        </p>
+
+        <div class="match-task">
+          <div class="match-grid">
+            <div class="target-row">
+              <div class="match-label">Zielfeld</div>
+              <div class="match-swatch" style="background: #60a8dd;"></div>
+            </div>
+            <div class="choices-row">
+              <div class="choice-item">
+                <button class="choice-btn" id="r2a" style="background: #70b2e3;" onclick="roundAnswer(2, 'A', true)" title="Option A"></button>
+                <span class="choice-label">A</span>
+              </div>
+              <div class="choice-item">
+                <button class="choice-btn" id="r2b" style="background: #1f5aaa;" onclick="roundAnswer(2, 'B', false)" title="Option B"></button>
+                <span class="choice-label">B</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback" id="fb-r2"></div>
+        <button class="btn-primary" id="next2-btn" style="display:none;" onclick="goToStage(3)">
+          Weiter zu Stufe 3 →
+        </button>
+      </div>
+    </div>
+
+    <!-- ─────────────────────── STAGE 3 ─────────────────────── -->
+    <div class="stage" id="stage3">
+      <div class="stage-badge">Stufe 3 · Stark vs. Schwach</div>
+
+      <div class="card">
+        <h2>Stark oder schwach?</h2>
+        <p>
+          Die Sapir-Whorf-Hypothese gibt es in zwei Versionen.
+          Klassifiziere die folgenden Behauptungen:
+          <strong>Starke SWH</strong> (Sprachdeterminismus),
+          <strong>Schwache SWH</strong> (Sprachrelativität) oder
+          <strong>Keine SWH</strong> (anderes Thema).
+        </p>
+
+        <div class="info-box" style="margin-top: 1.25rem; margin-bottom: 1.5rem;">
+          <strong>Starke SWH:</strong> Sprache <em>bestimmt</em> das Denken vollständig — man kann nur denken, wofür man Wörter hat (weitgehend widerlegt).<br><br>
+          <strong>Schwache SWH:</strong> Sprache <em>beeinflusst</em> Wahrnehmung und Kognition in bestimmten Domänen — empirisch belegt.
+        </div>
+
+        <!-- Behauptung 1 -->
+        <div class="classify-task">
+          <div class="classify-card">
+            <p>„Wer kein Wort für ‚Freiheit' hat, kann sich Freiheit nicht vorstellen."</p>
+            <div class="classify-options" id="co1">
+              <button class="classify-btn" onclick="classify(1, this, 'stark', true)">Starke SWH</button>
+              <button class="classify-btn" onclick="classify(1, this, 'schwach', false)">Schwache SWH</button>
+              <button class="classify-btn" onclick="classify(1, this, 'keine', false)">Keine SWH</button>
+            </div>
+          </div>
+          <div class="feedback" id="fb-c1"></div>
+        </div>
+
+        <!-- Behauptung 2 -->
+        <div class="classify-task">
+          <div class="classify-card">
+            <p>„Russischsprachige erkennen bestimmte Blautöne schneller als Deutschsprachige, weil Russisch zwei Grundwörter für Blau hat."</p>
+            <div class="classify-options" id="co2">
+              <button class="classify-btn" onclick="classify(2, this, 'stark', false)">Starke SWH</button>
+              <button class="classify-btn" onclick="classify(2, this, 'schwach', true)">Schwache SWH</button>
+              <button class="classify-btn" onclick="classify(2, this, 'keine', false)">Keine SWH</button>
+            </div>
+          </div>
+          <div class="feedback" id="fb-c2"></div>
+        </div>
+
+        <!-- Behauptung 3 -->
+        <div class="classify-task">
+          <div class="classify-card">
+            <p>„Kinder lernen ihre Muttersprache in den ersten Lebensjahren besonders schnell und mühelos."</p>
+            <div class="classify-options" id="co3">
+              <button class="classify-btn" onclick="classify(3, this, 'stark', false)">Starke SWH</button>
+              <button class="classify-btn" onclick="classify(3, this, 'schwach', false)">Schwache SWH</button>
+              <button class="classify-btn" onclick="classify(3, this, 'keine', true)">Keine SWH</button>
+            </div>
+          </div>
+          <div class="feedback" id="fb-c3"></div>
+        </div>
+
+        <div class="feedback" id="fb-final"></div>
+        <button class="btn-primary" id="next3-btn" style="display:none;" onclick="showSummary()">
+          Zum Abschluss →
+        </button>
+      </div>
+    </div>
+
+    <!-- ─────────────────────── SUMMARY ─────────────────────── -->
+    <div class="stage" id="stage-summary">
+      <div class="stage-badge" style="background: #edfaf5; color: var(--green);">Abgeschlossen</div>
+
+      <div class="card">
+        <h2>Zusammenfassung: Sapir-Whorf-Hypothese</h2>
+
+        <div class="summary-grid">
+          <div class="summary-item">
+            <h4>Starke SWH (Sprachdeterminismus)</h4>
+            <p>Sprache <em>bestimmt</em> das Denken vollständig. <strong>Weitgehend widerlegt</strong> — Menschen nehmen wahr, auch ohne das passende Sprachlabel.</p>
+          </div>
+          <div class="summary-item">
+            <h4>Schwache SWH (Sprachrelativität)</h4>
+            <p>Sprache <em>beeinflusst</em> Wahrnehmung und Kognition. <strong>Empirisch belegt</strong> — z. B. kategorieller Wahrnehmungseffekt bei Farben (Winawer et al. 2007).</p>
+          </div>
+          <div class="summary-item">
+            <h4>Schlüsselexperiment</h4>
+            <p>Russischsprachige waren ~100–130 ms schneller beim Unterscheiden von голубой vs. синий. Der Effekt verschwand bei verbaler Ablenkung — Sprache war ursächlich.</p>
+          </div>
+          <div class="summary-item">
+            <h4>Klausurtipp</h4>
+            <p>Immer <strong>beide Versionen</strong> nennen und klar unterscheiden. Ein empirisches Beispiel für die schwache SWH: das Russisch-Blau-Experiment.</p>
+          </div>
+        </div>
+
+        <div class="info-box" style="margin-top: 0.5rem;">
+          <strong>Quelle:</strong> Winawer, J., Witthoft, N., Frank, M.C., Wu, L., Wade, A.R. &amp; Boroditsky, L. (2007).
+          Russian blues reveal effects of language on color discrimination. <em>PNAS</em>, 104(19), 7780–7785.
+        </div>
+
+        <button class="btn-primary" onclick="restartSim()" style="margin-top: 1.5rem;">
+          Simulation wiederholen
+        </button>
+      </div>
+
+      <div style="margin-top: 1rem; font-size: 0.88rem; color: var(--muted);">
+        <a href="/lernmaterialien/">← Alle Lernmaterialien</a> ·
+        <a href="/">Nachhilfe Mentor</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>
+      <a href="/">Nachhilfe Mentor</a> ·
+      <a href="/lernmaterialien/">Lernmaterialien</a> ·
+      Linguistik Klasse 10–13
+    </p>
+  </footer>
+
+  <script>
+    // ── Tracking ──────────────────────────────────────────────
+    window.dataLayer = window.dataLayer || [];
+    function trackStep(step, result) {
+      window.dataLayer.push({ event: 'sim_step', sim: 'sapir-whorf', step: step, result: result });
+    }
+
+    // ── Stage management ──────────────────────────────────────
+    var classifyDone = [false, false, false];
+
+    function goToStage(n) {
+      document.querySelectorAll('.stage').forEach(function(s) { s.classList.remove('active'); });
+      var id = n === 'summary' ? 'stage-summary' : 'stage' + n;
+      document.getElementById(id).classList.add('active');
+
+      // Update progress dots
+      for (var i = 1; i <= 3; i++) {
+        var dot = document.getElementById('dot' + i);
+        if (i < n) { dot.className = 'step-dot done'; dot.textContent = '✓'; }
+        else if (i === n) { dot.className = 'step-dot active'; dot.textContent = i; }
+        else { dot.className = 'step-dot'; dot.textContent = i; }
+      }
+      var label = document.getElementById('progress-label');
+      if (n <= 3) label.textContent = 'Stufe ' + n + ' von 3';
+      else label.textContent = 'Abgeschlossen';
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      if (n === 2) initCanvas();
+      trackStep(n === 'summary' ? 'summary' : 'stage' + n, 'enter');
+    }
+
+    // ── Stage 1: Vorhersage ───────────────────────────────────
+    function answer1(btn, correct) {
+      var opts = document.querySelectorAll('#opts1 .option-btn');
+      opts.forEach(function(b) { b.disabled = true; });
+      var fb = document.getElementById('fb1');
+      fb.className = 'feedback show ' + (correct ? 'correct' : 'wrong');
+
+      if (correct) {
+        btn.classList.add('correct');
+        fb.innerHTML =
+          '<span class="concept-tag green">Kategorieller Wahrnehmungseffekt</span><br>' +
+          'Genau! In der Studie von Winawer et al. (2007) waren Russischsprachige beim Unterscheiden von ' +
+          '<strong>голубой</strong> und <strong>синий</strong> ca. 100–130 ms schneller — aber ' +
+          '<em>nur</em> wenn die Farben verschiedene russische Kategorien aktivierten. ' +
+          'Das nennt man <strong>kategoriellen Wahrnehmungseffekt</strong>. ' +
+          'Die schwache <strong>Sapir-Whorf-Hypothese</strong> sagt: Sprachkategorien beeinflussen ' +
+          'die Geschwindigkeit unserer Wahrnehmung — nicht ob wir etwas sehen, sondern <em>wie schnell</em>.';
+        trackStep('stage1', 'correct');
+      } else {
+        btn.classList.add('wrong');
+        // Highlight the correct answer
+        opts[1].classList.add('correct');
+        var wrongMsgs = [
+          '<span class="concept-tag red">Fehlvorstellung</span><br>' +
+          'Russischsprachige sehen den Unterschied natürlich — jeder Mensch mit normalem Farbsehen kann das. ' +
+          'Es geht nicht um die Wahrnehmung <em>an sich</em>, sondern um die <strong>Schnelligkeit</strong> der Verarbeitung. ' +
+          'Die richtige Antwort ist B: Russischsprachige sind schneller, wenn die Farben verschiedene Kategorien aktivieren. ' +
+          'Das ist die <strong>Sapir-Whorf-Hypothese (schwache Version)</strong>.',
+          '<span class="concept-tag red">Kein Effekt dieser Art</span><br>' +
+          'Die Verbreitung einer Sprache hat keinen Einfluss auf Reaktionszeiten bei Farbaufgaben. ' +
+          'Entscheidend sind die <strong>Kategoriengrenzen im mentalen Lexikon</strong>. ' +
+          'Russischsprachige sind schneller, weil sie ein zweites Grundwort (синий / голубой) besitzen — Antwort B.',
+          '<span class="concept-tag red">Nicht korrekt</span><br>' +
+          'Das wäre die maximale Gegenthese. Winawer et al. (2007) zeigten aber eindeutig: ' +
+          'Sprachkategorien beeinflussen die Wahrnehmungsgeschwindigkeit. ' +
+          'Die schwache <strong>Sapir-Whorf-Hypothese</strong> ist empirisch belegt — Sprache moduliert ' +
+          'kognitive Verarbeitung in spezifischen Domänen.'
+        ];
+        var idx = [0, 2, 3].indexOf(Array.from(opts).indexOf(btn));
+        fb.innerHTML = wrongMsgs[idx] || wrongMsgs[0];
+        trackStep('stage1', 'wrong');
+      }
+
+      document.getElementById('next1-btn').style.display = 'inline-block';
+    }
+
+    // ── Stage 2: Canvas ───────────────────────────────────────
+    function roundRect(ctx, x, y, w, h, r) {
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.lineTo(x + w - r, y);
+      ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+      ctx.lineTo(x + w, y + h - r);
+      ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+      ctx.lineTo(x + r, y + h);
+      ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+      ctx.lineTo(x, y + r);
+      ctx.quadraticCurveTo(x, y, x + r, y);
+      ctx.closePath();
+    }
+
+    function initCanvas() {
+      var canvas = document.getElementById('spectrumCanvas');
+      if (!canvas) return;
+
+      // Responsive width: match container
+      var container = canvas.parentElement;
+      var cssW = Math.min(container.clientWidth - 4, 620);
+      var cssH = 90;
+      var dpr = window.devicePixelRatio || 1;
+
+      canvas.width  = cssW * dpr;
+      canvas.height = cssH * dpr;
+      canvas.style.width  = cssW + 'px';
+      canvas.style.height = cssH + 'px';
+
+      var ctx = canvas.getContext('2d');
+      ctx.scale(dpr, dpr);
+
+      var W = cssW, H = cssH;
+      var PAD = 16;
+
+      // Build gradient
+      var grad = ctx.createLinearGradient(PAD, 0, W - PAD, 0);
+      grad.addColorStop(0,   '#a8d4f5');
+      grad.addColorStop(0.38,'#72b8e8');
+      grad.addColorStop(0.6, '#3a7cc8');
+      grad.addColorStop(1,   '#1a2d8a');
+
+      // Animate boundary line sliding in
+      var targetX = PAD + (W - 2 * PAD) * 0.5;
+      var animStart = null;
+
+      function drawFrame(ts) {
+        if (!animStart) animStart = ts;
+        var elapsed = ts - animStart - 700; // 700ms delay before line appears
+        var lineX = elapsed > 0
+          ? PAD + (W - 2 * PAD) * Math.min(elapsed / 550, 1) * 0.5
+          : PAD;
+        var t = elapsed > 0 ? Math.min(elapsed / 550, 1) : 0;
+        // ease out
+        t = 1 - (1 - t) * (1 - t);
+
+        ctx.clearRect(0, 0, W, H);
+
+        // English label
+        ctx.fillStyle = '#617087';
+        ctx.font = '600 10px Inter, system-ui, sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText('Deutsch / Englisch: alles „blau"', W / 2, 11);
+
+        // Color bar
+        ctx.fillStyle = grad;
+        roundRect(ctx, PAD, 17, W - 2 * PAD, 50, 7);
+        ctx.fill();
+
+        if (elapsed > 0 && t > 0) {
+          var lineXActual = PAD + (W - 2 * PAD) * 0.5 * t;
+          var alpha = Math.min(t * 1.5, 1);
+          ctx.globalAlpha = alpha;
+
+          // White divider
+          ctx.strokeStyle = '#ffffff';
+          ctx.lineWidth = 2.5;
+          ctx.beginPath();
+          ctx.moveTo(PAD + lineXActual, 13);
+          ctx.lineTo(PAD + lineXActual, 71);
+          ctx.stroke();
+
+          // Russian labels inside bar
+          ctx.fillStyle = 'rgba(255,255,255,0.95)';
+          ctx.font = '700 11px Inter, system-ui, sans-serif';
+          ctx.textAlign = 'center';
+          var midLeft  = PAD + (PAD + lineXActual) / 2;
+          var midRight = PAD + lineXActual + (W - 2 * PAD - lineXActual) / 2;
+          ctx.fillText('голубой', midLeft, 46);
+          ctx.fillText('синий',   midRight, 46);
+
+          ctx.globalAlpha = 1;
+        }
+
+        if (t < 1) requestAnimationFrame(drawFrame);
+      }
+
+      requestAnimationFrame(drawFrame);
+    }
+
+    // ── Round answers ─────────────────────────────────────────
+    var roundsDone = 0;
+
+    function roundAnswer(round, choice, correct) {
+      var prefix = 'r' + round;
+      var btnA = document.getElementById(prefix + 'a');
+      var btnB = document.getElementById(prefix + 'b');
+      btnA.disabled = true;
+      btnB.disabled = true;
+
+      var chosen = document.getElementById(prefix + choice.toLowerCase());
+      var other  = choice === 'A' ? document.getElementById(prefix + 'b') : document.getElementById(prefix + 'a');
+
+      chosen.classList.add(correct ? 'selected-correct' : 'selected-wrong');
+      if (!correct) other.classList.add('reveal-correct');
+
+      var fb = document.getElementById('fb-r' + round);
+      fb.className = 'feedback show ' + (correct ? 'correct' : 'wrong');
+
+      if (round === 1) {
+        fb.innerHTML =
+          '<span class="concept-tag' + (correct ? ' green' : '') + '">' +
+          (correct ? 'Richtig!' : 'Nicht ganz') + '</span><br>' +
+          'Beide Optionen liegen innerhalb der russischen Kategorie <strong>голубой</strong>. ' +
+          'Die Farbunterschiede sind subtil — die Entscheidung ist schwerer, weil kein Kategorienlabel hilft. ' +
+          'Russischsprachige sind <em>in dieser Bedingung</em> kaum schneller als Deutschsprachige.';
+      } else {
+        if (correct) {
+          fb.innerHTML =
+            '<span class="concept-tag green">Kategorieller Wahrnehmungseffekt</span><br>' +
+            'Richtig! Option A (голубой) passt zum Zielfeld. Option B (синий) liegt auf der anderen Seite ' +
+            'der russischen Kategoriensgrenze. Russischsprachige sind <em>in dieser Bedingung</em> ' +
+            'ca. 100–130 ms schneller als Deutschsprachige — weil das Sprachlabel die Wahrnehmung beschleunigt. ' +
+            'Das ist der <strong>kategorielle Wahrnehmungseffekt</strong> der Sprachrelativität.';
+        } else {
+          fb.innerHTML =
+            '<span class="concept-tag red">Nicht ganz</span><br>' +
+            'Option A (голубой) liegt in derselben Kategorie wie das Zielfeld. Option B (синий) liegt auf ' +
+            'der <em>anderen</em> Seite der russischen Grenze — und ist damit weiter entfernt. ' +
+            'Russischsprachige erkennen das schneller, weil ihre Sprachkategorien die Wahrnehmung strukturieren: ' +
+            '<strong>kategorieller Wahrnehmungseffekt</strong>.';
+        }
+      }
+
+      roundsDone++;
+      trackStep('stage2-r' + round, correct ? 'correct' : 'wrong');
+      if (roundsDone >= 2) {
+        document.getElementById('next2-btn').style.display = 'inline-block';
+      }
+    }
+
+    // ── Stage 3: Classify ─────────────────────────────────────
+    var classifyCount = 0;
+
+    function classify(idx, btn, chosen, correct) {
+      if (classifyDone[idx - 1]) return;
+      classifyDone[idx - 1] = true;
+
+      var container = document.getElementById('co' + idx);
+      container.querySelectorAll('.classify-btn').forEach(function(b) { b.disabled = true; });
+      btn.classList.add(correct ? 'correct' : 'wrong');
+
+      var fb = document.getElementById('fb-c' + idx);
+      fb.className = 'feedback show ' + (correct ? 'correct' : 'wrong');
+
+      var msgs = {
+        1: {
+          correct: '<span class="concept-tag red">Starke SWH – Sprachdeterminismus</span><br>' +
+            'Genau! Diese Aussage entspricht dem <strong>Sprachdeterminismus</strong> (starke Sapir-Whorf-Hypothese): ' +
+            'Ohne Wort kein Konzept. Diese Version ist in der modernen Linguistik <strong>weitgehend widerlegt</strong> — ' +
+            'Menschen können Konzepte bilden und kommunizieren, auch wenn sie kein exaktes Wort dafür haben.',
+          wrong: 'Das ist die <strong>starke SWH</strong> (Sprachdeterminismus): kein Wort = kein Konzept. ' +
+            'Diese Version ist weitgehend widerlegt. Die schwache SWH wäre: Sprache <em>beeinflusst</em> das Denken, ohne es zu bestimmen.'
+        },
+        2: {
+          correct: '<span class="concept-tag green">Schwache SWH – Sprachrelativität</span><br>' +
+            'Richtig! Das ist der <strong>kategorielle Wahrnehmungseffekt</strong> aus Winawer et al. (2007). ' +
+            'Sprache <em>beeinflusst</em> die Wahrnehmungsgeschwindigkeit — das ist empirisch gut belegt. ' +
+            'Die <strong>schwache Sapir-Whorf-Hypothese</strong> (Sprachrelativität) hat robuste Unterstützung.',
+          wrong: 'Das beschreibt die <strong>schwache SWH</strong> (Sprachrelativität). ' +
+            'Sprache beeinflusst (nicht bestimmt) die Wahrnehmungsgeschwindigkeit. Belegt durch Winawer et al. (2007).'
+        },
+        3: {
+          correct: '<span class="concept-tag amber">Keine SWH – Kritische Periode</span><br>' +
+            'Richtig! Das ist keine Aussage zur Sapir-Whorf-Hypothese, sondern zur <strong>Kritischen Periode</strong> ' +
+            'des Spracherwerbs (Lenneberg 1967). Die Aussage beschreibt, wie Kinder Sprache erwerben — ' +
+            'nicht, ob Sprache das Denken beeinflusst.',
+          wrong: 'Das ist keine SWH-Aussage. Es geht um die <strong>Kritische Periode</strong> des Spracherwerbs ' +
+            '(Lenneberg 1967): Kinder lernen Sprachen besonders schnell bis etwa zur Pubertät. ' +
+            'Das hat nichts damit zu tun, ob Sprache die Wahrnehmung beeinflusst.'
+        }
+      };
+
+      fb.innerHTML = correct ? msgs[idx].correct : msgs[idx].wrong;
+
+      // If wrong, show correct button
+      if (!correct) {
+        var correctLabels = { 1: 'Starke SWH', 2: 'Schwache SWH', 3: 'Keine SWH' };
+        container.querySelectorAll('.classify-btn').forEach(function(b) {
+          if (b.textContent.trim() === correctLabels[idx]) b.classList.add('correct');
+        });
+      }
+
+      classifyCount++;
+      trackStep('stage3-c' + idx, correct ? 'correct' : 'wrong');
+
+      if (classifyCount >= 3) {
+        var finalFb = document.getElementById('fb-final');
+        finalFb.className = 'feedback show correct';
+        finalFb.innerHTML =
+          '<span class="concept-tag green">Abschluss-Fazit</span><br>' +
+          'Für das Abitur gilt: Die <strong>starke SWH</strong> (Sprachdeterminismus) ist weitgehend widerlegt — ' +
+          'Menschen können denken, auch ohne das passende Wort. ' +
+          'Die <strong>schwache SWH</strong> (Sprachrelativität) ist empirisch belegt: ' +
+          'Sprachkategorien beeinflussen die Verarbeitungsgeschwindigkeit in spezifischen Wahrnehmungsdomänen. ' +
+          'Das Schlüsselexperiment: Winawer et al. (2007) mit russischen Farbbegriffen.';
+        document.getElementById('next3-btn').style.display = 'inline-block';
+        trackStep('stage3', 'complete');
+      }
+    }
+
+    // ── Summary ────────────────────────────────────────────────
+    function showSummary() {
+      goToStage('summary');
+      document.getElementById('dot1').className = 'step-dot done'; document.getElementById('dot1').textContent = '✓';
+      document.getElementById('dot2').className = 'step-dot done'; document.getElementById('dot2').textContent = '✓';
+      document.getElementById('dot3').className = 'step-dot done'; document.getElementById('dot3').textContent = '✓';
+      trackStep('summary', 'enter');
+    }
+
+    function restartSim() {
+      classifyDone = [false, false, false];
+      classifyCount = 0;
+      roundsDone = 0;
+      document.getElementById('fb1').className = 'feedback';
+      document.getElementById('fb-r1').className = 'feedback';
+      document.getElementById('fb-r2').className = 'feedback';
+      document.getElementById('fb-c1').className = 'feedback';
+      document.getElementById('fb-c2').className = 'feedback';
+      document.getElementById('fb-c3').className = 'feedback';
+      document.getElementById('fb-final').className = 'feedback';
+      document.getElementById('next1-btn').style.display = 'none';
+      document.getElementById('next2-btn').style.display = 'none';
+      document.getElementById('next3-btn').style.display = 'none';
+      document.querySelectorAll('.option-btn').forEach(function(b) {
+        b.disabled = false; b.className = 'option-btn';
+      });
+      document.querySelectorAll('.choice-btn').forEach(function(b) {
+        b.disabled = false; b.className = 'choice-btn';
+      });
+      document.querySelectorAll('.classify-btn').forEach(function(b) {
+        b.disabled = false; b.className = 'classify-btn';
+      });
+      var dots = ['dot1','dot2','dot3'];
+      dots.forEach(function(d, i) {
+        var el = document.getElementById(d);
+        el.className = i === 0 ? 'step-dot active' : 'step-dot';
+        el.textContent = i + 1;
+      });
+      document.getElementById('progress-label').textContent = 'Stufe 1 von 3';
+      document.querySelectorAll('.stage').forEach(function(s) { s.classList.remove('active'); });
+      document.getElementById('stage1').classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

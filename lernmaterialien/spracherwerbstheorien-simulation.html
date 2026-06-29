@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Spracherwerbstheorien: Behaviorismus, Nativismus, Interaktionismus | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zu Spracherwerbstheorien: Ordne Aussagen Behaviorismus, Nativismus und Interaktionismus zu und wende sie aufs Wolfskind-Szenario an.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Spracherwerbstheorien, Behaviorismus, Nativismus, Interaktionismus, Chomsky, Skinner">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/spracherwerbstheorien-simulation.html">
+  <meta property="og:title" content="Spracherwerbstheorien: Behaviorismus, Nativismus, Interaktionismus">
+  <meta property="og:description" content="Interaktive Simulation zu Spracherwerbstheorien: Ordne Aussagen Behaviorismus, Nativismus und Interaktionismus zu und wende sie aufs Wolfskind-Szenario an.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/spracherwerbstheorien-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Spracherwerbstheorien: Behaviorismus, Nativismus, Interaktionismus",
+  "description":"Interaktive Simulation zu Spracherwerbstheorien: Ordne Aussagen Behaviorismus, Nativismus und Interaktionismus zu und wende sie aufs Wolfskind-Szenario an.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/spracherwerbstheorien-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --blau: #2563EB;
+      --blau-hell: #DBEAFE;
+      --gruen: #16A34A;
+      --gruen-hell: #DCFCE7;
+      --orange: #EA580C;
+      --orange-hell: #FED7AA;
+      --grau: #6B7280;
+      --grau-hell: #F3F4F6;
+      --text: #111827;
+      --rand: #E5E7EB;
+      --weiss: #FFFFFF;
+      --radius: 10px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #F9FAFB;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .seite-container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: #EEF2FF;
+      color: #4338CA;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .lernziel {
+      font-size: 0.95rem;
+      color: var(--grau);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    /* ── Fortschrittsanzeige ── */
+    .fortschritt {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .fortschritt-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--rand);
+      border: 2px solid var(--rand);
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .fortschritt-dot.aktiv {
+      background: var(--blau);
+      border-color: var(--blau);
+    }
+
+    .fortschritt-dot.fertig {
+      background: var(--gruen);
+      border-color: var(--gruen);
+    }
+
+    .fortschritt-label {
+      font-size: 0.8rem;
+      color: var(--grau);
+      margin: 0 0.25rem;
+    }
+
+    /* ── Theorienkarten (Legende) ── */
+    .theorien-legende {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 520px) {
+      .theorien-legende {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .theorie-karte {
+      border-radius: var(--radius);
+      padding: 1rem;
+      border-left: 4px solid;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .theorie-karte.eingeblendet {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .theorie-karte.blau { border-color: var(--blau); background: var(--blau-hell); }
+    .theorie-karte.gruen { border-color: var(--gruen); background: var(--gruen-hell); }
+    .theorie-karte.orange { border-color: var(--orange); background: var(--orange-hell); }
+
+    .theorie-karte .name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .theorie-karte .vertreter {
+      font-size: 0.78rem;
+      color: #374151;
+    }
+
+    .theorie-karte .schluessel {
+      font-size: 0.75rem;
+      color: #6B7280;
+      margin-top: 0.35rem;
+    }
+
+    /* ── Stufen ── */
+    .stufe {
+      display: none;
+    }
+
+    .stufe.aktiv {
+      display: block;
+    }
+
+    .stufen-titel {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .stufen-beschreibung {
+      font-size: 0.92rem;
+      color: #374151;
+      margin-bottom: 1.5rem;
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+
+    /* ── Aussagen-Karten (Stufe 1) ── */
+    .aussagen-liste {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .aussage-block {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: border-color 0.2s;
+    }
+
+    .aussage-block.beantwortet {
+      opacity: 0.85;
+    }
+
+    .aussage-text {
+      font-size: 0.95rem;
+      line-height: 1.55;
+      margin-bottom: 1rem;
+    }
+
+    .aussage-ziffer {
+      font-size: 0.75rem;
+      color: var(--grau);
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .antwort-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .antwort-btn {
+      padding: 0.45rem 1rem;
+      border-radius: 6px;
+      border: 2px solid;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      background: var(--weiss);
+    }
+
+    .antwort-btn.blau { border-color: var(--blau); color: var(--blau); }
+    .antwort-btn.gruen { border-color: var(--gruen); color: var(--gruen); }
+    .antwort-btn.orange { border-color: var(--orange); color: var(--orange); }
+
+    .antwort-btn:hover { filter: brightness(0.92); }
+    .antwort-btn:disabled { cursor: not-allowed; }
+
+    .antwort-btn.richtig-aktiv { color: var(--weiss); background: var(--gruen); border-color: var(--gruen); }
+    .antwort-btn.falsch-aktiv { color: var(--weiss); background: #EF4444; border-color: #EF4444; }
+    .antwort-btn.korrekt-reveal { color: var(--weiss); border-color: var(--gruen); background: var(--gruen); }
+
+    .feedback-box {
+      display: none;
+      margin-top: 0.9rem;
+      padding: 0.85rem 1rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .feedback-box.richtig {
+      background: var(--gruen-hell);
+      border-left: 3px solid var(--gruen);
+      color: #14532D;
+    }
+
+    .feedback-box.falsch {
+      background: #FEE2E2;
+      border-left: 3px solid #EF4444;
+      color: #7F1D1D;
+    }
+
+    .feedback-box.sichtbar {
+      display: block;
+    }
+
+    /* ── Stufe-2-Animation ── */
+    .szenen-container {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .szenen-reihe {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .szene {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .szene.sichtbar {
+      opacity: 1;
+    }
+
+    .szene-icon {
+      font-size: 2.4rem;
+      line-height: 1;
+    }
+
+    .szene-text {
+      font-size: 0.75rem;
+      color: var(--grau);
+      font-weight: 600;
+      text-align: center;
+      max-width: 80px;
+    }
+
+    .szene-pfeil {
+      font-size: 1.4rem;
+      color: var(--grau);
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+
+    .szene-pfeil.sichtbar {
+      opacity: 1;
+    }
+
+    .szenario-text {
+      font-size: 0.9rem;
+      color: #374151;
+      background: #F9FAFB;
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      text-align: left;
+    }
+
+    /* ── Erklärungs-Zuordnung (Stufe 2) ── */
+    .zuordnung-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .erklaerung-block {
+      background: var(--weiss);
+      border: 2px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: border-color 0.3s;
+    }
+
+    .erklaerung-block.richtig-zugeordnet {
+      border-color: var(--gruen);
+      background: var(--gruen-hell);
+    }
+
+    .erklaerung-block.falsch-zugeordnet {
+      border-color: #EF4444;
+      background: #FEE2E2;
+    }
+
+    .erklaerung-label {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--grau);
+      margin-bottom: 0.5rem;
+    }
+
+    .erklaerung-text {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      margin-bottom: 1rem;
+    }
+
+    .theorie-auswahl {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .theorie-auswahl-btn {
+      padding: 0.4rem 0.9rem;
+      border-radius: 6px;
+      border: 2px solid;
+      font-size: 0.82rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: var(--weiss);
+      transition: background 0.15s;
+    }
+
+    .theorie-auswahl-btn.blau { border-color: var(--blau); color: var(--blau); }
+    .theorie-auswahl-btn.gruen { border-color: var(--gruen); color: var(--gruen); }
+    .theorie-auswahl-btn.orange { border-color: var(--orange); color: var(--orange); }
+    .theorie-auswahl-btn.gewaehlt-blau { background: var(--blau); color: var(--weiss); }
+    .theorie-auswahl-btn.gewaehlt-gruen { background: var(--gruen); color: var(--weiss); }
+    .theorie-auswahl-btn.gewaehlt-orange { background: var(--orange); color: var(--weiss); }
+    .theorie-auswahl-btn:disabled { cursor: not-allowed; }
+
+    /* ── Abschluss-Panel ── */
+    .abschluss-panel {
+      display: none;
+      background: #F0FDF4;
+      border: 1px solid #86EFAC;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .abschluss-panel.sichtbar {
+      display: block;
+    }
+
+    .abschluss-panel h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #14532D;
+      margin-bottom: 0.75rem;
+    }
+
+    .abschluss-panel p {
+      font-size: 0.9rem;
+      color: #166534;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+    }
+
+    .abschluss-panel p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Stufe-1-Ergebnis-Banner ── */
+    .ergebnis-banner {
+      display: none;
+      background: var(--gruen-hell);
+      border: 1px solid #86EFAC;
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 1.5rem;
+      font-size: 0.92rem;
+      color: #14532D;
+    }
+
+    .ergebnis-banner.sichtbar { display: block; }
+
+    /* ── Weiter-Button ── */
+    .weiter-btn {
+      display: none;
+      margin-top: 1rem;
+      width: 100%;
+      padding: 0.85rem;
+      background: var(--blau);
+      color: var(--weiss);
+      border: none;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .weiter-btn:hover {
+      background: #1D4ED8;
+    }
+
+    .weiter-btn.sichtbar {
+      display: block;
+    }
+
+    /* ── Abschluss-Badge ── */
+    .abschluss-badge {
+      display: none;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .abschluss-badge.sichtbar {
+      display: block;
+    }
+
+    .abschluss-badge .emoji {
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .abschluss-badge h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .abschluss-badge p {
+      font-size: 0.9rem;
+      color: var(--grau);
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .neustart-btn {
+      margin-top: 1.5rem;
+      padding: 0.75rem 2rem;
+      background: var(--weiss);
+      border: 2px solid var(--blau);
+      color: var(--blau);
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .neustart-btn:hover {
+      background: var(--blau-hell);
+    }
+
+    /* ── Trennlinie ── */
+    hr.trenner {
+      border: none;
+      border-top: 1px solid var(--rand);
+      margin: 2rem 0;
+    }
+
+    /* ── Zusammenfassung (Theorievergleich) ── */
+    .vergleich-tabelle {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      margin-top: 1rem;
+    }
+
+    .vergleich-tabelle th, .vergleich-tabelle td {
+      border: 1px solid var(--rand);
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .vergleich-tabelle th {
+      background: var(--grau-hell);
+      font-weight: 700;
+    }
+
+    .vergleich-tabelle tr:nth-child(even) td {
+      background: #FAFAFA;
+    }
+
+    @media (max-width: 480px) {
+      .vergleich-tabelle { font-size: 0.75rem; }
+      .vergleich-tabelle th, .vergleich-tabelle td { padding: 0.45rem 0.5rem; }
+    }
+
+    /* Punkte-Anzeige */
+    .punkte-anzeige {
+      text-align: right;
+      font-size: 0.82rem;
+      color: var(--grau);
+      margin-bottom: 1rem;
+    }
+
+    .punkte-anzeige strong {
+      color: var(--gruen);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<div class="seite-container">
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="header-badge">Interaktive Simulation · Klasse 11–13</div>
+    <h1>Spracherwerbstheorien verstehen</h1>
+    <p class="lernziel">
+      Ordne Aussagen den drei großen Theorien zu und wende sie auf ein reales Szenario an –
+      Behaviorismus, Nativismus und Interaktionismus im Vergleich.
+    </p>
+  </header>
+
+  <!-- ── Fortschritt ── -->
+  <div class="fortschritt" aria-label="Fortschritt: Stufe 1 von 2">
+    <div class="fortschritt-dot aktiv" id="dot1"></div>
+    <span class="fortschritt-label" id="fortschritt-label">Stufe 1 von 2</span>
+    <div class="fortschritt-dot" id="dot2"></div>
+  </div>
+
+  <!-- ── Theorienkarten-Legende ── -->
+  <section aria-label="Überblick: Die drei Theorien">
+    <div class="theorien-legende">
+      <div class="theorie-karte blau" id="tk1">
+        <div class="name">🔵 Behaviorismus</div>
+        <div class="vertreter">B. F. Skinner (1957)</div>
+        <div class="schluessel">Imitation · Verstärkung · Konditionierung</div>
+      </div>
+      <div class="theorie-karte gruen" id="tk2">
+        <div class="name">🟢 Nativismus</div>
+        <div class="vertreter">Noam Chomsky (1957/65)</div>
+        <div class="schluessel">LAD · Universalgrammatik · angeboren</div>
+      </div>
+      <div class="theorie-karte orange" id="tk3">
+        <div class="name">🟠 Interaktionismus</div>
+        <div class="vertreter">Bruner &amp; Vygotsky (1983)</div>
+        <div class="schluessel">LASS · Motherese · soziale Interaktion</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       STUFE 1 – Aussagen zuordnen
+  ══════════════════════════════════════════ -->
+  <section class="stufe aktiv" id="stufe1">
+
+    <h2 class="stufen-titel">Stufe 1 – Aussagen zuordnen</h2>
+    <div class="stufen-beschreibung">
+      <strong>Aufgabe:</strong> Ordne jede der sechs Aussagen der richtigen Theorie zu.
+      Klicke auf einen der drei Buttons unterhalb der Aussage. Du bekommst sofort Rückmeldung.
+    </div>
+
+    <div class="punkte-anzeige">Richtige Antworten: <strong id="punkte-s1">0</strong> / 6</div>
+
+    <div class="aussagen-liste" id="aussagen-liste">
+
+      <!-- Aussage 1 -->
+      <div class="aussage-block" id="a1">
+        <div class="aussage-ziffer">Aussage 1</div>
+        <p class="aussage-text">
+          „Wenn ein Kind ‚Mama' sagt und die Mutter lächelt und lobt, wird das Kind
+          diese Äußerung häufiger wiederholen."
+        </p>
+        <div class="antwort-buttons">
+          <button class="antwort-btn blau" onclick="pruefen(1,'B','B')">Behaviorismus</button>
+          <button class="antwort-btn gruen" onclick="pruefen(1,'N','B')">Nativismus</button>
+          <button class="antwort-btn orange" onclick="pruefen(1,'I','B')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="f1-r">
+          <strong>Richtig!</strong> Das ist das Kernprinzip der <strong>operanten Konditionierung</strong>
+          (Skinner). Die Verstärkung durch Lob erhöht die Auftretenswahrscheinlichkeit des Verhaltens.
+          Skinner bezeichnet das als „Mand" – eine sprachliche Reaktion, die durch ihre Konsequenz
+          geformt wird.
+        </div>
+        <div class="feedback-box falsch" id="f1-f">
+          <strong>Nicht ganz.</strong> Das Loben als Verstärker ist ein Kernmechanismus des
+          <strong>Behaviorismus</strong> (Skinner: operante Konditionierung). Der Nativismus erklärt
+          stattdessen, warum Kinder grammatisch korrekte Sätze bilden können, die sie nie gehört
+          haben – nicht das einzelne Lernwort.
+        </div>
+      </div>
+
+      <!-- Aussage 2 -->
+      <div class="aussage-block" id="a2">
+        <div class="aussage-ziffer">Aussage 2</div>
+        <p class="aussage-text">
+          „Alle Kinder der Welt durchlaufen dieselbe Abfolge: zuerst Einwort-Äußerungen,
+          dann Zweiwortsätze, dann vollständige Sätze – unabhängig davon, welche Sprache
+          sie lernen."
+        </p>
+        <div class="antwort-buttons">
+          <button class="antwort-btn blau" onclick="pruefen(2,'B','N')">Behaviorismus</button>
+          <button class="antwort-btn gruen" onclick="pruefen(2,'N','N')">Nativismus</button>
+          <button class="antwort-btn orange" onclick="pruefen(2,'I','N')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="f2-r">
+          <strong>Richtig!</strong> Die universale Erwerbssequenz ist ein Hauptargument des
+          <strong>Nativismus</strong>. Da Kinder weltweit dieselben Phasen durchlaufen, schließt
+          Chomsky auf ein biologisch vorprogrammiertes Sprachsystem – das
+          <strong>Language Acquisition Device (LAD)</strong>. Reine Imitation (Behaviorismus) könnte
+          diese Universalität nicht erklären.
+        </div>
+        <div class="feedback-box falsch" id="f2-f">
+          <strong>Nicht ganz.</strong> Die universale Erwerbssequenz gehört zum
+          <strong>Nativismus</strong>: Weil Kinder weltweit dieselben Phasen durchlaufen – egal
+          welche Sprache –, schlussfolgert Chomsky auf ein angeborenes Sprachsystem (LAD). Hätte
+          die Umgebung (Behaviorismus/Interaktionismus) allein die Ursache, wären stärkere
+          sprachspezifische Unterschiede zu erwarten.
+        </div>
+      </div>
+
+      <!-- Aussage 3 -->
+      <div class="aussage-block" id="a3">
+        <div class="aussage-ziffer">Aussage 3</div>
+        <p class="aussage-text">
+          „Eltern sprechen mit Babys langsamer, höher und deutlicher als mit Erwachsenen
+          und verwenden einfachere Sätze. Diese sogenannte ‚Motherese' hilft dem Kind,
+          Sprache zu erwerben."
+        </p>
+        <div class="antwort-buttons">
+          <button class="antwort-btn blau" onclick="pruefen(3,'B','I')">Behaviorismus</button>
+          <button class="antwort-btn gruen" onclick="pruefen(3,'N','I')">Nativismus</button>
+          <button class="antwort-btn orange" onclick="pruefen(3,'I','I')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="f3-r">
+          <strong>Richtig!</strong> Motherese (auch: Child-Directed Speech, CDS) ist ein zentrales
+          Konzept des <strong>Interaktionismus</strong>. Bruner fasst solche Unterstützung unter dem
+          Begriff <strong>LASS</strong> (Language Acquisition Support System) zusammen: Bezugspersonen
+          passen ihre Sprache aktiv an das Kind an und schaffen so optimale Lernbedingungen.
+        </div>
+        <div class="feedback-box falsch" id="f3-f">
+          <strong>Nicht ganz.</strong> Motherese / Child-Directed Speech gehört zum
+          <strong>Interaktionismus</strong>. Bruner nennt das gesamte Unterstützungssystem der
+          Bezugspersonen <strong>LASS</strong> (Language Acquisition Support System). Der Nativismus
+          würde sagen: Das LAD ermöglicht Spracherwerb auch ohne Motherese.
+        </div>
+      </div>
+
+      <!-- Aussage 4 -->
+      <div class="aussage-block" id="a4">
+        <div class="aussage-ziffer">Aussage 4</div>
+        <p class="aussage-text">
+          „Kinder bilden Sätze wie ‚Ich habe gegeht' oder ‚Er hat gekommt' –
+          Wortformen, die sie nie gehört haben. Das zeigt: Sie wenden unbewusst eine
+          grammatische Regel an, nicht bloße Imitation."
+        </p>
+        <div class="antwort-buttons">
+          <button class="antwort-btn blau" onclick="pruefen(4,'B','N')">Behaviorismus</button>
+          <button class="antwort-btn gruen" onclick="pruefen(4,'N','N')">Nativismus</button>
+          <button class="antwort-btn orange" onclick="pruefen(4,'I','N')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="f4-r">
+          <strong>Richtig!</strong> Die sogenannte <strong>Übergeneralisierung</strong> ist eines der
+          stärksten Argumente des Nativismus <em>gegen</em> den Behaviorismus: Wenn Kinder Formen
+          bilden, die sie nie gehört haben, kann Imitation nicht die alleinige Erklärung sein.
+          Chomsky schließt daraus, dass Kinder mit einer angeborenen Fähigkeit ausgestattet sind,
+          grammatische Strukturen zu erkennen und anzuwenden – dem <strong>LAD</strong>.
+        </div>
+        <div class="feedback-box falsch" id="f4-f">
+          <strong>Nicht ganz.</strong> Übergeneralisierung (z. B. „gegeht" statt „gegangen", „gekommt" statt „gekommen")
+          gehört zum <strong>Nativismus</strong>. Der Behaviorismus kann das gerade
+          <em>nicht</em> erklären: Imitation würde nur Formen reproduzieren, die das Kind gehört
+          hat. Die eigenständige Regelanwendung belegt für Chomsky das angeborene LAD.
+        </div>
+      </div>
+
+      <!-- Aussage 5 -->
+      <div class="aussage-block" id="a5">
+        <div class="aussage-ziffer">Aussage 5</div>
+        <p class="aussage-text">
+          „Wenn Kind und Bezugsperson gemeinsam auf dasselbe Objekt schauen und die
+          Bezugsperson es benennt, lernt das Kind das Wort besonders effektiv.
+          Dieses Phänomen heißt ‚gemeinsame Aufmerksamkeit'."
+        </p>
+        <div class="antwort-buttons">
+          <button class="antwort-btn blau" onclick="pruefen(5,'B','I')">Behaviorismus</button>
+          <button class="antwort-btn gruen" onclick="pruefen(5,'N','I')">Nativismus</button>
+          <button class="antwort-btn orange" onclick="pruefen(5,'I','I')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="f5-r">
+          <strong>Richtig!</strong> <strong>Joint Attention</strong> (gemeinsame Aufmerksamkeit)
+          ist ein Schlüsselbegriff des <strong>Interaktionismus</strong>. Bruner und Vygotsky
+          betonen, dass Sprache in sozialen Situationen gelernt wird, in denen Kind und Bezugsperson
+          auf denselben Gegenstand gerichtet sind. Ohne diesen sozialen Kontext ist Wortlernen
+          deutlich weniger effizient.
+        </div>
+        <div class="feedback-box falsch" id="f5-f">
+          <strong>Nicht ganz.</strong> Joint Attention (gemeinsame Aufmerksamkeit) gehört zum
+          <strong>Interaktionismus</strong> (Bruner, Vygotsky). Es geht um die Qualität der sozialen
+          Interaktion, nicht um Verstärkung (Behaviorismus) oder angeborene Strukturen (Nativismus).
+        </div>
+      </div>
+
+      <!-- Aussage 6 -->
+      <div class="aussage-block" id="a6">
+        <div class="aussage-ziffer">Aussage 6</div>
+        <p class="aussage-text">
+          „Sprache entsteht durch ständiges Wiederholen, Nachsprechen und Korrigieren –
+          wie das Erlernen jeder anderen Fertigkeit, z. B. des Fahrradfahrens."
+        </p>
+        <div class="antwort-buttons">
+          <button class="antwort-btn blau" onclick="pruefen(6,'B','B')">Behaviorismus</button>
+          <button class="antwort-btn gruen" onclick="pruefen(6,'N','B')">Nativismus</button>
+          <button class="antwort-btn orange" onclick="pruefen(6,'I','B')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="f6-r">
+          <strong>Richtig!</strong> Diese Aussage beschreibt das Reiz-Reaktions-Verstärkungs-Schema
+          des <strong>Behaviorismus</strong>. Skinner sieht Spracherwerb als Sonderfall allgemeinen
+          Lernens: Nachahmung + Bestätigung führen zur Festigung sprachlicher Muster – kein
+          Unterschied zum motorischen Lernen.
+        </div>
+        <div class="feedback-box falsch" id="f6-f">
+          <strong>Nicht ganz.</strong> Das Vergleichen von Sprache mit dem Erlernen jeder anderen
+          Fertigkeit (Wiederholen, Korrigieren) ist das Kernbild des <strong>Behaviorismus</strong>
+          (Skinner). Chomsky kritisierte genau diesen Gedanken: Sprache ist so kreativ und komplex,
+          dass sie sich grundlegend von motorischen Fertigkeiten unterscheidet.
+        </div>
+      </div>
+
+    </div><!-- /aussagen-liste -->
+
+    <div class="ergebnis-banner" id="ergebnis-banner"></div>
+
+    <button class="weiter-btn" id="weiter-s1" onclick="zeigeStudie2()">
+      Weiter zu Stufe 2 →
+    </button>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       STUFE 2 – Theorie anwenden: Das Wolfskind
+  ══════════════════════════════════════════ -->
+  <section class="stufe" id="stufe2">
+
+    <h2 class="stufen-titel">Stufe 2 – Theorie anwenden</h2>
+    <div class="stufen-beschreibung">
+      <strong>Szenario: Das Wolfskind</strong><br>
+      Ein Kind wächst bis zum 12. Lebensjahr ohne menschlichen Sprachkontakt auf.
+      Mit 13 Jahren wird es gefunden und erhält intensiven Sprachunterricht.
+      Drei Wissenschaftlerinnen geben je eine Erklärung ab – ohne ihren Namen zu nennen.<br><br>
+      <strong>Aufgabe:</strong> Ordne jede Erklärung (A, B, C) der richtigen Theorie zu.
+    </div>
+
+    <!-- Animation: Wolfskind-Szenen -->
+    <div class="szenen-container" aria-label="Wolfskind-Szenenanimation">
+      <div class="szenen-reihe">
+        <div class="szene" id="szene1">
+          <div class="szene-icon">🌲</div>
+          <div class="szene-text">Kind allein im Wald (0–12 J.)</div>
+        </div>
+        <div class="szene-pfeil" id="pfeil1">→</div>
+        <div class="szene" id="szene2">
+          <div class="szene-icon">🧑‍🤝‍🧑</div>
+          <div class="szene-text">Rettung mit 13 Jahren</div>
+        </div>
+        <div class="szene-pfeil" id="pfeil2">→</div>
+        <div class="szene" id="szene3">
+          <div class="szene-icon">📚</div>
+          <div class="szene-text">Intensiver Sprachunterricht</div>
+        </div>
+      </div>
+      <div class="szenario-text">
+        <strong>Historisches Beispiel:</strong> Der reale Fall „Genie" (USA, 1970) zeigt:
+        Das Mädchen lernte nach der Rettung zwar Vokabular, entwickelte aber nie vollständige
+        Grammatik. Die Frage, <em>warum</em>, beantwortet jede Theorie anders.
+      </div>
+    </div>
+
+    <div class="zuordnung-container" id="zuordnung-container">
+
+      <!-- Erklärung A → Nativismus -->
+      <div class="erklaerung-block" id="e1">
+        <div class="erklaerung-label">Erklärung A</div>
+        <p class="erklaerung-text" id="e1-text"></p>
+        <div class="theorie-auswahl">
+          <button class="theorie-auswahl-btn blau" onclick="pruefen2(1,'B')">Behaviorismus</button>
+          <button class="theorie-auswahl-btn gruen" onclick="pruefen2(1,'N')">Nativismus</button>
+          <button class="theorie-auswahl-btn orange" onclick="pruefen2(1,'I')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="fe1-r"></div>
+        <div class="feedback-box falsch" id="fe1-f"></div>
+      </div>
+
+      <!-- Erklärung B → Behaviorismus -->
+      <div class="erklaerung-block" id="e2">
+        <div class="erklaerung-label">Erklärung B</div>
+        <p class="erklaerung-text" id="e2-text"></p>
+        <div class="theorie-auswahl">
+          <button class="theorie-auswahl-btn blau" onclick="pruefen2(2,'B')">Behaviorismus</button>
+          <button class="theorie-auswahl-btn gruen" onclick="pruefen2(2,'N')">Nativismus</button>
+          <button class="theorie-auswahl-btn orange" onclick="pruefen2(2,'I')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="fe2-r"></div>
+        <div class="feedback-box falsch" id="fe2-f"></div>
+      </div>
+
+      <!-- Erklärung C → Interaktionismus -->
+      <div class="erklaerung-block" id="e3">
+        <div class="erklaerung-label">Erklärung C</div>
+        <p class="erklaerung-text" id="e3-text"></p>
+        <div class="theorie-auswahl">
+          <button class="theorie-auswahl-btn blau" onclick="pruefen2(3,'B')">Behaviorismus</button>
+          <button class="theorie-auswahl-btn gruen" onclick="pruefen2(3,'N')">Nativismus</button>
+          <button class="theorie-auswahl-btn orange" onclick="pruefen2(3,'I')">Interaktionismus</button>
+        </div>
+        <div class="feedback-box richtig" id="fe3-r"></div>
+        <div class="feedback-box falsch" id="fe3-f"></div>
+      </div>
+
+    </div><!-- /zuordnung-container -->
+
+    <!-- Abschluss-Panel -->
+    <div class="abschluss-panel" id="abschluss-panel">
+      <h3>Zusammenfassung – Was die Theorien gemeinsam sagen</h3>
+      <p>
+        Alle drei Theorien kommen beim Wolfskind-Szenario zum gleichen
+        <em>praktischen</em> Schluss: Frühe Intervention ist entscheidend.
+        Aber die <em>Begründung</em> ist jeweils eine andere:
+      </p>
+      <p>
+        <strong style="color:var(--blau)">Behaviorismus (Skinner):</strong>
+        Ohne Modelle und Verstärkung konnte kein Lernmechanismus aktiviert werden.
+        Intensiver Unterricht hilft, aber die fehlende Übungszeit ist schwer aufzuholen.
+      </p>
+      <p>
+        <strong style="color:var(--gruen)">Nativismus (Chomsky/Lenneberg):</strong>
+        Das LAD ist nach der kritischen Periode inaktiv. Grammatikfähigkeit kann nicht
+        mehr vollständig erworben werden – unabhängig von der Intensität des Trainings.
+      </p>
+      <p>
+        <strong style="color:var(--orange)">Interaktionismus (Bruner/Vygotsky):</strong>
+        Ohne LASS und Joint Attention fehlte das soziale Fundament. Spätere Förderung
+        kann einen Teil aufholen, aber nicht die frühe ko-konstruierte Grundlage ersetzen.
+      </p>
+    </div>
+
+    <!-- Theorievergleich-Tabelle -->
+    <div id="vergleich-bereich" style="display:none; margin-top:1.5rem;">
+      <hr class="trenner">
+      <h3 style="font-size:1rem; font-weight:700; margin-bottom:0.75rem;">Schnellübersicht: Die drei Theorien</h3>
+      <table class="vergleich-tabelle" aria-label="Vergleich der Spracherwerbstheorien">
+        <thead>
+          <tr>
+            <th>Theorie</th>
+            <th>Vertreter</th>
+            <th>Schlüsselbegriff</th>
+            <th>Schwachpunkt</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong style="color:var(--blau)">Behaviorismus</strong></td>
+            <td>Skinner (1957)</td>
+            <td>Operante Konditionierung, Imitation</td>
+            <td>Kann Übergeneralisierung nicht erklären</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--gruen)">Nativismus</strong></td>
+            <td>Chomsky (1957/65)</td>
+            <td>LAD, Universalgrammatik, krit. Periode</td>
+            <td>LAD empirisch nicht direkt nachweisbar</td>
+          </tr>
+          <tr>
+            <td><strong style="color:var(--orange)">Interaktionismus</strong></td>
+            <td>Bruner &amp; Vygotsky (1983)</td>
+            <td>LASS, Motherese, Joint Attention, ZPD</td>
+            <td>Erklärt universale Sequenz nicht vollständig</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="abschluss-badge" id="abschluss-badge">
+      <div class="emoji">🎓</div>
+      <h2>Simulation abgeschlossen!</h2>
+      <p>
+        Du hast alle drei Spracherwerbstheorien auf Aussagen und ein reales Szenario angewendet.
+        Dieses Wissen wird in Deutsch- und Englisch-Klausuren der Oberstufe direkt geprüft.
+      </p>
+      <button class="neustart-btn" onclick="neustart()">Neu starten</button>
+    </div>
+
+  </section>
+
+</div><!-- /seite-container -->
+
+<script>
+  // ── Zustand ──
+  var s1Punkte = 0;
+  var s1Richtige = {};
+  var s2Richtige = {};
+
+  // ── Stufe-2-Erklärungen (geshuffelt bei Laden) ──
+  var erklaerungen = [
+    {
+      text: "Das LAD (Language Acquisition Device) wird in der kritischen Periode durch Sprachkontakt aktiviert. Da das Kind bis 12 Jahre keinen solchen Kontakt hatte, ist das Zeitfenster abgelaufen. Vollständige Grammatikkompetenz ist jetzt nicht mehr erreichbar – auch intensives Training kann das nicht ändern.",
+      korrekt: "N",
+      richtig: "Richtig! Das ist die Erklärung des <strong>Nativismus</strong> (Chomsky/Lenneberg). Das LAD ist nach der kritischen Periode inaktiv. Der reale Fall „Genie" belegt: Sie lernte Vokabular, entwickelte aber nie vollständige Grammatikstrukturen – genau wie diese Theorie vorhersagt.",
+      falsch: "Nicht ganz. Diese Erklärung gehört zum <strong>Nativismus</strong> (Chomsky/Lenneberg): Das LAD war in der kritischen Periode nicht aktiviert und ist jetzt inaktiv. Intensives Training kann das nach Lenneberg nicht ausgleichen."
+    },
+    {
+      text: "Ohne Bezugspersonen als sprachliche Modelle und ohne Verstärkung durch Lob oder Korrektur konnte kein Sprachlernen stattfinden. Intensives Training mit klarem Feedback kann jetzt einiges aufholen – Sprache ist schließlich eine erlernbare Fertigkeit wie jede andere.",
+      korrekt: "B",
+      richtig: "Richtig! Das ist die Erklärung des <strong>Behaviorismus</strong> (Skinner). Ohne Modelle zum Imitieren und ohne Verstärkung (Lob/Korrektur) blieb der Konditionierungsmechanismus inaktiv. Späteres Training mit systematischem Feedback sollte nach dieser Theorie Erfolg zeigen.",
+      falsch: "Nicht ganz. Diese Erklärung gehört zum <strong>Behaviorismus</strong> (Skinner). Der Fokus liegt auf fehlenden Modellen und fehlender Verstärkung – nicht auf angeborenen Strukturen oder sozialem Kontext."
+    },
+    {
+      text: "Ohne soziale Interaktion, gemeinsame Aufmerksamkeit (Joint Attention) und das Unterstützungssystem der Bezugspersonen (LASS) fehlte die Grundlage für natürliche Sprachentwicklung. Spätere Förderung kann helfen, ersetzt aber nicht das frühe ko-konstruierte Fundament.",
+      korrekt: "I",
+      richtig: "Richtig! Das ist die Erklärung des <strong>Interaktionismus</strong> (Bruner/Vygotsky). Ohne LASS, Motherese und Joint Attention fehlte das soziale Gerüst. Vygotskys „Zone of Proximal Development" konnte nie genutzt werden, weil niemand als Scaffolding-Partner da war.",
+      falsch: "Nicht ganz. Diese Erklärung gehört zum <strong>Interaktionismus</strong> (Bruner/Vygotsky). Die Schlüsselbegriffe sind LASS, Joint Attention und Vygotskys Zone der nächsten Entwicklung – alles Konzepte, die die soziale Basis des Spracherwerbs betonen."
+    }
+  ];
+
+  // Fisher-Yates-Shuffle beim Laden
+  (function shuffleErklaerungen() {
+    for (var i = erklaerungen.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var swap = erklaerungen[i];
+      erklaerungen[i] = erklaerungen[j];
+      erklaerungen[j] = swap;
+    }
+    document.getElementById('e1-text').textContent = erklaerungen[0].text;
+    document.getElementById('e2-text').textContent = erklaerungen[1].text;
+    document.getElementById('e3-text').textContent = erklaerungen[2].text;
+  })();
+
+  // ── Theorienkarten animiert einblenden ──
+  window.addEventListener('DOMContentLoaded', function() {
+    setTimeout(function() { document.getElementById('tk1').classList.add('eingeblendet'); }, 100);
+    setTimeout(function() { document.getElementById('tk2').classList.add('eingeblendet'); }, 250);
+    setTimeout(function() { document.getElementById('tk3').classList.add('eingeblendet'); }, 400);
+  });
+
+  // ── Stufe 1: Prüfen ──
+  function pruefen(nr, gewaehlt, korrekt) {
+    if (s1Richtige[nr] !== undefined) return;
+
+    var block = document.getElementById('a' + nr);
+    var buttons = block.querySelectorAll('.antwort-btn');
+    var richtigBox = document.getElementById('f' + nr + '-r');
+    var falschBox = document.getElementById('f' + nr + '-f');
+
+    buttons.forEach(function(btn) { btn.disabled = true; });
+
+    var farbMap = { B: 'blau', N: 'gruen', I: 'orange' };
+    var btnFarb = farbMap[gewaehlt];
+
+    if (gewaehlt === korrekt) {
+      s1Richtige[nr] = true;
+      s1Punkte++;
+      document.getElementById('punkte-s1').textContent = s1Punkte;
+      // Gewählten Button grün markieren
+      buttons.forEach(function(btn) {
+        if (btn.classList.contains(farbMap[gewaehlt])) {
+          btn.classList.add('richtig-aktiv');
+        }
+      });
+      richtigBox.classList.add('sichtbar');
+      if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 1, item: nr, result: 'correct' });
+    } else {
+      s1Richtige[nr] = false;
+      // Gewählten Button rot markieren, richtigen grün zeigen
+      buttons.forEach(function(btn) {
+        if (btn.classList.contains(farbMap[gewaehlt])) {
+          btn.classList.add('falsch-aktiv');
+        }
+        if (btn.classList.contains(farbMap[korrekt])) {
+          btn.classList.add('korrekt-reveal');
+        }
+      });
+      falschBox.classList.add('sichtbar');
+      if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 1, item: nr, result: 'incorrect' });
+    }
+
+    block.classList.add('beantwortet');
+
+    // Weiter-Button und Ergebnis-Banner zeigen wenn alle 6 beantwortet
+    var alle = Object.keys(s1Richtige).length;
+    if (alle === 6) {
+      var banner = document.getElementById('ergebnis-banner');
+      var richtige = Object.values(s1Richtige).filter(Boolean).length;
+      var bewertung = richtige === 6
+        ? '🏆 Ausgezeichnet! Alle 6 richtig – du kennst die Theorien sehr gut.'
+        : richtige >= 4
+          ? '👍 ' + richtige + ' von 6 richtig – sehr gut! Schau dir die Korrekturen noch einmal an.'
+          : richtige >= 2
+            ? '📚 ' + richtige + ' von 6 richtig – lies die Feedbacks und probiere Stufe 2.'
+            : '💡 ' + richtige + ' von 6 richtig – kein Problem, die Feedbacks erklären es genau.';
+      banner.textContent = bewertung;
+      banner.classList.add('sichtbar');
+      document.getElementById('weiter-s1').classList.add('sichtbar');
+    }
+  }
+
+  // ── Stufe 2 zeigen + Szenenanimation ──
+  function zeigeStudie2() {
+    document.getElementById('stufe1').classList.remove('aktiv');
+    document.getElementById('stufe2').classList.add('aktiv');
+
+    // Fortschritts-Dots aktualisieren
+    document.getElementById('dot1').classList.remove('aktiv');
+    document.getElementById('dot1').classList.add('fertig');
+    document.getElementById('dot2').classList.add('aktiv');
+    document.getElementById('fortschritt-label').textContent = 'Stufe 2 von 2';
+    document.querySelector('.fortschritt').setAttribute('aria-label', 'Fortschritt: Stufe 2 von 2');
+
+    // Szenenanimation
+    setTimeout(function() { document.getElementById('szene1').classList.add('sichtbar'); }, 200);
+    setTimeout(function() { document.getElementById('pfeil1').classList.add('sichtbar'); }, 700);
+    setTimeout(function() { document.getElementById('szene2').classList.add('sichtbar'); }, 1100);
+    setTimeout(function() { document.getElementById('pfeil2').classList.add('sichtbar'); }, 1600);
+    setTimeout(function() { document.getElementById('szene3').classList.add('sichtbar'); }, 2000);
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // ── Stufe 2: Prüfen ──
+  function pruefen2(nr, gewaehlt) {
+    if (s2Richtige[nr] !== undefined) return;
+
+    var korrekt = erklaerungen[nr - 1].korrekt;
+    var block = document.getElementById('e' + nr);
+    var buttons = block.querySelectorAll('.theorie-auswahl-btn');
+    var richtigBox = document.getElementById('fe' + nr + '-r');
+    var falschBox = document.getElementById('fe' + nr + '-f');
+
+    buttons.forEach(function(btn) { btn.disabled = true; });
+
+    var farbMap = { B: 'blau', N: 'gruen', I: 'orange' };
+
+    if (gewaehlt === korrekt) {
+      s2Richtige[nr] = true;
+      buttons.forEach(function(btn) {
+        if (btn.classList.contains(farbMap[gewaehlt])) {
+          btn.classList.add('gewaehlt-' + farbMap[gewaehlt]);
+        }
+      });
+      richtigBox.innerHTML = erklaerungen[nr - 1].richtig;
+      richtigBox.classList.add('sichtbar');
+      block.classList.add('richtig-zugeordnet');
+      if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 2, item: nr, result: 'correct' });
+    } else {
+      s2Richtige[nr] = false;
+      buttons.forEach(function(btn) {
+        if (btn.classList.contains(farbMap[gewaehlt])) {
+          btn.classList.add('falsch-aktiv');
+        }
+        if (btn.classList.contains(farbMap[korrekt])) {
+          btn.classList.add('korrekt-reveal');
+        }
+      });
+      falschBox.innerHTML = erklaerungen[nr - 1].falsch;
+      falschBox.classList.add('sichtbar');
+      block.classList.add('falsch-zugeordnet');
+      if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 2, item: nr, result: 'incorrect' });
+    }
+
+    // Alle 3 zugeordnet?
+    if (Object.keys(s2Richtige).length === 3) {
+      zeigeAbschluss();
+    }
+  }
+
+  function zeigeAbschluss() {
+    document.getElementById('abschluss-panel').classList.add('sichtbar');
+    document.getElementById('vergleich-bereich').style.display = 'block';
+    setTimeout(function() {
+      document.getElementById('abschluss-badge').classList.add('sichtbar');
+      document.getElementById('dot2').classList.remove('aktiv');
+      document.getElementById('dot2').classList.add('fertig');
+    }, 600);
+    if (window.dataLayer) window.dataLayer.push({ event: 'sim_complete', step: 2 });
+  }
+
+  function neustart() {
+    location.reload();
+  }
+</script>
+
+</body>
+</html>

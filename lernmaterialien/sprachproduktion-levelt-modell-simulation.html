@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Sprachproduktion nach Levelt: Interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation des Levelt-Modells: Ordne Versprecher den vier Sprachproduktionsstufen zu und entdecke, wie der innere Monitor Fehler abfängt.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Levelt-Modell, Sprachproduktion, Psycholinguistik, Versprecher, innerer Monitor, Tip-of-the-tongue">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachproduktion-levelt-modell-simulation.html">
+  <meta property="og:title" content="Sprachproduktion nach Levelt: Interaktive Simulation">
+  <meta property="og:description" content="Interaktive Simulation des Levelt-Modells: Ordne Versprecher den vier Sprachproduktionsstufen zu und entdecke, wie der innere Monitor Fehler abfängt.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachproduktion-levelt-modell-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprachproduktion nach Levelt: Interaktive Simulation",
+  "description":"Interaktive Simulation des Levelt-Modells: Ordne Versprecher den vier Sprachproduktionsstufen zu und entdecke, wie der innere Monitor Fehler abfängt.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachproduktion-levelt-modell-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blau:        #1d4ed8;
+      --blau-light:  #dbeafe;
+      --blau-mid:    #3b82f6;
+      --lila:        #7c3aed;
+      --lila-light:  #ede9fe;
+      --gruen:       #16a34a;
+      --gruen-light: #dcfce7;
+      --rot:         #dc2626;
+      --rot-light:   #fee2e2;
+      --amber:       #d97706;
+      --amber-light: #fef3c7;
+      --gray-50:     #f9fafb;
+      --gray-100:    #f3f4f6;
+      --gray-200:    #e5e7eb;
+      --gray-300:    #d1d5db;
+      --gray-400:    #9ca3af;
+      --gray-500:    #6b7280;
+      --gray-600:    #4b5563;
+      --gray-700:    #374151;
+      --gray-800:    #1f2937;
+      --radius:      10px;
+      --shadow:      0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* Site Header */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--blau);
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
+
+    /* Main layout */
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* Page heading */
+    .page-header {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem 1.5rem 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--lila-light);
+      color: var(--lila);
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.2em 0.7em;
+      border-radius: 99px;
+      margin-bottom: 0.6rem;
+    }
+    .page-header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+    .page-header p {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+
+    /* Canvas section */
+    .canvas-section {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .canvas-section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      margin-bottom: 0.75rem;
+    }
+    canvas#levelt-canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      background: #f8f9fb;
+    }
+    .canvas-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 0.75rem;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.78rem;
+      color: var(--gray-600);
+    }
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Task stages */
+    .stage { margin-bottom: 2rem; }
+    .stage.hidden { display: none; }
+
+    .stage-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .stage-badge {
+      background: var(--blau);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.25em 0.75em;
+      border-radius: 99px;
+      white-space: nowrap;
+    }
+    .stage-header h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gray-800);
+    }
+
+    /* Scenario card */
+    .scenario-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .scenario-card.hidden { display: none; }
+
+    .scenario-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--gray-500);
+      margin-bottom: 0.5rem;
+    }
+    .scenario-quote {
+      background: var(--gray-100);
+      border-left: 4px solid var(--blau-mid);
+      padding: 0.85rem 1rem;
+      border-radius: 0 6px 6px 0;
+      font-style: italic;
+      color: var(--gray-700);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+    .scenario-question {
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 1rem;
+    }
+
+    /* Options */
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .option-btn {
+      background: var(--gray-100);
+      border: 2px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      text-align: left;
+      cursor: pointer;
+      font-size: 0.95rem;
+      color: var(--gray-700);
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+      width: 100%;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blau-mid);
+      background: var(--blau-light);
+      color: var(--blau);
+    }
+    .option-btn:disabled { cursor: default; }
+    .option-btn.correct {
+      border-color: var(--gruen);
+      background: var(--gruen-light);
+      color: var(--gruen);
+    }
+    .option-btn.wrong {
+      border-color: var(--rot);
+      background: var(--rot-light);
+      color: var(--rot);
+    }
+
+    /* Feedback box */
+    .feedback-box {
+      margin-top: 1rem;
+      padding: 1rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      display: none;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box.correct-fb {
+      background: var(--gruen-light);
+      border: 1px solid var(--gruen);
+      color: #14532d;
+    }
+    .feedback-box.wrong-fb {
+      background: var(--rot-light);
+      border: 1px solid var(--rot);
+      color: #7f1d1d;
+    }
+    .concept-tag {
+      display: inline-block;
+      background: var(--blau);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.15em 0.6em;
+      border-radius: 4px;
+      margin-right: 0.3em;
+    }
+
+    /* Next button */
+    .next-btn {
+      margin-top: 1rem;
+      background: var(--blau);
+      color: #fff;
+      border: none;
+      padding: 0.65rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: none;
+      transition: background 0.15s;
+    }
+    .next-btn.show { display: inline-block; }
+    .next-btn:hover { background: #1e40af; }
+
+    /* Progress bar */
+    .progress-bar-wrap {
+      background: var(--gray-200);
+      border-radius: 99px;
+      height: 6px;
+      margin-bottom: 1.25rem;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--blau-mid);
+      border-radius: 99px;
+      transition: width 0.4s ease;
+    }
+
+    /* Summary / Score */
+    .summary-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      display: none;
+    }
+    .summary-card.show { display: block; }
+    .summary-score {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--blau);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .summary-label {
+      color: var(--gray-500);
+      font-size: 0.9rem;
+      margin-bottom: 1.25rem;
+    }
+    .summary-text {
+      color: var(--gray-700);
+      font-size: 0.95rem;
+      max-width: 480px;
+      margin: 0 auto 1.5rem;
+      text-align: left;
+    }
+
+    /* Vorhersage-Badge */
+    .vorhersage-badge {
+      display: inline-block;
+      background: var(--amber-light);
+      color: var(--amber);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2em 0.7em;
+      border-radius: 99px;
+      margin-bottom: 0.6rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Info box */
+    .info-box {
+      background: var(--blau-light);
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: 0.9rem;
+      color: #1e3a8a;
+      margin-bottom: 1.5rem;
+    }
+    .info-box strong { color: #1d4ed8; }
+
+    /* Responsive */
+    @media (max-width: 420px) {
+      .page-header h1 { font-size: 1.25rem; }
+      .container { padding: 1rem 0.75rem 2rem; }
+      .scenario-card { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="psycholinguistik">
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <!-- GTM / Tracking -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'simulation_load',
+      asset_type: 'simulation',
+      topic_cluster: 'psycholinguistik',
+      slug: 'sprachproduktion-levelt-modell-simulation'
+    });
+  </script>
+
+  <!-- Site Header -->
+  <header class="site-header">
+    <a href="/" class="site-logo">Nachhilfe Mentor</a>
+    <span class="breadcrumb">/ Lernsimulationen / Sprachproduktion nach Levelt</span>
+  </header>
+
+  <main class="container">
+
+    <!-- Page Header -->
+    <div class="page-header">
+      <span class="badge">Psycholinguistik</span>
+      <h1>Sprachproduktion nach Levelt</h1>
+      <p>Verstehe, wie Versprecher entstehen – und warum dein Gehirn Fehler manchmal erkennt, bevor du sie ausgesprochen hast.</p>
+    </div>
+
+    <!-- Canvas: animiertes Levelt-Modell -->
+    <div class="canvas-section">
+      <h2>Das Levelt-Modell (1989) – animiert</h2>
+      <canvas id="levelt-canvas" width="700" height="400"></canvas>
+      <div class="canvas-legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#f59e0b;"></div>
+          Informationsfluss (Hauptpfad)
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#60a5fa;"></div>
+          Monitor-Rückkopplung
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#a78bfa;border:2px solid #7c3aed;background:transparent;"></div>
+          Aktive Stage
+        </div>
+      </div>
+    </div>
+
+    <!-- Modell-Übersicht -->
+    <div class="canvas-section" style="margin-bottom:1.75rem;">
+      <h2 style="margin-bottom:1rem;">Die vier Stufen im Überblick</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:0.75rem;">
+        <div style="background:#dbeafe;border:2px solid #1d4ed8;border-radius:8px;padding:0.85rem;">
+          <div style="font-weight:700;color:#1d4ed8;font-size:0.85rem;margin-bottom:0.3rem;">1. Konzeptualisierung</div>
+          <div style="font-size:0.8rem;color:#1e3a8a;">Was will ich sagen? Welche Idee wird zur Botschaft?</div>
+        </div>
+        <div style="background:#ede9fe;border:2px solid #7c3aed;border-radius:8px;padding:0.85rem;">
+          <div style="font-weight:700;color:#7c3aed;font-size:0.85rem;margin-bottom:0.3rem;">2. Formulierung</div>
+          <div style="font-size:0.8rem;color:#4c1d95;">Wörter finden (Lemma) + Lautform planen (Lexem/Phonologie)</div>
+        </div>
+        <div style="background:#dcfce7;border:2px solid #16a34a;border-radius:8px;padding:0.85rem;">
+          <div style="font-weight:700;color:#16a34a;font-size:0.85rem;margin-bottom:0.3rem;">3. Artikulation</div>
+          <div style="font-size:0.8rem;color:#14532d;">Motorische Ausführung: Zunge, Lippen, Stimmbänder</div>
+        </div>
+        <div style="background:#fef3c7;border:2px solid #d97706;border-radius:8px;padding:0.85rem;">
+          <div style="font-weight:700;color:#d97706;font-size:0.85rem;margin-bottom:0.3rem;">Monitor</div>
+          <div style="font-size:0.8rem;color:#92400e;">Innere + äußere Rückkopplung – erkennt Fehler</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STUFE 1 -->
+    <div id="stage1" class="stage">
+      <div class="stage-header">
+        <span class="stage-badge">Stufe 1 von 2</span>
+        <h2>Fehlertypen lokalisieren</h2>
+      </div>
+
+      <div class="info-box">
+        <strong>Aufgabe:</strong> Lies jedes Szenario und entscheide: In welcher Stufe des Levelt-Modells entsteht dieser Fehler oder dieses Phänomen?
+      </div>
+
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progress-s1" style="width:0%"></div>
+      </div>
+
+      <!-- Szenario 1 -->
+      <div class="scenario-card" id="s1-q1">
+        <div class="scenario-label">Szenario 1 von 4</div>
+        <div class="vorhersage-badge">Vorhersage</div>
+        <div class="scenario-quote">„Kannst du mir den Stuhl geben? – Oh, ich meine natürlich den Tisch."</div>
+        <p class="scenario-question">Wo entsteht dieser Versprecher im Levelt-Modell?</p>
+        <div class="options">
+          <button class="option-btn" data-stage="konz" data-correct="false" onclick="answerS1(this, 1)">Konzeptualisierung – Die falsche Absicht wurde gebildet</button>
+          <button class="option-btn" data-stage="form" data-correct="true" onclick="answerS1(this, 1)">Formulierung – Das falsche Lemma wurde aktiviert</button>
+          <button class="option-btn" data-stage="arti" data-correct="false" onclick="answerS1(this, 1)">Artikulation – Die Muskulatur hat einen Fehler gemacht</button>
+        </div>
+        <div class="feedback-box" id="fb-s1-q1"></div>
+        <button class="next-btn" id="next-s1-q1" onclick="nextS1(2)">Weiter →</button>
+      </div>
+
+      <!-- Szenario 2 -->
+      <div class="scenario-card hidden" id="s1-q2">
+        <div class="scenario-label">Szenario 2 von 4</div>
+        <div class="vorhersage-badge">Vorhersage</div>
+        <div class="scenario-quote">„Wie heißt das Ding nochmal… es liegt mir auf der Zunge! Der… der… dieser Vierbeiner mit dem Geweih – ein…"</div>
+        <p class="scenario-question">Das Konzept ist klar, aber das Wort fehlt. Wo liegt das Problem?</p>
+        <div class="options">
+          <button class="option-btn" data-stage="konz" data-correct="false" onclick="answerS1(this, 2)">Konzeptualisierung – Die Idee ist noch nicht klar</button>
+          <button class="option-btn" data-stage="form" data-correct="true" onclick="answerS1(this, 2)">Formulierung – Die phonologische Enkodierung scheitert (Tip-of-the-tongue)</button>
+          <button class="option-btn" data-stage="arti" data-correct="false" onclick="answerS1(this, 2)">Artikulation – Die Aussprache ist fehlerhaft</button>
+        </div>
+        <div class="feedback-box" id="fb-s1-q2"></div>
+        <button class="next-btn" id="next-s1-q2" onclick="nextS1(3)">Weiter →</button>
+      </div>
+
+      <!-- Szenario 3 -->
+      <div class="scenario-card hidden" id="s1-q3">
+        <div class="scenario-label">Szenario 3 von 4</div>
+        <div class="vorhersage-badge">Vorhersage</div>
+        <div class="scenario-quote">„Ich hab den Wasser Hahn – nein, den Hasser Wahn – äh, den Wasserhahn aufgedreht."</div>
+        <p class="scenario-question">Laute wurden vertauscht (Spoonerismus). In welcher Stufe passiert das?</p>
+        <div class="options">
+          <button class="option-btn" data-stage="konz" data-correct="false" onclick="answerS1(this, 3)">Konzeptualisierung – Die Absicht war fehlerhaft</button>
+          <button class="option-btn" data-stage="form" data-correct="true" onclick="answerS1(this, 3)">Formulierung – Phonologische Enkodierung: Laute wurden falsch angeordnet</button>
+          <button class="option-btn" data-stage="arti" data-correct="false" onclick="answerS1(this, 3)">Artikulation – Die Zunge ist verrutscht</button>
+        </div>
+        <div class="feedback-box" id="fb-s1-q3"></div>
+        <button class="next-btn" id="next-s1-q3" onclick="nextS1(4)">Weiter →</button>
+      </div>
+
+      <!-- Szenario 4 -->
+      <div class="scenario-card hidden" id="s1-q4">
+        <div class="scenario-label">Szenario 4 von 4</div>
+        <div class="vorhersage-badge">Vorhersage</div>
+        <div class="scenario-quote">„Ich habe gestri… gestrichen… ich habe gestern gestrichen." (Der Sprecher verhaspelt sich beim Sprechen selbst, nicht beim Wortabruf.)</div>
+        <p class="scenario-question">Das Konzept und das Wort sind klar – nur die Ausführung stockt. Wo liegt das Problem?</p>
+        <div class="options">
+          <button class="option-btn" data-stage="konz" data-correct="false" onclick="answerS1(this, 4)">Konzeptualisierung – Die Idee ist noch in Bildung</button>
+          <button class="option-btn" data-stage="form" data-correct="false" onclick="answerS1(this, 4)">Formulierung – Das Lemma ist nicht abrufbar</button>
+          <button class="option-btn" data-stage="arti" data-correct="true" onclick="answerS1(this, 4)">Artikulation – Die motorische Ausführung stockt</button>
+        </div>
+        <div class="feedback-box" id="fb-s1-q4"></div>
+        <button class="next-btn" id="next-s1-q4" onclick="finishStage1()">Zur Stufe 2 →</button>
+      </div>
+
+      <!-- Zwischenergebnis Stufe 1 -->
+      <div class="summary-card" id="summary-s1">
+        <div class="summary-score" id="score-s1-display">–</div>
+        <div class="summary-label">von 4 Szenarien richtig</div>
+        <div class="summary-text" id="summary-s1-text"></div>
+        <button class="next-btn show" onclick="startStage2()" style="margin:0 auto;display:block;">Stufe 2 starten →</button>
+      </div>
+    </div>
+
+    <!-- STUFE 2 -->
+    <div id="stage3" class="stage hidden">
+      <div class="stage-header">
+        <span class="stage-badge" style="background:var(--lila);">Stufe 2 von 2</span>
+        <h2>Der innere Monitor</h2>
+      </div>
+
+      <div class="info-box" style="background:var(--lila-light);border-color:#c4b5fd;color:#4c1d95;">
+        <strong>Vertiefung:</strong> Levelt unterscheidet einen <em>inneren Monitor</em> (erkennt Fehler im phonetischen Plan, bevor man spricht) und einen <em>äußeren Monitor</em> (hört die eigene Stimme). Was passiert, wenn diese Schleifen gestört werden?
+      </div>
+
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progress-s2" style="width:0%;background:var(--lila);"></div>
+      </div>
+
+      <!-- S2 Frage 1 -->
+      <div class="scenario-card" id="s2-q1">
+        <div class="scenario-label">Frage 1 von 3</div>
+        <div class="vorhersage-badge">Vorhersage</div>
+        <div class="scenario-quote">Ein Sprecher beginnt zu sagen: „Der Tis–" und stoppt dann, bevor er das falsche Wort vollständig ausgesprochen hat.</div>
+        <p class="scenario-question">Warum kann er den Fehler korrigieren, bevor das Wort fertig ist?</p>
+        <div class="options">
+          <button class="option-btn" data-correct="false" onclick="answerS2(this, 1)">Der Sprecher hat eine bewusste Aufmerksamkeit auf seine Zunge gelegt</button>
+          <button class="option-btn" data-correct="true" onclick="answerS2(this, 1)">Der innere Monitor prüft den phonetischen Plan (inner speech), bevor die Artikulation beginnt</button>
+          <button class="option-btn" data-correct="false" onclick="answerS2(this, 1)">Die Artikulationsmuskulatur hat automatisch pausiert</button>
+        </div>
+        <div class="feedback-box" id="fb-s2-q1"></div>
+        <button class="next-btn" id="next-s2-q1" onclick="nextS2(2)">Weiter →</button>
+      </div>
+
+      <!-- S2 Frage 2 -->
+      <div class="scenario-card hidden" id="s2-q2">
+        <div class="scenario-label">Frage 2 von 3</div>
+        <div class="vorhersage-badge">Vorhersage</div>
+        <div class="scenario-quote">In einem Experiment wird die eigene Stimme um 200 ms verzögert zurückgespielt (Delayed Auditory Feedback). Probanden beginnen zu stottern und können kaum flüssig sprechen.</div>
+        <p class="scenario-question">Welche Schleife des Levelt-Modells wird hier gestört?</p>
+        <div class="options">
+          <button class="option-btn" data-correct="false" onclick="answerS2(this, 2)">Der innere Monitor (inner speech loop) wird unterbrochen</button>
+          <button class="option-btn" data-correct="true" onclick="answerS2(this, 2)">Der äußere Monitor (auditive Rückkopplung) sendet falsche Fehlersignale</button>
+          <button class="option-btn" data-correct="false" onclick="answerS2(this, 2)">Die Formulierung wird direkt gestört, weil Wörter neu geplant werden müssen</button>
+        </div>
+        <div class="feedback-box" id="fb-s2-q2"></div>
+        <button class="next-btn" id="next-s2-q2" onclick="nextS2(3)">Weiter →</button>
+      </div>
+
+      <!-- S2 Frage 3 -->
+      <div class="scenario-card hidden" id="s2-q3">
+        <div class="scenario-label">Frage 3 von 3</div>
+        <div class="vorhersage-badge">Vorhersage</div>
+        <div class="scenario-quote">Auf einer lauten Party spricht jemand viel zu laut, ohne es zu merken – bis jemand anderes die Musik plötzlich abstellt.</div>
+        <p class="scenario-question">Warum hat die Person ihre Lautstärke nicht selbst reguliert?</p>
+        <div class="options">
+          <button class="option-btn" data-correct="false" onclick="answerS2(this, 3)">Der innere Monitor war abgelenkt von der sozialen Situation</button>
+          <button class="option-btn" data-correct="true" onclick="answerS2(this, 3)">Der äußere Monitor konnte die eigene Stimme nicht vom Lärm unterscheiden (Lombard-Effekt)</button>
+          <button class="option-btn" data-correct="false" onclick="answerS2(this, 3)">Die Konzeptualisierung hatte keine Lautstärke-Information gespeichert</button>
+        </div>
+        <div class="feedback-box" id="fb-s2-q3"></div>
+        <button class="next-btn" id="next-s2-q3" onclick="finishAll()">Ergebnis anzeigen →</button>
+      </div>
+
+      <!-- Gesamtergebnis -->
+      <div class="summary-card" id="summary-final">
+        <div class="summary-score" id="score-final-display">–</div>
+        <div class="summary-label">von 7 Fragen insgesamt richtig</div>
+        <div class="summary-text" id="summary-final-text"></div>
+        <div style="margin-top:1.5rem;">
+          <a href="/lernmaterialien/lernsimulationen/neurolinguistik-broca-wernicke-simulation.html"
+             style="display:inline-block;background:var(--blau);color:#fff;padding:0.65rem 1.25rem;border-radius:8px;text-decoration:none;font-weight:600;font-size:0.9rem;">
+            Weiter: Neurolinguistik (Broca &amp; Wernicke) →
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Canvas-Animation: Levelt-Modell -->
+  <script>
+  (function () {
+    const canvas = document.getElementById('levelt-canvas');
+    const ctx = canvas.getContext('2d');
+
+    // Responsive sizing
+    function resize() {
+      const w = canvas.parentElement.clientWidth - 32;
+      canvas.width  = Math.max(280, w);
+      canvas.height = Math.round(canvas.width * 0.55);
+    }
+    resize();
+    window.addEventListener('resize', () => { resize(); });
+
+    // Stage boxes (normalized 0..1 coords)
+    const STAGES = [
+      { id: 'konz', label: 'Konzeptualisierung',    sub: 'Makro- & Mikroplanung',   color: '#1d4ed8', light: '#dbeafe', ry: 0.05 },
+      { id: 'form', label: 'Formulierung',          sub: 'Lemma → Lexem → Phonologie', color: '#7c3aed', light: '#ede9fe', ry: 0.38 },
+      { id: 'arti', label: 'Artikulation',          sub: 'Motorische Ausführung',   color: '#16a34a', light: '#dcfce7', ry: 0.71 },
+    ];
+
+    let highlightStage = null;
+    let highlightTimer = 0;
+
+    // Particles
+    const GOLD = '#f59e0b';
+    const BLUE_P = '#60a5fa';
+
+    // Main-path particle: travels konz→form→arti→out and wraps
+    let mainT = 0;
+    // Monitor particle: travels arti→form→konz (upward)
+    let monT = 0.5;
+
+    function boxRect(stage) {
+      const W = canvas.width, H = canvas.height;
+      const bw = W * 0.55, bh = H * 0.2;
+      const bx = (W - bw) / 2;
+      const by = stage.ry * H;
+      return { x: bx, y: by, w: bw, h: bh };
+    }
+
+    function drawStage(stage) {
+      const r = boxRect(stage);
+      const isHL = highlightStage === stage.id && highlightTimer > 0;
+
+      // Glow
+      if (isHL) {
+        ctx.save();
+        ctx.shadowColor = stage.color;
+        ctx.shadowBlur = 18;
+        ctx.fillStyle = stage.color;
+        roundRect(r.x - 4, r.y - 4, r.w + 8, r.h + 8, 10);
+        ctx.fill();
+        ctx.restore();
+      }
+
+      // Box fill
+      ctx.fillStyle = isHL ? stage.color : stage.light;
+      roundRect(r.x, r.y, r.w, r.h, 8);
+      ctx.fill();
+
+      // Border
+      ctx.strokeStyle = stage.color;
+      ctx.lineWidth = isHL ? 3 : 2;
+      roundRect(r.x, r.y, r.w, r.h, 8);
+      ctx.stroke();
+
+      // Label
+      ctx.fillStyle = isHL ? '#fff' : stage.color;
+      ctx.font = `bold ${Math.max(11, canvas.width * 0.022)}px system-ui,sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(stage.label, r.x + r.w / 2, r.y + r.h * 0.38);
+
+      // Sub label
+      ctx.fillStyle = isHL ? 'rgba(255,255,255,0.8)' : '#6b7280';
+      ctx.font = `${Math.max(9, canvas.width * 0.016)}px system-ui,sans-serif`;
+      ctx.fillText(stage.sub, r.x + r.w / 2, r.y + r.h * 0.68);
+    }
+
+    function roundRect(x, y, w, h, r) {
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.lineTo(x + w - r, y);
+      ctx.arcTo(x + w, y, x + w, y + r, r);
+      ctx.lineTo(x + w, y + h - r);
+      ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+      ctx.lineTo(x + r, y + h);
+      ctx.arcTo(x, y + h, x, y + h - r, r);
+      ctx.lineTo(x, y + r);
+      ctx.arcTo(x, y, x + r, y, r);
+      ctx.closePath();
+    }
+
+    function drawArrow(x1, y1, x2, y2, color) {
+      const headSize = Math.max(6, canvas.width * 0.012);
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(x1, y1);
+      ctx.lineTo(x2, y2);
+      ctx.stroke();
+      // Arrowhead
+      const angle = Math.atan2(y2 - y1, x2 - x1);
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(x2, y2);
+      ctx.lineTo(x2 - headSize * Math.cos(angle - 0.4), y2 - headSize * Math.sin(angle - 0.4));
+      ctx.lineTo(x2 - headSize * Math.cos(angle + 0.4), y2 - headSize * Math.sin(angle + 0.4));
+      ctx.closePath();
+      ctx.fill();
+    }
+
+    function particlePos(t) {
+      // t in [0,1]: 0..0.3 = konz→form, 0.3..0.6 = form→arti, 0.6..0.9 = arti→bottom, 0.9..1 = offscreen
+      const W = canvas.width, H = canvas.height;
+      const r0 = boxRect(STAGES[0]);
+      const r1 = boxRect(STAGES[1]);
+      const r2 = boxRect(STAGES[2]);
+      const cx = W / 2;
+
+      if (t < 0.33) {
+        const tt = t / 0.33;
+        return { x: cx, y: r0.y + r0.h + (r1.y - r0.y - r0.h) * tt };
+      } else if (t < 0.66) {
+        const tt = (t - 0.33) / 0.33;
+        return { x: cx, y: r1.y + r1.h + (r2.y - r1.y - r1.h) * tt };
+      } else {
+        const tt = (t - 0.66) / 0.34;
+        return { x: cx, y: r2.y + r2.h + H * 0.08 * tt };
+      }
+    }
+
+    function monitorParticlePos(t) {
+      // Travels on the right side, from bottom (arti) up to konz
+      const W = canvas.width, H = canvas.height;
+      const r0 = boxRect(STAGES[0]);
+      const r1 = boxRect(STAGES[1]);
+      const r2 = boxRect(STAGES[2]);
+      const rx = r0.x + r0.w + Math.max(20, W * 0.04);
+
+      // t 0→1: from bottom of arti to top of konz
+      const startY = r2.y + r2.h;
+      const endY   = r0.y;
+      return { x: rx, y: startY + (endY - startY) * t };
+    }
+
+    function drawParticle(pos, color, r) {
+      ctx.save();
+      ctx.beginPath();
+      ctx.arc(pos.x, pos.y, r, 0, Math.PI * 2);
+      ctx.fillStyle = color;
+      ctx.shadowColor = color;
+      ctx.shadowBlur = 10;
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function draw() {
+      const W = canvas.width, H = canvas.height;
+      ctx.clearRect(0, 0, W, H);
+
+      // Background grid dots (subtle)
+      ctx.fillStyle = 'rgba(0,0,0,0.03)';
+      for (let gx = 20; gx < W; gx += 30) {
+        for (let gy = 20; gy < H; gy += 30) {
+          ctx.beginPath();
+          ctx.arc(gx, gy, 1.5, 0, Math.PI * 2);
+          ctx.fill();
+        }
+      }
+
+      // Draw connecting arrows
+      const r0 = boxRect(STAGES[0]);
+      const r1 = boxRect(STAGES[1]);
+      const r2 = boxRect(STAGES[2]);
+      const cx = W / 2;
+      const rside = r0.x + r0.w + Math.max(18, W * 0.035);
+
+      // Main arrows (down)
+      drawArrow(cx, r0.y + r0.h, cx, r1.y, '#94a3b8');
+      drawArrow(cx, r1.y + r1.h, cx, r2.y, '#94a3b8');
+      drawArrow(cx, r2.y + r2.h, cx, r2.y + r2.h + H * 0.06, '#94a3b8');
+
+      // Arrow labels
+      ctx.fillStyle = '#94a3b8';
+      ctx.font = `${Math.max(8, W * 0.014)}px system-ui,sans-serif`;
+      ctx.textAlign = 'left';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('präverbale Botschaft', cx + 6, r0.y + r0.h + (r1.y - r0.y - r0.h) * 0.5);
+      ctx.fillText('phonetischer Plan', cx + 6, r1.y + r1.h + (r2.y - r1.y - r1.h) * 0.5);
+      ctx.fillText('Äußerung', cx + 6, r2.y + r2.h + H * 0.03);
+
+      // Monitor path (right side, upward)
+      const monStartY = r2.y + r2.h;
+      const monEndY   = r0.y + r0.h * 0.5;
+      // Vertical line on right
+      ctx.setLineDash([5, 4]);
+      ctx.strokeStyle = '#60a5fa';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(rside, monStartY);
+      ctx.lineTo(rside, monEndY);
+      ctx.stroke();
+      // Horizontal connector to konz
+      ctx.beginPath();
+      ctx.moveTo(rside, monEndY);
+      ctx.lineTo(r0.x + r0.w, monEndY);
+      ctx.stroke();
+      ctx.setLineDash([]);
+      // Arrow at end
+      drawArrow(rside + 2, monEndY, r0.x + r0.w + 1, monEndY, '#60a5fa');
+
+      // Monitor label
+      ctx.fillStyle = '#60a5fa';
+      ctx.font = `${Math.max(7, W * 0.013)}px system-ui,sans-serif`;
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('Monitor', rside - 4, (monStartY + monEndY) * 0.5);
+
+      // Output label
+      ctx.fillStyle = '#1f2937';
+      ctx.font = `bold ${Math.max(10, W * 0.018)}px system-ui,sans-serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('🔊 Gesprochene Äußerung', cx, r2.y + r2.h + H * 0.075);
+
+      // Draw stages
+      STAGES.forEach(drawStage);
+
+      // Animate particles
+      mainT = (mainT + 0.004) % 1;
+      monT  = (monT  + 0.003) % 1;
+
+      const pMain = particlePos(mainT);
+      const pMon  = monitorParticlePos(monT);
+
+      const pr = Math.max(4, W * 0.008);
+      drawParticle(pMain, GOLD, pr);
+      drawParticle(pMon,  '#60a5fa', pr * 0.85);
+
+      if (highlightTimer > 0) highlightTimer--;
+
+      requestAnimationFrame(draw);
+    }
+
+    draw();
+
+    // Expose highlight function globally
+    window.highlightLevelStage = function(stageId) {
+      highlightStage = stageId;
+      highlightTimer = 90; // ~1.5 s at 60fps
+    };
+  })();
+  </script>
+
+  <!-- Interaktions-Logik -->
+  <script>
+  (function () {
+    let s1Score = 0, s2Score = 0;
+
+    const feedbackData = {
+      s1: [
+        {
+          correct: true,
+          correctLabel: 'Formulierung – Semantische Substitution',
+          stageId: 'form',
+          rightText: 'Richtig! <span class="concept-tag">Formulierung</span> Das Konzept (Tisch) war klar in der Konzeptualisierung, aber beim Lemma-Abruf wurde der semantisch ähnliche Begriff „Stuhl" aktiviert. Levelt nennt das semantische Substitution – ein Fehler der grammatischen Enkodierung.',
+          wrongText: 'Nicht ganz. <span class="concept-tag">Formulierung</span> Die Absicht war klar (Tisch holen), also liegt der Fehler nicht in der Konzeptualisierung. Die Aussprache selbst war korrekt – also nicht die Artikulation. Der Fehler passiert beim Abruf des richtigen Lemmas in der <strong>Formulierung</strong>.'
+        },
+        {
+          correct: true,
+          correctLabel: 'Formulierung – Tip-of-the-tongue',
+          stageId: 'form',
+          rightText: 'Richtig! <span class="concept-tag">Formulierung</span> Das Phänomen „Wort liegt auf der Zunge" (engl. tip-of-the-tongue, TOT) zeigt: Das Lemma (semantische Info) wurde erfolgreich aktiviert – das Konzept ist klar. Aber das Lexem (phonologische Form) ist blockiert. Das ist eine Störung der phonologischen Enkodierung in der Formulierungsstufe.',
+          wrongText: 'Nicht richtig. <span class="concept-tag">Formulierung</span> Das Konzept ist vollständig vorhanden (du kannst es beschreiben!), also liegt das Problem nicht in der Konzeptualisierung. Und kein Laut wurde falsch ausgesprochen, also nicht Artikulation. Der Fehler liegt in der <strong>phonologischen Enkodierung</strong> der Formulierungsstufe – das Lexem lässt sich nicht abrufen.'
+        },
+        {
+          correct: true,
+          correctLabel: 'Formulierung – Phonologische Enkodierung',
+          stageId: 'form',
+          rightText: 'Richtig! <span class="concept-tag">Formulierung</span> Spoonerismen (Lautvertauschungen) entstehen in der phonologischen Enkodierung. Interessant: Die getauschten Laute folgen dennoch phonologischen Regeln des Deutschen – Anfangskonsonanten tauschen mit Anfangskonsonanten, nie mit Vokalen. Das zeigt, dass das System lingustisch reguliert arbeitet.',
+          wrongText: 'Leider falsch. <span class="concept-tag">Formulierung</span> Die Absicht war korrekt (Wasserhahn), also nicht Konzeptualisierung. Und die Aussprache der einzelnen Laute war korrekt – die Laute wurden nur falsch angeordnet. Das passiert in der <strong>phonologischen Enkodierung</strong> der Formulierungsstufe.'
+        },
+        {
+          correct: true,
+          correctLabel: 'Artikulation',
+          stageId: 'arti',
+          rightText: 'Richtig! <span class="concept-tag">Artikulation</span> Wenn Konzept und Wort klar sind, aber die motorische Ausführung stolpert (Verhaspeln, Silben wiederholen), liegt der Fehler in der Artikulation. Hier werden die motorischen Befehle für Zunge, Lippen und Stimmbänder ausgeführt.',
+          wrongText: 'Nicht ganz. <span class="concept-tag">Artikulation</span> Das Konzept war klar, das Wort war bekannt – der Sprecher hat es ja im dritten Anlauf korrekt gesagt. Der Fehler lag in der motorischen Ausführung: das ist die <strong>Artikulation</strong>.'
+        }
+      ],
+      s2: [
+        {
+          rightText: 'Genau! <span class="concept-tag">Innerer Monitor</span> Levelt postuliert einen inneren Regelkreis: Der phonetische Plan (inner speech) wird vor der Artikulation vom Monitor geprüft. Wenn ein Fehler erkannt wird, kann der Sprecher stoppen, bevor das falsche Wort vollständig ausgesprochen wurde.',
+          wrongText: 'Leider nicht. <span class="concept-tag">Innerer Monitor</span> Levelt erklärt dies mit dem <strong>inneren Monitor</strong>: Der phonetische Plan (= die „Stimme im Kopf") wird geprüft, bevor die Artikulation startet. Dadurch kann ein Fehler noch vor dem Aussprechen erkannt und gestoppt werden.'
+        },
+        {
+          rightText: 'Richtig! <span class="concept-tag">Äußerer Monitor</span> Der äußere Monitor nutzt das Gehör als Rückmeldung. Durch die Verzögerung empfängt das Gehirn ein akustisches Signal, das mit dem aktuellen motorischen Plan kollidiert. Das Ergebnis: das Sprachsystem versucht sich zu „korrigieren" – und stottert.',
+          wrongText: 'Nicht ganz. <span class="concept-tag">Äußerer Monitor</span> Der innere Monitor wäre nicht betroffen – er prüft nur den phonetischen Plan im Kopf. Aber das Experiment manipuliert die <strong>auditive Rückkopplung</strong>: Der äußere Monitor bekommt ein verzögertes Signal und sendet fehlerhafte Korrekturanfragen.'
+        },
+        {
+          rightText: 'Richtig! <span class="concept-tag">Lombard-Effekt</span> Das ist der bekannte Lombard-Effekt: In lauter Umgebung kann der äußere Monitor die eigene Stimme nicht klar hören und erhöht die Lautstärke als Kompensation – automatisch und unbewusst. Der Monitor schätzt die eigene Lautstärke falsch ein.',
+          wrongText: 'Leider nicht ganz. <span class="concept-tag">Lombard-Effekt</span> Das ist der <strong>Lombard-Effekt</strong>: Der äußere Monitor (Hören der eigenen Stimme) kann bei Lärm die eigene Lautstärke nicht korrekt einschätzen. Das Sprachsystem erhöht die Lautstärke als Kompensation – automatisch, ohne bewusste Kontrolle.'
+        }
+      ]
+    };
+
+    window.answerS1 = function(btn, qNum) {
+      const card = document.getElementById('s1-q' + qNum);
+      const btns = card.querySelectorAll('.option-btn');
+      btns.forEach(b => b.disabled = true);
+
+      const isCorrect = btn.dataset.correct === 'true';
+      const data = feedbackData.s1[qNum - 1];
+      const fb = document.getElementById('fb-s1-q' + qNum);
+
+      btn.classList.add(isCorrect ? 'correct' : 'wrong');
+      if (!isCorrect) {
+        btns.forEach(b => { if (b.dataset.correct === 'true') b.classList.add('correct'); });
+      }
+
+      fb.innerHTML = isCorrect ? data.rightText : data.wrongText;
+      fb.className = 'feedback-box show ' + (isCorrect ? 'correct-fb' : 'wrong-fb');
+
+      if (isCorrect) {
+        s1Score++;
+        window.highlightLevelStage(data.stageId);
+      }
+
+      const progress = Math.round((qNum / 4) * 100);
+      document.getElementById('progress-s1').style.width = progress + '%';
+
+      document.getElementById('next-s1-q' + qNum).classList.add('show');
+    };
+
+    window.nextS1 = function(nextQ) {
+      document.getElementById('s1-q' + (nextQ - 1)).classList.add('hidden');
+      document.getElementById('s1-q' + nextQ).classList.remove('hidden');
+    };
+
+    window.finishStage1 = function() {
+      document.getElementById('s1-q4').classList.add('hidden');
+      const sc = document.getElementById('summary-s1');
+      sc.classList.add('show');
+      document.getElementById('score-s1-display').textContent = s1Score + '/4';
+      const txt = s1Score >= 3
+        ? 'Sehr gut! Du hast die Stufen des Levelt-Modells sicher zugeordnet. Weiter mit dem inneren Monitor.'
+        : 'Du hast die Grundstruktur des Modells kennengelernt. Im zweiten Teil vertiefen wir den Monitor-Mechanismus.';
+      document.getElementById('summary-s1-text').textContent = txt;
+    };
+
+    window.startStage2 = function() {
+      document.getElementById('summary-s1').classList.remove('show');
+      document.getElementById('stage3').classList.remove('hidden');
+      window.scrollTo({ top: document.getElementById('stage3').offsetTop - 20, behavior: 'smooth' });
+    };
+
+    window.answerS2 = function(btn, qNum) {
+      const card = document.getElementById('s2-q' + qNum);
+      const btns = card.querySelectorAll('.option-btn');
+      btns.forEach(b => b.disabled = true);
+
+      const isCorrect = btn.dataset.correct === 'true';
+      const data = feedbackData.s2[qNum - 1];
+      const fb = document.getElementById('fb-s2-q' + qNum);
+
+      btn.classList.add(isCorrect ? 'correct' : 'wrong');
+      if (!isCorrect) {
+        btns.forEach(b => { if (b.dataset.correct === 'true') b.classList.add('correct'); });
+      }
+
+      fb.innerHTML = isCorrect ? data.rightText : data.wrongText;
+      fb.className = 'feedback-box show ' + (isCorrect ? 'correct-fb' : 'wrong-fb');
+
+      if (isCorrect) s2Score++;
+
+      const progress = Math.round((qNum / 3) * 100);
+      document.getElementById('progress-s2').style.width = progress + '%';
+
+      document.getElementById('next-s2-q' + qNum).classList.add('show');
+    };
+
+    window.nextS2 = function(nextQ) {
+      document.getElementById('s2-q' + (nextQ - 1)).classList.add('hidden');
+      document.getElementById('s2-q' + nextQ).classList.remove('hidden');
+    };
+
+    window.finishAll = function() {
+      document.getElementById('s2-q3').classList.add('hidden');
+      const total = s1Score + s2Score;
+      const sc = document.getElementById('summary-final');
+      sc.classList.add('show');
+      document.getElementById('score-final-display').textContent = total + '/7';
+
+      let txt;
+      if (total >= 6) txt = 'Ausgezeichnet! Du beherrschst das Levelt-Modell sicher – von der Konzeptualisierung bis zum inneren Monitor. Du kannst nun Versprecher und Korrekturfehler linguistisch präzise erklären.';
+      else if (total >= 4) txt = 'Gut gemacht! Du kennst die wichtigsten Stufen des Modells. Wiederhole besonders den Unterschied zwischen innerem und äußerem Monitor.';
+      else txt = 'Das Levelt-Modell hat viele Feinheiten. Lies die Feedbacks noch einmal durch und versuche die Simulation erneut – beim zweiten Durchlauf klappt es meist deutlich besser.';
+
+      document.getElementById('summary-final-text').textContent = txt;
+
+      window.dataLayer.push({
+        event: 'simulation_complete',
+        score: total,
+        max_score: 7,
+        topic_cluster: 'psycholinguistik'
+      });
+    };
+  })();
+  </script>
+
+</body>
+</html>

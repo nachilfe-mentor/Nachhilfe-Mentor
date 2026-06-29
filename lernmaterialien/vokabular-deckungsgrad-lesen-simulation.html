@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Vokabular-Deckungsgrad: Wie viele Wörter zum Lesen? | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation: Verschiebe den Wortschatz-Regler und erlebe, wie der Deckungsgrad dein Leseverstehen bestimmt – und warum 95 % die kritische Schwelle sind.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Vokabular-Deckungsgrad, Wortschatz lernen, Leseverstehen, 95-Prozent-Schwelle, Fremdsprache lernen, Vokabeln Englisch">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/vokabular-deckungsgrad-lesen-simulation.html">
+  <meta property="og:title" content="Wie viele Wörter brauche ich zum Lesen?">
+  <meta property="og:description" content="Interaktive Simulation: Verschiebe den Wortschatz-Regler und erlebe, wie der Deckungsgrad dein Leseverstehen bestimmt – und warum 95 % die kritische Schwelle sind.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/vokabular-deckungsgrad-lesen-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Vokabular-Deckungsgrad: Wie viele Wörter zum Lesen?",
+  "description":"Interaktive Simulation: Verschiebe den Wortschatz-Regler und erlebe, wie der Deckungsgrad dein Leseverstehen bestimmt – und warum 95 % die kritische Schwelle sind.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/vokabular-deckungsgrad-lesen-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #617087;
+      --line: #d8e1ed;
+      --blue: #0f5fa8;
+      --cyan: #0894aa;
+      --amber: #b87700;
+      --green: #0b8f6a;
+      --red: #b5281e;
+      --bg: #f5f8fc;
+      --panel: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    header .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Progress dots ──────────────────────────────────── */
+    .progress {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .progress-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .progress-dot.active { background: var(--blue); }
+    .progress-dot.done { background: var(--green); }
+    .progress-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-left: 0.25rem;
+    }
+
+    /* ── Stage panels ───────────────────────────────────── */
+    .stage { display: none; }
+    .stage.visible { display: block; }
+
+    /* ── Card / panel ───────────────────────────────────── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    /* ── Question / choice ──────────────────────────────── */
+    .question {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 1.25rem;
+      line-height: 1.45;
+    }
+    .choices {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .choice-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      background: var(--bg);
+      border: 1.5px solid var(--line);
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      cursor: pointer;
+      font-size: 0.93rem;
+      color: var(--ink);
+      text-align: left;
+      transition: border-color 0.2s, background 0.2s;
+      line-height: 1.45;
+    }
+    .choice-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eef5ff;
+    }
+    .choice-btn .label {
+      font-weight: 700;
+      color: var(--blue);
+      min-width: 1.2rem;
+    }
+    .choice-btn.correct {
+      border-color: var(--green);
+      background: #e8f7f2;
+    }
+    .choice-btn.wrong {
+      border-color: var(--red);
+      background: #fdf0ef;
+    }
+    .choice-btn:disabled { cursor: default; }
+
+    /* ── Feedback box ───────────────────────────────────── */
+    .feedback {
+      display: none;
+      border-radius: 8px;
+      padding: 1.1rem 1.25rem;
+      font-size: 0.93rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .feedback.show { display: block; }
+    .feedback.ok {
+      background: #e8f7f2;
+      border-left: 4px solid var(--green);
+      color: #0d4d38;
+    }
+    .feedback.nok {
+      background: #fdf0ef;
+      border-left: 4px solid var(--red);
+      color: #6b1a14;
+    }
+    .feedback strong { font-weight: 700; }
+
+    /* ── Next button ────────────────────────────────────── */
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.4rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #0d4d8a; }
+    .btn-primary:disabled { background: #aaa; cursor: default; }
+
+    /* ── Simulation text box ────────────────────────────── */
+    .text-demo {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.85;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .text-demo .word {
+      display: inline;
+      transition: background 0.25s, color 0.25s;
+      border-radius: 3px;
+      padding: 0 1px;
+    }
+    .text-demo .word.masked {
+      background: #b0bec5;
+      color: transparent;
+      border-radius: 3px;
+      user-select: none;
+      cursor: default;
+    }
+
+    /* ── Slider section ─────────────────────────────────── */
+    .slider-section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1rem;
+    }
+    .slider-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .slider-value {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--blue);
+    }
+    input[type="range"] {
+      -webkit-appearance: none;
+      width: 100%;
+      height: 6px;
+      border-radius: 3px;
+      background: var(--line);
+      outline: none;
+      cursor: pointer;
+      margin-bottom: 1rem;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--blue);
+      cursor: pointer;
+      border: 2px solid #fff;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+    }
+    input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--blue);
+      cursor: pointer;
+      border: 2px solid #fff;
+    }
+    .vocab-steps {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: -0.5rem;
+    }
+
+    /* ── Coverage bar ───────────────────────────────────── */
+    .coverage-display {
+      margin-top: 0.75rem;
+    }
+    .coverage-bar-wrap {
+      background: var(--line);
+      border-radius: 6px;
+      height: 12px;
+      overflow: hidden;
+      margin-bottom: 0.4rem;
+    }
+    .coverage-bar-fill {
+      height: 100%;
+      border-radius: 6px;
+      transition: width 0.35s ease, background 0.35s ease;
+    }
+    .coverage-stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+    .coverage-pct {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+    .coverage-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      margin-top: 0.25rem;
+    }
+
+    /* ── Threshold legend ───────────────────────────────── */
+    .threshold-note {
+      font-size: 0.82rem;
+      border-radius: 6px;
+      padding: 0.55rem 0.85rem;
+      margin-top: 0.75rem;
+      font-weight: 600;
+      transition: background 0.3s, color 0.3s;
+    }
+    .threshold-note.below { background: #fdf0ef; color: var(--red); }
+    .threshold-note.near  { background: #fff8e1; color: var(--amber); }
+    .threshold-note.above { background: #e8f7f2; color: var(--green); }
+
+    /* ── Tips ───────────────────────────────────────────── */
+    .tips-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .tips-list li {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      color: var(--ink);
+    }
+    .tips-list .icon {
+      font-size: 1rem;
+      min-width: 1.4rem;
+      text-align: center;
+      margin-top: 0.05rem;
+    }
+
+    /* ── Summary table ──────────────────────────────────── */
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin-top: 0.75rem;
+    }
+    .summary-table th {
+      background: var(--bg);
+      font-weight: 600;
+      color: var(--muted);
+      text-align: left;
+      padding: 0.55rem 0.75rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .summary-table td {
+      padding: 0.55rem 0.75rem;
+      border-bottom: 1px solid var(--line);
+      color: var(--ink);
+    }
+    .summary-table tr:last-child td { border-bottom: none; }
+    .summary-table tr.highlight td { font-weight: 700; color: var(--blue); }
+
+    /* ── Final screen ───────────────────────────────────── */
+    .final-header {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── Section headings inside cards ─────────────────── */
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    @media (max-width: 480px) {
+      .card { padding: 1.25rem; }
+      .slider-section { padding: 1.25rem; }
+      .text-demo { padding: 1rem; font-size: 0.92rem; }
+      header { padding: 1.5rem 1rem 1rem; }
+      main { padding: 0 1rem 3rem; }
+      .vocab-steps { font-size: 0.65rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Fremdsprachen &middot; Simulation</p>
+  <h1>Wie viele Wörter brauche ich zum Lesen?</h1>
+  <p>Erlebe selbst, wie der Wortschatz das Leseverstehen beeinflusst &mdash; und lerne die kritische 95-%-Schwelle kennen.</p>
+</header>
+
+<main>
+
+  <!-- Progress -->
+  <div class="progress">
+    <div class="progress-dot active" id="dot1"></div>
+    <div class="progress-dot" id="dot2"></div>
+    <span class="progress-label" id="progress-label">Stufe 1 von 2</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       STUFE 1: Vorhersage + Text-Explorer
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="stage visible" id="stage1">
+
+    <div class="card">
+      <p class="question">Wie viele Prozent der Wörter in einem englischen Zeitungsartikel müssen dir bekannt sein, damit du den Text gut verstehst?</p>
+      <div class="choices" id="choices1">
+        <button class="choice-btn" data-val="A" onclick="checkChoice1(this)">
+          <span class="label">A</span>
+          <span>Etwa 70 % &ndash; die Hauptwörter reichen aus</span>
+        </button>
+        <button class="choice-btn" data-val="B" onclick="checkChoice1(this)">
+          <span class="label">B</span>
+          <span>Etwa 85 % &ndash; der Inhalt ist dann klar erkennbar</span>
+        </button>
+        <button class="choice-btn" data-val="C" onclick="checkChoice1(this)">
+          <span class="label">C</span>
+          <span>Mindestens 95 % &ndash; erst dann ist komfortables Lesen möglich</span>
+        </button>
+        <button class="choice-btn" data-val="D" onclick="checkChoice1(this)">
+          <span class="label">D</span>
+          <span>100 % &ndash; jedes unbekannte Wort stört den Lesefluss</span>
+        </button>
+      </div>
+
+      <div class="feedback" id="feedback1"></div>
+    </div>
+
+    <!-- Text-Explorer (sichtbar nach Antwort) -->
+    <div id="explorer" style="display:none;">
+      <div class="card">
+        <p class="section-label">Probiere es selbst aus</p>
+        <p class="card-title">Textexplorer: Stell deinen Wortschatz ein</p>
+        <p style="margin-bottom:0.75rem;">Verschiebe den Regler und beobachte, wie viel du von diesem englischen Zeitungstext verstehen würdest. Unbekannte Wörter werden <span style="background:#b0bec5;color:transparent;border-radius:3px;padding:0 6px;">&#x2588;&#x2588;&#x2588;</span> verdeckt.</p>
+        <p style="font-size:0.84rem;color:var(--amber);font-weight:600;margin-bottom:0;">Tipp: Probiere alle Stufen aus &mdash; von 500 bis 5.000 Wörter &mdash; bevor du weitermachst.</p>
+      </div>
+
+      <div class="slider-section">
+        <div class="slider-header">
+          <span class="slider-label">Dein Wortschatz (häufigste Wörter):</span>
+          <span class="slider-value" id="sliderVal">2.000 Wörter</span>
+        </div>
+        <input type="range" id="vocabSlider" min="0" max="4" value="1" oninput="updateMask(this.value)">
+        <div class="vocab-steps">
+          <span>500</span>
+          <span>1.000</span>
+          <span>2.000</span>
+          <span>3.000</span>
+          <span>5.000</span>
+        </div>
+        <div class="coverage-display">
+          <div class="coverage-bar-wrap">
+            <div class="coverage-bar-fill" id="coverageBar" style="width:0%;background:var(--red);"></div>
+          </div>
+          <div class="coverage-stats">
+            <span>Deckungsgrad:</span>
+            <span class="coverage-pct" id="coveragePct">—</span>
+          </div>
+          <div class="threshold-note below" id="thresholdNote">Lade...</div>
+        </div>
+      </div>
+
+      <div class="text-demo" id="textDemo"></div>
+
+      <button class="btn-primary" id="btnStage2" onclick="goStage2()" disabled>Weiter zu Stufe 2 &rarr;</button>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       STUFE 2: Strategische Frage
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="stage" id="stage2">
+
+    <div class="card">
+      <p class="section-label">Stufe 2 &ndash; Strategie</p>
+      <p class="question">Lars kennt 2.000 englische Wörter und möchte englische Zeitungen lesen. Was ist der effektivste nächste Schritt?</p>
+      <div class="choices" id="choices2">
+        <button class="choice-btn" data-val="A" onclick="checkChoice2(this)">
+          <span class="label">A</span>
+          <span>Möglichst viele neue Wörter aus verschiedenen Themengebieten lernen</span>
+        </button>
+        <button class="choice-btn" data-val="B" onclick="checkChoice2(this)">
+          <span class="label">B</span>
+          <span>Gezielt die häufigsten 3.000–5.000 Wörter (Hochfrequenzwörter) aufbauen</span>
+        </button>
+        <button class="choice-btn" data-val="C" onclick="checkChoice2(this)">
+          <span class="label">C</span>
+          <span>Englische Filme und Serien ohne Untertitel schauen</span>
+        </button>
+        <button class="choice-btn" data-val="D" onclick="checkChoice2(this)">
+          <span class="label">D</span>
+          <span>Das ist hoffnungslos &ndash; 2.000 Wörter reichen für Zeitungen nie</span>
+        </button>
+      </div>
+
+      <div class="feedback" id="feedback2"></div>
+    </div>
+
+    <button class="btn-primary" id="btnFinal" onclick="goFinal()" disabled>Zum Abschluss &rarr;</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       FINALE: Zusammenfassung + Tipps
+  ═══════════════════════════════════════════════════════════ -->
+  <div class="stage" id="stageFinal">
+
+    <div class="card">
+      <p class="final-header">Das Wichtigste auf einen Blick</p>
+      <p style="margin-bottom:1.25rem;color:var(--muted);font-size:0.93rem;">Die Forschung von Paul Nation (2001, 2006) zeigt: Der Deckungsgrad entscheidet über das Leseverstehen &mdash; nicht die absolute Wortanzahl allein. Werte für Nachrichtentexte; leichte Literatur liegt etwas darunter.</p>
+
+      <table class="summary-table">
+        <thead>
+          <tr>
+            <th>Bekannte Wörter</th>
+            <th>Deckungsgrad</th>
+            <th>Lesbarkeit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>500</td><td>~72 %</td><td>Kaum verständlich</td></tr>
+          <tr><td>1.000</td><td>~80 %</td><td>Grobes Erraten</td></tr>
+          <tr><td>2.000</td><td>~87 %</td><td>Mühsames Lesen</td></tr>
+          <tr class="highlight"><td>3.000</td><td>~93 %</td><td>Fast ausreichend</td></tr>
+          <tr class="highlight"><td>5.000</td><td>~97 %</td><td>Komfortables Lesen</td></tr>
+          <tr><td>8.000+</td><td>~99 %</td><td>Fließendes Lesen</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Was das für dein Sprachenlernen bedeutet</p>
+      <ul class="tips-list">
+        <li>
+          <span class="icon">1</span>
+          <span><strong>Hochfrequenzwörter zuerst:</strong> Die Top-2.000 Wörter einer Sprache decken ca. 87 % aller alltäglichen Texte ab. Lerne diese gezielt &ndash; sie bringen den größten Hebel.</span>
+        </li>
+        <li>
+          <span class="icon">2</span>
+          <span><strong>Die 95-%-Grenze im Blick behalten:</strong> Erst ab 95 % Deckungsgrad kannst du unbekannte Wörter aus dem Kontext erschließen. Darunter fehlt zu viel Kontext für intelligentes Raten.</span>
+        </li>
+        <li>
+          <span class="icon">3</span>
+          <span><strong>Authentische Texte wählen, wenn der Level stimmt:</strong> Zeitungen, Bücher und Podcasts helfen beim Vokabelaufbau &ndash; aber erst wenn du schon 80&ndash;85 % der Wörter kennst. Darunter lieber mit Lernmaterial für deinen Level arbeiten.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div style="margin-top:1.5rem;padding:1rem 1.25rem;background:var(--panel);border:1px solid var(--line);border-radius:10px;font-size:0.82rem;color:var(--muted);">
+      <strong style="color:var(--ink);">Quellen:</strong> Nation, I.S.P. (2001). <em>Learning Vocabulary in Another Language.</em> Cambridge UP. &mdash; Nation (2006). <em>Canadian Modern Language Review, 63(1)</em>, 59–82. &mdash; Laufer, B. (1989). <em>Special Language: From Humans Thinking to Thinking Machines.</em>
+    </div>
+    <div style="margin-top:1rem;">
+      <a href="/lernmaterialien/" style="color:var(--blue);font-size:0.9rem;">&larr; Zurück zu den Lernmaterialien</a>
+    </div>
+  </div>
+
+</main>
+
+<script>
+// ── Vocabulary data ─────────────────────────────────────────────────────────
+// Top-500 / 1000 / 2000 / 3000 / 5000 most common English words (simplified list)
+// Based on the General Service List (West 1953) and Oxford 3000 publicly known
+// frequency bands. Words are lowercased, punctuation stripped on match.
+
+const VOCAB_LEVELS = [500, 1000, 2000, 3000, 5000];
+const SLIDER_LABELS = ['500 Wörter', '1.000 Wörter', '2.000 Wörter', '3.000 Wörter', '5.000 Wörter'];
+
+// Coverage percentages per level (from Nation 2006 research on news texts)
+const COVERAGE = [72, 80, 87, 93, 97];
+
+// ── Sample text (English news paragraph, ~110 tokens) ──────────────────────
+// Each word is tagged with the frequency band it belongs to (1=top500, 2=top1000,
+// 3=top2000, 4=top3000, 5=top5000, 6=rare/beyond5000)
+// This text is manually tagged for demo purposes.
+const TEXT_TOKENS = [
+  {w:"Scientists",  f:4}, {w:"have",       f:1}, {w:"discovered",  f:3},
+  {w:"that",        f:1}, {w:"regular",    f:3}, {w:"exercise",     f:3},
+  {w:"can",         f:1}, {w:"significantly", f:4}, {w:"improve",   f:3},
+  {w:"mental",      f:3}, {w:"health",     f:2}, {w:"in",          f:1},
+  {w:"teenagers.",  f:1}, {w:"A",          f:1}, {w:"new",         f:1},
+  {w:"study",       f:2}, {w:"published",  f:3}, {w:"in",          f:1},
+  {w:"a",           f:1}, {w:"leading",    f:3}, {w:"medical",     f:4},
+  {w:"journal",     f:4}, {w:"found",      f:1}, {w:"that",        f:1},
+  {w:"young",       f:1}, {w:"people",     f:1}, {w:"who",         f:1},
+  {w:"exercised",   f:4}, {w:"for",        f:1}, {w:"at",          f:1},
+  {w:"least",       f:2}, {w:"30",         f:1}, {w:"minutes",     f:2},
+  {w:"a",           f:1}, {w:"day",        f:1}, {w:"reported",    f:3},
+  {w:"lower",       f:2}, {w:"levels",     f:2}, {w:"of",          f:1},
+  {w:"anxiety",     f:5}, {w:"and",        f:1}, {w:"depression.",  f:5},
+  {w:"The",         f:1}, {w:"researchers", f:4}, {w:"analysed",   f:5},
+  {w:"data",        f:3}, {w:"from",       f:1}, {w:"over",        f:1},
+  {w:"12,000",      f:1}, {w:"participants", f:5}, {w:"across",    f:3},
+  {w:"fifteen",     f:2}, {w:"different",  f:2}, {w:"countries.",  f:2},
+  {w:"They",        f:1}, {w:"concluded",  f:4}, {w:"that",        f:1},
+  {w:"even",        f:1}, {w:"moderate",   f:4}, {w:"physical",    f:3},
+  {w:"activity",    f:3}, {w:"has",        f:1}, {w:"measurable",  f:5},
+  {w:"benefits",    f:4}, {w:"for",        f:1}, {w:"emotional",   f:4},
+  {w:"well-being", f:5}, {w:"and",         f:1}, {w:"cognitive",   f:6},
+  {w:"function.",   f:3}, {w:"Experts",    f:3}, {w:"now",         f:1},
+  {w:"recommend",   f:4}, {w:"that",       f:1}, {w:"schools",     f:2},
+  {w:"incorporate", f:6}, {w:"more",       f:1}, {w:"structured",  f:4},
+  {w:"physical",    f:3}, {w:"education",  f:3}, {w:"into",        f:1},
+  {w:"their",       f:1}, {w:"daily",      f:3}, {w:"timetables",  f:6},
+  {w:"to",          f:1}, {w:"support",    f:2}, {w:"overall",     f:3},
+  {w:"student",     f:3}, {w:"well-being", f:5}, {w:"and",         f:1},
+  {w:"academic",    f:5}, {w:"performance.", f:4}
+];
+
+// ── DOM refs ────────────────────────────────────────────────────────────────
+const textDemo    = document.getElementById('textDemo');
+const sliderEl    = document.getElementById('vocabSlider');
+const sliderValEl = document.getElementById('sliderVal');
+const coverageBar = document.getElementById('coverageBar');
+const coveragePct = document.getElementById('coveragePct');
+const thresholdNote = document.getElementById('thresholdNote');
+const btnStage2   = document.getElementById('btnStage2');
+
+// ── Build text ───────────────────────────────────────────────────────────────
+function buildTextDOM() {
+  textDemo.innerHTML = '';
+  TEXT_TOKENS.forEach((tok, i) => {
+    const sp = document.createElement('span');
+    sp.className = 'word';
+    sp.dataset.freq = tok.f;
+    sp.textContent = tok.w;
+    textDemo.appendChild(sp);
+    if (i < TEXT_TOKENS.length - 1) textDemo.appendChild(document.createTextNode(' '));
+  });
+}
+
+// ── Update mask ──────────────────────────────────────────────────────────────
+function updateMask(idx) {
+  idx = parseInt(idx, 10);
+  const level = VOCAB_LEVELS[idx];         // e.g. 2000
+  const band  = idx + 1;                   // band 1..5
+  const pct   = COVERAGE[idx];
+
+  sliderValEl.textContent = SLIDER_LABELS[idx];
+
+  // mask words with freq > band
+  document.querySelectorAll('#textDemo .word').forEach(sp => {
+    const f = parseInt(sp.dataset.freq, 10);
+    sp.classList.toggle('masked', f > band);
+  });
+
+  // update coverage bar
+  coverageBar.style.width = pct + '%';
+  let barColor = 'var(--red)';
+  if (pct >= 95) barColor = 'var(--green)';
+  else if (pct >= 88) barColor = 'var(--amber)';
+  coverageBar.style.background = barColor;
+
+  coveragePct.textContent = pct + ' %';
+
+  // threshold note
+  thresholdNote.className = 'threshold-note';
+  if (pct >= 95) {
+    thresholdNote.classList.add('above');
+    thresholdNote.textContent = 'Über der kritischen 95-%-Schwelle: Komfortables Lesen ist möglich.';
+  } else if (pct >= 88) {
+    thresholdNote.classList.add('near');
+    thresholdNote.textContent = 'Nahe der 95-%-Schwelle: Grundinhalt erkennbar, aber viele Lücken.';
+  } else {
+    thresholdNote.classList.add('below');
+    thresholdNote.textContent = 'Unter der kritischen Schwelle: Zu viele Lücken für zusammenhängendes Verstehen.';
+  }
+
+  // enable continue button once slider is moved
+  btnStage2.disabled = false;
+}
+
+// ── Stage 1 answer ───────────────────────────────────────────────────────────
+let stage1answered = false;
+function checkChoice1(btn) {
+  if (stage1answered) return;
+  stage1answered = true;
+
+  const btns = document.querySelectorAll('#choices1 .choice-btn');
+  btns.forEach(b => b.disabled = true);
+
+  const val = btn.dataset.val;
+  const fb  = document.getElementById('feedback1');
+  fb.classList.add('show');
+
+  if (val === 'C') {
+    btn.classList.add('correct');
+    fb.classList.add('ok');
+    fb.innerHTML = '<strong>Richtig!</strong> Die Sprachforscherin Batia Laufer und Paul Nation zeigen: Unter 95&nbsp;% Vokabular-Deckungsgrad fehlt zu viel Kontext, um unbekannte Wörter zu erschließen. Schon ein unbekanntes Wort auf 20 kann den Lesefluss massiv stören. Das nennt sich <em>kritische Deckungsschwelle</em>.';
+  } else {
+    btn.classList.add('wrong');
+    document.querySelector('#choices1 [data-val="C"]').classList.add('correct');
+    fb.classList.add('nok');
+    const msgs = {
+      A: '70&nbsp;% klingen nach viel &mdash; aber das bedeutet: Jedes dritte Wort ist unbekannt. Ohne Kontext kannst du unbekannte Wörter nicht erraten. Die Forschung (Nation 2006) setzt die Mindestschwelle bei 95&nbsp;%.',
+      B: '85&nbsp;% entsprechen ungefähr dem Niveau von 2.000 häufigsten Wörtern. Du erkennst den groben Inhalt &mdash; aber jedes siebte Wort fehlt. Das ist noch zu wenig für komfortables Lesen. Die kritische Schwelle liegt bei 95&nbsp;%.',
+      D: 'Guter Gedanke &mdash; aber 100&nbsp;% sind nicht nötig. Für fließendes Lesen reichen 98&ndash;99&nbsp;% (ca. 8.000 Wörter). Das Ziel ist, die <em>kritische 95-%-Schwelle</em> zu überschreiten, nicht Vollständigkeit.'
+    };
+    fb.innerHTML = '<strong>Fast!</strong> ' + msgs[val];
+  }
+
+  // show explorer
+  document.getElementById('explorer').style.display = 'block';
+  buildTextDOM();
+  updateMask(sliderEl.value);
+}
+
+// ── Stage 2 answer ───────────────────────────────────────────────────────────
+let stage2answered = false;
+const btnFinal = document.getElementById('btnFinal');
+
+function checkChoice2(btn) {
+  if (stage2answered) return;
+  stage2answered = true;
+
+  const btns = document.querySelectorAll('#choices2 .choice-btn');
+  btns.forEach(b => b.disabled = true);
+
+  const val = btn.dataset.val;
+  const fb  = document.getElementById('feedback2');
+  fb.classList.add('show');
+
+  if (val === 'B') {
+    btn.classList.add('correct');
+    fb.classList.add('ok');
+    fb.innerHTML = '<strong>Genau!</strong> Hochfrequente Wörter haben einen Hebeleffekt: Die Top-1.000 Wörter decken ca. 80&nbsp;% aller Texte ab. Jedes weitere Tausend im Hochfrequenzbereich bringt 3&ndash;7 Prozentpunkte mehr Deckungsgrad &mdash; viel effizienter als zufällig neue Themen-Vokabeln zu lernen. Das nennt sich <em>Frequenzprinzip des Vokabelerwerbs</em>.';
+  } else {
+    btn.classList.add('wrong');
+    document.querySelector('#choices2 [data-val="B"]').classList.add('correct');
+    fb.classList.add('nok');
+    const msgs = {
+      A: 'Vielfalt ist langfristig wichtig &mdash; aber seltene Fachvokabeln aus verschiedenen Bereichen helfen wenig, wenn die häufigen Grundwörter noch fehlen. Erst die Top-5.000 absichern (<em>Frequenzprinzip</em>), dann in Spezialgebiete verzweigen.',
+      C: 'Authentische Medien helfen beim Vokabelaufbau &mdash; aber erst ab ca. 95&nbsp;% Deckungsgrad. Bei 87&nbsp;% (2.000 Wörter) überfordert unstrukturierter Input Lars mehr, als er nützt. Der Deckungsgrad muss zuerst steigen.',
+      D: 'Doch! Mit gezieltem Aufbau der häufigsten Wörter ist das erreichbar. Von 2.000 auf 5.000 Wörter sind es ca. 3.000 neue Vokabeln &mdash; und der Deckungsgrad steigt von 87&nbsp;% auf 97&nbsp;%. Das ist der <em>Frequenzprinzip-Effekt</em>.'
+    };
+    fb.innerHTML = '<strong>Nicht ganz.</strong> ' + msgs[val];
+  }
+
+  btnFinal.disabled = false;
+}
+
+// ── Navigation ───────────────────────────────────────────────────────────────
+function goStage2() {
+  document.getElementById('stage1').classList.remove('visible');
+  document.getElementById('stage2').classList.add('visible');
+  document.getElementById('dot1').classList.remove('active');
+  document.getElementById('dot1').classList.add('done');
+  document.getElementById('dot2').classList.add('active');
+  document.getElementById('progress-label').textContent = 'Stufe 2 von 2';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function goFinal() {
+  document.getElementById('stage2').classList.remove('visible');
+  document.getElementById('stageFinal').classList.add('visible');
+  document.getElementById('dot2').classList.remove('active');
+  document.getElementById('dot2').classList.add('done');
+  document.getElementById('progress-label').textContent = 'Abgeschlossen';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+</body>
+</html>

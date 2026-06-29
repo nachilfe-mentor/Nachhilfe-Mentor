@@ -1,0 +1,959 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Kritische Periode im Spracherwerb: interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zur kritischen Periode: Sage vorher, wie das Lernalter Aussprache und Grammatik beim Fremdsprachenlernen beeinflusst – mit Trendkurven und Feedback.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="kritische Periode, Spracherwerb, Sensitive Periode, Fremdsprache lernen, Lernalter, Aussprache und Grammatik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/kritische-periode-spracherwerb-simulation.html">
+  <meta property="og:title" content="Kritische Periode im Spracherwerb: Simulation">
+  <meta property="og:description" content="Interaktive Simulation zur kritischen Periode: Sage vorher, wie das Lernalter Aussprache und Grammatik beim Fremdsprachenlernen beeinflusst – mit Trendkurven und Feedback.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/kritische-periode-spracherwerb-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Kritische Periode im Spracherwerb: interaktive Simulation",
+  "description":"Interaktive Simulation zur kritischen Periode: Sage vorher, wie das Lernalter Aussprache und Grammatik beim Fremdsprachenlernen beeinflusst – mit Trendkurven und Feedback.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/kritische-periode-spracherwerb-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:   #172033;
+      --muted: #617087;
+      --line:  #d8e1ed;
+      --blue:  #0f5fa8;
+      --green: #0b8f6a;
+      --amber: #b87700;
+      --red:   #b5281e;
+      --bg:    #f5f8fc;
+      --panel: #ffffff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    /* ── Page chrome ────────────────────────────────────────────── */
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 32px 22px 20px;
+    }
+    header h1 {
+      font-size: clamp(1.55rem, 3vw, 2.3rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    header p { color: var(--muted); max-width: 680px; font-size: 0.97rem; }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 22px 56px;
+    }
+
+    /* ── Progress dots ──────────────────────────────────────────── */
+    .progress-bar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .step-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--line);
+      border: 2px solid var(--line);
+      transition: background 0.22s, border-color 0.22s;
+    }
+    .step-dot.active  { background: var(--blue);  border-color: var(--blue); }
+    .step-dot.done    { background: var(--green); border-color: var(--green); }
+    .step-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-left: 4px;
+    }
+
+    /* ── Stage card ──────────────────────────────────────────────── */
+    .stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 26px 28px 30px;
+      margin-bottom: 28px;
+      display: none;
+    }
+    .stage.visible { display: block; }
+
+    .stage-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--blue);
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+    .stage h2 {
+      font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+
+    /* ── Layout: canvas + controls ───────────────────────────────── */
+    .sim-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 28px;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .sim-layout { grid-template-columns: 1fr; }
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+
+    /* ── Legend ──────────────────────────────────────────────────── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 12px;
+      font-size: 0.83rem;
+      color: var(--muted);
+    }
+    .legend-item { display: flex; align-items: center; gap: 7px; }
+    .legend-swatch {
+      width: 18px; height: 4px;
+      border-radius: 2px;
+    }
+    .legend-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+    }
+
+    /* ── Intro / Goal box ────────────────────────────────────────── */
+    .goal-box {
+      background: #f0f5ff;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin-bottom: 28px;
+      font-size: 0.93rem;
+      line-height: 1.6;
+      color: #1a2e4a;
+    }
+    .goal-box strong { font-weight: 700; }
+
+    /* ── Canvas hint label ───────────────────────────────────────── */
+    .canvas-hint {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 8px;
+      font-style: italic;
+    }
+
+    /* ── Question box ────────────────────────────────────────────── */
+    .question-box {
+      background: #f0f5ff;
+      border: 1px solid #c6d8f4;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+    .question-box p {
+      font-size: 0.97rem;
+      line-height: 1.55;
+    }
+    .question-box strong { font-weight: 700; }
+
+    /* ── Option buttons ──────────────────────────────────────────── */
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .opt-btn {
+      font-family: inherit;
+      font-size: 0.93rem;
+      text-align: left;
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 9px;
+      padding: 11px 16px;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      line-height: 1.45;
+    }
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f5ff;
+    }
+    .opt-btn:disabled { cursor: default; opacity: 0.75; }
+    .opt-btn.correct  { border-color: var(--green); background: #edfbf5; color: #0b6e50; }
+    .opt-btn.wrong    { border-color: var(--red);   background: #fff1f0; color: #8c1c18; }
+
+    /* ── Feedback box ────────────────────────────────────────────── */
+    .feedback {
+      border-radius: 10px;
+      padding: 15px 18px;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+      display: none;
+    }
+    .feedback.visible { display: block; }
+    .feedback.correct { background: #edfbf5; border: 1px solid #9de8c5; color: #0a5c42; }
+    .feedback.wrong   { background: #fff1f0; border: 1px solid #f4b3ae; color: #7a1a16; }
+    .feedback strong  { font-weight: 700; }
+
+    /* ── Next / Tips button ──────────────────────────────────────── */
+    .next-btn {
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 9px;
+      padding: 11px 26px;
+      cursor: pointer;
+      display: none;
+      transition: background 0.15s;
+    }
+    .next-btn:hover { background: #0a4d8c; }
+    .next-btn.visible { display: inline-block; }
+
+    /* ── Tips section ────────────────────────────────────────────── */
+    #tips-section {
+      display: none;
+      margin-top: 24px;
+    }
+    #tips-section.visible { display: block; }
+
+    .tips-header {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .tip-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 18px 18px 16px;
+    }
+    .tip-card h4 {
+      font-size: 0.93rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .tip-card p {
+      font-size: 0.86rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── Source note ─────────────────────────────────────────────── */
+    .source-note {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 28px;
+      border-top: 1px solid var(--line);
+      padding-top: 14px;
+      line-height: 1.6;
+    }
+
+    /* ── Footer ──────────────────────────────────────────────────── */
+    footer {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 22px 32px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    footer a { color: var(--muted); }
+
+    /* ── Completion badge ────────────────────────────────────────── */
+    .completion-badge {
+      background: #edfbf5;
+      border: 1px solid #9de8c5;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 24px;
+      font-size: 0.95rem;
+      color: #0a5c42;
+      font-weight: 600;
+      display: none;
+    }
+    .completion-badge.visible { display: block; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <h1>Sensitive Periode im Spracherwerb</h1>
+  <p>Warum lernen Kinder Fremdsprachen mit perfektem Akzent – und was bedeutet das für dich?</p>
+</header>
+
+<main>
+  <div class="goal-box">
+    <strong>Was du lernst:</strong> Wie das Alter, in dem man mit einer Fremdsprache beginnt, Aussprache und Grammatik unterschiedlich beeinflusst – und warum das kein Grund zur Entmutigung ist.
+  </div>
+
+  <div class="progress-bar">
+    <div class="step-dot active" id="dot-1"></div>
+    <div class="step-dot" id="dot-2"></div>
+    <span class="step-label">Stufe <span id="step-counter">1</span> von 2</span>
+  </div>
+
+  <!-- ─────── STUFE 1: Aussprache ─────────────────────────── -->
+  <div class="stage visible" id="stage-1">
+    <div class="stage-title">Stufe 1 – Aussprache</div>
+    <h2>Wie beeinflusst das Lernalter die Aussprache?</h2>
+
+    <div class="sim-layout">
+      <div>
+        <p class="canvas-hint">Beobachte, wie 40 simulierte Lernende eintreffen – dann erscheint der Trendverlauf.</p>
+        <canvas id="canvas-1" width="720" height="420" aria-label="Streudiagramm: Lernalter vs. Aussprache-Score"></canvas>
+        <div class="legend" id="legend-1">
+          <div class="legend-item">
+            <div class="legend-swatch" style="background:rgba(11,143,106,0.22);border:1px solid rgba(11,143,106,0.4);height:12px;border-radius:3px;"></div>
+            <span>Sensitives Fenster (AoA ≤ 7)</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background:#0f5fa8;"></div>
+            <span>Lernende (simuliert)</span>
+          </div>
+          <div class="legend-item legend-trend" style="display:none;">
+            <div class="legend-swatch" style="background:#0f5fa8;"></div>
+            <span>Aussprache-Trend</span>
+          </div>
+          <div class="legend-item legend-luisa" style="display:none;">
+            <div class="legend-dot" style="background:#b87700;width:13px;height:13px;border:2px solid #fff;box-shadow:0 0 0 2px #b87700;"></div>
+            <span>Luisa (AoA 5)</span>
+          </div>
+          <div class="legend-item legend-jonas" style="display:none;">
+            <div class="legend-dot" style="background:#b5281e;width:13px;height:13px;border:2px solid #fff;box-shadow:0 0 0 2px #b5281e;"></div>
+            <span>Jonas (AoA 14)</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="question-box">
+          <p><strong>Luisa</strong> begann Englisch mit <strong>5 Jahren</strong> zu lernen, <strong>Jonas</strong> mit <strong>14 Jahren</strong>. Beide hatten gleich viel Unterricht.</p>
+          <p style="margin-top:10px;">Wer wird von Muttersprachlerinnen und Muttersprachlern wahrscheinlich als <strong>„akzentfrei"</strong> eingestuft?</p>
+        </div>
+
+        <div class="options" id="options-1">
+          <button class="opt-btn" onclick="answer1('A')">A) Luisa (AoA = 5) – sie hat einen klaren Vorteil</button>
+          <button class="opt-btn" onclick="answer1('B')">B) Jonas (AoA = 14) – er hat länger Unterricht</button>
+          <button class="opt-btn" onclick="answer1('C')">C) Beide gleichwertig – Unterricht macht den Unterschied</button>
+        </div>
+
+        <div class="feedback correct" id="fb-1-correct" role="alert">
+          <strong>Richtig! Luisa hat einen entscheidenden Vorteil.</strong><br><br>
+          Das Modell der <strong>Sensitiven Periode für Aussprache</strong> erklärt es: Kinder bis etwa 5–7 Jahre entwickeln phonologische Repräsentationen implizit und automatisch – wie Muttersprachlerinnen. Danach wird dieser Mechanismus schrittweise unzugänglicher.<br><br>
+          Jonas kann sehr gutes Englisch sprechen – aber ein leichter Akzent bleibt mit hoher Wahrscheinlichkeit. Das ist kein Versagen, sondern Biologie.
+        </div>
+        <div class="feedback wrong" id="fb-1-wrong-B" role="alert">
+          <strong>Nicht ganz.</strong><br><br>
+          Die Unterrichtsdauer allein entscheidet nicht über Akzentfreiheit. Das <strong>Lernalter (Age of Acquisition, AoA)</strong> ist der entscheidende Faktor für Aussprache. Johnson &amp; Newport (1989): Korrelation AoA vs. Sprachscore r = −0,77. Luisas früher Start gibt ihr einen biologischen Vorteil, den Jonas auch mit viel Übung kaum aufholen kann.
+        </div>
+        <div class="feedback wrong" id="fb-1-wrong-C" role="alert">
+          <strong>Das stimmt leider nicht.</strong><br><br>
+          Unterricht hilft enorm – aber bei der <strong>Aussprache</strong> zeigen Studien einen klaren Alterseffekt. Lernende mit AoA 3–7 erzielen im Mittel ~97 % in Sprachtests; Lernende mit AoA 11–15 nur ~84 %. Bei Akzentbewertungen ist der Unterschied noch größer. Luisa liegt im sensitivsten Fenster, Jonas knapp außerhalb.
+        </div>
+
+        <button class="next-btn" id="next-1" onclick="goToStage2()">Weiter zu Stufe 2</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────── STUFE 2: Grammatik vs. Aussprache ─────────── -->
+  <div class="stage" id="stage-2">
+    <div class="stage-title">Stufe 2 – Grammatik vs. Aussprache</div>
+    <h2>Welche Fähigkeit leidet mehr bei einem späten Start?</h2>
+
+    <div class="sim-layout">
+      <div>
+        <canvas id="canvas-2" width="720" height="420" aria-label="Vergleich Grammatik- und Aussprache-Trend nach Lernalter"></canvas>
+        <div class="legend">
+          <div class="legend-item">
+            <div class="legend-swatch" style="background:rgba(11,143,106,0.22);border:1px solid rgba(11,143,106,0.4);height:12px;border-radius:3px;"></div>
+            <span>Sensitives Fenster (AoA ≤ 6)</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-swatch" style="background:#0f5fa8;"></div>
+            <span>Aussprache-Trend</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-swatch" style="background:#0b8f6a;"></div>
+            <span>Grammatik-Trend</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background:#b87700;width:11px;height:11px;"></div>
+            <span>Emma – Aussprache (AoA 20)</span>
+          </div>
+          <div class="legend-item">
+            <div class="legend-dot" style="background:#0b8f6a;width:11px;height:11px;"></div>
+            <span>Emma – Grammatik (AoA 20)</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="question-box">
+          <p><strong>Emma</strong> begann Englisch mit <strong>20 Jahren</strong> zu lernen und hatte viel Unterricht. Die beiden Kurven zeigen den durchschnittlichen Trend.</p>
+          <p style="margin-top:10px;">Welche Aussage trifft für Emma am ehesten zu?</p>
+        </div>
+
+        <div class="options" id="options-2">
+          <button class="opt-btn" onclick="answer2('A')">A) Grammatisch korrekt, aber wahrscheinlich mit Akzent</button>
+          <button class="opt-btn" onclick="answer2('B')">B) Weder gute Grammatik noch gute Aussprache möglich</button>
+          <button class="opt-btn" onclick="answer2('C')">C) Mit genug Übung auch akzentfrei</button>
+          <button class="opt-btn" onclick="answer2('D')">D) Grammatik und Aussprache sind gleich schwer</button>
+        </div>
+
+        <div class="feedback correct" id="fb-2-correct" role="alert">
+          <strong>Richtig!</strong><br><br>
+          Erwachsene nutzen <strong>explizites Regelwissen</strong> (deklaratives Lernen) – das ermöglicht hohe Grammatik-Kompetenz. Die phonologische sensitive Periode ist dagegen abgelaufen: Emmas Aussprache-System wurde auf Deutsch kalibriert. Das Ergebnis: gute Grammatik, wahrscheinlicher Akzent.<br><br>
+          <strong>Kein Grund zur Entmutigung:</strong> Akzent bedeutet nicht schlechtes Englisch. Viele exzellente Englischsprecherinnen sprechen mit Akzent.
+        </div>
+        <div class="feedback wrong" id="fb-2-wrong-B" role="alert">
+          <strong>Zu pessimistisch!</strong><br><br>
+          Erwachsene können durch expliziten Unterricht sehr hohe <strong>Grammatik-Kompetenz</strong> erreichen. Der Grammatik-Trend auf der Kurve zeigt ein Plateau bei ~60–65 % – deutlich höher als das Aussprache-Plateau. Schau auf Emmas Position auf der grünen Kurve: Grammatik ist für sie gut erreichbar.
+        </div>
+        <div class="feedback wrong" id="fb-2-wrong-C">
+          <strong>Das ist leider sehr unwahrscheinlich.</strong><br><br>
+          Nach AoA &gt; 12–14 erreichen weniger als 5 % der Lernenden native-like Aussprache – unabhängig von der Übungsdauer (Flege et al., 1995). Training kann den Akzent reduzieren und die Verständlichkeit verbessern, aber eine vollständige Elimination ist extrem selten. Die blaue Kurve zeigt: Emma liegt weit im niedrigen Bereich des Aussprache-Trends.
+        </div>
+        <div class="feedback wrong" id="fb-2-wrong-D">
+          <strong>Nicht ganz.</strong><br><br>
+          Grammatik und Aussprache unterliegen unterschiedlichen Lernmechanismen. Aussprache ist eng an die sensitive Periode gebunden (implizit-phonologisch). Grammatik kann auch explizit gelernt werden. Der Kurvenverlauf zeigt deutlich: Die blaue Aussprache-Kurve fällt steiler und hat ein niedrigeres Plateau als die grüne Grammatik-Kurve.
+        </div>
+
+        <button class="next-btn" id="next-2" onclick="showTips()">Tipps ansehen</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─────── COMPLETION ─────────────────────────────────── -->
+  <div class="completion-badge" id="completion">
+    Beide Stufen abgeschlossen – gut gemacht!
+  </div>
+
+  <!-- ─────── TIPS ──────────────────────────────────────── -->
+  <div id="tips-section">
+    <p class="tips-header">Was bedeutet das für dein Sprachenlernen?</p>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <h4>Früher Start lohnt sich</h4>
+        <p>Vor der Pubertät entwickelt das Gehirn phonologische Fähigkeiten besonders leicht. Bilinguale Kinder profitieren ihr Leben lang.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Grammatik bleibt erreichbar</h4>
+        <p>Mit explizitem Unterricht und Übung können Erwachsene sehr gute Grammatik-Kompetenz aufbauen – besonders im Schriftlichen.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Viel Input hilft</h4>
+        <p>Immersion (Serien, Podcasts, Filme) simuliert natürlichen Sprachkontakt und aktiviert implizites Lernen – auch für Ältere.</p>
+      </div>
+      <div class="tip-card">
+        <h4>Akzent ist kein Makel</h4>
+        <p>Verständlichkeit und Kommunikationskompetenz sind unabhängig von Akzentfreiheit. Viele exzellente L2-Sprecher haben einen Akzent.</p>
+      </div>
+    </div>
+
+    <div class="source-note">
+      <strong>Wissenschaftliche Grundlage:</strong><br>
+      Johnson &amp; Newport (1989): Kritische-Perioden-Effekte im Fremdsprachenerwerb, Cognitive Psychology 21, 60–99.<br>
+      Flege, Munro &amp; MacKay (1995): Faktoren des wahrgenommenen Akzents, JASA 97(5), 3125–3134.<br>
+      DeKeyser (2000): Robustheit der Critical-Period-Effekte, Studies in SLA 22(4), 499–533.<br>
+      Hakuta, Bialystok &amp; Wiley (2003): Kritische Belege zur Critical-Period-Hypothese, Psychological Science 14(1), 31–38.
+    </div>
+  </div>
+</main>
+
+<footer>
+  <a href="/">Startseite</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+  <span>Nachhilfe Mentor</span>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════
+   Daten-Modell (aus Johnson & Newport 1989 und Flege et al. 1995)
+   ═══════════════════════════════════════════════════════════════ */
+
+/** Aussprache-Trend G(AoA) normiert 0-100 */
+function pronScore(aoa) {
+  if (aoa <= 5)  return 100;
+  if (aoa <= 17) return Math.max(40, 100 - 5.0 * (aoa - 5));
+  return 40;
+}
+
+/** Grammatik-Trend G(AoA) normiert 0-100 */
+function gramScore(aoa) {
+  if (aoa <= 6)  return 100;
+  if (aoa <= 20) return Math.max(60, 100 - 2.8 * (aoa - 6));
+  return 60;
+}
+
+/* Pseudo-Zufallsgenerator (seeded) – reproduzierbar */
+function mkRng(seed) {
+  let s = seed;
+  return function() {
+    s = (s * 1664525 + 1013904223) & 0xffffffff;
+    return (s >>> 0) / 4294967296;
+  };
+}
+
+/** Simulierte Lernende für Streudiagramm */
+function buildLearners(n, rng) {
+  const pts = [];
+  for (let i = 0; i < n; i++) {
+    const aoa  = 3 + rng() * 32;          // AoA 3–35
+    const base = pronScore(aoa);
+    // Streuung wächst mit AoA
+    const sigma = aoa <= 8 ? 4 : aoa <= 15 ? 8 : 13;
+    const score = Math.min(100, Math.max(20, base + (rng() - 0.5) * 2 * sigma));
+    pts.push({ aoa, score });
+  }
+  return pts;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Canvas-Zeichenhelfer
+   ═══════════════════════════════════════════════════════════════ */
+
+const PAD = { top: 28, right: 24, bottom: 48, left: 54 };
+
+function plotArea(canvas) {
+  return {
+    x0: PAD.left,
+    y0: PAD.top,
+    x1: canvas.width - PAD.right,
+    y1: canvas.height - PAD.bottom,
+    w:  canvas.width  - PAD.left - PAD.right,
+    h:  canvas.height - PAD.top  - PAD.bottom
+  };
+}
+
+function toCanvasX(aoa, p, aoaMin, aoaMax) {
+  return p.x0 + ((aoa - aoaMin) / (aoaMax - aoaMin)) * p.w;
+}
+function toCanvasY(score, p) {
+  return p.y1 - (score / 100) * p.h;
+}
+
+/** Sensitive-Perioden-Fenster als farbige Hintergrundzone zeichnen */
+function drawSensitiveWindow(ctx, p, aoaStart, aoaEnd, color, label) {
+  const x0 = toCanvasX(aoaStart, p, 0, 35);
+  const x1 = toCanvasX(aoaEnd,   p, 0, 35);
+  ctx.fillStyle = color;
+  ctx.fillRect(x0, p.y0, x1 - x0, p.h);
+  ctx.fillStyle = 'rgba(11, 100, 70, 0.65)';
+  ctx.font      = 'bold 10px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(label, (x0 + x1) / 2, p.y0 + 13);
+}
+
+function drawGrid(ctx, p, canvas) {
+  ctx.strokeStyle = '#dce6f0';
+  ctx.lineWidth   = 1;
+  ctx.fillStyle   = '#617087';
+  ctx.font        = '11px Inter, sans-serif';
+  ctx.textAlign   = 'right';
+
+  // Y-Gitter (0,20,40,60,80,100)
+  for (let v = 0; v <= 100; v += 20) {
+    const y = toCanvasY(v, p);
+    ctx.beginPath();
+    ctx.moveTo(p.x0, y);
+    ctx.lineTo(p.x1, y);
+    ctx.stroke();
+    ctx.fillText(v + ' %', p.x0 - 6, y + 4);
+  }
+
+  // X-Gitter (0,5,10,15,20,25,30,35)
+  ctx.textAlign = 'center';
+  for (let a = 0; a <= 35; a += 5) {
+    const x = toCanvasX(a, p, 0, 35);
+    ctx.beginPath();
+    ctx.moveTo(x, p.y0);
+    ctx.lineTo(x, p.y1);
+    ctx.stroke();
+    ctx.fillText(a, x, p.y1 + 16);
+  }
+
+  // Achsenbeschriftung
+  ctx.fillStyle = '#172033';
+  ctx.font      = '12px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Lernalter (AoA in Jahren)', p.x0 + p.w / 2, canvas.height - 6);
+
+  ctx.save();
+  ctx.translate(14, p.y0 + p.h / 2);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillText('Sprachkompetenz (%)', 0, 0);
+  ctx.restore();
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   STUFE 1: Animation
+   ═══════════════════════════════════════════════════════════════ */
+
+const canvas1    = document.getElementById('canvas-1');
+const ctx1       = canvas1.getContext('2d');
+const p1         = plotArea(canvas1);
+const rng1       = mkRng(42);
+const learners1  = buildLearners(40, rng1);
+
+let anim1Phase   = 'dots';   // dots | trend | markers
+let dotIndex     = 0;
+let trendT       = 0;        // 0→1 für Kurvenanimation
+let markersShown = false;
+let raf1         = null;
+
+function drawCanvas1() {
+  ctx1.clearRect(0, 0, canvas1.width, canvas1.height);
+  // Sensitives Fenster (AoA 0–7): grüne Hintergrundzone BEVOR das Gitter
+  drawSensitiveWindow(ctx1, p1, 0, 7, 'rgba(11, 143, 106, 0.09)', 'Sens. Fenster');
+  drawGrid(ctx1, p1, canvas1);
+
+  // Punkte
+  const shown = learners1.slice(0, dotIndex);
+  shown.forEach(pt => {
+    const x = toCanvasX(pt.aoa, p1, 0, 35);
+    const y = toCanvasY(pt.score, p1);
+    ctx1.beginPath();
+    ctx1.arc(x, y, 5, 0, Math.PI * 2);
+    ctx1.fillStyle = 'rgba(15, 95, 168, 0.55)';
+    ctx1.fill();
+    ctx1.strokeStyle = 'rgba(15, 95, 168, 0.8)';
+    ctx1.lineWidth = 1;
+    ctx1.stroke();
+  });
+
+  // Trendkurve (animiert)
+  if (anim1Phase === 'trend' || anim1Phase === 'markers') {
+    const aoaEnd = trendT * 35;
+    ctx1.beginPath();
+    let first = true;
+    for (let aoa = 0; aoa <= aoaEnd; aoa += 0.3) {
+      const x = toCanvasX(aoa, p1, 0, 35);
+      const y = toCanvasY(pronScore(aoa), p1);
+      if (first) { ctx1.moveTo(x, y); first = false; }
+      else        { ctx1.lineTo(x, y); }
+    }
+    ctx1.strokeStyle = '#0f5fa8';
+    ctx1.lineWidth   = 2.5;
+    ctx1.stroke();
+
+    document.querySelector('.legend-trend').style.display = 'flex';
+  }
+
+  // Marker Luisa und Jonas
+  if (anim1Phase === 'markers' && markersShown) {
+    drawMarker(ctx1, p1, 5,  pronScore(5),  '#b87700', 'Luisa');
+    drawMarker(ctx1, p1, 14, pronScore(14), '#b5281e', 'Jonas');
+    document.querySelector('.legend-luisa').style.display = 'flex';
+    document.querySelector('.legend-jonas').style.display = 'flex';
+  }
+}
+
+function drawMarker(ctx, p, aoa, score, color, label) {
+  const x = toCanvasX(aoa, p, 0, 35);
+  const y = toCanvasY(score, p);
+  ctx.beginPath();
+  ctx.arc(x, y, 8, 0, Math.PI * 2);
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.strokeStyle = '#fff';
+  ctx.lineWidth   = 2.5;
+  ctx.stroke();
+
+  ctx.fillStyle   = color;
+  ctx.font        = 'bold 12px Inter, sans-serif';
+  ctx.textAlign   = 'center';
+  ctx.fillText(label, x, y - 14);
+}
+
+function runAnim1() {
+  if (anim1Phase === 'dots') {
+    if (dotIndex < learners1.length) {
+      dotIndex += 2;
+      drawCanvas1();
+      raf1 = requestAnimationFrame(runAnim1);
+    } else {
+      dotIndex = learners1.length;
+      drawCanvas1();
+      anim1Phase = 'trend';
+      trendT     = 0;
+      raf1 = requestAnimationFrame(runAnim1);
+    }
+  } else if (anim1Phase === 'trend') {
+    trendT += 0.018;
+    drawCanvas1();
+    if (trendT < 1) {
+      raf1 = requestAnimationFrame(runAnim1);
+    } else {
+      trendT = 1;
+      drawCanvas1();
+    }
+  }
+}
+
+// Start
+drawCanvas1();
+raf1 = requestAnimationFrame(runAnim1);
+
+/* ═══════════════════════════════════════════════════════════════
+   STUFE 1: Interaktion
+   ═══════════════════════════════════════════════════════════════ */
+
+function answer1(choice) {
+  if (raf1) { cancelAnimationFrame(raf1); raf1 = null; }
+  trendT = 1; dotIndex = learners1.length; anim1Phase = 'markers'; markersShown = true;
+  drawCanvas1();
+
+  const btns = document.querySelectorAll('#options-1 .opt-btn');
+  btns.forEach(b => { b.disabled = true; });
+
+  if (choice === 'A') {
+    btns[0].classList.add('correct');
+    document.getElementById('fb-1-correct').classList.add('visible');
+    if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 1, result: 'correct' });
+  } else if (choice === 'B') {
+    btns[1].classList.add('wrong');
+    btns[0].classList.add('correct');
+    document.getElementById('fb-1-wrong-B').classList.add('visible');
+    if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 1, result: 'incorrect' });
+  } else {
+    btns[2].classList.add('wrong');
+    btns[0].classList.add('correct');
+    document.getElementById('fb-1-wrong-C').classList.add('visible');
+    if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 1, result: 'incorrect' });
+  }
+
+  document.getElementById('next-1').classList.add('visible');
+}
+
+function goToStage2() {
+  document.getElementById('stage-1').classList.remove('visible');
+  document.getElementById('stage-2').classList.add('visible');
+
+  document.getElementById('dot-1').classList.remove('active');
+  document.getElementById('dot-1').classList.add('done');
+  document.getElementById('dot-2').classList.add('active');
+  document.getElementById('step-counter').textContent = '2';
+
+  initCanvas2();
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   STUFE 2: Animation (Grammatik vs. Aussprache)
+   ═══════════════════════════════════════════════════════════════ */
+
+const canvas2 = document.getElementById('canvas-2');
+const ctx2    = canvas2.getContext('2d');
+const p2      = plotArea(canvas2);
+
+let raf2      = null;
+let trendT2   = 0;          // 0→1
+let emmaShown = false;
+
+function drawCanvas2() {
+  ctx2.clearRect(0, 0, canvas2.width, canvas2.height);
+  // Sensitives Fenster (AoA 0–6): grüne Hintergrundzone
+  drawSensitiveWindow(ctx2, p2, 0, 6, 'rgba(11, 143, 106, 0.09)', 'Sens. Fenster');
+  drawGrid(ctx2, p2, canvas2);
+
+  const aoaEnd = trendT2 * 35;
+
+  // Aussprache-Kurve (blau)
+  ctx2.beginPath();
+  let first = true;
+  for (let aoa = 0; aoa <= aoaEnd; aoa += 0.3) {
+    const x = toCanvasX(aoa, p2, 0, 35);
+    const y = toCanvasY(pronScore(aoa), p2);
+    if (first) { ctx2.moveTo(x, y); first = false; }
+    else        { ctx2.lineTo(x, y); }
+  }
+  ctx2.strokeStyle = '#0f5fa8';
+  ctx2.lineWidth   = 2.5;
+  ctx2.stroke();
+
+  // Grammatik-Kurve (grün), leicht verzögert
+  if (trendT2 > 0.05) {
+    ctx2.beginPath();
+    first = true;
+    for (let aoa = 0; aoa <= aoaEnd; aoa += 0.3) {
+      const x = toCanvasX(aoa, p2, 0, 35);
+      const y = toCanvasY(gramScore(aoa), p2);
+      if (first) { ctx2.moveTo(x, y); first = false; }
+      else        { ctx2.lineTo(x, y); }
+    }
+    ctx2.strokeStyle = '#0b8f6a';
+    ctx2.lineWidth   = 2.5;
+    ctx2.stroke();
+  }
+
+  // Emma-Marker (horizontal versetzt für Lesbarkeit)
+  if (emmaShown) {
+    const emmaAoA  = 20;
+    const xCenter  = toCanvasX(emmaAoA, p2, 0, 35);
+    const xPron    = xCenter - 14;
+    const xGram    = xCenter + 14;
+
+    // Aussprache-Dot (amber)
+    const yP = toCanvasY(pronScore(emmaAoA), p2);
+    ctx2.beginPath();
+    ctx2.arc(xPron, yP, 8, 0, Math.PI * 2);
+    ctx2.fillStyle   = '#b87700';
+    ctx2.fill();
+    ctx2.strokeStyle = '#fff';
+    ctx2.lineWidth   = 2.5;
+    ctx2.stroke();
+    ctx2.fillStyle  = '#b87700';
+    ctx2.font       = 'bold 11px Inter, sans-serif';
+    ctx2.textAlign  = 'center';
+    ctx2.fillText('Emma', xPron, yP - 13);
+    ctx2.font       = '10px Inter, sans-serif';
+    ctx2.fillText(Math.round(pronScore(emmaAoA)) + ' %', xPron, yP + 20);
+
+    // Grammatik-Dot (grün)
+    const yG = toCanvasY(gramScore(emmaAoA), p2);
+    ctx2.beginPath();
+    ctx2.arc(xGram, yG, 8, 0, Math.PI * 2);
+    ctx2.fillStyle   = '#0b8f6a';
+    ctx2.fill();
+    ctx2.strokeStyle = '#fff';
+    ctx2.lineWidth   = 2.5;
+    ctx2.stroke();
+    ctx2.fillStyle  = '#0b8f6a';
+    ctx2.font       = 'bold 11px Inter, sans-serif';
+    ctx2.textAlign  = 'center';
+    ctx2.fillText('Emma', xGram, yG - 13);
+    ctx2.font       = '10px Inter, sans-serif';
+    ctx2.fillText(Math.round(gramScore(emmaAoA)) + ' %', xGram, yG + 20);
+
+    // Verbindungslinie zwischen den Dots mit Pfeil
+    ctx2.beginPath();
+    ctx2.setLineDash([4, 3]);
+    ctx2.moveTo(xPron, yP);
+    ctx2.lineTo(xGram, yG);
+    ctx2.strokeStyle = '#aab8cc';
+    ctx2.lineWidth   = 1.5;
+    ctx2.stroke();
+    ctx2.setLineDash([]);
+  }
+}
+
+function runAnim2() {
+  trendT2 += 0.016;
+  drawCanvas2();
+  if (trendT2 < 1) {
+    raf2 = requestAnimationFrame(runAnim2);
+  } else {
+    trendT2 = 1;
+    drawCanvas2();
+  }
+}
+
+function initCanvas2() {
+  trendT2 = 0;
+  emmaShown = false;
+  drawCanvas2();
+  raf2 = requestAnimationFrame(runAnim2);
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   STUFE 2: Interaktion
+   ═══════════════════════════════════════════════════════════════ */
+
+function answer2(choice) {
+  if (raf2) { cancelAnimationFrame(raf2); raf2 = null; }
+  trendT2 = 1; emmaShown = true;
+  drawCanvas2();
+
+  const btns = document.querySelectorAll('#options-2 .opt-btn');
+  btns.forEach(b => { b.disabled = true; });
+
+  document.querySelectorAll('[id^="fb-2-"]').forEach(el => el.classList.remove('visible'));
+
+  if (choice === 'A') {
+    btns[0].classList.add('correct');
+    document.getElementById('fb-2-correct').classList.add('visible');
+    if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 2, result: 'correct' });
+  } else {
+    btns[0].classList.add('correct');
+    const wrongId = { B: 'fb-2-wrong-B', C: 'fb-2-wrong-C', D: 'fb-2-wrong-D' }[choice];
+    btns[{ A:0, B:1, C:2, D:3 }[choice]].classList.add('wrong');
+    document.getElementById(wrongId).classList.add('visible');
+    if (window.dataLayer) window.dataLayer.push({ event: 'sim_step', step: 2, result: 'incorrect' });
+  }
+
+  document.getElementById('next-2').classList.add('visible');
+}
+
+function showTips() {
+  document.getElementById('stage-2').classList.remove('visible');
+  document.getElementById('dot-2').classList.remove('active');
+  document.getElementById('dot-2').classList.add('done');
+  document.getElementById('step-counter').textContent = '2';
+  document.getElementById('completion').classList.add('visible');
+  document.getElementById('tips-section').classList.add('visible');
+  document.getElementById('tips-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+</script>
+</body>
+</html>

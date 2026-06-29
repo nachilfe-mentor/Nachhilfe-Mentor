@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Euphemismus und Dysphemismus erkennen – interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Euphemismus und Dysphemismus interaktiv üben: Formulierungen klassifizieren, Mechanismen erkennen und an einer animierten Semantikskala sehen, wie Sprache beschönigt oder abwertet.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Euphemismus, Dysphemismus, Sprachkritik, Deutsch Abitur, Semantik, rhetorische Mittel">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/euphemismus-dysphemismus-sprache-simulation.html">
+  <meta property="og:title" content="Euphemismus und Dysphemismus erkennen">
+  <meta property="og:description" content="Euphemismus und Dysphemismus interaktiv üben: Formulierungen klassifizieren, Mechanismen erkennen und an einer animierten Semantikskala sehen, wie Sprache beschönigt oder abwertet.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/euphemismus-dysphemismus-sprache-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Euphemismus und Dysphemismus erkennen – interaktive Simulation",
+  "description":"Euphemismus und Dysphemismus interaktiv üben: Formulierungen klassifizieren, Mechanismen erkennen und an einer animierten Semantikskala sehen, wie Sprache beschönigt oder abwertet.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/euphemismus-dysphemismus-sprache-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <!-- Tracking -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      'event': 'asset_view',
+      'asset_type': 'simulation',
+      'topic_cluster': 'sprachen'
+    });
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #1a56db;
+      --brand-light: #e8effd;
+      --correct: #16a34a;
+      --correct-bg: #f0fdf4;
+      --wrong: #dc2626;
+      --wrong-bg: #fef2f2;
+      --neutral: #4b5563;
+      --neutral-bg: #f3f4f6;
+      --dysphem: #dc2626;
+      --euphem: #16a34a;
+      --card-bg: #ffffff;
+      --border: #e5e7eb;
+      --text: #111827;
+      --text-muted: #6b7280;
+      --radius: 10px;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9fafb;
+      color: var(--text);
+      line-height: 1.6;
+      padding: 1rem;
+    }
+
+    .page-header {
+      background: var(--brand);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .page-header h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .page-header p {
+      font-size: 0.875rem;
+      opacity: 0.88;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.22);
+      border-radius: 4px;
+      padding: 0.15rem 0.6rem;
+      font-size: 0.75rem;
+      margin-top: 0.5rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--brand);
+    }
+    .card p { margin-bottom: 0.75rem; }
+    .card ul { padding-left: 1.2rem; margin-bottom: 0.75rem; }
+    .card li { margin-bottom: 0.4rem; }
+
+    /* Semantikskala Canvas */
+    .canvas-wrap {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: 90px;
+    }
+
+    /* Stage */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    .stage-label {
+      display: inline-block;
+      background: var(--brand-light);
+      color: var(--brand);
+      border-radius: 4px;
+      padding: 0.2rem 0.7rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .context-box {
+      background: var(--neutral-bg);
+      border-left: 4px solid var(--brand);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .context-box strong { display: block; margin-bottom: 0.3rem; font-size: 0.8rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+
+    /* Phrase cards */
+    .phrase-grid {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .phrase-card {
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      background: var(--card-bg);
+    }
+    .phrase-card .phrase-text {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+    }
+    .phrase-card .option-row {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .option-btn {
+      flex: 1 1 auto;
+      min-width: 80px;
+      padding: 0.5rem 0.6rem;
+      border: 2px solid var(--border);
+      border-radius: 6px;
+      background: #fff;
+      font-size: 0.82rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      text-align: center;
+    }
+    .option-btn:hover { border-color: var(--brand); background: var(--brand-light); }
+    .option-btn.selected-correct { border-color: var(--correct); background: var(--correct-bg); color: var(--correct); }
+    .option-btn.selected-wrong  { border-color: var(--wrong);   background: var(--wrong-bg);  color: var(--wrong);   }
+    .option-btn:disabled { cursor: default; opacity: 0.7; }
+
+    /* Feedback */
+    .feedback-box {
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      display: none;
+    }
+    .feedback-box.correct { background: var(--correct-bg); border: 1px solid #bbf7d0; }
+    .feedback-box.wrong   { background: var(--wrong-bg);   border: 1px solid #fecaca; }
+    .feedback-box.show    { display: block; }
+
+    .concept-tag {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      border-radius: 4px;
+      padding: 0.15rem 0.6rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-right: 0.3rem;
+      vertical-align: middle;
+    }
+
+    /* Next button */
+    .btn-next {
+      display: inline-block;
+      background: var(--brand);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.65rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: opacity 0.15s;
+    }
+    .btn-next:disabled { opacity: 0.4; cursor: default; }
+    .btn-next:hover:not(:disabled) { opacity: 0.88; }
+
+    /* Stage 2 (Anwendung) */
+    .task-grid {
+      display: grid;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .task-card {
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+    }
+    .task-card .task-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+    }
+    .task-card .task-phrase {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--brand);
+      margin-bottom: 0.3rem;
+    }
+    .task-card .task-question {
+      font-size: 0.9rem;
+      margin-bottom: 0.75rem;
+    }
+    .syl-btn {
+      display: inline-block;
+      border: 2px solid var(--border);
+      border-radius: 6px;
+      padding: 0.4rem 0.8rem;
+      margin: 0.25rem 0.25rem 0.25rem 0;
+      font-size: 0.85rem;
+      cursor: pointer;
+      background: #fff;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .syl-btn:hover { border-color: var(--brand); background: var(--brand-light); }
+    .syl-btn.correct { border-color: var(--correct); background: var(--correct-bg); color: var(--correct); font-weight: 600; }
+    .syl-btn.wrong   { border-color: var(--wrong);   background: var(--wrong-bg);  color: var(--wrong); }
+    .syl-btn:disabled { cursor: default; }
+
+    /* Score */
+    .score-box {
+      background: var(--brand-light);
+      border: 1px solid #c7d8f8;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .score-box .score-number {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--brand);
+    }
+    .score-box p { color: var(--neutral); margin-top: 0.5rem; }
+
+    /* Quellen */
+    .sources {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      margin-top: 1rem;
+    }
+    .sources a { color: var(--brand); }
+
+    /* Responsive */
+    @media (min-width: 600px) {
+      body { max-width: 680px; margin: 0 auto; padding: 1.5rem; }
+      .phrase-grid { grid-template-columns: 1fr; }
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body
+  data-asset-type="simulation"
+  data-topic-cluster="sprachen"
+>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<!-- ── Seiten-Kopf ──────────────────────────────────────────────────────── -->
+<div class="page-header">
+  <h1>Euphemismus &amp; Dysphemismus</h1>
+  <p>Wie Sprache beschönigt, abwertet – und warum das politisch wichtig ist.</p>
+  <span class="badge">Deutsch · Klasse 10–13 · Sprachkritik</span>
+</div>
+
+<!-- ── Semantikskala (Canvas – immer sichtbar) ──────────────────────────── -->
+<div class="canvas-wrap">
+  <canvas id="scaleCanvas" height="90" aria-label="Semantische Skala von dysphemistisch bis euphemistisch"></canvas>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- STAGE 1 – Einführung -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<div id="stage1" class="stage active">
+  <div class="card">
+    <h2>Was sind Euphemismus und Dysphemismus?</h2>
+    <p>Sprache ist nie neutral – Wörter transportieren Bewertungen. Ein <strong>Euphemismus</strong> (griech. „gutes Reden") beschönigt oder verschleiert einen negativen Sachverhalt. Ein <strong>Dysphemismus</strong> dagegen bewertet etwas übertrieben negativ oder direkt.</p>
+    <p>Auf der Semantikskala oben sehen Sie das Spektrum: von stark dysphemistisch (links, rot) über neutral (Mitte, grau) bis stark euphemistisch (rechts, grün).</p>
+    <ul>
+      <li><strong>Euphemismus-Beispiel:</strong> „freigestellt werden" statt „entlassen werden"</li>
+      <li><strong>Dysphemismus-Beispiel:</strong> „rausschmeißen" statt „entlassen"</li>
+      <li><strong>Neutral:</strong> „entlassen" (juristisch-sachliche Standardformulierung)</li>
+    </ul>
+    <p>Wichtig: Ob ein Ausdruck euphe­mistisch oder dysphemistisch wirkt, hängt immer vom <em>Kontext</em> und der <em>Kommunikationsabsicht</em> ab.</p>
+  </div>
+
+  <button class="btn-next" id="btn-intro-next">Vorhersage-Aufgabe starten →</button>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- STAGE 2 – Vorhersage (Stufe 1) -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<div id="stage2" class="stage">
+  <span class="stage-label">Stufe 1 – Vorhersage</span>
+
+  <div class="context-box">
+    <strong>Kontext</strong>
+    Ein Unternehmen entlässt 200 Mitarbeiterinnen und Mitarbeiter wegen Kostendruck. In Pressemitteilungen, Betriebsversammlungen und kritischen Berichten tauchen verschiedene Formulierungen auf. Klassifizieren Sie jede Formulierung!
+  </div>
+
+  <div class="phrase-grid">
+
+    <!-- Phrase A -->
+    <div class="phrase-card" id="card-A">
+      <div class="phrase-text">„Die Mitarbeiter werden <em>freigesetzt</em>."</div>
+      <div class="option-row">
+        <button class="option-btn" data-card="A" data-val="dysphem">dysphemistisch</button>
+        <button class="option-btn" data-card="A" data-val="neutral">neutral</button>
+        <button class="option-btn" data-card="A" data-val="euphem">euphemistisch</button>
+      </div>
+      <div class="feedback-box" id="fb-A"></div>
+    </div>
+
+    <!-- Phrase B -->
+    <div class="phrase-card" id="card-B">
+      <div class="phrase-text">„Das Unternehmen schmeißt 200 Leute raus."</div>
+      <div class="option-row">
+        <button class="option-btn" data-card="B" data-val="dysphem">dysphemistisch</button>
+        <button class="option-btn" data-card="B" data-val="neutral">neutral</button>
+        <button class="option-btn" data-card="B" data-val="euphem">euphemistisch</button>
+      </div>
+      <div class="feedback-box" id="fb-B"></div>
+    </div>
+
+    <!-- Phrase C -->
+    <div class="phrase-card" id="card-C">
+      <div class="phrase-text">„200 Arbeitnehmerinnen und Arbeitnehmer werden entlassen."</div>
+      <div class="option-row">
+        <button class="option-btn" data-card="C" data-val="dysphem">dysphemistisch</button>
+        <button class="option-btn" data-card="C" data-val="neutral">neutral</button>
+        <button class="option-btn" data-card="C" data-val="euphem">euphemistisch</button>
+      </div>
+      <div class="feedback-box" id="fb-C"></div>
+    </div>
+
+  </div><!-- /phrase-grid -->
+
+  <button class="btn-next" id="btn-stage2-next" disabled>Weiter zu Stufe 2 →</button>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- STAGE 3 – Anwendung (Stufe 2) -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<div id="stage3" class="stage">
+  <span class="stage-label">Stufe 2 – Anwenden</span>
+
+  <div class="card">
+    <h2>Mechanismen erkennen</h2>
+    <p>Jetzt geht es um den <em>Mechanismus</em> hinter dem Euphemismus oder Dysphemismus. Wählen Sie den treffenden Begriff!</p>
+  </div>
+
+  <div class="task-grid">
+
+    <!-- Aufgabe 1 -->
+    <div class="task-card" id="task1">
+      <div class="task-label">Wort 1 – Militärsprache</div>
+      <div class="task-phrase">„Kollateralschäden"</div>
+      <div class="task-question">Welcher Euphemismus-Mechanismus liegt vor?</div>
+      <button class="syl-btn" data-task="1" data-val="wrong">Lehnwort-Distanzierung</button>
+      <button class="syl-btn" data-task="1" data-val="correct">Semantische Verallgemeinerung</button>
+      <button class="syl-btn" data-task="1" data-val="wrong">Passivierung</button>
+      <div class="feedback-box" id="fb-task1"></div>
+    </div>
+
+    <!-- Aufgabe 2 -->
+    <div class="task-card" id="task2">
+      <div class="task-label">Wort 2 – Unternehmenssprache</div>
+      <div class="task-phrase">„Es kam zu einer Restrukturierung."</div>
+      <div class="task-question">Welcher Euphemismus-Mechanismus liegt vor?</div>
+      <button class="syl-btn" data-task="2" data-val="wrong">Metaphorisierung</button>
+      <button class="syl-btn" data-task="2" data-val="wrong">Semantische Verallgemeinerung</button>
+      <button class="syl-btn" data-task="2" data-val="correct">Passivierung und Nominalisierung</button>
+      <div class="feedback-box" id="fb-task2"></div>
+    </div>
+
+    <!-- Aufgabe 3 -->
+    <div class="task-card" id="task3">
+      <div class="task-label">Wort 3 – Todessprache</div>
+      <div class="task-phrase">„Er ist eingeschlafen."</div>
+      <div class="task-question">Welcher Euphemismus-Mechanismus liegt vor?</div>
+      <button class="syl-btn" data-task="3" data-val="wrong">Lehnwort-Distanzierung</button>
+      <button class="syl-btn" data-task="3" data-val="correct">Metaphorisierung</button>
+      <button class="syl-btn" data-task="3" data-val="wrong">Passivierung</button>
+      <div class="feedback-box" id="fb-task3"></div>
+    </div>
+
+  </div><!-- /task-grid -->
+
+  <button class="btn-next" id="btn-stage3-next" disabled>Ergebnis anzeigen →</button>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- STAGE 4 – Ergebnis -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<div id="stage4" class="stage">
+  <div class="score-box">
+    <div class="score-number" id="final-score">0 / 6</div>
+    <p id="final-msg">Dein Ergebnis</p>
+  </div>
+
+  <div class="card">
+    <h2>Zusammenfassung: Vier Kernmechanismen</h2>
+    <ul>
+      <li><strong>Semantische Verallgemeinerung:</strong> Ein Oberbegriff ersetzt den präzisen, belastenden Begriff. <em>„Kollateralschäden"</em> statt <em>„getötete Zivilisten"</em>.</li>
+      <li><strong>Lehnwort-Distanzierung:</strong> Fremdwörter (Latein, Griechisch, Englisch) klingen neutraler und distanzierter. <em>„Exitus"</em> statt <em>„Tod"</em>.</li>
+      <li><strong>Passivierung und Nominalisierung:</strong> Handelnde verschwinden, Handlungen werden zu abstrakten Prozessen. <em>„Es kam zu Entlassungen"</em> statt <em>„Wir haben 200 Leute entlassen"</em>.</li>
+      <li><strong>Metaphorisierung:</strong> Ein Bild aus einem harmlosen Bereich überträgt seine Konnotation. <em>„Einschlafen"</em> statt <em>„Sterben"</em>.</li>
+    </ul>
+    <p><strong>Misskonzept:</strong> Euphemismen sind <em>nicht</em> einfach „höflichere Wörter". Sie können gezielt eingesetzt werden, um ethisch relevante Sachverhalte zu verschleiern – besonders in politischer Sprache und Unternehmenskommunikation.</p>
+
+    <div class="sources">
+      Quellen: Allan &amp; Burridge (1991): <em>Euphemism and Dysphemism</em>. Oxford University Press. –
+      Luchtenberg (1985): <em>Euphemismen im heutigen Deutsch</em>. Peter Lang.
+    </div>
+  </div>
+
+  <button class="btn-next" id="btn-restart">Nochmals starten ↺</button>
+</div>
+
+
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<!-- JavaScript -->
+<!-- ════════════════════════════════════════════════════════════════════ -->
+<script>
+(function () {
+  'use strict';
+
+  // ── Canvas: Semantikskala ───────────────────────────────────────────
+  var canvas  = document.getElementById('scaleCanvas');
+  var ctx     = canvas.getContext('2d');
+  var pointer = 0;        // aktueller Zeiger (−3 bis +3)
+  var pointerTarget = 0;  // Ziel-Position
+  var raf;
+
+  function resizeCanvas() {
+    canvas.width  = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight || 90;
+  }
+
+  function drawScale(pos) {
+    var W = canvas.width;
+    var H = canvas.height;
+    if (W === 0) return;
+    ctx.clearRect(0, 0, W, H);
+
+    // Farbverlauf
+    var grad = ctx.createLinearGradient(0, 0, W, 0);
+    grad.addColorStop(0,    '#dc2626'); // Rot (dysphemistisch)
+    grad.addColorStop(0.5,  '#9ca3af'); // Grau (neutral)
+    grad.addColorStop(1,    '#16a34a'); // Grün (euphemistisch)
+
+    var barH = 18;
+    var barY = H / 2 - barH / 2;
+    var pad  = 40;
+
+    ctx.fillStyle = grad;
+    ctx.beginPath();
+    if (ctx.roundRect) {
+      ctx.roundRect(pad, barY, W - 2 * pad, barH, 6);
+    } else {
+      ctx.rect(pad, barY, W - 2 * pad, barH);
+    }
+    ctx.fill();
+
+    // Beschriftung
+    ctx.font = 'bold 11px system-ui, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#dc2626';
+    ctx.fillText('dysphemistisch', pad + 6, H - 8);
+    ctx.fillStyle = '#6b7280';
+    ctx.fillText('neutral', W / 2, H - 8);
+    ctx.fillStyle = '#16a34a';
+    ctx.fillText('euphemistisch', W - pad - 6, H - 8);
+
+    // Tick-Marken (−3 bis +3)
+    for (var i = -3; i <= 3; i++) {
+      var tx = pad + ((i + 3) / 6) * (W - 2 * pad);
+      ctx.fillStyle = '#374151';
+      ctx.beginPath();
+      ctx.rect(tx - 1, barY + barH, 2, 6);
+      ctx.fill();
+    }
+
+    // Zeiger
+    var px = pad + ((pos + 3) / 6) * (W - 2 * pad);
+    ctx.fillStyle = '#1a56db';
+    ctx.beginPath();
+    ctx.arc(px, barY + barH / 2, 10, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.fillStyle = '#fff';
+    ctx.font = 'bold 9px system-ui';
+    ctx.fillText(pos > 0 ? '+' + pos.toFixed(1) : pos.toFixed(1), px, barY + barH / 2 + 3);
+  }
+
+  function animate() {
+    pointer += (pointerTarget - pointer) * 0.12;
+    drawScale(pointer);
+    if (Math.abs(pointerTarget - pointer) > 0.01) {
+      raf = requestAnimationFrame(animate);
+    } else {
+      pointer = pointerTarget;
+      drawScale(pointer);
+    }
+  }
+
+  function setPointer(val) {
+    pointerTarget = val;
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(animate);
+  }
+
+  window.addEventListener('resize', function () {
+    resizeCanvas();
+    drawScale(pointer);
+  });
+  resizeCanvas();
+  drawScale(0);
+
+  // ── Stage-Management ────────────────────────────────────────────────
+  function showStage(id) {
+    ['stage1','stage2','stage3','stage4'].forEach(function (s) {
+      var el = document.getElementById(s);
+      if (el) el.classList.remove('active');
+    });
+    var target = document.getElementById(id);
+    if (target) target.classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.getElementById('btn-intro-next').addEventListener('click', function () {
+    showStage('stage2');
+    setPointer(0);
+  });
+
+  // ── Vorhersage-Aufgaben (Stufe 1) ───────────────────────────────────
+  var answers1 = { A: 'euphem', B: 'dysphem', C: 'neutral' };
+  var scaleVals = { A: 2.2, B: -2.5, C: 0 };
+
+  var feedbacks = {
+    A: {
+      correct: '<span class="concept-tag">Semantische Verallgemeinerung</span> Richtig! „Freigesetzt" suggeriert Freiwilligkeit und verschleiert, dass jemand ungewollt seinen Job verliert – ein klarer <strong>Euphemismus</strong> durch Bedeutungsverschiebung.',
+      wrong:   'Nicht ganz. „Freigesetzt" ist <strong>euphemistisch</strong>: Es klingt positiver als „entlassen" und verbirgt die negative Realität hinter einem neutralen Bild (<span class="concept-tag">Semantische Verallgemeinerung</span>).'
+    },
+    B: {
+      correct: '<span class="concept-tag">Dysphemismus</span> Genau! „Rausschmeißen" ist umgangssprachlich-abwertend und betont die Machtlosigkeit der Betroffenen. Hier wird sprachlich pointiert übertrieben.',
+      wrong:   '„Rausschmeißen" ist <strong>dysphemistisch</strong> – die Umgangssprache betont die Brutalität des Vorgangs und wertet das Unternehmen gleichzeitig ab (<span class="concept-tag">Dysphemismus</span>).'
+    },
+    C: {
+      correct: '<span class="concept-tag">Neutraler Standardbegriff</span> Richtig! „Entlassen" ist die juristische Standardformulierung – sachlich, ohne beschönigende oder abwertende Konnotation.',
+      wrong:   '„Entlassen" ist <strong>neutral</strong>: Es ist der rechtliche Standardbegriff ohne euphe­mistische Beschönigung oder dysphemistische Abwertung (<span class="concept-tag">Neutraler Standardbegriff</span>).'
+    }
+  };
+
+  var answeredCards = {};
+  var correctCount1 = 0;
+
+  document.querySelectorAll('.option-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var card = btn.dataset.card;
+      if (answeredCards[card]) return;
+      answeredCards[card] = true;
+
+      var chosen  = btn.dataset.val;
+      var correct = answers1[card];
+      var isRight = chosen === correct;
+
+      // Buttons in dieser Karte deaktivieren
+      document.querySelectorAll('[data-card="' + card + '"]').forEach(function (b) {
+        b.disabled = true;
+        if (b.dataset.val === correct) b.classList.add('selected-correct');
+      });
+      if (!isRight) btn.classList.remove('selected-correct');
+      if (!isRight) btn.classList.add('selected-wrong');
+
+      // Feedback anzeigen
+      var fb = document.getElementById('fb-' + card);
+      fb.innerHTML = isRight ? feedbacks[card].correct : feedbacks[card].wrong;
+      fb.classList.add('show', isRight ? 'correct' : 'wrong');
+
+      // Skala aktualisieren
+      setPointer(scaleVals[card]);
+
+      if (isRight) correctCount1++;
+
+      // Alle Karten beantwortet?
+      if (Object.keys(answeredCards).length === 3) {
+        document.getElementById('btn-stage2-next').disabled = false;
+      }
+    });
+  });
+
+  document.getElementById('btn-stage2-next').addEventListener('click', function () {
+    showStage('stage3');
+    setPointer(0);
+  });
+
+  // ── Anwendungs-Aufgaben (Stufe 2) ───────────────────────────────────
+  var taskFeedbacks = {
+    1: {
+      correct: '<span class="concept-tag">Semantische Verallgemeinerung</span> Richtig! „Kollateralschäden" ist ein Oberbegriff, der konkret getötete Zivilpersonen unsichtbar macht. Präzise wäre: „zivile Todesopfer als Nebenfolge militärischer Aktionen".',
+      wrong:   '<span class="concept-tag">Semantische Verallgemeinerung</span> Die richtige Antwort ist „Semantische Verallgemeinerung": Der englische Lehnbegriff ersetzt bewusst den konkreten Begriff und wirkt dadurch technisch-distanziert – aber der Kernmechanismus ist die Bedeutungsverallgemeinerung.'
+    },
+    2: {
+      correct: '<span class="concept-tag">Passivierung und Nominalisierung</span> Genau! Das unpersönliche Passiv („Es kam zu …") und das Substantiv „Restrukturierung" lassen die verantwortlichen Handelnden verschwinden – ein klassischer Euphemismus der Unternehmenssprache.',
+      wrong:   '<span class="concept-tag">Passivierung und Nominalisierung</span> Richtig wäre: Durch das Passiv und den Nominalstil verschwinden Verantwortliche aus dem Satz. Das macht Handlungen zu abstrakten Prozessen – typisch für Unternehmens-PR.'
+    },
+    3: {
+      correct: '<span class="concept-tag">Metaphorisierung</span> Perfekt! Der Schlaf als harmloses, natürliches Bild überträgt seine friedliche Konnotation auf den Tod. „Eingeschlafen" klingt sanfter, weil wir Schlaf als vorübergehend und angenehm kennen.',
+      wrong:   '<span class="concept-tag">Metaphorisierung</span> Die richtige Antwort ist „Metaphorisierung": Das Bild des Schlafs überträgt seine angenehmen Konnotationen auf das Sterben – ein uraltes sprachliches Mittel in Trauersprache und Poesie.'
+    }
+  };
+
+  var taskScale = { 1: 2.0, 2: 1.8, 3: 2.5 };
+  var answeredTasks = {};
+  var correctCount2 = 0;
+
+  document.querySelectorAll('.syl-btn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var task = btn.dataset.task;
+      if (answeredTasks[task]) return;
+      answeredTasks[task] = true;
+
+      var isRight = btn.dataset.val === 'correct';
+
+      document.querySelectorAll('[data-task="' + task + '"]').forEach(function (b) {
+        b.disabled = true;
+        if (b.dataset.val === 'correct') b.classList.add('correct');
+      });
+      if (!isRight) btn.classList.add('wrong');
+
+      var fb = document.getElementById('fb-task' + task);
+      fb.innerHTML = isRight ? taskFeedbacks[task].correct : taskFeedbacks[task].wrong;
+      fb.classList.add('show', isRight ? 'correct' : 'wrong');
+
+      setPointer(taskScale[task]);
+
+      if (isRight) correctCount2++;
+
+      if (Object.keys(answeredTasks).length === 3) {
+        document.getElementById('btn-stage3-next').disabled = false;
+      }
+    });
+  });
+
+  document.getElementById('btn-stage3-next').addEventListener('click', function () {
+    var total = correctCount1 + correctCount2;
+    document.getElementById('final-score').textContent = total + ' / 6';
+    var msgs = {
+      6: 'Ausgezeichnet! Du hast alle Mechanismen korrekt identifiziert.',
+      5: 'Sehr gut! Du beherrschst die wichtigsten Konzepte.',
+      4: 'Gut! Wiederhole die Mechanismen noch einmal.',
+      3: 'In Ordnung – die Zusammenfassung unten hilft dir weiter.',
+      0: 'Schau dir die Erklärungen in der Zusammenfassung genau an.'
+    };
+    document.getElementById('final-msg').textContent = msgs[total] || msgs[0];
+    setPointer(total >= 5 ? 3 : total >= 3 ? 1 : -1);
+    showStage('stage4');
+  });
+
+  document.getElementById('btn-restart').addEventListener('click', function () {
+    // Vollständiger Reset
+    location.reload();
+  });
+
+}());
+</script>
+
+</body>
+</html>

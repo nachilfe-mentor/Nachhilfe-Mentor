@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Sprachkritik und Sprachwandel: interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zur Sprachkritik: Ordne Beispiele wie „wegen dem Regen“ selbst ein und lerne den Unterschied zwischen Präskriptivismus und Deskriptivismus.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sprachkritik, Sprachwandel, Präskriptivismus, Deskriptivismus, semantischer Wandel, Anglizismen">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachkritik-wandel-simulation.html">
+  <meta property="og:title" content="Sprachkritik und Sprachwandel: interaktive Simulation">
+  <meta property="og:description" content="Interaktive Simulation zur Sprachkritik: Ordne Beispiele wie „wegen dem Regen“ selbst ein und lerne den Unterschied zwischen Präskriptivismus und Deskriptivismus.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachkritik-wandel-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprachkritik und Sprachwandel: interaktive Simulation",
+  "description":"Interaktive Simulation zur Sprachkritik: Ordne Beispiele wie „wegen dem Regen“ selbst ein und lerne den Unterschied zwischen Präskriptivismus und Deskriptivismus.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachkritik-wandel-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --green:  #0b8f6a;
+      --amber:  #b87700;
+      --red:    #b5281e;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+    a { color: var(--blue); }
+
+    /* ── Seitenlayout ── */
+    header {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.35rem, 4vw, 1.8rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+    header p.lead {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 600px;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Fortschrittsleiste ── */
+    .progress-bar-wrap {
+      background: var(--line);
+      border-radius: 999px;
+      height: 8px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    #progressBar {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 999px;
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── Zeitachse ── */
+    .timeline-wrap {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem 1.25rem;
+      margin-bottom: 2rem;
+      overflow: hidden;
+      position: relative;
+      min-height: 110px;
+    }
+    .timeline-track {
+      position: relative;
+      height: 4px;
+      background: var(--line);
+      border-radius: 2px;
+      margin: 2rem 0 1.25rem;
+    }
+    .timeline-fill {
+      position: absolute;
+      left: 0; top: 0;
+      height: 100%;
+      background: var(--blue);
+      border-radius: 2px;
+      transition: width 0.7s ease;
+      width: 0%;
+    }
+    .timeline-dots {
+      display: flex;
+      justify-content: space-between;
+      position: absolute;
+      top: -6px;
+      left: 0; right: 0;
+    }
+    .t-dot {
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--line);
+      border: 2px solid var(--panel);
+      transition: background 0.4s;
+    }
+    .t-dot.active { background: var(--blue); }
+    .t-dot.done   { background: var(--green); }
+    .timeline-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.72rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    /* ── Sprachbeispiel-Karte ── */
+    .example-card {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.25rem 1.25rem 1rem;
+      margin-bottom: 1.75rem;
+    }
+    .example-card .tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      background: var(--line);
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .example-phrase {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+      animation: slideIn 0.5s ease both;
+    }
+    .example-sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-24px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    /* ── Vorhersage-Bereich ── */
+    .prediction-section {
+      margin-bottom: 1.75rem;
+    }
+    .prediction-section h2 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+    .prediction-section p {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .opts-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .stage-opt {
+      padding: 0.55rem 1rem;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      font-size: 0.9rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+      color: var(--ink);
+    }
+    .stage-opt:hover { border-color: var(--blue); color: var(--blue); }
+    .stage-opt.correct  { border-color: var(--green); background: #e6f5ef; color: var(--green); }
+    .stage-opt.wrong    { border-color: var(--red);   background: #fde9e8; color: var(--red);   }
+    .stage-opt.reveal   { border-color: var(--green); background: #e6f5ef; color: var(--green); opacity: 0.6; }
+    .stage-opt:disabled { cursor: not-allowed; }
+
+    /* ── Feedback-Bereich ── */
+    .feedback {
+      display: none;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--green);
+      border-radius: 8px;
+      padding: 1.25rem 1.25rem 1rem;
+      margin-bottom: 1.75rem;
+      animation: fadeUp 0.35s ease both;
+    }
+    .feedback.wrong-feedback { border-left-color: var(--amber); }
+    .feedback h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .feedback p {
+      font-size: 0.88rem;
+      color: #2d3a4a;
+      line-height: 1.6;
+      margin-bottom: 0.6rem;
+    }
+    .feedback p:last-child { margin-bottom: 0; }
+    .concept-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      padding: 0.2rem 0.55rem;
+      margin-right: 0.35rem;
+      margin-bottom: 0.25rem;
+    }
+    .ct-blue   { background: #dbeafe; color: #1d4ed8; }
+    .ct-green  { background: #d1fae5; color: #065f46; }
+    .ct-amber  { background: #fef3c7; color: #92400e; }
+    .ct-red    { background: #fee2e2; color: #991b1b; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(15,95,168,0.4); }
+      50%       { box-shadow: 0 0 0 6px rgba(15,95,168,0); }
+    }
+    .t-dot.active { animation: pulse 1.8s infinite; }
+
+    /* ── Merksatz ── */
+    .merksatz {
+      background: #edf3fb;
+      border-left: 3px solid var(--blue);
+      border-radius: 0 6px 6px 0;
+      padding: 0.6rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--blue);
+      margin-top: 0.75rem;
+    }
+
+    /* ── Weiter-Button ── */
+    .btn-next {
+      display: none;
+      margin-top: 0.5rem;
+      padding: 0.65rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .btn-next:hover { opacity: 0.85; }
+
+    /* ── Stufen-Blöcke ── */
+    .stage-block { display: none; }
+    .stage-block.active { display: block; }
+
+    /* ── Abschluss ── */
+    .completion-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      display: none;
+    }
+    .completion-card.active { display: block; animation: fadeUp 0.5s ease both; }
+    .completion-card h2 { font-size: 1.3rem; margin-bottom: 0.75rem; }
+    .completion-card p  { color: var(--muted); font-size: 0.92rem; max-width: 480px; margin: 0 auto; }
+
+    /* ── Vergleichstabelle ── */
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin-top: 1rem;
+    }
+    .compare-table th {
+      text-align: left;
+      padding: 0.5rem 0.75rem;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      font-weight: 600;
+    }
+    .compare-table td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--line);
+      vertical-align: top;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 400px) {
+      .opts-grid { flex-direction: column; }
+      .stage-opt { width: 100%; }
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body
+  data-asset-type="linguistik-simulation"
+  data-topic-cluster="sprachkritik-sprachwandel"
+  data-subject="Deutsch"
+  data-grade-level="10-13"
+>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <h1>Sprachkritik und Sprachwandel</h1>
+  <p class="lead">Ist „wegen dem Regen" ein Fehler? Oder normaler Wandel? Entscheide selbst – und lerne dabei, was Linguisten wirklich meinen.</p>
+</header>
+
+<main>
+  <!-- Fortschritt -->
+  <p class="progress-label" id="progressLabel">Stufe 1 von 3</p>
+  <div class="progress-bar-wrap" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Fortschritt">
+    <div id="progressBar"></div>
+  </div>
+
+  <!-- Zeitachse / visuelles Modell -->
+  <div class="timeline-wrap" aria-label="Sprachzeitstrahl">
+    <div style="font-size:0.8rem;font-weight:600;color:var(--muted);margin-bottom:0.25rem;">Sprachzeitstrahl</div>
+    <div class="timeline-track">
+      <div class="timeline-fill" id="timelineFill"></div>
+      <div class="timeline-dots">
+        <div class="t-dot active" id="dot1"></div>
+        <div class="t-dot" id="dot2"></div>
+        <div class="t-dot" id="dot3"></div>
+      </div>
+    </div>
+    <div class="timeline-labels">
+      <span>Mittelhochdeutsch<br>(12.–14. Jh.)</span>
+      <span style="text-align:center">Frühneuhochdeutsch<br>(15.–17. Jh.)</span>
+      <span style="text-align:right">Gegenwarts­deutsch<br>(heute)</span>
+    </div>
+  </div>
+
+  <!-- STUFE 1 -->
+  <div class="stage-block active" id="stage1">
+    <div class="example-card">
+      <span class="tag">Stufe 1 – Morphologischer Wandel</span>
+      <div class="example-phrase">„wegen dem Regen"</div>
+      <div class="example-sub">Statt der älteren Form: „wegen des Regens"</div>
+    </div>
+
+    <div class="prediction-section">
+      <h2>Vorhersage: Was denkst du?</h2>
+      <p>Wie würdest du diese Form einordnen?</p>
+      <div class="opts-grid">
+        <button class="stage-opt" data-answer="wrong-s1" onclick="checkS1(this)">Sprachverfall – ein Fehler</button>
+        <button class="stage-opt" data-answer="correct-s1" onclick="checkS1(this)">Normaler Sprachwandel</button>
+        <button class="stage-opt" data-answer="wrong-s1b" onclick="checkS1(this)">Dialektwort, nicht Standard</button>
+      </div>
+    </div>
+
+    <div class="feedback" id="feedback1">
+      <h3 id="fb1-title"></h3>
+      <p id="fb1-text"></p>
+      <p>
+        <span class="concept-tag ct-blue">Deskriptivismus</span>
+        <span class="concept-tag ct-amber">Präskriptivismus</span>
+        <span class="concept-tag ct-green">Morphologischer Wandel</span>
+      </p>
+      <p id="fb1-extra"></p>
+      <div class="merksatz" id="merksatz1"></div>
+    </div>
+    <button class="btn-next" id="next1" onclick="goStage(2)">Weiter zu Stufe 2 →</button>
+  </div>
+
+  <!-- STUFE 2 -->
+  <div class="stage-block" id="stage2">
+    <div class="example-card">
+      <span class="tag">Stufe 2 – Semantischer Wandel</span>
+      <div class="example-phrase">„schlimm"</div>
+      <div class="example-sub">Mittelhochdeutsch: <em>slimm</em> = schief, schräg → heute: negativ, unangenehm</div>
+    </div>
+
+    <div class="prediction-section">
+      <h2>Vorhersage: Welcher Wandeltyp ist das?</h2>
+      <p>Das Wort „schlimm" hat seine Bedeutung komplett verändert. Um welchen Sprachänderungstyp handelt es sich?</p>
+      <div class="opts-grid">
+        <button class="stage-opt" data-answer="wrong-s2a" onclick="checkS2(this)">Phonologischer Wandel</button>
+        <button class="stage-opt" data-answer="correct-s2" onclick="checkS2(this)">Semantischer Wandel</button>
+        <button class="stage-opt" data-answer="wrong-s2b" onclick="checkS2(this)">Pragmatischer Wandel</button>
+        <button class="stage-opt" data-answer="wrong-s2c" onclick="checkS2(this)">Morphologischer Wandel</button>
+      </div>
+    </div>
+
+    <div class="feedback" id="feedback2">
+      <h3 id="fb2-title"></h3>
+      <p id="fb2-text"></p>
+      <p>
+        <span class="concept-tag ct-green">Semantischer Wandel</span>
+        <span class="concept-tag ct-blue">Bedeutungsverschlechterung</span>
+      </p>
+      <p id="fb2-extra"></p>
+      <div class="merksatz" id="merksatz2"></div>
+    </div>
+    <button class="btn-next" id="next2" onclick="goStage(3)">Weiter zu Stufe 3 →</button>
+  </div>
+
+  <!-- STUFE 3 -->
+  <div class="stage-block" id="stage3">
+    <div class="example-card">
+      <span class="tag">Stufe 3 – Moderne Sprachkritik</span>
+      <div class="example-phrase">„Das Meeting wurde gecancelt."</div>
+      <div class="example-sub">Anglizismus im Deutschen, inzwischen weit verbreitet</div>
+    </div>
+
+    <div class="prediction-section">
+      <h2>Vorhersage: Welches Argument ist linguistisch haltbar?</h2>
+      <p>Ein Sprachkritiker und ein Linguist streiten über diesen Satz. Welche Position ist sprachwissenschaftlich begründet?</p>
+      <div class="opts-grid">
+        <button class="stage-opt" data-answer="wrong-s3a" onclick="checkS3(this)">„Das ist Sprachverfall – Englisch verdrängt das Deutsche."</button>
+        <button class="stage-opt" data-answer="correct-s3" onclick="checkS3(this)">„Entlehnungen folgen dem historisch normalen Sprachkontakt – das war schon immer so."</button>
+        <button class="stage-opt" data-answer="wrong-s3b" onclick="checkS3(this)">„Das ist ein Grammatikfehler – der Duden verbietet es."</button>
+      </div>
+    </div>
+
+    <div class="feedback" id="feedback3">
+      <h3 id="fb3-title"></h3>
+      <p id="fb3-text"></p>
+      <p>
+        <span class="concept-tag ct-green">Deskriptivismus</span>
+        <span class="concept-tag ct-amber">Sprachkontakt</span>
+        <span class="concept-tag ct-red">Sprachpurismus</span>
+      </p>
+      <p id="fb3-extra"></p>
+      <div class="merksatz" id="merksatz3"></div>
+    </div>
+    <button class="btn-next" id="next3" onclick="showCompletion()">Zusammenfassung ansehen →</button>
+  </div>
+
+  <!-- Abschluss -->
+  <div class="completion-card" id="completion">
+    <h2>Gut gemacht!</h2>
+    <p>Du kannst jetzt den Unterschied zwischen Präskriptivismus und Deskriptivismus erklären – und historische sowie moderne Sprachveränderungen einordnen.</p>
+
+    <table class="compare-table" style="margin-top:1.5rem; text-align:left;">
+      <thead>
+        <tr>
+          <th>Ansatz</th>
+          <th>Haltung zu Sprachwandel</th>
+          <th>Vertreter</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Präskriptivismus</strong></td>
+          <td>Sprache hat eine „richtige" Norm; Abweichungen sind Fehler.</td>
+          <td>Duden (normativ), Sprachpflege, Bastian Sick</td>
+        </tr>
+        <tr>
+          <td><strong>Deskriptivismus</strong></td>
+          <td>Sprache wird beschrieben, wie sie ist – Wandel ist normal.</td>
+          <td>Moderne Linguistik, Soziolinguistik</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+
+<script>
+  // ── Tracking ──
+  window.dataLayer = window.dataLayer || [];
+
+  function trackEvent(stage, result) {
+    window.dataLayer.push({
+      event: 'simulation_interaction',
+      'data-asset-type': 'linguistik-simulation',
+      'data-topic-cluster': 'sprachkritik-sprachwandel',
+      'data-subject': 'Deutsch',
+      stage: stage,
+      result: result
+    });
+  }
+
+  // ── Fortschritt ──
+  function updateProgress(stageNum) {
+    const pct = Math.round(((stageNum - 1) / 3) * 100);
+    document.getElementById('progressBar').style.width = pct + '%';
+    document.getElementById('progressBar').parentElement.setAttribute('aria-valuenow', pct);
+    document.getElementById('progressLabel').textContent = 'Stufe ' + stageNum + ' von 3';
+
+    const fill = document.getElementById('timelineFill');
+    fill.style.width = (pct) + '%';
+
+    for (let i = 1; i <= 3; i++) {
+      const dot = document.getElementById('dot' + i);
+      if (i < stageNum)       { dot.className = 't-dot done'; }
+      else if (i === stageNum) { dot.className = 't-dot active'; }
+      else                     { dot.className = 't-dot'; }
+    }
+  }
+
+  // ── Stufe 1 ──
+  function checkS1(btn) {
+    const allBtns = document.querySelectorAll('#stage1 .stage-opt');
+    allBtns.forEach(b => { b.disabled = true; });
+    const fb = document.getElementById('feedback1');
+    fb.style.display = 'block';
+
+    if (btn.dataset.answer === 'correct-s1') {
+      btn.classList.add('correct');
+      fb.classList.remove('wrong-feedback');
+      document.getElementById('fb1-title').textContent = 'Richtig – normaler morphologischer Wandel!';
+      document.getElementById('fb1-text').textContent =
+        '„Wegen dem Regen" zeigt den sogenannten Dativschwund: Der Genitiv nach „wegen" weicht im gesprochenen Deutsch zunehmend dem Dativ. Das ist kein Fehler, sondern ein laufender morphologischer Wandel.';
+      document.getElementById('fb1-extra').textContent =
+        'Präskriptivisten nennen das einen Fehler, weil ältere Grammatiken „wegen + Genitiv" vorschreiben. Deskriptivisten beobachten: Wandel hat immer stattgefunden – das Mittelhochdeutsche hatte ebenfalls andere Kasusregeln als das Neuhochdeutsche.';
+      document.getElementById('merksatz1').textContent =
+        'Merksatz: Deskriptivismus beschreibt, was Sprecher tun. Präskriptivismus schreibt vor, was sie tun sollen.';
+      trackEvent(1, 'correct');
+    } else {
+      btn.classList.add('wrong');
+      fb.classList.add('wrong-feedback');
+      fb.style.borderLeftColor = 'var(--amber)';
+      document.getElementById('fb1-title').textContent = 'Nicht ganz – die Linguistik sieht das anders.';
+      if (btn.dataset.answer === 'wrong-s1') {
+        document.getElementById('fb1-text').textContent =
+          '„Sprachverfall" ist eine präskriptivistische Wertung, keine sprachwissenschaftliche Analyse. Für Linguisten ist „wegen dem Regen" ein Beispiel für laufenden morphologischen Wandel: Sprecher vereinfachen das Kasussystem konsistent.';
+      } else {
+        document.getElementById('fb1-text').textContent =
+          'Obwohl das Phänomen im Dialekt häufiger auftaucht, findet „wegen dem" längst Eingang in informelles Standarddeutsch. Es ist ein überregionaler Wandelprozess, kein reines Dialektmerkmal.';
+      }
+      document.getElementById('fb1-extra').textContent =
+        'Die richtige Antwort wäre: normaler Sprachwandel – konkret: morphologischer Wandel (Kasusveränderung).';
+      document.getElementById('merksatz1').textContent =
+        'Merksatz: Deskriptivismus beschreibt, was Sprecher tun. Präskriptivismus schreibt vor, was sie tun sollen.';
+      // Zeige die korrekte Antwort
+      allBtns.forEach(b => {
+        if (b.dataset.answer === 'correct-s1') b.classList.add('reveal');
+      });
+      trackEvent(1, 'wrong');
+    }
+    document.getElementById('next1').style.display = 'inline-block';
+  }
+
+  // ── Stufe 2 ──
+  function checkS2(btn) {
+    const allBtns = document.querySelectorAll('#stage2 .stage-opt');
+    allBtns.forEach(b => { b.disabled = true; });
+    const fb = document.getElementById('feedback2');
+    fb.style.display = 'block';
+
+    if (btn.dataset.answer === 'correct-s2') {
+      btn.classList.add('correct');
+      fb.classList.remove('wrong-feedback');
+      document.getElementById('fb2-title').textContent = 'Richtig – semantischer Wandel!';
+      document.getElementById('fb2-text').textContent =
+        'Mittelhochdeutsch slimm bedeutete „schief, schräg". Im Laufe des 17.–18. Jahrhunderts verschob sich die Bedeutung zur moralischen Schlechtigkeit. Das nennt man Bedeutungsverschlechterung (Pejoration) – eine Form des semantischen Wandels.';
+      document.getElementById('fb2-extra').textContent =
+        'Weitere Beispiele: „toll" (mhd. = verrückt → heute: wunderbar = Bedeutungsverbesserung), „Dirne" (mhd. = junges Mädchen → heute: abwertend).';
+      document.getElementById('merksatz2').textContent =
+        'Merksatz: Semantischer Wandel = Bedeutungsveränderung. Formen: Pejoration (Verschlechterung), Amelioration (Verbesserung), Erweiterung, Verengung.';
+      trackEvent(2, 'correct');
+    } else {
+      btn.classList.add('wrong');
+      fb.classList.add('wrong-feedback');
+      fb.style.borderLeftColor = 'var(--amber)';
+      document.getElementById('fb2-title').textContent = 'Nicht ganz – hier ändert sich die Bedeutung, nicht der Klang oder die Form.';
+      const erklärung = {
+        'wrong-s2a': 'Phonologischer Wandel betrifft die Lautstruktur eines Wortes (z. B. Lautverschiebung: lat. piscis → dt. Fisch). Hier ändert sich aber die Bedeutung, nicht der Klang.',
+        'wrong-s2b': 'Pragmatischer Wandel betrifft Kontext und Gebrauch eines Ausdrucks (z. B. „Du" als universelle Anrede). Hier ändert sich aber die lexikalische Bedeutung selbst.',
+        'wrong-s2c': 'Morphologischer Wandel betrifft Wortformen und Flexion (z. B. Kasusveränderungen). Hier ändert sich nicht die Flexion, sondern die inhaltliche Bedeutung.'
+      };
+      document.getElementById('fb2-text').textContent =
+        (erklärung[btn.dataset.answer] || '') +
+        ' Die richtige Antwort ist: semantischer Wandel – konkret eine Bedeutungsverschlechterung (Pejoration).';
+      document.getElementById('fb2-extra').textContent =
+        'Slimm → schlimm: Aus „schief/schräg" wurde im 17./18. Jh. „moralisch schlecht". Das zeigt: Sprache verändert sich ständig in der Bedeutung, ohne dass das ein Fehler wäre.';
+      document.getElementById('merksatz2').textContent =
+        'Merksatz: Semantischer Wandel = Bedeutungsveränderung. Formen: Pejoration (Verschlechterung), Amelioration (Verbesserung), Erweiterung, Verengung.';
+      allBtns.forEach(b => {
+        if (b.dataset.answer === 'correct-s2') b.classList.add('reveal');
+      });
+      trackEvent(2, 'wrong');
+    }
+    document.getElementById('next2').style.display = 'inline-block';
+  }
+
+  // ── Stufe 3 ──
+  function checkS3(btn) {
+    const allBtns = document.querySelectorAll('#stage3 .stage-opt');
+    allBtns.forEach(b => { b.disabled = true; });
+    const fb = document.getElementById('feedback3');
+    fb.style.display = 'block';
+
+    if (btn.dataset.answer === 'correct-s3') {
+      btn.classList.add('correct');
+      fb.classList.remove('wrong-feedback');
+      document.getElementById('fb3-title').textContent = 'Richtig – deskriptivistische Perspektive!';
+      document.getElementById('fb3-text').textContent =
+        'Sprachkontakt und Entlehnung sind so alt wie Sprache selbst. Das Deutsche hat im Mittelalter Tausende Wörter aus dem Lateinischen und Französischen übernommen (Fenster < lat. fenestra, Abenteuer < frz. aventure). Anglizismen heute folgen demselben Muster.';
+      document.getElementById('fb3-extra').textContent =
+        'Der Deskriptivismus beobachtet: Sprachen, die Kontakt haben, tauschen Wörter aus – immer. Sprachpurismus (Ablehnung von Fremdwörtern) war historisch nie dauerhaft erfolgreich und widerspricht dem natürlichen Sprachgebrauch.';
+      document.getElementById('merksatz3').textContent =
+        'Merksatz: Entlehnung ist kein Verfall – Deutsch hat seit dem Mittelalter Tausende Wörter aus Latein, Französisch und Englisch integriert und ist dabei Deutsch geblieben.';
+      trackEvent(3, 'correct');
+    } else {
+      btn.classList.add('wrong');
+      fb.classList.add('wrong-feedback');
+      fb.style.borderLeftColor = 'var(--amber)';
+      if (btn.dataset.answer === 'wrong-s3a') {
+        document.getElementById('fb3-title').textContent = 'Das ist Sprachpurismus – keine Sprachwissenschaft.';
+        document.getElementById('fb3-text').textContent =
+          'Die Vorstellung, Englisch „verdränge" das Deutsche, ist sprachwissenschaftlich nicht belegbar. Sprachen verschwinden durch Machtverhältnisse, nicht durch einzelne Lehnwörter. Deutsche hat in 2000 Jahren Tausende Entlehnungen integriert und dabei seine Eigenstruktur behalten.';
+      } else {
+        document.getElementById('fb3-title').textContent = 'Der Duden beschreibt – er verbietet nicht.';
+        document.getElementById('fb3-text').textContent =
+          '„Meeting" ist im Duden als etablierter Anglizismus eingetragen – er schreibt seine Nutzung nicht vor, hält aber fest, was gesprochen und geschrieben wird. Der Satz ist grammatisch korrekt: Anglizismen werden nach deutschen Flexionsregeln konjugiert (gecancelt = ge- + cancel + -t).';
+      }
+      document.getElementById('fb3-extra').textContent =
+        'Linguistisch haltbar ist: Entlehnungen sind normaler Sprachkontakt. Das galt für Lateinwörter im Mittelalter genauso wie für Anglizismen heute.';
+      document.getElementById('merksatz3').textContent =
+        'Merksatz: Entlehnung ist kein Verfall – Deutsch hat seit dem Mittelalter Tausende Wörter aus Latein, Französisch und Englisch integriert und ist dabei Deutsch geblieben.';
+      allBtns.forEach(b => {
+        if (b.dataset.answer === 'correct-s3') b.classList.add('reveal');
+      });
+      trackEvent(3, 'wrong');
+    }
+    document.getElementById('next3').style.display = 'inline-block';
+  }
+
+  // ── Navigation ──
+  function goStage(num) {
+    document.querySelectorAll('.stage-block').forEach(b => b.classList.remove('active'));
+    document.getElementById('stage' + num).classList.add('active');
+    updateProgress(num);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    trackEvent(num, 'start');
+  }
+
+  function showCompletion() {
+    document.querySelectorAll('.stage-block').forEach(b => b.classList.remove('active'));
+    const comp = document.getElementById('completion');
+    comp.classList.add('active');
+    document.getElementById('progressBar').style.width = '100%';
+    document.getElementById('progressBar').parentElement.setAttribute('aria-valuenow', 100);
+    document.getElementById('progressLabel').textContent = 'Abgeschlossen';
+    ['dot1','dot2','dot3'].forEach(id => {
+      document.getElementById(id).className = 't-dot done';
+    });
+    document.getElementById('timelineFill').style.width = '100%';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.dataLayer.push({
+      event: 'simulation_complete',
+      'data-asset-type': 'linguistik-simulation',
+      'data-topic-cluster': 'sprachkritik-sprachwandel'
+    });
+  }
+
+  // Init
+  updateProgress(1);
+</script>
+</body>
+</html>

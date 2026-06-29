@@ -1,0 +1,1107 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Verbvalenz: Ergänzungen und Angaben mit dem Streichtest | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Übung zur Verbvalenz: Wende den Streichtest an, unterscheide Ergänzungen von Angaben und bestimme die Valenzstufe von Verben Schritt für Schritt.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Verbvalenz, Streichtest, Ergänzungen, Angaben, Valenzgrammatik, Valenzstufen">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/verbvalenz-ergaenzungen-angaben-simulation.html">
+  <meta property="og:title" content="Verbvalenz: Ergänzungen und Angaben">
+  <meta property="og:description" content="Interaktive Übung zur Verbvalenz: Wende den Streichtest an, unterscheide Ergänzungen von Angaben und bestimme die Valenzstufe von Verben Schritt für Schritt.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/verbvalenz-ergaenzungen-angaben-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Verbvalenz: Ergänzungen und Angaben mit dem Streichtest",
+  "description":"Interaktive Übung zur Verbvalenz: Wende den Streichtest an, unterscheide Ergänzungen von Angaben und bestimme die Valenzstufe von Verben Schritt für Schritt.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/verbvalenz-ergaenzungen-angaben-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* Progress */
+    .progress {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .dot.active { background: var(--blue); }
+    .dot.done   { background: var(--green); }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-left: 0.25rem;
+    }
+
+    /* Card */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      color: var(--ink);
+    }
+
+    /* Phase label */
+    .phase-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: #eff6ff;
+      color: var(--blue);
+      border: 1px solid #bfdbfe;
+      border-radius: 4px;
+      padding: 0.15rem 0.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Sentence display */
+    .sentence-display {
+      background: #f0f4f8;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1.08rem;
+      line-height: 1.8;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .token {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      border-radius: 6px;
+      border: 2px solid transparent;
+      cursor: pointer;
+      font-weight: 500;
+      transition: all 0.2s;
+      user-select: none;
+      position: relative;
+    }
+    .token:hover:not(.verb):not(.struck):not(.disabled) {
+      border-color: var(--blue);
+      background: #eff6ff;
+    }
+    .token.verb {
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+      color: var(--green);
+      font-weight: 700;
+      cursor: default;
+    }
+    .token.ergaenzung {
+      background: #eff6ff;
+      border-color: #bfdbfe;
+      color: var(--blue);
+    }
+    .token.angabe {
+      background: #f8fafc;
+      border-color: var(--line);
+      color: var(--muted);
+    }
+    .token.struck {
+      text-decoration: line-through;
+      background: #f0fdf4;
+      border-color: #bbf7d0;
+      color: #15803d;
+      cursor: default;
+      opacity: 0.8;
+    }
+    .token.platzhalter {
+      background: #faf5ff;
+      border-color: #e9d5ff;
+      color: #6b21a8;
+      font-style: italic;
+    }
+    /* Neutral: used in Phase 2 before answer is revealed */
+    .token.neutral {
+      background: #f8fafc;
+      border-color: var(--line);
+      color: var(--ink);
+      cursor: default;
+    }
+    .token.shake {
+      animation: shake 0.4s ease;
+    }
+    .token.flash-red {
+      background: #fef2f2 !important;
+      border-color: #fecaca !important;
+    }
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20%       { transform: translateX(-5px); }
+      40%       { transform: translateX(5px); }
+      60%       { transform: translateX(-4px); }
+      80%       { transform: translateX(4px); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Feedback box */
+    .feedback {
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-top: 1.25rem;
+      font-size: 0.94rem;
+      line-height: 1.6;
+      animation: fadeInUp 0.3s ease both;
+      display: none;
+    }
+    .feedback.show { display: block; }
+    .feedback.ok {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #14532d;
+    }
+    .feedback.err {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      color: #7f1d1d;
+    }
+    .feedback.info {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1e3a5f;
+    }
+    .feedback strong { font-weight: 700; }
+
+    /* Instruction hint */
+    .hint {
+      font-size: 0.88rem;
+      color: var(--muted);
+      background: #f8fafc;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Valenz-Buttons */
+    .valenz-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    .val-btn {
+      flex: 1;
+      min-width: 70px;
+      padding: 0.85rem 0.5rem;
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: var(--ink);
+      transition: all 0.2s;
+      text-align: center;
+    }
+    .val-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eff6ff;
+      color: var(--blue);
+    }
+    .val-btn:disabled { cursor: default; opacity: 0.5; }
+    .val-btn.correct {
+      border-color: var(--green);
+      background: #f0fdf4;
+      color: var(--green);
+    }
+    .val-btn.wrong {
+      border-color: var(--red);
+      background: #fef2f2;
+      color: var(--red);
+    }
+    .val-btn .val-label {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      color: var(--muted);
+      margin-top: 0.15rem;
+    }
+    .val-btn.correct .val-label { color: var(--green); }
+    .val-btn.wrong   .val-label { color: var(--red); }
+
+    /* Valency tree SVG */
+    .val-tree {
+      margin: 1.5rem 0 0.5rem;
+      display: flex;
+      justify-content: center;
+      animation: fadeInUp 0.4s ease both;
+    }
+    .val-tree svg {
+      overflow: visible;
+      max-width: 100%;
+    }
+
+    /* Legend */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .legend-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* Summary */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    @media (max-width: 480px) {
+      .summary-grid { grid-template-columns: 1fr; }
+    }
+    .summary-item {
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--line);
+      background: #f8fafc;
+    }
+    .summary-item .sv-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+    .summary-item .sv-verb {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.15rem;
+    }
+    .summary-item .sv-val {
+      font-size: 0.88rem;
+      color: var(--blue);
+      font-weight: 600;
+    }
+    .summary-item.correct-ans { border-color: #bbf7d0; background: #f0fdf4; }
+    .summary-item.wrong-ans   { border-color: #fecaca; background: #fef2f2; }
+
+    /* Next button */
+    .btn-primary {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.75rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.97rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-primary:hover { background: #0d4f8e; }
+    .btn-primary:disabled { background: var(--muted); cursor: default; }
+
+    /* Phase-end info box */
+    .info-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+      animation: fadeInUp 0.35s ease both;
+    }
+    .info-box h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.6rem;
+    }
+    .info-box p {
+      font-size: 0.92rem;
+      color: #1e3a5f;
+      line-height: 1.6;
+      margin-bottom: 0.5rem;
+    }
+    .info-box p:last-child { margin-bottom: 0; }
+
+    /* Ergänzung/Angaben list */
+    .token-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.6rem;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.2rem 0.55rem;
+      border-radius: 5px;
+    }
+    .tag.e { background: #eff6ff; color: var(--blue); border: 1px solid #bfdbfe; }
+    .tag.a { background: #f8fafc; color: var(--muted); border: 1px solid var(--line); }
+
+    /* Phase visibility */
+    .phase { display: none; }
+    .phase.active { display: block; animation: fadeInUp 0.35s ease both; }
+
+    /* Score bar */
+    .score-display {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .score-num {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1;
+    }
+    .score-of {
+      font-size: 1.1rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+    .score-msg {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-top: 1rem;
+      color: var(--ink);
+    }
+
+    /* Token tooltip */
+    .token-tooltip {
+      position: absolute;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 600;
+      white-space: nowrap;
+      padding: 0.25rem 0.55rem;
+      border-radius: 5px;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+    .token:hover .token-tooltip,
+    .token.struck .token-tooltip {
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .card { padding: 1.25rem; }
+      .sentence-display { padding: 1rem; font-size: 0.98rem; }
+      .val-btn { padding: 0.7rem 0.4rem; font-size: 0.92rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Linguistik &middot; Klasse 10&ndash;13</div>
+  <h1>Verbvalenz: Erg&auml;nzungen und Angaben</h1>
+  <p>Entdecke mit dem Streichtest, welche Satzteile ein Verb <em>verlangt</em> &ndash; und welche nur optional sind. Dann bestimme selbst die Valenz verschiedener Verben.</p>
+</header>
+
+<main>
+
+  <!-- Progress dots -->
+  <div class="progress">
+    <div class="dot active" id="dot-p1"></div>
+    <div class="dot" id="dot-p2"></div>
+    <span class="progress-label" id="progress-label">Phase 1 von 2</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       PHASE 1: Streichtest-Explorer
+  ═══════════════════════════════════════════ -->
+  <div class="phase active" id="phase1">
+
+    <div class="card">
+      <span class="phase-label">Phase 1 &ndash; Streichtest entdecken</span>
+      <h2>Welche Satzteile kann man streichen?</h2>
+
+      <div class="hint">
+        <strong>Aufgabe:</strong> Klicke auf die Satzteile (au&szlig;er dem Verb), die du
+        streichen kannst, ohne den Satz ungrammatisch zu machen. Das gr&uuml;n markierte Verb
+        bleibt stehen.
+      </div>
+
+      <div class="sentence-display" id="sentence-p1">
+        <!-- tokens rendered by JS -->
+      </div>
+
+      <div class="feedback" id="fb-p1"></div>
+
+      <div id="phase1-summary" style="display:none">
+        <div class="info-box">
+          <h3>Ergebnis: &bdquo;schlafen&ldquo; ist <strong>einwertig</strong></h3>
+          <p>
+            Das Verb <em>schlafen</em> &ouml;ffnet genau eine Leerstelle: das <strong>Subjekt</strong>
+            (&bdquo;Das Kind&ldquo;). Diese Leerstelle ist <em>obligatorisch</em> &ndash; sie kann nicht
+            gestrichen werden. Solche Leerstellen nennt man <strong>Erg&auml;nzungen</strong>.
+          </p>
+          <p>
+            &bdquo;abends&ldquo; und &bdquo;in seinem Bett&ldquo; hingegen sind <strong>Angaben</strong>:
+            freie Zusatzinformationen (temporal, lokal), die das Verb nicht fordert und die jederzeit
+            weggelassen werden k&ouml;nnen.
+          </p>
+          <p>
+            <strong>Faustregel:</strong> Streiche &ndash; wenn der Satz ungrammatisch wird, war es eine
+            Erg&auml;nzung. Wenn der Satz noch funktioniert, war es eine Angabe.
+          </p>
+        </div>
+        <button class="btn-primary" onclick="startPhase2()">Weiter zu Phase 2 &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Mini-Theoriebox -->
+    <div class="card">
+      <h2>Valenztheorie kompakt</h2>
+      <p style="font-size:0.93rem; color:var(--muted); margin-bottom:1.25rem;">
+        Der Begriff <em>Valenz</em> stammt von Lucien Tesni&egrave;re (1959). Verben &ouml;ffnen
+        Leerstellen (Aktanten-Pl&auml;tze), die gef&uuml;llt werden m&uuml;ssen.
+      </p>
+      <div class="summary-grid">
+        <div class="summary-item">
+          <div class="sv-label">Nullwertig</div>
+          <div class="sv-verb">regnen, schneien</div>
+          <div class="sv-val">0 Erg&auml;nzungen</div>
+        </div>
+        <div class="summary-item">
+          <div class="sv-label">Einwertig</div>
+          <div class="sv-verb">schlafen, lachen</div>
+          <div class="sv-val">1 Erg&auml;nzung (Subjekt)</div>
+        </div>
+        <div class="summary-item">
+          <div class="sv-label">Zweiwertig</div>
+          <div class="sv-verb">lesen, sehen</div>
+          <div class="sv-val">2 Erg&auml;nzungen</div>
+        </div>
+        <div class="summary-item">
+          <div class="sv-label">Dreiwertig</div>
+          <div class="sv-verb">geben, schenken</div>
+          <div class="sv-val">3 Erg&auml;nzungen</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /phase1 -->
+
+
+  <!-- ═══════════════════════════════════════════
+       PHASE 2: Valenz bestimmen
+  ═══════════════════════════════════════════ -->
+  <div class="phase" id="phase2">
+
+    <div class="card" id="card-p2">
+      <span class="phase-label">Phase 2 &ndash; Valenz bestimmen</span>
+      <h2 id="p2-heading">Aufgabe 1 von 4</h2>
+
+      <div class="hint" id="p2-hint">
+        Lies den Satz aufmerksam. Wie viele <strong>obligatorische Leerstellen</strong>
+        (Erg&auml;nzungen) &ouml;ffnet das <span style="color:var(--green);font-weight:700">gr&uuml;n markierte Verb</span>?
+        W&auml;hle die Valenzstufe &ndash; danach siehst du die Farbkodierung und Erkl&auml;rung.
+      </div>
+
+      <div id="p2-sentence" class="sentence-display"></div>
+
+      <!-- Valenz-Buttons -->
+      <div class="valenz-buttons" id="p2-buttons">
+        <button class="val-btn" onclick="checkValenz(0)">
+          0
+          <span class="val-label">nullwertig</span>
+        </button>
+        <button class="val-btn" onclick="checkValenz(1)">
+          1
+          <span class="val-label">einwertig</span>
+        </button>
+        <button class="val-btn" onclick="checkValenz(2)">
+          2
+          <span class="val-label">zweiwertig</span>
+        </button>
+        <button class="val-btn" onclick="checkValenz(3)">
+          3
+          <span class="val-label">dreiwertig</span>
+        </button>
+      </div>
+
+      <!-- Result area -->
+      <div id="p2-result" style="display:none">
+        <div class="feedback show" id="p2-feedback"></div>
+
+        <div class="val-tree" id="p2-tree"></div>
+
+        <div style="margin-top:1.25rem">
+          <p style="font-size:0.82rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); margin-bottom:0.5rem;">Erg&auml;nzungen (obligatorisch)</p>
+          <div class="token-list" id="p2-ergList"></div>
+        </div>
+        <div style="margin-top:0.75rem">
+          <p style="font-size:0.82rem; font-weight:700; text-transform:uppercase; letter-spacing:0.05em; color:var(--muted); margin-bottom:0.5rem;">Angaben (optional)</p>
+          <div class="token-list" id="p2-angList"></div>
+        </div>
+
+        <button class="btn-primary" id="p2-next-btn" onclick="nextVerb()">N&auml;chstes Verb &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Score / final -->
+    <div class="card" id="p2-final" style="display:none">
+      <span class="phase-label">Abschluss</span>
+      <h2>Gut gemacht!</h2>
+      <div class="score-display">
+        <div class="score-num" id="final-score">0</div>
+        <div class="score-of">von 4 Verben richtig</div>
+        <div class="score-msg" id="final-msg"></div>
+      </div>
+      <div id="final-breakdown" class="summary-grid" style="margin-top:1rem"></div>
+      <div class="info-box" style="margin-top:1.75rem">
+        <h3>Was du gelernt hast</h3>
+        <p>
+          <strong>Valenz</strong> beschreibt, wie viele obligatorische Leerstellen (Erg&auml;nzungen)
+          ein Verb &ouml;ffnet. Der <strong>Streichtest</strong> ist das zentrale Diagnosewerkzeug:
+          Erg&auml;nzungen machen den Satz ungrammatisch, wenn sie fehlen &ndash; Angaben nicht.
+        </p>
+        <p>
+          Wichtig: Nicht alle Satzglieder, die h&auml;ufig erscheinen, sind Erg&auml;nzungen.
+          H&auml;ufigkeit und Obligatorit&auml;t sind zwei verschiedene Dinge.
+        </p>
+      </div>
+    </div>
+
+  </div><!-- /phase2 -->
+
+</main>
+
+<script>
+(function () {
+
+  /* ── Phase 1 data ────────────────────────────── */
+  const p1Tokens = [
+    { text: 'Das Kind',       type: 'ergaenzung', label: 'Subjekterg\u00e4nzung' },
+    { text: 'schl\u00e4ft',  type: 'verb' },
+    { text: 'abends',         type: 'angabe',     label: 'Temporalangabe' },
+    { text: 'in seinem Bett', type: 'angabe',     label: 'Lokalangabe' }
+  ];
+
+  const angabenCount = p1Tokens.filter(t => t.type === 'angabe').length;
+  let struckAngaben  = 0;
+  let lastFbType     = null;
+
+  function renderPhase1() {
+    const container = document.getElementById('sentence-p1');
+    container.innerHTML = '';
+    p1Tokens.forEach((tok, i) => {
+      const span = document.createElement('span');
+      span.className = 'token ' + tok.type;
+      span.id = 'tok-' + i;
+      span.textContent = tok.text;
+
+      if (tok.label) {
+        const tt = document.createElement('span');
+        tt.className = 'token-tooltip';
+        tt.textContent = tok.label;
+        span.appendChild(tt);
+      }
+
+      if (tok.type !== 'verb') {
+        span.addEventListener('click', () => handleTokenClick(i, tok, span));
+      }
+      container.appendChild(span);
+    });
+  }
+
+  function handleTokenClick(i, tok, span) {
+    if (span.classList.contains('struck') || span.classList.contains('disabled')) return;
+
+    const fb = document.getElementById('fb-p1');
+
+    if (tok.type === 'ergaenzung') {
+      span.classList.add('shake', 'flash-red');
+      setTimeout(() => span.classList.remove('shake', 'flash-red'), 500);
+
+      fb.className = 'feedback show err';
+      fb.innerHTML =
+        '<strong>\u274c Nicht streichbar!</strong> \u201e' + tok.text + '\u201c ist eine ' +
+        '<strong>Erg\u00e4nzung</strong> \u2013 sie ist valenzgebunden. Das Verb ' +
+        '<em>schlafen</em> fordert zwingend ein Subjekt. Ohne es ist der Satz unvollst\u00e4ndig.';
+      fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    } else if (tok.type === 'angabe') {
+      span.classList.add('struck');
+      span.style.cursor = 'default';
+      struckAngaben++;
+
+      fb.className = 'feedback show ok';
+      if (tok.label === 'Temporalangabe') {
+        fb.innerHTML =
+          '<strong>\u2713 Streichbar!</strong> \u201e' + tok.text + '\u201c ist eine ' +
+          '<strong>Temporalangabe</strong> \u2013 eine freie Zeitangabe. Das Verb <em>schlafen</em> ' +
+          'fordert sie nicht. Der Satz \u201eDas Kind schl\u00e4ft\u201c bleibt grammatisch.';
+      } else {
+        fb.innerHTML =
+          '<strong>\u2713 Streichbar!</strong> \u201e' + tok.text + '\u201c ist eine ' +
+          '<strong>Lokalangabe</strong> \u2013 optionale Ortsinformation. Der Streichtest best\u00e4tigt: ' +
+          'Angabe, keine Erg\u00e4nzung.';
+      }
+      fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+      if (struckAngaben >= angabenCount) {
+        setTimeout(showPhase1Summary, 600);
+      }
+    }
+  }
+
+  function showPhase1Summary() {
+    document.getElementById('phase1-summary').style.display = 'block';
+    document.getElementById('phase1-summary').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  /* ── Phase 2 data ────────────────────────────── */
+  const p2Data = [
+    {
+      verb: 'regnen',
+      tokens: [
+        { text: 'Es',      type: 'platzhalter', label: 'Platzhaltersubjekt' },
+        { text: 'regnet',  type: 'verb' },
+        { text: 'drau\u00dfen',  type: 'angabe', label: 'Lokalangabe' }
+      ],
+      valenz: 0,
+      label: 'nullwertig',
+      ergaenzungen: ['\u2013\u00a0(kein Aktant; \u201ees\u201c ist Platzhaltersubjekt ohne Referenz)'],
+      angaben: ['drau\u00dfen\u00a0(Lokalangabe)'],
+      erklaerung:
+        '<strong>Richtig!</strong> \u201eregnen\u201c ist <strong>nullwertig</strong>: Das Verb ' +
+        'hat keine echten Aktanten-Leerstellen. Das \u201ees\u201c ist kein Referenzsubjekt, ' +
+        'sondern ein Platzhaltersubjekt \u2013 es steht nur, weil das Deutsche ein Subjekt ' +
+        'grammatisch verlangt.',
+      erklaerungFalsch:
+        '\u201eregnen\u201c ist <strong>nullwertig</strong>. Das \u201ees\u201c in \u201eEs ' +
+        'regnet\u201c ist kein Aktant, sondern ein Platzhaltersubjekt ohne Referenz. Das Verb ' +
+        '\u00f6ffnet keine echte Leerstelle.',
+      tree: buildTree0
+    },
+    {
+      verb: 'lachen',
+      tokens: [
+        { text: 'Die Kinder', type: 'ergaenzung', label: 'Subjekterg\u00e4nzung' },
+        { text: 'lachen',     type: 'verb' },
+        { text: 'laut',       type: 'angabe', label: 'Modalangabe' },
+        { text: 'im Park',    type: 'angabe', label: 'Lokalangabe' }
+      ],
+      valenz: 1,
+      label: 'einwertig',
+      ergaenzungen: ['Die Kinder\u00a0(Subjekterg\u00e4nzung)'],
+      angaben: ['laut\u00a0(Modalangabe)', 'im Park\u00a0(Lokalangabe)'],
+      erklaerung:
+        '<strong>Richtig!</strong> \u201elachen\u201c ist <strong>einwertig</strong>: ' +
+        'Das Verb \u00f6ffnet nur die Leerstelle f\u00fcr das Subjekt. ' +
+        '\u201elaut\u201c und \u201eim Park\u201c sind frei streichbare Angaben.',
+      erklaerungFalsch:
+        '\u201elachen\u201c ist <strong>einwertig</strong>. Es gen\u00fcgt ein Subjekt: ' +
+        '\u201eDie Kinder lachen.\u201c \u2013 grammatisch vollst\u00e4ndig. ' +
+        'Die anderen Satzglieder sind Angaben (optional).',
+      tree: buildTree1
+    },
+    {
+      verb: 'lesen',
+      tokens: [
+        { text: 'Maria',      type: 'ergaenzung', label: 'Subjekterg\u00e4nzung' },
+        { text: 'liest',      type: 'verb' },
+        { text: 'den Roman',  type: 'ergaenzung', label: 'Akkusativerg\u00e4nzung' },
+        { text: 'heute Abend', type: 'angabe', label: 'Temporalangabe' }
+      ],
+      valenz: 2,
+      label: 'zweiwertig',
+      ergaenzungen: ['Maria\u00a0(Subjekterg\u00e4nzung)', 'den Roman\u00a0(Akkusativerg\u00e4nzung)'],
+      angaben: ['heute Abend\u00a0(Temporalangabe)'],
+      erklaerung:
+        '<strong>Richtig!</strong> \u201elesen\u201c ist in diesem Gebrauch <strong>zweiwertig</strong>: ' +
+        'Subjekt + Akkusativerg\u00e4nzung. Hinweis: \u201eSie liest gern.\u201c ohne Objekt ist ' +
+        'ebenfalls m\u00f6glich (dann einwertig) \u2013 die <em>maximale</em> Valenz betr\u00e4gt 2.',
+      erklaerungFalsch:
+        '\u201elesen\u201c ist <strong>zweiwertig</strong>: ' +
+        'Subjekt (Maria) + Akkusativerg\u00e4nzung (den Roman). ' +
+        '\u201eheute Abend\u201c ist Temporalangabe und damit optional.',
+      tree: buildTree2
+    },
+    {
+      verb: 'schenken',
+      tokens: [
+        { text: 'Er',          type: 'ergaenzung', label: 'Subjekterg\u00e4nzung' },
+        { text: 'schenkt',     type: 'verb' },
+        { text: 'ihr',         type: 'ergaenzung', label: 'Dativerg\u00e4nzung' },
+        { text: 'ein Buch',    type: 'ergaenzung', label: 'Akkusativerg\u00e4nzung' },
+        { text: 'zum Geburtstag', type: 'angabe',  label: 'Kausalangabe' }
+      ],
+      valenz: 3,
+      label: 'dreiwertig',
+      ergaenzungen: [
+        'Er\u00a0(Subjekterg\u00e4nzung)',
+        'ihr\u00a0(Dativerg\u00e4nzung)',
+        'ein Buch\u00a0(Akkusativerg\u00e4nzung)'
+      ],
+      angaben: ['zum Geburtstag\u00a0(Kausalangabe)'],
+      erklaerung:
+        '<strong>Richtig!</strong> \u201eschenken\u201c ist <strong>dreiwertig</strong>: ' +
+        'Wer schenkt? (Subjekt) \u2013 Wem? (Dativerg\u00e4nzung) \u2013 Was? (Akkusativerg\u00e4nzung). ' +
+        'Alle drei Leerstellen sind obligatorisch.',
+      erklaerungFalsch:
+        '\u201eschenken\u201c ist <strong>dreiwertig</strong>: ' +
+        'Es ben\u00f6tigt Subjekt + Dativerg\u00e4nzung + Akkusativerg\u00e4nzung. ' +
+        'Streicht man eines davon, wird der Satz unvollst\u00e4ndig.',
+      tree: buildTree3
+    }
+  ];
+
+  let p2Index   = 0;
+  let p2Score   = 0;
+  let p2Results = [];
+  let p2Answered = false;
+
+  function renderP2() {
+    const item = p2Data[p2Index];
+    document.getElementById('p2-heading').textContent =
+      'Aufgabe ' + (p2Index + 1) + ' von ' + p2Data.length;
+
+    // reset result area
+    document.getElementById('p2-result').style.display = 'none';
+    document.getElementById('p2-feedback').innerHTML = '';
+    document.getElementById('p2-tree').innerHTML = '';
+    document.getElementById('p2-ergList').innerHTML = '';
+    document.getElementById('p2-angList').innerHTML = '';
+    p2Answered = false;
+
+    // enable buttons
+    const btns = document.querySelectorAll('.val-btn');
+    btns.forEach(b => {
+      b.disabled = false;
+      b.className = 'val-btn';
+    });
+
+    // render sentence (neutral until answered)
+    const cont = document.getElementById('p2-sentence');
+    cont.innerHTML = '';
+    item.tokens.forEach(tok => {
+      const span = document.createElement('span');
+      // verb stays green; everything else starts neutral
+      span.className = tok.type === 'verb' ? 'token verb' : 'token neutral';
+      span.dataset.type = tok.type;
+      span.dataset.label = tok.label || '';
+      span.textContent = tok.text;
+      cont.appendChild(span);
+    });
+
+    // next button label
+    const nextBtn = document.getElementById('p2-next-btn');
+    if (p2Index < p2Data.length - 1) {
+      nextBtn.textContent = 'N\u00e4chstes Verb \u2192';
+    } else {
+      nextBtn.textContent = 'Ergebnis anzeigen \u2192';
+    }
+  }
+
+  function checkValenz(chosen) {
+    if (p2Answered) return;
+    p2Answered = true;
+
+    const item    = p2Data[p2Index];
+    const correct = item.valenz;
+    const isRight = chosen === correct;
+
+    if (isRight) p2Score++;
+    p2Results.push({ item, chosen, isRight });
+
+    // style buttons
+    const btns = document.querySelectorAll('.val-btn');
+    btns.forEach((b, i) => {
+      b.disabled = true;
+      if (i === correct) b.classList.add('correct');
+      if (i === chosen && !isRight) b.classList.add('wrong');
+    });
+
+    // reveal token colors
+    document.querySelectorAll('#p2-sentence .token.neutral').forEach(span => {
+      const t = span.dataset.type;
+      span.className = 'token ' + t;
+      if (span.dataset.label) {
+        const tt = document.createElement('span');
+        tt.className = 'token-tooltip';
+        tt.textContent = span.dataset.label;
+        span.appendChild(tt);
+      }
+    });
+
+    // feedback text
+    const fb = document.getElementById('p2-feedback');
+    if (isRight) {
+      fb.className = 'feedback show ok';
+      fb.innerHTML = item.erklaerung;
+    } else {
+      fb.className = 'feedback show err';
+      fb.innerHTML = item.erklaerungFalsch;
+    }
+
+    // tree
+    const treeEl = document.getElementById('p2-tree');
+    treeEl.innerHTML = item.tree();
+
+    // Ergänzungen list
+    const ergEl = document.getElementById('p2-ergList');
+    item.ergaenzungen.forEach(e => {
+      const tag = document.createElement('span');
+      tag.className = 'tag e';
+      tag.textContent = e;
+      ergEl.appendChild(tag);
+    });
+
+    // Angaben list
+    const angEl = document.getElementById('p2-angList');
+    item.angaben.forEach(a => {
+      const tag = document.createElement('span');
+      tag.className = 'tag a';
+      tag.textContent = a;
+      angEl.appendChild(tag);
+    });
+
+    document.getElementById('p2-result').style.display = 'block';
+    document.getElementById('p2-result').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function nextVerb() {
+    p2Index++;
+    if (p2Index < p2Data.length) {
+      renderP2();
+      document.getElementById('card-p2').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      showFinal();
+    }
+  }
+
+  function showFinal() {
+    document.getElementById('card-p2').style.display = 'none';
+
+    const finalEl = document.getElementById('p2-final');
+    finalEl.style.display = 'block';
+    document.getElementById('final-score').textContent = p2Score;
+
+    const msgs = [
+      'Wiederhole die Theorie noch einmal \u2013 du schaffst das!',
+      'Guter Ansatz \u2013 noch etwas \u00fcben!',
+      'Solide! Fast alles richtig.',
+      'Ausgezeichnet! Du beherrschst die Valenzanalyse.',
+      'Perfekt! Alle Verben korrekt bestimmt.'
+    ];
+    document.getElementById('final-msg').textContent = msgs[p2Score] || msgs[4];
+
+    const breakdown = document.getElementById('final-breakdown');
+    p2Results.forEach(r => {
+      const div = document.createElement('div');
+      div.className = 'summary-item ' + (r.isRight ? 'correct-ans' : 'wrong-ans');
+      div.innerHTML =
+        '<div class="sv-label">' + (r.isRight ? '\u2713 Richtig' : '\u2717 Falsch') + '</div>' +
+        '<div class="sv-verb">' + r.item.verb + '</div>' +
+        '<div class="sv-val">' + r.item.label + ' (' + r.item.valenz + ')</div>';
+      breakdown.appendChild(div);
+    });
+
+    finalEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  /* ── SVG tree builders ─────────────────────── */
+
+  function svgNode(x, y, text, fill, textColor) {
+    return '<rect x="' + (x - 52) + '" y="' + (y - 18) + '" width="104" height="36" rx="8" ' +
+      'fill="' + fill + '" stroke="#d8e1ed" stroke-width="1.5"/>' +
+      '<text x="' + x + '" y="' + (y + 5) + '" text-anchor="middle" ' +
+      'font-family="Inter,ui-sans-serif,sans-serif" font-size="13" font-weight="600" fill="' + textColor + '">' +
+      text + '</text>';
+  }
+
+  function svgLine(x1, y1, x2, y2, color, dash) {
+    return '<line x1="' + x1 + '" y1="' + y1 + '" x2="' + x2 + '" y2="' + y2 + '" ' +
+      'stroke="' + color + '" stroke-width="2" ' +
+      (dash ? 'stroke-dasharray="5 3"' : '') +
+      ' style="stroke-dashoffset:0"/>';
+  }
+
+  function buildTree0() {
+    // nullwertig: just verb + platzhalter note
+    return '<svg width="260" height="90" viewBox="0 0 260 90" role="img" aria-label="Valenzbaum nullwertig">' +
+      svgNode(130, 30, 'regnen', '#f0fdf4', '#15803d') +
+      '<text x="130" y="72" text-anchor="middle" font-family="Inter,ui-sans-serif,sans-serif" ' +
+      'font-size="11" fill="#617087">keine Aktanten-Leerstellen</text>' +
+      '</svg>';
+  }
+
+  function buildTree1() {
+    // einwertig: Subj --- lachen
+    return '<svg width="280" height="100" viewBox="0 0 280 100" role="img" aria-label="Valenzbaum einwertig">' +
+      svgLine(100, 50, 180, 50, '#0f5fa8', false) +
+      svgNode(80, 50, 'Subj.', '#eff6ff', '#0f5fa8') +
+      svgNode(200, 50, 'lachen', '#f0fdf4', '#15803d') +
+      '<text x="140" y="85" text-anchor="middle" font-family="Inter,ui-sans-serif,sans-serif" font-size="11" fill="#617087">einwertig</text>' +
+      '</svg>';
+  }
+
+  function buildTree2() {
+    // zweiwertig: Subj --- lesen --- Akk
+    return '<svg width="360" height="100" viewBox="0 0 360 100" role="img" aria-label="Valenzbaum zweiwertig">' +
+      svgLine(100, 50, 165, 50, '#0f5fa8', false) +
+      svgLine(215, 50, 280, 50, '#0f5fa8', false) +
+      svgNode(80, 50, 'Subj.', '#eff6ff', '#0f5fa8') +
+      svgNode(190, 50, 'lesen', '#f0fdf4', '#15803d') +
+      svgNode(300, 50, 'Akk.', '#eff6ff', '#0f5fa8') +
+      '<text x="180" y="85" text-anchor="middle" font-family="Inter,ui-sans-serif,sans-serif" font-size="11" fill="#617087">zweiwertig</text>' +
+      '</svg>';
+  }
+
+  function buildTree3() {
+    // dreiwertig: Subj + Dat branching from verb + Akk
+    return '<svg width="320" height="160" viewBox="0 0 320 160" role="img" aria-label="Valenzbaum dreiwertig">' +
+      // lines from verb (160, 80) to three nodes
+      svgLine(160, 80, 70, 40, '#0f5fa8', false) +
+      svgLine(160, 80, 250, 40, '#0f5fa8', false) +
+      svgLine(160, 80, 160, 138, '#0f5fa8', false) +
+      // nodes
+      svgNode(60, 30, 'Subj.', '#eff6ff', '#0f5fa8') +
+      svgNode(160, 80, 'schenken', '#f0fdf4', '#15803d') +
+      svgNode(260, 30, 'Dat.', '#eff6ff', '#0f5fa8') +
+      svgNode(160, 148, 'Akk.', '#eff6ff', '#0f5fa8') +
+      '</svg>';
+  }
+
+  /* ── Phase transitions ───────────────────────── */
+
+  window.startPhase2 = function () {
+    document.getElementById('phase1').classList.remove('active');
+    document.getElementById('phase2').classList.add('active');
+    document.getElementById('dot-p1').className = 'dot done';
+    document.getElementById('dot-p2').className = 'dot active';
+    document.getElementById('progress-label').textContent = 'Phase 2 von 2';
+    renderP2();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  window.checkValenz = checkValenz;
+  window.nextVerb    = nextVerb;
+
+  /* ── Init ────────────────────────────────────── */
+  renderPhase1();
+
+})();
+</script>
+
+</body>
+</html>

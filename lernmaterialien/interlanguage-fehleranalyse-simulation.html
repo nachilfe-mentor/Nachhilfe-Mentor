@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Interlanguage &amp; Fehleranalyse: Lernerfehler klassifizieren | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation: Klassifiziere Lernerfehler als Interferenz, Übergeneralisierung oder Vereinfachung und verstehe Interlanguage und Fossilisierung nach Selinker und Corder.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Interlanguage, Fehleranalyse, Zweitspracherwerb, Interferenzfehler, Übergeneralisierung, Fossilisierung">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/interlanguage-fehleranalyse-simulation.html">
+  <meta property="og:title" content="Interlanguage &amp; Fehleranalyse: Lernerfehler klassifizieren">
+  <meta property="og:description" content="Interaktive Simulation: Klassifiziere Lernerfehler als Interferenz, Übergeneralisierung oder Vereinfachung und verstehe Interlanguage und Fossilisierung nach Selinker und Corder.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/interlanguage-fehleranalyse-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Interlanguage & Fehleranalyse: Lernerfehler klassifizieren",
+  "description":"Interaktive Simulation: Klassifiziere Lernerfehler als Interferenz, Übergeneralisierung oder Vereinfachung und verstehe Interlanguage und Fossilisierung nach Selinker und Corder.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/interlanguage-fehleranalyse-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --ink:      #172033;
+      --muted:    #617087;
+      --line:     #d8e1ed;
+      --blue:     #0f5fa8;
+      --green:    #0b8f6a;
+      --red:      #b5281e;
+      --orange:   #c05c00;
+      --amber:    #b87700;
+      --purple:   #6b21a8;
+      --gray:     #6b7280;
+      --bg:       #f5f8fc;
+      --panel:    #ffffff;
+      --transfer: #dc2626;
+      --overgenz: #d97706;
+      --simplif:  #6b7280;
+      --fossil:   #7c2d12;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    h1 {
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    /* ── Canvas-Modell ── */
+    .model-section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .model-section h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--ink);
+    }
+
+    .model-caption {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    canvas#continuumCanvas {
+      width: 100%;
+      height: 140px;
+      display: block;
+      border-radius: 8px;
+      background: #f0f4fa;
+    }
+
+    /* ── Legenden ── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      font-size: 0.82rem;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Stage-Wrapper ── */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    /* ── Stage-Header ── */
+    .stage-header {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .stage-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.4rem;
+    }
+
+    .stage-header h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .stage-header p {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    /* ── Aufgaben-Karte ── */
+    .task-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .task-nr {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .learner-sentence {
+      font-size: 1.05rem;
+      font-style: italic;
+      background: #f0f4fa;
+      border-left: 3px solid var(--blue);
+      padding: 0.75rem 1rem;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 1.25rem;
+      line-height: 1.5;
+    }
+
+    .task-question {
+      font-size: 0.92rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Option-Buttons ── */
+    .option-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+
+    .option-btn {
+      padding: 0.55rem 1.1rem;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #dbeafe;
+      color: var(--blue);
+    }
+
+    .option-btn:disabled { cursor: default; opacity: 0.7; }
+
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fee2e2;
+      color: var(--red);
+    }
+
+    /* ── Feedback ── */
+    .feedback-box {
+      display: none;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      line-height: 1.55;
+    }
+
+    .feedback-box.correct {
+      background: #d1fae5;
+      border: 1px solid #6ee7b7;
+      color: #064e3b;
+      display: block;
+    }
+
+    .feedback-box.wrong {
+      background: #fee2e2;
+      border: 1px solid #fca5a5;
+      color: #7f1d1d;
+      display: block;
+    }
+
+    .concept-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      margin-top: 0.6rem;
+      margin-right: 0.3rem;
+    }
+
+    .concept-tag.transfer { background: #fee2e2; color: #991b1b; }
+    .concept-tag.overgenz { background: #fef3c7; color: #92400e; }
+    .concept-tag.simplif  { background: #f3f4f6; color: #374151; }
+    .concept-tag.fossil   { background: #fce7f3; color: #831843; }
+    .concept-tag.method   { background: #dbeafe; color: #1e40af; }
+
+    /* ── Weiter-Button ── */
+    .next-btn {
+      display: none;
+      margin-top: 1rem;
+      padding: 0.6rem 1.4rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .next-btn:hover { background: #0c4e8a; }
+    .next-btn.visible { display: inline-block; }
+
+    /* ── Progress ── */
+    .progress-bar {
+      height: 5px;
+      background: var(--line);
+      border-radius: 3px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 3px;
+      transition: width 0.4s ease;
+    }
+
+    /* ── Abschluss ── */
+    .completion-panel {
+      background: var(--panel);
+      border: 1px solid #a7f3d0;
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .completion-panel h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      color: #065f46;
+    }
+
+    .completion-panel p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto 1.5rem;
+    }
+
+    .score-badge {
+      font-size: 2rem;
+      font-weight: 900;
+      color: var(--blue);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Zusammenfassung Fehlertypen ── */
+    .error-types-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .error-type-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+    }
+
+    .error-type-card .type-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.5rem;
+    }
+
+    .type-label.transfer { color: var(--transfer); }
+    .type-label.overgenz { color: var(--overgenz); }
+    .type-label.simplif  { color: var(--gray); }
+
+    .error-type-card p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── Related Links ── */
+    .related {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .related h3 {
+      font-size: 0.92rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .related ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .related ul li a {
+      display: inline-block;
+      font-size: 0.85rem;
+      padding: 0.35rem 0.85rem;
+      background: #f0f4fa;
+      border-radius: 20px;
+      color: var(--blue);
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+
+    .related ul li a:hover { background: #dbeafe; }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .option-btns { flex-direction: column; }
+      .option-btn { width: 100%; text-align: center; }
+      canvas#continuumCanvas { height: 110px; }
+    }
+  </style>
+</head>
+<body
+  data-asset-type="simulation"
+  data-topic-cluster="zweitspracherwerb"
+>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Zweitspracherwerb &middot; Linguistik Klasse 10&ndash;13</p>
+  <h1>Interlanguage &amp; Fehleranalyse</h1>
+  <p class="subtitle">Klassifiziere Fehler aus Lernertexten und verstehe, wie die Zwischensprache entsteht &ndash; Selinker (1972) &amp; Corder (1967).</p>
+</header>
+
+<main>
+
+  <!-- ── Animiertes Modell ── -->
+  <section class="model-section" aria-label="Interlanguage-Kontinuum-Visualisierung">
+    <h2>Das Interlanguage-Kontinuum</h2>
+    <p class="model-caption">Die animierte Darstellung zeigt, wie sich Fehler mit zunehmendem Lernfortschritt verändern. Jede Blase steht für einen Fehlertyp.</p>
+    <canvas id="continuumCanvas" aria-label="Animiertes L1-Interlanguage-L2-Kontinuum"></canvas>
+    <div class="legend">
+      <span class="legend-item"><span class="legend-dot" style="background:#dc2626"></span> Interferenzfehler (L1-Transfer)</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#d97706"></span> Übergeneralisierung</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#6b7280"></span> Vereinfachung</span>
+      <span class="legend-item"><span class="legend-dot" style="background:#7c2d12"></span> Fossilisierung</span>
+    </div>
+  </section>
+
+  <!-- ── Fehlertypen ── -->
+  <div class="error-types-grid">
+    <div class="error-type-card">
+      <p class="type-label transfer">Interferenzfehler</p>
+      <p>Eine Struktur der Muttersprache (L1) wird auf die Fremdsprache (L2) übertragen. Quelle des Fehlers liegt in L1.</p>
+    </div>
+    <div class="error-type-card">
+      <p class="type-label overgenz">Übergeneralisierung</p>
+      <p>Eine L2-Regel wird auf Ausnahmen ausgedehnt, die diese Regel nicht befolgen. Quelle liegt in L2 selbst.</p>
+    </div>
+    <div class="error-type-card">
+      <p class="type-label simplif">Vereinfachung</p>
+      <p>Komplexe L2-Strukturen (z. B. Hilfsverben, Endungen) werden weggelassen. Der Lernende reduziert die Komplexität.</p>
+    </div>
+  </div>
+
+  <!-- ── Progress Bar ── -->
+  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-fill" id="progressFill" style="width:0%"></div>
+  </div>
+
+  <!-- ═══════════════════════════════ STAGE 1 ═══════════════════════════════ -->
+  <div class="stage active" id="stage1">
+    <div class="stage-header">
+      <p class="stage-label">Stufe 1 von 2 &mdash; Fehlertypen klassifizieren</p>
+      <h2>Welcher Fehlertyp steckt dahinter?</h2>
+      <p>Lies den Lernersatz und entscheide: Interferenzfehler, Übergeneralisierung oder Vereinfachung?</p>
+    </div>
+
+    <!-- Aufgabe 1 -->
+    <div class="task-card" id="task1">
+      <p class="task-nr">Aufgabe 1 von 4</p>
+      <p class="learner-sentence">&#8222;Yesterday I become a very nice present.&#8220;</p>
+      <p class="task-question">Vorhersage: Welchen Fehlertyp macht diese Lernerin?</p>
+      <div class="option-btns" id="opts1">
+        <button class="option-btn" onclick="checkAnswer(1,'transfer')">Interferenzfehler</button>
+        <button class="option-btn" onclick="checkAnswer(1,'overgenz')">Übergeneralisierung</button>
+        <button class="option-btn" onclick="checkAnswer(1,'simplif')">Vereinfachung</button>
+      </div>
+      <div class="feedback-box" id="fb1"></div>
+      <button class="next-btn" id="next1" onclick="nextTask(1)">Weiter zur nächsten Aufgabe &rarr;</button>
+    </div>
+
+    <!-- Aufgabe 2 -->
+    <div class="task-card" id="task2" style="display:none">
+      <p class="task-nr">Aufgabe 2 von 4</p>
+      <p class="learner-sentence">&#8222;She singed a beautiful song last night.&#8220;</p>
+      <p class="task-question">Vorhersage: Welchen Fehlertyp macht dieser Lernende?</p>
+      <div class="option-btns" id="opts2">
+        <button class="option-btn" onclick="checkAnswer(2,'transfer')">Interferenzfehler</button>
+        <button class="option-btn" onclick="checkAnswer(2,'overgenz')">Übergeneralisierung</button>
+        <button class="option-btn" onclick="checkAnswer(2,'simplif')">Vereinfachung</button>
+      </div>
+      <div class="feedback-box" id="fb2"></div>
+      <button class="next-btn" id="next2" onclick="nextTask(2)">Weiter &rarr;</button>
+    </div>
+
+    <!-- Aufgabe 3 -->
+    <div class="task-card" id="task3" style="display:none">
+      <p class="task-nr">Aufgabe 3 von 4</p>
+      <p class="learner-sentence">&#8222;He very happy today.&#8220;</p>
+      <p class="task-question">Vorhersage: Welchen Fehlertyp macht dieser Lernende?</p>
+      <div class="option-btns" id="opts3">
+        <button class="option-btn" onclick="checkAnswer(3,'transfer')">Interferenzfehler</button>
+        <button class="option-btn" onclick="checkAnswer(3,'overgenz')">Übergeneralisierung</button>
+        <button class="option-btn" onclick="checkAnswer(3,'simplif')">Vereinfachung</button>
+      </div>
+      <div class="feedback-box" id="fb3"></div>
+      <button class="next-btn" id="next3" onclick="nextTask(3)">Weiter &rarr;</button>
+    </div>
+
+    <!-- Aufgabe 4 -->
+    <div class="task-card" id="task4" style="display:none">
+      <p class="task-nr">Aufgabe 4 von 4</p>
+      <p class="learner-sentence">&#8222;I am since five years in Germany.&#8220;</p>
+      <p class="task-question">Vorhersage: Welchen Fehlertyp macht diese Lernerin?</p>
+      <div class="option-btns" id="opts4">
+        <button class="option-btn" onclick="checkAnswer(4,'transfer')">Interferenzfehler</button>
+        <button class="option-btn" onclick="checkAnswer(4,'overgenz')">Übergeneralisierung</button>
+        <button class="option-btn" onclick="checkAnswer(4,'simplif')">Vereinfachung</button>
+      </div>
+      <div class="feedback-box" id="fb4"></div>
+      <button class="next-btn" id="next4" onclick="goToStage2()">Weiter zu Stufe 2 &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ STAGE 2 ═══════════════════════════════ -->
+  <div class="stage" id="stage2">
+    <div class="stage-header">
+      <p class="stage-label">Stufe 2 von 2 &mdash; Fossilisierung verstehen</p>
+      <h2>Wann und warum fossilisieren Fehler?</h2>
+      <p>Fossilisierung (Selinker 1972): Manche Interlanguage-Formen &bdquo;gefrieren&ldquo; und lassen sich kaum noch korrigieren. Teste dein Verständnis.</p>
+    </div>
+
+    <!-- Aufgabe 5 -->
+    <div class="task-card" id="task5">
+      <p class="task-nr">Aufgabe 5 von 6</p>
+      <p class="task-question">Vorhersage: Auf welchem Niveau tritt Fossilisierung besonders häufig auf?</p>
+      <div class="option-btns" id="opts5">
+        <button class="option-btn" onclick="checkAnswer(5,'a')">Bei Anfängerinnen und Anfängern (A1&ndash;A2)</button>
+        <button class="option-btn" onclick="checkAnswer(5,'b')">Auf allen Niveaus gleichmäßig</button>
+        <button class="option-btn" onclick="checkAnswer(5,'c')">Vor allem bei Fortgeschrittenen &ndash; besonders nach der kritischen Periode</button>
+      </div>
+      <div class="feedback-box" id="fb5"></div>
+      <button class="next-btn" id="next5" onclick="nextTask(5)">Weiter &rarr;</button>
+    </div>
+
+    <!-- Aufgabe 6 -->
+    <div class="task-card" id="task6" style="display:none">
+      <p class="task-nr">Aufgabe 6 von 6</p>
+      <p class="task-question">Ein Erwachsener lernt seit 10 Jahren Englisch, hat aber immer noch einen starken deutschen Akzent. Trainiert er einfach nicht genug?</p>
+      <div class="option-btns" id="opts6">
+        <button class="option-btn" onclick="checkAnswer(6,'a')">Ja &ndash; mehr Übung würde den Akzent vollständig eliminieren</button>
+        <button class="option-btn" onclick="checkAnswer(6,'b')">Nein &ndash; der Akzent ist wahrscheinlich fossilisiert; die Kritische Periode ist überschritten</button>
+        <button class="option-btn" onclick="checkAnswer(6,'c')">Nein &ndash; Akzent ist immer nur Interferenzfehler, nie Fossilisierung</button>
+      </div>
+      <div class="feedback-box" id="fb6"></div>
+      <button class="next-btn" id="next6" onclick="showCompletion()">Zum Abschluss &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ STAGE 3 – Abschluss ═══════════════════ -->
+  <div class="stage" id="stage3">
+    <div class="completion-panel">
+      <span class="score-badge" id="scoreBadge">0 / 6</span>
+      <h2>Simulation abgeschlossen!</h2>
+      <p>Du hast die wichtigsten Konzepte der Fehleranalyse und des Interlanguage-Modells erkundet. Gut gemacht!</p>
+    </div>
+
+    <div class="related">
+      <h3>Weitere Simulationen zum Zweitspracherwerb</h3>
+      <ul>
+        <li><a href="/lernmaterialien/lernsimulationen/kritische-periode-spracherwerb-simulation.html">Kritische Periode &amp; Spracherwerb</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/krashen-input-hypothese-zweitspracherwerb-simulation.html">Krashen: Input-Hypothese</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/sprachinterferenz-simulation.html">Sprachinterferenz-Simulation</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/uebergeneralisierung-spracherwerb-simulation.html">Übergeneralisierung im Spracherwerb</a></li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  /* ── Tracking ── */
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'simulation_start', asset: 'interlanguage-fehleranalyse', topic: 'zweitspracherwerb' });
+
+  /* ── Score ── */
+  let score = 0;
+
+  /* ── Aufgaben-Config ── */
+  const tasks = {
+    1: {
+      correct: 'transfer',
+      correctText: 'Richtig! Das ist ein <strong>Interferenzfehler</strong> (Transferfehler). Die Lernerin überträgt das deutsche Verb <em>bekommen</em> direkt ins Englische &ndash; aber <em>become</em> bedeutet &bdquo;werden&ldquo;, nicht &bdquo;erhalten&ldquo;. Der Fehler stammt aus der Muttersprache (L1). Nach Corders Fehleranalyse ist dies ein typischer L1-Transfer.',
+      wrongText: {
+        overgenz: 'Nicht ganz. Bei einer Übergeneralisierung wird eine L2-Regel auf Ausnahmen ausgedehnt &ndash; hier aber kommt die Fehlerquelle aus der deutschen Muttersprache: <em>bekommen</em> klingt wie <em>become</em>, bedeutet aber etwas anderes. Das ist ein <strong>Interferenzfehler</strong> (Corder: L1-Transfer).',
+        simplif: 'Nicht ganz. Bei Vereinfachung werden Strukturen weggelassen. Hier ist aber eine falsche Form vorhanden &ndash; die Fehlerquelle ist das ähnlich klingende deutsche Wort <em>bekommen</em>. Das ist ein <strong>Interferenzfehler</strong> (L1-Transfer nach Corder).'
+      },
+      tags: '<span class="concept-tag transfer">Interferenzfehler</span><span class="concept-tag method">Corder 1967 &ndash; Fehleranalyse</span>'
+    },
+    2: {
+      correct: 'overgenz',
+      correctText: 'Richtig! Das ist eine <strong>Übergeneralisierung</strong>. Der Lernende wendet die reguläre englische Vergangenheitsregel (&ndash;ed) auf das unregelmäßige Verb <em>sing</em> an &ndash; korrekt wäre <em>sang</em>. Die Fehlerquelle liegt in L2 selbst: Der Lernende hat die Regelbildung überverallgemeinert.',
+      wrongText: {
+        transfer: 'Nicht ganz. Ein Interferenzfehler würde eine deutsche Struktur übertragen. Hier aber nutzt der Lernende die englische &ndash;ed-Regel korrekt &ndash; nur auf ein Verb, das diese Regel nicht befolgt (<em>sing &rarr; sang</em>). Das ist eine <strong>Übergeneralisierung</strong>.',
+        simplif: 'Nicht ganz. Bei Vereinfachung fehlt etwas. Hier ist aber eine Form vorhanden (<em>singed</em>), die durch Überausdehnung einer L2-Regel entsteht. Das ist eine <strong>Übergeneralisierung</strong>.'
+      },
+      tags: '<span class="concept-tag overgenz">Übergeneralisierung</span><span class="concept-tag method">Corder 1967 &ndash; Fehleranalyse</span>'
+    },
+    3: {
+      correct: 'simplif',
+      correctText: 'Richtig! Das ist eine <strong>Vereinfachung</strong>. Das Hilfsverb <em>is</em> wurde weggelassen (&bdquo;He very happy&ldquo; statt &bdquo;He <em>is</em> very happy&ldquo;). Der Lernende reduziert die Komplexität des Satzes, indem er eine obligatorische L2-Struktur weglässt.',
+      wrongText: {
+        transfer: 'Nicht ganz. Im Deutschen gibt es zwar auch das Verb &bdquo;sein&ldquo;, aber es kann nicht weggelassen werden. Die Fehlerquelle ist die Reduktion von Komplexität &ndash; das Hilfsverb <em>is</em> fehlt. Das ist eine <strong>Vereinfachung</strong>.',
+        overgenz: 'Nicht ganz. Bei Übergeneralisierung wird eine Regel überdehnt. Hier fehlt etwas komplett (das Hilfsverb). Das ist eine <strong>Vereinfachung</strong>: Der Lernende lässt die Kopula <em>is</em> weg, um die Struktur zu vereinfachen.'
+      },
+      tags: '<span class="concept-tag simplif">Vereinfachung</span><span class="concept-tag method">Corder 1967 &ndash; Fehleranalyse</span>'
+    },
+    4: {
+      correct: 'transfer',
+      correctText: 'Richtig! Das ist wieder ein <strong>Interferenzfehler</strong>. Im Deutschen steht bei Zeitdauer <em>seit</em> mit Präsens (&bdquo;Ich bin seit fünf Jahren hier&ldquo;). Auf Englisch müsste es heißen: <em>&bdquo;I have been in Germany for five years.&ldquo;</em> Die Lernerin hat die deutsche Konstruktion direkt übertragen &ndash; typischer L1-Transfer.',
+      wrongText: {
+        overgenz: 'Nicht ganz. Eine Übergeneralisierung würde eine L2-Regel auf Ausnahmen ausdehnen. Hier wird aber die deutsche <em>seit</em>-Konstruktion auf Englisch angewendet. Das ist ein <strong>Interferenzfehler</strong> (L1-Transfer).',
+        simplif: 'Nicht ganz. Die Satzstruktur ist vorhanden, aber die falsche Zeitform und Präposition stammt aus dem Deutschen. Das ist ein <strong>Interferenzfehler</strong>: Die deutsche <em>seit + Präsens</em>-Konstruktion wird direkt übertragen.'
+      },
+      tags: '<span class="concept-tag transfer">Interferenzfehler</span><span class="concept-tag method">Corder 1967 &ndash; Fehleranalyse</span>'
+    },
+    5: {
+      correct: 'c',
+      correctText: 'Richtig! Fossilisierung tritt besonders bei Fortgeschrittenen auf &ndash; vor allem wenn die kritische Periode überschritten ist. Anfänger sind noch im aktiven Lernprozess; Fortgeschrittene haben manche Strukturen so automatisiert, dass sie sich nicht mehr leicht ändern lassen. Selinker (1972) beschreibt Fossilisierung als &bdquo;Einfrieren&ldquo; von Interlanguage-Formen.',
+      wrongText: {
+        a: 'Nicht ganz. Anfänger machen zwar viele Fehler, aber diese sind meistens noch nicht fossilisiert &ndash; das System ist noch sehr flexibel. Fossilisierung entsteht, wenn Formen so tief automatisiert werden, dass sie sich kaum noch verändern. Das geschieht vor allem bei <strong>Fortgeschrittenen</strong> nach der kritischen Periode.',
+        b: 'Nicht ganz. Fossilisierung ist kein gleichmäßiges Phänomen. Sie tritt besonders bei Lernenden auf, die die kritische Periode überschritten haben und bestimmte Formen tief automatisiert haben. Bei Anfängern ist das System noch zu flexibel für echte Fossilisierung (Selinker 1972).'
+      },
+      tags: '<span class="concept-tag fossil">Fossilisierung</span><span class="concept-tag method">Selinker 1972 &ndash; Interlanguage</span>'
+    },
+    6: {
+      correct: 'b',
+      correctText: 'Richtig! Der Akzent ist wahrscheinlich <strong>fossilisiert</strong>. Nach der kritischen Periode verarbeitet das Gehirn Phoneme der Fremdsprache anders &ndash; bestimmte Aussprachemerkmale lassen sich auch bei intensivem Training kaum vollständig eliminieren. Selinker (1972) bezeichnet dies als Fossilisierung: die dauerhafte Stabilisierung von Interlanguage-Formen trotz Korrekturdruck.',
+      wrongText: {
+        a: 'Nicht ganz. Obwohl Training hilft, zeigt die Forschung: Nach der kritischen Periode fossilisieren Aussprachemerkmale häufig. Mehr Übung kann den Akzent verringern, aber nicht immer eliminieren. Das ist das Konzept der <strong>Fossilisierung</strong> (Selinker 1972).',
+        c: 'Nicht ganz. Phonetische Fossilisierung ist ein anderes Phänomen als Interferenzfehler. Der Akzent entsteht zwar ursprünglich durch L1-Transfer, kann aber durch <strong>Fossilisierung</strong> dauerhaft werden &ndash; also nicht mehr nur Interferenzfehler, sondern eine eingefrorene Interlanguage-Form (Selinker 1972).'
+      },
+      tags: '<span class="concept-tag fossil">Fossilisierung</span><span class="concept-tag method">Selinker 1972 &ndash; Interlanguage</span>'
+    }
+  };
+
+  /* ── Answer-Check ── */
+  function checkAnswer(taskNr, choice) {
+    const cfg = tasks[taskNr];
+    const fb = document.getElementById('fb' + taskNr);
+    const btns = document.querySelectorAll('#opts' + taskNr + ' .option-btn');
+    const nextBtn = document.getElementById('next' + taskNr);
+
+    btns.forEach(b => b.disabled = true);
+
+    if (choice === cfg.correct) {
+      score++;
+      fb.className = 'feedback-box correct';
+      fb.innerHTML = cfg.correctText + '<br>' + cfg.tags;
+      btns.forEach(b => {
+        const bChoice = b.onclick.toString().match(/'([^']+)'/)?.[1];
+        if (bChoice === cfg.correct) b.classList.add('correct');
+      });
+    } else {
+      fb.className = 'feedback-box wrong';
+      fb.innerHTML = cfg.wrongText[choice] + '<br>' + cfg.tags;
+      btns.forEach(b => {
+        const bChoice = b.onclick.toString().match(/'([^']+)'/)?.[1];
+        if (bChoice === choice) b.classList.add('wrong');
+        if (bChoice === cfg.correct) b.classList.add('correct');
+      });
+    }
+
+    nextBtn.classList.add('visible');
+    updateProgress();
+
+    window.dataLayer.push({ event: 'task_answer', task: taskNr, correct: choice === cfg.correct });
+  }
+
+  /* ── Task Navigation ── */
+  function nextTask(taskNr) {
+    document.getElementById('task' + taskNr).style.display = 'none';
+    const nextCard = document.getElementById('task' + (taskNr + 1));
+    if (nextCard) nextCard.style.display = 'block';
+  }
+
+  function goToStage2() {
+    document.getElementById('stage1').classList.remove('active');
+    document.getElementById('stage2').classList.add('active');
+    window.dataLayer.push({ event: 'stage_complete', stage: 1 });
+    updateProgress();
+  }
+
+  function showCompletion() {
+    document.getElementById('stage2').classList.remove('active');
+    document.getElementById('stage3').classList.add('active');
+    document.getElementById('scoreBadge').textContent = score + ' / 6';
+    updateProgress();
+    window.dataLayer.push({ event: 'stage_complete', stage: 2 });
+    window.dataLayer.push({ event: 'simulation_complete', score: score, total: 6 });
+  }
+
+  /* ── Progress ── */
+  function updateProgress() {
+    const pct = Math.min(100, Math.round((score / 6) * 100));
+    const fill = document.getElementById('progressFill');
+    fill.style.width = pct + '%';
+    fill.parentElement.setAttribute('aria-valuenow', pct);
+  }
+
+  /* ══════════════════════════════════════════════════════
+     Canvas – Interlanguage-Kontinuum Animation
+  ══════════════════════════════════════════════════════ */
+  const canvas = document.getElementById('continuumCanvas');
+  const ctx    = canvas.getContext('2d');
+
+  /* Bubbles: x (0–1 fraction), y, radius, color, alpha, speed, frozen */
+  const COLORS = {
+    transfer: '#dc2626',
+    overgenz: '#d97706',
+    simplif:  '#6b7280',
+    fossil:   '#7c2d12'
+  };
+
+  let bubbles = [];
+  let learnerX = 0.05; // 0 = L1, 1 = L2
+  let learnerDir = 1;
+  let tick = 0;
+  let dpr = 1;
+
+  function resize() {
+    dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    canvas.width  = rect.width  * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.scale(dpr, dpr);
+  }
+
+  function spawnBubble() {
+    /* Fewer bubbles the farther right the learner is, and no transfer on right side */
+    const x = learnerX + (Math.random() - 0.5) * 0.04;
+    const types = [];
+    if (learnerX < 0.6) types.push('transfer', 'transfer', 'overgenz', 'simplif');
+    else types.push('overgenz', 'simplif');
+    /* Fossilized bubble: rare, appears in mid–right zone */
+    if (learnerX > 0.45 && learnerX < 0.75 && Math.random() < 0.12) types.push('fossil');
+
+    const type = types[Math.floor(Math.random() * types.length)];
+    const frozen = (type === 'fossil');
+
+    bubbles.push({
+      x: x,
+      y: 0.5,
+      r: 6 + Math.random() * 6,
+      color: COLORS[type],
+      alpha: 0.9,
+      vy: -0.006 - Math.random() * 0.004,
+      frozen: frozen,
+      frozenTimer: frozen ? 80 : 0
+    });
+  }
+
+  function drawFrame(W, H) {
+    ctx.clearRect(0, 0, W, H);
+
+    /* Gradient track */
+    const grad = ctx.createLinearGradient(0, H * 0.6, W, H * 0.6);
+    grad.addColorStop(0,   '#fee2e2');
+    grad.addColorStop(0.5, '#fef9c3');
+    grad.addColorStop(1,   '#d1fae5');
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, H * 0.55, W, H * 0.15);
+
+    /* Labels */
+    ctx.font = `bold ${Math.max(10, W * 0.028)}px Inter, sans-serif`;
+    ctx.fillStyle = '#374151';
+    ctx.textAlign = 'left';
+    ctx.fillText('L1', 8, H * 0.75);
+    ctx.textAlign = 'right';
+    ctx.fillText('L2', W - 8, H * 0.75);
+    ctx.textAlign = 'center';
+    ctx.fillStyle = '#6b7280';
+    ctx.font = `${Math.max(9, W * 0.022)}px Inter, sans-serif`;
+    ctx.fillText('Interlanguage', W * 0.5, H * 0.75);
+
+    /* Learner dot */
+    const lx = 10 + learnerX * (W - 20);
+    const ly = H * 0.625;
+
+    /* Glow */
+    const grd = ctx.createRadialGradient(lx, ly, 2, lx, ly, 18);
+    grd.addColorStop(0, 'rgba(59,130,246,0.5)');
+    grd.addColorStop(1, 'rgba(59,130,246,0)');
+    ctx.fillStyle = grd;
+    ctx.beginPath();
+    ctx.arc(lx, ly, 18, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.fillStyle = '#2563eb';
+    ctx.beginPath();
+    ctx.arc(lx, ly, 7, 0, Math.PI * 2);
+    ctx.fill();
+
+    /* Bubbles */
+    for (const b of bubbles) {
+      const bx = 10 + b.x * (W - 20);
+      const by = ly + b.y * H * 0.5;
+      ctx.globalAlpha = b.alpha;
+      ctx.fillStyle = b.color;
+      ctx.beginPath();
+      ctx.arc(bx, by, b.r, 0, Math.PI * 2);
+      ctx.fill();
+
+      if (b.frozen) {
+        /* Ice border */
+        ctx.strokeStyle = '#bae6fd';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(bx, by, b.r + 2, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+      ctx.globalAlpha = 1;
+    }
+  }
+
+  function animate() {
+    requestAnimationFrame(animate);
+    tick++;
+
+    const W = canvas.getBoundingClientRect().width;
+    const H = canvas.getBoundingClientRect().height;
+
+    /* Move learner */
+    learnerX += learnerDir * 0.0008;
+    if (learnerX > 0.95) learnerDir = -1;
+    if (learnerX < 0.05) learnerDir = 1;
+
+    /* Spawn bubbles */
+    const spawnRate = Math.max(8, Math.round(40 - learnerX * 25));
+    if (tick % spawnRate === 0) spawnBubble();
+
+    /* Update bubbles */
+    bubbles = bubbles.filter(b => b.alpha > 0.01);
+    for (const b of bubbles) {
+      if (b.frozen && b.frozenTimer > 0) {
+        b.frozenTimer--;
+        /* Frozen bubble stays roughly in place */
+        b.y += b.vy * 0.05;
+        b.alpha -= 0.003;
+      } else {
+        b.y += b.vy;
+        b.alpha -= 0.012;
+      }
+    }
+
+    drawFrame(W, H);
+  }
+
+  window.addEventListener('resize', resize);
+  resize();
+  animate();
+</script>
+</body>
+</html>

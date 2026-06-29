@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Satzstellung & Feldmodell: Wortstellung im Deutschen üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zum topologischen Feldmodell: Ordne Satzglieder in Vorfeld, Satzklammer und Mittelfeld ein und verstehe Verbzweit- und Verbendstellung.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Satzstellung, Feldmodell, Wortstellung Deutsch, Verbzweitstellung, Nebensatz, deutsche Grammatik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/satzstellung-feldmodell-deutsch-simulation.html">
+  <meta property="og:title" content="Satzstellung & Feldmodell üben">
+  <meta property="og:description" content="Interaktive Simulation zum topologischen Feldmodell: Ordne Satzglieder in Vorfeld, Satzklammer und Mittelfeld ein und verstehe Verbzweit- und Verbendstellung.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/satzstellung-feldmodell-deutsch-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Satzstellung & Feldmodell: Wortstellung im Deutschen üben",
+  "description":"Interaktive Simulation zum topologischen Feldmodell: Ordne Satzglieder in Vorfeld, Satzklammer und Mittelfeld ein und verstehe Verbzweit- und Verbendstellung.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/satzstellung-feldmodell-deutsch-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #2563eb;
+      --blue-light: #dbeafe;
+      --blue-mid: #93c5fd;
+      --orange: #d97706;
+      --orange-light: #fef3c7;
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --purple: #7c3aed;
+      --purple-light: #ede9fe;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-800: #1f2937;
+      --red: #dc2626;
+      --red-light: #fee2e2;
+      --radius: 12px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ---- Header ---- */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
+    .breadcrumb a { color: var(--gray-600); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ---- Page container ---- */
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* ---- Task header ---- */
+    .task-header {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .task-header h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 0.3rem;
+    }
+    .task-meta {
+      font-size: 0.82rem;
+      color: var(--gray-500);
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 0.75rem;
+    }
+    .task-goal {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+    }
+
+    /* ---- Progress dots ---- */
+    .progress-dots {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-top: 0.75rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-200);
+      transition: background 0.3s;
+    }
+    .dot.active { background: var(--blue); }
+    .dot.done { background: var(--green); }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      margin-left: 0.25rem;
+    }
+
+    /* ---- Feld-Diagramm ---- */
+    .feld-diagram {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem 1rem 1rem;
+      margin-bottom: 1.5rem;
+      overflow-x: auto;
+    }
+    .feld-diagram-title {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray-500);
+      margin-bottom: 0.75rem;
+    }
+    .felder-row {
+      display: flex;
+      gap: 4px;
+      min-width: 480px;
+    }
+    .feld-box {
+      flex: 1;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      padding: 0.6rem 0.4rem 0.5rem;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s;
+      position: relative;
+      min-height: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .feld-box.vf  { background: var(--blue-light); }
+    .feld-box.lsk { background: var(--orange-light); }
+    .feld-box.mf  { background: var(--green-light); }
+    .feld-box.rsk { background: var(--purple-light); }
+    .feld-box.nf  { background: var(--gray-100); }
+    .feld-box.flash-green { animation: flashGreen 0.5s ease; }
+    .feld-box.flash-red   { animation: flashRed 0.5s ease; }
+    @keyframes flashGreen {
+      0%   { background: #bbf7d0; border-color: var(--green); }
+      100% { border-color: transparent; }
+    }
+    @keyframes flashRed {
+      0%   { background: #fecaca; border-color: var(--red); }
+      100% { border-color: transparent; }
+    }
+    .feld-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+    .feld-box.vf  .feld-label { color: var(--blue); }
+    .feld-box.lsk .feld-label { color: var(--orange); }
+    .feld-box.mf  .feld-label { color: var(--green); }
+    .feld-box.rsk .feld-label { color: var(--purple); }
+    .feld-box.nf  .feld-label { color: var(--gray-500); }
+    .feld-sublabel {
+      font-size: 0.65rem;
+      color: var(--gray-500);
+      line-height: 1.3;
+    }
+    .feld-word {
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      background: white;
+      border-radius: 6px;
+      padding: 0.15rem 0.4rem;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: opacity 0.4s, transform 0.4s;
+    }
+    .feld-word.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ---- Satz-Anzeige ---- */
+    .sentence-card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .sentence-card .round-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray-500);
+      margin-bottom: 0.5rem;
+    }
+    .sentence-display {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .word-target {
+      display: inline-block;
+      background: var(--blue-light);
+      color: var(--blue);
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 0.05rem 0.4rem;
+      border-bottom: 2px solid var(--blue);
+      cursor: default;
+    }
+    .sentence-question {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      margin-bottom: 1rem;
+    }
+
+    /* ---- Auswahl-Buttons ---- */
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+    }
+    .choice-btn {
+      padding: 0.7rem 0.75rem;
+      border: 2px solid var(--gray-200);
+      border-radius: 8px;
+      background: white;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s, transform 0.1s;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+    .choice-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: var(--blue-light);
+      transform: translateY(-1px);
+    }
+    .choice-btn:disabled { cursor: default; opacity: 0.7; }
+    .choice-btn.correct { border-color: var(--green); background: var(--green-light); }
+    .choice-btn.wrong   { border-color: var(--red);   background: var(--red-light); }
+    .choice-btn .btn-abbr {
+      font-size: 1rem;
+      font-weight: 800;
+    }
+    .choice-btn.vf-btn  .btn-abbr { color: var(--blue); }
+    .choice-btn.lsk-btn .btn-abbr { color: var(--orange); }
+    .choice-btn.mf-btn  .btn-abbr { color: var(--green); }
+    .choice-btn.rsk-btn .btn-abbr { color: var(--purple); }
+    .choice-btn .btn-name {
+      font-size: 0.75rem;
+      color: var(--gray-500);
+      font-weight: 400;
+    }
+
+    /* ---- Feedback ---- */
+    .feedback-box {
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      display: none;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box.correct { background: var(--green-light); border: 1.5px solid #86efac; }
+    .feedback-box.wrong   { background: var(--red-light);   border: 1.5px solid #fca5a5; }
+    .feedback-icon {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      line-height: 1;
+    }
+    .feedback-icon.correct-icon { color: var(--green); }
+    .feedback-icon.wrong-icon   { color: var(--red); }
+    .feedback-text strong { font-weight: 700; }
+    .next-btn {
+      margin-top: 1rem;
+      padding: 0.6rem 1.25rem;
+      background: var(--blue);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .next-btn:hover { background: #1d4ed8; }
+
+    /* ---- Übergangs-Screen (Nebensatz-Erklärung) ---- */
+    .transition-card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: none;
+    }
+    .transition-card.show { display: block; }
+    .transition-card h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 1rem;
+    }
+    .transition-card p {
+      font-size: 0.92rem;
+      color: var(--gray-600);
+      margin-bottom: 1rem;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .compare-table th, .compare-table td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--gray-200);
+      text-align: left;
+    }
+    .compare-table th {
+      background: var(--gray-100);
+      font-weight: 700;
+      color: var(--gray-700);
+    }
+    .compare-table tr:nth-child(even) td { background: var(--gray-50); }
+    .hs-color { color: var(--blue); font-weight: 700; }
+    .ns-color { color: var(--purple); font-weight: 700; }
+
+    /* ---- Abschluss-Screen ---- */
+    .result-card {
+      background: white;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      display: none;
+    }
+    .result-card.show { display: block; }
+    .result-score {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 0.25rem;
+    }
+    .result-label {
+      font-size: 1rem;
+      color: var(--gray-600);
+      margin-bottom: 1.5rem;
+    }
+    .rules-summary {
+      background: var(--gray-50);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      text-align: left;
+      margin-bottom: 1.25rem;
+    }
+    .rules-summary h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--gray-500);
+      margin-bottom: 0.75rem;
+    }
+    .rule-item {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 0.6rem;
+      font-size: 0.88rem;
+    }
+    .rule-badge {
+      flex-shrink: 0;
+      width: 36px;
+      height: 22px;
+      border-radius: 4px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .rule-badge.lsk { background: var(--orange-light); color: var(--orange); }
+    .rule-badge.rsk { background: var(--purple-light); color: var(--purple); }
+    .rule-badge.vf  { background: var(--blue-light); color: var(--blue); }
+    .rule-text { color: var(--gray-700); line-height: 1.4; }
+    .restart-btn {
+      padding: 0.65rem 1.5rem;
+      background: var(--blue);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .restart-btn:hover { background: #1d4ed8; }
+
+    /* ---- Legende ---- */
+    .legend {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      font-size: 0.78rem;
+      color: var(--gray-600);
+      margin-top: 0.75rem;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+    .legend-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 480px) {
+      .page { padding: 1rem 0.75rem 2.5rem; }
+      .task-header h1 { font-size: 1.05rem; }
+      .sentence-display { font-size: 1rem; }
+      .choice-grid { grid-template-columns: 1fr 1fr; }
+      .site-header { padding: 0.6rem 1rem; }
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body
+  data-subject="Deutsch"
+  data-grade-level="7-10"
+  data-asset-type="simulation"
+  data-topic-cluster="sprachen-grammatik"
+  data-primary-keyword="sprachen">
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header class="site-header">
+    <a href="/" class="site-logo">Nachhilfe Mentor</a>
+    <span class="breadcrumb">
+      &rsaquo; <a href="/lernmaterialien/">Lernmaterialien</a>
+      &rsaquo; Satzstellung
+    </span>
+  </header>
+
+  <main class="page">
+
+    <!-- Task Header -->
+    <div class="task-header">
+      <h1>Satzstellung: Das Topologische Feldmodell</h1>
+      <div class="task-meta">
+        <span>Klasse 7–10 &middot; Deutsch</span>
+        <span>Grammatik &middot; Wortstellung</span>
+      </div>
+      <p class="task-goal">Lernziel: Verstehe, warum das Verb im Hauptsatz immer auf Position&nbsp;2 steht – und im Nebensatz immer am Ende.</p>
+      <div class="progress-dots" id="progressDots">
+        <div class="dot active" id="dot0"></div>
+        <div class="dot" id="dot1"></div>
+        <div class="dot" id="dot2"></div>
+        <div class="dot" id="dot3"></div>
+        <div class="dot" id="dot4"></div>
+        <div class="dot" id="dot5"></div>
+        <span class="progress-label" id="progressLabel">Runde 1 von 6</span>
+      </div>
+    </div>
+
+    <!-- Feld-Diagramm -->
+    <div class="feld-diagram" id="feldDiagram">
+      <div class="feld-diagram-title" id="diagramTitle">Felder des Hauptsatzes</div>
+      <div class="felder-row">
+        <div class="feld-box vf" id="box-vf">
+          <span class="feld-label">VF</span>
+          <span class="feld-sublabel">Vorfeld</span>
+          <span class="feld-word" id="word-vf"></span>
+        </div>
+        <div class="feld-box lsk" id="box-lsk">
+          <span class="feld-label">LSK</span>
+          <span class="feld-sublabel">Linke Satz&shy;klammer</span>
+          <span class="feld-word" id="word-lsk"></span>
+        </div>
+        <div class="feld-box mf" id="box-mf">
+          <span class="feld-label">MF</span>
+          <span class="feld-sublabel">Mittel&shy;feld</span>
+          <span class="feld-word" id="word-mf"></span>
+        </div>
+        <div class="feld-box rsk" id="box-rsk">
+          <span class="feld-label">RSK</span>
+          <span class="feld-sublabel">Rechte Satz&shy;klammer</span>
+          <span class="feld-word" id="word-rsk"></span>
+        </div>
+        <div class="feld-box nf" id="box-nf">
+          <span class="feld-label">NF</span>
+          <span class="feld-sublabel">Nach&shy;feld</span>
+          <span class="feld-word" id="word-nf"></span>
+        </div>
+      </div>
+      <div class="legend">
+        <div class="legend-item"><div class="legend-dot" style="background:var(--blue-light);border:1px solid var(--blue-mid)"></div> Vorfeld</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--orange-light);border:1px solid #fbbf24"></div> Linke Satzklammer (finites Verb)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--green-light);border:1px solid #86efac"></div> Mittelfeld</div>
+        <div class="legend-item"><div class="legend-dot" style="background:var(--purple-light);border:1px solid #c4b5fd"></div> Rechte Satzklammer (infinite Verbteile)</div>
+      </div>
+    </div>
+
+    <!-- Übergangs-Screen -->
+    <div class="transition-card" id="transitionCard">
+      <h2>Stufe 2: Der Nebensatz – Verbendstellung</h2>
+      <p>
+        Gut gemacht! Im Hauptsatz steht das finite Verb immer auf Position&nbsp;2 (Linke Satzklammer).
+        Im Nebensatz gelten andere Regeln: Die Konjunktion übernimmt die Linke Satzklammer, und das finite Verb wandert ans Ende – in die Rechte Satzklammer.
+      </p>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="hs-color">Hauptsatz</th>
+            <th class="ns-color">Nebensatz</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vorfeld</td>
+            <td>1 Satzglied</td>
+            <td>leer</td>
+          </tr>
+          <tr>
+            <td>Linke Satzklammer (LSK)</td>
+            <td>finites Verb</td>
+            <td>Konjunktion (weil, dass …)</td>
+          </tr>
+          <tr>
+            <td>Mittelfeld (MF)</td>
+            <td>Subjekt, Objekte, Adverbiale</td>
+            <td>Subjekt, Objekte, Adverbiale</td>
+          </tr>
+          <tr>
+            <td>Rechte Satzklammer (RSK)</td>
+            <td>infinite Verbteile</td>
+            <td>alle Verbformen (auch finites Verb)</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Beispiel:</strong></p>
+      <p>Hauptsatz: <em>Er <strong style="color:var(--orange)">hat</strong> das Buch <strong style="color:var(--purple)">gelesen</strong>.</em></p>
+      <p>Nebensatz: <em>..., <strong style="color:var(--orange)">weil</strong> er das Buch <strong style="color:var(--purple)">gelesen hat</strong>.</em></p>
+      <button class="next-btn" id="transitionNextBtn" style="margin-top:1.25rem">Weiter zu Stufe 2 &rarr;</button>
+    </div>
+
+    <!-- Satz-Karte (Frage) -->
+    <div class="sentence-card" id="sentenceCard">
+      <div class="round-label" id="roundLabel">Stufe 1 – Hauptsatz</div>
+      <div class="sentence-display" id="sentenceDisplay"></div>
+      <div class="sentence-question" id="sentenceQuestion"></div>
+      <div class="choice-grid" id="choiceGrid"></div>
+      <div class="feedback-box" id="feedbackBox">
+        <div class="feedback-icon" id="feedbackIcon"></div>
+        <div class="feedback-text" id="feedbackText"></div>
+        <button class="next-btn" id="nextBtn" style="margin-top:0.75rem">Weiter &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Abschluss-Screen -->
+    <div class="result-card" id="resultCard">
+      <div class="result-score" id="resultScore">0 / 6</div>
+      <div class="result-label" id="resultLabel">richtige Antworten</div>
+      <div class="rules-summary">
+        <h3>Die wichtigsten Regeln</h3>
+        <div class="rule-item">
+          <span class="rule-badge lsk">LSK</span>
+          <span class="rule-text"><strong>Hauptsatz:</strong> Das finite Verb steht immer in der Linken Satzklammer – das ist die V2-Stellung (Verbzweitstellung).</span>
+        </div>
+        <div class="rule-item">
+          <span class="rule-badge rsk">RSK</span>
+          <span class="rule-text"><strong>Hauptsatz:</strong> Infinite Verbteile (Partizip&nbsp;II, Infinitiv, trennbare Präfixe) stehen in der Rechten Satzklammer.</span>
+        </div>
+        <div class="rule-item">
+          <span class="rule-badge vf">VF</span>
+          <span class="rule-text"><strong>Vorfeld:</strong> Vor dem finiten Verb steht genau ein Satzglied – Subjekt, Objekt oder Adverbial.</span>
+        </div>
+        <div class="rule-item">
+          <span class="rule-badge lsk">NS</span>
+          <span class="rule-text"><strong>Nebensatz:</strong> Die Konjunktion (weil, dass, ob …) besetzt die LSK; das finite Verb steht am Ende (VE-Stellung).</span>
+        </div>
+      </div>
+      <button class="restart-btn" id="restartBtn">Nochmal üben</button>
+    </div>
+
+  </main>
+
+  <script>
+  (function() {
+    "use strict";
+
+    // ---- Aufgaben-Daten ----
+    var rounds = [
+      // --- Stufe 1: Hauptsatz ---
+      {
+        stage: 1,
+        label: "Stufe 1 – Hauptsatz",
+        sentence: "Morgen {spielt} er Fußball.",
+        target: "spielt",
+        question: "In welches Feld gehört das hervorgehobene Wort „spielt"?",
+        correct: "lsk",
+        boxWords: { vf: "Morgen", lsk: "spielt", mf: "er Fußball", rsk: "", nf: "" },
+        feedbackCorrect: "<strong>Richtig!</strong> Das konjugierte Verb „spielt" steht in der <strong>Linken Satzklammer (LSK)</strong> – das ist die Verbzweitstellung (V2). Davor steht genau ein Satzglied im Vorfeld: hier „Morgen".",
+        feedbackWrong:   "Nicht ganz. Im deutschen Hauptsatz steht das finite Verb <strong>immer</strong> in der <strong>Linken Satzklammer</strong> (Position 2) – egal, ob davor Subjekt, Adverbial oder Objekt steht. Hier: „Morgen | <em>spielt</em> | er Fußball"."
+      },
+      {
+        stage: 1,
+        label: "Stufe 1 – Hauptsatz",
+        sentence: "Er hat das Buch {gelesen}.",
+        target: "gelesen",
+        question: "In welches Feld gehört das hervorgehobene Wort „gelesen"?",
+        correct: "rsk",
+        boxWords: { vf: "Er", lsk: "hat", mf: "das Buch", rsk: "gelesen", nf: "" },
+        feedbackCorrect: "<strong>Sehr gut!</strong> „gelesen" ist ein Partizip&nbsp;II – ein <strong>infiniter Verbteil</strong>. Es steht in der <strong>Rechten Satzklammer (RSK)</strong>. Das finite Verb „hat" sitzt in der LSK. Zusammen bilden sie die <em>Satzklammer</em>.",
+        feedbackWrong:   "Vorsicht: „gelesen" ist das Partizip&nbsp;II (infinite Form). Infinite Verbteile – Infinitiv, Partizip&nbsp;II, trennbare Präfixe – stehen in der <strong>Rechten Satzklammer (RSK)</strong>. Nur das konjugierte Verb „hat" gehört in die LSK."
+      },
+      {
+        stage: 1,
+        label: "Stufe 1 – Hauptsatz",
+        sentence: "{Heute} haben wir viel gelernt.",
+        target: "Heute",
+        question: "In welches Feld gehört das hervorgehobene Wort „Heute"?",
+        correct: "vf",
+        boxWords: { vf: "Heute", lsk: "haben", mf: "wir viel", rsk: "gelernt", nf: "" },
+        feedbackCorrect: "<strong>Genau!</strong> „Heute" ist ein Adverbial und steht im <strong>Vorfeld (VF)</strong> – dem einzigen Platz vor dem finiten Verb „haben". Im Vorfeld darf genau <strong>ein</strong> Satzglied stehen.",
+        feedbackWrong:   "Schau: „Heute" steht <em>vor</em> dem Verb „haben". Das Feld vor der Linken Satzklammer heißt <strong>Vorfeld (VF)</strong>. Dort darf genau ein Satzglied stehen – hier das Adverbial „Heute"."
+      },
+      // --- Stufe 2: Nebensatz ---
+      {
+        stage: 2,
+        label: "Stufe 2 – Nebensatz",
+        sentence: "..., {weil} er keine Zeit hat.",
+        target: "weil",
+        question: "In welches Feld gehört die Konjunktion „weil"?",
+        correct: "lsk",
+        boxWords: { vf: "–", lsk: "weil", mf: "er keine Zeit", rsk: "hat", nf: "" },
+        feedbackCorrect: "<strong>Richtig!</strong> Im Nebensatz übernimmt die Konjunktion („weil", „dass", „ob", „wenn" …) die <strong>Linke Satzklammer</strong>. Das Vorfeld bleibt leer.",
+        feedbackWrong:   "Im Nebensatz besetzt die Konjunktion („weil", „dass", „ob" …) die <strong>Linke Satzklammer (LSK)</strong>. Das Vorfeld bleibt leer – ein wichtiger Unterschied zum Hauptsatz."
+      },
+      {
+        stage: 2,
+        label: "Stufe 2 – Nebensatz",
+        sentence: "..., obwohl sie das Buch {liest}.",
+        target: "liest",
+        question: "In welches Feld gehört das finite Verb „liest" im Nebensatz?",
+        correct: "rsk",
+        boxWords: { vf: "–", lsk: "obwohl", mf: "sie das Buch", rsk: "liest", nf: "" },
+        feedbackCorrect: "<strong>Perfekt!</strong> Im Nebensatz steht das finite Verb in der <strong>Rechten Satzklammer</strong> – am Satzende. Das nennt man <em>Verbendstellung (VE-Stellung)</em>. Das unterscheidet den Nebensatz grundlegend vom Hauptsatz.",
+        feedbackWrong:   "Achtung: Im Nebensatz steht das finite Verb <strong>nicht</strong> auf Position 2, sondern am Ende – in der <strong>Rechten Satzklammer (RSK)</strong>. Dieses VE-Prinzip (Verbendstellung) ist das wichtigste Merkmal des deutschen Nebensatzes."
+      },
+      {
+        stage: 2,
+        label: "Stufe 2 – Nebensatz",
+        sentence: "..., dass er morgen kommen {wird}.",
+        target: "wird",
+        question: "In welches Feld gehört das Hilfsverb „wird" im Nebensatz?",
+        correct: "rsk",
+        boxWords: { vf: "–", lsk: "dass", mf: "er morgen", rsk: "kommen wird", nf: "" },
+        feedbackCorrect: "<strong>Sehr gut!</strong> Bei zweiteiligen Verbformen im Nebensatz stehen <strong>beide</strong> Verbteile in der Rechten Satzklammer: „kommen wird". Das finite Hilfsverb steht dabei ganz am Ende.",
+        feedbackWrong:   "Bei zweiteiligen Verbformen im Nebensatz („kommen wird", „gelesen hat") stehen beide Verbteile in der <strong>Rechten Satzklammer</strong> – das finite Verb allerdings ganz am Ende. Anders als im Hauptsatz, wo das finite Verb zuerst kommt."
+      }
+    ];
+
+    // ---- Choices ----
+    var choices = [
+      { id: "vf",  abbr: "VF",  name: "Vorfeld",              cls: "vf-btn" },
+      { id: "lsk", abbr: "LSK", name: "Linke Satzklammer",    cls: "lsk-btn" },
+      { id: "mf",  abbr: "MF",  name: "Mittelfeld",           cls: "mf-btn" },
+      { id: "rsk", abbr: "RSK", name: "Rechte Satzklammer",   cls: "rsk-btn" }
+    ];
+
+    // ---- State ----
+    var currentRound = 0;
+    var score = 0;
+    var answered = false;
+    // ---- DOM refs ----
+    var sentenceDisplay  = document.getElementById("sentenceDisplay");
+    var sentenceQuestion = document.getElementById("sentenceQuestion");
+    var choiceGrid       = document.getElementById("choiceGrid");
+    var feedbackBox      = document.getElementById("feedbackBox");
+    var feedbackIcon     = document.getElementById("feedbackIcon");
+    var feedbackText     = document.getElementById("feedbackText");
+    var nextBtn          = document.getElementById("nextBtn");
+    var sentenceCard     = document.getElementById("sentenceCard");
+    var resultCard       = document.getElementById("resultCard");
+    var transitionCard   = document.getElementById("transitionCard");
+    var progressLabel    = document.getElementById("progressLabel");
+    var roundLabel       = document.getElementById("roundLabel");
+    var diagramTitle     = document.getElementById("diagramTitle");
+    var transitionNextBtn = document.getElementById("transitionNextBtn");
+    var restartBtn       = document.getElementById("restartBtn");
+
+    // ---- Hilfsfunktionen ----
+    function clearBoxWords() {
+      ["vf","lsk","mf","rsk","nf"].forEach(function(f) {
+        var w = document.getElementById("word-" + f);
+        w.textContent = "";
+        w.classList.remove("visible");
+      });
+    }
+
+    function showBoxWords(round) {
+      var bw = round.boxWords;
+      ["vf","lsk","mf","rsk","nf"].forEach(function(f) {
+        var w = document.getElementById("word-" + f);
+        var txt = bw[f] || "";
+        w.textContent = txt;
+        if (txt && txt !== "") {
+          setTimeout(function() { w.classList.add("visible"); }, 100);
+        } else {
+          w.classList.remove("visible");
+        }
+      });
+    }
+
+    function flashBox(fieldId, type) {
+      var box = document.getElementById("box-" + fieldId);
+      if (!box) return;
+      box.classList.remove("flash-green", "flash-red");
+      void box.offsetWidth; // reflow
+      box.classList.add(type === "correct" ? "flash-green" : "flash-red");
+      setTimeout(function() { box.classList.remove("flash-green", "flash-red"); }, 500);
+    }
+
+    function updateDots() {
+      for (var i = 0; i < 6; i++) {
+        var d = document.getElementById("dot" + i);
+        if (!d) continue;
+        d.classList.remove("active", "done");
+        if (i < currentRound) { d.classList.add("done"); }
+        else if (i === currentRound) { d.classList.add("active"); }
+      }
+      var display = currentRound < 6 ? "Runde " + (currentRound + 1) + " von 6" : "Abgeschlossen";
+      progressLabel.textContent = display;
+    }
+
+    function buildSentenceHTML(round) {
+      return round.sentence.replace("{" + round.target + "}", '<span class="word-target">' + round.target + '</span>');
+    }
+
+    function buildChoices() {
+      choiceGrid.innerHTML = "";
+      choices.forEach(function(c) {
+        var btn = document.createElement("button");
+        btn.className = "choice-btn " + c.cls;
+        btn.innerHTML = '<span class="btn-abbr">' + c.abbr + '</span><span class="btn-name">' + c.name + '</span>';
+        btn.dataset.field = c.id;
+        btn.addEventListener("click", function() { handleChoice(c.id, btn); });
+        choiceGrid.appendChild(btn);
+      });
+    }
+
+    function handleChoice(fieldId, btn) {
+      if (answered) return;
+      answered = true;
+
+      var round = rounds[currentRound];
+      var isCorrect = (fieldId === round.correct);
+
+      // Disable all buttons
+      Array.from(choiceGrid.querySelectorAll(".choice-btn")).forEach(function(b) {
+        b.disabled = true;
+        if (b.dataset.field === round.correct) { b.classList.add("correct"); }
+        else if (b === btn && !isCorrect)       { b.classList.add("wrong"); }
+      });
+
+      // Flash box
+      flashBox(round.correct, "correct");
+      if (!isCorrect) { flashBox(fieldId, "wrong"); }
+
+      // Show words in diagram
+      showBoxWords(round);
+
+      // Feedback
+      feedbackBox.className = "feedback-box show " + (isCorrect ? "correct" : "wrong");
+      feedbackIcon.className = "feedback-icon " + (isCorrect ? "correct-icon" : "wrong-icon");
+      feedbackIcon.textContent = isCorrect ? "✓" : "✗";
+      feedbackText.innerHTML = isCorrect ? round.feedbackCorrect : round.feedbackWrong;
+
+      if (isCorrect) { score++; }
+
+      // Tracking
+      if (window.dataLayer) {
+        window.dataLayer.push({ event: "sim_step", step: currentRound + 1, result: isCorrect ? "correct" : "incorrect" });
+      }
+    }
+
+    function loadRound(idx) {
+      var round = rounds[idx];
+      answered = false;
+      clearBoxWords();
+      feedbackBox.className = "feedback-box";
+      feedbackBox.classList.remove("show");
+
+      roundLabel.textContent = round.label;
+      sentenceDisplay.innerHTML = buildSentenceHTML(round);
+      sentenceQuestion.textContent = round.question;
+
+      diagramTitle.textContent = round.stage === 1 ? "Felder des Hauptsatzes" : "Felder des Nebensatzes";
+
+      buildChoices();
+      updateDots();
+    }
+
+    function advance() {
+      currentRound++;
+
+      // Show transition before Nebensatz
+      if (currentRound === 3) {
+        sentenceCard.style.display = "none";
+        transitionCard.classList.add("show");
+        updateDots();
+        return;
+      }
+
+      if (currentRound >= 6) {
+        showResult();
+        return;
+      }
+
+      loadRound(currentRound);
+    }
+
+    function showResult() {
+      sentenceCard.style.display = "none";
+      transitionCard.classList.remove("show");
+      resultCard.classList.add("show");
+      document.getElementById("resultScore").textContent = score + " / 6";
+      var lbl = score === 6 ? "Perfekt! Alle richtig." :
+                score >= 4 ? "Gut gemacht!" :
+                             "Noch Übungsbedarf – einfach nochmal probieren.";
+      document.getElementById("resultLabel").textContent = lbl;
+
+      if (window.dataLayer) {
+        window.dataLayer.push({ event: "sim_complete", score: score, max: 6 });
+      }
+    }
+
+    function restart() {
+      currentRound = 0;
+      score = 0;
+      answered = false;
+      resultCard.classList.remove("show");
+      transitionCard.classList.remove("show");
+      sentenceCard.style.display = "";
+      diagramTitle.textContent = "Felder des Hauptsatzes";
+      clearBoxWords();
+      loadRound(0);
+    }
+
+    // ---- Events ----
+    nextBtn.addEventListener("click", advance);
+    transitionNextBtn.addEventListener("click", function() {
+      transitionCard.classList.remove("show");
+      sentenceCard.style.display = "";
+      loadRound(3);
+    });
+    restartBtn.addEventListener("click", restart);
+
+    // ---- Init ----
+    loadRound(0);
+
+  }());
+  </script>
+</body>
+</html>

@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Flexion vs. Derivation einfach erklärt – Morphologie interaktiv üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation: Erkenne den Unterschied zwischen Flexion und Derivation, sage Wortbildungen voraus und sieh animierte Morphem-Anfügungen mit Feedback.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Flexion, Derivation, Morphologie, Wortbildung, Konversion, Deutsch Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/flexion-derivation-morphologie-simulation.html">
+  <meta property="og:title" content="Flexion vs. Derivation – Morphologie interaktiv">
+  <meta property="og:description" content="Interaktive Simulation: Erkenne den Unterschied zwischen Flexion und Derivation, sage Wortbildungen voraus und sieh animierte Morphem-Anfügungen mit Feedback.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/flexion-derivation-morphologie-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Flexion vs. Derivation einfach erklärt – Morphologie interaktiv üben",
+  "description":"Interaktive Simulation: Erkenne den Unterschied zwischen Flexion und Derivation, sage Wortbildungen voraus und sieh animierte Morphem-Anfügungen mit Feedback.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/flexion-derivation-morphologie-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "name": "Flexion und Derivation – Morphologie interaktiv",
+    "description": "Interaktive Simulation zum Unterschied zwischen Flexion (grammatische Beugung) und Derivation (Wortableitung) im Deutschen.",
+    "educationalLevel": "Schüler 9.–13. Klasse",
+    "learningResourceType": "Simulation",
+    "isAccessibleForFree": true,
+    "inLanguage": "de",
+    "about": "Flexion, Derivation, Morphologie, Wortbildung, Deutsch Linguistik"
+  }
+  </script>
+
+  <!-- Google Tag Manager stub -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "page_view",
+      "data-asset-type": "simulation",
+      "data-topic-cluster": "sprachen-morphologie",
+      "data-primary-keyword": "flexion-derivation",
+      "data-subject": "Deutsch",
+      "data-grade-level": "9-13"
+    });
+  </script>
+
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blau:        #1d4ed8;
+      --blau-light:  #dbeafe;
+      --blau-mid:    #3b82f6;
+      --gruen:       #16a34a;
+      --gruen-light: #dcfce7;
+      --rot:         #dc2626;
+      --rot-light:   #fee2e2;
+      --lila:        #7c3aed;
+      --lila-light:  #ede9fe;
+      --amber:       #d97706;
+      --amber-light: #fef3c7;
+      --gray-50:     #f9fafb;
+      --gray-100:    #f3f4f6;
+      --gray-200:    #e5e7eb;
+      --gray-300:    #d1d5db;
+      --gray-400:    #9ca3af;
+      --gray-500:    #6b7280;
+      --gray-600:    #4b5563;
+      --gray-700:    #374151;
+      --gray-800:    #1f2937;
+      --radius:      10px;
+      --shadow:      0 2px 10px rgba(0,0,0,0.07);
+
+      /* Wortklassen-Farben */
+      --verb-bg:   #dbeafe;
+      --verb-fg:   #1d4ed8;
+      --nomen-bg:  #fee2e2;
+      --nomen-fg:  #dc2626;
+      --adj-bg:    #dcfce7;
+      --adj-fg:    #16a34a;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ---- Site Header ---- */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--blau);
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
+    .breadcrumb a { color: var(--gray-600); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ---- Page Layout ---- */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    /* ---- Page Header ---- */
+    .page-header { margin-bottom: 2rem; }
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--blau-light);
+      color: var(--blau);
+      border-radius: 99px;
+      padding: 0.2rem 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .page-header h1 {
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: 800;
+      color: var(--gray-800);
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .page-header p {
+      font-size: 0.97rem;
+      color: var(--gray-600);
+      max-width: 600px;
+    }
+
+    /* ---- Progress Steps ---- */
+    .progress-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.35rem;
+      margin-bottom: 2rem;
+    }
+    .prog-step { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; }
+    .prog-dot {
+      width: 30px; height: 30px;
+      border-radius: 50%;
+      border: 2px solid var(--gray-300);
+      background: #fff;
+      color: var(--gray-400);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    .prog-dot.active { border-color: var(--blau); background: var(--blau); color: #fff; }
+    .prog-dot.done   { border-color: var(--gruen); background: var(--gruen); color: #fff; }
+    .prog-label { font-size: 0.68rem; color: var(--gray-500); text-align: center; white-space: nowrap; }
+    .prog-line {
+      flex: 1; height: 2px;
+      background: var(--gray-200);
+      border-radius: 99px;
+      margin-top: 14px;
+      max-width: 70px;
+      transition: background 0.4s;
+    }
+    .prog-line.done { background: var(--gruen); }
+
+    /* ---- Card ---- */
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-200);
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .card-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 1rem;
+    }
+
+    /* ---- Wortklassen-Badge ---- */
+    .wk-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 0.2rem 0.55rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: background 0.4s, color 0.4s;
+    }
+    .wk-verb   { background: var(--verb-bg);  color: var(--verb-fg); }
+    .wk-nomen  { background: var(--nomen-bg); color: var(--nomen-fg); }
+    .wk-adj    { background: var(--adj-bg);   color: var(--adj-fg); }
+
+    /* ---- Animation Stage ---- */
+    .morph-stage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      min-height: 110px;
+      position: relative;
+      padding: 1.5rem 0;
+      flex-wrap: wrap;
+    }
+
+    .morph-word-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .morph-word {
+      font-size: clamp(1.6rem, 5vw, 2.2rem);
+      font-weight: 800;
+      color: var(--gray-800);
+      letter-spacing: -0.02em;
+      transition: color 0.4s;
+    }
+
+    .morph-arrow {
+      font-size: 1.5rem;
+      color: var(--gray-400);
+      margin: 0 1rem;
+      flex-shrink: 0;
+    }
+
+    /* Morphem-Chip Flug-Animation */
+    .morphem-chip {
+      display: inline-block;
+      background: var(--lila-light);
+      color: var(--lila);
+      font-weight: 700;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      padding: 0.3rem 0.7rem;
+      border: 2px solid var(--lila);
+      position: absolute;
+      right: -120px;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      z-index: 3;
+      white-space: nowrap;
+      transition: none;
+    }
+    /* Morphem-Chip: transform-basierte Animation (kein absolutes Pos.) */
+    @keyframes chipPulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.12); }
+      100% { transform: scale(1); }
+    }
+
+    /* Ergebnis-Wort Erscheinen */
+    .result-word-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      opacity: 0;
+      transform: scale(0.85);
+      transition: opacity 0.5s, transform 0.5s;
+    }
+    .result-word-wrap.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* Flexion / Derivation Ergebnis-Label */
+    .result-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 99px;
+      padding: 0.3rem 0.9rem;
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+    .result-label.visible { opacity: 1; }
+    .result-label.flexion {
+      background: var(--amber-light);
+      color: var(--amber);
+    }
+    .result-label.derivation {
+      background: var(--lila-light);
+      color: var(--lila);
+    }
+
+    /* ---- Question ---- */
+    .question-text {
+      font-size: 1rem;
+      color: var(--gray-700);
+      margin-bottom: 1.25rem;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    /* ---- Options ---- */
+    .options {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .option-btn {
+      flex: 1;
+      min-width: 140px;
+      background: #fff;
+      border: 2px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 0.9rem 1rem;
+      font-size: 0.95rem;
+      font-family: inherit;
+      color: var(--gray-700);
+      cursor: pointer;
+      text-align: center;
+      font-weight: 600;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blau-mid);
+      background: var(--blau-light);
+      color: var(--blau);
+    }
+    .option-btn:disabled { cursor: not-allowed; opacity: 0.6; }
+    .option-btn.correct {
+      border-color: var(--gruen);
+      background: var(--gruen-light);
+      color: var(--gruen);
+    }
+    .option-btn.wrong {
+      border-color: var(--rot);
+      background: var(--rot-light);
+      color: var(--rot);
+    }
+
+    /* ---- Feedback ---- */
+    .feedback {
+      display: none;
+      border-radius: var(--radius);
+      padding: 1.1rem 1.25rem;
+      font-size: 0.93rem;
+      line-height: 1.65;
+      color: var(--gray-700);
+      margin-bottom: 1.5rem;
+      border-left: 4px solid;
+    }
+    .feedback.show { display: block; }
+    .feedback.correct {
+      background: var(--gruen-light);
+      border-color: var(--gruen);
+    }
+    .feedback.wrong {
+      background: var(--rot-light);
+      border-color: var(--rot);
+    }
+    .feedback .concept-tag {
+      display: inline-block;
+      background: var(--lila-light);
+      color: var(--lila);
+      font-weight: 700;
+      font-size: 0.78rem;
+      border-radius: 5px;
+      padding: 0.1rem 0.45rem;
+      margin-right: 0.3rem;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    /* ---- Weiter-Button ---- */
+    .next-btn {
+      display: none;
+      background: var(--blau);
+      color: #fff;
+      border: none;
+      border-radius: var(--radius);
+      padding: 0.75rem 1.5rem;
+      font-size: 0.95rem;
+      font-family: inherit;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .next-btn:hover { background: #1e40af; }
+    .next-btn.show { display: inline-block; }
+
+    /* ---- Stage Counter ---- */
+    .stage-counter {
+      font-size: 0.82rem;
+      color: var(--gray-400);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ---- Summary ---- */
+    .summary-card {
+      background: linear-gradient(135deg, var(--gruen-light) 0%, #f0fdf4 100%);
+      border: 2px solid var(--gruen);
+      border-radius: var(--radius);
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .summary-card h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--gruen);
+      margin-bottom: 0.75rem;
+    }
+    .summary-card p {
+      color: var(--gray-700);
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .score-big {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--gruen);
+      margin: 0.75rem 0;
+    }
+
+    /* ---- Concept Box ---- */
+    .concept-box {
+      background: var(--lila-light);
+      border-left: 4px solid var(--lila);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1.1rem 1.25rem;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--gray-700);
+      line-height: 1.65;
+    }
+    .concept-box strong { color: var(--lila); }
+
+    /* ---- Verknüpfungen ---- */
+    .links-row {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-top: 0.75rem;
+    }
+    .link-chip {
+      display: inline-block;
+      background: var(--blau-light);
+      color: var(--blau);
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 6px;
+      padding: 0.25rem 0.65rem;
+      text-decoration: none;
+    }
+    .link-chip:hover { background: #bfdbfe; }
+
+    /* ---- Hidden ---- */
+    .hidden { display: none !important; }
+
+    /* ---- Task Number ---- */
+    .task-num {
+      display: inline-block;
+      background: var(--blau);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.8rem;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      line-height: 24px;
+      text-align: center;
+      margin-right: 0.5rem;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 480px) {
+      .page { padding: 1.25rem 1rem 3rem; }
+      .card { padding: 1.25rem; }
+      .morph-word { font-size: 1.5rem; }
+      .options { flex-direction: column; }
+      .option-btn { min-width: unset; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header class="site-header">
+    <a href="/" class="site-logo">Nachhilfe Mentor</a>
+    <span class="breadcrumb">
+      &rsaquo; <a href="/sprachen/">Sprachen</a>
+      &rsaquo; <a href="/sprachen/linguistik/">Linguistik</a>
+      &rsaquo; Flexion &amp; Derivation
+    </span>
+  </header>
+
+  <main class="page">
+
+    <!-- Seiten-Kopf -->
+    <div class="page-header">
+      <div class="badge">Morphologie &middot; Klasse 9–13</div>
+      <h1>Flexion oder Derivation?</h1>
+      <p>
+        Wähle deine Vorhersage, bevor du die Morphem-Animation siehst. Feedback erklärt dir, warum es
+        Flexion (Beugung) oder Derivation (Wortableitung) ist – inklusive der kniffligen Fälle.
+      </p>
+    </div>
+
+    <!-- Fortschrittsanzeige -->
+    <div class="progress-row" id="progressRow">
+      <div class="prog-step">
+        <div class="prog-dot active" id="dot1">1</div>
+        <div class="prog-label">Stufe 1</div>
+      </div>
+      <div class="prog-line" id="line1"></div>
+      <div class="prog-step">
+        <div class="prog-dot" id="dot2">2</div>
+        <div class="prog-label">Stufe 2</div>
+      </div>
+      <div class="prog-line" id="line2"></div>
+      <div class="prog-step">
+        <div class="prog-dot" id="dot3">3</div>
+        <div class="prog-label">Ergebnis</div>
+      </div>
+    </div>
+
+    <!-- ===================== STUFE 1: Klare Fälle ===================== -->
+    <div id="stage1">
+
+      <div class="card" id="taskCard">
+        <div class="card-title">
+          Vorhersage – Stufe 1: Klare Fälle
+        </div>
+
+        <div class="stage-counter" id="taskCounter">Aufgabe 1 von 4</div>
+
+        <!-- Morphem-Animation -->
+        <div class="morph-stage" id="morphStage">
+          <div class="morph-word-wrap" id="sourceWrap">
+            <span class="morph-word" id="sourceWord"></span>
+            <span class="wk-badge" id="sourceBadge"></span>
+          </div>
+          <span class="morph-arrow" id="morphArrow">&rarr;</span>
+          <div class="morph-word-wrap" id="resultWrap">
+            <div id="resultWordRow" style="display:flex; align-items:center; gap:0.3rem; flex-wrap:wrap; justify-content:center;">
+              <span class="morph-word" id="resultStem" style="opacity:0; transition:opacity 0.5s, transform 0.4s;"></span>
+              <span class="morphem-chip" id="morphemChip"></span>
+            </div>
+            <span class="wk-badge" id="resultBadge" style="opacity:0; transition: opacity 0.4s;"></span>
+            <span class="result-label" id="resultLabel"></span>
+          </div>
+        </div>
+
+        <p class="question-text" id="questionText"></p>
+
+        <div class="options" id="optionsDiv">
+          <button class="option-btn" id="btnFlexion" onclick="checkAnswer('Flexion')">Flexion</button>
+          <button class="option-btn" id="btnDerivation" onclick="checkAnswer('Derivation')">Derivation</button>
+        </div>
+
+        <div class="feedback" id="feedbackBox"></div>
+
+        <button class="next-btn" id="nextBtn" onclick="nextTask()">Weiter &rarr;</button>
+      </div>
+
+    </div>
+
+    <!-- ===================== STUFE 2: Knifflige Fälle ===================== -->
+    <div id="stage2" class="hidden">
+
+      <div class="card" style="background:var(--amber-light); border-color:var(--amber); margin-bottom:1rem;">
+        <p style="font-size:0.92rem; color:var(--amber); font-weight:600; line-height:1.55;">
+          <strong>Stufe 2 – Knifflige Fälle:</strong>
+          Diese Aufgaben zeigen Fälle, bei denen die Wortklasse gleich bleibt oder kein sichtbares Morphem erscheint.
+          Die häufigste Verwechslung: Präfixderivation (un-, be-) sieht nach Flexion aus – ist aber Derivation.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          Vorhersage – Stufe 2: Knifflige Fälle
+        </div>
+
+        <div class="stage-counter" id="taskCounter2">Aufgabe 1 von 2</div>
+
+        <!-- Morphem-Animation Stage 2 -->
+        <div class="morph-stage" id="morphStage2">
+          <div class="morph-word-wrap" id="sourceWrap2">
+            <span class="morph-word" id="sourceWord2"></span>
+            <span class="wk-badge" id="sourceBadge2"></span>
+          </div>
+          <span class="morph-arrow">&rarr;</span>
+          <div class="morph-word-wrap" id="resultWrap2">
+            <div id="resultWordRow2" style="display:flex; align-items:center; gap:0.3rem; flex-wrap:wrap; justify-content:center;">
+              <span class="morphem-chip" id="morphemChip2" style="position:static; opacity:0; margin-right:0.1rem; transform:translateX(-60px);"></span>
+              <span class="morph-word" id="resultStem2" style="opacity:0; transition:opacity 0.5s, transform 0.4s;"></span>
+            </div>
+            <span class="wk-badge" id="resultBadge2" style="opacity:0; transition: opacity 0.4s;"></span>
+            <span class="result-label" id="resultLabel2"></span>
+          </div>
+        </div>
+
+        <p class="question-text" id="questionText2"></p>
+
+        <div class="options" id="optionsDiv2">
+          <button class="option-btn" id="btnFlexion2" onclick="checkAnswer2('Flexion')">Flexion</button>
+          <button class="option-btn" id="btnDerivation2" onclick="checkAnswer2('Derivation')">Derivation</button>
+        </div>
+
+        <div class="feedback" id="feedbackBox2"></div>
+
+        <button class="next-btn" id="nextBtn2" onclick="nextTask2()">Weiter &rarr;</button>
+      </div>
+
+    </div>
+
+    <!-- ===================== STUFE 3: Ergebnis ===================== -->
+    <div id="stage3" class="hidden">
+
+      <div class="summary-card">
+        <h2>Gut gemacht!</h2>
+        <p>Du hast alle Aufgaben abgeschlossen.</p>
+        <div class="score-big" id="scoreBig"></div>
+        <p id="scoreText"></p>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Merksätze: Flexion vs. Derivation</div>
+
+        <div class="concept-box">
+          <strong>Flexion (Beugung)</strong> erzeugt grammatische <em>Wortformen</em> desselben Lexems –
+          die Wortklasse bleibt immer gleich. Beispiele: Tisch → Tische, spielen → spielte, schön → schönste.
+          Alle Formen stehen unter <em>einem</em> Wörterbucheintrag.
+        </div>
+
+        <div class="concept-box" style="margin-top:1rem;">
+          <strong>Derivation (Ableitung)</strong> erzeugt <em>neue Lexeme</em> – oft mit Wortklassenwechsel,
+          aber nicht immer. Beispiele: schön → <em>Schönheit</em> (Adj → Nomen), fair → <em>unfair</em>
+          (Adj → Adj, aber neues Lexem durch Präfix un-), schwimmen → <em>das Schwimmen</em>
+          (Konversion, kein Affix). Jedes abgeleitete Wort hat einen <em>eigenen</em> Wörterbucheintrag.
+        </div>
+
+        <div style="margin-top:1.5rem;">
+          <div class="card-title">Weiter lernen</div>
+          <div class="links-row">
+            <a href="/lernmaterialien/lernsimulationen/wortbildung-komposita-simulation.html" class="link-chip">Komposition (Wortzusammensetzung)</a>
+            <a href="/lernmaterialien/lernsimulationen/morphologische-sprachtypen-simulation.html" class="link-chip">Morphologische Sprachtypen</a>
+          </div>
+        </div>
+      </div>
+
+      <button class="next-btn show" onclick="restartQuiz()" style="margin-top:0.5rem;">
+        Nochmal von vorne
+      </button>
+
+    </div>
+
+  </main>
+
+  <script>
+    // =====================================================================
+    // Daten – Stufe 1: Klare Fälle
+    // =====================================================================
+    const tasks1 = [
+      {
+        source:     "schön",
+        sourceWK:   "adj",
+        sourceLabel: "Adjektiv",
+        morphem:    "-heit",
+        resultStem: "Schön",
+        resultFull: "Schönheit",
+        resultWK:   "nomen",
+        resultLabel: "Nomen",
+        correct:    "Derivation",
+        resultType: "derivation",
+        feedbackCorrect:
+          '<span class="concept-tag">Derivation</span> Korrekt! Das Suffix <em>-heit</em> erzeugt ein neues Lexem ' +
+          '(<em>Schönheit</em> ≠ <em>schön</em>). Die Wortklasse wechselt von <strong>Adjektiv zu Nomen</strong>. ' +
+          'Das ist Derivation – Wortbildung durch Ableitung. <em>Schönheit</em> hat einen eigenen Eintrag im Wörterbuch.',
+        feedbackWrong:
+          '<span class="concept-tag">Derivation</span> Nicht ganz. <em>-heit</em> ist ein Derivationssuffix: ' +
+          'Es erzeugt ein neues Wort mit eigenem Wörterbucheintrag und wechselt die Wortklasse (Adj → Nomen). ' +
+          'Flexion würde nur <em>schön</em> flektieren: schöne, schönem, schönsten.',
+      },
+      {
+        source:     "Tisch",
+        sourceWK:   "nomen",
+        sourceLabel: "Nomen",
+        morphem:    "-e",
+        resultStem: "Tisch",
+        resultFull: "Tische",
+        resultWK:   "nomen",
+        resultLabel: "Nomen",
+        correct:    "Flexion",
+        resultType: "flexion",
+        feedbackCorrect:
+          '<span class="concept-tag">Flexion</span> Richtig! Das Pluralmorphem <em>-e</em> erzeugt nur eine neue ' +
+          'Wortform von <em>Tisch</em>. Kein neues Lexem, kein Wortklassenwechsel – das ist <strong>Flexion</strong>. ' +
+          '<em>Tische</em> steht im selben Wörterbucheintrag wie <em>Tisch</em>.',
+        feedbackWrong:
+          '<span class="concept-tag">Flexion</span> Nicht ganz. <em>-e</em> ist hier ein Flexionssuffix (Pluralmarkierung). ' +
+          '<em>Tische</em> ist nur eine grammatische Form von <em>Tisch</em> – beide stehen unter demselben ' +
+          'Wörterbucheintrag. Derivation würde ein neues Wort mit eigenem Lexem erzeugen.',
+      },
+      {
+        source:     "forschen",
+        sourceWK:   "verb",
+        sourceLabel: "Verb",
+        morphem:    "-ung",
+        resultStem: "Forsch",
+        resultFull: "Forschung",
+        resultWK:   "nomen",
+        resultLabel: "Nomen",
+        correct:    "Derivation",
+        resultType: "derivation",
+        feedbackCorrect:
+          '<span class="concept-tag">Derivation</span> Korrekt! <em>-ung</em> ist ein Derivationssuffix: ' +
+          'Es erzeugt ein neues Nomen (<em>Forschung</em>) aus dem Verb <em>forschen</em>. ' +
+          'Eigener Wörterbucheintrag, Wortklassenwechsel <strong>Verb → Nomen</strong>.',
+        feedbackWrong:
+          '<span class="concept-tag">Derivation</span> Nicht ganz. <em>-ung</em> erzeugt ein neues Wort (<em>Forschung</em>) ' +
+          'mit eigenem Lexem-Status. Das ist Derivation. Flexion von <em>forschen</em> wäre: forschte, geforscht, forschend.',
+      },
+      {
+        source:     "spielt",
+        sourceWK:   "verb",
+        sourceLabel: "Verb",
+        morphem:    "-te",
+        resultStem: "spiel",
+        resultFull: "spielte",
+        resultWK:   "verb",
+        resultLabel: "Verb",
+        correct:    "Flexion",
+        resultType: "flexion",
+        feedbackCorrect:
+          '<span class="concept-tag">Flexion</span> Richtig! Das Tempusmorphem <em>-te</em> markiert Präteritum. ' +
+          '<em>spielte</em> ist nur eine Wortform von <em>spielen</em> – kein neues Lexem, keine Derivation.',
+        feedbackWrong:
+          '<span class="concept-tag">Flexion</span> Nicht ganz. <em>-te</em> ist das Präteritum-Flexionsmorphem. ' +
+          '<em>spielte</em> gehört zum selben Verb-Paradigma wie <em>spielt</em>, <em>spiele</em>, <em>spielen</em>. ' +
+          'Keine neue Wortschatz-Einheit – das ist Flexion.',
+      },
+    ];
+
+    // =====================================================================
+    // Daten – Stufe 2: Knifflige Fälle
+    // =====================================================================
+    const tasks2 = [
+      {
+        source:     "fair",
+        sourceWK:   "adj",
+        sourceLabel: "Adjektiv",
+        prefixChip: "un-",
+        resultStem: "fair",
+        resultFull: "unfair",
+        resultWK:   "adj",
+        resultLabel: "Adjektiv",
+        correct:    "Derivation",
+        resultType: "derivation",
+        note:       "⚠️ Wortklasse bleibt gleich – trotzdem Derivation!",
+        feedbackCorrect:
+          '<span class="concept-tag">Derivation</span> Korrekt! <em>un-</em> ist ein Derivationspräfix. ' +
+          'Auch wenn die Wortklasse gleich bleibt (Adj → Adj), entsteht ein neues Lexem mit eigenem Bedeutungseintrag. ' +
+          '<strong>Merke: Derivation erkennt man am neuen Lexem, nicht nur am Wortklassenwechsel.</strong>',
+        feedbackWrong:
+          '<span class="concept-tag">Derivation</span> Häufige Verwechslung! <em>un-</em> klingt nach Flexion, ' +
+          'weil die Wortklasse (Adjektiv) gleich bleibt. Aber <em>unfair</em> ist ein eigenständiges Wort im Wörterbuch, ' +
+          'kein Flexionsparadigma von <em>fair</em>. Das ist Derivation durch Präfixbildung.',
+      },
+      {
+        source:     "schwimmen",
+        sourceWK:   "verb",
+        sourceLabel: "Verb",
+        prefixChip: "das",
+        resultStem: "Schwimmen",
+        resultFull: "das Schwimmen",
+        resultWK:   "nomen",
+        resultLabel: "Nomen",
+        correct:    "Derivation",
+        resultType: "derivation",
+        note:       "⚠️ Kein Affix sichtbar – Konversion (Nullableitung)!",
+        feedbackCorrect:
+          '<span class="concept-tag">Derivation · Konversion</span> Korrekt! <em>das Schwimmen</em> entsteht durch ' +
+          '<strong>Konversion (Nullableitung)</strong>: Das Verb wird ohne Affix zum Nomen substantiviert. ' +
+          'Eigener Wörterbucheintrag, Wortklassenwechsel Verb → Nomen – das ist Derivation, auch ohne sichtbares Morphem.',
+        feedbackWrong:
+          '<span class="concept-tag">Derivation · Konversion</span> Ein schwieriger Fall! <em>das Schwimmen</em> ' +
+          'ist Derivation durch <strong>Konversion (Nullableitung)</strong>: ohne Affix, aber mit Wortklassenwechsel ' +
+          'Verb → Nomen. Konversion gilt als Sonderform der Derivation – kein sichtbares Morphem nötig.',
+      },
+    ];
+
+    // =====================================================================
+    // State
+    // =====================================================================
+    let currentTask1 = 0;
+    let currentTask2 = 0;
+    let score = 0;
+    let totalTasks = tasks1.length + tasks2.length;
+    let animating = false;
+
+    // =====================================================================
+    // Hilfsfunktionen
+    // =====================================================================
+    function wkClass(wk) {
+      return wk === "verb" ? "wk-verb" : wk === "nomen" ? "wk-nomen" : "wk-adj";
+    }
+
+    // =====================================================================
+    // Stufe 1 laden
+    // =====================================================================
+    function loadTask1() {
+      const t = tasks1[currentTask1];
+      document.getElementById("taskCounter").textContent =
+        "Aufgabe " + (currentTask1 + 1) + " von " + tasks1.length;
+
+      // Quellwort
+      const sw = document.getElementById("sourceWord");
+      sw.textContent = t.source;
+
+      const sb = document.getElementById("sourceBadge");
+      sb.textContent = t.sourceLabel;
+      sb.className = "wk-badge " + wkClass(t.sourceWK);
+
+      // Morphem-Chip zurücksetzen
+      const chip = document.getElementById("morphemChip");
+      chip.textContent = t.morphem;
+      chip.className = "morphem-chip";
+      chip.style.opacity = "0";
+      chip.style.position = "static";
+      chip.style.right = "auto";
+      chip.style.transform = "translateX(80px)";
+      chip.style.transition = "none";
+      chip.style.display = "inline-block";
+
+      // Frage setzen
+      document.getElementById("questionText").textContent =
+        "Schau dir das Wortpaar an: " + t.source + " → " + t.resultFull +
+        ". Ist die Wortbildung Flexion oder Derivation?";
+
+      // Ergebnis verstecken (zeigt volles Resultat-Wort nach Animation)
+      const rs = document.getElementById("resultStem");
+      rs.textContent = t.resultFull;
+      rs.style.opacity = "0";
+      rs.style.transform = "scale(1)";
+
+      const rb = document.getElementById("resultBadge");
+      rb.textContent = t.resultLabel;
+      rb.className = "wk-badge " + wkClass(t.resultWK);
+      rb.style.opacity = "0";
+
+      const rl = document.getElementById("resultLabel");
+      rl.textContent = "";
+      rl.className = "result-label";
+
+      // Arrow
+      document.getElementById("morphArrow").style.opacity = "0.2";
+
+      // Feedback/Buttons zurücksetzen
+      const fb = document.getElementById("feedbackBox");
+      fb.className = "feedback";
+      fb.innerHTML = "";
+
+      document.getElementById("nextBtn").className = "next-btn";
+
+      const btnF = document.getElementById("btnFlexion");
+      const btnD = document.getElementById("btnDerivation");
+      btnF.className = "option-btn";
+      btnD.className = "option-btn";
+      btnF.disabled = false;
+      btnD.disabled = false;
+    }
+
+    // =====================================================================
+    // Antwort Stufe 1
+    // =====================================================================
+    function checkAnswer(chosen) {
+      if (animating) return;
+      const t = tasks1[currentTask1];
+      const isCorrect = chosen === t.correct;
+      if (isCorrect) score++;
+
+      // Buttons sperren und markieren
+      const btnF = document.getElementById("btnFlexion");
+      const btnD = document.getElementById("btnDerivation");
+      btnF.disabled = true;
+      btnD.disabled = true;
+
+      if (chosen === "Flexion") {
+        btnF.className = "option-btn " + (isCorrect ? "correct" : "wrong");
+        if (!isCorrect) btnD.className = "option-btn correct";
+      } else {
+        btnD.className = "option-btn " + (isCorrect ? "correct" : "wrong");
+        if (!isCorrect) btnF.className = "option-btn correct";
+      }
+
+      // Animation starten
+      animating = true;
+      startAnimation1(t, isCorrect);
+    }
+
+    function startAnimation1(t, isCorrect) {
+      const chip = document.getElementById("morphemChip");
+      const rs   = document.getElementById("resultStem");
+      const rb   = document.getElementById("resultBadge");
+      const rl   = document.getElementById("resultLabel");
+      const arrow = document.getElementById("morphArrow");
+
+      arrow.style.opacity = "1";
+      arrow.style.transition = "opacity 0.3s";
+
+      // Phase 1: Chip fliegt mit transform von rechts rein (kein abs. Pos.)
+      chip.style.position = "static";
+      chip.style.right = "auto";
+      chip.style.opacity = "0";
+      chip.style.transform = "translateX(80px)";
+      chip.style.transition = "none";
+      chip.style.display = "inline-block";
+
+      // Kurze Verzögerung damit "none" transition wirkt
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        chip.style.transition = "transform 0.7s cubic-bezier(0.22,1,0.36,1), opacity 0.5s";
+        chip.style.transform = "translateX(0)";
+        chip.style.opacity = "1";
+      }));
+
+      // Phase 2: Chip verschwindet, volles Ergebniswort erscheint (nach 900 ms)
+      setTimeout(() => {
+        chip.style.transition = "opacity 0.3s";
+        chip.style.opacity = "0";
+
+        rs.style.transition = "opacity 0.5s, transform 0.4s";
+        rs.style.transform = "scale(1.08)";
+        rs.style.opacity = "1";
+
+        setTimeout(() => {
+          rs.style.transform = "scale(1)";
+          rb.style.opacity = "1";
+          rl.textContent = t.correct === "Flexion"
+            ? "↻ Flexion – Wortform"
+            : "★ Derivation – neues Lexem";
+          rl.className = "result-label visible " + t.resultType;
+        }, 150);
+
+        // Feedback zeigen
+        const fb = document.getElementById("feedbackBox");
+        fb.innerHTML = isCorrect ? t.feedbackCorrect : t.feedbackWrong;
+        fb.className = "feedback show " + (isCorrect ? "correct" : "wrong");
+        document.getElementById("nextBtn").className = "next-btn show";
+
+        animating = false;
+      }, 900);
+    }
+
+    // =====================================================================
+    // Nächste Aufgabe Stufe 1 / Übergang zu Stufe 2
+    // =====================================================================
+    function nextTask() {
+      currentTask1++;
+      if (currentTask1 < tasks1.length) {
+        loadTask1();
+      } else {
+        // Zu Stufe 2 wechseln
+        document.getElementById("stage1").classList.add("hidden");
+        document.getElementById("stage2").classList.remove("hidden");
+        document.getElementById("dot1").className = "prog-dot done";
+        document.getElementById("dot1").textContent = "✓";
+        document.getElementById("line1").className = "prog-line done";
+        document.getElementById("dot2").className = "prog-dot active";
+        loadTask2();
+      }
+    }
+
+    // =====================================================================
+    // Stufe 2 laden
+    // =====================================================================
+    function loadTask2() {
+      const t = tasks2[currentTask2];
+      document.getElementById("taskCounter2").textContent =
+        "Aufgabe " + (currentTask2 + 1) + " von " + tasks2.length;
+
+      // Frage setzen
+      document.getElementById("questionText2").textContent =
+        "Kniffliger Fall: " + t.source + " → " + t.resultFull +
+        ". Ist das Flexion oder Derivation?";
+
+      // Quellwort
+      document.getElementById("sourceWord2").textContent = t.source;
+      const sb2 = document.getElementById("sourceBadge2");
+      sb2.textContent = t.sourceLabel;
+      sb2.className = "wk-badge " + wkClass(t.sourceWK);
+
+      // Präfix-Chip / Ergebnis
+      const chip2 = document.getElementById("morphemChip2");
+      chip2.textContent = t.prefixChip;
+      chip2.style.opacity = "0";
+      chip2.style.transform = "translateX(-60px)";
+      chip2.style.transition = "none";
+
+      const rs2 = document.getElementById("resultStem2");
+      rs2.textContent = t.resultFull;
+      rs2.style.opacity = "0";
+
+      const rb2 = document.getElementById("resultBadge2");
+      rb2.textContent = t.resultLabel;
+      rb2.className = "wk-badge " + wkClass(t.resultWK);
+      rb2.style.opacity = "0";
+
+      const rl2 = document.getElementById("resultLabel2");
+      rl2.textContent = t.note || "";
+      rl2.className = "result-label";
+      rl2.style.opacity = "0";
+
+      // Feedback zurücksetzen
+      const fb2 = document.getElementById("feedbackBox2");
+      fb2.className = "feedback";
+      fb2.innerHTML = "";
+
+      document.getElementById("nextBtn2").className = "next-btn";
+
+      const btnF2 = document.getElementById("btnFlexion2");
+      const btnD2 = document.getElementById("btnDerivation2");
+      btnF2.className = "option-btn";
+      btnD2.className = "option-btn";
+      btnF2.disabled = false;
+      btnD2.disabled = false;
+    }
+
+    // =====================================================================
+    // Antwort Stufe 2
+    // =====================================================================
+    function checkAnswer2(chosen) {
+      if (animating) return;
+      const t = tasks2[currentTask2];
+      const isCorrect = chosen === t.correct;
+      if (isCorrect) score++;
+
+      const btnF2 = document.getElementById("btnFlexion2");
+      const btnD2 = document.getElementById("btnDerivation2");
+      btnF2.disabled = true;
+      btnD2.disabled = true;
+
+      if (chosen === "Flexion") {
+        btnF2.className = "option-btn " + (isCorrect ? "correct" : "wrong");
+        if (!isCorrect) btnD2.className = "option-btn correct";
+      } else {
+        btnD2.className = "option-btn " + (isCorrect ? "correct" : "wrong");
+        if (!isCorrect) btnF2.className = "option-btn correct";
+      }
+
+      animating = true;
+      startAnimation2(t, isCorrect);
+    }
+
+    function startAnimation2(t, isCorrect) {
+      const chip2 = document.getElementById("morphemChip2");
+      const rs2   = document.getElementById("resultStem2");
+      const rb2   = document.getElementById("resultBadge2");
+      const rl2   = document.getElementById("resultLabel2");
+
+      // Chip fliegt von links ein
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        chip2.style.transition = "transform 0.6s cubic-bezier(0.22,1,0.36,1), opacity 0.5s";
+        chip2.style.transform = "translateX(0)";
+        chip2.style.opacity = "1";
+      }));
+
+      // Ergebnis: volles Wort erscheint nach 900ms
+      setTimeout(() => {
+        rs2.style.transition = "opacity 0.5s, transform 0.4s";
+        rs2.style.transform = "scale(1.08)";
+        rs2.style.opacity = "1";
+        setTimeout(() => { rs2.style.transform = "scale(1)"; }, 150);
+        rb2.style.opacity = "1";
+        rl2.style.transition = "opacity 0.4s";
+        rl2.style.opacity = "1";
+        rl2.className = "result-label visible " + t.resultType;
+
+        const fb2 = document.getElementById("feedbackBox2");
+        fb2.innerHTML = isCorrect ? t.feedbackCorrect : t.feedbackWrong;
+        fb2.className = "feedback show " + (isCorrect ? "correct" : "wrong");
+        document.getElementById("nextBtn2").className = "next-btn show";
+
+        animating = false;
+      }, 900);
+    }
+
+    // =====================================================================
+    // Nächste Aufgabe Stufe 2 / Ergebnis
+    // =====================================================================
+    function nextTask2() {
+      currentTask2++;
+      if (currentTask2 < tasks2.length) {
+        loadTask2();
+      } else {
+        document.getElementById("stage2").classList.add("hidden");
+        document.getElementById("stage3").classList.remove("hidden");
+        document.getElementById("dot2").className = "prog-dot done";
+        document.getElementById("dot2").textContent = "✓";
+        document.getElementById("line2").className = "prog-line done";
+        document.getElementById("dot3").className = "prog-dot active";
+        showResult();
+      }
+    }
+
+    // =====================================================================
+    // Ergebnis
+    // =====================================================================
+    function showResult() {
+      const pct = Math.round((score / totalTasks) * 100);
+      document.getElementById("scoreBig").textContent = score + " / " + totalTasks;
+      let msg = "";
+      if (pct === 100) {
+        msg = "Perfekt! Du hast alle Aufgaben richtig – auch die kniffligen Präfix- und Konversionsfälle.";
+      } else if (pct >= 67) {
+        msg = "Sehr gut! Du hast die Grundregel verinnerlicht. Übe noch die kniffligen Fälle (Präfixderivation, Konversion).";
+      } else {
+        msg = "Übe nochmal! Merke: Flexion = Wortform, gleiche Wortklasse. Derivation = neues Lexem, oft Wortklassenwechsel.";
+      }
+      document.getElementById("scoreText").textContent = msg;
+
+      window.dataLayer.push({
+        event: "simulation_complete",
+        score: score,
+        total: totalTasks,
+        pct: pct,
+        "data-asset-type": "simulation",
+        "data-topic-cluster": "sprachen-morphologie"
+      });
+    }
+
+    // =====================================================================
+    // Neustart
+    // =====================================================================
+    function restartQuiz() {
+      currentTask1 = 0;
+      currentTask2 = 0;
+      score = 0;
+      animating = false;
+
+      document.getElementById("stage3").classList.add("hidden");
+      document.getElementById("stage1").classList.remove("hidden");
+
+      document.getElementById("dot1").className = "prog-dot active";
+      document.getElementById("dot1").textContent = "1";
+      document.getElementById("dot2").className = "prog-dot";
+      document.getElementById("dot2").textContent = "2";
+      document.getElementById("dot3").className = "prog-dot";
+      document.getElementById("dot3").textContent = "3";
+      document.getElementById("line1").className = "prog-line";
+      document.getElementById("line2").className = "prog-line";
+
+      loadTask1();
+    }
+
+    // =====================================================================
+    // Init
+    // =====================================================================
+    loadTask1();
+  </script>
+
+</body>
+</html>

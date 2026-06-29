@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Kognaten &amp; Falsche Freunde: Sprachtransfer üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation: Sage in jeder Runde voraus, ob ein Wortpaar ein echter Kognat oder ein Falscher Freund ist – und verstehe positiven und negativen Sprachtransfer.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Kognaten, Falsche Freunde, Sprachtransfer, Interferenz, Fremdsprachenlernen, Englisch Vokabeln">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachtransfer-kognaten-simulation.html">
+  <meta property="og:title" content="Kognaten &amp; Falsche Freunde: Sprachtransfer üben">
+  <meta property="og:description" content="Interaktive Simulation: Sage voraus, ob ein Wortpaar ein echter Kognat oder ein Falscher Freund ist – und verstehe positiven und negativen Sprachtransfer.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachtransfer-kognaten-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Kognaten & Falsche Freunde: Sprachtransfer üben",
+  "description":"Interaktive Simulation: Sage in jeder Runde voraus, ob ein Wortpaar ein echter Kognat oder ein Falscher Freund ist – und verstehe positiven und negativen Sprachtransfer.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachtransfer-kognaten-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue: #2563eb;
+      --blue-light: #dbeafe;
+      --blue-mid: #93c5fd;
+      --green: #16a34a;
+      --green-light: #dcfce7;
+      --red: #dc2626;
+      --red-light: #fee2e2;
+      --orange: #d97706;
+      --orange-light: #fef3c7;
+      --gray-50: #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --radius: 12px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ---- Header ---- */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
+
+    /* ---- Page container ---- */
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* ---- Task header ---- */
+    .task-header {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .task-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--blue);
+      background: var(--blue-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 99px;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.03em;
+    }
+    .task-header h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 0.4rem;
+    }
+    .task-header p {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+    }
+
+    /* ---- Progress dots ---- */
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--gray-600);
+      font-weight: 500;
+      min-width: 5.5rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-200);
+      transition: background 0.3s;
+      flex-shrink: 0;
+    }
+    .dot.active { background: var(--blue); }
+    .dot.correct { background: var(--green); }
+    .dot.incorrect { background: var(--red); }
+    .stage-sep {
+      width: 1px;
+      height: 14px;
+      background: var(--gray-400);
+      margin: 0 0.25rem;
+      flex-shrink: 0;
+    }
+
+    /* ---- Stage intro ---- */
+    .stage-intro {
+      background: var(--blue-light);
+      border: 1px solid var(--blue-mid);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .stage-intro h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    .stage-intro p {
+      font-size: 0.9rem;
+      color: var(--gray-700);
+    }
+    .stage-intro.negative {
+      background: var(--orange-light);
+      border-color: #fbbf24;
+    }
+    .stage-intro.negative h2 {
+      color: var(--orange);
+    }
+
+    /* ---- Bridge visual ---- */
+    .bridge-wrap {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+
+    .lang-box {
+      flex: 1;
+      min-width: 0;
+      border-radius: var(--radius);
+      padding: 1.25rem 1rem;
+      text-align: center;
+      border: 2px solid transparent;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .lang-box.de-box {
+      background: var(--blue-light);
+      border-color: var(--blue-mid);
+    }
+    .lang-box.en-box {
+      background: var(--gray-100);
+      border-color: var(--gray-200);
+    }
+    .lang-box.en-box.revealed-correct {
+      background: var(--green-light);
+      border-color: #86efac;
+    }
+    .lang-box.en-box.revealed-incorrect {
+      background: var(--red-light);
+      border-color: #fca5a5;
+    }
+    .lang-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gray-600);
+      margin-bottom: 0.5rem;
+    }
+    .lang-word {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--gray-800);
+      margin-bottom: 0.4rem;
+      line-height: 1.2;
+      word-break: break-word;
+    }
+    .lang-meaning {
+      font-size: 0.82rem;
+      color: var(--gray-600);
+    }
+
+    /* ---- Bridge connector ---- */
+    .bridge-connector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .bridge-line {
+      width: 100%;
+      height: 3px;
+      background: var(--gray-200);
+      position: relative;
+      transition: background 0.4s;
+    }
+    .bridge-line.anim-correct { background: var(--green); }
+    .bridge-line.anim-incorrect { background: var(--red); }
+
+    .bridge-particle {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--blue);
+      position: absolute;
+      top: -5.5px;
+      left: 0;
+      transition: transform 0.5s ease, background 0.3s, opacity 0.3s;
+    }
+    .bridge-particle.travel-correct {
+      transform: translateX(66px);
+      background: var(--green);
+    }
+    .bridge-particle.travel-halfway {
+      transform: translateX(33px);
+      background: var(--red);
+      opacity: 0;
+    }
+
+    .bridge-icon {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+      min-height: 1.5rem;
+      transition: opacity 0.3s;
+    }
+
+    /* ---- Question area ---- */
+    .question-area {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+    .question-text {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* ---- Choice buttons ---- */
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    .choice-btn {
+      padding: 0.85rem 0.75rem;
+      border-radius: 10px;
+      border: 2px solid var(--gray-200);
+      background: white;
+      cursor: pointer;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      text-align: center;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+      line-height: 1.3;
+    }
+    .choice-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: var(--blue-light);
+      color: var(--blue);
+    }
+    .choice-btn.correct-answer {
+      border-color: var(--green);
+      background: var(--green-light);
+      color: var(--green);
+    }
+    .choice-btn.wrong-answer {
+      border-color: var(--red);
+      background: var(--red-light);
+      color: var(--red);
+    }
+    .choice-btn:disabled { cursor: default; }
+
+    /* ---- Feedback box ---- */
+    .feedback-box {
+      border-radius: var(--radius);
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      display: none;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .feedback-box.correct {
+      background: var(--green-light);
+      border: 1px solid #86efac;
+      display: block;
+    }
+    .feedback-box.incorrect {
+      background: var(--red-light);
+      border: 1px solid #fca5a5;
+      display: block;
+    }
+    .feedback-icon {
+      font-size: 1.1rem;
+      font-weight: 800;
+      margin-right: 0.35rem;
+    }
+    .feedback-box .concept {
+      font-weight: 700;
+    }
+
+    /* ---- Next button ---- */
+    .btn-next {
+      display: none;
+      width: 100%;
+      padding: 0.9rem;
+      background: var(--blue);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-bottom: 1.5rem;
+    }
+    .btn-next:hover { background: #1d4ed8; }
+    .btn-next.visible { display: block; }
+
+    /* ---- Transition screen ---- */
+    .transition-screen {
+      display: none;
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow);
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .transition-screen.visible { display: block; }
+    .transition-screen h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--gray-800);
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.88rem;
+    }
+    .compare-table th {
+      background: var(--gray-100);
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      font-weight: 700;
+      color: var(--gray-700);
+      border: 1px solid var(--gray-200);
+    }
+    .compare-table td {
+      padding: 0.6rem 0.75rem;
+      border: 1px solid var(--gray-200);
+      color: var(--gray-700);
+      vertical-align: top;
+    }
+    .tag-pos {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green);
+      border-radius: 99px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.1rem 0.5rem;
+    }
+    .tag-neg {
+      display: inline-block;
+      background: var(--red-light);
+      color: var(--red);
+      border-radius: 99px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.1rem 0.5rem;
+    }
+
+    /* ---- Final screen ---- */
+    .final-screen {
+      display: none;
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 2rem 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .final-screen.visible { display: block; }
+    .final-screen h2 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+      color: var(--gray-800);
+    }
+    .score-badge {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--blue);
+      margin: 0.75rem 0;
+      display: block;
+    }
+    .concept-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+    .concept-card {
+      border-radius: 10px;
+      padding: 1rem;
+      border: 1px solid transparent;
+    }
+    .concept-card.pos {
+      background: var(--green-light);
+      border-color: #86efac;
+    }
+    .concept-card.neg {
+      background: var(--red-light);
+      border-color: #fca5a5;
+    }
+    .concept-card .c-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .concept-card.pos .c-title { color: var(--green); }
+    .concept-card.neg .c-title { color: var(--red); }
+    .concept-card p {
+      font-size: 0.82rem;
+      color: var(--gray-700);
+      line-height: 1.5;
+    }
+    .tips-list {
+      margin: 1rem 0 1.5rem;
+      padding-left: 1.25rem;
+    }
+    .tips-list li {
+      font-size: 0.88rem;
+      color: var(--gray-700);
+      margin-bottom: 0.5rem;
+    }
+    .btn-restart {
+      display: block;
+      width: 100%;
+      padding: 0.9rem;
+      background: var(--gray-100);
+      color: var(--gray-700);
+      border: 1px solid var(--gray-200);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-restart:hover { background: var(--gray-200); }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 480px) {
+      .task-header h1 { font-size: 1.05rem; }
+      .lang-word { font-size: 1.3rem; }
+      .bridge-connector { width: 48px; }
+      .bridge-particle.travel-correct { transform: translateX(34px); }
+      .bridge-particle.travel-halfway { transform: translateX(17px); }
+      .choice-grid { grid-template-columns: 1fr; }
+      .concept-cards { grid-template-columns: 1fr; }
+      .compare-table { font-size: 0.8rem; }
+    }
+    @media (max-width: 380px) {
+      .bridge-connector { width: 36px; }
+      .bridge-particle.travel-correct { transform: translateX(22px); }
+      .bridge-particle.travel-halfway { transform: translateX(11px); }
+    }
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header class="site-header">
+  <a href="/" class="site-logo">Nachhilfe Mentor</a>
+  <span class="breadcrumb">&rsaquo; Sprachen &rsaquo; Sprachtransfer</span>
+</header>
+
+<main class="page">
+
+  <!-- Task header -->
+  <div class="task-header">
+    <div class="task-badge">Klasse 7–13 &middot; Sprachen &middot; Fremdsprachenerwerb</div>
+    <h1>Sprachtransfer: Kognaten &amp; Falsche Freunde</h1>
+    <p>Wann hilft dir Deutsch beim Englischlernen – und wann täuscht es dich? Triff Vorhersagen und entdecke das System dahinter.</p>
+  </div>
+
+  <!-- Progress dots -->
+  <div class="progress-row">
+    <span class="progress-label">Fortschritt:</span>
+    <div class="dot active" id="dot0"></div>
+    <div class="dot" id="dot1"></div>
+    <div class="dot" id="dot2"></div>
+    <div class="stage-sep"></div>
+    <div class="dot" id="dot3"></div>
+    <div class="dot" id="dot4"></div>
+    <div class="dot" id="dot5"></div>
+  </div>
+
+  <!-- Stage intro (swapped per stage) -->
+  <div class="stage-intro" id="stageIntro">
+    <h2 id="stageIntroTitle">Stufe 1 – Echte Kognaten (Positiver Transfer)</h2>
+    <p id="stageIntroText">Schau dir das deutsche Wort an. Das englische Wort ist noch verborgen. Glaubst du, es bedeutet dasselbe?</p>
+  </div>
+
+  <!-- Bridge visual -->
+  <div class="bridge-wrap" id="bridgeWrap">
+    <div class="lang-box de-box">
+      <div class="lang-label">Deutsch (L1)</div>
+      <div class="lang-word" id="deWord">—</div>
+      <div class="lang-meaning" id="deMeaning">&nbsp;</div>
+    </div>
+
+    <div class="bridge-connector" id="bridgeConnector">
+      <div class="bridge-line" id="bridgeLine">
+        <div class="bridge-particle" id="bridgeParticle"></div>
+      </div>
+      <div class="bridge-icon" id="bridgeIcon"></div>
+    </div>
+
+    <div class="lang-box en-box" id="enBox">
+      <div class="lang-label">Englisch (L2)</div>
+      <div class="lang-word" id="enWord">?</div>
+      <div class="lang-meaning" id="enMeaning">&nbsp;</div>
+    </div>
+  </div>
+
+  <!-- Question + choice buttons -->
+  <div class="question-area" id="questionArea">
+    <div class="question-text" id="questionText">
+      Bedeutet das englische Wort dasselbe wie das deutsche?
+    </div>
+    <div class="choice-grid">
+      <button class="choice-btn" id="btnCognate" onclick="answer('cognate')">
+        Echter Kognat<br><small style="font-weight:400">(gleiche Bedeutung)</small>
+      </button>
+      <button class="choice-btn" id="btnFalse" onclick="answer('false')">
+        Falscher Freund<br><small style="font-weight:400">(andere Bedeutung)</small>
+      </button>
+    </div>
+  </div>
+
+  <!-- Feedback -->
+  <div class="feedback-box" id="feedbackBox">
+    <span class="feedback-icon" id="feedbackIcon"></span>
+    <span id="feedbackText"></span>
+  </div>
+
+  <!-- Next button -->
+  <button class="btn-next" id="btnNext" onclick="nextRound()">Weiter &rarr;</button>
+
+  <!-- Transition screen (between stage 1 and 2) -->
+  <div class="transition-screen" id="transitionScreen">
+    <h2>Halbzeit: Was hast du gelernt?</h2>
+    <p style="font-size:0.9rem;color:var(--gray-600);margin-bottom:1rem;">
+      In Stufe 1 haben alle Wortpaare dasselbe bedeutet – das nennt man <strong>positiven Transfer</strong>.
+      In Stufe 2 siehst du Wörter, die <em>täuschend ähnlich</em> klingen, aber völlig anderes bedeuten.
+    </p>
+    <div style="overflow-x:auto;margin:1rem 0;">
+    <table class="compare-table" style="margin:0;">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Stufe 1</th>
+          <th>Stufe 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Typ</td>
+          <td><span class="tag-pos">Kognat</span></td>
+          <td><span class="tag-neg">Falscher Freund</span></td>
+        </tr>
+        <tr>
+          <td>Transfer</td>
+          <td>Positiv – L1 hilft</td>
+          <td>Negativ – L1 täuscht</td>
+        </tr>
+        <tr>
+          <td>Beispiel</td>
+          <td>Musik → music ✓</td>
+          <td>Gift → gift ✗</td>
+        </tr>
+        <tr>
+          <td>Ursache</td>
+          <td>Gleiche Herkunft &amp; Bedeutung</td>
+          <td>Gleiche Herkunft, aber Bedeutungswandel</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <button class="btn-next visible" onclick="startStage2()" style="margin-bottom:0">
+      Weiter zu Stufe 2: Falsche Freunde &rarr;
+    </button>
+  </div>
+
+  <!-- Final screen -->
+  <div class="final-screen" id="finalScreen">
+    <h2>Simulation abgeschlossen</h2>
+    <span class="score-badge" id="scoreBadge">0 / 6</span>
+    <p style="font-size:0.9rem;color:var(--gray-600);margin-bottom:1.5rem;" id="scoreComment"></p>
+
+    <div class="concept-cards">
+      <div class="concept-card pos">
+        <div class="c-title">Positiver Transfer</div>
+        <p>L1-Wissen <strong>beschleunigt</strong> den Fremdspracherwerb. Echte Kognaten wie „Musik / music" haben dieselbe Herkunft und Bedeutung.</p>
+      </div>
+      <div class="concept-card neg">
+        <div class="c-title">Negativer Transfer (Interferenz)</div>
+        <p>L1-Wissen <strong>blockiert</strong> die richtige L2-Bedeutung. Falsche Freunde wie „Gift / gift" haben dieselbe Herkunft, aber semantischen Wandel durchgemacht.</p>
+      </div>
+    </div>
+
+    <p style="font-size:0.9rem;font-weight:600;color:var(--gray-700);margin-bottom:0.5rem;">Praktische Tipps:</p>
+    <ul class="tips-list">
+      <li>Lerne Falsche Freunde als eigene Vokabelliste – sie sind häufig und vorhersehbar.</li>
+      <li>Nutze Kognaten aktiv: Viele englische Fremdwörter aus dem Latein/Griechischen sind fast identisch.</li>
+      <li>Bei Unsicherheit: Etymologie nachschlagen – gemeinsame Herkunft bedeutet meist gleiche Bedeutung.</li>
+    </ul>
+
+    <button class="btn-restart" onclick="restart()">Nochmal üben</button>
+  </div>
+
+</main>
+
+<script>
+  // ---- Data ----
+  const ROUNDS = [
+    // Stage 1: Echte Kognaten (correct answer = cognate)
+    {
+      stage: 1,
+      de: "Musik",
+      deMeaning: "Töne, Melodien, Klang",
+      en: "music",
+      enMeaning: "tones, melodies, sound",
+      type: "cognate",
+      origin: "Latein: musica",
+      feedbackCorrect: "<span class='concept'>Richtig – Positiver Transfer!</span> „Musik" und „music" sind echte Kognaten. Beide Wörter stammen aus dem Lateinischen <em>musica</em>. Da L1 und L2 dieselbe Bedeutung teilen, beschleunigt dieses Wissen den Fremdspracherwerb.",
+      feedbackWrong: "<span class='concept'>Das war ein echter Kognat – Positiver Transfer!</span> „Musik" und „music" bedeuten dasselbe und stammen beide aus dem Lateinischen <em>musica</em>. Wenn L1 und L2 Bedeutung teilen, spricht man von positivem Sprachtransfer."
+    },
+    {
+      stage: 1,
+      de: "Telefon",
+      deMeaning: "Gerät zum Fernsprechen",
+      en: "telephone",
+      enMeaning: "device for remote communication",
+      type: "cognate",
+      origin: "Griechisch: tele + phone",
+      feedbackCorrect: "<span class='concept'>Richtig – Positiver Transfer!</span> „Telefon" und „telephone" sind echte Kognaten aus dem Griechischen (<em>tele</em> = fern, <em>phone</em> = Stimme). Dein Deutsch hilft dir hier beim Englischlernen.",
+      feedbackWrong: "<span class='concept'>Das war ein echter Kognat!</span> „Telefon" und „telephone" bedeuten dasselbe. Der gemeinsame Ursprung liegt im Griechischen (<em>tele</em> = fern, <em>phone</em> = Stimme). Hier liegt positiver Sprachtransfer vor."
+    },
+    {
+      stage: 1,
+      de: "Computer",
+      deMeaning: "elektronische Rechenmaschine",
+      en: "computer",
+      enMeaning: "electronic computing machine",
+      type: "cognate",
+      origin: "Latein: computare",
+      feedbackCorrect: "<span class='concept'>Richtig – Positiver Transfer!</span> „Computer" ist ein internationales Lehnwort, das in beiden Sprachen identisch aussieht und dasselbe bedeutet. Herkunft: Lateinisch <em>computare</em> (berechnen).",
+      feedbackWrong: "<span class='concept'>Das war ein echter Kognat!</span> „Computer" bedeutet in beiden Sprachen dasselbe – ein Fall von positivem Transfer. Herkunft: Lateinisch <em>computare</em>."
+    },
+    // Stage 2: Falsche Freunde (correct answer = false)
+    {
+      stage: 2,
+      de: "Gift",
+      deMeaning: "giftige Substanz / Poison",
+      en: "gift",
+      enMeaning: "Geschenk / present",
+      type: "false",
+      origin: "Althochdeutsch: gifti = das Gegebene",
+      feedbackCorrect: "<span class='concept'>Richtig – Negativer Transfer erkannt!</span> „Gift" (DE: Poison) und „gift" (EN: Geschenk) sind ein klassischer Falscher Freund. Althochdeutsch <em>gifti</em> bedeutete ursprünglich „das Gegebene" – im Englischen blieb das „Geschenk", im Deutschen verschob sich die Bedeutung zur „vergifteten Gabe". Das ist negativer Transfer durch semantischen Wandel.",
+      feedbackWrong: "<span class='concept'>Vorsicht – Negativer Transfer!</span> „gift" bedeutet auf Englisch <strong>Geschenk</strong>, nicht Gift! Das althochdeutsche <em>gifti</em> (= das Gegebene) hat sich in beiden Sprachen unterschiedlich entwickelt. Im Deutschen: vergiftete Gabe → Gift. Im Englischen: Gabe → Geschenk. Diesen Falschen Freund kennen viele nicht."
+    },
+    {
+      stage: 2,
+      de: "sensibel",
+      deMeaning: "empfindlich, leicht verletzbar",
+      en: "sensible",
+      enMeaning: "vernünftig, praktisch (= reasonable)",
+      type: "false",
+      origin: "Latein: sensibilis, aber unterschiedliche Bedeutungsentwicklung",
+      feedbackCorrect: "<span class='concept'>Richtig – Negativer Transfer erkannt!</span> „sensibel" (DE: empfindlich) ≠ „sensible" (EN: vernünftig). Der englische Begriff für „empfindlich" ist <em>sensitive</em>. Beide stammen aus dem Lateinischen <em>sensibilis</em>, haben aber semantisch unterschiedliche Wege genommen. Ein Falscher Freund.",
+      feedbackWrong: "<span class='concept'>Achtung – Falscher Freund!</span> „sensible" bedeutet auf Englisch <strong>vernünftig</strong> (reasonable), nicht empfindlich! Das deutsche „sensibel" (empfindlich) entspricht dem englischen <em>sensitive</em>. Beide Wörter stammen aus dem Lateinischen, aber die Bedeutungen haben sich auseinander entwickelt."
+    },
+    {
+      stage: 2,
+      de: "aktuell",
+      deMeaning: "gegenwärtig, zeitgemäß",
+      en: "actual",
+      enMeaning: "tatsächlich, wirklich (= real, factual)",
+      type: "false",
+      origin: "Latein: actualis, unterschiedliche semantische Spezialisierung",
+      feedbackCorrect: "<span class='concept'>Richtig – Negativer Transfer erkannt!</span> „aktuell" (DE: gegenwärtig) ≠ „actual" (EN: tatsächlich). Das englische Wort für „aktuell" ist <em>current</em> oder <em>up-to-date</em>. Auch hier: gemeinsamer Ursprung (Latein <em>actualis</em>), aber semantischer Wandel in verschiedene Richtungen.",
+      feedbackWrong: "<span class='concept'>Achtung – Falscher Freund!</span> „actual" bedeutet auf Englisch <strong>tatsächlich / wirklich</strong>, nicht aktuell! Das deutsche „aktuell" (zeitgemäß) entspricht dem englischen <em>current</em>. Latein <em>actualis</em> ist der gemeinsame Ursprung – aber die Bedeutungen drifteten auseinander."
+    }
+  ];
+
+  // ---- State ----
+  let roundIndex = 0;
+  let score = 0;
+
+  // ---- DOM refs ----
+  const deWordEl = document.getElementById("deWord");
+  const deMeaningEl = document.getElementById("deMeaning");
+  const enWordEl = document.getElementById("enWord");
+  const enMeaningEl = document.getElementById("enMeaning");
+  const enBox = document.getElementById("enBox");
+  const bridgeLine = document.getElementById("bridgeLine");
+  const bridgeParticle = document.getElementById("bridgeParticle");
+  const bridgeIcon = document.getElementById("bridgeIcon");
+  const feedbackBox = document.getElementById("feedbackBox");
+  const feedbackIcon = document.getElementById("feedbackIcon");
+  const feedbackText = document.getElementById("feedbackText");
+  const btnNext = document.getElementById("btnNext");
+  const btnCognate = document.getElementById("btnCognate");
+  const btnFalse = document.getElementById("btnFalse");
+  const questionArea = document.getElementById("questionArea");
+  const stageIntro = document.getElementById("stageIntro");
+  const stageIntroTitle = document.getElementById("stageIntroTitle");
+  const stageIntroText = document.getElementById("stageIntroText");
+  const transitionScreen = document.getElementById("transitionScreen");
+  const finalScreen = document.getElementById("finalScreen");
+  const scoreBadge = document.getElementById("scoreBadge");
+  const scoreComment = document.getElementById("scoreComment");
+
+  function dot(i) { return document.getElementById("dot" + i); }
+
+  // ---- Init ----
+  function loadRound(idx) {
+    const r = ROUNDS[idx];
+
+    // Update stage intro
+    if (r.stage === 1) {
+      stageIntroTitle.textContent = "Stufe 1 – Echte Kognaten (Positiver Transfer)";
+      stageIntroText.textContent = "Schau dir das deutsche Wort an. Das englische Wort ist noch verborgen. Glaubst du, es bedeutet dasselbe?";
+      stageIntro.className = "stage-intro";
+    } else {
+      stageIntroTitle.textContent = "Stufe 2 – Falsche Freunde (Negativer Transfer)";
+      stageIntroText.textContent = "Jetzt klingen die Wörter wieder ähnlich – aber diesmal ist die Ähnlichkeit trügerisch. Erkennst du den Unterschied?";
+      stageIntro.className = "stage-intro negative";
+    }
+
+    // Fill word boxes
+    deWordEl.textContent = r.de;
+    deMeaningEl.textContent = r.deMeaning;
+    enWordEl.textContent = "?";
+    enMeaningEl.innerHTML = "&nbsp;";
+    enBox.className = "lang-box en-box";
+
+    // Reset bridge
+    bridgeLine.className = "bridge-line";
+    bridgeParticle.className = "bridge-particle";
+    bridgeIcon.textContent = "";
+
+    // Reset feedback + buttons
+    feedbackBox.className = "feedback-box";
+    feedbackIcon.textContent = "";
+    feedbackText.innerHTML = "";
+    btnNext.classList.remove("visible");
+    btnCognate.disabled = false;
+    btnFalse.disabled = false;
+    btnCognate.className = "choice-btn";
+    btnFalse.className = "choice-btn";
+
+    // Show game area
+    questionArea.style.display = "block";
+    stageIntro.style.display = "block";
+    bridgeWrapEl().style.display = "flex";
+
+    // Mark active dot
+    dot(idx).classList.add("active");
+  }
+
+  function bridgeWrapEl() { return document.getElementById("bridgeWrap"); }
+
+  function answer(chosen) {
+    const r = ROUNDS[roundIndex];
+    const isCorrect = chosen === r.type;
+
+    if (isCorrect) score++;
+
+    // Disable buttons
+    btnCognate.disabled = true;
+    btnFalse.disabled = true;
+
+    // Highlight buttons
+    if (chosen === "cognate") {
+      btnCognate.className = "choice-btn " + (isCorrect ? "correct-answer" : "wrong-answer");
+      if (!isCorrect) btnFalse.className = "choice-btn correct-answer";
+    } else {
+      btnFalse.className = "choice-btn " + (isCorrect ? "correct-answer" : "wrong-answer");
+      if (!isCorrect) btnCognate.className = "choice-btn correct-answer";
+    }
+
+    // Animate bridge
+    if (isCorrect && r.type === "cognate") {
+      // Positive transfer: particle travels across
+      setTimeout(() => { bridgeParticle.className = "bridge-particle travel-correct"; }, 50);
+      setTimeout(() => {
+        bridgeLine.className = "bridge-line anim-correct";
+        bridgeIcon.textContent = "✓";
+        enBox.className = "lang-box en-box revealed-correct";
+        enWordEl.textContent = r.en;
+        enMeaningEl.textContent = r.enMeaning;
+      }, 550);
+    } else if (!isCorrect && r.type === "cognate") {
+      // Was a cognate but learner said false friend
+      setTimeout(() => { bridgeParticle.className = "bridge-particle travel-correct"; }, 50);
+      setTimeout(() => {
+        bridgeLine.className = "bridge-line anim-correct";
+        bridgeIcon.textContent = "✓";
+        enBox.className = "lang-box en-box revealed-correct";
+        enWordEl.textContent = r.en;
+        enMeaningEl.textContent = r.enMeaning;
+      }, 550);
+    } else if (isCorrect && r.type === "false") {
+      // Correctly identified false friend
+      setTimeout(() => { bridgeParticle.className = "bridge-particle travel-halfway"; }, 50);
+      setTimeout(() => {
+        bridgeLine.className = "bridge-line anim-incorrect";
+        bridgeIcon.textContent = "✗";
+        enBox.className = "lang-box en-box revealed-incorrect";
+        enWordEl.textContent = r.en;
+        enMeaningEl.textContent = r.enMeaning;
+      }, 550);
+    } else {
+      // Incorrectly thought false friend was cognate
+      setTimeout(() => { bridgeParticle.className = "bridge-particle travel-correct"; }, 50);
+      setTimeout(() => {
+        bridgeLine.className = "bridge-line anim-incorrect";
+        bridgeIcon.textContent = "✗";
+        enBox.className = "lang-box en-box revealed-incorrect";
+        enWordEl.textContent = r.en;
+        enMeaningEl.textContent = r.enMeaning;
+      }, 550);
+    }
+
+    // Show feedback after animation
+    setTimeout(() => {
+      feedbackIcon.textContent = isCorrect ? "✓" : "✗";
+      feedbackText.innerHTML = isCorrect ? r.feedbackCorrect : r.feedbackWrong;
+      feedbackBox.className = "feedback-box " + (isCorrect ? "correct" : "incorrect");
+      btnNext.classList.add("visible");
+    }, 700);
+
+    // Update dot
+    dot(roundIndex).className = "dot " + (isCorrect ? "correct" : "incorrect");
+
+    // Track
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: "sim_step",
+        sim: "sprachtransfer-kognaten",
+        step: roundIndex + 1,
+        result: isCorrect ? "correct" : "incorrect"
+      });
+    }
+  }
+
+  function nextRound() {
+    roundIndex++;
+
+    // After stage 1 (rounds 0–2), show transition
+    if (roundIndex === 3) {
+      questionArea.style.display = "none";
+      feedbackBox.className = "feedback-box";
+      btnNext.classList.remove("visible");
+      stageIntro.style.display = "none";
+      bridgeWrapEl().style.display = "none";
+      transitionScreen.classList.add("visible");
+      return;
+    }
+
+    // After all rounds, show final screen
+    if (roundIndex === 6) {
+      showFinal();
+      return;
+    }
+
+    loadRound(roundIndex);
+  }
+
+  function startStage2() {
+    transitionScreen.classList.remove("visible");
+    questionArea.style.display = "block";
+    stageIntro.style.display = "block";
+    bridgeWrapEl().style.display = "flex";
+    loadRound(roundIndex);
+  }
+
+  function showFinal() {
+    questionArea.style.display = "none";
+    feedbackBox.className = "feedback-box";
+    btnNext.classList.remove("visible");
+    stageIntro.style.display = "none";
+    bridgeWrapEl().style.display = "none";
+    transitionScreen.classList.remove("visible");
+
+    scoreBadge.textContent = score + " / 6";
+    let comment = "";
+    if (score === 6) {
+      comment = "Perfekt! Du hast alle Kognaten und Falschen Freunde korrekt erkannt.";
+    } else if (score >= 4) {
+      comment = "Gut gemacht! Du hast ein solides Gespür für Sprachtransfer – überprüfe die Fälle, die du noch nicht erkannt hast.";
+    } else {
+      comment = "Noch ein bisschen Übung nötig! Lies dir die Feedback-Erklärungen noch einmal durch – die Konzepte werden klarer.";
+    }
+    scoreComment.textContent = comment;
+    finalScreen.classList.add("visible");
+  }
+
+  function restart() {
+    roundIndex = 0;
+    score = 0;
+
+    // Reset dots
+    for (let i = 0; i < 6; i++) {
+      dot(i).className = "dot";
+    }
+    dot(0).classList.add("active");
+
+    finalScreen.classList.remove("visible");
+    questionArea.style.display = "block";
+    stageIntro.style.display = "block";
+    bridgeWrapEl().style.display = "flex";
+
+    loadRound(0);
+  }
+
+  // ---- Start ----
+  loadRound(0);
+</script>
+
+</body>
+</html>

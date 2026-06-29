@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Intonation und Satztypen im Deutschen: Steigton oder Fallton üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Steigton oder Fallton? Sage in dieser interaktiven Simulation für jeden Satztyp die Intonation voraus und sieh die animierte F0-Kurve – mit dem Trick zu W-Fragen.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Intonation Deutsch, Satztypen, Steigton, Fallton, Prosodie, W-Fragen Intonation">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/intonation-satztypen-deutsch-simulation.html">
+  <meta property="og:title" content="Intonation und Satztypen: Steigton oder Fallton?">
+  <meta property="og:description" content="Steigton oder Fallton? Sage in dieser interaktiven Simulation für jeden Satztyp die Intonation voraus und sieh die animierte F0-Kurve – mit dem Trick zu W-Fragen.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/intonation-satztypen-deutsch-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Intonation und Satztypen im Deutschen: Steigton oder Fallton üben",
+  "description":"Steigton oder Fallton? Sage in dieser interaktiven Simulation für jeden Satztyp die Intonation voraus und sieh die animierte F0-Kurve – mit dem Trick zu W-Fragen.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/intonation-satztypen-deutsch-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --cyan:   #0894aa;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+      --rise-color: #1d4ed8;
+      --fall-color: #0b8f6a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Header ──────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.85rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 620px;
+    }
+
+    /* ── Main ────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Progress ────────────────────────── */
+    .progress {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .dot.active { background: var(--blue); }
+    .dot.done   { background: var(--green); }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-left: 0.25rem;
+    }
+
+    /* ── Card ────────────────────────────── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+    .card-label {
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Satz-Display ────────────────────── */
+    .sentence-box {
+      background: #f0f4f8;
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: clamp(1.1rem, 3vw, 1.35rem);
+      font-weight: 600;
+      color: var(--ink);
+      text-align: center;
+      min-height: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ── Canvas ──────────────────────────── */
+    .canvas-wrapper {
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .canvas-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    canvas {
+      width: 100%;
+      height: 130px;
+      display: block;
+      border-radius: 8px;
+      background: #f8fafd;
+      border: 1px solid var(--line);
+    }
+
+    /* ── Buttons ─────────────────────────── */
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      flex: 1;
+      min-width: 130px;
+      padding: 0.7rem 1.25rem;
+      border-radius: 8px;
+      border: 1.5px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: #eff6ff;
+    }
+    .btn:disabled { opacity: 0.4; cursor: default; }
+    .btn.rise {
+      border-color: var(--rise-color);
+      color: var(--rise-color);
+      background: #eff6ff;
+    }
+    .btn.fall {
+      border-color: var(--fall-color);
+      color: var(--fall-color);
+      background: #f0fdf4;
+    }
+    .btn-next {
+      width: 100%;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: none;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.97rem;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 0.75rem;
+      display: none;
+      transition: background 0.15s;
+    }
+    .btn-next:hover { background: #0a4a85; }
+
+    /* ── Feedback ────────────────────────── */
+    .feedback {
+      border-radius: 9px;
+      padding: 1rem 1.1rem;
+      font-size: 0.93rem;
+      line-height: 1.6;
+      display: none;
+      margin-bottom: 0.75rem;
+    }
+    .feedback.correct {
+      background: #f0fdf4;
+      border: 1.5px solid #86efac;
+      color: #14532d;
+    }
+    .feedback.wrong {
+      background: #fef2f2;
+      border: 1.5px solid #fca5a5;
+      color: #7f1d1d;
+    }
+    .feedback strong { font-weight: 700; }
+
+    /* ── Score-Anzeige ───────────────────── */
+    .score-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .score-badge {
+      font-weight: 700;
+      font-size: 0.95rem;
+      background: #eff6ff;
+      color: var(--blue);
+      border-radius: 6px;
+      padding: 0.2rem 0.6rem;
+    }
+
+    /* ── Stufen-Banner ───────────────────── */
+    .stage-banner {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .stage-banner h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+      color: var(--blue);
+    }
+    .stage-banner p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin: 0;
+    }
+
+    /* ── Regelkarte (Abschluss) ──────────── */
+    .rule-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.93rem;
+      margin-top: 1rem;
+    }
+    .rule-table th {
+      background: #f0f4f8;
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      font-weight: 700;
+      border-bottom: 2px solid var(--line);
+    }
+    .rule-table td {
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .rule-table tr:last-child td { border-bottom: none; }
+    .tag-rise {
+      display: inline-block;
+      background: #eff6ff;
+      color: var(--rise-color);
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+    .tag-fall {
+      display: inline-block;
+      background: #f0fdf4;
+      color: var(--fall-color);
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      font-weight: 700;
+      font-size: 0.85rem;
+    }
+
+    /* ── Abschluss ───────────────────────── */
+    .result-header {
+      text-align: center;
+      padding: 1.5rem 0 0.75rem;
+    }
+    .result-header .big-score {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--blue);
+    }
+    .result-header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      margin-top: 0.5rem;
+    }
+    .btn-restart {
+      display: block;
+      width: 100%;
+      margin-top: 1.5rem;
+      padding: 0.75rem;
+      border-radius: 8px;
+      border: none;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.97rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-restart:hover { background: #0a4a85; }
+
+    /* ── Legende ─────────────────────────── */
+    .legend {
+      display: flex;
+      gap: 1.25rem;
+      flex-wrap: wrap;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .legend-line {
+      width: 24px;
+      height: 3px;
+      border-radius: 2px;
+    }
+
+    /* ── Stage-Screens ───────────────────── */
+    .screen { display: none; }
+    .screen.active { display: block; }
+
+    /* ── Responsive ──────────────────────── */
+    @media (max-width: 480px) {
+      .btn-group { flex-direction: column; }
+      .btn { min-width: 0; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Linguistik · Klasse 10–13 · Prosodie</div>
+  <h1>Intonation und Satztypen im Deutschen</h1>
+  <p>Welcher Satztyp hat Steigton (↗), welcher Fallton (↘)? Triff eine Vorhersage – dann siehst du die animierte Intonationskurve.</p>
+</header>
+
+<main>
+
+  <!-- ── SCREEN: EINFÜHRUNG ────────────────── -->
+  <div id="screen-intro" class="screen active">
+    <div class="card">
+      <div class="card-label">Intonationskurven im Deutschen – Vorschau</div>
+
+      <!-- SVG-Vorschau: beide Kurventypen nebeneinander -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; margin-bottom:1.5rem;">
+        <div style="background:#f0fdf4; border:1px solid #86efac; border-radius:8px; padding:0.75rem;">
+          <div style="font-size:0.78rem; font-weight:700; color:#0b8f6a; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.04em;">Fallton ↘</div>
+          <svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block;">
+            <polyline points="10,30 60,18 110,22 150,50" fill="none" stroke="#0b8f6a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="145" y="56" font-size="13" fill="#0b8f6a" font-weight="bold">↘</text>
+          </svg>
+          <div style="font-size:0.8rem; color:#065c3c; margin-top:0.3rem;">„Du kommst morgen."</div>
+        </div>
+        <div style="background:#eff6ff; border:1px solid #bfdbfe; border-radius:8px; padding:0.75rem;">
+          <div style="font-size:0.78rem; font-weight:700; color:#1d4ed8; margin-bottom:0.5rem; text-transform:uppercase; letter-spacing:0.04em;">Steigton ↗</div>
+          <svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block;">
+            <polyline points="10,30 60,18 110,22 150,6" fill="none" stroke="#1d4ed8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="145" y="12" font-size="13" fill="#1d4ed8" font-weight="bold">↗</text>
+          </svg>
+          <div style="font-size:0.8rem; color:#1e40af; margin-top:0.3rem;">„Kommst du morgen?"</div>
+        </div>
+      </div>
+
+      <p style="margin-bottom:1rem;">Dir wird ein Satz gezeigt. Du entscheidest: <strong>Steigton ↗</strong> oder <strong>Fallton ↘</strong>? Danach siehst du die animierte Intonationskurve und eine Erklärung.</p>
+      <p style="margin-bottom:1.5rem; color:var(--muted); font-size:0.93rem;">Die Simulation hat <strong>zwei Stufen</strong>: Erst das Grundmuster (Stufe 1), dann die überraschenden Fälle, die viele falsch einschätzen (Stufe 2).</p>
+
+      <div class="stage-banner">
+        <h2>Stufe 1 – Grundmuster</h2>
+        <p>Aussagen (Deklarativsätze) vs. Entscheidungsfragen (Ja/Nein-Fragen)</p>
+      </div>
+
+      <button class="btn-next" id="btn-start" style="display:block;" onclick="startStage(1)">Simulation starten →</button>
+    </div>
+  </div>
+
+  <!-- ── SCREEN: STAGE 1 ────────────────────── -->
+  <div id="screen-stage1" class="screen">
+
+    <div class="score-row">
+      <span>Stufe 1 – Satz <span id="s1-current">1</span> von 6</span>
+      <span class="score-badge" id="s1-score">0 / 0</span>
+    </div>
+
+    <div class="progress" id="s1-progress">
+      <div class="dot active" id="s1-d0"></div>
+      <div class="dot" id="s1-d1"></div>
+      <div class="dot" id="s1-d2"></div>
+      <div class="dot" id="s1-d3"></div>
+      <div class="dot" id="s1-d4"></div>
+      <div class="dot" id="s1-d5"></div>
+      <span class="progress-label">Grundmuster</span>
+    </div>
+
+    <div class="stage-banner">
+      <h2>Stufe 1: Aussagen vs. Entscheidungsfragen</h2>
+      <p>Entscheide: Steigton ↗ oder Fallton ↘?</p>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Satz</div>
+      <div class="sentence-box" id="s1-sentence">–</div>
+
+      <div class="canvas-wrapper">
+        <div class="canvas-label">
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-line" style="background: var(--rise-color);"></div>
+              <span>Steigton ↗</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-line" style="background: var(--fall-color);"></div>
+              <span>Fallton ↘</span>
+            </div>
+          </div>
+        </div>
+        <canvas id="canvas-s1" width="720" height="130"></canvas>
+      </div>
+
+      <div class="btn-group" id="s1-buttons">
+        <button class="btn rise" onclick="checkAnswer('s1', 'rise')">↗ Steigend</button>
+        <button class="btn fall" onclick="checkAnswer('s1', 'fall')">↘ Fallend</button>
+      </div>
+
+      <div class="feedback" id="s1-feedback"></div>
+      <button class="btn-next" id="s1-next" onclick="nextItem('s1')">Weiter →</button>
+    </div>
+  </div>
+
+  <!-- ── SCREEN: ZWISCHEN-BANNER ───────────── -->
+  <div id="screen-bridge" class="screen">
+    <div class="card">
+      <div class="result-header">
+        <div class="big-score" id="bridge-score">–</div>
+        <p id="bridge-text">Du hast Stufe 1 abgeschlossen.</p>
+      </div>
+
+      <div style="margin-top:1.5rem;">
+        <p style="margin-bottom:1rem;"><strong>Gut gemacht!</strong> Das Grundmuster kennst du jetzt. Aber jetzt kommt der überraschende Teil:</p>
+        <div class="stage-banner" style="margin-bottom:1rem;">
+          <h2>Stufe 2 – Die häufigste Verwechslung</h2>
+          <p>Viele glauben: „Alle Fragen haben Steigton." Das ist <strong>falsch</strong>. In Stufe 2 triffst du W-Fragen – und die klingen völlig anders als erwartet.</p>
+        </div>
+      </div>
+
+      <button class="btn-next" style="display:block;" onclick="startStage(2)">Weiter zu Stufe 2 →</button>
+    </div>
+  </div>
+
+  <!-- ── SCREEN: STAGE 2 ────────────────────── -->
+  <div id="screen-stage2" class="screen">
+
+    <div class="score-row">
+      <span>Stufe 2 – Satz <span id="s2-current">1</span> von 6</span>
+      <span class="score-badge" id="s2-score">0 / 0</span>
+    </div>
+
+    <div class="progress" id="s2-progress">
+      <div class="dot active" id="s2-d0"></div>
+      <div class="dot" id="s2-d1"></div>
+      <div class="dot" id="s2-d2"></div>
+      <div class="dot" id="s2-d3"></div>
+      <div class="dot" id="s2-d4"></div>
+      <div class="dot" id="s2-d5"></div>
+      <span class="progress-label">W-Fragen und gemischte Fälle</span>
+    </div>
+
+    <div class="stage-banner" style="background: linear-gradient(135deg, #fff7ed 0%, #fef9c3 100%);">
+      <h2 style="color: var(--amber);">Stufe 2: W-Fragen und gemischte Fälle</h2>
+      <p>Achtung – hier ist die häufige Verwechslung versteckt. Lies sorgfältig!</p>
+    </div>
+
+    <div class="card">
+      <div class="card-label">Satz</div>
+      <div class="sentence-box" id="s2-sentence">–</div>
+
+      <div class="canvas-wrapper">
+        <div class="canvas-label">
+          <div class="legend">
+            <div class="legend-item">
+              <div class="legend-line" style="background: var(--rise-color);"></div>
+              <span>Steigton ↗</span>
+            </div>
+            <div class="legend-item">
+              <div class="legend-line" style="background: var(--fall-color);"></div>
+              <span>Fallton ↘</span>
+            </div>
+          </div>
+        </div>
+        <canvas id="canvas-s2" width="720" height="130"></canvas>
+      </div>
+
+      <div class="btn-group" id="s2-buttons">
+        <button class="btn rise" onclick="checkAnswer('s2', 'rise')">↗ Steigend</button>
+        <button class="btn fall" onclick="checkAnswer('s2', 'fall')">↘ Fallend</button>
+      </div>
+
+      <div class="feedback" id="s2-feedback"></div>
+      <button class="btn-next" id="s2-next" onclick="nextItem('s2')">Weiter →</button>
+    </div>
+  </div>
+
+  <!-- ── SCREEN: ERGEBNIS ───────────────────── -->
+  <div id="screen-result" class="screen">
+    <div class="card">
+      <div class="result-header">
+        <div class="big-score" id="result-score">–</div>
+        <p id="result-text">–</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-bottom:1rem;">Regelkarte: Intonation im Deutschen</h2>
+
+      <table class="rule-table">
+        <thead>
+          <tr>
+            <th>Satztyp</th>
+            <th>Intonation</th>
+            <th>Beispiel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Aussagesatz</strong> (Deklarativ)</td>
+            <td><span class="tag-fall">Fallton ↘</span></td>
+            <td>„Du kommst morgen."</td>
+          </tr>
+          <tr>
+            <td><strong>Entscheidungsfrage</strong> (Ja/Nein-Frage, Verb-Erststellung)</td>
+            <td><span class="tag-rise">Steigton ↗</span></td>
+            <td>„Kommst du morgen?"</td>
+          </tr>
+          <tr>
+            <td><strong>W-Frage</strong> (Ergänzungsfrage, Fragewort am Anfang)</td>
+            <td><span class="tag-fall">Fallton ↘</span></td>
+            <td>„Wann kommst du?"</td>
+          </tr>
+          <tr>
+            <td><strong>Imperativsatz</strong></td>
+            <td><span class="tag-fall">Fallton ↘↘</span> (stark)</td>
+            <td>„Komm sofort!"</td>
+          </tr>
+          <tr>
+            <td><strong>Exklamativsatz</strong> (Ausruf)</td>
+            <td><span class="tag-fall">Fallton ↘↘</span> (stark)</td>
+            <td>„Wie schön das ist!"</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="margin-top:1.25rem; background:#fffbeb; border:1px solid #fde68a; border-radius:8px; padding:0.85rem 1rem;">
+        <p style="font-size:0.9rem; color:#78350f; margin:0;"><strong>Merksatz:</strong> Im Deutschen haben nur <em>Entscheidungsfragen</em> (Verb-Erststellung, Ja/Nein möglich) Steigton. Alle anderen Satztypen – auch W-Fragen – haben Fallton.</p>
+      </div>
+
+      <button class="btn-restart" onclick="restart()">Nochmal spielen</button>
+    </div>
+  </div>
+
+</main>
+
+<script>
+/* ──────────────────────────────────────────
+   Datenbasis: Sätze mit linguistischen Metadaten
+   ────────────────────────────────────────── */
+const STAGE1 = [
+  {
+    text: "Du lernst gerade Deutsch.",
+    intonation: "fall",
+    type: "Aussagesatz (Deklarativsatz)",
+    tip: "Aussagesätze haben im Deutschen immer Fallton. Die Grundfrequenz (F0) sinkt am Satzende ab.",
+    misconception: null
+  },
+  {
+    text: "Lernst du gerade Deutsch?",
+    intonation: "rise",
+    type: "Entscheidungsfrage (Ja/Nein-Frage)",
+    tip: "Entscheidungsfragen beginnen mit dem Verb (Verb-Erststellung). Sie haben Steigton – die Grundfrequenz steigt am Satzende an.",
+    misconception: null
+  },
+  {
+    text: "Sie hat die Prüfung bestanden.",
+    intonation: "fall",
+    type: "Aussagesatz (Deklarativsatz)",
+    tip: "Aussagesätze haben Fallton. Das Subjekt steht am Anfang, das Verb an zweiter Stelle – typische Verb-Zweitstellung.",
+    misconception: null
+  },
+  {
+    text: "Hat sie die Prüfung bestanden?",
+    intonation: "rise",
+    type: "Entscheidungsfrage (Verb-Erststellung)",
+    tip: "Das Verb steht an erster Stelle – das ist ein sicheres Zeichen für eine Entscheidungsfrage. Entscheidungsfragen haben Steigton.",
+    misconception: null
+  },
+  {
+    text: "Er kommt heute nicht.",
+    intonation: "fall",
+    type: "Aussagesatz (Deklarativsatz)",
+    tip: "Auch negierte Aussagesätze haben Fallton. Die Negation ändert nichts am Intonationsmuster.",
+    misconception: null
+  },
+  {
+    text: "Kommt er heute nicht?",
+    intonation: "rise",
+    type: "Entscheidungsfrage (Negativ-Frage)",
+    tip: "Auch negierte Entscheidungsfragen (Verb-Erststellung) haben Steigton. Die Intonation folgt dem Satztyp, nicht der Negation.",
+    misconception: null
+  }
+];
+
+const STAGE2 = [
+  {
+    text: "Wann kommt der Zug?",
+    intonation: "fall",
+    type: "W-Frage (Ergänzungsfrage)",
+    tip: "Das ist der häufigste Irrtum! W-Fragen haben im Deutschen <strong>Fallton</strong> – genau wie Aussagesätze. Das Fragewort am Anfang ersetzt Steigton.",
+    misconception: "Viele denken: Fragezeichen = Steigton. Aber nur Entscheidungsfragen (Ja/Nein-Fragen) haben Steigton."
+  },
+  {
+    text: "Wie heißt du?",
+    intonation: "fall",
+    type: "W-Frage (Ergänzungsfrage)",
+    tip: "W-Fragen beginnen mit einem Fragewort (wer, wie, was, wo, wann …) und haben <strong>Fallton</strong>. Die Grundfrequenz sinkt am Satzende – wie bei einem Aussagesatz.",
+    misconception: "Nicht verwechseln mit Entscheidungsfragen: Ohne Fragewort und mit Verb-Erststellung → Steigton."
+  },
+  {
+    text: "Warum weinst du?",
+    intonation: "fall",
+    type: "W-Frage (Ergänzungsfrage)",
+    tip: "„Warum" ist ein Fragewort → Ergänzungsfrage → <strong>Fallton</strong>. Merkregel: Fragewort am Anfang kompensiert den Steigton, der sonst nötig wäre.",
+    misconception: null
+  },
+  {
+    text: "Bist du sicher?",
+    intonation: "rise",
+    type: "Entscheidungsfrage (Verb-Erststellung)",
+    tip: "Hier steht das Verb (bist) an erster Stelle – das ist eine Entscheidungsfrage (Ja/Nein möglich) → <strong>Steigton</strong>. Kein Fragewort, deshalb Steigton.",
+    misconception: null
+  },
+  {
+    text: "Wo ist die Bibliothek?",
+    intonation: "fall",
+    type: "W-Frage (Ergänzungsfrage)",
+    tip: "„Wo" ist ein Fragewort → Ergänzungsfrage → <strong>Fallton</strong>. W-Fragen und Aussagesätze haben dasselbe Intonationsmuster.",
+    misconception: null
+  },
+  {
+    text: "Magst du Linguistik?",
+    intonation: "rise",
+    type: "Entscheidungsfrage (Verb-Erststellung)",
+    tip: "Das Verb (magst) steht an erster Stelle → Entscheidungsfrage → <strong>Steigton</strong>. Man könnte mit „ja" oder „nein" antworten.",
+    misconception: null
+  }
+];
+
+/* ──────────────────────────────────────────
+   Status
+   ────────────────────────────────────────── */
+let state = {
+  stage: 1,
+  idx: 0,
+  correct: 0,
+  total: 0,
+  s1correct: 0,
+  s2correct: 0,
+  answered: false
+};
+
+/* ──────────────────────────────────────────
+   Canvas-Animation
+   ────────────────────────────────────────── */
+function animateCurve(canvasId, type) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width;
+  const H = canvas.height;
+
+  ctx.clearRect(0, 0, W, H);
+
+  // Achsen
+  ctx.strokeStyle = '#d8e1ed';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(30, H - 20);
+  ctx.lineTo(W - 10, H - 20);
+  ctx.stroke();
+
+  // Achsen-Beschriftung
+  ctx.fillStyle = '#617087';
+  ctx.font = '13px Inter, sans-serif';
+  ctx.fillText('Zeit →', W - 56, H - 5);
+  ctx.save();
+  ctx.translate(14, H / 2 + 18);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillText('F0 (Tonhöhe)', 0, 0);
+  ctx.restore();
+
+  // Kurve berechnen
+  // Grundkurve: mittig beginnen, Nukleusbetonung (leicht hoch), dann Endmuster
+  const startX = 40;
+  const endX   = W - 20;
+  const midY   = H * 0.42;   // Startniveau
+  const peakY  = H * 0.20;   // Nucleus-Peak
+  const endY   = type === 'rise' ? H * 0.18 : H * 0.78; // Steigton hoch, Fallton tief
+
+  const color = type === 'rise' ? '#1d4ed8' : '#0b8f6a';
+
+  // Animation
+  let progress = 0;
+  const DURATION = 900; // ms
+  const START = performance.now();
+
+  function getPoint(t) {
+    // t: 0..1
+    // Segmente: 0..0.3 sanft zu Nucleus, 0.3..0.7 Peak, 0.7..1 Endmuster
+    const x = startX + t * (endX - startX);
+    let y;
+    if (t < 0.3) {
+      const u = t / 0.3;
+      y = midY + (peakY - midY) * (u * u * (3 - 2 * u)); // smoothstep hoch
+    } else if (t < 0.65) {
+      const u = (t - 0.3) / 0.35;
+      // flache Plateauphase auf Nucleus-Höhe
+      y = peakY + (midY - peakY) * (u * u * (3 - 2 * u));
+    } else {
+      const u = (t - 0.65) / 0.35;
+      y = midY + (endY - midY) * (u * u * (3 - 2 * u)); // zum Endton
+    }
+    return { x, y };
+  }
+
+  function draw(timestamp) {
+    const elapsed = timestamp - START;
+    progress = Math.min(elapsed / DURATION, 1);
+
+    ctx.clearRect(0, 0, W, H);
+
+    // Achsenlinien neu zeichnen
+    ctx.strokeStyle = '#d8e1ed';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(30, H - 20);
+    ctx.lineTo(W - 10, H - 20);
+    ctx.stroke();
+    ctx.fillStyle = '#617087';
+    ctx.font = '13px Inter, sans-serif';
+    ctx.fillText('Zeit →', W - 56, H - 5);
+    ctx.save();
+    ctx.translate(14, H / 2 + 18);
+    ctx.rotate(-Math.PI / 2);
+    ctx.fillText('F0 (Tonhöhe)', 0, 0);
+    ctx.restore();
+
+    // Pfeil-Endmarker (Steigton/Fallton)
+    if (progress >= 1) {
+      const endPt = getPoint(1);
+      ctx.fillStyle = color;
+      ctx.font = 'bold 18px Inter, sans-serif';
+      ctx.fillText(type === 'rise' ? '↗' : '↘', endPt.x - 12, endPt.y + 7);
+    }
+
+    // Kurve zeichnen (bis aktuellem Fortschritt)
+    ctx.beginPath();
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 3;
+    ctx.lineJoin = 'round';
+    ctx.lineCap  = 'round';
+
+    const steps = 120;
+    for (let i = 0; i <= steps; i++) {
+      const t = (i / steps) * progress;
+      const pt = getPoint(t);
+      if (i === 0) ctx.moveTo(pt.x, pt.y);
+      else         ctx.lineTo(pt.x, pt.y);
+    }
+    ctx.stroke();
+
+    if (progress < 1) requestAnimationFrame(draw);
+  }
+
+  requestAnimationFrame(draw);
+}
+
+/* ──────────────────────────────────────────
+   Screens
+   ────────────────────────────────────────── */
+function showScreen(id) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+/* ──────────────────────────────────────────
+   Stage starten
+   ────────────────────────────────────────── */
+function startStage(stageNum) {
+  state.stage   = stageNum;
+  state.idx     = 0;
+  state.answered = false;
+  if (stageNum === 1) {
+    state.correct = 0;
+    state.total   = 0;
+    showScreen('screen-stage1');
+    loadItem('s1');
+  } else {
+    state.correct = 0;
+    state.total   = 0;
+    showScreen('screen-stage2');
+    loadItem('s2');
+  }
+}
+
+function currentData(prefix) {
+  return prefix === 's1' ? STAGE1[state.idx] : STAGE2[state.idx];
+}
+
+function loadItem(prefix) {
+  const data  = currentData(prefix);
+  const total = prefix === 's1' ? STAGE1.length : STAGE2.length;
+
+  // Satz anzeigen
+  document.getElementById(prefix + '-sentence').textContent = data.text;
+  document.getElementById(prefix + '-current').textContent  = state.idx + 1;
+
+  // Progress-Dots
+  for (let i = 0; i < total; i++) {
+    const dot = document.getElementById(prefix + '-d' + i);
+    if (!dot) continue;
+    dot.className = 'dot' + (i < state.idx ? ' done' : (i === state.idx ? ' active' : ''));
+  }
+
+  // Buttons zurücksetzen
+  const buttons = document.getElementById(prefix + '-buttons').querySelectorAll('button');
+  buttons.forEach(b => { b.disabled = false; });
+
+  // Feedback verbergen
+  const fb = document.getElementById(prefix + '-feedback');
+  fb.style.display = 'none';
+  fb.className = 'feedback';
+  fb.innerHTML = '';
+
+  // Weiter-Button verbergen
+  document.getElementById(prefix + '-next').style.display = 'none';
+
+  state.answered = false;
+
+  // Canvas leeren
+  const canvas = document.getElementById('canvas-' + prefix);
+  const ctx    = canvas.getContext('2d');
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+
+/* ──────────────────────────────────────────
+   Antwort prüfen
+   ────────────────────────────────────────── */
+function checkAnswer(prefix, choice) {
+  if (state.answered) return;
+  state.answered = true;
+
+  const data    = currentData(prefix);
+  const correct = choice === data.intonation;
+
+  state.total++;
+  if (correct) state.correct++;
+
+  // Score anzeigen
+  document.getElementById(prefix + '-score').textContent =
+    state.correct + ' / ' + state.total;
+
+  // Buttons deaktivieren
+  document.getElementById(prefix + '-buttons').querySelectorAll('button')
+    .forEach(b => { b.disabled = true; });
+
+  // Intonationskurve animieren (immer die korrekte)
+  animateCurve('canvas-' + prefix, data.intonation);
+
+  // Feedback
+  const fb = document.getElementById(prefix + '-feedback');
+  if (correct) {
+    fb.className = 'feedback correct';
+    fb.innerHTML =
+      '<strong>✓ Richtig!</strong> Das ist eine <strong>' + data.type + '</strong>. ' + data.tip;
+  } else {
+    const chosen = choice === 'rise' ? 'Steigton ↗' : 'Fallton ↘';
+    const actual = data.intonation === 'rise' ? 'Steigton ↗' : 'Fallton ↘';
+    fb.className = 'feedback wrong';
+    fb.innerHTML =
+      '<strong>✗ Nicht ganz.</strong> Das ist eine <strong>' + data.type + '</strong> → ' + actual + '.<br>' +
+      data.tip +
+      (data.misconception ? '<br><em style="color:#9a3412;font-size:0.88rem;">' + data.misconception + '</em>' : '');
+  }
+  fb.style.display = 'block';
+
+  // Weiter-Button zeigen
+  const nextBtn = document.getElementById(prefix + '-next');
+  const isLast  = state.idx === (prefix === 's1' ? STAGE1.length - 1 : STAGE2.length - 1);
+  nextBtn.textContent = isLast ? 'Auswertung →' : 'Weiter →';
+  nextBtn.style.display = 'block';
+}
+
+/* ──────────────────────────────────────────
+   Nächster Satz / Abschluss
+   ────────────────────────────────────────── */
+function nextItem(prefix) {
+  const total = prefix === 's1' ? STAGE1.length : STAGE2.length;
+
+  if (state.idx < total - 1) {
+    state.idx++;
+    loadItem(prefix);
+  } else {
+    // Stufe abgeschlossen
+    if (prefix === 's1') {
+      state.s1correct = state.correct;
+      const pct = Math.round((state.correct / total) * 100);
+      document.getElementById('bridge-score').textContent = state.correct + ' / ' + total + ' (' + pct + ' %)';
+      document.getElementById('bridge-text').textContent =
+        'Du hast Stufe 1 abgeschlossen – ' + (pct >= 80 ? 'sehr gut!' : 'weiter so!');
+      showScreen('screen-bridge');
+    } else {
+      state.s2correct = state.correct;
+      showResult();
+    }
+  }
+}
+
+/* ──────────────────────────────────────────
+   Gesamtergebnis
+   ────────────────────────────────────────── */
+function showResult() {
+  const total = STAGE1.length + STAGE2.length;
+  const score = state.s1correct + state.s2correct;
+  const pct   = Math.round((score / total) * 100);
+
+  document.getElementById('result-score').textContent = score + ' / ' + total + ' (' + pct + ' %)';
+
+  let msg;
+  if (pct >= 90) msg = 'Ausgezeichnet! Du hast Intonationsmuster sicher im Griff.';
+  else if (pct >= 70) msg = 'Gut gemacht! Die W-Fragen machen vielen Mühe – du hast sie erkannt.';
+  else msg = 'Guter Anfang! Besonders W-Fragen (Fallton!) brauchen etwas Übung. Schau dir die Regelkarte unten an.';
+
+  document.getElementById('result-text').textContent = msg;
+  showScreen('screen-result');
+
+  // Tracking (datenschutzkonform, kein CDN)
+  window.dataLayer.push({
+    event: 'simulation_complete',
+    'data-asset-type': 'simulation',
+    'data-topic-cluster': 'sprachen',
+    slug: 'intonation-satztypen-deutsch-simulation',
+    score_pct: pct
+  });
+}
+
+/* ──────────────────────────────────────────
+   Tracking Init
+   ────────────────────────────────────────── */
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({
+  event: 'simulation_load',
+  'data-asset-type': 'simulation',
+  'data-topic-cluster': 'sprachen',
+  asset: 'intonation-satztypen-deutsch-simulation'
+});
+
+/* ──────────────────────────────────────────
+   Neustart
+   ────────────────────────────────────────── */
+function restart() {
+  state = { stage: 1, idx: 0, correct: 0, total: 0, s1correct: 0, s2correct: 0, answered: false };
+  showScreen('screen-intro');
+}
+</script>
+
+</body>
+</html>

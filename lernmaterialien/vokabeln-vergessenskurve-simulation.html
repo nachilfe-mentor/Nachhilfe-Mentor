@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Vergessenskurve & Spaced Repetition: Vokabeln richtig lernen | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation der Ebbinghaus-Vergessenskurve: Sage vorher, wann du Vokabeln wiederholen musst, und sieh, warum verteiltes Üben massiertes Lernen schlägt.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Vergessenskurve, Ebbinghaus, Spaced Repetition, Vokabeln lernen, verteiltes Üben, Spacing Effect">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/vokabeln-vergessenskurve-simulation.html">
+  <meta property="og:title" content="Vergessenskurve & Spaced Repetition: Vokabeln richtig lernen">
+  <meta property="og:description" content="Interaktive Simulation der Ebbinghaus-Vergessenskurve: Sage vorher, wann du Vokabeln wiederholen musst, und sieh, warum verteiltes Üben massiertes Lernen schlägt.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/vokabeln-vergessenskurve-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Vergessenskurve & Spaced Repetition: Vokabeln richtig lernen",
+  "description":"Interaktive Simulation der Ebbinghaus-Vergessenskurve: Sage vorher, wann du Vokabeln wiederholen musst, und sieh, warum verteiltes Üben massiertes Lernen schlägt.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/vokabeln-vergessenskurve-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #617087;
+      --line: #d8e1ed;
+      --blue: #0f5fa8;
+      --cyan: #0894aa;
+      --amber: #b87700;
+      --green: #0b8f6a;
+      --red: #b5281e;
+      --bg: #f5f8fc;
+      --panel: #fff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.55;
+    }
+    a { color: var(--blue); }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    /* ── Page chrome ─────────────────────────────────────────────────────── */
+    header {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 30px 22px 20px;
+    }
+    header h1 {
+      font-size: clamp(1.55rem, 3vw, 2.4rem);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    header p { color: var(--muted); max-width: 680px; font-size: 0.97rem; }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 22px 52px;
+    }
+
+    /* ── Progress ────────────────────────────────────────────────────────── */
+    .progress-bar {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 22px;
+    }
+    .step-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      background: var(--line);
+      border: 2px solid var(--line);
+      transition: background 0.22s, border-color 0.22s;
+    }
+    .step-dot.active { background: var(--blue); border-color: var(--blue); }
+    .step-dot.done   { background: var(--green); border-color: var(--green); }
+    .progress-label  { font-size: 0.8rem; color: var(--muted); font-weight: 700; }
+
+    /* ── Two-column layout ───────────────────────────────────────────────── */
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.55fr) 330px;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      box-shadow: 0 6px 24px rgba(28,49,80,.07);
+    }
+
+    /* ── Canvas panel ────────────────────────────────────────────────────── */
+    .canvas-wrap { padding: 18px 18px 8px; }
+    canvas {
+      width: 100%;
+      display: block;
+      border-radius: 6px;
+      background: #f9fbfd;
+    }
+    .canvas-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+      padding: 10px 18px 16px;
+      font-size: 0.79rem;
+    }
+    .legend-item { display: flex; align-items: center; gap: 7px; color: var(--muted); }
+    .legend-swatch { width: 22px; height: 3px; border-radius: 2px; flex-shrink: 0; }
+
+    /* ── Controls panel ──────────────────────────────────────────────────── */
+    .controls { padding: 22px; display: grid; gap: 18px; }
+    .controls h2 { font-size: 1rem; font-weight: 800; }
+
+    .vokabel-card {
+      background: #eef4fc;
+      border: 1px solid #c4d9f4;
+      border-radius: 8px;
+      padding: 13px 15px;
+    }
+    .vokabel-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--blue);
+      margin-bottom: 4px;
+    }
+    .vokabel-word { font-size: 1.15rem; font-weight: 900; }
+    .vokabel-trans { font-size: 0.87rem; color: var(--muted); margin-top: 2px; }
+
+    .task-text { font-size: 0.92rem; color: var(--ink); line-height: 1.65; }
+
+    .options { display: grid; gap: 9px; }
+    .option-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      padding: 11px 13px;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      font-family: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color 0.13s, background 0.13s;
+    }
+    .option-btn:hover:not(:disabled) { border-color: var(--blue); background: #f0f6ff; }
+    .option-btn.correct  { border-color: var(--green); background: #e6f9f2; color: #044f35; }
+    .option-btn.wrong    { border-color: var(--red);   background: #fef2f2; color: #7b1d1d; }
+    .option-btn:disabled { cursor: default; }
+
+    .feedback {
+      display: none;
+      padding: 13px 15px;
+      border-radius: 8px;
+      font-size: 0.87rem;
+      line-height: 1.65;
+    }
+    .feedback.visible        { display: block; }
+    .feedback.correct { background: #e6f9f2; color: #044f35; border: 1px solid #a0e3c4; }
+    .feedback.wrong   { background: #fef2f2; color: #7b1d1d; border: 1px solid #f5c4c4; }
+
+    .next-btn {
+      display: none;
+      width: 100%;
+      padding: 12px;
+      border: 0;
+      border-radius: 8px;
+      background: var(--blue);
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.93rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: background 0.13s;
+    }
+    .next-btn:hover { background: #0c4d8a; }
+    .next-btn.visible { display: block; }
+
+    /* ── Step-2 learner cards ────────────────────────────────────────────── */
+    .learner-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .learner-card {
+      border-radius: 8px;
+      padding: 12px 13px;
+      font-size: 0.84rem;
+      line-height: 1.55;
+      border: 2px solid var(--line);
+    }
+    .learner-card .l-name { font-size: 0.95rem; font-weight: 800; margin-bottom: 4px; display: block; }
+    .learner-card.lars { border-color: #e8a800; background: #fffbec; }
+    .learner-card.mia  { border-color: #0aa0bd; background: #eafbff; }
+
+    /* ── Tips section ────────────────────────────────────────────────────── */
+    .tips-section {
+      display: none;
+      margin-top: 24px;
+      padding: 28px 26px;
+      border-radius: 10px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: 0 6px 24px rgba(28,49,80,.07);
+    }
+    .tips-section.visible { display: block; }
+    .tips-section h2 { font-size: 1.1rem; font-weight: 800; margin-bottom: 18px; }
+    .tips-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .tip-card {
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 15px 16px;
+      font-size: 0.86rem;
+      line-height: 1.6;
+    }
+    .tip-card strong { display: block; font-size: 0.9rem; color: var(--blue); margin-bottom: 5px; }
+    .back-link { font-size: 0.86rem; }
+
+    /* ── Responsive ──────────────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      header  { padding: 20px 16px 16px; }
+      main    { padding: 0 16px 40px; }
+      .layout { grid-template-columns: 1fr; }
+      .learner-row { grid-template-columns: 1fr; }
+      .tips-grid   { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <h1>Vergessenskurve &amp; Spaced Repetition</h1>
+  <p>Warum reicht einmaliges Lernen nicht? Erforsche das mathematische Modell hinter dem Vergessen und entdecke, warum verteiltes Üben so viel wirksamer ist als Lernen auf den letzten Drücker.</p>
+</header>
+
+<main>
+  <!-- Progress dots -->
+  <div class="progress-bar">
+    <span class="step-dot active" id="dot1" aria-hidden="true"></span>
+    <span class="step-dot"        id="dot2" aria-hidden="true"></span>
+    <span class="progress-label"  id="progressLabel">Stufe 1 von 2</span>
+  </div>
+
+  <div class="layout" id="mainLayout">
+
+    <!-- Canvas (left) -->
+    <section class="panel" aria-label="Vergessenskurve-Diagramm">
+      <div class="canvas-wrap">
+        <canvas id="curve" width="900" height="480"></canvas>
+      </div>
+      <div class="canvas-legend" id="legend">
+        <span class="legend-item">
+          <span class="legend-swatch" style="background:var(--blue)"></span>
+          Retention — Anteil der erinnerlichen Vokabel (%)
+        </span>
+        <span class="legend-item">
+          <span class="legend-swatch" style="background:var(--green);height:2px;border-top:2px dashed var(--green)"></span>
+          90 %-Grenze — empfohlener Wiederholungszeitpunkt
+        </span>
+      </div>
+    </section>
+
+    <!-- Controls (right) -->
+    <aside class="panel controls">
+
+      <!-- ── Stufe 1 ─────────────────────────────────────────── -->
+      <div id="step1">
+        <h2>Stufe 1 – Die Vergessenskurve</h2>
+
+        <div class="vokabel-card">
+          <div class="vokabel-label">Neue Vokabel — soeben gelernt</div>
+          <div class="vokabel-word">to cherish</div>
+          <div class="vokabel-trans">= etwas schätzen, in Ehren halten</div>
+        </div>
+
+        <p class="task-text">
+          Du hast die Vokabel gerade zum ersten Mal gelernt. Die Kurve zeigt, wie schnell deine Erinnerung sinkt.
+          <br><br>
+          <strong>Deine Vorhersage:</strong> Wann solltest du die Vokabel zum ersten Mal wiederholen, damit du noch etwa 90 % davon im Gedächtnis hast?
+        </p>
+
+        <div class="options" id="s1opts" role="group" aria-label="Antwortmöglichkeiten">
+          <button class="option-btn" data-correct="yes"  onclick="pick(this,1)">A &nbsp; Nach 2–3 Stunden</button>
+          <button class="option-btn" data-correct="no"   onclick="pick(this,1)">B &nbsp; Nach 1–2 Tagen</button>
+          <button class="option-btn" data-correct="no"   onclick="pick(this,1)">C &nbsp; Nach einer Woche</button>
+        </div>
+
+        <div class="feedback" id="fb1"></div>
+        <button class="next-btn" id="next1" onclick="goStep2()">Weiter zu Stufe 2 &rarr;</button>
+      </div>
+
+      <!-- ── Stufe 2 ─────────────────────────────────────────── -->
+      <div id="step2" style="display:none">
+        <h2>Stufe 2 – Lernstrategien im Vergleich</h2>
+
+        <div class="learner-row">
+          <div class="learner-card lars">
+            <span class="l-name">Lars</span>
+            Lernt dieselbe Vokabel 5-mal direkt hintereinander am selben Abend.
+          </div>
+          <div class="learner-card mia">
+            <span class="l-name">Mia</span>
+            Lernt 5-mal — aber immer genau dann, wenn die Kurve auf 90 % gefallen ist.
+          </div>
+        </div>
+
+        <p class="task-text">
+          <strong>Deine Vorhersage:</strong> Wer erinnert sich nach 30 Tagen noch zuverlässig an die Vokabel?
+        </p>
+
+        <div class="options" id="s2opts" role="group" aria-label="Antwortmöglichkeiten">
+          <button class="option-btn" data-correct="no"  onclick="pick(this,2)">A &nbsp; Lars (massiertes Üben)</button>
+          <button class="option-btn" data-correct="yes" onclick="pick(this,2)">B &nbsp; Mia (verteiltes Üben)</button>
+          <button class="option-btn" data-correct="no"  onclick="pick(this,2)">C &nbsp; Beide gleich gut</button>
+        </div>
+
+        <div class="feedback" id="fb2"></div>
+        <button class="next-btn" id="next2" onclick="showTips()">Tipps &amp; Zusammenfassung ansehen &rarr;</button>
+      </div>
+
+    </aside>
+  </div>
+
+  <!-- Tips (after both steps) -->
+  <section class="tips-section" id="tipsSection">
+    <h2>Was du jetzt weißt — und wie du es anwendest</h2>
+    <div class="tips-grid">
+      <div class="tip-card">
+        <strong>Vergessenskurve (Ebbinghaus, 1885)</strong>
+        Die Erinnerung an frisch Gelerntes sinkt exponentiell: R(t) = e<sup>−t/S</sup>. Nach dem ersten Lernen beträgt die Stabilität S nur ~1 Tag — nach wenigen Stunden fehlen schon 10 % der Erinnerung.
+      </div>
+      <div class="tip-card">
+        <strong>Erste Wiederholung: so früh wie möglich</strong>
+        Die wichtigste Wiederholung ist die erste — idealerweise 2–3 Stunden nach dem Lernen. Danach verlängern sich die Abstände mit jeder Wiederholung.
+      </div>
+      <div class="tip-card">
+        <strong>Spacing Effect</strong>
+        Verteilte Wiederholungen (heute, morgen, in 3 Tagen, in einer Woche …) steigern die Gedächtnisstabilität bei jeder Übung um das 2,5-Fache. Das ist der Spacing Effect — wissenschaftlich belegt seit Ebbinghaus und hundertfach repliziert.
+      </div>
+      <div class="tip-card">
+        <strong>Karteikarten-Apps gezielt einsetzen</strong>
+        Apps wie Anki oder Quizlet berechnen den optimalen Wiederholungszeitpunkt mit demselben Modell wie diese Simulation. 15 Minuten täglich in der App ersetzen stundenlange Bulimie-Lernerei.
+      </div>
+      <div class="tip-card">
+        <strong>Lernen auf den letzten Drücker?</strong>
+        Kurzfristig funktioniert es — für den nächsten Tag. Danach ist alles wieder vergessen. Für Abitur, Auslandsaufenthalt oder dauerhaftes Sprachkönnen brauchst du verteiltes Üben über Wochen.
+      </div>
+      <div class="tip-card">
+        <strong>Kontext stärkt die Stabilität</strong>
+        Vokabeln mit Beispielsatz, Bild oder Geschichte zu lernen erhöht die initiale Stabilität S. Das verlängert alle späteren Abstände automatisch — du musst seltener wiederholen.
+      </div>
+    </div>
+    <a class="back-link" href="/blog/posts/vokabeln-lernen-tipps.html">&larr; Mehr Tipps zum Vokabellernen</a>
+  </section>
+</main>
+
+<script>
+// ─── Modell: Ebbinghaus-Vergessenskurve ────────────────────────────────────
+// R(t) = e^(-t / S)
+// S   = Stabilität (Tage): Zeit, nach der R auf e⁻¹ ≈ 0,37 gefallen wäre
+// S₀  = 1 Tag  (empirischer Ausgangswert nach einmaligem Lernen, Ebbinghaus 1885)
+// k   = 2,5    (Stabilitätswachstum pro Wiederholung, SM-2-Algorithmus, Wozniak 1990)
+// Optimaler Wiederholungszeitpunkt: wenn R = 0,9 → t_opt = -S × ln(0,9)
+
+const S0 = 1.0;
+const K_SPACED = 2.5;   // Stabilitätsfaktor bei verteiltem Üben
+const K_MASSED = 1.15;  // Stabilitätsfaktor bei massiertem Üben (deutlich kleiner)
+const R_THRESHOLD = 0.9;
+const DAYS = 30;
+
+function R(t, S) { return Math.exp(-t / S); }
+function tOpt(S) { return -S * Math.log(R_THRESHOLD); } // ≈ S × 0,1054
+
+// Kurvendaten: Array von {t, r, [repStart: true]}
+// repStart = true markiert Punkte, an denen eine Wiederholung stattfindet
+function buildSpacedCurve(S0, reps) {
+  const pts = [];
+  let S = S0;
+  let tBase = 0; // Zeit der letzten Wiederholung
+
+  pts.push({ t: 0, r: 1 });
+
+  for (let i = 0; i < reps; i++) {
+    const tNext = tBase + tOpt(S);
+    if (tNext > DAYS) break;
+
+    // Decay-Kurve vom letzten Stützpunkt bis tNext
+    for (let dt = 0.05; dt < tOpt(S); dt += 0.05) {
+      const t = Math.min(tBase + dt, tNext);
+      pts.push({ t, r: R(dt, S) });
+    }
+
+    // Wiederholung: Stabilität wächst
+    S *= K_SPACED;
+    tBase = tNext;
+    pts.push({ t: tBase, r: 1, repStart: true });
+  }
+
+  // Rest der Kurve bis Tag 30
+  const decayStart = tBase;
+  const Sfinal = S;
+  for (let dt = 0; tBase + dt <= DAYS; dt += 0.15) {
+    pts.push({ t: tBase + dt, r: Math.max(0, R(dt, Sfinal)) });
+  }
+
+  return pts;
+}
+
+function buildMassedCurve(S0, reps) {
+  // Alle Wiederholungen am Tag 0 hintereinander → kaum Konsolidierungsgewinn
+  let S = S0;
+  for (let i = 0; i < reps; i++) S *= K_MASSED;
+  const pts = [];
+  pts.push({ t: 0, r: 1 });
+  for (let t = 0.1; t <= DAYS; t += 0.15) {
+    pts.push({ t, r: Math.max(0, R(t, S)) });
+  }
+  return pts;
+}
+
+// ─── Canvas ────────────────────────────────────────────────────────────────
+const cvs = document.getElementById('curve');
+const ctx = cvs.getContext('2d');
+const W = cvs.width, H = cvs.height;
+const PAD = { t: 28, r: 20, b: 46, l: 52 };
+const CW = W - PAD.l - PAD.r;
+const CH = H - PAD.t - PAD.b;
+
+function px(t) { return PAD.l + (t / DAYS) * CW; }
+function py(r) { return PAD.t + (1 - r) * CH; }
+
+function drawGrid() {
+  ctx.clearRect(0, 0, W, H);
+
+  // Grid-Linien (Retention %)
+  ctx.strokeStyle = '#e4eaf4';
+  ctx.lineWidth = 1;
+  ctx.fillStyle = '#8399af';
+  ctx.font = '13px Inter, sans-serif';
+  ctx.textAlign = 'right';
+  for (let r = 0; r <= 1; r += 0.25) {
+    const y = py(r);
+    ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(W - PAD.r, y); ctx.stroke();
+    ctx.fillText(Math.round(r * 100) + ' %', PAD.l - 7, y + 4);
+  }
+
+  // Grid-Linien (Tage)
+  ctx.textAlign = 'center';
+  for (let d = 0; d <= DAYS; d += 5) {
+    const x = px(d);
+    ctx.beginPath(); ctx.moveTo(x, PAD.t); ctx.lineTo(x, H - PAD.b); ctx.stroke();
+    ctx.fillText('Tag ' + d, x, H - PAD.b + 16);
+  }
+
+  // Achsen
+  ctx.strokeStyle = '#c4d1df';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(PAD.l, PAD.t);
+  ctx.lineTo(PAD.l, H - PAD.b);
+  ctx.lineTo(W - PAD.r, H - PAD.b);
+  ctx.stroke();
+
+  // Y-Achsen-Beschriftung
+  ctx.save();
+  ctx.translate(13, PAD.t + CH / 2);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillStyle = '#8399af';
+  ctx.font = '12px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Erinnerung (%)', 0, 0);
+  ctx.restore();
+
+  // X-Achsen-Beschriftung
+  ctx.fillStyle = '#8399af';
+  ctx.font = '12px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('Tage seit dem Lernen', PAD.l + CW / 2, H - 2);
+}
+
+function draw90Line() {
+  const y = py(R_THRESHOLD);
+  ctx.save();
+  ctx.setLineDash([6, 4]);
+  ctx.strokeStyle = '#0b8f6a';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath(); ctx.moveTo(PAD.l, y); ctx.lineTo(W - PAD.r, y); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.restore();
+
+  ctx.fillStyle = '#0b8f6a';
+  ctx.font = 'bold 11px Inter, sans-serif';
+  ctx.textAlign = 'left';
+  ctx.fillText('90 % – jetzt wiederholen', PAD.l + 6, y - 5);
+}
+
+function strokeCurve(pts, color, lw) {
+  if (!pts || !pts.length) return;
+  ctx.save();
+  ctx.strokeStyle = color;
+  ctx.lineWidth = lw || 2.5;
+  ctx.lineJoin = 'round';
+  ctx.setLineDash([]);
+  ctx.beginPath();
+  let newPath = true;
+  for (const p of pts) {
+    if (p.repStart) {
+      // Sprung auf 1: alten Pfad abschließen, neuen starten
+      ctx.stroke();
+      ctx.beginPath();
+      newPath = true;
+    }
+    const x = px(p.t), y = py(p.r);
+    if (newPath) { ctx.moveTo(x, y); newPath = false; }
+    else          { ctx.lineTo(x, y); }
+  }
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawRepDots(pts, color) {
+  for (const p of pts) {
+    if (!p.repStart) continue;
+    ctx.save();
+    ctx.fillStyle = color;
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+    ctx.arc(px(p.t), py(1), 5, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.stroke();
+    ctx.restore();
+  }
+}
+
+function drawEndLabel(pts, color, label) {
+  const last = pts[pts.length - 1];
+  const x = px(last.t), y = py(last.r);
+  ctx.save();
+  ctx.fillStyle = color;
+  ctx.font = 'bold 12px Inter, sans-serif';
+  ctx.textAlign = 'right';
+  ctx.fillText(label + ': ' + Math.round(last.r * 100) + ' %', x - 4, y - 6);
+  ctx.restore();
+}
+
+// Aktuell auf Canvas gespeicherte Kurven (für Schicht-Zeichnung in Stufe 2)
+let _massed = null;
+let _spaced = null;
+
+function redrawBase() {
+  drawGrid();
+  draw90Line();
+  if (_massed) { strokeCurve(_massed, '#b87700', 2); drawEndLabel(_massed, '#b87700', 'Lars'); }
+  if (_spaced) { strokeCurve(_spaced, '#0894aa', 2.5); drawRepDots(_spaced, '#0894aa'); drawEndLabel(_spaced, '#006e87', 'Mia'); }
+}
+
+function animate(pts, color, lw, repColor, onDone) {
+  let i = 0;
+  const step = 4;
+  function frame() {
+    redrawBase();
+    const slice = pts.slice(0, i);
+    strokeCurve(slice, color, lw);
+    if (repColor) drawRepDots(slice, repColor);
+    i += step;
+    if (i < pts.length) {
+      requestAnimationFrame(frame);
+    } else {
+      redrawBase();
+      if (onDone) onDone();
+    }
+  }
+  requestAnimationFrame(frame);
+}
+
+// ─── Stufe 1: einfache Vergessenskurve ohne Wiederholungen ────────────────
+const step1Pts = buildSpacedCurve(S0, 0);
+
+;(function initStep1() {
+  let i = 0;
+  function frame() {
+    drawGrid();
+    draw90Line();
+    strokeCurve(step1Pts.slice(0, i), '#0f5fa8', 2.5);
+    i += 3;
+    if (i < step1Pts.length) requestAnimationFrame(frame);
+    else strokeCurve(step1Pts, '#0f5fa8', 2.5);
+  }
+  requestAnimationFrame(frame);
+})();
+
+// ─── Interaktion ───────────────────────────────────────────────────────────
+const feedbackTexts = {
+  1: {
+    yes: '<strong>Richtig!</strong> Die <em>Vergessenskurve</em> (Ebbinghaus, 1885) zeigt: Mit einer Anfangsstabilität von S = 1 Tag sinkt R(t) = e<sup>−t/1</sup> bereits nach ~0,1 Tagen (ca. 2,5 Stunden) unter 90 %. Das ist der richtige Zeitpunkt für die erste Wiederholung — früh, aber genau dann am wirksamsten.',
+    B:  '<strong>Nicht ganz.</strong> Nach 1–2 Tagen liegt R bei unter 37 % — mehr als 60 % der Erinnerung sind bereits weg. Laut Modell R(t) = e<sup>−t/1</sup> ist der 90 %-Grenzwert schon nach ~2,5 Stunden erreicht. Dann sollte die erste Wiederholung stattfinden.',
+    C:  '<strong>Leider falsch.</strong> Nach einer Woche ist R(7) = e<sup>−7</sup> ≈ 0,09 % — die Vokabel ist praktisch vergessen. Die erste Wiederholung muss innerhalb weniger Stunden nach dem Lernen erfolgen.'
+  },
+  2: {
+    yes: '<strong>Richtig!</strong> Der <em>Spacing Effect</em> (Cepeda et al., 2006) ist eines der robustesten Ergebnisse der Gedächtnispsychologie: Mias Stabilität wächst mit jeder verteilten Wiederholung um Faktor 2,5 — von 1 auf 2,5 → 6,25 → 15,6 → 39 Tage. Nach 30 Tagen erinnert sie sich noch an ~79 %. Lars hat durch massiertes Üben kaum Stabilitätsgewinn — die Erinnerung ist nach 30 Tagen nahe null.',
+    A:  '<strong>Falsch.</strong> Massiertes Üben (alle Wiederholungen direkt hintereinander) bringt kaum langfristigen Stabilitätsgewinn, weil das Gehirn ohne zeitlichen Abstand nicht konsolidiert. Lars erinnert sich nach 30 Tagen fast an nichts mehr. Das ist der <em>Spacing Effect</em>.',
+    C:  '<strong>Falsch.</strong> Die Ergebnisse sind sehr unterschiedlich. Durch den <em>Spacing Effect</em> ist Mias Gedächtnisstabilität nach 5 verteilten Wiederholungen etwa 16-mal höher als Lars\' Stabilität nach massiertem Üben. Mia erinnert sich nach 30 Tagen noch an ~79 %, Lars nahe an 0 %.'
+  }
+};
+
+function pick(btn, step) {
+  const group = btn.closest('.options');
+  group.querySelectorAll('.option-btn').forEach(b => (b.disabled = true));
+
+  const isCorrect = btn.dataset.correct === 'yes';
+  btn.classList.add(isCorrect ? 'correct' : 'wrong');
+
+  const fb = document.getElementById('fb' + step);
+  fb.className = 'feedback visible ' + (isCorrect ? 'correct' : 'wrong');
+
+  if (step === 1) {
+    if (isCorrect) {
+      fb.innerHTML = feedbackTexts[1].yes;
+    } else {
+      const letter = btn.textContent.trim()[0]; // 'A', 'B', 'C'
+      fb.innerHTML = feedbackTexts[1][letter] || feedbackTexts[1].C;
+    }
+
+    // Marker auf Kurve einzeichnen
+    const tM = tOpt(S0); // ~0,105 Tage
+    const markerColor = isCorrect ? '#0b8f6a' : '#b5281e';
+    const labelColor  = isCorrect ? '#044f35' : '#7b1d1d';
+    const labelText   = isCorrect ? 'Richtig: hier wiederholen!' : 'Hier wäre der richtige Zeitpunkt';
+    drawGrid();
+    draw90Line();
+    strokeCurve(step1Pts, '#0f5fa8', 2.5);
+    ctx.save();
+    ctx.fillStyle = markerColor;
+    ctx.strokeStyle = '#fff';
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(px(tM), py(R_THRESHOLD), 7, 0, Math.PI * 2);
+    ctx.fill(); ctx.stroke();
+    ctx.fillStyle = labelColor;
+    ctx.font = 'bold 13px Inter, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText(labelText, px(tM) + 10, py(R_THRESHOLD) + 5);
+    ctx.restore();
+
+    document.getElementById('next1').classList.add('visible');
+  }
+
+  if (step === 2) {
+    if (isCorrect) {
+      fb.innerHTML = feedbackTexts[2].yes;
+    } else {
+      const letter = btn.textContent.trim()[0];
+      fb.innerHTML = feedbackTexts[2][letter] || feedbackTexts[2].A;
+    }
+    document.getElementById('next2').classList.add('visible');
+  }
+
+  if (window.dataLayer) {
+    window.dataLayer.push({ event: 'sim_answer', step, correct: isCorrect });
+  }
+}
+
+// ─── Stufe 2 aufrufen ──────────────────────────────────────────────────────
+function goStep2() {
+  document.getElementById('step1').style.display = 'none';
+  document.getElementById('step2').style.display = '';
+
+  document.getElementById('dot1').className = 'step-dot done';
+  document.getElementById('dot2').className = 'step-dot active';
+  document.getElementById('progressLabel').textContent = 'Stufe 2 von 2';
+
+  document.getElementById('legend').innerHTML = `
+    <span class="legend-item">
+      <span class="legend-swatch" style="background:#b87700"></span>Lars – massiertes Üben (5× am selben Abend)
+    </span>
+    <span class="legend-item">
+      <span class="legend-swatch" style="background:#0894aa"></span>Mia – verteiltes Üben (Spaced Repetition, ● = Wiederholung)
+    </span>
+  `;
+
+  const massedPts = buildMassedCurve(S0, 5);
+  const spacedPts = buildSpacedCurve(S0, 5);
+
+  _massed = null; _spaced = null;
+
+  // Lars zuerst animieren
+  animate(massedPts, '#b87700', 2, null, () => {
+    _massed = massedPts;
+    // Dann Mia
+    animate(spacedPts, '#0894aa', 2.5, '#0894aa', () => {
+      _spaced = spacedPts;
+      redrawBase();
+    });
+  });
+}
+
+// ─── Abschluss ─────────────────────────────────────────────────────────────
+function showTips() {
+  document.getElementById('dot2').className = 'step-dot done';
+  document.getElementById('progressLabel').textContent = 'Abgeschlossen';
+  const sec = document.getElementById('tipsSection');
+  sec.classList.add('visible');
+  sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  if (window.dataLayer) {
+    window.dataLayer.push({ event: 'sim_complete', topic: 'vergessenskurve' });
+  }
+}
+</script>
+
+</body>
+</html>

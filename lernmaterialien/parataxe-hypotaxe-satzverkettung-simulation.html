@@ -1,0 +1,1210 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Parataxe und Hypotaxe: Satzstruktur erkennen – interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Erkenne Parataxe und Hypotaxe, verstehe Verbstellung (V2/VE) und stilistische Wirkung – interaktive Simulation mit animiertem Satzbaukasten für Deutsch Klasse 9–13.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Parataxe, Hypotaxe, Satzreihe, Satzgefüge, Verbstellung, Syntax Deutsch">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/parataxe-hypotaxe-satzverkettung-simulation.html">
+  <meta property="og:title" content="Parataxe und Hypotaxe: Satzstruktur erkennen">
+  <meta property="og:description" content="Erkenne Parataxe und Hypotaxe, verstehe Verbstellung (V2/VE) und stilistische Wirkung – interaktive Simulation mit animiertem Satzbaukasten für Deutsch Klasse 9–13.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/parataxe-hypotaxe-satzverkettung-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Parataxe und Hypotaxe: Satzstruktur erkennen – interaktive Simulation",
+  "description":"Erkenne Parataxe und Hypotaxe, verstehe Verbstellung (V2/VE) und stilistische Wirkung – interaktive Simulation mit animiertem Satzbaukasten für Deutsch Klasse 9–13.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/parataxe-hypotaxe-satzverkettung-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --blue-bg:#e8f1fb;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --green-bg:#e6f7f2;
+      --red:    #b5281e;
+      --red-bg: #fdf0ef;
+      --amber:  #b87700;
+      --amber-bg:#fdf6e3;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+      --hs-bg:  #dbeafe;
+      --hs-border: #3b82f6;
+      --ns-bg:  #fef3c7;
+      --ns-border: #f59e0b;
+      --v2-bg:  #bfdbfe;
+      --ve-bg:  #fde68a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    .site-header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 1rem 1.5rem;
+    }
+    .site-header h1 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--blue);
+    }
+
+    .main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .intro-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .intro-card h2 {
+      font-size: 1.2rem;
+      color: var(--blue);
+      margin-bottom: 0.75rem;
+    }
+    .intro-card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    /* Definition-Legende */
+    .legend {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.88rem;
+    }
+    .legend-box {
+      width: 18px;
+      height: 18px;
+      border-radius: 4px;
+      border: 2px solid;
+      flex-shrink: 0;
+    }
+    .legend-box.hs { background: var(--hs-bg); border-color: var(--hs-border); }
+    .legend-box.ns { background: var(--ns-bg); border-color: var(--ns-border); }
+    .legend-box.v2 { background: var(--v2-bg); border-color: var(--hs-border); }
+    .legend-box.ve { background: var(--ve-bg); border-color: var(--ns-border); }
+
+    /* Fortschritt */
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .progress-bar-wrap {
+      flex: 1;
+      background: var(--line);
+      border-radius: 999px;
+      height: 8px;
+    }
+    .progress-bar-fill {
+      background: var(--blue);
+      border-radius: 999px;
+      height: 8px;
+      transition: width 0.4s ease;
+    }
+    .progress-text {
+      font-size: 0.85rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+    .score-badge {
+      background: var(--blue-bg);
+      color: var(--blue);
+      font-weight: 700;
+      font-size: 0.88rem;
+      border-radius: 999px;
+      padding: 0.25rem 0.75rem;
+    }
+
+    /* Hauptkarte */
+    .sim-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .round-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .sentence-box {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--ink);
+      margin-bottom: 1.75rem;
+      line-height: 1.8;
+    }
+
+    /* Satzbaukasten-Diagramm */
+    .diagram-area {
+      min-height: 100px;
+      margin-bottom: 1.75rem;
+      position: relative;
+    }
+
+    .diagram-placeholder {
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 2rem;
+      border: 2px dashed var(--line);
+      border-radius: 8px;
+    }
+
+    .diagram-svg-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .diagram-svg-wrap svg {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Fragen */
+    .question-block {
+      margin-bottom: 1.5rem;
+    }
+    .question-block h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .option-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      cursor: pointer;
+      text-align: left;
+      font-size: 0.93rem;
+      color: var(--ink);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: var(--blue-bg);
+    }
+    .option-btn.selected {
+      border-color: var(--blue);
+      background: var(--blue-bg);
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: var(--green-bg);
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: var(--red-bg);
+    }
+    .option-btn:disabled {
+      cursor: default;
+    }
+    .option-letter {
+      font-weight: 700;
+      color: var(--muted);
+      flex-shrink: 0;
+      min-width: 1.2rem;
+    }
+
+    /* Analyse-Aufgabe Stufe 2 */
+    .stage2-block {
+      display: none;
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+    .stage2-block.visible {
+      display: block;
+    }
+    .stage2-label {
+      display: inline-block;
+      background: var(--amber-bg);
+      color: var(--amber);
+      border: 1px solid #f0c040;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.2rem 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Feedback */
+    .feedback-box {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 1.25rem 1.25rem;
+      border-radius: 8px;
+    }
+    .feedback-box.correct {
+      background: var(--green-bg);
+      border: 1px solid #86efac;
+    }
+    .feedback-box.wrong {
+      background: var(--red-bg);
+      border: 1px solid #fca5a5;
+    }
+    .feedback-box.visible {
+      display: block;
+    }
+    .feedback-box strong {
+      display: block;
+      margin-bottom: 0.35rem;
+      font-size: 1rem;
+    }
+    .feedback-box p {
+      font-size: 0.91rem;
+      line-height: 1.6;
+    }
+
+    /* Buttons */
+    .btn-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+    .btn {
+      padding: 0.65rem 1.4rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: opacity 0.15s;
+    }
+    .btn:disabled {
+      opacity: 0.45;
+      cursor: default;
+    }
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+    }
+    .btn-primary:hover:not(:disabled) {
+      background: #0d4d8a;
+    }
+    .btn-secondary {
+      background: var(--bg);
+      color: var(--blue);
+      border: 2px solid var(--blue);
+    }
+    .btn-secondary:hover:not(:disabled) {
+      background: var(--blue-bg);
+    }
+
+    /* Wissensreferenz */
+    .ref-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .ref-card h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 500px) {
+      .ref-grid { grid-template-columns: 1fr; }
+    }
+    .ref-col {
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    .ref-col.para { background: #eff6ff; border: 1px solid #bfdbfe; }
+    .ref-col.hypo { background: #fffbeb; border: 1px solid #fde68a; }
+    .ref-col h4 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .ref-col.para h4 { color: var(--blue); }
+    .ref-col.hypo h4 { color: var(--amber); }
+    .ref-col ul {
+      padding-left: 1rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* Ergebnis-Screen */
+    .result-screen {
+      display: none;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 2rem 1.75rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .result-screen.visible { display: block; }
+    .result-score {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    .result-msg {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .result-detail {
+      text-align: left;
+      font-size: 0.9rem;
+      color: var(--muted);
+      background: var(--bg);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      white-space: pre-line;
+      font-family: system-ui, sans-serif;
+    }
+
+    /* SVG Diagram Styles */
+    .hs-rect { fill: var(--hs-bg); stroke: var(--hs-border); stroke-width: 2; rx: 6; }
+    .ns-rect { fill: var(--ns-bg); stroke: var(--ns-border); stroke-width: 2; rx: 6; }
+    .hs-label { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; fill: #1d4ed8; }
+    .ns-label { font-family: system-ui, sans-serif; font-size: 12px; font-weight: 700; fill: #b45309; }
+    .conn-line { stroke: #9ca3af; stroke-width: 2; stroke-dasharray: 4 3; fill: none; }
+    .horiz-arrow { stroke: #6b7280; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+    .conj-text { font-family: system-ui, sans-serif; font-size: 11px; fill: #4b5563; font-style: italic; }
+    .verb-highlight { fill: var(--v2-bg); stroke: #93c5fd; stroke-width: 1.5; rx: 3; }
+    .verb-text { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 600; fill: #1e40af; }
+    .ns-verb-highlight { fill: var(--ve-bg); stroke: #fcd34d; stroke-width: 1.5; rx: 3; }
+    .ns-verb-text { font-family: system-ui, sans-serif; font-size: 11px; font-weight: 600; fill: #92400e; }
+    .sent-text { font-family: system-ui, sans-serif; font-size: 12px; fill: #374151; }
+    .pos-badge { font-family: system-ui, sans-serif; font-size: 10px; font-weight: 600; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .anim-in { animation: fadeIn 0.35s ease both; }
+
+    .hidden { display: none !important; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header class="site-header">
+  <h1>Nachhilfe Mentor – Grammatik &amp; Stilistik</h1>
+</header>
+
+<main class="main">
+
+  <div class="intro-card">
+    <h2>Parataxe und Hypotaxe – Satzstruktur erkennen</h2>
+    <p>
+      Hauptsätze nebeneinandergestellt oder Nebensätze eingebettet? Erkenne die Satzstruktur,
+      verstehe die Verbposition und analysiere die stilistische Wirkung – Schritt für Schritt.
+    </p>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-box hs"></div> Hauptsatz (HS)</div>
+      <div class="legend-item"><div class="legend-box ns"></div> Nebensatz (NS)</div>
+      <div class="legend-item"><div class="legend-box v2"></div> Verb-2-Stellung (V2)</div>
+      <div class="legend-item"><div class="legend-box ve"></div> Verbendstellung (VE)</div>
+    </div>
+  </div>
+
+  <!-- Wissensreferenz -->
+  <div class="ref-card">
+    <h3>Kurz-Referenz: Parataxe vs. Hypotaxe</h3>
+    <div class="ref-grid">
+      <div class="ref-col para">
+        <h4>Parataxe (Satzreihe)</h4>
+        <ul>
+          <li>Gleichrangige Hauptsätze</li>
+          <li>Koordinierende Konjunktionen: <em>und, aber, oder, denn</em></li>
+          <li>Verb immer an 2. Stelle (V2)</li>
+          <li>Wirkung: direkt, klar, dynamisch</li>
+          <li>Typisch: Journalismus, Kurzprosa</li>
+        </ul>
+      </div>
+      <div class="ref-col hypo">
+        <h4>Hypotaxe (Satzgefüge)</h4>
+        <ul>
+          <li>Nebensatz dem Hauptsatz untergeordnet</li>
+          <li>Subordinierende Konj.: <em>weil, obwohl, dass, wenn, nachdem…</em></li>
+          <li>Verb im NS am Ende (VE)</li>
+          <li>Wirkung: differenziert, komplex, analytisch</li>
+          <li>Typisch: Wissenschaft, Philosophie</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fortschritt -->
+  <div class="progress-row">
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+    </div>
+    <span class="progress-text" id="progressText">Runde 1 von 8</span>
+    <span class="score-badge" id="scoreBadge">0 Punkte</span>
+  </div>
+
+  <!-- Simulation Card -->
+  <div class="sim-card" id="simCard">
+    <div class="round-label" id="roundLabel">Runde 1 · Stufe 1: Klassifikation</div>
+
+    <div class="sentence-box" id="sentenceBox">
+      <!-- aktueller Satz -->
+    </div>
+
+    <!-- Diagram -->
+    <div class="diagram-area" id="diagramArea">
+      <div class="diagram-placeholder" id="diagramPlaceholder">
+        Das Strukturdiagramm erscheint, nachdem du geantwortet hast.
+      </div>
+      <div class="diagram-svg-wrap hidden" id="diagramSvgWrap">
+        <!-- SVG wird dynamisch eingefügt -->
+      </div>
+    </div>
+
+    <!-- Frage A: Satzstruktur -->
+    <div class="question-block" id="qA">
+      <h3>Frage 1: Welche Satzstruktur liegt vor?</h3>
+      <div class="options" id="optionsA"></div>
+    </div>
+
+    <!-- Stufe 2: Vertiefung -->
+    <div class="stage2-block" id="stage2Block">
+      <div class="stage2-label">Stufe 2 – Vertiefung</div>
+      <div class="question-block" id="qB">
+        <h3 id="qBText"></h3>
+        <div class="options" id="optionsB"></div>
+      </div>
+      <div class="feedback-box" id="feedbackBox2">
+        <strong id="fb2Header"></strong>
+        <p id="fb2Body"></p>
+      </div>
+    </div>
+
+    <!-- Feedback Stufe 1 -->
+    <div class="feedback-box" id="feedbackBox1">
+      <strong id="fb1Header"></strong>
+      <p id="fb1Body"></p>
+    </div>
+
+    <div class="btn-row">
+      <button class="btn btn-primary" id="btnCheck" onclick="checkAnswerA()" disabled>Antwort prüfen</button>
+      <button class="btn btn-secondary hidden" id="btnNext" onclick="nextRound()">Weiter</button>
+    </div>
+  </div>
+
+  <!-- Ergebnis -->
+  <div class="result-screen" id="resultScreen">
+    <div class="result-score" id="resultScore"></div>
+    <div class="result-msg" id="resultMsg"></div>
+    <div class="result-detail" id="resultDetail"></div>
+    <button class="btn btn-primary" onclick="restartSim()">Nochmal üben</button>
+  </div>
+
+</main>
+
+<script>
+// ─── Datensätze ───────────────────────────────────────────────────────────────
+
+const rounds = [
+  {
+    sentence: '„Er kam. Er sah. Er siegte."',
+    type: 'para',        // para | hypo | mixed
+    typeLabel: 'Parataxe (asyndetische Satzreihe)',
+    optionsA: [
+      { text: 'Parataxe – drei gleichrangige Hauptsätze ohne Konjunktion', correct: true },
+      { text: 'Hypotaxe – ein Hauptsatz mit zwei eingebetteten Nebensätzen', correct: false },
+      { text: 'Gemischte Struktur – ein Hauptsatz und ein Nebensatz', correct: false },
+    ],
+    fb1correct: 'Richtig! Das ist asyndetische Parataxe – drei eigenständige Hauptsätze, ohne jede Konjunktion aneinandergereiht. Das Verb steht jeweils an zweiter Position (V2).',
+    fb1wrong: 'Nicht ganz. Es handelt sich um Parataxe – drei vollständige Hauptsätze werden ohne Konjunktion hintereinandergestellt. Das nennt man Asyndeton.',
+    stage2question: 'Welche stilistische Wirkung hat diese asyndetische Parataxe?',
+    optionsB: [
+      { text: 'Sachlich-nüchtern, dramatisch-knapp – durch die kurzen Sätze entsteht ein Eindruck von Schnelligkeit und Unausweichlichkeit.', correct: true },
+      { text: 'Analytisch und differenziert – die Struktur zeigt kausale Zusammenhänge.', correct: false },
+      { text: 'Feierlich-pathetisch durch verschachtelte Satzkonstruktionen.', correct: false },
+    ],
+    fb2correct: 'Genau! Kurze asyndetische Parataxe wirkt klar, knapp und oft dramatisch. Dieser Satz (lateinisch: veni, vidi, vici) ist ein klassisches Beispiel rhetorischer Wirkungssteigerung durch Kürze.',
+    fb2wrong: 'Das trifft es nicht. Kurze Parataxe-Sätze wirken durch ihre Knappheit direkt und unmittelbar – das ist das Gegenteil von Verschachtelung oder Analyse.',
+    diagramType: 'para_3',
+    diagramData: { parts: ['HS₁', 'HS₂', 'HS₃'], conjunctions: ['—', '—'] }
+  },
+  {
+    sentence: '„Das Wetter war schlecht, aber die Stimmung war gut."',
+    type: 'para',
+    typeLabel: 'Parataxe (adversative Konjunktion: aber)',
+    optionsA: [
+      { text: 'Parataxe – zwei gleichrangige Hauptsätze, verbunden durch eine koordinierende Konjunktion', correct: true },
+      { text: 'Hypotaxe – ein Hauptsatz mit einem eingebetteten Konzessivsatz', correct: false },
+      { text: 'Gemischte Struktur – Haupt- und Nebensatz kombiniert', correct: false },
+    ],
+    fb1correct: 'Richtig! Zwei Hauptsätze werden durch die koordinierende Konjunktion „aber" verbunden – das ist Parataxe. Beide Verben stehen an V2-Position.',
+    fb1wrong: 'Nicht ganz. „Aber" ist eine koordinierende Konjunktion und verbindet zwei gleichrangige Hauptsätze – das ist Parataxe, keine Hypotaxe.',
+    stage2question: 'Warum ist „aber" kein Einleiter für einen Nebensatz?',
+    optionsB: [
+      { text: 'Weil koordinierende Konjunktionen die Verbstellung nicht verändern – nach „aber" kommt weiterhin V2 (Hauptsatzstellung).', correct: true },
+      { text: 'Weil „aber" immer Verbendstellung im zweiten Satz erzwingt.', correct: false },
+      { text: 'Weil „aber" ein Adverb ist und deshalb keinen Satz einleiten kann.', correct: false },
+    ],
+    fb2correct: 'Genau! Koordinierende Konjunktionen (und, aber, oder, denn) verbinden Sätze, ohne die Wortstellung zu verändern. Danach bleibt das Verb an zweiter Stelle – das ist das entscheidende Unterscheidungsmerkmal.',
+    fb2wrong: 'Das stimmt nicht. Koordinierende Konjunktionen wie „aber" verändern die Verbstellung nicht. Das Verb bleibt nach „aber" an zweiter Stelle (V2).',
+    diagramType: 'para_2',
+    diagramData: { parts: ['HS₁', 'HS₂'], conjunctions: ['aber'] }
+  },
+  {
+    sentence: '„Weil er zu spät kam, musste er hinten sitzen."',
+    type: 'hypo',
+    typeLabel: 'Hypotaxe (Kausalsatz, vorangestellt)',
+    optionsA: [
+      { text: 'Parataxe – zwei gleichrangige Hauptsätze', correct: false },
+      { text: 'Hypotaxe – ein Nebensatz ist dem Hauptsatz untergeordnet', correct: true },
+      { text: 'Gemischte Struktur – ein Hauptsatz und ein Einschub', correct: false },
+    ],
+    fb1correct: 'Richtig! „Weil" ist eine subordinierende Konjunktion. Sie leitet einen Kausalsatz ein, der dem Hauptsatz untergeordnet ist. Im Nebensatz steht das Verb am Ende (VE).',
+    fb1wrong: 'Nicht ganz. „Weil" ist eine subordinierende Konjunktion – sie erzwingt Verbendstellung im abhängigen Satz. Das ist Hypotaxe.',
+    stage2question: 'Wo steht das Verb im weil-Satz – und warum?',
+    optionsB: [
+      { text: 'Am Ende (VE) – subordinierende Konjunktionen erzwingen Verbendstellung im Nebensatz.', correct: true },
+      { text: 'An zweiter Stelle (V2) – Konjunktionen verändern die Wortstellung nicht.', correct: false },
+      { text: 'An erster Stelle (V1) – weil-Sätze bilden immer Fragestellung.', correct: false },
+    ],
+    fb2correct: 'Richtig! Im „weil"-Satz steht das konjugierte Verb am Ende: „… weil er zu spät **kam**". Das ist das klassische Merkmal subordinierter Sätze im Deutschen – und ein häufiger Fehler im Alltag, wenn Leute sagen: „Weil ich bin müde."',
+    fb2wrong: 'Das stimmt leider nicht. Subordinierende Konjunktionen wie „weil" verlangen Verbendstellung im Nebensatz. Das Verb „kam" steht deshalb am Ende des weil-Satzes.',
+    diagramType: 'hypo_ns_first',
+    diagramData: { ns: 'NS (weil-Kausalsatz)', hs: 'HS', conj: 'weil' }
+  },
+  {
+    sentence: '„Obwohl niemand daran glaubte, gelang das Experiment."',
+    type: 'hypo',
+    typeLabel: 'Hypotaxe (Konzessivsatz)',
+    optionsA: [
+      { text: 'Parataxe – zwei gleichrangige Hauptsätze', correct: false },
+      { text: 'Hypotaxe – ein Konzessivsatz ist dem Hauptsatz vorangestellt', correct: true },
+      { text: 'Gemischte Struktur', correct: false },
+    ],
+    fb1correct: 'Sehr gut! „Obwohl" leitet einen Konzessivsatz (Einräumungssatz) ein. Er ist dem Hauptsatz untergeordnet. Da er vorangestellt ist, beginnt der Hauptsatz mit dem Verb (Verberststellung im HS nach vorangestelltem NS).',
+    fb1wrong: 'Nicht ganz. „Obwohl" ist eine subordinierende Konjunktion und leitet einen Konzessivsatz ein – das ist Hypotaxe.',
+    stage2question: 'Welche stilistische Wirkung erzeugt dieser Konzessivsatz?',
+    optionsB: [
+      { text: 'Er hebt einen Gegensatz hervor: Trotz einer Erwartung (niemand glaubt es) tritt das Gegenteil ein – das steigert die Spannung.', correct: true },
+      { text: 'Er erklärt die Ursache für das Gelingen des Experiments.', correct: false },
+      { text: 'Er beschreibt eine zeitliche Abfolge der Ereignisse.', correct: false },
+    ],
+    fb2correct: 'Genau! Konzessivsätze mit „obwohl/obgleich" drücken einen unerwarteten Gegensatz aus – etwas geschieht, obwohl die Bedingungen dagegen sprechen. Das erzeugt Spannung und betont das überraschende Ergebnis.',
+    fb2wrong: 'Das trifft es nicht. Konzessivsätze drücken keinen Grund und keine Zeit aus, sondern eine Einräumung: etwas geschieht trotz einer widrigen Bedingung.',
+    diagramType: 'hypo_ns_first',
+    diagramData: { ns: 'NS (obwohl-Konzessivsatz)', hs: 'HS', conj: 'obwohl' }
+  },
+  {
+    sentence: '„Das Buch, das sie ihm gegeben hatte, lag noch ungelesen auf dem Tisch."',
+    type: 'hypo',
+    typeLabel: 'Hypotaxe (eingebetteter Relativsatz)',
+    optionsA: [
+      { text: 'Parataxe – zwei Hauptsätze nebeneinander', correct: false },
+      { text: 'Hypotaxe – ein Relativsatz ist in den Hauptsatz eingebettet', correct: true },
+      { text: 'Gemischte Struktur', correct: false },
+    ],
+    fb1correct: 'Richtig! „das sie ihm gegeben hatte" ist ein Relativsatz, der das Nomen „Buch" näher bestimmt. Er ist mitten in den Hauptsatz eingebettet – das Verb „hatte" steht am Ende des NS (VE).',
+    fb1wrong: 'Nicht ganz. Der Satz enthält einen Relativsatz (eingeleitet durch „das"), der in den Hauptsatz eingebettet ist. Das ist Hypotaxe.',
+    stage2question: 'Warum ist ein Relativsatz eine Form der Hypotaxe?',
+    optionsB: [
+      { text: 'Weil er grammatisch vom Bezugsnomen im Hauptsatz abhängt und Verbendstellung aufweist.', correct: true },
+      { text: 'Weil er durch eine koordinierende Konjunktion eingeleitet wird.', correct: false },
+      { text: 'Weil er immer am Satzende steht.', correct: false },
+    ],
+    fb2correct: 'Genau! Ein Relativsatz hängt grammatisch von seinem Bezugsnomen (hier: „Buch") ab und ist ihm untergeordnet. Das Verb steht am Ende: „…gegeben **hatte**". Er kann im Satz eingebettet sein – er unterbricht sogar den Hauptsatz.',
+    fb2wrong: 'Das stimmt nicht. Relativsätze werden durch Relativpronomen (der, die, das, welche…) eingeleitet, die eine subordinierende Funktion haben, und zeigen Verbendstellung.',
+    diagramType: 'hypo_embedded',
+    diagramData: { hs: 'HS (Das Buch … lag auf dem Tisch)', ns: 'NS (Relativsatz: das sie…hatte)', conj: 'das' }
+  },
+  {
+    sentence: '„Sie rief an, denn sie wollte Bescheid geben."',
+    type: 'para',
+    typeLabel: 'Parataxe (kausale Konjunktion: denn)',
+    optionsA: [
+      { text: 'Parataxe – zwei Hauptsätze verbunden durch die koordinierende Konjunktion „denn"', correct: true },
+      { text: 'Hypotaxe – ein Kausalsatz mit „denn" untergeordnet', correct: false },
+      { text: 'Gemischte Struktur', correct: false },
+    ],
+    fb1correct: 'Richtig! „Denn" ist eine koordinierende Konjunktion – es verbindet zwei Hauptsätze. Nach „denn" steht das Verb weiterhin an zweiter Stelle (V2): „denn sie wollte…".',
+    fb1wrong: 'Nicht ganz. „Denn" ist eine koordinierende, keine subordinierende Konjunktion. Es verbindet zwei gleichrangige Hauptsätze – das ist Parataxe. Verbendstellung gibt es hier nicht.',
+    stage2question: 'Was ist der Unterschied zwischen „denn" (Parataxe) und „weil" (Hypotaxe)?',
+    optionsB: [
+      { text: '„Denn" koordiniert zwei Hauptsätze (V2 bleibt), „weil" subordiniert einen Nebensatz (VE). Beide drücken Kausalität aus, aber mit verschiedener Syntax.', correct: true },
+      { text: '„Denn" und „weil" sind bedeutungsgleich und funktionieren syntaktisch identisch.', correct: false },
+      { text: '„Denn" leitet immer Nebensätze ein, „weil" immer Hauptsätze.', correct: false },
+    ],
+    fb2correct: 'Perfekt! Das ist ein klassischer Unterschied: „Weil ich müde bin, gehe ich schlafen." (VE im NS) vs. „Ich gehe schlafen, denn ich bin müde." (V2 im HS). Inhaltlich ähnlich – syntaktisch grundverschieden.',
+    fb2wrong: 'Das ist leider falsch. „Denn" und „weil" drücken beide Kausalität aus, aber „denn" ist koordinierend (V2 bleibt), „weil" ist subordinierend (VE im NS). Das ist ein wichtiger Unterschied!',
+    diagramType: 'para_2',
+    diagramData: { parts: ['HS₁', 'HS₂'], conjunctions: ['denn'] }
+  },
+  {
+    sentence: '„Er lernte täglich, sodass er die Prüfung schließlich bestand."',
+    type: 'hypo',
+    typeLabel: 'Hypotaxe (Konsekutivsatz: sodass)',
+    optionsA: [
+      { text: 'Parataxe – zwei gleichrangige Hauptsätze', correct: false },
+      { text: 'Hypotaxe – ein Konsekutivsatz drückt die Folge aus', correct: true },
+      { text: 'Gemischte Struktur', correct: false },
+    ],
+    fb1correct: 'Richtig! „Sodass" leitet einen Konsekutivsatz ein, der die Folge des Lernens beschreibt. Das Verb „bestand" steht am Ende (VE) – typisches Merkmal eines subordinierten Satzes.',
+    fb1wrong: 'Nicht ganz. „Sodass" ist eine subordinierende Konjunktion, die einen Konsekutivsatz (Folgesatz) einleitet. Das Verb steht am Ende: „…bestand". Das ist Hypotaxe.',
+    stage2question: 'Welcher Nebensatztyp liegt bei „sodass er die Prüfung bestand" vor?',
+    optionsB: [
+      { text: 'Konsekutivsatz – er beschreibt die Folge oder das Ergebnis der im Hauptsatz genannten Handlung.', correct: true },
+      { text: 'Kausalsatz – er gibt den Grund für das Bestehen der Prüfung an.', correct: false },
+      { text: 'Konditionalsatz – er formuliert eine Bedingung für das Bestehen.', correct: false },
+    ],
+    fb2correct: 'Genau! Konsekutivsätze (eingeleitet durch „sodass", „so…dass") drücken die Folge aus: wegen des täglichen Lernens folgte das Bestehen. Sie antworten auf die Frage: Mit welcher Folge / welchem Ergebnis?',
+    fb2wrong: 'Das stimmt nicht. Ein Kausalsatz würde den Grund nennen (weil), ein Konditionalsatz eine Bedingung (wenn). „Sodass" leitet einen Konsekutivsatz ein – er nennt die Folge der Handlung.',
+    diagramType: 'hypo_ns_after',
+    diagramData: { hs: 'HS', ns: 'NS (sodass-Konsekutivsatz)', conj: 'sodass' }
+  },
+  {
+    sentence: '„Als der Regen begann, packten sie ein und fuhren nach Hause, ohne dass jemand protestierte."',
+    type: 'mixed',
+    typeLabel: 'Gemischte Struktur (Hypotaxe + Parataxe)',
+    optionsA: [
+      { text: 'Parataxe – mehrere gleichrangige Hauptsätze', correct: false },
+      { text: 'Hypotaxe – ein Hauptsatz mit mehreren eingebetteten Nebensätzen', correct: false },
+      { text: 'Gemischte Struktur – Nebensätze und koordinierte Hauptsätze kombiniert', correct: true },
+    ],
+    fb1correct: 'Ausgezeichnet! Hier sind Hypotaxe und Parataxe kombiniert: „Als…" (Temporalsatz, NS₁) + Hauptsatz₁ + „und" (Koordination, Parataxe) + Hauptsatz₂ + „ohne dass…" (NS₂). Das ist typisch für komplexe Texte.',
+    fb1wrong: 'Nicht ganz. Der Satz enthält sowohl Nebensätze (als…; ohne dass…) als auch koordinierte Hauptsätze (…packten… und fuhren…). Das ist eine gemischte Struktur – Hypotaxe und Parataxe kombiniert.',
+    stage2question: 'Wie viele Nebensätze enthält dieser Satz?',
+    optionsB: [
+      { text: 'Zwei Nebensätze: „Als der Regen begann" (Temporalsatz) und „ohne dass jemand protestierte" (Modalsatz).', correct: true },
+      { text: 'Einen Nebensatz: nur „Als der Regen begann".', correct: false },
+      { text: 'Keinen – es handelt sich um drei koordinierte Hauptsätze.', correct: false },
+    ],
+    fb2correct: 'Richtig gezählt! „Als der Regen begann" ist ein vorangestellter Temporalsatz (VE: begann), und „ohne dass jemand protestierte" ist ein nachgestellter Modalsatz (VE: protestierte). Dazwischen stehen zwei koordinierte Hauptsätze.',
+    fb2wrong: 'Das ist nicht korrekt. Achte auf die subordinierenden Konjunktionen: „als" und „ohne dass" leiten je einen Nebensatz ein – beide haben Verbendstellung. Es gibt also zwei Nebensätze.',
+    diagramType: 'mixed',
+    diagramData: {}
+  }
+];
+
+// ─── Zustand ─────────────────────────────────────────────────────────────────
+
+let currentRound = 0;
+let score = 0;
+let selectedA = null;
+let selectedB = null;
+let stage = 1; // 1 = Klassifikation, 2 = Vertiefung
+let roundResults = [];
+
+// ─── Init ─────────────────────────────────────────────────────────────────────
+
+function initRound() {
+  const r = rounds[currentRound];
+  stage = 1;
+  selectedA = null;
+  selectedB = null;
+
+  document.getElementById('roundLabel').textContent =
+    'Runde ' + (currentRound + 1) + ' von ' + rounds.length + ' · Stufe 1: Klassifikation';
+  document.getElementById('sentenceBox').textContent = r.sentence;
+
+  // Reset diagram
+  document.getElementById('diagramPlaceholder').classList.remove('hidden');
+  document.getElementById('diagramSvgWrap').classList.add('hidden');
+  document.getElementById('diagramSvgWrap').innerHTML = '';
+
+  // Reset stage2
+  document.getElementById('stage2Block').classList.remove('visible');
+  document.getElementById('feedbackBox2').classList.remove('visible', 'correct', 'wrong');
+
+  // Reset fb1
+  document.getElementById('feedbackBox1').classList.remove('visible', 'correct', 'wrong');
+
+  // Buttons
+  document.getElementById('btnCheck').disabled = true;
+  document.getElementById('btnCheck').textContent = 'Antwort prüfen';
+  document.getElementById('btnCheck').onclick = checkAnswerA;
+  document.getElementById('btnNext').classList.add('hidden');
+
+  // Options A
+  renderOptions('optionsA', r.optionsA, 'A');
+
+  updateProgress();
+}
+
+function renderOptions(containerId, options, group) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = '';
+  const letters = ['a', 'b', 'c'];
+  options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'option-btn';
+    btn.setAttribute('data-index', i);
+    btn.innerHTML =
+      '<span class="option-letter">' + letters[i] + ')</span>' +
+      '<span>' + opt.text + '</span>';
+    btn.onclick = function() { selectOption(group, i, containerId); };
+    container.appendChild(btn);
+  });
+}
+
+function selectOption(group, index, containerId) {
+  const container = document.getElementById(containerId);
+  container.querySelectorAll('.option-btn').forEach(b => b.classList.remove('selected'));
+  container.querySelectorAll('.option-btn')[index].classList.add('selected');
+
+  if (group === 'A') {
+    selectedA = index;
+    document.getElementById('btnCheck').disabled = false;
+  } else {
+    selectedB = index;
+    document.getElementById('btnCheck').disabled = false;
+  }
+}
+
+// ─── Check Stufe 1 ────────────────────────────────────────────────────────────
+
+function checkAnswerA() {
+  if (selectedA === null) return;
+  const r = rounds[currentRound];
+  const opts = r.optionsA;
+  const isCorrect = opts[selectedA].correct;
+
+  // Disable options
+  const containerA = document.getElementById('optionsA');
+  containerA.querySelectorAll('.option-btn').forEach((btn, i) => {
+    btn.disabled = true;
+    if (opts[i].correct) btn.classList.add('correct');
+    else if (i === selectedA && !opts[i].correct) btn.classList.add('wrong');
+  });
+
+  // Zeige Strukturdiagramm
+  showDiagram(r);
+
+  // Feedback
+  const fb1 = document.getElementById('feedbackBox1');
+  fb1.classList.remove('correct', 'wrong');
+  fb1.classList.add('visible', isCorrect ? 'correct' : 'wrong');
+  document.getElementById('fb1Header').textContent = isCorrect ? 'Richtig!' : 'Nicht ganz.';
+  document.getElementById('fb1Body').textContent = isCorrect ? r.fb1correct : r.fb1wrong;
+
+  // Stufe 2 anzeigen
+  document.getElementById('stage2Block').classList.add('visible');
+  document.getElementById('roundLabel').textContent =
+    'Runde ' + (currentRound + 1) + ' von ' + rounds.length + ' · Stufe 2: Vertiefung';
+  document.getElementById('qBText').textContent = r.stage2question;
+  renderOptions('optionsB', r.optionsB, 'B');
+
+  // Button umschalten
+  document.getElementById('btnCheck').disabled = true;
+  document.getElementById('btnCheck').textContent = 'Vertiefung prüfen';
+  document.getElementById('btnCheck').onclick = checkAnswerB;
+
+  stage = 2;
+  selectedB = null;
+}
+
+// ─── Check Stufe 2 ────────────────────────────────────────────────────────────
+
+function checkAnswerB() {
+  if (selectedB === null) return;
+  const r = rounds[currentRound];
+  const opts = r.optionsB;
+  const isCorrect = opts[selectedB].correct;
+
+  // Berechne Punkte: 1 Punkt für A korrekt + 1 für B korrekt
+  const aCorrect = rounds[currentRound].optionsA[selectedA].correct;
+  const roundScore = (aCorrect ? 1 : 0) + (isCorrect ? 1 : 0);
+  score += roundScore;
+  roundResults.push({ aCorrect, bCorrect: isCorrect, score: roundScore, type: r.typeLabel });
+
+  // Disable options B
+  const containerB = document.getElementById('optionsB');
+  containerB.querySelectorAll('.option-btn').forEach((btn, i) => {
+    btn.disabled = true;
+    if (opts[i].correct) btn.classList.add('correct');
+    else if (i === selectedB && !opts[i].correct) btn.classList.add('wrong');
+  });
+
+  // Feedback 2
+  const fb2 = document.getElementById('feedbackBox2');
+  fb2.classList.add('visible', isCorrect ? 'correct' : 'wrong');
+  document.getElementById('fb2Header').textContent = isCorrect ? 'Richtig!' : 'Nicht ganz.';
+  document.getElementById('fb2Body').textContent = isCorrect ? r.fb2correct : r.fb2wrong;
+
+  // Button
+  document.getElementById('btnCheck').disabled = true;
+  if (currentRound < rounds.length - 1) {
+    document.getElementById('btnNext').textContent = 'Nächste Runde';
+  } else {
+    document.getElementById('btnNext').textContent = 'Ergebnis anzeigen';
+  }
+  document.getElementById('btnNext').classList.remove('hidden');
+
+  updateProgress();
+}
+
+// ─── Navigation ───────────────────────────────────────────────────────────────
+
+function nextRound() {
+  currentRound++;
+  if (currentRound >= rounds.length) {
+    showResult();
+    return;
+  }
+  initRound();
+}
+
+function updateProgress() {
+  const pct = Math.round((currentRound / rounds.length) * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent =
+    'Runde ' + (currentRound + 1) + ' von ' + rounds.length;
+  document.getElementById('scoreBadge').textContent = score + ' Punkte';
+}
+
+// ─── Ergebnis ─────────────────────────────────────────────────────────────────
+
+function showResult() {
+  document.getElementById('simCard').style.display = 'none';
+  const rs = document.getElementById('resultScreen');
+  rs.classList.add('visible');
+
+  const maxScore = rounds.length * 2;
+  document.getElementById('resultScore').textContent = score + ' / ' + maxScore;
+
+  let msg = '';
+  const pct = score / maxScore;
+  if (pct >= 0.85) msg = 'Ausgezeichnet! Du kennst die Unterschiede zwischen Parataxe und Hypotaxe sehr sicher.';
+  else if (pct >= 0.65) msg = 'Gut gemacht! Ein paar Details kannst du noch vertiefen.';
+  else msg = 'Guter Start! Lies die Referenz nochmal durch und probiere es erneut.';
+  document.getElementById('resultMsg').textContent = msg;
+
+  let detail = '';
+  roundResults.forEach((res, i) => {
+    const icon = (res.aCorrect && res.bCorrect) ? '✓' : (res.aCorrect || res.bCorrect) ? '◑' : '✗';
+    detail += icon + ' Runde ' + (i + 1) + ': ' + res.type + ' (' + res.score + '/2)\n';
+  });
+  document.getElementById('resultDetail').textContent = detail;
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressText').textContent = 'Abgeschlossen';
+  document.getElementById('scoreBadge').textContent = score + ' Punkte';
+}
+
+function restartSim() {
+  currentRound = 0;
+  score = 0;
+  selectedA = null;
+  selectedB = null;
+  roundResults = [];
+  document.getElementById('simCard').style.display = '';
+  document.getElementById('resultScreen').classList.remove('visible');
+  initRound();
+}
+
+// ─── Diagramm ─────────────────────────────────────────────────────────────────
+
+function showDiagram(r) {
+  document.getElementById('diagramPlaceholder').classList.add('hidden');
+  const wrap = document.getElementById('diagramSvgWrap');
+  wrap.classList.remove('hidden');
+
+  let svgHtml = '';
+  switch (r.diagramType) {
+    case 'para_3':
+      svgHtml = buildPara3Svg(r.diagramData);
+      break;
+    case 'para_2':
+      svgHtml = buildPara2Svg(r.diagramData);
+      break;
+    case 'hypo_ns_first':
+      svgHtml = buildHypoNsFirstSvg(r.diagramData);
+      break;
+    case 'hypo_ns_after':
+      svgHtml = buildHypoNsAfterSvg(r.diagramData);
+      break;
+    case 'hypo_embedded':
+      svgHtml = buildHypoEmbeddedSvg(r.diagramData);
+      break;
+    case 'mixed':
+      svgHtml = buildMixedSvg(r.diagramData);
+      break;
+    default:
+      svgHtml = '<p style="color:var(--muted);font-size:0.9rem">Kein Diagramm für diesen Typ.</p>';
+  }
+  wrap.innerHTML = svgHtml;
+}
+
+function svgDefs() {
+  return `<defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#6b7280"/>
+    </marker>
+  </defs>`;
+}
+
+// Parataxe 3 HS
+function buildPara3Svg(data) {
+  const W = 580, H = 100;
+  const bw = 130, bh = 54, by = 23;
+  const x1 = 30, x2 = 220, x3 = 410;
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px;height:auto" class="anim-in">
+    ${svgDefs()}
+    <!-- HS1 -->
+    <rect x="${x1}" y="${by}" width="${bw}" height="${bh}" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="${x1+10}" y="${by+16}" class="hs-label">Hauptsatz 1</text>
+    <rect x="${x1+8}" y="${by+24}" width="38" height="18" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="${x1+13}" y="${by+37}" class="verb-text">V2</text>
+    <!-- Pfeil 1→2 -->
+    <line x1="${x1+bw+2}" y1="${by+bh/2}" x2="${x2-4}" y2="${by+bh/2}" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="${x1+bw+8}" y="${by+bh/2-6}" class="conj-text">—</text>
+    <!-- HS2 -->
+    <rect x="${x2}" y="${by}" width="${bw}" height="${bh}" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="${x2+10}" y="${by+16}" class="hs-label">Hauptsatz 2</text>
+    <rect x="${x2+8}" y="${by+24}" width="38" height="18" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="${x2+13}" y="${by+37}" class="verb-text">V2</text>
+    <!-- Pfeil 2→3 -->
+    <line x1="${x2+bw+2}" y1="${by+bh/2}" x2="${x3-4}" y2="${by+bh/2}" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="${x2+bw+8}" y="${by+bh/2-6}" class="conj-text">—</text>
+    <!-- HS3 -->
+    <rect x="${x3}" y="${by}" width="${bw}" height="${bh}" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="${x3+10}" y="${by+16}" class="hs-label">Hauptsatz 3</text>
+    <rect x="${x3+8}" y="${by+24}" width="38" height="18" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="${x3+13}" y="${by+37}" class="verb-text">V2</text>
+    <!-- Label -->
+    <text x="${W/2}" y="${H-4}" text-anchor="middle" font-size="11" fill="#6b7280">Parataxe: drei gleichrangige Hauptsätze auf gleicher Ebene</text>
+  </svg>`;
+}
+
+// Parataxe 2 HS
+function buildPara2Svg(data) {
+  const conj = data.conjunctions[0];
+  const W = 420, H = 110;
+  const bw = 150, bh = 58, by = 18;
+  const x1 = 20, x2 = 250;
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px;height:auto" class="anim-in">
+    ${svgDefs()}
+    <!-- HS1 -->
+    <rect x="${x1}" y="${by}" width="${bw}" height="${bh}" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="${x1+10}" y="${by+16}" class="hs-label">Hauptsatz 1</text>
+    <rect x="${x1+8}" y="${by+26}" width="38" height="18" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="${x1+13}" y="${by+39}" class="verb-text">V2</text>
+    <!-- Pfeil -->
+    <line x1="${x1+bw+4}" y1="${by+bh/2}" x2="${x2-6}" y2="${by+bh/2}" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="${x1+bw+8}" y="${by+bh/2-7}" class="conj-text" font-weight="bold" fill="#1d4ed8">${conj}</text>
+    <!-- HS2 -->
+    <rect x="${x2}" y="${by}" width="${bw}" height="${bh}" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="${x2+10}" y="${by+16}" class="hs-label">Hauptsatz 2</text>
+    <rect x="${x2+8}" y="${by+26}" width="38" height="18" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="${x2+13}" y="${by+39}" class="verb-text">V2</text>
+    <text x="${W/2}" y="${H-4}" text-anchor="middle" font-size="11" fill="#6b7280">Parataxe: zwei Hauptsätze – Verb bleibt an V2 nach „${conj}"</text>
+  </svg>`;
+}
+
+// Hypotaxe: NS vorangestellt
+function buildHypoNsFirstSvg(data) {
+  const W = 480, H = 165;
+  const nsX = 20, nsY = 15, nsW = 200, nsH = 58;
+  const hsX = 260, hsY = 15, hsW = 190, hsH = 58;
+  const midY = nsY + nsH / 2;
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px;height:auto" class="anim-in">
+    ${svgDefs()}
+    <!-- NS -->
+    <rect x="${nsX}" y="${nsY}" width="${nsW}" height="${nsH}" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="${nsX+10}" y="${nsY+16}" class="ns-label">Nebensatz (vorangestellt)</text>
+    <text x="${nsX+10}" y="${nsY+30}" font-size="11" fill="#b45309" font-style="italic">${data.conj}…</text>
+    <rect x="${nsX+8}" y="${nsY+34}" width="52" height="18" rx="3" fill="#fde68a" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="${nsX+13}" y="${nsY+47}" class="ns-verb-text">Verb-Ende (VE)</text>
+    <!-- Pfeil NS→HS -->
+    <line x1="${nsX+nsW+4}" y1="${midY}" x2="${hsX-6}" y2="${midY}" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="${nsX+nsW+8}" y="${midY-7}" font-size="10" fill="#6b7280">→ HS folgt</text>
+    <!-- HS -->
+    <rect x="${hsX}" y="${hsY}" width="${hsW}" height="${hsH}" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="${hsX+10}" y="${hsY+16}" class="hs-label">Hauptsatz</text>
+    <rect x="${hsX+8}" y="${hsY+26}" width="38" height="18" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="${hsX+13}" y="${hsY+39}" class="verb-text">V1*</text>
+    <!-- Legende -->
+    <text x="${nsX}" y="${H-28}" font-size="10" fill="#6b7280">* Nach vorangestelltem NS beginnt HS mit dem Verb (Verberststellung).</text>
+    <text x="${nsX}" y="${H-14}" font-size="10" fill="#6b7280">Hypotaxe: NS abhängig von HS – Verb im NS steht am Ende.</text>
+  </svg>`;
+}
+
+// Hypotaxe: NS nachgestellt
+function buildHypoNsAfterSvg(data) {
+  const W = 460, H = 145;
+  const hsX = 20, hsY = 15, hsW = 170, hsH = 58;
+  const nsX = 250, nsY = 15, nsW = 200, nsH = 58;
+  const midY = hsY + hsH / 2;
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px;height:auto" class="anim-in">
+    ${svgDefs()}
+    <!-- HS -->
+    <rect x="${hsX}" y="${hsY}" width="${hsW}" height="${hsH}" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="${hsX+10}" y="${hsY+16}" class="hs-label">Hauptsatz</text>
+    <rect x="${hsX+8}" y="${hsY+26}" width="38" height="18" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="${hsX+13}" y="${hsY+39}" class="verb-text">V2</text>
+    <!-- Pfeil HS→NS -->
+    <line x1="${hsX+hsW+4}" y1="${midY}" x2="${nsX-6}" y2="${midY}" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="${hsX+hsW+8}" y="${midY-7}" font-size="10" fill="#6b7280">${data.conj}…</text>
+    <!-- NS -->
+    <rect x="${nsX}" y="${nsY}" width="${nsW}" height="${nsH}" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="${nsX+10}" y="${nsY+16}" class="ns-label">Nebensatz (nachgestellt)</text>
+    <text x="${nsX+10}" y="${nsY+30}" font-size="11" fill="#b45309" font-style="italic">${data.conj}…</text>
+    <rect x="${nsX+8}" y="${nsY+34}" width="52" height="18" rx="3" fill="#fde68a" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="${nsX+13}" y="${nsY+47}" class="ns-verb-text">Verb-Ende (VE)</text>
+    <text x="${hsX}" y="${H-8}" font-size="10" fill="#6b7280">Hypotaxe: NS abhängig vom HS – Verb im NS steht am Ende</text>
+  </svg>`;
+}
+
+// Hypotaxe: eingebetteter Relativsatz
+function buildHypoEmbeddedSvg(data) {
+  const W = 500, H = 160;
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px;height:auto" class="anim-in">
+    ${svgDefs()}
+    <!-- HS Rahmen (mit Lücke) -->
+    <rect x="15" y="15" width="470" height="60" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="25" y="32" class="hs-label">Hauptsatz (HS)</text>
+    <text x="25" y="50" font-size="11" fill="#374151">„Das Buch</text>
+    <rect x="100" y="36" width="8" height="30" rx="2" fill="#fef3c7" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="113" y="50" font-size="11" fill="#374151">lag auf dem Tisch."</text>
+    <rect x="28" y="57" width="42" height="14" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="32" y="68" class="verb-text">V2: lag</text>
+    <!-- NS eingebettet -->
+    <rect x="100" y="85" width="230" height="55" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="110" y="102" class="ns-label">Relativsatz (eingebettet)</text>
+    <text x="110" y="117" font-size="11" fill="#b45309" font-style="italic">„das sie ihm gegeben…"</text>
+    <rect x="110" y="122" width="64" height="14" rx="3" fill="#fde68a" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="114" y="133" class="ns-verb-text">VE: hatte</text>
+    <!-- Verbindungslinie -->
+    <line x1="104" y1="44" x2="104" y2="84" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+    <line x1="330" y1="44" x2="330" y2="84" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+    <text x="15" y="${H-4}" font-size="10" fill="#6b7280">Hypotaxe: Relativsatz eingebettet in HS – unterbricht den Hauptsatz</text>
+  </svg>`;
+}
+
+// Gemischte Struktur
+function buildMixedSvg(data) {
+  const W = 560, H = 180;
+  return `<svg width="100%" viewBox="0 0 ${W} ${H}" style="max-width:${W}px;height:auto" class="anim-in">
+    ${svgDefs()}
+    <!-- NS1 vorangestellt -->
+    <rect x="10" y="10" width="130" height="60" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="20" y="26" class="ns-label">NS₁ (als…)</text>
+    <text x="20" y="40" font-size="10" fill="#b45309" font-style="italic">Temporalsatz</text>
+    <rect x="18" y="44" width="52" height="15" rx="3" fill="#fde68a" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="21" y="56" class="ns-verb-text">VE: begann</text>
+    <!-- Pfeil -->
+    <line x1="142" y1="40" x2="158" y2="40" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <!-- HS1 -->
+    <rect x="160" y="10" width="140" height="60" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="170" y="26" class="hs-label">HS₁ (packten)</text>
+    <rect x="170" y="38" width="38" height="15" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="175" y="50" class="verb-text">V1: packten</text>
+    <!-- und -->
+    <line x1="302" y1="40" x2="318" y2="40" stroke="#9ca3af" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <text x="305" y="34" font-size="11" fill="#1d4ed8" font-weight="bold">und</text>
+    <!-- HS2 -->
+    <rect x="320" y="10" width="140" height="60" rx="6" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/>
+    <text x="330" y="26" class="hs-label">HS₂ (fuhren)</text>
+    <rect x="330" y="38" width="38" height="15" rx="3" fill="#bfdbfe" stroke="#93c5fd" stroke-width="1.5"/>
+    <text x="335" y="50" class="verb-text">V2: fuhren</text>
+    <!-- NS2 nachgestellt -->
+    <rect x="320" y="90" width="180" height="60" rx="6" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <text x="330" y="107" class="ns-label">NS₂ (ohne dass…)</text>
+    <text x="330" y="121" font-size="10" fill="#b45309" font-style="italic">Modalsatz</text>
+    <rect x="330" y="128" width="68" height="15" rx="3" fill="#fde68a" stroke="#fcd34d" stroke-width="1.5"/>
+    <text x="333" y="140" class="ns-verb-text">VE: protestierte</text>
+    <!-- Linie HS2→NS2 -->
+    <line x1="390" y1="70" x2="390" y2="88" stroke="#f59e0b" stroke-width="2" stroke-dasharray="4 3"/>
+    <!-- Gesamtlabel -->
+    <text x="10" y="${H-6}" font-size="10" fill="#6b7280">Gemischte Struktur: zwei NS (Hypotaxe) + zwei koordinierte HS (Parataxe)</text>
+  </svg>`;
+}
+
+// ─── Start ────────────────────────────────────────────────────────────────────
+
+initRound();
+</script>
+</body>
+</html>

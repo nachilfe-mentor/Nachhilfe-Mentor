@@ -1,0 +1,1200 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Diglossie & Code-Switching: Interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zu Diglossie und Code-Switching: Sage voraus, welche Varietät (H/L) zum Kontext passt, und ordne Code-Switching-Typen zu – mit Animation und Feedback.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Diglossie, Code-Switching, Soziolinguistik, H-Varietät, L-Varietät, Ferguson, Gumperz">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/diglossie-code-switching-simulation.html">
+  <meta property="og:title" content="Diglossie & Code-Switching: Interaktive Simulation">
+  <meta property="og:description" content="Interaktive Simulation zu Diglossie und Code-Switching: Sage voraus, welche Varietät (H/L) zum Kontext passt, und ordne Code-Switching-Typen zu – mit Animation und Feedback.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/diglossie-code-switching-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Diglossie & Code-Switching: Interaktive Simulation",
+  "description":"Interaktive Simulation zu Diglossie und Code-Switching: Sage voraus, welche Varietät (H/L) zum Kontext passt, und ordne Code-Switching-Typen zu – mit Animation und Feedback.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/diglossie-code-switching-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+      --h-color: #1a56b0;
+      --h-bg:    #dbeafe;
+      --l-color: #b45309;
+      --l-bg:    #fef3c7;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    h1 {
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* ---- Intro-Karte ---- */
+    .intro-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+    }
+
+    .intro-card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .variety-legend {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .variety-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+    }
+
+    .badge-h { background: var(--h-bg); color: var(--h-color); }
+    .badge-l { background: var(--l-bg); color: var(--l-color); }
+
+    .intro-text {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.65;
+    }
+
+    /* ---- Stage-Container ---- */
+    .stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .stage-header {
+      background: var(--ink);
+      color: #fff;
+      padding: 0.85rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .stage-badge {
+      background: rgba(255,255,255,0.15);
+      border-radius: 6px;
+      padding: 0.2rem 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .stage-title {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .stage-body {
+      padding: 1.5rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* ---- Canvas-Szene ---- */
+    .scene-wrapper {
+      position: relative;
+      width: 100%;
+    }
+
+    canvas {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+      background: #f0f4fa;
+    }
+
+    /* ---- Kontext-Label ---- */
+    .context-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 1rem;
+      background: #1e293b;
+      color: #fff;
+      border-radius: 20px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: background 0.4s;
+    }
+
+    .context-label .icon { font-size: 1.1rem; }
+
+    /* ---- Aufgaben-Text ---- */
+    .task-text {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .scenario-text {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.6;
+      font-style: italic;
+    }
+
+    /* ---- Option-Buttons ---- */
+    .option-group {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .option-btn {
+      flex: 1;
+      min-width: 130px;
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, transform 0.1s;
+      text-align: center;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eff6ff;
+      transform: translateY(-1px);
+    }
+
+    .option-btn.selected-h {
+      border-color: var(--h-color);
+      background: var(--h-bg);
+      color: var(--h-color);
+    }
+
+    .option-btn.selected-l {
+      border-color: var(--l-color);
+      background: var(--l-bg);
+      color: var(--l-color);
+    }
+
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #d1fae5;
+      color: var(--green);
+    }
+
+    .option-btn.incorrect {
+      border-color: var(--red);
+      background: #fee2e2;
+      color: var(--red);
+    }
+
+    .option-btn:disabled { cursor: default; }
+
+    /* ---- Feedback-Box ---- */
+    .feedback-box {
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .feedback-box.show { display: block; }
+    .feedback-box.correct-fb { background: #d1fae5; border-left: 4px solid var(--green); }
+    .feedback-box.wrong-fb  { background: #fee2e2; border-left: 4px solid var(--red); }
+
+    .concept-tag {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.82rem;
+      background: #1e293b;
+      color: #fff;
+      margin: 0 0.15rem;
+    }
+
+    /* ---- Progress ---- */
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .progress-dots {
+      display: flex;
+      gap: 0.35rem;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+
+    .dot.done   { background: var(--green); }
+    .dot.active { background: var(--blue); }
+
+    /* ---- Weiter-Button ---- */
+    .next-btn {
+      display: none;
+      padding: 0.65rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: background 0.2s;
+    }
+
+    .next-btn:hover { background: #0a4a88; }
+    .next-btn.show  { display: inline-block; }
+
+    /* ---- Freitext ---- */
+    .reasoning-label {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    textarea.reasoning-input {
+      width: 100%;
+      min-height: 80px;
+      border: 1.5px solid var(--line);
+      border-radius: 8px;
+      padding: 0.65rem 0.9rem;
+      font-size: 0.92rem;
+      font-family: inherit;
+      color: var(--ink);
+      resize: vertical;
+      transition: border-color 0.2s;
+    }
+
+    textarea.reasoning-input:focus {
+      outline: none;
+      border-color: var(--blue);
+    }
+
+    .submit-btn {
+      padding: 0.6rem 1.25rem;
+      background: var(--ink);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.92rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      align-self: flex-start;
+    }
+
+    .submit-btn:hover { background: #334155; }
+
+    /* ---- Musterlösung ---- */
+    .sample-solution {
+      display: none;
+      background: #f0f9ff;
+      border-left: 4px solid var(--cyan);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    .sample-solution.show { display: block; }
+    .sample-solution strong { color: var(--ink); }
+
+    /* ---- Abschluss ---- */
+    .completion-panel {
+      display: none;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background: linear-gradient(135deg, #f0fdf4 0%, #ecfeff 100%);
+      border: 1px solid #a7f3d0;
+      border-radius: 12px;
+    }
+
+    .completion-panel.show { display: block; }
+
+    .completion-panel h2 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      color: var(--green);
+    }
+
+    .completion-panel p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 500px;
+      margin: 0 auto 1rem;
+      line-height: 1.65;
+    }
+
+    /* ---- Info-Leiste ---- */
+    .info-bar {
+      background: #f8fafc;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.85rem 1.25rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    /* ---- Links ---- */
+    .related-links {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.25rem 1.75rem;
+    }
+
+    .related-links h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .related-links ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+    }
+
+    .related-links li::before {
+      content: "→ ";
+      color: var(--blue);
+      font-weight: 700;
+    }
+
+    @media (max-width: 480px) {
+      .stage-body { padding: 1.25rem 1rem; }
+      .intro-card { padding: 1.25rem 1rem; }
+      .option-group { flex-direction: column; }
+      .option-btn { min-width: 100%; }
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="soziolinguistik">
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Soziolinguistik · Klasse 10–13</p>
+  <h1>Diglossie &amp; Code-Switching</h1>
+  <p class="subtitle">Erlebe interaktiv, wie Kontext die Sprachwahl bestimmt – und wann Sprecher bewusst den Code wechseln.</p>
+</header>
+
+<main>
+
+  <!-- Intro -->
+  <div class="intro-card">
+    <h2>Was lernst du hier?</h2>
+    <div class="variety-legend">
+      <span class="variety-badge badge-h">H-Varietät (High)</span>
+      <span class="variety-badge badge-l">L-Varietät (Low)</span>
+    </div>
+    <p class="intro-text">
+      In vielen Sprachgemeinschaften koexistieren zwei Varietäten: eine formelle <strong>H-Varietät</strong>
+      (Schule, Behörden, Medien) und eine informelle <strong>L-Varietät</strong> (Familie, Freunde, Alltag).
+      Dieses Phänomen heißt <strong>Diglossie</strong> (Ferguson, 1959). Wenn Sprecher innerhalb eines
+      Gesprächs zwischen Codes wechseln, spricht man von <strong>Code-Switching</strong> (Gumperz, 1982).
+      Wichtig: Code-Switching ist <em>kein</em> Zeichen von Sprachinkompetenz –
+      sondern eine regelgeleitete soziale Strategie (Poplack, 1980).
+    </p>
+  </div>
+
+  <!-- STUFE 1 -->
+  <section class="stage" id="stage1">
+    <div class="stage-header">
+      <span class="stage-badge">Stufe 1</span>
+      <span class="stage-title">Diglossie – Welche Varietät passt zum Kontext?</span>
+    </div>
+    <div class="stage-body">
+
+      <div class="info-bar">
+        <strong>Aufgabe:</strong> Du siehst vier Situationen. Entscheide jeweils: Wird hier eher die
+        <span style="color:var(--h-color);font-weight:700">H-Varietät</span> (formell) oder die
+        <span style="color:var(--l-color);font-weight:700">L-Varietät</span> (informell) verwendet?
+        <em>Mach deine Vorhersage, bevor du die Lösung siehst.</em>
+      </div>
+
+      <!-- Szene-Canvas -->
+      <div class="scene-wrapper">
+        <canvas id="sceneCanvas" height="200"></canvas>
+      </div>
+
+      <div style="display:flex;gap:0.75rem;align-items:center;flex-wrap:wrap;">
+        <span class="context-label" id="contextLabel">
+          <span class="icon" id="contextIcon">🏫</span>
+          <span id="contextText">Unterrichtsgespräch mit dem Lehrer</span>
+        </span>
+        <span style="font-size:0.82rem;color:var(--muted)" id="scenarioCounter">Szenario 1 von 4</span>
+      </div>
+
+      <p class="scenario-text" id="scenarioDesc">
+        Du besprichst mit deiner Lehrerin die Hausaufgaben. Sie erklärt dir einen Grammatikfehler.
+      </p>
+
+      <div class="progress-row">
+        <div class="progress-dots" id="dots1">
+          <div class="dot active" id="d1-0"></div>
+          <div class="dot" id="d1-1"></div>
+          <div class="dot" id="d1-2"></div>
+          <div class="dot" id="d1-3"></div>
+        </div>
+        <span id="progressLabel1">Szenario 1 von 4</span>
+      </div>
+
+      <p class="task-text">Vorhersage: Welche Varietät wird hier verwendet?</p>
+
+      <div class="option-group" id="optionGroup1">
+        <button class="option-btn" id="btn-h" onclick="checkAnswer('H')">
+          H-Varietät (formell)
+        </button>
+        <button class="option-btn" id="btn-l" onclick="checkAnswer('L')">
+          L-Varietät (informell)
+        </button>
+      </div>
+
+      <div class="feedback-box" id="feedbackBox1"></div>
+
+      <button class="next-btn" id="nextBtn1" onclick="nextScenario()">
+        Nächstes Szenario →
+      </button>
+
+    </div>
+  </section>
+
+  <!-- STUFE 2 -->
+  <section class="stage" id="stage3" style="display:none;">
+    <div class="stage-header">
+      <span class="stage-badge">Stufe 2</span>
+      <span class="stage-title">Code-Switching – Situational oder Metaphorisch?</span>
+    </div>
+    <div class="stage-body">
+
+      <div class="info-bar">
+        <strong>Zwei Typen nach Gumperz (1982):</strong><br>
+        <strong>Situationales Code-Switching:</strong> Ein äußerer Kontextwechsel (z.B. neue Person betritt den Raum) löst den Varietätenwechsel aus.<br>
+        <strong>Metaphorisches Code-Switching:</strong> Der Sprecher wechselt den Code bewusst, um die Situation zu re-definieren – z.B. Nähe, Humor oder Distanz zu signalisieren.
+      </div>
+
+      <!-- Szene 2a -->
+      <div id="cs-scenario-0">
+        <p class="task-text">Szenario A – Was passiert hier?</p>
+        <div class="scene-wrapper">
+          <canvas id="csCanvas0" height="220"></canvas>
+        </div>
+        <p class="scenario-text" style="margin-top:0.75rem;">
+          Zwei Kolleginnen reden auf Dialekt (L-Varietät) in der Pause über das Wochenende.
+          Plötzlich betritt der Vorgesetzte das Büro – beide wechseln sofort zu Standarddeutsch (H-Varietät).
+          Als er wieder geht, kehren sie zum Dialekt zurück.
+        </p>
+
+        <p class="task-text" style="margin-top:0.5rem;">Vorhersage: Welcher Code-Switching-Typ liegt vor?</p>
+
+        <div class="option-group" id="csOptionGroup0">
+          <button class="option-btn" id="cs0-sit" onclick="checkCS(0,'situational')">
+            Situationales Code-Switching
+          </button>
+          <button class="option-btn" id="cs0-met" onclick="checkCS(0,'metaphorical')">
+            Metaphorisches Code-Switching
+          </button>
+        </div>
+
+        <div class="feedback-box" id="csFeedback0"></div>
+      </div>
+
+      <!-- Szene 2b -->
+      <div id="cs-scenario-1" style="display:none;">
+        <p class="task-text">Szenario B – Was passiert hier?</p>
+        <div class="scene-wrapper">
+          <canvas id="csCanvas1" height="220"></canvas>
+        </div>
+        <p class="scenario-text" style="margin-top:0.75rem;">
+          In einem formellen Teammeeting (H-Varietät) macht Sprecher A einen kurzen Scherz im Dialekt,
+          um die Atmosphäre aufzulockern und Vertrautheit zu signalisieren – danach spricht er
+          wieder Standarddeutsch weiter.
+        </p>
+
+        <p class="task-text" style="margin-top:0.5rem;">Vorhersage: Welcher Code-Switching-Typ liegt vor?</p>
+
+        <div class="option-group" id="csOptionGroup1">
+          <button class="option-btn" id="cs1-sit" onclick="checkCS(1,'situational')">
+            Situationales Code-Switching
+          </button>
+          <button class="option-btn" id="cs1-met" onclick="checkCS(1,'metaphorical')">
+            Metaphorisches Code-Switching
+          </button>
+        </div>
+
+        <div class="feedback-box" id="csFeedback1"></div>
+
+        <div id="reasoningSection" style="display:none;flex-direction:column;gap:0.75rem;margin-top:0.5rem;">
+          <p class="reasoning-label">Warum wechselt Sprecher A hier den Code? Erkläre in einem Satz:</p>
+          <textarea class="reasoning-input" id="reasoningInput" placeholder="Meine Erklärung …"></textarea>
+          <button class="submit-btn" onclick="showSampleSolution()">Lösung anzeigen</button>
+          <div class="sample-solution" id="sampleSolution">
+            <strong>Musterlösung:</strong> Sprecher A wechselt in den Dialekt, obwohl sich die äußere Situation
+            (das Meeting) nicht verändert hat – er nutzt die L-Varietät als kommunikatives Signal für
+            Vertrautheit und Humor. Das ist <span class="concept-tag">metaphorisches Code-Switching</span>
+            nach Gumperz: Der Codewechsel <em>re-definiert</em> die Situation sozial, anstatt auf einen
+            äußeren Kontextwechsel zu reagieren. Dies zeigt, dass Code-Switching kein Zeichen von
+            Sprachinkompetenz ist, sondern eine komplexe, regelgeleitete soziale Strategie.
+          </div>
+        </div>
+      </div>
+
+      <button class="next-btn" id="nextBtn3" onclick="showCompletion()">
+        Simulation abschließen →
+      </button>
+
+    </div>
+  </section>
+
+  <!-- Abschluss -->
+  <div class="completion-panel" id="completionPanel">
+    <h2>Simulation abgeschlossen!</h2>
+    <p>
+      Du hast <strong>Diglossie</strong> (Ferguson, 1959) und <strong>Code-Switching</strong> (Gumperz, 1982) interaktiv erlebt.
+      Varietätenwechsel ist <em>keine</em> Sprachinkompetenz –
+      sondern eine komplexe, regelgeleitete kommunikative Strategie (Poplack, 1980), die soziale Kompetenz erfordert.
+    </p>
+    <p style="margin-top:1rem;">
+      <strong>Merkformeln:</strong><br>
+      Diglossie: Kontext → Varietät (formell → H, informell → L)<br>
+      Code-Switching: situational = externer Trigger | metaphorisch = interner Trigger (Umdeutung der Situation)
+    </p>
+    <p style="margin-top:1rem;font-size:0.88rem;">
+      <strong>Häufiger Irrtum:</strong> »Wer zwischen Varietäten wechselt, kann keine richtig.«
+      Das Gegenteil ist wahr: Diglossiefähigkeit und Code-Switching-Kompetenz sind Zeichen kommunikativer Stärke.
+    </p>
+  </div>
+
+  <!-- Weiterführende Links -->
+  <div class="related-links">
+    <h3>Weitere Simulationen</h3>
+    <ul>
+      <li><a href="/lernmaterialien/lernsimulationen/sprachregister-stilebenen-simulation.html">Sprachregister &amp; Stilebenen – Simulation</a></li>
+      <li><a href="/lernmaterialien/lernsimulationen/bernstein-sprachcodes-simulation.html">Bernstein-Sprachcodes (elaboriert / restringiert)</a></li>
+      <li><a href="/lernmaterialien/lernsimulationen/spracherwerbstheorien-simulation.html">Spracherwerbstheorien – Simulation</a></li>
+    </ul>
+  </div>
+
+</main>
+
+<script>
+/* ===================================================================
+   POLYFILL: roundRect (fehlt in Browsern vor Chrome 99 / Safari 15.4)
+   =================================================================== */
+if (!CanvasRenderingContext2D.prototype.roundRect) {
+  CanvasRenderingContext2D.prototype.roundRect = function(x, y, w, h, r) {
+    const R = Math.min(r, w / 2, h / 2);
+    this.moveTo(x + R, y);
+    this.arcTo(x + w, y,     x + w, y + h, R);
+    this.arcTo(x + w, y + h, x,     y + h, R);
+    this.arcTo(x,     y + h, x,     y,     R);
+    this.arcTo(x,     y,     x + w, y,     R);
+    this.closePath();
+  };
+}
+
+/* ===================================================================
+   DATEN
+   =================================================================== */
+const SCENARIOS = [
+  {
+    icon: '🏫',
+    context: 'Unterrichtsgespräch mit dem Lehrer',
+    desc: 'Du besprichst mit deiner Lehrerin die Hausaufgaben. Sie erklärt dir einen Grammatikfehler.',
+    answer: 'H',
+    correctFb: `Richtig! Ein <span class="concept-tag">Diglossie</span>-Beispiel nach Ferguson: Im schulischen Unterricht wird die <span class="concept-tag">H-Varietät</span> verwendet – sie ist die erwartete, prestigeträchtige Form im formell-öffentlichen Kontext. Die L-Varietät wäre hier unangemessen.`,
+    wrongFb: `Nicht ganz. In einem Unterrichtsgespräch wird die <span class="concept-tag">H-Varietät</span> (formell) verwendet. Das <span class="concept-tag">Diglossie</span>-Modell (Ferguson, 1959) zeigt: formelle, öffentliche Situationen → H. Die L-Varietät ist für informelle, private Kontexte reserviert.`
+  },
+  {
+    icon: '🏠',
+    context: 'Gespräch mit Geschwistern beim Frühstück',
+    desc: 'Du redest entspannt mit deiner jüngeren Schwester beim Frühstück über euren gestrigen Abend.',
+    answer: 'L',
+    correctFb: `Genau! Das private Familiengespräch ist typisch für die <span class="concept-tag">L-Varietät</span> im <span class="concept-tag">Diglossie</span>-Modell. Hier gilt: informell, privat → L. Dialekte, Umgangssprache und familiäre Register gehören zum L-Bereich.`,
+    wrongFb: `Hier wäre die <span class="concept-tag">L-Varietät</span> angemessen. Nach Fergusons <span class="concept-tag">Diglossie</span>-Modell werden informelle, private Situationen wie das Familiengespräch durch die L-Varietät geprägt – nicht durch das formelle H.`
+  },
+  {
+    icon: '🏛️',
+    context: 'Brief an die Behörde schreiben',
+    desc: 'Du schreibst eine offizielle Anfrage an das Einwohnermeldeamt.',
+    answer: 'H',
+    correctFb: `Korrekt! Behördliche Schriftkommunikation ist ein klassischer <span class="concept-tag">H-Varietät</span>-Kontext. Das <span class="concept-tag">Diglossie</span>-Prinzip: formell, schriftlich, öffentlich → H. Umgangssprache wäre hier fehl am Platz.`,
+    wrongFb: `Nein – in einem Behördenbrief wird zwingend die <span class="concept-tag">H-Varietät</span> verwendet. Das <span class="concept-tag">Diglossie</span>-Modell zeigt: Schrift, Behörden und öffentliche Institutionen gehören zum H-Bereich. Die L-Varietät ist für private, informelle Situationen.`
+  },
+  {
+    icon: '📱',
+    context: 'WhatsApp-Nachricht an eine Freundin',
+    desc: 'Du schreibst deiner besten Freundin eine kurze Nachricht, was ihr heute noch unternehmen wollt.',
+    answer: 'L',
+    correctFb: `Sehr gut! Private digitale Kommunikation unter Freunden gehört zur <span class="concept-tag">L-Varietät</span>. Ferguson stellte fest: In diglosischen Gemeinschaften wird die L-Varietät für enge, informelle Kontexte gewählt. Das gilt auch für Chat-Kommunikation – obwohl sie schriftlich ist.`,
+    wrongFb: `Hier passt die <span class="concept-tag">L-Varietät</span>. Auch wenn WhatsApp schriftlich ist: Privater Chat unter Freunden ist informal und eng – typischer L-Kontext im <span class="concept-tag">Diglossie</span>-Modell. Nicht alle Schriftkommunikation ist automatisch H.`
+  }
+];
+
+/* ===================================================================
+   STATE
+   =================================================================== */
+let currentScenario = 0;
+let stage1Answered = 0;
+let csAnswered = [false, false];
+
+/* ===================================================================
+   CANVAS: STAGE 1 – Sprechblasen-Szene
+   =================================================================== */
+const canvas = document.getElementById('sceneCanvas');
+const ctx = canvas.getContext('2d');
+
+let bubbleAnim = { progress: 0, targetColor: '#dbeafe', text: '' };
+let animId = null;
+
+function setupCanvas() {
+  const dpr = window.devicePixelRatio || 1;
+  const rect = canvas.parentElement.getBoundingClientRect();
+  const w = rect.width || 320;
+  canvas.width = w * dpr;
+  canvas.height = 200 * dpr;
+  canvas.style.width = w + 'px';
+  canvas.style.height = '200px';
+  ctx.scale(dpr, dpr);
+  drawScene(w, 'idle', '');
+}
+
+function lerp(a, b, t) { return a + (b - a) * t; }
+
+function hexToRgb(hex) {
+  const r = parseInt(hex.slice(1,3),16);
+  const g = parseInt(hex.slice(3,5),16);
+  const b = parseInt(hex.slice(5,7),16);
+  return {r,g,b};
+}
+
+function drawScene(w, mode, bubbleColor, bubbleText) {
+  const h = 200;
+  ctx.clearRect(0, 0, w, h);
+
+  // Hintergrund
+  const grad = ctx.createLinearGradient(0, 0, 0, h);
+  grad.addColorStop(0, '#e8f0fe');
+  grad.addColorStop(1, '#f0f4fa');
+  ctx.fillStyle = grad;
+  ctx.fillRect(0, 0, w, h);
+
+  // Figur A (links) - Sprecher
+  const figAX = w * 0.22;
+  drawFigure(ctx, figAX, h * 0.72, '#0f5fa8', 'A');
+
+  // Figur B (rechts) - Hörer
+  const figBX = w * 0.78;
+  drawFigure(ctx, figBX, h * 0.72, '#0b8f6a', 'B');
+
+  // Sprechblase
+  if (mode !== 'idle') {
+    drawSpeechBubble(ctx, figAX, h * 0.52, bubbleColor || '#dbeafe', bubbleText || '');
+  } else {
+    drawIdleBubble(ctx, figAX, h * 0.52);
+  }
+
+  // Kontext-Linie
+  ctx.strokeStyle = '#cbd5e1';
+  ctx.lineWidth = 1;
+  ctx.setLineDash([4, 4]);
+  ctx.beginPath();
+  ctx.moveTo(0, h * 0.82);
+  ctx.lineTo(w, h * 0.82);
+  ctx.stroke();
+  ctx.setLineDash([]);
+
+  ctx.fillStyle = '#94a3b8';
+  ctx.font = '11px Inter, sans-serif';
+  ctx.fillText('Situationskontext', 10, h * 0.96);
+}
+
+function drawFigure(ctx, x, y, color, label) {
+  // Körper
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.roundRect(x - 14, y - 22, 28, 36, 4);
+  ctx.fill();
+
+  // Kopf
+  ctx.fillStyle = color;
+  ctx.beginPath();
+  ctx.arc(x, y - 30, 14, 0, Math.PI * 2);
+  ctx.fill();
+
+  // Gesicht (einfach)
+  ctx.fillStyle = '#fff';
+  ctx.font = 'bold 11px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  ctx.fillText(label, x, y - 26);
+  ctx.textAlign = 'left';
+}
+
+function drawSpeechBubble(ctx, x, y, color, text) {
+  const bw = Math.min(160, ctx.canvas.width / (window.devicePixelRatio||1) * 0.42);
+  const bh = 40;
+  const bx = x - bw / 2;
+  const by = y - bh - 12;
+
+  ctx.fillStyle = color;
+  ctx.strokeStyle = '#94a3b8';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.roundRect(bx, by, bw, bh, 8);
+  ctx.fill();
+  ctx.stroke();
+
+  // Pfeil
+  ctx.beginPath();
+  ctx.moveTo(x - 8, by + bh);
+  ctx.lineTo(x, by + bh + 10);
+  ctx.lineTo(x + 8, by + bh);
+  ctx.fillStyle = color;
+  ctx.fill();
+  ctx.strokeStyle = '#94a3b8';
+  ctx.stroke();
+
+  // Text in Blase
+  ctx.fillStyle = '#1e293b';
+  ctx.font = '10px Inter, sans-serif';
+  ctx.textAlign = 'center';
+  const maxW = bw - 16;
+  const words = (text || '').split(' ');
+  let line = '';
+  let lineY = by + 16;
+  for (const word of words) {
+    const test = line + (line ? ' ' : '') + word;
+    if (ctx.measureText(test).width > maxW && line) {
+      ctx.fillText(line, x, lineY);
+      line = word;
+      lineY += 14;
+    } else { line = test; }
+  }
+  if (line) ctx.fillText(line, x, lineY);
+  ctx.textAlign = 'left';
+}
+
+function drawIdleBubble(ctx, x, y) {
+  // Wartepunkte
+  ctx.fillStyle = '#94a3b8';
+  for (let i = 0; i < 3; i++) {
+    ctx.beginPath();
+    ctx.arc(x - 10 + i * 10, y - 30, 4, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+function animateBubble(color, text) {
+  if (animId) cancelAnimationFrame(animId);
+  let t = 0;
+  const w = canvas.parentElement.getBoundingClientRect().width || 320;
+  function step() {
+    t = Math.min(t + 0.05, 1);
+    drawScene(w, 'show', color, text);
+    if (t < 1) animId = requestAnimationFrame(step);
+  }
+  step();
+}
+
+window.addEventListener('resize', () => {
+  setupCanvas();
+  updateSceneForCurrent();
+});
+
+/* ===================================================================
+   CODE-SWITCHING CANVAS
+   =================================================================== */
+function drawCSScene(canvasId, phase) {
+  const cv = document.getElementById(canvasId);
+  if (!cv) return;
+  const dpr = window.devicePixelRatio || 1;
+  const rect = cv.parentElement.getBoundingClientRect();
+  const w = rect.width || 320;
+  cv.width = w * dpr;
+  cv.height = 220 * dpr;
+  cv.style.width = w + 'px';
+  cv.style.height = '220px';
+  const c = cv.getContext('2d');
+  c.scale(dpr, dpr);
+
+  const h = 220;
+  const grad = c.createLinearGradient(0,0,0,h);
+  grad.addColorStop(0,'#f0f9ff');
+  grad.addColorStop(1,'#f5f8fc');
+  c.fillStyle = grad;
+  c.fillRect(0,0,w,h);
+
+  if (phase === 'switch') {
+    // Zeige: L → H → L
+    const phases = [
+      { x: w*0.18, color:'#fef3c7', stroke:'#b45309', label:'L', text:'Hast d\u2019 schon g\u2019h\u00f6rt?' },
+      { x: w*0.5,  color:'#dbeafe', stroke:'#1a56b0', label:'H', text:'Guten Tag, Herr M\u00fcller.' },
+      { x: w*0.82, color:'#fef3c7', stroke:'#b45309', label:'L', text:'Also, wie i\u2019 g\u2019sagt hab\u2026' }
+    ];
+    phases.forEach(ph => {
+      c.fillStyle = ph.color;
+      c.strokeStyle = ph.stroke;
+      c.lineWidth = 2;
+      c.beginPath();
+      c.roundRect(ph.x - 52, 18, 104, 44, 8);
+      c.fill(); c.stroke();
+
+      c.fillStyle = '#1e293b';
+      c.font = 'bold 9px Inter,sans-serif';
+      c.textAlign = 'center';
+      c.fillText(ph.label, ph.x, 34);
+      c.font = '8.5px Inter,sans-serif';
+      const words = ph.text.split(' ');
+      let line = ''; let ly = 46;
+      words.forEach(w2 => {
+        const test = line + (line?' ':'') + w2;
+        if (c.measureText(test).width > 90 && line) { c.fillText(line,ph.x,ly); line=w2; ly+=12; }
+        else line = test;
+      });
+      c.fillText(line, ph.x, ly);
+      c.textAlign = 'left';
+
+      // Figur
+      drawFigureSmall(c, ph.x, h*0.72, ph.stroke);
+    });
+
+    // Pfeile zwischen den Phasen
+    c.strokeStyle = '#94a3b8'; c.lineWidth = 1.5;
+    [[w*0.28, w*0.38],[w*0.62, w*0.72]].forEach(([x1,x2]) => {
+      c.beginPath(); c.moveTo(x1,40); c.lineTo(x2,40); c.stroke();
+      c.beginPath(); c.moveTo(x2,40); c.lineTo(x2-5,35); c.lineTo(x2-5,45); c.closePath(); c.fill();
+    });
+
+    c.fillStyle = '#64748b'; c.font = '10px Inter,sans-serif'; c.textAlign='center';
+    c.fillText('Kontextwechsel: Vorgesetzter betritt den Raum', w/2, h*0.9);
+    c.textAlign='left';
+
+  } else if (phase === 'metaphor') {
+    // Meeting: H mit kurzen L-Momenten
+    c.fillStyle = '#1e293b'; c.font = 'bold 11px Inter,sans-serif';
+    c.fillText('Formelles Meeting (H-Varietät)', 20, 30);
+
+    // Haupt-Blase H
+    c.fillStyle = '#dbeafe'; c.strokeStyle = '#1a56b0'; c.lineWidth = 2;
+    c.beginPath(); c.roundRect(w*0.1, 45, w*0.38, 50, 8); c.fill(); c.stroke();
+    c.fillStyle = '#1a56b0'; c.font = 'bold 9px Inter,sans-serif'; c.textAlign='center';
+    c.fillText('H', w*0.29, 62);
+    c.fillStyle = '#1e293b'; c.font = '9px Inter,sans-serif';
+    c.fillText('Ich schlage vor, dass wir…', w*0.29, 76);
+    c.fillText('(formelles Standarddeutsch)', w*0.29, 88);
+
+    // Code-Switch (L-Blase)
+    c.fillStyle = '#fef3c7'; c.strokeStyle = '#b45309'; c.lineWidth = 2;
+    c.beginPath(); c.roundRect(w*0.52, 45, w*0.38, 50, 8); c.fill(); c.stroke();
+    c.fillStyle = '#b45309'; c.font = 'bold 9px Inter,sans-serif';
+    c.fillText('L (kurz)', w*0.71, 62);
+    c.fillStyle = '#1e293b'; c.font = '9px Inter,sans-serif';
+    c.fillText('"Na ja, g\'schwind g\'sagt:"', w*0.71, 76);
+    c.fillText('(Dialekt-Einschub = Humor)', w*0.71, 88);
+    c.textAlign='left';
+
+    // Figuren
+    drawFigureSmall(c, w*0.3, h*0.78, '#0f5fa8');
+    drawFigureSmall(c, w*0.7, h*0.78, '#0b8f6a');
+
+    c.fillStyle = '#64748b'; c.font = '10px Inter,sans-serif'; c.textAlign='center';
+    c.fillText('Situation ändert sich NICHT – Codewechsel re-definiert sozial', w/2, h*0.95);
+    c.textAlign='left';
+  }
+}
+
+function drawFigureSmall(c, x, y, color) {
+  c.fillStyle = color;
+  c.beginPath(); c.arc(x, y-12, 9, 0, Math.PI*2); c.fill();
+  c.beginPath(); c.roundRect(x-8, y-3, 16, 20, 3); c.fill();
+}
+
+/* ===================================================================
+   STAGE 1 LOGIC
+   =================================================================== */
+const dots1 = document.getElementById('dots1');
+
+function updateSceneForCurrent() {
+  const w = canvas.parentElement.getBoundingClientRect().width || 320;
+  drawScene(w, 'idle', '');
+}
+
+function updateScenario() {
+  const s = SCENARIOS[currentScenario];
+  document.getElementById('contextIcon').textContent = s.icon;
+  document.getElementById('contextText').textContent = s.context;
+  document.getElementById('scenarioDesc').textContent = s.desc;
+  document.getElementById('scenarioCounter').textContent = `Szenario ${currentScenario+1} von 4`;
+  document.getElementById('progressLabel1').textContent = `Szenario ${currentScenario+1} von 4`;
+
+  // Dots aktualisieren
+  for (let i = 0; i < 4; i++) {
+    const d = document.getElementById(`d1-${i}`);
+    d.className = 'dot';
+    if (i < currentScenario) d.classList.add('done');
+    else if (i === currentScenario) d.classList.add('active');
+  }
+
+  // Buttons zurücksetzen
+  ['btn-h','btn-l'].forEach(id => {
+    const b = document.getElementById(id);
+    b.className = 'option-btn';
+    b.disabled = false;
+  });
+
+  document.getElementById('feedbackBox1').className = 'feedback-box';
+  document.getElementById('feedbackBox1').innerHTML = '';
+  document.getElementById('nextBtn1').className = 'next-btn';
+
+  const w = canvas.parentElement.getBoundingClientRect().width || 320;
+  drawScene(w, 'idle', '');
+}
+
+function checkAnswer(choice) {
+  const s = SCENARIOS[currentScenario];
+  const correct = choice === s.answer;
+  const fb = document.getElementById('feedbackBox1');
+
+  // Buttons stylen
+  const btnH = document.getElementById('btn-h');
+  const btnL = document.getElementById('btn-l');
+  btnH.disabled = true;
+  btnL.disabled = true;
+
+  if (choice === 'H') btnH.className = 'option-btn ' + (correct ? 'correct' : 'incorrect');
+  else btnL.className = 'option-btn ' + (correct ? 'correct' : 'incorrect');
+
+  // Richtige Antwort immer markieren
+  if (!correct) {
+    if (s.answer === 'H') btnH.className = 'option-btn correct';
+    else btnL.className = 'option-btn correct';
+  }
+
+  const color = s.answer === 'H' ? '#dbeafe' : '#fef3c7';
+  const bubbleText = s.answer === 'H' ? 'Guten Morgen, Frau Müller.' : 'Hey, wie läuft\'s?';
+  animateBubble(color, bubbleText);
+
+  fb.innerHTML = (correct ? '✓ ' : '✗ ') + (correct ? s.correctFb : s.wrongFb);
+  fb.className = 'feedback-box show ' + (correct ? 'correct-fb' : 'wrong-fb');
+
+  stage1Answered++;
+  document.getElementById('nextBtn1').className = 'next-btn show';
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'stage1_answer', scenario: currentScenario, correct });
+}
+
+function nextScenario() {
+  currentScenario++;
+  if (currentScenario < 4) {
+    updateScenario();
+  } else {
+    // Alle 4 Szenarien durch → Stufe 2 zeigen
+    document.getElementById('stage1').style.display = 'none';
+    document.getElementById('stage3').style.display = 'block';
+    initStage2();
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'stage_complete', stage: 1 });
+  }
+}
+
+/* ===================================================================
+   STAGE 2 LOGIC
+   =================================================================== */
+function initStage2() {
+  setTimeout(() => {
+    drawCSScene('csCanvas0', 'switch');
+  }, 50);
+}
+
+function checkCS(idx, choice) {
+  const correct = (idx === 0 && choice === 'situational') ||
+                  (idx === 1 && choice === 'metaphorical');
+
+  const grp = document.getElementById(`csOptionGroup${idx}`);
+  const btns = grp.querySelectorAll('.option-btn');
+  btns.forEach(b => b.disabled = true);
+
+  const chosenId = idx === 0
+    ? (choice === 'situational' ? 'cs0-sit' : 'cs0-met')
+    : (choice === 'situational' ? 'cs1-sit' : 'cs1-met');
+  const correctId = idx === 0 ? 'cs0-sit' : 'cs1-met';
+
+  document.getElementById(chosenId).className = 'option-btn ' + (correct ? 'correct' : 'incorrect');
+  if (!correct) document.getElementById(correctId).className = 'option-btn correct';
+
+  const fb = document.getElementById(`csFeedback${idx}`);
+
+  if (idx === 0) {
+    fb.innerHTML = correct
+      ? `✓ Richtig! Das ist <span class="concept-tag">situationales Code-Switching</span> (Gumperz, 1982): Ein äußerer Kontextwechsel – das Eintreten des Vorgesetzten – löst den Wechsel von L nach H aus. Die Situation bestimmt den Code.`
+      : `✗ Das ist hier <span class="concept-tag">situationales Code-Switching</span>: Der externe Kontextwechsel (Vorgesetzter erscheint) löst den Varietätenwechsel aus – nicht eine interne kommunikative Absicht des Sprechers.`;
+    fb.className = 'feedback-box show ' + (correct ? 'correct-fb' : 'wrong-fb');
+    csAnswered[0] = true;
+
+    // Expliziter Weiter-Button statt Auto-Timeout
+    const goBtn = document.createElement('button');
+    goBtn.className = 'next-btn show';
+    goBtn.textContent = 'Weiter zu Szenario B →';
+    goBtn.onclick = function() {
+      this.remove();
+      document.getElementById('cs-scenario-1').style.display = 'block';
+      setTimeout(() => drawCSScene('csCanvas1', 'metaphor'), 50);
+    };
+    fb.parentNode.insertBefore(goBtn, fb.nextSibling);
+
+  } else {
+    fb.innerHTML = correct
+      ? `✓ Genau! Das ist <span class="concept-tag">metaphorisches Code-Switching</span> (Gumperz): Die Situation ändert sich nicht – Sprecher A wechselt bewusst in den Dialekt, um Humor und Vertrautheit zu signalisieren. Der Codewechsel re-definiert die soziale Situation.`
+      : `✗ Das ist <span class="concept-tag">metaphorisches Code-Switching</span>: Die äußere Situation (Meeting) bleibt dieselbe – der Sprecher nutzt den Dialekt-Einschub bewusst als kommunikatives Signal für Intimität und Humor.`;
+    fb.className = 'feedback-box show ' + (correct ? 'correct-fb' : 'wrong-fb');
+    csAnswered[1] = true;
+
+    document.getElementById('reasoningSection').style.display = 'flex';
+    document.getElementById('nextBtn3').className = 'next-btn show';
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'stage2_answer', idx, correct });
+  }
+}
+
+function showSampleSolution() {
+  document.getElementById('sampleSolution').className = 'sample-solution show';
+}
+
+function showCompletion() {
+  document.getElementById('stage3').style.display = 'none';
+  document.getElementById('completionPanel').className = 'completion-panel show';
+
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'stage_complete', stage: 2 });
+  window.dataLayer.push({ event: 'simulation_complete', asset: 'diglossie-code-switching-simulation' });
+}
+
+/* ===================================================================
+   INIT
+   =================================================================== */
+(function init() {
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'simulation_start', asset: 'diglossie-code-switching-simulation' });
+  setupCanvas();
+  updateScenario();
+})();
+</script>
+</body>
+</html>

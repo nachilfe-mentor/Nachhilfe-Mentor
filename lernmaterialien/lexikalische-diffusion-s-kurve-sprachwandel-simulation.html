@@ -1,0 +1,1075 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Lexikalische Diffusion & S-Kurve: Sprachwandel-Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation: Sage vorher, wie sich ein neues Wort ausbreitet, und erlebe die S-Kurve der lexikalischen Diffusion live in der Animation.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="lexikalische Diffusion, S-Kurve, Sprachwandel, logistisches Wachstum, Linguistik, Neologismus">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/lexikalische-diffusion-s-kurve-sprachwandel-simulation.html">
+  <meta property="og:title" content="Lexikalische Diffusion & S-Kurve: Sprachwandel-Simulation">
+  <meta property="og:description" content="Interaktive Simulation: Sage vorher, wie sich ein neues Wort ausbreitet, und erlebe die S-Kurve der lexikalischen Diffusion live in der Animation.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/lexikalische-diffusion-s-kurve-sprachwandel-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Lexikalische Diffusion & S-Kurve: Sprachwandel-Simulation",
+  "description":"Interaktive Simulation: Sage vorher, wie sich ein neues Wort ausbreitet, und erlebe die S-Kurve der lexikalischen Diffusion live in der Animation.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/lexikalische-diffusion-s-kurve-sprachwandel-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <!-- Privacy-safe Tracking -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    document.documentElement.setAttribute('data-asset-type', 'simulation');
+    document.documentElement.setAttribute('data-topic-cluster', 'sprachen');
+  </script>
+
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+      --radius: 10px;
+      --shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Header ─────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+    .meta-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+    .chip {
+      font-size: 0.74rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: var(--line);
+      color: var(--muted);
+    }
+
+    /* ── Main layout ─────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Stage panels ─────────────────────────────── */
+    .stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-bottom: 2rem;
+      display: none;
+    }
+    .stage.active { display: block; }
+
+    .stage-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.6rem;
+    }
+    .stage h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      line-height: 1.3;
+    }
+
+    /* ── Context box ──────────────────────────────── */
+    .context-box {
+      background: #f0f6ff;
+      border-left: 3px solid var(--blue);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.93rem;
+      color: var(--ink);
+    }
+    .context-box strong { color: var(--blue); }
+
+    /* ── Canvas area ──────────────────────────────── */
+    .canvas-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 520px) {
+      .canvas-row { grid-template-columns: 1fr; }
+    }
+    .canvas-wrap {
+      background: #f8fafd;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .canvas-label {
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+      padding: 0.5rem 0.25rem;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 220px;
+    }
+
+    /* ── Option buttons ───────────────────────────── */
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    @media (max-width: 400px) {
+      .options-grid { grid-template-columns: 1fr; }
+    }
+    .option-btn {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: var(--radius);
+      padding: 0.85rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 0.15s, background 0.15s;
+      line-height: 1.4;
+    }
+    .option-btn:hover { border-color: var(--blue); background: #f0f6ff; }
+    .option-btn.correct { border-color: var(--green); background: #e8f9f4; color: var(--green); }
+    .option-btn.wrong   { border-color: var(--red);   background: #fdf0ef; color: var(--red);   }
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Feedback box ─────────────────────────────── */
+    .feedback {
+      display: none;
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: 0.92rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.55;
+    }
+    .feedback.show { display: block; }
+    .feedback.correct { background: #e8f9f4; border: 1px solid #8ee4c8; }
+    .feedback.wrong   { background: #fdf0ef; border: 1px solid #f4b5b0; }
+    .feedback .concept-tag {
+      display: inline-block;
+      margin-top: 0.6rem;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+      letter-spacing: 0.04em;
+    }
+
+    /* ── Next button ──────────────────────────────── */
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 0.75rem 1.75rem;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: background 0.15s;
+      margin-top: 0.5rem;
+    }
+    .btn-primary:hover { background: #0a4a83; }
+    .btn-primary:disabled { opacity: 0.5; cursor: default; }
+
+    /* ── Phase diagram (stage 2) ──────────────────── */
+    .phase-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .phase-card {
+      flex: 1;
+      min-width: 140px;
+      background: var(--bg);
+      border: 2px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1rem;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .phase-card:hover { border-color: var(--blue); background: #f0f6ff; }
+    .phase-card.selected { border-color: var(--blue); background: #e8f0fb; }
+    .phase-card.correct  { border-color: var(--green); background: #e8f9f4; }
+    .phase-card.wrong    { border-color: var(--red);   background: #fdf0ef; }
+    .phase-name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 0.3rem;
+    }
+    .phase-pct {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* ── Progress bar ─────────────────────────────── */
+    .progress-bar-wrap {
+      height: 4px;
+      background: var(--line);
+      border-radius: 2px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--cyan);
+      border-radius: 2px;
+      transition: width 0.4s ease;
+    }
+
+    /* ── Formula box ──────────────────────────────── */
+    .formula-box {
+      background: #f7f9fb;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 0.95rem;
+      color: var(--ink);
+      text-align: center;
+    }
+    .formula-box .formula-note {
+      font-family: Inter, sans-serif;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      text-align: left;
+    }
+
+    /* ── Legend ───────────────────────────────────── */
+    .legend {
+      display: flex;
+      gap: 1.25rem;
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .legend-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 0.35rem;
+      vertical-align: middle;
+    }
+
+    /* ── Example items (stage 2) ──────────────────── */
+    .example-item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+      background: var(--panel);
+    }
+    .example-item h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+    .example-item p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .stage-btns {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .stage-opt {
+      background: var(--bg);
+      border: 2px solid var(--line);
+      border-radius: var(--radius);
+      padding: 0.45rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .stage-opt:hover { border-color: var(--blue); }
+    .stage-opt.correct { border-color: var(--green); background: #e8f9f4; color: var(--green); }
+    .stage-opt.wrong   { border-color: var(--red);   background: #fdf0ef; color: var(--red);   }
+
+    /* ── Summary ──────────────────────────────────── */
+    .summary-box {
+      background: linear-gradient(135deg, #e8f0fb, #e8f9f4);
+      border: 1px solid #b4d4f5;
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      text-align: center;
+    }
+    .summary-box h3 { font-size: 1.2rem; margin-bottom: 0.75rem; }
+    .summary-box p  { font-size: 0.92rem; color: var(--ink); margin-bottom: 0.5rem; }
+    .score-badge {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--blue);
+      margin: 0.5rem 0;
+    }
+    .concept-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    .concept-list .concept-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 0.2rem 0.65rem;
+      border-radius: 999px;
+    }
+
+    /* ── Animation status ─────────────────────────── */
+    .anim-status {
+      font-size: 0.85rem;
+      color: var(--muted);
+      text-align: center;
+      min-height: 1.4em;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Linguistik · Sprachwandel</p>
+  <h1>Lexikalische Diffusion: Wie breitet sich Sprachwandel aus?</h1>
+  <p>Sage vorher, wie sich ein neues Wort ausbreitet – und erlebe die <strong>S-Kurve der lexikalischen Diffusion</strong> live in der Animation.</p>
+  <div class="meta-chips">
+    <span class="chip">Klasse 11–13</span>
+    <span class="chip">Linguistik / Germanistik</span>
+    <span class="chip">Abitur &amp; Studium</span>
+    <span class="chip">Interaktive Simulation</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- Progress -->
+  <div class="progress-bar-wrap">
+    <div class="progress-bar-fill" id="progressBar" style="width: 10%"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       STUFE 1 – Vorhersage
+  ═══════════════════════════════════════════════ -->
+  <div class="stage active" id="stage1">
+    <p class="stage-label">Stufe 1 von 3 · Vorhersage</p>
+    <h2>Wie verbreitet sich ein neues Wort?</h2>
+
+    <div class="context-box">
+      <strong>Szenario:</strong> Das englische Adjektiv <em>„cool"</em> taucht in den 1980er Jahren in der informellen deutschen Umgangssprache auf. Im Jahr 1985 verwenden es etwa <strong>5 % der Sprecher*innen</strong> – vor allem junge Menschen in Großstädten.
+    </div>
+
+    <div class="legend">
+      <span><span class="legend-dot" style="background:#9db8d2;"></span>Alte Form (z. B. <em>„toll"</em>)</span>
+      <span><span class="legend-dot" style="background:#0f5fa8;"></span>Neue Form (<em>„cool"</em>)</span>
+    </div>
+
+    <div class="canvas-row">
+      <div class="canvas-wrap">
+        <div class="canvas-label">Sprecher*innen-Gemeinschaft (1985)</div>
+        <canvas id="dotCanvas1" width="300" height="220"></canvas>
+      </div>
+      <div class="canvas-wrap">
+        <div class="canvas-label">Anteil neue Form (%)</div>
+        <canvas id="graphCanvas1" width="300" height="220"></canvas>
+      </div>
+    </div>
+
+    <p style="margin-bottom:1rem; font-size:0.95rem;">
+      <strong>Deine Vorhersage:</strong> Wie wird sich <em>„cool"</em> in den nächsten 30 Jahren in der deutschen Sprache ausbreiten?
+    </p>
+
+    <div class="options-grid" id="opts1">
+      <button class="option-btn" onclick="checkPred('linear')">
+        <strong>(A) Linear</strong><br>
+        <span style="font-weight:400;font-size:0.85rem;">Gleichmäßige Zunahme – jedes Jahr gleich viele neue Sprecher*innen</span>
+      </button>
+      <button class="option-btn" onclick="checkPred('s-kurve')">
+        <strong>(B) S-Kurve</strong><br>
+        <span style="font-weight:400;font-size:0.85rem;">Langsam → rasant → wieder langsam – wie eine liegende S</span>
+      </button>
+      <button class="option-btn" onclick="checkPred('schlagartig')">
+        <strong>(C) Schlagartig</strong><br>
+        <span style="font-weight:400;font-size:0.85rem;">Plötzlicher Sprung: fast alle wechseln gleichzeitig</span>
+      </button>
+      <button class="option-btn" onclick="checkPred('stabil')">
+        <strong>(D) Bleibt Nischenausdruck</strong><br>
+        <span style="font-weight:400;font-size:0.85rem;">Die neue Form setzt sich nicht durch</span>
+      </button>
+    </div>
+
+    <div class="feedback" id="fb1"></div>
+
+    <button class="btn-primary" id="btnToStage2" style="display:none;" onclick="goToStage2()">
+      Animation starten &rarr;
+    </button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       STUFE 2 – Animation & Kurve
+  ═══════════════════════════════════════════════ -->
+  <div class="stage" id="stage2">
+    <p class="stage-label">Stufe 2 von 3 · Modell erleben</p>
+    <h2>Die S-Kurve der lexikalischen Diffusion</h2>
+
+    <div class="context-box">
+      Jeder Punkt steht für eine Sprecherin oder einen Sprecher. Die Animation zeigt, wie sich <em>„cool"</em> von 1985 bis 2015 verbreitet. Beobachte die drei Phasen: <strong>Anlauf → Durchbruch → Abschluss</strong>.
+    </div>
+
+    <div class="formula-box">
+      P(t) = 1 / (1 + e<sup>−k·(t − t₀)</sup>)
+      <div class="formula-note">
+        P(t) = Anteil der Sprecher*innen mit neuer Form &nbsp;|&nbsp; k = Ausbreitungsrate &nbsp;|&nbsp; t₀ = Wendepunkt (50 %)
+      </div>
+    </div>
+
+    <div class="legend">
+      <span><span class="legend-dot" style="background:#9db8d2;"></span>Alte Form</span>
+      <span><span class="legend-dot" style="background:#0f5fa8;"></span>Neue Form</span>
+    </div>
+
+    <div class="canvas-row">
+      <div class="canvas-wrap">
+        <div class="canvas-label" id="dotLabel2">Sprecher*innen-Gemeinschaft</div>
+        <canvas id="dotCanvas2" width="300" height="220"></canvas>
+      </div>
+      <div class="canvas-wrap">
+        <div class="canvas-label">Ausbreitung der neuen Form (%)</div>
+        <canvas id="graphCanvas2" width="300" height="220"></canvas>
+      </div>
+    </div>
+
+    <div class="anim-status" id="animStatus">Bereit – drücke Start, um die Animation zu beginnen.</div>
+
+    <div style="display:flex; gap:0.75rem; flex-wrap:wrap; margin-bottom:1.5rem;">
+      <button class="btn-primary" id="btnStart" onclick="startAnimation()">&#9654; Animation starten</button>
+      <button class="btn-primary" style="background:var(--muted);" onclick="resetAnim()">&#8635; Zurücksetzen</button>
+    </div>
+
+    <!-- Phasen-Erklärung -->
+    <div style="margin-bottom:1.5rem;">
+      <h3 style="font-size:1rem;margin-bottom:0.75rem;">Die drei Phasen der S-Kurve:</h3>
+      <div class="phase-row">
+        <div class="phase-card">
+          <div class="phase-name" style="color:var(--amber);">1. Anlaufphase</div>
+          <div class="phase-pct">0 – 20 % Nutzung</div>
+          <p style="font-size:0.83rem;margin-top:0.5rem;color:var(--muted);">Innovator*innen übernehmen die neue Form. Ausbreitung ist noch langsam.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-name" style="color:var(--blue);">2. Durchbruchphase</div>
+          <div class="phase-pct">20 – 80 % Nutzung</div>
+          <p style="font-size:0.83rem;margin-top:0.5rem;color:var(--muted);">Rasanteste Ausbreitung. Die frühe und späte Mehrheit übernimmt die Form.</p>
+        </div>
+        <div class="phase-card">
+          <div class="phase-name" style="color:var(--green);">3. Abschlussphase</div>
+          <div class="phase-pct">80 – 100 % Nutzung</div>
+          <p style="font-size:0.83rem;margin-top:0.5rem;color:var(--muted);">Nur noch Nachzügler*innen behalten die alte Form. Wandel fast abgeschlossen.</p>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-primary" id="btnToStage3" style="display:none;" onclick="goToStage3()">
+      Weiter zu Stufe 2 &rarr;
+    </button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       STUFE 3 – Anwenden
+  ═══════════════════════════════════════════════ -->
+  <div class="stage" id="stage3">
+    <p class="stage-label">Stufe 2 von 3 · Anwenden</p>
+    <h2>Ordne reale Beispiele der richtigen Phase zu</h2>
+
+    <div class="context-box">
+      Unten siehst du drei reale Sprachveränderungen im Deutschen. Jede befindet sich in einer anderen Phase der S-Kurve. Wähle die richtige Phase aus.
+    </div>
+
+    <!-- Beispiel 1 -->
+    <div class="example-item" id="ex1">
+      <h4>Beispiel 1: „wegen dem" statt „wegen des"</h4>
+      <p>Der Dativ nach der Präposition <em>„wegen"</em> gilt als Fehler – doch im gesprochenen Deutsch liegt die Nutzungsrate bei ca. 15 % (Stand: 2000er Jahre). Die Puristen widerstehen noch.</p>
+      <div class="stage-btns">
+        <button class="stage-opt" onclick="checkEx(1, 'anlauf', this)">Anlaufphase</button>
+        <button class="stage-opt" onclick="checkEx(1, 'durchbruch', this)">Durchbruchphase</button>
+        <button class="stage-opt" onclick="checkEx(1, 'abschluss', this)">Abschlussphase</button>
+      </div>
+      <div class="feedback" id="fb_ex1"></div>
+    </div>
+
+    <!-- Beispiel 2 -->
+    <div class="example-item" id="ex2">
+      <h4>Beispiel 2: „Handy" als deutsches Wort für Mobiltelefon</h4>
+      <p>Das Wort <em>„Handy"</em> (eine Scheinentlehnung – im Englischen sagt man <em>mobile phone</em>) verbreitete sich rasant in den 1990ern und 2000ern. Ca. 60 % der Sprachgemeinschaft nutzen es aktiv (Jahr 2000).</p>
+      <div class="stage-btns">
+        <button class="stage-opt" onclick="checkEx(2, 'anlauf', this)">Anlaufphase</button>
+        <button class="stage-opt" onclick="checkEx(2, 'durchbruch', this)">Durchbruchphase</button>
+        <button class="stage-opt" onclick="checkEx(2, 'abschluss', this)">Abschlussphase</button>
+      </div>
+      <div class="feedback" id="fb_ex2"></div>
+    </div>
+
+    <!-- Beispiel 3 -->
+    <div class="example-item" id="ex3">
+      <h4>Beispiel 3: „du gehst" statt „du gehest"</h4>
+      <p>Die alte Konjugationsform <em>„du gehest"</em> galt bis ins 18. Jahrhundert als korrekt. Um 1900 nutzten über 95 % der Schreibenden bereits die Form „du gehst".</p>
+      <div class="stage-btns">
+        <button class="stage-opt" onclick="checkEx(3, 'anlauf', this)">Anlaufphase</button>
+        <button class="stage-opt" onclick="checkEx(3, 'durchbruch', this)">Durchbruchphase</button>
+        <button class="stage-opt" onclick="checkEx(3, 'abschluss', this)">Abschlussphase</button>
+      </div>
+      <div class="feedback" id="fb_ex3"></div>
+    </div>
+
+    <button class="btn-primary" id="btnToStage4" style="display:none;" onclick="goToStage4()">
+      Auswertung ansehen &rarr;
+    </button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       STUFE 4 – Zusammenfassung
+  ═══════════════════════════════════════════════ -->
+  <div class="stage" id="stage4">
+    <p class="stage-label">Abschluss · Zusammenfassung</p>
+    <h2>Das hast du gelernt</h2>
+
+    <div class="summary-box">
+      <h3>Simulation abgeschlossen!</h3>
+      <div class="score-badge" id="scoreBadge">–</div>
+      <p id="scoreText"></p>
+      <div class="concept-list">
+        <span class="concept-tag">Lexikalische Diffusion</span>
+        <span class="concept-tag">S-Kurve (Logistisches Wachstum)</span>
+        <span class="concept-tag">Anlaufphase</span>
+        <span class="concept-tag">Durchbruchphase</span>
+        <span class="concept-tag">Abschlussphase</span>
+        <span class="concept-tag">Sprachwandel</span>
+      </div>
+    </div>
+
+    <div style="margin-top:2rem; padding:1.25rem 1.5rem; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius);">
+      <h3 style="font-size:1rem;margin-bottom:0.75rem;">Kernaussagen der lexikalischen Diffusion:</h3>
+      <ul style="padding-left:1.25rem; color:var(--muted); font-size:0.92rem; line-height:1.8;">
+        <li>Sprachwandel verläuft <strong>nicht linear</strong> und <strong>nicht plötzlich</strong>, sondern folgt einer <strong>S-Kurve</strong>.</li>
+        <li>Die Formel dahinter ist das <strong>logistische Wachstumsmodell</strong>: P(t) = 1 / (1 + e<sup>−k(t−t₀)</sup>).</li>
+        <li>Innovator*innen, frühe Mehrheit, späte Mehrheit und Nachzügler*innen übernehmen die neue Form zu verschiedenen Zeiten.</li>
+        <li>Das Konzept der lexikalischen Diffusion wurde von William S-Y. Wang (1969) entwickelt und durch Chin-Chuan Chens mathematisches Modell (1972) formalisiert.</li>
+      </ul>
+    </div>
+
+    <div style="margin-top:1.5rem; text-align:center;">
+      <button class="btn-primary" style="background:var(--muted);" onclick="restartAll()">&#8635; Nochmal von vorne</button>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  // ───────────────────────────────────────────────────────────────
+  // Konfiguration
+  // ───────────────────────────────────────────────────────────────
+  const N_DOTS    = 60;    // Anzahl Sprecher-Punkte
+  const K         = 0.15;  // Ausbreitungsrate (Steilheit)
+  const T0        = 50;    // Wendepunkt (50 % Adoption)
+  const T_MAX     = 100;   // Gesamtdauer (entspricht 30 Jahre, 1985–2015)
+  const ANIM_MS   = 3500;  // Animationsdauer in ms
+
+  // ───────────────────────────────────────────────────────────────
+  // Logistische Funktion
+  // ───────────────────────────────────────────────────────────────
+  function logistic(t, k, t0) {
+    return 1 / (1 + Math.exp(-k * (t - t0)));
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Punkt-Positionen (einmalig generiert, zufällig verteilt)
+  // ───────────────────────────────────────────────────────────────
+  const rng = (function() {
+    let s = 42;
+    return function() {
+      s = (s * 1664525 + 1013904223) & 0xffffffff;
+      return (s >>> 0) / 4294967296;
+    };
+  })();
+
+  function makeDots(cx, cy, r) {
+    const dots = [];
+    for (let i = 0; i < N_DOTS; i++) {
+      // Zufällige Adoptionsschwelle u ~ Uniform(0.02, 0.98)
+      const u = 0.02 + rng() * 0.96;
+      // Inverse logistische Funktion: Zeitpunkt der Adoption
+      const adoptT = T0 + (1 / K) * Math.log(u / (1 - u));
+      // Zufällige Position im Kreis-Layout
+      const angle  = rng() * 2 * Math.PI;
+      const dist   = Math.sqrt(rng()) * r;
+      dots.push({
+        x: cx + Math.cos(angle) * dist,
+        y: cy + Math.sin(angle) * dist,
+        adoptT: adoptT,
+        u: u
+      });
+    }
+    return dots;
+  }
+
+  let dots1 = null;  // Dots für Stufe 1 (statisch, t=0)
+  let dots2 = null;  // Dots für Stufe 2 (animiert)
+  let animHandle = null;
+  let animStart  = null;
+  let score = 0;
+  let exAnswered = [false, false, false];
+  let exCorrect  = [false, false, false];
+
+  // ───────────────────────────────────────────────────────────────
+  // Dots zeichnen
+  // ───────────────────────────────────────────────────────────────
+  function drawDots(canvas, dots, t) {
+    const ctx = canvas.getContext('2d');
+    const W   = canvas.width;
+    const H   = canvas.height;
+    ctx.clearRect(0, 0, W, H);
+
+    const cx = W / 2;
+    const cy = H / 2;
+    const r  = Math.min(W, H) * 0.42;
+
+    // Hintergrundkreis
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, 0, 2 * Math.PI);
+    ctx.fillStyle = '#f0f4fa';
+    ctx.fill();
+
+    dots.forEach(d => {
+      const adopted = t >= d.adoptT;
+      ctx.beginPath();
+      ctx.arc(d.x * (W / 300), d.y * (H / 220), 4.5, 0, 2 * Math.PI);
+      ctx.fillStyle = adopted ? '#0f5fa8' : '#9db8d2';
+      ctx.fill();
+    });
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Kurve zeichnen
+  // ───────────────────────────────────────────────────────────────
+  function drawGraph(canvas, tCurrent) {
+    const ctx = canvas.getContext('2d');
+    const W   = canvas.width;
+    const H   = canvas.height;
+    ctx.clearRect(0, 0, W, H);
+
+    const PAD_L = 38, PAD_R = 12, PAD_T = 16, PAD_B = 30;
+    const gW = W - PAD_L - PAD_R;
+    const gH = H - PAD_T - PAD_B;
+
+    // Hintergrund
+    ctx.fillStyle = '#f8fafd';
+    ctx.fillRect(0, 0, W, H);
+
+    // Phasen-Hintergrundfarben
+    // Anlauf: 0–20%
+    const x20 = PAD_L + (T0 + (1/K)*Math.log(0.2/0.8)) / T_MAX * gW;
+    const x80 = PAD_L + (T0 + (1/K)*Math.log(0.8/0.2)) / T_MAX * gW;
+    ctx.fillStyle = 'rgba(184,119,0,0.07)';
+    ctx.fillRect(PAD_L, PAD_T, Math.max(0, x20 - PAD_L), gH);
+    ctx.fillStyle = 'rgba(15,95,168,0.07)';
+    ctx.fillRect(Math.max(PAD_L, x20), PAD_T, Math.max(0, x80 - x20), gH);
+    ctx.fillStyle = 'rgba(11,143,106,0.07)';
+    ctx.fillRect(Math.min(W - PAD_R, x80), PAD_T, Math.max(0, W - PAD_R - x80), gH);
+
+    // Gitterlinien
+    ctx.strokeStyle = '#d8e1ed';
+    ctx.lineWidth   = 1;
+    [0, 25, 50, 75, 100].forEach(pct => {
+      const y = PAD_T + (1 - pct / 100) * gH;
+      ctx.beginPath(); ctx.moveTo(PAD_L, y); ctx.lineTo(W - PAD_R, y); ctx.stroke();
+      ctx.fillStyle   = '#617087';
+      ctx.font        = '9px Inter, sans-serif';
+      ctx.textAlign   = 'right';
+      ctx.fillText(pct + '%', PAD_L - 3, y + 3);
+    });
+
+    // Jahresachse (1985, 2000, 2015)
+    ctx.fillStyle = '#617087';
+    ctx.font      = '9px Inter, sans-serif';
+    ctx.textAlign = 'center';
+    [[0, '1985'], [50, '2000'], [100, '2015']].forEach(([t, lbl]) => {
+      const x = PAD_L + (t / T_MAX) * gW;
+      ctx.fillText(lbl, x, H - 6);
+    });
+
+    // Volle S-Kurve (grau gestrichelt)
+    ctx.beginPath();
+    ctx.strokeStyle = '#d8e1ed';
+    ctx.lineWidth   = 1.5;
+    ctx.setLineDash([4, 3]);
+    for (let i = 0; i <= T_MAX; i++) {
+      const p = logistic(i, K, T0);
+      const x = PAD_L + (i / T_MAX) * gW;
+      const y = PAD_T + (1 - p) * gH;
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    // Bisherige Kurve (blau ausgezogen)
+    if (tCurrent > 0) {
+      ctx.beginPath();
+      ctx.strokeStyle = '#0f5fa8';
+      ctx.lineWidth   = 2.5;
+      for (let i = 0; i <= Math.min(tCurrent, T_MAX); i++) {
+        const p = logistic(i, K, T0);
+        const x = PAD_L + (i / T_MAX) * gW;
+        const y = PAD_T + (1 - p) * gH;
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+
+      // Aktueller Punkt
+      const pCur = logistic(tCurrent, K, T0);
+      const xCur = PAD_L + (Math.min(tCurrent, T_MAX) / T_MAX) * gW;
+      const yCur = PAD_T + (1 - pCur) * gH;
+      ctx.beginPath();
+      ctx.arc(xCur, yCur, 5, 0, 2 * Math.PI);
+      ctx.fillStyle = '#0f5fa8';
+      ctx.fill();
+    }
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Initialisierung Stufe 1
+  // ───────────────────────────────────────────────────────────────
+  function initStage1() {
+    const c1 = document.getElementById('dotCanvas1');
+    const g1 = document.getElementById('graphCanvas1');
+    dots1 = makeDots(150, 110, 95);
+    drawDots(c1, dots1, -1);  // t=-1: nur Startpunkte (5 % adoptiert)
+    // Zeige nur die ersten 3 Punkte als adoptiert (ca. 5 %)
+    const adoptedEarly = dots1.slice(0, 3);
+    adoptedEarly.forEach(d => d.adoptT = -999);
+    drawDots(c1, dots1, 0);
+    drawGraph(g1, 0);
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Vorhersage prüfen
+  // ───────────────────────────────────────────────────────────────
+  function checkPred(choice) {
+    const btns = document.querySelectorAll('#opts1 .option-btn');
+    btns.forEach(b => b.disabled = true);
+
+    const fb = document.getElementById('fb1');
+    fb.classList.add('show');
+
+    const btnTo = document.getElementById('btnToStage2');
+
+    if (choice === 's-kurve') {
+      btns[1].classList.add('correct');
+      fb.classList.add('correct');
+      fb.innerHTML = '&#10003; Richtig! Sprachwandel folgt der <strong>logistischen S-Kurve</strong> – ein Muster, das die Linguisten William S-Y. Wang (1969) und Chin-Chuan Chen (1972) als <em>Lexikalische Diffusion</em> beschrieben haben. Der Wandel beginnt langsam bei Innovator*innen, beschleunigt sich durch die Mehrheit und verlangsamt sich am Ende. <span class="concept-tag">Lexikalische Diffusion</span>';
+      score++;
+      btnTo.style.display = 'inline-block';
+    } else {
+      const msgs = {
+        'linear':     'Nicht ganz. Ein linearer Verlauf würde bedeuten, dass in jedem Jahr gleich viele Sprecher*innen wechseln – das entspricht nicht dem beobachteten Muster. In der Wirklichkeit beginnt die Ausbreitung langsam, beschleunigt sich dann stark und verlangsamt sich am Ende wieder.',
+        'schlagartig':'Nicht ganz. Ein schlagartiger Wandel würde voraussetzen, dass alle Sprecher*innen fast gleichzeitig wechseln. Das widerspricht dem Prinzip der <em>Lexikalischen Diffusion</em>: Sprache breitet sich Person für Person aus, nicht als Massenphänomen.',
+        'stabil':     'Nicht ganz. Tatsächlich ist „cool" heute ein vollständig integrierter Ausdruck im Deutschen – der Wandel hat sich vollzogen. Neue Wörter, die von einer einflussreichen Gruppe übernommen werden, setzen sich in aller Regel durch.'
+      };
+      const idx   = {'linear': 0, 'schlagartig': 2, 'stabil': 3};
+      btns[idx[choice]].classList.add('wrong');
+      btns[1].classList.add('correct');
+      fb.classList.add('wrong');
+      fb.innerHTML = msgs[choice] + ' Die korrekte Antwort ist <strong>(B) S-Kurve</strong>. <span class="concept-tag">Lexikalische Diffusion</span>';
+      btnTo.style.display = 'inline-block';
+    }
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Zu Stufe 2
+  // ───────────────────────────────────────────────────────────────
+  function goToStage2() {
+    document.getElementById('stage1').classList.remove('active');
+    document.getElementById('stage2').classList.add('active');
+    document.getElementById('progressBar').style.width = '40%';
+
+    dots2 = makeDots(150, 110, 95);
+    // Startanteil: 5 % adoptiert (t ≈ -5)
+    drawDots(document.getElementById('dotCanvas2'), dots2, -5);
+    drawGraph(document.getElementById('graphCanvas2'), 0);
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Animation
+  // ───────────────────────────────────────────────────────────────
+  function startAnimation() {
+    document.getElementById('btnStart').disabled = true;
+    animStart = null;
+    requestAnimationFrame(animFrame);
+  }
+
+  function animFrame(ts) {
+    if (!animStart) animStart = ts;
+    const elapsed = ts - animStart;
+    const progress = Math.min(elapsed / ANIM_MS, 1);
+    const t = progress * T_MAX;
+
+    drawDots(document.getElementById('dotCanvas2'), dots2, t);
+    drawGraph(document.getElementById('graphCanvas2'), t);
+
+    const pct = Math.round(logistic(t, K, T0) * 100);
+    const phase = pct < 20 ? 'Anlaufphase' : pct < 80 ? 'Durchbruchphase' : 'Abschlussphase';
+    const yr    = Math.round(1985 + progress * 30);
+    document.getElementById('animStatus').textContent =
+      yr + ' · ' + pct + ' % nutzen „cool" · ' + phase;
+    document.getElementById('dotLabel2').textContent =
+      'Sprecher*innen-Gemeinschaft (' + yr + ')';
+
+    if (progress < 1) {
+      animHandle = requestAnimationFrame(animFrame);
+    } else {
+      document.getElementById('animStatus').textContent = 'Animation abgeschlossen – ca. 92 % nutzen „cool" im Jahr 2015.';
+      document.getElementById('btnToStage3').style.display = 'inline-block';
+    }
+  }
+
+  function resetAnim() {
+    if (animHandle) cancelAnimationFrame(animHandle);
+    animHandle = null;
+    animStart  = null;
+    document.getElementById('btnStart').disabled = false;
+    document.getElementById('btnToStage3').style.display = 'none';
+    dots2 = makeDots(150, 110, 95);
+    drawDots(document.getElementById('dotCanvas2'), dots2, -5);
+    drawGraph(document.getElementById('graphCanvas2'), 0);
+    document.getElementById('animStatus').textContent = 'Bereit – drücke Start, um die Animation zu beginnen.';
+    document.getElementById('dotLabel2').textContent = 'Sprecher*innen-Gemeinschaft';
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Zu Stufe 3
+  // ───────────────────────────────────────────────────────────────
+  function goToStage3() {
+    document.getElementById('stage2').classList.remove('active');
+    document.getElementById('stage3').classList.add('active');
+    document.getElementById('progressBar').style.width = '70%';
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Beispiele prüfen
+  // ───────────────────────────────────────────────────────────────
+  // Richtige Antworten: ex1=anlauf, ex2=durchbruch, ex3=abschluss
+  const exAnswers = ['anlauf', 'durchbruch', 'abschluss'];
+  const exFeedback = [
+    {
+      correct: 'Richtig! Mit ca. 15 % Nutzungsrate befindet sich „wegen dem" noch in der <strong>Anlaufphase</strong>. Innovator*innen im informellen Sprachgebrauch nutzen es, die Mehrheit hält noch an der normativen Form fest.',
+      wrong:   'Nicht ganz. Bei 15 % Nutzung ist die Anlaufphase die richtige Einordnung. Die Durchbruch- und Abschlussphase erfordern einen deutlich höheren Anteil (über 20 % bzw. 80 %).'
+    },
+    {
+      correct: 'Richtig! Bei ~60 % Nutzungsrate ist „Handy" in der <strong>Durchbruchphase</strong> – der steilsten Phase der S-Kurve, in der sich die neue Form von der frühen auf die späte Mehrheit ausbreitet.',
+      wrong:   'Nicht ganz. 60 % Nutzung liegt genau in der Mitte der S-Kurve – das ist die Durchbruchphase. Die Anlaufphase endet bei ~20 %, die Abschlussphase beginnt bei ~80 %.'
+    },
+    {
+      correct: 'Richtig! Mit über 95 % Nutzung ist die Konjugation „du gehst" in der <strong>Abschlussphase</strong>. Nur noch wenige Archaismus-Liebhaber*innen verwenden „du gehest".',
+      wrong:   'Nicht ganz. 95 % Nutzung entspricht der Abschlussphase – der Wandel ist nahezu vollständig. Die alte Form „du gehest" ist aus der Alltagssprache praktisch verschwunden.'
+    }
+  ];
+  const exTags = [
+    '<span class="concept-tag">Lexikalische Diffusion – Anlaufphase</span>',
+    '<span class="concept-tag">Lexikalische Diffusion – Durchbruchphase</span>',
+    '<span class="concept-tag">Lexikalische Diffusion – Abschlussphase</span>'
+  ];
+
+  function checkEx(n, answer, btn) {
+    if (exAnswered[n-1]) return;
+    exAnswered[n-1] = true;
+
+    const container = document.getElementById('ex' + n);
+    container.querySelectorAll('.stage-opt').forEach(b => b.disabled = true);
+
+    const fb  = document.getElementById('fb_ex' + n);
+    const correct = (answer === exAnswers[n-1]);
+    exCorrect[n-1] = correct;
+    if (correct) score++;
+
+    fb.classList.add('show', correct ? 'correct' : 'wrong');
+    fb.innerHTML = (correct ? '&#10003; ' : '&#215; ') +
+      (correct ? exFeedback[n-1].correct : exFeedback[n-1].wrong) +
+      ' ' + exTags[n-1];
+
+    btn.classList.add(correct ? 'correct' : 'wrong');
+    if (!correct) {
+      // Highlight richtige Antwort
+      container.querySelectorAll('.stage-opt').forEach(b => {
+        if (b.textContent.toLowerCase().includes(exAnswers[n-1])) {
+          b.classList.add('correct');
+        }
+      });
+    }
+
+    if (exAnswered.every(Boolean)) {
+      document.getElementById('btnToStage4').style.display = 'inline-block';
+    }
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Auswertung
+  // ───────────────────────────────────────────────────────────────
+  function goToStage4() {
+    document.getElementById('stage3').classList.remove('active');
+    document.getElementById('stage4').classList.add('active');
+    document.getElementById('progressBar').style.width = '100%';
+
+    const total = 4;  // 1 Vorhersage + 3 Beispiele
+    const badge = document.getElementById('scoreBadge');
+    const text  = document.getElementById('scoreText');
+    badge.textContent = score + ' / ' + total;
+    if (score === total) {
+      text.textContent = 'Ausgezeichnet! Du hast alle Aufgaben korrekt beantwortet und die S-Kurve der lexikalischen Diffusion vollständig verstanden.';
+    } else if (score >= 3) {
+      text.textContent = 'Sehr gut! Du hast die meisten Phasen richtig eingeordnet. Lies nochmals die Phasendefinitionen oben, um das Modell zu festigen.';
+    } else {
+      text.textContent = 'Guter Versuch! Geh die Phasen-Erklärungen in Stufe 2 nochmals durch und probiere die Simulation erneut.';
+    }
+  }
+
+  function restartAll() {
+    score = 0;
+    exAnswered = [false, false, false];
+    exCorrect  = [false, false, false];
+
+    document.querySelectorAll('.stage').forEach(s => s.classList.remove('active'));
+    document.getElementById('stage1').classList.add('active');
+    document.getElementById('progressBar').style.width = '10%';
+
+    // Stufe 1 zurücksetzen
+    document.querySelectorAll('#opts1 .option-btn').forEach(b => {
+      b.disabled = false;
+      b.classList.remove('correct', 'wrong');
+    });
+    document.getElementById('fb1').classList.remove('show', 'correct', 'wrong');
+    document.getElementById('fb1').innerHTML = '';
+    document.getElementById('btnToStage2').style.display = 'none';
+
+    // Stufe 3 zurücksetzen
+    for (let i = 1; i <= 3; i++) {
+      const fb = document.getElementById('fb_ex' + i);
+      fb.classList.remove('show', 'correct', 'wrong');
+      fb.innerHTML = '';
+      document.getElementById('ex' + i).querySelectorAll('.stage-opt').forEach(b => {
+        b.disabled = false;
+        b.classList.remove('correct', 'wrong');
+      });
+    }
+    document.getElementById('btnToStage4').style.display = 'none';
+
+    // Stufe 2 zurücksetzen
+    resetAnim();
+
+    initStage1();
+  }
+
+  // ───────────────────────────────────────────────────────────────
+  // Start
+  // ───────────────────────────────────────────────────────────────
+  window.addEventListener('DOMContentLoaded', function() {
+    initStage1();
+  });
+</script>
+</body>
+</html>

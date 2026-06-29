@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Sprachregister und Stilebenen üben: interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Übung zu Sprachregistern und Stilebenen: ordne Texte einer Sprachebene zu und wähle das passende Register für Bewerbung, Unterricht oder Chat.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sprachregister, Stilebenen, Umgangssprache, Standardsprache, Bildungssprache, Fachsprache">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachregister-stilebenen-simulation.html">
+  <meta property="og:title" content="Sprachregister und Stilebenen üben">
+  <meta property="og:description" content="Interaktive Übung zu Sprachregistern und Stilebenen: ordne Texte einer Sprachebene zu und wähle das passende Register für Bewerbung, Unterricht oder Chat.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachregister-stilebenen-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprachregister und Stilebenen üben: interaktive Simulation",
+  "description":"Interaktive Übung zu Sprachregistern und Stilebenen: ordne Texte einer Sprachebene zu und wähle das passende Register für Bewerbung, Unterricht oder Chat.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachregister-stilebenen-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:        #2563eb;
+      --blue-light:  #dbeafe;
+      --green:       #16a34a;
+      --green-light: #dcfce7;
+      --red:         #dc2626;
+      --red-light:   #fee2e2;
+      --amber:       #d97706;
+      --amber-light: #fef3c7;
+      --violet:      #7c3aed;
+      --violet-light:#ede9fe;
+      --slate:       #334155;
+      --slate-light: #f1f5f9;
+      --gray-50:  #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-600: #4b5563;
+      --gray-800: #1f2937;
+      --radius: 12px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ---- Header ---- */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
+    .breadcrumb a { color: var(--gray-600); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ---- Page container ---- */
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* ---- Page title ---- */
+    .page-header {
+      margin-bottom: 2rem;
+    }
+    .page-header h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 0.4rem;
+    }
+    .page-header p {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+    }
+
+    /* ---- Progress dots ---- */
+    .progress-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+    }
+    .step-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-200);
+      transition: background 0.3s;
+    }
+    .step-dot.active { background: var(--blue); }
+    .step-dot.done   { background: var(--green); }
+    .step-label {
+      font-size: 0.82rem;
+      color: var(--gray-600);
+      margin-left: 0.25rem;
+    }
+    .step-sep {
+      flex: 1;
+      height: 2px;
+      background: var(--gray-200);
+      border-radius: 2px;
+    }
+
+    /* ---- Stilskala (animated) ---- */
+    .skala-wrap {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem 1rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+    }
+    .skala-label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--gray-600);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+    .skala-track {
+      position: relative;
+      height: 36px;
+      border-radius: 8px;
+      overflow: visible;
+    }
+    .skala-segments {
+      display: flex;
+      height: 36px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .seg {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: white;
+      text-align: center;
+      padding: 0 0.2rem;
+      line-height: 1.2;
+    }
+    .seg-1 { background: #ea580c; }  /* Vulgär – orange-600 */
+    .seg-2 { background: #d97706; }  /* Umgang – amber-600 */
+    .seg-3 { background: #2563eb; }  /* Standard – blue-600 */
+    .seg-4 { background: #7c3aed; }  /* Bildung – violet-700 */
+    .seg-5 { background: #1e293b; }  /* Fach – slate-800 */
+
+    .skala-marker-wrap {
+      position: relative;
+      height: 16px;
+      margin-top: 4px;
+    }
+    .skala-marker {
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 12px solid var(--gray-800);
+      transform: translateX(-50%);
+      left: 10%;
+      opacity: 0;
+      transition: left 0.6s ease, opacity 0.4s ease;
+    }
+    .skala-marker.visible { opacity: 1; }
+
+    .skala-names {
+      display: flex;
+      margin-top: 0.5rem;
+    }
+    .skala-name {
+      flex: 1;
+      font-size: 0.68rem;
+      color: var(--gray-600);
+      text-align: center;
+    }
+
+    /* ---- Round info ---- */
+    .round-info {
+      font-size: 0.82rem;
+      color: var(--gray-400);
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    /* ---- Context card ---- */
+    .context-card {
+      background: var(--blue-light);
+      border-left: 4px solid var(--blue);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.9rem;
+      color: var(--gray-800);
+    }
+    .context-card strong {
+      display: block;
+      font-size: 0.78rem;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.3rem;
+    }
+
+    /* ---- Text card ---- */
+    .text-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--gray-800);
+      box-shadow: var(--shadow);
+      font-style: italic;
+    }
+
+    /* ---- Question ---- */
+    .question {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 1.25rem;
+    }
+
+    /* ---- Buttons: Stilebene-Auswahl (Stufe 1) ---- */
+    .stilebene-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+    .stilebene-btn {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--gray-200);
+      border-radius: 10px;
+      background: white;
+      cursor: pointer;
+      font-size: 0.92rem;
+      font-weight: 500;
+      color: var(--gray-800);
+      text-align: left;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .stilebene-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: var(--blue-light);
+    }
+    .stilebene-btn .dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .dot-1 { background: #ea580c; }
+    .dot-2 { background: #d97706; }
+    .dot-3 { background: #2563eb; }
+    .dot-4 { background: #7c3aed; }
+    .dot-5 { background: #1e293b; }
+
+    .stilebene-btn.correct {
+      border-color: var(--green);
+      background: var(--green-light);
+    }
+    .stilebene-btn.wrong {
+      border-color: var(--red);
+      background: var(--red-light);
+    }
+    .stilebene-btn:disabled { cursor: default; }
+
+    /* ---- Option cards: Situationsauswahl (Stufe 2) ---- */
+    .options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .option-card {
+      display: block;
+      width: 100%;
+      border: 2px solid var(--gray-200);
+      border-radius: 10px;
+      background: white;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      overflow: hidden;
+      text-align: left;
+      padding: 0;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .option-card:hover:not([data-locked]) {
+      border-color: var(--blue);
+    }
+    .option-card:hover:not([data-locked]) .option-header {
+      background: var(--blue-light);
+    }
+    .option-header {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.6rem 1rem;
+      background: var(--gray-100);
+      border-bottom: 1px solid var(--gray-200);
+      transition: background 0.2s;
+    }
+    .option-badge {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gray-600);
+      background: white;
+      border: 1px solid var(--gray-300);
+      border-radius: 4px;
+      padding: 0.1rem 0.4rem;
+    }
+    .option-label {
+      font-size: 0.78rem;
+      color: var(--gray-500);
+    }
+    .option-text {
+      padding: 0.85rem 1rem;
+      font-size: 0.92rem;
+      line-height: 1.65;
+      color: var(--gray-800);
+      font-style: italic;
+    }
+    .option-card.correct {
+      border-color: var(--green);
+    }
+    .option-card.correct .option-header {
+      background: var(--green-light);
+      border-bottom-color: var(--green);
+    }
+    .option-card.wrong {
+      border-color: var(--red);
+    }
+    .option-card.wrong .option-header {
+      background: var(--red-light);
+      border-bottom-color: var(--red);
+    }
+    .option-card[data-locked] { cursor: default; }
+
+    /* ---- Feedback box ---- */
+    .feedback-box {
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      display: none;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box.correct {
+      background: var(--green-light);
+      border: 1px solid var(--green);
+      color: var(--gray-800);
+    }
+    .feedback-box.wrong {
+      background: var(--red-light);
+      border: 1px solid var(--red);
+      color: var(--gray-800);
+    }
+    .feedback-box strong {
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    /* ---- Next button ---- */
+    .btn-next {
+      display: inline-block;
+      background: var(--blue);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-next:hover { background: #1d4ed8; }
+    .btn-next:disabled { background: var(--gray-400); cursor: default; }
+
+    /* ---- Step separator ---- */
+    .stage-divider {
+      text-align: center;
+      color: var(--gray-400);
+      font-size: 0.85rem;
+      margin: 2.5rem 0 2rem;
+      position: relative;
+    }
+    .stage-divider::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: var(--gray-200);
+    }
+    .stage-divider span {
+      position: relative;
+      background: var(--gray-50);
+      padding: 0 0.75rem;
+    }
+
+    /* ---- Stage title ---- */
+    .stage-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 0.4rem;
+    }
+    .stage-desc {
+      font-size: 0.88rem;
+      color: var(--gray-600);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ---- Score / End screen ---- */
+    .end-screen {
+      display: none;
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .end-screen.show { display: block; }
+    .score-big {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--blue);
+      margin: 0.5rem 0;
+    }
+    .score-sub {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      margin-bottom: 2rem;
+    }
+
+    /* ---- Stilebenen-Übersicht (Endscreen) ---- */
+    .ebenen-overview {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+    .ebene-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      background: var(--gray-50);
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+    }
+    .ebene-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+    }
+    .ebene-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: var(--gray-800);
+    }
+    .ebene-desc {
+      font-size: 0.82rem;
+      color: var(--gray-600);
+    }
+
+    .tip-box {
+      background: var(--blue-light);
+      border: 1px solid var(--blue);
+      border-radius: 8px;
+      padding: 0.9rem 1.1rem;
+      font-size: 0.88rem;
+      color: var(--gray-800);
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .btn-restart {
+      background: var(--gray-800);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-restart:hover { background: var(--gray-600); }
+
+    /* ---- Site nav ---- */
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    /* ---- Util ---- */
+    .hidden { display: none !important; }
+
+    @media (max-width: 480px) {
+      .page { padding: 1rem 0.75rem 2.5rem; }
+      .page-header h1 { font-size: 1.25rem; }
+      .text-card { font-size: 0.92rem; }
+      .skala-wrap { padding: 1rem; }
+      .seg { font-size: 0.6rem; }
+      .skala-name { font-size: 0.6rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header class="site-header">
+  <a href="/" class="site-logo">Nachhilfe Mentor</a>
+  <span class="breadcrumb">
+    &rsaquo; <a href="/lernmaterialien/">Lernmaterialien</a>
+    &rsaquo; Sprachregister
+  </span>
+</header>
+
+<main class="page">
+
+  <div class="page-header">
+    <h1>Sprachregister erkunden</h1>
+    <p>Wer spricht wie – und warum? Lerne, welche Sprachebene in welche Situation passt.</p>
+  </div>
+
+  <!-- Fortschritt -->
+  <div class="progress-bar" id="progressBar">
+    <div class="step-dot active" id="dot1"></div>
+    <div class="step-sep"></div>
+    <div class="step-dot" id="dot2"></div>
+    <span class="step-label" id="stepLabel">Stufe 1 von 2</span>
+  </div>
+
+  <!-- Stilskala (animiert) -->
+  <div class="skala-wrap">
+    <div class="skala-label">Stilskala</div>
+    <div class="skala-track">
+      <div class="skala-segments">
+        <div class="seg seg-1">Vulgär­sprache</div>
+        <div class="seg seg-2">Umgangs­sprache</div>
+        <div class="seg seg-3">Standard­sprache</div>
+        <div class="seg seg-4">Bildungs­sprache</div>
+        <div class="seg seg-5">Fach­sprache</div>
+      </div>
+    </div>
+    <div class="skala-marker-wrap">
+      <div class="skala-marker" id="skalaMarker"></div>
+    </div>
+    <div class="skala-names">
+      <div class="skala-name">sehr informell</div>
+      <div class="skala-name">informell</div>
+      <div class="skala-name">neutral</div>
+      <div class="skala-name">formell</div>
+      <div class="skala-name">spezialisiert</div>
+    </div>
+  </div>
+
+  <!-- ========================== STUFE 1 ========================== -->
+  <div id="stage1">
+    <div class="stage-title">Stufe 1: Register erkennen</div>
+    <div class="stage-desc">Lies den Textausschnitt und ordne ihn der richtigen Sprachebene zu.</div>
+
+    <div id="s1round"></div>
+  </div>
+
+  <!-- ========================== STUFE 2 ========================== -->
+  <div id="stage2" class="hidden">
+    <div class="stage-divider"><span>Stufe 2</span></div>
+    <div class="stage-title">Stufe 2: Passendes Register wählen</div>
+    <div class="stage-desc">Welche Formulierung passt zur beschriebenen Situation?</div>
+
+    <div id="s2round"></div>
+  </div>
+
+  <!-- ========================== ENDSCREEN ========================== -->
+  <div class="end-screen" id="endScreen">
+    <div style="font-size:2rem; margin-bottom:0.5rem;">&#127891;</div>
+    <div style="font-size:1.1rem; font-weight:700; margin-bottom:0.25rem;">Fertig!</div>
+    <div class="score-big" id="scoreDisplay"></div>
+    <div class="score-sub" id="scoreMsg"></div>
+
+    <div class="tip-box">
+      <strong>Merke:</strong> Kein Register ist grundsätzlich „falsch" – jede Sprachebene ist in ihrem Kontext richtig. Wer flexibel zwischen Registern wechseln kann (Code-Switching), zeigt sprachliche Kompetenz.
+    </div>
+
+    <div class="ebenen-overview">
+      <div class="ebene-row">
+        <div class="ebene-dot dot-1" style="background:#ea580c"></div>
+        <div>
+          <div class="ebene-name">Vulgärsprache</div>
+          <div class="ebene-desc">Tabuwörter, sozial stigmatisiert; fast nie angemessen in formellen Kontexten</div>
+        </div>
+      </div>
+      <div class="ebene-row">
+        <div class="ebene-dot" style="background:#d97706"></div>
+        <div>
+          <div class="ebene-name">Umgangssprache</div>
+          <div class="ebene-desc">Verkürzungen, Partikel (halt, mal), informelle Wendungen; passend unter Freunden und in der Familie</div>
+        </div>
+      </div>
+      <div class="ebene-row">
+        <div class="ebene-dot" style="background:#2563eb"></div>
+        <div>
+          <div class="ebene-name">Standardsprache (Hochsprache)</div>
+          <div class="ebene-desc">Grammatisch korrekt, neutral, allgemein verständlich; Schule, Medien, Bewerbungen</div>
+        </div>
+      </div>
+      <div class="ebene-row">
+        <div class="ebene-dot" style="background:#7c3aed"></div>
+        <div>
+          <div class="ebene-name">Bildungssprache</div>
+          <div class="ebene-desc">Nominalstil, Passiv, Fremdwörter; Wissenschaft, Literatur, Festreden</div>
+        </div>
+      </div>
+      <div class="ebene-row">
+        <div class="ebene-dot" style="background:#1e293b"></div>
+        <div>
+          <div class="ebene-name">Fachsprache</div>
+          <div class="ebene-desc">Technische Termini, Definitionen; nur für Eingeweihte; Medizin, Jura, Wissenschaft</div>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn-restart" onclick="restart()">Nochmal üben</button>
+  </div>
+
+</main>
+
+<script>
+// ======================================================
+//  Datenbasis
+// ======================================================
+
+const STILEBENEN = [
+  { id: 1, name: 'Vulgärsprache',    dotClass: 'dot-1', skalaPos: '10%' },
+  { id: 2, name: 'Umgangssprache',   dotClass: 'dot-2', skalaPos: '30%' },
+  { id: 3, name: 'Standardsprache',  dotClass: 'dot-3', skalaPos: '50%' },
+  { id: 4, name: 'Bildungssprache',  dotClass: 'dot-4', skalaPos: '70%' },
+  { id: 5, name: 'Fachsprache',      dotClass: 'dot-5', skalaPos: '90%' },
+];
+
+// Stufe 1 — Register erkennen
+const stage1Data = [
+  {
+    context: 'Nachricht an eine Freundin (WhatsApp)',
+    text: '„Ey, haste heut Abend Zeit? Wir grillen bei mir, wär cool wenn du kommst. Bring halt was mit :)"',
+    correct: 2,
+    feedbackCorrect: 'Richtig – das ist <strong>Umgangssprache</strong>. Typische Merkmale: „haste" (verkürzt aus „hast du"), „wär" (kein -e), „cool", „halt" (Abtönungspartikel) und das fehlende Subjekt im letzten Satz. Umgangssprache ist hier vollkommen angemessen.',
+    feedbackWrong:   'Nicht ganz. Das ist <strong>Umgangssprache</strong>. Erkennungsmerkmale: „haste" (Verkürzung), „halt" (Partikel), „cool" (Slang), keine vollständigen Sätze. Im WhatsApp-Chat unter Freunden ist das die passende Sprachebene.'
+  },
+  {
+    context: 'Zeitungsbericht (überregionale Tageszeitung)',
+    text: '„Die Bundesregierung beschloss gestern, die Fördermittel für erneuerbare Energien im kommenden Haushaltsjahr um 15 Prozent zu erhöhen. Damit soll die Klimaneutralität bis 2045 gesichert werden."',
+    correct: 3,
+    feedbackCorrect: 'Richtig – das ist <strong>Standardsprache</strong>. Vollständige, grammatisch korrekte Sätze, neutrale Lexik, keine Fach- oder Slangbegriffe, allgemein verständlich. Genau die Sprachebene, die Zeitungen für ihr breites Publikum verwenden.',
+    feedbackWrong:   'Hier handelt es sich um <strong>Standardsprache</strong>: sachlich-neutral, grammatisch korrekt, kein Fachvokabular, keine Slangwörter – allgemein verständlich. Das ist der Stil überregionaler Tageszeitungen.'
+  },
+  {
+    context: 'Wissenschaftliche Hausarbeit (Gymnasium, Klasse 11)',
+    text: '„Im vorliegenden Beitrag wird untersucht, inwiefern die Intensivierung anthropogener Treibhausgasemissionen kausal auf die Destabilisierung globaler Klimasysteme zurückzuführen ist. Dabei ist von einer Korrelation zwischen industrieller Expansion und Temperaturanomalie auszugehen."',
+    correct: 4,
+    feedbackCorrect: 'Richtig – das ist <strong>Bildungssprache</strong>. Merkmale: Nominalstil (Intensivierung, Destabilisierung), unpersönliches Passiv (wird untersucht, ist auszugehen), Fremdwörter (anthropogen, kausal, Korrelation, Anomalie) und komplexe Satzkonstruktionen.',
+    feedbackWrong:   'Das ist <strong>Bildungssprache</strong>. Typische Merkmale: starker Nominalstil (Intensivierung, Destabilisierung), Passiv-Konstruktionen (wird untersucht), lateinische Fremdwörter (anthropogen, kausal, Korrelation) und verschachtelte Satzgefüge.'
+  },
+  {
+    context: 'Arztbrief (von Hausarzt an Facharzt)',
+    text: '„Ich überweise Ihnen Herrn Müller, 54 J., zur weiteren Abklärung einer stabilen Angina pectoris. Echokardiographisch zeigte sich eine reduzierte LV-EF von ca. 45 %. Bitte um Koronarangiographie und Beurteilung der Revaskularisationsoption."',
+    correct: 5,
+    feedbackCorrect: 'Richtig – das ist <strong>Fachsprache</strong>. Angina pectoris, LV-EF (Linksventrikuläre Ejektionsfraktion), Koronarangiographie, Revaskularisationsoption – das sind medizinische Termini, die nur Fachleute verstehen. Fachsprache ermöglicht präzise, verlässliche Kommunikation unter Experten.',
+    feedbackWrong:   'Das ist <strong>Fachsprache</strong>. Die medizinischen Termini (Angina pectoris, LV-EF, Koronarangiographie, Revaskularisationsoption) sind auf medizinische Fachleute zugeschnitten. Fachsprache maximiert Präzision – aber nur, wenn alle Beteiligten die Termini kennen.'
+  }
+];
+
+// Stufe 2 — Passendes Register wählen
+const stage2Data = [
+  {
+    situation: 'Du schreibst eine Bewerbung für ein Praktikum bei einem Unternehmen. Wähle den Eröffnungssatz des Anschreibens.',
+    options: [
+      { label: 'Option A', register: 'Umgangssprache',   text: '„Hey, ich würd gern bei euch ein Praktikum machen, klingt echt cool was ihr so macht."' },
+      { label: 'Option B', register: 'Standardsprache',  text: '„Hiermit bewerbe ich mich um ein Praktikum in Ihrem Unternehmen, da mich Ihr Tätigkeitsbereich sehr interessiert."' },
+      { label: 'Option C', register: 'Bildungssprache',  text: '„Unter Bezugnahme auf Ihre vakante Praktikumsstelle erlaubt mir das vorliegende Schreiben, meine Eignung eingehend darzulegen."' },
+    ],
+    correct: 1,
+    feedbackCorrect: 'Richtig! Option B (<strong>Standardsprache</strong>) ist die beste Wahl. Bewerbungen erfordern formelle, aber klare Sprache. Option A (Umgangssprache) wirkt unprofessionell. Option C (Bildungssprache) klingt heute unnatürlich gestelzt und kann negativ auffallen.',
+    feedbackWrong:   'Die beste Wahl ist Option B (<strong>Standardsprache</strong>). Bewerbungen brauchen formelle, verständliche Sprache – nicht zu salopp (A) und nicht übertrieben gestelzt (C). Standardsprache zeigt Kompetenz und Respekt gegenüber dem Empfänger.'
+  },
+  {
+    situation: 'Eine Deutschlehrerin erklärt im Unterricht, was die literarische Epoche der Romantik auszeichnet. Wie sollte sie sprechen?',
+    options: [
+      { label: 'Option A', register: 'Fachsprache',      text: '„Die Romantik manifestiert sich paradigmatisch in ihrer epistemologischen Negation aufklärerischer Rationalitätsdiskurse."' },
+      { label: 'Option B', register: 'Standardsprache',  text: '„Die Romantik reagierte auf die Vernunft-Betonung der Aufklärung: Gefühle, Natur und das Geheimnisvolle rückten in den Mittelpunkt."' },
+      { label: 'Option C', register: 'Umgangssprache',   text: '„Also die Romantik-Leute fanden halt Gefühle total krass und hatten keinen Bock auf die Aufklärung."' },
+    ],
+    correct: 1,
+    feedbackCorrect: 'Richtig! Option B (<strong>Standardsprache</strong>) ist im Schulunterricht die angemessenste Wahl: klar, verständlich und bildungsgerecht. Option A ist zu akademisch und schließt Schüler aus. Option C passt eher in eine Pause als in den Unterricht.',
+    feedbackWrong:   'Die richtige Wahl ist Option B (<strong>Standardsprache</strong>). Im Unterricht muss Sprache für alle Schüler verständlich sein. Fachsprache (A) ist zu exklusiv, Umgangssprache (C) zu ungenau und wenig vorbildlich. Standardsprache trifft die richtige Balance.'
+  },
+  {
+    situation: 'Du erzählst deiner besten Freundin, dass du heute einen wirklich schlechten Tag hattest. Was sagst du?',
+    options: [
+      { label: 'Option A', register: 'Standardsprache',  text: '„Ich möchte dir mitteilen, dass der heutige Tag für mich mit erheblichen Unannehmlichkeiten verbunden war."' },
+      { label: 'Option B', register: 'Bildungssprache',  text: '„Die erlebten Widrigkeiten des heutigen Tages haben mich in einem Zustand der Betrübnis zurückgelassen."' },
+      { label: 'Option C', register: 'Umgangssprache',   text: '„Alter, heute war echt beschissen – lass mich erzählen, was passiert ist…"' },
+    ],
+    correct: 2,
+    feedbackCorrect: 'Richtig! Option C (<strong>Umgangssprache</strong>) ist unter Freunden nicht nur akzeptabel, sondern natürlich und angemessen. Option A klingt distanziert und merkwürdig, Option B geradezu absurd formell. Umgangssprache ist kein schlechtes Deutsch – sie ist der richtige Code für diesen Kontext.',
+    feedbackWrong:   'Die richtige Antwort ist Option C (<strong>Umgangssprache</strong>). Unter engen Freunden ist Umgangssprache der passende Code: authentisch, direkt und warm. Standardsprache (A) oder gar Bildungssprache (B) wirken hier befremdlich und distanziert. Umgangssprache ist kein Fehler!'
+  },
+  {
+    situation: 'Ein Chemiker beschreibt in einer Fachzeitschrift, wie Natrium mit Wasser reagiert.',
+    options: [
+      { label: 'Option A', register: 'Standardsprache',  text: '„Wenn Natrium mit Wasser reagiert, entsteht Natronlauge und Wasserstoff, der sich entzünden kann."' },
+      { label: 'Option B', register: 'Umgangssprache',   text: '„Natrium macht bei Wasser total krass – das knallt und wird gefährlich heiß!"' },
+      { label: 'Option C', register: 'Fachsprache',      text: '„Die Reaktion von Natrium (Na) mit Wasser (H₂O) ergibt Natriumhydroxid (NaOH) und Wasserstoffgas (H₂). Die exotherme Reaktion verläuft nach: 2 Na + 2 H₂O → 2 NaOH + H₂."' },
+    ],
+    correct: 2,
+    feedbackCorrect: 'Richtig! Option C (<strong>Fachsprache</strong>) ist in einer Fachzeitschrift unverzichtbar: chemische Symbole, korrekte Nomenklatur und die ausgeglichene Reaktionsgleichung. Die Präzision schützt vor Missverständnissen. Standardsprache (A) wäre für Laien besser, Umgangssprache (B) für niemanden geeignet.',
+    feedbackWrong:   'In einer Fachzeitschrift ist Option C (<strong>Fachsprache</strong>) notwendig: chemische Symbole, korrekte Nomenklatur und die ausgeglichene Reaktionsgleichung (2 Na + 2 H₂O → 2 NaOH + H₂). Fachsprache garantiert Präzision und Eindeutigkeit unter Wissenschaftlern.'
+  }
+];
+
+// ======================================================
+//  Zustand
+// ======================================================
+
+let stage = 1;
+let round = 0;
+let score = 0;
+let answered = false;
+
+// ======================================================
+//  Hilfsfunktionen
+// ======================================================
+
+function setMarker(posPercent) {
+  const m = document.getElementById('skalaMarker');
+  m.style.left = posPercent;
+  m.classList.add('visible');
+}
+
+function hideMarker() {
+  document.getElementById('skalaMarker').classList.remove('visible');
+}
+
+function updateProgressDots() {
+  const d1 = document.getElementById('dot1');
+  const d2 = document.getElementById('dot2');
+  const lbl = document.getElementById('stepLabel');
+  if (stage === 1) {
+    d1.className = 'step-dot active';
+    d2.className = 'step-dot';
+    lbl.textContent = 'Stufe 1 von 2';
+  } else {
+    d1.className = 'step-dot done';
+    d2.className = 'step-dot active';
+    lbl.textContent = 'Stufe 2 von 2';
+  }
+}
+
+function trackEvent(stepNum, result) {
+  if (window.dataLayer) {
+    window.dataLayer.push({ event: 'sim_step', step: stepNum, result: result });
+  }
+}
+
+// ======================================================
+//  Stufe 1 rendern
+// ======================================================
+
+function renderStage1() {
+  hideMarker();
+  answered = false;
+  const data = stage1Data[round];
+  const globalStep = round + 1;
+
+  const container = document.getElementById('s1round');
+  container.innerHTML = `
+    <div class="round-info">Runde ${round + 1} von ${stage1Data.length}</div>
+    <div class="context-card"><strong>Kontext</strong>${esc(data.context)}</div>
+    <div class="text-card">${esc(data.text)}</div>
+    <div class="question">Zu welcher Sprachebene gehört dieser Text?</div>
+    <div class="stilebene-grid" id="stilGrid"></div>
+    <div class="feedback-box" id="feedbackBox1"></div>
+    <button class="btn-next hidden" id="btnNext1" onclick="nextRound1()">Weiter</button>
+  `;
+
+  const grid = document.getElementById('stilGrid');
+  STILEBENEN.forEach(se => {
+    const btn = document.createElement('button');
+    btn.className = 'stilebene-btn';
+    btn.dataset.id = se.id;
+    btn.innerHTML = `<span class="dot ${se.dotClass}"></span> ${esc(se.name)}`;
+    btn.onclick = () => handleStage1Answer(se.id, data, globalStep);
+    grid.appendChild(btn);
+  });
+}
+
+function handleStage1Answer(chosenId, data, globalStep) {
+  if (answered) return;
+  answered = true;
+
+  const isCorrect = chosenId === data.correct;
+  if (isCorrect) score++;
+  trackEvent(globalStep, isCorrect ? 'correct' : 'incorrect');
+
+  // Stilskala animieren
+  const correctSe = STILEBENEN.find(s => s.id === data.correct);
+  setMarker(correctSe.skalaPos);
+
+  // Buttons einfärben
+  document.querySelectorAll('.stilebene-btn').forEach(btn => {
+    btn.disabled = true;
+    const bid = parseInt(btn.dataset.id, 10);
+    if (bid === data.correct) btn.classList.add('correct');
+    else if (bid === chosenId && !isCorrect) btn.classList.add('wrong');
+  });
+
+  // Feedback
+  const fb = document.getElementById('feedbackBox1');
+  fb.className = `feedback-box show ${isCorrect ? 'correct' : 'wrong'}`;
+  fb.innerHTML = isCorrect ? data.feedbackCorrect : data.feedbackWrong;
+
+  document.getElementById('btnNext1').classList.remove('hidden');
+}
+
+function nextRound1() {
+  round++;
+  if (round < stage1Data.length) {
+    renderStage1();
+  } else {
+    // Zu Stufe 2
+    stage = 2;
+    round = 0;
+    updateProgressDots();
+    document.getElementById('stage1').classList.add('hidden');
+    document.getElementById('stage2').classList.remove('hidden');
+    renderStage2();
+  }
+}
+
+// ======================================================
+//  Stufe 2 rendern
+// ======================================================
+
+function renderStage2() {
+  hideMarker();
+  answered = false;
+  const data = stage2Data[round];
+  const globalStep = stage1Data.length + round + 1;
+
+  const container = document.getElementById('s2round');
+  container.innerHTML = `
+    <div class="round-info">Runde ${round + 1} von ${stage2Data.length}</div>
+    <div class="context-card"><strong>Situation</strong>${esc(data.situation)}</div>
+    <div class="question">Welche Formulierung passt zu dieser Situation?</div>
+    <div class="options-list" id="optList"></div>
+    <div class="feedback-box" id="feedbackBox2"></div>
+    <button class="btn-next hidden" id="btnNext2" onclick="nextRound2()">Weiter</button>
+  `;
+
+  const list = document.getElementById('optList');
+  data.options.forEach((opt, idx) => {
+    const card = document.createElement('button');
+    card.className = 'option-card';
+    card.dataset.idx = idx;
+    card.innerHTML = `
+      <div class="option-header">
+        <span class="option-badge">${esc(opt.label)}</span>
+        <span class="option-label">${esc(opt.register)}</span>
+      </div>
+      <div class="option-text">${esc(opt.text)}</div>
+    `;
+    card.addEventListener('click', () => handleStage2Answer(idx, data, globalStep));
+    list.appendChild(card);
+  });
+}
+
+function handleStage2Answer(chosenIdx, data, globalStep) {
+  if (answered) return;
+  answered = true;
+
+  const isCorrect = chosenIdx === data.correct;
+  if (isCorrect) score++;
+  trackEvent(globalStep, isCorrect ? 'correct' : 'incorrect');
+
+  // Stilskala: zeige Register der richtigen Antwort
+  const correctRegName = data.options[data.correct].register;
+  const correctSe = STILEBENEN.find(s => s.name === correctRegName) ||
+    STILEBENEN.find(s => correctRegName.includes(s.name.split(' ')[0]));
+  if (correctSe) setMarker(correctSe.skalaPos);
+
+  // Cards einfärben
+  document.querySelectorAll('.option-card').forEach(card => {
+    card.dataset.locked = '1';
+    const cidx = parseInt(card.dataset.idx, 10);
+    if (cidx === data.correct) card.classList.add('correct');
+    else if (cidx === chosenIdx && !isCorrect) card.classList.add('wrong');
+  });
+
+  // Feedback
+  const fb = document.getElementById('feedbackBox2');
+  fb.className = `feedback-box show ${isCorrect ? 'correct' : 'wrong'}`;
+  fb.innerHTML = isCorrect ? data.feedbackCorrect : data.feedbackWrong;
+
+  document.getElementById('btnNext2').classList.remove('hidden');
+}
+
+function nextRound2() {
+  round++;
+  if (round < stage2Data.length) {
+    renderStage2();
+  } else {
+    showEndScreen();
+  }
+}
+
+// ======================================================
+//  Endscreen
+// ======================================================
+
+function showEndScreen() {
+  hideMarker();
+  document.getElementById('stage2').classList.add('hidden');
+  const total = stage1Data.length + stage2Data.length;
+  document.getElementById('scoreDisplay').textContent = score + ' / ' + total;
+
+  let msg = '';
+  const pct = score / total;
+  if (pct >= 0.875) msg = 'Ausgezeichnet! Du beherrschst die Sprachebenen sicher.';
+  else if (pct >= 0.625) msg = 'Gut gemacht! Du erkennst die meisten Register richtig.';
+  else msg = 'Weiter üben! Schau dir die Übersicht unten nochmal an.';
+
+  document.getElementById('scoreMsg').textContent = msg;
+
+  const d1 = document.getElementById('dot1');
+  const d2 = document.getElementById('dot2');
+  d1.className = 'step-dot done';
+  d2.className = 'step-dot done';
+
+  document.getElementById('endScreen').classList.add('show');
+}
+
+// ======================================================
+//  Restart
+// ======================================================
+
+function restart() {
+  stage = 1;
+  round = 0;
+  score = 0;
+  answered = false;
+  hideMarker();
+  document.getElementById('endScreen').classList.remove('show');
+  document.getElementById('stage1').classList.remove('hidden');
+  document.getElementById('stage2').classList.add('hidden');
+  updateProgressDots();
+  renderStage1();
+}
+
+// ======================================================
+//  XSS-safe escape
+// ======================================================
+
+function esc(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+// ======================================================
+//  Init
+// ======================================================
+
+updateProgressDots();
+renderStage1();
+</script>
+</body>
+</html>

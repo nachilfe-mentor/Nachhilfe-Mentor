@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Minimalpaare und Phonemkontrast im Deutschen üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Minimalpaare erkennen und Phonemkontrast verstehen: interaktive Simulation, die Wortpaare in animierte Phoneme zerlegt, deine Vorhersage prüft und Allophone erklärt.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Minimalpaare, Phonemkontrast, Phonologie, Allophone, Deutsch Linguistik, distinktive Phoneme">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/minimalpaare-phonemkontrast-deutsch-simulation.html">
+  <meta property="og:title" content="Minimalpaare und Phonemkontrast üben">
+  <meta property="og:description" content="Minimalpaare erkennen und Phonemkontrast verstehen: interaktive Simulation, die Wortpaare in animierte Phoneme zerlegt, deine Vorhersage prüft und Allophone erklärt.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/minimalpaare-phonemkontrast-deutsch-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Minimalpaare und Phonemkontrast im Deutschen üben",
+  "description":"Minimalpaare erkennen und Phonemkontrast verstehen: interaktive Simulation, die Wortpaare in animierte Phoneme zerlegt, deine Vorhersage prüft und Allophone erklärt.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/minimalpaare-phonemkontrast-deutsch-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    .site-header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 1rem 1.5rem;
+    }
+    .site-header h1 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--blue);
+    }
+    .site-header p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+    }
+
+    /* Layout */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* Theorie-Box */
+    .theory-box {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--blue);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .theory-box h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.75rem;
+    }
+    .theory-box p {
+      font-size: 0.9rem;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+    .theory-box p:last-child { margin-bottom: 0; }
+    .theory-box .example {
+      background: var(--bg);
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      margin-top: 0.75rem;
+      font-family: monospace;
+      font-size: 0.95rem;
+    }
+
+    /* Fortschritt */
+    .progress-bar-wrap {
+      margin-bottom: 1.5rem;
+    }
+    .progress-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .progress-bar {
+      height: 6px;
+      background: var(--line);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 99px;
+      transition: width 0.4s ease;
+    }
+
+    /* Karte */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .card h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    /* Wortpaar-Anzeige */
+    .word-pair {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .word-display {
+      text-align: center;
+    }
+    .word-display .word-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .word-display .word-text {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: var(--ink);
+      letter-spacing: 0.02em;
+    }
+    .word-vs {
+      font-size: 1.1rem;
+      color: var(--muted);
+      font-weight: 600;
+    }
+
+    /* Phonem-Kette */
+    .phoneme-chain-wrap {
+      margin-top: 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .phoneme-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .phoneme-label {
+      font-size: 0.75rem;
+      color: var(--muted);
+      width: 2.8rem;
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .phoneme-tile {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 2.8rem;
+      height: 2.8rem;
+      border-radius: 8px;
+      font-family: monospace;
+      font-size: 1.05rem;
+      font-weight: 700;
+      background: var(--bg);
+      border: 2px solid var(--line);
+      color: var(--ink);
+      transition: background 0.4s, border-color 0.4s, transform 0.3s;
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    .phoneme-tile.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .phoneme-tile.match {
+      background: #d1fae5;
+      border-color: #34d399;
+      color: #065f46;
+    }
+    .phoneme-tile.diff {
+      background: #fef3c7;
+      border-color: #f59e0b;
+      color: #78350f;
+      animation: pulse 0.6s ease 0.6s 2;
+    }
+    .phoneme-tile.diff.revealed {
+      background: #fee2e2;
+      border-color: var(--red);
+      color: var(--red);
+    }
+    @keyframes pulse {
+      0%   { transform: scale(1); }
+      50%  { transform: scale(1.12); }
+      100% { transform: scale(1); }
+    }
+
+    /* Aufgabe Stufe 1 */
+    .task-section {
+      margin-bottom: 1.5rem;
+    }
+    .task-question {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+    .count-choices {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .btn-choice {
+      padding: 0.55rem 1.2rem;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+      color: var(--ink);
+    }
+    .btn-choice:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+    .btn-choice.selected {
+      border-color: var(--blue);
+      background: var(--blue);
+      color: #fff;
+    }
+    .btn-choice.correct {
+      border-color: var(--green);
+      background: var(--green);
+      color: #fff;
+    }
+    .btn-choice.wrong {
+      border-color: var(--red);
+      background: #fee2e2;
+      color: var(--red);
+    }
+
+    .yesno-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .btn-yesno {
+      padding: 0.6rem 1.5rem;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+      color: var(--ink);
+    }
+    .btn-yesno:hover {
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+    .btn-yesno.selected { border-color: var(--blue); background: var(--blue); color: #fff; }
+    .btn-yesno.correct  { border-color: var(--green); background: var(--green); color: #fff; }
+    .btn-yesno.wrong    { border-color: var(--red); background: #fee2e2; color: var(--red); }
+
+    /* Stufennavigation */
+    .btn-primary {
+      display: inline-block;
+      padding: 0.7rem 1.8rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 0.5rem;
+    }
+    .btn-primary:hover { background: #0d4f8a; }
+    .btn-primary:disabled {
+      background: var(--line);
+      color: var(--muted);
+      cursor: not-allowed;
+    }
+
+    /* Feedback-Box */
+    .feedback-box {
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      margin-top: 1.25rem;
+      display: none;
+      font-size: 0.92rem;
+    }
+    .feedback-box.correct {
+      background: #d1fae5;
+      border: 1px solid #34d399;
+      color: #065f46;
+      display: block;
+    }
+    .feedback-box.wrong {
+      background: #fee2e2;
+      border: 1px solid #fca5a5;
+      color: #7f1d1d;
+      display: block;
+    }
+    .feedback-box.info {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      color: #1e3a5f;
+      display: block;
+    }
+    .feedback-box strong {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /* Konzeptfrage Stufe 2 */
+    .concept-choices {
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      margin-top: 0.75rem;
+    }
+    .btn-concept {
+      padding: 0.7rem 1rem;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      font-size: 0.9rem;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      color: var(--ink);
+    }
+    .btn-concept:hover { border-color: var(--blue); }
+    .btn-concept.selected { border-color: var(--blue); background: #eff6ff; }
+    .btn-concept.correct { border-color: var(--green); background: #d1fae5; color: #065f46; }
+    .btn-concept.wrong   { border-color: var(--red); background: #fee2e2; color: #7f1d1d; }
+
+    /* Ergebnis-Karte */
+    .result-card {
+      background: var(--panel);
+      border: 2px solid var(--blue);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      display: none;
+    }
+    .result-card.show { display: block; }
+    .result-card h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.75rem;
+    }
+    .result-score {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--ink);
+      margin: 1rem 0;
+    }
+    .result-score span {
+      font-size: 1.4rem;
+      color: var(--muted);
+    }
+    .result-summary {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* Abschnitt-Trennlinie */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 1.5rem 0;
+    }
+
+    /* Stufen-Badge */
+    .phase-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.65rem;
+      border-radius: 99px;
+      margin-bottom: 0.75rem;
+    }
+    .phase-badge.phase-1 { background: #eff6ff; color: var(--blue); }
+    .phase-badge.phase-2 { background: #f5f3ff; color: var(--purple); }
+
+    /* Hinweis */
+    .hint-text {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    /* Responsiv */
+    @media (max-width: 480px) {
+      main { padding: 1rem 0.85rem 2.5rem; }
+      .card { padding: 1.25rem 1rem; }
+      .phoneme-tile { width: 2.4rem; height: 2.4rem; font-size: 0.9rem; }
+      .word-display .word-text { font-size: 1.5rem; }
+      .result-score { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+<script>window.dataLayer = window.dataLayer || [];</script>
+
+<header class="site-header">
+  <h1>Minimalpaare &amp; Phonemkontrast</h1>
+  <p>Phonologie · Klasse 10–13 · Linguistik</p>
+</header>
+
+<main>
+
+  <!-- Theorie-Box -->
+  <div class="theory-box">
+    <h2>Was sind Minimalpaare?</h2>
+    <p>
+      Ein <strong>Minimalpaar</strong> sind zwei Wörter, die sich an <em>genau einer Phonem-Position</em> unterscheiden —
+      und die dadurch verschiedene Bedeutungen haben. Dieser Unterschied beweist, dass die beiden Laute
+      <strong>distinktive Phoneme</strong> (bedeutungsunterscheidend) sind.
+    </p>
+    <p>
+      Bedingung: gleiche Anzahl an Phonemen, Unterschied nur an einer Stelle, beide Wörter mit Bedeutung.
+    </p>
+    <div class="example">
+      /Bahn/ vs. /Wahn/ → 1 Unterschied (Anlaut /b/ vs. /v/) → <strong>Minimalpaar ✓</strong><br>
+      /Hut/ vs. /Hund/ → Phonemanzahl verschieden → <strong>kein Minimalpaar ✗</strong>
+    </div>
+  </div>
+
+  <!-- Fortschrittsanzeige -->
+  <div class="progress-bar-wrap" id="progressWrap">
+    <div class="progress-meta">
+      <span id="progressLabel">Runde 1 von 8</span>
+      <span id="scoreLabel">0 richtig</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-bar-fill" id="progressFill" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- Haupt-Karte -->
+  <div class="card" id="mainCard">
+
+    <!-- Stufe 1 -->
+    <div id="stage1">
+      <span class="phase-badge phase-1">Stufe 1 – Einschätzen</span>
+
+      <div class="word-pair" id="wordPair">
+        <div class="word-display">
+          <div class="word-label">Wort 1</div>
+          <div class="word-text" id="word1Text">—</div>
+        </div>
+        <div class="word-vs">vs.</div>
+        <div class="word-display">
+          <div class="word-label">Wort 2</div>
+          <div class="word-text" id="word2Text">—</div>
+        </div>
+      </div>
+
+      <div class="task-section">
+        <p class="task-question">Vorhersage: Wie viele Phoneme unterscheiden sich?</p>
+        <div class="count-choices" id="countChoices">
+          <button class="btn-choice option-btn" data-val="0">0</button>
+          <button class="btn-choice option-btn" data-val="1">1</button>
+          <button class="btn-choice option-btn" data-val="2">2</button>
+          <button class="btn-choice option-btn" data-val="3">3 oder mehr</button>
+        </div>
+      </div>
+
+      <div class="task-section">
+        <p class="task-question">Vorhersage: Ist das ein Minimalpaar?</p>
+        <div class="yesno-row" id="yesnoChoices">
+          <button class="btn-yesno option-btn" data-val="ja">Ja</button>
+          <button class="btn-yesno option-btn" data-val="nein">Nein</button>
+        </div>
+      </div>
+
+      <button class="btn-primary" id="btnSubmit1" disabled>Prüfen &amp; Animation starten</button>
+
+      <!-- Phonem-Kette (erscheint nach Submit) -->
+      <div class="phoneme-chain-wrap" id="phonemeChainWrap" style="display:none;">
+        <div class="phoneme-row" id="row1">
+          <span class="phoneme-label">Wort 1:</span>
+        </div>
+        <div class="phoneme-row" id="row2">
+          <span class="phoneme-label">Wort 2:</span>
+        </div>
+        <p class="hint-text" id="diffHint"></p>
+      </div>
+
+      <div class="feedback-box" id="feedback1"></div>
+    </div>
+
+    <hr class="section-divider" id="divider2" style="display:none;">
+
+    <!-- Stufe 2 -->
+    <div id="stage2" style="display:none;">
+      <span class="phase-badge phase-2">Stufe 2 – Vertiefung</span>
+      <p class="task-question" id="conceptQuestion"></p>
+      <div class="concept-choices" id="conceptChoices"></div>
+      <div class="feedback-box" id="feedback2"></div>
+      <button class="btn-primary" id="btnNext" style="display:none; margin-top:1rem;">Nächste Runde →</button>
+    </div>
+
+  </div>
+
+  <!-- Ergebnis-Karte -->
+  <div class="result-card" id="resultCard">
+    <h2>Simulation abgeschlossen!</h2>
+    <div class="result-score" id="resultScore">—</div>
+    <p class="result-summary" id="resultSummary"></p>
+    <button class="btn-primary" id="btnRestart">Nochmal versuchen</button>
+  </div>
+
+</main>
+
+<script>
+// ─── Datensätze ───────────────────────────────────────────────────────────────
+const rounds = [
+  {
+    w1: "Bein", w2: "Pein",
+    p1: ["/b/", "/aɪ/", "/n/"],
+    p2: ["/p/", "/aɪ/", "/n/"],
+    diffCount: 1,
+    isMinimal: true,
+    diffPositions: [0],
+    phase1Feedback: {
+      correct: "Richtig! Nur der Anlaut unterscheidet sich: <strong>/b/</strong> in „Bein" vs. <strong>/p/</strong> in „Pein".",
+      wrong:   "Nicht ganz. Schau genau hin: Beide Wörter haben 3 Phoneme, und nur das erste Phonem weicht ab."
+    },
+    conceptQuestion: "Was beweist dieses Minimalpaar?",
+    conceptChoices: [
+      { text: "/b/ und /p/ sind distinktive Phoneme im Deutschen (bedeutungsunterscheidend).", correct: true },
+      { text: "/b/ und /p/ sind Allophone desselben Phonems.", correct: false },
+      { text: "„Bein" und „Pein" klingen ähnlich — das zeigt, dass beide Wörter dieselbe Bedeutung haben.", correct: false }
+    ],
+    conceptName: "Phonemischer Kontrast: /b/ vs. /p/",
+    conceptFeedback: {
+      correct: "<strong>Genau!</strong> Das Minimalpaar /Bein/ – /Pein/ beweist, dass /b/ und /p/ im Deutschen distinktive Phoneme sind. Sie stehen in Minimalopposition und unterscheiden Bedeutungen. Das ist das Kernprinzip der phonologischen Kontrastanalyse (Trubetzkoy 1939).",
+      wrong:   "<strong>Nicht korrekt.</strong> Allophone wären Varianten <em>desselben</em> Phonems in komplementärer Distribution. /b/ und /p/ können aber dieselbe Position besetzen und Bedeutung unterscheiden — sie sind daher <em>distinktive Phoneme</em>, keine Allophone."
+    }
+  },
+  {
+    w1: "See", w2: "Tee",
+    p1: ["/z/", "/eː/"],
+    p2: ["/t/", "/eː/"],
+    diffCount: 1,
+    isMinimal: true,
+    diffPositions: [0],
+    phase1Feedback: {
+      correct: "Genau! Nur der Anlaut unterscheidet sich: <strong>/z/</strong> vs. <strong>/t/</strong>. Beide Wörter haben 2 Phoneme.",
+      wrong:   "Nicht ganz. „See" (/z/, /eː/) und „Tee" (/t/, /eː/) unterscheiden sich nur im ersten Phonem."
+    },
+    conceptQuestion: "Was schließen wir aus diesem Minimalpaar?",
+    conceptChoices: [
+      { text: "/z/ und /t/ sind distinktive Phoneme im Deutschen.", correct: true },
+      { text: "„See" und „Tee" reimmen sich, also sind sie keine Minimalpaare.", correct: false },
+      { text: "/z/ ist ein Allophon von /t/ nach Vokalen.", correct: false }
+    ],
+    conceptName: "Phonemischer Kontrast: /z/ vs. /t/",
+    conceptFeedback: {
+      correct: "<strong>Richtig!</strong> Minimalpaare beweisen phonemischen Kontrast. Dass sich /z/ und /t/ an derselben Position (Anlaut) befinden und Bedeutung unterscheiden, belegt ihre phonemische Eigenständigkeit.",
+      wrong:   "<strong>Falsch.</strong> Reime zeigen, dass der Reim-Teil identisch ist — das ist genau das, was ein Minimalpaar kennzeichnet! /z/ ist kein Allophon von /t/; beide sind eigenständige Phoneme im deutschen Inventar."
+    }
+  },
+  {
+    w1: "lang", w2: "Rang",
+    p1: ["/l/", "/a/", "/ŋ/"],
+    p2: ["/r/", "/a/", "/ŋ/"],
+    diffCount: 1,
+    isMinimal: true,
+    diffPositions: [0],
+    phase1Feedback: {
+      correct: "Korrekt! Nur der Anlaut weicht ab: <strong>/l/</strong> vs. <strong>/r/</strong>. Die Endung /a/ + /ŋ/ ist identisch.",
+      wrong:   "Schau nochmal: „lang" und „Rang" haben dieselbe Lautstruktur bis auf den Anlaut /l/ vs. /r/."
+    },
+    conceptQuestion: "Was belegt dieses Minimalpaar?",
+    conceptChoices: [
+      { text: "/l/ und /r/ sind distinktive Phoneme im Deutschen — kein Allophon-Paar.", correct: true },
+      { text: "/l/ und /r/ sind Allophone des Liquids, da sie sich ähnlich klingen.", correct: false },
+      { text: "Das Minimalpaar zeigt nur, dass beide Wörter aus 3 Buchstaben bestehen.", correct: false }
+    ],
+    conceptName: "Phonemischer Kontrast: /l/ vs. /r/",
+    conceptFeedback: {
+      correct: "<strong>Sehr gut!</strong> Im Deutschen (wie im Englischen) sind /l/ und /r/ distinktive Phoneme — sie bilden echte Minimalpaare. In manchen anderen Sprachen (z. B. Japanisch) sind [l] und [r] hingegen Allophone desselben Phonems!",
+      wrong:   "<strong>Nicht korrekt.</strong> Im Deutschen sind /l/ und /r/ eigenständige Phoneme, keine Allophone. Allophone wären sie nur, wenn sie sich gegenseitig ausschließen (komplementäre Distribution). Hier können beide im Anlaut stehen und Bedeutung unterscheiden."
+    }
+  },
+  {
+    w1: "Hut", w2: "Hund",
+    p1: ["/h/", "/uː/", "/t/"],
+    p2: ["/h/", "/ʊ/", "/n/", "/t/"],
+    diffCount: 99, // Sonderfall: ungleiche Länge
+    isMinimal: false,
+    diffPositions: [],
+    phase1Feedback: {
+      correct: "Genau! „Hut" hat 3 Phoneme (/h/, /uː/, /t/), „Hund" hat 4 (/h/, /ʊ/, /n/, /t/). Unterschiedliche Phonemanzahl → kein Minimalpaar möglich!",
+      wrong:   "Nicht ganz. Zähle die Phoneme genau: „Hut" = 3 Phoneme, „Hund" = 4 Phoneme. Da die Anzahl abweicht, kann es kein Minimalpaar sein."
+    },
+    conceptQuestion: "Warum ist „Hut"/„Hund" kein Minimalpaar?",
+    conceptChoices: [
+      { text: "Die Wörter haben unterschiedlich viele Phoneme — die Bedingung gleicher Länge ist verletzt.", correct: true },
+      { text: "Die Wörter klingen zu ähnlich, um ein Minimalpaar zu bilden.", correct: false },
+      { text: "Die Wörter beginnen mit demselben Phonem, deshalb können sie kein Minimalpaar sein.", correct: false }
+    ],
+    conceptName: "Kein Minimalpaar: unterschiedliche Phonemanzahl",
+    conceptFeedback: {
+      correct: "<strong>Richtig!</strong> Für ein Minimalpaar müssen beide Wörter dieselbe Anzahl an Phonemen haben. Hier hat „Hut" 3 Phoneme, „Hund" 4 — der Unterschied liegt nicht nur in einem ausgetauschten Phonem, sondern auch in einer zusätzlichen Einheit /n/.",
+      wrong:   "<strong>Falsch.</strong> Die Ähnlichkeit oder der gleiche Anfangslaut sind kein Ausschlusskriterium. Entscheidend ist: Minimalpaare brauchen gleich viele Phoneme, und der Unterschied muss genau an einer Position liegen. „Hut" hat 3, „Hund" hat 4 Phoneme."
+    }
+  },
+  {
+    w1: "bieten", w2: "bitten",
+    p1: ["/b/", "/iː/", "/t/", "/ə/", "/n/"],
+    p2: ["/b/", "/ɪ/",  "/t/", "/ə/", "/n/"],
+    diffCount: 1,
+    isMinimal: true,
+    diffPositions: [1],
+    phase1Feedback: {
+      correct: "Ausgezeichnet! Der Unterschied liegt im zweiten Phonem: <strong>/iː/</strong> (langer gespannter Vokal) vs. <strong>/ɪ/</strong> (kurzer ungespannter Vokal).",
+      wrong:   "Schau genauer hin: „bieten" = /b, iː, t, ə, n/, „bitten" = /b, ɪ, t, ə, n/. Nur Position 2 weicht ab — Vokalquantität und -qualität!"
+    },
+    conceptQuestion: "Was zeigt das Minimalpaar „bieten"/„bitten"?",
+    conceptChoices: [
+      { text: "/iː/ und /ɪ/ sind distinktive Phoneme im Deutschen (Vokalquantität/Qualität ist bedeutungsunterscheidend).", correct: true },
+      { text: "Lange und kurze Vokale sind im Deutschen nie bedeutungsunterscheidend.", correct: false },
+      { text: "Der Unterschied ist nur orthographisch (Schreibung mit einem/zwei t), nicht phonologisch.", correct: false }
+    ],
+    conceptName: "Phonemischer Kontrast: /iː/ vs. /ɪ/ (Vokalquantität)",
+    conceptFeedback: {
+      correct: "<strong>Perfekt!</strong> Im Deutschen sind Vokalquantität und -qualität bedeutungsunterscheidend. /iː/ (gespannt, lang) und /ɪ/ (ungespannt, kurz) bilden ein phonemisches Oppositionspaar — belegt durch Minimalpaare wie bieten/bitten, Miete/Mitte.",
+      wrong:   "<strong>Falsch.</strong> Im Deutschen sind Vokalunterschiede (lang/kurz, gespannt/ungespannt) phonemisch relevant. Die Schreibung mit doppeltem Konsonant spiegelt tatsächlich die Kürze des Vokals wider — der Unterschied ist phonologisch real."
+    }
+  },
+  {
+    w1: "Beet", w2: "Bett",
+    p1: ["/b/", "/eː/", "/t/"],
+    p2: ["/b/", "/ɛ/",  "/t/"],
+    diffCount: 1,
+    isMinimal: true,
+    diffPositions: [1],
+    phase1Feedback: {
+      correct: "Richtig! Phonem 2 unterscheidet sich: <strong>/eː/</strong> (lang, geschlossen) vs. <strong>/ɛ/</strong> (kurz, offen).",
+      wrong:   "Schau auf die Vokale: „Beet" hat /eː/ (langes e), „Bett" hat /ɛ/ (kurzes, offenes e). Nur diese eine Position weicht ab."
+    },
+    conceptQuestion: "Was belegt das Minimalpaar „Beet"/„Bett"?",
+    conceptChoices: [
+      { text: "/eː/ und /ɛ/ sind distinktive Phoneme im Deutschen.", correct: true },
+      { text: "/eː/ und /ɛ/ sind Allophone in freier Variation.", correct: false },
+      { text: "Das Minimalpaar gilt nicht, weil Beet zwei e hat und Bett nur eines.", correct: false }
+    ],
+    conceptName: "Phonemischer Kontrast: /eː/ vs. /ɛ/",
+    conceptFeedback: {
+      correct: "<strong>Sehr gut!</strong> /eː/ und /ɛ/ sind im Deutschen eigenständige Phoneme. Das Minimalpaar Beet/Bett beweist phonemischen Kontrast. Weitere Beispiele: beten/betten, Seele/Säle.",
+      wrong:   "<strong>Falsch.</strong> „Freie Variation" würde bedeuten, man könnte /eː/ und /ɛ/ austauschen ohne Bedeutungsänderung — das stimmt hier offensichtlich nicht (Beet ≠ Bett!). Die Schreibung mit zwei e ist Orthographie, nicht Phonologie."
+    }
+  },
+  {
+    w1: "ich", w2: "ach",
+    p1: ["/ɪ/", "/ç/"],
+    p2: ["/a/", "/x/"],
+    diffCount: 2,
+    isMinimal: false,
+    diffPositions: [0, 1],
+    phase1Feedback: {
+      correct: "Richtig! Es gibt <em>zwei</em> Unterschiede: Vokal (/ɪ/ vs. /a/) und Frikativ ([ç] vs. [x]). Außerdem ist [ç] kein eigenständiges Phonem im Deutschen — es ist ein Allophon!",
+      wrong:   "Zähle alle Unterschiede: Position 1 (Vokal /ɪ/ vs. /a/) und Position 2 (Frikativ [ç] vs. [x]). Das sind zwei Unterschiede — und [ç] / [x] sind obendrein Allophone desselben Phonems."
+    },
+    conceptQuestion: "Warum ist „ich"/„ach" kein Minimalpaar — obwohl [ç] und [x] verschieden klingen?",
+    conceptChoices: [
+      { text: "[ç] und [x] sind Allophone desselben Phonems /x/ in komplementärer Distribution: [ç] nach Vordervokalen, [x] nach Hintervokalen.", correct: true },
+      { text: "[ç] und [x] sind vollständig distinktive Phoneme, „ich"/„ach" ist ein Minimalpaar.", correct: false },
+      { text: "Das Wortpaar scheitert nur an der unterschiedlichen Vokalanzahl.", correct: false }
+    ],
+    conceptName: "Kein Minimalpaar: Allophonie [ç] – [x]",
+    conceptFeedback: {
+      correct: "<strong>Ausgezeichnet!</strong> [ç] (Ich-Laut) und [x] (Ach-Laut) sind im Deutschen <em>Allophone</em> desselben zugrunde liegenden Phonems /x/. Sie stehen in komplementärer Distribution: [ç] erscheint nach Vordervokalen und Konsonanten (ich, nicht, durch), [x] nach Hintervokalen (Bach, Koch, Buch). Da sie sich gegenseitig ausschließen, können sie kein Minimalpaar bilden — ein klassisches Lehrbeispiel!",
+      wrong:   "<strong>Nicht korrekt.</strong> [ç] und [x] sind Allophone desselben Phonems /x/ in komplementärer Distribution. Außerdem hat das Wortpaar auch zwei Laut-Unterschiede (Vokal + Frikativ), was schon allein ein Minimalpaar ausschließt."
+    }
+  },
+  {
+    w1: "reisen", w2: "reißen",
+    p1: ["/r/", "/aɪ/", "/z/", "/ə/", "/n/"],
+    p2: ["/r/", "/aɪ/", "/s/", "/ə/", "/n/"],
+    diffCount: 1,
+    isMinimal: true,
+    diffPositions: [2],
+    phase1Feedback: {
+      correct: "Richtig! Nur Phonem 3 weicht ab: <strong>/z/</strong> (stimmhafter Frikativ in „reisen") vs. <strong>/s/</strong> (stimmloser Frikativ in „reißen").",
+      wrong:   "Schau genau: /r, aɪ, z, ə, n/ vs. /r, aɪ, s, ə, n/ — nur Position 3 unterscheidet sich, /z/ vs. /s/."
+    },
+    conceptQuestion: "Was belegt das Minimalpaar „reisen"/„reißen"?",
+    conceptChoices: [
+      { text: "/z/ und /s/ sind distinktive Phoneme im Deutschen — Stimmhaftigkeit ist bedeutungsunterscheidend.", correct: true },
+      { text: "/z/ und /s/ sind identisch und werden nur in der Schreibung unterschieden.", correct: false },
+      { text: "Das Paar ist kein Minimalpaar, weil „reißen" mit ß geschrieben wird.", correct: false }
+    ],
+    conceptFeedback: {
+      correct: "<strong>Perfekt!</strong> Das Stimmhaftigkeitsmerkmal (voiced vs. voiceless) ist im Deutschen phonemisch. /z/ (stimmhafter alveolärer Frikativ) und /s/ (stimmloser alveolärer Frikativ) sind distinktive Phoneme — bewiesen durch Minimalpaare wie reisen/reißen. Die Schreibung ß zeigt historisch das /ss/ an, ist aber für die Phonologie irrelevant.",
+      wrong:   "<strong>Falsch.</strong> /z/ und /s/ sind phonetisch und phonologisch verschieden: /z/ ist stimmhaft, /s/ ist stimmlos. Die Schreibung (s vs. ß) ist orthographische Konvention, nicht phonologisches Argument."
+    }
+  }
+];
+
+// ─── Zustand ──────────────────────────────────────────────────────────────────
+let currentRound = 0;
+let score = 0;
+let selectedCount = null;
+let selectedYesNo = null;
+let phase = 1;
+
+// ─── DOM-Refs ─────────────────────────────────────────────────────────────────
+const word1Text       = document.getElementById("word1Text");
+const word2Text       = document.getElementById("word2Text");
+const countChoices    = document.getElementById("countChoices");
+const yesnoChoices    = document.getElementById("yesnoChoices");
+const btnSubmit1      = document.getElementById("btnSubmit1");
+const phonemeChainWrap= document.getElementById("phonemeChainWrap");
+const row1            = document.getElementById("row1");
+const row2            = document.getElementById("row2");
+const diffHint        = document.getElementById("diffHint");
+const feedback1       = document.getElementById("feedback1");
+const divider2        = document.getElementById("divider2");
+const phase2El        = document.getElementById("stage2");
+const conceptQuestion = document.getElementById("conceptQuestion");
+const conceptChoices  = document.getElementById("conceptChoices");
+const feedback2       = document.getElementById("feedback2");
+const btnNext         = document.getElementById("btnNext");
+const progressFill    = document.getElementById("progressFill");
+const progressLabel   = document.getElementById("progressLabel");
+const scoreLabel      = document.getElementById("scoreLabel");
+const mainCard        = document.getElementById("mainCard");
+const resultCard      = document.getElementById("resultCard");
+const resultScore     = document.getElementById("resultScore");
+const resultSummary   = document.getElementById("resultSummary");
+const btnRestart      = document.getElementById("btnRestart");
+
+// ─── Runde laden ──────────────────────────────────────────────────────────────
+function loadRound(idx) {
+  const r = rounds[idx];
+  phase = 1;
+  selectedCount = null;
+  selectedYesNo = null;
+
+  // Wörter
+  word1Text.textContent = r.w1;
+  word2Text.textContent = r.w2;
+
+  // Buttons zurücksetzen
+  countChoices.querySelectorAll(".btn-choice").forEach(b => {
+    b.classList.remove("selected","correct","wrong");
+    b.disabled = false;
+  });
+  yesnoChoices.querySelectorAll(".btn-yesno").forEach(b => {
+    b.classList.remove("selected","correct","wrong");
+    b.disabled = false;
+  });
+
+  // Feedback verstecken
+  feedback1.className = "feedback-box";
+  feedback1.innerHTML = "";
+
+  // Phonemkette verstecken
+  phonemeChainWrap.style.display = "none";
+  row1.innerHTML = '<span class="phoneme-label">Wort 1:</span>';
+  row2.innerHTML = '<span class="phoneme-label">Wort 2:</span>';
+  diffHint.textContent = "";
+
+  // Stufe 2 verstecken
+  divider2.style.display = "none";
+  phase2El.style.display = "none";
+  feedback2.className = "feedback-box";
+  feedback2.innerHTML = "";
+  btnNext.style.display = "none";
+
+  // Submit deaktivieren
+  btnSubmit1.disabled = true;
+
+  // Fortschritt
+  progressLabel.textContent = `Runde ${idx + 1} von ${rounds.length}`;
+  scoreLabel.textContent = `${score} richtig`;
+  progressFill.style.width = `${(idx / rounds.length) * 100}%`;
+}
+
+// ─── Auswahl-Handler ──────────────────────────────────────────────────────────
+countChoices.querySelectorAll(".btn-choice").forEach(btn => {
+  btn.addEventListener("click", () => {
+    countChoices.querySelectorAll(".btn-choice").forEach(b => b.classList.remove("selected"));
+    btn.classList.add("selected");
+    selectedCount = btn.dataset.val;
+    checkSubmitEnabled();
+  });
+});
+
+yesnoChoices.querySelectorAll(".btn-yesno").forEach(btn => {
+  btn.addEventListener("click", () => {
+    yesnoChoices.querySelectorAll(".btn-yesno").forEach(b => b.classList.remove("selected"));
+    btn.classList.add("selected");
+    selectedYesNo = btn.dataset.val;
+    checkSubmitEnabled();
+  });
+});
+
+function checkSubmitEnabled() {
+  btnSubmit1.disabled = !(selectedCount !== null && selectedYesNo !== null);
+}
+
+// ─── Stufe 1 auswerten ────────────────────────────────────────────────────────
+btnSubmit1.addEventListener("click", () => {
+  const r = rounds[currentRound];
+  btnSubmit1.disabled = true;
+
+  // Phonemanzahl-Auswertung
+  let countCorrect = false;
+  const correctCountVal = (r.diffCount === 99 || r.diffCount >= 3) ? "3" : String(r.diffCount);
+  // Auswahl vorab prüfen, bevor CSS-Klassen geändert werden
+  countCorrect = (selectedCount === correctCountVal);
+
+  countChoices.querySelectorAll(".btn-choice").forEach(btn => {
+    btn.disabled = true;
+    const v = btn.dataset.val;
+    const isCorrectBtn = (v === correctCountVal);
+    const wasSelected = btn.classList.contains("selected");
+    btn.classList.remove("selected");
+    if (isCorrectBtn) {
+      btn.classList.add("correct");
+    } else if (wasSelected) {
+      btn.classList.add("wrong");
+    }
+  });
+
+  // Ja/Nein-Auswertung
+  const correctYN = r.isMinimal ? "ja" : "nein";
+  const ynCorrect = selectedYesNo === correctYN;
+  yesnoChoices.querySelectorAll(".btn-yesno").forEach(btn => {
+    const wasSelected = btn.classList.contains("selected");
+    btn.disabled = true;
+    btn.classList.remove("selected");
+    if (btn.dataset.val === correctYN) {
+      btn.classList.add("correct");
+    } else if (wasSelected) {
+      btn.classList.add("wrong");
+    }
+  });
+
+  const bothCorrect = countCorrect && ynCorrect;
+
+  // Feedback
+  const fbEl = feedback1;
+  fbEl.className = "feedback-box " + (bothCorrect ? "correct" : "wrong");
+  fbEl.innerHTML = r.phase1Feedback[bothCorrect ? "correct" : "wrong"];
+
+  // Phonem-Animation starten
+  phonemeChainWrap.style.display = "block";
+  animatePhonemes(r);
+
+  // Score aktualisieren
+  if (bothCorrect) {
+    score++;
+    scoreLabel.textContent = `${score} richtig`;
+  }
+
+  // Stufe 2 nach kurzem Delay anzeigen
+  setTimeout(() => {
+    divider2.style.display = "block";
+    phase2El.style.display = "block";
+    buildPhase2(r);
+  }, 1800);
+});
+
+// ─── Phonem-Animation ─────────────────────────────────────────────────────────
+function animatePhonemes(r) {
+  row1.innerHTML = '<span class="phoneme-label">Wort 1:</span>';
+  row2.innerHTML = '<span class="phoneme-label">Wort 2:</span>';
+
+  const maxLen = Math.max(r.p1.length, r.p2.length);
+  const tiles1 = [];
+  const tiles2 = [];
+
+  for (let i = 0; i < r.p1.length; i++) {
+    const t = document.createElement("span");
+    t.className = "phoneme-tile";
+    t.textContent = r.p1[i];
+    row1.appendChild(t);
+    tiles1.push(t);
+  }
+  for (let i = 0; i < r.p2.length; i++) {
+    const t = document.createElement("span");
+    t.className = "phoneme-tile";
+    t.textContent = r.p2[i];
+    row2.appendChild(t);
+    tiles2.push(t);
+  }
+
+  // Tiles einblenden
+  tiles1.forEach((t, i) => {
+    setTimeout(() => { t.classList.add("visible"); }, i * 100);
+  });
+  tiles2.forEach((t, i) => {
+    setTimeout(() => { t.classList.add("visible"); }, i * 100 + 80);
+  });
+
+  // Nach Einblenden: Matches/Diffs markieren
+  setTimeout(() => {
+    const compareLen = Math.min(r.p1.length, r.p2.length);
+    for (let i = 0; i < compareLen; i++) {
+      if (r.p1[i] === r.p2[i]) {
+        tiles1[i].classList.add("match");
+        tiles2[i].classList.add("match");
+      } else {
+        tiles1[i].classList.add("diff");
+        tiles2[i].classList.add("diff");
+        setTimeout(() => {
+          tiles1[i].classList.add("revealed");
+          tiles2[i].classList.add("revealed");
+        }, 700);
+      }
+    }
+
+    // Überschüssige Tiles (bei ungleicher Länge)
+    for (let i = compareLen; i < tiles1.length; i++) {
+      tiles1[i].classList.add("diff", "revealed");
+    }
+    for (let i = compareLen; i < tiles2.length; i++) {
+      tiles2[i].classList.add("diff", "revealed");
+    }
+
+    // Hinweis
+    if (r.isMinimal) {
+      const pos = r.diffPositions[0] + 1;
+      diffHint.textContent = `1 Unterschied an Position ${pos} → Minimalpaar`;
+    } else if (r.diffCount === 99) {
+      diffHint.textContent = `Wörter haben unterschiedlich viele Phoneme → kein Minimalpaar`;
+    } else {
+      diffHint.textContent = `${r.diffCount} Unterschiede → kein Minimalpaar`;
+    }
+  }, maxLen * 100 + 300);
+}
+
+// ─── Stufe 2 aufbauen ─────────────────────────────────────────────────────────
+function buildPhase2(r) {
+  conceptQuestion.textContent = r.conceptQuestion;
+  conceptChoices.innerHTML = "";
+  r.conceptChoices.forEach((c, idx) => {
+    const btn = document.createElement("button");
+    btn.className = "btn-concept";
+    btn.textContent = c.text;
+    btn.addEventListener("click", () => {
+      if (btn.classList.contains("correct") || btn.classList.contains("wrong")) return;
+      conceptChoices.querySelectorAll(".btn-concept").forEach(b => {
+        b.classList.remove("selected");
+        b.disabled = true;
+      });
+      btn.classList.add("selected");
+
+      // Alle auswerten
+      conceptChoices.querySelectorAll(".btn-concept").forEach((b, i) => {
+        if (r.conceptChoices[i].correct) b.classList.add("correct");
+        else if (b === btn && !r.conceptChoices[i].correct) b.classList.add("wrong");
+      });
+
+      const isCorrect = c.correct;
+      feedback2.className = "feedback-box " + (isCorrect ? "correct" : "wrong");
+      const conceptName = r.conceptName || "Phonemischer Kontrast";
+      feedback2.innerHTML = `<span class="concept-tag" style="display:inline-block;background:#6b21a8;color:#fff;font-size:0.78rem;font-weight:600;border-radius:99px;padding:0.2rem 0.75rem;margin-bottom:0.6rem;">${conceptName}</span><br>` + r.conceptFeedback[isCorrect ? "correct" : "wrong"];
+
+      btnNext.style.display = "inline-block";
+    });
+    conceptChoices.appendChild(btn);
+  });
+  feedback2.className = "feedback-box";
+  feedback2.innerHTML = "";
+}
+
+// ─── Weiter ───────────────────────────────────────────────────────────────────
+btnNext.addEventListener("click", () => {
+  currentRound++;
+  if (currentRound >= rounds.length) {
+    showResult();
+  } else {
+    loadRound(currentRound);
+    mainCard.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+});
+
+// ─── Ergebnis anzeigen ────────────────────────────────────────────────────────
+function showResult() {
+  mainCard.style.display = "none";
+  document.getElementById("progressWrap").style.display = "none";
+  resultCard.classList.add("show");
+
+  const pct = Math.round((score / rounds.length) * 100);
+  resultScore.innerHTML = `${score} <span>/ ${rounds.length}</span>`;
+
+  let summary = "";
+  if (pct >= 88) summary = "Hervorragend! Du beherrschst die Minimalpaar-Methode sicher.";
+  else if (pct >= 62) summary = "Gut gemacht! Mit etwas Übung wirst du die Allophon-Phonem-Unterscheidung noch sicherer.";
+  else summary = "Noch etwas Übung nötig — besonders beim Zählen von Phonemen (nicht Buchstaben!) und beim Allophon-Begriff.";
+
+  resultSummary.textContent = summary;
+  resultCard.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+// ─── Neustart ─────────────────────────────────────────────────────────────────
+btnRestart.addEventListener("click", () => {
+  currentRound = 0;
+  score = 0;
+  resultCard.classList.remove("show");
+  mainCard.style.display = "block";
+  document.getElementById("progressWrap").style.display = "block";
+  loadRound(0);
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// ─── Starten ──────────────────────────────────────────────────────────────────
+loadRound(0);
+</script>
+
+</body>
+</html>

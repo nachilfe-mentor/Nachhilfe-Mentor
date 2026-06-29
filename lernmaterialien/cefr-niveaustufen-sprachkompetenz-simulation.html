@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>CEFR-Niveaustufen A1 bis C2 verstehen – interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Ordne Texte den CEFR-Niveaustufen A1 bis C2 zu, löse Szenarien und prüfe Sprach-Mythen – mit sofortigem Feedback zu den Kann-Beschreibungen des GER.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="CEFR Niveaustufen, GER A1 bis C2, Sprachkompetenz, Sprachzertifikat, Kann-Beschreibungen, Sprachen lernen">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/cefr-niveaustufen-sprachkompetenz-simulation.html">
+  <meta property="og:title" content="CEFR-Niveaustufen A1 bis C2 verstehen">
+  <meta property="og:description" content="Ordne Texte den CEFR-Niveaustufen A1 bis C2 zu, löse Szenarien und prüfe Sprach-Mythen – mit sofortigem Feedback zu den Kann-Beschreibungen des GER.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/cefr-niveaustufen-sprachkompetenz-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"CEFR-Niveaustufen A1 bis C2 verstehen – interaktive Simulation",
+  "description":"Ordne Texte den CEFR-Niveaustufen A1 bis C2 zu, löse Szenarien und prüfe Sprach-Mythen – mit sofortigem Feedback zu den Kann-Beschreibungen des GER.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/cefr-niveaustufen-sprachkompetenz-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    :root {
+      --a1: #22c55e;
+      --a2: #84cc16;
+      --b1: #eab308;
+      --b2: #f97316;
+      --c1: #3b82f6;
+      --c2: #6366f1;
+      --text: #111827;
+      --grau: #6b7280;
+      --grau-hell: #f3f4f6;
+      --rand: #e5e7eb;
+      --weiss: #ffffff;
+      --radius: 10px;
+      --blau: #2563EB;
+      --blau-hell: #DBEAFE;
+      --gruen: #16A34A;
+      --gruen-hell: #DCFCE7;
+      --rot: #DC2626;
+      --rot-hell: #FEE2E2;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f9fafb;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* ── Header ── */
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #EEF2FF;
+      color: #4338CA;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+
+    h1 {
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .lead {
+      color: var(--grau);
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ── Fortschrittsbalken ── */
+    .progress-wrap {
+      margin-bottom: 2rem;
+    }
+
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--grau);
+      margin-bottom: 0.4rem;
+    }
+
+    .progress-bar-bg {
+      background: var(--rand);
+      border-radius: 999px;
+      height: 8px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: var(--blau);
+      border-radius: 999px;
+      transition: width 0.4s ease;
+      width: 0%;
+    }
+
+    /* ── Stufenleiter (visuelles Modell) ── */
+    .leiter-wrap {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .leiter-titel {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--grau);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .leiter {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.5rem;
+      height: 120px;
+      justify-content: center;
+    }
+
+    .stufe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+      flex: 1;
+      max-width: 90px;
+      cursor: default;
+      transition: transform 0.2s;
+    }
+
+    .stufe-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--grau);
+      transition: color 0.3s;
+    }
+
+    .stufe-block {
+      width: 100%;
+      border-radius: 6px 6px 0 0;
+      transition: all 0.4s ease;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.65rem;
+      font-weight: 600;
+      color: rgba(0,0,0,0.5);
+      opacity: 0.3;
+    }
+
+    .stufe-block.erreicht {
+      opacity: 1;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .stufe-block.aktiv {
+      opacity: 1;
+      box-shadow: 0 0 0 3px var(--blau);
+      animation: pulsieren 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulsieren {
+      0%, 100% { box-shadow: 0 0 0 3px var(--blau); }
+      50% { box-shadow: 0 0 0 6px rgba(37,99,235,0.3); }
+    }
+
+    .figur {
+      font-size: 1.2rem;
+      position: absolute;
+      top: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      transition: all 0.5s ease;
+      display: none;
+    }
+
+    .stufe-block.aktiv .figur { display: block; }
+
+    /* ── Aufgaben-Karte ── */
+    .karte {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .karte-titel {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--grau);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .text-probe {
+      background: #f8fafc;
+      border-left: 4px solid var(--rand);
+      border-radius: 0 6px 6px 0;
+      padding: 1rem 1.25rem;
+      font-style: italic;
+      color: #374151;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .frage {
+      font-weight: 600;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+    }
+
+    /* ── Level-Buttons ── */
+    .level-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .level-btn {
+      flex: 1 1 calc(16.6% - 0.6rem);
+      min-width: 56px;
+      padding: 0.6rem 0.4rem;
+      border: 2px solid var(--rand);
+      border-radius: 8px;
+      background: var(--weiss);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      text-align: center;
+    }
+
+    .level-btn:hover { border-color: var(--blau); color: var(--blau); }
+    .level-btn.richtig { background: var(--gruen-hell); border-color: var(--gruen); color: var(--gruen); }
+    .level-btn.falsch  { background: var(--rot-hell); border-color: var(--rot); color: var(--rot); }
+    .level-btn.korrekt-markiert { background: var(--gruen-hell); border-color: var(--gruen); color: var(--gruen); }
+    .level-btn:disabled { cursor: default; }
+
+    /* ── Feedback ── */
+    .feedback {
+      display: none;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .feedback.richtig {
+      background: var(--gruen-hell);
+      border: 1px solid #86efac;
+      display: block;
+    }
+
+    .feedback.falsch {
+      background: var(--rot-hell);
+      border: 1px solid #fca5a5;
+      display: block;
+    }
+
+    .feedback strong { display: block; margin-bottom: 0.4rem; }
+
+    .deskriptor-liste {
+      margin-top: 0.75rem;
+      padding-left: 1.25rem;
+    }
+
+    .deskriptor-liste li {
+      margin-bottom: 0.35rem;
+      color: #374151;
+    }
+
+    /* ── Navigation ── */
+    .nav-btn {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      background: var(--blau);
+      color: var(--weiss);
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 1.25rem;
+    }
+
+    .nav-btn:hover { background: #1d4ed8; }
+    .nav-btn:disabled { background: var(--grau); cursor: default; }
+
+    /* ── Phasen ── */
+    .phase { display: none; }
+    .phase.aktiv { display: block; }
+
+    /* ── Szenario-Aufgaben (Stufe 2) ── */
+    .szenario-optionen {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin: 1rem 0;
+    }
+
+    .szenario-btn {
+      padding: 0.8rem 1rem;
+      border: 2px solid var(--rand);
+      border-radius: 8px;
+      background: var(--weiss);
+      text-align: left;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      line-height: 1.45;
+    }
+
+    .szenario-btn:hover { border-color: var(--blau); }
+    .szenario-btn.richtig { background: var(--gruen-hell); border-color: var(--gruen); }
+    .szenario-btn.falsch  { background: var(--rot-hell); border-color: var(--rot); }
+    .szenario-btn:disabled { cursor: default; }
+
+    /* ── Abschluss ── */
+    .abschluss {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .abschluss-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .ergebnis-box {
+      display: inline-block;
+      background: var(--blau-hell);
+      border: 1px solid #93c5fd;
+      border-radius: var(--radius);
+      padding: 1rem 1.5rem;
+      margin: 1.25rem 0;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    .ergebnis-box span {
+      font-size: 2rem;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .erklaerung-tabelle {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .erklaerung-tabelle th {
+      background: var(--grau-hell);
+      text-align: left;
+      padding: 0.6rem 0.75rem;
+      font-weight: 700;
+      border-bottom: 2px solid var(--rand);
+    }
+
+    .erklaerung-tabelle td {
+      padding: 0.6rem 0.75rem;
+      border-bottom: 1px solid var(--rand);
+      vertical-align: top;
+    }
+
+    .erklaerung-tabelle tr:last-child td { border-bottom: none; }
+
+    .niveau-pill {
+      display: inline-block;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: white;
+    }
+
+    .pill-a1 { background: var(--a1); }
+    .pill-a2 { background: var(--a2); color: #111; }
+    .pill-b1 { background: var(--b1); color: #111; }
+    .pill-b2 { background: var(--b2); }
+    .pill-c1 { background: var(--c1); }
+    .pill-c2 { background: var(--c2); }
+
+    .neu-starten-btn {
+      padding: 0.7rem 1.5rem;
+      background: var(--weiss);
+      color: var(--blau);
+      border: 2px solid var(--blau);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 1rem;
+    }
+
+    .neu-starten-btn:hover { background: var(--blau-hell); }
+
+    /* ── Mythen-Check ── */
+    .mythos-text {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 1rem;
+    }
+
+    .wahr-falsch-buttons {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .wf-btn {
+      flex: 1 1 120px;
+      padding: 0.7rem;
+      border: 2px solid var(--rand);
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .wf-btn:hover { border-color: var(--blau); }
+    .wf-btn.richtig { background: var(--gruen-hell); border-color: var(--gruen); color: var(--gruen); }
+    .wf-btn.falsch  { background: var(--rot-hell);  border-color: var(--rot);   color: var(--rot); }
+    .wf-btn:disabled { cursor: default; }
+
+    @media (max-width: 480px) {
+      .leiter { height: 90px; gap: 0.3rem; }
+      .level-btn { font-size: 0.9rem; padding: 0.55rem 0.25rem; }
+      .erklaerung-tabelle { font-size: 0.8rem; }
+    }
+  </style>
+
+  <!-- Privacy-safe Tracking -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: "page_view",
+      "data-subject": "Sprachen",
+      "data-grade-level": "9-13",
+      "data-asset-type": "simulation",
+      "data-topic-cluster": "sprachkompetenz-cefr",
+      "data-primary-keyword": "sprachen"
+    });
+  </script>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+  <main class="container"
+        data-subject="Sprachen"
+        data-grade-level="9-13"
+        data-asset-type="simulation"
+        data-topic-cluster="sprachkompetenz-cefr"
+        data-primary-keyword="sprachen">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="badge">Simulation · Sprachen</div>
+      <h1>GER-Niveaustufen A1–C2 erkennen und anwenden</h1>
+      <p class="lead">Ordne Texte dem richtigen CEFR-Niveau zu – und lerne, was hinter den Kann-Beschreibungen steckt.</p>
+    </header>
+
+    <!-- Fortschritt -->
+    <div class="progress-wrap" aria-label="Fortschritt">
+      <div class="progress-label">
+        <span id="fortschritt-text">Fortschritt: 0 von 9 Aufgaben</span>
+        <span id="punkte-text">0 Punkte</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar" id="progressBar" style="width:0%"></div>
+      </div>
+    </div>
+
+    <!-- Stufenleiter (visuelles Modell) -->
+    <div class="leiter-wrap">
+      <div class="leiter-titel">GER-Stufenleiter – korrekt erkannte Niveaus leuchten auf</div>
+      <div class="leiter" id="leiter" aria-label="GER Stufenleiter A1 bis C2">
+        <div class="stufe">
+          <span class="stufe-label">A1</span>
+          <div class="stufe-block" id="block-a1" style="height:20px;background:var(--a1)">
+            <span class="figur" aria-hidden="true">&#128694;</span>
+          </div>
+        </div>
+        <div class="stufe">
+          <span class="stufe-label">A2</span>
+          <div class="stufe-block" id="block-a2" style="height:36px;background:var(--a2)">
+            <span class="figur" aria-hidden="true">&#128694;</span>
+          </div>
+        </div>
+        <div class="stufe">
+          <span class="stufe-label">B1</span>
+          <div class="stufe-block" id="block-b1" style="height:55px;background:var(--b1)">
+            <span class="figur" aria-hidden="true">&#128694;</span>
+          </div>
+        </div>
+        <div class="stufe">
+          <span class="stufe-label">B2</span>
+          <div class="stufe-block" id="block-b2" style="height:72px;background:var(--b2)">
+            <span class="figur" aria-hidden="true">&#128694;</span>
+          </div>
+        </div>
+        <div class="stufe">
+          <span class="stufe-label">C1</span>
+          <div class="stufe-block" id="block-c1" style="height:90px;background:var(--c1)">
+            <span class="figur" aria-hidden="true">&#128694;</span>
+          </div>
+        </div>
+        <div class="stufe">
+          <span class="stufe-label">C2</span>
+          <div class="stufe-block" id="block-c2" style="height:108px;background:var(--c2)">
+            <span class="figur" aria-hidden="true">&#128694;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== PHASE 1: Texte einordnen ========== -->
+    <section class="phase aktiv" id="phase1">
+      <div class="karte">
+        <div class="karte-titel">
+          <span id="aufgabe-zaehler">Aufgabe 1 von 5</span> · Stufe 1: Texte einordnen
+        </div>
+
+        <p class="frage" id="frage-text">Vorhersage: Auf welchem GER-Niveau ist der folgende Text verfasst?</p>
+
+        <blockquote class="text-probe" id="text-probe">
+          <!-- wird via JS befüllt -->
+        </blockquote>
+
+        <div class="level-buttons" id="level-buttons" role="group" aria-label="Niveaustufe auswählen">
+          <button class="level-btn" data-level="A1" onclick="checkLevel('A1')">A1</button>
+          <button class="level-btn" data-level="A2" onclick="checkLevel('A2')">A2</button>
+          <button class="level-btn" data-level="B1" onclick="checkLevel('B1')">B1</button>
+          <button class="level-btn" data-level="B2" onclick="checkLevel('B2')">B2</button>
+          <button class="level-btn" data-level="C1" onclick="checkLevel('C1')">C1</button>
+          <button class="level-btn" data-level="C2" onclick="checkLevel('C2')">C2</button>
+        </div>
+
+        <div class="feedback" id="feedback1" role="alert"></div>
+
+        <button class="nav-btn" id="weiter1-btn" onclick="naechsterText()" style="display:none">
+          Nächste Aufgabe &rarr;
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== PHASE 2: Szenarien ========== -->
+    <section class="phase" id="phase2">
+      <div class="karte">
+        <div class="karte-titel">
+          <span id="szenario-zaehler">Aufgabe 6 von 9</span> · Stufe 2: Szenarien &amp; Mythen
+        </div>
+
+        <p class="frage" id="szenario-frage"></p>
+
+        <div id="szenario-optionen-container"></div>
+
+        <div class="feedback" id="feedback2" role="alert"></div>
+
+        <button class="nav-btn" id="weiter2-btn" onclick="naechstesSzenario()" style="display:none">
+          Nächste Aufgabe &rarr;
+        </button>
+      </div>
+    </section>
+
+    <!-- ========== ABSCHLUSS ========== -->
+    <section class="phase" id="phase3">
+      <div class="karte abschluss">
+        <div class="abschluss-icon" aria-hidden="true">&#127941;</div>
+        <h2>Simulation abgeschlossen!</h2>
+        <div class="ergebnis-box">
+          <span id="final-punkte">–</span>
+          von 9 Aufgaben richtig
+        </div>
+        <p id="abschluss-text" style="margin-bottom:1.5rem;color:var(--grau)"></p>
+
+        <details style="text-align:left;margin-top:1.5rem">
+          <summary style="cursor:pointer;font-weight:600;margin-bottom:1rem">
+            Alle GER-Niveaustufen im Überblick
+          </summary>
+          <table class="erklaerung-tabelle">
+            <thead>
+              <tr>
+                <th>Niveau</th>
+                <th>Bezeichnung</th>
+                <th>Kann-Beschreibung (Kern)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="niveau-pill pill-a1">A1</span></td>
+                <td>Einsteiger</td>
+                <td>Vertraute Alltagsausdrücke, einfache Fragen zu Person, Ort, Besitz</td>
+              </tr>
+              <tr>
+                <td><span class="niveau-pill pill-a2">A2</span></td>
+                <td>Grundlegende Kenntnisse</td>
+                <td>Einfache Routinesituationen, kurze persönliche Informationen, Alltagsbedürfnisse</td>
+              </tr>
+              <tr>
+                <td><span class="niveau-pill pill-b1">B1</span></td>
+                <td>Fortgeschrittene Sprachverw.</td>
+                <td>Hauptpunkte klarer Standardsprache, zusammenhängende Texte zu vertrauten Themen, Reisen</td>
+              </tr>
+              <tr>
+                <td><span class="niveau-pill pill-b2">B2</span></td>
+                <td>Selbstständige Sprachverw.</td>
+                <td>Komplexe Texte zu konkreten und abstrakten Themen, spontane Gespräche, klare Argumentation</td>
+              </tr>
+              <tr>
+                <td><span class="niveau-pill pill-c1">C1</span></td>
+                <td>Kompetente Sprachverw.</td>
+                <td>Anspruchsvolle Texte mit impliziten Bedeutungen, flexible Sprachverwendung für akademische und berufliche Zwecke</td>
+              </tr>
+              <tr>
+                <td><span class="niveau-pill pill-c2">C2</span></td>
+                <td>Annähernd muttersprachlich</td>
+                <td>Alles Gehörte und Gelesene verstehen, präzise Zusammenfassungen, spontane Differenzierung</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
+
+        <button class="neu-starten-btn" onclick="neuStarten()">
+          Erneut üben
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // ── Daten ──────────────────────────────────────────────
+
+    const texte = [
+      {
+        text: "Ich heiße Anna. Ich komme aus Berlin. Ich habe eine Katze. Meine Katze heißt Mimi. Ich mag meine Katze.",
+        richtig: "A1",
+        feedback_richtig: "Richtig – das ist A1 (Einsteiger). Die Sätze sind maximal einfach: Aussagesatz + Personalangaben + frequente Wörter. Kein Nebensatz, kein Zeitform außer Präsens. Genau das beschreibt der GER als A1: vertraute Ausdrücke, einfachste Bedürfnisse.",
+        deskriptoren: [
+          "Kann sich und andere vorstellen",
+          "Nur häufigste Alltagsausdrücke",
+          "Keine Nebensätze, kein Vergangenheitstempus"
+        ],
+        feedback_falsch: "Nicht ganz. Die Sätze sind bewusst maximal vereinfacht: kein Nebensatz, keine Vergangenheit, nur Alltagsnomen. Das entspricht A1 (Einsteiger).",
+        hinweis: "Tipp: A1-Texte bestehen fast ausschließlich aus einfachen Hauptsätzen mit häufigsten Alltagswörtern."
+      },
+      {
+        text: "Letzte Woche habe ich einen interessanten Film gesehen. Er handelt von einem Teenager, der versucht, seine Familie zu retten. Die Geschichte war spannend, obwohl das Ende ein bisschen traurig war. Ich würde den Film meinen Freunden empfehlen.",
+        richtig: "B1",
+        feedback_richtig: "Richtig – das ist B1 (Fortgeschrittene Sprachverwendung). Der Text enthält korrekte Vergangenheitsform (Perfekt), einen einfachen Relativsatz ('der versucht') und eine Konzessivsatz-Konstruktion ('obwohl'). Er handelt von einem persönlich vertrauten Thema. Genau das beschreibt B1: einfache, zusammenhängende Texte zu vertrauten Themen.",
+        deskriptoren: [
+          "Kann einfache, zusammenhängende Texte zu vertrauten Themen schreiben",
+          "Vergangenheit korrekt verwendet (Perfekt)",
+          "Einfache Nebensätze (obwohl, der versucht)",
+          "Persönliche Meinungsäußerung"
+        ],
+        feedback_falsch: "Noch nicht ganz. Der Relativsatz ('der versucht') und der Konzessivsatz ('obwohl') zeigen B1-Niveau: einfache Nebensätze, vertrautes Thema (Film), Meinungsäußerung. A2 hätte keine Nebensätze; B2 würde abstraktere Themen behandeln.",
+        hinweis: "Tipp: B1-Texte haben einfache Nebensätze, korrekte Vergangenheit und handeln von alltagsnahen Themen."
+      },
+      {
+        text: "Die zunehmende Digitalisierung verändert nicht nur unsere Arbeitswelt, sondern wirft auch grundlegende Fragen über Datenschutz und gesellschaftliche Teilhabe auf. Einerseits ermöglicht sie einen beispiellosen Zugang zu Informationen; andererseits besteht die Gefahr, dass soziale Ungleichheiten verstärkt werden.",
+        richtig: "B2",
+        feedback_richtig: "Richtig – das ist B2 (Selbstständige Sprachverwendung). Abstrakte Themen (Digitalisierung, Datenschutz, gesellschaftliche Teilhabe), komplexe Konnektoren (einerseits/andererseits, nicht nur … sondern auch) und differenzierte Argumentation sind typisch für B2.",
+        deskriptoren: [
+          "Kann komplexe Texte zu abstrakten Themen verstehen und produzieren",
+          "Verwendet Konnektoren zur Strukturierung (einerseits/andererseits)",
+          "Thema: Gesellschaft und Technologie – kein Alltagsthema",
+          "Klare Argumentation mit Gegenüberstellung"
+        ],
+        feedback_falsch: "Nicht ganz. Die Schlüsselmerkmale sind: abstraktes Thema (Digitalisierung, gesellschaftliche Teilhabe), komplexe Konnektoren und differenzierte Argumentation. Das ist B2 – nicht B1 (das wäre persönliches, vertrautes Thema) und nicht C1 (das hätte implizite Bedeutungen und akademischen Stil).",
+        hinweis: "Tipp: B2 erkennst du an abstrakten Themen und gut strukturierter Argumentation mit Konnektoren."
+      },
+      {
+        text: "Die Frage, inwieweit kulturelle Prägungen unser Sprachempfinden determinieren, beschäftigt Linguisten seit Jahrhunderten. Jüngere Forschungsansätze deuten jedoch darauf hin, dass die Beziehung zwischen Sprache und Denken vielschichtiger ist, als die klassische Sapir-Whorf-Hypothese nahelegt – ein Befund, der weitreichende didaktische Implikationen hätte.",
+        richtig: "C1",
+        feedback_richtig: "Richtig – das ist C1 (Kompetente Sprachverwendung). Akademischer Stil, Nominalphrasen ('Jüngere Forschungsansätze'), epistemische Distanzierung ('deuten darauf hin', 'hätte'), Fachterminologie (Sapir-Whorf-Hypothese, didaktische Implikationen) und die implizite Kritik an der Hypothese sind C1-Merkmale.",
+        deskriptoren: [
+          "Kann anspruchsvolle Texte verstehen und produzieren",
+          "Implizite Bedeutungen erkennen und vermitteln",
+          "Akademisches Vokabular und Stil",
+          "Epistemische Distanzierung: 'deuten darauf hin', 'hätte'"
+        ],
+        feedback_falsch: "Noch nicht. Der Text enthält mehrere C1-Marker: Fachterminologie (Sapir-Whorf-Hypothese, didaktische Implikationen), Nominalstil, epistemische Distanzierung und eine implizite Kritik. B2 wäre klarer strukturiert und würde bekannte Themen behandeln; C2 wäre noch abstrakter und komplexer.",
+        hinweis: "Tipp: C1 erkennst du an Fachvokabular, Nominalstil, impliziten Bedeutungen und akademischer Distanz."
+      },
+      {
+        text: "Es ließe sich argumentieren, dass jede Übersetzung notgedrungen Verrat an der Originalintention bedeutet, nicht weil Übersetzer unfähig wären, sondern weil Sprachen konzeptuell inkommensurable Weltausschnitte konstruieren – wobei freilich auch diese These einer gewissen romantisierenden Überhöhung nicht entbehrt.",
+        richtig: "C2",
+        feedback_richtig: "Richtig – das ist C2 (annähernd muttersprachliche Kompetenz). Der Text verwendet epistemische Modalität ('ließe sich argumentieren'), Konzessivstrukturen ('wobei freilich'), philosophische Abstraktion (inkommensurable Weltausschnitte), Ironie ('romantisierende Überhöhung') und komplexe Sachverhalte in einem einzigen Satz – das ist äußerstes C2.",
+        deskriptoren: [
+          "Versteht und produziert hochkomplexe Texte mit feinen Bedeutungsnuancen",
+          "Epistemische Modalität: 'ließe sich argumentieren'",
+          "Konzessivstruktur: 'wobei freilich … nicht entbehrt'",
+          "Ironische Distanzierung vom eigenen Argument"
+        ],
+        feedback_falsch: "Noch nicht ganz. Dies ist ein C2-Text: epistemische Modalität, philosophische Abstraktion, Ironie und die Selbstdistanzierung vom eigenen Argument ('wobei … romantisierende Überhöhung') sind Merkmale allerhöchster sprachlicher Kompetenz.",
+        hinweis: "Tipp: C2 erkennst du an philosophischer Abstraktion, Ironie, epistemischer Modalität und subtiler Selbstdistanzierung."
+      }
+    ];
+
+    const szenarien = [
+      {
+        typ: "szenario",
+        frage: "Lena möchte ein Bachelor-Studium in England beginnen. Welches CEFR-Niveau wird für die Zulassung in der Regel vorausgesetzt?",
+        optionen: [
+          { text: "B1 – Das reicht für alle akademischen Zwecke.", richtig: false },
+          { text: "B2 – Das ist das Mindest-Niveau für viele Bachelorstudiengänge in Englisch.", richtig: true },
+          { text: "C2 – Weniger als muttersprachliches Niveau wird nirgends akzeptiert.", richtig: false }
+        ],
+        feedback_richtig: "Richtig! B2 ist das typische Mindestniveau für englischsprachige Bachelorstudiengänge (z.B. IELTS 6.0 / TOEFL 80). Wichtig: B2 beschreibt die sprachliche Eingangsschwelle – für wissenschaftliches Schreiben empfehlen viele Universitäten tatsächlich C1.",
+        feedback_falsch: "Nicht ganz. B1 reicht für Alltagssituationen, aber nicht für akademische Anforderungen. C2 wird extrem selten verlangt. Das typische Mindest-Niveau für viele Bachelorstudiengänge ist B2 – mit dem Hinweis, dass C1 für wissenschaftliches Schreiben vorteilhaft ist."
+      },
+      {
+        typ: "szenario",
+        frage: "Auf welchem Niveau beginnen Schüler*innen in Deutschland laut Bildungsplan die Schule (nach 4 Jahren Englisch in der Grundschule + 2 Jahren Gymnasium)?",
+        optionen: [
+          { text: "A1/A2 – nach 6 Jahren Unterricht ist der Einstieg noch sehr rudimentär.", richtig: false },
+          { text: "B1 – das ist das realistische Niveau nach ca. 6 Jahren schulischem Englischunterricht.", richtig: true },
+          { text: "C1 – Deutschland hat hervorragende Englischkenntnisse in der Mittelstufe.", richtig: false }
+        ],
+        feedback_richtig: "Genau! Nach ca. 6 Jahren schulischem Unterricht (Grundschule + zwei Gymnasialjahre) entspricht das Niveau in der Regel B1 – orientiert an den Lehrplänen der Kultusministerkonferenz und dem GER. Das Abitur zielt auf B2 (für Regelkurse) bis C1 (für Leistungskurse).",
+        feedback_falsch: "Nicht ganz. Nach 6 Jahren Unterricht erreichen Lernende in der Regel B1-Niveau. A1/A2 wäre nach 1–2 Jahren zu erwarten; C1 ist für viele erst nach dem Abitur oder durch zusätzliche Immersion realistisch."
+      },
+      {
+        typ: "mythos",
+        frage: "Stimmt diese Aussage? „C2 bedeutet, man spricht wie ein Muttersprachler."",
+        wahr: false,
+        feedback_falsch: "Diese Aussage ist nicht korrekt. C2 beschreibt funktionale Beherrschung einer Sprache – nicht identisches Verhalten mit L1-Sprechern. Erstens haben viele Muttersprachler selbst keine C2-Metakompetenzen (z.B. explizites Grammatikwissen). Zweitens können L2-Sprecher auf C2-Niveau in manchen Bereichen präziser sein als informelle L1-Sprecher.",
+        feedback_richtig: ""
+      }
+    ];
+
+    // ── Zustand ────────────────────────────────────────────
+
+    let textIndex = 0;
+    let szenarioIndex = 0;
+    let punktzahl = 0;
+    let beantwortet = false;
+    const gesamtAufgaben = texte.length + szenarien.length;
+
+    const levelReihenfolge = ["A1", "A2", "B1", "B2", "C1", "C2"];
+    let aktuellesLevel = null;
+
+    // ── Init ───────────────────────────────────────────────
+
+    function init() {
+      textIndex = 0;
+      szenarioIndex = 0;
+      punktzahl = 0;
+      beantwortet = false;
+      aktuellesLevel = null;
+      ladeText();
+      aktualisiereAnzeige();
+      resetLeiter();
+      document.getElementById("phase1").className = "phase aktiv";
+      document.getElementById("phase2").className = "phase";
+      document.getElementById("phase3").className = "phase";
+    }
+
+    function resetLeiter() {
+      levelReihenfolge.forEach(function(l) {
+        var b = document.getElementById("block-" + l.toLowerCase());
+        if (b) { b.classList.remove("erreicht", "aktiv"); }
+      });
+    }
+
+    // ── Texte ──────────────────────────────────────────────
+
+    function ladeText() {
+      if (textIndex >= texte.length) {
+        wechselZuPhase2();
+        return;
+      }
+      var t = texte[textIndex];
+      document.getElementById("text-probe").textContent = t.text;
+      document.getElementById("aufgabe-zaehler").textContent =
+        "Aufgabe " + (textIndex + 1) + " von " + texte.length;
+      document.getElementById("feedback1").className = "feedback";
+      document.getElementById("feedback1").innerHTML = "";
+      document.getElementById("weiter1-btn").style.display = "none";
+
+      var btns = document.querySelectorAll(".level-btn");
+      btns.forEach(function(b) {
+        b.className = "level-btn";
+        b.disabled = false;
+      });
+      beantwortet = false;
+    }
+
+    function checkLevel(gewaehlt) {
+      if (beantwortet) return;
+      beantwortet = true;
+
+      var t = texte[textIndex];
+      var richtig = gewaehlt === t.richtig;
+      if (richtig) {
+        punktzahl++;
+        aktualisiereLeiter(t.richtig);
+      }
+
+      // Buttons einfärben
+      var btns = document.querySelectorAll(".level-btn");
+      btns.forEach(function(b) {
+        b.disabled = true;
+        if (b.dataset.level === gewaehlt && richtig) {
+          b.classList.add("richtig");
+        } else if (b.dataset.level === gewaehlt && !richtig) {
+          b.classList.add("falsch");
+        }
+        if (!richtig && b.dataset.level === t.richtig) {
+          b.classList.add("korrekt-markiert");
+        }
+      });
+
+      // Feedback aufbauen
+      var fb = document.getElementById("feedback1");
+      if (richtig) {
+        fb.className = "feedback richtig";
+        var liItems = t.deskriptoren.map(function(d) { return "<li>" + d + "</li>"; }).join("");
+        fb.innerHTML = "<strong>&#10003; Richtig! " + t.richtig + "-Niveau erkannt.</strong>" +
+          t.feedback_richtig +
+          "<ul class='deskriptor-liste'>" + liItems + "</ul>";
+      } else {
+        fb.className = "feedback falsch";
+        fb.innerHTML = "<strong>&#10007; Nicht ganz.</strong>" +
+          t.feedback_falsch +
+          "<p style='margin-top:0.6rem;color:#374151'><em>" + t.hinweis + "</em></p>";
+      }
+
+      aktualisiereAnzeige();
+      document.getElementById("weiter1-btn").style.display = "inline-block";
+
+      // DataLayer
+      window.dataLayer.push({
+        event: "quiz_answer",
+        correct: richtig,
+        chosen: gewaehlt,
+        correct_answer: t.richtig,
+        phase: "texte-einordnen",
+        task_index: textIndex
+      });
+    }
+
+    function naechsterText() {
+      textIndex++;
+      aktualisiereAnzeige();
+      if (textIndex >= texte.length) {
+        wechselZuPhase2();
+      } else {
+        ladeText();
+      }
+    }
+
+    // ── Stufenleiter aktualisieren ─────────────────────────
+    // Nur das korrekt erkannte Level wird als erreicht markiert;
+    // die Treppe zeigt nicht automatisch alle darunter.
+
+    function aktualisiereLeiter(level) {
+      // vorherige aktiv-Markierung entfernen
+      if (aktuellesLevel) {
+        var prev = document.getElementById("block-" + aktuellesLevel.toLowerCase());
+        if (prev) prev.classList.remove("aktiv");
+      }
+      // das neue Level als erreicht + aktiv markieren
+      var cur = document.getElementById("block-" + level.toLowerCase());
+      if (cur) {
+        cur.classList.remove("aktiv");
+        cur.classList.add("erreicht");
+        cur.classList.add("aktiv");
+      }
+      aktuellesLevel = level;
+    }
+
+    // ── Phase 2 ────────────────────────────────────────────
+
+    function wechselZuPhase2() {
+      document.getElementById("phase1").className = "phase";
+      document.getElementById("phase2").className = "phase aktiv";
+      ladeSzenario();
+    }
+
+    function ladeSzenario() {
+      if (szenarioIndex >= szenarien.length) {
+        zeigeAbschluss();
+        return;
+      }
+      var s = szenarien[szenarioIndex];
+      var zaehler = texte.length + szenarioIndex + 1;
+      document.getElementById("szenario-zaehler").textContent =
+        "Aufgabe " + zaehler + " von " + gesamtAufgaben;
+      document.getElementById("szenario-frage").textContent = s.frage;
+      document.getElementById("feedback2").className = "feedback";
+      document.getElementById("feedback2").innerHTML = "";
+      document.getElementById("weiter2-btn").style.display = "none";
+      beantwortet = false;
+
+      var container = document.getElementById("szenario-optionen-container");
+      container.innerHTML = "";
+
+      if (s.typ === "szenario") {
+        var div = document.createElement("div");
+        div.className = "szenario-optionen";
+        s.optionen.forEach(function(opt, i) {
+          var btn = document.createElement("button");
+          btn.className = "szenario-btn";
+          btn.textContent = opt.text;
+          btn.onclick = function() { checkSzenario(i); };
+          div.appendChild(btn);
+        });
+        container.appendChild(div);
+      } else {
+        // Mythos (wahr/falsch)
+        var div = document.createElement("div");
+        div.className = "wahr-falsch-buttons";
+        var bTrue = document.createElement("button");
+        bTrue.className = "wf-btn";
+        bTrue.textContent = "Wahr";
+        bTrue.onclick = function() { checkMythos(true); };
+        var bFalse = document.createElement("button");
+        bFalse.className = "wf-btn";
+        bFalse.textContent = "Falsch";
+        bFalse.onclick = function() { checkMythos(false); };
+        div.appendChild(bTrue);
+        div.appendChild(bFalse);
+        container.appendChild(div);
+      }
+    }
+
+    function checkSzenario(gewaehltIdx) {
+      if (beantwortet) return;
+      beantwortet = true;
+      var s = szenarien[szenarioIndex];
+      var richtig = s.optionen[gewaehltIdx].richtig;
+      if (richtig) punktzahl++;
+
+      var btns = document.querySelectorAll(".szenario-btn");
+      btns.forEach(function(b, i) {
+        b.disabled = true;
+        if (i === gewaehltIdx && richtig) b.classList.add("richtig");
+        else if (i === gewaehltIdx && !richtig) b.classList.add("falsch");
+        if (!richtig && s.optionen[i].richtig) b.classList.add("richtig");
+      });
+
+      var fb = document.getElementById("feedback2");
+      if (richtig) {
+        fb.className = "feedback richtig";
+        fb.innerHTML = "<strong>&#10003; Richtig!</strong>" + s.feedback_richtig;
+      } else {
+        fb.className = "feedback falsch";
+        fb.innerHTML = "<strong>&#10007; Nicht ganz.</strong>" + s.feedback_falsch;
+      }
+
+      aktualisiereAnzeige();
+      document.getElementById("weiter2-btn").style.display = "inline-block";
+      if (szenarioIndex + 1 >= szenarien.length) {
+        document.getElementById("weiter2-btn").textContent = "Ergebnis anzeigen";
+      }
+    }
+
+    function checkMythos(gewaehlt) {
+      if (beantwortet) return;
+      beantwortet = true;
+      var s = szenarien[szenarioIndex];
+      var richtig = gewaehlt === s.wahr;
+      if (richtig) punktzahl++;
+
+      var btns = document.querySelectorAll(".wf-btn");
+      btns.forEach(function(b) {
+        b.disabled = true;
+        var istWahr = b.textContent === "Wahr";
+        if (gewaehlt === istWahr && richtig) b.classList.add("richtig");
+        else if (gewaehlt === istWahr && !richtig) b.classList.add("falsch");
+        if (!richtig && (s.wahr === istWahr)) b.classList.add("richtig");
+      });
+
+      // Mythos-Erklärung: feedback_falsch enthält immer die vollständige Begründung,
+      // egal ob Antwort richtig oder falsch (da die Erklärung identisch ist)
+      var fb = document.getElementById("feedback2");
+      if (richtig) {
+        fb.className = "feedback richtig";
+        fb.innerHTML = "<strong>&#10003; Richtig – die Aussage ist falsch!</strong> " + s.feedback_falsch;
+      } else {
+        fb.className = "feedback falsch";
+        fb.innerHTML = "<strong>&#10007; Nicht ganz – die Aussage ist tatsächlich falsch.</strong> " + s.feedback_falsch;
+      }
+
+      aktualisiereAnzeige();
+      document.getElementById("weiter2-btn").style.display = "inline-block";
+      if (szenarioIndex + 1 >= szenarien.length) {
+        document.getElementById("weiter2-btn").textContent = "Ergebnis anzeigen";
+      }
+    }
+
+    function naechstesSzenario() {
+      szenarioIndex++;
+      aktualisiereAnzeige();
+      if (szenarioIndex >= szenarien.length) {
+        zeigeAbschluss();
+      } else {
+        ladeSzenario();
+      }
+    }
+
+    // ── Fortschrittsanzeige ────────────────────────────────
+    // abgeschlossen = Anzahl bereits erledigter Aufgaben (nach Antwort +1)
+
+    function aktualisiereAnzeige() {
+      var abgeschlossen;
+      if (beantwortet) {
+        // aktuelle Aufgabe gerade beantwortet
+        abgeschlossen = Math.min(textIndex + 1 + szenarioIndex, gesamtAufgaben);
+        if (textIndex >= texte.length) {
+          abgeschlossen = texte.length + szenarioIndex + 1;
+        }
+      } else {
+        abgeschlossen = Math.min(textIndex + szenarioIndex, gesamtAufgaben);
+      }
+      abgeschlossen = Math.min(abgeschlossen, gesamtAufgaben);
+      var pct = Math.round((abgeschlossen / gesamtAufgaben) * 100);
+      document.getElementById("progressBar").style.width = pct + "%";
+      document.getElementById("fortschritt-text").textContent =
+        "Fortschritt: " + abgeschlossen + " von " + gesamtAufgaben + " Aufgaben";
+      document.getElementById("punkte-text").textContent = punktzahl + " Punkte";
+    }
+
+    // ── Abschluss ──────────────────────────────────────────
+
+    function zeigeAbschluss() {
+      document.getElementById("phase2").className = "phase";
+      document.getElementById("phase3").className = "phase aktiv";
+      document.getElementById("progressBar").style.width = "100%";
+      document.getElementById("fortschritt-text").textContent =
+        "Fortschritt: " + gesamtAufgaben + " von " + gesamtAufgaben + " Aufgaben";
+      document.getElementById("punkte-text").textContent = punktzahl + " Punkte";
+      document.getElementById("final-punkte").textContent = punktzahl;
+
+      var note = "";
+      if (punktzahl >= 8) {
+        note = "Ausgezeichnet! Du kennst die CEFR-Niveaustufen sehr gut und kannst Texte sicher einordnen.";
+      } else if (punktzahl >= 6) {
+        note = "Gut gemacht! Du hast ein solides Verständnis der GER-Stufen. Übe noch einmal die Grenzfälle B1/B2 und C1/C2.";
+      } else if (punktzahl >= 4) {
+        note = "Guter Anfang! Lies dir die CEFR-Kann-Beschreibungen in der Tabelle unten durch und starte erneut.";
+      } else {
+        note = "Die GER-Stufen haben viele Feinheiten. Schau dir die Tabelle unten an und probiere es nochmal!";
+      }
+      document.getElementById("abschluss-text").textContent = note;
+
+      window.dataLayer.push({
+        event: "simulation_complete",
+        score: punktzahl,
+        max_score: gesamtAufgaben
+      });
+    }
+
+    function neuStarten() {
+      init();
+    }
+
+    // ── Start ──────────────────────────────────────────────
+    init();
+  </script>
+</body>
+</html>

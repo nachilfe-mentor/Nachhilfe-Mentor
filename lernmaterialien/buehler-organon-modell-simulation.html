@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Bühlers Organon-Modell: Sprachfunktionen interaktiv üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Bühlers Organon-Modell interaktiv: Erkenne Darstellungs-, Ausdrucks- und Appellfunktion am animierten Dreieck und klassifiziere echte Äußerungen mit Feedback.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Bühler Organon-Modell, Sprachfunktionen, Darstellungsfunktion, Ausdrucksfunktion, Appellfunktion, Deutsch Oberstufe">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/buehler-organon-modell-simulation.html">
+  <meta property="og:title" content="Bühlers Organon-Modell interaktiv üben">
+  <meta property="og:description" content="Bühlers Organon-Modell interaktiv: Erkenne Darstellungs-, Ausdrucks- und Appellfunktion am animierten Dreieck und klassifiziere echte Äußerungen mit Feedback.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/buehler-organon-modell-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Bühlers Organon-Modell: Sprachfunktionen interaktiv üben",
+  "description":"Bühlers Organon-Modell interaktiv: Erkenne Darstellungs-, Ausdrucks- und Appellfunktion am animierten Dreieck und klassifiziere echte Äußerungen mit Feedback.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/buehler-organon-modell-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+      --darst:  #0b8f6a;   /* Darstellungsfunktion – grün */
+      --ausd:   #6b21a8;   /* Ausdrucksfunktion – lila */
+      --appell: #b5281e;   /* Appellfunktion – rot */
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    /* ── Header ─────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* ── Main ───────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Stage-Sektionen ────────────────────────── */
+    .section { display: none; }
+    .section.active { display: block; }
+
+    /* ── Panel ──────────────────────────────────── */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .panel h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.9rem;
+      color: var(--ink);
+    }
+    .panel p { font-size: 0.95rem; line-height: 1.65; }
+    .panel p + p { margin-top: 0.75rem; }
+
+    /* ── Stage-Badge ────────────────────────────── */
+    .stage-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #fff;
+      background: var(--cyan);
+      border-radius: 20px;
+      padding: 0.2rem 0.65rem;
+      margin-bottom: 0.9rem;
+    }
+
+    /* ── Fortschrittsleiste ─────────────────────── */
+    .progress-bar {
+      display: flex;
+      gap: 0.4rem;
+      margin-bottom: 1.75rem;
+    }
+    .progress-bar span {
+      flex: 1;
+      height: 5px;
+      border-radius: 3px;
+      background: var(--line);
+      transition: background 0.35s;
+    }
+    .progress-bar span.done { background: var(--cyan); }
+    .progress-bar span.active { background: var(--blue); }
+
+    /* ── SVG Dreieck ────────────────────────────── */
+    .triangle-wrap {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0 1.75rem;
+    }
+    .triangle-wrap svg {
+      width: min(340px, 100%);
+      height: auto;
+      overflow: visible;
+    }
+
+    /* Kanten-Animationen */
+    .edge {
+      stroke-width: 2.5;
+      stroke: #c8d5e8;
+      fill: none;
+      transition: stroke 0.4s, stroke-width 0.4s;
+    }
+    .edge.highlight-darst  { stroke: var(--darst);  stroke-width: 5; }
+    .edge.highlight-ausd   { stroke: var(--ausd);   stroke-width: 5; }
+    .edge.highlight-appell { stroke: var(--appell); stroke-width: 5; }
+    .edge.highlight-all    { stroke: var(--cyan);   stroke-width: 4; }
+
+    /* Ecken-Labels */
+    .corner-label {
+      font-size: 13px;
+      font-weight: 700;
+      fill: var(--ink);
+    }
+    .corner-sub {
+      font-size: 10.5px;
+      fill: var(--muted);
+    }
+    /* Zeichen-Kreis */
+    .sign-circle {
+      fill: #e9f0fa;
+      stroke: #a8bbd8;
+      stroke-width: 2;
+      transition: fill 0.4s, stroke 0.4s;
+    }
+    .sign-circle.glow-darst  { fill: #d4f0e5; stroke: var(--darst); }
+    .sign-circle.glow-ausd   { fill: #ede9f7; stroke: var(--ausd); }
+    .sign-circle.glow-appell { fill: #fde8e8; stroke: var(--appell); }
+    .sign-circle.glow-all    { fill: #dceffe; stroke: var(--cyan); }
+
+    .sign-text {
+      font-size: 12px;
+      font-weight: 700;
+      fill: var(--ink);
+      text-anchor: middle;
+      dominant-baseline: middle;
+    }
+
+    /* Funktions-Chips (Legende) */
+    .fn-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.25rem 0.6rem;
+      border-radius: 20px;
+      border: 1.5px solid transparent;
+      transition: background 0.25s, border-color 0.25s;
+    }
+    .fn-chip.darst  { color: var(--darst);  background: #d4f0e5; border-color: #8ecdb8; }
+    .fn-chip.ausd   { color: var(--ausd);   background: #ede9f7; border-color: #b8a8d8; }
+    .fn-chip.appell { color: var(--appell); background: #fde8e8; border-color: #d8a8a8; }
+    .fn-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.75rem; }
+
+    /* Kontext-Karte */
+    .context-card {
+      background: #f0f6ff;
+      border: 1.5px solid #c4d9f5;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin: 1.25rem 0;
+    }
+    .context-card .label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--blue);
+      margin-bottom: 0.35rem;
+    }
+    .context-card blockquote {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink);
+      font-style: italic;
+      margin: 0;
+    }
+    .context-card p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+
+    /* ── Aufgaben-Frage ─────────────────────────── */
+    .question {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    /* ── Option-Buttons ─────────────────────────── */
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+    .option-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.93rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+    }
+    .option-btn:disabled { cursor: default; opacity: 0.7; }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #eaf7f1;
+      color: var(--green);
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fdf2f2;
+      color: var(--red);
+    }
+    .option-btn.neutral-highlight {
+      border-color: var(--amber);
+      background: #fffbf0;
+      color: var(--amber);
+    }
+
+    /* ── Feedback-Box ───────────────────────────── */
+    .feedback {
+      display: none;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: 0.92rem;
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+    }
+    .feedback.visible { display: block; }
+    .feedback.correct {
+      background: #eaf7f1;
+      border: 1.5px solid #8ecdb8;
+      color: #0a5f45;
+    }
+    .feedback.wrong {
+      background: #fdf2f2;
+      border: 1.5px solid #d8a8a8;
+      color: #7a1a18;
+    }
+    .feedback.neutral {
+      background: #fffbf0;
+      border: 1.5px solid #d4b060;
+      color: #6a4800;
+    }
+    .concept-tag {
+      display: inline-block;
+      font-weight: 700;
+      padding: 0.05rem 0.4rem;
+      border-radius: 4px;
+      background: rgba(0,0,0,0.07);
+    }
+
+    /* ── Karten-Deck (Stufe 2) ──────────────────── */
+    .card-counter {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .utt-card {
+      background: #f0f6ff;
+      border: 1.5px solid #c4d9f5;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .utt-card .utt-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--blue);
+      margin-bottom: 0.35rem;
+    }
+    .utt-card .utt-text {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      font-style: italic;
+    }
+    .utt-card .utt-context {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-top: 0.3rem;
+    }
+
+    /* ── Weiter-Button ──────────────────────────── */
+    .btn-next {
+      display: none;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: background 0.2s;
+    }
+    .btn-next:hover { background: #0a4f8c; }
+    .btn-next.visible { display: inline-block; }
+
+    /* ── Ergebnis-Panel ─────────────────────────── */
+    .result-panel {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .result-panel h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .score-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .score-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .score-circle.good { background: #d4f0e5; color: var(--darst); }
+    .score-circle.ok   { background: #fffbf0; color: var(--amber); }
+    .score-circle.low  { background: #fde8e8; color: var(--red); }
+
+    /* ── Theorie-Kasten (Abschluss) ─────────────── */
+    .theory-box {
+      background: #f5f0fa;
+      border: 1.5px solid #c4b0d8;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: 0.9rem;
+      line-height: 1.65;
+      margin-top: 1rem;
+    }
+    .theory-box h3 {
+      font-size: 0.93rem;
+      font-weight: 700;
+      color: var(--purple);
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Tabelle (Legende) ──────────────────────── */
+    .fn-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.87rem;
+      margin-top: 1rem;
+    }
+    .fn-table th {
+      text-align: left;
+      padding: 0.4rem 0.6rem;
+      border-bottom: 2px solid var(--line);
+      font-weight: 700;
+      color: var(--muted);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .fn-table td {
+      padding: 0.5rem 0.6rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .fn-table tr:last-child td { border-bottom: none; }
+    .fn-table .dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      margin-right: 4px;
+      vertical-align: middle;
+    }
+    .dot-darst  { background: var(--darst); }
+    .dot-ausd   { background: var(--ausd); }
+    .dot-appell { background: var(--appell); }
+
+    /* ── Responsive ─────────────────────────────── */
+    @media (max-width: 400px) {
+      header { padding: 1.5rem 1rem 1.25rem; }
+      main   { padding: 0 1rem 3rem; }
+      .panel { padding: 1.25rem; }
+      .fn-table { font-size: 0.82rem; }
+    }
+  </style>
+</head>
+<body
+  data-asset-type="simulation"
+  data-topic-cluster="sprachen"
+>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Linguistik · Klasse 10–13</div>
+  <h1>Bühlers Organon-Modell</h1>
+  <p>Entdecke die drei Funktionen jeder Äußerung: Darstellung, Ausdruck und Appell – interaktiv am animierten Dreieck.</p>
+</header>
+
+<main>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- STUFE 1 – Das Modell & Vorhersage             -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div id="stage1" class="section active">
+
+    <div class="progress-bar" aria-hidden="true">
+      <span class="active"></span>
+      <span></span>
+    </div>
+
+    <!-- Einführung + SVG -->
+    <div class="panel">
+      <div class="stage-badge">Stufe 1 von 2</div>
+      <h2>Das Organon-Modell (Karl Bühler, 1934)</h2>
+      <p>Karl Bühler nannte Sprache ein <em>Organon</em> – griechisch für „Werkzeug". Jede Äußerung erfüllt gleichzeitig drei Funktionen, je nach Bezugspunkt:</p>
+
+      <!-- SVG-Dreieck -->
+      <div class="triangle-wrap" aria-label="Bühlers Organon-Dreieck: Drei Ecken – Sachverhalt oben, Sender links unten, Empfänger rechts unten. Das Zeichen in der Mitte.">
+        <svg id="organon-svg" viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg">
+          <!-- Kanten -->
+          <!-- Darstellung: Zeichen ↔ Sachverhalt (oben ↔ Mitte) → linke Kante: Sender–Sachverhalt Nein -->
+          <!-- Kante A: Sachverhalt (oben, 170/24) — Sender (links, 30/236) -->
+          <line id="edge-ausd" class="edge" x1="170" y1="28" x2="34" y2="230"/>
+          <!-- Kante B: Sachverhalt (oben) — Empfänger (rechts, 306/236) -->
+          <line id="edge-darst" class="edge" x1="170" y1="28" x2="306" y2="230"/>
+          <!-- Kante C: Sender — Empfänger (Basis) -->
+          <line id="edge-appell" class="edge" x1="34" y1="230" x2="306" y2="230"/>
+
+          <!-- Zeichen-Kreis in der Mitte -->
+          <circle id="sign-circle" class="sign-circle" cx="170" cy="162" r="36"/>
+          <text class="sign-text" x="170" y="158">sprachliches</text>
+          <text class="sign-text" x="170" y="172">Zeichen</text>
+
+          <!-- Ecken-Labels -->
+          <!-- Sachverhalt oben -->
+          <text class="corner-label" x="170" y="16" text-anchor="middle">Sachverhalt</text>
+          <text class="corner-sub"  x="170" y="27" text-anchor="middle">(Welt, Dinge)</text>
+
+          <!-- Sender links unten -->
+          <text class="corner-label" x="28" y="245" text-anchor="middle">Sender</text>
+          <text class="corner-sub"  x="28" y="256" text-anchor="middle">(Sprecher)</text>
+
+          <!-- Empfänger rechts unten -->
+          <text class="corner-label" x="312" y="245" text-anchor="middle">Empfänger</text>
+          <text class="corner-sub"  x="312" y="256" text-anchor="middle">(Hörer)</text>
+
+          <!-- Funktions-Labels an den Kanten -->
+          <text font-size="10" font-weight="600" fill="#0b8f6a" x="258" y="128" text-anchor="middle" transform="rotate(-60 258 128)">Darstellungsfunktion</text>
+          <text font-size="10" font-weight="600" fill="#6b21a8" x="82"  y="128" text-anchor="middle" transform="rotate(60 82 128)">Ausdrucksfunktion</text>
+          <text font-size="10" font-weight="600" fill="#b5281e" x="170" y="248" text-anchor="middle">Appellfunktion</text>
+        </svg>
+      </div>
+
+      <!-- Legende-Tabelle -->
+      <table class="fn-table" aria-label="Übersicht der drei Sprachfunktionen nach Bühler">
+        <thead>
+          <tr>
+            <th>Funktion</th>
+            <th>Bezug</th>
+            <th>Bühlers Begriff</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="dot dot-darst"></span><strong>Darstellungsfunktion</strong></td>
+            <td>Zeichen → Sachverhalt</td>
+            <td>Symbol</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-ausd"></span><strong>Ausdrucksfunktion</strong></td>
+            <td>Zeichen → Sender</td>
+            <td>Symptom</td>
+          </tr>
+          <tr>
+            <td><span class="dot dot-appell"></span><strong>Appellfunktion</strong></td>
+            <td>Zeichen → Empfänger</td>
+            <td>Signal</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Vorhersage-Aufgabe -->
+    <div class="panel">
+      <h2>Vorhersage: Bühlers Schlüsselbeispiel</h2>
+
+      <div class="context-card">
+        <div class="label">Situation</div>
+        <blockquote>„Rot!"</blockquote>
+        <p>Ein Beifahrer sieht eine rote Ampel und ruft dieses einzelne Wort – der Fahrer sitzt am Steuer.</p>
+      </div>
+
+      <p class="question">Welche Sprachfunktion steht in dieser Äußerung im Vordergrund?</p>
+
+      <div class="options" id="s1-options">
+        <button class="option-btn" onclick="s1Answer('darst')">
+          Darstellungsfunktion – die Ampelfarbe als Sachverhalt wird mitgeteilt
+        </button>
+        <button class="option-btn" onclick="s1Answer('ausd')">
+          Ausdrucksfunktion – der Schreck des Beifahrers kommt zum Ausdruck
+        </button>
+        <button class="option-btn" onclick="s1Answer('appell')">
+          Appellfunktion – der Fahrer soll sofort bremsen
+        </button>
+      </div>
+
+      <div class="feedback" id="s1-feedback"></div>
+      <button class="btn-next" id="s1-next" onclick="goStage2()">Weiter zu Stufe 2 →</button>
+    </div>
+
+  </div><!-- /stage1 -->
+
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- STUFE 2 – Äußerungen klassifizieren           -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div id="stage2" class="section">
+
+    <div class="progress-bar" aria-hidden="true">
+      <span class="done"></span>
+      <span class="active"></span>
+    </div>
+
+    <!-- Dreieck (kompakt, animiert bei Feedback) -->
+    <div class="panel">
+      <div class="stage-badge">Stufe 2 von 2</div>
+      <h2>Äußerungen klassifizieren</h2>
+      <p>Bestimme für jede Äußerung die <strong>dominante</strong> Sprachfunktion. Denke daran: Alle drei Funktionen sind immer gleichzeitig aktiv – eine dominiert.</p>
+
+      <div class="triangle-wrap" style="margin: 1.25rem 0 0.5rem;" aria-hidden="true">
+        <svg id="organon-svg2" viewBox="0 0 340 260" xmlns="http://www.w3.org/2000/svg">
+          <line id="edge-ausd2"   class="edge" x1="170" y1="28" x2="34"  y2="230"/>
+          <line id="edge-darst2"  class="edge" x1="170" y1="28" x2="306" y2="230"/>
+          <line id="edge-appell2" class="edge" x1="34"  y1="230" x2="306" y2="230"/>
+          <circle id="sign-circle2" class="sign-circle" cx="170" cy="162" r="36"/>
+          <text class="sign-text" x="170" y="158">sprachliches</text>
+          <text class="sign-text" x="170" y="172">Zeichen</text>
+          <text class="corner-label" x="170" y="16"  text-anchor="middle">Sachverhalt</text>
+          <text class="corner-sub"  x="170" y="27"  text-anchor="middle">(Welt, Dinge)</text>
+          <text class="corner-label" x="28"  y="245" text-anchor="middle">Sender</text>
+          <text class="corner-sub"  x="28"  y="256" text-anchor="middle">(Sprecher)</text>
+          <text class="corner-label" x="312" y="245" text-anchor="middle">Empfänger</text>
+          <text class="corner-sub"  x="312" y="256" text-anchor="middle">(Hörer)</text>
+          <text font-size="10" font-weight="600" fill="#0b8f6a" x="258" y="128" text-anchor="middle" transform="rotate(-60 258 128)">Darstellungsfunktion</text>
+          <text font-size="10" font-weight="600" fill="#6b21a8" x="82"  y="128" text-anchor="middle" transform="rotate(60 82 128)">Ausdrucksfunktion</text>
+          <text font-size="10" font-weight="600" fill="#b5281e" x="170" y="248" text-anchor="middle">Appellfunktion</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Aufgaben-Container -->
+    <div id="s2-task-container" class="panel">
+      <div class="card-counter" id="s2-counter"></div>
+      <div class="utt-card" id="s2-card"></div>
+      <p class="question">Welche Funktion dominiert?</p>
+      <div class="options" id="s2-options"></div>
+      <div class="feedback" id="s2-feedback"></div>
+      <button class="btn-next" id="s2-next" onclick="s2Next()"></button>
+    </div>
+
+    <!-- Ergebnis (wird eingeblendet) -->
+    <div id="s2-result" class="result-panel" style="display:none;">
+      <h2>Simulation abgeschlossen</h2>
+      <div class="score-row">
+        <div class="score-circle" id="score-circle"></div>
+        <div>
+          <strong id="score-text"></strong>
+          <p id="score-sub" style="font-size:0.88rem;color:var(--muted);margin-top:0.25rem;"></p>
+        </div>
+      </div>
+
+      <div class="theory-box">
+        <h3>Abgrenzung: Organon-Modell vs. Sprechakttheorie</h3>
+        <p>Bühler beschreibt <strong>Zeichenfunktionen</strong> – was ein sprachliches Zeichen leistet. Austin und Searle beschreiben dagegen <strong>Sprechhandlungen</strong> (Illokutionen) – was ein Sprecher mit einer Äußerung <em>tut</em> (versprechen, warnen, behaupten …).</p>
+        <p style="margin-top:0.6rem;">Beide Modelle ergänzen sich: Ein Versprechen (Sprechakt) hat gleichzeitig eine dominante Appellfunktion nach Bühler.</p>
+      </div>
+
+      <div class="fn-chips" style="margin-top:1rem;">
+        <span class="fn-chip darst">◇ Darstellung = Symbol</span>
+        <span class="fn-chip ausd">⬡ Ausdruck = Symptom</span>
+        <span class="fn-chip appell">△ Appell = Signal</span>
+      </div>
+    </div>
+
+  </div><!-- /stage2 -->
+
+</main>
+
+<script>
+(function () {
+  "use strict";
+
+  // ── Stufe-1-Logik ──────────────────────────────────────────────────────
+  const S1_CORRECT = "appell";
+
+  const S1_FEEDBACK = {
+    darst: {
+      cls: "neutral",
+      html: "Fast richtig – ja, der Sachverhalt (rote Ampel) wird mitgeteilt. Aber in dieser Gefahrensituation dominiert die <span class=\"concept-tag\">Appellfunktion</span>: Der Ausruf „Rot!" bedeutet vor allem: <em>Bremse sofort!</em> – der Empfänger soll unmittelbar handeln. Bühler nennt dies <strong>Signal</strong>."
+    },
+    ausd: {
+      cls: "neutral",
+      html: "Der Schreck des Beifahrers schwingt durchaus mit – das ist die <span class=\"concept-tag\">Ausdrucksfunktion</span> (Symptom nach Bühler). In dieser Situation tritt sie aber hinter der <span class=\"concept-tag\">Appellfunktion</span> zurück: <em>Bremse sofort!</em> Alle drei Funktionen sind gleichzeitig aktiv – eine dominiert."
+    },
+    appell: {
+      cls: "correct",
+      html: "Richtig! Die <span class=\"concept-tag\">Appellfunktion</span> dominiert: „Rot!" soll den Fahrer zum sofortigen Bremsen veranlassen. Bühler bezeichnet sie als <strong>Signal</strong>. Gleichzeitig stellt die Äußerung einen Sachverhalt dar (Darstellung) und verrät den Schreck des Beifahrers (Ausdruck) – alle drei Funktionen sind immer gleichzeitig aktiv."
+    }
+  };
+
+  window.s1Answer = function (choice) {
+    const btns = document.querySelectorAll("#s1-options .option-btn");
+    btns.forEach(b => { b.disabled = true; });
+
+    const fb = S1_FEEDBACK[choice];
+    const feedbackEl = document.getElementById("s1-feedback");
+    feedbackEl.className = "feedback " + fb.cls + " visible";
+    feedbackEl.innerHTML = fb.html;
+
+    // Dreieck animieren
+    highlightEdge(choice, "1");
+
+    // Korrekte Antwort markieren
+    btns.forEach(b => {
+      const val = b.getAttribute("onclick").match(/'(\w+)'/)[1];
+      if (val === S1_CORRECT) b.classList.add("correct");
+      else if (val === choice && choice !== S1_CORRECT) b.classList.add("neutral-highlight");
+    });
+
+    document.getElementById("s1-next").classList.add("visible");
+  };
+
+  window.goStage2 = function () {
+    document.getElementById("stage1").classList.remove("active");
+    document.getElementById("stage2").classList.add("active");
+    initStage2();
+  };
+
+  // ── SVG-Dreieck-Animation ──────────────────────────────────────────────
+  function highlightEdge(fn, suffix) {
+    const sfx = suffix || "1";
+    const darst  = document.getElementById("edge-darst"  + (sfx === "1" ? "" : sfx));
+    const ausd   = document.getElementById("edge-ausd"   + (sfx === "1" ? "" : sfx));
+    const appell = document.getElementById("edge-appell" + (sfx === "1" ? "" : sfx));
+    const circle = document.getElementById("sign-circle" + (sfx === "1" ? "" : sfx));
+
+    [darst, ausd, appell].forEach(e => {
+      e.className.baseVal = "edge";
+    });
+    circle.className.baseVal = "sign-circle";
+
+    if (fn === "all") {
+      [darst, ausd, appell].forEach(e => e.classList.add("highlight-all"));
+      circle.classList.add("glow-all");
+    } else if (fn === "darst") {
+      darst.classList.add("highlight-darst");
+      circle.classList.add("glow-darst");
+    } else if (fn === "ausd") {
+      ausd.classList.add("highlight-ausd");
+      circle.classList.add("glow-ausd");
+    } else if (fn === "appell") {
+      appell.classList.add("highlight-appell");
+      circle.classList.add("glow-appell");
+    }
+  }
+
+  // Fix edge IDs for suffix "2"
+  function highlightEdge2(fn) {
+    const darst  = document.getElementById("edge-darst2");
+    const ausd   = document.getElementById("edge-ausd2");
+    const appell = document.getElementById("edge-appell2");
+    const circle = document.getElementById("sign-circle2");
+
+    [darst, ausd, appell].forEach(e => { e.className.baseVal = "edge"; });
+    circle.className.baseVal = "sign-circle";
+
+    if (fn === "all") {
+      [darst, ausd, appell].forEach(e => e.classList.add("highlight-all"));
+      circle.classList.add("glow-all");
+    } else if (fn === "darst") {
+      darst.classList.add("highlight-darst");
+      circle.classList.add("glow-darst");
+    } else if (fn === "ausd") {
+      ausd.classList.add("highlight-ausd");
+      circle.classList.add("glow-ausd");
+    } else if (fn === "appell") {
+      appell.classList.add("highlight-appell");
+      circle.classList.add("glow-appell");
+    }
+  }
+
+  // ── Stufe-2-Daten ──────────────────────────────────────────────────────
+  const UTTERANCES = [
+    {
+      text: "Es regnet.",
+      context: "Radiodurchsage am Morgen",
+      correct: "darst",
+      feedback: {
+        darst: {
+          cls: "correct",
+          html: "Richtig! <span class=\"concept-tag\">Darstellungsfunktion</span> (Symbol nach Bühler): Der Sachverhalt „Regen" wird neutral mitgeteilt. Die Äußerung hat kaum persönliche Färbung und richtet sich nicht direkt an einen Empfänger mit einer Handlungsaufforderung."
+        },
+        ausd: {
+          cls: "wrong",
+          html: "Nicht ganz. Die Äußerung verrät keinen spezifischen Innenzustand des Senders – sie ist sachlich-neutral formuliert. Dominant ist die <span class=\"concept-tag\">Darstellungsfunktion</span>: ein Sachverhalt wird berichtet."
+        },
+        appell: {
+          cls: "wrong",
+          html: "Hier fehlt eine konkrete Aufforderung an den Hörer. Die sachliche Formulierung ohne Modalverb oder Imperativ weist auf die dominante <span class=\"concept-tag\">Darstellungsfunktion</span> hin."
+        }
+      }
+    },
+    {
+      text: "Ich bin so unglaublich müde!",
+      context: "Eine Schülerin sagt das beim Frühstück",
+      correct: "ausd",
+      feedback: {
+        ausd: {
+          cls: "correct",
+          html: "Richtig! <span class=\"concept-tag\">Ausdrucksfunktion</span> (Symptom nach Bühler): Die Intensivierung „so unglaublich" und die Ich-Form zeigen, dass hier der persönliche Erschöpfungszustand der Sprecherin ausgedrückt wird – nicht ein neutraler Bericht."
+        },
+        darst: {
+          cls: "wrong",
+          html: "Der Satz informiert zwar über einen Zustand, aber die Intensivierung „so unglaublich" und die emotionale Färbung machen deutlich, dass hier die Innenwelt der Sprecherin im Vordergrund steht: <span class=\"concept-tag\">Ausdrucksfunktion</span>."
+        },
+        appell: {
+          cls: "wrong",
+          html: "Es gibt keinen direkten Empfänger, der zu einer Handlung aufgefordert wird. Der Fokus liegt auf dem inneren Zustand der Sprecherin: <span class=\"concept-tag\">Ausdrucksfunktion</span>."
+        }
+      }
+    },
+    {
+      text: "Achtung, Glatteis!",
+      context: "Straßenschild im Winter",
+      correct: "appell",
+      feedback: {
+        appell: {
+          cls: "correct",
+          html: "Richtig! <span class=\"concept-tag\">Appellfunktion</span> (Signal nach Bühler): Das Schild richtet sich direkt an den Verkehrsteilnehmer mit dem impliziten Auftrag „Sei vorsichtig / fahre langsam". Der Empfänger soll sein Verhalten anpassen."
+        },
+        darst: {
+          cls: "wrong",
+          html: "Zwar wird der Sachverhalt „Glatteis" dargestellt, aber der Kontext zeigt: Das Schild existiert <em>nur</em>, um den Leser zu warnen und zum vorsichtigen Fahren aufzufordern – dominant ist die <span class=\"concept-tag\">Appellfunktion</span>."
+        },
+        ausd: {
+          cls: "wrong",
+          html: "Ein Straßenschild hat keinen persönlichen „Sender" mit einer Innenwelt. Dominant ist die <span class=\"concept-tag\">Appellfunktion</span>: der Leser soll vorsichtig sein."
+        }
+      }
+    },
+    {
+      text: "Die Wassertemperatur beträgt 18 Grad Celsius.",
+      context: "Messbericht einer Wetterstation",
+      correct: "darst",
+      feedback: {
+        darst: {
+          cls: "correct",
+          html: "Richtig! <span class=\"concept-tag\">Darstellungsfunktion</span> (Symbol nach Bühler): Die objektive Messgröße wird ohne persönliche Bewertung und ohne direkte Aufforderung mitgeteilt. Ein typisches Beispiel für reinen Sachbezug."
+        },
+        ausd: {
+          cls: "wrong",
+          html: "Eine neutrale Messgröße ohne Bewertung oder emotionale Färbung. Der dominante Bezug ist der Sachverhalt, nicht der Sender: <span class=\"concept-tag\">Darstellungsfunktion</span>."
+        },
+        appell: {
+          cls: "wrong",
+          html: "Die Äußerung enthält weder Imperativ noch Modalpartikeln noch eine implizite Handlungsaufforderung. Dominant ist die <span class=\"concept-tag\">Darstellungsfunktion</span>: ein Messwert wird berichtet."
+        }
+      }
+    }
+  ];
+
+  let s2Idx = 0;
+  let s2Correct = 0;
+
+  function initStage2() {
+    s2Idx = 0;
+    s2Correct = 0;
+    renderS2Task();
+  }
+
+  function renderS2Task() {
+    const total = UTTERANCES.length;
+    document.getElementById("s2-counter").textContent =
+      "Äußerung " + (s2Idx + 1) + " von " + total;
+
+    const item = UTTERANCES[s2Idx];
+    document.getElementById("s2-card").innerHTML =
+      '<div class="utt-label">Äußerung</div>' +
+      '<div class="utt-text">„' + item.text + '"</div>' +
+      '<div class="utt-context">Kontext: ' + item.context + '</div>';
+
+    const opts = document.getElementById("s2-options");
+    opts.innerHTML =
+      '<button class="option-btn" onclick="s2Answer(\'darst\')">Darstellungsfunktion</button>' +
+      '<button class="option-btn" onclick="s2Answer(\'ausd\')">Ausdrucksfunktion</button>' +
+      '<button class="option-btn" onclick="s2Answer(\'appell\')">Appellfunktion</button>';
+
+    const fb = document.getElementById("s2-feedback");
+    fb.className = "feedback";
+    fb.innerHTML = "";
+
+    const nxt = document.getElementById("s2-next");
+    nxt.className = "btn-next";
+    nxt.textContent =
+      s2Idx < UTTERANCES.length - 1 ? "Nächste Äußerung →" : "Auswertung anzeigen →";
+
+    // Dreieck zurücksetzen
+    highlightEdge2("none");
+  }
+
+  window.s2Answer = function (choice) {
+    const item = UTTERANCES[s2Idx];
+    const btns = document.querySelectorAll("#s2-options .option-btn");
+    btns.forEach(b => { b.disabled = true; });
+
+    const fb = item.feedback[choice];
+    const feedbackEl = document.getElementById("s2-feedback");
+    feedbackEl.className = "feedback " + fb.cls + " visible";
+    feedbackEl.innerHTML = fb.html;
+
+    if (choice === item.correct) {
+      s2Correct++;
+      highlightEdge2(choice);
+      btns.forEach(b => {
+        const v = b.getAttribute("onclick").match(/'(\w+)'/)[1];
+        if (v === item.correct) b.classList.add("correct");
+      });
+    } else {
+      highlightEdge2(item.correct);
+      btns.forEach(b => {
+        const v = b.getAttribute("onclick").match(/'(\w+)'/)[1];
+        if (v === item.correct) b.classList.add("correct");
+        else if (v === choice)  b.classList.add("wrong");
+      });
+    }
+
+    document.getElementById("s2-next").classList.add("visible");
+  };
+
+  window.s2Next = function () {
+    s2Idx++;
+    if (s2Idx < UTTERANCES.length) {
+      renderS2Task();
+    } else {
+      showResult();
+    }
+  };
+
+  function showResult() {
+    document.getElementById("s2-task-container").style.display = "none";
+    const res = document.getElementById("s2-result");
+    res.style.display = "block";
+
+    const total = UTTERANCES.length;
+    const pct   = s2Correct / total;
+
+    const circle = document.getElementById("score-circle");
+    circle.textContent = s2Correct + "/" + total;
+    circle.className = "score-circle " + (pct >= 0.75 ? "good" : pct >= 0.5 ? "ok" : "low");
+
+    const texts = [
+      ["Super! Du erkennst die Sprachfunktionen sicher.", "Das Organon-Modell sitzt – übe weiter mit eigenen Beispielen."],
+      ["Guter Anfang!", "Schau nochmals, welche Merkmale (Ich-Form, Imperativ, Sachbezug) die jeweilige Funktion anzeigen."],
+      ["Noch etwas üben.", "Achte auf: Sachverhalt (Darstellung), Ich-Form/Intensivierung (Ausdruck), Aufforderung/Imperativ (Appell)."]
+    ];
+    const tier = pct >= 0.75 ? 0 : pct >= 0.5 ? 1 : 2;
+    document.getElementById("score-text").textContent = texts[tier][0];
+    document.getElementById("score-sub").textContent  = texts[tier][1];
+
+    // Alle drei Kanten leuchten auf
+    highlightEdge2("all");
+  }
+
+  // ── Tracking ───────────────────────────────────────────────────────────
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event:           "simulation_start",
+    assetType:       "simulation",
+    topicCluster:    "sprachen",
+    simulationTitle: "buehler-organon-modell"
+  });
+
+}());
+</script>
+</body>
+</html>

@@ -1,0 +1,823 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Semantische Rollen üben: Agens, Patiens, Experiencer | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Übung zu semantischen Rollen: Ordne Agens, Patiens und Experiencer in deutschen Sätzen zu und erkenne die Falle, dass das Subjekt nicht immer Agens ist.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="semantische Rollen, Agens, Patiens, Experiencer, Deutsch Oberstufe, Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/semantische-rollen-agens-patiens-simulation.html">
+  <meta property="og:title" content="Semantische Rollen üben: Agens, Patiens, Experiencer">
+  <meta property="og:description" content="Interaktive Übung zu semantischen Rollen: Ordne Agens, Patiens und Experiencer in deutschen Sätzen zu und erkenne die Falle, dass das Subjekt nicht immer Agens ist.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/semantische-rollen-agens-patiens-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Semantische Rollen üben: Agens, Patiens, Experiencer",
+  "description":"Interaktive Übung zu semantischen Rollen: Ordne Agens, Patiens und Experiencer in deutschen Sätzen zu und erkenne die Falle, dass das Subjekt nicht immer Agens ist.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/semantische-rollen-agens-patiens-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* Main */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* Fortschrittsleiste */
+    .progress-bar-wrap {
+      background: var(--line);
+      border-radius: 99px;
+      height: 6px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--cyan);
+      border-radius: 99px;
+      transition: width 0.4s ease;
+      width: 0%;
+    }
+    .progress-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+    }
+
+    /* Stufen-Badge */
+    .stage-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding: 0.2rem 0.7rem;
+      border-radius: 99px;
+      background: var(--blue);
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Panel */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .panel h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    /* Satz-Visualisierung */
+    .sentence-display {
+      font-size: 1.15rem;
+      font-weight: 500;
+      line-height: 1.8;
+      padding: 1rem 1.25rem;
+      background: #f0f5ff;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--blue);
+    }
+    .sentence-display .np {
+      display: inline-block;
+      padding: 0.1rem 0.45rem;
+      border-radius: 5px;
+      margin: 0 0.1rem;
+      font-weight: 600;
+      cursor: default;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .sentence-display .np:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    }
+    .np-subject   { background: #dbeafe; color: #1e40af; }
+    .np-object    { background: #fef9c3; color: #854d0e; }
+    .np-dative    { background: #ede9fe; color: #5b21b6; }
+    .np-prep      { background: #fce7f3; color: #9d174d; }
+
+    /* Frage */
+    .question-text {
+      font-size: 0.97rem;
+      margin-bottom: 1.25rem;
+      color: var(--ink);
+    }
+    .np-target {
+      font-weight: 700;
+      color: var(--blue);
+    }
+
+    /* Optionen */
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .option-btn {
+      padding: 0.65rem 0.75rem;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.18s, background 0.18s, transform 0.12s;
+      text-align: center;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eff6ff;
+      transform: translateY(-1px);
+    }
+    .option-btn:disabled { cursor: default; opacity: 0.75; }
+    .option-btn.correct  { border-color: var(--green); background: #d1fae5; color: #065f46; }
+    .option-btn.wrong    { border-color: var(--red);   background: #fee2e2; color: #7f1d1d; }
+
+    /* Feedback-Box */
+    .feedback-box {
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-top: 1.25rem;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      animation: fadeSlide 0.3s ease;
+      display: none;
+    }
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .feedback-box.correct { background: #d1fae5; border: 1px solid #6ee7b7; }
+    .feedback-box.wrong   { background: #fee2e2; border: 1px solid #fca5a5; }
+    .feedback-box.show    { display: block; }
+
+    .concept-tag {
+      display: inline-block;
+      padding: 0.15rem 0.55rem;
+      border-radius: 99px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      background: var(--blue);
+      color: #fff;
+      margin: 0 0.1rem;
+    }
+    .concept-tag.green  { background: var(--green); }
+    .concept-tag.red    { background: var(--red); }
+    .concept-tag.purple { background: var(--purple); }
+    .concept-tag.amber  { background: var(--amber); }
+
+    /* Weiter-Button */
+    .btn-next {
+      display: none;
+      margin-top: 1.25rem;
+      padding: 0.65rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s, transform 0.12s;
+    }
+    .btn-next:hover { background: #0a4a8a; transform: translateY(-1px); }
+    .btn-next.show  { display: inline-block; }
+
+    /* Abschluss */
+    .finish-panel {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      display: none;
+    }
+    .finish-panel.show { display: block; }
+    .finish-panel h2   { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .finish-panel p    { color: var(--muted); margin-bottom: 1.5rem; }
+    .score-badge {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--green);
+      margin-bottom: 1rem;
+    }
+    .btn-restart {
+      padding: 0.65rem 1.75rem;
+      background: var(--cyan);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.97rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-restart:hover { background: #067a8e; }
+
+    /* Regel-Box */
+    .rule-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      font-size: 0.9rem;
+    }
+    .rule-box h3 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+
+    /* Missverständnis-Banner */
+    .misconception-banner {
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      font-size: 0.92rem;
+    }
+    .misconception-banner strong { color: var(--amber); }
+
+    /* Stage-Übergänge */
+    .stage-section { display: none; }
+    .stage-section.active { display: block; }
+
+    /* Rollenkarten */
+    .roles-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.75rem;
+      margin-top: 0.5rem;
+    }
+    .role-card {
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      font-size: 0.87rem;
+      line-height: 1.5;
+    }
+    .role-card strong { display: block; font-size: 0.92rem; margin-bottom: 0.25rem; }
+    .role-agens       { background: #dbeafe; border: 1px solid #93c5fd; }
+    .role-patiens     { background: #fef9c3; border: 1px solid #fde047; }
+    .role-experiencer { background: #ede9fe; border: 1px solid #c4b5fd; }
+    .role-instrument  { background: #fce7f3; border: 1px solid #f9a8d4; }
+    .role-benefizient { background: #d1fae5; border: 1px solid #6ee7b7; }
+
+    @media (max-width: 480px) {
+      header { padding: 1.5rem 1rem 1rem; }
+      main   { padding: 0 1rem 3rem; gap: 1.5rem; }
+      .panel { padding: 1.25rem; }
+      .options-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body
+  data-asset-type="simulation"
+  data-subject="Deutsch"
+  data-grade-level="10-13"
+  data-topic-cluster="sprachen"
+  data-primary-keyword="semantische Rollen Linguistik"
+>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<!-- Tracking -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "asset_view",
+    asset_type: "simulation",
+    topic_cluster: "sprachen",
+    primary_keyword: "semantische Rollen Linguistik",
+    grade_level: "10-13",
+    subject: "Deutsch"
+  });
+</script>
+
+<header>
+  <p class="eyebrow">Linguistik &middot; Klasse 10&ndash;13</p>
+  <h1>Semantische Rollen</h1>
+  <p>Ordne Agens, Patiens und Experiencer zu &ndash; und erkenne die häufigste Falle: Das Subjekt ist <em>nicht immer</em> der Handlungsträger.</p>
+</header>
+
+<main>
+
+  <!-- Fortschritt -->
+  <div>
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="progressBar"></div>
+    </div>
+    <p class="progress-label" id="progressLabel">Aufgabe 1 von 8</p>
+  </div>
+
+  <!-- STUFE 1 -->
+  <div class="stage-section active" id="stage1">
+
+    <div class="panel">
+      <span class="stage-badge">Stufe 1 &ndash; Grundprinzip</span>
+      <h2>Aktive Handlungen &ndash; wer macht was?</h2>
+
+      <div class="rule-box" style="margin-bottom: 1.5rem;">
+        <h3>Kurzreferenz: Semantische Rollen</h3>
+        <div class="roles-grid">
+          <div class="role-card role-agens">
+            <strong>Agens</strong>
+            Handelt willentlich &amp; aktiv. Meist belebt.
+          </div>
+          <div class="role-card role-patiens">
+            <strong>Patiens</strong>
+            Ist von der Handlung betroffen oder verändert sich.
+          </div>
+          <div class="role-card role-experiencer">
+            <strong>Experiencer</strong>
+            Erlebt einen inneren Zustand (Gefühl, Wahrnehmung).
+          </div>
+          <div class="role-card role-instrument">
+            <strong>Instrument</strong>
+            Unbelebtes Mittel, mit dem gehandelt wird.
+          </div>
+          <div class="role-card role-benefizient">
+            <strong>Benefizient</strong>
+            Profitiert oder leidet durch die Handlung.
+          </div>
+        </div>
+      </div>
+
+      <!-- Aufgabe 1.1 -->
+      <div class="task-block" id="task-1-1">
+        <div class="sentence-display">
+          <span class="np np-subject">Der Hund</span>
+          beißt
+          <span class="np np-object">den Briefträger</span>.
+        </div>
+        <p class="question-text">
+          Welche semantische Rolle hat <span class="np-target">„Der Hund"</span>?
+        </p>
+        <div class="options-grid">
+          <button class="option-btn" onclick="checkAnswer(this,'Agens','1-1')">Agens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Patiens','1-1')">Patiens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Experiencer','1-1')">Experiencer</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Instrument','1-1')">Instrument</button>
+        </div>
+        <div class="feedback-box" id="fb-1-1"></div>
+        <button class="btn-next" id="next-1-1" onclick="nextTask('1-1','1-2')">Nächste Aufgabe &rarr;</button>
+      </div>
+
+      <!-- Aufgabe 1.2 -->
+      <div class="task-block" id="task-1-2" style="display:none;">
+        <div class="sentence-display">
+          Der Arzt heilt
+          <span class="np np-object">den Patienten</span>.
+        </div>
+        <p class="question-text">
+          Welche semantische Rolle hat <span class="np-target">„den Patienten"</span>?
+        </p>
+        <div class="options-grid">
+          <button class="option-btn" onclick="checkAnswer(this,'Patiens','1-2')">Patiens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Agens','1-2')">Agens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Experiencer','1-2')">Experiencer</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Benefizient','1-2')">Benefizient</button>
+        </div>
+        <div class="feedback-box" id="fb-1-2"></div>
+        <button class="btn-next" id="next-1-2" onclick="nextTask('1-2','1-3')">Nächste Aufgabe &rarr;</button>
+      </div>
+
+      <!-- Aufgabe 1.3 -->
+      <div class="task-block" id="task-1-3" style="display:none;">
+        <div class="sentence-display">
+          <span class="np np-subject">Das Erdbeben</span>
+          erschreckt
+          <span class="np np-object">Maria</span>.
+        </div>
+        <p class="question-text">
+          Welche semantische Rolle hat <span class="np-target">„Maria"</span>?
+        </p>
+        <div class="options-grid">
+          <button class="option-btn" onclick="checkAnswer(this,'Experiencer','1-3')">Experiencer</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Agens','1-3')">Agens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Patiens','1-3')">Patiens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Instrument','1-3')">Instrument</button>
+        </div>
+        <div class="feedback-box" id="fb-1-3"></div>
+        <button class="btn-next" id="next-1-3" onclick="nextTask('1-3','1-4')">Nächste Aufgabe &rarr;</button>
+      </div>
+
+      <!-- Aufgabe 1.4 -->
+      <div class="task-block" id="task-1-4" style="display:none;">
+        <div class="sentence-display">
+          <span class="np np-subject">Maria</span>
+          kauft
+          <span class="np np-dative">ihrem Sohn</span>
+          <span class="np np-object">ein Fahrrad</span>.
+        </div>
+        <p class="question-text">
+          Welche semantische Rolle hat <span class="np-target">„ihrem Sohn"</span>?
+        </p>
+        <div class="options-grid">
+          <button class="option-btn" onclick="checkAnswer(this,'Benefizient','1-4')">Benefizient</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Agens','1-4')">Agens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Patiens','1-4')">Patiens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Experiencer','1-4')">Experiencer</button>
+        </div>
+        <div class="feedback-box" id="fb-1-4"></div>
+        <button class="btn-next" id="next-1-4" onclick="goToStage2()">Weiter zu Stufe 2 &rarr;</button>
+      </div>
+
+    </div>
+  </div><!-- /stage1 -->
+
+  <!-- STUFE 2 -->
+  <div class="stage-section" id="stage2">
+
+    <div class="misconception-banner">
+      <strong>Häufige Falle:</strong> Das Subjekt ist <em>nicht immer</em> der Agens!
+      Im Passiv und bei Empfindungsverben muss man genauer hinschauen.
+      Die <strong>syntaktische Funktion</strong> (Subjekt, Objekt) sagt nichts über die
+      <strong>semantische Rolle</strong> aus. Subjekt ist nicht immer Agens.
+    </div>
+
+    <div class="panel" style="margin-top: 1.5rem;">
+      <span class="stage-badge" style="background: var(--purple);">Stufe 2 &ndash; Syntaktische Falle</span>
+      <h2>Passiv &amp; Empfindungsverben &ndash; Subjekt ist nicht immer Agens</h2>
+
+      <!-- Aufgabe 2.1 -->
+      <div class="task-block" id="task-2-1">
+        <div class="sentence-display">
+          <span class="np np-subject">Das Haus</span>
+          wurde
+          <span class="np np-prep">von Maria</span>
+          gebaut.
+        </div>
+        <p class="question-text">
+          Welche semantische Rolle hat <span class="np-target">„Das Haus"</span>
+          (das grammatische Subjekt dieses Passivsatzes)?
+        </p>
+        <div class="options-grid">
+          <button class="option-btn" onclick="checkAnswer(this,'Patiens','2-1')">Patiens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Agens','2-1')">Agens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Experiencer','2-1')">Experiencer</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Instrument','2-1')">Instrument</button>
+        </div>
+        <div class="feedback-box" id="fb-2-1"></div>
+        <button class="btn-next" id="next-2-1" onclick="nextTask('2-1','2-2')">Nächste Aufgabe &rarr;</button>
+      </div>
+
+      <!-- Aufgabe 2.2 -->
+      <div class="task-block" id="task-2-2" style="display:none;">
+        <div class="sentence-display">
+          Das Buch gefällt
+          <span class="np np-dative">mir</span>.
+        </div>
+        <p class="question-text">
+          Welche semantische Rolle hat <span class="np-target">„mir"</span>
+          (Dativobjekt bei einem Empfindungsverb)?
+        </p>
+        <div class="options-grid">
+          <button class="option-btn" onclick="checkAnswer(this,'Experiencer','2-2')">Experiencer</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Agens','2-2')">Agens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Patiens','2-2')">Patiens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Benefizient','2-2')">Benefizient</button>
+        </div>
+        <div class="feedback-box" id="fb-2-2"></div>
+        <button class="btn-next" id="next-2-2" onclick="nextTask('2-2','2-3')">Nächste Aufgabe &rarr;</button>
+      </div>
+
+      <!-- Aufgabe 2.3 -->
+      <div class="task-block" id="task-2-3" style="display:none;">
+        <div class="sentence-display">
+          <span class="np np-subject">Die Säge</span>
+          trennte
+          <span class="np np-object">das Brett</span>.
+        </div>
+        <p class="question-text">
+          Welche semantische Rolle hat <span class="np-target">„Die Säge"</span>?
+          Tipp: Kann eine Säge willentlich handeln?
+        </p>
+        <div class="options-grid">
+          <button class="option-btn" onclick="checkAnswer(this,'Instrument','2-3')">Instrument</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Agens','2-3')">Agens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Patiens','2-3')">Patiens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Experiencer','2-3')">Experiencer</button>
+        </div>
+        <div class="feedback-box" id="fb-2-3"></div>
+        <button class="btn-next" id="next-2-3" onclick="nextTask('2-3','2-4')">Nächste Aufgabe &rarr;</button>
+      </div>
+
+      <!-- Aufgabe 2.4 -->
+      <div class="task-block" id="task-2-4" style="display:none;">
+        <div class="sentence-display">
+          <span class="np np-subject">Der Briefträger</span>
+          wurde
+          <span class="np np-prep">vom Hund</span>
+          gebissen.
+        </div>
+        <p class="question-text">
+          Welche semantische Rolle hat <span class="np-target">„vom Hund"</span>
+          (das Präpositionalobjekt dieses Passivsatzes)?
+        </p>
+        <div class="options-grid">
+          <button class="option-btn" onclick="checkAnswer(this,'Agens','2-4')">Agens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Patiens','2-4')">Patiens</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Experiencer','2-4')">Experiencer</button>
+          <button class="option-btn" onclick="checkAnswer(this,'Instrument','2-4')">Instrument</button>
+        </div>
+        <div class="feedback-box" id="fb-2-4"></div>
+        <button class="btn-next" id="next-2-4" onclick="showFinish()">Ergebnis ansehen &rarr;</button>
+      </div>
+
+    </div>
+  </div><!-- /stage2 -->
+
+  <!-- Abschluss -->
+  <div class="panel finish-panel" id="finishPanel">
+    <div class="score-badge" id="scoreBadge">0 / 8</div>
+    <h2>Übung abgeschlossen!</h2>
+    <p id="finishMsg">Du hast alle Aufgaben zu semantischen Rollen bearbeitet.</p>
+    <p style="margin-bottom:1.5rem; color:var(--muted); font-size:0.92rem;">
+      Merke: Syntaktische Funktion (Subjekt/Objekt) ist nicht gleich Semantische Rolle (Agens/Patiens).
+      Im Passiv ist das Subjekt nicht immer der Agens &ndash; sondern oft der Patiens.
+    </p>
+    <button class="btn-restart" onclick="restartSimulation()">Neu starten</button>
+  </div>
+
+</main>
+
+<script>
+/* Antwort-Daten */
+var ANSWERS = {
+  '1-1': {
+    correct: 'Agens',
+    feedback: {
+      Agens: { ok: true,  html: 'Richtig! <span class="concept-tag">Agens</span> &ndash; &bdquo;Der Hund&ldquo; handelt willentlich, aktiv und kontrolliert. Belebte Entitäten, die eine Handlung absichtlich ausführen, sind typische Agens-Kandidaten.' },
+      Patiens: { ok: false, html: 'Nicht ganz. <span class="concept-tag red">Patiens</span> ist derjenige, der betroffen wird &ndash; das wäre hier &bdquo;der Briefträger&ldquo;. Der Hund führt die Handlung aktiv aus: <span class="concept-tag">Agens</span>.' },
+      Experiencer: { ok: false, html: '<span class="concept-tag red">Experiencer</span> wäre eine Entität, die einen inneren Zustand erlebt (Gefühl, Wahrnehmung). Der Hund beißt &ndash; er erlebt nichts, er handelt. Richtig: <span class="concept-tag">Agens</span>.' },
+      Instrument: { ok: false, html: '<span class="concept-tag red">Instrument</span> wäre ein unbelebtes Werkzeug. Der Hund ist belebt und handelt willentlich. Richtig: <span class="concept-tag">Agens</span>.' }
+    }
+  },
+  '1-2': {
+    correct: 'Patiens',
+    feedback: {
+      Patiens: { ok: true,  html: 'Richtig! <span class="concept-tag green">Patiens</span> &ndash; &bdquo;den Patienten&ldquo; wird durch die Handlung des Arztes beeinflusst und verändert sich (er wird geheilt). Entitäten, auf die eine Handlung einwirkt, sind Patiens.' },
+      Agens: { ok: false, html: 'Nein. <span class="concept-tag red">Agens</span> ist der Handlungsträger &ndash; das ist hier &bdquo;der Arzt&ldquo;. &bdquo;Den Patienten&ldquo; empfängt die Handlung: <span class="concept-tag green">Patiens</span>.' },
+      Experiencer: { ok: false, html: '<span class="concept-tag red">Experiencer</span> erlebt einen mentalen Zustand. Hier geht es um eine physische Einwirkung. Richtig: <span class="concept-tag green">Patiens</span>.' },
+      Benefizient: { ok: false, html: '<span class="concept-tag red">Benefizient</span> profitiert von einer Handlung. Hier ist &bdquo;den Patienten&ldquo; das direkte Akkusativobjekt, das verändert wird: <span class="concept-tag green">Patiens</span>.' }
+    }
+  },
+  '1-3': {
+    correct: 'Experiencer',
+    feedback: {
+      Experiencer: { ok: true,  html: 'Richtig! <span class="concept-tag purple">Experiencer</span> &ndash; Maria erlebt einen inneren Zustand (Erschrecken). Sie handelt nicht selbst; der Stimulus (das Erdbeben) löst das Empfinden aus.' },
+      Agens: { ok: false, html: 'Nein. <span class="concept-tag red">Agens</span> handelt willentlich. Maria erschrickt unfreiwillig &ndash; sie ist kein Handlungsträger. Richtig: <span class="concept-tag purple">Experiencer</span>.' },
+      Patiens: { ok: false, html: '<span class="concept-tag red">Patiens</span> wird physisch betroffen oder verändert. Bei Empfindungsverben wie &bdquo;erschrecken&ldquo; ist die betroffene Person der <span class="concept-tag purple">Experiencer</span> &ndash; sie erlebt den Zustand innerlich.' },
+      Instrument: { ok: false, html: '<span class="concept-tag red">Instrument</span> ist unbelebt. Maria ist belebt und erlebt einen inneren Zustand: <span class="concept-tag purple">Experiencer</span>.' }
+    }
+  },
+  '1-4': {
+    correct: 'Benefizient',
+    feedback: {
+      Benefizient: { ok: true,  html: 'Richtig! <span class="concept-tag green">Benefizient</span> &ndash; &bdquo;ihrem Sohn&ldquo; profitiert von der Kaufhandlung. Dativobjekte bei Verben des Gebens oder Kaufens sind oft Benfizienten.' },
+      Agens: { ok: false, html: 'Nein. <span class="concept-tag red">Agens</span> handelt aktiv &ndash; das ist hier &bdquo;Maria&ldquo;. Der Sohn empfängt den Vorteil: <span class="concept-tag green">Benefizient</span>.' },
+      Patiens: { ok: false, html: '<span class="concept-tag red">Patiens</span> wird verändert oder betroffen. Das Fahrrad ist hier das Patiens (Thema). Der Sohn profitiert: <span class="concept-tag green">Benefizient</span>.' },
+      Experiencer: { ok: false, html: '<span class="concept-tag red">Experiencer</span> erlebt einen inneren Empfindungszustand. Hier geht es um einen materiellen Vorteil: <span class="concept-tag green">Benefizient</span>.' }
+    }
+  },
+  '2-1': {
+    correct: 'Patiens',
+    feedback: {
+      Patiens: { ok: true,  html: 'Richtig! <span class="concept-tag green">Patiens</span> &ndash; Im Passivsatz rückt der Patiens in die Subjektposition. &bdquo;Das Haus&ldquo; wurde gebaut (es verändert sich), Maria ist der <span class="concept-tag">Agens</span> (von-Phrase). Syntaktische Funktion (Subjekt) ist nicht gleich Semantische Rolle (Agens)!' },
+      Agens: { ok: false, html: 'Falle! Das Subjekt ist hier <em>nicht</em> der <span class="concept-tag red">Agens</span>. Im Passiv wird der Patiens zum grammatischen Subjekt. &bdquo;Das Haus&ldquo; wird gebaut &ndash; es ist der <span class="concept-tag green">Patiens</span>. Subjekt ist nicht immer Agens.' },
+      Experiencer: { ok: false, html: '<span class="concept-tag red">Experiencer</span> wäre ein Lebewesen mit Empfindung. Das Haus ist unbelebt und wird verändert: <span class="concept-tag green">Patiens</span>. Im Passiv: Subjekt ist oft Patiens!' },
+      Instrument: { ok: false, html: '<span class="concept-tag red">Instrument</span> wäre ein Werkzeug. Das Haus ist das Ergebnis der Handlung und wird verändert: <span class="concept-tag green">Patiens</span>.' }
+    }
+  },
+  '2-2': {
+    correct: 'Experiencer',
+    feedback: {
+      Experiencer: { ok: true,  html: 'Richtig! <span class="concept-tag purple">Experiencer</span> &ndash; Bei Empfindungsverben wie &bdquo;gefallen&ldquo; ist das Dativobjekt der Experiencer: es erlebt den inneren Zustand (Gefallen). Das Buch (Stimulus) steht im Nominativ, ist aber kein Agens!' },
+      Agens: { ok: false, html: 'Nein. <span class="concept-tag red">Agens</span> handelt willentlich. &bdquo;Mir&ldquo; erlebt das Gefallen passiv &ndash; ohne Intention. Richtig: <span class="concept-tag purple">Experiencer</span>. Empfindungsverben: Dativ ist oft Experiencer.' },
+      Patiens: { ok: false, html: '<span class="concept-tag red">Patiens</span> wird physisch verändert. Hier geht es um ein inneres Empfinden. &bdquo;Mir&ldquo; erlebt: <span class="concept-tag purple">Experiencer</span>.' },
+      Benefizient: { ok: false, html: '<span class="concept-tag red">Benefizient</span> profitiert materiell. Hier erlebt &bdquo;mir&ldquo; einen Empfindungszustand: <span class="concept-tag purple">Experiencer</span>.' }
+    }
+  },
+  '2-3': {
+    correct: 'Instrument',
+    feedback: {
+      Instrument: { ok: true,  html: 'Richtig! <span class="concept-tag amber">Instrument</span> &ndash; &bdquo;Die Säge&ldquo; ist unbelebt und kann nicht willentlich handeln. Sie ist das Werkzeug, mit dem ein ungenannter Agens (ein Mensch) das Brett trennte. Unbelebte Subjekte sind oft Instrumente.' },
+      Agens: { ok: false, html: 'Falle! <span class="concept-tag red">Agens</span> muss willentlich und intentional handeln &ndash; das setzt Belebtheit voraus. Eine Säge kann nicht wollen. Richtig: <span class="concept-tag amber">Instrument</span>. Unbelebte Subjekte sind oft Instrument, nicht Agens.' },
+      Patiens: { ok: false, html: '<span class="concept-tag red">Patiens</span> wird verändert. Das Brett ist der Patiens. Die Säge ist das unbelebte Werkzeug: <span class="concept-tag amber">Instrument</span>.' },
+      Experiencer: { ok: false, html: '<span class="concept-tag red">Experiencer</span> erlebt Empfindungen &ndash; nur Lebewesen. Eine Säge ist unbelebt: <span class="concept-tag amber">Instrument</span>.' }
+    }
+  },
+  '2-4': {
+    correct: 'Agens',
+    feedback: {
+      Agens: { ok: true,  html: 'Richtig! <span class="concept-tag">Agens</span> &ndash; Im Passiv bleibt der ursprüngliche Handlungsträger semantisch der Agens, auch wenn er grammatisch zur Präpositionalphrase (von-Phrase) wird. Syntaktische Position ist nicht gleich semantische Rolle.' },
+      Patiens: { ok: false, html: 'Nein. Der <span class="concept-tag red">Patiens</span> ist hier &bdquo;der Briefträger&ldquo; (Subjekt im Passiv). &bdquo;Vom Hund&ldquo; ist der Handlungsträger, der im Aktiv das Subjekt wäre: <span class="concept-tag">Agens</span>.' },
+      Experiencer: { ok: false, html: '<span class="concept-tag red">Experiencer</span> erlebt einen Gefühlszustand. Der Hund beißt aktiv: <span class="concept-tag">Agens</span>.' },
+      Instrument: { ok: false, html: '<span class="concept-tag red">Instrument</span> wäre unbelebt. Der Hund ist belebt und handelt intentional: <span class="concept-tag">Agens</span>.' }
+    }
+  }
+};
+
+/* Zustand */
+var correctCount = 0;
+var totalAnswered = 0;
+var TOTAL = 8;
+
+/* Antwort prüfen */
+function checkAnswer(btn, chosen, taskId) {
+  var data = ANSWERS[taskId];
+  var fbBox = document.getElementById('fb-' + taskId);
+  var nextBtn = document.getElementById('next-' + taskId);
+  var allBtns = btn.closest('.options-grid').querySelectorAll('.option-btn');
+
+  allBtns.forEach(function(b) { b.disabled = true; });
+
+  var entry = data.feedback[chosen] || { ok: false, html: 'Keine Daten.' };
+  var isCorrect = entry.ok;
+
+  if (isCorrect) {
+    btn.classList.add('correct');
+    correctCount++;
+    fbBox.className = 'feedback-box correct show';
+    window.dataLayer.push({ event: 'sim_answer_correct', task: taskId });
+  } else {
+    btn.classList.add('wrong');
+    allBtns.forEach(function(b) {
+      if (b.textContent.trim() === data.correct) b.classList.add('correct');
+    });
+    fbBox.className = 'feedback-box wrong show';
+    window.dataLayer.push({ event: 'sim_answer_wrong', task: taskId });
+  }
+
+  fbBox.innerHTML = entry.html;
+  totalAnswered++;
+  updateProgress();
+  nextBtn.classList.add('show');
+}
+
+/* Nächste Aufgabe */
+function nextTask(currentId, nextId) {
+  document.getElementById('task-' + currentId).style.display = 'none';
+  var nextEl = document.getElementById('task-' + nextId);
+  if (nextEl) { nextEl.style.display = 'block'; }
+}
+
+/* Stufe 2 aktivieren */
+function goToStage2() {
+  document.getElementById('stage1').classList.remove('active');
+  document.getElementById('stage2').classList.add('active');
+  document.getElementById('stage2').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+/* Abschluss anzeigen */
+function showFinish() {
+  document.getElementById('stage2').classList.remove('active');
+  var finish = document.getElementById('finishPanel');
+  finish.classList.add('show');
+  document.getElementById('scoreBadge').textContent = correctCount + ' / ' + TOTAL;
+
+  var msg = '';
+  if (correctCount >= 7) {
+    msg = 'Hervorragend! Du beherrschst semantische Rollen sicher \u2013 auch die tückischen Passiv- und Empfindungsverb-Konstruktionen.';
+  } else if (correctCount >= 5) {
+    msg = 'Gut gemacht! Die Grundfälle sitzen. Wiederhole besonders Stufe 2 (Passiv und Empfindungsverben).';
+  } else {
+    msg = 'Das Konzept ist anspruchsvoll. Merke: Syntaktische Funktion ist nicht gleich Semantische Rolle. Starte nochmal und achte auf die Hinweise.';
+  }
+  document.getElementById('finishMsg').textContent = msg;
+  finish.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  window.dataLayer.push({ event: 'sim_finish', correct_count: correctCount, total: TOTAL });
+}
+
+/* Fortschritt aktualisieren */
+function updateProgress() {
+  var pct = (totalAnswered / TOTAL) * 100;
+  document.getElementById('progressBar').style.width = pct + '%';
+  var next = totalAnswered + 1 > TOTAL ? TOTAL : totalAnswered + 1;
+  document.getElementById('progressLabel').textContent = 'Aufgabe ' + next + ' von ' + TOTAL;
+}
+
+/* Neu starten */
+function restartSimulation() {
+  correctCount = 0;
+  totalAnswered = 0;
+
+  document.getElementById('stage1').classList.add('active');
+  document.getElementById('stage2').classList.remove('active');
+  document.getElementById('finishPanel').classList.remove('show');
+
+  var allTaskBlocks = document.querySelectorAll('.task-block');
+  allTaskBlocks.forEach(function(b) { b.style.display = 'none'; });
+
+  var stage1Tasks = document.querySelectorAll('#stage1 .task-block');
+  if (stage1Tasks.length > 0) stage1Tasks[0].style.display = 'block';
+
+  var stage2Tasks = document.querySelectorAll('#stage2 .task-block');
+  if (stage2Tasks.length > 0) stage2Tasks[0].style.display = 'block';
+
+  document.querySelectorAll('.option-btn').forEach(function(btn) {
+    btn.disabled = false;
+    btn.classList.remove('correct', 'wrong');
+  });
+  document.querySelectorAll('.feedback-box').forEach(function(fb) {
+    fb.className = 'feedback-box';
+    fb.innerHTML = '';
+  });
+  document.querySelectorAll('.btn-next').forEach(function(b) { b.classList.remove('show'); });
+
+  updateProgress();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+/* Init: erste Task in jeder Stufe anzeigen */
+(function init() {
+  var s1 = document.querySelectorAll('#stage1 .task-block');
+  s1.forEach(function(b, i) { b.style.display = i === 0 ? 'block' : 'none'; });
+  var s2 = document.querySelectorAll('#stage2 .task-block');
+  s2.forEach(function(b, i) { b.style.display = i === 0 ? 'block' : 'none'; });
+  updateProgress();
+}());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,884 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Prototypentheorie der Semantik interaktiv erklärt | Nachhilfe Mentor</title>
+  <meta name="description" content="Prototypentheorie nach Rosch interaktiv: Wähle den typischsten Vogel, sieh das Typikalitäts-Diagramm und prüfe am Fledermaus-Grenzfall, wie Wortbedeutungen funktionieren.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Prototypentheorie, Semantik, Eleanor Rosch, Typikalität, Familienähnlichkeit, Linguistik Abitur">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/prototypentheorie-semantik-simulation.html">
+  <meta property="og:title" content="Prototypentheorie der Semantik interaktiv">
+  <meta property="og:description" content="Prototypentheorie nach Rosch interaktiv: Wähle den typischsten Vogel, sieh das Typikalitäts-Diagramm und prüfe am Fledermaus-Grenzfall, wie Wortbedeutungen funktionieren.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/prototypentheorie-semantik-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Prototypentheorie der Semantik interaktiv erklärt",
+  "description":"Prototypentheorie nach Rosch interaktiv: Wähle den typischsten Vogel, sieh das Typikalitäts-Diagramm und prüfe am Fledermaus-Grenzfall, wie Wortbedeutungen funktionieren.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/prototypentheorie-semantik-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    :root {
+      --ink:   #172033;
+      --muted: #617087;
+      --line:  #d8e1ed;
+      --blue:  #0f5fa8;
+      --green: #0b8f6a;
+      --red:   #b5281e;
+      --amber: #b87700;
+      --cyan:  #0894aa;
+      --bg:    #f5f8fc;
+      --panel: #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Header ──────────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+      line-height: 1.15;
+      letter-spacing: -0.015em;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 620px;
+    }
+
+    /* ── Main ────────────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    /* ── Progress ────────────────────────────────────── */
+    .progress {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .step-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--line);
+      border: 2px solid var(--line);
+      transition: background 0.2s, border-color 0.2s;
+      flex-shrink: 0;
+    }
+    .step-dot.active { background: var(--blue); border-color: var(--blue); }
+    .step-dot.done   { background: var(--green); border-color: var(--green); }
+    .progress-label  { font-size: 0.8rem; color: var(--muted); font-weight: 600; }
+
+    /* ── Panel ───────────────────────────────────────── */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(23, 32, 51, 0.06);
+      overflow: hidden;
+    }
+    .panel-body { padding: 1.75rem; }
+
+    /* ── Stage visibility ────────────────────────────── */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    /* ── Task heading ────────────────────────────────── */
+    .task-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #e8f0fb;
+      color: var(--blue);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.65rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .task-q {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .task-hint {
+      font-size: 0.875rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Animal cards (Stage 1) ──────────────────────── */
+    .animal-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.875rem;
+      margin-bottom: 1.5rem;
+    }
+    .animal-card {
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 0.875rem;
+      cursor: pointer;
+      background: var(--panel);
+      transition: border-color 0.18s, background 0.18s, transform 0.12s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      text-align: center;
+      font-family: inherit;
+    }
+    .animal-card:hover { border-color: var(--blue); background: #f0f6ff; }
+    .animal-card.selected {
+      border-color: var(--blue);
+      background: #e8f0fb;
+      transform: scale(1.02);
+    }
+    .animal-card.correct-final { border-color: var(--green); background: #edfaf5; }
+    .animal-card.wrong-final   { border-color: var(--red);   background: #fdf1f1; opacity: 0.7; }
+    .animal-emoji { font-size: 2.2rem; line-height: 1; }
+    .animal-name  { font-weight: 700; font-size: 0.9rem; }
+    .animal-typval {
+      font-size: 0.75rem;
+      color: var(--muted);
+      display: none;
+    }
+    .animal-typval.shown { display: block; }
+
+    /* ── Textarea ────────────────────────────────────── */
+    .reasoning-wrap { margin-bottom: 1.5rem; }
+    .reasoning-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.7rem 0.875rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      color: var(--ink);
+      resize: vertical;
+      min-height: 70px;
+      background: #fafcff;
+      transition: border-color 0.18s;
+    }
+    textarea:focus { outline: none; border-color: var(--blue); }
+
+    /* ── Buttons ─────────────────────────────────────── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.65rem 1.4rem;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.92rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+      transition: background 0.18s, transform 0.12s, opacity 0.18s;
+    }
+    .btn:active { transform: scale(0.97); }
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-primary:hover { background: #0d4f8a; }
+    .btn-primary:disabled { opacity: 0.45; cursor: not-allowed; }
+    .btn-secondary {
+      background: transparent;
+      color: var(--blue);
+      border: 1.5px solid var(--blue);
+    }
+    .btn-secondary:hover { background: #e8f0fb; }
+
+    /* ── Feedback box ────────────────────────────────── */
+    .feedback {
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-top: 1.5rem;
+      display: none;
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+    .feedback.show { display: block; }
+    .feedback.correct { background: #edfaf5; border: 1px solid #a3e4cc; }
+    .feedback.wrong   { background: #fdf1f1; border: 1px solid #f5bdb9; }
+    .feedback.info    { background: #e8f0fb; border: 1px solid #b3ccf0; }
+    .feedback strong  { font-weight: 700; }
+    .feedback-icon    { font-size: 1.1rem; margin-right: 0.3rem; }
+
+    /* ── Canvas area ─────────────────────────────────── */
+    .canvas-wrap {
+      background: #f9fbfd;
+      border-top: 1px solid var(--line);
+      padding: 1.25rem 1.25rem 0.875rem;
+      display: none;
+    }
+    .canvas-wrap.show { display: block; }
+    canvas {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+    .canvas-caption {
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.6rem;
+    }
+
+    /* ── Feature table ───────────────────────────────── */
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      margin-top: 1.25rem;
+    }
+    .feature-table {
+      width: 100%;
+      min-width: 480px;
+      border-collapse: collapse;
+      font-size: 0.83rem;
+      display: none;
+    }
+    .feature-table.show { display: table; }
+    .feature-table th {
+      background: #eef3fb;
+      padding: 0.5rem 0.6rem;
+      text-align: left;
+      font-weight: 700;
+      font-size: 0.78rem;
+      border-bottom: 2px solid var(--line);
+    }
+    .feature-table td {
+      padding: 0.45rem 0.6rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: middle;
+    }
+    .feature-table tr:last-child td { border-bottom: none; }
+    .check   { color: var(--green); font-weight: 700; }
+    .partial { color: var(--amber); font-weight: 700; }
+    .cross   { color: var(--red);   font-weight: 700; }
+    .pct {
+      font-weight: 700;
+      color: var(--blue);
+    }
+
+    /* ── Stage 2: MC options ─────────────────────────── */
+    .mc-options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .mc-option {
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      cursor: pointer;
+      background: var(--panel);
+      font-family: inherit;
+      font-size: 0.9rem;
+      text-align: left;
+      transition: border-color 0.18s, background 0.18s;
+      line-height: 1.5;
+    }
+    .mc-option:hover { border-color: var(--blue); background: #f0f6ff; }
+    .mc-option.selected-mc { border-color: var(--blue); background: #e8f0fb; }
+    .mc-option.mc-correct  { border-color: var(--green); background: #edfaf5; }
+    .mc-option.mc-wrong    { border-color: var(--red);   background: #fdf1f1; opacity: 0.75; }
+
+    /* ── Concept box ─────────────────────────────────── */
+    .concept-box {
+      background: #f0f6ff;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+    .concept-box h3 {
+      font-size: 0.85rem;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 0.4rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* ── Action row ──────────────────────────────────── */
+    .action-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    /* ── Summary box ─────────────────────────────────── */
+    .summary {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      display: none;
+    }
+    .summary.show { display: block; }
+    .summary h2 { font-size: 1.05rem; font-weight: 800; margin-bottom: 1rem; }
+    .summary ul { margin-left: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem; }
+    .summary li { font-size: 0.9rem; line-height: 1.5; }
+
+    /* ── Responsive ──────────────────────────────────── */
+    @media (max-width: 500px) {
+      .animal-grid { grid-template-columns: repeat(2, 1fr); }
+      .panel-body  { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body
+  data-asset-type="simulation"
+  data-topic-cluster="sprachen"
+  data-slug="prototypentheorie-semantik-simulation">
+
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header>
+    <div class="eyebrow">Linguistik · Semantik · Klasse 10–13</div>
+    <h1>Prototypentheorie: Warum ist ein Pinguin ein „schlechterer" Vogel?</h1>
+    <p>Entdecke, wie Wortbedeutungen wirklich funktionieren – nicht mit scharfen Grenzen,
+    sondern mit Prototypen und Typikalitätswerten.</p>
+  </header>
+
+  <main>
+
+    <!-- Progress -->
+    <div class="progress" aria-label="Fortschritt">
+      <div class="step-dot active" id="dot1"></div>
+      <div class="step-dot" id="dot2"></div>
+      <span class="progress-label" id="progress-label">Stufe 1 von 2 – Vorhersage</span>
+    </div>
+
+    <!-- ══════════ STAGE 1: Vorhersage ══════════ -->
+    <div class="panel stage active" id="stage1">
+      <div class="panel-body">
+        <div class="task-badge">🐦 Stufe 1 · Vorhersage</div>
+        <p class="task-q">Welches Tier ist am typischsten ein Vogel?</p>
+        <p class="task-hint">Wähle das Tier, das deiner Meinung nach am besten zur Kategorie
+          „Vogel" passt. Noch nicht nachschlagen – erst nachdenken!</p>
+
+        <div class="animal-grid" id="animal-grid">
+          <button class="animal-card" data-animal="rotkehlchen" onclick="selectAnimal(this)">
+            <span class="animal-emoji">🐦</span>
+            <span class="animal-name">Rotkehlchen</span>
+            <span class="animal-typval" id="tv-rotkehlchen">Typikalitätswert: 100 %</span>
+          </button>
+          <button class="animal-card" data-animal="adler" onclick="selectAnimal(this)">
+            <span class="animal-emoji">🦅</span>
+            <span class="animal-name">Adler</span>
+            <span class="animal-typval" id="tv-adler">Typikalitätswert: 75 %</span>
+          </button>
+          <button class="animal-card" data-animal="pinguin" onclick="selectAnimal(this)">
+            <span class="animal-emoji">🐧</span>
+            <span class="animal-name">Pinguin</span>
+            <span class="animal-typval" id="tv-pinguin">Typikalitätswert: 50 %</span>
+          </button>
+          <button class="animal-card" data-animal="fledermaus" onclick="selectAnimal(this)">
+            <span class="animal-emoji">🦇</span>
+            <span class="animal-name">Fledermaus</span>
+            <span class="animal-typval" id="tv-fledermaus">Typikalitätswert: 33 %</span>
+          </button>
+        </div>
+
+        <div class="reasoning-wrap">
+          <label class="reasoning-label" for="reasoning">
+            Begründung (optional – schreibe bevor du das Ergebnis siehst):
+          </label>
+          <textarea id="reasoning" placeholder="Warum hast du dieses Tier gewählt?"></textarea>
+        </div>
+
+        <div class="action-row">
+          <button class="btn btn-primary" id="btn-check1" onclick="checkStage1()" disabled>
+            Antwort prüfen
+          </button>
+        </div>
+
+        <div class="feedback" id="feedback1"></div>
+      </div>
+
+      <!-- Canvas -->
+      <div class="canvas-wrap" id="canvas-wrap">
+        <canvas id="canvas" width="900" height="480" aria-label="Radiales Kategoriendiagramm: Prototypentheorie Vogel"></canvas>
+        <div class="canvas-caption">
+          Radiales Kategoriendiagramm nach Rosch (1975) – je näher am Zentrum, desto typischer das Kategorien-Mitglied.
+        </div>
+
+        <div class="table-scroll">
+        <table class="feature-table" id="feature-table">
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>fliegen</th>
+              <th>Schnabel</th>
+              <th>Federn</th>
+              <th>Nest / Eier</th>
+              <th>singt</th>
+              <th>klein</th>
+              <th>T(x)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>🐦 Rotkehlchen</td>
+              <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
+              <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
+              <td class="pct">100 %</td>
+            </tr>
+            <tr>
+              <td>🦅 Adler</td>
+              <td class="check">✓</td><td class="check">✓</td><td class="check">✓</td>
+              <td class="check">✓</td><td class="partial">~</td><td class="cross">✗</td>
+              <td class="pct">75 %</td>
+            </tr>
+            <tr>
+              <td>🐧 Pinguin</td>
+              <td class="cross">✗</td><td class="check">✓</td><td class="check">✓</td>
+              <td class="check">✓</td><td class="partial">~</td><td class="cross">✗</td>
+              <td class="pct">50 %</td>
+            </tr>
+            <tr>
+              <td>🦇 Fledermaus</td>
+              <td class="check">✓</td><td class="cross">✗</td><td class="cross">✗</td>
+              <td class="cross">✗</td><td class="cross">✗</td><td class="check">✓</td>
+              <td class="pct">33 %</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <div class="panel-body" id="next1-wrap" style="display:none; padding-top: 0;">
+        <div class="action-row">
+          <button class="btn btn-primary" onclick="goToStage2()">
+            Weiter zu Stufe 2 →
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ STAGE 2: Grenzfall ══════════ -->
+    <div class="panel stage" id="stage2">
+      <div class="panel-body">
+        <div class="task-badge">🦇 Stufe 2 · Grenzfall</div>
+        <p class="task-q">Ist die Fledermaus ein Vogel?</p>
+        <p class="task-hint">Die Fledermaus kann fliegen und ist klein. Was sagt die
+          Prototypentheorie dazu?</p>
+
+        <div class="concept-box" id="concept-box-2">
+          <h3>Was du bisher weißt</h3>
+          Das Rotkehlchen ist der <strong>Prototyp</strong> der Kategorie „Vogel" –
+          es erfüllt alle typischen Merkmale zu 100 %. Der Adler liegt bei 75 %,
+          der Pinguin bei 50 %. Die Fledermaus teilt nur 2 von 6 Merkmalen mit dem
+          Prototyp (fliegen + klein) – ihr Typikalitätswert beträgt 33 %.
+        </div>
+
+        <div class="mc-options" id="mc-options">
+          <button class="mc-option" onclick="selectMC(this, 'a')">
+            <strong>A)</strong> Ja – sie fliegt, also ist sie ein Vogel.
+          </button>
+          <button class="mc-option" onclick="selectMC(this, 'b')">
+            <strong>B)</strong> Nein – sie hat keine Federn und keinen Schnabel,
+            also ist sie eindeutig kein Vogel.
+          </button>
+          <button class="mc-option" onclick="selectMC(this, 'c')">
+            <strong>C)</strong> Das kommt auf den Kontext an: folkbiologisch wirkt sie
+            vogelähnlich, wissenschaftlich ist sie ein Säugetier – die Kategorie hat
+            keine scharfe Grenze.
+          </button>
+        </div>
+
+        <div class="action-row">
+          <button class="btn btn-primary" id="btn-check2" onclick="checkStage2()" disabled>
+            Antwort prüfen
+          </button>
+        </div>
+
+        <div class="feedback" id="feedback2"></div>
+
+        <div id="finish-wrap" style="display:none; margin-top: 1.5rem;">
+          <div class="action-row">
+            <button class="btn btn-secondary" onclick="showSummary()">
+              Zusammenfassung anzeigen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════ SUMMARY ══════════ -->
+    <div class="summary" id="summary">
+      <h2>Das hast du gelernt</h2>
+      <ul>
+        <li>
+          <strong>Prototypentheorie (Rosch 1975):</strong> Semantische Kategorien haben kein
+          festes Raster mit notwendigen und hinreichenden Merkmalen, sondern ein
+          <em>Prototyp-Zentrum</em> und periphere Mitglieder.
+        </li>
+        <li>
+          <strong>Typikalitätswert T(x):</strong> T(x) = geteilte Merkmale / Gesamtmerkmale.
+          Rotkehlchen (6/6 = 100 %) &gt; Adler (4,5/6 ≈ 75 %) &gt; Pinguin (3/6 = 50 %) &gt;
+          Fledermaus (2/6 ≈ 33 %). Je mehr Merkmale ein Objekt mit dem Prototyp teilt,
+          desto typischer gilt es als Kategorie-Mitglied.
+        </li>
+        <li>
+          <strong>Familienähnlichkeit (Wittgenstein §67):</strong> Kein einzelnes Merkmal ist
+          für alle Kategorien-Mitglieder notwendig – sie ähneln einander wie Gesichtszüge
+          in einer Familie.
+        </li>
+        <li>
+          <strong>Abgrenzung:</strong> Die Fledermaus ist biologisch ein Säugetier (Chiroptera).
+          Trotzdem empfinden viele sie als „vogelähnlich" – ein Zeichen für graduelle
+          Kategorien-Grenzen im mentalen Lexikon.
+        </li>
+        <li>
+          <strong>Prüfungsrelevanz:</strong> Der Begriff <em>Prototyp</em> und das Gegensatz-Modell
+          (aristotelisches Definitions-Modell vs. Prototypen-Modell) sind Standard-Inhalte
+          im Deutsch-Abitur Linguistik-Kurs.
+        </li>
+      </ul>
+    </div>
+
+  </main>
+
+  <script>
+    /* ─── State ─────────────────────────────────────── */
+    let selectedAnimal = null;
+    let selectedMCKey  = null;
+    let animationDone  = false;
+    let animRAF        = null;
+
+    /* ─── Stage 1: Tier-Auswahl ─────────────────────── */
+    function selectAnimal(card) {
+      document.querySelectorAll('.animal-card').forEach(c => c.classList.remove('selected'));
+      card.classList.add('selected');
+      selectedAnimal = card.dataset.animal;
+      document.getElementById('btn-check1').disabled = false;
+    }
+
+    /* ─── Stage 1: Prüfen ───────────────────────────── */
+    function checkStage1() {
+      const fb    = document.getElementById('feedback1');
+      const cards = document.querySelectorAll('.animal-card');
+
+      // Karten sperren
+      cards.forEach(c => { c.onclick = null; c.style.cursor = 'default'; });
+      document.getElementById('btn-check1').disabled = true;
+
+      // Typikalitätswerte einblenden
+      document.querySelectorAll('.animal-typval').forEach(el => el.classList.add('shown'));
+
+      // Karten einfärben
+      cards.forEach(c => {
+        if (c.dataset.animal === 'rotkehlchen') {
+          c.classList.add('correct-final');
+        } else if (c.dataset.animal === selectedAnimal && selectedAnimal !== 'rotkehlchen') {
+          c.classList.add('wrong-final');
+        }
+      });
+
+      // Feedback-Text
+      fb.classList.add('show');
+      if (selectedAnimal === 'rotkehlchen') {
+        fb.classList.add('correct');
+        fb.innerHTML = '<span class="feedback-icon">✓</span> <strong>Richtig!</strong> '
+          + 'Das Rotkehlchen ist der <strong>Prototyp</strong> der Kategorie „Vogel". Es erfüllt '
+          + 'alle sechs typischen Merkmale (fliegen, Schnabel, Federn, Nester bauen, singen, '
+          + 'kleine Größe) zu 100 %. Die Prototypentheorie nach Eleanor Rosch (1975) besagt, '
+          + 'dass Kategorien nicht durch harte Grenzen, sondern durch ein <strong>Prototyp-Zentrum</strong> '
+          + 'strukturiert sind. Das Diagramm unten zeigt alle vier Tiere nach Typikalitätswert.';
+      } else {
+        const names = { adler: 'Adler', pinguin: 'Pinguin', fledermaus: 'Fledermaus' };
+        fb.classList.add('wrong');
+        fb.innerHTML = '<span class="feedback-icon">✗</span> <strong>Nicht ganz.</strong> '
+          + 'Der ' + names[selectedAnimal] + ' ist zwar ein Vogel – aber nicht der typischste. '
+          + 'Das Rotkehlchen erfüllt alle sechs Prototyp-Merkmale zu 100 % und ist damit das '
+          + '<strong>Kategorie-Zentrum</strong>. '
+          + (selectedAnimal === 'fledermaus'
+            ? 'Die Fledermaus ist sogar biologisch <em>kein</em> Vogel (Säugetier), obwohl sie fliegt. '
+            : '')
+          + 'Die <strong>Prototypentheorie</strong> nach Rosch (1975) erklärt, warum manche '
+          + 'Kategorie-Mitglieder typischer wirken als andere – anhand von Merkmal-Häufungen.';
+      }
+
+      // Canvas einblenden und animieren
+      document.getElementById('canvas-wrap').classList.add('show');
+      startCanvasAnimation();
+
+      // Weiter-Button
+      setTimeout(() => {
+        document.getElementById('next1-wrap').style.display = 'block';
+        document.getElementById('feature-table').classList.add('show');
+        trackEvent('stage1_complete', { selected: selectedAnimal,
+          correct: selectedAnimal === 'rotkehlchen' });
+      }, 1800);
+    }
+
+    /* ─── Canvas-Animation ──────────────────────────── */
+    function startCanvasAnimation() {
+      const canvas = document.getElementById('canvas');
+      const ctx    = canvas.getContext('2d');
+      const W = canvas.width;
+      const H = canvas.height;
+      const cx = W / 2;
+      const cy = H / 2 + 10;
+
+      // Canvas intrinsic size is 900×480; CSS scales it to 100% container width.
+      // All coordinates are in 900-pixel space.
+      const rings = [
+        { r: 60,  label: 'Prototyp',     color: '#0b8f6a22', stroke: '#0b8f6a' },
+        { r: 145, label: 'typisch',       color: '#0f5fa812', stroke: '#0f5fa8' },
+        { r: 225, label: 'Randmitglied',  color: '#b8770012', stroke: '#b87700' },
+        { r: 310, label: 'kein Mitglied', color: '#b5281e10', stroke: '#b5281e' },
+      ];
+
+      // Animals placed at each ring's radius, offset slightly inward for visual clarity
+      const animals = [
+        { emoji: '🐦', name: 'Rotkehlchen', r:  50, angle: Math.PI * 1.5,  pct: '100 %', color: '#0b8f6a' },
+        { emoji: '🦅', name: 'Adler',       r: 140, angle: Math.PI * 0.3,  pct: '75 %',  color: '#0f5fa8' },
+        { emoji: '🐧', name: 'Pinguin',      r: 220, angle: Math.PI * 1.05, pct: '50 %',  color: '#b87700' },
+        { emoji: '🦇', name: 'Fledermaus',   r: 305, angle: Math.PI * 1.7,  pct: '33 %',  color: '#b5281e' },
+      ];
+
+      const DURATION  = 1400; // ms
+      let startTime   = null;
+
+      function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+      function draw(ts) {
+        if (!startTime) startTime = ts;
+        const t = Math.min((ts - startTime) / DURATION, 1);
+        const progress = easeOut(t);
+
+        ctx.clearRect(0, 0, W, H);
+
+        // Background
+        ctx.fillStyle = '#f9fbfd';
+        ctx.fillRect(0, 0, W, H);
+
+        // Rings (animate radius from 0 to full)
+        rings.forEach((ring, i) => {
+          const delay  = i * 0.15;
+          const tp     = Math.max(0, Math.min(1, (t - delay) / (1 - delay)));
+          const radius = ring.r * easeOut(tp);
+          if (radius <= 0) return;
+
+          ctx.beginPath();
+          ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+          ctx.fillStyle   = ring.color;
+          ctx.fill();
+          ctx.strokeStyle = ring.stroke;
+          ctx.lineWidth   = 1.5;
+          ctx.setLineDash([5, 4]);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          // Ring label (right side)
+          if (tp > 0.6) {
+            ctx.fillStyle = ring.stroke;
+            ctx.font = `bold ${W > 600 ? 11 : 9}px Inter, sans-serif`;
+            ctx.textAlign = 'left';
+            ctx.globalAlpha = Math.min(1, (tp - 0.6) / 0.4);
+            ctx.fillText(ring.label, cx + radius + 6, cy + 4);
+            ctx.globalAlpha = 1;
+          }
+        });
+
+        // Center label
+        ctx.fillStyle   = '#172033';
+        ctx.font        = `bold ${W > 600 ? 14 : 11}px Inter, sans-serif`;
+        ctx.textAlign   = 'center';
+        ctx.fillText('Vogel', cx, cy + 5);
+
+        // Animals (move from center to target position)
+        const fontSize = 28;
+        animals.forEach(a => {
+          const r = a.r * Math.min(1, progress * 1.5);
+          const x = cx + r * Math.cos(a.angle);
+          const y = cy + r * Math.sin(a.angle);
+
+          // Emoji
+          ctx.font      = `${fontSize}px serif`;
+          ctx.textAlign = 'center';
+          ctx.fillText(a.emoji, x, y);
+
+          // Label + pct
+          if (progress > 0.7) {
+            const alpha = Math.min(1, (progress - 0.7) / 0.3);
+            ctx.globalAlpha = alpha;
+            ctx.font        = `bold ${W > 600 ? 11 : 9}px Inter, sans-serif`;
+            ctx.fillStyle   = a.color;
+            ctx.textAlign   = 'center';
+            ctx.fillText(a.name, x, y + fontSize * 0.85);
+            ctx.font      = `${W > 600 ? 10 : 8}px Inter, sans-serif`;
+            ctx.fillStyle = '#617087';
+            ctx.fillText(a.pct, x, y + fontSize * 0.85 + (W > 600 ? 14 : 11));
+            ctx.globalAlpha = 1;
+          }
+        });
+
+        if (t < 1) {
+          animRAF = requestAnimationFrame(draw);
+        } else {
+          animationDone = true;
+        }
+      }
+
+      animRAF = requestAnimationFrame(draw);
+    }
+
+    /* ─── Stage 1 → Stage 2 ─────────────────────────── */
+    function goToStage2() {
+      document.getElementById('stage1').classList.remove('active');
+      document.getElementById('stage2').classList.add('active');
+
+      const dot1 = document.getElementById('dot1');
+      const dot2 = document.getElementById('dot2');
+      dot1.classList.remove('active');
+      dot1.classList.add('done');
+      dot2.classList.add('active');
+      document.getElementById('progress-label').textContent = 'Stufe 2 von 2 – Grenzfall';
+
+      trackEvent('stage2_start');
+    }
+
+    /* ─── Stage 2: MC-Auswahl ───────────────────────── */
+    function selectMC(btn, key) {
+      document.querySelectorAll('.mc-option').forEach(b => b.classList.remove('selected-mc'));
+      btn.classList.add('selected-mc');
+      selectedMCKey = key;
+      document.getElementById('btn-check2').disabled = false;
+    }
+
+    /* ─── Stage 2: Prüfen ───────────────────────────── */
+    function checkStage2() {
+      const fb = document.getElementById('feedback2');
+      document.querySelectorAll('.mc-option').forEach(b => { b.onclick = null; b.style.cursor = 'default'; });
+      document.getElementById('btn-check2').disabled = true;
+
+      // Einfärben
+      document.querySelectorAll('.mc-option').forEach(b => {
+        const k = b.getAttribute('onclick')?.match(/'([abc])'/)?.[1];
+        if (k === 'c') b.classList.add('mc-correct');
+        else if (k === selectedMCKey) b.classList.add('mc-wrong');
+      });
+
+      fb.classList.add('show');
+      if (selectedMCKey === 'c') {
+        fb.classList.add('correct');
+        fb.innerHTML = '<span class="feedback-icon">✓</span> <strong>Genau!</strong> '
+          + 'Das ist der Kern der <strong>Prototypentheorie</strong>: Kategorien im mentalen '
+          + 'Lexikon haben keine scharfen Grenzen. Die Fledermaus teilt das Merkmal „fliegen" '
+          + 'mit Vögeln – ihr <strong>Typikalitätswert</strong> für „Vogel" beträgt 33 %. '
+          + 'Wissenschaftlich (Chiroptera) ist sie ein Säugetier. Dieser Widerspruch zeigt '
+          + 'die <strong>Volksklassifikation vs. wissenschaftliche Definition</strong>: '
+          + 'Alltagssprache folgt Prototyp-Logik, Biologie folgt Merkmalsdefinitionen.';
+      } else if (selectedMCKey === 'a') {
+        fb.classList.add('wrong');
+        fb.innerHTML = '<span class="feedback-icon">✗</span> <strong>Nicht ganz.</strong> '
+          + '„Fliegen" allein reicht nicht. Der <strong>Typikalitätswert</strong> der Fledermaus '
+          + 'für „Vogel" beträgt nur 33 % – sie teilt zwar das Merkmal „fliegen" mit Vögeln, '
+          + 'aber Schnabel, Federn, Nester bauen und Singen fehlen. Nach der '
+          + '<strong>Prototypentheorie</strong> macht ein einzelnes Merkmal noch keine '
+          + 'Kategorie-Zugehörigkeit aus – entscheidend ist die Häufung von Merkmalen.';
+      } else {
+        fb.classList.add('wrong');
+        fb.innerHTML = '<span class="feedback-icon">~</span> <strong>Fast richtig.</strong> '
+          + 'Die Fledermaus ist zwar biologisch kein Vogel – aber die Prototypentheorie würde '
+          + 'differenzierter sagen: Sie ist kein <em>typisches</em> Mitglied der Kategorie '
+          + '(33 % Typikalitätswert), teilt aber das Merkmal „fliegen" mit Vögeln '
+          + '(<strong>Familienähnlichkeit</strong> nach Wittgenstein, Philosophische '
+          + 'Untersuchungen §67). Kategoriengrenzen hängen im Alltag vom Kontext ab – '
+          + 'Antwort C beschreibt das am besten.';
+      }
+
+      document.getElementById('finish-wrap').style.display = 'block';
+      document.getElementById('dot2').classList.remove('active');
+      document.getElementById('dot2').classList.add('done');
+      document.getElementById('progress-label').textContent = 'Abgeschlossen ✓';
+
+      trackEvent('stage2_complete', { selected: selectedMCKey, correct: selectedMCKey === 'c' });
+    }
+
+    /* ─── Summary ───────────────────────────────────── */
+    function showSummary() {
+      document.getElementById('summary').classList.add('show');
+      document.getElementById('summary').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    /* ─── Tracking ──────────────────────────────────── */
+    window.dataLayer = window.dataLayer || [];
+    function trackEvent(name, data) {
+      window.dataLayer.push(Object.assign({
+          event: 'simulation_' + name,
+          simulation_slug: 'prototypentheorie-semantik-simulation',
+        }, data || {}));
+    }
+  </script>
+</body>
+</html>

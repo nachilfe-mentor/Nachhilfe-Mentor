@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Kohäsion und Kohärenz: Texte interaktiv verstehen | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Übung zu Kohäsion und Kohärenz: Erkenne Kohäsionsmittel wie Pronomen und Konnektoren, wähle die richtige Kohärenzrelation und schreibe flüssigere Texte.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Kohäsion, Kohärenz, Kohäsionsmittel, Konnektoren, Textlinguistik, Deutsch Aufsatz">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/kohaerenz-kohaesion-texte-simulation.html">
+  <meta property="og:title" content="Kohäsion und Kohärenz interaktiv üben">
+  <meta property="og:description" content="Interaktive Übung zu Kohäsion und Kohärenz: Erkenne Kohäsionsmittel wie Pronomen und Konnektoren, wähle die richtige Kohärenzrelation und schreibe flüssigere Texte.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/kohaerenz-kohaesion-texte-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Kohäsion und Kohärenz: Texte interaktiv verstehen",
+  "description":"Interaktive Übung zu Kohäsion und Kohärenz: Erkenne Kohäsionsmittel wie Pronomen und Konnektoren, wähle die richtige Kohärenzrelation und schreibe flüssigere Texte.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/kohaerenz-kohaesion-texte-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    :root {
+      --ink:      #172033;
+      --muted:    #617087;
+      --line:     #d8e1ed;
+      --blue:     #0f5fa8;
+      --cyan:     #0894aa;
+      --green:    #0b8f6a;
+      --red:      #b5281e;
+      --amber:    #b87700;
+      --purple:   #6b21a8;
+      --orange:   #c2570a;
+      --bg:       #f5f8fc;
+      --panel:    #ffffff;
+
+      /* Kohäsionsmittel-Farben */
+      --col-prono:  #1d4ed8;
+      --col-conn:   #0b8f6a;
+      --col-subst:  #c2570a;
+      --col-recur:  #6b21a8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    /* ── Header ──────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* ── Main ────────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Progress ────────────────────────────────── */
+    .progress {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .dot.active { background: var(--cyan); }
+    .dot.done   { background: var(--green); }
+    .progress-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-left: 0.5rem;
+    }
+
+    /* ── Stage container ─────────────────────────── */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    /* ── Section card ────────────────────────────── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.75rem;
+    }
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.75rem;
+    }
+    .card p {
+      margin-bottom: 0.85rem;
+      font-size: 0.97rem;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* ── Canvas ──────────────────────────────────── */
+    .canvas-wrap {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      background: #fff;
+      margin-bottom: 1.5rem;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* ── Text display ────────────────────────────── */
+    .text-block {
+      font-size: 1rem;
+      line-height: 1.8;
+      padding: 1.25rem 1.5rem;
+      background: #f9fbfd;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      margin-bottom: 1.25rem;
+    }
+    .text-block.bad  { border-color: #fbb; background: #fff8f8; }
+    .text-block.good { border-color: #b3e6d4; background: #f5fdfb; }
+
+    .hl-prono { color: var(--col-prono); font-weight: 600; }
+    .hl-conn  { color: var(--col-conn);  font-weight: 600; }
+    .hl-subst { color: var(--col-subst); font-weight: 600; }
+    .hl-recur { color: var(--col-recur); font-weight: 600; }
+    .hl-target {
+      background: #fef3c7;
+      border-radius: 3px;
+      padding: 0 2px;
+      cursor: pointer;
+    }
+
+    /* ── Options ─────────────────────────────────── */
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1.25rem;
+    }
+    .option-btn {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.65rem 1.1rem;
+      font-size: 0.93rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      color: var(--ink);
+      text-align: left;
+      line-height: 1.4;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--cyan);
+      background: #f0fafc;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #f0fdf8;
+      color: var(--green);
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fff5f5;
+      color: var(--red);
+    }
+    .option-btn:disabled { cursor: default; opacity: 0.75; }
+
+    /* ── Feedback ────────────────────────────────── */
+    .feedback {
+      display: none;
+      margin-top: 1.25rem;
+      padding: 1.1rem 1.25rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+    .feedback.show { display: block; }
+    .feedback.ok   { background: #f0fdf8; border: 1px solid #86efca; }
+    .feedback.err  { background: #fff5f5; border: 1px solid #fca5a5; }
+    .feedback strong { font-weight: 700; }
+
+    .concept-tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: var(--blue);
+      border-radius: 4px;
+      padding: 1px 7px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin: 0 2px;
+    }
+
+    /* ── Next button ─────────────────────────────── */
+    .btn-next {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 0.75rem 1.75rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-next:hover { background: #0c4f8a; }
+    .btn-next.show  { display: inline-block; }
+
+    /* ── Legend ──────────────────────────────────── */
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.87rem;
+    }
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Info box ────────────────────────────────── */
+    .info-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: 0.93rem;
+      margin-bottom: 1.25rem;
+      line-height: 1.65;
+    }
+    .info-box strong { font-weight: 700; }
+
+    /* ── Score / finish ──────────────────────────── */
+    .score-panel {
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    .score-big {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--green);
+      line-height: 1;
+    }
+    .score-label {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    /* ── Responsive ──────────────────────────────── */
+    @media (max-width: 500px) {
+      .card { padding: 1.25rem 1rem; }
+      header { padding: 1.5rem 1rem 1rem; }
+      main { padding: 0 1rem 3rem; }
+      .options { flex-direction: column; }
+      .option-btn { width: 100%; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Linguistik · Klasse 9–13</div>
+  <h1>Kohäsion und Kohärenz – Was hält einen Text zusammen?</h1>
+  <p>Entdecke die unsichtbaren Verbindungen in Texten und lerne, wie du selbst kohäsiv und kohärent schreibst.</p>
+</header>
+
+<main>
+  <!-- Progress dots -->
+  <div class="progress" id="progressBar">
+    <span class="dot active" id="dot1"></span>
+    <span class="dot" id="dot2"></span>
+    <span class="dot" id="dot3"></span>
+    <span class="progress-label" id="progressLabel">Stufe 1 von 3</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       STAGE 1 – Vorhersage: Was stört beim Lesen?
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section class="stage active" id="stage1">
+
+    <div class="card">
+      <h3>Stufe 1 – Vorhersage</h3>
+      <h2>Was macht einen Text gut lesbar?</h2>
+
+      <p>Lies die folgenden zwei Texte. Beide berichten dasselbe – aber einer liest sich viel flüssiger. Warum?</p>
+
+      <div class="text-block bad">
+        <strong>Text A:</strong><br>
+        Max kaufte ein Buch. Das Buch war teuer. Max liebte das Buch. Das Buch handelte von Abenteuern.
+        Max las das Buch jeden Abend. Das Buch war das Lieblingsbuch von Max.
+      </div>
+
+      <div class="text-block good">
+        <strong>Text B:</strong><br>
+        Max kaufte ein Buch, das er auf Anhieb liebte. Es handelte von Abenteuern und war zwar teuer,
+        <span class="hl-conn">aber</span> <span class="hl-prono">er</span> las <span class="hl-prono">es</span> fortan jeden Abend –
+        sein neues Lieblingsbuch.
+      </div>
+
+      <p style="margin-top:1rem;"><strong>Frage:</strong> Warum liest sich Text B flüssiger? Wähle die beste Erklärung:</p>
+
+      <div class="options" id="opts-stage1">
+        <button class="option-btn" data-val="A" onclick="answerStage1(this)">
+          A) Text B hat kürzere Sätze und ist deshalb einfacher.
+        </button>
+        <button class="option-btn" data-val="B" onclick="answerStage1(this)">
+          B) Text B vermeidet unnötige Wiederholungen durch Pronomen und Konnektoren –
+          das sind sprachliche Verbindungsmittel (Kohäsionsmittel).
+        </button>
+        <button class="option-btn" data-val="C" onclick="answerStage1(this)">
+          C) Text B enthält mehr Informationen über Max.
+        </button>
+        <button class="option-btn" data-val="D" onclick="answerStage1(this)">
+          D) Text A hat zu viele Adjektive, das ermüdet beim Lesen.
+        </button>
+      </div>
+
+      <div class="feedback" id="fb-stage1"></div>
+      <button class="btn-next" id="btn1" onclick="goStage2()">Weiter zu Stufe 2 →</button>
+    </div>
+
+    <!-- Canvas: Kohäsionsnetz-Animation -->
+    <div class="card">
+      <h3>Visualisierung</h3>
+      <h2>Kohäsionsmittel als Netz</h2>
+      <p>Die Animation zeigt, wie die Wörter in Text B durch Kohäsionsmittel verbunden sind. Jede farbige Linie steht für eine andere Art von Verbindung.</p>
+
+      <div class="canvas-wrap">
+        <canvas id="kohaesionCanvas" width="700" height="220"></canvas>
+      </div>
+
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:var(--col-prono)"></div>
+          <span>Pronominalisierung (er, es, …)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:var(--col-conn)"></div>
+          <span>Konnektor (aber, weil, …)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:var(--col-subst)"></div>
+          <span>Substitution (Lieblingsbuch)</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:var(--col-recur)"></div>
+          <span>Ellipse / Auslassung</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       STAGE 2 – Kohäsionsmittel identifizieren
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section class="stage" id="stage2">
+
+    <div class="card">
+      <h3>Stufe 2 – Identifikation</h3>
+      <h2>Welches Kohäsionsmittel steckt dahinter?</h2>
+
+      <div class="info-box">
+        <strong>Zur Erinnerung:</strong> Kohäsion ist die <em>grammatisch-sprachliche Vernetzung</em> an der Textoberfläche –
+        der Unterschied zu Kohärenz: Kohärenz ist der <em>semantisch-inhaltliche</em> Zusammenhang, den der Leser im Kopf
+        erschließt. Ein Text kann kohäsiv sein, ohne kohärent zu sein – und umgekehrt.
+      </div>
+
+      <div id="q2-container"></div>
+
+      <div class="feedback" id="fb-stage2"></div>
+      <button class="btn-next" id="btn2" onclick="goStage3()">Weiter zu Stufe 3 →</button>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       STAGE 3 – Konnektor wählen (Kohärenzrelation)
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section class="stage" id="stage3">
+
+    <div class="card">
+      <h3>Stufe 3 – Anwendung</h3>
+      <h2>Den richtigen Konnektor wählen</h2>
+
+      <p>
+        Konnektoren sind Kohäsionsmittel, die gleichzeitig eine <strong>Kohärenzrelation</strong> ausdrücken –
+        also einen logischen Zusammenhang zwischen zwei Aussagen. Wähle in jedem Satz den Konnektor,
+        der die Relation am besten trifft.
+      </p>
+
+      <div id="q3-container"></div>
+
+      <div class="feedback" id="fb-stage3"></div>
+      <button class="btn-next" id="btn3" onclick="showResult()">Ergebnis ansehen →</button>
+    </div>
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════════════════
+       RESULT
+  ════════════════════════════════════════════════════════════════════════ -->
+  <section class="stage" id="stage4">
+    <div class="card score-panel">
+      <div class="score-big" id="finalScore">–</div>
+      <div class="score-label">von <span id="totalQ">6</span> Fragen richtig</div>
+      <p style="margin-top:1.5rem;font-size:0.97rem;color:var(--muted);max-width:480px;margin-left:auto;margin-right:auto;" id="finalMsg"></p>
+    </div>
+
+    <div class="card">
+      <h2>Was hast du gelernt?</h2>
+      <p>
+        <strong>Kohäsion</strong> ist die <em>sichtbare</em> Vernetzung: Pronomen, Konnektoren, Substitutionen und Ellipsen
+        verknüpfen Sätze an der Oberfläche.
+      </p>
+      <p>
+        <strong>Kohärenz</strong> ist die <em>inhaltliche</em> Logik: Kausal-, Adversativ-, Konzessiv- und Temporalrelationen
+        ergeben sich aus dem Inhalt – manchmal ohne explizite Marker.
+      </p>
+      <p>
+        Der häufigste Fehler in Schüleraufsätzen: zu viele <strong>Nominalwiederholungen</strong> (Rekurrenz)
+        statt eleganter Pronominalisierung oder Substitution. Konnektoren wie <em>deshalb</em>, <em>obwohl</em>
+        und <em>trotzdem</em> machen die logische Struktur explizit sichtbar – und erhöhen die Textqualität.
+      </p>
+      <p style="margin-top:1.25rem;">
+        <a href="/lernmaterialien/">← Weitere Lernmaterialien</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<script>
+  /* ─── Tracking ──────────────────────────────────────────────────── */
+  window.dataLayer = window.dataLayer || [];
+  function trackStep(step, result) {
+    window.dataLayer.push({ event: 'sim_step', sim: 'kohaerenz-kohaesion', step, result });
+  }
+
+  /* ─── State ─────────────────────────────────────────────────────── */
+  let totalCorrect = 0;
+  let totalQuestions = 0;
+  let stage2Done = false;
+  let stage3Done = false;
+
+  /* ─── Stage 1 ───────────────────────────────────────────────────── */
+  function answerStage1(btn) {
+    const opts = document.querySelectorAll('#opts-stage1 .option-btn');
+    opts.forEach(b => b.disabled = true);
+    const fb = document.getElementById('fb-stage1');
+    totalQuestions++;
+
+    if (btn.dataset.val === 'B') {
+      btn.classList.add('correct');
+      totalCorrect++;
+      fb.className = 'feedback show ok';
+      fb.innerHTML = `
+        <strong>Richtig!</strong> Text B nutzt <span class="concept-tag">Kohäsionsmittel</span>:
+        Pronomen (<em>er</em>, <em>es</em>) ersetzen Nominalwiederholungen (Pronominalisierung),
+        der <span class="concept-tag">Konnektor</span> <em>aber</em> verknüpft Sätze logisch.
+        Dadurch entsteht ein <strong>kohäsiver Text</strong> – sprachlich vernetzt an der Oberfläche.
+      `;
+      trackStep(1, 'correct');
+    } else {
+      btn.classList.add('wrong');
+      document.querySelector('#opts-stage1 [data-val="B"]').classList.add('correct');
+      fb.className = 'feedback show err';
+      fb.innerHTML = `
+        <strong>Nicht ganz.</strong> Die richtige Erklärung ist B: Text B verwendet
+        <span class="concept-tag">Kohäsionsmittel</span> – vor allem
+        <span class="concept-tag">Pronominalisierung</span> (Pronomen statt Nominalwiederholung)
+        und <span class="concept-tag">Konnektoren</span>. Text A wiederholt „das Buch" und „Max"
+        in jedem Satz – das nennt man <em>Rekurrenz</em>, die hier den Lesefluss stört.
+      `;
+      trackStep(1, 'wrong');
+    }
+    document.getElementById('btn1').classList.add('show');
+  }
+
+  function goStage2() {
+    setStage('stage2', 1);
+    renderStage2();
+  }
+
+  /* ─── Stage 2: Kohäsionsmittel identifizieren ───────────────────── */
+  const q2items = [
+    {
+      sentence: 'Lisa hat ein neues Fahrrad. <mark>Sie</mark> fährt damit jeden Tag zur Schule.',
+      target: 'Sie',
+      options: ['Pronominalisierung', 'Konnektor', 'Substitution', 'Lexikalische Rekurrenz'],
+      correct: 0,
+      explanation: `Das Wort <em>Sie</em> ist eine <span class="concept-tag">Pronominalisierung</span>:
+        Das Pronomen nimmt auf das zuvor genannte Nomen <em>Lisa</em> zurück (Anapher).
+        Es ersetzt die Nominalwiederholung und hält den Text kohäsiv.`
+    },
+    {
+      sentence: 'Der Schüler lernte bis Mitternacht. <mark>Trotzdem</mark> bestand er die Prüfung nicht.',
+      target: 'Trotzdem',
+      options: ['Pronominalisierung', 'Konnektor', 'Substitution', 'Ellipse'],
+      correct: 1,
+      explanation: `<em>Trotzdem</em> ist ein <span class="concept-tag">Konnektor</span> (Adverbkonnektor).
+        Er drückt eine <em>konzessive Kohärenzrelation</em> aus: Das Ergebnis widerspricht der Erwartung.
+        Konnektoren sind Kohäsionsmittel, die gleichzeitig die inhaltliche Logik – die Kohärenz – sichtbar machen.`
+    },
+    {
+      sentence: 'Ein großer <mark>Hund</mark> lief ins Zimmer. Das <mark>Tier</mark> bellte laut.',
+      target: 'Tier',
+      options: ['Pronominalisierung', 'Konnektor', 'Substitution', 'Lexikalische Rekurrenz'],
+      correct: 2,
+      explanation: `<em>Tier</em> ist eine <span class="concept-tag">Substitution</span>: Das Wort
+        ersetzt <em>Hund</em> durch einen Hyperonym (Oberbegriff). So wird Wiederholung vermieden,
+        ohne die Bedeutung zu verändern. Substitution durch Synonyme oder Hyper-/Hyponyme
+        ist ein wichtiges Stilmittel für kohäsive Texte.`
+    }
+  ];
+
+  let q2answers = [null, null, null];
+  let q2correct = 0;
+
+  function renderStage2() {
+    const container = document.getElementById('q2-container');
+    container.innerHTML = '';
+    q2items.forEach((item, i) => {
+      const div = document.createElement('div');
+      div.style.cssText = 'margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--line)';
+      if (i === q2items.length - 1) div.style.borderBottom = 'none';
+
+      div.innerHTML = `
+        <p style="margin-bottom:.75rem;">
+          <strong>Aufgabe ${i + 1}:</strong> Welches Kohäsionsmittel ist das markierte Wort?
+        </p>
+        <div class="text-block" style="margin-bottom:1rem;">${item.sentence}</div>
+        <div class="options" id="q2opts-${i}">
+          ${item.options.map((o, j) => `
+            <button class="option-btn" data-idx="${i}" data-val="${j}" onclick="answerQ2(this)">
+              ${o}
+            </button>
+          `).join('')}
+        </div>
+        <div class="feedback" id="q2fb-${i}"></div>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  function answerQ2(btn) {
+    const i = parseInt(btn.dataset.idx);
+    const j = parseInt(btn.dataset.val);
+    if (q2answers[i] !== null) return;
+    q2answers[i] = j;
+
+    document.querySelectorAll(`#q2opts-${i} .option-btn`).forEach(b => b.disabled = true);
+    const fb = document.getElementById(`q2fb-${i}`);
+    totalQuestions++;
+
+    if (j === q2items[i].correct) {
+      btn.classList.add('correct');
+      totalCorrect++;
+      q2correct++;
+      fb.className = 'feedback show ok';
+      fb.innerHTML = '<strong>Richtig!</strong> ' + q2items[i].explanation;
+      trackStep('2-' + (i + 1), 'correct');
+    } else {
+      btn.classList.add('wrong');
+      document.querySelector(`#q2opts-${i} [data-val="${q2items[i].correct}"]`).classList.add('correct');
+      fb.className = 'feedback show err';
+      fb.innerHTML = '<strong>Leider falsch.</strong> ' + q2items[i].explanation;
+      trackStep('2-' + (i + 1), 'wrong');
+    }
+
+    // Prüfen ob alle Stage-2-Fragen beantwortet
+    if (q2answers.every(a => a !== null) && !stage2Done) {
+      stage2Done = true;
+      const fb2 = document.getElementById('fb-stage2');
+      fb2.className = 'feedback show ok';
+      fb2.innerHTML = `Du hast <strong>${q2correct} von 3</strong> Kohäsionsmitteln korrekt identifiziert.`;
+      document.getElementById('btn2').classList.add('show');
+    }
+  }
+
+  function goStage3() {
+    setStage('stage3', 2);
+    renderStage3();
+  }
+
+  /* ─── Stage 3: Konnektor wählen ─────────────────────────────────── */
+  const q3items = [
+    {
+      sentence: 'Sie lernte den ganzen Tag, ___ sie war vor der Prüfung trotzdem nervös.',
+      options: ['denn', 'obwohl', 'und', 'deshalb'],
+      correct: 1,
+      relation: 'konzessiv',
+      explanation: `Der richtige <span class="concept-tag">Konnektor</span> ist <em>obwohl</em> –
+        er drückt eine <em>konzessive Kohärenzrelation</em> aus: Die Prüfungsangst widerspricht
+        der Erwartung, die man nach intensivem Lernen hätte. <em>Denn</em> (kausal) oder
+        <em>deshalb</em> (konsekutiv) würden eine andere logische Relation erzeugen.`
+    },
+    {
+      sentence: 'Es regnete stark, ___ blieben wir zuhause.',
+      options: ['obwohl', 'trotzdem', 'deshalb', 'außerdem'],
+      correct: 2,
+      relation: 'kausal-konsekutiv',
+      explanation: `<em>Deshalb</em> ist ein <span class="concept-tag">Konnektor</span> mit
+        <em>kausaler Kohärenzrelation</em> (konsekutiv): Der Regen ist die Ursache,
+        das Zuhausebleiben die Folge. <em>Trotzdem</em> würde eine konzessive Relation
+        ausdrücken (Folge widerspricht der Ursache) – das wäre hier inhaltlich falsch.`
+    },
+    {
+      sentence: 'Max bestand die Prüfung. ___ er hatte intensiv gelernt.',
+      options: ['Außerdem', 'Obwohl', 'Denn', 'Trotzdem'],
+      correct: 2,
+      relation: 'kausal',
+      explanation: `<em>Denn</em> ist ein <span class="concept-tag">Konnektor</span> mit
+        <em>kausaler Kohärenzrelation</em>: Er leitet eine Begründung ein.
+        Im Unterschied zu <em>weil</em> (Nebensatz) steht nach <em>denn</em> ein Hauptsatz.
+        <em>Außerdem</em> wäre additiv – es würde keine Begründung ausdrücken.`
+    }
+  ];
+
+  let q3answers = [null, null, null];
+  let q3correct = 0;
+
+  function renderStage3() {
+    const container = document.getElementById('q3-container');
+    container.innerHTML = '';
+    q3items.forEach((item, i) => {
+      const div = document.createElement('div');
+      div.style.cssText = 'margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:1px solid var(--line)';
+      if (i === q3items.length - 1) div.style.borderBottom = 'none';
+
+      const sentenceHtml = item.sentence.replace('___', '<span style="color:var(--amber);font-weight:700;">___</span>');
+      div.innerHTML = `
+        <p style="margin-bottom:.75rem;">
+          <strong>Aufgabe ${i + 1}:</strong> Welcher Konnektor passt in die Lücke?
+        </p>
+        <div class="text-block" style="margin-bottom:1rem;font-size:1.05rem;">${sentenceHtml}</div>
+        <div class="options" id="q3opts-${i}">
+          ${item.options.map((o, j) => `
+            <button class="option-btn" data-idx="${i}" data-val="${j}" onclick="answerQ3(this)">
+              ${o}
+            </button>
+          `).join('')}
+        </div>
+        <div class="feedback" id="q3fb-${i}"></div>
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  function answerQ3(btn) {
+    const i = parseInt(btn.dataset.idx);
+    const j = parseInt(btn.dataset.val);
+    if (q3answers[i] !== null) return;
+    q3answers[i] = j;
+
+    document.querySelectorAll(`#q3opts-${i} .option-btn`).forEach(b => b.disabled = true);
+    const fb = document.getElementById(`q3fb-${i}`);
+    totalQuestions++;
+
+    if (j === q3items[i].correct) {
+      btn.classList.add('correct');
+      totalCorrect++;
+      q3correct++;
+      fb.className = 'feedback show ok';
+      fb.innerHTML = '<strong>Richtig!</strong> ' + q3items[i].explanation;
+      trackStep('3-' + (i + 1), 'correct');
+    } else {
+      btn.classList.add('wrong');
+      document.querySelector(`#q3opts-${i} [data-val="${q3items[i].correct}"]`).classList.add('correct');
+      fb.className = 'feedback show err';
+      fb.innerHTML = '<strong>Leider nicht ganz.</strong> ' + q3items[i].explanation;
+      trackStep('3-' + (i + 1), 'wrong');
+    }
+
+    if (q3answers.every(a => a !== null) && !stage3Done) {
+      stage3Done = true;
+      const fb3 = document.getElementById('fb-stage3');
+      fb3.className = 'feedback show ok';
+      fb3.innerHTML = `Du hast <strong>${q3correct} von 3</strong> Konnektoren korrekt gewählt.`;
+      document.getElementById('btn3').classList.add('show');
+    }
+  }
+
+  function showResult() {
+    setStage('stage4', 3);
+    document.getElementById('finalScore').textContent = totalCorrect;
+    document.getElementById('totalQ').textContent = totalQuestions;
+    const pct = totalCorrect / totalQuestions;
+    let msg = '';
+    if (pct >= 0.85) {
+      msg = 'Ausgezeichnet! Du hast ein solides Verständnis von Kohäsion und Kohärenz. Nutze dieses Wissen beim nächsten Aufsatz.';
+    } else if (pct >= 0.6) {
+      msg = 'Gut gemacht! Die Grundprinzipien sitzen. Wiederhole besonders die Unterscheidung zwischen Kohärenzrelationen (kausal vs. konzessiv).';
+    } else {
+      msg = 'Noch etwas Übung nötig – aber du hast die Grundbegriffe kennengelernt. Lies nochmal die Feedback-Erklärungen durch.';
+    }
+    document.getElementById('finalMsg').textContent = msg;
+    trackStep('result', totalCorrect + '/' + totalQuestions);
+  }
+
+  /* ─── Stage navigation ──────────────────────────────────────────── */
+  function setStage(id, completedIdx) {
+    document.querySelectorAll('.stage').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+
+    const dots = document.querySelectorAll('.dot');
+    dots.forEach((d, i) => {
+      d.className = 'dot';
+      if (i < completedIdx) d.classList.add('done');
+      else if (i === completedIdx) d.classList.add('active');
+    });
+
+    const stageNum = completedIdx + 1;
+    document.getElementById('progressLabel').textContent = `Stufe ${stageNum} von 3`;
+  }
+
+  /* ─── Canvas: Kohäsionsnetz-Animation ──────────────────────────── */
+  const canvas = document.getElementById('kohaesionCanvas');
+  const ctx = canvas.getContext('2d');
+
+  // Wörter von Text B mit Typ-Markierungen
+  const words = [
+    { text: 'Max',          type: null },
+    { text: 'kaufte',       type: null },
+    { text: 'ein',          type: null },
+    { text: 'Buch,',        type: null },
+    { text: 'das',          type: 'prono' },   // → Buch
+    { text: 'er',           type: 'prono' },   // → Max
+    { text: 'liebte.',      type: null },
+    { text: 'Es',           type: 'prono' },   // → Buch
+    { text: 'handelte',     type: null },
+    { text: 'von',          type: null },
+    { text: 'Abenteuern',   type: null },
+    { text: 'und',          type: null },
+    { text: 'war',          type: null },
+    { text: 'zwar',         type: null },
+    { text: 'teuer,',       type: null },
+    { text: 'aber',         type: 'conn' },
+    { text: 'er',           type: 'prono' },
+    { text: 'las',          type: null },
+    { text: 'es',           type: 'prono' },
+    { text: 'fortan',       type: null },
+    { text: 'jeden',        type: null },
+    { text: 'Abend –',      type: null },
+    { text: 'sein',         type: 'prono' },
+    { text: 'neues',        type: null },
+    { text: 'Lieblingsbuch.', type: 'subst' },
+  ];
+
+  // Verbindungen (Paare): [from-index, to-index, type]
+  const arcs = [
+    [3, 4,  'prono'],   // Buch → das
+    [0, 5,  'prono'],   // Max  → er
+    [3, 7,  'prono'],   // Buch → Es
+    [14, 15, 'conn'],   // teuer → aber
+    [0, 16, 'prono'],   // Max  → er
+    [3, 18, 'prono'],   // Buch → es
+    [3, 24, 'subst'],   // Buch → Lieblingsbuch
+    [0, 22, 'prono'],   // Max  → sein
+  ];
+
+  const colors = {
+    prono: '#1d4ed8',
+    conn:  '#0b8f6a',
+    subst: '#c2570a',
+    recur: '#6b21a8',
+  };
+
+  let W = 700, H = 220;
+  let wordPositions = [];
+  let animProgress = 0;
+  let animDir = 1;
+  const arcReveal = [];
+  arcs.forEach((_, i) => arcReveal.push(0));
+
+  function layoutWords() {
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    W = canvas.width  = rect.width  * dpr;
+    H = canvas.height = 220 * dpr;
+    canvas.style.height = '220px';
+    ctx.scale(dpr, dpr);
+
+    const cw = rect.width;
+    const fontSize = Math.max(11, Math.min(14, cw / 42));
+    ctx.font = `${fontSize}px Inter, sans-serif`;
+
+    // Lay words in 2 rows
+    const row1 = words.slice(0, 15);
+    const row2 = words.slice(15);
+    const rowH = H / (2 * dpr);
+    const padX = 18;
+    const spacing = 6;
+
+    wordPositions = [];
+
+    let x = padX;
+    row1.forEach((w, i) => {
+      const tw = ctx.measureText(w.text).width;
+      wordPositions.push({ x: x + tw / 2, y: rowH * 0.55, w: tw, idx: i });
+      x += tw + spacing;
+    });
+
+    x = padX;
+    row2.forEach((w, i) => {
+      const tw = ctx.measureText(w.text).width;
+      wordPositions.push({ x: x + tw / 2, y: rowH * 1.55, w: tw, idx: i + 15 });
+      x += tw + spacing;
+    });
+  }
+
+  function drawFrame() {
+    const rect = canvas.getBoundingClientRect();
+    const cw = rect.width;
+    const fontSize = Math.max(11, Math.min(14, cw / 42));
+
+    ctx.clearRect(0, 0, W, H / (window.devicePixelRatio || 1) * (window.devicePixelRatio || 1) + 1);
+    const rH = 220;
+
+    // Draw arcs
+    arcs.forEach((arc, i) => {
+      const prog = arcReveal[i];
+      if (prog <= 0) return;
+      const p1 = wordPositions[arc[0]];
+      const p2 = wordPositions[arc[1]];
+      if (!p1 || !p2) return;
+
+      const col = colors[arc[2]] || '#888';
+      ctx.save();
+      ctx.strokeStyle = col;
+      ctx.lineWidth = 2;
+      ctx.globalAlpha = 0.7 * prog;
+      ctx.setLineDash([]);
+
+      const mx = (p1.x + p2.x) / 2;
+      const my = Math.min(p1.y, p2.y) - 28 - Math.abs(p2.x - p1.x) * 0.12;
+
+      ctx.beginPath();
+      ctx.moveTo(p1.x, p1.y - 8);
+      ctx.quadraticCurveTo(mx, my, p2.x, p2.y - 8);
+      ctx.stroke();
+
+      // Arrowhead at target
+      const angle = Math.atan2(p2.y - 8 - my, p2.x - mx);
+      ctx.save();
+      ctx.translate(p2.x, p2.y - 8);
+      ctx.rotate(angle);
+      ctx.beginPath();
+      ctx.moveTo(0, 0);
+      ctx.lineTo(-8, -4);
+      ctx.lineTo(-8, 4);
+      ctx.closePath();
+      ctx.fillStyle = col;
+      ctx.globalAlpha = 0.9 * prog;
+      ctx.fill();
+      ctx.restore();
+      ctx.restore();
+    });
+
+    // Draw words
+    ctx.font = `${fontSize}px Inter, sans-serif`;
+    words.forEach((w, i) => {
+      const pos = wordPositions[i];
+      if (!pos) return;
+      const isLinked = arcs.some(a => (a[0] === i || a[1] === i) && arcReveal[arcs.indexOf(a)] > 0.5);
+      if (isLinked && w.type) {
+        ctx.fillStyle = colors[w.type] || '#172033';
+        ctx.font = `bold ${fontSize}px Inter, sans-serif`;
+      } else {
+        ctx.fillStyle = '#172033';
+        ctx.font = `${fontSize}px Inter, sans-serif`;
+      }
+      ctx.textAlign = 'center';
+      ctx.fillText(w.text, pos.x, pos.y);
+    });
+  }
+
+  let phase = 0;
+  let phaseTimer = 0;
+  const PHASE_DURATION = 90; // frames per arc phase
+
+  function animate() {
+    phaseTimer++;
+    const arcIdx = Math.floor(phaseTimer / PHASE_DURATION) % arcs.length;
+
+    // Reveal current arc
+    const phaseLocal = (phaseTimer % PHASE_DURATION) / PHASE_DURATION;
+    arcReveal[arcIdx] = Math.min(1, phaseLocal * 3);
+
+    // Keep all previous arcs visible (fading slightly)
+    for (let i = 0; i < arcs.length; i++) {
+      if (i < arcIdx) {
+        arcReveal[i] = Math.max(0.3, arcReveal[i] - 0.005);
+      }
+    }
+
+    // After full cycle, reset
+    if (phaseTimer >= arcs.length * PHASE_DURATION + 60) {
+      phaseTimer = 0;
+      arcReveal.fill(0);
+    }
+
+    drawFrame();
+    requestAnimationFrame(animate);
+  }
+
+  // Init
+  function initCanvas() {
+    layoutWords();
+    requestAnimationFrame(animate);
+  }
+
+  window.addEventListener('resize', () => { layoutWords(); });
+  window.addEventListener('load', initCanvas);
+  if (document.readyState === 'complete') initCanvas();
+</script>
+
+</body>
+</html>

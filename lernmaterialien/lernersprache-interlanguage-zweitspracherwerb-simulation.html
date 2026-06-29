@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Lernersprache & Interlanguage: Zweitspracherwerb-Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zur Lernersprache (Interlanguage) nach Selinker: Ordne echte Fehler den Prozessen L1-Transfer, Übergeneralisierung, Vereinfachung und Fossilisierung zu.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Lernersprache, Interlanguage, Zweitspracherwerb, Fossilisierung, Selinker, L1-Transfer">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/lernersprache-interlanguage-zweitspracherwerb-simulation.html">
+  <meta property="og:title" content="Lernersprache & Interlanguage: Zweitspracherwerb-Simulation">
+  <meta property="og:description" content="Interaktive Simulation zur Lernersprache nach Selinker: Ordne echte Fehler den Prozessen L1-Transfer, Übergeneralisierung, Vereinfachung und Fossilisierung zu.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/lernersprache-interlanguage-zweitspracherwerb-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Lernersprache & Interlanguage: Zweitspracherwerb-Simulation",
+  "description":"Interaktive Simulation zur Lernersprache (Interlanguage) nach Selinker: Ordne echte Fehler den Prozessen L1-Transfer, Übergeneralisierung, Vereinfachung und Fossilisierung zu.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/lernersprache-interlanguage-zweitspracherwerb-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --green:  #0b8f6a;
+      --amber:  #b87700;
+      --red:    #b5281e;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    /* ── Page chrome ─────────────────────────────────────── */
+    header {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 32px 22px 16px;
+    }
+    header h1 {
+      font-size: clamp(1.45rem, 3vw, 2.1rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    header p { color: var(--muted); max-width: 640px; font-size: 0.96rem; }
+
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 22px 64px;
+    }
+
+    /* ── Progress strip ──────────────────────────────────── */
+    .progress-strip {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+    .step-dot {
+      width: 11px; height: 11px;
+      border-radius: 50%;
+      background: var(--line);
+      border: 2px solid var(--line);
+      transition: background 0.22s, border-color 0.22s;
+      flex-shrink: 0;
+    }
+    .step-dot.active  { background: var(--blue);  border-color: var(--blue); }
+    .step-dot.done    { background: var(--green);  border-color: var(--green); }
+    .step-label { font-size: 0.82rem; color: var(--muted); }
+
+    /* ── Stages ──────────────────────────────────────────── */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    /* ── Canvas area ─────────────────────────────────────── */
+    .canvas-wrap {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 2rem;
+    }
+    canvas {
+      width: 100%;
+      display: block;
+      border-radius: 6px;
+    }
+
+    /* ── Theory box ──────────────────────────────────────── */
+    .theory-box {
+      background: #eef4ff;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+      font-size: 0.93rem;
+    }
+    .theory-box strong { color: var(--blue); }
+    .theory-box p + p { margin-top: 0.5rem; }
+
+    /* ── Task block ──────────────────────────────────────── */
+    .task-heading {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    .task-intro {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Error cards ─────────────────────────────────────── */
+    .error-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .error-card .sentence {
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #1a1a2e;
+      margin-bottom: 0.5rem;
+    }
+    .error-card .context {
+      font-size: 0.83rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+    .option-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .option-btn {
+      padding: 7px 14px;
+      border: 1.5px solid var(--line);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 0.86rem;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .option-btn:hover { border-color: var(--blue); background: #eef4ff; }
+    .option-btn.correct { background: #d4f4e8; border-color: var(--green); color: var(--green); font-weight: 600; }
+    .option-btn.wrong   { background: #fce8e8; border-color: var(--red);   color: var(--red); }
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Concept tags ────────────────────────────────────── */
+    .concept-tag {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .concept-tag.green { background: #d4f4e8; color: var(--green); }
+    .concept-tag.red   { background: #fce8e8; color: var(--red); }
+    .concept-tag.blue  { background: #ddeeff; color: var(--blue); }
+
+    /* ── Feedback box ────────────────────────────────────── */
+    .feedback-box {
+      margin-top: 0.75rem;
+      padding: 0.8rem 1rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      line-height: 1.55;
+      display: none;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box.ok   { background: #d4f4e8; border-left: 3px solid var(--green); }
+    .feedback-box.err  { background: #fce8e8; border-left: 3px solid var(--red); }
+
+    /* ── Stage 2: Profile table ──────────────────────────── */
+    .profile-intro {
+      font-size: 0.92rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .profile-table-wrap {
+      overflow-x: auto;
+      margin-bottom: 2rem;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 520px;
+      font-size: 0.88rem;
+    }
+    th {
+      background: #eef4ff;
+      color: var(--blue);
+      text-align: left;
+      padding: 8px 12px;
+      border-bottom: 2px solid var(--line);
+    }
+    td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--line);
+      vertical-align: middle;
+    }
+    tr:last-child td { border-bottom: none; }
+    .trend-ok  { color: var(--green); font-weight: 600; }
+    .trend-bad { color: var(--red); font-weight: 600; }
+
+    .profile-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.2rem 1.4rem;
+      margin-bottom: 1.5rem;
+    }
+    .profile-card h4 { font-size: 0.95rem; margin-bottom: 0.4rem; }
+    .profile-card .err-row {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+    .syl-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 0.75rem;
+    }
+    .syl-btn {
+      padding: 7px 16px;
+      border: 1.5px solid var(--line);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 0.86rem;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    .syl-btn:hover { border-color: var(--blue); background: #eef4ff; }
+    .syl-btn.correct { background: #d4f4e8; border-color: var(--green); color: var(--green); font-weight: 600; }
+    .syl-btn.wrong   { background: #fce8e8; border-color: var(--red);   color: var(--red); }
+    .syl-btn:disabled { cursor: default; }
+
+    /* ── Buttons ─────────────────────────────────────────── */
+    .btn-primary {
+      display: inline-block;
+      padding: 11px 24px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.96rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      margin-top: 1.5rem;
+    }
+    .btn-primary:hover { opacity: 0.88; }
+    .btn-primary:disabled { opacity: 0.45; cursor: default; }
+
+    /* ── Score display ───────────────────────────────────── */
+    .score-display {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1.4rem;
+      margin-bottom: 2rem;
+      font-size: 0.92rem;
+    }
+    .score-num {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--blue);
+      line-height: 1;
+    }
+    .score-label { font-size: 0.82rem; color: var(--muted); }
+
+    /* ── Summary / finish ────────────────────────────────── */
+    .summary-box {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .summary-box h2 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .summary-box p  { color: var(--muted); font-size: 0.93rem; max-width: 540px; margin: 0 auto 1.5rem; }
+    .summary-box .key-concepts { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-bottom: 1.5rem; }
+
+    /* ── Section divider ─────────────────────────────────── */
+    .section-title {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 400px) {
+      header { padding: 20px 16px 12px; }
+      main   { padding: 0 16px 48px; }
+      .option-row { flex-direction: column; }
+      .syl-row    { flex-direction: column; }
+    }
+  </style>
+</head>
+<body
+  data-asset-type="simulation"
+  data-subject="Sprachwissenschaft"
+  data-grade-level="11-13"
+  data-topic-cluster="zweitspracherwerb-lernersprache"
+  data-primary-keyword="Lernersprache">
+
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header>
+    <h1>Lernersprache &amp; Fossilisierung</h1>
+    <p>Interaktive Simulation zum Zweitspracherwerb – Fehlertypen erkennen, Interlanguage verstehen, Fossilisierung analysieren.</p>
+  </header>
+
+  <main>
+    <!-- Progress -->
+    <div class="progress-strip" id="progressStrip">
+      <div class="step-dot active" id="dot0"></div>
+      <div class="step-dot" id="dot1"></div>
+      <div class="step-dot" id="dot2"></div>
+      <span class="step-label" id="stepLabel">Stufe 1 von 2</span>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════════ -->
+    <!-- STAGE 1 – Canvas-Modell + Fehlerklassifikation        -->
+    <!-- ══════════════════════════════════════════════════════ -->
+    <div class="stage active" id="stage1">
+
+      <div class="canvas-wrap">
+        <canvas id="ilCanvas" height="110"></canvas>
+      </div>
+
+      <div class="theory-box">
+        <strong>Das Interlanguage-Kontinuum (Selinker 1972)</strong>
+        <p>L2-Lernende bauen eine <em>Lernersprache</em> auf – ein eigenständiges System zwischen ihrer Muttersprache (L1) und der Zielsprache. Es entwickelt sich durch Input und Feedback, kann aber an bestimmten Stufen <em>fossilisieren</em>.</p>
+        <p>Vier zentrale Prozesse erzeugen typische Fehler: <strong>L1-Transfer</strong>, <strong>Übergeneralisierung</strong>, <strong>Vereinfachung</strong> und <strong>Fossilisierung</strong>.</p>
+      </div>
+
+      <p class="task-heading">Vorhersage: Welcher Prozess steckt dahinter?</p>
+      <p class="task-intro">Lies jeden Fehlersatz und wähle den passenden Interlanguage-Prozess. Die Lernenden haben Englisch als Muttersprache und lernen Deutsch.</p>
+
+      <!-- Error card 1 -->
+      <div class="error-card" id="card1">
+        <div class="sentence">„Ich bin gegangen nach Hause gestern."</div>
+        <div class="context">L1 (Englisch): „I went home yesterday." – Die Lernende (B1-Niveau) schreibt diesen Satz spontan.</div>
+        <div class="option-row">
+          <button class="option-btn" data-card="1" data-val="transfer">L1-Transfer</button>
+          <button class="option-btn" data-card="1" data-val="overgeneralize">Übergeneralisierung</button>
+          <button class="option-btn" data-card="1" data-val="simplify">Vereinfachung</button>
+          <button class="option-btn" data-card="1" data-val="fossil">Fossilisierungsindikator</button>
+        </div>
+        <div class="feedback-box" id="fb1"></div>
+      </div>
+
+      <!-- Error card 2 -->
+      <div class="error-card" id="card2">
+        <div class="sentence">„Er hat sein Hausaufgaben gemacht."</div>
+        <div class="context">Ziel: „Er hat seine Hausaufgaben gemacht." – Derselbe Fehler tritt seit zwei Jahren in Aufsätzen und mündlichen Prüfungen auf, auch nach wiederholter Korrektur.</div>
+        <div class="option-row">
+          <button class="option-btn" data-card="2" data-val="transfer">L1-Transfer</button>
+          <button class="option-btn" data-card="2" data-val="overgeneralize">Übergeneralisierung</button>
+          <button class="option-btn" data-card="2" data-val="simplify">Vereinfachung</button>
+          <button class="option-btn" data-card="2" data-val="fossil">Fossilisierungsindikator</button>
+        </div>
+        <div class="feedback-box" id="fb2"></div>
+      </div>
+
+      <!-- Error card 3 -->
+      <div class="error-card" id="card3">
+        <div class="sentence">„Ich habedte einen Fehler gemacht."</div>
+        <div class="context">Ziel: „Ich hatte einen Fehler gemacht." – Der Lernende kennt das Präteritum von „haben", bildet aber die Form analog zu schwachen Verben.</div>
+        <div class="option-row">
+          <button class="option-btn" data-card="3" data-val="transfer">L1-Transfer</button>
+          <button class="option-btn" data-card="3" data-val="overgeneralize">Übergeneralisierung</button>
+          <button class="option-btn" data-card="3" data-val="simplify">Vereinfachung</button>
+          <button class="option-btn" data-card="3" data-val="fossil">Fossilisierungsindikator</button>
+        </div>
+        <div class="feedback-box" id="fb3"></div>
+      </div>
+
+      <!-- Error card 4 -->
+      <div class="error-card" id="card4">
+        <div class="sentence">„Die Konferenz war gestern. Ich lernen viel."</div>
+        <div class="context">Ziel: „… Ich habe viel gelernt." – Der Lernende (A2) vermeidet das Perfekt und nutzt den einfachsten verfügbaren Verbform.</div>
+        <div class="option-row">
+          <button class="option-btn" data-card="4" data-val="transfer">L1-Transfer</button>
+          <button class="option-btn" data-card="4" data-val="overgeneralize">Übergeneralisierung</button>
+          <button class="option-btn" data-card="4" data-val="simplify">Vereinfachung</button>
+          <button class="option-btn" data-card="4" data-val="fossil">Fossilisierungsindikator</button>
+        </div>
+        <div class="feedback-box" id="fb4"></div>
+      </div>
+
+      <button class="btn-primary" id="toStage2" disabled>Weiter zu Stufe 2 →</button>
+
+    </div><!-- /stage1 -->
+
+    <!-- ══════════════════════════════════════════════════════ -->
+    <!-- STAGE 2 – Fossilisierungs-Profil analysieren          -->
+    <!-- ══════════════════════════════════════════════════════ -->
+    <div class="stage" id="stage2">
+
+      <div class="theory-box">
+        <strong>Stufe 2 – Fossilisierungs-Profil</strong>
+        <p>Fossilisierung erkennt man an einer zentralen Eigenschaft: Der Fehler bleibt trotz Input und Korrektur über die Zeit stabil. Im folgenden Lernerprofil siehst du fünf Fehler desselben Lernenden zu drei Messzeitpunkten (T1, T2, T3).</p>
+        <p>Entscheide für jeden Fehler: Ist er <em>in Entwicklung</em> (verbessert sich erkennbar) oder zeigt er <em>Fossilisierungs-Muster</em> (bleibt konstant oder kehrt immer wieder)?</p>
+      </div>
+
+      <p class="task-heading">Vorhersage: Entwicklung oder Fossilisierung?</p>
+      <p class="profile-intro">Lernerin: Keiko (L1 Japanisch, lernt Deutsch seit 4 Jahren, Niveau B2)</p>
+
+      <!-- Profile cards -->
+      <div class="profile-card" id="pc1">
+        <h4>Fehler A – Verbendstellung im Nebensatz</h4>
+        <div class="err-row">T1: „…weil er kommt nicht." → T2: „…weil er nicht kommt." → T3: „…weil er nicht kommt."</div>
+        <div class="syl-row">
+          <button class="syl-btn" data-pc="1" data-val="develop">In Entwicklung</button>
+          <button class="syl-btn" data-pc="1" data-val="fossil">Fossilisierungs-Muster</button>
+        </div>
+        <div class="feedback-box" id="pfb1"></div>
+      </div>
+
+      <div class="profile-card" id="pc2">
+        <h4>Fehler B – Genuskongruenz beim Possessivpronomen</h4>
+        <div class="err-row">T1: „sein Mutter" → T2: „sein Mutter" → T3: „sein Mutter"</div>
+        <div class="syl-row">
+          <button class="syl-btn" data-pc="2" data-val="develop">In Entwicklung</button>
+          <button class="syl-btn" data-pc="2" data-val="fossil">Fossilisierungs-Muster</button>
+        </div>
+        <div class="feedback-box" id="pfb2"></div>
+      </div>
+
+      <div class="profile-card" id="pc3">
+        <h4>Fehler C – Artikel bei abstrakten Nomen</h4>
+        <div class="err-row">T1: „∅ Liebe ist wichtig" → T2: „Eine Liebe ist wichtig" → T3: „Die Liebe ist wichtig"</div>
+        <div class="syl-row">
+          <button class="syl-btn" data-pc="3" data-val="develop">In Entwicklung</button>
+          <button class="syl-btn" data-pc="3" data-val="fossil">Fossilisierungs-Muster</button>
+        </div>
+        <div class="feedback-box" id="pfb3"></div>
+      </div>
+
+      <div class="profile-card" id="pc4">
+        <h4>Fehler D – Aspektmarkierung durch Präfix</h4>
+        <div class="err-row">T1: „Ich ess" → T2: „Ich esse" → T3: „Ich esse" (Präfix-Aspekt wie im Japanischen fehlt, Tempus korrekt)</div>
+        <div class="syl-row">
+          <button class="syl-btn" data-pc="4" data-val="develop">In Entwicklung</button>
+          <button class="syl-btn" data-pc="4" data-val="fossil">Fossilisierungs-Muster</button>
+        </div>
+        <div class="feedback-box" id="pfb4"></div>
+      </div>
+
+      <div class="profile-card" id="pc5">
+        <h4>Fehler E – Trennbare Verben im Hauptsatz</h4>
+        <div class="err-row">T1: „Ich anrufe ihn." → T2: „Ich rufe ihn." → T3: „Ich rufe ihn an."</div>
+        <div class="syl-row">
+          <button class="syl-btn" data-pc="5" data-val="develop">In Entwicklung</button>
+          <button class="syl-btn" data-pc="5" data-val="fossil">Fossilisierungs-Muster</button>
+        </div>
+        <div class="feedback-box" id="pfb5"></div>
+      </div>
+
+      <button class="btn-primary" id="toStage3" disabled>Ergebnis ansehen →</button>
+
+    </div><!-- /stage2 -->
+
+    <!-- ══════════════════════════════════════════════════════ -->
+    <!-- STAGE 3 – Zusammenfassung                             -->
+    <!-- ══════════════════════════════════════════════════════ -->
+    <div class="stage" id="stage3">
+      <div class="score-display">
+        <div>
+          <div class="score-num" id="totalScore">–</div>
+          <div class="score-label">von 9 Punkten</div>
+        </div>
+        <div>
+          <div style="font-size:0.95rem; font-weight:600;">Zusammenfassung</div>
+          <div id="scoreNote" style="font-size:0.88rem; color:var(--muted);"></div>
+        </div>
+      </div>
+
+      <div class="summary-box">
+        <h2>Kernkonzepte der Lernersprache</h2>
+        <p>Diese vier Prozesse bilden die Grundlage von Selinkers Interlanguage-Modell (1972). Jeder Fehler im Zweitspracherwerb lässt sich einem oder mehreren dieser Mechanismen zuordnen.</p>
+        <div class="key-concepts">
+          <span class="concept-tag blue">L1-Transfer</span>
+          <span class="concept-tag blue">Übergeneralisierung</span>
+          <span class="concept-tag blue">Vereinfachung</span>
+          <span class="concept-tag blue">Fossilisierung</span>
+          <span class="concept-tag blue">Interlanguage (Selinker 1972)</span>
+          <span class="concept-tag blue">Approximative Entwicklung</span>
+          <span class="concept-tag blue">Lernersprachen-Profil</span>
+        </div>
+        <p style="margin-top:1rem;"><strong>Wichtig:</strong> Fehler im Zweitspracherwerb sind keine Zeichen von Desinteresse – sie sind systematisch und zeigen den aktuellen Erwerbsstand der Lernersprache. Nur Fossilisierung stellt ein dauerhaftes Plateau dar.</p>
+        <button class="btn-primary" id="restartBtn">Simulation neu starten</button>
+      </div>
+
+    </div><!-- /stage3 -->
+
+  </main>
+
+  <script>
+  // ── Tracking ──────────────────────────────────────────────
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: 'learning_asset_view',
+    data_asset_type: 'simulation',
+    data_topic_cluster: 'zweitspracherwerb-lernersprache',
+    data_primary_keyword: 'Lernersprache',
+    data_subject: 'Sprachwissenschaft',
+    data_grade_level: '11-13'
+  });
+
+  // ── Canvas: Interlanguage Kontinuum ───────────────────────
+  const canvas = document.getElementById('ilCanvas');
+  const ctx    = canvas.getContext('2d');
+
+  // Polyfill für ältere Browser ohne roundRect
+  if (!ctx.roundRect) {
+    ctx.roundRect = function(x, y, w, h, r) {
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.lineTo(x + w - r, y);
+      ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+      ctx.lineTo(x + w, y + h - r);
+      ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+      ctx.lineTo(x + r, y + h);
+      ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+      ctx.lineTo(x, y + r);
+      ctx.quadraticCurveTo(x, y, x + r, y);
+      ctx.closePath();
+    };
+  }
+
+  // Avatar position (0 = L1, 1 = Zielsprache)
+  let avatarPos   = 0.08;
+  let targetPos   = 0.08;
+  let wobble      = 0;      // fossil wobble counter
+  let wobbling    = false;
+  let animFrame;
+
+  function resizeCanvas() {
+    const wrap = canvas.parentElement;
+    canvas.width  = wrap.clientWidth - 40;
+    canvas.height = 110;
+    drawContinuum();
+  }
+
+  function drawContinuum() {
+    const W = canvas.width, H = canvas.height;
+    ctx.clearRect(0, 0, W, H);
+
+    const px = { L1: 48, Z: W - 48 };
+    const midY = 55;
+
+    // Titel
+    ctx.fillStyle = '#617087';
+    ctx.font = '11px Inter, sans-serif';
+    ctx.textAlign = 'left';
+    ctx.fillText('Interlanguage-Kontinuum', 0, 13);
+    ctx.textAlign = 'right';
+    ctx.fillStyle = '#0f5fa8';
+    ctx.fillText('Position der Lernenden', W, 13);
+
+    // Background track
+    ctx.fillStyle = '#e8edf5';
+    ctx.beginPath();
+    ctx.roundRect(px.L1, midY - 8, px.Z - px.L1, 16, 8);
+    ctx.fill();
+
+    // Progress fill
+    const progX = px.L1 + (px.Z - px.L1) * avatarPos;
+    ctx.fillStyle = '#0f5fa8';
+    ctx.beginPath();
+    ctx.roundRect(px.L1, midY - 8, progX - px.L1, 16, 8);
+    ctx.fill();
+
+    // Stage markers IL1 IL2 IL3
+    const markers = [0.25, 0.5, 0.75];
+    markers.forEach((m, i) => {
+      const mx = px.L1 + (px.Z - px.L1) * m;
+      ctx.fillStyle = avatarPos >= m ? '#0b8f6a' : '#aab8cb';
+      ctx.beginPath();
+      ctx.arc(mx, midY, 6, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.fillStyle = avatarPos >= m ? '#0b8f6a' : '#617087';
+      ctx.font = '11px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('IL' + (i + 1), mx, midY + 20);
+    });
+
+    // L1 label
+    ctx.fillStyle = '#617087';
+    ctx.font = 'bold 12px Inter, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('L1', px.L1, midY + 20);
+
+    // Zielsprache label
+    ctx.fillStyle = '#0f5fa8';
+    ctx.font = 'bold 12px Inter, sans-serif';
+    ctx.fillText('Ziel', px.Z, midY + 20);
+
+    // Avatar (person icon simplified)
+    const ax = progX + (wobbling ? Math.sin(wobble * 0.5) * 5 : 0);
+    const ay = midY;
+    ctx.fillStyle = wobbling ? '#b5281e' : '#172033';
+    // Body circle
+    ctx.beginPath();
+    ctx.arc(ax, ay - 20, 10, 0, Math.PI * 2);
+    ctx.fill();
+    // Legs
+    ctx.strokeStyle = wobbling ? '#b5281e' : '#172033';
+    ctx.lineWidth = 2.5;
+    ctx.beginPath(); ctx.moveTo(ax, ay - 10); ctx.lineTo(ax - 6, ay + 2); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(ax, ay - 10); ctx.lineTo(ax + 6, ay + 2); ctx.stroke();
+    // Body line
+    ctx.beginPath(); ctx.moveTo(ax, ay - 10); ctx.lineTo(ax, ay - 16); ctx.stroke();
+
+    // Fossilisierung label if wobbling
+    if (wobbling) {
+      ctx.fillStyle = '#b5281e';
+      ctx.font = '11px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText('Fossilisierung!', ax, ay - 34);
+    }
+  }
+
+  function animateAvatar() {
+    if (wobbling) {
+      wobble++;
+      drawContinuum();
+      if (wobble < 30) {
+        animFrame = requestAnimationFrame(animateAvatar);
+      } else {
+        wobbling = false;
+        wobble = 0;
+        drawContinuum();
+      }
+      return;
+    }
+    const diff = targetPos - avatarPos;
+    if (Math.abs(diff) > 0.002) {
+      avatarPos += diff * 0.06;
+      drawContinuum();
+      animFrame = requestAnimationFrame(animateAvatar);
+    } else {
+      avatarPos = targetPos;
+      drawContinuum();
+    }
+  }
+
+  function moveAvatar(delta, fossil) {
+    cancelAnimationFrame(animFrame);
+    if (fossil) {
+      wobbling = true;
+      wobble   = 0;
+    } else {
+      targetPos = Math.min(0.95, Math.max(0, avatarPos + delta));
+    }
+    animFrame = requestAnimationFrame(animateAvatar);
+  }
+
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  // ── Stage 1 answers ───────────────────────────────────────
+  const s1Answers = {
+    1: { correct: 'transfer',      label: 'L1-Transfer',
+         ok:  'Richtig! Die englische Wortstellung (Zeitangabe am Ende) wird auf das Deutsche übertragen. Im Deutschen steht das finite Verb an zweiter Position (V2-Regel). Dies ist ein klassischer <span class="concept-tag green">L1-Transfer</span>.',
+         err: 'Nicht ganz. Die englische Satzstruktur (Subjekt–Verb–Objekt–Adverb) wird ins Deutsche übertragen. Das ist <span class="concept-tag blue">L1-Transfer</span> – Regeln der Muttersprache werden auf die Zielsprache angewendet.' },
+    2: { correct: 'fossil',        label: 'Fossilisierungsindikator',
+         ok:  'Richtig! Der Fehler (fehlendes Possessivpronomen im Femininum) tritt seit zwei Jahren konstant auf und reagiert nicht auf Korrektur – typisches Muster der <span class="concept-tag green">Fossilisierung</span>.',
+         err: 'Nicht ganz. Das entscheidende Merkmal hier ist die Zeitdimension: Derselbe Fehler bleibt trotz Unterricht und Korrekturen konstant. Das ist ein <span class="concept-tag blue">Fossilisierungsindikator</span>.' },
+    3: { correct: 'overgeneralize', label: 'Übergeneralisierung',
+         ok:  'Richtig! Das schwache Verbmuster (-te für Präteritum) wird auf das starke Verb „haben" angewendet. Das ist <span class="concept-tag green">Übergeneralisierung</span> – eine Zielsprachregel wird zu weit gefasst.',
+         err: 'Nicht ganz. Die Lernende wendet das regelmäßige Präteritummuster (-te) auf ein unregelmäßiges Verb an. Das nennt man <span class="concept-tag blue">Übergeneralisierung</span> – die Regel ist aus der Zielsprache, wird aber zu breit angewendet.' },
+    4: { correct: 'simplify',      label: 'Vereinfachung',
+         ok:  'Richtig! Der Lernende umgeht das komplexe Perfekt und nutzt die Infinitivform – <span class="concept-tag green">Vereinfachung</span>. Dieses Muster ist entwicklungstypisch im frühen Spracherwerb.',
+         err: 'Nicht ganz. Der Lernende vermeidet die komplexe Perfektkonstruktion und nutzt stattdessen die einfachste verfügbare Form. Das ist <span class="concept-tag blue">Vereinfachung</span> – Komplexes wird durch Bekanntes ersetzt.' }
+  };
+
+  // ── Stage 2 answers ───────────────────────────────────────
+  const s2Answers = {
+    1: { correct: 'develop',
+         ok:  'Richtig! Von T1 → T2 → T3 ist eine klare Verbesserung erkennbar (Verbendstellung zuerst falsch, dann korrekt). Das ist <span class="concept-tag green">Entwicklung</span>, kein fossilisiertes Muster.',
+         err: 'Nicht ganz. Die Verbendstellung verbessert sich von T1 zu T2 und bleibt korrekt bei T3 – das zeigt <span class="concept-tag blue">Entwicklung</span>. Fossilisierung liegt vor, wenn ein Fehler konstant bleibt.' },
+    2: { correct: 'fossil',
+         ok:  'Richtig! „sein Mutter" erscheint zu allen drei Zeitpunkten identisch. Trotz B2-Niveau und Unterricht bleibt dieser Genus-Kongruenzfehler stabil – ein klares <span class="concept-tag green">Fossilisierungs-Muster</span>.',
+         err: 'Nicht ganz. Der Fehler „sein Mutter" bleibt zu T1, T2 und T3 unverändert. Eine Entwicklung wäre erkennbar, wenn der Fehler seltener oder in bestimmten Kontexten korrekter wird. Das ist <span class="concept-tag blue">Fossilisierung</span>.' },
+    3: { correct: 'develop',
+         ok:  'Richtig! Die Artikelverwendung verbessert sich schrittweise (∅ → unbestimmter Artikel → bestimmter Artikel). Dies zeigt den typischen Erwerbspfad für Artikel – <span class="concept-tag green">Entwicklung</span>.',
+         err: 'Nicht ganz. Die Verwendung des Artikels verändert sich von Messzeitpunkt zu Messzeitpunkt. Das zeigt einen aktiven Erwerbsprozess – das Gegenteil von <span class="concept-tag blue">Fossilisierung</span>, also <strong>Entwicklung</strong>.' },
+    4: { correct: 'fossil',
+         ok:  'Richtig! Die Aspektmarkierung (Japanisch hat lexikalische Aspektunterschiede, Deutsch hat andere Mittel) bleibt auf B2-Niveau stabil ungelöst. Das Tempus ist korrekt, aber der Aspektausdruck fossilisiert sich. <span class="concept-tag green">Fossilisierungs-Muster</span>.',
+         err: 'Nicht ganz. Die Fehler bei Aspektmarkierung bleiben über die Zeit konstant – Tempus wird korrekt, aber L1-Transfer-bedingte Aspektlücken bleiben. Das ist ein <span class="concept-tag blue">Fossilisierungs-Muster</span>.' },
+    5: { correct: 'develop',
+         ok:  'Richtig! Die trennbaren Verben verbessern sich sichtbar: T1 falsch, T2 inkorrekt abgetrennt, T3 korrekt. Das zeigt den Erwerbsprozess für trennbare Verben – <span class="concept-tag green">Entwicklung</span>.',
+         err: 'Nicht ganz. Von T1 zu T3 ist eine schrittweise Annäherung an die korrekte Form erkennbar. Trennbare Verben werden nach und nach erworben – das ist <span class="concept-tag blue">Entwicklung</span>, keine Fossilisierung.' }
+  };
+
+  // ── State ─────────────────────────────────────────────────
+  let s1Score = 0, s2Score = 0;
+  let s1Done  = { 1: false, 2: false, 3: false, 4: false };
+  let s2Done  = { 1: false, 2: false, 3: false, 4: false, 5: false };
+
+  function checkAllS1Done() {
+    return Object.values(s1Done).every(Boolean);
+  }
+  function checkAllS2Done() {
+    return Object.values(s2Done).every(Boolean);
+  }
+
+  // ── Stage 1 click handler ─────────────────────────────────
+  document.querySelectorAll('.option-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const card = parseInt(this.dataset.card);
+      if (s1Done[card]) return;
+
+      const val = this.dataset.val;
+      const ans = s1Answers[card];
+      const fb  = document.getElementById('fb' + card);
+
+      // Disable all buttons in this card
+      document.querySelectorAll(`.option-btn[data-card="${card}"]`).forEach(b => {
+        b.disabled = true;
+      });
+
+      const isCorrect = val === ans.correct;
+      this.classList.add(isCorrect ? 'correct' : 'wrong');
+
+      fb.innerHTML = isCorrect ? ans.ok : ans.err;
+      fb.className = 'feedback-box show ' + (isCorrect ? 'ok' : 'err');
+
+      if (isCorrect) {
+        s1Score++;
+        moveAvatar(0.18, false);
+      } else {
+        // Show the correct button
+        document.querySelectorAll(`.option-btn[data-card="${card}"]`).forEach(b => {
+          if (b.dataset.val === ans.correct) b.classList.add('correct');
+        });
+        // Fossil = wobble, else slight move
+        if (ans.correct === 'fossil') {
+          moveAvatar(0, true);
+        } else {
+          moveAvatar(0.06, false);
+        }
+      }
+
+      s1Done[card] = true;
+      if (checkAllS1Done()) {
+        document.getElementById('toStage2').disabled = false;
+      }
+    });
+  });
+
+  // ── Stage 2 click handler ─────────────────────────────────
+  document.querySelectorAll('.syl-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const pc  = parseInt(this.dataset.pc);
+      if (s2Done[pc]) return;
+
+      const val = this.dataset.val;
+      const ans = s2Answers[pc];
+      const fb  = document.getElementById('pfb' + pc);
+
+      document.querySelectorAll(`.syl-btn[data-pc="${pc}"]`).forEach(b => {
+        b.disabled = true;
+      });
+
+      const isCorrect = val === ans.correct;
+      this.classList.add(isCorrect ? 'correct' : 'wrong');
+
+      fb.innerHTML = isCorrect ? ans.ok : ans.err;
+      fb.className = 'feedback-box show ' + (isCorrect ? 'ok' : 'err');
+
+      if (isCorrect) {
+        s2Score++;
+        moveAvatar(0.1, false);
+      } else {
+        document.querySelectorAll(`.syl-btn[data-pc="${pc}"]`).forEach(b => {
+          if (b.dataset.val === ans.correct) b.classList.add('correct');
+        });
+        if (ans.correct === 'fossil') moveAvatar(0, true);
+        else moveAvatar(0.03, false);
+      }
+
+      s2Done[pc] = true;
+      if (checkAllS2Done()) {
+        document.getElementById('toStage3').disabled = false;
+      }
+    });
+  });
+
+  // ── Navigate stages ───────────────────────────────────────
+  function showStage(num) {
+    document.querySelectorAll('.stage').forEach((s, i) => {
+      s.classList.toggle('active', i + 1 === num);
+    });
+    document.querySelectorAll('.step-dot').forEach((d, i) => {
+      d.classList.remove('active', 'done');
+      if (i + 1 < num)  d.classList.add('done');
+      if (i + 1 === num) d.classList.add('active');
+    });
+    document.getElementById('stepLabel').textContent =
+      num < 3 ? `Stufe ${num} von 2` : 'Abgeschlossen';
+
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  document.getElementById('toStage2').addEventListener('click', () => showStage(2));
+  document.getElementById('toStage3').addEventListener('click', () => {
+    const total = s1Score + s2Score;
+    document.getElementById('totalScore').textContent = total;
+    const note = total >= 8 ? 'Ausgezeichnet – du erkennst Lernersprachen-Prozesse sicher.'
+               : total >= 6 ? 'Gut! Die meisten Fehlertypen klar erkannt.'
+               : total >= 4 ? 'Solide Grundlage – die Konzepte werden mit Übung klarer.'
+               : 'Wiederhole die Theoriebox und starte neu.';
+    document.getElementById('scoreNote').textContent = note;
+    showStage(3);
+  });
+
+  document.getElementById('restartBtn').addEventListener('click', () => {
+    // Reset state
+    s1Score = 0; s2Score = 0;
+    Object.keys(s1Done).forEach(k => s1Done[k] = false);
+    Object.keys(s2Done).forEach(k => s2Done[k] = false);
+
+    // Reset buttons
+    document.querySelectorAll('.option-btn, .syl-btn').forEach(b => {
+      b.disabled = false;
+      b.className = b.classList.contains('option-btn') ? 'option-btn' : 'syl-btn';
+    });
+    document.querySelectorAll('.feedback-box').forEach(fb => {
+      fb.className = 'feedback-box';
+      fb.innerHTML = '';
+    });
+    document.getElementById('toStage2').disabled = true;
+    document.getElementById('toStage3').disabled = true;
+
+    // Reset canvas
+    avatarPos = 0.08; targetPos = 0.08;
+    wobbling = false; wobble = 0;
+    cancelAnimationFrame(animFrame);
+    drawContinuum();
+
+    showStage(1);
+  });
+
+  </script>
+</body>
+</html>

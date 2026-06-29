@@ -1,0 +1,1013 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Sprachinterferenz Englisch: Falsche Freunde und Satzbau üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation: Erkenne falsche Freunde und SOV-Satzbaufallen im Englischen. Entscheide selbst, sieh sofortiges Feedback und verstehe Sprachinterferenz.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sprachinterferenz, Falsche Freunde Englisch, Faux Amis, Englisch lernen, Satzbau Englisch, Fremdsprachenlernen">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachinterferenz-simulation.html">
+  <meta property="og:title" content="Sprachinterferenz Englisch: Falsche Freunde und Satzbau">
+  <meta property="og:description" content="Interaktive Simulation: Erkenne falsche Freunde und SOV-Satzbaufallen im Englischen. Entscheide selbst, sieh sofortiges Feedback und verstehe Sprachinterferenz.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachinterferenz-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprachinterferenz Englisch: Falsche Freunde und Satzbau üben",
+  "description":"Interaktive Simulation: Erkenne falsche Freunde und SOV-Satzbaufallen im Englischen. Entscheide selbst, sieh sofortiges Feedback und verstehe Sprachinterferenz.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachinterferenz-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --green:  #0b8f6a;
+      --amber:  #b87700;
+      --red:    #b5281e;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    /* ── Page chrome ───────────────────────────────────────────── */
+    header {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 32px 22px 20px;
+    }
+    header .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: #e6f0fb;
+      border-radius: 4px;
+      padding: 3px 9px;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    header p { color: var(--muted); max-width: 680px; font-size: 0.97rem; }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 22px 56px;
+    }
+
+    /* ── Progress dots ─────────────────────────────────────────── */
+    .progress-bar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+    .step-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: var(--line);
+      border: 2px solid var(--line);
+      transition: background 0.22s, border-color 0.22s;
+    }
+    .step-dot.active  { background: var(--blue); border-color: var(--blue); }
+    .step-dot.done    { background: var(--green); border-color: var(--green); }
+    .progress-label   { font-size: 0.82rem; color: var(--muted); margin-left: 4px; }
+
+    /* ── Canvas model ──────────────────────────────────────────── */
+    .canvas-wrap {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 28px;
+    }
+    .canvas-wrap h2 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      border-radius: 6px;
+      background: #f0f5ff;
+    }
+    .canvas-legend {
+      display: flex;
+      gap: 20px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.84rem;
+      color: var(--muted);
+    }
+    .legend-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .legend-dot.pos { background: var(--green); }
+    .legend-dot.neg { background: var(--red); }
+
+    /* ── Step panels ───────────────────────────────────────────── */
+    .step-panel { display: none; }
+    .step-panel.visible { display: block; }
+
+    .panel-header {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 20px;
+    }
+    .panel-header h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .panel-header p { color: var(--muted); font-size: 0.94rem; }
+
+    /* ── Word pair cards (Step 1) ──────────────────────────────── */
+    .pairs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+      gap: 14px;
+      margin-bottom: 22px;
+    }
+    .pair-card {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 18px 18px 14px;
+      transition: border-color 0.18s;
+    }
+    .pair-card.correct  { border-color: var(--green); }
+    .pair-card.wrong    { border-color: var(--red); }
+
+    .pair-words {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .word-de {
+      font-size: 1rem;
+      font-weight: 700;
+      background: #e8f0fb;
+      color: var(--blue);
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+    .word-arr { color: var(--muted); font-size: 1.1rem; flex-shrink: 0; }
+    .word-en {
+      font-size: 1rem;
+      font-weight: 700;
+      background: #e8f5ef;
+      color: var(--green);
+      border-radius: 6px;
+      padding: 4px 10px;
+    }
+
+    .btn-row {
+      display: flex;
+      gap: 8px;
+    }
+    .btn-choice {
+      flex: 1;
+      padding: 7px 6px;
+      font-size: 0.83rem;
+      font-weight: 600;
+      border-radius: 7px;
+      border: 2px solid var(--line);
+      background: var(--bg);
+      cursor: pointer;
+      color: var(--ink);
+      transition: border-color 0.16s, background 0.16s, color 0.16s;
+    }
+    .btn-choice:hover { border-color: var(--blue); background: #e6f0fb; color: var(--blue); }
+    .btn-choice.selected-echt  { border-color: var(--green); background: #e8f5ef; color: var(--green); }
+    .btn-choice.selected-falsch { border-color: var(--amber); background: #fdf3db; color: var(--amber); }
+    .btn-choice:disabled { opacity: 0.6; cursor: default; }
+
+    .pair-result {
+      display: none;
+      margin-top: 12px;
+      font-size: 0.87rem;
+      border-radius: 7px;
+      padding: 10px 12px;
+    }
+    .pair-result.show { display: block; }
+    .pair-result.ok   { background: #e8f5ef; color: #0a6b4f; }
+    .pair-result.err  { background: #fdecea; color: #922018; }
+
+    /* ── Sentence cards (Step 2) ───────────────────────────────── */
+    .sent-list { display: flex; flex-direction: column; gap: 14px; margin-bottom: 22px; }
+
+    .sent-card {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 18px 18px 14px;
+      transition: border-color 0.18s;
+    }
+    .sent-card.correct { border-color: var(--green); }
+    .sent-card.wrong   { border-color: var(--red); }
+
+    .sent-num {
+      font-size: 0.76rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 6px;
+    }
+    .sent-text {
+      font-size: 1.02rem;
+      font-style: italic;
+      color: var(--ink);
+      margin-bottom: 12px;
+      line-height: 1.45;
+    }
+    .sent-result {
+      display: none;
+      margin-top: 10px;
+      font-size: 0.87rem;
+      border-radius: 7px;
+      padding: 10px 12px;
+    }
+    .sent-result.show { display: block; }
+    .sent-result.ok   { background: #e8f5ef; color: #0a6b4f; }
+    .sent-result.err  { background: #fdecea; color: #922018; }
+
+    /* ── Action buttons ────────────────────────────────────────── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 11px 26px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.16s;
+    }
+    .btn-primary:hover { background: #0a4f8a; }
+    .btn-primary:disabled { background: var(--line); color: var(--muted); cursor: default; }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 11px 22px;
+      font-size: 0.93rem;
+      font-weight: 600;
+      background: var(--panel);
+      color: var(--blue);
+      border: 2px solid var(--blue);
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.16s;
+    }
+    .btn-secondary:hover { background: #e6f0fb; }
+
+    .btn-bar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin-top: 6px; }
+
+    /* ── Feedback summary ──────────────────────────────────────── */
+    .feedback-box {
+      display: none;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-top: 22px;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    .score-line {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .score-line .score-num { color: var(--blue); }
+    .concept-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      background: #e6f0fb;
+      color: var(--blue);
+      border-radius: 5px;
+      padding: 3px 9px;
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+    .feedback-text {
+      font-size: 0.93rem;
+      color: var(--ink);
+      margin-top: 12px;
+      line-height: 1.65;
+    }
+
+    /* ── Summary card (end) ────────────────────────────────────── */
+    .summary-card {
+      display: none;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px 26px;
+      margin-top: 28px;
+    }
+    .summary-card.show { display: block; }
+    .summary-card h2 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .type-block {
+      border-left: 4px solid var(--blue);
+      padding: 12px 16px;
+      margin-bottom: 16px;
+      background: #f5f8fc;
+      border-radius: 0 8px 8px 0;
+    }
+    .type-block h3 { font-size: 0.96rem; font-weight: 700; margin-bottom: 5px; }
+    .type-block p  { font-size: 0.9rem; color: var(--muted); }
+    .type-block.green { border-color: var(--green); }
+    .type-block.amber { border-color: var(--amber); }
+
+    .tip-list {
+      list-style: none;
+      margin-top: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .tip-list li {
+      padding: 10px 14px;
+      background: #f0f5ff;
+      border-radius: 7px;
+      font-size: 0.9rem;
+    }
+    .tip-list li::before { content: "💡 "; }
+
+    /* ── Vorhersage label ──────────────────────────────────────── */
+    .vorhersage-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--amber);
+      margin-bottom: 8px;
+    }
+
+    /* ── Responsive ────────────────────────────────────────────── */
+    @media (max-width: 600px) {
+      header { padding: 22px 16px 16px; }
+      main   { padding: 0 16px 40px; }
+      .panel-header { padding: 18px 16px; }
+      .pair-words { flex-wrap: wrap; }
+      canvas { height: 180px; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-subject="Deutsch-Englisch" data-grade-level="7-10" data-topic-cluster="fremdsprachenlernen-interferenz" data-primary-keyword="sprachen">
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="badge">Sprachen &amp; Fremdsprachen</div>
+  <h1>Sprachinterferenz: Wenn die Muttersprache stört</h1>
+  <p>Warum machen Deutsch-Muttersprachler beim Englischlernen immer wieder dieselben Fehler? Entdecke das Phänomen der <strong>Sprachinterferenz</strong> – und teste dein Gespür für falsche Freunde und Satzbaufallen.</p>
+</header>
+
+<main>
+
+  <!-- Progress dots -->
+  <div class="progress-bar" id="progressBar">
+    <div class="step-dot active" id="dot1"></div>
+    <div class="step-dot"        id="dot2"></div>
+    <span class="progress-label" id="progressLabel">Stufe 1 von 2</span>
+  </div>
+
+  <!-- Canvas model: always visible -->
+  <div class="canvas-wrap">
+    <h2>Transfer-Modell: Positive und negative Übertragung</h2>
+    <canvas id="transferCanvas" height="200"></canvas>
+    <div class="canvas-legend">
+      <div class="legend-item">
+        <div class="legend-dot pos"></div>
+        <span>Positiver Transfer – das L1-Muster hilft</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-dot neg"></div>
+        <span>Negative Interferenz – das L1-Muster stört</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       STUFE 1: Falsche Freunde
+       ══════════════════════════════════════════════ -->
+  <div class="step-panel visible" id="step1">
+
+    <div class="panel-header">
+      <h2>Stufe 1 – Falsche Freunde erkennen</h2>
+      <p>Fünf Wortpaare stehen vor dir. Bei jedem Paar zeigt der Pfeil die Übertragung vom Deutschen ins Englische. Entscheide: Handelt es sich um einen <strong>echten Freund</strong> (die Bedeutung stimmt überein) oder einen <strong>falschen Freund</strong> (die Wörter klingen ähnlich, bedeuten aber etwas anderes)?</p>
+    </div>
+
+    <div class="vorhersage-label">Vorhersage – triff deine Entscheidung zuerst:</div>
+
+    <div class="pairs-grid" id="pairsGrid">
+
+      <!-- Paar 1: bekommen / to become -->
+      <div class="pair-card" id="pc0">
+        <div class="pair-words">
+          <span class="word-de">bekommen</span>
+          <span class="word-arr">→</span>
+          <span class="word-en">to become</span>
+        </div>
+        <div class="btn-row">
+          <button class="btn-choice" data-pair="0" data-choice="echt" onclick="choosePair(0,'echt',this)">Echter Freund</button>
+          <button class="btn-choice" data-pair="0" data-choice="falsch" onclick="choosePair(0,'falsch',this)">Falscher Freund</button>
+        </div>
+        <div class="pair-result" id="pr0"></div>
+      </div>
+
+      <!-- Paar 2: sympathisch / sympathetic -->
+      <div class="pair-card" id="pc1">
+        <div class="pair-words">
+          <span class="word-de">sympathisch</span>
+          <span class="word-arr">→</span>
+          <span class="word-en">sympathetic</span>
+        </div>
+        <div class="btn-row">
+          <button class="btn-choice" data-pair="1" data-choice="echt" onclick="choosePair(1,'echt',this)">Echter Freund</button>
+          <button class="btn-choice" data-pair="1" data-choice="falsch" onclick="choosePair(1,'falsch',this)">Falscher Freund</button>
+        </div>
+        <div class="pair-result" id="pr1"></div>
+      </div>
+
+      <!-- Paar 3: eventuell / eventually -->
+      <div class="pair-card" id="pc2">
+        <div class="pair-words">
+          <span class="word-de">eventuell</span>
+          <span class="word-arr">→</span>
+          <span class="word-en">eventually</span>
+        </div>
+        <div class="btn-row">
+          <button class="btn-choice" data-pair="2" data-choice="echt" onclick="choosePair(2,'echt',this)">Echter Freund</button>
+          <button class="btn-choice" data-pair="2" data-choice="falsch" onclick="choosePair(2,'falsch',this)">Falscher Freund</button>
+        </div>
+        <div class="pair-result" id="pr2"></div>
+      </div>
+
+      <!-- Paar 4: Ball / ball -->
+      <div class="pair-card" id="pc3">
+        <div class="pair-words">
+          <span class="word-de">Ball</span>
+          <span class="word-arr">→</span>
+          <span class="word-en">ball</span>
+        </div>
+        <div class="btn-row">
+          <button class="btn-choice" data-pair="3" data-choice="echt" onclick="choosePair(3,'echt',this)">Echter Freund</button>
+          <button class="btn-choice" data-pair="3" data-choice="falsch" onclick="choosePair(3,'falsch',this)">Falscher Freund</button>
+        </div>
+        <div class="pair-result" id="pr3"></div>
+      </div>
+
+      <!-- Paar 5: sensibel / sensible -->
+      <div class="pair-card" id="pc4">
+        <div class="pair-words">
+          <span class="word-de">sensibel</span>
+          <span class="word-arr">→</span>
+          <span class="word-en">sensible</span>
+        </div>
+        <div class="btn-row">
+          <button class="btn-choice" data-pair="4" data-choice="echt" onclick="choosePair(4,'echt',this)">Echter Freund</button>
+          <button class="btn-choice" data-pair="4" data-choice="falsch" onclick="choosePair(4,'falsch',this)">Falscher Freund</button>
+        </div>
+        <div class="pair-result" id="pr4"></div>
+      </div>
+
+    </div><!-- /pairs-grid -->
+
+    <div class="btn-bar">
+      <button class="btn-primary" id="btnCheck1" onclick="checkStep1()" disabled>Prüfen</button>
+    </div>
+
+    <!-- Feedback Step 1 -->
+    <div class="feedback-box" id="fb1">
+      <h3>Auswertung Stufe 1</h3>
+      <div class="score-line"><span class="score-num" id="score1"></span> von 5 Paaren richtig erkannt</div>
+      <span class="concept-tag">Lexikalische Interferenz</span>
+      <span class="concept-tag">Falsche Freunde (Faux Amis)</span>
+      <div class="feedback-text" id="fbText1"></div>
+      <div class="btn-bar" style="margin-top: 18px;">
+        <button class="btn-primary" onclick="goStep2()">Weiter zu Stufe 2 →</button>
+      </div>
+    </div>
+
+  </div><!-- /step1 -->
+
+
+  <!-- ══════════════════════════════════════════════
+       STUFE 2: Syntaktische Interferenz
+       ══════════════════════════════════════════════ -->
+  <div class="step-panel" id="step2">
+
+    <div class="panel-header">
+      <h2>Stufe 2 – Fehler in englischen Sätzen finden</h2>
+      <p>Ein deutscher Schüler hat drei englische Sätze geschrieben – er wollte bestimmte deutsche Aussagen übersetzen. Manche Sätze enthalten Interferenzfehler aus dem Deutschen. Entscheide für jeden Satz: <strong>Fehler</strong> (= Interferenz erkennbar) oder <strong>Korrekt</strong>?</p>
+    </div>
+
+    <div class="vorhersage-label">Vorhersage – entscheide zuerst:</div>
+
+    <div class="sent-list" id="sentList">
+
+      <!-- Satz 1 -->
+      <div class="sent-card" id="sc0">
+        <div class="sent-num">Satz 1</div>
+        <div class="sent-text">„I think that he the book reads."</div>
+        <div class="btn-row">
+          <button class="btn-choice" onclick="chooseSent(0,'fehler',this)">Fehler</button>
+          <button class="btn-choice" onclick="chooseSent(0,'korrekt',this)">Korrekt</button>
+        </div>
+        <div class="sent-result" id="sr0"></div>
+      </div>
+
+      <!-- Satz 2 -->
+      <div class="sent-card" id="sc1">
+        <div class="sent-num">Satz 2</div>
+        <div class="sent-text">„She is very sensible and always listens carefully."</div>
+        <div class="btn-row">
+          <button class="btn-choice" onclick="chooseSent(1,'fehler',this)">Fehler</button>
+          <button class="btn-choice" onclick="chooseSent(1,'korrekt',this)">Korrekt</button>
+        </div>
+        <div class="sent-result" id="sr1"></div>
+      </div>
+
+      <!-- Satz 3 -->
+      <div class="sent-card" id="sc2">
+        <div class="sent-num">Satz 3</div>
+        <div class="sent-text">„I learn English every day."</div>
+        <div class="btn-row">
+          <button class="btn-choice" onclick="chooseSent(2,'fehler',this)">Fehler</button>
+          <button class="btn-choice" onclick="chooseSent(2,'korrekt',this)">Korrekt</button>
+        </div>
+        <div class="sent-result" id="sr2"></div>
+      </div>
+
+    </div><!-- /sent-list -->
+
+    <div class="btn-bar">
+      <button class="btn-primary" id="btnCheck2" onclick="checkStep2()" disabled>Prüfen</button>
+    </div>
+
+    <!-- Feedback Step 2 -->
+    <div class="feedback-box" id="fb2">
+      <h3>Auswertung Stufe 2</h3>
+      <div class="score-line"><span class="score-num" id="score2"></span> von 3 Sätzen richtig eingeschätzt</div>
+      <span class="concept-tag">Syntaktische Interferenz</span>
+      <span class="concept-tag">Lexikalische Interferenz</span>
+      <div class="feedback-text" id="fbText2"></div>
+      <div class="btn-bar" style="margin-top: 18px;">
+        <button class="btn-primary" onclick="showSummary()">Zusammenfassung ansehen →</button>
+      </div>
+    </div>
+
+  </div><!-- /step2 -->
+
+
+  <!-- ══════════════════════════════════════════════
+       ZUSAMMENFASSUNG
+       ══════════════════════════════════════════════ -->
+  <div class="summary-card" id="summaryCard">
+    <h2>Was du gelernt hast</h2>
+
+    <div class="type-block">
+      <h3>Lexikalische Interferenz – Falsche Freunde (Faux Amis)</h3>
+      <p>Wörter, die im Deutschen und Englischen ähnlich aussehen, aber unterschiedliche Bedeutungen haben. Das Gehirn aktiviert automatisch das L1-Wort und überträgt seine Bedeutung – ein klassischer negativer Transfer nach Odlin (1989).</p>
+    </div>
+
+    <div class="type-block green">
+      <h3>Positiver Transfer</h3>
+      <p>Echte Freunde wie <em>Ball → ball</em> zeigen, dass L1-Muster auch helfen können. Viele englisch-deutsche Wortpaare sind tatsächlich bedeutungsgleich – deshalb ist Transfer nicht immer negativ.</p>
+    </div>
+
+    <div class="type-block amber">
+      <h3>Syntaktische Interferenz – Wortstellung (SOV → SVO)</h3>
+      <p>Im Deutschen stehen Verben in Nebensätzen am Ende (SOV). Im Englischen gilt immer SVO. Wer den deutschen Satzbau übernimmt, produziert Sätze wie „he the book reads" – korrekt wäre „he reads the book".</p>
+    </div>
+
+    <ul class="tip-list">
+      <li>Merke dir bewusst <strong>falsche Freunde</strong>, die dich schon einmal erwischt haben – du wirst sie nicht vergessen.</li>
+      <li>Beim Übersetzen von Nebensätzen: Englisch braucht das Verb immer direkt nach dem Subjekt, nie am Ende.</li>
+      <li>Viele Interferenzfehler sind <strong>vorhersagbar</strong> – wer das Muster kennt, kann sich aktiv dagegen wappnen.</li>
+      <li>Positiver Transfer hilft: Cognates (echte Freunde) nutzen – aber immer bewusst überprüfen, ob die Bedeutung wirklich übereinstimmt.</li>
+    </ul>
+
+    <div style="margin-top: 22px; padding: 14px 16px; background: #fff8e6; border-left: 4px solid var(--amber); border-radius: 0 8px 8px 0; font-size: 0.9rem;">
+      <strong>Häufige Fehlvorstellung:</strong> „Meine Fehler beim Englischlernen sind Flüchtigkeitsfehler – die passieren mir einfach." – In Wirklichkeit sind Interferenzfehler <em>systematisch und vorhersagbar</em>: Sie entstehen, weil das Gehirn automatisch Muster der Muttersprache auf die Fremdsprache überträgt (Odlin 1989). Wer diesen Mechanismus kennt, kann gezielt gegensteuern.
+    </div>
+
+    <div style="margin-top: 18px; font-size: 0.85rem; color: var(--muted);">
+      <strong>Quellen:</strong> Odlin, T. (1989). <em>Language Transfer.</em> Cambridge University Press. &nbsp;|&nbsp;
+      Selinker, L. (1972). Interlanguage. <em>IRAL, 10</em>(3), 209–231. &nbsp;|&nbsp;
+      Ellis, R. (1994). <em>The Study of Second Language Acquisition.</em> Oxford University Press.
+    </div>
+
+    <div style="margin-top: 18px; font-size: 0.85rem; color: var(--muted);">
+      <a href="/lernmaterialien/">← Weitere Lernsimulationen</a> &nbsp;|&nbsp;
+      <a href="/">Nachhilfe Mentor</a>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  /* ══════════════════════════════════════════════
+     DATA
+     ══════════════════════════════════════════════ */
+  // pair answers: 'falsch' = false friend, 'echt' = real cognate
+  const pairAnswers = ['falsch','falsch','falsch','echt','falsch'];
+  const pairExplain = [
+    '<strong>Falscher Freund:</strong> <em>bekommen</em> bedeutet „erhalten/kriegen" (to get, to receive). <em>to become</em> bedeutet „werden". Fehler: „I became a present" statt „I got a present".',
+    '<strong>Falscher Freund:</strong> <em>sympathisch</em> bedeutet „nett/angenehm" (likeable, nice). <em>sympathetic</em> bedeutet „mitfühlend/verständnisvoll" – ein ganz anderer Kontext.',
+    '<strong>Falscher Freund:</strong> <em>eventuell</em> bedeutet „möglicherweise" (possibly, perhaps). <em>eventually</em> bedeutet „schließlich/irgendwann". Der zeitliche Sinn ist umgekehrt.',
+    '<strong>Echter Freund:</strong> <em>Ball</em> und <em>ball</em> sind ein Cognate – selbe Herkunft, gleiche Bedeutung. Positiver Transfer funktioniert hier.',
+    '<strong>Falscher Freund:</strong> <em>sensibel</em> bedeutet „empfindlich/feinfühlig" (sensitive). <em>sensible</em> bedeutet „vernünftig/besonnen" (reasonable). Fehler: „She is very sensible" wenn man „feinfühlig" meint.'
+  ];
+
+  // sentence data
+  const sentAnswers  = ['fehler','fehler','korrekt'];
+  const sentExplain  = [
+    '<strong>Syntaktische Interferenz – SOV-Transfer:</strong> Im Deutschen steht das Verb im Nebensatz am Ende: „..., dass er das Buch <em>liest</em>". Im Englischen gilt immer SVO: „I think that he <em>reads</em> the book." Der Fehler entsteht, weil das deutsche Satzmuster übernommen wird.',
+    '<strong>Falscher Freund – Lexikalische Interferenz:</strong> <em>sensible</em> (englisch) bedeutet „vernünftig", nicht „feinfühlig/sensibel". Wer „Sie ist sehr sensibel" übersetzen möchte, muss schreiben: „She is very <em>sensitive</em>."',
+    '<strong>Korrekt:</strong> „I learn English every day" folgt dem englischen SVO-Muster (I = Subjekt, learn = Verb, English = Objekt). Hier hilft der Transfer aus dem Deutschen sogar – beide Sprachen haben im Hauptsatz eine ähnliche Struktur (V2-Regel).'
+  ];
+
+  /* ══════════════════════════════════════════════
+     STATE
+     ══════════════════════════════════════════════ */
+  let pairChoices = [null, null, null, null, null];
+  let sentChoices = [null, null, null];
+  let step1Done = false;
+
+  /* ══════════════════════════════════════════════
+     CANVAS ANIMATION
+     ══════════════════════════════════════════════ */
+  (function initCanvas() {
+    const canvas = document.getElementById('transferCanvas');
+    const ctx    = canvas.getContext('2d');
+
+    function resize() {
+      canvas.width  = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight || 200;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    // Particle definitions: positive (green) and negative (red)
+    const words = [
+      { de: 'Ball',       en: 'ball',       type: 'pos' },
+      { de: 'Telefon',    en: 'telephone',  type: 'pos' },
+      { de: 'Musik',      en: 'music',      type: 'pos' },
+      { de: 'bekommen',   en: 'become?',    type: 'neg' },
+      { de: 'sympathisch',en: 'sympathetic?',type: 'neg' },
+      { de: 'eventuell',  en: 'eventually?',type: 'neg' },
+    ];
+
+    let particles = [];
+    let animFrame;
+    let t = 0;
+
+    function initParticles() {
+      particles = words.map((w, i) => {
+        const row    = i % 3;
+        const delay  = i * 28;
+        return {
+          w,
+          row,
+          delay,
+          progress: 0,
+          done: false,
+        };
+      });
+    }
+
+    function easeInOut(t) {
+      return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+    }
+
+    function rrect(ctx, x, y, w, h, r) {
+      ctx.beginPath();
+      ctx.moveTo(x + r, y);
+      ctx.lineTo(x + w - r, y);
+      ctx.arcTo(x + w, y, x + w, y + r, r);
+      ctx.lineTo(x + w, y + h - r);
+      ctx.arcTo(x + w, y + h, x + w - r, y + h, r);
+      ctx.lineTo(x + r, y + h);
+      ctx.arcTo(x, y + h, x, y + h - r, r);
+      ctx.lineTo(x, y + r);
+      ctx.arcTo(x, y, x + r, y, r);
+      ctx.closePath();
+    }
+
+    function drawBox(ctx, x, y, w, h, label, sub, color) {
+      ctx.fillStyle = color;
+      rrect(ctx, x, y, w, h, 8);
+      ctx.fill();
+      ctx.fillStyle = '#172033';
+      ctx.font = 'bold 13px Inter, sans-serif';
+      ctx.textAlign = 'center';
+      ctx.fillText(label, x + w / 2, y + h / 2 - 4);
+      ctx.fillStyle = '#617087';
+      ctx.font = '11px Inter, sans-serif';
+      ctx.fillText(sub, x + w / 2, y + h / 2 + 12);
+    }
+
+    function draw() {
+      const W = canvas.width;
+      const H = canvas.height;
+      ctx.clearRect(0, 0, W, H);
+
+      const boxW = Math.min(100, W * 0.18);
+      const boxH = 50;
+      const boxY = (H - boxH) / 2;
+      const lx   = 10;
+      const rx   = W - boxW - 10;
+
+      // Background lanes
+      const laneColors = ['#eef3fb','#f5f8fc','#eef3fb'];
+      for (let r = 0; r < 3; r++) {
+        const ly = (H / 3) * r + (H / 3 - 22) / 2;
+        ctx.fillStyle = laneColors[r];
+        ctx.fillRect(lx + boxW, ly + 4, rx - lx - boxW, 14);
+      }
+
+      // Boxes
+      drawBox(ctx, lx, boxY, boxW, boxH, 'Deutsch', '(L1)', '#dce8fb');
+      drawBox(ctx, rx, boxY, boxW, boxH, 'Englisch', '(L2)', '#d6f0e5');
+
+      t++;
+      let allDone = true;
+
+      for (const p of particles) {
+        if (t < p.delay) { allDone = false; continue; }
+
+        const elapsed = t - p.delay;
+        const dur = 60;
+        if (elapsed < dur) {
+          p.progress = easeInOut(elapsed / dur);
+          allDone = false;
+        } else {
+          p.progress = 1;
+        }
+
+        const row   = p.row;
+        const laneY = (H / 3) * row + H / 6;
+        const startX = lx + boxW + 6;
+        const endX   = rx - 6;
+
+        const isNeg = p.w.type === 'neg';
+        let cx = startX + (endX - startX) * p.progress;
+        let cy = laneY;
+
+        if (isNeg && p.progress > 0.2 && p.progress < 0.8) {
+          const wave = Math.sin((p.progress - 0.2) / 0.6 * Math.PI * 3);
+          cy += wave * 12;
+        }
+
+        const col = isNeg ? '#b5281e' : '#0b8f6a';
+
+        // Particle circle
+        ctx.beginPath();
+        ctx.arc(cx, cy, 7, 0, Math.PI * 2);
+        ctx.fillStyle = col;
+        ctx.globalAlpha = 0.85;
+        ctx.fill();
+        ctx.globalAlpha = 1;
+
+        // Label above particle
+        if (p.progress < 0.55) {
+          ctx.fillStyle = '#172033';
+          ctx.font = '10px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText(p.w.de, cx, cy - 11);
+        } else {
+          ctx.fillStyle = col;
+          ctx.font = 'bold 10px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText(p.w.en, cx, cy - 11);
+        }
+      }
+
+      if (!allDone) {
+        animFrame = requestAnimationFrame(draw);
+      } else {
+        // Freeze: draw final state
+        ctx.clearRect(0, 0, W, H);
+        for (let r = 0; r < 3; r++) {
+          const ly = (H / 3) * r + (H / 3 - 22) / 2;
+          ctx.fillStyle = laneColors[r];
+          ctx.fillRect(lx + boxW, ly + 4, rx - lx - boxW, 14);
+        }
+        drawBox(ctx, lx, boxY, boxW, boxH, 'Deutsch', '(L1)', '#dce8fb');
+        drawBox(ctx, rx, boxY, boxW, boxH, 'Englisch', '(L2)', '#d6f0e5');
+        for (const p of particles) {
+          const row   = p.row;
+          const laneY = (H / 3) * row + H / 6;
+          const endX  = rx - 6;
+          const isNeg = p.w.type === 'neg';
+          const col   = isNeg ? '#b5281e' : '#0b8f6a';
+          ctx.beginPath();
+          ctx.arc(endX, laneY, 7, 0, Math.PI * 2);
+          ctx.fillStyle = col;
+          ctx.globalAlpha = 0.85;
+          ctx.fill();
+          ctx.globalAlpha = 1;
+          ctx.fillStyle = col;
+          ctx.font = 'bold 10px Inter, sans-serif';
+          ctx.textAlign = 'center';
+          ctx.fillText(p.w.en, endX, laneY - 11);
+        }
+      }
+    }
+
+    initParticles();
+    animFrame = requestAnimationFrame(draw);
+  })();
+
+  /* ══════════════════════════════════════════════
+     STEP 1 LOGIC
+     ══════════════════════════════════════════════ */
+  function choosePair(idx, choice, btn) {
+    pairChoices[idx] = choice;
+
+    const row = btn.closest('.btn-row');
+    row.querySelectorAll('.btn-choice').forEach(b => {
+      b.classList.remove('selected-echt','selected-falsch');
+    });
+    btn.classList.add(choice === 'echt' ? 'selected-echt' : 'selected-falsch');
+
+    const allChosen = pairChoices.every(c => c !== null);
+    document.getElementById('btnCheck1').disabled = !allChosen;
+  }
+
+  function checkStep1() {
+    let correct = 0;
+    for (let i = 0; i < 5; i++) {
+      const card = document.getElementById('pc' + i);
+      const res  = document.getElementById('pr' + i);
+      const ok   = pairChoices[i] === pairAnswers[i];
+      if (ok) correct++;
+
+      card.classList.add(ok ? 'correct' : 'wrong');
+      res.innerHTML = (ok ? '&#10003; Richtig! ' : '&#10007; Nicht ganz. ') + pairExplain[i];
+      res.className = 'pair-result show ' + (ok ? 'ok' : 'err');
+
+      card.querySelectorAll('.btn-choice').forEach(b => b.disabled = true);
+    }
+
+    document.getElementById('score1').textContent = correct;
+    const txt = correct === 5
+      ? 'Perfekt! Du hast alle fünf Paare korrekt eingeschätzt. Falsche Freunde sind tückisch – wer sie kennt, vermeidet eine der häufigsten Fehlerquellen im Englischen.'
+      : correct >= 3
+      ? 'Gut gemacht! Ein paar der falschen Freunde haben dich erwischt – das ist normal. Die Ähnlichkeit zwischen Deutsch und Englisch täuscht das Gehirn systematisch.'
+      : 'Falsche Freunde sind trickreich! Die optische Ähnlichkeit zwischen Deutsch und Englisch aktiviert automatisch das L1-Wort – das ist kein Zufall, sondern Sprachinterferenz (Odlin 1989).';
+
+    document.getElementById('fbText1').textContent = txt;
+    document.getElementById('fb1').classList.add('show');
+    document.getElementById('btnCheck1').disabled = true;
+
+    window.dataLayer.push({ event: 'sim_step', step: 1, result: correct >= 3 ? 'correct' : 'incorrect', score: correct });
+  }
+
+  /* ══════════════════════════════════════════════
+     STEP 2 LOGIC
+     ══════════════════════════════════════════════ */
+  function goStep2() {
+    document.getElementById('step1').classList.remove('visible');
+    document.getElementById('step2').classList.add('visible');
+    document.getElementById('dot1').classList.remove('active');
+    document.getElementById('dot1').classList.add('done');
+    document.getElementById('dot2').classList.add('active');
+    document.getElementById('progressLabel').textContent = 'Stufe 2 von 2';
+    step1Done = true;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function chooseSent(idx, choice, btn) {
+    sentChoices[idx] = choice;
+    const row = btn.closest('.btn-row');
+    row.querySelectorAll('.btn-choice').forEach(b => {
+      b.classList.remove('selected-echt','selected-falsch');
+    });
+    btn.classList.add(choice === 'fehler' ? 'selected-falsch' : 'selected-echt');
+
+    const allChosen = sentChoices.every(c => c !== null);
+    document.getElementById('btnCheck2').disabled = !allChosen;
+  }
+
+  function checkStep2() {
+    let correct = 0;
+    for (let i = 0; i < 3; i++) {
+      const card = document.getElementById('sc' + i);
+      const res  = document.getElementById('sr' + i);
+      const ok   = sentChoices[i] === sentAnswers[i];
+      if (ok) correct++;
+
+      card.classList.add(ok ? 'correct' : 'wrong');
+      res.innerHTML = (ok ? '&#10003; Richtig! ' : '&#10007; Nicht ganz. ') + sentExplain[i];
+      res.className = 'sent-result show ' + (ok ? 'ok' : 'err');
+
+      card.querySelectorAll('.btn-choice').forEach(b => b.disabled = true);
+    }
+
+    document.getElementById('score2').textContent = correct;
+    const txt = correct === 3
+      ? 'Ausgezeichnet! Du hast alle drei Sätze korrekt eingeschätzt. Du erkennst jetzt sowohl syntaktische als auch lexikalische Interferenz.'
+      : 'Interferenzfehler sind subtil, weil sie sich aus systematischen Mustern der Muttersprache ergeben. Satz 1 zeigt den klassischen SOV-Transfer, Satz 2 den Falschen-Freunde-Effekt – beide sind typisch für Deutsch-Englisch-Lernende.';
+
+    document.getElementById('fbText2').textContent = txt;
+    document.getElementById('fb2').classList.add('show');
+    document.getElementById('btnCheck2').disabled = true;
+
+    window.dataLayer.push({ event: 'sim_step', step: 2, result: correct >= 2 ? 'correct' : 'incorrect', score: correct });
+  }
+
+  function showSummary() {
+    document.getElementById('summaryCard').classList.add('show');
+    document.getElementById('dot2').classList.remove('active');
+    document.getElementById('dot2').classList.add('done');
+    document.getElementById('progressLabel').textContent = 'Abgeschlossen';
+    window.dataLayer.push({ event: 'sim_complete', topic: 'sprachinterferenz' });
+    document.getElementById('summaryCard').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  // Keyboard accessibility for buttons
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' && e.target.classList.contains('btn-choice')) {
+      e.target.click();
+    }
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Grammatikalisierung verstehen: Sprachwandel interaktiv | Nachhilfe Mentor</title>
+  <meta name="description" content="Erlebe Grammatikalisierung interaktiv: Sage am Beispiel von „werden“ und „weil“ voraus, wie Inhaltswörter zu Funktionswörtern werden – mit Semantischer Ausbleichung und Feedback.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Grammatikalisierung, Semantische Ausbleichung, Sprachgeschichte, Sprachwandel, Funktionswörter, historische Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/grammatikalisierung-sprachgeschichte-simulation.html">
+  <meta property="og:title" content="Grammatikalisierung verstehen: Sprachwandel interaktiv">
+  <meta property="og:description" content="Erlebe Grammatikalisierung interaktiv: Sage am Beispiel von „werden“ und „weil“ voraus, wie Inhaltswörter zu Funktionswörtern werden – mit Semantischer Ausbleichung und Feedback.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/grammatikalisierung-sprachgeschichte-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Grammatikalisierung verstehen: Sprachwandel interaktiv",
+  "description":"Erlebe Grammatikalisierung interaktiv: Sage am Beispiel von „werden“ und „weil“ voraus, wie Inhaltswörter zu Funktionswörtern werden – mit Semantischer Ausbleichung und Feedback.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/grammatikalisierung-sprachgeschichte-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    /* ── Info-Box (Kurzdefiniton) ───────────────────── */
+    .info-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 2rem;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .info-box strong { color: var(--blue); }
+
+    /* ── Stage panels ─────────────────────────────── */
+    .stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .stage[hidden] { display: none; }
+
+    .stage-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .stage h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      line-height: 1.3;
+    }
+
+    /* ── Grammatikalisierungskette ─────────────────── */
+    .kette {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      justify-content: space-between;
+      margin: 1.5rem 0 2rem;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+
+    .kette-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      flex: 0 0 auto;
+    }
+
+    .word-bubble {
+      border-radius: 50px;
+      padding: 0.5rem 1rem;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: all 0.4s ease;
+    }
+
+    .word-bubble.full {
+      background: #1a56db;
+      color: #fff;
+      font-size: 1.1rem;
+      animation: pulse-full 3s ease-in-out infinite;
+    }
+    .word-bubble.mid {
+      background: #6b7fd4;
+      color: #fff;
+      font-size: 0.95rem;
+      animation: pulse-mid 3s ease-in-out infinite;
+    }
+    .word-bubble.faded {
+      background: #c8cfe0;
+      color: #444;
+      font-size: 0.8rem;
+      animation: pulse-faded 3s ease-in-out infinite;
+    }
+
+    @keyframes pulse-full {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(26,86,219,0.4); }
+      50%       { box-shadow: 0 0 0 8px rgba(26,86,219,0); }
+    }
+    @keyframes pulse-mid {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(107,127,212,0.3); }
+      50%       { box-shadow: 0 0 0 6px rgba(107,127,212,0); }
+    }
+    @keyframes pulse-faded {
+      0%, 100% { opacity: 0.75; }
+      50%       { opacity: 1; }
+    }
+
+    .kette-label {
+      font-size: 0.72rem;
+      color: var(--muted);
+      text-align: center;
+      max-width: 90px;
+      line-height: 1.3;
+    }
+
+    .kette-arrow {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 50px;
+      padding: 0 0.25rem;
+    }
+    .arrow-line {
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, var(--blue), #c8cfe0);
+      position: relative;
+      margin-bottom: 4px;
+    }
+    .arrow-line::after {
+      content: "▶";
+      position: absolute;
+      right: -6px;
+      top: -8px;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+    .arrow-label {
+      font-size: 0.65rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.3;
+    }
+
+    /* ── Beispiel-Sätze ──────────────────────────── */
+    .beispiel-box {
+      background: var(--bg);
+      border-left: 3px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .beispiel-box p {
+      margin-bottom: 0.5rem;
+      font-size: 0.93rem;
+    }
+    .beispiel-box p:last-child { margin-bottom: 0; }
+    .beispiel-box .zitat {
+      font-style: italic;
+      font-weight: 600;
+      color: var(--ink);
+    }
+    .beispiel-box .meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ── Vorhersage / Aufgabe ───────────────────── */
+    .prediction-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 1.25rem 1.25rem 1rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .prediction-box .q-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    .prediction-box .question {
+      font-size: 0.97rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .stage-opt {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.92rem;
+      text-align: left;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      font-family: inherit;
+      color: var(--ink);
+      line-height: 1.4;
+    }
+    .stage-opt:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+    }
+    .stage-opt.correct {
+      border-color: var(--green);
+      background: #f0fdf4;
+      color: #065f46;
+    }
+    .stage-opt.wrong {
+      border-color: var(--red);
+      background: #fef2f2;
+      color: #7f1d1d;
+    }
+    .stage-opt:disabled { cursor: default; }
+
+    /* ── Feedback ───────────────────────────────── */
+    .feedback {
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-top: 1.25rem;
+      font-size: 0.93rem;
+      line-height: 1.6;
+      display: none;
+    }
+    .feedback.show { display: block; }
+    .feedback.correct-fb {
+      background: #f0fdf4;
+      border: 1px solid #86efac;
+    }
+    .feedback.wrong-fb {
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+    }
+    .feedback .fb-head {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .feedback.correct-fb .fb-head { color: var(--green); }
+    .feedback.wrong-fb .fb-head { color: var(--red); }
+
+    .concept-tag {
+      display: inline-block;
+      background: #1e40af;
+      color: #fff;
+      border-radius: 4px;
+      padding: 0.1em 0.45em;
+      font-size: 0.8em;
+      font-weight: 700;
+      margin: 0.1em 0.2em;
+      vertical-align: middle;
+    }
+
+    .next-btn {
+      display: block;
+      margin-top: 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.97rem;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background 0.2s;
+    }
+    .next-btn:hover { background: #0e4d8a; }
+    .next-btn[hidden] { display: none; }
+
+    /* ── Prinzipien-Karten (Stage 3) ─────────────── */
+    .prinzip-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    @media (max-width: 480px) {
+      .prinzip-grid { grid-template-columns: 1fr; }
+    }
+
+    .prinzip-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.1rem;
+      background: var(--bg);
+    }
+    .prinzip-card h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--blue);
+    }
+    .prinzip-card p {
+      font-size: 0.83rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    /* ── Abschluss-Badge ──────────────────────────── */
+    .abschluss-box {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      margin-top: 1.5rem;
+    }
+    .abschluss-box .badge {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .abschluss-box h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .abschluss-box p {
+      color: var(--muted);
+      font-size: 0.93rem;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    /* ── Progress-Bar ─────────────────────────────── */
+    .progress-bar-wrap {
+      background: var(--line);
+      border-radius: 4px;
+      height: 5px;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 4px;
+      transition: width 0.5s ease;
+      width: 33%;
+    }
+
+    /* ── Weil-Kette Tabelle ───────────────────────── */
+    .kette-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.88rem;
+    }
+    .kette-table th {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .kette-table td {
+      border: 1px solid var(--line);
+      padding: 0.65rem 0.75rem;
+      line-height: 1.5;
+      vertical-align: top;
+    }
+    .kette-table tr:hover { background: #f8fafc; }
+    .kette-table .highlight { font-weight: 700; color: var(--blue); }
+
+    /* ── Score-Anzeige ───────────────────────────── */
+    .score-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .score-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .score-dot.done { background: var(--green); }
+    .score-dot.wrong-dot { background: var(--red); }
+
+    /* ── Bleaching-Demo ──────────────────────────── */
+    .bleach-demo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background: linear-gradient(135deg, #eff6ff 0%, #f8fafc 100%);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem 1rem;
+      margin-bottom: 2rem;
+    }
+    .bleach-demo-word {
+      font-size: 1.4rem;
+      font-weight: 800;
+      border-radius: 8px;
+      padding: 0.35rem 0.9rem;
+      animation: bleach-cycle 4s ease-in-out infinite;
+    }
+    @keyframes bleach-cycle {
+      0%   { background: #1a56db; color: #fff; opacity: 1; }
+      40%  { background: #7b8fd4; color: #fff; opacity: 0.85; }
+      80%  { background: #d1d9ee; color: #555; opacity: 0.65; font-size: 1.05rem; }
+      100% { background: #1a56db; color: #fff; opacity: 1; font-size: 1.4rem; }
+    }
+    .bleach-demo-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.5;
+      max-width: 140px;
+    }
+    .bleach-demo-label strong { color: var(--ink); display: block; margin-bottom: 0.15rem; }
+
+    /* Mobile: vertikale Kette ───────────────────── */
+    @media (max-width: 480px) {
+      .kette {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+      .kette-node { flex-direction: row; gap: 0.75rem; align-items: center; }
+      .kette-label { text-align: left; max-width: none; font-size: 0.78rem; }
+      .kette-arrow { flex-direction: row; min-width: 0; padding: 0.5rem 0; }
+      .kette-arrow .arrow-line {
+        width: 2px;
+        height: 30px;
+        background: linear-gradient(to bottom, var(--blue), #c8cfe0);
+        margin: 0 auto 0 1.5rem;
+      }
+      .kette-arrow .arrow-line::after { content: "▼"; right: auto; top: auto; bottom: -10px; left: -5px; }
+      .kette-arrow .arrow-label { writing-mode: horizontal-tb; margin-left: 0.5rem; }
+      .bleach-demo { flex-direction: column; gap: 0.75rem; }
+      .bleach-demo-label { max-width: none; }
+    }
+
+    @media (max-width: 375px) {
+      .stage { padding: 1.25rem 1rem; }
+      header { padding: 1.5rem 1rem 1rem; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Simulation · Sprachgeschichte · Klasse 10–13</div>
+  <h1>Grammatikalisierung: Wenn Wörter ihre Bedeutung verlieren</h1>
+  <p>Beobachte, wie Inhaltswörter durch Grammatikalisierung zu Funktionswörtern werden – und erlebe die Semantische Ausbleichung interaktiv.</p>
+</header>
+
+<main>
+
+  <!-- Kurzdefinition -->
+  <div class="info-box">
+    <strong>Was ist Grammatikalisierung?</strong> Ein sprachhistorischer Wandelprozess, bei dem bedeutungsreiche
+    <em>Inhaltswörter</em> schrittweise zu bedeutungsarmen <em>Funktionswörtern</em> oder sogar grammatischen Affixen
+    werden. Beschrieben von Hopper &amp; Traugott (1993). Das Ergebnis ist immer irreversibel.
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-bar-wrap" id="progressWrap" aria-label="Fortschritt">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Score-Punkte -->
+  <div class="score-bar">
+    <span>Aufgaben:</span>
+    <div class="score-dot" id="dot1" title="Aufgabe 1"></div>
+    <div class="score-dot" id="dot2" title="Aufgabe 2"></div>
+    <span id="scoreText">0 / 2 richtig</span>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STAGE 1 – Erkennung: Grammatikalisierungsgrad  -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="stage" id="stage1">
+    <div class="stage-label">Stufe 1 von 2 · Erkennung</div>
+    <h2>Die Grammatikalisierungskette: „werden"</h2>
+
+    <!-- Bleaching-Demo: animiert das Kernkonzept direkt sichtbar -->
+    <div class="bleach-demo" aria-label="Animation: Semantische Ausbleichung eines Wortes">
+      <div>
+        <div class="bleach-demo-word" aria-hidden="true">werden</div>
+      </div>
+      <div class="bleach-demo-label">
+        <strong>Semantische Ausbleichung</strong>
+        Das Wort verliert Farbe und Bedeutung – von reich (blau) zu verblasst (grau).
+      </div>
+    </div>
+
+    <p style="font-size:0.9rem; color:var(--muted); margin-bottom:1.75rem;">
+      Das Verb „werden" hat im Deutschen eine lange Geschichte. Es durchlief alle Stadien der Grammatikalisierung –
+      von einem bedeutungsreichen Vollverb hin zu einem bedeutungsarmen Hilfsverb.
+    </p>
+
+    <!-- Animierte Kette -->
+    <div class="kette" role="img" aria-label="Grammatikalisierungskette: Vollverb → Hilfsverb → Futur-Auxiliar">
+      <div class="kette-node">
+        <div class="word-bubble full">werden</div>
+        <div class="kette-label">Vollverb<br>Althochdeutsch</div>
+      </div>
+      <div class="kette-arrow">
+        <div class="arrow-line"></div>
+        <div class="arrow-label">Semantische<br>Ausbleichung</div>
+      </div>
+      <div class="kette-node">
+        <div class="word-bubble mid">wird</div>
+        <div class="kette-label">Passiv-<br>hilfsverb</div>
+      </div>
+      <div class="kette-arrow">
+        <div class="arrow-line"></div>
+        <div class="arrow-label">Phonol.<br>Reduktion</div>
+      </div>
+      <div class="kette-node">
+        <div class="word-bubble faded">wird</div>
+        <div class="kette-label">Futur-<br>auxiliar</div>
+      </div>
+    </div>
+
+    <!-- Beispiel-Sätze -->
+    <div class="beispiel-box">
+      <p><strong>A.</strong> <span class="zitat">„Die Raupe wird zum Schmetterling."</span></p>
+      <p class="meta">Vollverb – Bedeutung: sich verwandeln, entstehen (Althochdeutsch: werdan)</p>
+    </div>
+    <div class="beispiel-box">
+      <p><strong>B.</strong> <span class="zitat">„Das Lied wird gesungen."</span></p>
+      <p class="meta">Passivhilfsverb – markiert Vorgangspassiv, kaum Eigenbedeutung mehr</p>
+    </div>
+    <div class="beispiel-box">
+      <p><strong>C.</strong> <span class="zitat">„Morgen wird es regnen."</span></p>
+      <p class="meta">Futurhilfsverb – reine Zukunftsmarkierung, ursprüngliche Bedeutung vollständig verblasst</p>
+    </div>
+
+    <!-- Vorhersage-Aufgabe -->
+    <div class="prediction-box">
+      <div class="q-label">Vorhersage</div>
+      <p class="question">Welche Verwendung zeigt den höchsten Grad der Grammatikalisierung – also die stärkste Semantische Ausbleichung?</p>
+      <div class="options" id="opts1">
+        <button class="stage-opt" data-correct="false" onclick="checkStage1(this)">
+          A – „Die Raupe wird zum Schmetterling."
+        </button>
+        <button class="stage-opt" data-correct="false" onclick="checkStage1(this)">
+          B – „Das Lied wird gesungen."
+        </button>
+        <button class="stage-opt" data-correct="true" onclick="checkStage1(this)">
+          C – „Morgen wird es regnen."
+        </button>
+      </div>
+    </div>
+
+    <!-- Feedback -->
+    <div class="feedback correct-fb" id="fb1-correct">
+      <div class="fb-head">Richtig!</div>
+      <p>
+        In Satz C hat <strong>„werden"</strong> seine ursprüngliche Bedeutung (sich verwandeln, entstehen) vollständig verloren.
+        Das nennt man <span class="concept-tag">Semantische Ausbleichung</span> –
+        das Herzstück der <span class="concept-tag">Grammatikalisierung</span>.
+      </p>
+      <p style="margin-top:0.75rem;">
+        „Wird" in Satz C ist zudem nicht weglassbar: Man kann nicht sagen
+        <em>„Morgen regnen."</em> Das zeigt die
+        <span class="concept-tag">Obligatorifizierung</span>:
+        Das grammatische Element wird zum Pflichtbestandteil der Struktur.
+      </p>
+    </div>
+    <div class="feedback wrong-fb" id="fb1-wrong">
+      <div class="fb-head">Noch nicht ganz!</div>
+      <p>
+        In Satz A bedeutet „werden" noch „sich verwandeln" – es ist ein echtes Vollverb mit konkreter Bedeutung.
+        In Satz B markiert es schon das Passiv, hat aber noch mehr Eigenständigkeit als in C.
+      </p>
+      <p style="margin-top:0.75rem;">
+        Den höchsten Grammatikalisierungsgrad zeigt <strong>Satz C</strong>:
+        Hier dient „wird" nur noch als Zukunftsmarkierung.
+        Die ursprüngliche Bedeutung ist durch <span class="concept-tag">Semantische Ausbleichung</span>
+        vollständig verschwunden –
+        ein Kernprozess der <span class="concept-tag">Grammatikalisierung</span>.
+      </p>
+    </div>
+
+    <button class="next-btn" id="next1" hidden onclick="goToStage2()">Weiter zu Stufe 2 →</button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STAGE 2 – Prozess: Was passiert mit Bedeutung? -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="stage" id="stage2" hidden>
+    <div class="stage-label">Stufe 2 von 2 · Ausbleichungsprozess</div>
+    <h2>Das zweite Beispiel: „weil" und die Bedeutungsverschiebung</h2>
+
+    <p style="font-size:0.9rem; color:var(--muted); margin-bottom:1.75rem;">
+      Das heutige Kausalwort „weil" war ursprünglich temporal und bedeutete „eine Weile lang, während".
+      Verfolge den Wandel in der folgenden Kette – ein Schulbeispiel für die Grammatikalisierung im Deutschen.
+    </p>
+
+    <table class="kette-table">
+      <thead>
+        <tr>
+          <th>Stadium</th>
+          <th>Form</th>
+          <th>Bedeutung</th>
+          <th>Typ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mittelhochdeutsch</td>
+          <td class="highlight">„die wile daz"</td>
+          <td>„solange, während" <em>(temporal)</em></td>
+          <td>Adverb / Inhaltswort</td>
+        </tr>
+        <tr>
+          <td>Frühneuhochdeutsch</td>
+          <td class="highlight">„weil" + V2</td>
+          <td>„während, in der Zeit, da"</td>
+          <td>Übergangsphase</td>
+        </tr>
+        <tr>
+          <td>Neuhochdeutsch</td>
+          <td class="highlight">„weil" + Verbletztstellung</td>
+          <td>„weil" <em>(kausal)</em></td>
+          <td>Konjunktion / Funktionswort</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="prediction-box">
+      <div class="q-label">Vorhersage</div>
+      <p class="question">Was passiert mit der ursprünglichen Bedeutung eines Wortes im Prozess der Grammatikalisierung?</p>
+      <div class="options" id="opts2">
+        <button class="stage-opt" data-correct="false" onclick="checkStage2(this)">
+          Sie bleibt vollständig erhalten – nur die Grammatik ändert sich.
+        </button>
+        <button class="stage-opt" data-correct="true" onclick="checkStage2(this)">
+          Sie verblasst und wird abstrakter – die ursprüngliche Bedeutung geht verloren (Ausbleichung).
+        </button>
+        <button class="stage-opt" data-correct="false" onclick="checkStage2(this)">
+          Sie verstärkt sich und wird konkreter – das Wort gewinnt an Bedeutung.
+        </button>
+      </div>
+    </div>
+
+    <div class="feedback correct-fb" id="fb2-correct">
+      <div class="fb-head">Richtig!</div>
+      <p>
+        Genau: Der Kernprozess der Grammatikalisierung ist die
+        <span class="concept-tag">Semantische Ausbleichung</span>.
+        „Weil" hat seine zeitliche Bedeutung (während) vollständig verloren
+        und signalisiert heute nur noch Kausalität.
+      </p>
+      <p style="margin-top:0.75rem;">
+        Dabei gilt das Prinzip der <span class="concept-tag">Unidirektionalität</span>:
+        Die Grammatikalisierung verläuft stets von lexikalisch zu grammatisch –
+        niemals in die andere Richtung.
+        Gleichzeitig wird das Element obligatorisch
+        (<span class="concept-tag">Obligatorifizierung</span>):
+        Man muss „weil" verwenden, um Kausalität auszudrücken, es ist nicht weglassbar.
+      </p>
+    </div>
+    <div class="feedback wrong-fb" id="fb2-wrong">
+      <div class="fb-head">Das stimmt nicht ganz!</div>
+      <p>
+        Bei der <span class="concept-tag">Grammatikalisierung</span> geht Bedeutung verloren,
+        nicht hinzu. Dieser Prozess heißt
+        <span class="concept-tag">Semantische Ausbleichung</span>:
+        Das Wort „weil" hatte ursprünglich die konkrete zeitliche Bedeutung
+        „eine Weile, während" – heute drückt es nur noch abstrakte Kausalität aus.
+      </p>
+      <p style="margin-top:0.75rem;">
+        Außerdem ist die <span class="concept-tag">Unidirektionalität</span> ein
+        Grundprinzip: Der Prozess läuft immer von
+        Inhaltswort → Funktionswort, nicht umgekehrt.
+      </p>
+    </div>
+
+    <button class="next-btn" id="next2" hidden onclick="goToStage3()">Zur Zusammenfassung →</button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ -->
+  <!-- STAGE 3 – Abschluss & Prinzipien               -->
+  <!-- ═══════════════════════════════════════════════ -->
+  <section class="stage" id="stage3" hidden>
+    <div class="stage-label">Abschluss · Zusammenfassung</div>
+    <h2>Die Prinzipien der Grammatikalisierung</h2>
+
+    <div class="prinzip-grid">
+      <div class="prinzip-card">
+        <h3>Semantische Ausbleichung</h3>
+        <p>Das Wort verliert seine konkrete Bedeutung und wird semantisch abstrakter. „Werden" (entstehen) → „wird" (Zukunft).</p>
+      </div>
+      <div class="prinzip-card">
+        <h3>Unidirektionalität</h3>
+        <p>Der Prozess verläuft nur in eine Richtung: von lexikalisch zu grammatisch. Eine Umkehrung ist nahezu ausgeschlossen (Hopper &amp; Traugott 1993).</p>
+      </div>
+      <div class="prinzip-card">
+        <h3>Obligatorifizierung</h3>
+        <p>Das grammatische Element wird obligatorisch. „Wird" im Futur kann nicht weggelassen werden: <em>*„Morgen regnen."</em></p>
+      </div>
+      <div class="prinzip-card">
+        <h3>Phonologische Reduktion</h3>
+        <p>Grammatikalisierte Formen werden lautlich kürzer und schwächer betont. Engl.: <em>„going to"</em> → <em>„gonna"</em>; Dt.: <em>„in dem"</em> → <em>„im"</em>.</p>
+      </div>
+    </div>
+
+    <div class="abschluss-box" id="abschlussBox">
+      <div class="badge" id="abschlussBadge">🎓</div>
+      <h3 id="abschlussTitle">Simulation abgeschlossen!</h3>
+      <p id="abschlussText">Du hast die Kernkonzepte der Grammatikalisierung interaktiv erarbeitet.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- Privacy-safe tracking (dataLayer only, kein externer Aufruf) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "simulation_load",
+    asset_type: "simulation",
+    topic_cluster: "sprachen",
+    simulation_name: "grammatikalisierung-sprachgeschichte"
+  });
+</script>
+
+<script>
+  var score = 0;
+
+  function disableOptions(containerId) {
+    var btns = document.querySelectorAll("#" + containerId + " .stage-opt");
+    btns.forEach(function(b) { b.disabled = true; });
+  }
+
+  function checkStage1(btn) {
+    disableOptions("opts1");
+    var correct = btn.dataset.correct === "true";
+    if (correct) {
+      btn.classList.add("correct");
+      document.getElementById("fb1-correct").classList.add("show");
+      score++;
+      document.getElementById("dot1").classList.add("done");
+    } else {
+      btn.classList.add("wrong");
+      var allBtns = document.querySelectorAll("#opts1 .stage-opt");
+      allBtns.forEach(function(b) {
+        if (b.dataset.correct === "true") b.classList.add("correct");
+      });
+      document.getElementById("fb1-wrong").classList.add("show");
+      document.getElementById("dot1").classList.add("wrong-dot");
+    }
+    updateScore();
+    document.getElementById("next1").hidden = false;
+  }
+
+  function checkStage2(btn) {
+    disableOptions("opts2");
+    var correct = btn.dataset.correct === "true";
+    if (correct) {
+      btn.classList.add("correct");
+      document.getElementById("fb2-correct").classList.add("show");
+      score++;
+      document.getElementById("dot2").classList.add("done");
+    } else {
+      btn.classList.add("wrong");
+      var allBtns = document.querySelectorAll("#opts2 .stage-opt");
+      allBtns.forEach(function(b) {
+        if (b.dataset.correct === "true") b.classList.add("correct");
+      });
+      document.getElementById("fb2-wrong").classList.add("show");
+      document.getElementById("dot2").classList.add("wrong-dot");
+    }
+    updateScore();
+    document.getElementById("next2").hidden = false;
+  }
+
+  function updateScore() {
+    document.getElementById("scoreText").textContent = score + " / 2 richtig";
+  }
+
+  function goToStage2() {
+    document.getElementById("stage1").hidden = true;
+    document.getElementById("stage2").hidden = false;
+    document.getElementById("progressBar").style.width = "66%";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.dataLayer.push({ event: "simulation_stage", stage: 2, simulation_name: "grammatikalisierung" });
+  }
+
+  function goToStage3() {
+    document.getElementById("stage2").hidden = true;
+    document.getElementById("stage3").hidden = false;
+    document.getElementById("progressBar").style.width = "100%";
+
+    var badge = document.getElementById("abschlussBadge");
+    var title = document.getElementById("abschlussTitle");
+    var text  = document.getElementById("abschlussText");
+    if (score === 2) {
+      badge.textContent = "🏆";
+      title.textContent = "Ausgezeichnet – 2 von 2!";
+      text.textContent  = "Du hast beide Kernprozesse der Grammatikalisierung korrekt identifiziert: Semantische Ausbleichung und Obligatorifizierung.";
+    } else if (score === 1) {
+      badge.textContent = "👍";
+      title.textContent = "Gut – 1 von 2!";
+      text.textContent  = "Du hast ein Konzept sicher erkannt. Lies die Zusammenfassung oben noch einmal, um die Prinzipien zu vertiefen.";
+    } else {
+      badge.textContent = "📖";
+      title.textContent = "Noch üben – 0 von 2";
+      text.textContent  = "Kein Problem! Die Konzepte der Grammatikalisierung sind komplex. Schau dir die Prinzipien oben in Ruhe an.";
+    }
+
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.dataLayer.push({ event: "simulation_complete", score: score, simulation_name: "grammatikalisierung" });
+  }
+</script>
+</body>
+</html>

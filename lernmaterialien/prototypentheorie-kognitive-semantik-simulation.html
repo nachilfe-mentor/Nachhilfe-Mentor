@@ -1,0 +1,902 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Prototypentheorie einfach erklärt: interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Prototypentheorie interaktiv: Sortiere Vögel und Möbel nach Typikalität, erlebe den Prototypeneffekt nach Rosch und verstehe gradierte Kategorienmitgliedschaft.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Prototypentheorie, Prototypeneffekt, Eleanor Rosch, kognitive Semantik, gradierte Kategorienmitgliedschaft, Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/prototypentheorie-kognitive-semantik-simulation.html">
+  <meta property="og:title" content="Prototypentheorie einfach erklärt: interaktive Simulation">
+  <meta property="og:description" content="Prototypentheorie interaktiv: Sortiere Vögel und Möbel nach Typikalität, erlebe den Prototypeneffekt nach Rosch und verstehe gradierte Kategorienmitgliedschaft.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/prototypentheorie-kognitive-semantik-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Prototypentheorie einfach erklärt: interaktive Simulation",
+  "description":"Prototypentheorie interaktiv: Sortiere Vögel und Möbel nach Typikalität, erlebe den Prototypeneffekt nach Rosch und verstehe gradierte Kategorienmitgliedschaft.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/prototypentheorie-kognitive-semantik-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b07c00;
+      --cyan:   #0894aa;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Header ──────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.85rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 620px;
+    }
+
+    /* ── Main ────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    /* ── Stage ───────────────────────────── */
+    .stage {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .stage-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--cyan);
+      color: #fff;
+      border-radius: 4px;
+      padding: 0.2rem 0.55rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .stage h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    .task-desc {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Choice Grid ──────────────────────── */
+    .choice-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .choice-btn {
+      background: var(--bg);
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 0.75rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s;
+      font-family: inherit;
+      line-height: 1.4;
+    }
+
+    .choice-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eff6ff;
+    }
+
+    .choice-btn:disabled {
+      cursor: default;
+      opacity: 0.65;
+    }
+
+    .choice-btn.correct {
+      border-color: var(--green);
+      background: #ecfdf5;
+      color: var(--green);
+    }
+
+    .choice-btn.wrong {
+      border-color: var(--red);
+      background: #fff1f1;
+      color: var(--red);
+    }
+
+    .choice-btn.near {
+      border-color: var(--amber);
+      background: #fffbeb;
+      color: var(--amber);
+    }
+
+    /* ── Feedback ─────────────────────────── */
+    .feedback {
+      border-radius: 10px;
+      padding: 1rem 1.1rem;
+      font-size: 0.93rem;
+      line-height: 1.7;
+      margin-bottom: 1.25rem;
+    }
+
+    .feedback.correct {
+      background: #ecfdf5;
+      border-left: 4px solid var(--green);
+    }
+
+    .feedback.wrong {
+      background: #fff1f1;
+      border-left: 4px solid var(--red);
+    }
+
+    .feedback.near {
+      background: #fffbeb;
+      border-left: 4px solid var(--amber);
+    }
+
+    /* ── Canvas ───────────────────────────── */
+    .canvas-wrap {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .canvas-wrap h3 {
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    canvas {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+
+    .canvas-note {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    /* ── Concept Box ──────────────────────── */
+    .concept-box {
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-top: 1.5rem;
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .concept-box .concept-title {
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.4rem;
+    }
+
+    .concept-box p + p {
+      margin-top: 0.5rem;
+    }
+
+    /* ── Ranking ──────────────────────────── */
+    .ranking-instructions {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-style: italic;
+    }
+
+    .ranking-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .rank-card {
+      background: var(--bg);
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 0.9rem 0.75rem;
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s, opacity 0.15s;
+      position: relative;
+      font-family: inherit;
+      width: 100%;
+    }
+
+    .rank-card:hover:not(.ranked):not(:disabled) {
+      border-color: var(--blue);
+      background: #eff6ff;
+    }
+
+    .rank-card.ranked {
+      border-color: var(--cyan);
+      background: #ecfeff;
+      cursor: default;
+    }
+
+    .rank-card.ranked-correct {
+      border-color: var(--green);
+      background: #ecfdf5;
+    }
+
+    .rank-card.ranked-wrong {
+      border-color: var(--red);
+      background: #fff1f1;
+    }
+
+    .rank-badge {
+      position: absolute;
+      top: -0.55rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--cyan);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      border-radius: 20px;
+      padding: 0.1rem 0.5rem;
+      white-space: nowrap;
+    }
+
+    .rank-card-emoji {
+      font-size: 1.6rem;
+      display: block;
+      margin-bottom: 0.35rem;
+    }
+
+    .rank-card-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: block;
+    }
+
+    .rank-card-hint {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 0.2rem;
+      display: block;
+    }
+
+    /* ── Buttons ──────────────────────────── */
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.65rem 1.4rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      transition: opacity 0.15s;
+    }
+
+    .btn-primary:hover { opacity: 0.88; }
+    .btn-primary:disabled { opacity: 0.45; cursor: default; }
+
+    /* ── Summary ──────────────────────────── */
+    .summary-box {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 1.25rem 1.35rem;
+      margin-top: 1.5rem;
+      font-size: 0.93rem;
+      line-height: 1.75;
+    }
+
+    .summary-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--green);
+      margin-bottom: 0.65rem;
+    }
+
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+    }
+
+    .compare-table th {
+      background: #d1fae5;
+      padding: 0.45rem 0.65rem;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .compare-table td {
+      padding: 0.4rem 0.65rem;
+      border-top: 1px solid #bbf7d0;
+      vertical-align: top;
+    }
+
+    .compare-table tr:nth-child(even) td {
+      background: #f0fdf4;
+    }
+
+    /* ── Nav ──────────────────────────────── */
+    .nav-links {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 2rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .nav-links a {
+      margin-right: 1.25rem;
+    }
+
+    /* ── Utility ──────────────────────────── */
+    [hidden] { display: none !important; }
+
+    @media (max-width: 480px) {
+      .stage { padding: 1.25rem 1rem; }
+      header { padding: 1.5rem 1rem 1rem; }
+      main { padding: 0 1rem 2.5rem; }
+      .compare-table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body data-asset-type="lernsimulation" data-topic-cluster="sprachen">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+  <header>
+    <div class="eyebrow">Linguistik &middot; Kognitive Semantik &middot; Klasse 10&ndash;13</div>
+    <h1>Prototypentheorie: Ist ein Pinguin ein schlechter Vogel?</h1>
+    <p>Manche Vögel sind bessere Vögel als andere. Entdecke den <strong>Prototypeneffekt</strong> nach Eleanor Rosch (1975) &mdash; und warum Kategorien keine scharfen Grenzen haben.</p>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════ STUFE 1 ═══════════════════ -->
+    <section id="stage1" class="stage">
+      <div class="stage-badge">Stufe 1 von 2</div>
+      <h2>Vorhersage: Welches Tier ist am typischsten ein Vogel?</h2>
+      <p class="task-desc">
+        Alle vier Tiere auf dieser Seite sind biologisch Vögel. Welches ist deiner Meinung nach das <strong>typischste</strong> Beispiel für einen Vogel? Klicke auf deine Antwort.
+      </p>
+
+      <div class="choice-grid" id="choice-grid-1">
+        <button class="choice-btn" data-choice="adler" onclick="handleStage1('adler')">
+          🦅 Adler
+        </button>
+        <button class="choice-btn" data-choice="pinguin" onclick="handleStage1('pinguin')">
+          🐧 Pinguin
+        </button>
+        <button class="choice-btn" data-choice="rotkehlchen" onclick="handleStage1('rotkehlchen')">
+          🐦 Rotkehlchen
+        </button>
+        <button class="choice-btn" data-choice="strauss" onclick="handleStage1('strauss')">
+          🦢 Strauß
+        </button>
+      </div>
+
+      <div id="feedback1" class="feedback" hidden></div>
+
+      <div id="canvas-wrap1" class="canvas-wrap" hidden>
+        <h3>Prototypenstruktur der Kategorie VOGEL</h3>
+        <canvas id="canvas1" width="340" height="340"></canvas>
+        <p class="canvas-note">Je näher am Zentrum (&#9733;), desto prototypischer das Mitglied</p>
+      </div>
+
+      <div id="concept1" class="concept-box" hidden>
+        <p class="concept-title">Prototypeneffekt &mdash; Eleanor Rosch (1975)</p>
+        <p>Kategorien haben keine scharfen Grenzen. Statt notwendiger und hinreichender Merkmale (klassische Kategorientheorie nach Aristoteles) organisieren sich Kategorien um ein <strong>typischstes Mitglied</strong> &mdash; den <strong>Prototypen</strong>. Andere Mitglieder sind mehr oder weniger typische Beispiele: <em>gradierte Kategorienmitgliedschaft</em>.</p>
+        <p>Rotkehlchen und Spatz sind prototypische Vögel. Pinguin und Strauß sind <em>Randmitglieder</em>: biologisch Vögel, aber untypische Exemplare &mdash; sie teilen weniger Merkmale mit dem Prototyp.</p>
+      </div>
+
+      <button id="btn-stage2" class="btn-primary" hidden onclick="showStage2()">
+        Weiter zu Stufe 2 &rarr;
+      </button>
+    </section>
+
+    <!-- ═══════════════════ STUFE 2 ═══════════════════ -->
+    <section id="stage2" class="stage" hidden>
+      <div class="stage-badge">Stufe 2 von 2</div>
+      <h2>Anwendung: Die Kategorie Möbel</h2>
+      <p class="task-desc">
+        Klicke die vier Möbelstücke <strong>nacheinander</strong> an &mdash; beginnend mit dem typischsten (1) bis zum untypischsten (4) Beispiel für ein Möbelstück.
+      </p>
+
+      <p class="ranking-instructions">Klicke die Karten in deiner Reihenfolge an. Du kannst mit einem Klick auf eine bereits bewertete Karte die Rangfolge zurücksetzen.</p>
+
+      <div id="ranking-grid" class="ranking-grid"></div>
+
+      <button id="btn-evaluate" class="btn-primary" hidden onclick="evaluateRanking()">
+        Auswertung anzeigen
+      </button>
+
+      <div id="feedback2" class="feedback" hidden></div>
+
+      <div id="canvas-wrap2" class="canvas-wrap" hidden>
+        <h3>Prototypenstruktur der Kategorie M&Ouml;BEL</h3>
+        <canvas id="canvas2" width="340" height="340"></canvas>
+        <p class="canvas-note">Je näher am Zentrum (&#9733;), desto prototypischer das Mitglied</p>
+      </div>
+
+      <div id="summary" class="summary-box" hidden>
+        <h3>Klassische Theorie vs. Prototypentheorie</h3>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Klassische Kategorientheorie</th>
+              <th>Prototypentheorie (Rosch 1975)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mitgliedschaft</strong></td>
+              <td>Binär (ja / nein)</td>
+              <td>Graduiert (mehr oder weniger typisch)</td>
+            </tr>
+            <tr>
+              <td><strong>Definition</strong></td>
+              <td>Notwendige &amp; hinreichende Merkmale</td>
+              <td>Familienähnlichkeit (Wittgenstein §67)</td>
+            </tr>
+            <tr>
+              <td><strong>Gleichwertigkeit</strong></td>
+              <td>Alle Mitglieder gleichwertig</td>
+              <td>Prototyp &gt; typische Mitglieder &gt; Randmitglieder</td>
+            </tr>
+            <tr>
+              <td><strong>Beispiel Vogel</strong></td>
+              <td>Pinguin = Rotkehlchen = Adler</td>
+              <td>Rotkehlchen (Prototyp) &gt; Adler &gt; Pinguin &gt; Strauß</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="margin-top:1rem; font-size:0.87rem; color: var(--muted);">
+          Quelle: Rosch, E. (1975). Cognitive representations of semantic categories. <em>Journal of Experimental Psychology: General, 104</em>(3), 192&ndash;233.
+        </p>
+      </div>
+    </section>
+
+    <nav class="nav-links">
+      <a href="/lernmaterialien/">&#8592; Alle Lernmaterialien</a>
+      <a href="/blog/">Blog</a>
+      <a href="/">Nachhilfe Mentor</a>
+    </nav>
+
+  </main>
+
+  <script>
+  // ── Tracking ───────────────────────────────────────────────────────────────
+  window.dataLayer = window.dataLayer || [];
+  function trackStep(step, result) {
+    window.dataLayer.push({ event: 'sim_step', sim: 'prototypentheorie', step: step, result: result });
+  }
+
+  // ── Daten: Kategorie VOGEL ─────────────────────────────────────────────────
+  const VOEGEL = [
+    { id: 'rotkehlchen', label: 'Rotkehlchen', color: '#ef4444', typicality: 0.92, angle: 0 },
+    { id: 'adler',       label: 'Adler',       color: '#3b82f6', typicality: 0.65, angle: Math.PI / 2 },
+    { id: 'pinguin',     label: 'Pinguin',     color: '#6366f1', typicality: 0.28, angle: Math.PI },
+    { id: 'strauss',     label: 'Strauß',      color: '#78716c', typicality: 0.12, angle: 3 * Math.PI / 2 },
+  ];
+
+  // ── Daten: Kategorie MÖBEL ─────────────────────────────────────────────────
+  const MOEBELDATA = [
+    { id: 'stuhl',   label: 'Stuhl',   emoji: '🪑', color: '#10b981', typicality: 0.95, correctRank: 1, angle: 0 },
+    { id: 'sofa',    label: 'Sofa',    emoji: '🛋️', color: '#3b82f6', typicality: 0.73, correctRank: 2, angle: Math.PI / 2 },
+    { id: 'teppich', label: 'Teppich', emoji: '🟫', color: '#f59e0b', typicality: 0.40, correctRank: 3, angle: Math.PI },
+    { id: 'lampe',   label: 'Lampe',   emoji: '💡', color: '#8b5cf6', typicality: 0.28, correctRank: 4, angle: 3 * Math.PI / 2 },
+  ];
+
+  // Shuffle array (Fisher-Yates)
+  function shuffle(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  // ── Stage 1: Vorhersage ─────────────────────────────────────────────────────
+  function handleStage1(choice) {
+    const btns = document.querySelectorAll('#choice-grid-1 .choice-btn');
+    btns.forEach(b => b.disabled = true);
+
+    const selected = document.querySelector(`[data-choice="${choice}"]`);
+    const feedbackEl = document.getElementById('feedback1');
+
+    let feedbackClass, feedbackHtml;
+
+    if (choice === 'rotkehlchen') {
+      selected.classList.add('correct');
+      feedbackClass = 'correct';
+      feedbackHtml = `
+        <strong>Genau!</strong> Das Rotkehlchen ist das <em>prototypischste</em> Beispiel
+        für einen Vogel &mdash; ein kleiner, singender Singvogel, der fliegt und nistet.
+        Pinguin und Strauß sind biologisch Vögel, aber sie fliegen nicht &mdash; sie sind
+        <em>Randmitglieder</em> der Kategorie. Das nennt man den
+        <strong>Prototypeneffekt nach Eleanor Rosch (1975)</strong>:
+        Kategorien haben kein scharfes Rand, sondern ein typischstes Mitglied &mdash; den
+        <strong>Prototypen</strong> &mdash; und Mitglieder mit abnehmender Typikalität.
+      `;
+      trackStep(1, 'correct');
+    } else if (choice === 'adler') {
+      selected.classList.add('near');
+      feedbackClass = 'near';
+      feedbackHtml = `
+        <strong>Nah dran!</strong> Der Adler fliegt und hat eine typische Vogelsilhouette.
+        Für die meisten Deutschsprachigen ist ein kleiner Singvogel wie das Rotkehlchen
+        jedoch noch typischer. Laut <strong>Prototypentheorie (Rosch 1975)</strong>
+        bewerten Versuchspersonen Singvögel konsistent als bessere Vogelbeispiele als
+        Greifvögel. Das Rotkehlchen ist der <em>Prototyp</em> &mdash; das typischste Mitglied
+        der Kategorie.
+      `;
+      // Zeige richtige Antwort
+      document.querySelector('[data-choice="rotkehlchen"]').classList.add('correct');
+      trackStep(1, 'near');
+    } else {
+      selected.classList.add('wrong');
+      feedbackClass = 'wrong';
+      const name = choice === 'pinguin' ? 'Der Pinguin' : 'Der Strauß';
+      feedbackHtml = `
+        <strong>Nicht ganz.</strong> ${name} ist biologisch ein Vogel &mdash; er hat Federn
+        und legt Eier. Aber er fliegt nicht und sieht untypisch aus. Laut
+        <strong>Prototypentheorie (Rosch 1975)</strong> ist er ein
+        <em>Randmitglied</em>: ein schlechtes Vogelbeispiel, auch wenn er zur Kategorie
+        gehört. Kategorienmitgliedschaft ist <em>graduiert</em>, nicht binär (klassische
+        aristotelische Kategorientheorie). Das Rotkehlchen ist der Prototyp.
+      `;
+      document.querySelector('[data-choice="rotkehlchen"]').classList.add('correct');
+      trackStep(1, 'wrong');
+    }
+
+    feedbackEl.className = `feedback ${feedbackClass}`;
+    feedbackEl.innerHTML = feedbackHtml;
+    feedbackEl.hidden = false;
+
+    // Canvas + Konzept einblenden
+    document.getElementById('canvas-wrap1').hidden = false;
+    document.getElementById('concept1').hidden = false;
+    document.getElementById('btn-stage2').hidden = false;
+
+    initCanvas('canvas1', VOEGEL);
+  }
+
+  // ── Stage 2: Möbel-Ranking ──────────────────────────────────────────────────
+  let rankingOrder = [];
+  let shuffledMoebel = [];
+
+  function showStage2() {
+    document.getElementById('stage2').hidden = false;
+    document.getElementById('stage2').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    buildRankingGrid();
+  }
+
+  function buildRankingGrid() {
+    shuffledMoebel = shuffle(MOEBELDATA);
+    rankingOrder = [];
+    const grid = document.getElementById('ranking-grid');
+    grid.innerHTML = '';
+
+    shuffledMoebel.forEach(item => {
+      const card = document.createElement('button');
+      card.className = 'rank-card';
+      card.id = `rankcard-${item.id}`;
+      card.onclick = () => handleRankClick(item.id);
+      card.innerHTML = `
+        <span class="rank-card-emoji">${item.emoji}</span>
+        <span class="rank-card-name">${item.label}</span>
+        <span class="rank-card-hint">Klicken zum Einordnen</span>
+      `;
+      grid.appendChild(card);
+    });
+  }
+
+  function handleRankClick(itemId) {
+    const alreadyIdx = rankingOrder.indexOf(itemId);
+
+    if (alreadyIdx !== -1) {
+      // Zurücksetzen: alle ab dieser Position entfernen
+      const removed = rankingOrder.splice(alreadyIdx);
+      removed.forEach(id => {
+        const card = document.getElementById(`rankcard-${id}`);
+        card.classList.remove('ranked');
+        const badge = card.querySelector('.rank-badge');
+        if (badge) badge.remove();
+        card.querySelector('.rank-card-hint').textContent = 'Klicken zum Einordnen';
+        card.querySelector('.rank-card-hint').style.display = '';
+      });
+      document.getElementById('btn-evaluate').hidden = true;
+      return;
+    }
+
+    rankingOrder.push(itemId);
+    const rank = rankingOrder.length;
+    const card = document.getElementById(`rankcard-${itemId}`);
+    card.classList.add('ranked');
+
+    const badge = document.createElement('span');
+    badge.className = 'rank-badge';
+    badge.textContent = `Platz ${rank}`;
+    card.appendChild(badge);
+    card.querySelector('.rank-card-hint').textContent = 'Klicken zum Zurücksetzen';
+
+    if (rankingOrder.length === MOEBELDATA.length) {
+      document.getElementById('btn-evaluate').hidden = false;
+    }
+  }
+
+  function evaluateRanking() {
+    document.getElementById('btn-evaluate').disabled = true;
+
+    // Karten als korrekt/falsch markieren
+    rankingOrder.forEach((id, idx) => {
+      const card = document.getElementById(`rankcard-${id}`);
+      const item = MOEBELDATA.find(m => m.id === id);
+      const assignedRank = idx + 1;
+      const isCorrect = assignedRank === item.correctRank ||
+        (item.correctRank >= 3 && assignedRank >= 3); // Pos 3+4 akzeptiert tauschen
+
+      card.classList.remove('ranked');
+      card.classList.add(isCorrect ? 'ranked-correct' : 'ranked-wrong');
+    });
+
+    const stuhlRank  = rankingOrder.indexOf('stuhl')  + 1;
+    const sofaRank   = rankingOrder.indexOf('sofa')   + 1;
+
+    const feedbackEl = document.getElementById('feedback2');
+    let feedbackClass, feedbackHtml;
+
+    if (stuhlRank === 1 && sofaRank === 2) {
+      feedbackClass = 'correct';
+      feedbackHtml = `
+        <strong>Sehr gut!</strong> Die Forschung von Rosch &amp; Mervis (1975) bestätigt:
+        <em>Stuhl</em> und <em>Sofa</em> sind die prototypischsten Möbelstücke &mdash;
+        zentrale Sitzmöbel, die eng mit Wohnräumen verbunden sind. Teppich und Lampe
+        sind <em>Randmitglieder</em>. Das ist
+        <strong>gradierte Kategorienmitgliedschaft</strong>: Alle vier gehören zur
+        Kategorie &bdquo;Möbel&ldquo;, aber Stuhl und Sofa sind bessere Beispiele als
+        Lampe und Teppich.
+      `;
+      trackStep(2, 'correct');
+    } else if (stuhlRank === 1) {
+      feedbackClass = 'near';
+      feedbackHtml = `
+        <strong>Fast richtig!</strong> Stuhl ist tatsächlich der Prototyp der Kategorie.
+        Das Sofa folgt direkt dahinter als weiteres zentrales Sitzmöbel. Teppich und
+        Lampe sind Randmitglieder &mdash; sie gehören zur Einrichtung, sind aber keine
+        zentralen &bdquo;Möbelstücke&ldquo; im prototypischen Sinne.
+        Das zeigt <strong>gradierte Kategorienmitgliedschaft</strong> nach Rosch (1975).
+      `;
+      trackStep(2, 'near');
+    } else {
+      feedbackClass = 'wrong';
+      feedbackHtml = `
+        <strong>Noch einmal überdenken:</strong> In Rosches Experimenten wurde
+        <em>Stuhl</em> konsistent als das typischste Möbelstück bewertet &mdash; gefolgt
+        von <em>Sofa</em>. Das Merkmal des Sitzens in einem Wohnraum macht Stuhl und Sofa
+        zu den <em>Prototypen</em> der Kategorie. Lampe und Teppich sind
+        <em>Randmitglieder</em>. Das ist die Aussage der
+        <strong>Prototypentheorie (Rosch 1975)</strong>: Kategorien haben einen
+        Kern (Prototyp) und eine Peripherie (Randmitglieder).
+      `;
+      trackStep(2, 'wrong');
+    }
+
+    feedbackEl.className = `feedback ${feedbackClass}`;
+    feedbackEl.innerHTML = feedbackHtml;
+    feedbackEl.hidden = false;
+
+    document.getElementById('canvas-wrap2').hidden = false;
+    document.getElementById('summary').hidden = false;
+
+    initCanvas('canvas2', MOEBELDATA);
+  }
+
+  // ── Canvas-Animation ────────────────────────────────────────────────────────
+  const animations = {};
+
+  function initCanvas(canvasId, items) {
+    const canvas = document.getElementById(canvasId);
+    const container = canvas.parentElement;
+    const size = Math.min(container.clientWidth - 20, 340);
+    canvas.width  = size;
+    canvas.height = size;
+
+    const cx = size / 2;
+    const cy = size / 2;
+    const maxR = size / 2 - 30;
+    const minR = maxR * 0.08;
+
+    // Animationsobjekte initialisieren
+    const animItems = items.map(item => ({
+      ...item,
+      targetR: minR + (maxR - minR) * (1 - item.typicality),
+      currentR: 0,
+    }));
+
+    if (animations[canvasId]) cancelAnimationFrame(animations[canvasId]);
+
+    function draw() {
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Ringe (von außen nach innen zeichnen)
+      const ringDefs = [
+        { r: maxR,          fill: '#f1f5f9', stroke: '#d1d5db', label: 'wenig typisch' },
+        { r: maxR * 0.67,   fill: '#dbeafe', stroke: '#93c5fd', label: 'typisch' },
+        { r: maxR * 0.33,   fill: '#fef3c7', stroke: '#fcd34d', label: 'sehr typisch' },
+      ];
+
+      ringDefs.forEach(ring => {
+        ctx.beginPath();
+        ctx.arc(cx, cy, ring.r, 0, Math.PI * 2);
+        ctx.fillStyle = ring.fill;
+        ctx.fill();
+        ctx.strokeStyle = ring.stroke;
+        ctx.lineWidth = 1.5;
+        ctx.stroke();
+      });
+
+      // Ring-Beschriftungen (rechts, mittig pro Ring)
+      ctx.font = `${Math.max(9, size * 0.030)}px Inter, sans-serif`;
+      ctx.fillStyle = '#6b7280';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      ringDefs.forEach(ring => {
+        ctx.fillText(ring.label, cx + ring.r - 4, cy - 5);
+      });
+
+      // Zentrumstern
+      ctx.font = `${Math.max(12, size * 0.045)}px serif`;
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('★', cx, cy);
+
+      // Ease-Bewegung
+      let allDone = true;
+      animItems.forEach(item => {
+        item.currentR += (item.targetR - item.currentR) * 0.08;
+        if (Math.abs(item.targetR - item.currentR) > 0.5) allDone = false;
+      });
+
+      // Items zeichnen
+      const dotR = Math.max(20, size * 0.065);
+      animItems.forEach(item => {
+        const x = cx + item.currentR * Math.cos(item.angle);
+        const y = cy + item.currentR * Math.sin(item.angle);
+
+        // Kreis
+        ctx.beginPath();
+        ctx.arc(x, y, dotR, 0, Math.PI * 2);
+        ctx.fillStyle = item.color || '#64748b';
+        ctx.fill();
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 2.5;
+        ctx.stroke();
+
+        // Initial(ien)
+        const initText = item.label.substring(0, 2);
+        ctx.font = `bold ${Math.max(9, size * 0.028)}px Inter, sans-serif`;
+        ctx.fillStyle = '#fff';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(initText, x, y);
+
+        // Label darunter
+        ctx.font = `${Math.max(9, size * 0.030)}px Inter, sans-serif`;
+        ctx.fillStyle = '#172033';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'top';
+        ctx.fillText(item.label, x, y + dotR + 3);
+      });
+
+      if (!allDone) {
+        animations[canvasId] = requestAnimationFrame(draw);
+      } else {
+        animations[canvasId] = null;
+      }
+    }
+
+    animations[canvasId] = requestAnimationFrame(draw);
+  }
+
+  // ── Resize ──────────────────────────────────────────────────────────────────
+  window.addEventListener('resize', () => {
+    if (!document.getElementById('canvas-wrap1').hidden) {
+      initCanvas('canvas1', VOEGEL);
+    }
+    if (!document.getElementById('canvas-wrap2').hidden) {
+      initCanvas('canvas2', MOEBELDATA);
+    }
+  });
+  </script>
+
+</body>
+</html>

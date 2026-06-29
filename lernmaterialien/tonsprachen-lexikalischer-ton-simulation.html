@@ -1,0 +1,980 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Tonsprachen verstehen: Lexikalischer Ton im Mandarin interaktiv üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Erkenne Mandarin-Töne an ihrer Grundfrequenz-Kurve und sage Wortbedeutungen voraus. Interaktive Simulation zum lexikalischen Ton in Tonsprachen.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Tonsprachen, lexikalischer Ton, Mandarin Töne, Chao-Zahlen, Grundfrequenz, Phonologie">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/tonsprachen-lexikalischer-ton-simulation.html">
+  <meta property="og:title" content="Tonsprachen: Lexikalischer Ton im Mandarin interaktiv">
+  <meta property="og:description" content="Erkenne Mandarin-Töne an ihrer Grundfrequenz-Kurve und sage Wortbedeutungen voraus. Interaktive Simulation zum lexikalischen Ton in Tonsprachen.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/tonsprachen-lexikalischer-ton-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Tonsprachen verstehen: Lexikalischer Ton im Mandarin interaktiv üben",
+  "description":"Erkenne Mandarin-Töne an ihrer Grundfrequenz-Kurve und sage Wortbedeutungen voraus. Interaktive Simulation zum lexikalischen Ton in Tonsprachen.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/tonsprachen-lexikalischer-ton-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    document.documentElement.setAttribute('data-asset-type', 'simulation');
+    document.documentElement.setAttribute('data-topic-cluster', 'sprachen');
+  </script>
+
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+
+      --t1: #0f5fa8;
+      --t2: #0b8f6a;
+      --t3: #b87700;
+      --t4: #b5281e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* ── Header ─────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 580px;
+    }
+
+    /* ── Main layout ─────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Fortschrittsleiste ─────────────────── */
+    .progress-bar {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .progress-step {
+      flex: 1;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .progress-step.active { background: var(--blue); }
+    .progress-step.done   { background: var(--green); }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.76rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Panel ───────────────────────────────── */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .panel-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .panel > p {
+      color: var(--muted);
+      font-size: 0.93rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Theorie-Box ────────────────────────── */
+    .theory-box {
+      background: #eef4fb;
+      border-left: 3px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .theory-box h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    .theory-box p {
+      font-size: 0.87rem;
+      color: var(--ink);
+      margin: 0;
+    }
+    .theory-box p + p {
+      margin-top: 0.5rem;
+    }
+
+    /* ── Ton-Übersichts-Tabelle ─────────────── */
+    .tone-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+    @media (max-width: 480px) {
+      .tone-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .tone-card {
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 0.875rem 0.75rem;
+      text-align: center;
+      background: #fff;
+    }
+    .tone-card .tone-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+    .tone-card canvas {
+      display: block;
+      margin: 0 auto 0.5rem;
+    }
+    .tone-card .tone-pinyin {
+      font-size: 1.1rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 0.2rem;
+    }
+    .tone-card .tone-meaning {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .tone-card.t1 { border-color: var(--t1); }
+    .tone-card.t2 { border-color: var(--t2); }
+    .tone-card.t3 { border-color: var(--t3); }
+    .tone-card.t4 { border-color: var(--t4); }
+    .tone-card.t1 .tone-num { color: var(--t1); }
+    .tone-card.t2 .tone-num { color: var(--t2); }
+    .tone-card.t3 .tone-num { color: var(--t3); }
+    .tone-card.t4 .tone-num { color: var(--t4); }
+
+    /* ── Hauptvisualisierung ────────────────── */
+    .viz-stage {
+      background: #f0f5ff;
+      border: 1px solid #c7d8f5;
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+    .viz-stage canvas {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
+    .viz-hint {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 0.75rem;
+    }
+
+    /* ── Frage ────────────────────────────────  */
+    .question-text {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Optionen ─────────────────────────────  */
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 400px) {
+      .options-grid { grid-template-columns: 1fr; }
+    }
+    .option-btn {
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 0.75rem 1rem;
+      font-size: 0.93rem;
+      font-weight: 500;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: center;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f7ff;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #e8f8f2;
+      color: var(--green);
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fdf0ef;
+      color: var(--red);
+    }
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Feedback ─────────────────────────────  */
+    .feedback-box {
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.93rem;
+      line-height: 1.55;
+      display: none;
+    }
+    .feedback-box.visible { display: block; }
+    .feedback-box.correct-fb {
+      background: #e8f8f2;
+      border: 1px solid #8fd9bb;
+      color: #0a6b4f;
+    }
+    .feedback-box.wrong-fb {
+      background: #fdf0ef;
+      border: 1px solid #e8a09b;
+      color: #8c1f18;
+    }
+    .feedback-box strong { font-weight: 700; }
+    .concept-tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      background: var(--blue);
+      color: #fff;
+      border-radius: 4px;
+      padding: 0.15em 0.5em;
+      margin-top: 0.5rem;
+    }
+
+    /* ── Weiter-Button ────────────────────────  */
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-weight: 700;
+      font-size: 0.93rem;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #0d5291; }
+    .btn-primary:disabled { background: #9ab4cc; cursor: default; }
+
+    .btn-secondary {
+      display: inline-block;
+      background: transparent;
+      color: var(--blue);
+      font-weight: 600;
+      font-size: 0.9rem;
+      border: 2px solid var(--blue);
+      border-radius: 8px;
+      padding: 0.65rem 1.25rem;
+      cursor: pointer;
+      margin-left: 0.75rem;
+      transition: background 0.15s;
+    }
+    .btn-secondary:hover { background: #eef4fb; }
+
+    /* ── Ergebnis-Panel ───────────────────────  */
+    .result-panel {
+      text-align: center;
+      padding: 2rem 1.5rem;
+    }
+    .result-score {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .result-label {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .result-insight {
+      background: #eef4fb;
+      border-left: 3px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      text-align: left;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .result-insight h4 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+    .result-insight p {
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    /* ── Versteckt/Sichtbar ───────────────────  */
+    .hidden { display: none !important; }
+
+    /* ── Wissens-Box unten ────────────────────  */
+    .knowledge-box {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-top: 2rem;
+    }
+    .knowledge-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .knowledge-box dl {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      gap: 0.4rem 1rem;
+      font-size: 0.88rem;
+    }
+    .knowledge-box dt {
+      font-weight: 700;
+      color: var(--blue);
+    }
+    .knowledge-box dd {
+      color: var(--ink);
+    }
+
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1rem 1.25rem 2rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Linguistik-Simulation · Klasse 10–13</div>
+  <h1>Tonsprachen: Wie Tonhöhe Bedeutung trägt</h1>
+  <p>In Mandarin ändert ein anderer Ton das Wort komplett. Erkunde den lexikalischen Ton interaktiv – und lüfte ein häufiges Missverständnis.</p>
+</header>
+
+<main>
+
+  <!-- Fortschritt -->
+  <div class="progress-bar">
+    <div class="progress-step active" id="ps1"></div>
+    <div class="progress-step" id="ps2"></div>
+  </div>
+  <div class="progress-label">
+    <span>Stufe 1: Ton erkennen</span>
+    <span>Stufe 2: Bedeutung vorhersagen</span>
+  </div>
+
+  <!-- ===== STAGE 1 ===== -->
+  <div id="stage1">
+
+    <div class="theory-box">
+      <h3>Was ist ein lexikalischer Ton?</h3>
+      <p>Im Deutschen trägt die Satzmelodie <em>pragmatische</em> Bedeutung (Frage, Nachdruck). In <strong>Tonsprachen</strong> wie Mandarin hat jede Silbe einen festen Ton – die Tonhöhenkurve ist Teil des Wortes selbst. Ein falscher Ton erzeugt ein anderes Wort.</p>
+      <p>Mandarin kennt 4 Töne + Neutralton. Die vier Grundtöne des Silbe <em>ma</em> zeigen das Prinzip exemplarisch: Mutter, Hanf, Pferd, schimpfen – vier völlig verschiedene Wörter, eine Lautform.</p>
+    </div>
+
+    <!-- Übersicht Ton-Karten -->
+    <div class="panel">
+      <div class="panel-title">
+        <span class="step-badge">0</span>
+        Die vier Töne des Mandarin
+      </div>
+      <div class="tone-grid">
+        <div class="tone-card t1">
+          <div class="tone-num">1. Ton (55)</div>
+          <canvas id="mini1" width="80" height="44"></canvas>
+          <div class="tone-pinyin">mā</div>
+          <div class="tone-meaning">妈 · Mutter</div>
+        </div>
+        <div class="tone-card t2">
+          <div class="tone-num">2. Ton (35)</div>
+          <canvas id="mini2" width="80" height="44"></canvas>
+          <div class="tone-pinyin">má</div>
+          <div class="tone-meaning">麻 · Hanf</div>
+        </div>
+        <div class="tone-card t3">
+          <div class="tone-num">3. Ton (214)</div>
+          <canvas id="mini3" width="80" height="44"></canvas>
+          <div class="tone-pinyin">mǎ</div>
+          <div class="tone-meaning">马 · Pferd</div>
+        </div>
+        <div class="tone-card t4">
+          <div class="tone-num">4. Ton (51)</div>
+          <canvas id="mini4" width="80" height="44"></canvas>
+          <div class="tone-pinyin">mà</div>
+          <div class="tone-meaning">骂 · schimpfen</div>
+        </div>
+      </div>
+      <p style="font-size:0.82rem; color:var(--muted); margin-bottom:0;">
+        Die Chao-Zahlen (z.&nbsp;B. 55, 35, 214, 51) beschreiben die Grundfrequenz auf einer Skala von 1 (tief) bis 5 (hoch). 214 bedeutet: mittel → tief → steigend.
+      </p>
+    </div>
+
+    <!-- Vorhersage-Aufgabe -->
+    <div class="panel" id="task1Panel">
+      <div class="panel-title">
+        <span class="step-badge">1</span>
+        Stufe 1 – Vorhersage: Welcher Ton ist das?
+      </div>
+      <p>Sieh dir die animierte Tonkurve an und mach deine Vorhersage: Welcher der vier Mandarin-Töne wird gezeigt?</p>
+      <div id="s1Counter" style="font-size:0.8rem; color:var(--muted); margin-bottom:1rem;"></div>
+
+      <div class="viz-stage">
+        <canvas id="mainCanvas" width="320" height="100"></canvas>
+        <div class="viz-hint" id="vizHint">Beobachte die Kurvenform genau.</div>
+      </div>
+
+      <div class="question-text" id="q1Text">Welcher Ton (1–4) ist das?</div>
+
+      <div class="options-grid" id="opts1">
+        <button class="option-btn" data-val="1" onclick="checkTone(1)">1. Ton – hoch-eben (¯)</button>
+        <button class="option-btn" data-val="2" onclick="checkTone(2)">2. Ton – steigend (´)</button>
+        <button class="option-btn" data-val="3" onclick="checkTone(3)">3. Ton – fallend-steigend (ˇ)</button>
+        <button class="option-btn" data-val="4" onclick="checkTone(4)">4. Ton – fallend (`)</button>
+      </div>
+
+      <div class="feedback-box" id="fb1"></div>
+
+      <button class="btn-primary hidden" id="btnNext1" onclick="nextToneQuestion()">Nächste Kurve →</button>
+    </div>
+
+  </div><!-- /stage1 -->
+
+  <!-- ===== STAGE 2 ===== -->
+  <div id="stage2" class="hidden">
+
+    <div class="theory-box">
+      <h3>Stufe 2: Vom Ton zur Bedeutung</h3>
+      <p>Du kannst nun Töne erkennen. Jetzt kommt das Kernprinzip des <strong>lexikalischen Tons</strong>: Die Kurvenform bestimmt die Wortbedeutung. Lies den animierten Ton und wähle die korrekte Übersetzung.</p>
+    </div>
+
+    <div class="panel" id="task2Panel">
+      <div class="panel-title">
+        <span class="step-badge">2</span>
+        Stufe 2 – Vorhersage: Was bedeutet dieses Wort?
+      </div>
+      <p>Sieh dir Tonkurve und Pinyin an. Triff deine Vorhersage: Welche Bedeutung hat das dargestellte Wort?</p>
+      <div id="s2Counter" style="font-size:0.8rem; color:var(--muted); margin-bottom:1rem;"></div>
+
+      <div class="viz-stage">
+        <canvas id="mainCanvas2" width="320" height="100"></canvas>
+        <div style="font-size:1.3rem; font-weight:800; margin-top:0.75rem;" id="pinyinDisplay"></div>
+        <div class="viz-hint">Die Tonkontur ist Teil des Wortes – nicht nur Melodie!</div>
+      </div>
+
+      <div class="question-text" id="q2Text">Was bedeutet dieses Wort auf Deutsch?</div>
+
+      <div class="options-grid" id="opts2"></div>
+
+      <div class="feedback-box" id="fb2"></div>
+
+      <button class="btn-primary hidden" id="btnNext2" onclick="nextMeaningQuestion()">Nächste Frage →</button>
+    </div>
+
+  </div><!-- /stage2 -->
+
+  <!-- ===== ERGEBNIS ===== -->
+  <div id="stageResult" class="hidden">
+    <div class="panel result-panel">
+      <div class="result-score" id="scoreDisplay"></div>
+      <div class="result-label">richtige Antworten</div>
+
+      <div class="result-insight">
+        <h4>Was du gelernt hast</h4>
+        <p id="resultInsightText"></p>
+      </div>
+
+      <div class="result-insight" style="border-color: var(--amber); background:#fdf8ee;">
+        <h4 style="color:var(--amber);">Häufigstes Missverständnis</h4>
+        <p>Deutsche Lernende verwechseln Töne mit emotionaler Intonation. Doch in Tonsprachen ist der Ton <em>invariant</em> – er gehört zum Wort, genau wie der Vokal. „mā" mit 4.-Ton-Kontur zu sprechen ergibt „mà" (schimpfen) – ein völlig anderes Wort.</p>
+      </div>
+
+      <button class="btn-primary" onclick="restart()">Nochmal üben</button>
+    </div>
+  </div>
+
+  <!-- Wissen kompakt -->
+  <div class="knowledge-box" id="knowledgeBox">
+    <h3>Wissen kompakt: Tonsprachen weltweit</h3>
+    <dl>
+      <dt>~70 %</dt>
+      <dd>aller Sprachen weltweit sind Tonsprachen (nach WALS / Maddieson 2013).</dd>
+      <dt>Mandarin</dt>
+      <dd>4 Töne (Chao-System: 55, 35, 214, 51) + Neutralton.</dd>
+      <dt>Kantonesisch</dt>
+      <dd>6 Töne – differenzierter als Mandarin.</dd>
+      <dt>Vietnamesisch</dt>
+      <dd>6 Töne, darunter Glottalisierungen.</dd>
+      <dt>Yoruba</dt>
+      <dd>3 Töne (hoch, mittel, tief) – Afrika, ~50 Mio. Sprecher.</dd>
+      <dt>Lexikalischer Ton</dt>
+      <dd>Ton ist Bestandteil des Morphems – wie ein Phonem. Falsch → anderes Wort.</dd>
+      <dt>Pragmatische Intonation</dt>
+      <dd>Im Deutschen: Tonhöhe markiert Satztyp/Emotion, nicht Lexik.</dd>
+      <dt>Chao-Zahlen</dt>
+      <dd>Notation von Tönen auf Skala 1–5 (nach Yuen Ren Chao, 1930).</dd>
+    </dl>
+  </div>
+
+</main>
+
+<footer>
+  Lernmaterial · Nachhilfe Mentor · Quellen: Yip (2002) <em>Tone</em>, Cambridge; Maddieson (2013) WALS; Chao (1930) IPA; Ladefoged &amp; Maddieson (1996).
+</footer>
+
+<script>
+// ── Ton-Definitionen (Chao-Punkte normiert auf Canvas-Höhe) ─────────────────
+// Y: 0=oben (hoch), 1=unten (tief) auf [0..1]
+const TONES = {
+  1: { name: '1. Ton', chao: '55', desc: 'hoch-eben',          color: '#0f5fa8', pts: [[0,0.05],[1,0.05]] },
+  2: { name: '2. Ton', chao: '35', desc: 'steigend',           color: '#0b8f6a', pts: [[0,0.6],[1,0.05]] },
+  3: { name: '3. Ton', chao: '214', desc: 'fallend-steigend',  color: '#b87700', pts: [[0,0.35],[0.35,0.85],[0.65,0.85],[1,0.3]] },
+  4: { name: '4. Ton', chao: '51', desc: 'fallend',            color: '#b5281e', pts: [[0,0.05],[1,0.9]] },
+};
+
+// ── Mini-Canvas Kurven ────────────────────────────────────────────────────────
+function drawToneMini(canvasId, toneNum) {
+  const c = document.getElementById(canvasId);
+  if (!c) return;
+  const ctx = c.getContext('2d');
+  const w = c.width, h = c.height;
+  const t = TONES[toneNum];
+  const pad = 6;
+  ctx.clearRect(0, 0, w, h);
+
+  // Achse
+  ctx.strokeStyle = '#d8e1ed';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  for (let level = 0.1; level < 1; level += 0.25) {
+    const y = pad + level * (h - 2*pad);
+    ctx.moveTo(pad, y); ctx.lineTo(w - pad, y);
+  }
+  ctx.stroke();
+
+  // Kurve
+  ctx.strokeStyle = t.color;
+  ctx.lineWidth = 2.5;
+  ctx.lineJoin = 'round';
+  ctx.lineCap = 'round';
+  ctx.beginPath();
+  t.pts.forEach(([px, py], i) => {
+    const x = pad + px * (w - 2*pad);
+    const y = pad + py * (h - 2*pad);
+    i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+  });
+  ctx.stroke();
+}
+
+// ── Catmull-Rom interpolation für glatte Kurven ───────────────────────────────
+function catmullRomPoints(pts, steps) {
+  const result = [];
+  for (let i = 0; i < pts.length - 1; i++) {
+    const p0 = pts[Math.max(0, i - 1)];
+    const p1 = pts[i];
+    const p2 = pts[i + 1];
+    const p3 = pts[Math.min(pts.length - 1, i + 2)];
+    for (let t = 0; t < steps; t++) {
+      const tt = t / steps;
+      const t2 = tt * tt, t3 = t2 * tt;
+      const x = 0.5 * ((2*p1[0]) + (-p0[0]+p2[0])*tt + (2*p0[0]-5*p1[0]+4*p2[0]-p3[0])*t2 + (-p0[0]+3*p1[0]-3*p2[0]+p3[0])*t3);
+      const y = 0.5 * ((2*p1[1]) + (-p0[1]+p2[1])*tt + (2*p0[1]-5*p1[1]+4*p2[1]-p3[1])*t2 + (-p0[1]+3*p1[1]-3*p2[1]+p3[1])*t3);
+      result.push([x, y]);
+    }
+  }
+  result.push(pts[pts.length - 1]);
+  return result;
+}
+
+// ── Haupt-Canvas Animation ───────────────────────────────────────────────────
+let animFrame = null;
+
+function drawToneAnimated(canvasId, toneNum, onDone) {
+  const c = document.getElementById(canvasId);
+  if (!c) return;
+  const ctx = c.getContext('2d');
+  const w = c.width, h = c.height;
+  const t = TONES[toneNum];
+  const padX = 28, padY = 14;
+
+  const interpPts = catmullRomPoints(t.pts, 20);
+  const total = interpPts.length;
+  let drawn = 0;
+
+  if (animFrame) cancelAnimationFrame(animFrame);
+
+  function frame() {
+    ctx.clearRect(0, 0, w, h);
+
+    // Hintergrundlinien (F0-Ebenen)
+    ctx.strokeStyle = '#e0e8f4';
+    ctx.lineWidth = 1;
+    const labels = ['5 (hoch)', '', '3', '', '1 (tief)'];
+    labels.forEach((lbl, i) => {
+      const y = padY + i * (h - 2*padY) / 4;
+      ctx.beginPath(); ctx.moveTo(padX, y); ctx.lineTo(w - 8, y); ctx.stroke();
+      if (lbl) {
+        ctx.fillStyle = '#a0aab8';
+        ctx.font = '9px sans-serif';
+        ctx.fillText(lbl, 2, y + 3);
+      }
+    });
+
+    // Zeitachse
+    ctx.strokeStyle = '#c8d4e4';
+    ctx.beginPath();
+    ctx.moveTo(padX, h - padY + 6);
+    ctx.lineTo(w - 8, h - padY + 6);
+    ctx.stroke();
+
+    // Tonkurve bis "drawn"
+    if (drawn > 0) {
+      ctx.strokeStyle = t.color;
+      ctx.lineWidth = 3;
+      ctx.lineJoin = 'round';
+      ctx.lineCap = 'round';
+      ctx.shadowColor = t.color + '44';
+      ctx.shadowBlur = 6;
+      ctx.beginPath();
+      interpPts.slice(0, drawn).forEach(([px, py], i) => {
+        const x = padX + px * (w - padX - 8);
+        const y = padY + py * (h - 2*padY);
+        i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+      ctx.shadowBlur = 0;
+
+      // Punkt am Ende der Kurve
+      const [lpx, lpy] = interpPts[drawn - 1];
+      const lx = padX + lpx * (w - padX - 8);
+      const ly = padY + lpy * (h - 2*padY);
+      ctx.fillStyle = t.color;
+      ctx.beginPath();
+      ctx.arc(lx, ly, 4, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    drawn = Math.min(drawn + 3, total);
+    if (drawn < total) {
+      animFrame = requestAnimationFrame(frame);
+    } else {
+      if (onDone) onDone();
+    }
+  }
+  frame();
+}
+
+// ── Mini-Kurven beim Start ────────────────────────────────────────────────────
+window.addEventListener('DOMContentLoaded', () => {
+  drawToneMini('mini1', 1);
+  drawToneMini('mini2', 2);
+  drawToneMini('mini3', 3);
+  drawToneMini('mini4', 4);
+  startStage1();
+});
+
+// ── Stage 1: Ton-Erkennung ────────────────────────────────────────────────────
+const STAGE1_SEQUENCE = [3, 1, 4, 2]; // Reihenfolge der Töne
+let s1Index = 0;
+let s1Correct = 0;
+let s1Answered = false;
+
+function startStage1() {
+  s1Index = 0; s1Correct = 0;
+  showToneQuestion();
+}
+
+function showToneQuestion() {
+  s1Answered = false;
+  const toneNum = STAGE1_SEQUENCE[s1Index];
+  document.getElementById('s1Counter').textContent = 'Frage ' + (s1Index + 1) + ' von ' + STAGE1_SEQUENCE.length;
+  document.querySelectorAll('#opts1 .option-btn').forEach(b => {
+    b.disabled = false;
+    b.classList.remove('correct', 'wrong');
+  });
+  document.getElementById('fb1').className = 'feedback-box';
+  document.getElementById('fb1').innerHTML = '';
+  document.getElementById('btnNext1').classList.add('hidden');
+  document.getElementById('vizHint').textContent = 'Beobachte die Kurvenform genau.';
+  drawToneAnimated('mainCanvas', toneNum, null);
+}
+
+function checkTone(chosen) {
+  if (s1Answered) return;
+  s1Answered = true;
+  const toneNum = STAGE1_SEQUENCE[s1Index];
+  const t = TONES[toneNum];
+  const correct = chosen === toneNum;
+  if (correct) s1Correct++;
+
+  document.querySelectorAll('#opts1 .option-btn').forEach(b => {
+    b.disabled = true;
+    const val = parseInt(b.dataset.val);
+    if (val === toneNum) b.classList.add('correct');
+    else if (val === chosen && !correct) b.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('fb1');
+  fb.innerHTML = correct
+    ? `<strong>Richtig!</strong> Das ist der <strong>${t.name} (Chao: ${t.chao})</strong> – ${t.desc}. Die Kurve zeigt den Verlauf der Grundfrequenz (F0). <br><span class="concept-tag">Lexikalischer Ton</span>`
+    : `<strong>Nicht ganz.</strong> Das war der <strong>${t.name} (${t.desc})</strong> – Chao-Zahl ${t.chao}. Du hast Ton ${chosen} gewählt (${TONES[chosen].desc}). Achte auf die Kurvenform: ${toneNum === 1 ? 'eine flache Linie oben' : toneNum === 2 ? 'ein gleichmäßiger Anstieg' : toneNum === 3 ? 'ein Tauchgang mit Aufstieg am Ende' : 'ein steiler Abfall'}. <br><span class="concept-tag">Tonphonem</span>`;
+  fb.className = `feedback-box visible ${correct ? 'correct-fb' : 'wrong-fb'}`;
+
+  const btnLabel = s1Index < STAGE1_SEQUENCE.length - 1 ? 'Nächste Kurve →' : 'Weiter zu Stufe 2 →';
+  document.getElementById('btnNext1').textContent = btnLabel;
+  document.getElementById('btnNext1').classList.remove('hidden');
+}
+
+function nextToneQuestion() {
+  s1Index++;
+  if (s1Index < STAGE1_SEQUENCE.length) {
+    showToneQuestion();
+  } else {
+    // Übergang zu Stage 2
+    updateProgress(1);
+    document.getElementById('stage1').classList.add('hidden');
+    document.getElementById('stage2').classList.remove('hidden');
+    startStage2();
+  }
+}
+
+// ── Stage 2: Bedeutung vorhersagen ────────────────────────────────────────────
+const MA_WORDS = [
+  { pinyin: 'mā', tone: 1, meaning: 'Mutter', char: '妈' },
+  { pinyin: 'má', tone: 2, meaning: 'Hanf / taubes Gefühl', char: '麻' },
+  { pinyin: 'mǎ', tone: 3, meaning: 'Pferd', char: '马' },
+  { pinyin: 'mà', tone: 4, meaning: 'schimpfen / schelten', char: '骂' },
+];
+
+// Weitere Wörter (andere Silben mit Tönen)
+const EXTRA_WORDS = [
+  { pinyin: 'fēi', tone: 1, meaning: 'fliegen', char: '飞', allMeanings: ['fliegen', 'nicht', 'Fett', 'ausgeben'] },
+  { pinyin: 'féi', tone: 2, meaning: 'Fett / üppig', char: '肥', allMeanings: ['fliegen', 'nicht', 'Fett / üppig', 'ausgeben'] },
+  { pinyin: 'fèi', tone: 4, meaning: 'Kosten / ausgeben', char: '费', allMeanings: ['fliegen', 'nicht', 'Fett / üppig', 'Kosten / ausgeben'] },
+];
+
+const STAGE2_SEQUENCE = [
+  { ...MA_WORDS[0], allMeanings: ['Mutter', 'Hanf / taubes Gefühl', 'Pferd', 'schimpfen / schelten'] },
+  { ...MA_WORDS[2], allMeanings: ['Mutter', 'Hanf / taubes Gefühl', 'Pferd', 'schimpfen / schelten'] },
+  EXTRA_WORDS[0],
+  { ...MA_WORDS[3], allMeanings: ['Mutter', 'Hanf / taubes Gefühl', 'Pferd', 'schimpfen / schelten'] },
+  EXTRA_WORDS[2],
+];
+
+let s2Index = 0;
+let s2Correct = 0;
+let s2Answered = false;
+
+function startStage2() {
+  s2Index = 0; s2Correct = 0;
+  showMeaningQuestion();
+}
+
+function showMeaningQuestion() {
+  s2Answered = false;
+  const word = STAGE2_SEQUENCE[s2Index];
+  document.getElementById('s2Counter').textContent = 'Frage ' + (s2Index + 1) + ' von ' + STAGE2_SEQUENCE.length;
+  document.getElementById('pinyinDisplay').textContent = word.pinyin + ' (' + word.char + ')';
+  document.getElementById('fb2').className = 'feedback-box';
+  document.getElementById('fb2').innerHTML = '';
+  document.getElementById('btnNext2').classList.add('hidden');
+
+  // Optionen mischen
+  const meanings = [...word.allMeanings];
+  shuffle(meanings);
+  const opts = document.getElementById('opts2');
+  opts.innerHTML = '';
+  meanings.forEach(m => {
+    const btn = document.createElement('button');
+    btn.className = 'option-btn';
+    btn.textContent = m;
+    btn.onclick = () => checkMeaning(m, word);
+    opts.appendChild(btn);
+  });
+
+  drawToneAnimated('mainCanvas2', word.tone, null);
+}
+
+function checkMeaning(chosen, word) {
+  if (s2Answered) return;
+  s2Answered = true;
+  const correct = chosen === word.meaning;
+  if (correct) s2Correct++;
+
+  const t = TONES[word.tone];
+  document.querySelectorAll('#opts2 .option-btn').forEach(b => {
+    b.disabled = true;
+    if (b.textContent === word.meaning) b.classList.add('correct');
+    else if (b.textContent === chosen && !correct) b.classList.add('wrong');
+  });
+
+  const fb = document.getElementById('fb2');
+  fb.innerHTML = correct
+    ? `<strong>Richtig!</strong> „${word.pinyin}" (${word.char}) bedeutet <em>${word.meaning}</em>. Der ${t.name} (Chao: ${t.chao}, ${t.desc}) macht dieses Wort eindeutig. Das ist <strong>lexikalischer Ton</strong>: Die Tonhöhenkurve ist fester Bestandteil des Morphems. <br><span class="concept-tag">Lexikalischer Ton</span>`
+    : `<strong>Nicht ganz.</strong> „${word.pinyin}" mit dem ${t.name} (${t.desc}) bedeutet <em>${word.meaning}</em>. Du hast „${chosen}" gewählt – das wäre eine andere Tonkontur. Das zeigt: Im Deutschen unterscheidet die Intonation Satztypen; in Tonsprachen unterscheidet sie <em>Wörter</em>. <br><span class="concept-tag">Lexikalischer Ton</span><span class="concept-tag" style="background:var(--amber); margin-left:0.4rem;">Missverständnis: Ton ≠ Intonation</span>`;
+  fb.className = `feedback-box visible ${correct ? 'correct-fb' : 'wrong-fb'}`;
+
+  const isLast = s2Index === STAGE2_SEQUENCE.length - 1;
+  document.getElementById('btnNext2').textContent = isLast ? 'Ergebnis anzeigen →' : 'Nächste Frage →';
+  document.getElementById('btnNext2').classList.remove('hidden');
+}
+
+function nextMeaningQuestion() {
+  s2Index++;
+  if (s2Index < STAGE2_SEQUENCE.length) {
+    showMeaningQuestion();
+  } else {
+    showResult();
+  }
+}
+
+// ── Ergebnis ──────────────────────────────────────────────────────────────────
+function showResult() {
+  document.getElementById('stage2').classList.add('hidden');
+  document.getElementById('stageResult').classList.remove('hidden');
+  updateProgress(2);
+
+  const total = STAGE1_SEQUENCE.length + STAGE2_SEQUENCE.length;
+  const correct = s1Correct + s2Correct;
+  document.getElementById('scoreDisplay').textContent = correct + ' / ' + total;
+
+  const pct = correct / total;
+  let insightText;
+  if (pct >= 0.8) {
+    insightText = 'Sehr gut! Du hast das Kernprinzip des lexikalischen Tons verstanden: Die Tonhöhenkurve ist kein Stilmittel, sondern ein Phonem – genau wie die Konsonanten p, b, d oder t im Deutschen.';
+  } else if (pct >= 0.5) {
+    insightText = 'Guter Anfang! Das Erkennen von Tonkurven braucht Übung. Merke: Ton 3 (214) ist der trickreichste – er fällt zuerst tief, steigt dann wieder. Probiere die Simulation nochmal.';
+  } else {
+    insightText = 'Das Tonprinzip ist für deutsche Muttersprachler ungewohnt – das ist völlig normal. Der entscheidende Gedanke: In Tonsprachen ist der Ton Teil des Wortes, genau wie der Vokal. Lies die Übersicht oben nochmal und versuche es erneut.';
+  }
+  document.getElementById('resultInsightText').textContent = insightText;
+}
+
+// ── Hilfsfunktionen ───────────────────────────────────────────────────────────
+function shuffle(arr) {
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+}
+
+function updateProgress(stage) {
+  const ps1 = document.getElementById('ps1');
+  const ps2 = document.getElementById('ps2');
+  if (stage >= 1) { ps1.classList.remove('active'); ps1.classList.add('done'); ps2.classList.add('active'); }
+  if (stage >= 2) { ps2.classList.remove('active'); ps2.classList.add('done'); }
+}
+
+function restart() {
+  document.getElementById('stageResult').classList.add('hidden');
+  document.getElementById('stage2').classList.add('hidden');
+  document.getElementById('stage1').classList.remove('hidden');
+  document.getElementById('ps1').className = 'progress-step active';
+  document.getElementById('ps2').className = 'progress-step';
+  startStage1();
+}
+</script>
+</body>
+</html>

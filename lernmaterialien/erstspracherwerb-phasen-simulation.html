@@ -1,0 +1,907 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Phasen des Erstspracherwerbs: Lallphase bis Grammatik | Nachhilfe Mentor</title>
+  <meta name="description" content="Ordne echte Kindäußerungen den Phasen des Erstspracherwerbs zu – von der Lallphase über die Einwortphase bis zur Grammatik – und verstehe Übergeneralisierung. Interaktive Übung.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Erstspracherwerb, Phasen Spracherwerb, Lallphase, Einwortphase, Zweiwortphase, Übergeneralisierung">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/erstspracherwerb-phasen-simulation.html">
+  <meta property="og:title" content="Phasen des Erstspracherwerbs – interaktive Simulation">
+  <meta property="og:description" content="Ordne echte Kindäußerungen den Phasen des Erstspracherwerbs zu – von der Lallphase bis zur Grammatik – und verstehe Übergeneralisierung. Interaktive Übung.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/erstspracherwerb-phasen-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Phasen des Erstspracherwerbs: Lallphase bis Grammatik",
+  "description":"Ordne echte Kindäußerungen den Phasen des Erstspracherwerbs zu – von der Lallphase über die Einwortphase bis zur Grammatik – und verstehe Übergeneralisierung. Interaktive Übung.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/erstspracherwerb-phasen-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+      --phase0: #6b7280;
+      --phase1: #7c3aed;
+      --phase2: #0891b2;
+      --phase3: #0b8f6a;
+      --phase4: #b87700;
+      --phase5: #b5281e;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    /* ── Header ──────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* ── Main ────────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Fortschritts-Dots ───────────────────────── */
+    .progress-dots {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .dot.active { background: var(--blue); }
+    .dot.done   { background: var(--green); }
+    .progress-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-left: 0.5rem;
+    }
+
+    /* ── Zeitstrahl ───────────────────────────────── */
+    .timeline-section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .timeline-section h2 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .timeline {
+      position: relative;
+      display: flex;
+      gap: 0;
+      align-items: flex-start;
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      right: 14px;
+      height: 2px;
+      background: var(--line);
+      z-index: 0;
+    }
+    .tl-item {
+      flex: 1;
+      min-width: 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .tl-item.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .tl-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 3px solid var(--line);
+      background: var(--panel);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+      transition: border-color 0.3s, background 0.3s, color 0.3s;
+    }
+    .tl-item.active .tl-dot {
+      border-color: var(--blue);
+      background: var(--blue);
+      color: #fff;
+      animation: pulse 1.5s infinite;
+    }
+    .tl-item.done .tl-dot {
+      border-color: var(--green);
+      background: var(--green);
+      color: #fff;
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(15,95,168,0.3); }
+      50%       { transform: scale(1.12); box-shadow: 0 0 0 6px rgba(15,95,168,0); }
+    }
+    .tl-label {
+      font-size: 0.7rem;
+      text-align: center;
+      color: var(--muted);
+      line-height: 1.3;
+      max-width: 72px;
+    }
+    .tl-item.active .tl-label { color: var(--blue); font-weight: 600; }
+    .tl-item.done   .tl-label { color: var(--green); }
+    .tl-age {
+      font-size: 0.65rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.2rem;
+    }
+
+    /* ── Aufgaben-Karte ───────────────────────────── */
+    .task-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .task-card h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .task-card .sub {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+    .round-counter {
+      display: inline-block;
+      background: #e8f0fb;
+      color: var(--blue);
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 20px;
+      padding: 0.15rem 0.7rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Äußerungs-Box ────────────────────────────── */
+    .utterance-box {
+      background: #f0f6ff;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 1.25rem 1.25rem;
+      margin-bottom: 1.75rem;
+    }
+    .utterance-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--blue);
+      margin-bottom: 0.4rem;
+    }
+    .utterance-text {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+    .utterance-context {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+    }
+
+    /* ── Vorhersage-Frage ─────────────────────────── */
+    .prediction-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+    }
+    @media (max-width: 440px) {
+      .options-grid { grid-template-columns: 1fr; }
+    }
+    .option-btn {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      font-size: 0.88rem;
+      color: var(--ink);
+      line-height: 1.4;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #ecfdf5;
+      color: var(--green);
+      font-weight: 600;
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fef2f2;
+      color: var(--red);
+    }
+    .option-btn:disabled { cursor: default; opacity: 0.85; }
+    .phase-num {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.2rem;
+      opacity: 0.7;
+    }
+
+    /* ── Feedback ─────────────────────────────────── */
+    .feedback-box {
+      display: none;
+      margin-top: 1.5rem;
+      border-radius: 10px;
+      padding: 1.25rem 1.25rem;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box.correct-fb {
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+    }
+    .feedback-box.wrong-fb {
+      background: #fef2f2;
+      border: 1px solid #fca5a5;
+    }
+    .feedback-box .fb-head {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .concept-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: 4px;
+      padding: 0.1rem 0.5rem;
+      margin: 0 0.1rem;
+    }
+    .concept-tag.green  { background: var(--green); }
+    .concept-tag.amber  { background: var(--amber); }
+    .concept-tag.purple { background: var(--purple); }
+
+    /* ── Weiter-Button ────────────────────────────── */
+    .btn-next {
+      display: none;
+      margin-top: 1.25rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1.75rem;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-next:hover { background: #0a4d8e; }
+    .btn-next.show { display: inline-block; }
+
+    /* ── Stufe 2 ──────────────────────────────────── */
+    .stage2-intro {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .stage2-intro h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .stage2-intro p {
+      color: var(--muted);
+      font-size: 0.93rem;
+      margin-bottom: 1rem;
+    }
+    .scenario-box {
+      background: #fffbeb;
+      border: 1px solid #fde68a;
+      border-radius: 8px;
+      padding: 1.1rem 1.25rem;
+      margin: 1.25rem 0;
+    }
+    .scenario-box .scenario-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--amber);
+      margin-bottom: 0.4rem;
+    }
+    .scenario-box .scenario-text {
+      font-size: 1.1rem;
+      font-weight: 700;
+      font-style: italic;
+      color: var(--ink);
+      margin-bottom: 0.4rem;
+    }
+    .scenario-box .scenario-sub {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* ── Abschluss-Panel ─────────────────────────── */
+    .finish-panel {
+      display: none;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+    .finish-panel.show { display: block; }
+    .finish-panel h2 { font-size: 1.3rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .finish-panel p  { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .score-badge {
+      display: inline-block;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--green);
+      margin-bottom: 0.5rem;
+    }
+    .score-label { font-size: 0.9rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .summary-list {
+      text-align: left;
+      margin: 1.25rem 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .summary-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      font-size: 0.88rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .summary-row:last-child { border-bottom: none; }
+    .summary-row .icon { font-size: 1rem; flex-shrink: 0; margin-top: 0.05rem; }
+    .summary-row .phase-name { font-weight: 600; min-width: 120px; flex-shrink: 0; }
+    .summary-row .phrase { color: var(--muted); }
+
+    /* ── Info-Footer ─────────────────────────────── */
+    .info-footer {
+      margin-top: 2.5rem;
+      padding: 1.5rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .info-footer h3 { font-size: 0.9rem; color: var(--ink); margin-bottom: 0.75rem; font-weight: 600; }
+    .info-footer ul { padding-left: 1.2rem; }
+    .info-footer li { margin-bottom: 0.4rem; }
+
+    /* ── Hidden ──────────────────────────────────── */
+    .hidden { display: none !important; }
+
+    /* ── Site-Nav ────────────────────────────────── */
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Linguistik · Klasse 10–13</p>
+  <h1>Phasen des Erstspracherwerbs</h1>
+  <p>Von der Lallphase bis zur Grammatikentwicklung: Ordne echte Kindäußerungen den richtigen Erwerbsphasen zu und verstehe, warum Übergeneralisierungen kein Fehler sind.</p>
+</header>
+
+<main>
+
+  <!-- Fortschritts-Dots -->
+  <div class="progress-dots" id="progressDots" aria-label="Fortschritt">
+    <div class="dot active" id="dot1"></div>
+    <div class="dot" id="dot2"></div>
+    <span class="progress-label" id="progressLabel">Stufe 1 von 2</span>
+  </div>
+
+  <!-- Zeitstrahl -->
+  <div class="timeline-section">
+    <h2>Entwicklungsphasen im Überblick</h2>
+    <div class="timeline" role="img" aria-label="Zeitstrahl der Sprachentwicklung von 0 bis 5 Jahren">
+      <div class="tl-item" id="tl0">
+        <div class="tl-dot">0</div>
+        <div class="tl-label">Vokal&shy;isierung</div>
+        <div class="tl-age">0–6 Mo.</div>
+      </div>
+      <div class="tl-item" id="tl1">
+        <div class="tl-dot">1</div>
+        <div class="tl-label">Lall&shy;phase</div>
+        <div class="tl-age">6–12 Mo.</div>
+      </div>
+      <div class="tl-item" id="tl2">
+        <div class="tl-dot">2</div>
+        <div class="tl-label">Einwort&shy;phase</div>
+        <div class="tl-age">12–18 Mo.</div>
+      </div>
+      <div class="tl-item" id="tl3">
+        <div class="tl-dot">3</div>
+        <div class="tl-label">Zweitwort&shy;phase</div>
+        <div class="tl-age">18–24 Mo.</div>
+      </div>
+      <div class="tl-item" id="tl4">
+        <div class="tl-dot">4</div>
+        <div class="tl-label">Früh&shy;grammatik</div>
+        <div class="tl-age">24–36 Mo.</div>
+      </div>
+      <div class="tl-item" id="tl5">
+        <div class="tl-dot">5</div>
+        <div class="tl-label">Grammatik&shy;entfaltung</div>
+        <div class="tl-age">3–5 J.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STUFE 1 ── -->
+  <div id="stage1">
+    <div class="task-card">
+      <h2>Stufe 1 – Äußerung einer Phase zuordnen</h2>
+      <p class="sub">Lies die Äußerung des Kindes und wähle die passende Erwerbsphase. Du erfährst danach, welches linguistische Konzept dahintersteckt.</p>
+
+      <div class="round-counter" id="roundCounter">Aufgabe 1 von 5</div>
+
+      <div class="utterance-box" id="utteranceBox">
+        <div class="utterance-label">Kindäußerung</div>
+        <div class="utterance-text" id="utteranceText"></div>
+        <div class="utterance-context" id="utteranceContext"></div>
+      </div>
+
+      <p class="prediction-label">Vorhersage: Zu welcher Phase gehört diese Äußerung?</p>
+      <div class="options-grid" id="optionsGrid">
+        <!-- Buttons werden per JS eingefügt -->
+      </div>
+
+      <div class="feedback-box" id="feedbackBox">
+        <div class="fb-head" id="fbHead"></div>
+        <div id="fbBody"></div>
+      </div>
+
+      <button class="btn-next" id="btnNext" onclick="nextRound()">Weiter →</button>
+    </div>
+  </div>
+
+  <!-- ── STUFE 2 ── -->
+  <div id="stage2" class="hidden">
+    <div class="stage2-intro">
+      <h2>Stufe 2 – Übergeneralisierung erklären</h2>
+      <p>Du hast alle fünf Phasen kennengelernt. Jetzt geht es ums Verstehen: Warum bilden Kinder Formen, die Erwachsene nie benutzen?</p>
+
+      <div class="scenario-box">
+        <div class="scenario-label">Szene: Kind (4 Jahre) beim Abendessen</div>
+        <div class="scenario-text">„Ich hab das Buch geleden und die Äpfel sind aufgegoffen."</div>
+        <div class="scenario-sub">Das Kind hat weder „geleden" (lesen → gelesen) noch „aufgegoffen" (aufgehen → aufgegangen) je von Erwachsenen gehört.</div>
+      </div>
+
+      <p style="margin-top:1rem; font-size:0.93rem; color:var(--ink); font-weight:600;">Warum bildet das Kind diese nicht existierenden Formen?</p>
+      <p style="font-size:0.88rem; color:var(--muted); margin-top:0.3rem; margin-bottom:1.25rem;">Wähle die beste Erklärung:</p>
+
+      <div id="stage2Options" style="display:flex; flex-direction:column; gap:0.75rem;">
+        <button class="option-btn" onclick="checkStage2(this, false)">(A) Das Kind hat diese Formen in der Kita gehört und imitiert sie jetzt.</button>
+        <button class="option-btn" onclick="checkStage2(this, true)">(B) Das Kind wendet eine selbst entdeckte Regel an (starke Verben → ge-…-en) und überträgt sie auf alle Verben – auch unregelmäßige.</button>
+        <button class="option-btn" onclick="checkStage2(this, false)">(C) Das Kind befindet sich noch in der Zweiwortphase und produziert daher Fehler.</button>
+        <button class="option-btn" onclick="checkStage2(this, false)">(D) Die Eltern haben die Formen nie korrigiert, deshalb werden sie beibehalten.</button>
+      </div>
+
+      <div class="feedback-box" id="stage2Feedback"></div>
+      <button class="btn-next" id="btnStage2Next" onclick="showFinish()">Zur Zusammenfassung →</button>
+    </div>
+  </div>
+
+  <!-- ── ABSCHLUSS ── -->
+  <div class="finish-panel" id="finishPanel">
+    <div class="score-badge" id="scoreBadge"></div>
+    <div class="score-label" id="scoreLabel"></div>
+    <h2>Gut gemacht!</h2>
+    <p>Du hast alle Phasen des Erstspracherwerbs kennengelernt und das Prinzip der Übergeneralisierung verstanden.</p>
+
+    <div class="summary-list" id="summaryList"></div>
+
+    <button class="btn-next show" style="margin-top:1rem;" onclick="restartSim()">Nochmal üben</button>
+  </div>
+
+  <!-- Info-Footer -->
+  <div class="info-footer">
+    <h3>Wissenschaftlicher Hintergrund</h3>
+    <ul>
+      <li><strong>MLU (Mean Length of Utterance):</strong> Roger Browns Maß für die durchschnittliche Äußerungslänge in Morphemen. Steigt von ca. 1,0 (Einwortphase) auf über 4,0 (Grammatikentwicklung).</li>
+      <li><strong>Universalität:</strong> Die Phasensequenz ist kulturübergreifend gleich – belegt für Englisch, Deutsch, Swahili, Japanisch u.a. (Slobin 1985).</li>
+      <li><strong>Übergeneralisierung:</strong> Kinder bilden regelhafte, nie gehörte Formen wie „gegoffen". Das widerlegt den reinen Imitationsansatz (Behaviorismus) und stützt Chomskys LAD-These.</li>
+      <li><strong>Fast Mapping:</strong> Ab ca. 18 Monaten lernen Kinder neue Wörter nach nur einer Begegnung. Wortschatz wächst von ~50 auf ~1000 Wörter bis zum 3. Lebensjahr.</li>
+    </ul>
+  </div>
+
+</main>
+
+<script>
+  // ── Daten ──────────────────────────────────────────────────────────────────
+  const PHASES = [
+    { id: 0, name: 'Vokalisierungsphase', short: 'Vokalisierung', age: '0–6 Mo.' },
+    { id: 1, name: 'Lallphase',           short: 'Lallphase',     age: '6–12 Mo.' },
+    { id: 2, name: 'Einwortphase',        short: 'Einwortphase',  age: '12–18 Mo.' },
+    { id: 3, name: 'Zweiwortphase',       short: 'Zweiwortphase', age: '18–24 Mo.' },
+    { id: 4, name: 'Frühgrammatik',       short: 'Frühgrammatik', age: '24–36 Mo.' },
+    { id: 5, name: 'Grammatikentfaltung', short: 'Grammatikentfaltung', age: '3–5 J.' },
+  ];
+
+  const ROUNDS = [
+    {
+      utterance: '»ba-ba-ba, ma-ma, da-da«',
+      context: '(Kind, 8 Monate – wiederholt denselben Laut in Silbenketten)',
+      correct: 1,
+      correctFeedback: '<span class="fb-head">Richtig – das ist die <span class="concept-tag purple">Lallphase</span>!</span><p style="margin-top:0.6rem">Kanonisches Lallen: Das Kind wiederholt Konsonant-Vokal-Silben (CV-Reduplication). Die Laute haben noch keine kommunikative Bedeutung, orientieren sich aber bereits an den Phonemen der Umgebungssprache. Kinder tauber Eltern lallen weniger – ein Beweis, dass Hörinput die Lallphase formt.</p>',
+      wrongFeedback: {
+        0: 'In der Vokaliserungsphase (0–6 Mo.) gibt es nur reflexives Schreien und Gurren, noch keine Silbenketten. Die regelmäßigen Silbenwiederholungen (»ba-ba-ba«) sind typisch für die <span class="concept-tag purple">Lallphase</span> (6–12 Mo.).',
+        2: 'In der Einwortphase gibt es bereits bedeutungstragende Wörter. Hier sind noch keine Wortbedeutungen erkennbar – nur Lautmuster. Das ist die <span class="concept-tag purple">Lallphase</span>.',
+        3: 'Die Zweiwortphase beginnt erst mit ca. 18 Monaten und setzt Wörter voraus. Diese Äußerung hat noch gar keine Wortbedeutungen – sie gehört in die <span class="concept-tag purple">Lallphase</span> (6–12 Mo.).',
+        4: 'Die Frühgrammatik (24–36 Mo.) enthält schon vollständige Sätze mit Grammatik. Diese Lautwiederholungen ohne Bedeutung gehören in die <span class="concept-tag purple">Lallphase</span>.',
+        5: 'Die Grammatikentfaltung (3–5 J.) produziert komplexe Sätze. Silbenketten ohne Bedeutung sind charakteristisch für die <span class="concept-tag purple">Lallphase</span> (6–12 Mo.).',
+      }
+    },
+    {
+      utterance: '»Milch!«',
+      context: '(Kind, 14 Monate – streckt die Arme nach der Flasche aus)',
+      correct: 2,
+      correctFeedback: '<span class="fb-head">Richtig – das ist eine <span class="concept-tag">Holophrase</span> (Einwortphase)!</span><p style="margin-top:0.6rem">Eine <span class="concept-tag">Holophrase</span> ist eine Einwortäußerung, die eine vollständige Proposition ausdrückt. »Milch!« kann je nach Situation »Ich will Milch«, »Die Milch ist alle« oder »Da ist Milch!« bedeuten. Der Kontext entscheidet die Bedeutung – ein Wort trägt die kommunikative Last eines ganzen Satzes.</p>',
+      wrongFeedback: {
+        0: 'In der Vokaliserungsphase gibt es noch keine Wörter. »Milch« ist ein echtes bedeutungstragendes Wort – das kennzeichnet die <span class="concept-tag">Einwortphase</span> mit ihrer typischen <span class="concept-tag">Holophrase</span>.',
+        1: 'Die Lallphase enthält keine Wörter mit Bedeutung, nur Lautspiele. »Milch« hat eine klare Bedeutung und wird kommunikativ eingesetzt – das ist die <span class="concept-tag">Einwortphase</span>.',
+        3: 'Die Zweiwortphase verbindet schon zwei Inhaltswörter (z.B. »Milch da«). Hier steht nur ein Wort allein – das ist eine klassische <span class="concept-tag">Holophrase</span> der Einwortphase.',
+        4: 'In der Frühgrammatik gibt es bereits Sätze. Ein einzelnes Wort als vollständige Äußerung ist das Kennzeichen der <span class="concept-tag">Einwortphase</span> (Holophrase).',
+        5: 'Die Grammatikentfaltung hat komplexe Sätze. Eine einwörtige Äußerung mit einem Wort ist typisch für die <span class="concept-tag">Einwortphase</span>.',
+      }
+    },
+    {
+      utterance: '»Mama komm« / »Ball da«',
+      context: '(Kind, 20 Monate – zeigt auf den Ball auf dem Boden)',
+      correct: 3,
+      correctFeedback: '<span class="fb-head">Richtig – das ist die <span class="concept-tag green">Zweiwortphase</span>!</span><p style="margin-top:0.6rem">Erste syntaktische Kombinationen: Zwei Inhaltswörter werden kombiniert. Funktorwörter fehlen noch (kein Artikel, kein Hilfsverb, kein Infinitivmarker). Die Äußerungen wirken »telegraphisch« – nur das Wesentliche bleibt. MLU ≈ 1,5–2,0. Roger Brown nennt diese Stufe Stage I–II.</p>',
+      wrongFeedback: {
+        0: 'Die Vokaliserungsphase hat keine Wörter. Hier sind bereits zwei Wörter sinnvoll kombiniert – das ist die <span class="concept-tag green">Zweiwortphase</span>.',
+        1: 'Die Lallphase hat noch keine Wörter mit Bedeutung. Zwei gezielt kombinierte Wörter kennzeichnen die <span class="concept-tag green">Zweiwortphase</span>.',
+        2: 'In der Einwortphase steht immer nur ein Wort allein. Hier werden zwei Inhaltswörter kombiniert – das ist der Übergang zur Syntax in der <span class="concept-tag green">Zweiwortphase</span>.',
+        4: 'In der Frühgrammatik gibt es schon Sätze mit Grammatik (Flexionsendungen, Artikel). Zwei knappe Wörter ohne Funktionswörter sind typisch für die <span class="concept-tag green">Zweiwortphase</span>.',
+        5: 'Die Grammatikentfaltung liefert komplexe Sätze mit Nebensätzen. Zwei-Wort-Kombinationen ohne Funktionswörter gehören in die <span class="concept-tag green">Zweiwortphase</span>.',
+      }
+    },
+    {
+      utterance: '»Ich hab das aufgemacht gehabt.«',
+      context: '(Kind, 30 Monate – erklärt stolz, dass es die Tür geöffnet hat)',
+      correct: 4,
+      correctFeedback: '<span class="fb-head">Richtig – das ist die <span class="concept-tag amber">Frühgrammatik</span>!</span><p style="margin-top:0.6rem">Das Kind nutzt bereits Hilfsverben (»hab«), Partizip II (»aufgemacht«) und komplexere Verbklammern. »gehabt« am Ende ist eine <span class="concept-tag amber">Übergeneralisierung</span>: Das Perfekt-Muster wird auf »aufgemacht« angewendet und das Extra-»gehabt« kommt durch das Verständnis von »haben« als Hilfsverb. Typisch für Phase 4: Grammatik entfaltet sich, aber mit regelmäßigen Überregularisierungen.</p>',
+      wrongFeedback: {
+        0: 'Die Vokaliserungsphase hat keine Wörter. Dieser Satz zeigt bereits komplexe Verbformen – das ist die <span class="concept-tag amber">Frühgrammatik</span>.',
+        1: 'Die Lallphase hat keine Wörter. Hier gibt es Hilfsverben und Partizipien – das ist <span class="concept-tag amber">Frühgrammatik</span> (24–36 Mo.).',
+        2: 'In der Einwortphase steht ein Wort allein. Dieser Satz ist schon syntaktisch strukturiert – mit Hilfsverb und Partizip. Das ist <span class="concept-tag amber">Frühgrammatik</span>.',
+        3: 'Die Zweiwortphase kennt nur Zweiwortkombinationen ohne Flexion. Hilfsverb + Partizip zeigen die <span class="concept-tag amber">Frühgrammatik</span> (Phase 4).',
+        5: 'Die Grammatikentfaltung (3–5 J.) produziert noch komplexere Sätze mit Nebensätzen und korrekter Inversion. Die erkennbaren Übergeneralisierungen (»gehabt« am Ende) sind typisch für die frühere <span class="concept-tag amber">Frühgrammatik</span> (Phase 4).',
+      }
+    },
+    {
+      utterance: '»Weil die Katze schläft, ist es so ruhig im Haus.«',
+      context: '(Kind, 4,5 Jahre – beobachtet die Katze auf dem Sofa)',
+      correct: 5,
+      correctFeedback: '<span class="fb-head">Richtig – das ist die <span class="concept-tag" style="background:var(--red)">Grammatikentfaltung</span>!</span><p style="margin-top:0.6rem">Das Kind beherrscht: (1) einen eingeleiteten Kausalsatz mit »weil« + V-Ende (»schläft«), (2) korrekte Verb-Zweit-Stellung im Hauptsatz nach einem vorangestellten Nebensatz (»ist es«), (3) Tempus und Kongruenz. Die Syntax ist vollständig. Fast Mapping und ein wachsender Wortschatz kennzeichnen dieses Alter. MLU &gt; 4,0.</p>',
+      wrongFeedback: {
+        0: 'Die Vokaliserungsphase enthält keine Wörter. Ein vollständiger Satz mit Kausalsatz ist <span class="concept-tag" style="background:var(--red)">Grammatikentfaltung</span> (Phase 5, 3–5 J.).',
+        1: 'Die Lallphase hat keine Bedeutungswörter. Vollständige Syntax mit Nebensatz = <span class="concept-tag" style="background:var(--red)">Grammatikentfaltung</span>.',
+        2: 'In der Einwortphase steht ein Wort allein. Ein Kausalsatz mit korrekter Verbzweitstellung gehört in die <span class="concept-tag" style="background:var(--red)">Grammatikentfaltung</span>.',
+        3: 'Die Zweiwortphase kennt nur zwei-Wort-Kombinationen. Vollständige Sätze mit Nebensätzen sind Phase 5 (<span class="concept-tag" style="background:var(--red)">Grammatikentfaltung</span>).',
+        4: 'In der Frühgrammatik gibt es noch keine eingebetteten Nebensätze mit korrekter V2-Inversion. Diese komplexe Syntax kennzeichnet die <span class="concept-tag" style="background:var(--red)">Grammatikentfaltung</span> (Phase 5).',
+      }
+    }
+  ];
+
+  // ── State ──────────────────────────────────────────────────────────────────
+  let currentRound = 0;
+  let score = 0;
+  let results = [];
+  let stage2Correct = false;
+
+  // ── Init ───────────────────────────────────────────────────────────────────
+  function init() {
+    animateTimeline();
+    loadRound(0);
+  }
+
+  function animateTimeline() {
+    const items = document.querySelectorAll('.tl-item');
+    items.forEach((item, i) => {
+      setTimeout(() => { item.classList.add('visible'); }, i * 90);
+    });
+  }
+
+  function updateTimeline(phaseIndex) {
+    const items = document.querySelectorAll('.tl-item');
+    items.forEach((item, i) => {
+      item.classList.remove('active', 'done');
+      if (i < phaseIndex) item.classList.add('done');
+      else if (i === phaseIndex) item.classList.add('active');
+    });
+  }
+
+  // ── Runden ─────────────────────────────────────────────────────────────────
+  function loadRound(idx) {
+    const round = ROUNDS[idx];
+    currentRound = idx;
+
+    document.getElementById('roundCounter').textContent = 'Aufgabe ' + (idx + 1) + ' von ' + ROUNDS.length;
+    document.getElementById('utteranceText').textContent = round.utterance;
+    document.getElementById('utteranceContext').textContent = round.context;
+
+    updateTimeline(round.correct);
+
+    const grid = document.getElementById('optionsGrid');
+    grid.innerHTML = '';
+    PHASES.forEach(p => {
+      const btn = document.createElement('button');
+      btn.className = 'option-btn';
+      btn.setAttribute('data-phase', p.id);
+      btn.innerHTML = '<span class="phase-num">Phase ' + p.id + '</span>' + p.name + ' <span style="color:var(--muted);font-size:0.78rem">(' + p.age + ')</span>';
+      btn.onclick = () => checkAnswer(btn, p.id);
+      grid.appendChild(btn);
+    });
+
+    const fb = document.getElementById('feedbackBox');
+    fb.className = 'feedback-box';
+    fb.innerHTML = '';
+    document.getElementById('btnNext').className = 'btn-next';
+  }
+
+  function checkAnswer(btn, phaseId) {
+    const round = ROUNDS[currentRound];
+    const allBtns = document.querySelectorAll('#optionsGrid .option-btn');
+    allBtns.forEach(b => { b.disabled = true; });
+
+    const fb = document.getElementById('feedbackBox');
+
+    if (phaseId === round.correct) {
+      btn.classList.add('correct');
+      fb.className = 'feedback-box correct-fb show';
+      fb.innerHTML = round.correctFeedback;
+      score++;
+      results.push({ round: currentRound, correct: true });
+    } else {
+      btn.classList.add('wrong');
+      allBtns.forEach(b => {
+        if (parseInt(b.getAttribute('data-phase')) === round.correct) {
+          b.classList.add('correct');
+        }
+      });
+      fb.className = 'feedback-box wrong-fb show';
+      const wrongText = round.wrongFeedback[phaseId] || 'Das ist leider nicht korrekt.';
+      fb.innerHTML = '<div class="fb-head">Nicht ganz – lass uns das gemeinsam klären.</div><p style="margin-top:0.5rem">' + wrongText + '</p>';
+      results.push({ round: currentRound, correct: false });
+    }
+
+    document.getElementById('btnNext').classList.add('show');
+  }
+
+  function nextRound() {
+    if (currentRound < ROUNDS.length - 1) {
+      loadRound(currentRound + 1);
+    } else {
+      // Übergang zu Stufe 2
+      showStage2();
+    }
+  }
+
+  // ── Stufe 2 ────────────────────────────────────────────────────────────────
+  function showStage2() {
+    document.getElementById('stage1').classList.add('hidden');
+    document.getElementById('stage2').classList.remove('hidden');
+
+    // Dots aktualisieren
+    document.getElementById('dot1').className = 'dot done';
+    document.getElementById('dot2').className = 'dot active';
+    document.getElementById('progressLabel').textContent = 'Stufe 2 von 2';
+
+    // Zeitstrahl auf Phase 4 setzen
+    updateTimeline(4);
+  }
+
+  function checkStage2(btn, isCorrect) {
+    const allBtns = document.querySelectorAll('#stage2Options .option-btn');
+    allBtns.forEach(b => { b.disabled = true; });
+
+    const fb = document.getElementById('stage2Feedback');
+
+    if (isCorrect) {
+      btn.classList.add('correct');
+      fb.className = 'feedback-box correct-fb show';
+      fb.innerHTML = '<div class="fb-head">Richtig! Das ist <span class="concept-tag amber">Übergeneralisierung</span> (Overgeneralization).</div><p style="margin-top:0.6rem">Das Kind hat selbstständig erkannt, dass viele starke Verben das Partizip-Muster <em>ge-…-(e)n</em> benutzen (fahren → gefahren, schlafen → geschlafen). Es wendet diese Regel systematisch an – auch auf Ausnahmen wie »lesen« und »aufgehen«. Da es diese Formen NIE gehört haben kann, muss es ein inneres Regelsystem aufgebaut haben. Chomsky sieht das als Beleg für das angeborene <span class="concept-tag">Language Acquisition Device (LAD)</span>: Kinder bauen grammatische Regeln auf, nicht nur Imitations-Repertoires.</p>';
+      score++;
+      stage2Correct = true;
+    } else {
+      btn.classList.add('wrong');
+      allBtns.forEach(b => {
+        if (b.getAttribute('onclick') && b.getAttribute('onclick').includes('true')) {
+          b.classList.add('correct');
+        }
+      });
+      fb.className = 'feedback-box wrong-fb show';
+      if (btn.textContent.startsWith('(A)')) {
+        fb.innerHTML = '<div class="fb-head">Das stimmt nicht.</div><p style="margin-top:0.5rem">»Geleden« und »aufgegoffen« gibt es in der deutschen Standardsprache nicht – das Kind KANN diese Formen nicht gehört haben. Genau das ist der Kern: Es handelt sich nicht um Imitation, sondern um aktive Regelanwendung. → <span class="concept-tag amber">Übergeneralisierung</span></p>';
+      } else if (btn.textContent.startsWith('(C)')) {
+        fb.innerHTML = '<div class="fb-head">Das stimmt nicht.</div><p style="margin-top:0.5rem">Ein 4-jähriges Kind befindet sich nicht in der Zweiwortphase – die endet mit etwa 24 Monaten. Dieses Kind produziert vollständige Sätze mit Hilfsverb und Partizip. Die Fehler sind keine Regressionen, sondern <span class="concept-tag amber">Übergeneralisierungen</span> aufgrund aktiver Regelanwendung.</p>';
+      } else {
+        fb.innerHTML = '<div class="fb-head">Das ist nur ein Teil der Wahrheit.</div><p style="margin-top:0.5rem">Fehlende Korrektur kann Formen stabilisieren – aber es erklärt nicht, WARUM das Kind diese Formen überhaupt bildet. Die eigentliche Ursache ist die <span class="concept-tag amber">Übergeneralisierung</span>: Das Kind wendet eine selbst entdeckte Regel an, die es nie explizit gelernt hat.</p>';
+      }
+    }
+
+    document.getElementById('btnStage2Next').classList.add('show');
+  }
+
+  // ── Abschluss ──────────────────────────────────────────────────────────────
+  function showFinish() {
+    document.getElementById('stage2').classList.add('hidden');
+
+    const panel = document.getElementById('finishPanel');
+    panel.classList.add('show');
+
+    // Dots
+    document.getElementById('dot1').className = 'dot done';
+    document.getElementById('dot2').className = 'dot done';
+    document.getElementById('progressLabel').textContent = 'Abgeschlossen';
+
+    const total = ROUNDS.length + 1; // 5 Runden + 1 Stage-2-Frage
+    const badge = document.getElementById('scoreBadge');
+    const label = document.getElementById('scoreLabel');
+    badge.textContent = score + ' / ' + total;
+    label.textContent = score >= total - 1 ? 'Ausgezeichnet!' : score >= Math.ceil(total / 2) ? 'Gut gemacht!' : 'Weiterüben lohnt sich!';
+
+    const summaryList = document.getElementById('summaryList');
+    summaryList.innerHTML = ROUNDS.map((r, i) => {
+      const res = results[i];
+      const icon = (res && res.correct) ? '✅' : '❌';
+      return '<div class="summary-row"><span class="icon">' + icon + '</span><span class="phase-name">' + PHASES[r.correct].name + '</span><span class="phrase">' + r.utterance + '</span></div>';
+    }).join('') + '<div class="summary-row"><span class="icon">' + (stage2Correct ? '✅' : '❌') + '</span><span class="phase-name">Übergeneralisierung</span><span class="phrase">»geleden / aufgegoffen«</span></div>';
+
+    updateTimeline(-1);
+
+    if (typeof window.dataLayer !== 'undefined') {
+      window.dataLayer.push({ event: 'sim_complete', score: score, total: total, topic: 'erstspracherwerb-phasen' });
+    }
+  }
+
+  function restartSim() {
+    currentRound = 0;
+    score = 0;
+    results = [];
+    stage2Correct = false;
+
+    document.getElementById('finishPanel').classList.remove('show');
+    document.getElementById('stage2').classList.add('hidden');
+    document.getElementById('stage1').classList.remove('hidden');
+
+    document.getElementById('dot1').className = 'dot active';
+    document.getElementById('dot2').className = 'dot';
+    document.getElementById('progressLabel').textContent = 'Stufe 1 von 2';
+
+    loadRound(0);
+    animateTimeline();
+  }
+
+  // Tracking
+  if (typeof window.dataLayer === 'undefined') { window.dataLayer = []; }
+  window.dataLayer.push({ event: 'sim_start', topic: 'erstspracherwerb-phasen' });
+
+  // Start
+  init();
+</script>
+</body>
+</html>

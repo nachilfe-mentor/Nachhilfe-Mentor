@@ -1,0 +1,1218 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Krashen Input-Hypothese: i+1 & Affektiver Filter Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zu Krashens Input-Hypothese: Wähle den richtigen i+1-Input und steuere mit Schiebereglern den affektiven Filter beim Zweitspracherwerb.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Krashen Input-Hypothese, i+1-Prinzip, affektiver Filter, Zweitspracherwerb, Spracherwerb, Monitor-Modell">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/krashen-input-hypothese-zweitspracherwerb-simulation.html">
+  <meta property="og:title" content="Krashen Input-Hypothese: Interaktive Simulation">
+  <meta property="og:description" content="Interaktive Simulation zu Krashens Input-Hypothese: Wähle den richtigen i+1-Input und steuere mit Schiebereglern den affektiven Filter beim Zweitspracherwerb.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/krashen-input-hypothese-zweitspracherwerb-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Krashen Input-Hypothese: i+1 & Affektiver Filter Simulation",
+  "description":"Interaktive Simulation zu Krashens Input-Hypothese: Wähle den richtigen i+1-Input und steuere mit Schiebereglern den affektiven Filter beim Zweitspracherwerb.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/krashen-input-hypothese-zweitspracherwerb-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <link rel="icon" href="/favicon.ico">
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --blau: #2563EB;
+      --blau-hell: #DBEAFE;
+      --gruen: #16A34A;
+      --gruen-hell: #DCFCE7;
+      --orange: #EA580C;
+      --orange-hell: #FED7AA;
+      --rot: #DC2626;
+      --rot-hell: #FEE2E2;
+      --lila: #7C3AED;
+      --lila-hell: #EDE9FE;
+      --grau: #6B7280;
+      --grau-hell: #F3F4F6;
+      --text: #111827;
+      --rand: #E5E7EB;
+      --weiss: #FFFFFF;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #F9FAFB;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--blau);
+      color: var(--weiss);
+      padding: 1.25rem 1.5rem;
+    }
+
+    header .label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.85;
+      margin-bottom: 0.25rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.1rem, 3.5vw, 1.5rem);
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    .fortschritt-bar {
+      background: rgba(255,255,255,0.25);
+      border-radius: 4px;
+      height: 6px;
+      margin-top: 1rem;
+    }
+
+    .fortschritt-fill {
+      background: var(--weiss);
+      border-radius: 4px;
+      height: 6px;
+      width: 0%;
+      transition: width 0.6s ease;
+    }
+
+    .fortschritt-label {
+      font-size: 0.8rem;
+      opacity: 0.8;
+      margin-top: 0.3rem;
+    }
+
+    main {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .schritt {
+      display: none;
+    }
+
+    .schritt.aktiv {
+      display: block;
+    }
+
+    /* Abschnitte */
+    .theorie-box {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-left: 4px solid var(--blau);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .theorie-box h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--blau);
+      margin-bottom: 0.75rem;
+    }
+
+    .theorie-box p {
+      font-size: 0.95rem;
+      color: #374151;
+    }
+
+    .theorie-box p + p {
+      margin-top: 0.6rem;
+    }
+
+    /* Niveau-Messer */
+    .niveau-container {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .niveau-container h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--grau);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .niveau-balken-wrap {
+      position: relative;
+      height: 36px;
+      background: var(--grau-hell);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .niveau-balken {
+      height: 100%;
+      background: linear-gradient(90deg, #60A5FA, #2563EB);
+      border-radius: 8px;
+      width: 30%;
+      transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+    }
+
+    .niveau-label {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--grau);
+    }
+
+    .niveau-i-marker {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      background: var(--blau);
+      transition: left 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .niveau-info {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .niveau-chip {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+
+    .chip-i { background: var(--blau-hell); color: var(--blau); }
+    .chip-plus { background: var(--gruen-hell); color: #15803D; }
+    .chip-minus { background: var(--grau-hell); color: var(--grau); }
+    .chip-weit { background: var(--rot-hell); color: var(--rot); }
+
+    /* Karten */
+    .karten-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .input-karte {
+      background: var(--weiss);
+      border: 2px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      cursor: pointer;
+      transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+    }
+
+    .input-karte:hover {
+      border-color: var(--blau);
+      box-shadow: 0 2px 8px rgba(37,99,235,0.12);
+      transform: translateY(-2px);
+    }
+
+    .input-karte.ausgewaehlt {
+      border-color: var(--blau);
+      background: var(--blau-hell);
+    }
+
+    .input-karte.richtig {
+      border-color: var(--gruen);
+      background: var(--gruen-hell);
+    }
+
+    .input-karte.falsch {
+      border-color: var(--rot);
+      background: var(--rot-hell);
+    }
+
+    .karte-badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .karte-text {
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #374151;
+      border-left: 3px solid var(--rand);
+      padding-left: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .karte-niveau {
+      font-size: 0.8rem;
+      color: var(--grau);
+    }
+
+    /* Frage-Block */
+    .frage-block {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .frage-block h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+
+    .antwort-option {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.75rem;
+      border: 2px solid var(--rand);
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .antwort-option:hover {
+      border-color: var(--blau);
+      background: var(--blau-hell);
+    }
+
+    .antwort-option.ausgewaehlt {
+      border-color: var(--blau);
+      background: var(--blau-hell);
+    }
+
+    .antwort-option.richtig {
+      border-color: var(--gruen);
+      background: var(--gruen-hell);
+    }
+
+    .antwort-option.falsch {
+      border-color: var(--rot);
+      background: var(--rot-hell);
+    }
+
+    .antwort-option input[type="radio"] {
+      margin-top: 3px;
+      flex-shrink: 0;
+    }
+
+    .antwort-option label {
+      font-size: 0.95rem;
+      cursor: pointer;
+    }
+
+    /* Feedback-Box */
+    .feedback-box {
+      display: none;
+      border-radius: var(--radius);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .feedback-box.sichtbar {
+      display: block;
+    }
+
+    .feedback-box.richtig-fb {
+      background: var(--gruen-hell);
+      border: 1px solid var(--gruen);
+    }
+
+    .feedback-box.falsch-fb {
+      background: var(--orange-hell);
+      border: 1px solid var(--orange);
+    }
+
+    .feedback-box h4 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .feedback-box.richtig-fb h4 { color: var(--gruen); }
+    .feedback-box.falsch-fb h4 { color: var(--orange); }
+
+    .feedback-box p { font-size: 0.9rem; }
+
+    .konzept-tag {
+      display: inline-block;
+      background: var(--blau);
+      color: var(--weiss);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-block;
+      padding: 0.65rem 1.4rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: background 0.15s, transform 0.1s;
+    }
+
+    .btn:active { transform: scale(0.97); }
+
+    .btn-primary {
+      background: var(--blau);
+      color: var(--weiss);
+    }
+
+    .btn-primary:hover { background: #1D4ED8; }
+
+    .btn-primary:disabled {
+      background: #93C5FD;
+      cursor: not-allowed;
+    }
+
+    .btn-weiter {
+      background: var(--gruen);
+      color: var(--weiss);
+    }
+
+    .btn-weiter:hover { background: #15803D; }
+
+    .btn-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    /* Filter-Diagramm */
+    .filter-diagram {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .filter-diagram h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--grau);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.25rem;
+    }
+
+    .flow-row {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      justify-content: center;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+
+    .flow-node {
+      background: var(--blau-hell);
+      border: 2px solid var(--blau);
+      border-radius: 8px;
+      padding: 0.6rem 0.8rem;
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--blau);
+      min-width: 80px;
+      flex-shrink: 0;
+    }
+
+    .flow-node.lad-node {
+      background: var(--lila-hell);
+      border-color: var(--lila);
+      color: var(--lila);
+    }
+
+    .flow-node.kompetenz-node {
+      background: var(--gruen-hell);
+      border-color: var(--gruen);
+      color: #15803D;
+    }
+
+    .flow-pfeil {
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+
+    .pfeil-linie {
+      height: 4px;
+      background: var(--blau);
+      transition: width 0.6s ease, background 0.6s ease;
+      width: 40px;
+    }
+
+    .pfeil-spitze {
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-bottom: 6px solid transparent;
+      border-left: 8px solid var(--blau);
+      transition: border-left-color 0.6s ease;
+    }
+
+    .filter-node {
+      background: #FDE68A;
+      border: 2px solid #F59E0B;
+      border-radius: 8px;
+      padding: 0.5rem 0.6rem;
+      text-align: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #92400E;
+      min-width: 70px;
+      flex-shrink: 0;
+      transition: background 0.6s, border-color 0.6s, padding 0.6s, min-height 0.6s;
+    }
+
+    .schieberegler-gruppe {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      .schieberegler-gruppe {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .schieberegler-item label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .schieberegler-item input[type="range"] {
+      width: 100%;
+      accent-color: var(--blau);
+    }
+
+    .schieberegler-wert {
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-top: 0.2rem;
+    }
+
+    .filter-status {
+      margin-top: 1rem;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+      transition: background 0.4s, color 0.4s;
+    }
+
+    /* Abschlusskarte */
+    .abschluss-card {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .abschluss-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .abschluss-card h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .abschluss-card p {
+      font-size: 0.95rem;
+      color: #374151;
+      margin-bottom: 1rem;
+    }
+
+    /* Zusammenfassung */
+    .zusammenfassung {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .zusammenfassung h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .konzept-liste {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .konzept-liste li {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+    }
+
+    .konzept-liste .k-label {
+      font-weight: 700;
+      min-width: 90px;
+      flex-shrink: 0;
+    }
+
+    .interne-links {
+      background: var(--grau-hell);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+    }
+
+    .interne-links h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--grau);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .interne-links ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .interne-links a {
+      color: var(--blau);
+      font-size: 0.9rem;
+      text-decoration: none;
+    }
+
+    .interne-links a:hover { text-decoration: underline; }
+
+    /* Schritt-Indikator */
+    .schritt-indikator {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .schritt-dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .schritt-dot.aktiv-dot {
+      background: var(--blau);
+      color: var(--weiss);
+    }
+
+    .schritt-dot.fertig-dot {
+      background: var(--gruen);
+      color: var(--weiss);
+    }
+
+    .schritt-dot.warte-dot {
+      background: var(--grau-hell);
+      color: var(--grau);
+      border: 2px solid var(--rand);
+    }
+
+    .schritt-verbinder {
+      flex: 1;
+      height: 2px;
+      background: var(--rand);
+    }
+
+    /* Canvas */
+    #niveau-canvas {
+      width: 100%;
+      max-width: 660px;
+      display: block;
+    }
+
+    /* Utility */
+    .text-grau { color: var(--grau); }
+    .text-sm { font-size: 0.85rem; }
+    .mt-1 { margin-top: 1rem; }
+    .mb-1 { margin-bottom: 1rem; }
+    .versteckt { display: none !important; }
+
+    @media (max-width: 375px) {
+      header { padding: 1rem; }
+      main { padding: 1rem 0.75rem 2.5rem; }
+      .karten-grid { grid-template-columns: 1fr; }
+      .flow-pfeil .pfeil-linie { width: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="label">Linguistik / Spracherwerb · Oberstufe</div>
+  <h1>Krashen's Input-Hypothese</h1>
+  <p>Wie findet echter Zweitspracherwerb statt? Entscheide selbst – dann sieh das Modell.</p>
+  <div class="fortschritt-bar">
+    <div class="fortschritt-fill" id="fortschritt-fill"></div>
+  </div>
+  <div class="fortschritt-label" id="fortschritt-label">Schritt 1 von 2</div>
+</header>
+
+<main>
+
+  <!-- ===== SCHRITT 1: Input-Hypothese ===== -->
+  <section class="schritt aktiv" id="schritt-1">
+
+    <div class="schritt-indikator" aria-label="Fortschritt">
+      <div class="schritt-dot aktiv-dot" id="dot-1">1</div>
+      <div class="schritt-verbinder"></div>
+      <div class="schritt-dot warte-dot" id="dot-2">2</div>
+      <div class="schritt-verbinder"></div>
+      <div class="schritt-dot warte-dot" id="dot-3">3</div>
+    </div>
+
+    <div class="theorie-box">
+      <h2>Kraschens Input-Hypothese (i+1-Prinzip)</h2>
+      <p>Stephen Krashen (1982) unterscheidet <strong>Spracherwerb</strong> (unbewusst, natürlich) von <strong>Sprachlernen</strong> (bewusst, Regelwissen). Echter Erwerb entsteht nur durch <strong>verständlichen Input auf dem Niveau i+1</strong>:</p>
+      <p><strong>i</strong> = dein aktuelles Sprachniveau &nbsp;|&nbsp; <strong>i+1</strong> = leicht darüber hinaus &nbsp;|&nbsp; <strong>i−1</strong> = zu leicht &nbsp;|&nbsp; <strong>i+2</strong> = unverständlich schwer</p>
+    </div>
+
+    <!-- Niveau-Anzeige -->
+    <div class="niveau-container">
+      <h3>Lenas aktuelles Englisch-Niveau (A2)</h3>
+      <div class="niveau-balken-wrap">
+        <div class="niveau-balken" id="niveau-balken"></div>
+        <span class="niveau-label" id="niveau-label">A2</span>
+      </div>
+      <div class="niveau-info">
+        <span class="niveau-chip chip-i">i = A2</span>
+        <span class="niveau-chip chip-plus">i+1 = leicht über A2</span>
+        <span class="niveau-chip chip-weit">i+2 = weit darüber</span>
+      </div>
+    </div>
+
+    <!-- Karten -->
+    <div class="frage-block">
+      <h3>Welcher Text führt bei Lena (Niveau A2) zum stärksten Spracherwerb?</h3>
+    </div>
+
+    <div class="karten-grid" id="karten-grid">
+
+      <div class="input-karte" id="karte-A" tabindex="0" role="button" aria-pressed="false" onclick="waehleKarte('A')">
+        <span class="karte-badge" style="color:#6B7280;">Text A</span>
+        <p class="karte-text">"I go to school. I eat breakfast. I like cats."</p>
+        <p class="karte-niveau text-sm text-grau">Kurze Hauptsätze, einfachste Grammatik</p>
+      </div>
+
+      <div class="input-karte" id="karte-B" tabindex="0" role="button" aria-pressed="false" onclick="waehleKarte('B')">
+        <span class="karte-badge" style="color:#6B7280;">Text B</span>
+        <p class="karte-text">"Lena <em>commutes</em> to school by bike every morning because she enjoys the fresh air."</p>
+        <p class="karte-niveau text-sm text-grau">Ein unbekanntes Wort, aus Kontext erschließbar</p>
+      </div>
+
+      <div class="input-karte" id="karte-C" tabindex="0" role="button" aria-pressed="false" onclick="waehleKarte('C')">
+        <span class="karte-badge" style="color:#6B7280;">Text C</span>
+        <p class="karte-text">"The epistemological ramifications of pedagogical interventions in multilingual acquisition contexts remain contentious."</p>
+        <p class="karte-niveau text-sm text-grau">Akademischer Fachtext, viele unbekannte Begriffe</p>
+      </div>
+
+    </div>
+
+    <!-- Vorhersage-Buttons -->
+    <div class="frage-block" id="vorhersage-block-1">
+      <h3>Warum führt dieser Text am stärksten zu Spracherwerb?</h3>
+
+      <div class="antwort-option" onclick="waehleAntwort1('a')">
+        <input type="radio" name="antwort1" id="a1a" value="a">
+        <label for="a1a">Weil er am einfachsten ist und Lena keine Fehler macht.</label>
+      </div>
+      <div class="antwort-option" onclick="waehleAntwort1('b')">
+        <input type="radio" name="antwort1" id="a1b" value="b">
+        <label for="a1b">Weil er gerade anspruchsvoll genug ist, um neues Sprachmaterial durch Kontext zu erschließen.</label>
+      </div>
+      <div class="antwort-option" onclick="waehleAntwort1('c')">
+        <input type="radio" name="antwort1" id="a1c" value="c">
+        <label for="a1c">Weil schwierigere Texte immer zu mehr Lernen führen.</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-primary" id="btn-pruefen-1" onclick="pruefenSchritt1()" disabled>Auswahl prüfen</button>
+      </div>
+    </div>
+
+    <!-- Feedback Schritt 1 -->
+    <div class="feedback-box" id="feedback-1">
+      <span class="konzept-tag" id="konzept-tag-1"></span>
+      <h4 id="feedback-1-titel"></h4>
+      <p id="feedback-1-text"></p>
+      <div id="niveau-aenderung" class="mt-1 text-sm" style="color:var(--gruen); font-weight:600;"></div>
+      <div class="btn-row">
+        <button class="btn btn-weiter" onclick="geheZuSchritt2()">Weiter zu Schritt 2: Affektiver Filter</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== SCHRITT 2: Affektiver Filter ===== -->
+  <section class="schritt" id="schritt-2">
+
+    <div class="schritt-indikator" aria-label="Fortschritt">
+      <div class="schritt-dot fertig-dot" id="dot-1b">&#10003;</div>
+      <div class="schritt-verbinder"></div>
+      <div class="schritt-dot aktiv-dot" id="dot-2b">2</div>
+      <div class="schritt-verbinder"></div>
+      <div class="schritt-dot warte-dot" id="dot-3b">3</div>
+    </div>
+
+    <div class="theorie-box" style="border-left-color: var(--lila);">
+      <h2 style="color: var(--lila);">Affektiver-Filter-Hypothese (Krashen 1982)</h2>
+      <p>Selbst optimaler i+1-Input erreicht das <strong>Language Acquisition Device (LAD)</strong> nicht, wenn emotionale Faktoren einen inneren „Filter" errichten. Ein <strong>hoher affektiver Filter</strong> (Prüfungsangst, geringe Motivation, niedriges Selbstvertrauen) blockiert den Erwerb. Ein <strong>niedriger Filter</strong> lässt Input durch.</p>
+    </div>
+
+    <!-- Interaktives Diagramm -->
+    <div class="filter-diagram">
+      <h3>Modell – Passe die Filter-Stärke an</h3>
+
+      <div class="schieberegler-gruppe">
+        <div class="schieberegler-item">
+          <label for="schieb-angst">Angst-Level</label>
+          <input type="range" id="schieb-angst" min="0" max="100" value="20" oninput="aktualisiereFilter()">
+          <div class="schieberegler-wert" id="wert-angst">20 % – entspannt</div>
+        </div>
+        <div class="schieberegler-item">
+          <label for="schieb-motivation">Motivations-Level</label>
+          <input type="range" id="schieb-motivation" min="0" max="100" value="70" oninput="aktualisiereFilter()">
+          <div class="schieberegler-wert" id="wert-motivation">70 % – motiviert</div>
+        </div>
+      </div>
+
+      <!-- Fluss-Diagramm -->
+      <div class="flow-row" id="flow-row">
+        <div class="flow-node">Sprach&shy;licher Input</div>
+        <div class="flow-pfeil">
+          <div class="pfeil-linie" id="pfeil-1" style="width:32px;"></div>
+          <div class="pfeil-spitze"></div>
+        </div>
+        <div class="filter-node" id="filter-node">Affek&shy;tiver Filter</div>
+        <div class="flow-pfeil">
+          <div class="pfeil-linie" id="pfeil-2" style="width:32px; background:#7C3AED;"></div>
+          <div class="pfeil-spitze" id="pfeil-2-spitze" style="border-left-color:#7C3AED;"></div>
+        </div>
+        <div class="flow-node lad-node">LAD</div>
+        <div class="flow-pfeil">
+          <div class="pfeil-linie" id="pfeil-3" style="width:32px; background:#16A34A;"></div>
+          <div class="pfeil-spitze" id="pfeil-3-spitze" style="border-left-color:#16A34A;"></div>
+        </div>
+        <div class="flow-node kompetenz-node">Sprach&shy;kompetenz</div>
+      </div>
+
+      <div class="filter-status" id="filter-status"></div>
+    </div>
+
+    <!-- Vorhersage-Aufgabe 2 -->
+    <div class="frage-block">
+      <h3>Szenario: Lena macht ihre mündliche Englisch-Prüfung. Sie ist sehr aufgeregt (Angst: 85), ihr Interesse ist gering (Motivation: 15). Was passiert laut Krashen?</h3>
+
+      <div class="antwort-option" onclick="waehleAntwort2('a')">
+        <input type="radio" name="antwort2" id="a2a" value="a">
+        <label for="a2a">Sie nimmt alles optimal auf – Prüfungsdruck fördert das Lernen.</label>
+      </div>
+      <div class="antwort-option" onclick="waehleAntwort2('b')">
+        <input type="radio" name="antwort2" id="a2b" value="b">
+        <label for="a2b">Der affektive Filter ist hoch – weniger Input erreicht ihr LAD, der Erwerb ist blockiert.</label>
+      </div>
+      <div class="antwort-option" onclick="waehleAntwort2('c')">
+        <input type="radio" name="antwort2" id="a2c" value="c">
+        <label for="a2c">Emotionen spielen keine Rolle; nur die Qualität des Inputs zählt.</label>
+      </div>
+
+      <div class="btn-row">
+        <button class="btn btn-primary" id="btn-pruefen-2" onclick="pruefenSchritt2()" disabled>Auswahl prüfen</button>
+      </div>
+    </div>
+
+    <!-- Feedback Schritt 2 -->
+    <div class="feedback-box" id="feedback-2">
+      <span class="konzept-tag" id="konzept-tag-2"></span>
+      <h4 id="feedback-2-titel"></h4>
+      <p id="feedback-2-text"></p>
+      <div class="btn-row">
+        <button class="btn btn-weiter" onclick="geheZuAbschluss()">Zusammenfassung ansehen</button>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ===== ABSCHLUSS ===== -->
+  <section class="schritt" id="schritt-3">
+
+    <div class="schritt-indikator" aria-label="Fortschritt">
+      <div class="schritt-dot fertig-dot">&#10003;</div>
+      <div class="schritt-verbinder"></div>
+      <div class="schritt-dot fertig-dot">&#10003;</div>
+      <div class="schritt-verbinder"></div>
+      <div class="schritt-dot aktiv-dot">3</div>
+    </div>
+
+    <div class="abschluss-card">
+      <div class="abschluss-icon">&#127891;</div>
+      <h2>Simulation abgeschlossen</h2>
+      <p>Du hast beide Kernkonzepte von Kraschens Monitor-Modell aktiv erarbeitet.</p>
+    </div>
+
+    <div class="zusammenfassung">
+      <h3>Die wichtigsten Konzepte</h3>
+      <ul class="konzept-liste">
+        <li>
+          <span class="k-label">i+1-Prinzip:</span>
+          <span>Optimaler Spracherwerb entsteht bei verständlichem Input, der leicht über dem aktuellen Niveau liegt. Zu leichter oder zu schwerer Input führt zu keinem Erwerb.</span>
+        </li>
+        <li>
+          <span class="k-label">Erwerb vs. Lernen:</span>
+          <span>Unbewusster Erwerb durch echten Input führt zu Sprachkompetenz; bewusstes Regellernen dient nur als Monitor/Editor.</span>
+        </li>
+        <li>
+          <span class="k-label">Affektiver Filter:</span>
+          <span>Angst, Demotivation und niedriges Selbstvertrauen bilden einen inneren Filter, der selbst optimalen i+1-Input blockiert, bevor er das LAD erreicht.</span>
+        </li>
+        <li>
+          <span class="k-label">LAD:</span>
+          <span>Language Acquisition Device (nach Chomsky): angeborene Spracherwerbsfähigkeit, die durch verständlichen Input aktiviert wird.</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="interne-links">
+      <h3>Weiterlesen</h3>
+      <ul>
+        <li><a href="/lernmaterialien/lernsimulationen/spracherwerbstheorien-simulation.html">Spracherwerbstheorien: Behaviorismus, Nativismus, Interaktionismus</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/kritische-periode-spracherwerb-simulation.html">Kritische Periode im Spracherwerb</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/vokabeln-vergessenskurve-simulation.html">Vokabeln und die Vergessenskurve</a></li>
+      </ul>
+    </div>
+
+  </section>
+
+</main>
+
+<script>
+  // Zustand
+  var gewaehltKarte = null;
+  var gewaehltAntwort1 = null;
+  var gewaehltAntwort2 = null;
+
+  // --- Schritt 1: Karte wählen ---
+  function waehleKarte(karte) {
+    // Nur wenn noch kein Feedback sichtbar
+    if (document.getElementById('feedback-1').classList.contains('sichtbar')) return;
+
+    gewaehltKarte = karte;
+    ['A','B','C'].forEach(function(k) {
+      var el = document.getElementById('karte-' + k);
+      el.classList.toggle('ausgewaehlt', k === karte);
+      el.setAttribute('aria-pressed', k === karte ? 'true' : 'false');
+    });
+    aktualisierePruefButton();
+  }
+
+  function waehleAntwort1(wert) {
+    if (document.getElementById('feedback-1').classList.contains('sichtbar')) return;
+    gewaehltAntwort1 = wert;
+    ['a','b','c'].forEach(function(w) {
+      var option = document.querySelectorAll('#schritt-1 .antwort-option')[['a','b','c'].indexOf(w)];
+      option.classList.toggle('ausgewaehlt', w === wert);
+    });
+    document.getElementById('a1' + wert).checked = true;
+    aktualisierePruefButton();
+  }
+
+  function aktualisierePruefButton() {
+    document.getElementById('btn-pruefen-1').disabled = !(gewaehltKarte && gewaehltAntwort1);
+  }
+
+  function pruefenSchritt1() {
+    var karte = gewaehltKarte;
+    var antwort = gewaehltAntwort1;
+
+    // Richtig: Karte B + Antwort b
+    var richtig = (karte === 'B' && antwort === 'b');
+
+    // Karten färben
+    document.getElementById('karte-A').classList.remove('ausgewaehlt');
+    document.getElementById('karte-B').classList.remove('ausgewaehlt');
+    document.getElementById('karte-C').classList.remove('ausgewaehlt');
+    document.getElementById('karte-B').classList.add('richtig');
+    if (karte !== 'B') {
+      document.getElementById('karte-' + karte).classList.add('falsch');
+    }
+
+    // Antwort-Optionen färben
+    var optionen = document.querySelectorAll('#schritt-1 .antwort-option');
+    optionen.forEach(function(opt, idx) {
+      opt.classList.remove('ausgewaehlt');
+      if (idx === 1) opt.classList.add('richtig');
+      else if (['a','b','c'][idx] === antwort && antwort !== 'b') opt.classList.add('falsch');
+    });
+
+    // Feedback anzeigen
+    var fb = document.getElementById('feedback-1');
+    fb.classList.add('sichtbar');
+    document.getElementById('konzept-tag-1').textContent = 'Konzept: Input-Hypothese (i+1)';
+
+    if (richtig) {
+      fb.classList.add('richtig-fb');
+      document.getElementById('feedback-1-titel').textContent = 'Richtig! Das ist Kraschens i+1-Prinzip.';
+      document.getElementById('feedback-1-text').textContent =
+        'Text B liegt genau auf i+1: Lena kennt fast alle Wörter, aber „commutes" ist neu – und aus dem Kontext erschließbar. Genau diese Lücke zwischen Bekanntem und Neuem aktiviert Spracherwerb (acquisition), nicht bloßes Lernen von Regeln.';
+      document.getElementById('niveau-aenderung').textContent = 'Lenas Niveau steigt leicht an.';
+      animiereNiveauBalken(38);
+    } else if (karte === 'A') {
+      fb.classList.add('falsch-fb');
+      document.getElementById('feedback-1-titel').textContent = 'Nicht ganz – Text A ist zu leicht (i−1).';
+      document.getElementById('feedback-1-text').textContent =
+        'Text A entspricht Lenas aktuellem Niveau oder liegt sogar darunter. Es gibt nichts Neues zu erschließen, kein Erwerb findet statt. Gemäß Krashen: i−1 bedeutet kein Fortschritt.';
+    } else {
+      fb.classList.add('falsch-fb');
+      document.getElementById('feedback-1-titel').textContent = 'Nicht ganz – Text C ist zu schwer (i+2 und mehr).';
+      document.getElementById('feedback-1-text').textContent =
+        'Text C liegt weit über Lenas Niveau. Sie kann die vielen unbekannten Wörter nicht aus dem Kontext erschließen – der Input ist nicht verständlich. Krashen: Ohne Verständlichkeit kein Erwerb, egal wie schwierig der Text ist.';
+    }
+
+    // Fortschritt
+    document.getElementById('fortschritt-fill').style.width = '50%';
+    document.getElementById('btn-pruefen-1').disabled = true;
+  }
+
+  function animiereNiveauBalken(ziel) {
+    var balken = document.getElementById('niveau-balken');
+    var label = document.getElementById('niveau-label');
+    var start = 30;
+    var dauer = 800;
+    var anfang = null;
+
+    function step(ts) {
+      if (!anfang) anfang = ts;
+      var t = Math.min((ts - anfang) / dauer, 1);
+      var wert = start + (ziel - start) * easeOut(t);
+      balken.style.width = wert + '%';
+      if (t < 1) requestAnimationFrame(step);
+      else label.textContent = 'A2+';
+    }
+    requestAnimationFrame(step);
+  }
+
+  function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+
+  // --- Schritt 2 ---
+  function waehleAntwort2(wert) {
+    if (document.getElementById('feedback-2').classList.contains('sichtbar')) return;
+    gewaehltAntwort2 = wert;
+    var optionen = document.querySelectorAll('#schritt-2 .antwort-option');
+    optionen.forEach(function(opt, idx) {
+      opt.classList.remove('ausgewaehlt');
+    });
+    optionen[['a','b','c'].indexOf(wert)].classList.add('ausgewaehlt');
+    document.getElementById('a2' + wert).checked = true;
+    document.getElementById('btn-pruefen-2').disabled = false;
+  }
+
+  function pruefenSchritt2() {
+    var antwort = gewaehltAntwort2;
+    var richtig = (antwort === 'b');
+
+    var optionen = document.querySelectorAll('#schritt-2 .antwort-option');
+    optionen.forEach(function(opt, idx) {
+      opt.classList.remove('ausgewaehlt');
+      if (idx === 1) opt.classList.add('richtig');
+      else if (['a','b','c'][idx] === antwort && !richtig) opt.classList.add('falsch');
+    });
+
+    // Schieberegler auf Prüfungs-Szenario setzen
+    document.getElementById('schieb-angst').value = 85;
+    document.getElementById('schieb-motivation').value = 15;
+    aktualisiereFilter();
+
+    var fb = document.getElementById('feedback-2');
+    fb.classList.add('sichtbar');
+    document.getElementById('konzept-tag-2').textContent = 'Konzept: Affektiver-Filter-Hypothese';
+
+    if (richtig) {
+      fb.classList.add('richtig-fb');
+      document.getElementById('feedback-2-titel').textContent = 'Richtig! Hohe Angst = hoher affektiver Filter.';
+      document.getElementById('feedback-2-text').textContent =
+        'Laut Kraschens Affektiver-Filter-Hypothese blockiert Prüfungsangst den sprachlichen Input. Selbst wenn der Input das optimale i+1-Niveau hätte, würde er das Language Acquisition Device (LAD) kaum erreichen. Deshalb sind entspannte, angstfreie Lernumgebungen für den Spracherwerb so wichtig.';
+    } else if (antwort === 'a') {
+      fb.classList.add('falsch-fb');
+      document.getElementById('feedback-2-titel').textContent = 'Nicht ganz – „Druck fördert Lernen" widerspricht Krashen.';
+      document.getElementById('feedback-2-text').textContent =
+        'Diese Intuition klingt vertraut, widerspricht aber Kraschens Modell. Stress und Prüfungsangst erhöhen den affektiven Filter und blockieren Spracherwerb. Bewusstes Lernen (z.B. Regelwissen) mag unter Druck abrufbar sein, echter Erwerb jedoch nicht.';
+    } else {
+      fb.classList.add('falsch-fb');
+      document.getElementById('feedback-2-titel').textContent = 'Nicht ganz – Emotionen spielen laut Krashen eine entscheidende Rolle.';
+      document.getElementById('feedback-2-text').textContent =
+        'Neben der Inputqualität (i+1) braucht es laut Krashen auch einen niedrigen affektiven Filter. Angst, Demotivation und geringes Selbstvertrauen wirken wie eine Mauer zwischen Input und LAD – selbst der beste Text hilft dann nicht.';
+    }
+
+    document.getElementById('fortschritt-fill').style.width = '85%';
+    document.getElementById('btn-pruefen-2').disabled = true;
+  }
+
+  // --- Filter-Diagramm ---
+  function aktualisiereFilter() {
+    var angst = parseInt(document.getElementById('schieb-angst').value);
+    var motivation = parseInt(document.getElementById('schieb-motivation').value);
+
+    // Labels
+    document.getElementById('wert-angst').textContent = angst + ' % – ' +
+      (angst < 30 ? 'entspannt' : angst < 60 ? 'leicht nervös' : angst < 80 ? 'angespannt' : 'stark verängstigt');
+    document.getElementById('wert-motivation').textContent = motivation + ' % – ' +
+      (motivation < 30 ? 'demotiviert' : motivation < 60 ? 'mäßig motiviert' : motivation < 80 ? 'motiviert' : 'hochmotiviert');
+
+    // Filter-Stärke: 0–100
+    var filterStaerke = Math.min(100, Math.max(0, angst - motivation + 50));
+
+    // Filter-Node visuell anpassen
+    var filterNode = document.getElementById('filter-node');
+    var pfeil2 = document.getElementById('pfeil-2');
+
+    if (filterStaerke < 30) {
+      // Niedriger Filter: grün
+      filterNode.style.background = '#DCFCE7';
+      filterNode.style.borderColor = '#16A34A';
+      filterNode.style.color = '#14532D';
+      filterNode.style.padding = '0.4rem 0.6rem';
+      pfeil2.style.width = '40px';
+      pfeil2.style.opacity = '1';
+    } else if (filterStaerke < 60) {
+      // Mittlerer Filter: gelb/orange
+      filterNode.style.background = '#FDE68A';
+      filterNode.style.borderColor = '#F59E0B';
+      filterNode.style.color = '#78350F';
+      filterNode.style.padding = '0.6rem 0.7rem';
+      pfeil2.style.width = '24px';
+      pfeil2.style.opacity = '0.7';
+    } else {
+      // Hoher Filter: rot
+      filterNode.style.background = '#FEE2E2';
+      filterNode.style.borderColor = '#DC2626';
+      filterNode.style.color = '#7F1D1D';
+      filterNode.style.padding = '0.9rem 0.8rem';
+      pfeil2.style.width = '8px';
+      pfeil2.style.opacity = '0.35';
+    }
+
+    // Status-Text
+    var statusEl = document.getElementById('filter-status');
+    if (filterStaerke < 30) {
+      statusEl.style.background = '#DCFCE7';
+      statusEl.style.color = '#14532D';
+      statusEl.textContent = 'Niedriger affektiver Filter – optimaler Erwerb möglich';
+    } else if (filterStaerke < 60) {
+      statusEl.style.background = '#FEF9C3';
+      statusEl.style.color = '#78350F';
+      statusEl.textContent = 'Mittlerer affektiver Filter – Erwerb eingeschränkt';
+    } else {
+      statusEl.style.background = '#FEE2E2';
+      statusEl.style.color = '#7F1D1D';
+      statusEl.textContent = 'Hoher affektiver Filter – Input wird blockiert, kaum Erwerb';
+    }
+  }
+
+  // --- Navigation ---
+  function geheZuSchritt2() {
+    document.getElementById('schritt-1').classList.remove('aktiv');
+    document.getElementById('schritt-2').classList.add('aktiv');
+    document.getElementById('fortschritt-label').textContent = 'Schritt 2 von 2';
+    document.getElementById('fortschritt-fill').style.width = '55%';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    aktualisiereFilter();
+  }
+
+  function geheZuAbschluss() {
+    document.getElementById('schritt-2').classList.remove('aktiv');
+    document.getElementById('schritt-3').classList.add('aktiv');
+    document.getElementById('fortschritt-fill').style.width = '100%';
+    document.getElementById('fortschritt-label').textContent = 'Abgeschlossen';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  // Init
+  aktualisiereFilter();
+</script>
+
+</body>
+</html>

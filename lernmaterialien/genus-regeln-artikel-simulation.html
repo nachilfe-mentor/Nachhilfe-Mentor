@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Genus-Regeln: der, die oder das am Suffix erkennen | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Übung zu Genus-Regeln: Sage selbst der, die oder das voraus und erkenne am Suffix das richtige Genus – mit Sofort-Feedback und Suffix-Karte.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Genus-Regeln, der die das, Artikel Deutsch, Suffix Genus, deutsche Grammatik, Genus bestimmen">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/genus-regeln-artikel-simulation.html">
+  <meta property="og:title" content="Genus-Regeln: der, die oder das am Suffix erkennen">
+  <meta property="og:description" content="Interaktive Übung zu Genus-Regeln: Sage selbst der, die oder das voraus und erkenne am Suffix das richtige Genus – mit Sofort-Feedback und Suffix-Karte.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/genus-regeln-artikel-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Genus-Regeln: der, die oder das am Suffix erkennen",
+  "description":"Interaktive Übung zu Genus-Regeln: Sage selbst der, die oder das voraus und erkenne am Suffix das richtige Genus – mit Sofort-Feedback und Suffix-Karte.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/genus-regeln-artikel-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    :root {
+      --der:        #2563eb;
+      --der-light:  #dbeafe;
+      --die:        #dc2626;
+      --die-light:  #fee2e2;
+      --das:        #16a34a;
+      --das-light:  #dcfce7;
+      --gray-50:    #f9fafb;
+      --gray-100:   #f3f4f6;
+      --gray-200:   #e5e7eb;
+      --gray-400:   #9ca3af;
+      --gray-600:   #4b5563;
+      --gray-800:   #1f2937;
+      --amber:      #d97706;
+      --amber-light:#fef3c7;
+      --radius:     12px;
+      --shadow:     0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ---- Header ---- */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--gray-800);
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--gray-400);
+    }
+    .breadcrumb a { color: var(--gray-600); text-decoration: none; }
+
+    /* ---- Layout ---- */
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .page-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .page-subtitle {
+      font-size: 0.95rem;
+      color: var(--gray-600);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ---- Progress dots ---- */
+    .progress-dots {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+      align-items: center;
+    }
+    .dot {
+      width: 28px;
+      height: 8px;
+      border-radius: 4px;
+      background: var(--gray-200);
+      transition: background 0.3s;
+    }
+    .dot.active { background: var(--gray-800); }
+    .dot.done   { background: var(--gray-400); }
+    .dot-label {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+      margin-left: 0.25rem;
+    }
+
+    /* ---- Animated Model (Artikel-Boxen) ---- */
+    .model-area {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.25rem 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+      position: relative;
+    }
+    .model-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--gray-400);
+      margin-bottom: 0.75rem;
+    }
+    .artikel-boxes {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .artikel-box {
+      flex: 1;
+      max-width: 130px;
+      padding: 0.75rem 0.5rem;
+      border-radius: var(--radius);
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      border: 2px solid transparent;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s, background 0.3s;
+      position: relative;
+    }
+    .artikel-box.der { background: var(--der-light); color: var(--der); border-color: var(--der-light); }
+    .artikel-box.die { background: var(--die-light); color: var(--die); border-color: var(--die-light); }
+    .artikel-box.das { background: var(--das-light); color: var(--das); border-color: var(--das-light); }
+    .artikel-box.highlight {
+      border-color: currentColor;
+      transform: scale(1.08);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    }
+    .artikel-box .art-sub {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 400;
+      opacity: 0.7;
+      margin-top: 0.15rem;
+    }
+
+    /* Animated pointer */
+    .model-pointer {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--gray-800);
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transition: left 0.6s cubic-bezier(.4,0,.2,1), top 0.6s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+      pointer-events: none;
+    }
+    .model-pointer.visible { opacity: 1; }
+
+    /* Word display */
+    .word-display {
+      text-align: center;
+      padding: 0.5rem 0 1.75rem;
+    }
+    .word-display .word-text {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    .word-display .suffix {
+      display: inline-block;
+      padding: 0.05em 0.15em;
+      border-radius: 4px;
+      background: var(--amber-light);
+      color: var(--amber);
+      position: relative;
+    }
+    .word-display .suffix::after {
+      content: attr(data-rule);
+      position: absolute;
+      bottom: -1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.7rem;
+      white-space: nowrap;
+      color: var(--amber);
+      font-weight: 600;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .word-display .suffix.show-rule::after { opacity: 1; }
+
+    .word-hint {
+      font-size: 0.82rem;
+      color: var(--gray-400);
+      margin-top: 1.25rem;
+      font-style: italic;
+    }
+
+    /* ---- Task card ---- */
+    .task-card {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.5rem 1.25rem;
+      margin-bottom: 1.25rem;
+      box-shadow: var(--shadow);
+    }
+    .stage-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: white;
+      background: var(--gray-800);
+      border-radius: 6px;
+      padding: 0.2em 0.6em;
+      margin-bottom: 0.75rem;
+    }
+    .task-question {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      line-height: 1.5;
+    }
+
+    /* Artikel-Buttons */
+    .artikel-btns {
+      display: flex;
+      gap: 0.75rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-artikel {
+      flex: 1;
+      min-width: 80px;
+      max-width: 120px;
+      padding: 0.75rem 0.5rem;
+      border: 2px solid transparent;
+      border-radius: var(--radius);
+      font-size: 1.2rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: transform 0.15s, box-shadow 0.15s, background 0.2s, border-color 0.2s;
+    }
+    .btn-artikel:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
+    .btn-artikel:disabled { cursor: default; opacity: 0.7; }
+    .btn-artikel.der { background: var(--der-light); color: var(--der); border-color: var(--der-light); }
+    .btn-artikel.die { background: var(--die-light); color: var(--die); border-color: var(--die-light); }
+    .btn-artikel.das { background: var(--das-light); color: var(--das); border-color: var(--das-light); }
+    .btn-artikel.der:hover:not(:disabled) { border-color: var(--der); }
+    .btn-artikel.die:hover:not(:disabled) { border-color: var(--die); }
+    .btn-artikel.das:hover:not(:disabled) { border-color: var(--das); }
+    .btn-artikel.correct-answer { border-color: currentColor !important; box-shadow: 0 0 0 3px rgba(0,0,0,0.18); }
+    .btn-artikel.wrong-answer  { opacity: 0.35; }
+    .btn-artikel.selected-correct { border-color: currentColor; box-shadow: 0 0 0 3px rgba(22,163,74,0.35); }
+
+    /* ---- Feedback ---- */
+    .feedback-box {
+      margin-top: 1.25rem;
+      padding: 1rem 1.1rem;
+      border-radius: var(--radius);
+      font-size: 0.92rem;
+      line-height: 1.55;
+      display: none;
+    }
+    .feedback-box.correct {
+      background: var(--das-light);
+      border-left: 4px solid var(--das);
+      color: #14532d;
+      display: block;
+    }
+    .feedback-box.incorrect {
+      background: var(--die-light);
+      border-left: 4px solid var(--die);
+      color: #7f1d1d;
+      display: block;
+    }
+    .feedback-box .fb-title {
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+    .feedback-rule {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-top: 0.5rem;
+      padding: 0.2em 0.6em;
+      border-radius: 6px;
+      background: rgba(0,0,0,0.07);
+    }
+
+    /* ---- Next button ---- */
+    .btn-next {
+      display: none;
+      margin-top: 1.25rem;
+      width: 100%;
+      padding: 0.85rem;
+      background: var(--gray-800);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn-next:hover { background: #111827; transform: translateY(-1px); }
+    .btn-next.visible { display: block; }
+
+    /* ---- Round counter ---- */
+    .round-info {
+      font-size: 0.82rem;
+      color: var(--gray-400);
+      text-align: right;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ---- Final screen ---- */
+    .final-screen {
+      display: none;
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .final-screen.visible { display: block; }
+    .final-score {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.4rem;
+    }
+    .final-msg {
+      font-size: 1rem;
+      color: var(--gray-600);
+      margin-bottom: 1.75rem;
+    }
+    .final-motto {
+      font-size: 0.95rem;
+      background: var(--amber-light);
+      color: #78350f;
+      border-radius: var(--radius);
+      padding: 0.85rem 1rem;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+
+    /* Suffix reference table */
+    .suffix-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .suffix-table th {
+      padding: 0.45rem 0.6rem;
+      font-weight: 700;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .suffix-table td { padding: 0.4rem 0.6rem; border-bottom: 1px solid var(--gray-100); }
+    .suffix-table tr:last-child td { border-bottom: none; }
+    .th-der { background: var(--der-light); color: var(--der); }
+    .th-die { background: var(--die-light); color: var(--die); }
+    .th-das { background: var(--das-light); color: var(--das); }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.1em 0.5em;
+      border-radius: 5px;
+      margin-right: 0.25rem;
+    }
+    .tag.der { background: var(--der-light); color: var(--der); }
+    .tag.die { background: var(--die-light); color: var(--die); }
+    .tag.das { background: var(--das-light); color: var(--das); }
+
+    .btn-restart {
+      padding: 0.75rem 2rem;
+      background: var(--gray-800);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .btn-restart:hover { background: #111827; }
+
+    /* ---- Internal links ---- */
+    .internal-links {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: var(--gray-600);
+    }
+    .internal-links a { color: var(--der); text-decoration: underline; margin: 0 0.25rem; }
+
+    @media (max-width: 480px) {
+      .artikel-boxes { gap: 0.5rem; }
+      .artikel-box { padding: 0.6rem 0.3rem; font-size: 1.2rem; }
+      .word-display .word-text { font-size: 1.3rem; }
+      .btn-artikel { font-size: 1rem; padding: 0.65rem 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header class="site-header">
+  <a href="/" class="site-logo">Nachhilfe Mentor</a>
+  <span class="breadcrumb">
+    <a href="/lernmaterialien/">Lernmaterialien</a> › Genus-Regeln
+  </span>
+</header>
+
+<main class="container">
+
+  <h1 class="page-title">Genus-Regeln: Artikel vorhersagen</h1>
+  <p class="page-subtitle">Lerne, wie du an der Endung eines Wortes erkennst, ob es <em>der</em>, <em>die</em> oder <em>das</em> heißt.</p>
+
+  <!-- Fortschritts-Dots -->
+  <div class="progress-dots" id="progressDots">
+    <div class="dot active" id="dot1"></div>
+    <div class="dot" id="dot2"></div>
+    <span class="dot-label" id="stageLabel">Stufe 1 von 2</span>
+  </div>
+
+  <!-- Animiertes Modell -->
+  <div class="model-area" id="modelArea">
+    <div class="model-label">Artikel-Modell</div>
+    <div class="artikel-boxes">
+      <div class="artikel-box der" id="boxDer">
+        der
+        <span class="art-sub">maskulin</span>
+      </div>
+      <div class="artikel-box die" id="boxDie">
+        die
+        <span class="art-sub">feminin</span>
+      </div>
+      <div class="artikel-box das" id="boxDas">
+        das
+        <span class="art-sub">neutral</span>
+      </div>
+    </div>
+    <div class="model-pointer" id="modelPointer"></div>
+    <div class="word-display" id="wordDisplay">
+      <!-- wird per JS befüllt -->
+    </div>
+  </div>
+
+  <!-- Runden-Info -->
+  <div class="round-info" id="roundInfo">Frage 1 von 8</div>
+
+  <!-- Aufgaben-Karte -->
+  <div class="task-card" id="taskCard">
+    <span class="stage-label" id="stageBadge">Stufe 1 – Suffix erkennen</span>
+    <p class="task-question" id="taskQuestion">Welchen Artikel hat dieses Wort? Schau auf die markierte Endung.</p>
+    <div class="artikel-btns">
+      <button class="btn-artikel der" id="btnDer" onclick="checkAnswer('der')">der</button>
+      <button class="btn-artikel die" id="btnDie" onclick="checkAnswer('die')">die</button>
+      <button class="btn-artikel das" id="btnDas" onclick="checkAnswer('das')">das</button>
+    </div>
+    <div class="feedback-box" id="feedbackBox">
+      <div class="fb-title" id="fbTitle"></div>
+      <div id="fbText"></div>
+      <div class="feedback-rule" id="fbRule"></div>
+    </div>
+    <button class="btn-next" id="btnNext" onclick="nextRound()">Weiter ›</button>
+  </div>
+
+  <!-- Final-Screen -->
+  <div class="final-screen" id="finalScreen">
+    <div class="final-score" id="finalScore"></div>
+    <div class="final-msg" id="finalMsg"></div>
+    <div class="final-motto">
+      Genus ist nicht willkürlich – Suffixe verraten den Artikel.
+    </div>
+    <h2 style="font-size:1rem; font-weight:700; margin-bottom:1rem; text-align:left;">Deine Suffix-Karte</h2>
+    <table class="suffix-table">
+      <thead>
+        <tr>
+          <th class="th-der">der (maskulin)</th>
+          <th class="th-die">die (feminin)</th>
+          <th class="th-das">das (neutral)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tag der">-ling</span> Frühling</td>
+          <td><span class="tag die">-ung</span> Bildung</td>
+          <td><span class="tag das">-chen</span> Mädchen</td>
+        </tr>
+        <tr>
+          <td><span class="tag der">-ismus</span> Idealismus</td>
+          <td><span class="tag die">-heit</span> Freiheit</td>
+          <td><span class="tag das">-lein</span> Büchlein</td>
+        </tr>
+        <tr>
+          <td><span class="tag der">-ist</span> Tourist</td>
+          <td><span class="tag die">-keit</span> Möglichkeit</td>
+          <td><span class="tag das">-um</span> Museum</td>
+        </tr>
+        <tr>
+          <td><span class="tag der">-ent</span> Student</td>
+          <td><span class="tag die">-schaft</span> Gesellschaft</td>
+          <td><span class="tag das">-tum</span> Eigentum</td>
+        </tr>
+        <tr>
+          <td><span class="tag der">-or</span> Motor</td>
+          <td><span class="tag die">-tion</span> Nation</td>
+          <td><span class="tag das">-ment</span> Argument</td>
+        </tr>
+        <tr>
+          <td><span class="tag der">-er</span> (Person) Lehrer</td>
+          <td><span class="tag die">-tät</span> Qualität</td>
+          <td><span class="tag das">Gerund</span> das Schreiben</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btn-restart" onclick="restart()">Nochmal üben</button>
+  </div>
+
+  <div class="internal-links">
+    Weitere Materialien:
+    <a href="/lernmaterialien/">Alle Lernmaterialien</a> ·
+    <a href="/">Nachhilfe Mentor Startseite</a>
+  </div>
+
+</main>
+
+<script>
+  /* ------------------------------------------------------------------ */
+  /*  Datensatz                                                           */
+  /* ------------------------------------------------------------------ */
+  const rounds = [
+    // --- Stufe 1: Suffix sichtbar markiert ---
+    {
+      stage: 1,
+      wordBefore: "Bil",
+      suffix: "dung",
+      rule: "-ung → die",
+      fullWord: "Bildung",
+      correct: "die",
+      fbCorrect: {
+        title: "Richtig!",
+        text: "Substantive auf -ung sind immer feminin. Das gilt ohne Ausnahme: die Bildung, die Zeitung, die Wohnung, die Meinung, die Hoffnung.",
+        rule: "Regel: -ung → immer die"
+      },
+      fbWrong: {
+        title: "Noch nicht ganz.",
+        text: "Die Endung -ung zeigt: dieses Wort ist feminin. Alle Substantive auf -ung sind immer die – keine Ausnahmen in der Standardsprache.",
+        rule: "Regel: -ung → immer die"
+      }
+    },
+    {
+      stage: 1,
+      wordBefore: "Häus",
+      suffix: "chen",
+      rule: "-chen → das",
+      fullWord: "Häuschen",
+      correct: "das",
+      fbCorrect: {
+        title: "Richtig!",
+        text: "Diminutive auf -chen oder -lein sind immer Neutra. Selbst \"das Mädchen\" ist grammatisch neutral, obwohl es eine weibliche Person bezeichnet: grammatisches Genus ≠ natürliches Geschlecht.",
+        rule: "Regel: -chen/-lein → immer das (Diminutiv)"
+      },
+      fbWrong: {
+        title: "Noch nicht ganz.",
+        text: "Die Endung -chen ist das sichere Zeichen für Neutrum. Alle Diminutive auf -chen oder -lein sind das: das Häuschen, das Mädchen, das Kätzchen, das Büchlein.",
+        rule: "Regel: -chen/-lein → immer das"
+      }
+    },
+    {
+      stage: 1,
+      wordBefore: "Ideal",
+      suffix: "ismus",
+      rule: "-ismus → der",
+      fullWord: "Idealismus",
+      correct: "der",
+      fbCorrect: {
+        title: "Richtig!",
+        text: "Abstrakta auf -ismus sind immer maskulin: der Kapitalismus, der Optimismus, der Tourismus, der Idealismus.",
+        rule: "Regel: -ismus → immer der"
+      },
+      fbWrong: {
+        title: "Noch nicht ganz.",
+        text: "Die Endung -ismus gehört zu maskulinen Substantiven. Alle Wörter auf -ismus sind der: der Idealismus, der Kapitalismus, der Optimismus.",
+        rule: "Regel: -ismus → immer der"
+      }
+    },
+    {
+      stage: 1,
+      wordBefore: "Freund",
+      suffix: "schaft",
+      rule: "-schaft → die",
+      fullWord: "Freundschaft",
+      correct: "die",
+      fbCorrect: {
+        title: "Richtig!",
+        text: "-schaft bildet immer feminine Substantive: die Gesellschaft, die Wissenschaft, die Mannschaft, die Freundschaft.",
+        rule: "Regel: -schaft → immer die"
+      },
+      fbWrong: {
+        title: "Noch nicht ganz.",
+        text: "Die Endung -schaft zeigt: das Wort ist feminin. Alle Substantive auf -schaft sind die: die Freundschaft, die Gesellschaft, die Wissenschaft.",
+        rule: "Regel: -schaft → immer die"
+      }
+    },
+
+    // --- Stufe 2: kein Suffix vormarkiert ---
+    {
+      stage: 2,
+      wordBefore: "Solidari",
+      suffix: "tät",
+      rule: "-tät → die",
+      fullWord: "Solidarität",
+      correct: "die",
+      fbCorrect: {
+        title: "Richtig!",
+        text: "-tät ist immer feminin. Das Muster stammt aus dem Lateinischen (-tas/-tatis): die Qualität, die Universität, die Realität, die Solidarität.",
+        rule: "Regel: -tät → immer die"
+      },
+      fbWrong: {
+        title: "Schau auf die Endung.",
+        text: "Solidari-tät endet auf -tät – ein sicheres Zeichen für Femininum. Alle Substantive auf -tät sind die: die Qualität, die Universität, die Realität.",
+        rule: "Regel: -tät → immer die"
+      }
+    },
+    {
+      stage: 2,
+      wordBefore: "Doku",
+      suffix: "ment",
+      rule: "-ment → das",
+      fullWord: "Dokument",
+      correct: "das",
+      hint: "Tipp: Achte auf die Endung -ment.",
+      fbCorrect: {
+        title: "Richtig!",
+        text: "Substantive auf -ment sind fast immer neutral: das Argument, das Instrument, das Parlament, das Dokument. Ausnahme: \"der Moment\" – dort ist -ment kein Suffix, sondern Teil des Wortstamms (lat. momentum).",
+        rule: "Regel: -ment → fast immer das"
+      },
+      fbWrong: {
+        title: "Nicht ganz.",
+        text: "Doku-ment endet auf -ment, was bei Substantiven fast immer das Neutrum anzeigt: das Argument, das Instrument, das Dokument. Ausnahme: der Moment (kommt nicht vom Suffix -ment).",
+        rule: "Regel: -ment → fast immer das"
+      }
+    },
+    {
+      stage: 2,
+      wordBefore: "Forsch",
+      suffix: "er",
+      rule: "-er (Person) → der",
+      fullWord: "Forscher",
+      correct: "der",
+      hint: "Tipp: Bezeichnet das Wort eine Person?",
+      fbCorrect: {
+        title: "Richtig!",
+        text: "Personenbezeichnungen auf -er sind fast immer maskulin: der Lehrer, der Bäcker, der Forscher. Bei Sachbezeichnungen auf -er ist das Genus dagegen gemischt (das Messer, das Fenster).",
+        rule: "Regel: -er (Personenbezeichnung) → fast immer der"
+      },
+      fbWrong: {
+        title: "Schau genauer hin.",
+        text: "\"Forscher\" bezeichnet eine Person, die forscht – das ist eine Personenbezeichnung auf -er. Diese sind fast immer maskulin: der Forscher, der Lehrer, der Bäcker. Nur bei Sachbezeichnungen auf -er variiert das Genus.",
+        rule: "Regel: -er (Personenbezeichnung) → fast immer der"
+      }
+    },
+    {
+      stage: 2,
+      wordBefore: "das ",
+      suffix: "Schreiben",
+      rule: "Gerund → das",
+      fullWord: "Schreiben (Nominalisierung)",
+      correct: "das",
+      hint: "Tipp: Das Wort ist ein nominalisierter Infinitiv.",
+      fbCorrect: {
+        title: "Richtig!",
+        text: "Nominalisierte Infinitive (Gerunde) sind immer neutral: das Schreiben, das Laufen, das Essen, das Denken. Diese Regel gilt ausnahmslos – egal, was das Verb bedeutet.",
+        rule: "Regel: Nominalisierter Infinitiv → immer das"
+      },
+      fbWrong: {
+        title: "Fast!",
+        text: "\"Schreiben\" als Substantiv (nominalisierter Infinitiv) ist immer neutral: das Schreiben. So ist es bei allen nominalisierten Infinitiven: das Laufen, das Essen, das Denken – keine Ausnahmen.",
+        rule: "Regel: Nominalisierter Infinitiv → immer das"
+      }
+    }
+  ];
+
+  /* ------------------------------------------------------------------ */
+  /*  State                                                               */
+  /* ------------------------------------------------------------------ */
+  let currentRound = 0;
+  let score = 0;
+  let answered = false;
+
+  /* ------------------------------------------------------------------ */
+  /*  DOM-Referenzen                                                      */
+  /* ------------------------------------------------------------------ */
+  const wordDisplay  = document.getElementById('wordDisplay');
+  const feedbackBox  = document.getElementById('feedbackBox');
+  const fbTitle      = document.getElementById('fbTitle');
+  const fbText       = document.getElementById('fbText');
+  const fbRule       = document.getElementById('fbRule');
+  const btnNext      = document.getElementById('btnNext');
+  const roundInfo    = document.getElementById('roundInfo');
+  const stageBadge   = document.getElementById('stageBadge');
+  const taskQuestion = document.getElementById('taskQuestion');
+  const dot1         = document.getElementById('dot1');
+  const dot2         = document.getElementById('dot2');
+  const stageLabel   = document.getElementById('stageLabel');
+  const boxDer       = document.getElementById('boxDer');
+  const boxDie       = document.getElementById('boxDie');
+  const boxDas       = document.getElementById('boxDas');
+  const modelPointer = document.getElementById('modelPointer');
+  const taskCard     = document.getElementById('taskCard');
+  const finalScreen  = document.getElementById('finalScreen');
+  const finalScore   = document.getElementById('finalScore');
+  const finalMsg     = document.getElementById('finalMsg');
+
+  /* ------------------------------------------------------------------ */
+  /*  Hilfsfunktion: Pointer animieren                                    */
+  /* ------------------------------------------------------------------ */
+  function animatePointer(targetGenus) {
+    const modelArea = document.getElementById('modelArea');
+    const areaRect  = modelArea.getBoundingClientRect();
+    let targetBox;
+    if (targetGenus === 'der') targetBox = boxDer;
+    else if (targetGenus === 'die') targetBox = boxDie;
+    else targetBox = boxDas;
+
+    const boxRect = targetBox.getBoundingClientRect();
+    const startX  = areaRect.left + areaRect.width / 2 - areaRect.left;
+    const startY  = areaRect.height - 24;
+    const endX    = boxRect.left + boxRect.width / 2 - areaRect.left - 7;
+    const endY    = boxRect.top  - areaRect.top  + boxRect.height / 2 - 7;
+
+    modelPointer.style.left    = startX + 'px';
+    modelPointer.style.top     = startY + 'px';
+    modelPointer.style.opacity = '0';
+    modelPointer.classList.remove('visible');
+
+    // Farbe des Pointers je nach Genus
+    if (targetGenus === 'der') modelPointer.style.background = 'var(--der)';
+    else if (targetGenus === 'die') modelPointer.style.background = 'var(--die)';
+    else modelPointer.style.background = 'var(--das)';
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        modelPointer.classList.add('visible');
+        modelPointer.style.left = endX + 'px';
+        modelPointer.style.top  = endY + 'px';
+      });
+    });
+
+    // Artikel-Box hervorheben
+    [boxDer, boxDie, boxDas].forEach(b => b.classList.remove('highlight'));
+    setTimeout(() => { targetBox.classList.add('highlight'); }, 400);
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Runde laden                                                         */
+  /* ------------------------------------------------------------------ */
+  function loadRound() {
+    const r = rounds[currentRound];
+    answered = false;
+
+    // Fortschritt
+    roundInfo.textContent = 'Frage ' + (currentRound + 1) + ' von 8';
+
+    // Dots
+    if (r.stage === 1) {
+      dot1.className = 'dot active';
+      dot2.className = 'dot';
+      stageLabel.textContent = 'Stufe 1 von 2';
+      stageBadge.textContent = 'Stufe 1 – Suffix erkennen';
+      taskQuestion.textContent = 'Welchen Artikel hat dieses Wort? Schau auf die markierte Endung.';
+    } else {
+      dot1.className = 'dot done';
+      dot2.className = 'dot active';
+      stageLabel.textContent = 'Stufe 2 von 2';
+      stageBadge.textContent = 'Stufe 2 – Regelanwendung';
+      taskQuestion.textContent = 'Welchen Artikel hat dieses unbekannte Wort? Erkenne die Endungs-Regel selbst.';
+    }
+
+    // Wort anzeigen
+    if (r.stage === 1) {
+      wordDisplay.innerHTML =
+        '<div class="word-text">' +
+          (r.wordBefore ? r.wordBefore : '') +
+          '<span class="suffix" data-rule="' + r.rule + '">' + r.suffix + '</span>' +
+        '</div>';
+      // Suffix-Regel nach 0.5 s einblenden
+      setTimeout(() => {
+        const sp = wordDisplay.querySelector('.suffix');
+        if (sp) sp.classList.add('show-rule');
+      }, 600);
+    } else {
+      // Stufe 2: Wort ohne Suffix-Markierung, aber mit Tipp
+      let hintHtml = '';
+      if (r.hint) {
+        hintHtml = '<p class="word-hint">' + r.hint + '</p>';
+      }
+      wordDisplay.innerHTML =
+        '<div class="word-text">' + r.fullWord + '</div>' + hintHtml;
+    }
+
+    // Buttons zurücksetzen
+    ['btnDer','btnDie','btnDas'].forEach(id => {
+      const btn = document.getElementById(id);
+      btn.disabled = false;
+      btn.className = btn.className.replace(/\s*(correct-answer|wrong-answer|selected-correct)/g,'').trim();
+    });
+
+    // Feedback ausblenden
+    feedbackBox.style.display = 'none';
+    feedbackBox.className = 'feedback-box';
+    btnNext.classList.remove('visible');
+
+    // Pointer verstecken
+    modelPointer.classList.remove('visible');
+    modelPointer.style.opacity = '0';
+    [boxDer, boxDie, boxDas].forEach(b => b.classList.remove('highlight'));
+
+    // DataLayer
+    if (window.dataLayer) {
+      window.dataLayer.push({ event: 'sim_view', step: currentRound + 1, stage: r.stage });
+    }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Antwort prüfen                                                      */
+  /* ------------------------------------------------------------------ */
+  function checkAnswer(chosen) {
+    if (answered) return;
+    answered = true;
+
+    const r = rounds[currentRound];
+    const isCorrect = (chosen === r.correct);
+
+    // Buttons deaktivieren und einfärben
+    ['der','die','das'].forEach(a => {
+      const btn = document.getElementById('btn' + a.charAt(0).toUpperCase() + a.slice(1));
+      btn.disabled = true;
+      if (a === r.correct && isCorrect) {
+        btn.classList.add('selected-correct');
+      } else if (a === r.correct && !isCorrect) {
+        btn.classList.add('correct-answer');
+      } else if (a === chosen && !isCorrect) {
+        btn.classList.add('wrong-answer');
+      }
+    });
+
+    // Score
+    if (isCorrect) score++;
+
+    // Feedback
+    const fb = isCorrect ? r.fbCorrect : r.fbWrong;
+    fbTitle.textContent = fb.title;
+    fbText.textContent  = fb.text;
+    fbRule.textContent  = fb.rule;
+    feedbackBox.className = 'feedback-box ' + (isCorrect ? 'correct' : 'incorrect');
+    feedbackBox.style.display = 'block';
+
+    // Suffix-Regel einblenden (Stufe 2: jetzt Suffix markieren)
+    if (r.stage === 2) {
+      wordDisplay.innerHTML =
+        '<div class="word-text">' +
+          r.wordBefore +
+          '<span class="suffix show-rule" data-rule="' + r.rule + '">' + r.suffix + '</span>' +
+        '</div>';
+    }
+
+    // Pointer animieren
+    animatePointer(r.correct);
+
+    // Weiter-Button
+    btnNext.classList.add('visible');
+
+    // DataLayer
+    if (window.dataLayer) {
+      window.dataLayer.push({
+        event: 'sim_step',
+        step: currentRound + 1,
+        stage: r.stage,
+        result: isCorrect ? 'correct' : 'incorrect'
+      });
+    }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Nächste Runde                                                       */
+  /* ------------------------------------------------------------------ */
+  function nextRound() {
+    currentRound++;
+    if (currentRound >= rounds.length) {
+      showFinal();
+    } else {
+      loadRound();
+    }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Abschluss-Screen                                                    */
+  /* ------------------------------------------------------------------ */
+  function showFinal() {
+    taskCard.style.display    = 'none';
+    roundInfo.style.display   = 'none';
+    document.getElementById('modelArea').style.display = 'none';
+    finalScreen.classList.add('visible');
+
+    finalScore.textContent = score + ' / 8';
+
+    let msg;
+    if (score === 8) {
+      msg = 'Perfekt! Du hast alle Suffix-Regeln korrekt angewendet.';
+    } else if (score >= 6) {
+      msg = 'Sehr gut! Du beherrschst die meisten Genus-Regeln bereits sicher.';
+    } else if (score >= 4) {
+      msg = 'Gut! Übe die markierten Regeln noch einmal – dann klappt\'s noch besser.';
+    } else {
+      msg = 'Noch Übungsbedarf. Schau dir die Suffix-Karte unten genau an und starte nochmal.';
+    }
+    finalMsg.textContent = msg;
+
+    if (window.dataLayer) {
+      window.dataLayer.push({ event: 'sim_complete', score: score, total: 8 });
+    }
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Neustart                                                            */
+  /* ------------------------------------------------------------------ */
+  function restart() {
+    currentRound = 0;
+    score        = 0;
+    answered     = false;
+    finalScreen.classList.remove('visible');
+    taskCard.style.display  = '';
+    roundInfo.style.display = '';
+    document.getElementById('modelArea').style.display = '';
+    loadRound();
+  }
+
+  /* ------------------------------------------------------------------ */
+  /*  Start                                                               */
+  /* ------------------------------------------------------------------ */
+  loadRound();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Watzlawicks Kommunikationsaxiome – interaktive Simulation üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Erkenne in animierten Dialogszenen, welches von Watzlawicks 5 Kommunikationsaxiomen wirkt: löse Aufgaben mit sofortigem Feedback und verstehe Missverständnisse.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Watzlawick, Kommunikationsaxiome, fünf Axiome, man kann nicht nicht kommunizieren, Interpunktion, Deutsch Kommunikation">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/watzlawick-kommunikationsaxiome-simulation.html">
+  <meta property="og:title" content="Watzlawicks Kommunikationsaxiome – interaktive Simulation">
+  <meta property="og:description" content="Erkenne in animierten Dialogszenen, welches von Watzlawicks 5 Kommunikationsaxiomen wirkt: löse Aufgaben mit sofortigem Feedback und verstehe Missverständnisse.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/watzlawick-kommunikationsaxiome-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Watzlawicks Kommunikationsaxiome – interaktive Simulation üben",
+  "description":"Erkenne in animierten Dialogszenen, welches von Watzlawicks 5 Kommunikationsaxiomen wirkt: löse Aufgaben mit sofortigem Feedback und verstehe Missverständnisse.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/watzlawick-kommunikationsaxiome-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* ── Header ─────────────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* ── Main ────────────────────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Axiom Reference ─────────────────────────────── */
+    .axiom-ref {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .axiom-ref h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.8rem;
+    }
+    .axiom-list {
+      display: grid;
+      gap: 0.6rem;
+    }
+    .axiom-pill {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.7rem 0.9rem;
+      background: var(--bg);
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    .axiom-num {
+      flex-shrink: 0;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--cyan);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.78rem;
+    }
+    .axiom-text { flex: 1; }
+    .axiom-text strong { display: block; font-weight: 700; margin-bottom: 0.15rem; }
+    .axiom-text span { font-size: 0.83rem; color: var(--muted); }
+
+    /* ── Stage Indicator ─────────────────────────────── */
+    .stage-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+    .stage-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+    }
+    .progress-track {
+      flex: 1;
+      height: 6px;
+      background: var(--line);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--cyan);
+      border-radius: 3px;
+      transition: width 0.4s ease;
+    }
+    .progress-count {
+      font-size: 0.82rem;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    /* ── Scene Card ──────────────────────────────────── */
+    .scene-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+    .scene-context {
+      padding: 1.25rem 1.5rem;
+      background: #f0f4fa;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .scene-context strong { color: var(--ink); }
+
+    /* ── Dialog Stage ─────────────────────────────────── */
+    .dialog-stage {
+      padding: 2rem 1.5rem;
+      min-height: 180px;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      position: relative;
+    }
+
+    /* Figures */
+    .dialog-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.9rem;
+    }
+    .dialog-row.right {
+      flex-direction: row-reverse;
+    }
+
+    .avatar {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+    }
+    .avatar svg { width: 44px; height: 44px; }
+
+    .bubble-wrap {
+      max-width: calc(100% - 60px);
+    }
+    .bubble-name {
+      font-size: 0.74rem;
+      font-weight: 700;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+      letter-spacing: 0.04em;
+    }
+    .dialog-row.right .bubble-name { text-align: right; }
+
+    .bubble {
+      display: inline-block;
+      padding: 0.65rem 1rem;
+      border-radius: 16px;
+      font-size: 0.93rem;
+      line-height: 1.45;
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      max-width: 100%;
+    }
+    .bubble.left-bubble {
+      background: #e8f0fe;
+      border-bottom-left-radius: 4px;
+    }
+    .bubble.right-bubble {
+      background: #e6faf4;
+      border-bottom-right-radius: 4px;
+    }
+    .bubble.silent-bubble {
+      background: #f1f1f1;
+      color: var(--muted);
+      font-style: italic;
+    }
+    .bubble.conflict-bubble {
+      background: #fef3e2;
+    }
+    .bubble.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Body language indicator */
+    .body-note {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--amber);
+      font-style: italic;
+      margin-top: 0.2rem;
+      opacity: 0;
+      transition: opacity 0.4s ease 0.3s;
+    }
+    .body-note.visible { opacity: 1; }
+
+    /* ── Quiz Section ─────────────────────────────────── */
+    .quiz-section {
+      padding: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+    .quiz-question {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      line-height: 1.4;
+    }
+
+    .options-grid {
+      display: grid;
+      gap: 0.65rem;
+    }
+    .option-btn {
+      width: 100%;
+      text-align: left;
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      background: var(--bg);
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 0.9rem;
+      color: var(--ink);
+      transition: border-color 0.2s, background 0.2s;
+      line-height: 1.4;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--cyan);
+      background: #f0fafb;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #eaf7f2;
+      color: var(--green);
+      font-weight: 600;
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fdecea;
+      color: var(--red);
+    }
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Feedback Box ─────────────────────────────────── */
+    .feedback-box {
+      display: none;
+      margin-top: 1.25rem;
+      padding: 1.1rem 1.25rem;
+      border-radius: 10px;
+      font-size: 0.92rem;
+      line-height: 1.55;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-box.correct-fb {
+      background: #eaf7f2;
+      border-left: 4px solid var(--green);
+    }
+    .feedback-box.wrong-fb {
+      background: #fdecea;
+      border-left: 4px solid var(--red);
+    }
+    .feedback-box .fb-label {
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      display: block;
+    }
+    .feedback-box .axiom-highlight {
+      font-weight: 700;
+      color: var(--blue);
+    }
+    .memo-box {
+      margin-top: 0.75rem;
+      padding: 0.6rem 0.9rem;
+      background: rgba(255,255,255,0.6);
+      border-radius: 8px;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .memo-box strong { color: var(--ink); }
+
+    .next-btn {
+      margin-top: 1.25rem;
+      padding: 0.7rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.93rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+      display: none;
+    }
+    .next-btn:hover { background: #0d52a0; }
+    .next-btn.show { display: inline-block; }
+
+    /* ── Stage 2 ─────────────────────────────────────── */
+    .stage2-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      display: none;
+    }
+    .stage2-card.show { display: block; }
+
+    .stage2-header {
+      padding: 1.25rem 1.5rem;
+      background: #f0f4fa;
+      border-bottom: 1px solid var(--line);
+    }
+    .stage2-header h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+    .stage2-header p {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .conflict-scene {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .conflict-loop {
+      background: #fff8f0;
+      border: 1px solid #f0d8b0;
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+    }
+    .conflict-loop .person-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      font-size: 0.9rem;
+      margin-bottom: 0.6rem;
+    }
+    .conflict-loop .person-line:last-child { margin-bottom: 0; }
+    .conflict-loop .pname {
+      font-weight: 700;
+      min-width: 2rem;
+      color: var(--blue);
+    }
+    .conflict-loop .pname.b { color: var(--purple); }
+    .conflict-loop .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0.3rem 0;
+      color: var(--amber);
+      font-size: 0.8rem;
+    }
+
+    .checkbox-group {
+      display: grid;
+      gap: 0.6rem;
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      padding: 0.7rem 1rem;
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      background: var(--bg);
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: border-color 0.2s;
+    }
+    .checkbox-label:hover { border-color: var(--cyan); }
+    .checkbox-label input { margin-top: 0.15rem; flex-shrink: 0; }
+    .checkbox-label.selected { border-color: var(--blue); background: #f0f4fe; }
+
+    .check-btn {
+      margin-top: 1.25rem;
+      padding: 0.7rem 1.5rem;
+      background: var(--cyan);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.93rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .check-btn:hover { background: #077a8e; }
+    .check-btn:disabled { background: var(--muted); cursor: default; }
+
+    .stage2-feedback {
+      display: none;
+      padding: 1.25rem 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+    .stage2-feedback.show { display: block; }
+    .stage2-feedback h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .axiom-analysis {
+      display: grid;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .analysis-item {
+      padding: 0.9rem 1.1rem;
+      border-radius: 10px;
+      background: var(--bg);
+      border-left: 4px solid var(--cyan);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .analysis-item .ai-axiom {
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+
+    /* ── Results Screen ──────────────────────────────── */
+    .results-screen {
+      display: none;
+      text-align: center;
+      padding: 2.5rem 1.25rem;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+    }
+    .results-screen.show { display: block; }
+    .results-screen h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .score-display {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--cyan);
+      margin: 1rem 0;
+    }
+    .results-screen p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 480px;
+      margin: 0 auto 1.5rem;
+    }
+    .restart-btn {
+      padding: 0.7rem 2rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .restart-btn:hover { background: #0d52a0; }
+
+    /* ── Footer Link ─────────────────────────────────── */
+    .sim-footer {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .sim-footer a { color: var(--blue); }
+
+    /* ── Responsive ──────────────────────────────────── */
+    /* ── Transition Banner ────────────────────────────── */
+    .stage-transition {
+      display: none;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      background: linear-gradient(135deg, #e8f4fc, #f0fafb);
+      border: 1px solid var(--cyan);
+      border-radius: 12px;
+      margin-bottom: 2rem;
+    }
+    .stage-transition.show { display: flex; }
+    .stage-transition .stage-icon { font-size: 2rem; flex-shrink: 0; }
+    .stage-transition h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem; }
+    .stage-transition p { font-size: 0.88rem; color: var(--muted); }
+
+    @media (max-width: 480px) {
+      .axiom-pill { flex-direction: column; gap: 0.4rem; }
+      .dialog-stage { padding: 1.25rem 1rem; }
+      .quiz-section { padding: 1.1rem; }
+      .stage-transition { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body
+  data-asset-type="simulation"
+  data-topic-cluster="watzlawick-kommunikationsaxiome"
+  data-subject="Deutsch"
+  data-grade-level="10-13"
+>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Kommunikation &amp; Linguistik · Klasse 10–13</p>
+  <h1>Watzlawicks Kommunikationsaxiome</h1>
+  <p>Erkenne in animierten Dialogszenen, welches Axiom dargestellt wird – und lerne, warum Kommunikation so oft misslingt.</p>
+</header>
+
+<main>
+
+  <!-- Axiom Reference -->
+  <div class="axiom-ref">
+    <h2>Die 5 Axiome im Überblick</h2>
+    <div class="axiom-list">
+      <div class="axiom-pill">
+        <div class="axiom-num">1</div>
+        <div class="axiom-text">
+          <strong>Man kann nicht nicht kommunizieren.</strong>
+          <span>Jedes Verhalten in Gegenwart anderer ist Kommunikation – auch Schweigen.</span>
+        </div>
+      </div>
+      <div class="axiom-pill">
+        <div class="axiom-num">2</div>
+        <div class="axiom-text">
+          <strong>Inhalts- und Beziehungsaspekt</strong>
+          <span>Jede Botschaft hat ein <em>Was</em> (Inhalt) und ein <em>Wie</em> (Beziehung). Der Beziehungsaspekt bestimmt den Inhaltsaspekt.</span>
+        </div>
+      </div>
+      <div class="axiom-pill">
+        <div class="axiom-num">3</div>
+        <div class="axiom-text">
+          <strong>Interpunktion von Kommunikation</strong>
+          <span>Kommunikation ist zirkulär – jeder sieht sich als Reagierenden. „Er hat angefangen" ist eine Frage der Interpunktion.</span>
+        </div>
+      </div>
+      <div class="axiom-pill">
+        <div class="axiom-num">4</div>
+        <div class="axiom-text">
+          <strong>Digitale und analoge Kommunikation</strong>
+          <span>Digital = Worte/Sprache (arbiträr). Analog = Mimik, Gestik, Tonfall (ikonisch). Beide Ebenen können widersprechen.</span>
+        </div>
+      </div>
+      <div class="axiom-pill">
+        <div class="axiom-num">5</div>
+        <div class="axiom-text">
+          <strong>Symmetrische und komplementäre Interaktion</strong>
+          <span>Symmetrisch: Partner streben Gleichheit an. Komplementär: Partner ergänzen sich in verschiedenen Rollen (z. B. Lehrer–Schüler).</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stage 1: Szenen -->
+  <div id="stage1">
+    <div class="stage-bar">
+      <span class="stage-label">Stufe 1 – Axiom erkennen</span>
+      <div class="progress-track"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <span class="progress-count" id="progressCount">0 / 4</span>
+    </div>
+
+    <div class="scene-card" id="sceneCard">
+      <div class="scene-context" id="sceneContext"></div>
+      <div class="dialog-stage" id="dialogStage"></div>
+      <div class="quiz-section">
+        <p class="quiz-question" id="quizQuestion">Welches Axiom Watzlawicks zeigt diese Szene am deutlichsten?</p>
+        <div class="options-grid" id="optionsGrid"></div>
+        <div class="feedback-box" id="feedbackBox">
+          <span class="fb-label" id="fbLabel"></span>
+          <span id="fbText"></span>
+          <div class="memo-box" id="memoBox"></div>
+        </div>
+        <button class="next-btn" id="nextBtn" onclick="nextScene()">Weiter →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stage Transition Banner -->
+  <div class="stage-transition" id="stageBanner">
+    <div class="stage-icon">🎯</div>
+    <div>
+      <h3>Stufe 1 abgeschlossen!</h3>
+      <p>Du hast alle 4 Szenen analysiert. Jetzt kommt eine komplexere Situation mit mehreren Axiomen gleichzeitig.</p>
+    </div>
+  </div>
+
+  <!-- Stage 2: Konfliktanalyse -->
+  <div class="stage2-card" id="stage2Card" role="region" aria-label="Stufe 2: Konfliktanalyse">
+    <div class="stage2-header">
+      <h2>Stufe 2 – Konflikt analysieren</h2>
+      <p>Lies den folgenden Dauerkonflikt und bestimme, welche Axiome darin sichtbar werden.</p>
+    </div>
+    <div class="conflict-scene">
+      <p style="font-size:0.9rem;color:var(--muted);margin-bottom:0.5rem;"><strong style="color:var(--ink);">Situation:</strong> Anna und Ben sind Geschwister. Seit Wochen sprechen sie kaum miteinander.</p>
+      <div class="conflict-loop">
+        <div class="person-line">
+          <span class="pname">Anna:</span>
+          <span>„Ich ziehe mich zurück, weil Ben mich sowieso nie ernst nimmt."</span>
+        </div>
+        <div class="arrow">↕ Zirkel</div>
+        <div class="person-line">
+          <span class="pname b">Ben:</span>
+          <span>„Ich komme ihr nicht entgegen, weil sie so abweisend und still ist."</span>
+        </div>
+        <div class="arrow">↕ Zirkel</div>
+        <div class="person-line">
+          <span class="pname">Anna:</span>
+          <span><em>(schweigt beim Abendessen, starrt auf ihr Handy)</em></span>
+        </div>
+        <div class="person-line">
+          <span class="pname b">Ben:</span>
+          <span>„Na toll, redest du wieder nicht mit mir. Typisch."</span>
+        </div>
+      </div>
+
+      <p style="font-size:0.95rem;font-weight:700;margin-top:0.5rem;">Welche Axiome Watzlawicks sind in dieser Situation aktiv? (Mehrfachauswahl möglich)</p>
+      <div class="checkbox-group" id="stage2Checkboxes"></div>
+      <button class="check-btn" id="stage2CheckBtn" onclick="checkStage2()">Auswerten</button>
+    </div>
+    <div class="stage2-feedback" id="stage2Feedback">
+      <h3>Analyse des Konflikts</h3>
+      <div class="axiom-analysis" id="axiomAnalysis"></div>
+      <p style="font-size:0.88rem;color:var(--muted);line-height:1.55;">
+        Das Verständnis dieser Axiome hilft, Kommunikationsprobleme nicht als Schuldfrage, sondern als systemisches Muster zu sehen.
+        Watzlawick empfahl, die <strong>Interpunktion</strong> bewusst zu verschieben – also den „Startpunkt" der Eskalation neu zu setzen, um den Kreis zu durchbrechen.
+      </p>
+      <button class="next-btn show" style="margin-top:1.5rem;" onclick="showResults()">Zur Auswertung →</button>
+    </div>
+  </div>
+
+  <!-- Results -->
+  <div class="results-screen" id="resultsScreen">
+    <h2>Simulation abgeschlossen</h2>
+    <div class="score-display" id="scoreDisplay">–</div>
+    <p id="resultText"></p>
+    <button class="restart-btn" onclick="restart()">Nochmal üben</button>
+  </div>
+
+  <div class="sim-footer">
+    Quelle: Watzlawick, P., Beavin, J. H. &amp; Jackson, D. D. (1967/2011). <em>Menschliche Kommunikation</em>, 12. Aufl. Huber: Bern. —
+    <a href="/lernmaterialien/lernsimulationen/grice-konversationsmaximen-simulation.html">Gricesche Konversationsmaximen</a> ·
+    <a href="/lernmaterialien/lernsimulationen/vier-ohren-modell-kommunikation-simulation.html">Vier-Ohren-Modell</a> ·
+    <a href="/lernmaterialien/lernsimulationen/buehler-organon-modell-simulation.html">Bühler-Organon-Modell</a>
+  </div>
+
+</main>
+
+<script>
+/* ──────────────────────────────────────────────────────
+   DATEN
+────────────────────────────────────────────────────── */
+const scenes = [
+  {
+    context: "Tom sitzt beim Abendessen schweigend da. Maria fragt: \"Ist alles okay?\" Tom antwortet nicht, dreht sich weg und schaut aus dem Fenster.",
+    dialogs: [
+      { speaker: "Maria", side: "left", text: "Ist alles okay mit dir?", delay: 300 },
+      { speaker: "Tom", side: "right", text: "(schweigt, dreht sich weg)", style: "silent-bubble", delay: 900, bodyNote: "Körperhaltung: abgewandt, verschränkte Arme" }
+    ],
+    question: "Welches Axiom Watzlawicks zeigt diese Szene am deutlichsten?",
+    options: [
+      { id: "A", text: "Axiom 1 – Man kann nicht nicht kommunizieren" },
+      { id: "B", text: "Axiom 2 – Inhalts- und Beziehungsaspekt" },
+      { id: "C", text: "Axiom 4 – Digitale und analoge Kommunikation" },
+      { id: "D", text: "Axiom 5 – Symmetrische Interaktion" }
+    ],
+    correct: "A",
+    feedbackCorrect: "Genau richtig! Toms Schweigen und das Abwenden sind eindeutig <span class=\"axiom-highlight\">Axiom 1</span>: „Man kann nicht nicht kommunizieren." Obwohl Tom kein Wort sagt, kommuniziert sein Verhalten (Schweigen, Wegsehen, Körperhaltung) sehr deutlich – Maria empfängt die Botschaft: „Ich will nicht reden." Es gibt kein Verhalten, das <em>keine</em> Botschaft trägt.",
+    feedbackWrong: "Nicht ganz. Die Szene illustriert primär <span class=\"axiom-highlight\">Axiom 1</span>: „Man kann nicht nicht kommunizieren." Toms Schweigen ist selbst eine Botschaft – er kommuniziert durch sein Verhalten, ohne ein Wort zu sagen. Nicht-Handeln und Schweigen sind in Gegenwart anderer immer kommunikativ.",
+    memo: "Merksatz: Auch Schweigen spricht Bände. In Gegenwart anderer ist jedes Verhalten eine Botschaft."
+  },
+  {
+    context: "Die Klassenlehrerin schreibt eine Prüfungsaufgabe an die Tafel und sagt mit gelangweilter Stimme und gleichgültigem Gesichtsausdruck: „Das ist wirklich eine super Aufgabe – ihr werdet sie lieben."",
+    dialogs: [
+      { speaker: "Lehrerin", side: "left", text: "„Das ist wirklich eine super Aufgabe – ihr werdet sie lieben."", delay: 300, bodyNote: "Tonfall: gelangweilt, Mimik: gleichgültig" },
+      { speaker: "Schüler:in", side: "right", text: "(denkt: Meint sie das ernst?)", style: "silent-bubble", delay: 1000 }
+    ],
+    question: "Welches Axiom Watzlawicks erklärt das Missverständnis in dieser Szene?",
+    options: [
+      { id: "A", text: "Axiom 1 – Man kann nicht nicht kommunizieren" },
+      { id: "B", text: "Axiom 2 – Inhalts- und Beziehungsaspekt" },
+      { id: "C", text: "Axiom 4 – Digitale und analoge Kommunikation" },
+      { id: "D", text: "Axiom 3 – Interpunktion von Kommunikation" }
+    ],
+    correct: "C",
+    feedbackCorrect: "Korrekt! Das ist ein klassisches Beispiel für <span class=\"axiom-highlight\">Axiom 4</span>: Digitale und analoge Kommunikation. Die <em>digitale</em> Ebene (Worte: „super Aufgabe – ihr werdet sie lieben") widerspricht der <em>analogen</em> Ebene (Tonfall: gelangweilt, Mimik: gleichgültig). Solche Widersprüche erzeugen Verwirrung und Misstrauen.",
+    feedbackWrong: "Hier geht es um <span class=\"axiom-highlight\">Axiom 4</span>: Digitale und analoge Kommunikation. Die <em>digitalen</em> Worte (positiver Inhalt) widersprechen der <em>analogen</em> Kommunikation (gleichgültiger Tonfall, Mimik). Axiom 4 beschreibt genau diesen Widerspruch zwischen dem was gesagt wird und wie es gesagt wird.",
+    memo: "Merksatz: Wenn Worte und Körpersprache nicht übereinstimmen, glauben wir eher der analogen Ebene (Mimik, Tonfall)."
+  },
+  {
+    context: "Zwei Kolleginnen, Lea und Jana, streiten über die Qualität ihrer Berichte. Lea sagt, Jana überkorrigiere sie ständig. Jana sagt, sie korrigiere nur, weil Lea so viele Fehler mache.",
+    dialogs: [
+      { speaker: "Lea", side: "left", text: "„Du machst mich fertig mit deinen ständigen Korrekturen!"", style: "conflict-bubble", delay: 300 },
+      { speaker: "Jana", side: "right", text: "„Ich korrigiere dich doch nur, weil du so viele Fehler machst!"", style: "conflict-bubble", delay: 900 },
+      { speaker: "Lea", side: "left", text: "„Ich mache Fehler, weil du mich so nervös machst!"", style: "conflict-bubble", delay: 1500 }
+    ],
+    question: "Welches Axiom steht im Zentrum dieses Konflikts?",
+    options: [
+      { id: "A", text: "Axiom 5 – Komplementäre Interaktion" },
+      { id: "B", text: "Axiom 3 – Interpunktion von Kommunikation" },
+      { id: "C", text: "Axiom 2 – Inhalts- und Beziehungsaspekt" },
+      { id: "D", text: "Axiom 1 – Man kann nicht nicht kommunizieren" }
+    ],
+    correct: "B",
+    feedbackCorrect: "Sehr gut! Das ist ein Lehrbuchbeispiel für <span class=\"axiom-highlight\">Axiom 3</span>: die Interpunktion von Kommunikation. Beide Personen sehen sich als Reagierende – Lea reagiert auf Janas Korrekturen, Jana reagiert auf Leas Fehler. Dieses zirkuläre Muster entsteht, weil jede Person eine andere „Interpunktion" (einen anderen Anfangspunkt) setzt.",
+    feedbackWrong: "Der Kern liegt bei <span class=\"axiom-highlight\">Axiom 3</span>: Interpunktion von Kommunikation. Der Streit ist ein Zirkel: Lea erklärt ihr Verhalten mit Janas Verhalten – und umgekehrt. Beide sehen sich als Opfer und den anderen als Auslöser. Watzlawick nennt das das Interpunktionsproblem: Wo der Kreis beginnt, ist eine Frage der Perspektive.",
+    memo: "Merksatz: „Wer hat angefangen?" ist im Interpunktionsproblem keine beantwortbare Frage – Kommunikation ist zirkulär."
+  },
+  {
+    context: "Im Unterricht erklärt die Lehrerin den Stoff, die Schülerinnen und Schüler hören zu, machen Notizen und fragen bei Unklarheiten nach. Die Lehrerin gibt Antworten und Korrekturen.",
+    dialogs: [
+      { speaker: "Lehrerin", side: "left", text: "„Die Formel lautet: F = m · a. Habt ihr das?"", delay: 300 },
+      { speaker: "Schüler:in", side: "right", text: "„Ja – aber was bedeutet das a genau?"", delay: 900 },
+      { speaker: "Lehrerin", side: "left", text: "„Gute Frage! Das a steht für Beschleunigung."", delay: 1500 }
+    ],
+    question: "Welches Axiom beschreibt die Rollenstruktur dieser Interaktion am treffendsten?",
+    options: [
+      { id: "A", text: "Axiom 5 – Symmetrische Interaktion" },
+      { id: "B", text: "Axiom 5 – Komplementäre Interaktion" },
+      { id: "C", text: "Axiom 3 – Interpunktion" },
+      { id: "D", text: "Axiom 2 – Beziehungsaspekt dominiert Inhaltsaspekt" }
+    ],
+    correct: "B",
+    feedbackCorrect: "Richtig! Das ist ein Beispiel für <span class=\"axiom-highlight\">Axiom 5 – komplementäre Interaktion</span>. Die Rollen der Lehrerin und der Schüler:innen ergänzen sich: eine Person leitet und erklärt, die andere hört zu und fragt nach. Weder Gleichrangigkeit noch Konflikt – sondern eine stabile, ergänzende Rollenverteilung.",
+    feedbackWrong: "Die Antwort ist <span class=\"axiom-highlight\">Axiom 5 – komplementäre Interaktion</span>. Bei komplementärer Interaktion ergänzen sich die Verhaltensweisen der Partner: Lehrerin erklärt, Schüler:in fragt nach. Das ist keine symmetrische (gleichrangige) Beziehung, sondern eine, die auf unterschiedlichen Rollen aufbaut.",
+    memo: "Merksatz: Komplementär = Rollen ergänzen sich (verschieden). Symmetrisch = Rollen spiegeln sich (gleich)."
+  }
+];
+
+/* Stage 2 Checkboxes */
+const stage2Options = [
+  { id: "ax1", text: "Axiom 1 – Annas Schweigen beim Abendessen ist selbst eine Botschaft", correct: true },
+  { id: "ax2", text: "Axiom 2 – Der Beziehungsaspekt (Missachtung/Abweisung) überlagert den sachlichen Inhalt", correct: true },
+  { id: "ax3", text: "Axiom 3 – Beide sehen sich als Reagierende: Anna reagiert auf Ben, Ben auf Anna", correct: true },
+  { id: "ax4", text: "Axiom 4 – Ben spricht digital freundlich und ist analog abweisend", correct: false },
+  { id: "ax5", text: "Axiom 5 – Die Beziehung ist durch Zug-Rückzug-Muster asymmetrisch komplementär", correct: true }
+];
+
+const stage2Analysis = [
+  {
+    axiom: "Axiom 1 – Man kann nicht nicht kommunizieren",
+    text: "Annas Schweigen beim Abendessen und ihr Starren auf das Handy sind klare Botschaften: „Ich will keinen Kontakt." Ben empfängt diese Botschaft, auch wenn Anna kein Wort sagt."
+  },
+  {
+    axiom: "Axiom 2 – Inhalts- und Beziehungsaspekt",
+    text: "Der eigentliche Inhalt (Was essen wir? Wie war dein Tag?) spielt keine Rolle mehr. Der Beziehungsaspekt – gegenseitige Kränkung, Missachtung, fehlende Wertschätzung – dominiert und blockiert jede sachliche Kommunikation."
+  },
+  {
+    axiom: "Axiom 3 – Interpunktion",
+    text: "Anna sagt: „Ich ziehe mich zurück, weil Ben mich nicht ernst nimmt." Ben sagt: „Ich gehe auf Abstand, weil Anna so abweisend ist." Beide sehen sich als Opfer – und genau das ist das Interpunktionsproblem: Der Zirkel hat keinen objektiven Anfang."
+  },
+  {
+    axiom: "Axiom 5 – Komplementäre Interaktion (Zug-Rückzug)",
+    text: "Das typische komplementäre Muster: Je mehr Anna sich zurückzieht, desto mehr drängt Ben – und umgekehrt. Beide Rollen verstärken sich gegenseitig, statt sich aufzulösen. Watzlawick nennt das eine komplementäre Eskalation."
+  }
+];
+
+/* ──────────────────────────────────────────────────────
+   STATE
+────────────────────────────────────────────────────── */
+let currentScene = 0;
+let correctCount = 0;
+let answered = false;
+let bubbleTimers = [];
+
+/* ──────────────────────────────────────────────────────
+   INIT
+────────────────────────────────────────────────────── */
+function init() {
+  currentScene = 0;
+  correctCount = 0;
+  answered = false;
+
+  document.getElementById("stage1").style.display = "block";
+  document.getElementById("stage2Card").classList.remove("show");
+  document.getElementById("resultsScreen").classList.remove("show");
+
+  renderScene();
+}
+
+function renderScene() {
+  answered = false;
+  clearBubbleTimers();
+
+  const sc = scenes[currentScene];
+  updateProgress();
+
+  // Context
+  document.getElementById("sceneContext").innerHTML = "<strong>Szene " + (currentScene + 1) + ":</strong> " + sc.context;
+
+  // Dialog
+  const stage = document.getElementById("dialogStage");
+  stage.innerHTML = "";
+
+  sc.dialogs.forEach((d, i) => {
+    const row = document.createElement("div");
+    row.className = "dialog-row " + (d.side === "right" ? "right" : "left");
+
+    // Avatar
+    const avatarDiv = document.createElement("div");
+    avatarDiv.className = "avatar";
+    avatarDiv.innerHTML = d.side === "left" ? avatarSVG("var(--cyan)") : avatarSVG("var(--purple)");
+    row.appendChild(avatarDiv);
+
+    // Bubble wrap
+    const wrap = document.createElement("div");
+    wrap.className = "bubble-wrap";
+
+    const nameDiv = document.createElement("div");
+    nameDiv.className = "bubble-name";
+    nameDiv.textContent = d.speaker;
+    wrap.appendChild(nameDiv);
+
+    const bubble = document.createElement("div");
+    bubble.className = "bubble " + (d.side === "right" ? "right-bubble" : "left-bubble") + (d.style ? " " + d.style : "");
+    bubble.textContent = d.text;
+    wrap.appendChild(bubble);
+
+    if (d.bodyNote) {
+      const bn = document.createElement("div");
+      bn.className = "body-note";
+      bn.innerHTML = "⚠ " + d.bodyNote;
+      wrap.appendChild(bn);
+      const timer2 = setTimeout(() => {
+        bn.classList.add("visible");
+      }, d.delay + 400);
+      bubbleTimers.push(timer2);
+    }
+
+    row.appendChild(wrap);
+    stage.appendChild(row);
+
+    const timer = setTimeout(() => {
+      bubble.classList.add("visible");
+    }, d.delay);
+    bubbleTimers.push(timer);
+  });
+
+  // Question
+  document.getElementById("quizQuestion").textContent = sc.question;
+
+  // Options
+  const grid = document.getElementById("optionsGrid");
+  grid.innerHTML = "";
+  sc.options.forEach(opt => {
+    const btn = document.createElement("button");
+    btn.className = "option-btn";
+    btn.dataset.id = opt.id;
+    btn.textContent = opt.text;
+    btn.addEventListener("click", () => handleAnswer(opt.id));
+    grid.appendChild(btn);
+  });
+
+  // Reset feedback
+  const fb = document.getElementById("feedbackBox");
+  fb.className = "feedback-box";
+  document.getElementById("nextBtn").classList.remove("show");
+}
+
+function handleAnswer(chosen) {
+  if (answered) return;
+  answered = true;
+
+  const sc = scenes[currentScene];
+  const isCorrect = chosen === sc.correct;
+  if (isCorrect) correctCount++;
+
+  const buttons = document.querySelectorAll(".option-btn");
+  buttons.forEach(btn => {
+    btn.disabled = true;
+    if (btn.dataset.id === sc.correct) btn.classList.add("correct");
+    else if (btn.dataset.id === chosen && !isCorrect) btn.classList.add("wrong");
+  });
+
+  const fb = document.getElementById("feedbackBox");
+  fb.className = "feedback-box " + (isCorrect ? "correct-fb" : "wrong-fb") + " show";
+  document.getElementById("fbLabel").textContent = isCorrect ? "Richtig!" : "Nicht ganz.";
+  document.getElementById("fbText").innerHTML = isCorrect ? sc.feedbackCorrect : sc.feedbackWrong;
+  document.getElementById("memoBox").innerHTML = "<strong>Merksatz:</strong> " + sc.memo.replace("Merksatz: ", "");
+
+  document.getElementById("nextBtn").classList.add("show");
+}
+
+function nextScene() {
+  currentScene++;
+  if (currentScene >= scenes.length) {
+    showStage2();
+  } else {
+    renderScene();
+  }
+}
+
+function updateProgress() {
+  const pct = (currentScene / scenes.length) * 100;
+  document.getElementById("progressFill").style.width = pct + "%";
+  document.getElementById("progressCount").textContent = currentScene + " / " + scenes.length;
+}
+
+function clearBubbleTimers() {
+  bubbleTimers.forEach(t => clearTimeout(t));
+  bubbleTimers = [];
+}
+
+/* ──────────────────────────────────────────────────────
+   STAGE 2
+────────────────────────────────────────────────────── */
+function showStage2() {
+  document.getElementById("stage1").style.display = "none";
+  document.getElementById("stageBanner").classList.add("show");
+  const card = document.getElementById("stage2Card");
+  card.classList.add("show");
+
+  // Render checkboxes
+  const container = document.getElementById("stage2Checkboxes");
+  container.innerHTML = "";
+  stage2Options.forEach(opt => {
+    const label = document.createElement("label");
+    label.className = "checkbox-label";
+    label.setAttribute("for", "cb_" + opt.id);
+
+    const cb = document.createElement("input");
+    cb.type = "checkbox";
+    cb.id = "cb_" + opt.id;
+    cb.dataset.id = opt.id;
+    cb.addEventListener("change", () => {
+      label.classList.toggle("selected", cb.checked);
+    });
+
+    label.appendChild(cb);
+    label.appendChild(document.createTextNode(opt.text));
+    container.appendChild(label);
+  });
+}
+
+function checkStage2() {
+  const checked = Array.from(document.querySelectorAll("#stage2Checkboxes input:checked")).map(c => c.dataset.id);
+
+  // Disable
+  document.querySelectorAll("#stage2Checkboxes input").forEach(cb => cb.disabled = true);
+  document.getElementById("stage2CheckBtn").disabled = true;
+
+  // Show analysis
+  const analysisDiv = document.getElementById("axiomAnalysis");
+  analysisDiv.innerHTML = "";
+  stage2Analysis.forEach(item => {
+    const div = document.createElement("div");
+    div.className = "analysis-item";
+    div.innerHTML = "<span class=\"ai-axiom\">" + item.axiom + "</span>" + item.text;
+    analysisDiv.appendChild(div);
+  });
+
+  document.getElementById("stage2Feedback").classList.add("show");
+}
+
+function showResults() {
+  document.getElementById("stage2Card").classList.remove("show");
+  const screen = document.getElementById("resultsScreen");
+  screen.classList.add("show");
+
+  const total = scenes.length;
+  document.getElementById("scoreDisplay").textContent = correctCount + " / " + total;
+
+  let msg = "";
+  if (correctCount === total) {
+    msg = "Ausgezeichnet! Du hast alle Szenen korrekt zugeordnet und beherrschst Watzlawicks Axiome sicher.";
+  } else if (correctCount >= total - 1) {
+    msg = "Sehr gut! Fast alle Szenen richtig erkannt. Lies noch einmal die Axiome, bei denen du gezögert hast.";
+  } else if (correctCount >= total / 2) {
+    msg = "Guter Anfang! Schau dir die Erklärungen noch einmal an – besonders die Unterschiede zwischen Axiom 3, 4 und 5.";
+  } else {
+    msg = "Hier ist noch Luft nach oben. Lies die Axiomübersicht oben nochmals durch und starte die Simulation neu.";
+  }
+  document.getElementById("resultText").textContent = msg;
+}
+
+function restart() {
+  document.getElementById("stageBanner").classList.remove("show");
+  init();
+}
+
+/* ──────────────────────────────────────────────────────
+   AVATAR SVG
+────────────────────────────────────────────────────── */
+function avatarSVG(color) {
+  return `<svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="22" cy="22" r="22" fill="${color}" opacity="0.15"/>
+    <circle cx="22" cy="17" r="7" fill="${color}" opacity="0.8"/>
+    <ellipse cx="22" cy="34" rx="11" ry="7" fill="${color}" opacity="0.6"/>
+  </svg>`;
+}
+
+/* ── START ── */
+init();
+</script>
+</body>
+</html>

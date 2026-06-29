@@ -1,0 +1,954 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Sprachrhythmus verstehen: Betonungstakt, Silbentakt und Morentakt | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zum Sprachrhythmus: Erkenne in animierten Rhythmus-Balken den Unterschied zwischen Betonungstakt (Deutsch), Silbentakt (Französisch) und Morentakt (Japanisch) und markiere betonte Silben.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sprachrhythmus, Betonungstakt, Silbentakt, Morentakt, Prosodie, Wortakzent Deutsch">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/prosodie-rhythmus-sprachen-simulation.html">
+  <meta property="og:title" content="Sprachrhythmus: Betonungstakt, Silbentakt, Morentakt">
+  <meta property="og:description" content="Interaktive Simulation zum Sprachrhythmus: Erkenne in animierten Rhythmus-Balken den Unterschied zwischen Betonungstakt (Deutsch), Silbentakt (Französisch) und Morentakt (Japanisch) und markiere betonte Silben.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/prosodie-rhythmus-sprachen-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprachrhythmus verstehen: Betonungstakt, Silbentakt und Morentakt",
+  "description":"Interaktive Simulation zum Sprachrhythmus: Erkenne in animierten Rhythmus-Balken den Unterschied zwischen Betonungstakt (Deutsch), Silbentakt (Französisch) und Morentakt (Japanisch) und markiere betonte Silben.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/prosodie-rhythmus-sprachen-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --blue:     #1d4ed8;
+      --blue-l:   #dbeafe;
+      --blue-m:   #93c5fd;
+      --green:    #15803d;
+      --green-l:  #dcfce7;
+      --green-m:  #86efac;
+      --red:      #b91c1c;
+      --red-l:    #fee2e2;
+      --purple:   #7c3aed;
+      --purple-l: #ede9fe;
+      --purple-m: #c4b5fd;
+      --gray-50:  #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-300: #d1d5db;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-700: #374151;
+      --gray-800: #1f2937;
+      --ink:      #111827;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--gray-50);
+      color: var(--ink);
+      line-height: 1.6;
+    }
+
+    /* ── Header ────────────────────────────────────────── */
+    header {
+      background: #fff;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 1.5rem 1.25rem 1.25rem;
+    }
+    .header-inner { max-width: 680px; margin: 0 auto; }
+    .eyebrow {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.4rem;
+    }
+    header h1 {
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      color: var(--gray-600);
+      font-size: 0.9rem;
+      max-width: 560px;
+    }
+
+    /* ── Progress ──────────────────────────────────────── */
+    .progress-wrap {
+      max-width: 680px;
+      margin: 1.5rem auto 0;
+      padding: 0 1.25rem;
+    }
+    .progress-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--gray-500);
+      margin-bottom: 0.4rem;
+    }
+    .progress-track {
+      height: 6px;
+      background: var(--gray-200);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 3px;
+      transition: width 0.5s ease;
+      width: 0%;
+    }
+
+    /* ── Step chips ────────────────────────────────────── */
+    .steps-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      max-width: 680px;
+      margin: 1.25rem auto 0;
+      padding: 0 1.25rem;
+    }
+    .step-chip {
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      background: var(--gray-200);
+      color: var(--gray-500);
+      white-space: nowrap;
+    }
+    .step-chip.active { background: var(--blue-l);  color: var(--blue); }
+    .step-chip.done   { background: var(--green-l); color: var(--green); }
+    .step-sep { flex: 1; height: 2px; background: var(--gray-200); }
+
+    /* ── Main ──────────────────────────────────────────── */
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 4rem;
+    }
+
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    /* ── Task header ───────────────────────────────────── */
+    .task-header { margin-bottom: 1.5rem; }
+    .task-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--blue);
+      margin-bottom: 0.4rem;
+    }
+    .task-question {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--gray-800);
+    }
+
+    /* ── Round indicator ───────────────────────────────── */
+    .round-row {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .round-dot {
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: var(--gray-200);
+    }
+    .round-dot.active { background: var(--blue); }
+    .round-dot.done   { background: var(--green); }
+
+    /* ── Canvas panel ──────────────────────────────────── */
+    .canvas-panel {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 1.25rem 1.25rem 1rem;
+      margin-bottom: 1.5rem;
+    }
+    .canvas-hint {
+      font-size: 0.74rem;
+      color: var(--gray-400);
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+    canvas {
+      display: block;
+      width: 100%;
+      border-radius: 6px;
+    }
+    .sentence-row {
+      margin-top: 1rem;
+      padding-top: 0.875rem;
+      border-top: 1px solid var(--gray-100);
+      text-align: center;
+    }
+    .sentence-lang {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+    .sentence-text {
+      font-size: 0.975rem;
+      color: var(--gray-700);
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Option buttons ────────────────────────────────── */
+    .option-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .option-btn {
+      flex: 1;
+      min-width: 110px;
+      padding: 0.7rem 0.9rem;
+      border: 2px solid var(--gray-200);
+      background: #fff;
+      border-radius: 10px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+      text-align: center;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: var(--blue-l);
+    }
+    .option-btn.correct  { border-color: var(--green);  background: var(--green-l);  color: var(--green); }
+    .option-btn.wrong    { border-color: var(--red);    background: var(--red-l);    color: var(--red); }
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Feedback ──────────────────────────────────────── */
+    .feedback-box {
+      display: none;
+      padding: 1rem 1.25rem;
+      border-radius: 10px;
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+      line-height: 1.65;
+    }
+    .feedback-box.show    { display: block; }
+    .feedback-box.correct { background: var(--green-l); border: 1px solid var(--green-m); }
+    .feedback-box.wrong   { background: var(--red-l);   border: 1px solid #fca5a5; }
+    .fb-icon {
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      font-size: 0.9rem;
+    }
+    .feedback-box.correct .fb-icon { color: var(--green); }
+    .feedback-box.wrong   .fb-icon { color: var(--red); }
+    .fb-body { color: var(--gray-700); }
+
+    /* ── Concept tag ───────────────────────────────────── */
+    .concept-tag {
+      display: inline-block;
+      padding: 0.05em 0.4em;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 0.85em;
+      background: #fff;
+    }
+    .concept-tag.blue   { color: var(--blue);   border: 1px solid var(--blue-m); }
+    .concept-tag.green  { color: var(--green);  border: 1px solid var(--green-m); }
+    .concept-tag.purple { color: var(--purple); border: 1px solid var(--purple-m); }
+
+    /* ── Primary button ────────────────────────────────── */
+    .btn-primary {
+      display: inline-block;
+      padding: 0.7rem 1.75rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-primary:hover { background: #1e40af; }
+
+    /* ── Stage 2 ───────────────────────────────────────── */
+    .info-callout {
+      background: var(--blue-l);
+      border: 1px solid var(--blue-m);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      font-size: 0.875rem;
+      color: var(--gray-700);
+      margin-bottom: 1.75rem;
+      line-height: 1.6;
+    }
+
+    .word-group { margin-bottom: 2rem; }
+    .word-group-lbl {
+      font-size: 0.78rem;
+      color: var(--gray-500);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+    .syl-buttons { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+    .syl-btn {
+      padding: 0.5rem 0.85rem;
+      border: 2px solid var(--gray-300);
+      background: #fff;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--gray-700);
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .syl-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: var(--blue-l);
+      color: var(--blue);
+    }
+    .syl-btn.stressed  { border-color: var(--green);  background: var(--green-l);  color: var(--green);  font-weight: 700; }
+    .syl-btn.wrong-syl { border-color: var(--red);    background: var(--red-l);    color: var(--red); }
+    .syl-btn:disabled  { cursor: default; }
+
+    .word-feedback {
+      display: none;
+      margin-top: 0.75rem;
+      padding: 0.875rem 1.1rem;
+      border-radius: 8px;
+      font-size: 0.84rem;
+      line-height: 1.65;
+      color: var(--gray-700);
+    }
+    .word-feedback.show    { display: block; }
+    .word-feedback.correct { background: var(--green-l); border: 1px solid var(--green-m); }
+    .word-feedback.wrong   { background: var(--red-l);   border: 1px solid #fca5a5; }
+
+    /* ── Compare panel ─────────────────────────────────── */
+    .compare-panel {
+      display: none;
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-top: 1.75rem;
+    }
+    .compare-panel.show { display: block; }
+    .compare-panel h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      color: var(--gray-800);
+    }
+    .cmp-row {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      align-items: baseline;
+    }
+    .cmp-lang {
+      font-weight: 700;
+      min-width: 90px;
+      color: var(--gray-600);
+      flex-shrink: 0;
+    }
+    .cmp-rule { color: var(--gray-700); line-height: 1.55; }
+
+    /* ── Score card ────────────────────────────────────── */
+    .score-card {
+      display: none;
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      margin-top: 1.75rem;
+    }
+    .score-card.show { display: block; }
+    .score-big {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .score-sub {
+      color: var(--gray-500);
+      font-size: 0.875rem;
+      margin-bottom: 1.75rem;
+    }
+    .sum-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.82rem;
+      text-align: left;
+    }
+    .sum-table th {
+      padding: 0.5rem 0.75rem;
+      background: var(--gray-50);
+      color: var(--gray-500);
+      font-weight: 600;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    .sum-table td {
+      padding: 0.55rem 0.75rem;
+      border-bottom: 1px solid var(--gray-100);
+      color: var(--gray-700);
+      vertical-align: top;
+    }
+
+    @media (max-width: 400px) {
+      .option-btn   { min-width: 90px; font-size: 0.82rem; padding: 0.6rem 0.7rem; }
+      .cmp-row      { flex-direction: column; gap: 0.2rem; }
+      .cmp-lang     { min-width: unset; }
+    }
+  </style>
+</head>
+
+<body
+  data-asset-type="simulation"
+  data-topic-cluster="sprachen"
+  data-subject="Linguistik"
+  data-grade-level="10-13"
+>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+</script>
+
+<header>
+  <div class="header-inner">
+    <div class="eyebrow">Linguistik &middot; Prosodie &middot; Klasse 10&ndash;13</div>
+    <h1>Sprachrhythmus: Betonungstakt vs. Silbentakt</h1>
+    <p>Erkenne, warum Deutsch und Englisch anders klingen als Französisch &ndash; und was Japanisch von beiden unterscheidet.</p>
+  </div>
+</header>
+
+<div class="progress-wrap">
+  <div class="progress-meta">
+    <span id="progressLabel">Stufe 1 von 2 &ndash; Rhythmustyp erkennen</span>
+    <span id="progressPct">0&thinsp;%</span>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+</div>
+
+<div class="steps-row">
+  <div class="step-chip active" id="chip1">Stufe 1: Vorhersage</div>
+  <div class="step-sep"></div>
+  <div class="step-chip" id="chip2">Stufe 2: Betonung markieren</div>
+</div>
+
+<main>
+
+  <!-- ══════════ STAGE 1 ══════════ -->
+  <div id="stage1" class="stage active">
+
+    <div class="task-header">
+      <div class="task-label">Vorhersage &ndash; Stufe 1</div>
+      <div class="task-question">Welcher Rhythmustyp ist in der Animation zu sehen?</div>
+    </div>
+
+    <div class="round-row">
+      <div class="round-dot active" id="rd0"></div>
+      <div class="round-dot" id="rd1"></div>
+      <div class="round-dot" id="rd2"></div>
+    </div>
+
+    <div class="canvas-panel">
+      <div class="canvas-hint">Balken = Silben &middot; Höhe = Dauer/Lautstärke &middot; Breite = Morenanzahl &middot; Gelb = aktuell betont</div>
+      <canvas id="rhythmCanvas" width="600" height="120"></canvas>
+      <div class="sentence-row">
+        <span class="sentence-lang" id="sentLang">Sprache: ?</span>
+        <span class="sentence-text" id="sentText"></span>
+      </div>
+    </div>
+
+    <div class="option-row" id="s1Options">
+      <button class="option-btn" data-val="Betonungstakt" onclick="checkS1('Betonungstakt')">Betonungstakt</button>
+      <button class="option-btn" data-val="Silbentakt" onclick="checkS1('Silbentakt')">Silbentakt</button>
+      <button class="option-btn" data-val="Morentakt" onclick="checkS1('Morentakt')">Morentakt</button>
+    </div>
+
+    <div class="feedback-box" id="s1Feedback">
+      <div class="fb-icon" id="s1FbIcon"></div>
+      <div class="fb-body" id="s1FbBody"></div>
+    </div>
+
+    <button class="btn-primary" id="s1NextBtn" style="display:none;" onclick="nextRound()">
+      Weiter &rarr;
+    </button>
+
+  </div>
+
+  <!-- ══════════ STAGE 2 ══════════ -->
+  <div id="stage2" class="stage">
+
+    <div class="task-header">
+      <div class="task-label">Interaktiv &ndash; Stufe 2</div>
+      <div class="task-question">Klicke auf die betonte Silbe im deutschen Wort!</div>
+    </div>
+
+    <div class="info-callout">
+      Im Deutschen liegt der Wortakzent meist auf der <strong>Stammsilbe</strong> &ndash; er muss pro Wort gelernt werden (<em>lexikalischer Akzent</em>).
+      Im Französischen ist der Phrasenakzent immer auf der <strong>letzten Silbe</strong> der Wortgruppe &ndash; er ist vorhersagbar.
+      Das ist ein Kernunterschied zwischen <strong>Betonungstakt</strong> und <strong>Silbentakt</strong>.
+    </div>
+
+    <div id="stressContainer"></div>
+
+    <div class="compare-panel" id="comparePanel">
+      <h3>Vergleich: Akzentregeln der drei Rhythmustypen</h3>
+      <div class="cmp-row">
+        <span class="cmp-lang">Deutsch</span>
+        <span class="cmp-rule">
+          Akzent auf der <strong>Stammsilbe</strong>; unbetonte Silben werden zu Schwa (/&schwa;/) reduziert.
+          Typus:&nbsp;<span class="concept-tag blue">Betonungstakt</span>
+          &middot; Auch: Englisch, Russisch, Niederländisch
+        </span>
+      </div>
+      <div class="cmp-row">
+        <span class="cmp-lang">Französisch</span>
+        <span class="cmp-rule">
+          Akzent immer auf der <strong>letzten Silbe</strong> der Wortgruppe (vorhersagbar); alle Silben bleiben vollständig erhalten, kein Schwa.
+          Typus:&nbsp;<span class="concept-tag green">Silbentakt</span>
+          &middot; Auch: Spanisch, Italienisch, Türkisch
+        </span>
+      </div>
+      <div class="cmp-row">
+        <span class="cmp-lang">Japanisch</span>
+        <span class="cmp-rule">
+          Rhythmische Grundeinheit ist die <strong>Mora</strong>; kurze Silben = 1 Mora, Silben mit Langvokal = 2 Moren.
+          Kein Dynamikakzent, sondern Tonhöhenakzent (pitch accent).
+          Typus:&nbsp;<span class="concept-tag purple">Morentakt</span>
+          &middot; Auch: Finnisch
+        </span>
+      </div>
+    </div>
+
+    <div class="score-card" id="scoreCard">
+      <div class="score-big" id="scoreBig">0/4</div>
+      <div class="score-sub">Betonungssilben richtig markiert</div>
+      <table class="sum-table">
+        <thead>
+          <tr><th>Rhythmustyp</th><th>Merkmal</th><th>Beispielsprachen</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="concept-tag blue">Betonungstakt</span></td>
+            <td>Betonte Silben länger + lauter; unbetonte reduziert (Schwa)</td>
+            <td>Deutsch, Englisch, Russisch</td>
+          </tr>
+          <tr>
+            <td><span class="concept-tag green">Silbentakt</span></td>
+            <td>Alle Silben gleich lang; kein Schwa; gleichmäßiger Rhythmus</td>
+            <td>Französisch, Spanisch, Italienisch</td>
+          </tr>
+          <tr>
+            <td><span class="concept-tag purple">Morentakt</span></td>
+            <td>Mora als Grundeinheit; kurze vs. lange Silben (1 vs. 2 Moren)</td>
+            <td>Japanisch, Finnisch</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</main>
+
+<script>
+// ── Language data ─────────────────────────────────────────────────────────────
+var LANGS = [
+  {
+    name: 'Deutsch',
+    type: 'Betonungstakt',
+    sentence: 'Wel-che Spra-che sprichst du?',
+    syls: [
+      { t: 'Wel',     s: true,  m: 1 },
+      { t: 'che',     s: false, m: 1 },
+      { t: 'Spra',    s: true,  m: 1 },
+      { t: 'che',     s: false, m: 1 },
+      { t: 'sprichst',s: true,  m: 1 },
+      { t: 'du',      s: false, m: 1 }
+    ],
+    col:  '#1d4ed8',
+    colD: '#bfdbfe',
+    ok: 'Richtig! Deutsch ist eine <span class="concept-tag blue">Betonungstaktsprache</span>: Betonte Silben sind länger und lauter, unbetonte werden zu Schwa /\u0259/ reduziert. Die Abstände zwischen betonten Silben sind annähernd gleich (Isochronie der Takte, Abercrombie 1967).',
+    no: 'Das war <strong>Betonungstakt</strong> &ndash; erkennbar an den abwechselnd hohen und niedrigen Balken. Deutsch und Englisch komprimieren die Zwischenschläge, sodass die Abstände zwischen Betonungen regelmäßig werden. Typus: <span class="concept-tag blue">Betonungstaktsprache</span>'
+  },
+  {
+    name: 'Französisch',
+    type: 'Silbentakt',
+    sentence: 'Quel-le lan-gue par-lez-vous?',
+    syls: [
+      { t: 'Quel', s: false, m: 1 },
+      { t: 'le',   s: false, m: 1 },
+      { t: 'lan',  s: false, m: 1 },
+      { t: 'gue',  s: false, m: 1 },
+      { t: 'par',  s: false, m: 1 },
+      { t: 'lez',  s: false, m: 1 },
+      { t: 'vous', s: true,  m: 1 }
+    ],
+    col:  '#15803d',
+    colD: '#bbf7d0',
+    ok: 'Richtig! Französisch ist eine <span class="concept-tag green">Silbentaktsprache</span>: Alle Balken sind gleich hoch und gleich breit, weil jede Silbe ungefähr gleich lang ist. Der Akzent liegt auf der letzten Silbe der Wortgruppe (Phrasenakzent) und betrifft Tonhöhe, nicht Länge.',
+    no: 'Das war <strong>Silbentakt</strong> &ndash; die gleichhohen, gleichbreiten Balken zeigen, dass alle Silben etwa gleich lang sind. Französisch, Spanisch und Italienisch folgen diesem Muster. Typus: <span class="concept-tag green">Silbentaktsprache</span>'
+  },
+  {
+    name: 'Japanisch',
+    type: 'Morentakt',
+    sentence: 'Na-ni-go-o ha-na-shi-ma-su-ka?',
+    syls: [
+      { t: 'Na',  s: false, m: 1 },
+      { t: 'ni',  s: false, m: 1 },
+      { t: 'go',  s: false, m: 1 },
+      { t: 'o',   s: false, m: 2 },
+      { t: 'ha',  s: false, m: 1 },
+      { t: 'na',  s: false, m: 1 },
+      { t: 'shi', s: false, m: 1 },
+      { t: 'ma',  s: false, m: 1 },
+      { t: 'su',  s: false, m: 1 },
+      { t: 'ka',  s: false, m: 1 }
+    ],
+    col:  '#7c3aed',
+    colD: '#ddd6fe',
+    ok: 'Richtig! Japanisch ist eine <span class="concept-tag purple">Morentaktsprache</span>: Der breitere Balken für &ldquo;o&rdquo; zeigt eine 2-Moren-Silbe (Langvokal). Die Mora &ndash; nicht die Silbe &ndash; ist die rhythmische Grundeinheit. Kein Dynamikakzent, sondern Tonhöhenakzent (pitch accent).',
+    no: 'Das war <strong>Morentakt</strong> &ndash; der breitere Balken für &ldquo;o&rdquo; markiert 2 Moren (Langvokal). In Japanisch und Finnisch ist die Mora die rhythmische Grundeinheit. Typus: <span class="concept-tag purple">Morentaktsprache</span>'
+  }
+];
+
+// ── Canvas setup ──────────────────────────────────────────────────────────────
+var canvas = document.getElementById('rhythmCanvas');
+var ctx    = canvas.getContext('2d');
+
+function setupCanvas() {
+  var panel = canvas.parentElement;
+  var w = panel.clientWidth - 40;
+  canvas.width  = Math.max(200, w);
+  canvas.height = 120;
+}
+
+function barW(syl, type) {
+  if (type === 'Betonungstakt') return syl.s ? 28 : 14;
+  if (type === 'Silbentakt')    return 22;
+  return syl.m * 18;
+}
+
+function barH(syl, type, maxH) {
+  if (type === 'Betonungstakt') return syl.s ? maxH * 0.88 : maxH * 0.30;
+  if (type === 'Silbentakt')    return maxH * 0.54;
+  return maxH * 0.56;
+}
+
+function drawRRect(x, y, w, h, r) {
+  if (ctx.roundRect) {
+    ctx.roundRect(x, y, w, h, r);
+  } else {
+    ctx.rect(x, y, w, h);
+  }
+}
+
+function drawFrame(langIdx, hlIdx, isResult) {
+  var lang = LANGS[langIdx];
+  var W    = canvas.width;
+  var H    = canvas.height;
+  var maxH = H - 28;
+  var baseY = H - 20;
+  var gap   = 7;
+
+  ctx.clearRect(0, 0, W, H);
+
+  var total = -gap;
+  lang.syls.forEach(function(s) { total += barW(s, lang.type) + gap; });
+  var x = Math.max(8, (W - total) / 2);
+
+  lang.syls.forEach(function(syl, i) {
+    var bw = barW(syl, lang.type);
+    var bh = barH(syl, lang.type, maxH);
+    var isHL = !isResult && i === hlIdx;
+
+    var color;
+    if (isHL) {
+      color = '#f59e0b';
+    } else if (isResult) {
+      color = (lang.type === 'Betonungstakt' && syl.s) ? lang.col : lang.colD;
+      if (lang.type !== 'Betonungstakt') color = lang.col;
+    } else {
+      color = lang.colD;
+    }
+
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    drawRRect(x, baseY - bh, bw, bh, 4);
+    ctx.fill();
+
+    var fs = Math.min(10, Math.max(8, bw - 1));
+    ctx.fillStyle = '#6b7280';
+    ctx.font = fs + 'px -apple-system,sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText(syl.t, x + bw / 2, baseY + 13);
+
+    x += bw + gap;
+  });
+}
+
+// ── Animation ─────────────────────────────────────────────────────────────────
+var currentRound = 0;
+var hlIdx        = 0;
+var lastTS       = 0;
+var animId       = null;
+var answered     = false;
+var s1Score      = 0;
+
+function beatMs(type) {
+  if (type === 'Betonungstakt') return 450;
+  if (type === 'Silbentakt')    return 340;
+  return 300;
+}
+
+function animLoop(ts) {
+  var lang = LANGS[currentRound];
+  if (ts - lastTS > beatMs(lang.type)) {
+    drawFrame(currentRound, hlIdx, false);
+    hlIdx = (hlIdx + 1) % lang.syls.length;
+    lastTS = ts;
+  }
+  animId = requestAnimationFrame(animLoop);
+}
+
+function startAnim() {
+  stopAnim();
+  hlIdx = 0; lastTS = 0;
+  drawFrame(currentRound, 0, false);
+  animId = requestAnimationFrame(animLoop);
+}
+
+function stopAnim() {
+  if (animId) { cancelAnimationFrame(animId); animId = null; }
+}
+
+// ── Stage 1 ───────────────────────────────────────────────────────────────────
+function updateDots() {
+  [0,1,2].forEach(function(i) {
+    var el = document.getElementById('rd' + i);
+    el.className = 'round-dot' +
+      (i < currentRound ? ' done' : i === currentRound ? ' active' : '');
+  });
+}
+
+function loadRound(idx) {
+  var lang = LANGS[idx];
+  document.getElementById('sentLang').textContent = 'Sprache: ?';
+  document.getElementById('sentText').textContent = lang.sentence;
+  document.querySelectorAll('.option-btn').forEach(function(b) {
+    b.disabled = false;
+    b.className = 'option-btn';
+  });
+  document.getElementById('s1Feedback').className = 'feedback-box';
+  document.getElementById('s1NextBtn').style.display = 'none';
+  answered = false;
+  updateDots();
+  setProgress(idx / 5);
+  startAnim();
+}
+
+function checkS1(choice) {
+  if (answered) return;
+  answered = true;
+  stopAnim();
+
+  var lang = LANGS[currentRound];
+  var ok   = choice === lang.type;
+
+  document.querySelectorAll('.option-btn').forEach(function(b) {
+    b.disabled = true;
+    if (b.dataset.val === lang.type)          b.classList.add('correct');
+    else if (b.dataset.val === choice && !ok) b.classList.add('wrong');
+  });
+
+  var fb = document.getElementById('s1Feedback');
+  fb.className = 'feedback-box show ' + (ok ? 'correct' : 'wrong');
+  document.getElementById('s1FbIcon').textContent = ok ? '\u2713 Richtig!' : '\u2717 Leider falsch';
+  document.getElementById('s1FbBody').innerHTML   = ok ? lang.ok : lang.no;
+
+  document.getElementById('sentLang').textContent = 'Sprache: ' + lang.name;
+  drawFrame(currentRound, -1, true);
+
+  if (ok) s1Score++;
+  document.getElementById('s1NextBtn').style.display = 'inline-block';
+  window.dataLayer.push({ event: 'simulation_step_complete', topic: 'prosodie-rhythmus-sprachen', step: currentRound + 1, result: ok ? 'correct' : 'wrong' });
+}
+
+function nextRound() {
+  currentRound++;
+  if (currentRound >= LANGS.length) {
+    enterStage2();
+  } else {
+    loadRound(currentRound);
+  }
+}
+
+// ── Stage 2 ───────────────────────────────────────────────────────────────────
+var WORDS = [
+  {
+    word: 'Fotografieren',
+    syls: ['Fo','to','gra','fie','ren'],
+    correct: 3,
+    expl: '<strong>Fo-to-gra-<u>fie</u>-ren</strong> &ndash; Akzent auf &ldquo;-fie-&rdquo; (Suffix -ier-). Verben auf -ieren tragen den Akzent auf dem Suffix. Lexikalische Regel im <span class="concept-tag blue">Betonungstakt</span>.'
+  },
+  {
+    word: 'Sprache',
+    syls: ['Spra','che'],
+    correct: 0,
+    expl: '<strong><u>Spra</u>-che</strong> &ndash; Akzent auf der Stammsilbe. Das häufigste Muster bei zweisilbigen deutschen Wörtern ohne Präfix (<span class="concept-tag blue">Betonungstakt</span>).'
+  },
+  {
+    word: 'Verständnis',
+    syls: ['Ver','ständ','nis'],
+    correct: 1,
+    expl: '<strong>Ver-<u>ständ</u>-nis</strong> &ndash; Bei nicht-trennbaren Präfixen (ver-, be-, ge-, ent-) liegt der Akzent auf der Stammsilbe, nicht auf dem Präfix. Die Endung &ldquo;-nis&rdquo; ist stets unbetont (<span class="concept-tag blue">Betonungstakt</span>).'
+  },
+  {
+    word: 'Aussprache',
+    syls: ['Aus','spra','che'],
+    correct: 0,
+    expl: '<strong><u>Aus</u>-spra-che</strong> &ndash; Bei trennbaren Verbpräfixen (aus-, an-, ab-, auf-) liegt der Akzent auf dem Präfix. Dieser Kontrast trennbar/nicht-trennbar ist charakteristisch für den <span class="concept-tag blue">Betonungstakt</span> im Deutschen.'
+  }
+];
+
+var s2Score = 0;
+var s2Done  = 0;
+
+function enterStage2() {
+  stopAnim();
+  document.getElementById('chip1').className = 'step-chip done';
+  document.getElementById('chip2').className = 'step-chip active';
+  document.getElementById('progressLabel').textContent = 'Stufe 2 von 2 \u2013 Betonungssilbe markieren';
+  document.getElementById('stage1').className = 'stage';
+  document.getElementById('stage2').className = 'stage active';
+  setProgress(0.5);
+  buildWords();
+}
+
+function buildWords() {
+  var c = document.getElementById('stressContainer');
+  c.innerHTML = '';
+  WORDS.forEach(function(item, wi) {
+    var grp = document.createElement('div');
+    grp.className = 'word-group';
+    grp.id = 'wg' + wi;
+
+    var lbl = document.createElement('div');
+    lbl.className = 'word-group-lbl';
+    lbl.textContent = 'Wort ' + (wi + 1) + ' von ' + WORDS.length + ': Wo liegt die Betonung in \u201e' + item.word + '\u201c?';
+
+    var btns = document.createElement('div');
+    btns.className = 'syl-buttons';
+    item.syls.forEach(function(syl, si) {
+      var btn = document.createElement('button');
+      btn.className = 'syl-btn';
+      btn.textContent = syl;
+      btn.onclick = (function(w, s) { return function() { checkStress(w, s); }; })(wi, si);
+      btns.appendChild(btn);
+    });
+
+    var fb = document.createElement('div');
+    fb.className = 'word-feedback';
+    fb.id = 'wfb' + wi;
+
+    grp.appendChild(lbl);
+    grp.appendChild(btns);
+    grp.appendChild(fb);
+    c.appendChild(grp);
+  });
+}
+
+function checkStress(wi, si) {
+  var item = WORDS[wi];
+  var grp  = document.getElementById('wg' + wi);
+  var btns = grp.querySelectorAll('.syl-btn');
+  var ok   = si === item.correct;
+
+  btns.forEach(function(b, i) {
+    b.disabled = true;
+    if (i === item.correct)      b.classList.add('stressed');
+    else if (i === si && !ok)    b.classList.add('wrong-syl');
+  });
+
+  var fb = document.getElementById('wfb' + wi);
+  fb.className = 'word-feedback show ' + (ok ? 'correct' : 'wrong');
+  fb.innerHTML = '<strong>' + (ok ? '\u2713 Richtig!' : '\u2717 Nicht ganz.') + '</strong> ' + item.expl;
+
+  if (ok) s2Score++;
+  s2Done++;
+  if (s2Done >= WORDS.length) setTimeout(showResult, 500);
+  window.dataLayer.push({ event: 'simulation_step_complete', topic: 'prosodie-rhythmus-sprachen', step: 's2_w' + wi, result: ok ? 'correct' : 'wrong' });
+}
+
+function showResult() {
+  document.getElementById('scoreBig').textContent = s2Score + '/' + WORDS.length;
+  document.getElementById('comparePanel').classList.add('show');
+  document.getElementById('scoreCard').classList.add('show');
+  setProgress(1.0);
+  window.dataLayer.push({ event: 'simulation_step_complete', topic: 'prosodie-rhythmus-sprachen', step: 'complete', s1: s1Score, s2: s2Score });
+}
+
+function setProgress(frac) {
+  var pct = Math.round(frac * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressPct').textContent  = pct + '\u2009%';
+}
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+setupCanvas();
+window.addEventListener('resize', function() {
+  setupCanvas();
+  drawFrame(currentRound, hlIdx, answered);
+});
+loadRound(0);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Semantischer Wandel: Bedeutungswandel interaktiv üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Bestimme interaktiv den Bedeutungswandel echter Wörter wie Fleisch, Weib oder Maus: Verengung, Erweiterung, Amelioration und Pejoration verstehen und üben.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Semantischer Wandel, Bedeutungswandel, Bedeutungsverengung, Bedeutungserweiterung, Amelioration, Pejoration">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/semantischer-wandel-bedeutungswandel-simulation.html">
+  <meta property="og:title" content="Semantischer Wandel interaktiv üben">
+  <meta property="og:description" content="Bestimme interaktiv den Bedeutungswandel echter Wörter wie Fleisch, Weib oder Maus: Verengung, Erweiterung, Amelioration und Pejoration verstehen und üben.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/semantischer-wandel-bedeutungswandel-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Semantischer Wandel: Bedeutungswandel interaktiv üben",
+  "description":"Bestimme interaktiv den Bedeutungswandel echter Wörter wie Fleisch, Weib oder Maus: Verengung, Erweiterung, Amelioration und Pejoration verstehen und üben.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/semantischer-wandel-bedeutungswandel-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    :root {
+      --orange:        #ea580c;
+      --orange-light:  #fff7ed;
+      --orange-mid:    #fed7aa;
+      --blau:          #1d4ed8;
+      --blau-light:    #eff6ff;
+      --blau-mid:      #bfdbfe;
+      --gruen:         #16a34a;
+      --gruen-light:   #f0fdf4;
+      --gruen-mid:     #bbf7d0;
+      --rot:           #dc2626;
+      --rot-light:     #fef2f2;
+      --rot-mid:       #fecaca;
+      --gray-50:       #f9fafb;
+      --gray-100:      #f3f4f6;
+      --gray-200:      #e5e7eb;
+      --gray-300:      #d1d5db;
+      --gray-400:      #9ca3af;
+      --gray-500:      #6b7280;
+      --gray-600:      #4b5563;
+      --gray-700:      #374151;
+      --gray-800:      #1f2937;
+      --radius:        10px;
+      --shadow:        0 2px 12px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .page-header {
+      background: #1e3a5f;
+      color: #fff;
+      padding: 1.25rem 1.5rem;
+    }
+    .page-header .breadcrumb {
+      font-size: 0.75rem;
+      opacity: 0.7;
+      margin-bottom: 0.4rem;
+    }
+    .page-header h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 0.25rem;
+    }
+    .page-header .subtitle {
+      font-size: 0.85rem;
+      opacity: 0.85;
+    }
+
+    /* ── Main ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    /* ── Fortschrittsanzeige ── */
+    .progress-bar {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      margin-bottom: 1.75rem;
+    }
+    .progress-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--gray-300);
+      transition: background 0.3s;
+    }
+    .progress-dot.active { background: #1e3a5f; }
+    .progress-dot.done   { background: var(--gruen); }
+    .progress-label {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      margin-left: 0.25rem;
+    }
+
+    /* ── Stufen-Badge ── */
+    .stage-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #1e3a5f;
+      color: #fff;
+      border-radius: 999px;
+      padding: 0.3rem 0.85rem;
+      font-size: 0.78rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Intro-Karte ── */
+    .intro-card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 1.75rem;
+    }
+    .intro-card h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: #1e3a5f;
+    }
+    .intro-card p {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      line-height: 1.55;
+    }
+
+    /* ── Typ-Legende ── */
+    .legende {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+      margin-top: 1rem;
+    }
+    .legende-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--gray-700);
+    }
+    .legende-dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── Zeitstrahl-Karte ── */
+    .zeitstrahl-container {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .wort-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray-400);
+      margin-bottom: 0.6rem;
+    }
+    .zeitstrahl {
+      display: flex;
+      align-items: stretch;
+      gap: 0;
+      margin-bottom: 1.25rem;
+    }
+    .zeit-karte {
+      flex: 1;
+      border-radius: 8px;
+      padding: 1rem;
+      min-height: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .zeit-karte.alt {
+      background: #fefce8;
+      border: 2px solid #fde68a;
+    }
+    .zeit-karte.neu {
+      background: var(--gray-50);
+      border: 2px solid var(--gray-200);
+    }
+    .zeit-karte.neu.hidden { opacity: 0; pointer-events: none; }
+    .zeit-karte.neu.visible {
+      opacity: 1;
+      animation: fade-in 0.4s ease;
+    }
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateX(8px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+    .zeit-karte-epoche {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray-400);
+      margin-bottom: 0.35rem;
+    }
+    .zeit-karte-wort {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--gray-800);
+      margin-bottom: 0.3rem;
+    }
+    .zeit-karte-bedeutung {
+      font-size: 0.82rem;
+      color: var(--gray-600);
+      line-height: 1.4;
+    }
+    .zeit-karte-quelle {
+      font-size: 0.68rem;
+      color: var(--gray-400);
+      margin-top: 0.4rem;
+      font-style: italic;
+    }
+
+    /* ── Pfeil-Visualisierung ── */
+    .pfeil-bereich {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      flex-shrink: 0;
+      position: relative;
+    }
+    .pfeil-linie {
+      width: 100%;
+      height: 3px;
+      border-radius: 2px;
+      background: var(--gray-300);
+      position: relative;
+      transition: background 0.4s;
+    }
+    .pfeil-linie.animiert {
+      animation: pfeil-wachsen 0.5s ease forwards;
+    }
+    @keyframes pfeil-wachsen {
+      from { transform: scaleX(0); transform-origin: left; }
+      to   { transform: scaleX(1); transform-origin: left; }
+    }
+    .pfeil-spitze {
+      position: absolute;
+      right: -1px; top: 50%;
+      transform: translateY(-50%);
+      border-left: 8px solid var(--gray-300);
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      transition: border-left-color 0.4s;
+    }
+    .pfeil-typ-label {
+      font-size: 0.62rem;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 0.4rem;
+      border-radius: 4px;
+      padding: 2px 4px;
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.4s;
+      white-space: nowrap;
+    }
+    .pfeil-typ-label.sichtbar { opacity: 1; }
+
+    /* Pfeil-Farben nach Typ */
+    .pfeil-verengung .pfeil-linie  { background: var(--orange); }
+    .pfeil-verengung .pfeil-spitze { border-left-color: var(--orange); }
+    .pfeil-verengung .pfeil-typ-label { background: var(--orange); }
+
+    .pfeil-erweiterung .pfeil-linie  { background: var(--blau); }
+    .pfeil-erweiterung .pfeil-spitze { border-left-color: var(--blau); }
+    .pfeil-erweiterung .pfeil-typ-label { background: var(--blau); }
+
+    .pfeil-amelioration .pfeil-linie  { background: var(--gruen); }
+    .pfeil-amelioration .pfeil-spitze { border-left-color: var(--gruen); }
+    .pfeil-amelioration .pfeil-typ-label { background: var(--gruen); }
+
+    .pfeil-pejoration .pfeil-linie  { background: var(--rot); }
+    .pfeil-pejoration .pfeil-spitze { border-left-color: var(--rot); }
+    .pfeil-pejoration .pfeil-typ-label { background: var(--rot); }
+
+    /* ── Aufgaben-Bereich ── */
+    .aufgabe-box {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .aufgabe-frage {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 1rem;
+    }
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+    }
+    .option-btn {
+      border: 2px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 0.7rem 0.9rem;
+      background: #fff;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gray-700);
+      text-align: left;
+      transition: border-color 0.2s, background 0.2s, transform 0.1s;
+      line-height: 1.3;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: #1e3a5f;
+      background: var(--blau-light);
+      transform: translateY(-1px);
+    }
+    .option-btn:disabled { cursor: not-allowed; }
+    .option-btn.richtig {
+      border-color: var(--gruen);
+      background: var(--gruen-light);
+      color: var(--gruen);
+    }
+    .option-btn.falsch {
+      border-color: var(--rot);
+      background: var(--rot-light);
+      color: var(--rot);
+    }
+    .option-btn.korrekt-markiert {
+      border-color: var(--gruen);
+      background: var(--gruen-mid);
+      color: var(--gruen);
+    }
+
+    /* ── Feedback ── */
+    .feedback-box {
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+      display: none;
+      line-height: 1.55;
+    }
+    .feedback-box.sichtbar { display: block; animation: fade-in 0.3s ease; }
+    .feedback-box.richtig-fb {
+      background: var(--gruen-light);
+      border-left: 4px solid var(--gruen);
+    }
+    .feedback-box.falsch-fb {
+      background: var(--rot-light);
+      border-left: 4px solid var(--rot);
+    }
+    .feedback-box .feedback-icon {
+      font-size: 1.1rem;
+      margin-right: 0.3rem;
+    }
+    .feedback-box .feedback-titel {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+    .feedback-box .feedback-text {
+      font-size: 0.85rem;
+      color: var(--gray-700);
+    }
+    .concept-tag {
+      display: inline-block;
+      background: #1e3a5f;
+      color: #fff;
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      margin-right: 3px;
+    }
+
+    /* ── Weiter-Button ── */
+    .weiter-btn {
+      background: #1e3a5f;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1rem;
+      display: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .weiter-btn.sichtbar { display: inline-block; }
+    .weiter-btn:hover { background: #2d5491; transform: translateY(-1px); }
+
+    /* ── Abschluss-Übersicht ── */
+    .zusammenfassung {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .zusammenfassung h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #1e3a5f;
+      margin-bottom: 1.25rem;
+    }
+    .typen-uebersicht {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .typ-karte {
+      border-radius: 8px;
+      padding: 0.9rem;
+    }
+    .typ-karte.verengung    { background: var(--orange-light); border-left: 4px solid var(--orange); }
+    .typ-karte.erweiterung  { background: var(--blau-light);   border-left: 4px solid var(--blau); }
+    .typ-karte.amelioration { background: var(--gruen-light);  border-left: 4px solid var(--gruen); }
+    .typ-karte.pejoration   { background: var(--rot-light);    border-left: 4px solid var(--rot); }
+    .typ-karte-name { font-size: 0.8rem; font-weight: 700; margin-bottom: 0.2rem; }
+    .typ-karte-def  { font-size: 0.75rem; color: var(--gray-600); margin-bottom: 0.3rem; }
+    .typ-karte-bsp  { font-size: 0.73rem; font-style: italic; color: var(--gray-500); }
+
+    .merksatz {
+      background: #eff6ff;
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 0.85rem;
+      color: var(--gray-700);
+      line-height: 1.55;
+    }
+    .merksatz strong { color: #1e3a5f; }
+
+    /* ── Score-Anzeige ── */
+    .score-box {
+      text-align: center;
+      padding: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .score-zahl {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #1e3a5f;
+    }
+    .score-label {
+      font-size: 0.85rem;
+      color: var(--gray-500);
+      margin-top: 0.2rem;
+    }
+
+    /* ── Footer ── */
+    .quellen {
+      background: var(--gray-100);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      font-size: 0.73rem;
+      color: var(--gray-500);
+      line-height: 1.6;
+    }
+    .quellen strong { color: var(--gray-600); }
+
+    footer.site-footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.78rem;
+      color: var(--gray-400);
+      margin-top: 2rem;
+    }
+    footer.site-footer a { color: var(--gray-400); text-decoration: underline; }
+
+    /* ── hidden helper ── */
+    .hidden { display: none !important; }
+
+    /* ── 375 px Responsive ── */
+    @media (max-width: 480px) {
+      .page-header { padding: 1rem; }
+      .page-header h1 { font-size: 1.05rem; }
+      main { padding: 1rem 0.75rem 2.5rem; }
+      .zeitstrahl { flex-direction: column; }
+      .pfeil-bereich {
+        flex-direction: row;
+        width: 100%;
+        height: 36px;
+      }
+      .pfeil-linie { height: 3px; width: 100%; }
+      .pfeil-typ-label { margin-top: 0; margin-left: 0.4rem; }
+      .options-grid { grid-template-columns: 1fr; }
+      .typen-uebersicht { grid-template-columns: 1fr; }
+      .legende { grid-template-columns: 1fr; }
+      .pfeil-bereich { width: auto; height: 40px; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header class="page-header">
+  <div class="breadcrumb"><a href="/" style="color:rgba(255,255,255,0.7);text-decoration:none;">Nachhilfe Mentor</a> › Lernsimulationen › Sprachwissenschaft</div>
+  <h1>Semantischer Wandel: Wie Wörter ihre Bedeutung ändern</h1>
+  <p class="subtitle">Klassen 9–12 · Deutschunterricht · Sprachwissenschaft</p>
+</header>
+
+<main>
+
+  <!-- Fortschrittsanzeige -->
+  <div class="progress-bar" id="progressBar" aria-label="Fortschritt">
+    <div class="progress-dot" id="dot0"></div>
+    <div class="progress-dot" id="dot1"></div>
+    <div class="progress-dot" id="dot2"></div>
+    <div class="progress-dot" id="dot3"></div>
+    <div class="progress-dot" id="dot4"></div>
+    <div class="progress-dot" id="dot5"></div>
+    <div class="progress-dot" id="dot6"></div>
+    <span class="progress-label" id="progressLabel">Wort 1 von 7</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════
+       STUFE 1 (stage1) – Erkennen
+  ══════════════════════════════════════════════ -->
+  <div id="stage1">
+    <div class="stage-badge">Stufe 1 – Erkennen</div>
+
+    <div class="intro-card">
+      <h2>Was ist Bedeutungswandel?</h2>
+      <p>Wörter ändern ihre Bedeutung im Laufe der Zeit – manchmal drastisch. Dieser Prozess heißt <strong>semantischer Wandel</strong> oder Bedeutungswandel. Es gibt vier Haupttypen:</p>
+      <div class="legende" style="margin-top:1rem;">
+        <div class="legende-item"><div class="legende-dot" style="background:var(--orange)"></div> Bedeutungsverengung</div>
+        <div class="legende-item"><div class="legende-dot" style="background:var(--blau)"></div> Bedeutungserweiterung</div>
+        <div class="legende-item"><div class="legende-dot" style="background:var(--gruen)"></div> Amelioration (Verbesserung)</div>
+        <div class="legende-item"><div class="legende-dot" style="background:var(--rot)"></div> Pejoration (Verschlechterung)</div>
+      </div>
+      <p style="margin-top:1rem;font-size:0.85rem;color:var(--gray-600);">
+        In <strong>Stufe 1</strong> siehst du beide Bedeutungen – die historische und die heutige. Bestimme, welcher Wandeltyp vorliegt.
+      </p>
+    </div>
+
+    <!-- Wort 1: Fleisch (Verengung) -->
+    <div id="item0" class="item-container">
+      <div class="zeitstrahl-container">
+        <div class="wort-label">Wort 1 von 7</div>
+        <div class="zeitstrahl">
+          <div class="zeit-karte alt">
+            <div class="zeit-karte-epoche">Mittelhochdeutsch (ca. 12.–15. Jh.)</div>
+            <div class="zeit-karte-wort">vleisch</div>
+            <div class="zeit-karte-bedeutung">„Nahrung, Speise allgemein" – alles Essbare, nicht nur tierisches Gewebe</div>
+            <div class="zeit-karte-quelle">Grimm'sches Wörterbuch, Bd. 3 (1862)</div>
+          </div>
+          <div class="pfeil-bereich" id="pfeil0">
+            <div class="pfeil-linie"><div class="pfeil-spitze"></div></div>
+            <div class="pfeil-typ-label" id="pLabel0"></div>
+          </div>
+          <div class="zeit-karte neu" id="karte0neu">
+            <div class="zeit-karte-epoche">Neuhochdeutsch (heute)</div>
+            <div class="zeit-karte-wort">Fleisch</div>
+            <div class="zeit-karte-bedeutung">Ausschließlich tierisches Muskelgewebe</div>
+            <div class="zeit-karte-quelle">Paul: Deutsches Wörterbuch (2002)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aufgabe-box">
+        <div class="aufgabe-frage">Welche Art von Bedeutungswandel liegt vor?</div>
+        <div class="options-grid">
+          <button class="option-btn" onclick="pruefen(0,'verengung','verengung')">Bedeutungsverengung</button>
+          <button class="option-btn" onclick="pruefen(0,'erweiterung','verengung')">Bedeutungserweiterung</button>
+          <button class="option-btn" onclick="pruefen(0,'amelioration','verengung')">Amelioration</button>
+          <button class="option-btn" onclick="pruefen(0,'pejoration','verengung')">Pejoration</button>
+        </div>
+        <div class="feedback-box" id="fb0"></div>
+        <button class="weiter-btn" id="wb0" onclick="naechstesWort(0)">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- Wort 2: Marschall (Amelioration) -->
+    <div id="item1" class="item-container hidden">
+      <div class="zeitstrahl-container">
+        <div class="wort-label">Wort 2 von 7</div>
+        <div class="zeitstrahl">
+          <div class="zeit-karte alt">
+            <div class="zeit-karte-epoche">Spätlateinisch / Frühgermanisch</div>
+            <div class="zeit-karte-wort">Marschall</div>
+            <div class="zeit-karte-bedeutung">Von „Mähre" (altes Pferd) + „Schalk" (Knecht) = Stallknecht, Pferdeknecht</div>
+            <div class="zeit-karte-quelle">Kluge: Etymologisches Wörterbuch (2011), S. 604</div>
+          </div>
+          <div class="pfeil-bereich" id="pfeil1">
+            <div class="pfeil-linie"><div class="pfeil-spitze"></div></div>
+            <div class="pfeil-typ-label" id="pLabel1"></div>
+          </div>
+          <div class="zeit-karte neu" id="karte1neu">
+            <div class="zeit-karte-epoche">Neuhochdeutsch (heute)</div>
+            <div class="zeit-karte-wort">Marschall</div>
+            <div class="zeit-karte-bedeutung">Höchster Militärbefehlshaber (Feldmarschall, Generalfeldmarschall)</div>
+            <div class="zeit-karte-quelle">Grimm, Bd. 12, Sp. 1673</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aufgabe-box">
+        <div class="aufgabe-frage">Welche Art von Bedeutungswandel liegt vor?</div>
+        <div class="options-grid">
+          <button class="option-btn" onclick="pruefen(1,'verengung','amelioration')">Bedeutungsverengung</button>
+          <button class="option-btn" onclick="pruefen(1,'erweiterung','amelioration')">Bedeutungserweiterung</button>
+          <button class="option-btn" onclick="pruefen(1,'amelioration','amelioration')">Amelioration</button>
+          <button class="option-btn" onclick="pruefen(1,'pejoration','amelioration')">Pejoration</button>
+        </div>
+        <div class="feedback-box" id="fb1"></div>
+        <button class="weiter-btn" id="wb1" onclick="naechstesWort(1)">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- Wort 3: Weib (Pejoration) -->
+    <div id="item2" class="item-container hidden">
+      <div class="zeitstrahl-container">
+        <div class="wort-label">Wort 3 von 7</div>
+        <div class="zeitstrahl">
+          <div class="zeit-karte alt">
+            <div class="zeit-karte-epoche">Althochdeutsch / Lutherzeit (ca. 8.–17. Jh.)</div>
+            <div class="zeit-karte-wort">wîb / Weib</div>
+            <div class="zeit-karte-bedeutung">Vollständig neutraler Begriff für „Frau", respektvoller Standardausdruck (Luther-Bibel: Ehemann + Weib)</div>
+            <div class="zeit-karte-quelle">Kluge (2011), S. 974; Paul (2002), S. 1169</div>
+          </div>
+          <div class="pfeil-bereich" id="pfeil2">
+            <div class="pfeil-linie"><div class="pfeil-spitze"></div></div>
+            <div class="pfeil-typ-label" id="pLabel2"></div>
+          </div>
+          <div class="zeit-karte neu" id="karte2neu">
+            <div class="zeit-karte-epoche">Neuhochdeutsch (heute)</div>
+            <div class="zeit-karte-wort">Weib</div>
+            <div class="zeit-karte-bedeutung">Überwiegend abwertend oder ironisch – „Frau" hat als neutrale Form übernommen</div>
+            <div class="zeit-karte-quelle">Duden (2023)</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aufgabe-box">
+        <div class="aufgabe-frage">Welche Art von Bedeutungswandel liegt vor?</div>
+        <div class="options-grid">
+          <button class="option-btn" onclick="pruefen(2,'verengung','pejoration')">Bedeutungsverengung</button>
+          <button class="option-btn" onclick="pruefen(2,'erweiterung','pejoration')">Bedeutungserweiterung</button>
+          <button class="option-btn" onclick="pruefen(2,'amelioration','pejoration')">Amelioration</button>
+          <button class="option-btn" onclick="pruefen(2,'pejoration','pejoration')">Pejoration</button>
+        </div>
+        <div class="feedback-box" id="fb2"></div>
+        <button class="weiter-btn" id="wb2" onclick="stufenzweiStarten()">Zu Stufe 2 →</button>
+      </div>
+    </div>
+  </div><!-- /stage1 -->
+
+
+  <!-- ══════════════════════════════════════════════
+       STUFE 2 (stage3) – Vorhersagen
+  ══════════════════════════════════════════════ -->
+  <div id="stage3" class="hidden">
+    <div class="stage-badge">Stufe 2 – Vorhersagen</div>
+
+    <div class="intro-card">
+      <h2>Jetzt vorhersagen!</h2>
+      <p>In dieser Stufe siehst du nur die <strong>historische Bedeutung</strong>. Kannst du vorhersagen, in welche Richtung sich das Wort verändert hat? Triff deine Einschätzung – dann erscheint die Auflösung.</p>
+    </div>
+
+    <!-- Wort 4: Maus (Erweiterung) -->
+    <div id="item3" class="item-container">
+      <div class="zeitstrahl-container">
+        <div class="wort-label">Wort 4 von 7</div>
+        <div class="zeitstrahl">
+          <div class="zeit-karte alt">
+            <div class="zeit-karte-epoche">Mittelhochdeutsch</div>
+            <div class="zeit-karte-wort">mûs</div>
+            <div class="zeit-karte-bedeutung">Ausschließlich das kleine Nagetier</div>
+            <div class="zeit-karte-quelle">Kluge (2011); Herberg et al. (2004)</div>
+          </div>
+          <div class="pfeil-bereich" id="pfeil3">
+            <div class="pfeil-linie"><div class="pfeil-spitze"></div></div>
+            <div class="pfeil-typ-label" id="pLabel3"></div>
+          </div>
+          <div class="zeit-karte neu hidden" id="karte3neu">
+            <div class="zeit-karte-epoche">Neuhochdeutsch (heute)</div>
+            <div class="zeit-karte-wort">Maus</div>
+            <div class="zeit-karte-bedeutung">Nagetier + Computer-Eingabegerät (seit ca. 1983)</div>
+            <div class="zeit-karte-quelle">Duden (2023); Herberg et al. (2004), S. 215</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aufgabe-box">
+        <div class="aufgabe-frage">Wie hat sich die Bedeutung von „Maus" entwickelt? Triff deine Vorhersage:</div>
+        <div class="options-grid">
+          <button class="option-btn" onclick="pruefen(3,'verengung','erweiterung')">Bedeutungsverengung</button>
+          <button class="option-btn" onclick="pruefen(3,'erweiterung','erweiterung')">Bedeutungserweiterung</button>
+          <button class="option-btn" onclick="pruefen(3,'amelioration','erweiterung')">Amelioration</button>
+          <button class="option-btn" onclick="pruefen(3,'pejoration','erweiterung')">Pejoration</button>
+        </div>
+        <div class="feedback-box" id="fb3"></div>
+        <button class="weiter-btn" id="wb3" onclick="naechstesWort(3)">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- Wort 5: Brief (Verengung) -->
+    <div id="item4" class="item-container hidden">
+      <div class="zeitstrahl-container">
+        <div class="wort-label">Wort 5 von 7</div>
+        <div class="zeitstrahl">
+          <div class="zeit-karte alt">
+            <div class="zeit-karte-epoche">Althochdeutsch / Mittelhochdeutsch</div>
+            <div class="zeit-karte-wort">brief</div>
+            <div class="zeit-karte-bedeutung">Kurzes Schriftstück, Urkunde, Dokument jeder Art (z. B. Kaufbrief, Lehrbrief)</div>
+            <div class="zeit-karte-quelle">Kluge (2011), S. 146</div>
+          </div>
+          <div class="pfeil-bereich" id="pfeil4">
+            <div class="pfeil-linie"><div class="pfeil-spitze"></div></div>
+            <div class="pfeil-typ-label" id="pLabel4"></div>
+          </div>
+          <div class="zeit-karte neu hidden" id="karte4neu">
+            <div class="zeit-karte-epoche">Neuhochdeutsch (heute)</div>
+            <div class="zeit-karte-wort">Brief</div>
+            <div class="zeit-karte-bedeutung">Ausschließlich postalische / persönliche Mitteilung in einem Umschlag</div>
+            <div class="zeit-karte-quelle">Paul (2002), S. 146</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aufgabe-box">
+        <div class="aufgabe-frage">Wie hat sich die Bedeutung von „Brief" entwickelt? Triff deine Vorhersage:</div>
+        <div class="options-grid">
+          <button class="option-btn" onclick="pruefen(4,'verengung','verengung')">Bedeutungsverengung</button>
+          <button class="option-btn" onclick="pruefen(4,'erweiterung','verengung')">Bedeutungserweiterung</button>
+          <button class="option-btn" onclick="pruefen(4,'amelioration','verengung')">Amelioration</button>
+          <button class="option-btn" onclick="pruefen(4,'pejoration','verengung')">Pejoration</button>
+        </div>
+        <div class="feedback-box" id="fb4"></div>
+        <button class="weiter-btn" id="wb4" onclick="naechstesWort(4)">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- Wort 6: Ritter (Amelioration) -->
+    <div id="item5" class="item-container hidden">
+      <div class="zeitstrahl-container">
+        <div class="wort-label">Wort 6 von 7</div>
+        <div class="zeitstrahl">
+          <div class="zeit-karte alt">
+            <div class="zeit-karte-epoche">Althochdeutsch (ca. 9. Jh.)</div>
+            <div class="zeit-karte-wort">rîtari</div>
+            <div class="zeit-karte-bedeutung">Einfacher Reiter, Berittener – kein besonderer sozialer Status</div>
+            <div class="zeit-karte-quelle">Kluge (2011), S. 766</div>
+          </div>
+          <div class="pfeil-bereich" id="pfeil5">
+            <div class="pfeil-linie"><div class="pfeil-spitze"></div></div>
+            <div class="pfeil-typ-label" id="pLabel5"></div>
+          </div>
+          <div class="zeit-karte neu hidden" id="karte5neu">
+            <div class="zeit-karte-epoche">Neuhochdeutsch (heute)</div>
+            <div class="zeit-karte-wort">Ritter</div>
+            <div class="zeit-karte-bedeutung">Ehrenvoller Adelstitel, Inbegriff von Mut und Tugend (Ritterorden, Ritter des Heiligen Grals)</div>
+            <div class="zeit-karte-quelle">Paul (2002), S. 885</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aufgabe-box">
+        <div class="aufgabe-frage">Wie hat sich die Bedeutung von „Ritter" entwickelt? Triff deine Vorhersage:</div>
+        <div class="options-grid">
+          <button class="option-btn" onclick="pruefen(5,'verengung','amelioration')">Bedeutungsverengung</button>
+          <button class="option-btn" onclick="pruefen(5,'erweiterung','amelioration')">Bedeutungserweiterung</button>
+          <button class="option-btn" onclick="pruefen(5,'amelioration','amelioration')">Amelioration</button>
+          <button class="option-btn" onclick="pruefen(5,'pejoration','amelioration')">Pejoration</button>
+        </div>
+        <div class="feedback-box" id="fb5"></div>
+        <button class="weiter-btn" id="wb5" onclick="naechstesWort(5)">Weiter →</button>
+      </div>
+    </div>
+
+    <!-- Wort 7: Dirne (Pejoration) -->
+    <div id="item6" class="item-container hidden">
+      <div class="zeitstrahl-container">
+        <div class="wort-label">Wort 7 von 7</div>
+        <div class="zeitstrahl">
+          <div class="zeit-karte alt">
+            <div class="zeit-karte-epoche">Althochdeutsch / Mittelhochdeutsch</div>
+            <div class="zeit-karte-wort">thiorna / dirne</div>
+            <div class="zeit-karte-bedeutung">Junges Mädchen, Hausangestellte, Magd – vollständig neutral und respektabel</div>
+            <div class="zeit-karte-quelle">Kluge (2011), S. 200; Grimm, Bd. 2, Sp. 1191</div>
+          </div>
+          <div class="pfeil-bereich" id="pfeil6">
+            <div class="pfeil-linie"><div class="pfeil-spitze"></div></div>
+            <div class="pfeil-typ-label" id="pLabel6"></div>
+          </div>
+          <div class="zeit-karte neu hidden" id="karte6neu">
+            <div class="zeit-karte-epoche">Neuhochdeutsch (heute)</div>
+            <div class="zeit-karte-wort">Dirne</div>
+            <div class="zeit-karte-bedeutung">Stark pejorativ: „Prostituierte" – eines der stärksten Beispiele für Bedeutungsverschlechterung im Deutschen</div>
+            <div class="zeit-karte-quelle">Kluge (2011), S. 200</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="aufgabe-box">
+        <div class="aufgabe-frage">Wie hat sich die Bedeutung von „Dirne" entwickelt? Triff deine Vorhersage:</div>
+        <div class="options-grid">
+          <button class="option-btn" onclick="pruefen(6,'verengung','pejoration')">Bedeutungsverengung</button>
+          <button class="option-btn" onclick="pruefen(6,'erweiterung','pejoration')">Bedeutungserweiterung</button>
+          <button class="option-btn" onclick="pruefen(6,'amelioration','pejoration')">Amelioration</button>
+          <button class="option-btn" onclick="pruefen(6,'pejoration','pejoration')">Pejoration</button>
+        </div>
+        <div class="feedback-box" id="fb6"></div>
+        <button class="weiter-btn" id="wb6" onclick="abschlussZeigen()">Ergebnisse ansehen →</button>
+      </div>
+    </div>
+
+  </div><!-- /stage3 -->
+
+
+  <!-- ══════════════════════════════════════════════
+       ABSCHLUSS
+  ══════════════════════════════════════════════ -->
+  <div id="abschluss" class="hidden">
+
+    <div class="zusammenfassung">
+      <div class="score-box">
+        <div class="score-zahl" id="scoreZahl">–</div>
+        <div class="score-label">von 7 Wörtern beim ersten Versuch richtig erkannt</div>
+      </div>
+
+      <h2>Die vier Typen des Bedeutungswandels</h2>
+
+      <div class="typen-uebersicht">
+        <div class="typ-karte verengung">
+          <div class="typ-karte-name" style="color:var(--orange)">Bedeutungsverengung</div>
+          <div class="typ-karte-def">Die Bedeutung wird enger / spezifischer.</div>
+          <div class="typ-karte-bsp">Fleisch (Nahrung → Muskelfleisch), Brief (Urkunde → Post)</div>
+        </div>
+        <div class="typ-karte erweiterung">
+          <div class="typ-karte-name" style="color:var(--blau)">Bedeutungserweiterung</div>
+          <div class="typ-karte-def">Die Bedeutung wird weiter / allgemeiner.</div>
+          <div class="typ-karte-bsp">Maus (Tier → Tier + Eingabegerät)</div>
+        </div>
+        <div class="typ-karte amelioration">
+          <div class="typ-karte-name" style="color:var(--gruen)">Amelioration</div>
+          <div class="typ-karte-def">Das Prestige / die Wertung steigt.</div>
+          <div class="typ-karte-bsp">Marschall (Stallknecht → General), Ritter (Reiter → Ehrentitel)</div>
+        </div>
+        <div class="typ-karte pejoration">
+          <div class="typ-karte-name" style="color:var(--rot)">Pejoration</div>
+          <div class="typ-karte-def">Das Prestige / die Wertung sinkt.</div>
+          <div class="typ-karte-bsp">Weib (neutral → abwertend), Dirne (Mädchen → pejorativ)</div>
+        </div>
+      </div>
+
+      <div class="merksatz">
+        <strong>Merksatz:</strong> Semantischer Wandel folgt sozialen Mustern. Wenn gesellschaftliche Rollen aufgewertet werden, steigt oft auch das Wort (Amelioration). Wenn Rollen stigmatisiert werden, folgt das Wort (Pejoration). Verengung und Erweiterung entstehen durch Spezialisierung oder neue Referenten (z. B. Technologie).
+      </div>
+    </div>
+
+    <div class="quellen">
+      <strong>Quellenangaben:</strong><br>
+      Kluge, Friedrich (2011): <em>Etymologisches Wörterbuch der deutschen Sprache</em>, 25. Aufl. Berlin: de Gruyter. –
+      Paul, Hermann (2002): <em>Deutsches Wörterbuch</em>, 10. Aufl. Tübingen: Niemeyer. –
+      Grimm, Jacob &amp; Wilhelm (1854–1961): <em>Deutsches Wörterbuch</em>. Leipzig: Hirzel. –
+      Herberg, D. / Kinne, M. / Steffens, D. (2004): <em>Neuer Wortschatz</em>. Berlin: de Gruyter.
+    </div>
+
+    <div style="margin-top:1.5rem;text-align:center;">
+      <button onclick="neuStarten()" style="background:#1e3a5f;color:#fff;border:none;border-radius:8px;padding:0.7rem 1.5rem;font-size:0.9rem;font-weight:600;cursor:pointer;">
+        Nochmal starten
+      </button>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <a href="/">Nachhilfe Mentor</a> · Lernmaterialien
+</footer>
+
+<script>
+  // ── DataLayer Tracking ──
+  window.dataLayer = window.dataLayer || [];
+
+  var richtigCount = 0;
+  var ersteVersuch = [true, true, true, true, true, true, true];
+
+  var feedbackTexte = {
+    0: {
+      richtig: '<span class="concept-tag">Bedeutungsverengung</span> Richtig! Mittelhochdeutsch „vleisch" bezeichnete <em>Nahrung allgemein</em> – also alles Essbare. Im Laufe der Zeit übernahmen speziellere Wörter wie „Brot" oder „Gemüse" andere Bereiche, und „Fleisch" spezialisierte sich auf tierisches Muskelgewebe. Das Wort wurde enger. Typisch für Bedeutungsverengung: Der ältere Umfang ⊃ der heutige Umfang.',
+      falsch: {
+        erweiterung: 'Schau genau hin: „Fleisch" bedeutete früher <em>mehr</em> (Nahrung allgemein), heute <em>weniger</em> (nur Muskelfleisch). Der Bedeutungsumfang hat sich also <strong>verkleinert</strong> – das ist das Gegenteil von Erweiterung.',
+        amelioration: 'Amelioration bedeutet Prestigegewinn. Bei „Fleisch" geht es aber nicht um sozialen Status, sondern darum, dass das Wort früher allgemeiner war. Hier liegt eine <strong>Bedeutungsverengung</strong> vor.',
+        pejoration: 'Pejoration bedeutet Abwertung. „Fleisch" hat keine negative Konnotation gewonnen – es hat sich nur auf einen kleineren Bedeutungsbereich spezialisiert. Das ist <strong>Bedeutungsverengung</strong>.'
+      }
+    },
+    1: {
+      richtig: '<span class="concept-tag">Amelioration</span> Richtig! „Marschall" kommt von „Mähre" (altes Pferd) + „Schalk" (Knecht) – ursprünglich also ein <em>Stallknecht</em>. Im mittelalterlichen Hof stieg der Marschall zum obersten Stallmeister auf, schließlich zum höchsten Militärbefehlshaber. Das Wort gewann enorm an Prestige und sozialer Wertschätzung. Klassische <strong>Amelioration</strong>.',
+      falsch: {
+        verengung: 'Die Bedeutung hat sich nicht verengt – sie hat sich aufgewertet. Ein Stallknecht → ein Generalfeldmarschall: Das ist <strong>Amelioration</strong> (Prestige­gewinn), nicht Verengung.',
+        erweiterung: 'Bedeutungserweiterung würde bedeuten, das Wort bekäme mehr Referenten. Hier geht es aber um <em>sozialen Aufstieg</em>: Stallknecht → General. Das ist <strong>Amelioration</strong>.',
+        pejoration: 'Pejoration wäre eine Abwertung. Aber „Marschall" ist heute angesehener denn je – das genaue Gegenteil. Hier liegt <strong>Amelioration</strong> vor.'
+      }
+    },
+    2: {
+      richtig: '<span class="concept-tag">Pejoration</span> Richtig! Althochdeutsch „wîb" war der <em>völlig neutrale</em> Standardbegriff für Frau – in Luthers Bibelübersetzung noch respektvoll gebraucht. Ab dem 18./19. Jahrhundert setzte sich „Frau" als neutrale Form durch. „Weib" geriet in den abwertenden Bereich. Das nennt man <strong>Pejoration</strong> (Bedeutungsverschlechterung) – das Wort hat an Prestige und sozialer Akzeptanz verloren.',
+      falsch: {
+        verengung: '„Weib" hat sich nicht auf einen engeren Bereich spezialisiert – es ist abwertend geworden. Das ist der Unterschied: Verengung = kleinerer Umfang; Pejoration = negative Wertung.',
+        erweiterung: '„Weib" hat keine neuen Bedeutungen dazugewonnen – es hat seinen neutralen Status verloren. Hier liegt <strong>Pejoration</strong> vor.',
+        amelioration: 'Amelioration wäre ein Prestigegewinn. „Weib" hat heute aber eine <em>schlechtere</em> Konnotation als früher. Das genaue Gegenteil – <strong>Pejoration</strong>.'
+      }
+    },
+    3: {
+      richtig: '<span class="concept-tag">Bedeutungserweiterung</span> Richtig! Mittelhochdeutsch „mûs" war ausschließlich das Nagetier. Als Douglas Engelbart 1963 das Computer-Eingabegerät erfand, suchte man nach einem deutschen Begriff. „Maus" wurde etablierter Terminus – Tier <em>und</em> Gerät tragen denselben Namen. Die Bedeutung hat sich <strong>ausgedehnt</strong>: mehr Referenten als zuvor. Das ist typische technologiegetriebene Bedeutungserweiterung.',
+      falsch: {
+        verengung: 'Bei Verengung würde das Wort nur noch für eine Teilmenge stehen. „Maus" steht heute aber für <em>mehr</em>: Tier + Eingabegerät. Das ist <strong>Bedeutungserweiterung</strong>.',
+        amelioration: 'Amelioration ist ein Prestigegewinn. „Maus" hat keinen sozialen Aufstieg vollzogen – es hat einfach einen neuen Referenten (das Gerät) erhalten. Das ist <strong>Bedeutungserweiterung</strong>.',
+        pejoration: 'Pejoration wäre eine Abwertung. „Maus" ist nicht abwertender geworden – es bezeichnet heute mehr Dinge als früher. Das ist <strong>Bedeutungserweiterung</strong>.'
+      }
+    },
+    4: {
+      richtig: '<span class="concept-tag">Bedeutungsverengung</span> Richtig! Althochdeutsch/Mittelhochdeutsch „brief" (von lat. „breve") bezeichnete <em>jedes Schriftstück</em>: Urkunden, Kaufbriefe, Lehrbriefe, Verträge. Heute meint „Brief" ausschließlich die postalische Mitteilung in einem Umschlag. Andere Schriftstücke heißen jetzt Urkunde, Vertrag, Dokument. Die Bedeutung hat sich <strong>verengt</strong>.',
+      falsch: {
+        erweiterung: '„Brief" hat heute <em>weniger</em> Bedeutungen als früher, nicht mehr. Früher: jede Art Schriftstück. Heute: nur postalische Mitteilung. Das ist <strong>Bedeutungsverengung</strong>.',
+        amelioration: 'Amelioration ist sozialer Aufstieg. Bei „Brief" hat sich der Bedeutungsumfang verkleinert – kein Prestige­gewinn. Das ist <strong>Bedeutungsverengung</strong>.',
+        pejoration: '„Brief" hat keine negative Konnotation erhalten – es bezeichnet heute einfach etwas Spezifischeres als früher. Das ist <strong>Bedeutungsverengung</strong>, keine Pejoration.'
+      }
+    },
+    5: {
+      richtig: '<span class="concept-tag">Amelioration</span> Richtig! Althochdeutsch „rîtari" war ein einfacher Berittener – kein Titel, kein Status. Durch das Rittertum im Hochmittelalter wurde der Begriff zum edlen Krieger-Ehrentitel aufgewertet. Heute ist „Ritter" ein Begriff für Mut, Tugend und Adel. Sozialer Aufstieg von der Funktion zum Ehrentitel – das ist <strong>Amelioration</strong>.',
+      falsch: {
+        verengung: '„Ritter" hat sich nicht verengt – es hat <em>Prestige gewonnen</em>. Ein einfacher Reiter → ein ehrenvoller Titel. Das ist <strong>Amelioration</strong>.',
+        erweiterung: 'Bedeutungserweiterung würde neue Referenten ergeben. Hier geht es um <em>sozialen Aufstieg</em> des Begriffs. Das ist <strong>Amelioration</strong>.',
+        pejoration: 'Pejoration ist Abwertung. „Ritter" ist heute angesehener als früher – das genaue Gegenteil. Hier liegt <strong>Amelioration</strong> vor.'
+      }
+    },
+    6: {
+      richtig: '<span class="concept-tag">Pejoration</span> Richtig! Eines der stärksten Beispiele für Pejoration im Deutschen. Althochdeutsch „thiorna" war ein vollständig neutrales Wort für junges Mädchen, Hausangestellte, Magd. Im 17./18. Jahrhundert begann die Abwertung. Heute ausschließlich stark pejorativ. Gesellschaftliche Stigmatisierung der bezeichneten Rolle führte zur <strong>Bedeutungsverschlechterung</strong> des Wortes.',
+      falsch: {
+        verengung: '„Dirne" hat sich nicht auf einen engeren Sachbereich spezialisiert – es hat eine <em>negative Wertung</em> erhalten. Das ist <strong>Pejoration</strong>, nicht Verengung.',
+        erweiterung: '„Dirne" hat keine neuen Bedeutungen gewonnen – sein Bedeutungsinhalt wurde negativ. Das ist <strong>Pejoration</strong>.',
+        amelioration: 'Amelioration wäre eine Aufwertung. „Dirne" ist heute <em>stark abwertend</em>. Das genaue Gegenteil – <strong>Pejoration</strong>.'
+      }
+    }
+  };
+
+  var typKlassen = {
+    verengung: 'pfeil-verengung',
+    erweiterung: 'pfeil-erweiterung',
+    amelioration: 'pfeil-amelioration',
+    pejoration: 'pfeil-pejoration'
+  };
+
+  var typLabels = {
+    verengung: 'Verengung',
+    erweiterung: 'Erweiterung',
+    amelioration: 'Amelioration',
+    pejoration: 'Pejoration'
+  };
+
+  function pruefen(idx, gewählt, korrekt) {
+    var btns = document.querySelectorAll('#item' + idx + ' .option-btn');
+    btns.forEach(function(b) { b.disabled = true; });
+
+    var fb = document.getElementById('fb' + idx);
+    var wb = document.getElementById('wb' + idx);
+    var richtig = (gewählt === korrekt);
+
+    // Pfeil und rechte Karte zeigen
+    var pfeil = document.getElementById('pfeil' + idx);
+    pfeil.className = 'pfeil-bereich ' + typKlassen[korrekt];
+    var pLabel = document.getElementById('pLabel' + idx);
+    pLabel.textContent = typLabels[korrekt];
+    pLabel.classList.add('sichtbar');
+
+    var neueKarte = document.getElementById('karte' + idx + 'neu');
+    if (neueKarte) {
+      neueKarte.classList.remove('hidden');
+      neueKarte.classList.add('visible');
+    }
+
+    // Buttons färben
+    btns.forEach(function(b) {
+      var btnTyp = b.onclick.toString().match(/pruefen\(\d+,'([^']+)'/);
+      if (btnTyp) {
+        if (btnTyp[1] === korrekt) b.classList.add('korrekt-markiert');
+      }
+    });
+
+    if (richtig) {
+      btns.forEach(function(b) {
+        var btnTyp = b.onclick.toString().match(/pruefen\(\d+,'([^']+)'/);
+        if (btnTyp && btnTyp[1] === gewählt) b.classList.add('richtig');
+      });
+      fb.className = 'feedback-box sichtbar richtig-fb';
+      fb.innerHTML = '<div class="feedback-titel">✓ Richtig!</div><div class="feedback-text">' + feedbackTexte[idx].richtig + '</div>';
+      if (ersteVersuch[idx]) richtigCount++;
+    } else {
+      btns.forEach(function(b) {
+        var btnTyp = b.onclick.toString().match(/pruefen\(\d+,'([^']+)'/);
+        if (btnTyp && btnTyp[1] === gewählt) b.classList.add('falsch');
+      });
+      fb.className = 'feedback-box sichtbar falsch-fb';
+      var fehlerText = feedbackTexte[idx].falsch[gewählt] || 'Das ist leider nicht korrekt. Sieh dir die Erklärung an.';
+      fb.innerHTML = '<div class="feedback-titel">✗ Nicht ganz.</div><div class="feedback-text">' + fehlerText + '</div>';
+      ersteVersuch[idx] = false;
+    }
+
+    wb.classList.add('sichtbar');
+
+    // Fortschritt aktualisieren
+    var dot = document.getElementById('dot' + idx);
+    if (dot) {
+      dot.classList.add(richtig ? 'done' : 'active');
+    }
+
+    // DataLayer tracking
+    window.dataLayer.push({
+      event: 'sim_step',
+      step: idx + 1,
+      word: ['Fleisch','Marschall','Weib','Maus','Brief','Ritter','Dirne'][idx],
+      answer: gewählt,
+      correct: korrekt,
+      result: richtig ? 'correct' : 'incorrect'
+    });
+  }
+
+  function naechstesWort(idx) {
+    // Abgeschlossenen Dot grün markieren (falls noch nicht done)
+    var doneDot = document.getElementById('dot' + idx);
+    if (doneDot && !doneDot.classList.contains('done')) doneDot.classList.add('done');
+
+    document.getElementById('item' + idx).classList.add('hidden');
+    var naechster = document.getElementById('item' + (idx + 1));
+    if (naechster) {
+      naechster.classList.remove('hidden');
+      var naechstDot = document.getElementById('dot' + (idx + 1));
+      if (naechstDot) {
+        naechstDot.classList.remove('active');
+        naechstDot.classList.add('active');
+      }
+      document.getElementById('progressLabel').textContent = 'Wort ' + (idx + 2) + ' von 7';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  function stufenzweiStarten() {
+    var doneDot = document.getElementById('dot2');
+    if (doneDot && !doneDot.classList.contains('done')) doneDot.classList.add('done');
+
+    document.getElementById('stage1').classList.add('hidden');
+    document.getElementById('stage3').classList.remove('hidden');
+    var nextDot = document.getElementById('dot3');
+    if (nextDot) nextDot.classList.add('active');
+    document.getElementById('progressLabel').textContent = 'Wort 4 von 7';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    window.dataLayer.push({ event: 'sim_stage', stage: 2 });
+  }
+
+  function abschlussZeigen() {
+    document.getElementById('stage3').classList.add('hidden');
+    document.getElementById('abschluss').classList.remove('hidden');
+    document.getElementById('progressBar').classList.add('hidden');
+    document.getElementById('scoreZahl').textContent = richtigCount + '/7';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+
+    window.dataLayer.push({
+      event: 'sim_complete',
+      score: richtigCount,
+      total: 7
+    });
+  }
+
+  function neuStarten() {
+    location.reload();
+  }
+
+  // Initialer Fortschritts-Status
+  document.getElementById('progressLabel').textContent = 'Wort 1 von 7';
+  document.getElementById('dot0').classList.add('active');
+</script>
+
+</body>
+</html>

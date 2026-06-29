@@ -1,0 +1,1019 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Lautsymbolik &amp; Bouba-Kiki-Effekt verstehen | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zum Bouba-Kiki-Effekt: Ordne Formen und Wortpaare zu und verstehe Lautsymbolik, Phonosemantik und Saussures Arbitrarität fürs Abitur.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Lautsymbolik, Bouba-Kiki-Effekt, Phonosemantik, Arbitrarität, Ikonizität, Saussure">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/lautsymbolik-bouba-kiki-simulation.html">
+  <meta property="og:title" content="Lautsymbolik & Bouba-Kiki-Effekt verstehen">
+  <meta property="og:description" content="Interaktive Simulation zum Bouba-Kiki-Effekt: Ordne Formen und Wortpaare zu und verstehe Lautsymbolik, Phonosemantik und Saussures Arbitrarität fürs Abitur.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/lautsymbolik-bouba-kiki-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Lautsymbolik & Bouba-Kiki-Effekt verstehen",
+  "description":"Interaktive Simulation zum Bouba-Kiki-Effekt: Ordne Formen und Wortpaare zu und verstehe Lautsymbolik, Phonosemantik und Saussures Arbitrarität fürs Abitur.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/lautsymbolik-bouba-kiki-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <!-- Privacy-safe tracking stub -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'page_view',
+      asset_type: 'simulation',
+      topic_cluster: 'sprachen'
+    });
+  </script>
+  <style>
+    :root {
+      --ink:      #172033;
+      --muted:    #617087;
+      --line:     #d8e1ed;
+      --blue:     #0f5fa8;
+      --blue-lt:  #e8f0fb;
+      --cyan:     #0894aa;
+      --green:    #0b8f6a;
+      --green-lt: #e3f5ef;
+      --amber:    #b87700;
+      --amber-lt: #fef6e0;
+      --red:      #b5281e;
+      --red-lt:   #fdeaea;
+      --bg:       #f5f8fc;
+      --panel:    #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Page chrome ── */
+    header {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 36px 22px 24px;
+    }
+
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--blue);
+      background: var(--blue-lt);
+      border-radius: 4px;
+      padding: 3px 9px;
+      margin-bottom: 14px;
+    }
+
+    header h1 {
+      font-size: clamp(1.45rem, 3.5vw, 2.1rem);
+      line-height: 1.18;
+      letter-spacing: -0.02em;
+      margin-bottom: 10px;
+    }
+
+    header p.subtitle {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* ── Main layout ── */
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 0 22px 60px;
+    }
+
+    /* ── Stage containers ── */
+    .stage {
+      display: none;
+    }
+    .stage.active {
+      display: block;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 28px 28px 24px;
+      margin-bottom: 1.8rem;
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ── Progress indicator ── */
+    .progress-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 2rem;
+    }
+
+    .progress-step {
+      flex: 1;
+      height: 5px;
+      border-radius: 3px;
+      background: var(--line);
+      transition: background 0.35s;
+    }
+
+    .progress-step.done { background: var(--green); }
+    .progress-step.active { background: var(--blue); }
+
+    /* ── Step label ── */
+    .step-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Canvas wrapper ── */
+    .canvas-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+
+    .shape-target {
+      position: relative;
+      cursor: pointer;
+      transition: transform 0.15s;
+    }
+
+    .shape-target:hover canvas {
+      filter: brightness(1.08);
+    }
+
+    .shape-target canvas {
+      display: block;
+    }
+
+    .shape-label {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* ── Task question ── */
+    .task-question {
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 1.2rem;
+      line-height: 1.4;
+    }
+
+    /* ── Option buttons ── */
+    .option-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 20px;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font-size: 0.95rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s, transform 0.1s;
+    }
+
+    .option-btn:hover {
+      border-color: var(--blue);
+      background: var(--blue-lt);
+      transform: translateY(-1px);
+    }
+
+    .option-btn.correct {
+      border-color: var(--green);
+      background: var(--green-lt);
+      color: var(--green);
+    }
+
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: var(--red-lt);
+      color: var(--red);
+    }
+
+    .option-btn.disabled {
+      opacity: 0.55;
+      cursor: default;
+      pointer-events: none;
+    }
+
+    .options-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 1rem 0;
+    }
+
+    /* ── Feedback box ── */
+    .feedback-box {
+      display: none;
+      padding: 16px 20px;
+      border-radius: 10px;
+      margin-top: 1.2rem;
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    .feedback-box.correct {
+      background: var(--green-lt);
+      border: 1px solid #a8dfc9;
+    }
+
+    .feedback-box.incorrect {
+      background: var(--amber-lt);
+      border: 1px solid #f0d080;
+    }
+
+    .feedback-box p + p {
+      margin-top: 0.6rem;
+    }
+
+    /* ── Concept tags ── */
+    .concept-tag {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--blue-lt);
+      color: var(--blue);
+      border-radius: 4px;
+      padding: 2px 8px;
+      margin: 0 3px 4px 0;
+    }
+
+    /* ── Word pair section (stage 2) ── */
+    .word-pair-grid {
+      display: grid;
+      gap: 1.4rem;
+      margin-top: 1.2rem;
+    }
+
+    .word-pair-item {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px 20px;
+    }
+
+    .word-pair-item h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .word-pair-words {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 0.8rem;
+    }
+
+    .word-btn {
+      padding: 8px 18px;
+      border: 2px solid var(--line);
+      border-radius: 7px;
+      background: var(--panel);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      color: var(--ink);
+    }
+
+    .word-btn:hover {
+      border-color: var(--blue);
+      background: var(--blue-lt);
+    }
+
+    .word-btn.selected {
+      border-color: var(--blue);
+      background: var(--blue-lt);
+    }
+
+    .word-btn.correct {
+      border-color: var(--green);
+      background: var(--green-lt);
+      color: var(--green);
+    }
+
+    .word-btn.wrong {
+      border-color: var(--red);
+      background: var(--red-lt);
+      color: var(--red);
+    }
+
+    .word-btn.disabled {
+      pointer-events: none;
+    }
+
+    .target-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.3rem;
+    }
+
+    /* ── Next button ── */
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 12px 28px;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.1s;
+      margin-top: 1.5rem;
+    }
+
+    .btn-primary:hover {
+      background: #0a4d8a;
+      transform: translateY(-1px);
+    }
+
+    /* ── Stat highlight ── */
+    .stat-highlight {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--green);
+      letter-spacing: -0.02em;
+    }
+
+    /* ── Data callout ── */
+    .data-callout {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      background: var(--blue-lt);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin: 1.2rem 0;
+    }
+
+    .data-callout .num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--blue);
+      white-space: nowrap;
+    }
+
+    .data-callout p {
+      font-size: 0.9rem;
+      color: var(--ink);
+      margin: 0;
+    }
+
+    /* ── Summary card ── */
+    .summary-list {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+
+    .summary-list li {
+      display: flex;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.93rem;
+    }
+
+    .summary-list li:last-child {
+      border-bottom: none;
+    }
+
+    .summary-list .term {
+      font-weight: 700;
+      min-width: 160px;
+      color: var(--ink);
+    }
+
+    .summary-list .def {
+      color: var(--muted);
+    }
+
+    /* ── Internal links ── */
+    .related-links {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .related-links h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 0.8rem;
+    }
+
+    .related-links ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .related-links ul li a {
+      display: inline-block;
+      padding: 6px 14px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      font-size: 0.87rem;
+      text-decoration: none;
+      color: var(--blue);
+      background: var(--panel);
+      transition: background 0.12s, border-color 0.12s;
+    }
+
+    .related-links ul li a:hover {
+      background: var(--blue-lt);
+      border-color: var(--blue);
+    }
+
+    /* ── Stage 3 multiple choice ── */
+    .mc-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 1.2rem 0;
+    }
+
+    .mc-btn {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 16px;
+      border: 2px solid var(--line);
+      border-radius: 9px;
+      background: var(--panel);
+      text-align: left;
+      cursor: pointer;
+      font-size: 0.93rem;
+      line-height: 1.45;
+      color: var(--ink);
+      transition: border-color 0.15s, background 0.15s;
+    }
+
+    .mc-btn:hover {
+      border-color: var(--blue);
+      background: var(--blue-lt);
+    }
+
+    .mc-btn.correct {
+      border-color: var(--green);
+      background: var(--green-lt);
+    }
+
+    .mc-btn.wrong {
+      border-color: var(--red);
+      background: var(--red-lt);
+    }
+
+    .mc-btn.disabled {
+      pointer-events: none;
+      opacity: 0.65;
+    }
+
+    .mc-letter {
+      font-size: 0.8rem;
+      font-weight: 800;
+      min-width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--line);
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+
+    .mc-btn.correct .mc-letter { background: var(--green); color: #fff; }
+    .mc-btn.wrong .mc-letter { background: var(--red); color: #fff; }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .canvas-wrapper {
+        gap: 12px;
+      }
+      .canvas-wrapper canvas {
+        width: 120px !important;
+        height: 120px !important;
+      }
+      .card {
+        padding: 20px 16px 18px;
+      }
+      .data-callout {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+      }
+      .summary-list li {
+        flex-direction: column;
+        gap: 2px;
+      }
+      .summary-list .term {
+        min-width: unset;
+      }
+      .mc-btn {
+        font-size: 0.88rem;
+        padding: 10px 12px;
+      }
+      .word-pair-words {
+        gap: 8px;
+      }
+    }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="badge">Linguistik · Klasse 10–12</div>
+  <h1>Lautsymbolik: Der Bouba-Kiki-Effekt</h1>
+  <p class="subtitle">Warum wählen fast alle Menschen weltweit dieselben Lautformen für runde und spitze Formen? Erlebe es selbst – und verstehe, was das über Arbitrarität bedeutet.</p>
+</header>
+
+<main>
+  <!-- Progress bar -->
+  <div class="progress-bar" id="progressBar">
+    <div class="progress-step active" id="step1"></div>
+    <div class="progress-step" id="step2"></div>
+    <div class="progress-step" id="step3"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       STUFE 1 – Vorhersage: Bouba oder Kiki?
+  ════════════════════════════════════════════════ -->
+  <div class="stage active" id="stage1">
+    <p class="step-label">Stufe 1 von 3 — Vorhersage</p>
+
+    <div class="card">
+      <h2>Welche Form heißt „Bouba"?</h2>
+      <p>Unten siehst du zwei Formen. Eine davon heißt <strong>„Bouba"</strong>, die andere <strong>„Kiki"</strong>. Klicke auf die Form, die du <em>Bouba</em> nennen würdest.</p>
+
+      <div class="canvas-wrapper">
+        <div class="shape-target" id="shapeRound" onclick="chooseShape('round')">
+          <canvas id="canvasRound" width="160" height="160"></canvas>
+          <div class="shape-label">Form A</div>
+        </div>
+        <div class="shape-target" id="shapeSpiky" onclick="chooseShape('spiky')">
+          <canvas id="canvasSpiky" width="160" height="160"></canvas>
+          <div class="shape-label">Form B</div>
+        </div>
+      </div>
+
+      <div class="feedback-box correct" id="fb1correct">
+        <p><strong>Richtig!</strong> Du liegst im weltweiten Trend: ca. <strong>95–98 %</strong> aller Menschen – in verschiedensten Kulturen und Sprachen – wählen die runde Form für „Bouba". Das ist kein Zufall.</p>
+        <p>Spreche laut „Bouba" aus: Die Lippen formen ein weiches, rundes /b/ und ein rund gewölbtes /u/. Sage dann „Kiki": Die Mundform ist eng, spitz, abgehackt – genau wie die zackige Form. Das nennt man <span class="concept-tag">Lautsymbolik</span> – eine nicht-arbiträre Beziehung zwischen Lautgestalt und Bedeutung.</p>
+        <p>Köhler (1929) nannte diesen Effekt erstmals systematisch, Ramachandran &amp; Hubbard (2001) replizierten ihn cross-kulturell.</p>
+        <button class="btn-primary" onclick="toStage2()">Weiter zu Stufe 2 →</button>
+      </div>
+
+      <div class="feedback-box incorrect" id="fb1incorrect">
+        <p><strong>Interessant!</strong> Du bist in der Minderheit: ca. <strong>95–98 %</strong> aller Menschen wählen weltweit die <em>runde</em> Form für „Bouba". Das zeigt: Diese Zuordnung ist nicht zufällig.</p>
+        <p>Probiere es aus: Spreche „Bouba" laut – die Lippen formen weiche runde Kurven. Bei „Kiki" ist die Mundform eng und hart – passend zur Zacken-Form. Das nennt man <span class="concept-tag">Lautsymbolik</span>: eine nicht-zufällige Verbindung zwischen Klang und visueller Form.</p>
+        <p>Ramachandran &amp; Hubbard (2001) fanden diesen Effekt bei Menschen verschiedenster Sprachkulturen.</p>
+        <button class="btn-primary" onclick="toStage2()">Weiter zu Stufe 2 →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       STUFE 2 – Klassifikation von Wortpaaren
+  ════════════════════════════════════════════════ -->
+  <div class="stage" id="stage2">
+    <p class="step-label">Stufe 2 von 3 — Wortpaare klassifizieren</p>
+
+    <div class="card">
+      <h2>Rund oder spitz klingend?</h2>
+      <p>Wähle bei jedem Wortpaar das Wort, das zur <strong>runden</strong> Form (Bouba-Typ) passt. Das andere Wort passt dann zur <strong>spitzen</strong> Form (Kiki-Typ).</p>
+
+      <div class="word-pair-grid">
+
+        <!-- Pair 1: maluma / takete (Köhler-Original) -->
+        <div class="word-pair-item" id="pair1">
+          <h3>Paar 1 — Köhlers Originalbegriffe (1929)</h3>
+          <div class="target-label">Welches Wort gehört zur runden Form?</div>
+          <div class="word-pair-words">
+            <button class="word-btn option-btn" onclick="answerPair(1,'maluma')" data-word="maluma">maluma</button>
+            <button class="word-btn option-btn" onclick="answerPair(1,'takete')" data-word="takete">takete</button>
+          </div>
+          <div class="feedback-box" id="fb_pair1"></div>
+        </div>
+
+        <!-- Pair 2: loma / kete -->
+        <div class="word-pair-item" id="pair2">
+          <h3>Paar 2 — Neue Phantasiewörter</h3>
+          <div class="target-label">Welches Wort gehört zur runden Form?</div>
+          <div class="word-pair-words">
+            <button class="word-btn option-btn" onclick="answerPair(2,'loma')" data-word="loma">loma</button>
+            <button class="word-btn option-btn" onclick="answerPair(2,'kete')" data-word="kete">kete</button>
+          </div>
+          <div class="feedback-box" id="fb_pair2"></div>
+        </div>
+
+        <!-- Pair 3: mili / bubu -->
+        <div class="word-pair-item" id="pair3">
+          <h3>Paar 3 — Herausforderung</h3>
+          <div class="target-label">Welches Wort gehört zur runden Form?</div>
+          <div class="word-pair-words">
+            <button class="word-btn option-btn" onclick="answerPair(3,'mili')" data-word="mili">mili</button>
+            <button class="word-btn option-btn" onclick="answerPair(3,'bubu')" data-word="bubu">bubu</button>
+          </div>
+          <div class="feedback-box" id="fb_pair3"></div>
+        </div>
+
+      </div>
+
+      <button class="btn-primary" id="btnToStage3" style="display:none;" onclick="toStage3()">Weiter zur Reflexion →</button>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       STUFE 3 – Reflexion: Was bedeutet das für Saussure?
+  ════════════════════════════════════════════════ -->
+  <div class="stage" id="stage3">
+    <p class="step-label">Stufe 3 von 3 — Reflexion</p>
+
+    <div class="card">
+      <h2>Was bedeutet der Bouba-Kiki-Effekt für Saussure?</h2>
+      <p>Ferdinand de Saussure (1916) postulierte, dass Sprachzeichen <em>arbiträr</em> sind – also keine natürliche Verbindung zwischen Klang (Signifikant) und Bedeutung (Signifié) besteht. Was sagt der Bouba-Kiki-Effekt dazu?</p>
+
+      <div class="mc-options">
+        <button class="mc-btn option-btn" onclick="answerMC('A')">
+          <span class="mc-letter">A</span>
+          <span>Die Arbitraritätsthese ist vollständig widerlegt – alle Wörter haben eine natürliche Klang-Bedeutungsbeziehung.</span>
+        </button>
+        <button class="mc-btn option-btn" onclick="answerMC('B')">
+          <span class="mc-letter">B</span>
+          <span>Sprache ist <em>teilweise</em> ikonisch – Lautsymbolik zeigt eine partielle, tendenzielle Ausnahme zur Arbitrarität, die den Gesamtwortschatz aber nicht widerlegt.</span>
+        </button>
+        <button class="mc-btn option-btn" onclick="answerMC('C')">
+          <span class="mc-letter">C</span>
+          <span>Der Effekt gilt nur für erfundene Wörter, nicht für echte Sprachen, und hat daher keinen linguistischen Erkenntniswert.</span>
+        </button>
+        <button class="mc-btn option-btn" onclick="answerMC('D')">
+          <span class="mc-letter">D</span>
+          <span>Der Bouba-Kiki-Effekt beweist, dass Sprache rein kulturell bedingt ist und keine universellen Tendenzen hat.</span>
+        </button>
+      </div>
+
+      <div class="feedback-box" id="fb_mc"></div>
+    </div>
+
+    <!-- Abschluss-Zusammenfassung -->
+    <div class="card" id="summaryCard" style="display:none;">
+      <h2>Zusammenfassung: Lautsymbolik &amp; Bouba-Kiki</h2>
+
+      <div class="data-callout">
+        <div class="num">95–98 %</div>
+        <p>aller untersuchten Menschen ordnen „Bouba" der runden Form zu – kulturübergreifend in westlichen und nicht-westlichen Populationen (Ramachandran &amp; Hubbard, 2001).</p>
+      </div>
+
+      <ul class="summary-list">
+        <li>
+          <span class="term">Lautsymbolik</span>
+          <span class="def">Nicht-arbiträre Tendenz, bestimmte Laute mit visuellen oder taktilen Eigenschaften zu verknüpfen.</span>
+        </li>
+        <li>
+          <span class="term">Phonosemantik</span>
+          <span class="def">Wissenschaft von Laut-Bedeutungs-Korrespondenzen; untersucht Lautsymbolik systematisch.</span>
+        </li>
+        <li>
+          <span class="term">Ikonizität</span>
+          <span class="def">Ähnlichkeit zwischen Zeichen und Bezeichnetem; Gegenpol zur Arbitrarität nach Saussure.</span>
+        </li>
+        <li>
+          <span class="term">Bouba-Kiki-Effekt</span>
+          <span class="def">Konkrete empirische Demonstration von Lautsymbolik: runde Vokale → runde Formen; harte Plosive → spitze Formen.</span>
+        </li>
+        <li>
+          <span class="term">Arbitrarität (Saussure)</span>
+          <span class="def">Gilt weiterhin für den Großteil des Wortschatzes. Lautsymbolik ist eine partielle, tendenzielle Ausnahme.</span>
+        </li>
+      </ul>
+
+      <p style="font-size:0.88rem;color:var(--muted);margin-top:0.8rem;">
+        <strong>Abgrenzung zur Lautmalerei:</strong> Lautmalerei (Onomatopoesie) imitiert <em>akustische</em> Eigenschaften direkt (z.&thinsp;B. <em>Kuckuck</em>). Lautsymbolik betrifft <em>nicht-akustische</em> Eigenschaften wie Form oder Textur.
+      </p>
+    </div>
+
+    <div class="related-links" id="relatedLinks" style="display:none;">
+      <h3>Weiterlernen</h3>
+      <ul>
+        <li><a href="/lernmaterialien/lernsimulationen/saussure-sprachzeichen-arbitraritaet-simulation.html">Saussures Sprachzeichen &amp; Arbitrarität</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/peirce-ikon-index-symbol-simulation.html">Peirce: Ikon, Index, Symbol</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/konnotation-denotation-simulation.html">Konnotation &amp; Denotation</a></li>
+        <li><a href="/lernmaterialien/lernsimulationen/prototypentheorie-semantik-simulation.html">Prototypentheorie</a></li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  // ── Canvas drawing ──────────────────────────────────────────
+  const roundCanvas  = document.getElementById('canvasRound');
+  const spikyCanvas  = document.getElementById('canvasSpiky');
+  const rctx = roundCanvas.getContext('2d');
+  const sctx = spikyCanvas.getContext('2d');
+
+  let tick = 0;
+  let animRunning = true;
+
+  function drawRoundShape(ctx, t) {
+    const W = ctx.canvas.width;
+    const H = ctx.canvas.height;
+    const cx = W / 2;
+    const cy = H / 2;
+    ctx.clearRect(0, 0, W, H);
+
+    // Pulsating blob
+    const pulse = 1 + 0.04 * Math.sin(t * 0.025);
+    const r = 54 * pulse;
+    const nPoints = 7;
+
+    ctx.beginPath();
+    for (let i = 0; i <= nPoints; i++) {
+      const angle = (i / nPoints) * Math.PI * 2 - Math.PI / 2;
+      const wobble = 1 + 0.10 * Math.sin(t * 0.02 + i * 1.3);
+      const rx = r * 0.95 * wobble;
+      const ry = r * wobble;
+      const x = cx + rx * Math.cos(angle);
+      const y = cy + ry * Math.sin(angle);
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+
+    const grad = ctx.createRadialGradient(cx - 12, cy - 12, 8, cx, cy, r * 1.15);
+    grad.addColorStop(0, '#a8d8f0');
+    grad.addColorStop(1, '#3b8fd4');
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    ctx.strokeStyle = '#2070b8';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
+
+  function drawSpikyShape(ctx, t) {
+    const W = ctx.canvas.width;
+    const H = ctx.canvas.height;
+    const cx = W / 2;
+    const cy = H / 2;
+    ctx.clearRect(0, 0, W, H);
+
+    // Jittery spiky star
+    const jitter = 1 + 0.06 * Math.sin(t * 0.07);
+    const outerR = 56 * jitter;
+    const innerR = 22;
+    const nSpikes = 8;
+
+    ctx.beginPath();
+    for (let i = 0; i < nSpikes * 2; i++) {
+      const angle = (i / (nSpikes * 2)) * Math.PI * 2 - Math.PI / 2;
+      const r2 = (i % 2 === 0) ? outerR : innerR * (1 + 0.08 * Math.sin(t * 0.09 + i));
+      const x = cx + r2 * Math.cos(angle);
+      const y = cy + r2 * Math.sin(angle);
+      if (i === 0) ctx.moveTo(x, y);
+      else ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+
+    const grad = ctx.createRadialGradient(cx - 8, cy - 8, 6, cx, cy, outerR * 1.1);
+    grad.addColorStop(0, '#f5c0c0');
+    grad.addColorStop(1, '#d4504a');
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    ctx.strokeStyle = '#b03030';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+  }
+
+  function animLoop() {
+    if (!animRunning) return;
+    tick++;
+    drawRoundShape(rctx, tick);
+    drawSpikyShape(sctx, tick);
+    requestAnimationFrame(animLoop);
+  }
+
+  animLoop();
+
+  // ── Stage 1 answer ──────────────────────────────────────────
+  function chooseShape(choice) {
+    // Disable both targets
+    document.getElementById('shapeRound').onclick = null;
+    document.getElementById('shapeSpiky').onclick = null;
+    document.getElementById('shapeRound').style.cursor = 'default';
+    document.getElementById('shapeSpiky').style.cursor = 'default';
+
+    if (choice === 'round') {
+      // Correct
+      document.getElementById('shapeRound').style.outline = '3px solid var(--green)';
+      document.getElementById('shapeRound').style.borderRadius = '8px';
+      const fb = document.getElementById('fb1correct');
+      fb.style.display = 'block';
+    } else {
+      // Wrong – still show learning content
+      document.getElementById('shapeSpiky').style.outline = '3px solid var(--amber)';
+      document.getElementById('shapeSpiky').style.borderRadius = '8px';
+      const fb = document.getElementById('fb1incorrect');
+      fb.style.display = 'block';
+    }
+  }
+
+  // ── Stage 2 word pairs ──────────────────────────────────────
+  const pairAnswers = { 1: 'maluma', 2: 'loma', 3: 'bubu' };
+  const pairFeedback = {
+    1: {
+      correct: 'Ja! <strong>maluma</strong> (rund) vs. <strong>takete</strong> (spitz) – das sind Köhlers Originalbegriffe aus der Gestaltpsychologie (1929). Die runden Vokale /a/, /u/ und der weiche Nasal /m/ geben „maluma" seine fließende Qualität. <span class="concept-tag">Phonosemantik</span>',
+      wrong: '<strong>maluma</strong> passt zur runden Form: runde Vokale /a/, /u/ und der weiche Nasal /m/ erzeugen eine fließende Klanggestalt. <strong>takete</strong> dagegen hat harte Plosive /t/, /k/ und das enge Vokal /e/ – spitz und abgehackt. <span class="concept-tag">Phonosemantik</span>'
+    },
+    2: {
+      correct: 'Richtig! <strong>loma</strong> (rund) vs. <strong>kete</strong> (spitz). Der weiche Liquid /l/ und das runde /o/ in „loma" klingen fließend; /k/, /t/ und das enge /e/ in „kete" klingen scharf. <span class="concept-tag">Ikonizität</span>',
+      wrong: '<strong>loma</strong> gehört zur runden Form: Liquid /l/ und Vokal /o/ fühlen sich rund an. <strong>kete</strong> hat den harten Velar /k/ und den Dental /t/ – beides typische „Kiki-Laute". <span class="concept-tag">Ikonizität</span>'
+    },
+    3: {
+      correct: 'Genau! <strong>bubu</strong> (rund) vs. <strong>mili</strong> (spitz). Das wirkt vielleicht überraschend, denn /m/ ist ein Nasal und könnte rund wirken – aber das helle Vokal /i/ und der leichte Dental /l/ in „mili" geben ihm trotzdem eine spitzere Qualität. Bei „bubu" dominieren runde Labiale /b/ und das geschlossene runde /u/. <span class="concept-tag">Lautsymbolik</span>',
+      wrong: '<strong>bubu</strong> passt zur runden Form: der Bilabial /b/ formt beim Sprechen runde Lippen, und /u/ ist das gerundeste aller Vokale. „mili" hat zwar /m/ (einen Nasal), aber das helle /i/ überwiegt mit seiner spitzen Vokalqualität. <span class="concept-tag">Lautsymbolik</span>'
+    }
+  };
+
+  let pairsDone = 0;
+  const pairsTotal = 3;
+
+  function answerPair(pairNum, word) {
+    const buttons = document.querySelectorAll(`#pair${pairNum} .word-btn`);
+    buttons.forEach(b => {
+      b.classList.add('disabled');
+      b.onclick = null;
+    });
+
+    const correct = pairAnswers[pairNum];
+    const isCorrect = (word === correct);
+    const chosenBtn = Array.from(buttons).find(b => b.dataset.word === word);
+    const correctBtn = Array.from(buttons).find(b => b.dataset.word === correct);
+
+    if (isCorrect) {
+      chosenBtn.classList.add('correct');
+    } else {
+      chosenBtn.classList.add('wrong');
+      correctBtn.classList.add('correct');
+    }
+
+    const fbEl = document.getElementById(`fb_pair${pairNum}`);
+    fbEl.innerHTML = '<p>' + (isCorrect ? pairFeedback[pairNum].correct : pairFeedback[pairNum].wrong) + '</p>';
+    fbEl.className = 'feedback-box ' + (isCorrect ? 'correct' : 'incorrect');
+    fbEl.style.display = 'block';
+
+    pairsDone++;
+    if (pairsDone >= pairsTotal) {
+      document.getElementById('btnToStage3').style.display = 'inline-flex';
+    }
+  }
+
+  // ── Stage navigation ────────────────────────────────────────
+  function toStage2() {
+    document.getElementById('stage1').classList.remove('active');
+    document.getElementById('stage2').classList.add('active');
+    document.getElementById('step1').classList.remove('active');
+    document.getElementById('step1').classList.add('done');
+    document.getElementById('step2').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.dataLayer.push({ event: 'simulation_stage', stage: 2, topic_cluster: 'sprachen' });
+  }
+
+  function toStage3() {
+    document.getElementById('stage2').classList.remove('active');
+    document.getElementById('stage3').classList.add('active');
+    document.getElementById('step2').classList.remove('active');
+    document.getElementById('step2').classList.add('done');
+    document.getElementById('step3').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.dataLayer.push({ event: 'simulation_stage', stage: 3, topic_cluster: 'sprachen' });
+  }
+
+  // ── Stage 3 multiple choice ─────────────────────────────────
+  function answerMC(choice) {
+    const btns = document.querySelectorAll('.mc-btn');
+    btns.forEach(b => {
+      b.classList.add('disabled');
+      b.onclick = null;
+    });
+
+    const chosen = btns[choice.charCodeAt(0) - 65];
+    const correctBtn = btns[1]; // B is correct
+
+    if (choice === 'B') {
+      chosen.classList.add('correct');
+    } else {
+      chosen.classList.add('wrong');
+      correctBtn.classList.add('correct');
+    }
+
+    const fbEl = document.getElementById('fb_mc');
+
+    if (choice === 'B') {
+      fbEl.innerHTML = `<p><strong>Richtig!</strong> Der Bouba-Kiki-Effekt belegt <em>partielle Ikonizität</em>: Es gibt nachweisliche Tendenzen, bestimmte Laute mit visuellen Eigenschaften zu verbinden. Saussures <span class="concept-tag">Arbitrarität</span> gilt aber weiterhin für den Gesamtwortschatz – Lautsymbolik ist eine tendenzielle Ausnahme, keine Regel. Beide Einsichten ergänzen sich.</p>`;
+      fbEl.className = 'feedback-box correct';
+    } else if (choice === 'A') {
+      fbEl.innerHTML = `<p><strong>Nicht ganz.</strong> Der Bouba-Kiki-Effekt widerlegt die Arbitraritätsthese nicht vollständig. Die Mehrzahl der Wörter in allen Sprachen zeigt keine lautsymbolische Motivation (warum heißt ein <em>Baum</em> auf Englisch <em>tree</em>, auf Spanisch <em>árbol</em>?). Lautsymbolik ist eine <em>partielle Tendenz</em>, keine universelle Regel. <span class="concept-tag">Arbitrarität</span></p><p>Richtig wäre: Antwort B.</p>`;
+      fbEl.className = 'feedback-box incorrect';
+    } else if (choice === 'C') {
+      fbEl.innerHTML = `<p><strong>Nicht ganz.</strong> Ramachandran &amp; Hubbard (2001) zeigten den Effekt auch mit realen Sprachlernern verschiedener Kulturen. Zudem gibt es in natürlichen Sprachen viele Ideophone (z.&thinsp;B. im Japanischen: <em>fuwa-fuwa</em> = weich/flauschig, <em>giri-giri</em> = knapp/scharf), die echte Lautsymbolik zeigen. Der Effekt hat durchaus linguistischen Erkenntniswert. <span class="concept-tag">Phonosemantik</span></p><p>Richtig wäre: Antwort B.</p>`;
+      fbEl.className = 'feedback-box incorrect';
+    } else {
+      fbEl.innerHTML = `<p><strong>Nicht ganz.</strong> Der Bouba-Kiki-Effekt zeigt gerade das Gegenteil: Er tritt <em>kulturübergreifend</em> auf und gilt als Hinweis auf universelle sensory-crossmodal-Tendenzen. Sprache hat also <em>sowohl</em> kulturspezifische als auch universelle Aspekte. <span class="concept-tag">Ikonizität</span></p><p>Richtig wäre: Antwort B.</p>`;
+      fbEl.className = 'feedback-box incorrect';
+    }
+
+    fbEl.style.display = 'block';
+
+    // Show summary
+    document.getElementById('summaryCard').style.display = 'block';
+    document.getElementById('relatedLinks').style.display = 'block';
+    document.getElementById('step3').classList.remove('active');
+    document.getElementById('step3').classList.add('done');
+
+    window.dataLayer.push({ event: 'simulation_complete', topic_cluster: 'sprachen' });
+  }
+</script>
+
+</body>
+</html>

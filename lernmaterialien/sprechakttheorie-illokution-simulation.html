@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Sprechakttheorie: Illokution erkennen – interaktive Übung | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Übung zur Sprechakttheorie: Klassifiziere Äußerungen nach Illokution (Austin & Searle) und erkenne indirekte Sprechakte – mit sofortigem Feedback.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sprechakttheorie, Illokution, Pragmatik, Searle, Austin, indirekte Sprechakte">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprechakttheorie-illokution-simulation.html">
+  <meta property="og:title" content="Sprechakttheorie: Illokution erkennen">
+  <meta property="og:description" content="Interaktive Übung zur Sprechakttheorie: Klassifiziere Äußerungen nach Illokution (Austin & Searle) und erkenne indirekte Sprechakte – mit sofortigem Feedback.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprechakttheorie-illokution-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprechakttheorie: Illokution erkennen – interaktive Übung",
+  "description":"Interaktive Übung zur Sprechakttheorie: Klassifiziere Äußerungen nach Illokution (Austin & Searle) und erkenne indirekte Sprechakte – mit sofortigem Feedback.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprechakttheorie-illokution-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --orange: #c05621;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.6rem;
+    }
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    /* ── Drei-Ebenen-Modell ───────────────────────── */
+    .model-block {
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      padding: 0 1.25rem;
+    }
+    .model-layers {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .layer {
+      border-radius: 10px;
+      padding: 0.9rem 1.2rem;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+    .layer.visible { opacity: 1; transform: translateY(0); }
+    .layer-lok  { background: #dbeafe; border-left: 4px solid #2563eb; }
+    .layer-ill  { background: #ffedd5; border-left: 4px solid #ea580c; }
+    .layer-perl { background: #dcfce7; border-left: 4px solid #16a34a; }
+    .layer-icon { font-size: 1.4rem; flex-shrink: 0; margin-top: 0.05rem; }
+    .layer-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--muted);
+      margin-bottom: 0.1rem;
+    }
+    .layer-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .layer-desc {
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+    .model-hint {
+      font-size: 0.82rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.75rem;
+    }
+
+    /* ── Fortschritt ──────────────────────────────── */
+    .progress-bar-wrap {
+      max-width: 760px;
+      margin: 0 auto 2rem;
+      padding: 0 1.25rem;
+    }
+    .step-indicators {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+    .step-dot {
+      flex: 1;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--line);
+      transition: background 0.3s;
+    }
+    .step-dot.active   { background: var(--blue); }
+    .step-dot.done     { background: var(--green); }
+    .step-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* ── Haupt-Interaktionsbereich ────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    /* ── Satz-Karte ───────────────────────────────── */
+    .sentence-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.75rem;
+      font-size: 1.1rem;
+      font-style: italic;
+      line-height: 1.5;
+      position: relative;
+    }
+    .sentence-card .quote-mark {
+      font-size: 2.5rem;
+      color: var(--line);
+      font-style: normal;
+      position: absolute;
+      top: 0.25rem;
+      left: 0.85rem;
+      line-height: 1;
+    }
+    .sentence-card .context-note {
+      font-size: 0.82rem;
+      font-style: normal;
+      color: var(--muted);
+      margin-top: 0.5rem;
+    }
+
+    /* ── Frage ────────────────────────────────────── */
+    .stage-heading {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .stage-intro {
+      color: var(--muted);
+      font-size: 0.93rem;
+      margin-bottom: 1.5rem;
+    }
+    .task-question {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Optionen ─────────────────────────────────── */
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+    .opt-btn {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 10px;
+      padding: 0.85rem 1.1rem;
+      text-align: left;
+      cursor: pointer;
+      font-size: 0.95rem;
+      line-height: 1.45;
+      transition: border-color 0.15s, background 0.15s;
+      display: flex;
+      gap: 0.7rem;
+      align-items: flex-start;
+    }
+    .opt-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+    }
+    .opt-btn:disabled { cursor: default; }
+    .opt-btn.correct  { border-color: var(--green); background: #f0fdf4; }
+    .opt-btn.wrong    { border-color: var(--red);   background: #fff5f5; }
+    .opt-letter {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--muted);
+      flex-shrink: 0;
+      margin-top: 0.08rem;
+    }
+
+    /* ── Feedback-Panel ───────────────────────────── */
+    .feedback {
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      margin-bottom: 1.75rem;
+      font-size: 0.93rem;
+      line-height: 1.6;
+      display: none;
+    }
+    .feedback.correct { background: #f0fdf4; border-left: 4px solid var(--green); }
+    .feedback.wrong   { background: #fff5f5; border-left: 4px solid var(--red); }
+    .feedback.show    { display: block; }
+    .feedback strong  { color: var(--ink); }
+    .feedback-icon    { font-size: 1.1rem; margin-right: 0.35rem; }
+
+    /* ── Weiter-Button ────────────────────────────── */
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+      margin-top: 0.5rem;
+    }
+    .btn-primary:hover { background: #0a4a82; }
+    .btn-primary:disabled { background: var(--muted); cursor: default; }
+
+    /* ── Modell-Referenz (Stufe 2+3) ─────────────── */
+    .mini-ref {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1.75rem;
+      font-size: 0.85rem;
+    }
+    .mini-ref h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 0.45rem;
+    }
+    .ref-item {
+      border-radius: 6px;
+      padding: 0.4rem 0.6rem;
+      font-size: 0.82rem;
+    }
+    .ref-item strong { display: block; font-size: 0.8rem; }
+    .ref-rep  { background: #eff6ff; color: #1e40af; }
+    .ref-dir  { background: #fff7ed; color: #c2410c; }
+    .ref-kom  { background: #fdf4ff; color: #7e22ce; }
+    .ref-exp  { background: #f0fdf4; color: #166534; }
+    .ref-dek  { background: #fefce8; color: #854d0e; }
+
+    /* ── Unteraufgaben-Zähler (Stufe 2) ──────────── */
+    .subtask-counter {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Abschluss-Screen ─────────────────────────── */
+    .result-box {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 2rem 1.75rem;
+      text-align: center;
+    }
+    .result-score {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+    .result-label { font-size: 1rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .result-summary {
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 1.1rem 1.3rem;
+      text-align: left;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+    .result-summary h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    footer {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 3rem;
+      font-size: 0.82rem;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+    footer a { color: var(--muted); }
+
+    @media (max-width: 480px) {
+      header { padding: 1.5rem 1rem 1.25rem; }
+      main   { padding: 0 1rem 3rem; }
+      .model-block { padding: 0 1rem; }
+      .progress-bar-wrap { padding: 0 1rem; }
+      .sentence-card { padding: 1.25rem 1.25rem 1.25rem 1.75rem; }
+      .ref-grid { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Linguistik · Pragmatik · Klasse 10–13</p>
+  <h1>Sprechakttheorie: Illokution erkennen</h1>
+  <p class="tagline">Was wird gesagt — und was ist gemeint? Klassifiziere Sprechakte nach Austin und Searle.</p>
+</header>
+
+<!-- Drei-Ebenen-Modell (animiert beim Laden) -->
+<div class="model-block">
+  <div class="model-layers" id="modelLayers">
+    <div class="layer layer-lok" id="layerLok">
+      <div class="layer-icon">💬</div>
+      <div>
+        <div class="layer-label">1. Ebene</div>
+        <div class="layer-title">Lokutionärer Akt</div>
+        <div class="layer-desc">Das wörtlich Gesagte — Laut, Wort, Satz, propositionaler Gehalt</div>
+      </div>
+    </div>
+    <div class="layer layer-ill" id="layerIll">
+      <div class="layer-icon">🎯</div>
+      <div>
+        <div class="layer-label">2. Ebene</div>
+        <div class="layer-title">Illokutionärer Akt</div>
+        <div class="layer-desc">Die kommunikative Absicht — Bitten, Befehlen, Versprechen, Behaupten …</div>
+      </div>
+    </div>
+    <div class="layer layer-perl" id="layerPerl">
+      <div class="layer-icon">🔄</div>
+      <div>
+        <div class="layer-label">3. Ebene</div>
+        <div class="layer-title">Perlokutionärer Akt</div>
+        <div class="layer-desc">Die Wirkung auf den Hörer — was er tut, denkt oder fühlt</div>
+      </div>
+    </div>
+  </div>
+  <p class="model-hint" id="modelHint">Das Modell bleibt während der gesamten Übung sichtbar.</p>
+</div>
+
+<!-- Fortschrittsanzeige -->
+<div class="progress-bar-wrap">
+  <div class="step-indicators">
+    <div class="step-dot active" id="dot1"></div>
+    <div class="step-dot" id="dot2"></div>
+    <div class="step-dot" id="dot3"></div>
+  </div>
+  <div class="step-label" id="stepLabel">Stufe 1 von 3 – Vorhersage</div>
+</div>
+
+<main>
+
+  <!-- ═══════════════════════════════════════════════════
+       STUFE 1: Vorhersage-Aufgabe
+  ═══════════════════════════════════════════════════ -->
+  <section class="stage active" id="stage1">
+    <div class="stage-heading">Stufe 1 — Vorhersage</div>
+    <p class="stage-intro">Schau dir die folgende Äußerung an. Was passiert hier aus linguistischer Sicht?</p>
+
+    <div class="sentence-card">
+      <span class="quote-mark">„</span>
+      Kannst du mir das Salz geben?"
+    </div>
+
+    <p class="task-question">Was ist das grammatisch — und was meint der Sprecher eigentlich?</p>
+
+    <div class="options" id="opts1">
+      <button class="opt-btn" data-correct="false" onclick="checkStage1(this, false)">
+        <span class="opt-letter">A</span>
+        Es ist eine Frage nach der Fähigkeit des Hörers (Repräsentativ / Informationsfrage)
+      </button>
+      <button class="opt-btn" data-correct="true" onclick="checkStage1(this, true)">
+        <span class="opt-letter">B</span>
+        Es ist grammatisch ein Fragesatz, aber die Illokution ist eine Bitte (Direktiv)
+      </button>
+      <button class="opt-btn" data-correct="false" onclick="checkStage1(this, false)">
+        <span class="opt-letter">C</span>
+        Es ist ein Versprechen des Sprechers (Kommissiv)
+      </button>
+      <button class="opt-btn" data-correct="false" onclick="checkStage1(this, false)">
+        <span class="opt-letter">D</span>
+        Es ist eine Entschuldigung (Expressiv)
+      </button>
+    </div>
+
+    <div class="feedback correct" id="fb1-ok">
+      <span class="feedback-icon">✅</span>
+      <strong>Genau!</strong> Grammatisch ist das ein Fragesatz — aber die <strong>Illokution</strong>
+      (kommunikative Absicht) ist eine <strong>Bitte (Direktiv)</strong>. Niemand antwortet
+      „Ja, ich kann!" und bleibt sitzen. Das nennt die Pragmatik einen
+      <strong>indirekten Sprechakt</strong>: Form und Funktion fallen auseinander (Searle 1969).
+    </div>
+    <div class="feedback wrong" id="fb1-fail">
+      <span class="feedback-icon">❌</span>
+      Grammatisch stimmt: Es ist ein Fragesatz. Aber nach Austins <strong>Sprechakttheorie</strong>
+      zählt die <em>kommunikative Absicht</em> — und die ist hier eine <strong>Bitte (Direktiv)</strong>,
+      kein Informationsersuchen über Fähigkeiten. Das ist ein klassischer <strong>indirekter Sprechakt</strong>.
+    </div>
+
+    <button class="btn-primary" id="btn1" onclick="goStage2()" style="display:none">
+      Weiter zu Stufe 2 →
+    </button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       STUFE 2: Illokution klassifizieren (4 Aufgaben)
+  ═══════════════════════════════════════════════════ -->
+  <section class="stage" id="stage2">
+    <div class="stage-heading">Stufe 2 — Illokution klassifizieren</div>
+    <p class="stage-intro">Welche Illokutionskategorie (nach Searle) trifft jeweils zu?</p>
+
+    <!-- Referenz-Karten -->
+    <div class="mini-ref">
+      <h3>Searles 5 Kategorien — Kurzreferenz</h3>
+      <div class="ref-grid">
+        <div class="ref-item ref-rep"><strong>Repräsentativ</strong>Sachverhalt behaupten</div>
+        <div class="ref-item ref-dir"><strong>Direktiv</strong>Hörer zu Handlung auffordern</div>
+        <div class="ref-item ref-kom"><strong>Kommissiv</strong>Sprecher verpflichtet sich</div>
+        <div class="ref-item ref-exp"><strong>Expressiv</strong>Gefühl/Haltung ausdrücken</div>
+        <div class="ref-item ref-dek"><strong>Deklarativ</strong>Äußerung schafft Realität (Öffentlich-institutionell)</div>
+      </div>
+    </div>
+
+    <!-- Aufgabe 2-1 -->
+    <div id="task2-1">
+      <div class="subtask-counter" id="counter2">Aufgabe 1 von 4</div>
+      <div class="sentence-card">
+        <span class="quote-mark">„</span>
+        Berlin ist die Hauptstadt Deutschlands."
+      </div>
+      <p class="task-question">Welche Illokution liegt vor?</p>
+      <div class="options" id="opts2-1">
+        <button class="opt-btn" data-correct="true" onclick="checkStage2(this, true, 1)">
+          <span class="opt-letter">A</span>Repräsentativ (Behauptung)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 1)">
+          <span class="opt-letter">B</span>Direktiv (Aufforderung)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 1)">
+          <span class="opt-letter">C</span>Kommissiv (Versprechen)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 1)">
+          <span class="opt-letter">D</span>Expressiv (Gefühlsausdruck)
+        </button>
+      </div>
+      <div class="feedback correct" id="fb2-1-ok">
+        <span class="feedback-icon">✅</span>
+        <strong>Korrekt!</strong> Das ist eine <strong>Behauptung (Repräsentativ)</strong> — der Sprecher
+        stellt einen Sachverhalt als wahr dar. Syntaktischer Typ und Illokution stimmen hier überein.
+        Nach Searle kennzeichnen Repräsentativa die Aufrichtigkeit des Glaubens an den Sachverhalt.
+      </div>
+      <div class="feedback wrong" id="fb2-1-fail">
+        <span class="feedback-icon">❌</span>
+        Niemand wird aufgefordert (kein Direktiv), niemand verpflichtet sich (kein Kommissiv),
+        kein Gefühl wird ausgedrückt (kein Expressiv). Der Sprecher beschreibt schlicht einen Sachverhalt —
+        das ist ein <strong>Repräsentativ</strong> (Behauptung) nach Searle.
+      </div>
+    </div>
+
+    <!-- Aufgabe 2-2 -->
+    <div id="task2-2" style="display:none">
+      <div class="subtask-counter">Aufgabe 2 von 4</div>
+      <div class="sentence-card">
+        <span class="quote-mark">„</span>
+        Räum bitte dein Zimmer auf!"
+      </div>
+      <p class="task-question">Welche Illokution liegt vor?</p>
+      <div class="options" id="opts2-2">
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 2)">
+          <span class="opt-letter">A</span>Repräsentativ (Behauptung)
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkStage2(this, true, 2)">
+          <span class="opt-letter">B</span>Direktiv (Aufforderung)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 2)">
+          <span class="opt-letter">C</span>Kommissiv (Versprechen)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 2)">
+          <span class="opt-letter">D</span>Expressiv (Gefühlsausdruck)
+        </button>
+      </div>
+      <div class="feedback correct" id="fb2-2-ok">
+        <span class="feedback-icon">✅</span>
+        <strong>Richtig!</strong> Der Sprecher fordert den Hörer zu einer Handlung auf —
+        das ist ein <strong>Direktiv (Aufforderung)</strong>. Form (Imperativsatz) und
+        Illokution stimmen hier überein. Direktiva sind bei Searle alle Sprechakte,
+        bei denen der Sprecher den Hörer zu etwas bewegen will.
+      </div>
+      <div class="feedback wrong" id="fb2-2-fail">
+        <span class="feedback-icon">❌</span>
+        Es wird kein Sachverhalt beschrieben (kein Repräsentativ), niemand verpflichtet sich
+        zu etwas (kein Kommissiv), kein Gefühl wird ausgedrückt (kein Expressiv).
+        Der Sprecher will, dass der Hörer <em>etwas tut</em> — das ist ein <strong>Direktiv</strong>.
+      </div>
+    </div>
+
+    <!-- Aufgabe 2-3 -->
+    <div id="task2-3" style="display:none">
+      <div class="subtask-counter">Aufgabe 3 von 4</div>
+      <div class="sentence-card">
+        <span class="quote-mark">„</span>
+        Ich werde dich morgen anrufen."
+      </div>
+      <p class="task-question">Welche Illokution liegt vor?</p>
+      <div class="options" id="opts2-3">
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 3)">
+          <span class="opt-letter">A</span>Repräsentativ (Behauptung)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 3)">
+          <span class="opt-letter">B</span>Direktiv (Aufforderung)
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkStage2(this, true, 3)">
+          <span class="opt-letter">C</span>Kommissiv (Versprechen)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 3)">
+          <span class="opt-letter">D</span>Expressiv (Gefühlsausdruck)
+        </button>
+      </div>
+      <div class="feedback correct" id="fb2-3-ok">
+        <span class="feedback-icon">✅</span>
+        <strong>Sehr gut!</strong> Der Sprecher <em>verpflichtet sich</em> zu einer künftigen Handlung —
+        das ist ein <strong>Versprechen (Kommissiv)</strong>. Entscheidend: Der Sprecher bindet sich selbst,
+        nicht den Hörer. Das unterscheidet Kommissiva von Direktiva.
+      </div>
+      <div class="feedback wrong" id="fb2-3-fail">
+        <span class="feedback-icon">❌</span>
+        Grammatisch ist es ein Aussagesatz — aber es geht nicht um eine neutrale Faktenbeschreibung
+        (kein Repräsentativ). Der Sprecher <em>verpflichtet sich</em> zu einer Handlung in der Zukunft.
+        Das ist ein <strong>Kommissiv (Versprechen)</strong> nach Searle.
+      </div>
+    </div>
+
+    <!-- Aufgabe 2-4 -->
+    <div id="task2-4" style="display:none">
+      <div class="subtask-counter">Aufgabe 4 von 4</div>
+      <div class="sentence-card">
+        <span class="quote-mark">„</span>
+        Herzlichen Glückwunsch zu deinem Geburtstag!"
+      </div>
+      <p class="task-question">Welche Illokution liegt vor?</p>
+      <div class="options" id="opts2-4">
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 4)">
+          <span class="opt-letter">A</span>Repräsentativ (Behauptung)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 4)">
+          <span class="opt-letter">B</span>Direktiv (Aufforderung)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage2(this, false, 4)">
+          <span class="opt-letter">C</span>Kommissiv (Versprechen)
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkStage2(this, true, 4)">
+          <span class="opt-letter">D</span>Expressiv (Gefühlsausdruck)
+        </button>
+      </div>
+      <div class="feedback correct" id="fb2-4-ok">
+        <span class="feedback-icon">✅</span>
+        <strong>Genau!</strong> Der Sprecher drückt Freude und Wohlwollen aus —
+        das ist ein <strong>Expressiv (Glückwunsch)</strong>. Expressiva sind nach Searle alle
+        Sprechakte, die eine Einstellung oder ein Gefühl des Sprechers gegenüber einem Sachverhalt
+        ausdrücken (Dank, Entschuldigung, Glückwunsch, Beileid …).
+      </div>
+      <div class="feedback wrong" id="fb2-4-fail">
+        <span class="feedback-icon">❌</span>
+        Es wird kein Sachverhalt beschrieben (kein Repräsentativ), niemand wird aufgefordert
+        (kein Direktiv), niemand verpflichtet sich (kein Kommissiv).
+        Das Gratulieren drückt eine Haltung aus — das ist ein <strong>Expressiv</strong>.
+      </div>
+    </div>
+
+    <button class="btn-primary" id="btn2" onclick="goStage3()" style="display:none">
+      Weiter zu Stufe 3 →
+    </button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       STUFE 3: Indirekte Sprechakte — Form vs. Funktion
+  ═══════════════════════════════════════════════════ -->
+  <section class="stage" id="stage3">
+    <div class="stage-heading">Stufe 3 — Indirekte Sprechakte</div>
+    <p class="stage-intro">
+      Wenn Form und Funktion auseinanderfallen, spricht Searle von einem <strong>indirekten Sprechakt</strong>.
+      Bestimme jeweils die tatsächliche Illokution.
+    </p>
+
+    <!-- Referenz kompakt -->
+    <div class="mini-ref">
+      <h3>Indirekter Sprechakt – Merksatz</h3>
+      <div style="font-size:0.88rem; line-height:1.6; color:var(--muted); margin-bottom:0.75rem;">
+        Lokutionärer Typ (Satzform) ≠ Illokution (Absicht). Der Kontext entscheidet — nicht die Grammatik.
+      </div>
+      <h3 style="margin-top:0.5rem;">Alle 5 Kategorien</h3>
+      <div class="ref-grid">
+        <div class="ref-item ref-rep"><strong>Repräsentativ</strong>Sachverhalt behaupten</div>
+        <div class="ref-item ref-dir"><strong>Direktiv</strong>Hörer auffordern</div>
+        <div class="ref-item ref-kom"><strong>Kommissiv</strong>Sprecher verpflichtet sich</div>
+        <div class="ref-item ref-exp"><strong>Expressiv</strong>Gefühl ausdrücken</div>
+        <div class="ref-item ref-dek"><strong>Deklarativ</strong>Äußerung schafft Realität</div>
+      </div>
+    </div>
+
+    <!-- Aufgabe 3-1 -->
+    <div id="task3-1">
+      <div class="subtask-counter" id="counter3">Aufgabe 1 von 3</div>
+      <div class="sentence-card">
+        <span class="quote-mark">„</span>
+        Es ist kalt hier."
+        <div class="context-note">Kontext: Ein Büroraum mit weit geöffnetem Fenster im Winter. Kollegin sagt das zu einem Kollegen, der neben dem Fenster sitzt.</div>
+      </div>
+      <p class="task-question">Was ist die tatsächliche Illokution?</p>
+      <div class="options" id="opts3-1">
+        <button class="opt-btn" data-correct="false" onclick="checkStage3(this, false, 1)">
+          <span class="opt-letter">A</span>
+          Repräsentativ — eine neutrale Feststellung über die Raumtemperatur
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkStage3(this, true, 1)">
+          <span class="opt-letter">B</span>
+          Direktiv — eine indirekte Bitte, das Fenster zu schließen
+        </button>
+      </div>
+      <div class="feedback correct" id="fb3-1-ok">
+        <span class="feedback-icon">✅</span>
+        <strong>Richtig!</strong> Lokution: Aussagesatz über Temperatur. Illokution: <strong>Direktiv (Bitte)</strong>.
+        Perlokution: Der Kollege schließt das Fenster. Der Kontext macht deutlich, dass keine
+        neutrale Wetter-Information gemeint ist. Das nennt Searle einen <strong>indirekten Sprechakt</strong>:
+        Die Sprecherin erreicht ihr Ziel (Fenster schließen) durch eine wörtlich andere Äußerung.
+      </div>
+      <div class="feedback wrong" id="fb3-1-fail">
+        <span class="feedback-icon">❌</span>
+        Im Kontext (Winter, offenes Fenster, Kollege daneben) hört ein kompetenter Sprecher
+        keine neutrale Wetteraussage. Die Sprecherin bittet indirekt darum, das Fenster zu schließen —
+        das ist ein <strong>indirekter Sprechakt: Direktiv (Bitte)</strong> nach Searle.
+      </div>
+    </div>
+
+    <!-- Aufgabe 3-2 -->
+    <div id="task3-2" style="display:none">
+      <div class="subtask-counter">Aufgabe 2 von 3</div>
+      <div class="sentence-card">
+        <span class="quote-mark">„</span>
+        Hiermit erkläre ich euch zu Mann und Frau."
+        <div class="context-note">Kontext: Standesbeamtin bei einer Trauungszeremonie.</div>
+      </div>
+      <p class="task-question">Was ist die Illokution dieser Äußerung?</p>
+      <div class="options" id="opts3-2">
+        <button class="opt-btn" data-correct="false" onclick="checkStage3(this, false, 2)">
+          <span class="opt-letter">A</span>
+          Repräsentativ — die Beamtin beschreibt einen bereits bestehenden Zustand
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage3(this, false, 2)">
+          <span class="opt-letter">B</span>
+          Kommissiv — die Beamtin verspricht etwas
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkStage3(this, true, 2)">
+          <span class="opt-letter">C</span>
+          Deklarativ — die Äußerung selbst schafft die neue rechtliche Realität
+        </button>
+      </div>
+      <div class="feedback correct" id="fb3-2-ok">
+        <span class="feedback-icon">✅</span>
+        <strong>Exzellent!</strong> Das ist ein <strong>Deklarativ</strong>. Searle unterscheidet:
+        Beim Deklarativ verändert die Äußerung selbst den institutionellen Status der Welt —
+        mit dem Aussprechen dieser Worte (im richtigen institutionellen Rahmen) <em>sind</em>
+        die Personen verheiratet. Kein Kommissiv, denn die Beamtin verpflichtet sich zu nichts.
+        Kein Repräsentativ, denn sie beschreibt keinen vorher bestehenden Sachverhalt.
+      </div>
+      <div class="feedback wrong" id="fb3-2-fail">
+        <span class="feedback-icon">❌</span>
+        Prüfe die Besonderheit: Beim <strong>Deklarativ</strong> (Searle) <em>schafft</em> die
+        Äußerung selbst eine neue Realität — der Ehestatus existiert erst durch das Aussprechen.
+        Das unterscheidet Deklarativa von Repräsentativa (die beschreiben) und
+        Kommissiva (die den Sprecher verpflichten).
+      </div>
+    </div>
+
+    <!-- Aufgabe 3-3 -->
+    <div id="task3-3" style="display:none">
+      <div class="subtask-counter">Aufgabe 3 von 3</div>
+      <div class="sentence-card">
+        <span class="quote-mark">„</span>
+        Du wirst das noch bereuen."
+        <div class="context-note">Kontext: Nach einem heftigen Streit. Tonfall: drohend.</div>
+      </div>
+      <p class="task-question">Was ist die tatsächliche Illokution?</p>
+      <div class="options" id="opts3-3">
+        <button class="opt-btn" data-correct="false" onclick="checkStage3(this, false, 3)">
+          <span class="opt-letter">A</span>
+          Repräsentativ — eine neutrale Vorhersage über die Zukunft
+        </button>
+        <button class="opt-btn" data-correct="true" onclick="checkStage3(this, true, 3)">
+          <span class="opt-letter">B</span>
+          Kommissiv — eine implizite Drohung (negativer Kommissiv)
+        </button>
+        <button class="opt-btn" data-correct="false" onclick="checkStage3(this, false, 3)">
+          <span class="opt-letter">C</span>
+          Direktiv — eine Aufforderung, etwas zu bereuen
+        </button>
+      </div>
+      <div class="feedback correct" id="fb3-3-ok">
+        <span class="feedback-icon">✅</span>
+        <strong>Korrekt!</strong> Grammatisch ist es ein Aussagesatz über die Zukunft (Lokution).
+        Die tatsächliche Illokution im Streitkontext ist jedoch eine <strong>Drohung — ein negativer Kommissiv</strong>:
+        Der Sprecher impliziert, dass er eine negative Konsequenz herbeiführen wird.
+        Searle unterscheidet Kommissiva in positiv (Versprechen) und negativ (Drohung).
+        Ein kontextneutrales Repräsentativ würde lauten: „Es wird morgen regnen."
+      </div>
+      <div class="feedback wrong" id="fb3-3-fail">
+        <span class="feedback-icon">❌</span>
+        Eine neutrale Vorhersage (Repräsentativ) wäre kontextneutral. Hier aber signalisiert
+        der Kontext (Streit, drohender Ton): Der Sprecher impliziert, dass er selbst für
+        eine negative Konsequenz sorgen wird. Das ist eine <strong>Drohung — ein Kommissiv
+        (negativ)</strong> nach Searle. Direktiva hingegen fordern den Hörer zu einer Handlung auf.
+      </div>
+    </div>
+
+    <button class="btn-primary" id="btn3" onclick="showResult()" style="display:none">
+      Ergebnis ansehen →
+    </button>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════
+       ABSCHLUSS
+  ═══════════════════════════════════════════════════ -->
+  <section class="stage" id="stageResult">
+    <div class="result-box">
+      <div class="result-score" id="resultScore">—</div>
+      <div class="result-label" id="resultLabel">von 8 Aufgaben richtig</div>
+      <div class="result-summary">
+        <h3>Was du geübt hast</h3>
+        <ul style="padding-left:1.2rem; display:flex; flex-direction:column; gap:0.35rem;">
+          <li>Lokutionären, illokutionären und perlokutionären Akt unterscheiden (Austin 1962)</li>
+          <li>Illokutionskategorien nach Searle klassifizieren (Repräsentativ, Direktiv, Kommissiv, Expressiv, Deklarativ)</li>
+          <li>Indirekte Sprechakte erkennen: syntaktische Form ≠ kommunikative Funktion</li>
+          <li>Deklarativa als Sonderfall: Äußerung schafft institutionelle Realität</li>
+        </ul>
+      </div>
+      <div style="font-size:0.85rem; color:var(--muted); margin-bottom:1.25rem; line-height:1.6;">
+        <strong>Quellen:</strong> Austin, J. L. (1962). <em>How to Do Things with Words.</em>
+        Oxford UP. — Searle, J. R. (1969). <em>Speech Acts.</em> Cambridge UP.
+        — Meibauer, J. (2008). <em>Pragmatik.</em> Tübingen: Stauffenburg.
+      </div>
+      <button class="btn-primary" onclick="restartSim()">Nochmals versuchen</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <a href="/">Nachhilfe Mentor</a> ·
+  <a href="/lernmaterialien/">Lernmaterialien</a> ·
+  <a href="/blog/">Blog</a>
+</footer>
+
+<script>
+  /* ── Tracking-Hilfe ───────────────────────────── */
+  function track(event, data) {
+    try {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push(Object.assign({ event }, data));
+    } catch(e) {}
+  }
+
+  /* ── Modell-Animation beim Laden ─────────────── */
+  window.addEventListener('DOMContentLoaded', function() {
+    var layers = [
+      document.getElementById('layerLok'),
+      document.getElementById('layerIll'),
+      document.getElementById('layerPerl')
+    ];
+    layers.forEach(function(el, i) {
+      setTimeout(function() { el.classList.add('visible'); }, 250 + i * 300);
+    });
+  });
+
+  /* ── Globaler Punkte-Zähler ───────────────────── */
+  var score = 0;
+  var totalQuestions = 8; // 1 + 4 + 3
+
+  /* ── Stufe 1 ──────────────────────────────────── */
+  var stage1Done = false;
+  function checkStage1(btn, isCorrect) {
+    if (stage1Done) return;
+    stage1Done = true;
+    var btns = document.querySelectorAll('#opts1 .opt-btn');
+    btns.forEach(function(b) { b.disabled = true; });
+
+    if (isCorrect) {
+      btn.classList.add('correct');
+      document.getElementById('fb1-ok').classList.add('show');
+      score++;
+    } else {
+      btn.classList.add('wrong');
+      // Zeige richtige Antwort
+      btns.forEach(function(b) {
+        if (b.dataset.correct === 'true') b.classList.add('correct');
+      });
+      document.getElementById('fb1-fail').classList.add('show');
+    }
+    document.getElementById('btn1').style.display = 'inline-block';
+    track('sim_step', { step: 1, result: isCorrect ? 'correct' : 'wrong' });
+  }
+
+  /* ── Stufe 2 ──────────────────────────────────── */
+  var stage2Sub = 1;
+  var stage2Done = false;
+
+  function checkStage2(btn, isCorrect, sub) {
+    var container = 'opts2-' + sub;
+    var btns = document.querySelectorAll('#' + container + ' .opt-btn');
+    btns.forEach(function(b) { b.disabled = true; });
+
+    if (isCorrect) {
+      btn.classList.add('correct');
+      document.getElementById('fb2-' + sub + '-ok').classList.add('show');
+      score++;
+    } else {
+      btn.classList.add('wrong');
+      btns.forEach(function(b) {
+        if (b.dataset.correct === 'true') b.classList.add('correct');
+      });
+      document.getElementById('fb2-' + sub + '-fail').classList.add('show');
+    }
+    track('sim_step', { step: '2-' + sub, result: isCorrect ? 'correct' : 'wrong' });
+
+    // Verzögert nächste Aufgabe oder Weiter-Button zeigen
+    setTimeout(function() {
+      if (sub < 4) {
+        document.getElementById('task2-' + sub).style.display = 'none';
+        document.getElementById('task2-' + (sub + 1)).style.display = 'block';
+        stage2Sub = sub + 1;
+      } else {
+        document.getElementById('btn2').style.display = 'inline-block';
+      }
+    }, 1400);
+  }
+
+  /* ── Stufe 3 ──────────────────────────────────── */
+  var stage3Sub = 1;
+
+  function checkStage3(btn, isCorrect, sub) {
+    var container = 'opts3-' + sub;
+    var btns = document.querySelectorAll('#' + container + ' .opt-btn');
+    btns.forEach(function(b) { b.disabled = true; });
+
+    if (isCorrect) {
+      btn.classList.add('correct');
+      document.getElementById('fb3-' + sub + '-ok').classList.add('show');
+      score++;
+    } else {
+      btn.classList.add('wrong');
+      btns.forEach(function(b) {
+        if (b.dataset.correct === 'true') b.classList.add('correct');
+      });
+      document.getElementById('fb3-' + sub + '-fail').classList.add('show');
+    }
+    track('sim_step', { step: '3-' + sub, result: isCorrect ? 'correct' : 'wrong' });
+
+    setTimeout(function() {
+      if (sub < 3) {
+        document.getElementById('task3-' + sub).style.display = 'none';
+        document.getElementById('task3-' + (sub + 1)).style.display = 'block';
+        stage3Sub = sub + 1;
+      } else {
+        document.getElementById('btn3').style.display = 'inline-block';
+      }
+    }, 1400);
+  }
+
+  /* ── Navigation zwischen Stufen ──────────────── */
+  function updateProgress(step) {
+    for (var i = 1; i <= 3; i++) {
+      var dot = document.getElementById('dot' + i);
+      if (i < step)       { dot.className = 'step-dot done'; }
+      else if (i === step) { dot.className = 'step-dot active'; }
+      else                 { dot.className = 'step-dot'; }
+    }
+    var labels = ['', 'Stufe 1 von 3 – Vorhersage', 'Stufe 2 von 3 – Klassifizieren', 'Stufe 3 von 3 – Indirekte Sprechakte'];
+    document.getElementById('stepLabel').textContent = labels[step] || '';
+  }
+
+  function goStage2() {
+    document.getElementById('stage1').classList.remove('active');
+    document.getElementById('stage2').classList.add('active');
+    updateProgress(2);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function goStage3() {
+    document.getElementById('stage2').classList.remove('active');
+    document.getElementById('stage3').classList.add('active');
+    updateProgress(3);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function showResult() {
+    document.getElementById('stage3').classList.remove('active');
+    document.getElementById('stageResult').classList.add('active');
+    document.getElementById('resultScore').textContent = score + ' / ' + totalQuestions;
+    var pct = score / totalQuestions;
+    var label;
+    if (pct >= 0.875)     label = 'von ' + totalQuestions + ' Aufgaben richtig – Ausgezeichnet!';
+    else if (pct >= 0.625) label = 'von ' + totalQuestions + ' Aufgaben richtig – Gut gemacht!';
+    else                   label = 'von ' + totalQuestions + ' Aufgaben richtig – Nochmals üben lohnt sich.';
+    document.getElementById('resultLabel').textContent = label;
+    // Fortschrittsbalken fertig
+    for (var i = 1; i <= 3; i++) {
+      document.getElementById('dot' + i).className = 'step-dot done';
+    }
+    document.getElementById('stepLabel').textContent = 'Abgeschlossen';
+    track('sim_complete', { score: score, total: totalQuestions });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  function restartSim() {
+    score = 0;
+    stage1Done = false;
+    stage2Sub = 1;
+    stage3Sub = 1;
+
+    // Alle Stages zurücksetzen
+    ['stage1','stage2','stage3','stageResult'].forEach(function(id) {
+      document.getElementById(id).classList.remove('active');
+    });
+    document.getElementById('stage1').classList.add('active');
+
+    // Buttons zurücksetzen
+    ['btn1','btn2','btn3'].forEach(function(id) {
+      document.getElementById(id).style.display = 'none';
+    });
+
+    // Optionen zurücksetzen
+    document.querySelectorAll('.opt-btn').forEach(function(b) {
+      b.disabled = false;
+      b.classList.remove('correct','wrong');
+    });
+
+    // Feedbacks ausblenden
+    document.querySelectorAll('.feedback').forEach(function(f) {
+      f.classList.remove('show');
+    });
+
+    // Unteraufgaben zurücksetzen
+    for (var i = 1; i <= 4; i++) {
+      var t = document.getElementById('task2-' + i);
+      if (t) t.style.display = i === 1 ? 'block' : 'none';
+    }
+    for (var j = 1; j <= 3; j++) {
+      var t3 = document.getElementById('task3-' + j);
+      if (t3) t3.style.display = j === 1 ? 'block' : 'none';
+    }
+
+    updateProgress(1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>

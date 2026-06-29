@@ -1,0 +1,920 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Kasus üben: Nominativ, Akkusativ, Dativ, Genitiv | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Kasus-Übung: Erkenne die vier deutschen Fälle mit Fragewörtern und setze den richtigen Artikel ein. 7 Aufgaben mit Sofort-Feedback und Deklinationstabelle.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Kasus, Nominativ, Akkusativ, Dativ, Genitiv, Deutsch Grammatik, Fragewörter, Artikel deklinieren">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/kasus-nominativ-akkusativ-dativ-deutsch-simulation.html">
+  <meta property="og:title" content="Kasus üben: Nominativ, Akkusativ, Dativ, Genitiv">
+  <meta property="og:description" content="Interaktive Kasus-Übung: Erkenne die vier deutschen Fälle mit Fragewörtern und setze den richtigen Artikel ein – mit Sofort-Feedback und Deklinationstabelle.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/kasus-nominativ-akkusativ-dativ-deutsch-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Kasus üben: Nominativ, Akkusativ, Dativ, Genitiv",
+  "description":"Interaktive Kasus-Übung: Erkenne die vier deutschen Fälle mit Fragewörtern und setze den richtigen Artikel ein. 7 Aufgaben mit Sofort-Feedback und Deklinationstabelle.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/kasus-nominativ-akkusativ-dativ-deutsch-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #617087;
+      --line: #d8e1ed;
+      --blue: #0f5fa8;
+      --cyan: #0894aa;
+      --amber: #b87700;
+      --green: #0b8f6a;
+      --red: #b5281e;
+      --bg: #f5f8fc;
+      --panel: #fff;
+      --nom: #0f5fa8;
+      --akk: #b87700;
+      --dat: #0b8f6a;
+      --gen: #7c3ab8;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+    a { color: var(--blue); }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    header {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 32px 20px 20px;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    header p { color: var(--muted); max-width: 640px; font-size: 0.95rem; }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+
+    /* Progress */
+    .progress-wrap {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 28px;
+    }
+    .progress-bar-outer {
+      flex: 1;
+      height: 6px;
+      background: var(--line);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .progress-bar-inner {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 3px;
+      transition: width 0.4s ease;
+    }
+    .progress-label { font-size: 0.82rem; color: var(--muted); white-space: nowrap; }
+
+    /* Stage header */
+    .stage-chip {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 14px;
+    }
+    .chip-s1 { background: #dbeafe; color: #1e40af; }
+    .chip-s2 { background: #d1fae5; color: #065f46; }
+
+    /* Task panel */
+    .task-panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 28px 28px 24px;
+      margin-bottom: 24px;
+    }
+    .task-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 12px;
+    }
+    .task-question {
+      font-size: 1.08rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      line-height: 1.4;
+    }
+    .task-hint {
+      font-size: 0.88rem;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    /* Sentence diagram */
+    .sentence-diagram {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 24px;
+      align-items: flex-end;
+    }
+    .word-block {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .word-block .w-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 1px 6px;
+      border-radius: 4px;
+      background: var(--line);
+      color: var(--muted);
+    }
+    .word-block .w-text {
+      font-size: 1.1rem;
+      font-weight: 600;
+      padding: 6px 12px;
+      border-radius: 8px;
+      background: #f0f4fa;
+      border: 2px solid var(--line);
+      min-width: 44px;
+      text-align: center;
+    }
+    .word-block.highlight .w-text {
+      background: #dbeafe;
+      border-color: var(--blue);
+      color: var(--blue);
+    }
+    .word-block.target .w-text {
+      background: #fff;
+      border: 2.5px dashed var(--amber);
+      color: var(--amber);
+    }
+
+    /* blank-slot */
+    .blank-slot {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 64px;
+      height: 42px;
+      padding: 0 12px;
+      border: 2.5px dashed var(--amber);
+      border-radius: 8px;
+      font-size: 1.08rem;
+      font-weight: 700;
+      color: var(--amber);
+      background: #fffbeb;
+      transition: all 0.2s;
+    }
+    .blank-slot.filled-ok {
+      border-color: var(--green);
+      background: #ecfdf5;
+      color: var(--green);
+      border-style: solid;
+    }
+    .blank-slot.filled-err {
+      border-color: var(--red);
+      background: #fef2f2;
+      color: var(--red);
+      border-style: solid;
+    }
+
+    /* Option/Artikel Buttons */
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .option-btn, .artikel-btn {
+      padding: 10px 22px;
+      border-radius: 10px;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+      color: var(--ink);
+    }
+    .option-btn:hover, .artikel-btn:hover {
+      background: #f0f4fa;
+      border-color: var(--blue);
+    }
+    .option-btn.correct, .artikel-btn.correct {
+      background: #ecfdf5;
+      border-color: var(--green);
+      color: var(--green);
+    }
+    .option-btn.wrong, .artikel-btn.wrong {
+      background: #fef2f2;
+      border-color: var(--red);
+      color: var(--red);
+    }
+    .option-btn:disabled, .artikel-btn:disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    /* Feedback */
+    .feedback-box {
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 0.95rem;
+      line-height: 1.55;
+      margin-bottom: 20px;
+      display: none;
+    }
+    .feedback-box.show { display: block; }
+    .feedback-ok { background: #ecfdf5; border: 1.5px solid #6ee7b7; color: #065f46; }
+    .feedback-err { background: #fef2f2; border: 1.5px solid #fca5a5; color: #991b1b; }
+    .feedback-box .concept-tag {
+      display: inline-block;
+      font-weight: 700;
+      padding: 1px 8px;
+      border-radius: 6px;
+      font-size: 0.88rem;
+      margin-right: 4px;
+    }
+    .ct-nom { background: #dbeafe; color: #1e40af; }
+    .ct-akk { background: #fef3c7; color: #92400e; }
+    .ct-dat { background: #d1fae5; color: #065f46; }
+    .ct-gen { background: #ede9fe; color: #5b21b6; }
+    .ct-err { background: #fee2e2; color: #991b1b; }
+
+    /* Next button */
+    .btn-next {
+      display: none;
+      padding: 11px 28px;
+      border-radius: 10px;
+      border: none;
+      background: var(--blue);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-next:hover { background: #0d4d8a; }
+    .btn-next.show { display: inline-block; }
+
+    /* Deklinations-Tabelle */
+    .dekl-section {
+      margin-top: 32px;
+    }
+    .dekl-section summary {
+      cursor: pointer;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 12px;
+      user-select: none;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dekl-section summary::before {
+      content: "▶";
+      font-size: 0.75rem;
+      transition: transform 0.2s;
+    }
+    details[open] .dekl-section summary::before,
+    details[open] > summary::before { transform: rotate(90deg); }
+    details > summary { cursor: pointer; font-size: 0.9rem; font-weight: 700; color: var(--blue); list-style: none; display: flex; align-items: center; gap: 6px; }
+    details > summary::before { content: "▶"; font-size: 0.75rem; transition: transform 0.2s; display: inline-block; }
+    details[open] > summary::before { transform: rotate(90deg); }
+
+    .dekl-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin-top: 14px;
+    }
+    .dekl-table th, .dekl-table td {
+      border: 1px solid var(--line);
+      padding: 7px 12px;
+      text-align: left;
+    }
+    .dekl-table thead th {
+      background: #f0f4fa;
+      font-weight: 700;
+    }
+    .dekl-table .row-nom td:first-child { color: var(--nom); font-weight: 700; }
+    .dekl-table .row-akk td:first-child { color: var(--amber); font-weight: 700; }
+    .dekl-table .row-dat td:first-child { color: var(--dat); font-weight: 700; }
+    .dekl-table .row-gen td:first-child { color: var(--gen); font-weight: 700; }
+
+    /* Kasus cards (reference) */
+    .kasus-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .kasus-card {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 12px;
+      padding: 14px 16px;
+    }
+    .kasus-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 4px; }
+    .kasus-card .kw { font-size: 0.82rem; color: var(--muted); margin-bottom: 6px; }
+    .kasus-card .fn { font-size: 0.82rem; }
+    .kc-nom { border-top: 3px solid var(--nom); }
+    .kc-akk { border-top: 3px solid var(--amber); }
+    .kc-dat { border-top: 3px solid var(--dat); }
+    .kc-gen { border-top: 3px solid var(--gen); }
+
+    /* Result screen */
+    .result-screen {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .result-screen.show { display: block; }
+    .result-icon { font-size: 3rem; margin-bottom: 16px; }
+    .result-title { font-size: 1.5rem; font-weight: 700; margin-bottom: 12px; }
+    .result-score { font-size: 1.1rem; color: var(--muted); margin-bottom: 28px; }
+    .btn-restart {
+      padding: 12px 32px;
+      border-radius: 10px;
+      border: none;
+      background: var(--blue);
+      color: #fff;
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .btn-restart:hover { background: #0d4d8a; }
+
+    @media (max-width: 480px) {
+      header { padding: 22px 16px 14px; }
+      main { padding: 0 16px 40px; }
+      .task-panel { padding: 18px 16px 16px; }
+      .option-btn, .artikel-btn { padding: 9px 14px; font-size: 0.95rem; }
+      .kasus-cards { grid-template-columns: 1fr 1fr; }
+      .dekl-table { font-size: 0.78rem; }
+      .dekl-table th, .dekl-table td { padding: 5px 7px; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <h1>Kasus erkennen und üben</h1>
+  <p>Lerne die vier deutschen Kasus – Nominativ, Akkusativ, Dativ, Genitiv – mit Fragewörtern zu erkennen und den richtigen Artikel einzusetzen. Ideal für Schüler und Schülerinnen ab Klasse 5.</p>
+</header>
+
+<main>
+
+  <!-- Kasus-Referenzkarten -->
+  <div class="kasus-cards" id="kasus-ref">
+    <div class="kasus-card kc-nom">
+      <h3 style="color:var(--nom)">Nominativ</h3>
+      <div class="kw">Fragewort: <strong>Wer? / Was?</strong></div>
+      <div class="fn">Funktion: Subjekt des Satzes</div>
+    </div>
+    <div class="kasus-card kc-akk">
+      <h3 style="color:var(--amber)">Akkusativ</h3>
+      <div class="kw">Fragewort: <strong>Wen? / Was?</strong></div>
+      <div class="fn">Funktion: Direktes Objekt</div>
+    </div>
+    <div class="kasus-card kc-dat">
+      <h3 style="color:var(--dat)">Dativ</h3>
+      <div class="kw">Fragewort: <strong>Wem?</strong></div>
+      <div class="fn">Funktion: Indirektes Objekt</div>
+      <div class="fn" style="font-size:0.78rem;color:var(--muted);margin-top:4px;">z.B.: Er hilft dem Schüler.</div>
+    </div>
+    <div class="kasus-card kc-gen">
+      <h3 style="color:var(--gen)">Genitiv</h3>
+      <div class="kw">Fragewort: <strong>Wessen?</strong></div>
+      <div class="fn">Funktion: Zugehörigkeit / Besitz</div>
+    </div>
+  </div>
+
+  <!-- Progress Bar -->
+  <div class="progress-wrap">
+    <span class="progress-label" id="prog-label">Aufgabe 1 von 7</span>
+    <div class="progress-bar-outer">
+      <div class="progress-bar-inner" id="prog-bar" style="width:0%"></div>
+    </div>
+  </div>
+
+  <!-- Stufe 1 -->
+  <div id="stage1">
+    <div class="stage-chip chip-s1">Stufe 1 – Kasus erkennen</div>
+    <div class="task-panel">
+      <div class="task-label">Vorhersage – Fragewort bestimmen</div>
+      <div class="task-question" id="s1-question"></div>
+
+      <!-- Satzdiagramm Stufe 1 -->
+      <div class="sentence-diagram" id="s1-diagram"></div>
+
+      <div class="task-hint">Frage: Welches Fragewort passt zu dem markierten Satzteil?</div>
+
+      <div class="btn-row" id="s1-btns">
+        <button class="option-btn" data-val="Wer?">Wer?</button>
+        <button class="option-btn" data-val="Wen?">Wen?</button>
+        <button class="option-btn" data-val="Wem?">Wem?</button>
+        <button class="option-btn" data-val="Wessen?">Wessen?</button>
+      </div>
+
+      <div class="feedback-box" id="s1-feedback"></div>
+      <button class="btn-next" id="s1-next">Weiter zu Stufe 2 →</button>
+    </div>
+  </div>
+
+  <!-- Stufe 2 -->
+  <div id="stage2" style="display:none">
+    <div class="stage-chip chip-s2">Stufe 2 – Artikel einsetzen</div>
+    <div class="task-panel">
+      <div class="task-label">Artikel richtig deklinieren</div>
+      <div class="task-question" id="s2-question"></div>
+
+      <!-- Satzdiagramm Stufe 2 -->
+      <div class="sentence-diagram" id="s2-diagram"></div>
+
+      <div class="task-hint" id="s2-hint"></div>
+
+      <div class="btn-row" id="s2-btns"></div>
+
+      <div class="feedback-box" id="s2-feedback"></div>
+      <button class="btn-next" id="s2-next">Nächste Aufgabe →</button>
+    </div>
+  </div>
+
+  <!-- Ergebnis-Screen -->
+  <div class="result-screen" id="result-screen">
+    <div class="result-icon">🎉</div>
+    <div class="result-title">Gut gemacht!</div>
+    <div class="result-score" id="result-score"></div>
+    <button class="btn-restart" onclick="restart()">Nochmal üben</button>
+  </div>
+
+  <!-- Deklinationstabelle -->
+  <details style="margin-top: 32px;">
+    <summary>Deklinationstabelle: Bestimmter Artikel</summary>
+    <table class="dekl-table">
+      <thead>
+        <tr>
+          <th>Kasus</th>
+          <th>Maskulinum</th>
+          <th>Femininum</th>
+          <th>Neutrum</th>
+          <th>Plural</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="row-nom">
+          <td>Nominativ</td><td>der</td><td>die</td><td>das</td><td>die</td>
+        </tr>
+        <tr class="row-akk">
+          <td>Akkusativ</td><td>den</td><td>die</td><td>das</td><td>die</td>
+        </tr>
+        <tr class="row-dat">
+          <td>Dativ</td><td>dem</td><td>der</td><td>dem</td><td>den</td>
+        </tr>
+        <tr class="row-gen">
+          <td>Genitiv</td><td>des</td><td>der</td><td>des</td><td>der</td>
+        </tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.82rem;color:var(--muted);margin-top:10px;">
+      Tipp: Im Akkusativ Maskulinum ändert sich nur der Artikel (der → den). Dativ und Akkusativ werden oft verwechselt – nutze das Fragewort!
+      Beispiel: „<strong>Der Schüler</strong> (Nom.) hilft <strong>dem Schüler</strong> (Dat.)."
+    </p>
+  </details>
+
+</main>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({ event: 'asset_view', asset_type: 'simulation', topic: 'kasus-deutsch' });
+
+const AUFGABEN = [
+  {
+    kasus: 'Nominativ',
+    genus: 'm',
+    fragewort: 'Wer?',
+    artikel: 'der',
+    s1Text: 'Welches Fragewort hilft dir, den Kasus des unterstrichenen Satzteils zu bestimmen?',
+    s1Satz: [
+      { text: '___', role: 'Artikel', target: true },
+      { text: 'Hund', role: 'Subjekt', highlight: true },
+      { text: 'bellt', role: 'Verb' },
+      { text: 'laut.', role: '' }
+    ],
+    s2Text: 'Setze den richtigen Artikel ein:',
+    s2Satz: [
+      { text: '___', role: 'Artikel', blank: true },
+      { text: 'Hund', role: 'Subjekt' },
+      { text: 'bellt', role: 'Verb' },
+      { text: 'laut.', role: '' }
+    ],
+    s2Optionen: ['der', 'den', 'dem', 'des'],
+    s2Hint: 'Der Hund ist das Subjekt – der Handelnde. Frage: Wer bellt?',
+    fbKorrekt: 'Richtig! Das Subjekt steht im <span class="concept-tag ct-nom">Nominativ</span> – es antwortet auf „Wer?" Der bestimmte Artikel im Nominativ Maskulinum lautet <strong>der</strong>.',
+    fbFalsch: 'Häufiger Fehler: Das Subjekt steht immer im <span class="concept-tag ct-nom">Nominativ</span> (Wer?), nicht im Akkusativ oder Dativ. Der Artikel lautet <strong>der</strong>.',
+    s1FbKorrekt: 'Genau! Das Subjekt fragt nach <strong>Wer?</strong> – das ist der <span class="concept-tag ct-nom">Nominativ</span>. Das Subjekt ist der Handelnde im Satz.',
+    s1FbFalsch: 'Nicht ganz. Das Subjekt eines Satzes fragt man mit <strong>Wer?</strong> – das ergibt den <span class="concept-tag ct-nom">Nominativ</span>. Dativ (Wem?) und Akkusativ (Wen?) beziehen sich auf Objekte, nicht das Subjekt.'
+  },
+  {
+    kasus: 'Akkusativ',
+    genus: 'm',
+    fragewort: 'Wen?',
+    artikel: 'den',
+    s1Text: 'Welches Fragewort hilft dir, den Kasus des unterstrichenen Satzteils zu bestimmen?',
+    s1Satz: [
+      { text: 'Ich', role: 'Subjekt' },
+      { text: 'sehe', role: 'Verb' },
+      { text: '___', role: 'Artikel', target: true },
+      { text: 'Mann.', role: 'Objekt', highlight: true }
+    ],
+    s2Text: 'Setze den richtigen Artikel ein:',
+    s2Satz: [
+      { text: 'Ich', role: 'Subjekt' },
+      { text: 'sehe', role: 'Verb' },
+      { text: '___', role: 'Artikel', blank: true },
+      { text: 'Mann.', role: 'Objekt' }
+    ],
+    s2Optionen: ['der', 'den', 'dem', 'des'],
+    s2Hint: 'Das direkte Objekt steht im Akkusativ. Frage: Wen sehe ich?',
+    fbKorrekt: 'Richtig! Das direkte Objekt steht im <span class="concept-tag ct-akk">Akkusativ</span> – es antwortet auf „Wen?" Im Akkusativ Maskulinum lautet der Artikel <strong>den</strong>.',
+    fbFalsch: 'Häufiger Fehler: Das direkte Objekt steht im <span class="concept-tag ct-akk">Akkusativ</span> (Wen?), nicht im Dativ (Wem?). Im Maskulinum: Nominativ <em>der</em>, aber Akkusativ <strong>den</strong>. Verwechslung von <em>dem</em> und <em>den</em> ist ein sehr häufiger Fehler!',
+    s1FbKorrekt: 'Korrekt! Das direkte Objekt fragt man mit <strong>Wen?</strong> – das ist der <span class="concept-tag ct-akk">Akkusativ</span>. Im Maskulinum ändert sich der Artikel: der → den.',
+    s1FbFalsch: 'Nicht ganz. Hier fragt man: „Wen sehe ich?" → <strong>Wen?</strong> ergibt den <span class="concept-tag ct-akk">Akkusativ</span>. Dativ würde man mit „Wem?" fragen – das wäre ein indirektes Objekt.'
+  },
+  {
+    kasus: 'Dativ',
+    genus: 'f',
+    fragewort: 'Wem?',
+    artikel: 'der',
+    s1Text: 'Welches Fragewort hilft dir, den Kasus des unterstrichenen Satzteils zu bestimmen?',
+    s1Satz: [
+      { text: 'Sie', role: 'Subjekt' },
+      { text: 'hilft', role: 'Verb' },
+      { text: '___', role: 'Artikel', target: true },
+      { text: 'Frau.', role: 'Objekt', highlight: true }
+    ],
+    s2Text: 'Setze den richtigen Artikel ein:',
+    s2Satz: [
+      { text: 'Sie', role: 'Subjekt' },
+      { text: 'hilft', role: 'Verb' },
+      { text: '___', role: 'Artikel', blank: true },
+      { text: 'Frau.', role: 'Objekt' }
+    ],
+    s2Optionen: ['die', 'den', 'der', 'des'],
+    s2Hint: 'Das Verb „helfen" verlangt immer den Dativ. Frage: Wem hilft sie?',
+    fbKorrekt: 'Richtig! „Helfen" ist ein Dativ-Verb. Das indirekte Objekt steht im <span class="concept-tag ct-dat">Dativ</span> (Wem?). Im Dativ Femininum lautet der Artikel <strong>der</strong>.',
+    fbFalsch: 'Häufiger Fehler: Das Verb „helfen" verlangt den <span class="concept-tag ct-dat">Dativ</span> (Wem?), nicht den Akkusativ (Wen?). Im Dativ Femininum lautet der Artikel <strong>der</strong>.',
+    s1FbKorrekt: 'Sehr gut! „Helfen" fragt man mit <strong>Wem?</strong> – das ist der <span class="concept-tag ct-dat">Dativ</span>. Dativ-Verben sind z.B. helfen, danken, gefallen.',
+    s1FbFalsch: 'Nicht ganz. Die Frage lautet: „Wem hilft sie?" → <strong>Wem?</strong> ergibt den <span class="concept-tag ct-dat">Dativ</span>. Dativ und Akkusativ werden oft verwechselt – achte auf das Fragewort!'
+  },
+  {
+    kasus: 'Genitiv',
+    genus: 'm',
+    fragewort: 'Wessen?',
+    artikel: 'des',
+    s1Text: 'Welches Fragewort hilft dir, den Kasus des unterstrichenen Satzteils zu bestimmen?',
+    s1Satz: [
+      { text: 'Das', role: '' },
+      { text: 'ist', role: 'Verb' },
+      { text: 'der', role: 'Artikel' },
+      { text: 'Hut', role: 'Objekt' },
+      { text: '___', role: 'Artikel', target: true },
+      { text: 'Lehrers.', role: 'Genitivattr.', highlight: true }
+    ],
+    s2Text: 'Setze den richtigen Artikel ein:',
+    s2Satz: [
+      { text: 'Das', role: '' },
+      { text: 'ist', role: 'Verb' },
+      { text: 'der', role: 'Artikel' },
+      { text: 'Hut', role: 'Objekt' },
+      { text: '___', role: 'Artikel', blank: true },
+      { text: 'Lehrers.', role: 'Genitivattr.' }
+    ],
+    s2Optionen: ['der', 'den', 'dem', 'des'],
+    s2Hint: 'Das Genitiv-Attribut drückt Zugehörigkeit aus. Frage: Wessen Hut ist das?',
+    fbKorrekt: 'Richtig! Das Genitivattribut drückt <span class="concept-tag ct-gen">Zugehörigkeit</span> aus (Wessen?). Im <span class="concept-tag ct-gen">Genitiv</span> Maskulinum lautet der Artikel <strong>des</strong>.',
+    fbFalsch: 'Das ist der <span class="concept-tag ct-gen">Genitiv</span> (Wessen?) – er drückt Zugehörigkeit aus. Im Genitiv Maskulinum lautet der Artikel <strong>des</strong>. Das Nomen erhält zusätzlich die Endung -s (des Lehrers).',
+    s1FbKorrekt: 'Perfekt! Die Frage <strong>Wessen?</strong> ergibt den <span class="concept-tag ct-gen">Genitiv</span>. Er zeigt Zugehörigkeit oder Besitz an: „der Hut des Lehrers" bedeutet, dass der Hut dem Lehrer gehört.',
+    s1FbFalsch: 'Nicht ganz. Zugehörigkeit fragt man mit <strong>Wessen?</strong> → das ist der <span class="concept-tag ct-gen">Genitiv</span>. Erkennungszeichen: „des Lehrers" – das Nomen hat die Endung -s.'
+  },
+  {
+    kasus: 'Nominativ',
+    genus: 'n',
+    fragewort: 'Wer?',
+    artikel: 'das',
+    s1Text: 'Welches Fragewort hilft dir, den Kasus des unterstrichenen Satzteils zu bestimmen?',
+    s1Satz: [
+      { text: '___', role: 'Artikel', target: true },
+      { text: 'Kind', role: 'Subjekt', highlight: true },
+      { text: 'spielt', role: 'Verb' },
+      { text: 'draußen.', role: '' }
+    ],
+    s2Text: 'Setze den richtigen Artikel ein:',
+    s2Satz: [
+      { text: '___', role: 'Artikel', blank: true },
+      { text: 'Kind', role: 'Subjekt' },
+      { text: 'spielt', role: 'Verb' },
+      { text: 'draußen.', role: '' }
+    ],
+    s2Optionen: ['der', 'die', 'das', 'dem'],
+    s2Hint: '„Kind" ist sächlich (Neutrum). Das Subjekt steht im Nominativ.',
+    fbKorrekt: 'Richtig! Das Subjekt steht im <span class="concept-tag ct-nom">Nominativ</span> (Wer?). Im Nominativ Neutrum lautet der Artikel <strong>das</strong>.',
+    fbFalsch: 'Das Subjekt steht im <span class="concept-tag ct-nom">Nominativ</span> (Wer?). „Kind" ist sächlich – im Nominativ Neutrum lautet der Artikel <strong>das</strong>.',
+    s1FbKorrekt: 'Richtig! Das Subjekt fragt man mit <strong>Wer?</strong> – das ist der <span class="concept-tag ct-nom">Nominativ</span>. „Kind" ist sächlich, daher später: Artikel <em>das</em>.',
+    s1FbFalsch: 'Das Subjekt – der Handelnde im Satz – fragt man immer mit <strong>Wer?</strong> → <span class="concept-tag ct-nom">Nominativ</span>. Akkusativ (Wen?) und Dativ (Wem?) beziehen sich auf Objekte.'
+  },
+  {
+    kasus: 'Akkusativ',
+    genus: 'f',
+    fragewort: 'Wen?',
+    artikel: 'die',
+    s1Text: 'Welches Fragewort hilft dir, den Kasus des unterstrichenen Satzteils zu bestimmen?',
+    s1Satz: [
+      { text: 'Er', role: 'Subjekt' },
+      { text: 'liest', role: 'Verb' },
+      { text: '___', role: 'Artikel', target: true },
+      { text: 'Zeitung.', role: 'Objekt', highlight: true }
+    ],
+    s2Text: 'Setze den richtigen Artikel ein:',
+    s2Satz: [
+      { text: 'Er', role: 'Subjekt' },
+      { text: 'liest', role: 'Verb' },
+      { text: '___', role: 'Artikel', blank: true },
+      { text: 'Zeitung.', role: 'Objekt' }
+    ],
+    s2Optionen: ['der', 'die', 'dem', 'den'],
+    s2Hint: '„Zeitung" ist feminin. Das direkte Objekt steht im Akkusativ.',
+    fbKorrekt: 'Richtig! Das direkte Objekt steht im <span class="concept-tag ct-akk">Akkusativ</span> (Wen/Was?). Im Akkusativ Femininum lautet der Artikel <strong>die</strong> – wie im Nominativ Femininum.',
+    fbFalsch: 'Das direkte Objekt steht im <span class="concept-tag ct-akk">Akkusativ</span> (Wen/Was?). „Zeitung" ist feminin. Im Akkusativ Femininum lautet der Artikel <strong>die</strong>.',
+    s1FbKorrekt: 'Korrekt! Das direkte Objekt fragt man mit <strong>Wen? / Was?</strong> → <span class="concept-tag ct-akk">Akkusativ</span>. Bei Femininum und Neutrum sind Nominativ und Akkusativ gleich.',
+    s1FbFalsch: 'Das direkte Objekt fragt man mit <strong>Wen? / Was?</strong> → <span class="concept-tag ct-akk">Akkusativ</span>. Dativ (Wem?) wäre nur richtig bei indirekten Objekten oder Dativ-Verben.'
+  },
+  {
+    kasus: 'Dativ',
+    genus: 'm',
+    fragewort: 'Wem?',
+    artikel: 'dem',
+    s1Text: 'Welches Fragewort hilft dir, den Kasus des unterstrichenen Satzteils zu bestimmen?',
+    s1Satz: [
+      { text: 'Er', role: 'Subjekt' },
+      { text: 'hilft', role: 'Verb' },
+      { text: '___', role: 'Artikel', target: true },
+      { text: 'Schüler.', role: 'Objekt', highlight: true }
+    ],
+    s2Text: 'Setze den richtigen Artikel ein:',
+    s2Satz: [
+      { text: 'Er', role: 'Subjekt' },
+      { text: 'hilft', role: 'Verb' },
+      { text: '___', role: 'Artikel', blank: true },
+      { text: 'Schüler.', role: 'Objekt' }
+    ],
+    s2Optionen: ['der', 'den', 'dem', 'des'],
+    s2Hint: '„Schüler" ist maskulin. „Helfen" verlangt den Dativ. Frage: Wem hilft er?',
+    fbKorrekt: 'Richtig! „Helfen" ist ein Dativ-Verb. Das indirekte Objekt steht im <span class="concept-tag ct-dat">Dativ</span> (Wem?). Im Dativ Maskulinum lautet der Artikel <strong>dem</strong>. Häufiger Fehler: Verwechslung von <em>dem</em> (Dativ) und <em>den</em> (Akkusativ).',
+    fbFalsch: 'Häufiger Fehler: „Helfen" verlangt den <span class="concept-tag ct-dat">Dativ</span> (Wem?), nicht den Akkusativ (Wen?). Im Dativ Maskulinum lautet der Artikel <strong>dem</strong>, nicht <em>den</em>!',
+    s1FbKorrekt: 'Sehr gut! „Wem hilft er?" → <strong>Wem?</strong> ergibt den <span class="concept-tag ct-dat">Dativ</span>. „Helfen" ist ein Dativ-Verb. Im Maskulinum: Dativ = <em>dem</em>.',
+    s1FbFalsch: 'Die Frage lautet: „Wem hilft er?" → <strong>Wem?</strong> ergibt den <span class="concept-tag ct-dat">Dativ</span>. Häufiger Fehler: Verwechslung von Dativ (Wem?) und Akkusativ (Wen?).'
+  }
+];
+
+let idx = 0;
+let inStage2 = false;
+let s1Done = false;
+let richtig = 0;
+let total = 0;
+
+function renderDiagram(containerId, blocks) {
+  const c = document.getElementById(containerId);
+  c.innerHTML = '';
+  blocks.forEach(b => {
+    const div = document.createElement('div');
+    div.className = 'word-block';
+    if (b.highlight) div.classList.add('highlight');
+    if (b.target) div.classList.add('target');
+
+    if (b.role) {
+      const lbl = document.createElement('div');
+      lbl.className = 'w-label';
+      lbl.textContent = b.role;
+      div.appendChild(lbl);
+    }
+
+    if (b.blank) {
+      const slot = document.createElement('div');
+      slot.className = 'blank-slot';
+      slot.id = 'blank-slot-main';
+      slot.textContent = '___';
+      div.appendChild(slot);
+    } else {
+      const txt = document.createElement('div');
+      txt.className = 'w-text';
+      txt.textContent = b.text;
+      div.appendChild(txt);
+    }
+
+    c.appendChild(div);
+  });
+}
+
+function showStage1() {
+  const a = AUFGABEN[idx];
+  document.getElementById('stage1').style.display = '';
+  document.getElementById('stage2').style.display = 'none';
+  document.getElementById('result-screen').classList.remove('show');
+
+  document.getElementById('s1-question').textContent = a.s1Text;
+  renderDiagram('s1-diagram', a.s1Satz);
+
+  const fb = document.getElementById('s1-feedback');
+  fb.className = 'feedback-box';
+  fb.innerHTML = '';
+
+  document.getElementById('s1-next').classList.remove('show');
+
+  const btns = document.querySelectorAll('#s1-btns .option-btn');
+  btns.forEach(btn => {
+    btn.disabled = false;
+    btn.classList.remove('correct', 'wrong');
+    btn.onclick = () => handleS1(btn, a);
+  });
+
+  s1Done = false;
+  updateProgress();
+}
+
+function handleS1(btn, a) {
+  if (s1Done) return;
+  s1Done = true;
+
+  const val = btn.dataset.val;
+  const btns = document.querySelectorAll('#s1-btns .option-btn');
+  btns.forEach(b => {
+    b.disabled = true;
+    if (b.dataset.val === a.fragewort) b.classList.add('correct');
+  });
+
+  const fb = document.getElementById('s1-feedback');
+  if (val === a.fragewort) {
+    btn.classList.add('correct');
+    fb.className = 'feedback-box feedback-ok show';
+    fb.innerHTML = a.s1FbKorrekt;
+  } else {
+    btn.classList.add('wrong');
+    fb.className = 'feedback-box feedback-err show';
+    fb.innerHTML = a.s1FbFalsch;
+  }
+
+  document.getElementById('s1-next').classList.add('show');
+}
+
+function showStage2() {
+  const a = AUFGABEN[idx];
+  document.getElementById('stage1').style.display = 'none';
+  document.getElementById('stage2').style.display = '';
+
+  document.getElementById('s2-question').textContent = a.s2Text;
+  renderDiagram('s2-diagram', a.s2Satz);
+  document.getElementById('s2-hint').textContent = a.s2Hint;
+
+  const fb = document.getElementById('s2-feedback');
+  fb.className = 'feedback-box';
+  fb.innerHTML = '';
+
+  document.getElementById('s2-next').classList.remove('show');
+
+  const btnRow = document.getElementById('s2-btns');
+  btnRow.innerHTML = '';
+  a.s2Optionen.forEach(opt => {
+    const b = document.createElement('button');
+    b.className = 'artikel-btn';
+    b.textContent = opt;
+    b.onclick = () => handleS2(b, opt, a);
+    btnRow.appendChild(b);
+  });
+
+  inStage2 = true;
+  updateProgress();
+}
+
+function handleS2(btn, val, a) {
+  const btns = document.querySelectorAll('#s2-btns .artikel-btn');
+  btns.forEach(b => {
+    b.disabled = true;
+    if (b.textContent === a.artikel) b.classList.add('correct');
+  });
+
+  const slot = document.getElementById('blank-slot-main');
+  const fb = document.getElementById('s2-feedback');
+
+  total++;
+  if (val === a.artikel) {
+    richtig++;
+    btn.classList.add('correct');
+    if (slot) { slot.textContent = val; slot.classList.add('filled-ok'); }
+    fb.className = 'feedback-box feedback-ok show';
+    fb.innerHTML = a.fbKorrekt;
+  } else {
+    btn.classList.add('wrong');
+    if (slot) { slot.textContent = a.artikel; slot.classList.add('filled-ok'); }
+    fb.className = 'feedback-box feedback-err show';
+    fb.innerHTML = a.fbFalsch;
+  }
+
+  document.getElementById('s2-next').classList.add('show');
+  window.dataLayer.push({ event: 'kasus_answer', kasus: a.kasus, correct: val === a.artikel });
+}
+
+function nextTask() {
+  idx++;
+  if (idx >= AUFGABEN.length) {
+    showResult();
+  } else {
+    inStage2 = false;
+    showStage1();
+  }
+}
+
+function showResult() {
+  document.getElementById('stage1').style.display = 'none';
+  document.getElementById('stage2').style.display = 'none';
+  const rs = document.getElementById('result-screen');
+  rs.classList.add('show');
+  const pct = Math.round((richtig / total) * 100);
+  document.getElementById('result-score').textContent =
+    richtig + ' von ' + total + ' Artikeln richtig (' + pct + '%)';
+  window.dataLayer.push({ event: 'kasus_complete', score: richtig, total: total });
+}
+
+function restart() {
+  idx = 0; inStage2 = false; s1Done = false; richtig = 0; total = 0;
+  document.getElementById('result-screen').classList.remove('show');
+  showStage1();
+}
+
+function updateProgress() {
+  const total_tasks = AUFGABEN.length;
+  const done = inStage2 ? idx + 0.5 : idx;
+  const pct = Math.round((done / total_tasks) * 100);
+  document.getElementById('prog-bar').style.width = pct + '%';
+  const stage = inStage2 ? '2' : '1';
+  document.getElementById('prog-label').textContent =
+    'Aufgabe ' + (idx + 1) + ' von ' + total_tasks + ' – Stufe ' + stage;
+}
+
+document.getElementById('s1-next').addEventListener('click', showStage2);
+document.getElementById('s2-next').addEventListener('click', nextTask);
+
+// Start
+showStage1();
+</script>
+</body>
+</html>

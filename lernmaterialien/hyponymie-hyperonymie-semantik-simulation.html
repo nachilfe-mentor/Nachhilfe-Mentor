@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Hyponymie, Hyperonymie & Meronymie – Semantik üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation: Baue Taxonomien auf und klassifiziere Wortpaare als Hyponymie, Hyperonymie, Meronymie oder Synonymie – mit sofortigem Feedback.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Hyponymie, Hyperonymie, Meronymie, Synonymie, Semantik, lexikalische Relationen">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/hyponymie-hyperonymie-semantik-simulation.html">
+  <meta property="og:title" content="Hyponymie, Hyperonymie & Meronymie üben">
+  <meta property="og:description" content="Interaktive Simulation: Baue Taxonomien auf und klassifiziere Wortpaare als Hyponymie, Hyperonymie, Meronymie oder Synonymie – mit sofortigem Feedback.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/hyponymie-hyperonymie-semantik-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Hyponymie, Hyperonymie & Meronymie – Semantik üben",
+  "description":"Interaktive Simulation: Baue Taxonomien auf und klassifiziere Wortpaare als Hyponymie, Hyperonymie, Meronymie oder Synonymie – mit sofortigem Feedback.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/hyponymie-hyperonymie-semantik-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    a { color: var(--blue); }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    /* ── Header ── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e8f0fb;
+      color: var(--blue);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-top: 0.5rem;
+    }
+
+    /* ── Main Layout ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    /* ── Panels ── */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .panel h2 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .panel p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.65;
+    }
+
+    /* ── Concept Box ── */
+    .concept-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.875rem;
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      .concept-grid { grid-template-columns: 1fr; }
+    }
+
+    .concept-card {
+      border-radius: 8px;
+      padding: 0.9rem 1rem;
+      border-left: 4px solid;
+      font-size: 0.88rem;
+    }
+
+    .concept-card strong { display: block; font-size: 0.93rem; margin-bottom: 0.25rem; }
+    .concept-card.hyponym  { background: #e8f5e9; border-color: var(--green); }
+    .concept-card.hyperonym { background: #e8f0fb; border-color: var(--blue); }
+    .concept-card.meronym  { background: #fff3e0; border-color: var(--amber); }
+    .concept-card.synonym  { background: #f3e8ff; border-color: var(--purple); }
+
+    .formula {
+      background: #f0f4fa;
+      border-radius: 6px;
+      padding: 0.75rem 1rem;
+      font-family: monospace;
+      font-size: 0.88rem;
+      margin-top: 1rem;
+      color: var(--ink);
+    }
+
+    /* ── Progress ── */
+    .progress-bar-wrap {
+      background: var(--line);
+      border-radius: 999px;
+      height: 6px;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-bar {
+      height: 6px;
+      border-radius: 999px;
+      background: var(--blue);
+      transition: width 0.4s ease;
+    }
+
+    .step-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Tree Visualization ── */
+    .tree-area {
+      background: #f8fafd;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1.5rem 1rem;
+      margin: 1.25rem 0;
+      min-height: 200px;
+      overflow-x: auto;
+    }
+
+    .tree-root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tree-level {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      position: relative;
+      margin-top: 0.5rem;
+    }
+
+    .tree-node {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tree-connector {
+      width: 2px;
+      height: 24px;
+      background: var(--line);
+      margin: 0 auto;
+    }
+
+    .tree-box {
+      border-radius: 6px;
+      padding: 0.45rem 0.85rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-align: center;
+      white-space: nowrap;
+      border: 2px solid transparent;
+      transition: all 0.35s ease;
+      opacity: 0;
+      transform: translateY(-8px);
+    }
+
+    .tree-box.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .tree-box.shake {
+      animation: shake 0.4s ease;
+    }
+
+    @keyframes shake {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-6px); }
+      40% { transform: translateX(6px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
+    }
+
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 0 0 transparent; }
+      50% { box-shadow: 0 0 0 4px rgba(11, 143, 106, 0.3); }
+    }
+
+    .tree-box.level-1 { background: #e8f0fb; border-color: var(--blue); color: var(--blue); }
+    .tree-box.level-2 { background: #e0f4f7; border-color: var(--cyan); color: var(--cyan); }
+    .tree-box.level-3 { background: #e8f5e9; border-color: var(--green); color: var(--green); }
+    .tree-box.level-4 { background: #f3e8ff; border-color: var(--purple); color: var(--purple); }
+    .tree-box.level-5 { background: #fff3e0; border-color: var(--amber); color: var(--amber); }
+
+    /* ── Word Cards ── */
+    .word-pool {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1rem 0;
+    }
+
+    .word-card {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 6px;
+      padding: 0.45rem 0.9rem;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      user-select: none;
+    }
+
+    .word-card:hover { border-color: var(--blue); color: var(--blue); background: #f0f5ff; }
+    .word-card.selected { border-color: var(--blue); background: #e8f0fb; color: var(--blue); }
+    .word-card.placed { opacity: 0.4; cursor: default; pointer-events: none; }
+
+    /* ── Slots ── */
+    .slot-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 0.5rem;
+      margin: 1rem 0;
+    }
+
+    @media (max-width: 540px) {
+      .slot-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .slot {
+      background: #f0f4fa;
+      border: 2px dashed var(--line);
+      border-radius: 6px;
+      padding: 0.6rem 0.3rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      min-height: 58px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+    }
+
+    .slot:hover { border-color: var(--blue); background: #ebf0fb; }
+    .slot.filled { border-style: solid; border-color: var(--green); background: #e8f5e9; }
+    .slot.wrong  { border-style: solid; border-color: var(--red); background: #fdf2f2; animation: shake 0.4s ease; }
+
+    .slot-label {
+      font-size: 0.7rem;
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .slot-value {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--green);
+    }
+
+    /* ── Relation Task ── */
+    .relation-task {
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    .pair-display {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1.25rem 0;
+      flex-wrap: wrap;
+    }
+
+    .pair-word {
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.65rem 1.25rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .pair-arrow {
+      font-size: 1.25rem;
+      color: var(--muted);
+    }
+
+    .pair-question {
+      font-size: 0.95rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      margin: 1rem 0;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 6px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.18s;
+    }
+
+    .btn-primary { background: var(--blue); color: #fff; }
+    .btn-primary:hover { filter: brightness(1.12); }
+    .btn-outline { background: transparent; border: 2px solid var(--line); color: var(--ink); }
+    .btn-outline:hover { border-color: var(--blue); color: var(--blue); }
+
+    .btn-hyp  { background: #e8f5e9; color: var(--green); border: 2px solid var(--green); }
+    .btn-mer  { background: #fff3e0; color: var(--amber); border: 2px solid var(--amber); }
+    .btn-syn  { background: #f3e8ff; color: var(--purple); border: 2px solid var(--purple); }
+
+    .btn-hyp:hover  { background: var(--green); color: #fff; }
+    .btn-mer:hover  { background: var(--amber); color: #fff; }
+    .btn-syn:hover  { background: var(--purple); color: #fff; }
+
+    /* ── Feedback ── */
+    .feedback-box {
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .feedback-box.correct {
+      display: block;
+      background: #e8f5e9;
+      border-left: 4px solid var(--green);
+      color: #0a5c3e;
+    }
+
+    .feedback-box.wrong {
+      display: block;
+      background: #fdf2f2;
+      border-left: 4px solid var(--red);
+      color: #7a1c18;
+    }
+
+    .feedback-box.info {
+      display: block;
+      background: #f0f4fa;
+      border-left: 4px solid var(--blue);
+      color: var(--ink);
+    }
+
+    .feedback-box strong { font-weight: 700; }
+
+    /* ── Score / Result ── */
+    .score-display {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .score-circle {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: var(--blue);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .score-circle .score-num { font-size: 1.7rem; }
+    .score-circle .score-max { font-size: 0.8rem; opacity: 0.85; }
+
+    .result-breakdown {
+      margin: 1.25rem 0;
+      text-align: left;
+    }
+
+    .result-row {
+      display: flex;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 0.88rem;
+      align-items: flex-start;
+    }
+
+    .result-row:last-child { border-bottom: none; }
+    .result-icon { font-size: 1rem; flex-shrink: 0; margin-top: 0.1rem; }
+
+    /* ── Step nav ── */
+    .step-nav {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.25rem;
+    }
+
+    /* ── Pairs counter ── */
+    .pair-counter {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-align: right;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Hidden ── */
+    .hidden { display: none !important; }
+  </style>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="breadcrumb">Nachhilfe Mentor &rsaquo; Sprache &rsaquo; Semantik</p>
+  <h1>Hyponymie &amp; Hyperonymie</h1>
+  <p class="subtitle">Semantische Wortbeziehungen – interaktive Simulation</p>
+  <span class="badge">Klasse 10–13 &middot; Linguistik &middot; Abitur</span>
+</header>
+
+<main>
+
+  <!-- Konzept-Einführung -->
+  <div class="panel" id="intro-panel">
+    <h2>&#127968; Was sind semantische Wortbeziehungen?</h2>
+    <p>Wörter stehen in der Semantik in festen Beziehungen zueinander. Die wichtigsten sind:</p>
+    <div class="concept-grid">
+      <div class="concept-card hyperonym">
+        <strong>Hyperonym (Oberbegriff)</strong>
+        Ein Wort, das einen allgemeineren Begriff ausdrückt.<br>
+        <em>Tier</em> ist Hyperonym von <em>Hund</em>.
+      </div>
+      <div class="concept-card hyponym">
+        <strong>Hyponym (Unterbegriff)</strong>
+        Ein Wort, das einen spezielleren Begriff ausdrückt.<br>
+        <em>Hund</em> ist Hyponym von <em>Tier</em>.
+      </div>
+      <div class="concept-card meronym">
+        <strong>Meronym (Teilbegriff)</strong>
+        Ein Wort, das einen <em>Teil</em> eines Ganzen bezeichnet.<br>
+        <em>Finger</em> ist Meronym von <em>Hand</em>.
+      </div>
+      <div class="concept-card synonym">
+        <strong>Synonymie (Bedeutungsähnlichkeit)</strong>
+        Zwei Wörter mit gleicher oder sehr ähnlicher Bedeutung.<br>
+        <em>Sofa</em> &asymp; <em>Couch</em>
+      </div>
+    </div>
+    <div class="formula">
+      <strong>Prüffrage Hyponymie:</strong> &bdquo;Ein X ist ein Y.&ldquo; &rarr; Wenn wahr: X = Hyponym von Y<br>
+      <strong>Prüffrage Meronymie:</strong> &bdquo;Ein X ist Teil von Y.&ldquo; &rarr; Wenn wahr: X = Meronym von Y<br>
+      <strong>Beispiel:</strong> &bdquo;Ein Pudel ist ein Hund.&ldquo; ✓ &rarr; Pudel ist <em>Hyponym</em> von Hund.
+    </div>
+  </div>
+
+  <!-- Fortschrittsleiste -->
+  <div class="step-label" id="step-label">Stufe 1 von 2: Taxonomie aufbauen</div>
+  <div class="progress-bar-wrap">
+    <div class="progress-bar" id="progress-bar" style="width: 0%"></div>
+  </div>
+
+  <!-- ═══ STUFE 1: Taxonomie aufbauen ═══ -->
+  <div class="panel" id="stage-1">
+    <h2>&#127881; Stufe 1 – Taxonomie aufbauen</h2>
+    <p>Unten siehst du fünf Wörter, die eine Taxonomiekette bilden. Ordne sie von oben (allgemeinster Begriff) nach unten (spezifischster Begriff), indem du erst ein Wort anklickst, dann einen Slot auswählst.</p>
+
+    <!-- Wörter-Pool -->
+    <div class="word-pool" id="word-pool">
+      <div class="word-card" data-word="Lebewesen" onclick="selectWord(this)">Lebewesen</div>
+      <div class="word-card" data-word="Tier" onclick="selectWord(this)">Tier</div>
+      <div class="word-card" data-word="Säugetier" onclick="selectWord(this)">Säugetier</div>
+      <div class="word-card" data-word="Hund" onclick="selectWord(this)">Hund</div>
+      <div class="word-card" data-word="Pudel" onclick="selectWord(this)">Pudel</div>
+    </div>
+
+    <!-- Slots -->
+    <div class="slot-grid" id="slot-grid">
+      <div class="slot" data-slot="1" onclick="placeWord(this)">
+        <span class="slot-label">Ebene 1</span>
+        <span class="slot-value" id="slot-val-1">&mdash;</span>
+      </div>
+      <div class="slot" data-slot="2" onclick="placeWord(this)">
+        <span class="slot-label">Ebene 2</span>
+        <span class="slot-value" id="slot-val-2">&mdash;</span>
+      </div>
+      <div class="slot" data-slot="3" onclick="placeWord(this)">
+        <span class="slot-label">Ebene 3</span>
+        <span class="slot-value" id="slot-val-3">&mdash;</span>
+      </div>
+      <div class="slot" data-slot="4" onclick="placeWord(this)">
+        <span class="slot-label">Ebene 4</span>
+        <span class="slot-value" id="slot-val-4">&mdash;</span>
+      </div>
+      <div class="slot" data-slot="5" onclick="placeWord(this)">
+        <span class="slot-label">Ebene 5</span>
+        <span class="slot-value" id="slot-val-5">&mdash;</span>
+      </div>
+    </div>
+
+    <!-- Baum-Visualisierung -->
+    <div class="tree-area" id="tree-area">
+      <div class="tree-root" id="tree-root">
+        <div class="tree-node">
+          <div class="tree-box level-1" id="tree-node-1">Lebewesen</div>
+        </div>
+        <div class="tree-connector" id="conn-1" style="opacity:0"></div>
+        <div class="tree-node">
+          <div class="tree-box level-2" id="tree-node-2">Tier</div>
+        </div>
+        <div class="tree-connector" id="conn-2" style="opacity:0"></div>
+        <div class="tree-node">
+          <div class="tree-box level-3" id="tree-node-3">Säugetier</div>
+        </div>
+        <div class="tree-connector" id="conn-3" style="opacity:0"></div>
+        <div class="tree-node">
+          <div class="tree-box level-4" id="tree-node-4">Hund</div>
+        </div>
+        <div class="tree-connector" id="conn-4" style="opacity:0"></div>
+        <div class="tree-node">
+          <div class="tree-box level-5" id="tree-node-5">Pudel</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feedback Stufe 1 -->
+    <div class="feedback-box" id="fb-s1"></div>
+
+    <!-- Aktionen -->
+    <div class="step-nav">
+      <button class="btn btn-outline" onclick="resetStage1()">Zurücksetzen</button>
+      <button class="btn btn-primary hidden" id="btn-next-s1" onclick="goToStage2()">Weiter zu Stufe 2 &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ═══ STUFE 2: Relationsklassifikation ═══ -->
+  <div class="panel hidden" id="stage-2">
+    <h2>&#127919; Stufe 2 – Hyponymie, Meronymie oder Synonymie?</h2>
+    <p>Du siehst jetzt Wortpaare. Entscheide, welche semantische Beziehung zwischen den beiden Wörtern besteht. Nutze die Prüffragen!</p>
+
+    <div class="pair-counter" id="pair-counter">Paar 1 von 8</div>
+
+    <div class="relation-task">
+      <p class="pair-question">Welche Beziehung hat <strong id="word-a">–</strong> zu <strong id="word-b">–</strong>?</p>
+      <div class="pair-display">
+        <div class="pair-word" id="pair-word-a">–</div>
+        <div class="pair-arrow">&#8594;</div>
+        <div class="pair-word" id="pair-word-b">–</div>
+      </div>
+      <div class="btn-group">
+        <button class="btn btn-hyp" onclick="answerRelation('hyponymie')">Hyponymie<br><small>(ist-ein)</small></button>
+        <button class="btn btn-mer" onclick="answerRelation('meronymie')">Meronymie<br><small>(ist-Teil-von)</small></button>
+        <button class="btn btn-syn" onclick="answerRelation('synonymie')">Synonymie<br><small>(bedeutet dasselbe)</small></button>
+      </div>
+    </div>
+
+    <!-- Feedback Stufe 2 -->
+    <div class="feedback-box" id="fb-s2"></div>
+
+    <!-- Nächstes Paar -->
+    <div class="step-nav" id="s2-nav" style="display:none">
+      <button class="btn btn-primary" id="btn-next-pair" onclick="nextPair()">Nächstes Paar &rarr;</button>
+    </div>
+  </div>
+
+  <!-- ═══ ERGEBNIS ═══ -->
+  <div class="panel hidden" id="result-panel">
+    <h2>&#127942; Ergebnis</h2>
+    <div class="score-display">
+      <div class="score-circle">
+        <span class="score-num" id="res-score">0</span>
+        <span class="score-max" id="res-max">von 8</span>
+      </div>
+      <p id="res-text"></p>
+    </div>
+
+    <div class="result-breakdown" id="result-breakdown"></div>
+
+    <!-- Zusammenfassung Konzept -->
+    <div class="feedback-box info" style="display:block; margin-top:1.5rem">
+      <strong>Das Wichtigste:</strong><br>
+      Hyponymie = ist-ein-Beziehung (Unterordnung in einer Taxonomie).<br>
+      Meronymie = ist-Teil-von-Beziehung (Ganzes und seine Teile).<br>
+      Die häufigste Verwechslung: <em>„Finger ist ein Hand"</em> klingt falsch &rarr; Meronymie, keine Hyponymie!
+    </div>
+
+    <div class="step-nav">
+      <button class="btn btn-primary" onclick="restartAll()">Nochmal versuchen</button>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  /* ──────────────────────────────────────────────────
+     Stufe 1: Taxonomie aufbauen
+  ────────────────────────────────────────────────── */
+  const correctOrder = ['Lebewesen', 'Tier', 'Säugetier', 'Hund', 'Pudel'];
+
+  const feedback1 = {
+    'Lebewesen': {
+      pos: 1,
+      correct: 'Richtig! „Lebewesen" ist der allgemeinste Begriff – alles Lebendige fällt darunter. Es steht ganz oben in der Taxonomie (Hyperonym aller anderen).',
+    },
+    'Tier': {
+      pos: 2,
+      correct: 'Richtig! „Tier" ist Hyponym von „Lebewesen" (jedes Tier ist ein Lebewesen), aber Hyperonym von „Säugetier".',
+    },
+    'Säugetier': {
+      pos: 3,
+      correct: 'Richtig! „Säugetier" ist Hyponym von „Tier" – jedes Säugetier ist ein Tier, aber nicht jedes Tier ist ein Säugetier.',
+    },
+    'Hund': {
+      pos: 4,
+      correct: 'Richtig! „Hund" ist Hyponym von „Säugetier" – jeder Hund ist ein Säugetier. Gleichzeitig ist „Hund" Hyperonym von „Pudel".',
+    },
+    'Pudel': {
+      pos: 5,
+      correct: 'Richtig! „Pudel" ist der spezifischste Begriff – ein Hyponym von „Hund". Teste: „Ein Pudel ist ein Hund." ✓',
+    },
+  };
+
+  let selectedWord = null;
+  const placements = {}; // slot -> word
+  let s1Done = false;
+  let s1Mistakes = 0;
+
+  function selectWord(card) {
+    if (card.classList.contains('placed')) return;
+    document.querySelectorAll('.word-card').forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+    selectedWord = card.dataset.word;
+  }
+
+  function placeWord(slot) {
+    if (!selectedWord) return;
+    const slotNum = parseInt(slot.dataset.slot);
+
+    // Check if slot already filled
+    if (placements[slotNum]) {
+      // return word to pool
+      const oldWord = placements[slotNum];
+      const oldCard = document.querySelector(`.word-card[data-word="${oldWord}"]`);
+      if (oldCard) oldCard.classList.remove('placed');
+      delete placements[slotNum];
+    }
+
+    const correctPos = feedback1[selectedWord].pos;
+    if (correctPos === slotNum) {
+      // Correct placement
+      placements[slotNum] = selectedWord;
+      slot.classList.add('filled');
+      slot.classList.remove('wrong');
+      document.getElementById(`slot-val-${slotNum}`).textContent = selectedWord;
+
+      // Mark card as placed
+      document.querySelector(`.word-card[data-word="${selectedWord}"]`).classList.add('placed');
+      document.querySelector(`.word-card[data-word="${selectedWord}"]`).classList.remove('selected');
+
+      // Reveal tree node
+      revealTreeNode(slotNum, selectedWord);
+
+      // Show feedback
+      showFeedback('fb-s1', 'correct', feedback1[selectedWord].correct);
+
+      selectedWord = null;
+
+      // Check if all placed
+      if (Object.keys(placements).length === 5) {
+        s1Done = true;
+        document.getElementById('btn-next-s1').classList.remove('hidden');
+        updateProgress(50);
+        showFeedback('fb-s1', 'correct',
+          'Ausgezeichnet! Du hast die vollständige Taxonomie aufgebaut:\nLebewesen → Tier → Säugetier → Hund → Pudel\nJedes Wort ist Hyponym des übergeordneten Begriffs – die Prüffrage „ist ein" trifft jeweils zu.');
+      }
+    } else {
+      // Wrong placement
+      slot.classList.add('wrong');
+      setTimeout(() => slot.classList.remove('wrong'), 600);
+      s1Mistakes++;
+
+      const hint = getHint(selectedWord, slotNum);
+      showFeedback('fb-s1', 'wrong', hint);
+    }
+  }
+
+  function getHint(word, triedSlot) {
+    const correct = feedback1[word].pos;
+    if (triedSlot < correct) {
+      return `Nicht ganz. „${word}" ist zu weit oben. Teste: Gibt es noch allgemeinere Begriffe, unter die „${word}" fällt? (Tipp: Ebene ${correct})`;
+    } else {
+      return `Nicht ganz. „${word}" ist zu weit unten. Gibt es spezifischere Unterbegriffe von „${word}"? (Tipp: Ebene ${correct})`;
+    }
+  }
+
+  function revealTreeNode(level, word) {
+    const box = document.getElementById(`tree-node-${level}`);
+    box.textContent = word;
+    box.classList.add('visible');
+    if (level > 1) {
+      const conn = document.getElementById(`conn-${level - 1}`);
+      if (conn) conn.style.opacity = '1';
+    }
+    // Glow animation
+    box.style.animation = 'glow 0.8s ease';
+    setTimeout(() => { box.style.animation = ''; }, 800);
+  }
+
+  function resetStage1() {
+    Object.keys(placements).forEach(k => delete placements[k]);
+    selectedWord = null;
+    s1Done = false;
+    s1Mistakes = 0;
+
+    document.querySelectorAll('.word-card').forEach(c => {
+      c.classList.remove('placed', 'selected');
+    });
+    document.querySelectorAll('.slot').forEach(s => {
+      s.classList.remove('filled', 'wrong');
+    });
+    for (let i = 1; i <= 5; i++) {
+      document.getElementById(`slot-val-${i}`).textContent = '—';
+      const box = document.getElementById(`tree-node-${i}`);
+      box.classList.remove('visible');
+    }
+    for (let i = 1; i <= 4; i++) {
+      const conn = document.getElementById(`conn-${i}`);
+      if (conn) conn.style.opacity = '0';
+    }
+    hideFeedback('fb-s1');
+    document.getElementById('btn-next-s1').classList.add('hidden');
+    updateProgress(0);
+  }
+
+  /* ──────────────────────────────────────────────────
+     Stufe 2: Relationsklassifikation
+  ────────────────────────────────────────────────── */
+  const pairs = [
+    {
+      a: 'Rose', b: 'Blume',
+      answer: 'hyponymie',
+      correct: 'Richtig! „Rose ist eine Blume" ✓ – Hyponymietest positiv. Rose ist Hyponym von Blume, Blume ist Hyperonym von Rose.',
+      wrong_mer: '„Rose ist Teil einer Blume" klingt falsch. Teste die Prüffrage: „Eine Rose ist eine Blume." ✓ – das ist Hyponymie.',
+      wrong_syn: 'Rose und Blume bedeuten nicht dasselbe. „Blume" umfasst alle Blütengewächse, „Rose" ist ein spezifischer Typ. Das ist Hyponymie.',
+    },
+    {
+      a: 'Türklinke', b: 'Tür',
+      answer: 'meronymie',
+      correct: 'Richtig! Die Türklinke ist Teil einer Tür – Meronymietest: „Eine Türklinke ist Teil einer Tür." ✓ Nicht: „Eine Türklinke ist eine Tür." ✗',
+      wrong_hyp: 'Vorsicht! „Eine Türklinke ist eine Tür" ergibt keinen Sinn. ✗ Die Türklinke ist TEIL der Tür, kein Untertyp. Das ist Meronymie.',
+      wrong_syn: 'Türklinke und Tür bedeuten nicht dasselbe. Die Türklinke ist ein Teil der Tür – das ist Meronymie.',
+    },
+    {
+      a: 'Sofa', b: 'Couch',
+      answer: 'synonymie',
+      correct: 'Richtig! „Sofa" und „Couch" bezeichnen dasselbe Möbelstück – das ist Synonymie (oder zumindest nahezu totale Synonymie im Deutschen).',
+      wrong_hyp: 'Nicht ganz. „Ein Sofa ist eine Couch" und „eine Couch ist ein Sofa" sind beide annähernd wahr – die Begriffe sind bedeutungsgleich. Das ist Synonymie.',
+      wrong_mer: 'Ein Sofa ist kein Teil einer Couch. Die Wörter bedeuten dasselbe – das ist Synonymie.',
+    },
+    {
+      a: 'Kiefer', b: 'Baum',
+      answer: 'hyponymie',
+      correct: 'Richtig! „Eine Kiefer ist ein Baum." ✓ – Kiefer ist Hyponym von Baum. Baum ist das Hyperonym (der Oberbegriff).',
+      wrong_mer: '„Eine Kiefer ist Teil eines Baums" ergibt keinen Sinn. ✗ Teste: „Eine Kiefer ist ein Baum." ✓ – das ist Hyponymie.',
+      wrong_syn: 'Kiefer und Baum bedeuten nicht dasselbe – Kiefer ist eine spezifische Baumart. Das ist Hyponymie.',
+    },
+    {
+      a: 'Seite', b: 'Buch',
+      answer: 'meronymie',
+      correct: 'Richtig! „Eine Seite ist Teil eines Buches." ✓ – Meronymie. Eine Seite ist kein Untertyp eines Buches, sondern ein Bestandteil.',
+      wrong_hyp: 'Achtung! „Eine Seite ist ein Buch" ergibt keinen Sinn. ✗ Die Seite ist Teil des Buches – Meronymie, nicht Hyponymie.',
+      wrong_syn: 'Seite und Buch bedeuten nicht dasselbe. Die Seite ist Teil des Buches – das ist Meronymie.',
+    },
+    {
+      a: 'Auto', b: 'Fahrzeug',
+      answer: 'hyponymie',
+      correct: 'Richtig! „Ein Auto ist ein Fahrzeug." ✓ – Auto ist Hyponym von Fahrzeug. Fahrzeug ist das Hyperonym (umfasst auch Bus, Zug, Fahrrad …).',
+      wrong_mer: '„Ein Auto ist Teil eines Fahrzeugs" klingt seltsam. ✗ Teste: „Ein Auto ist ein Fahrzeug." ✓ – das ist Hyponymie.',
+      wrong_syn: 'Auto und Fahrzeug bedeuten nicht dasselbe. Auto ist nur eine spezifische Art von Fahrzeug. Das ist Hyponymie.',
+    },
+    {
+      a: 'Finger', b: 'Hand',
+      answer: 'meronymie',
+      correct: 'Richtig! Das ist die klassische Falle. „Ein Finger ist Teil einer Hand." ✓ Nicht: „Ein Finger ist eine Hand." ✗ – Meronymie, keine Hyponymie!',
+      wrong_hyp: 'Typische Verwechslung! „Ein Finger ist eine Hand" klingt falsch. ✗ Der Finger ist TEIL der Hand, kein Untertyp. Prüffrage Meronymie: „Ein Finger ist Teil einer Hand." ✓',
+      wrong_syn: 'Finger und Hand bedeuten nicht dasselbe. Ein Finger ist Teil der Hand – das ist Meronymie.',
+    },
+    {
+      a: 'Dach', b: 'Haus',
+      answer: 'meronymie',
+      correct: 'Richtig! „Das Dach ist Teil eines Hauses." ✓ – Meronymie. Das Dach ist kein Haustyp, sondern ein Bauteil.',
+      wrong_hyp: '„Ein Dach ist ein Haus" ergibt keinen Sinn. ✗ Das Dach ist Teil des Hauses – Prüffrage Meronymie trifft zu. Das ist Meronymie.',
+      wrong_syn: 'Dach und Haus bedeuten nicht dasselbe. Das Dach ist Teil des Hauses – das ist Meronymie.',
+    },
+  ];
+
+  let currentPair = 0;
+  let s2Score = 0;
+  let s2Answered = false;
+  let s2Results = [];
+
+  function loadPair(idx) {
+    const p = pairs[idx];
+    document.getElementById('word-a').textContent = p.a;
+    document.getElementById('word-b').textContent = p.b;
+    document.getElementById('pair-word-a').textContent = p.a;
+    document.getElementById('pair-word-b').textContent = p.b;
+    document.getElementById('pair-counter').textContent = `Paar ${idx + 1} von ${pairs.length}`;
+    hideFeedback('fb-s2');
+    document.getElementById('s2-nav').style.display = 'none';
+    document.querySelectorAll('.btn-hyp, .btn-mer, .btn-syn').forEach(b => {
+      b.disabled = false;
+      b.style.opacity = '1';
+    });
+    s2Answered = false;
+  }
+
+  function answerRelation(given) {
+    if (s2Answered) return;
+    s2Answered = true;
+
+    const p = pairs[currentPair];
+    const isCorrect = given === p.answer;
+    let msg = '';
+
+    if (isCorrect) {
+      s2Score++;
+      msg = p.correct;
+      showFeedback('fb-s2', 'correct', '✓ ' + msg);
+    } else {
+      // Pick the right wrong-feedback
+      if (given === 'hyponymie') msg = p.wrong_hyp || p.wrong_mer || '';
+      else if (given === 'meronymie') msg = p.wrong_mer || p.wrong_hyp || '';
+      else msg = p.wrong_syn || '';
+      showFeedback('fb-s2', 'wrong', '✗ ' + msg);
+    }
+
+    s2Results.push({ pair: p, given, correct: isCorrect });
+
+    // Disable buttons
+    document.querySelectorAll('.btn-hyp, .btn-mer, .btn-syn').forEach(b => {
+      b.disabled = true;
+      b.style.opacity = '0.6';
+    });
+
+    document.getElementById('s2-nav').style.display = 'flex';
+
+    // Update progress
+    const baseProgress = 50; // after stage 1
+    const pairProgress = ((currentPair + 1) / pairs.length) * 50;
+    updateProgress(baseProgress + pairProgress);
+
+    if (currentPair === pairs.length - 1) {
+      document.getElementById('btn-next-pair').textContent = 'Ergebnis ansehen →';
+    }
+  }
+
+  function nextPair() {
+    currentPair++;
+    if (currentPair >= pairs.length) {
+      showResult();
+    } else {
+      loadPair(currentPair);
+    }
+  }
+
+  /* ──────────────────────────────────────────────────
+     Ergebnis
+  ────────────────────────────────────────────────── */
+  function showResult() {
+    document.getElementById('stage-2').classList.add('hidden');
+    const panel = document.getElementById('result-panel');
+    panel.classList.remove('hidden');
+
+    document.getElementById('res-score').textContent = s2Score;
+    document.getElementById('res-max').textContent = `von ${pairs.length}`;
+
+    const pct = s2Score / pairs.length;
+    let resText = '';
+    if (pct >= 0.875) resText = 'Sehr gut! Du hast alle semantischen Beziehungen korrekt erkannt.';
+    else if (pct >= 0.625) resText = 'Gut! Achte noch auf die Unterscheidung von Hyponymie und Meronymie.';
+    else resText = 'Übe weiter! Die Prüffragen helfen: „ist ein" (Hyponymie) vs. „ist Teil von" (Meronymie).';
+    document.getElementById('res-text').textContent = resText;
+
+    // Breakdown
+    const bd = document.getElementById('result-breakdown');
+    bd.innerHTML = '';
+    s2Results.forEach(r => {
+      const row = document.createElement('div');
+      row.className = 'result-row';
+      const icon = document.createElement('span');
+      icon.className = 'result-icon';
+      icon.textContent = r.correct ? '✅' : '❌';
+      const txt = document.createElement('span');
+      const relName = { hyponymie: 'Hyponymie', meronymie: 'Meronymie', synonymie: 'Synonymie' };
+      if (r.correct) {
+        txt.textContent = `${r.pair.a} → ${r.pair.b}: ${relName[r.pair.answer]} (korrekt)`;
+      } else {
+        txt.textContent = `${r.pair.a} → ${r.pair.b}: Du wähltest ${relName[r.given]}, richtig wäre ${relName[r.pair.answer]}`;
+      }
+      row.appendChild(icon);
+      row.appendChild(txt);
+      bd.appendChild(row);
+    });
+
+    updateProgress(100);
+    document.getElementById('step-label').textContent = 'Abgeschlossen!';
+  }
+
+  /* ──────────────────────────────────────────────────
+     Navigation
+  ────────────────────────────────────────────────── */
+  function goToStage2() {
+    document.getElementById('stage-1').classList.add('hidden');
+    document.getElementById('stage-2').classList.remove('hidden');
+    document.getElementById('step-label').textContent = 'Stufe 2 von 2: Relationsklassifikation';
+    currentPair = 0;
+    s2Score = 0;
+    s2Results = [];
+    loadPair(0);
+  }
+
+  function restartAll() {
+    document.getElementById('result-panel').classList.add('hidden');
+    document.getElementById('stage-1').classList.remove('hidden');
+    document.getElementById('stage-2').classList.add('hidden');
+    document.getElementById('step-label').textContent = 'Stufe 1 von 2: Taxonomie aufbauen';
+    resetStage1();
+    currentPair = 0;
+    s2Score = 0;
+    s2Results = [];
+    s2Answered = false;
+  }
+
+  /* ──────────────────────────────────────────────────
+     Helpers
+  ────────────────────────────────────────────────── */
+  function showFeedback(id, type, msg) {
+    const el = document.getElementById(id);
+    el.className = 'feedback-box ' + type;
+    el.textContent = '';
+    // Split on \n for real line breaks (safety – we use real \n in JS strings)
+    msg.split('\n').forEach((line, i, arr) => {
+      el.appendChild(document.createTextNode(line));
+      if (i < arr.length - 1) el.appendChild(document.createElement('br'));
+    });
+  }
+
+  function hideFeedback(id) {
+    const el = document.getElementById(id);
+    el.className = 'feedback-box';
+    el.style.removeProperty('display');
+    el.textContent = '';
+  }
+
+  function updateProgress(pct) {
+    document.getElementById('progress-bar').style.width = pct + '%';
+  }
+
+  /* Init */
+  (function init() {
+    // Show check/reset buttons when at least one word is placed
+    // We handle inline – no need for separate init
+    updateProgress(0);
+  })();
+</script>
+</body>
+</html>

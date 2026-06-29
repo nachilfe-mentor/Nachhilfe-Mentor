@@ -1,0 +1,1119 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Sprachliche Universalien nach Greenberg – interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zu sprachlichen Universalien nach Greenberg: Sage per Sprachen-Radar voraus, welche Merkmale universell sind, und übe Implikationsuniversalien.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="sprachliche Universalien, Greenberg, Implikationsuniversalien, Sprachtypologie, Linguistik, Wortstellung">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachliche-universalien-greenberg-simulation.html">
+  <meta property="og:title" content="Sprachliche Universalien nach Greenberg – Simulation">
+  <meta property="og:description" content="Interaktive Simulation zu sprachlichen Universalien nach Greenberg: Sage per Sprachen-Radar voraus, welche Merkmale universell sind, und übe Implikationsuniversalien.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachliche-universalien-greenberg-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprachliche Universalien nach Greenberg – interaktive Simulation",
+  "description":"Interaktive Simulation zu sprachlichen Universalien nach Greenberg: Sage per Sprachen-Radar voraus, welche Merkmale universell sind, und übe Implikationsuniversalien.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachliche-universalien-greenberg-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* ── Header ──────────────────────────────────────── */
+    header {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: clamp(1.35rem, 4vw, 1.85rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 580px;
+    }
+
+    /* ── Layout ─────────────────────────────────────── */
+    main {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0 1.25rem 3rem;
+    }
+
+    section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    section h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .stage-label {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--panel);
+      background: var(--blue);
+      border-radius: 4px;
+      padding: 0.15rem 0.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .task-desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Sprachen-Radar ──────────────────────────────── */
+    .radar-wrapper {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+    }
+
+    .lang-radar {
+      position: relative;
+      width: 240px;
+      height: 260px;
+    }
+
+    .radar-orbit {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 190px;
+      height: 190px;
+      border: 1.5px dashed var(--line);
+      border-radius: 50%;
+    }
+
+    .radar-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 2px solid var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.58rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--blue);
+      padding: 0.4rem;
+      line-height: 1.3;
+      z-index: 2;
+    }
+
+    .lang-node {
+      position: absolute;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--panel);
+      border: 2px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.6rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--muted);
+      transition: background 0.4s ease, border-color 0.4s ease, color 0.4s ease, transform 0.4s ease, opacity 0.4s ease;
+      line-height: 1.2;
+      padding: 0.25rem;
+      z-index: 1;
+    }
+
+    /* Hexagon placement (radius ≈ 90px from center) */
+    /* Center of container at (120, 130). Node is 52x52, so offset 26px. */
+    .lang-node:nth-child(2) { top: calc(130px - 26px - 90px); left: calc(120px - 26px);       } /* Oben        */
+    .lang-node:nth-child(3) { top: calc(130px - 26px - 45px); left: calc(120px - 26px + 78px); } /* Oben-rechts */
+    .lang-node:nth-child(4) { top: calc(130px - 26px + 45px); left: calc(120px - 26px + 78px); } /* Unten-rechts */
+    .lang-node:nth-child(5) { top: calc(130px - 26px + 90px); left: calc(120px - 26px);       } /* Unten        */
+    .lang-node:nth-child(6) { top: calc(130px - 26px + 45px); left: calc(120px - 26px - 78px); } /* Unten-links  */
+    .lang-node:nth-child(7) { top: calc(130px - 26px - 45px); left: calc(120px - 26px - 78px); } /* Oben-links   */
+
+    .lang-node.active {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+      transform: scale(1.08);
+      animation: pulse-node 1.2s ease-in-out infinite;
+    }
+
+    .lang-node.inactive {
+      background: #eef0f4;
+      border-color: #d0d5de;
+      color: #b0b8c8;
+      opacity: 0.55;
+    }
+
+    @keyframes pulse-node {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(11, 143, 106, 0.4); }
+      50%       { box-shadow: 0 0 0 8px rgba(11, 143, 106, 0); }
+    }
+
+    /* ── Feature Box ─────────────────────────────────── */
+    .feature-box {
+      background: #f0f6ff;
+      border: 1.5px solid #c2d8f5;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.35rem;
+    }
+
+    #feature-text {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    /* ── Buttons ─────────────────────────────────────── */
+    .btn-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.25rem;
+    }
+
+    .option-btn {
+      flex: 1 1 140px;
+      padding: 0.65rem 1rem;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+      text-align: center;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #f0f6ff;
+    }
+
+    .option-btn:disabled {
+      cursor: default;
+      opacity: 0.7;
+    }
+
+    .option-btn.correct-chosen {
+      border-color: var(--green);
+      background: #e8f8f3;
+      color: var(--green);
+    }
+
+    .option-btn.wrong-chosen {
+      border-color: var(--red);
+      background: #fdf0ef;
+      color: var(--red);
+    }
+
+    .option-btn.reveal-correct {
+      border-color: var(--green);
+      background: #e8f8f3;
+      color: var(--green);
+    }
+
+    /* ── Feedback ────────────────────────────────────── */
+    .feedback {
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.25rem;
+    }
+
+    .feedback.correct {
+      background: #e8f8f3;
+      border: 1px solid #a3d9c6;
+      color: #0a5c45;
+    }
+
+    .feedback.wrong {
+      background: #fdf0ef;
+      border: 1px solid #f0b8b5;
+      color: #7a1a15;
+    }
+
+    .feedback p + p {
+      margin-top: 0.5rem;
+    }
+
+    .concept-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      padding: 0.15rem 0.55rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    .concept-tag.green { background: var(--green); }
+    .concept-tag.amber { background: var(--amber); }
+
+    /* ── Fortschritt ─────────────────────────────────── */
+    .progress-wrap {
+      margin-top: 1.5rem;
+    }
+
+    .progress-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: var(--line);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--blue);
+      border-radius: 3px;
+      transition: width 0.4s ease;
+    }
+
+    /* ── Weiter-Button ───────────────────────────────── */
+    .next-btn {
+      margin-top: 1rem;
+      padding: 0.65rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+
+    .next-btn:hover { opacity: 0.88; }
+
+    /* ── Wortstellungs-Visualisierung ────────────────── */
+    .word-order-viz {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      align-items: center;
+      margin: 1.25rem 0 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .wo-block {
+      width: 56px;
+      height: 56px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #fff;
+      flex-shrink: 0;
+      transition: transform 0.5s ease;
+    }
+
+    .wo-s { background: var(--blue); }
+    .wo-v { background: var(--green); }
+    .wo-o { background: var(--amber); }
+
+    .wo-label {
+      text-align: center;
+      font-size: 0.72rem;
+      color: var(--muted);
+      font-weight: 600;
+      margin-top: 0.25rem;
+    }
+
+    .wo-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .wo-arrow {
+      font-size: 1.2rem;
+      color: var(--line);
+      flex-shrink: 0;
+    }
+
+    /* ── Implikations-Frage ──────────────────────────── */
+    .impl-lang-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--purple);
+      background: #f3e8ff;
+      border-radius: 4px;
+      padding: 0.2rem 0.6rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .impl-example {
+      font-size: 0.83rem;
+      color: var(--muted);
+      font-style: italic;
+      margin-top: 0.35rem;
+      background: var(--bg);
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      border-left: 3px solid var(--line);
+    }
+
+    #impl-text {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--ink);
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Zusammenfassung ─────────────────────────────── */
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+
+    .summary-card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem;
+    }
+
+    .summary-card h3 {
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+
+    .summary-card h3.blue  { color: var(--blue); }
+    .summary-card h3.green { color: var(--green); }
+    .summary-card h3.amber { color: var(--amber); }
+
+    .summary-card ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .summary-card li {
+      font-size: 0.82rem;
+      color: var(--ink);
+      padding: 0.25rem 0;
+      border-bottom: 1px solid var(--line);
+      line-height: 1.4;
+    }
+
+    .summary-card li:last-child { border-bottom: none; }
+
+    .summary-card li::before {
+      content: "→ ";
+      color: var(--muted);
+    }
+
+    .note-box {
+      background: #fffbeb;
+      border: 1px solid #f5d67a;
+      border-radius: 8px;
+      padding: 0.9rem 1.1rem;
+      font-size: 0.85rem;
+      color: #5c4800;
+      margin-top: 1.25rem;
+      line-height: 1.6;
+    }
+
+    /* ── Score-Badge ─────────────────────────────────── */
+    .score-wrap {
+      text-align: center;
+      margin: 1.5rem 0;
+    }
+
+    .score-badge {
+      display: inline-block;
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--blue);
+    }
+
+    .score-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    /* ── Hilfreich? ──────────────────────────────────── */
+    .source-note {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-top: 1.25rem;
+      line-height: 1.6;
+    }
+
+    /* ── Responsive ──────────────────────────────────── */
+    @media (max-width: 480px) {
+      section { padding: 1.25rem 1rem; }
+      .lang-radar { transform: scale(0.9); transform-origin: top center; }
+      .wo-block { width: 48px; height: 48px; font-size: 1rem; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <!-- Tracking -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'learning_asset_view',
+      asset_type: 'simulation',
+      topic: 'sprachliche-universalien-greenberg'
+    });
+  </script>
+
+  <header>
+    <div class="eyebrow">Linguistik · Sprachtypologie · Klasse 10–13</div>
+    <h1>Sprachliche Universalien – Was alle Sprachen der Welt gemeinsam haben</h1>
+    <p>Entdecke mit Joseph Greenbergs Universalienforschung, welche Merkmale in
+       <em>allen</em> Sprachen der Welt vorkommen – und welche nur in manchen.
+       Zwei Stufen, aktive Vorhersagen, sofortiges Feedback.</p>
+  </header>
+
+  <main>
+
+    <!-- ── STAGE 1 ──────────────────────────────────── -->
+    <section id="stage1">
+      <div class="stage-label">Stufe 1</div>
+      <h2>Universal oder sprachspezifisch?</h2>
+      <p class="task-desc">
+        <strong>Vorhersage:</strong> Der Sprachen-Radar zeigt, in welchen der sechs
+        Testsprachen das Merkmal vorkommt (grün = vorhanden, grau = nicht vorhanden).
+        Entscheide: Ist das Merkmal <em>universell</em> (kommt in ALLEN Sprachen vor)
+        oder nur in <em>manchen</em>?
+      </p>
+
+      <!-- Sprachen-Radar -->
+      <div class="radar-wrapper">
+        <div class="lang-radar" id="radar">
+          <div class="radar-orbit"></div>
+          <div class="radar-center" id="radar-center">Sprachen-<br>merkmal</div>
+          <div class="lang-node" id="node-de">Deutsch</div>
+          <div class="lang-node" id="node-ja">Japanisch</div>
+          <div class="lang-node" id="node-ar">Arabisch</div>
+          <div class="lang-node" id="node-tr">Türkisch</div>
+          <div class="lang-node" id="node-zh">Mandarin</div>
+          <div class="lang-node" id="node-sw">Swahili</div>
+        </div>
+      </div>
+
+      <!-- Merkmals-Anzeige -->
+      <div class="feature-box">
+        <div class="feature-label">Merkmal – Ist das universell?</div>
+        <p id="feature-text">Lade…</p>
+      </div>
+
+      <!-- Vorhersage-Buttons -->
+      <div class="btn-row" id="btn-row-1">
+        <button class="option-btn" data-answer="universell"
+          onclick="checkAnswer1('universell', this)">
+          Universell – kommt in <em>allen</em> Sprachen vor
+        </button>
+        <button class="option-btn" data-answer="spezifisch"
+          onclick="checkAnswer1('spezifisch', this)">
+          Sprachspezifisch – kommt nur in <em>manchen</em> Sprachen vor
+        </button>
+      </div>
+
+      <!-- Feedback -->
+      <div class="feedback" id="feedback-1" style="display:none;"></div>
+
+      <!-- Weiter -->
+      <button class="next-btn" id="next-btn-1" style="display:none;"
+        onclick="nextQuestion1()">Nächste Frage →</button>
+
+      <!-- Fortschrittsbalken -->
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span>Frage <span id="q-current">1</span> von 5</span>
+          <span id="score-1">0 / 0 richtig</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill-1" style="width: 0%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STAGE 2 ──────────────────────────────────── -->
+    <section id="stage2" style="display:none;">
+      <div class="stage-label">Stufe 2</div>
+      <h2>Implikationsuniversalien nach Greenberg</h2>
+      <p class="task-desc">
+        Greenberg entdeckte: Bestimmte Sprachmerkmale <em>bedingen</em> einander.
+        Sieh dir die Wortstellung der Zielsprache an und sage voraus, was daraus
+        nach Greenbergs Universalien folgt.
+      </p>
+
+      <!-- Wortstellungs-Visualisierung -->
+      <div class="word-order-viz" id="word-order-viz">
+        <div class="wo-item">
+          <div class="wo-block wo-s" id="wo-s">S</div>
+          <div class="wo-label">Subjekt</div>
+        </div>
+        <div class="wo-arrow">→</div>
+        <div class="wo-item">
+          <div class="wo-block wo-v" id="wo-v">V</div>
+          <div class="wo-label">Verb</div>
+        </div>
+        <div class="wo-arrow">→</div>
+        <div class="wo-item">
+          <div class="wo-block wo-o" id="wo-o">O</div>
+          <div class="wo-label">Objekt</div>
+        </div>
+      </div>
+
+      <!-- Sprach-Label -->
+      <div class="impl-lang-label" id="impl-lang-label">Türkisch</div>
+
+      <!-- Fragen-Text -->
+      <p id="impl-text"></p>
+
+      <!-- Antwort-Buttons -->
+      <div class="btn-row" id="btn-row-2"></div>
+
+      <!-- Beispiel -->
+      <div class="impl-example" id="impl-example" style="display:none;"></div>
+
+      <!-- Feedback -->
+      <div class="feedback" id="feedback-2" style="display:none;"></div>
+
+      <!-- Weiter -->
+      <button class="next-btn" id="next-btn-2" style="display:none;"
+        onclick="nextQuestion2()">Weiter →</button>
+
+      <!-- Fortschrittsbalken -->
+      <div class="progress-wrap">
+        <div class="progress-meta">
+          <span>Frage <span id="q-current-2">1</span> von 3</span>
+          <span id="score-2">0 / 0 richtig</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill-2" style="width: 0%;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── STAGE 3 (Zusammenfassung) ─────────────────── -->
+    <section id="stage3" style="display:none;">
+      <div class="stage-label">Zusammenfassung</div>
+      <h2>Greenbergs Universalien – Überblick</h2>
+
+      <div class="score-wrap">
+        <div class="score-badge" id="total-score">8 / 8</div>
+        <div class="score-label">Punkte in beiden Stufen</div>
+      </div>
+
+      <div class="summary-grid">
+        <div class="summary-card">
+          <h3 class="blue">Absolute Universalien</h3>
+          <ul>
+            <li>Vokale + Konsonanten in jeder Sprache</li>
+            <li>Pronomen für „ich" und „du"</li>
+            <li>Negation möglich</li>
+            <li>Nomen-Verb-Distinktion</li>
+          </ul>
+        </div>
+        <div class="summary-card">
+          <h3 class="amber">Statistische Universalien</h3>
+          <ul>
+            <li>SOV häufigste Wortstellung (~44 %)</li>
+            <li>Kein Genus in ca. 50 % der Sprachen</li>
+            <li>Tonsprachen: ~60–70 % aller Sprachen</li>
+            <li>Nasale in fast allen Sprachen</li>
+          </ul>
+        </div>
+        <div class="summary-card">
+          <h3 class="green">Implikationsuniversalien</h3>
+          <ul>
+            <li>SOV → Postpositionen (Univ. 4)</li>
+            <li>SOV → Genitiv vor Nomen (Univ. 2)</li>
+            <li>VSO → Adjektiv nach Nomen (Univ. 18)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note-box">
+        <strong>Wichtig:</strong> Sprachliche Universalien belegen keine gemeinsame
+        Ursprache aller Menschen. Sie können auch durch <em>kognitive Constraints</em>
+        entstehen – Grenzen menschlicher Wahrnehmung und Verarbeitung, die jede Sprache
+        einhalten muss. Die Forschung ist Teil der modernen
+        <em>Sprachtypologie</em> und des <em>Language Universals-Projekts</em>.
+      </div>
+
+      <p class="source-note">
+        Quelle: Greenberg, J. H. (1963). Some universals of grammar.
+        In: <em>Universals of Language</em>. MIT Press. –
+        Weitere Daten: WALS Online (wals.info), Dryer &amp; Haspelmath (2013).
+      </p>
+    </section>
+
+  </main>
+
+  <script>
+    /* ── Daten: Stage 1 ──────────────────────────────────────── */
+    const QUESTIONS1 = [
+      {
+        feature: "Alle Sprachen haben Vokale und Konsonanten.",
+        active: ["de","ja","ar","tr","zh","sw"],
+        correct: "universell",
+        category: "Absolutes Universale",
+        categoryClass: "green",
+        explanation: "Richtig! In allen ~7.000 bekannten Sprachen der Welt kommen Vokale und Konsonanten vor. Keine einzige bekannte Sprache bildet eine Ausnahme. Greenberg zählte dies zu den sichersten Universalien.",
+        misconception: null
+      },
+      {
+        feature: "Alle Sprachen verwenden grammatisches Genus (wie „der", „die", „das").",
+        active: ["de","ar"],
+        correct: "spezifisch",
+        category: "Statistisches Universale",
+        categoryClass: "amber",
+        explanation: "Sprachspezifisch! Grammatisches Genus kommt nur in rund 50 % der Sprachen vor. Türkisch, Japanisch, Mandarin-Chinesisch, Swahili und Finnisch kennen kein grammatisches Genus. Der Radar zeigt: Nur Deutsch und Arabisch haben Genus – vier von sechs Sprachen nicht.",
+        misconception: "Häufiges Missverständnis: Viele Deutschsprachige nehmen an, Genus sei universell, weil es im Deutschen so präsent ist."
+      },
+      {
+        feature: "Alle Sprachen können Verneinung ausdrücken (Negation).",
+        active: ["de","ja","ar","tr","zh","sw"],
+        correct: "universell",
+        category: "Absolutes Universale",
+        categoryClass: "green",
+        explanation: "Richtig! Negation ist ein absolutes Universale. Jede bekannte Sprache kann Aussagen verneinen – ob durch Partikel (Deutsch: „nicht"), Affixe (Türkisch: -me/-ma) oder Negativverben (Japanisch: „nai").",
+        misconception: null
+      },
+      {
+        feature: "Alle Sprachen nutzen Tonhöhe zur Bedeutungsunterscheidung (Tonsprachen).",
+        active: ["zh"],
+        correct: "spezifisch",
+        category: "Statistisches Universale",
+        categoryClass: "amber",
+        explanation: "Sprachspezifisch! Etwa 60–70 % der Sprachen der Welt sind Tonsprachen (z. B. Mandarin, Yoruba, Vietnamesisch, Thai). Deutsch, Arabisch, Türkisch, Japanisch und Swahili nutzen Tonhöhe nicht zur Bedeutungsunterscheidung auf lexikalischer Ebene.",
+        misconception: "Häufiges Missverständnis: Viele Europäer halten Tonsprachen für exotische Ausnahmen – dabei stellen sie die globale Mehrheit!"
+      },
+      {
+        feature: "Alle Sprachen unterscheiden zwischen Nomen (Substantiven) und Verben (Wortartdistinktion).",
+        active: ["de","ja","ar","tr","zh","sw"],
+        correct: "universell",
+        category: "Absolutes Universale",
+        categoryClass: "green",
+        explanation: "Richtig! Die Unterscheidung zwischen Nomen und Verben gilt als eines der robustesten absoluten Universalien. Auch wenn die morphologische Markierung stark variiert, zeigen alle bekannten Sprachen diese grundlegende Wortartdifferenzierung.",
+        misconception: null
+      }
+    ];
+
+    /* ── Daten: Stage 2 ──────────────────────────────────────── */
+    const QUESTIONS2 = [
+      {
+        language: "Türkisch",
+        wordOrder: ["S","O","V"],
+        question: "Türkisch hat SOV-Wortstellung (Subjekt – Objekt – Verb). Greenbergs Implikationsuniversale 4 besagt: SOV-Sprachen haben überwiegend welche Art von Adpositionen?",
+        options: [
+          "Präpositionen (stehen VOR dem Nomen: „in Istanbul")",
+          "Postpositionen (stehen NACH dem Nomen: „Istanbul in")"
+        ],
+        correct: 1,
+        example: "Türkisch: „okul-da" = Schule-LOK = „in der Schule" | „İstanbul'dan" = Istanbul-ABL = „aus Istanbul"",
+        explanation: "Korrekt! Greenbergs Implikationsuniversale 4: „SOV-Sprachen haben mit stark überzufälliger Häufigkeit Postpositionen." Im Türkischen folgt die Adposition dem Nomen als Suffix oder Kasusendung. SVO- und VSO-Sprachen hingegen bevorzugen Präpositionen.",
+        conceptTag: "Implikationsuniversale 4 (Greenberg)",
+        conceptClass: "green"
+      },
+      {
+        language: "Arabisch",
+        wordOrder: ["V","S","O"],
+        question: "Arabisch hat VSO-Wortstellung (Verb – Subjekt – Objekt). Wo steht das beschreibende Adjektiv laut Greenbergs Universal 18 typischerweise?",
+        options: [
+          "Vor dem Nomen: Adjektiv–Nomen (A-N)",
+          "Nach dem Nomen: Nomen–Adjektiv (N-A)"
+        ],
+        correct: 1,
+        example: "Arabisch: „al-bayt al-kabīr" = das-Haus das-große → „das große Haus" (Adjektiv NACH dem Nomen)",
+        explanation: "Richtig! Greenbergs Universal 18: VSO-Sprachen haben fast immer die Nomen–Adjektiv-Reihenfolge. Im Arabischen folgt das Adjektiv dem Nomen und wiederholt sogar den bestimmten Artikel: „al-bayt al-kabīr" (wörtlich: das-Haus das-große).",
+        conceptTag: "Implikationsuniversale 18 (Greenberg)",
+        conceptClass: "green"
+      },
+      {
+        language: "Japanisch",
+        wordOrder: ["S","O","V"],
+        question: "Japanisch ist wie Türkisch eine SOV-Sprache. Greenbergs Universal 2 sagt: Das Genitivattribut steht in SOV-Sprachen mit Postpositionen typischerweise _____ dem Hauptnomen.",
+        options: [
+          "vor dem Hauptnomen (Genitiv–Nomen)",
+          "nach dem Hauptnomen (Nomen–Genitiv)"
+        ],
+        correct: 0,
+        example: "Japanisch: „otoko no hon" = Mann GEN Buch → „das Buch des Mannes" (Genitiv VOR dem Nomen)",
+        explanation: "Genau! Greenbergs Universal 2: „In Sprachen mit Postpositionen geht das Genitivattribut dem Hauptnomen fast immer voraus." Im Japanischen: „Nihon no kuruma" (Japan-GEN Auto) = „das japanische Auto". Das Genitiv-Marker „no" verbindet Attribut und Nomen.",
+        conceptTag: "Implikationsuniversale 2 (Greenberg)",
+        conceptClass: "green"
+      }
+    ];
+
+    /* ── Stage-1-Logik ──────────────────────────────────────── */
+    let q1Index = 0;
+    let q1Score = 0;
+    let q1Answered = false;
+
+    const allNodes = ["de","ja","ar","tr","zh","sw"];
+
+    function showQuestion1() {
+      const q = QUESTIONS1[q1Index];
+      q1Answered = false;
+
+      // Radar aktivieren
+      allNodes.forEach(id => {
+        const el = document.getElementById("node-" + id);
+        el.className = "lang-node";
+      });
+      // Kurze Verzögerung für Reset-Animation, dann aufleuchten
+      setTimeout(() => {
+        allNodes.forEach(id => {
+          const el = document.getElementById("node-" + id);
+          if (q.active.includes(id)) {
+            el.classList.add("active");
+          } else {
+            el.classList.add("inactive");
+          }
+        });
+      }, 50);
+
+      // Text setzen
+      document.getElementById("feature-text").textContent = q.feature;
+
+      // Buttons zurücksetzen
+      const btns = document.querySelectorAll("#btn-row-1 .option-btn");
+      btns.forEach(b => {
+        b.disabled = false;
+        b.className = "option-btn";
+      });
+
+      // Feedback ausblenden
+      document.getElementById("feedback-1").style.display = "none";
+      document.getElementById("next-btn-1").style.display = "none";
+
+      // Fortschritt
+      document.getElementById("q-current").textContent = q1Index + 1;
+      document.getElementById("progress-fill-1").style.width =
+        (q1Index / QUESTIONS1.length * 100) + "%";
+      updateScore1();
+    }
+
+    function checkAnswer1(answer, btn) {
+      if (q1Answered) return;
+      q1Answered = true;
+
+      const q = QUESTIONS1[q1Index];
+      const isCorrect = answer === q.correct;
+      if (isCorrect) q1Score++;
+
+      // Buttons markieren
+      const btns = document.querySelectorAll("#btn-row-1 .option-btn");
+      btns.forEach(b => {
+        b.disabled = true;
+        const bAnswer = b.getAttribute("data-answer");
+        if (bAnswer === q.correct) b.classList.add("reveal-correct");
+      });
+      if (!isCorrect) btn.classList.add("wrong-chosen");
+      else btn.classList.add("correct-chosen");
+
+      // Feedback bauen
+      const fb = document.getElementById("feedback-1");
+      fb.className = "feedback " + (isCorrect ? "correct" : "wrong");
+
+      let html = `<span class="concept-tag ${q.categoryClass}">${q.category}</span>`;
+      html += `<p>${q.explanation}</p>`;
+      if (q.misconception) {
+        html += `<p><strong>Tipp:</strong> ${q.misconception}</p>`;
+      }
+      fb.innerHTML = html;
+      fb.style.display = "block";
+
+      updateScore1();
+
+      // Weiter- oder Abschluss-Button
+      const nextBtn = document.getElementById("next-btn-1");
+      nextBtn.style.display = "inline-block";
+      if (q1Index >= QUESTIONS1.length - 1) {
+        nextBtn.textContent = "Weiter zu Stufe 2 →";
+      } else {
+        nextBtn.textContent = "Nächste Frage →";
+      }
+    }
+
+    function updateScore1() {
+      const answered = q1Answered ? q1Index + 1 : q1Index;
+      document.getElementById("score-1").textContent = q1Score + " / " + answered + " richtig";
+    }
+
+    function nextQuestion1() {
+      q1Index++;
+      if (q1Index >= QUESTIONS1.length) {
+        // Stufe 2 starten
+        document.getElementById("stage1").style.display = "none";
+        document.getElementById("stage2").style.display = "block";
+        q2Index = 0;
+        q2Score = 0;
+        showQuestion2();
+      } else {
+        showQuestion1();
+      }
+    }
+
+    /* ── Stage-2-Logik ──────────────────────────────────────── */
+    let q2Index = 0;
+    let q2Score = 0;
+    let q2Answered = false;
+
+    function showQuestion2() {
+      const q = QUESTIONS2[q2Index];
+      q2Answered = false;
+
+      // Wortstellungs-Blöcke animieren
+      const viz = document.getElementById("word-order-viz");
+      // Wortstellung setzen
+      const slots = [
+        { id: "wo-s", label: "Subjekt",  cls: "wo-s" },
+        { id: "wo-v", label: "Verb",     cls: "wo-v" },
+        { id: "wo-o", label: "Objekt",   cls: "wo-o" }
+      ];
+      // Wortstellung neu aufbauen
+      viz.innerHTML = "";
+      q.wordOrder.forEach((letter, i) => {
+        let cls, label;
+        if (letter === "S") { cls = "wo-s"; label = "Subjekt"; }
+        else if (letter === "V") { cls = "wo-v"; label = "Verb"; }
+        else { cls = "wo-o"; label = "Objekt"; }
+
+        const item = document.createElement("div");
+        item.className = "wo-item";
+
+        const block = document.createElement("div");
+        block.className = "wo-block " + cls;
+        block.textContent = letter;
+        block.style.opacity = "0";
+        block.style.transform = "translateY(-12px)";
+
+        const lbl = document.createElement("div");
+        lbl.className = "wo-label";
+        lbl.textContent = label;
+
+        item.appendChild(block);
+        item.appendChild(lbl);
+        viz.appendChild(item);
+
+        if (i < q.wordOrder.length - 1) {
+          const arrow = document.createElement("div");
+          arrow.className = "wo-arrow";
+          arrow.textContent = "→";
+          viz.appendChild(arrow);
+        }
+
+        // Einblenden mit Verzögerung
+        setTimeout(() => {
+          block.style.transition = "opacity 0.4s ease, transform 0.4s ease";
+          block.style.opacity = "1";
+          block.style.transform = "translateY(0)";
+        }, 80 * (i + 1));
+      });
+
+      // Sprach-Label
+      document.getElementById("impl-lang-label").textContent = q.language;
+
+      // Fragen-Text
+      document.getElementById("impl-text").textContent = q.question;
+
+      // Buttons
+      const row = document.getElementById("btn-row-2");
+      row.innerHTML = "";
+      q.options.forEach((opt, i) => {
+        const btn = document.createElement("button");
+        btn.className = "option-btn";
+        btn.textContent = opt;
+        btn.onclick = () => checkAnswer2(i, btn);
+        row.appendChild(btn);
+      });
+
+      // Beispiel und Feedback ausblenden
+      document.getElementById("impl-example").style.display = "none";
+      document.getElementById("feedback-2").style.display = "none";
+      document.getElementById("next-btn-2").style.display = "none";
+
+      // Fortschritt
+      document.getElementById("q-current-2").textContent = q2Index + 1;
+      document.getElementById("progress-fill-2").style.width =
+        (q2Index / QUESTIONS2.length * 100) + "%";
+      updateScore2();
+    }
+
+    function checkAnswer2(answerIdx, btn) {
+      if (q2Answered) return;
+      q2Answered = true;
+
+      const q = QUESTIONS2[q2Index];
+      const isCorrect = answerIdx === q.correct;
+      if (isCorrect) q2Score++;
+
+      // Buttons markieren
+      const btns = document.querySelectorAll("#btn-row-2 .option-btn");
+      btns.forEach((b, i) => {
+        b.disabled = true;
+        if (i === q.correct) b.classList.add("reveal-correct");
+      });
+      if (!isCorrect) btn.classList.add("wrong-chosen");
+      else btn.classList.add("correct-chosen");
+
+      // Beispiel zeigen
+      const exEl = document.getElementById("impl-example");
+      exEl.textContent = q.example;
+      exEl.style.display = "block";
+
+      // Feedback
+      const fb = document.getElementById("feedback-2");
+      fb.className = "feedback " + (isCorrect ? "correct" : "wrong");
+      let html = `<span class="concept-tag ${q.conceptClass}">${q.conceptTag}</span>`;
+      html += `<p>${q.explanation}</p>`;
+      fb.innerHTML = html;
+      fb.style.display = "block";
+
+      updateScore2();
+
+      // Weiter-Button
+      const nextBtn = document.getElementById("next-btn-2");
+      nextBtn.style.display = "inline-block";
+      if (q2Index >= QUESTIONS2.length - 1) {
+        nextBtn.textContent = "Zur Zusammenfassung →";
+      } else {
+        nextBtn.textContent = "Nächste Frage →";
+      }
+    }
+
+    function updateScore2() {
+      const answered = q2Answered ? q2Index + 1 : q2Index;
+      document.getElementById("score-2").textContent = q2Score + " / " + answered + " richtig";
+    }
+
+    function nextQuestion2() {
+      q2Index++;
+      if (q2Index >= QUESTIONS2.length) {
+        // Zusammenfassung
+        document.getElementById("stage2").style.display = "none";
+        document.getElementById("stage3").style.display = "block";
+        const total = q1Score + q2Score;
+        const max = QUESTIONS1.length + QUESTIONS2.length;
+        document.getElementById("total-score").textContent = total + " / " + max;
+      } else {
+        showQuestion2();
+      }
+    }
+
+    /* ── Start ──────────────────────────────────────────────── */
+    showQuestion1();
+  </script>
+
+</body>
+</html>

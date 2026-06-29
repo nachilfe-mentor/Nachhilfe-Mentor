@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Vier-Ohren-Modell nach Schulz von Thun – interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zum Vier-Ohren-Modell: Erkenne, über welches Ohr eine Nachricht ankommt, übe alle vier Seiten und analysiere Missverständnisse.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Vier-Ohren-Modell, Schulz von Thun, Kommunikationsquadrat, Nachrichtenquadrat, Missverständnisse, Deutsch Kommunikation">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/vier-ohren-modell-kommunikation-simulation.html">
+  <meta property="og:title" content="Vier-Ohren-Modell – interaktive Simulation">
+  <meta property="og:description" content="Interaktive Simulation zum Vier-Ohren-Modell: Erkenne, über welches Ohr eine Nachricht ankommt, übe alle vier Seiten und analysiere Missverständnisse.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/vier-ohren-modell-kommunikation-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Vier-Ohren-Modell nach Schulz von Thun – interaktive Simulation",
+  "description":"Interaktive Simulation zum Vier-Ohren-Modell: Erkenne, über welches Ohr eine Nachricht ankommt, übe alle vier Seiten und analysiere Missverständnisse.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/vier-ohren-modell-kommunikation-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    :root {
+      --blau:        #2563eb;
+      --blau-light:  #dbeafe;
+      --blau-mid:    #93c5fd;
+      --gelb:        #d97706;
+      --gelb-light:  #fef3c7;
+      --gruen:       #16a34a;
+      --gruen-light: #dcfce7;
+      --rot:         #dc2626;
+      --rot-light:   #fee2e2;
+      --gray-50:  #f9fafb;
+      --gray-100: #f3f4f6;
+      --gray-200: #e5e7eb;
+      --gray-400: #9ca3af;
+      --gray-500: #6b7280;
+      --gray-600: #4b5563;
+      --gray-800: #1f2937;
+      --radius: 12px;
+      --shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ---- Site Header ---- */
+    .site-header {
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--blau);
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
+    .breadcrumb a { color: var(--gray-600); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ---- Page ---- */
+    .page {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 4rem;
+    }
+
+    /* ---- Task Header ---- */
+    .task-header {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .task-header h1 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--gray-800);
+      margin-bottom: 0.35rem;
+    }
+    .task-meta {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      margin-bottom: 1rem;
+    }
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .progress-label {
+      font-size: 0.75rem;
+      color: var(--gray-500);
+    }
+    .dots {
+      display: flex;
+      gap: 0.35rem;
+      flex-wrap: wrap;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-200);
+      transition: background 0.3s;
+    }
+    .dot.done   { background: var(--blau); }
+    .dot.active { background: var(--blau-mid); border: 2px solid var(--blau); }
+
+    /* ---- Stufen-Badge ---- */
+    .stufen-badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.2rem 0.65rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+    }
+    .stufen-badge.s1 { background: var(--blau-light); color: var(--blau); }
+    .stufen-badge.s2 { background: var(--gruen-light); color: var(--gruen); }
+
+    /* ---- Kommunikationsmodell ---- */
+    .komm-modell {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.5rem 1rem 1rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .komm-modell-titel {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--gray-400);
+      margin-bottom: 1rem;
+    }
+    .komm-scene {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    /* Figur (Sender / Empfänger) */
+    .figur {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+      min-width: 62px;
+    }
+    .figur svg {
+      width: 44px;
+      height: 52px;
+    }
+    .figur-label {
+      font-size: 0.7rem;
+      color: var(--gray-500);
+      text-align: center;
+    }
+
+    /* Mittelteil: Sprechblase + Pfeil */
+    .komm-mitte {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      padding-top: 0.25rem;
+    }
+    .sprechblase {
+      background: var(--gray-100);
+      border: 1.5px solid var(--gray-200);
+      border-radius: 12px;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      text-align: center;
+      position: relative;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition: opacity 0.45s ease, transform 0.45s ease;
+      min-height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .sprechblase.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .pfeil {
+      font-size: 1.1rem;
+      color: var(--gray-400);
+      opacity: 0;
+      transition: opacity 0.4s 0.3s ease;
+    }
+    .pfeil.visible { opacity: 1; }
+
+    /* 4 Ohren-Grid rechts */
+    .ohren-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .ohren-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.3rem;
+    }
+    .ohr {
+      font-size: 0.65rem;
+      font-weight: 600;
+      padding: 0.3rem 0.45rem;
+      border-radius: 6px;
+      text-align: center;
+      opacity: 0.45;
+      transition: opacity 0.3s, transform 0.2s, box-shadow 0.2s;
+      cursor: default;
+      white-space: nowrap;
+    }
+    .ohr.sach  { background: var(--blau-light);  color: var(--blau); }
+    .ohr.selbst { background: var(--gelb-light); color: var(--gelb); }
+    .ohr.bez   { background: var(--gruen-light); color: var(--gruen); }
+    .ohr.app   { background: var(--rot-light);   color: var(--rot); }
+
+    .ohr.pulse {
+      opacity: 1;
+      transform: scale(1.08);
+      box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+    }
+    .ohr.correct {
+      opacity: 1;
+      box-shadow: 0 0 0 3px var(--gruen);
+    }
+    .ohr.wrong {
+      opacity: 1;
+      box-shadow: 0 0 0 3px var(--rot);
+    }
+    .ohr.highlight {
+      opacity: 1;
+    }
+
+    /* ---- Kontext- und Reaktionsbox ---- */
+    .info-box {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .info-row {
+      margin-bottom: 0.9rem;
+    }
+    .info-row:last-child { margin-bottom: 0; }
+    .info-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--gray-400);
+      margin-bottom: 0.3rem;
+    }
+    .nachricht-text {
+      font-size: 1rem;
+      font-weight: 600;
+      font-style: italic;
+      color: var(--gray-800);
+      padding: 0.5rem 0.75rem;
+      background: var(--gray-50);
+      border-left: 3px solid var(--blau);
+      border-radius: 0 6px 6px 0;
+    }
+    .reaktion-text {
+      font-size: 0.9rem;
+      color: var(--gray-700);
+      padding: 0.5rem 0.75rem;
+      background: var(--gray-50);
+      border-left: 3px solid var(--gray-300);
+      border-radius: 0 6px 6px 0;
+    }
+    .kontext-text {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+    }
+
+    /* ---- Frage-Box ---- */
+    .frage-box {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .frage-text {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      margin-bottom: 1rem;
+    }
+    .choices {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+    }
+    .choice-btn {
+      border: 2px solid var(--gray-200);
+      border-radius: 10px;
+      padding: 0.65rem 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s, transform 0.1s;
+      text-align: center;
+      background: white;
+    }
+    .choice-btn:hover:not(:disabled) {
+      border-color: var(--gray-400);
+      transform: translateY(-1px);
+    }
+    .choice-btn:disabled { cursor: default; }
+
+    .choice-btn.sach   { color: var(--blau); }
+    .choice-btn.selbst { color: var(--gelb); }
+    .choice-btn.bez    { color: var(--gruen); }
+    .choice-btn.app    { color: var(--rot); }
+
+    .choice-btn.selected-correct {
+      background: var(--gruen-light);
+      border-color: var(--gruen);
+      color: var(--gruen);
+    }
+    .choice-btn.selected-wrong {
+      background: var(--rot-light);
+      border-color: var(--rot);
+      color: var(--rot);
+    }
+    .choice-btn.reveal-correct {
+      background: var(--gruen-light);
+      border-color: var(--gruen);
+      color: var(--gruen);
+    }
+
+    /* ---- Feedback ---- */
+    .feedback-box {
+      border-radius: var(--radius);
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+    .feedback-box.richtig {
+      background: var(--gruen-light);
+      border: 1.5px solid var(--gruen);
+    }
+    .feedback-box.falsch {
+      background: var(--rot-light);
+      border: 1.5px solid var(--rot);
+    }
+    .feedback-kopf {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+    }
+    .feedback-icon {
+      font-size: 1.1rem;
+    }
+    .feedback-konzept {
+      font-weight: 700;
+    }
+    .feedback-konzept.sach   { color: var(--blau); }
+    .feedback-konzept.selbst { color: var(--gelb); }
+    .feedback-konzept.bez    { color: var(--gruen); }
+    .feedback-konzept.app    { color: var(--rot); }
+
+    /* ---- Weiter-Button ---- */
+    .btn-next {
+      background: var(--blau);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 0.75rem 1.75rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+      width: 100%;
+    }
+    .btn-next:hover {
+      background: #1d4ed8;
+      transform: translateY(-1px);
+    }
+
+    /* ---- Übergangs-Screen ---- */
+    .transition-screen {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .transition-screen h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--gray-800);
+    }
+    .ohren-zusammenfassung {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.65rem;
+      margin-bottom: 1.5rem;
+    }
+    .ohr-karte {
+      border-radius: 10px;
+      padding: 0.8rem;
+    }
+    .ohr-karte.sach  { background: var(--blau-light); }
+    .ohr-karte.selbst { background: var(--gelb-light); }
+    .ohr-karte.bez   { background: var(--gruen-light); }
+    .ohr-karte.app   { background: var(--rot-light); }
+    .ohr-karte-name {
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .ohr-karte.sach  .ohr-karte-name { color: var(--blau); }
+    .ohr-karte.selbst .ohr-karte-name { color: var(--gelb); }
+    .ohr-karte.bez   .ohr-karte-name { color: var(--gruen); }
+    .ohr-karte.app   .ohr-karte-name { color: var(--rot); }
+    .ohr-karte-frage {
+      font-size: 0.78rem;
+      color: var(--gray-600);
+      line-height: 1.4;
+    }
+
+    /* ---- Abschluss-Screen ---- */
+    .abschluss-screen {
+      background: white;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .abschluss-screen h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .score-zahl {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--blau);
+      margin: 1rem 0;
+    }
+    .regel-zusammenfassung {
+      text-align: left;
+      margin-top: 1.5rem;
+    }
+    .regel-zusammenfassung h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--gray-700);
+    }
+    .regel-liste {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .regel-item {
+      font-size: 0.85rem;
+      padding: 0.6rem 0.9rem;
+      border-radius: 8px;
+      line-height: 1.45;
+    }
+    .regel-item.sach  { background: var(--blau-light);  border-left: 3px solid var(--blau); }
+    .regel-item.selbst { background: var(--gelb-light); border-left: 3px solid var(--gelb); }
+    .regel-item.bez   { background: var(--gruen-light); border-left: 3px solid var(--gruen); }
+    .regel-item.app   { background: var(--rot-light);   border-left: 3px solid var(--rot); }
+
+    .btn-restart {
+      background: white;
+      color: var(--blau);
+      border: 2px solid var(--blau);
+      border-radius: 10px;
+      padding: 0.65rem 1.5rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 1.5rem;
+      transition: background 0.2s, color 0.2s;
+    }
+    .btn-restart:hover {
+      background: var(--blau);
+      color: white;
+    }
+
+    /* ---- Missverständnis-Banner ---- */
+    .missverstaendnis-banner {
+      background: #fef9c3;
+      border: 1.5px solid #fde047;
+      border-radius: 8px;
+      padding: 0.7rem 1rem;
+      font-size: 0.82rem;
+      color: #713f12;
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 0.5rem;
+    }
+    .missverstaendnis-banner strong { font-weight: 700; }
+
+    /* ---- Hilfreich ---- */
+    .hidden { display: none !important; }
+
+    /* ---- Responsive: 375px ---- */
+    @media (max-width: 480px) {
+      .komm-scene { gap: 0.4rem; }
+      .figur { min-width: 50px; }
+      .figur svg { width: 36px; height: 44px; }
+      .ohr { font-size: 0.6rem; padding: 0.25rem 0.35rem; }
+      .sprechblase { font-size: 0.82rem; padding: 0.5rem 0.65rem; }
+      .choices { grid-template-columns: 1fr 1fr; }
+      .choice-btn { font-size: 0.8rem; padding: 0.55rem 0.5rem; }
+      .ohren-zusammenfassung { grid-template-columns: 1fr; }
+      .task-header h1 { font-size: 1.05rem; }
+    }
+  </style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header class="site-header">
+  <a href="/" class="site-logo">Nachhilfe Mentor</a>
+  <span class="breadcrumb">›
+    <a href="/lernmaterialien/">Lernmaterialien</a> ›
+    Sprachliche Kommunikation
+  </span>
+</header>
+
+<main class="page">
+
+  <!-- Task Header -->
+  <div class="task-header">
+    <h1>Das Vier-Ohren-Modell</h1>
+    <p class="task-meta">Klasse 8–11 &nbsp;·&nbsp; Deutsch / Kommunikation &nbsp;·&nbsp; Schulz von Thun (1981)</p>
+    <div class="progress-row">
+      <span class="progress-label">Fortschritt:</span>
+      <div class="dots" id="dots"></div>
+    </div>
+  </div>
+
+  <!-- Kommunikationsmodell (immer sichtbar) -->
+  <div class="komm-modell" id="komm-modell">
+    <div class="komm-modell-titel">Kommunikationsmodell</div>
+    <div class="komm-scene">
+      <!-- Sender -->
+      <div class="figur">
+        <svg viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="22" cy="13" r="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+          <rect x="8" y="26" width="28" height="24" rx="6" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+        </svg>
+        <span class="figur-label" id="sender-label">Sender</span>
+      </div>
+      <!-- Mitte: Sprechblase + Pfeil -->
+      <div class="komm-mitte">
+        <div class="sprechblase" id="sprechblase">–</div>
+        <div class="pfeil" id="pfeil">→</div>
+      </div>
+      <!-- Empfänger + 4 Ohren -->
+      <div class="ohren-container">
+        <div class="figur">
+          <svg viewBox="0 0 44 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="22" cy="13" r="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+            <rect x="8" y="26" width="28" height="24" rx="6" fill="#f3f4f6" stroke="#9ca3af" stroke-width="2"/>
+          </svg>
+          <span class="figur-label" id="empfaenger-label">Empfänger</span>
+        </div>
+        <div class="ohren-grid">
+          <div class="ohr sach"   id="ohr-sach">Sachohr</div>
+          <div class="ohr selbst" id="ohr-selbst">Selbst&shy;kundgabe</div>
+          <div class="ohr bez"    id="ohr-bez">Beziehungs&shy;ohr</div>
+          <div class="ohr app"    id="ohr-app">Appellohr</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Stufen-Badge -->
+  <div id="stufen-badge-container"></div>
+
+  <!-- Kontext/Info-Box -->
+  <div class="info-box hidden" id="info-box">
+    <div class="info-row" id="kontext-row">
+      <div class="info-label">Situation</div>
+      <div class="kontext-text" id="kontext-text"></div>
+    </div>
+    <div class="info-row">
+      <div class="info-label">Nachricht</div>
+      <div class="nachricht-text" id="nachricht-text"></div>
+    </div>
+    <div class="info-row" id="reaktion-row">
+      <div class="info-label">Reaktion des Empfängers</div>
+      <div class="reaktion-text" id="reaktion-text"></div>
+    </div>
+  </div>
+
+  <!-- Missverständnis-Banner (nur Stufe 2) -->
+  <div class="missverstaendnis-banner hidden" id="missverstaendnis-banner">
+    <span>⚠️</span>
+    <div id="sender-intention-text"></div>
+  </div>
+
+  <!-- Frage-Box -->
+  <div class="frage-box hidden" id="frage-box">
+    <p class="frage-text" id="frage-text"></p>
+    <div class="choices" id="choices"></div>
+  </div>
+
+  <!-- Feedback -->
+  <div class="feedback-box hidden" id="feedback-box">
+    <div class="feedback-kopf">
+      <span class="feedback-icon" id="feedback-icon"></span>
+      <span id="feedback-kopf-text"></span>
+    </div>
+    <div id="feedback-detail"></div>
+  </div>
+
+  <!-- Übergangscreen -->
+  <div class="transition-screen hidden" id="transition-screen">
+    <h2>Gut gemacht! Die vier Ohren im Überblick</h2>
+    <div class="ohren-zusammenfassung">
+      <div class="ohr-karte sach">
+        <div class="ohr-karte-name">Sachohr</div>
+        <div class="ohr-karte-frage">„Was ist die sachliche Information?"</div>
+      </div>
+      <div class="ohr-karte selbst">
+        <div class="ohr-karte-name">Selbstkundgabeohr</div>
+        <div class="ohr-karte-frage">„Was verrät der Sender über sich selbst?"</div>
+      </div>
+      <div class="ohr-karte bez">
+        <div class="ohr-karte-name">Beziehungsohr</div>
+        <div class="ohr-karte-frage">„Wie sieht der Sender mich / uns?"</div>
+      </div>
+      <div class="ohr-karte app">
+        <div class="ohr-karte-name">Appellohr</div>
+        <div class="ohr-karte-frage">„Was soll ich jetzt tun oder denken?"</div>
+      </div>
+    </div>
+    <p style="font-size:0.88rem; color:var(--gray-600); margin-bottom:1.25rem;">
+      In Stufe 2 siehst du, was passiert, wenn Sender und Empfänger <strong>verschiedene Seiten</strong> priorisieren — der Ursprung vieler Missverständnisse.
+    </p>
+    <button class="btn-next" id="btn-to-stufe2">Weiter zu Stufe 2 →</button>
+  </div>
+
+  <!-- Abschluss-Screen -->
+  <div class="abschluss-screen hidden" id="abschluss-screen">
+    <h2>Simulation abgeschlossen!</h2>
+    <div class="score-zahl" id="score-text"></div>
+    <p style="font-size:0.9rem; color:var(--gray-600);">Antworten richtig</p>
+    <div class="regel-zusammenfassung">
+      <h3>Das Kommunikationsquadrat nach Schulz von Thun:</h3>
+      <div class="regel-liste">
+        <div class="regel-item sach">
+          <strong>Sachinhalt / Sachohr:</strong> Was ist die objektive, sachliche Information der Nachricht?
+        </div>
+        <div class="regel-item selbst">
+          <strong>Selbstkundgabe / Selbstkundgabeohr:</strong> Was verrät der Sender über seinen Zustand, seine Gefühle, seine Absichten?
+        </div>
+        <div class="regel-item bez">
+          <strong>Beziehung / Beziehungsohr:</strong> Was denkt der Sender über den Empfänger? Wie behandelt er ihn?
+        </div>
+        <div class="regel-item app">
+          <strong>Appell / Appellohr:</strong> Was soll der Empfänger tun, denken oder fühlen?
+        </div>
+      </div>
+      <p style="font-size:0.82rem; color:var(--gray-500); margin-top:1rem;">
+        Quelle: Schulz von Thun, F. (1981). <em>Miteinander reden: Störungen und Klärungen.</em> Rowohlt.
+      </p>
+    </div>
+    <button class="btn-restart" id="btn-restart">Nochmal üben</button>
+  </div>
+
+  <!-- Weiter-Button (innerhalb des Spielflusses) -->
+  <button class="btn-next hidden" id="btn-next">Weiter →</button>
+
+</main>
+
+<script>
+(function() {
+  'use strict';
+
+  /* ====================== DATEN ====================== */
+
+  const OHREN = [
+    { key: 'sach',   name: 'Sachohr',           klasse: 'sach'  },
+    { key: 'selbst', name: 'Selbstkundgabeohr',  klasse: 'selbst'},
+    { key: 'bez',    name: 'Beziehungsohr',      klasse: 'bez'   },
+    { key: 'app',    name: 'Appellohr',           klasse: 'app'   }
+  ];
+
+  const STUFE1 = [
+    {
+      sender: 'Beifahrer',
+      empfaenger: 'Fahrerin',
+      kontext: 'Auto hält vor einer Ampel.',
+      nachricht: 'Die Ampel ist grün!',
+      reaktion: '„Er traut mir nicht zu, dass ich das selbst sehe!"',
+      ohr: 'bez',
+      richtigText: 'Richtig! Das ist das <span class="feedback-konzept">Beziehungsohr</span>.',
+      richtigDetail: 'Das Beziehungsohr fragt: „Wie sieht der Sender mich?" Die Fahrerin nimmt die Aussage als Kritik an ihrer Fahrweise wahr — auch wenn der Beifahrer vielleicht nur sachlich informieren wollte. Das Beziehungsohr ist das sensitivste Ohr: Menschen reagieren besonders schnell auf wahrgenommene Kritik oder Abwertung (Schulz von Thun, 1981).',
+      falschText: {
+        sach:   'Das Sachohr würde die Aussage rein als Information aufnehmen: „Okay, die Ampel ist grün." Die Reaktion „Er traut mir nicht zu…" ist aber keine sachliche Registrierung — sie bewertet die Beziehung. Das ist das <span class="feedback-konzept">Beziehungsohr</span>.',
+        selbst: 'Das Selbstkundgabeohr fragt: „Was verrät der Sender über sich selbst?" — z.B. „Er wirkt nervös." Die Reaktion „Er traut mir nicht zu…" bezieht sich aber auf die Beziehung, nicht auf den Gemütszustand des Senders. Das ist das <span class="feedback-konzept">Beziehungsohr</span>.',
+        app:    'Das Appellohr fragt: „Was soll ich tun?" — z.B. Gas geben. „Er traut mir nicht zu…" ist aber keine Handlungsintention, sondern eine Beziehungsbewertung. Das ist das <span class="feedback-konzept">Beziehungsohr</span>.'
+      }
+    },
+    {
+      sender: 'Lehrerin',
+      empfaenger: 'Schüler',
+      kontext: 'Montagmorgen im Klassenzimmer.',
+      nachricht: 'Du siehst heute ein bisschen müde aus.',
+      reaktion: '„Ich soll wohl früher schlafen gehen."',
+      ohr: 'app',
+      richtigText: 'Richtig! Das ist das <span class="feedback-konzept">Appellohr</span>.',
+      richtigDetail: 'Das Appellohr fragt: „Was soll ich tun oder verändern?" Der Schüler hört in der sachlichen Beobachtung einen versteckten Ratschlag: „Schlaf mehr!" Typisch für das Appellohr: Man vermutet hinter einer Aussage einen Wunsch oder eine Forderung — auch wenn der Sender das gar nicht (bewusst) gemeint hat.',
+      falschText: {
+        sach:   'Das Sachohr würde neutral registrieren: „Okay, ich sehe müde aus." Die Reaktion „Ich soll früher schlafen gehen" ist aber keine neutrale Registrierung — der Schüler leitet daraus einen Auftrag ab. Das ist das <span class="feedback-konzept">Appellohr</span>.',
+        selbst: 'Das Selbstkundgabeohr würde fragen: „Was sagt das über die Lehrerin?" — z.B. „Sie wirkt besorgt um mich." „Ich soll früher schlafen gehen" ist aber eine Schlussfolgerung über das, was der Schüler tun soll. Das ist das <span class="feedback-konzept">Appellohr</span>.',
+        bez:    'Das Beziehungsohr würde lauten: „Sie hält mich für unfähig." Die Reaktion ist aber handlungsorientiert: Der Schüler schlussfolgert, was er tun soll. Das ist das <span class="feedback-konzept">Appellohr</span>.'
+      }
+    },
+    {
+      sender: 'Mitschüler',
+      empfaenger: 'Mitschülerin',
+      kontext: 'Bibliothek beim Lernen.',
+      nachricht: 'Kannst du bitte leiser sein?',
+      reaktion: '„Der klingt selbst ziemlich genervt gerade."',
+      ohr: 'selbst',
+      richtigText: 'Richtig! Das ist das <span class="feedback-konzept">Selbstkundgabeohr</span>.',
+      richtigDetail: 'Das Selbstkundgabeohr fragt: „Was verrät der Sender über seinen Gemütszustand?" Die Mitschülerin achtet nicht auf den Inhalt der Bitte, sondern darauf, wie der Mitschüler klingt — nämlich genervt. Sie liest aus der Nachricht den emotionalen Zustand des Senders heraus: Frustration, Anspannung.',
+      falschText: {
+        sach:   'Das Sachohr würde die Bitte sachlich aufnehmen: „Er möchte, dass ich leiser bin." Die Reaktion „Der klingt genervt" fokussiert aber nicht auf den Inhalt der Bitte, sondern auf den Gefühlszustand des Senders. Das ist das <span class="feedback-konzept">Selbstkundgabeohr</span>.',
+        bez:    'Das Beziehungsohr würde lauten: „Er findet mich störend." Die Reaktion „Der klingt genervt" beschreibt aber den Zustand des Senders, nicht die Beziehungsdynamik. Das ist das <span class="feedback-konzept">Selbstkundgabeohr</span>.',
+        app:    'Das Appellohr würde fragen: „Was soll ich tun?" — nämlich leiser sein. Die Reaktion registriert aber den Ton des Senders, nicht den Auftrag. Das ist das <span class="feedback-konzept">Selbstkundgabeohr</span>.'
+      }
+    },
+    {
+      sender: 'Vater',
+      empfaenger: 'Kind',
+      kontext: 'Zuhause am Abend.',
+      nachricht: 'Das Fenster ist noch offen.',
+      reaktion: '„Ja, ich hab es vorhin aufgemacht."',
+      ohr: 'sach',
+      richtigText: 'Richtig! Das ist das <span class="feedback-konzept">Sachohr</span>.',
+      richtigDetail: 'Das Sachohr nimmt die Nachricht als reine Tatsacheninformation auf: „Das Fenster ist offen — ja, das stimmt." Keine Kritik, kein Auftrag, keine versteckte Botschaft. Das Kind registriert den Sachverhalt und antwortet sachlich. Das Sachohr ist das „nüchternste" Ohr — es hört nur den Informationsgehalt, ohne darüber hinaus zu interpretieren.',
+      falschText: {
+        selbst: 'Das Selbstkundgabeohr würde fragen: „Was verrät Papa über sich?" — z.B. „Ihm ist kalt." Das Kind antwortet aber sachlich auf die Tatsache, nicht auf den Zustand des Vaters. Das ist das <span class="feedback-konzept">Sachohr</span>.',
+        bez:    'Das Beziehungsohr würde lauten: „Papa denkt, ich kümmere mich nicht um das Haus." Das Kind antwortet aber neutral und sachlich. Das ist das <span class="feedback-konzept">Sachohr</span>.',
+        app:    'Das Appellohr würde hören: „Mach das Fenster zu!" Das Kind antwortet aber nicht mit einer Handlung, sondern mit einer sachlichen Erklärung. Das ist das <span class="feedback-konzept">Sachohr</span>.'
+      }
+    }
+  ];
+
+  const STUFE2 = [
+    {
+      sender: 'Mutter',
+      empfaenger: 'Kind',
+      kontext: 'Nach dem Mittagessen zuhause.',
+      nachricht: 'Hast du deine Hausaufgaben schon gemacht?',
+      reaktion: '„Lass mich kurz verschnaufen! Ich fange gleich an."',
+      senderInfo: '<strong>Sender gemeint (Sachinhalt):</strong> Die Mutter stellt eine sachliche Informationsfrage — sie plant den Nachmittag.',
+      ohr: 'app',
+      richtigText: 'Richtig! Das ist das <span class="feedback-konzept">Appellohr</span> — und hier entsteht ein Missverständnis.',
+      richtigDetail: 'Die Mutter fragt sachlich (Sachinhalt), das Kind hört einen versteckten Befehl: „Mach sofort deine Hausaufgaben!" (Appellohr). Das Kind reagiert defensiv, obwohl die Mutter gar nicht drängen wollte. Schulz von Thun nennt das die <strong>„Lücke zwischen gemeinter und gehörter Botschaft"</strong>. Lösung: Meta-Kommunikation — über die Kommunikation reden: „Meintest du das als Frage oder als Aufforderung?"',
+      falschText: {
+        sach:   'Das Sachohr würde nur registrieren: „Sie fragt, ob ich die Hausaufgaben schon gemacht habe." Die Reaktion „Lass mich kurz verschnaufen!" klingt aber defensiv — das Kind fühlt sich gedrängt. Das ist das <span class="feedback-konzept">Appellohr</span>: Das Kind hört einen Befehl, nicht nur eine Frage.',
+        selbst: 'Das Selbstkundgabeohr würde fragen: „Was verrät die Mutter über sich?" — z.B. „Sie ist gestresst." Die Reaktion ist aber eine Abwehrhaltung gegen einen wahrgenommenen Auftrag. Das ist das <span class="feedback-konzept">Appellohr</span>.',
+        bez:    'Das Beziehungsohr würde lauten: „Sie hält mich für unzuverlässig." Die Reaktion „Lass mich kurz verschnaufen" klingt aber nach einer Abwehr gegen eine Forderung, nicht gegen Kritik. Das ist das <span class="feedback-konzept">Appellohr</span>.'
+      }
+    },
+    {
+      sender: 'Chefin',
+      empfaenger: 'Mitarbeiter',
+      kontext: 'Büro, Montagmorgen vor einer Besprechung.',
+      nachricht: 'Wie lange brauchen Sie noch für den Bericht?',
+      reaktion: '(innerlich) „Sie denkt, ich bin zu langsam. Ich muss mich rechtfertigen."',
+      senderInfo: '<strong>Sender gemeint (Sachinhalt):</strong> Die Chefin plant den Zeitrahmen — eine sachliche Managementfrage.',
+      ohr: 'bez',
+      richtigText: 'Richtig! Das ist das <span class="feedback-konzept">Beziehungsohr</span> — und hier entsteht ein Missverständnis.',
+      richtigDetail: 'Die Chefin fragt sachlich nach dem Zeitplan (Sachinhalt). Der Mitarbeiter hört einen Vorwurf (Beziehungsohr): „Du bist zu langsam." Das Beziehungsohr ist in hierarchischen Situationen besonders aktiv, weil das Machtgefälle die Empfindlichkeit für Bewertungen erhöht. Typische Folge: Der Mitarbeiter verteidigt sich, statt einfach die Frage zu beantworten.',
+      falschText: {
+        sach:   'Das Sachohr würde neutral antworten: „Ich brauche noch zwei Stunden." Die Reaktion „Sie denkt, ich bin zu langsam" zeigt aber, dass der Mitarbeiter sich bewertet fühlt — das ist das <span class="feedback-konzept">Beziehungsohr</span>.',
+        selbst: 'Das Selbstkundgabeohr würde fragen: „Was verrät die Chefin über sich?" — z.B. „Sie wirkt unter Druck." Die Reaktion ist aber eine Beziehungsbewertung: „Sie hält mich für zu langsam." Das ist das <span class="feedback-konzept">Beziehungsohr</span>.',
+        app:    'Das Appellohr würde lauten: „Ich soll schneller werden." Die Reaktion bezieht sich aber auf das, was die Chefin von ihm zu denken scheint — eine Beziehungsbewertung. Das ist das <span class="feedback-konzept">Beziehungsohr</span>.'
+      }
+    },
+    {
+      sender: 'Freundin A',
+      empfaenger: 'Freundin B',
+      kontext: 'Treffen nach einem Haarschnitt.',
+      nachricht: 'Du hast dir aber die Haare geschnitten.',
+      reaktion: '„Gefallen ihr meine neuen Haare etwa nicht?"',
+      senderInfo: '<strong>Sender gemeint (Sachinhalt):</strong> Freundin A macht eine neutrale Beobachtung — kein Urteil, nur eine Feststellung.',
+      ohr: 'bez',
+      richtigText: 'Richtig! Das ist das <span class="feedback-konzept">Beziehungsohr</span> — und hier entsteht ein Missverständnis.',
+      richtigDetail: 'Freundin A beobachtet neutral (Sachinhalt): „Du hast die Haare geschnitten." Freundin B hört eine versteckte Bewertung (Beziehungsohr): „Die Haare vorher gefielen ihr besser." Neutrale Aussagen über Veränderungen werden durch das Beziehungsohr häufig als Kritik gefiltert — besonders bei äußerlichen Veränderungen, über die man selbst unsicher sein könnte. Schulz von Thun nennt dies das „überempfindliche Beziehungsohr".',
+      falschText: {
+        sach:   'Das Sachohr würde neutral registrieren: „Ja, ich habe mir die Haare geschnitten." Die Reaktion „Gefallen ihr meine Haare nicht?" zeigt aber, dass Freundin B eine negative Bewertung hört. Das ist das <span class="feedback-konzept">Beziehungsohr</span>.',
+        selbst: 'Das Selbstkundgabeohr würde fragen: „Was verrät Freundin A über sich?" — z.B. „Sie ist überrascht." Die Reaktion ist aber eine Beziehungsfrage: „Wie bewertet sie mich/meine Haare?" Das ist das <span class="feedback-konzept">Beziehungsohr</span>.',
+        app:    'Das Appellohr würde lauten: „Ich soll erklären, warum ich mir die Haare geschnitten habe." Die Reaktion zeigt aber eine Sorge um die Bewertung durch die Freundin — das ist das <span class="feedback-konzept">Beziehungsohr</span>.'
+      }
+    }
+  ];
+
+  /* ====================== ZUSTAND ====================== */
+
+  let state = {
+    stufe: 1,
+    runde: 0,
+    phase: 'animation',   // 'animation' | 'frage' | 'feedback'
+    gesamtRichtig: 0,
+    gesamtFragen: STUFE1.length + STUFE2.length
+  };
+
+  /* ====================== DOM-REFERENZEN ====================== */
+
+  const elDots                = document.getElementById('dots');
+  const elSenderLabel         = document.getElementById('sender-label');
+  const elEmpfaengerLabel     = document.getElementById('empfaenger-label');
+  const elSprechblase         = document.getElementById('sprechblase');
+  const elPfeil               = document.getElementById('pfeil');
+  const elOhren = {
+    sach:   document.getElementById('ohr-sach'),
+    selbst: document.getElementById('ohr-selbst'),
+    bez:    document.getElementById('ohr-bez'),
+    app:    document.getElementById('ohr-app')
+  };
+  const elStutenBadge         = document.getElementById('stufen-badge-container');
+  const elInfoBox             = document.getElementById('info-box');
+  const elKontextRow          = document.getElementById('kontext-row');
+  const elKontextText         = document.getElementById('kontext-text');
+  const elNachrichtText       = document.getElementById('nachricht-text');
+  const elReaktionRow         = document.getElementById('reaktion-row');
+  const elReaktionText        = document.getElementById('reaktion-text');
+  const elMissverstaendnisBanner = document.getElementById('missverstaendnis-banner');
+  const elSenderIntentionText = document.getElementById('sender-intention-text');
+  const elFrageBox            = document.getElementById('frage-box');
+  const elFrageText           = document.getElementById('frage-text');
+  const elChoices             = document.getElementById('choices');
+  const elFeedbackBox         = document.getElementById('feedback-box');
+  const elFeedbackIcon        = document.getElementById('feedback-icon');
+  const elFeedbackKopf        = document.getElementById('feedback-kopf-text');
+  const elFeedbackDetail      = document.getElementById('feedback-detail');
+  const elTransitionScreen    = document.getElementById('transition-screen');
+  const elBtnToStufe2         = document.getElementById('btn-to-stufe2');
+  const elAbschlussScreen     = document.getElementById('abschluss-screen');
+  const elScoreText           = document.getElementById('score-text');
+  const elBtnNext             = document.getElementById('btn-next');
+  const elBtnRestart          = document.getElementById('btn-restart');
+
+  /* ====================== HILFSFUNKTIONEN ====================== */
+
+  function show(el) { el.classList.remove('hidden'); }
+  function hide(el) { el.classList.add('hidden'); }
+
+  function resetOhren() {
+    Object.values(elOhren).forEach(function(el) {
+      el.classList.remove('pulse', 'correct', 'wrong', 'highlight');
+    });
+  }
+
+  function pulseOhren(callback) {
+    const keys = ['sach', 'selbst', 'bez', 'app'];
+    var idx = 0;
+    function next() {
+      if (idx > 0) {
+        elOhren[keys[idx-1]].classList.remove('pulse');
+      }
+      if (idx < keys.length) {
+        elOhren[keys[idx]].classList.add('pulse');
+        idx++;
+        setTimeout(next, 280);
+      } else {
+        // Alle Ohren leicht beleuchtet lassen
+        keys.forEach(function(k) {
+          elOhren[k].classList.add('highlight');
+        });
+        if (callback) setTimeout(callback, 200);
+      }
+    }
+    next();
+  }
+
+  function buildDots() {
+    elDots.innerHTML = '';
+    var total = state.gesamtFragen;
+    var currentGlobalIdx = (state.stufe === 1)
+      ? state.runde
+      : STUFE1.length + state.runde;
+    for (var i = 0; i < total; i++) {
+      var d = document.createElement('span');
+      d.className = 'dot';
+      if (i < currentGlobalIdx) d.classList.add('done');
+      else if (i === currentGlobalIdx) d.classList.add('active');
+      elDots.appendChild(d);
+    }
+  }
+
+  /* ====================== RUNDEN-LOGIK ====================== */
+
+  function startRunde() {
+    var daten = (state.stufe === 1) ? STUFE1[state.runde] : STUFE2[state.runde];
+
+    // Stufen-Badge
+    elStutenBadge.innerHTML = (state.stufe === 1)
+      ? '<span class="stufen-badge s1">Stufe 1 — Die vier Ohren erkennen</span>'
+      : '<span class="stufen-badge s2">Stufe 2 — Missverständnisse analysieren</span>';
+
+    // Sender/Empfänger Labels
+    elSenderLabel.textContent = daten.sender;
+    elEmpfaengerLabel.textContent = daten.empfaenger;
+
+    // Kontext + Nachricht + Reaktion füllen
+    elKontextText.textContent = daten.kontext;
+    elNachrichtText.textContent = '„' + daten.nachricht + '"';
+
+    if (state.stufe === 1) {
+      elReaktionText.textContent = daten.reaktion;
+      show(elReaktionRow);
+      hide(elMissverstaendnisBanner);
+    } else {
+      // Stufe 2: Reaktion anzeigen + Sender-Intention als Banner
+      elReaktionText.textContent = daten.reaktion;
+      show(elReaktionRow);
+      elSenderIntentionText.innerHTML = daten.senderInfo;
+      show(elMissverstaendnisBanner);
+    }
+
+    show(elInfoBox);
+    hide(elFrageBox);
+    hide(elFeedbackBox);
+    hide(elBtnNext);
+    resetOhren();
+
+    // Phase: Animation
+    state.phase = 'animation';
+    elSprechblase.textContent = '„' + daten.nachricht + '"';
+    elSprechblase.classList.remove('visible');
+    elPfeil.classList.remove('visible');
+
+    // Animation starten
+    setTimeout(function() {
+      elSprechblase.classList.add('visible');
+    }, 150);
+    setTimeout(function() {
+      elPfeil.classList.add('visible');
+    }, 500);
+    setTimeout(function() {
+      pulseOhren(function() {
+        zeigeFragePhase(daten);
+      });
+    }, 900);
+
+    buildDots();
+  }
+
+  function zeigeFragePhase(daten) {
+    state.phase = 'frage';
+
+    if (state.stufe === 1) {
+      elFrageText.innerHTML = 'Über welches Ohr hat <strong>' + daten.empfaenger + '</strong> die Nachricht aufgenommen?';
+    } else {
+      elFrageText.innerHTML = 'Über welches Ohr hat <strong>' + daten.empfaenger + '</strong> die Nachricht hauptsächlich aufgenommen?';
+    }
+
+    // Buttons bauen
+    elChoices.innerHTML = '';
+    OHREN.forEach(function(ohr) {
+      var btn = document.createElement('button');
+      btn.className = 'choice-btn ' + ohr.klasse;
+      btn.textContent = ohr.name;
+      btn.setAttribute('data-key', ohr.key);
+      btn.addEventListener('click', function() {
+        handleAnswer(ohr.key, daten);
+      });
+      elChoices.appendChild(btn);
+    });
+
+    show(elFrageBox);
+  }
+
+  function handleAnswer(gewähltKey, daten) {
+    if (state.phase !== 'frage') return;
+    state.phase = 'feedback';
+
+    // Alle Buttons deaktivieren
+    Array.from(elChoices.querySelectorAll('.choice-btn')).forEach(function(btn) {
+      btn.disabled = true;
+    });
+
+    var richtig = (gewähltKey === daten.ohr);
+    if (richtig) state.gesamtRichtig++;
+
+    // Buttons markieren
+    Array.from(elChoices.querySelectorAll('.choice-btn')).forEach(function(btn) {
+      var key = btn.getAttribute('data-key');
+      if (key === daten.ohr) {
+        btn.classList.add('reveal-correct');
+      } else if (key === gewähltKey && !richtig) {
+        btn.classList.add('selected-wrong');
+      }
+    });
+
+    // Ohren im Modell markieren
+    resetOhren();
+    if (richtig) {
+      elOhren[daten.ohr].classList.add('correct');
+    } else {
+      elOhren[gewähltKey].classList.add('wrong');
+      elOhren[daten.ohr].classList.add('correct');
+    }
+
+    // Feedback anzeigen
+    elFeedbackBox.className = 'feedback-box ' + (richtig ? 'richtig' : 'falsch');
+    elFeedbackIcon.textContent = richtig ? '✓' : '✗';
+    var richtiges = OHREN.find(function(o){ return o.key === daten.ohr; });
+    elFeedbackKopf.innerHTML = richtig
+      ? daten.richtigText
+      : 'Nicht ganz — richtig ist: <span class="feedback-konzept ' + richtiges.klasse + '">' + richtiges.name + '</span>';
+
+    var detailText = richtig
+      ? daten.richtigDetail
+      : daten.falschText[gewähltKey];
+
+    elFeedbackDetail.innerHTML = detailText;
+    show(elFeedbackBox);
+    show(elBtnNext);
+
+    buildDots();
+  }
+
+  function naechsteRunde() {
+    state.runde++;
+
+    if (state.stufe === 1 && state.runde >= STUFE1.length) {
+      // Übergang zu Stufe 2
+      zeigeUebergang();
+      return;
+    }
+    if (state.stufe === 2 && state.runde >= STUFE2.length) {
+      // Abschluss
+      zeigeAbschluss();
+      return;
+    }
+
+    startRunde();
+  }
+
+  function zeigeUebergang() {
+    hide(elInfoBox);
+    hide(elMissverstaendnisBanner);
+    hide(elFrageBox);
+    hide(elFeedbackBox);
+    hide(elBtnNext);
+    resetOhren();
+    elSprechblase.textContent = '–';
+    elSprechblase.classList.remove('visible');
+    elPfeil.classList.remove('visible');
+    elStutenBadge.innerHTML = '';
+    // Alle Stufe-1-Dots als erledigt markieren
+    var allDots = elDots.querySelectorAll('.dot');
+    for (var j = 0; j < STUFE1.length; j++) {
+      if (allDots[j]) allDots[j].className = 'dot done';
+    }
+
+    show(elTransitionScreen);
+  }
+
+  function zeigeAbschluss() {
+    hide(elInfoBox);
+    hide(elMissverstaendnisBanner);
+    hide(elFrageBox);
+    hide(elFeedbackBox);
+    hide(elBtnNext);
+    hide(document.getElementById('komm-modell'));
+    elStutenBadge.innerHTML = '';
+
+    elScoreText.textContent = state.gesamtRichtig + ' / ' + state.gesamtFragen;
+    show(elAbschlussScreen);
+
+    // Punkte alle als done
+    var allDots = elDots.querySelectorAll('.dot');
+    allDots.forEach(function(d) { d.className = 'dot done'; });
+  }
+
+  function reset() {
+    state = {
+      stufe: 1,
+      runde: 0,
+      phase: 'animation',
+      gesamtRichtig: 0,
+      gesamtFragen: STUFE1.length + STUFE2.length
+    };
+    hide(elAbschlussScreen);
+    show(document.getElementById('komm-modell'));
+    startRunde();
+  }
+
+  /* ====================== EVENT LISTENER ====================== */
+
+  elBtnNext.addEventListener('click', function() {
+    naechsteRunde();
+  });
+
+  elBtnToStufe2.addEventListener('click', function() {
+    hide(elTransitionScreen);
+    state.stufe = 2;
+    state.runde = 0;
+    startRunde();
+  });
+
+  elBtnRestart.addEventListener('click', function() {
+    reset();
+  });
+
+  /* ====================== START ====================== */
+
+  startRunde();
+
+})();
+</script>
+
+</body>
+</html>

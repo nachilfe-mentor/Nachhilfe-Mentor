@@ -1,0 +1,1123 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Greenbergs Sprachuniversalien: Wortstellung SOV SVO VSO interaktiv lernen | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zu Greenbergs Sprachuniversalien: Sage Adpositionen, Genitiv und Relativsatz aus der Wortstellung (SOV, SVO, VSO) vorher und bestimme den Sprachtyp.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Greenberg Sprachuniversalien, Sprachtypologie, Wortstellung SOV SVO VSO, implikative Universalien, Kopfrichtungsprinzip, Adpositionen">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachuniversalien-greenberg-simulation.html">
+  <meta property="og:title" content="Greenbergs Sprachuniversalien interaktiv">
+  <meta property="og:description" content="Interaktive Simulation zu Greenbergs Sprachuniversalien: Sage Adpositionen, Genitiv und Relativsatz aus der Wortstellung (SOV, SVO, VSO) vorher und bestimme den Sprachtyp.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachuniversalien-greenberg-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Greenbergs Sprachuniversalien: Wortstellung SOV SVO VSO interaktiv lernen",
+  "description":"Interaktive Simulation zu Greenbergs Sprachuniversalien: Sage Adpositionen, Genitiv und Relativsatz aus der Wortstellung (SOV, SVO, VSO) vorher und bestimme den Sprachtyp.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachuniversalien-greenberg-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    document.documentElement.setAttribute('data-asset-type', 'simulation');
+    document.documentElement.setAttribute('data-topic-cluster', 'sprachen');
+  </script>
+
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    /* ── Header ─────────────────────────────── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 560px;
+    }
+
+    /* ── Main Layout ─────────────────────────── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Fortschrittsleiste ─────────────────── */
+    .progress-wrap { margin-bottom: 2rem; }
+    .progress-label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+    .progress-bar {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .progress-step {
+      flex: 1;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--line);
+      transition: background 0.4s;
+    }
+    .progress-step.active { background: var(--blue); }
+    .progress-step.done   { background: var(--green); }
+
+    /* ── Panel ──────────────────────────────── */
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .panel-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .step-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .panel p.lead {
+      color: var(--muted);
+      font-size: 0.92rem;
+      margin-top: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Theorie-Box ────────────────────────── */
+    .theory-box {
+      background: #eef4fb;
+      border-left: 3px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .theory-box h3 {
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: var(--blue);
+      margin-bottom: 0.4rem;
+    }
+    .theory-box p {
+      font-size: 0.87rem;
+      color: var(--ink);
+    }
+
+    /* ── Wortstellungs-Diagramm ─────────────── */
+    .wo-display {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 1.25rem 0 1rem;
+      flex-wrap: wrap;
+    }
+    .wo-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.35rem;
+      opacity: 0;
+      transform: translateY(12px);
+      animation: blockIn 0.35s forwards;
+    }
+    .wo-block:nth-child(1) { animation-delay: 0.05s; }
+    .wo-block:nth-child(2) { animation-delay: 0.20s; }
+    .wo-block:nth-child(3) { animation-delay: 0.35s; }
+
+    @keyframes blockIn {
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .wo-box {
+      width: 68px;
+      height: 52px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      color: #fff;
+      transition: box-shadow 0.3s, transform 0.3s;
+    }
+    .wo-box.subj { background: var(--blue); }
+    .wo-box.obj  { background: var(--green); }
+    .wo-box.verb { background: var(--red); }
+    .wo-box.glow { box-shadow: 0 0 0 3px rgba(11,143,106,0.45); transform: scale(1.08); }
+
+    .wo-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .wo-example {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 0.5rem;
+      font-style: italic;
+    }
+
+    /* ── Merkmals-Karten ────────────────────── */
+    .feature-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.25rem 0;
+    }
+    .card {
+      flex: 1;
+      min-width: 140px;
+      background: #f0f5ff;
+      border: 1.5px solid #c7d8f5;
+      border-radius: 8px;
+      padding: 0.65rem 0.85rem;
+      font-size: 0.84rem;
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card .card-icon {
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+      display: block;
+    }
+    .card .card-label {
+      font-weight: 700;
+      font-size: 0.78rem;
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      display: block;
+      margin-bottom: 0.2rem;
+    }
+
+    /* ── Vorhersage-Frage ────────────────────── */
+    .question-box {
+      background: #fffbea;
+      border: 1.5px solid #f5d567;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .question-box p {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+    .question-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--amber);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.4rem;
+    }
+
+    /* ── Option-Buttons ─────────────────────── */
+    .choice-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .option-btn {
+      flex: 1;
+      min-width: 140px;
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s, color 0.15s;
+      text-align: center;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eef4fb;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #e6f7f1;
+      color: var(--green);
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fdf0ef;
+      color: var(--red);
+    }
+    .option-btn.reveal {
+      border-color: var(--green);
+      background: #e6f7f1;
+      color: var(--green);
+    }
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Feedback ────────────────────────────── */
+    .feedback {
+      background: #f0faf5;
+      border: 1.5px solid #a8e6cc;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.25rem;
+      font-size: 0.9rem;
+    }
+    .feedback.wrong-fb {
+      background: #fff5f4;
+      border-color: #f5b8b3;
+    }
+    .concept-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.03em;
+    }
+    .concept-tag.amber { background: var(--amber); }
+
+    /* ── Weiter-Button ───────────────────────── */
+    .next-btn {
+      display: block;
+      width: 100%;
+      padding: 0.85rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: opacity 0.2s;
+      margin-top: 0.5rem;
+    }
+    .next-btn:hover { opacity: 0.88; }
+
+    /* ── Runden-Zähler ─────────────────────── */
+    .round-counter {
+      font-size: 0.78rem;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    /* ── Ergebnis-Panel ─────────────────────── */
+    .result-panel {
+      background: var(--panel);
+      border: 2px solid var(--green);
+      border-radius: 12px;
+      padding: 2rem 1.75rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .result-panel h2 { font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .result-panel p  { color: var(--muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+    .score-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 1.25rem;
+    }
+
+    /* ── Summary-Tabelle ───────────────────── */
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.87rem;
+      margin-top: 1.25rem;
+    }
+    .summary-table th {
+      background: #f0f5ff;
+      padding: 0.6rem 0.85rem;
+      text-align: left;
+      font-size: 0.78rem;
+      color: var(--blue);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .summary-table td {
+      padding: 0.55rem 0.85rem;
+      border-bottom: 1px solid var(--line);
+      vertical-align: top;
+    }
+    .summary-table tr:last-child td { border-bottom: none; }
+    .tag-post { color: var(--purple); font-weight: 700; }
+    .tag-pre  { color: var(--cyan);   font-weight: 700; }
+
+    /* ── Utility ─────────────────────────────── */
+    .hidden { display: none !important; }
+    .mt-1 { margin-top: 1rem; }
+    .mt-2 { margin-top: 2rem; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+
+<body>
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="eyebrow">Linguistik &middot; Sprachtypologie</div>
+  <h1>Greenbergs Sprachuniversalien</h1>
+  <p>Entdecke die versteckten Regeln, die alle Sprachen teilen &ndash; und lerne, Wortstellungstypen an ihren Merkmalen zu erkennen.</p>
+</header>
+
+<main>
+
+  <!-- ── Fortschritt ── -->
+  <div class="progress-wrap">
+    <div class="progress-label">
+      <span>Stufe 1: Vorhersage</span>
+      <span>Stufe 2: Identifikation</span>
+    </div>
+    <div class="progress-bar">
+      <div class="progress-step active" id="pbar1"></div>
+      <div class="progress-step" id="pbar2"></div>
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- STUFE 1: Vorhersage                       -->
+  <!-- ════════════════════════════════════════ -->
+  <div id="stage1">
+
+    <div class="panel">
+      <div class="panel-title">
+        <span class="step-badge">1</span>
+        Stufe 1 &ndash; Wortstellung und Adpositionstyp
+      </div>
+      <p class="lead">
+        Greenberg (1963) entdeckte: Wenn du weißt, in welcher Reihenfolge eine Sprache Subjekt, Objekt und Verb anordnet, kannst du andere Merkmale dieser Sprache vorhersagen. Teste dein Gespür in drei Runden.
+      </p>
+
+      <div class="theory-box">
+        <h3>Implikative Universalien</h3>
+        <p>Ein implikatives Universal hat die Form: <strong>Wenn Merkmal A vorhanden, dann auch Merkmal B</strong> (mit hoher Wahrscheinlichkeit). Diese Korrelationen sind kein Zufall &ndash; sie folgen dem Kopfrichtungsprinzip.</p>
+      </div>
+    </div>
+
+    <!-- Runde 1: SOV -->
+    <div id="s1r1" class="panel">
+      <div class="round-counter">Runde 1 von 3</div>
+      <div class="panel-title">Welchen Adpositionstyp hat diese Sprache?</div>
+
+      <div class="wo-display" id="wo1">
+        <div class="wo-block"><div class="wo-box subj">S</div><span class="wo-label">Subjekt</span></div>
+        <div class="wo-block"><div class="wo-box obj">O</div><span class="wo-label">Objekt</span></div>
+        <div class="wo-block"><div class="wo-box verb">V</div><span class="wo-label">Verb</span></div>
+      </div>
+      <p class="wo-example">Beispiel (Türkisch): <em>Adam elmay&#305; yedi</em> &ndash; Adam den-Apfel aß</p>
+
+      <div class="feature-cards" id="fc1"></div>
+
+      <div class="question-box" style="margin-top:1.25rem">
+        <div class="question-label">Vorhersage</div>
+        <p>Eine SOV-Sprache hat &hellip;</p>
+      </div>
+
+      <div class="choice-group">
+        <button class="option-btn" onclick="checkS1R1('post')">Postpositionen<br><span style="font-size:0.75rem;font-weight:400">z.&nbsp;B. &bdquo;Haus-in&ldquo;</span></button>
+        <button class="option-btn" onclick="checkS1R1('pre')">Pr&auml;positionen<br><span style="font-size:0.75rem;font-weight:400">z.&nbsp;B. &bdquo;in Haus&ldquo;</span></button>
+      </div>
+
+      <div id="fb-s1r1" class="feedback hidden">
+        <span class="concept-tag">Greenbergs Universal 4</span>
+        <p id="fb-s1r1-text"></p>
+      </div>
+
+      <button class="next-btn hidden" id="next-s1r1" onclick="showS1R2()">Weiter zu Runde 2 &rarr;</button>
+    </div>
+
+    <!-- Runde 2: VSO -->
+    <div id="s1r2" class="panel hidden">
+      <div class="round-counter">Runde 2 von 3</div>
+      <div class="panel-title">Welchen Adpositionstyp hat diese Sprache?</div>
+
+      <div class="wo-display" id="wo2">
+        <div class="wo-block"><div class="wo-box verb">V</div><span class="wo-label">Verb</span></div>
+        <div class="wo-block"><div class="wo-box subj">S</div><span class="wo-label">Subjekt</span></div>
+        <div class="wo-block"><div class="wo-box obj">O</div><span class="wo-label">Objekt</span></div>
+      </div>
+      <p class="wo-example">Beispiel (Walisisch): <em>Bwytaodd Dafydd yr afal</em> &ndash; Aß David den Apfel</p>
+
+      <div class="feature-cards" id="fc2"></div>
+
+      <div class="question-box" style="margin-top:1.25rem">
+        <div class="question-label">Vorhersage</div>
+        <p>Eine VSO-Sprache hat &hellip;</p>
+      </div>
+
+      <div class="choice-group">
+        <button class="option-btn" onclick="checkS1R2('post')">Postpositionen</button>
+        <button class="option-btn" onclick="checkS1R2('pre')">Pr&auml;positionen</button>
+      </div>
+
+      <div id="fb-s1r2" class="feedback hidden">
+        <span class="concept-tag">Greenbergs Universal 3</span>
+        <p id="fb-s1r2-text"></p>
+      </div>
+
+      <button class="next-btn hidden" id="next-s1r2" onclick="showS1R3()">Weiter zu Runde 3 &rarr;</button>
+    </div>
+
+    <!-- Runde 3: SVO + Relativsatz -->
+    <div id="s1r3" class="panel hidden">
+      <div class="round-counter">Runde 3 von 3</div>
+      <div class="panel-title">Wo steht der Relativsatz?</div>
+
+      <div class="wo-display" id="wo3">
+        <div class="wo-block"><div class="wo-box subj">S</div><span class="wo-label">Subjekt</span></div>
+        <div class="wo-block"><div class="wo-box verb">V</div><span class="wo-label">Verb</span></div>
+        <div class="wo-block"><div class="wo-box obj">O</div><span class="wo-label">Objekt</span></div>
+      </div>
+      <p class="wo-example">Beispiel (Englisch): <em>Adam ate the apple</em> &ndash; Adam aß den Apfel</p>
+
+      <div class="feature-cards" id="fc3"></div>
+
+      <div class="question-box" style="margin-top:1.25rem">
+        <div class="question-label">Vorhersage</div>
+        <p>In einer SVO-Sprache steht der Relativsatz typischerweise &hellip;</p>
+      </div>
+
+      <div class="choice-group">
+        <button class="option-btn" onclick="checkS1R3('before')">Vor dem Nomen<br><span style="font-size:0.75rem;font-weight:400">z.&nbsp;B. &bdquo;[der l&auml;uft] Mann&ldquo;</span></button>
+        <button class="option-btn" onclick="checkS1R3('after')">Nach dem Nomen<br><span style="font-size:0.75rem;font-weight:400">z.&nbsp;B. &bdquo;der Mann [der l&auml;uft]&ldquo;</span></button>
+      </div>
+
+      <div id="fb-s1r3" class="feedback hidden">
+        <span class="concept-tag">Greenbergs Universal 24</span>
+        <p id="fb-s1r3-text"></p>
+      </div>
+
+      <button class="next-btn hidden" id="next-s1r3" onclick="showStage2()">Zu Stufe 2: Identifikation &rarr;</button>
+    </div>
+
+  </div><!-- /stage1 -->
+
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- STUFE 2: Identifikation                  -->
+  <!-- ════════════════════════════════════════ -->
+  <div id="stage2" class="hidden">
+
+    <div class="panel">
+      <div class="panel-title">
+        <span class="step-badge" style="background:var(--purple)">2</span>
+        Stufe 2 &ndash; Welcher Wortstellungstyp steckt dahinter?
+      </div>
+      <p class="lead">
+        Jetzt umgekehrt: Du siehst die typologischen Merkmale einer unbekannten Sprache und bestimmst den Wortstellungstyp nach Greenbergs Mustern.
+      </p>
+    </div>
+
+    <!-- Runde 1: SOV (Türkisch) -->
+    <div id="s2r1" class="panel">
+      <div class="round-counter">Runde 1 von 3</div>
+      <div class="panel-title">Welcher Wortstellungstyp ist das?</div>
+
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:1.25rem">Diese Sprache zeigt folgende typologische Merkmale:</p>
+
+      <div class="feature-cards" id="fcs2r1">
+        <div class="card visible">
+          <span class="card-icon">&#8592;</span>
+          <span class="card-label">Adposition</span>
+          Postpositionen &ndash; z.&nbsp;B. <em>ev-de</em> (Haus-in)
+        </div>
+        <div class="card visible" style="animation-delay:0.1s">
+          <span class="card-icon">&#10147;</span>
+          <span class="card-label">Verbposition</span>
+          Verb steht am Ende des Satzes
+        </div>
+        <div class="card visible" style="animation-delay:0.2s">
+          <span class="card-icon">&#128196;</span>
+          <span class="card-label">Genitiv</span>
+          Genitivattribut steht <strong>vor</strong> dem Nomen
+        </div>
+      </div>
+
+      <div class="question-box">
+        <div class="question-label">Vorhersage: Wortstellungstyp</div>
+        <p>Welcher Typ passt zu diesen Merkmalen?</p>
+      </div>
+
+      <div class="choice-group">
+        <button class="option-btn" onclick="checkS2R1('sov')">SOV</button>
+        <button class="option-btn" onclick="checkS2R1('svo')">SVO</button>
+        <button class="option-btn" onclick="checkS2R1('vso')">VSO</button>
+      </div>
+
+      <div id="fb-s2r1" class="feedback hidden">
+        <span class="concept-tag">Universals 3 &amp; 4 kombiniert</span>
+        <p id="fb-s2r1-text"></p>
+      </div>
+
+      <button class="next-btn hidden" id="next-s2r1" onclick="showS2R2()">Weiter zu Runde 2 &rarr;</button>
+    </div>
+
+    <!-- Runde 2: VSO (Walisisch) -->
+    <div id="s2r2" class="panel hidden">
+      <div class="round-counter">Runde 2 von 3</div>
+      <div class="panel-title">Welcher Wortstellungstyp ist das?</div>
+
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:1.25rem">Diese Sprache zeigt folgende typologische Merkmale:</p>
+
+      <div class="feature-cards" id="fcs2r2">
+        <div class="card visible">
+          <span class="card-icon">&#8594;</span>
+          <span class="card-label">Adposition</span>
+          Pr&auml;positionen &ndash; z.&nbsp;B. <em>yn y dref</em> (in die Stadt)
+        </div>
+        <div class="card visible" style="animation-delay:0.1s">
+          <span class="card-icon">&#9650;</span>
+          <span class="card-label">Verbposition</span>
+          Verb steht <strong>an erster Stelle</strong> im Aussagesatz
+        </div>
+        <div class="card visible" style="animation-delay:0.2s">
+          <span class="card-icon">&#128196;</span>
+          <span class="card-label">Genitiv</span>
+          Genitivattribut steht <strong>nach</strong> dem Nomen
+        </div>
+      </div>
+
+      <div class="question-box">
+        <div class="question-label">Vorhersage: Wortstellungstyp</div>
+        <p>Welcher Typ passt zu diesen Merkmalen?</p>
+      </div>
+
+      <div class="choice-group">
+        <button class="option-btn" onclick="checkS2R2('sov')">SOV</button>
+        <button class="option-btn" onclick="checkS2R2('svo')">SVO</button>
+        <button class="option-btn" onclick="checkS2R2('vso')">VSO</button>
+      </div>
+
+      <div id="fb-s2r2" class="feedback hidden">
+        <span class="concept-tag">Universal 3: VSO &rarr; immer Pr&auml;positionen</span>
+        <p id="fb-s2r2-text"></p>
+      </div>
+
+      <button class="next-btn hidden" id="next-s2r2" onclick="showS2R3()">Weiter zu Runde 3 &rarr;</button>
+    </div>
+
+    <!-- Runde 3: SVO (Englisch/Swahili) -->
+    <div id="s2r3" class="panel hidden">
+      <div class="round-counter">Runde 3 von 3</div>
+      <div class="panel-title">Welcher Wortstellungstyp ist das?</div>
+
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:1.25rem">Diese Sprache zeigt folgende typologische Merkmale:</p>
+
+      <div class="feature-cards" id="fcs2r3">
+        <div class="card visible">
+          <span class="card-icon">&#8594;</span>
+          <span class="card-label">Adposition</span>
+          Pr&auml;positionen &ndash; z.&nbsp;B. <em>in the city</em>
+        </div>
+        <div class="card visible" style="animation-delay:0.1s">
+          <span class="card-icon">&#128101;</span>
+          <span class="card-label">Relativsatz</span>
+          Relativsatz steht <strong>nach</strong> dem Nomen: <em>the man who runs</em>
+        </div>
+        <div class="card visible" style="animation-delay:0.2s">
+          <span class="card-icon">&#127775;</span>
+          <span class="card-label">Adjektiv</span>
+          Adjektiv steht <strong>vor</strong> dem Nomen: <em>big house</em>
+        </div>
+      </div>
+
+      <div class="question-box">
+        <div class="question-label">Vorhersage: Wortstellungstyp</div>
+        <p>Welcher Typ passt zu diesen Merkmalen?</p>
+      </div>
+
+      <div class="choice-group">
+        <button class="option-btn" onclick="checkS2R3('sov')">SOV</button>
+        <button class="option-btn" onclick="checkS2R3('svo')">SVO</button>
+        <button class="option-btn" onclick="checkS2R3('vso')">VSO</button>
+      </div>
+
+      <div id="fb-s2r3" class="feedback hidden">
+        <span class="concept-tag">Universal 24: Relativsatz nach Nomen = Kopf-initial</span>
+        <p id="fb-s2r3-text"></p>
+      </div>
+
+      <button class="next-btn hidden" id="next-s2r3" onclick="showResult()">Ergebnis anzeigen &rarr;</button>
+    </div>
+
+  </div><!-- /stage2 -->
+
+
+  <!-- ════════════════════════════════════════ -->
+  <!-- Ergebnis                                 -->
+  <!-- ════════════════════════════════════════ -->
+  <div id="result-section" class="hidden">
+
+    <div class="result-panel">
+      <div class="score-badge" id="score-badge">6/6</div>
+      <h2>Simulation abgeschlossen!</h2>
+      <p id="result-text">Du hast alle sechs Aufgaben gemeistert.</p>
+    </div>
+
+    <div class="panel">
+      <div class="panel-title">&#128218; Zusammenfassung: Greenbergs Wortstellungskorrelationen</div>
+
+      <table class="summary-table">
+        <thead>
+          <tr>
+            <th>Typ</th>
+            <th>Adposition</th>
+            <th>Genitiv</th>
+            <th>Relativsatz</th>
+            <th>Beispiele</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>SOV</strong></td>
+            <td><span class="tag-post">Postposition</span></td>
+            <td>vor Nomen</td>
+            <td>vor Nomen</td>
+            <td>T&uuml;rkisch, Japanisch, Latein</td>
+          </tr>
+          <tr>
+            <td><strong>SVO</strong></td>
+            <td><span class="tag-pre">Pr&auml;position</span></td>
+            <td>nach Nomen</td>
+            <td>nach Nomen</td>
+            <td>Englisch, Franz&ouml;sisch, Swahili</td>
+          </tr>
+          <tr>
+            <td><strong>VSO</strong></td>
+            <td><span class="tag-pre">Pr&auml;position</span></td>
+            <td>nach Nomen</td>
+            <td>nach Nomen</td>
+            <td>Arabisch, Walisisch, Irisch</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="theory-box mt-2">
+        <h3>Das Kopfrichtungsprinzip</h3>
+        <p>SOV-Sprachen sind <strong>kopf-final</strong>: Der Kopf jeder Phrase steht am Ende (Verb nach Objekt, Postposition nach Nomen). SVO- und VSO-Sprachen sind <strong>kopf-initial</strong>: Der Kopf steht am Anfang (Verb vor Objekt, Pr&auml;position vor Nomen). Dieses Prinzip erkl&auml;rt, warum die Merkmale korrelieren &ndash; es sind keine Zuf&auml;lle, sondern systematische Folgen der Kopfrichtung.</p>
+      </div>
+
+      <div class="theory-box mt-1" style="border-color:var(--amber); background:#fffbea;">
+        <h3 style="color:var(--amber)">H&auml;ufiges Missverst&auml;ndnis</h3>
+        <p>Viele glauben, Sprachmerkmale seien zuf&auml;llig verteilt und jede Sprache sei komplett einzigartig. Greenberg zeigte: Typologische Merkmale <strong>korrelieren</strong> hochsignifikant. Wer den Wortstellungstyp kennt, kann andere Merkmale mit hoher Treffsicherheit vorhersagen &ndash; obwohl Ausnahmen existieren (Sprachtypologie beschreibt Tendenzen, keine eisernen Gesetze).</p>
+      </div>
+
+      <div class="theory-box mt-1" style="border-color:var(--purple); background:#f7f0ff;">
+        <h3 style="color:var(--purple)">Und Deutsch?</h3>
+        <p>Deutsch ist ein Sonderfall: Im Hauptsatz steht das finite Verb auf Position 2 (V2-Sprache), im Nebensatz jedoch am Ende &ndash; z.&nbsp;B. <em>&bdquo;weil Adam den Apfel <strong>aß</strong>&ldquo;</em>. Sprachwissenschaftler klassifizieren Deutsch daher als <strong>SOV mit V2-Merkmal</strong>. Konsequent dazu hat Deutsch zwar &uuml;berwiegend Pr&auml;positionen, aber auch Postpositionen (<em>meiner Meinung <strong>nach</strong></em>) &ndash; beides passt zur Zwischenstellung.</p>
+      </div>
+
+      <button class="next-btn mt-2" onclick="restartSim()">Simulation wiederholen</button>
+    </div>
+
+  </div><!-- /result-section -->
+
+</main>
+
+<script>
+  /* ── State ── */
+  var score = 0;
+  var s1r1done = false, s1r2done = false, s1r3done = false;
+  var s2r1done = false, s2r2done = false, s2r3done = false;
+
+  /* ── Karten-Reveal-Helper ── */
+  function revealCards(containerId, cards) {
+    var el = document.getElementById(containerId);
+    el.innerHTML = '';
+    cards.forEach(function(c, i) {
+      var div = document.createElement('div');
+      div.className = 'card';
+      div.innerHTML = '<span class="card-icon">' + c.icon + '</span>'
+        + '<span class="card-label">' + c.label + '</span>'
+        + c.text;
+      el.appendChild(div);
+      setTimeout(function() { div.classList.add('visible'); }, i * 120);
+    });
+  }
+
+  /* ── Stage 1, Runde 1: SOV → Postposition ── */
+  function checkS1R1(answer) {
+    if (s1r1done) return;
+    s1r1done = true;
+    var correct = (answer === 'post');
+    highlightButtons('s1r1', answer, 'post');
+    var fb = document.getElementById('fb-s1r1');
+    var txt = document.getElementById('fb-s1r1-text');
+    fb.classList.remove('hidden', 'wrong-fb');
+    if (correct) {
+      score++;
+      txt.innerHTML = '<strong>Richtig!</strong> Greenbergs Universal 4 besagt: SOV-Sprachen haben mit '
+        + 'überwältigender Häufigkeit <strong>Postpositionen</strong>. '
+        + 'Im Türkischen steht die Adposition als Suffix am Ende der Nominalphrase: '
+        + '<em>ev-de</em> (Haus-in = im Haus), <em>okul-dan</em> (Schule-von = von der Schule). '
+        + 'Das folgt dem kopf-finalen Prinzip der SOV-Sprachen.';
+    } else {
+      fb.classList.add('wrong-fb');
+      txt.innerHTML = '<strong>Fast!</strong> SOV-Sprachen haben überwiegend <strong>Postpositionen</strong> '
+        + '(Greenbergs Universal 4). Das Türkische zeigt dies klar: <em>ev-de</em> (im Haus), '
+        + '<em>ev-den</em> (vom Haus). Das Suffix folgt dem Nomen &ndash; typisch kopf-final.';
+    }
+    revealCards('fc1', [
+      { icon: '&#8592;', label: 'Kopfrichtung', text: 'Kopf-final: Verb, Postposition, Genitiv stehen am Ende' },
+      { icon: '&#10003;', label: 'SOV-Sprachen', text: '~45&nbsp;% aller Sprachen: Türkisch, Japanisch, Latein, Persisch' }
+    ]);
+    document.getElementById('next-s1r1').classList.remove('hidden');
+  }
+
+  function showS1R2() {
+    document.getElementById('s1r1').classList.add('hidden');
+    document.getElementById('s1r2').classList.remove('hidden');
+  }
+
+  /* ── Stage 1, Runde 2: VSO → Präposition ── */
+  function checkS1R2(answer) {
+    if (s1r2done) return;
+    s1r2done = true;
+    var correct = (answer === 'pre');
+    highlightButtons('s1r2', answer, 'pre');
+    var fb = document.getElementById('fb-s1r2');
+    var txt = document.getElementById('fb-s1r2-text');
+    fb.classList.remove('hidden', 'wrong-fb');
+    if (correct) {
+      score++;
+      txt.innerHTML = '<strong>Exzellent!</strong> Greenbergs Universal 3 ist eines der stärksten Universalien: '
+        + 'VSO-Sprachen haben <strong>immer</strong> Präpositionen &ndash; ausnahmslos. '
+        + 'Im Arabischen: <em>fī l-bayt</em> (in dem Haus), im Walisischen: <em>yn y dref</em> (in der Stadt). '
+        + 'Die Präposition steht stets vor der Nominalphrase.';
+    } else {
+      fb.classList.add('wrong-fb');
+      txt.innerHTML = '<strong>Nicht ganz!</strong> VSO-Sprachen haben laut Greenbergs Universal 3 '
+        + '<strong>immer Präpositionen</strong> &ndash; keine Ausnahmen bekannt. '
+        + 'Arabisch: <em>fī l-bayt</em> (in dem Haus). '
+        + 'Das Verb steht zwar zuerst, aber Adpositionen stehen vor &ndash; nicht nach &ndash; dem Nomen.';
+    }
+    revealCards('fc2', [
+      { icon: '&#9651;', label: 'Verbstellung', text: 'Verb steht immer an Position 1 im Aussagesatz' },
+      { icon: '&#10003;', label: 'VSO-Sprachen', text: 'Arabisch, Walisisch, Irisch, Hawaiianisch' }
+    ]);
+    document.getElementById('next-s1r2').classList.remove('hidden');
+  }
+
+  function showS1R3() {
+    document.getElementById('s1r2').classList.add('hidden');
+    document.getElementById('s1r3').classList.remove('hidden');
+  }
+
+  /* ── Stage 1, Runde 3: SVO → Relativsatz nach Nomen ── */
+  function checkS1R3(answer) {
+    if (s1r3done) return;
+    s1r3done = true;
+    var correct = (answer === 'after');
+    /* button highlighting follows inline below */
+    var btns = document.querySelectorAll('#s1r3 .option-btn');
+    btns.forEach(function(btn) {
+      var val = btn.textContent.includes('Vor') ? 'before' : 'after';
+      if (val === 'after') { btn.classList.add(correct ? 'correct' : 'reveal'); }
+      else if (val === answer && !correct) { btn.classList.add('wrong'); }
+      btn.disabled = true;
+    });
+    var fb = document.getElementById('fb-s1r3');
+    var txt = document.getElementById('fb-s1r3-text');
+    fb.classList.remove('hidden', 'wrong-fb');
+    if (correct) {
+      score++;
+      txt.innerHTML = '<strong>Genau!</strong> In SVO-Sprachen (kopf-initial) steht der Relativsatz '
+        + '<strong>nach dem Nomen</strong> (Greenbergs Universal 24). '
+        + 'Englisch: <em>the man [who runs]</em>, Deutsch: <em>der Mann, [der läuft]</em>. '
+        + 'Das Nomen (Kopf der Nominalphrase) geht dem Relativsatz voran.';
+    } else {
+      fb.classList.add('wrong-fb');
+      txt.innerHTML = '<strong>Nicht ganz!</strong> In SVO-Sprachen steht der Relativsatz '
+        + '<strong>nach dem Nomen</strong>. '
+        + 'Englisch: <em>the man [who runs]</em>, Deutsch: <em>der Mann, [der läuft]</em>. '
+        + 'In SOV-Sprachen wie Japanisch steht er davor: <em>[走る] 男</em> ([der läuft] Mann).';
+    }
+    revealCards('fc3', [
+      { icon: '&#8594;', label: 'Kopfrichtung', text: 'Kopf-initial: Verb, Präposition, Relativsatz stehen vorne/nach dem Kopf' },
+      { icon: '&#10003;', label: 'SVO-Sprachen', text: '~35&nbsp;% aller Sprachen: Englisch, Französisch, Swahili, Mandarin' }
+    ]);
+    document.getElementById('next-s1r3').classList.remove('hidden');
+  }
+
+  /* ── Übergang zu Stufe 2 ── */
+  function showStage2() {
+    document.getElementById('stage1').classList.add('hidden');
+    document.getElementById('stage2').classList.remove('hidden');
+    document.getElementById('pbar1').classList.remove('active');
+    document.getElementById('pbar1').classList.add('done');
+    document.getElementById('pbar2').classList.add('active');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  /* ── Stage 2, Runde 1: SOV (Türkisch) ── */
+  function checkS2R1(answer) {
+    if (s2r1done) return;
+    s2r1done = true;
+    var correct = (answer === 'sov');
+    highlightS2Buttons('s2r1', answer, 'sov');
+    var fb = document.getElementById('fb-s2r1');
+    var txt = document.getElementById('fb-s2r1-text');
+    fb.classList.remove('hidden', 'wrong-fb');
+    if (correct) {
+      score++;
+      txt.innerHTML = '<strong>Richtig: SOV!</strong> Postpositionen + Verb-Ende + Genitiv vor Nomen &ndash; '
+        + 'das ist das klassische SOV-Muster (Universals 3 und 4). '
+        + 'Diese Sprache ist <strong>Türkisch</strong>: <em>Adam elmay&#305; yedi</em> (Adam den-Apfel aß). '
+        + 'Weitere SOV-Sprachen: Japanisch, Koreanisch, Persisch, Latein.';
+    } else {
+      fb.classList.add('wrong-fb');
+      txt.innerHTML = '<strong>Nicht ganz!</strong> Die Merkmale passen zu <strong>SOV</strong>: '
+        + 'Postpositionen (Universal 4) + Verb-Ende + Genitiv vor Nomen. '
+        + 'Diese Sprache ist Türkisch: <em>Adam elmay&#305; yedi</em> (Adam den-Apfel aß).';
+    }
+    document.getElementById('next-s2r1').classList.remove('hidden');
+  }
+
+  function showS2R2() {
+    document.getElementById('s2r1').classList.add('hidden');
+    document.getElementById('s2r2').classList.remove('hidden');
+  }
+
+  /* ── Stage 2, Runde 2: VSO (Walisisch) ── */
+  function checkS2R2(answer) {
+    if (s2r2done) return;
+    s2r2done = true;
+    var correct = (answer === 'vso');
+    highlightS2Buttons('s2r2', answer, 'vso');
+    var fb = document.getElementById('fb-s2r2');
+    var txt = document.getElementById('fb-s2r2-text');
+    fb.classList.remove('hidden', 'wrong-fb');
+    if (correct) {
+      score++;
+      txt.innerHTML = '<strong>Korrekt: VSO!</strong> Verb an erster Stelle + Präpositionen (Universal 3) '
+        + '+ Genitiv nach Nomen &ndash; das ist das VSO-Profil. '
+        + 'Diese Sprache ist <strong>Walisisch</strong>: <em>Bwytaodd Dafydd yr afal</em> (Aß David den Apfel). '
+        + 'Universal 3 gilt für VSO ausnahmslos: immer Präpositionen.';
+    } else {
+      fb.classList.add('wrong-fb');
+      txt.innerHTML = '<strong>Nicht ganz!</strong> Verb-zuerst + Präpositionen (Universal 3, ausnahmslos!) '
+        + '+ Genitiv nach Nomen zeigt <strong>VSO</strong>. '
+        + 'Diese Sprache ist Walisisch: <em>Bwytaodd Dafydd yr afal</em>.';
+    }
+    document.getElementById('next-s2r2').classList.remove('hidden');
+  }
+
+  function showS2R3() {
+    document.getElementById('s2r2').classList.add('hidden');
+    document.getElementById('s2r3').classList.remove('hidden');
+  }
+
+  /* ── Stage 2, Runde 3: SVO (Englisch) ── */
+  function checkS2R3(answer) {
+    if (s2r3done) return;
+    s2r3done = true;
+    var correct = (answer === 'svo');
+    highlightS2Buttons('s2r3', answer, 'svo');
+    var fb = document.getElementById('fb-s2r3');
+    var txt = document.getElementById('fb-s2r3-text');
+    fb.classList.remove('hidden', 'wrong-fb');
+    if (correct) {
+      score++;
+      txt.innerHTML = '<strong>Perfekt: SVO!</strong> Präpositionen + Relativsatz nach Nomen (Universal 24) '
+        + '+ Adjektiv vor Nomen &ndash; das ist das SVO-Profil. '
+        + 'Diese Sprache ist <strong>Englisch</strong> (auch Swahili, Mandarin). '
+        + '<em>Adam ate the apple</em> &ndash; das Verb steht zwischen Subjekt und Objekt.';
+    } else {
+      fb.classList.add('wrong-fb');
+      txt.innerHTML = '<strong>Nicht ganz!</strong> Präpositionen + Relativsatz nach Nomen (Universal 24) '
+        + 'zeigen <strong>SVO</strong>. '
+        + 'Diese Sprache ist Englisch: <em>Adam ate the apple</em>.';
+    }
+    document.getElementById('next-s2r3').classList.remove('hidden');
+  }
+
+  /* ── Ergebnis ── */
+  function showResult() {
+    document.getElementById('stage2').classList.add('hidden');
+    document.getElementById('result-section').classList.remove('hidden');
+    document.getElementById('pbar2').classList.remove('active');
+    document.getElementById('pbar2').classList.add('done');
+    document.getElementById('score-badge').textContent = score + '/6';
+    var txt = '';
+    if (score === 6) {
+      txt = 'Hervorragend! Du hast alle sechs Vorhersagen richtig getroffen. Greenbergs Universalien sitzen.';
+    } else if (score >= 4) {
+      txt = 'Gut gemacht! ' + score + ' von 6 richtig. Lies das Feedback zu den Fehlern noch einmal durch.';
+    } else {
+      txt = score + ' von 6 richtig. Übe die Korrelationen noch einmal mit der Zusammenfassung unten.';
+    }
+    document.getElementById('result-text').textContent = txt;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.dataLayer.push({ event: 'simulation_complete', topic: 'sprachuniversalien', score: score });
+  }
+
+  /* ── Button-Highlight-Helpers ── */
+  function highlightButtons(panelId, chosen, correct) {
+    var btns = document.querySelectorAll('#' + panelId + ' .option-btn');
+    btns.forEach(function(btn) {
+      var val = btn.getAttribute('data-val');
+      if (!val) {
+        /* derive from onclick */
+        var m = btn.getAttribute('onclick').match(/'([^']+)'/);
+        val = m ? m[1] : '';
+      }
+      if (val === correct) { btn.classList.add('correct'); }
+      else if (val === chosen) { btn.classList.add('wrong'); }
+      btn.disabled = true;
+    });
+  }
+
+  function highlightS2Buttons(panelId, chosen, correct) {
+    var typeMap = { 'sov': 'SOV', 'svo': 'SVO', 'vso': 'VSO' };
+    var btns = document.querySelectorAll('#' + panelId + ' .option-btn');
+    btns.forEach(function(btn) {
+      var m = btn.getAttribute('onclick').match(/'([^']+)'/);
+      var val = m ? m[1] : '';
+      if (val === correct) { btn.classList.add(chosen === correct ? 'correct' : 'reveal'); }
+      else if (val === chosen) { btn.classList.add('wrong'); }
+      btn.disabled = true;
+    });
+  }
+
+  /* ── Neustart ── */
+  function restartSim() {
+    score = 0;
+    s1r1done = s1r2done = s1r3done = false;
+    s2r1done = s2r2done = s2r3done = false;
+    ['s1r1','s1r2','s1r3'].forEach(function(id) {
+      var p = document.getElementById(id);
+      p.querySelectorAll('.option-btn').forEach(function(b) {
+        b.className = 'option-btn'; b.disabled = false;
+      });
+      p.querySelectorAll('.feedback').forEach(function(f) { f.classList.add('hidden'); });
+      p.querySelectorAll('.next-btn').forEach(function(n) { n.classList.add('hidden'); });
+      var fc = p.querySelector('.feature-cards');
+      if (fc) fc.innerHTML = '';
+    });
+    ['s2r1','s2r2','s2r3'].forEach(function(id) {
+      var p = document.getElementById(id);
+      p.querySelectorAll('.option-btn').forEach(function(b) {
+        b.className = 'option-btn'; b.disabled = false;
+      });
+      p.querySelectorAll('.feedback').forEach(function(f) { f.classList.add('hidden'); });
+      p.querySelectorAll('.next-btn').forEach(function(n) { n.classList.add('hidden'); });
+    });
+    document.getElementById('s1r1').classList.remove('hidden');
+    document.getElementById('s1r2').classList.add('hidden');
+    document.getElementById('s1r3').classList.add('hidden');
+    document.getElementById('s2r1').classList.remove('hidden');
+    document.getElementById('s2r2').classList.add('hidden');
+    document.getElementById('s2r3').classList.add('hidden');
+    document.getElementById('result-section').classList.add('hidden');
+    document.getElementById('stage2').classList.add('hidden');
+    document.getElementById('stage1').classList.remove('hidden');
+    document.getElementById('pbar1').className = 'progress-step active';
+    document.getElementById('pbar2').className = 'progress-step';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Zipf'sches Gesetz: Wie viele Wörter musst du lernen? | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zum Zipf'schen Gesetz: Sag voraus, sieh die Wortfrequenz-Kurve animiert und entdecke, warum 3.000 Wörter für 90 % Textverständnis reichen.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Zipf'sches Gesetz, Wortschatz lernen, Sprachen lernen, Vokabeln priorisieren, Wortfrequenz, Grundwortschatz">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/zipf-gesetz-wortschatz-simulation.html">
+  <meta property="og:title" content="Zipf'sches Gesetz: Wie viele Wörter musst du lernen?">
+  <meta property="og:description" content="Interaktive Simulation zum Zipf'schen Gesetz: Sag voraus, sieh die Wortfrequenz-Kurve animiert und entdecke, warum 3.000 Wörter für 90 % Textverständnis reichen.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/zipf-gesetz-wortschatz-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Zipf'sches Gesetz: Wie viele Wörter musst du lernen?",
+  "description":"Interaktive Simulation zum Zipf'schen Gesetz: Sag voraus, sieh die Wortfrequenz-Kurve animiert und entdecke, warum 3.000 Wörter für 90 % Textverständnis reichen.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/zipf-gesetz-wortschatz-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    :root {
+      --blau:        #1d4ed8;
+      --blau-light:  #dbeafe;
+      --blau-mid:    #3b82f6;
+      --gruen:       #16a34a;
+      --gruen-light: #dcfce7;
+      --rot:         #dc2626;
+      --rot-light:   #fee2e2;
+      --lila:        #7c3aed;
+      --amber:       #d97706;
+      --gray-50:     #f9fafb;
+      --gray-100:    #f3f4f6;
+      --gray-200:    #e5e7eb;
+      --gray-300:    #d1d5db;
+      --gray-400:    #9ca3af;
+      --gray-500:    #6b7280;
+      --gray-600:    #4b5563;
+      --gray-700:    #374151;
+      --gray-800:    #1f2937;
+      --radius:      10px;
+      --shadow:      0 2px 10px rgba(0,0,0,0.07);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--gray-50);
+      color: var(--gray-800);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* ---- Site Header ---- */
+    .site-header {
+      background: #fff;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--blau);
+      text-decoration: none;
+    }
+    .breadcrumb {
+      font-size: 0.8rem;
+      color: var(--gray-400);
+    }
+    .breadcrumb a { color: var(--gray-600); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    /* ---- Page Layout ---- */
+    .page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    /* ---- Page Header ---- */
+    .page-header { margin-bottom: 2rem; }
+    .badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      background: var(--blau-light);
+      color: var(--blau);
+      border-radius: 99px;
+      padding: 0.2rem 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+    .page-header h1 {
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: 800;
+      color: var(--gray-800);
+      line-height: 1.2;
+      margin-bottom: 0.75rem;
+    }
+    .page-header p {
+      font-size: 0.97rem;
+      color: var(--gray-600);
+      max-width: 600px;
+    }
+
+    /* ---- Progress Dots ---- */
+    .progress-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.35rem;
+      margin-bottom: 2rem;
+    }
+    .prog-step { display: flex; flex-direction: column; align-items: center; gap: 0.25rem; }
+    .prog-dot {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid var(--gray-300);
+      background: #fff;
+      color: var(--gray-400);
+      font-size: 0.8rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    .prog-dot.active { border-color: var(--blau); background: var(--blau); color: #fff; }
+    .prog-dot.done   { border-color: var(--gruen); background: var(--gruen); color: #fff; }
+    .prog-label { font-size: 0.68rem; color: var(--gray-500); text-align: center; white-space: nowrap; }
+    .prog-line {
+      flex: 1;
+      height: 2px;
+      background: var(--gray-200);
+      border-radius: 99px;
+      margin-top: 14px;
+      max-width: 70px;
+      transition: background 0.4s;
+    }
+    .prog-line.done { background: var(--gruen); }
+
+    /* ---- Card ---- */
+    .card {
+      background: #fff;
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-200);
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .card-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--gray-400);
+      margin-bottom: 1rem;
+    }
+
+    /* ---- Scenario Box ---- */
+    .scenario {
+      background: var(--blau-light);
+      border-left: 4px solid var(--blau-mid);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.93rem;
+      color: var(--gray-700);
+      line-height: 1.65;
+    }
+    .scenario strong { color: var(--blau); }
+
+    /* ---- Word Chips ---- */
+    .chips { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-top: 0.6rem; }
+    .chip {
+      display: inline-block;
+      background: #fff;
+      border: 1px solid var(--blau-mid);
+      border-radius: 5px;
+      padding: 0.15rem 0.5rem;
+      font-size: 0.8rem;
+      color: var(--blau);
+      font-weight: 600;
+    }
+    .chip.gray {
+      border-color: var(--gray-200);
+      color: var(--gray-500);
+      font-weight: 400;
+    }
+
+    /* ---- Question text ---- */
+    .question-text {
+      font-size: 0.95rem;
+      color: var(--gray-700);
+      margin-bottom: 1.25rem;
+      font-weight: 500;
+    }
+
+    /* ---- Options ---- */
+    .options { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem; }
+    .option-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      width: 100%;
+      background: #fff;
+      border: 2px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 0.85rem 1.1rem;
+      font-size: 0.93rem;
+      font-family: inherit;
+      color: var(--gray-700);
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blau-mid);
+      background: var(--blau-light);
+    }
+    .option-btn.correct { border-color: var(--gruen); background: var(--gruen-light); }
+    .option-btn.wrong   { border-color: var(--rot); background: var(--rot-light); }
+    .option-btn:disabled { cursor: default; }
+
+    .option-key {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--gray-100);
+      color: var(--gray-500);
+      font-size: 0.75rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: background 0.15s, color 0.15s;
+    }
+    .option-btn.correct .option-key { background: var(--gruen); color: #fff; }
+    .option-btn.wrong   .option-key { background: var(--rot);   color: #fff; }
+
+    /* ---- Feedback ---- */
+    .feedback {
+      border-radius: var(--radius);
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.91rem;
+      line-height: 1.65;
+      display: none;
+    }
+    .feedback.correct { background: var(--gruen-light); border: 1px solid #86efac; color: #14532d; }
+    .feedback.wrong   { background: var(--rot-light);   border: 1px solid #fca5a5; color: #7f1d1d; }
+    .concept-tag {
+      display: inline-block;
+      background: rgba(255,255,255,0.7);
+      border: 1px solid currentColor;
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      font-size: 0.73rem;
+      font-weight: 700;
+      opacity: 0.8;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ---- Buttons ---- */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-radius: var(--radius);
+      padding: 0.8rem 1.5rem;
+      font-size: 0.93rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s;
+      border: none;
+    }
+    .btn-primary { background: var(--blau); color: #fff; }
+    .btn-primary:hover { background: #1e40af; }
+
+    /* ---- Canvas ---- */
+    .canvas-wrap {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    canvas { display: block; width: 100%; height: auto; }
+    .canvas-caption {
+      font-size: 0.78rem;
+      color: var(--gray-500);
+      margin-top: 0.4rem;
+      text-align: center;
+    }
+
+    /* ---- Coverage Bars ---- */
+    .cov-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+    @media (max-width: 460px) { .cov-grid { grid-template-columns: 1fr; } }
+
+    .cov-item {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 0.9rem 1rem;
+    }
+    .cov-item .cov-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.4rem;
+    }
+    .cov-n    { font-size: 0.78rem; font-weight: 700; color: var(--gray-600); }
+    .cov-pct  { font-size: 1.05rem; font-weight: 800; color: var(--gray-800); }
+    .cov-sub  { font-size: 0.74rem; color: var(--gray-400); margin-top: 0.25rem; }
+    .bar-track {
+      height: 7px;
+      background: var(--gray-200);
+      border-radius: 99px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      width: 0;
+      transition: width 1.1s ease;
+    }
+
+    /* ---- Tips ---- */
+    .tips-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (max-width: 460px) { .tips-grid { grid-template-columns: 1fr; } }
+
+    .tip-card {
+      background: #fff;
+      border: 1px solid var(--gray-200);
+      border-radius: var(--radius);
+      padding: 1rem 1.1rem;
+      font-size: 0.87rem;
+      color: var(--gray-700);
+      line-height: 1.55;
+    }
+    .tip-icon { font-size: 1.25rem; display: block; margin-bottom: 0.4rem; }
+
+    /* ---- Summary Box ---- */
+    .summary-box {
+      background: var(--blau-light);
+      border-radius: var(--radius);
+      padding: 1.25rem 1.4rem;
+      font-size: 0.9rem;
+      color: var(--gray-700);
+      line-height: 1.65;
+      margin-top: 1.5rem;
+    }
+    .summary-box strong { color: var(--blau); }
+
+    /* ---- Section visibility ---- */
+    .section { display: none; }
+    .section.visible { display: block; }
+
+    /* ---- Divider ---- */
+    .divider { height: 1px; background: var(--gray-200); margin: 1.75rem 0; }
+
+    /* ---- Section heading ---- */
+    .section-h { font-size: 1rem; font-weight: 700; color: var(--gray-700); margin-bottom: 1rem; }
+  </style>
+</head>
+<body>
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header class="site-header">
+  <a href="/" class="site-logo">Nachhilfe Mentor</a>
+  <span class="breadcrumb">
+    / <a href="/lernmaterialien/">Lernmaterialien</a>
+    / <a href="/lernmaterialien/lernsimulationen/">Simulationen</a>
+    / Zipf'sches Gesetz
+  </span>
+</header>
+
+<main class="page">
+
+  <div class="page-header">
+    <span class="badge">Simulation · Sprachen lernen</span>
+    <h1>Wie viele Wörter brauche ich wirklich?</h1>
+    <p>
+      Entdecke das <strong>Zipf'sche Gesetz</strong>: Warum schon die häufigsten 3.000 Wörter
+      für 90 % Textverständnis reichen – und wie du Vokabeln sinnvoll priorisierst.
+    </p>
+  </div>
+
+  <!-- Fortschritt -->
+  <div class="progress-row" role="progressbar" aria-label="Fortschritt der Simulation">
+    <div class="prog-step">
+      <div class="prog-dot active" id="dot1">1</div>
+      <div class="prog-label">Vorhersage</div>
+    </div>
+    <div class="prog-line" id="line1"></div>
+    <div class="prog-step">
+      <div class="prog-dot" id="dot2">2</div>
+      <div class="prog-label">Kurve</div>
+    </div>
+    <div class="prog-line" id="line2"></div>
+    <div class="prog-step">
+      <div class="prog-dot" id="dot3">3</div>
+      <div class="prog-label">Prüfen</div>
+    </div>
+  </div>
+
+  <!-- ========== STUFE 1: Vorhersage ========== -->
+  <div id="stage1" class="section visible">
+    <div class="card">
+      <div class="card-title">Stufe 1 von 2 – Vorhersage</div>
+
+      <div class="scenario">
+        <strong>Szenario:</strong> Du lernst die <strong>100 häufigsten deutschen Wörter</strong> auswendig –
+        zum Beispiel:
+        <div class="chips">
+          <span class="chip">die</span>
+          <span class="chip">der</span>
+          <span class="chip">und</span>
+          <span class="chip">in</span>
+          <span class="chip">den</span>
+          <span class="chip">von</span>
+          <span class="chip">zu</span>
+          <span class="chip">das</span>
+          <span class="chip">mit</span>
+          <span class="chip">sich</span>
+          <span class="chip gray">ist</span>
+          <span class="chip gray">er</span>
+          <span class="chip gray">auf</span>
+          <span class="chip gray">…</span>
+        </div>
+      </div>
+
+      <p class="question-text">
+        Wie viel Prozent eines typischen deutschen Zeitungsartikels verstehst du dann
+        (gemessen an der Anzahl der Wörter, die du kennst)?
+      </p>
+
+      <div class="options" id="opts1">
+        <button class="option-btn" data-v="10"    onclick="answer1(this)"><span class="option-key">A</span>Etwa 10 % – kaum etwas</button>
+        <button class="option-btn" data-v="30"    onclick="answer1(this)"><span class="option-key">B</span>Etwa 30 % – weniger als ein Drittel</button>
+        <button class="option-btn" data-v="50"    onclick="answer1(this)"><span class="option-key">C</span>Etwa 50 % – die Hälfte aller Wörter im Text</button>
+        <button class="option-btn" data-v="70"    onclick="answer1(this)"><span class="option-key">D</span>Etwa 70 % – mehr als zwei Drittel</button>
+      </div>
+
+      <div id="fb1" class="feedback"></div>
+
+      <button id="btn12" class="btn btn-primary" onclick="goStage2()" style="display:none;">
+        Zipf-Kurve ansehen &#8594;
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== STUFE 2: Kurve ========== -->
+  <div id="stage2" class="section">
+    <div class="card">
+      <div class="card-title">Das Zipf'sche Gesetz – Wortfrequenz-Visualisierung</div>
+
+      <p style="font-size:0.92rem;color:var(--gray-600);margin-bottom:1.25rem;">
+        Das Häufigste Wort kommt doppelt so oft vor wie das zweithäufigste, dreimal so
+        oft wie das dritthäufigste – und so weiter. Die Kurve fällt extrem steil ab.
+        Klicke auf „Kurve animieren", um das Muster zu sehen.
+      </p>
+
+      <div class="canvas-wrap">
+        <canvas id="canvas" width="700" height="340"
+                aria-label="Zipf-Kurve: Wortfrequenz nach Rang mit Abdeckungsmarkierungen"></canvas>
+      </div>
+      <p class="canvas-caption">
+        X-Achse: Wortrang (logarithmisch) · Y-Achse: relative Häufigkeit (logarithmisch) ·
+        Farbige Marker: kumulative Abdeckungsprozente
+      </p>
+
+      <div style="margin: 1.5rem 0 1rem;">
+        <div class="section-h">Kumulative Textabdeckung</div>
+        <div class="cov-grid" id="covGrid">
+          <div class="cov-item">
+            <div class="cov-top">
+              <span class="cov-n">Top 100 Wörter</span>
+              <span class="cov-pct">~50 %</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" id="b100" style="background:#3b82f6;"></div></div>
+            <div class="cov-sub">die, der, und, in, von, zu …</div>
+          </div>
+          <div class="cov-item">
+            <div class="cov-top">
+              <span class="cov-n">Top 500 Wörter</span>
+              <span class="cov-pct">~65 %</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" id="b500" style="background:#8b5cf6;"></div></div>
+            <div class="cov-sub">Grundwortschatz A1–A2</div>
+          </div>
+          <div class="cov-item">
+            <div class="cov-top">
+              <span class="cov-n">Top 1.000 Wörter</span>
+              <span class="cov-pct">~78 %</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" id="b1000" style="background:#d97706;"></div></div>
+            <div class="cov-sub">Grundwortschatz B1</div>
+          </div>
+          <div class="cov-item">
+            <div class="cov-top">
+              <span class="cov-n">Top 3.000 Wörter</span>
+              <span class="cov-pct">~90 %</span>
+            </div>
+            <div class="bar-track"><div class="bar-fill" id="b3000" style="background:#16a34a;"></div></div>
+            <div class="cov-sub">Alltägliches Textverständnis</div>
+          </div>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" onclick="goStage3()">
+        Aufgabe: Anwenden &#8594;
+      </button>
+    </div>
+  </div>
+
+  <!-- ========== STUFE 3: Prüfen ========== -->
+  <div id="stage3" class="section">
+    <div class="card">
+      <div class="card-title">Stufe 2 von 2 – Anwenden</div>
+
+      <div class="scenario">
+        <strong>Aufgabe:</strong> Du möchtest einen deutschen Zeitungsartikel lesen und
+        dabei <strong>mindestens 90 % der vorkommenden Wörter</strong> kennen.
+        Wie viele der häufigsten deutschen Wörter (Lemmata) musst du dafür ungefähr kennen?
+      </div>
+
+      <div class="options" id="opts3">
+        <button class="option-btn" data-v="500"   onclick="answer3(this)"><span class="option-key">A</span>500 Wörter</button>
+        <button class="option-btn" data-v="1000"  onclick="answer3(this)"><span class="option-key">B</span>1.000 Wörter</button>
+        <button class="option-btn" data-v="3000"  onclick="answer3(this)"><span class="option-key">C</span>3.000 Wörter</button>
+        <button class="option-btn" data-v="10000" onclick="answer3(this)"><span class="option-key">D</span>10.000 Wörter</button>
+      </div>
+
+      <div id="fb3" class="feedback"></div>
+
+      <button id="btnTips" class="btn btn-primary" onclick="showTips()" style="display:none;">
+        Lernstrategie-Tipps ansehen &#8594;
+      </button>
+    </div>
+
+    <!-- Tipps (nach der Aufgabe) -->
+    <div id="tipsSection" class="section">
+      <div class="divider"></div>
+      <div class="section-h">Was bedeutet das für dein Sprachenlernen?</div>
+      <div class="tips-grid">
+        <div class="tip-card">
+          <span class="tip-icon">&#127919;</span>
+          <strong>Priorisiere Top 500 zuerst.</strong>
+          Der Lerngewinn pro Wort ist bei den häufigsten Wörtern am größten.
+          Schon Top-500 erreichen ~65 % Abdeckung.
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">&#128203;</span>
+          <strong>Nutze Häufigkeitslisten.</strong>
+          A1/A2-Wortlisten des Goethe-Instituts und SUBTLEX-Frequenzlisten
+          basieren auf realen Textkorpora – kein Raten nötig.
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">&#128196;</span>
+          <strong>Spaced Repetition nutzen.</strong>
+          Apps wie Anki oder Quizlet wiederholen Wörter genau dann, wenn du
+          sie fast vergessen hast – maximale Langzeitwirkung.
+        </div>
+        <div class="tip-card">
+          <span class="tip-icon">&#128200;</span>
+          <strong>Grenznutzen beachten.</strong>
+          Von 3.000 auf 10.000 Wörter steigt die Abdeckung nur noch
+          von 90 % auf ~98 %. Die ersten 3.000 Wörter sind die rentabelste Investition.
+        </div>
+      </div>
+
+      <div class="summary-box">
+        <strong>Das Zipf'sche Gesetz (Zipf, 1949):</strong> In jeder natürlichen Sprache
+        gilt f(r) = C&#8239;/&#8239;r – die Häufigkeit des r-ten häufigsten Wortes ist proportional
+        zu 1/r. Das häufigste Wort kommt doppelt so oft vor wie das zweithäufigste,
+        dreimal so oft wie das dritthäufigste. Diese extreme Ungleichverteilung macht
+        es möglich, mit einem vergleichsweise kleinen Wortschatz schon große Teile
+        jedes Textes zu verstehen.
+        <br><br>
+        <em>Quellen: Zipf (1949); Nation (2001) „Learning Vocabulary in Another Language";
+        SUBTLEX-DE (Brysbaert et al.).</em>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  "use strict";
+
+  // ── State ──────────────────────────────────────────────────────────────────
+  let s1done = false;
+  let s3done = false;
+  let rafId  = null;
+
+  // ── Tracking ────────────────────────────────────────────────────────────────
+  function track(ev, data) {
+    if (window.dataLayer) window.dataLayer.push(Object.assign({ event: ev }, data));
+  }
+  track('sim_zipf_start', { 'data-asset-type': 'simulation', 'data-topic-cluster': 'sprachen-wortschatz', 'data-primary-keyword': 'sprachen' });
+
+  // ── Progress helpers ────────────────────────────────────────────────────────
+  function markDot(id, state) {
+    document.getElementById('dot' + id).className = 'prog-dot ' + state;
+  }
+  function markLine(id) {
+    document.getElementById('line' + id).classList.add('done');
+  }
+  function showSection(id) {
+    document.getElementById(id).classList.add('visible');
+  }
+  function hideSection(id) {
+    document.getElementById(id).classList.remove('visible');
+  }
+
+  // ── Stage 1 ─────────────────────────────────────────────────────────────────
+  function answer1(btn) {
+    if (s1done) return;
+    s1done = true;
+    const v = btn.dataset.v;
+    const ok = (v === '50');
+
+    document.querySelectorAll('#opts1 .option-btn').forEach(b => {
+      b.disabled = true;
+      if (b.dataset.v === '50') b.classList.add('correct');
+    });
+    if (!ok) btn.classList.add('wrong');
+
+    const fb = document.getElementById('fb1');
+    fb.style.display = 'block';
+    fb.className = 'feedback ' + (ok ? 'correct' : 'wrong');
+
+    if (ok) {
+      fb.innerHTML =
+        '<span class="concept-tag">Zipf\'sches Gesetz</span><br>'
+        + '<strong>Korrekt!</strong> Die häufigsten Wörter sind so dominant, dass allein '
+        + 'die Top 100 bereits <strong>~50 % aller Texttokens</strong> abdecken. '
+        + 'Das ist das Zipf\'sche Gesetz: f(r)\u2009=\u2009C/r – die Häufigkeit fällt '
+        + 'extrem steil ab. Die extreme Ungleichverteilung macht jeden häufigen Wort-Lernschritt '
+        + 'besonders wertvoll.';
+    } else {
+      fb.innerHTML =
+        '<span class="concept-tag">Zipf\'sches Gesetz</span><br>'
+        + '<strong>Nicht ganz.</strong> Die meisten unterschätzen diese Zahl. '
+        + 'Das Zipf\'sche Gesetz beschreibt eine extreme Ungleichverteilung: '
+        + 'Die häufigsten Wörter dominieren jeden Text überproportional. '
+        + 'Nur die Top 100 decken bereits ca. <strong>50 %</strong> aller Wortvorkommnisse ab.';
+    }
+
+    document.getElementById('btn12').style.display = 'inline-flex';
+    track('sim_zipf_answer1', { answer: v, correct: ok });
+  }
+
+  // ── Stage 2 ─────────────────────────────────────────────────────────────────
+  function goStage2() {
+    hideSection('stage1');
+    showSection('stage2');
+    markDot(1, 'done'); markLine(1); markDot(2, 'active');
+
+    // Trigger coverage bar animations
+    setTimeout(() => { document.getElementById('b100').style.width  = '50%'; }, 300);
+    setTimeout(() => { document.getElementById('b500').style.width  = '65%'; }, 600);
+    setTimeout(() => { document.getElementById('b1000').style.width = '78%'; }, 900);
+    setTimeout(() => { document.getElementById('b3000').style.width = '90%'; }, 1200);
+
+    setTimeout(drawCanvas, 200);
+    track('sim_zipf_stage2', {});
+  }
+
+  // ── Canvas Drawing ──────────────────────────────────────────────────────────
+  function drawCanvas() {
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const W = canvas.width;
+    const H = canvas.height;
+
+    // Layout padding
+    const PL = 58, PR = 18, PT = 20, PB = 52;
+    const pw = W - PL - PR;
+    const ph = H - PT - PB;
+
+    // Zipf model: f(r) = C/r, C = 0.08 (so rank-1 word has 8% relative freq)
+    const C = 0.08;
+    const RMAX = 3000;
+    const fMin = C / RMAX;
+    const fMax = C;
+
+    // Log-scale mapping
+    function xOfR(r) {
+      return PL + (Math.log(r) / Math.log(RMAX)) * pw;
+    }
+    function yOfF(f) {
+      const logMin = Math.log(fMin);
+      const logMax = Math.log(fMax);
+      return PT + ph - ((Math.log(f) - logMin) / (logMax - logMin)) * ph;
+    }
+
+    // Marker definitions (rank, cumulative coverage %, color)
+    const MARKERS = [
+      { r: 100,  label: '50 %',  color: '#3b82f6' },
+      { r: 500,  label: '65 %',  color: '#8b5cf6' },
+      { r: 1000, label: '78 %',  color: '#d97706' },
+      { r: 3000, label: '90 %',  color: '#16a34a' },
+    ];
+
+    // Y-axis grid values
+    const Y_VALS   = [fMin, 0.0001, 0.001, 0.01, 0.08];
+    const Y_LABELS = ['0,003 %', '0,01 %', '0,1 %', '1 %', '8 %'];
+
+    // X-axis grid ranks
+    const X_RANKS  = [1, 10, 100, 500, 1000, 3000];
+    const X_LABELS = ['1', '10', '100', '500', '1.000', '3.000'];
+
+    const FONT = '10px system-ui, -apple-system, sans-serif';
+    const FONT_SM = '9px system-ui, -apple-system, sans-serif';
+
+    const startMs = performance.now();
+    const DURATION = 1600;
+
+    function frame(now) {
+      const t = Math.min((now - startMs) / DURATION, 1);
+      const rTarget = Math.max(2, Math.round(Math.pow(RMAX, t)));
+
+      ctx.clearRect(0, 0, W, H);
+
+      // ── Y grid lines + labels ──
+      ctx.save();
+      ctx.strokeStyle = '#e5e7eb';
+      ctx.lineWidth = 1;
+      ctx.font = FONT;
+      ctx.fillStyle = '#9ca3af';
+      ctx.textAlign = 'right';
+      Y_VALS.forEach((v, i) => {
+        const y = yOfF(v);
+        ctx.beginPath();
+        ctx.moveTo(PL, y);
+        ctx.lineTo(PL + pw, y);
+        ctx.stroke();
+        ctx.fillText(Y_LABELS[i], PL - 5, y + 3.5);
+      });
+      ctx.restore();
+
+      // ── X grid lines + labels ──
+      ctx.save();
+      ctx.strokeStyle = '#e5e7eb';
+      ctx.lineWidth = 1;
+      ctx.font = FONT;
+      ctx.fillStyle = '#9ca3af';
+      ctx.textAlign = 'center';
+      X_RANKS.forEach((r, i) => {
+        const x = xOfR(r);
+        ctx.beginPath();
+        ctx.moveTo(x, PT);
+        ctx.lineTo(x, PT + ph);
+        ctx.stroke();
+        ctx.fillText(X_LABELS[i], x, PT + ph + 14);
+      });
+      ctx.restore();
+
+      // ── Coverage shading (under-curve fill per marker) ──
+      MARKERS.forEach(m => {
+        const limit = Math.min(m.r, rTarget);
+        if (limit < 2) return;
+        ctx.save();
+        ctx.globalAlpha = 0.1;
+        ctx.fillStyle = m.color;
+        ctx.beginPath();
+        ctx.moveTo(xOfR(1), PT + ph);
+        for (let r = 1; r <= limit; r += Math.max(1, Math.round(limit / 250))) {
+          ctx.lineTo(xOfR(r), yOfF(C / r));
+        }
+        ctx.lineTo(xOfR(limit), PT + ph);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+      });
+
+      // ── Zipf Curve ──
+      ctx.save();
+      ctx.strokeStyle = '#1d4ed8';
+      ctx.lineWidth = 2.5;
+      ctx.lineJoin = 'round';
+      ctx.lineCap  = 'round';
+      ctx.beginPath();
+      ctx.moveTo(xOfR(1), yOfF(C));
+      const step = Math.max(1, Math.round(rTarget / 450));
+      for (let r = 2; r <= rTarget; r += step) {
+        ctx.lineTo(xOfR(r), yOfF(C / r));
+      }
+      ctx.stroke();
+      ctx.restore();
+
+      // ── Marker vertical lines + labels ──
+      ctx.save();
+      ctx.font = 'bold 10px system-ui, sans-serif';
+      MARKERS.forEach((m, i) => {
+        if (rTarget < m.r) return;
+        const x = xOfR(m.r);
+        ctx.setLineDash([3, 3]);
+        ctx.strokeStyle = m.color;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(x, PT);
+        ctx.lineTo(x, PT + ph);
+        ctx.stroke();
+        ctx.setLineDash([]);
+        ctx.fillStyle = m.color;
+        ctx.textAlign = 'center';
+        // Stack labels from top
+        const labelY = PT + 11 + i * 17;
+        ctx.fillText(m.label, Math.min(x, PL + pw - 16), labelY);
+      });
+      ctx.restore();
+
+      // ── Axes (L-shape) ──
+      ctx.save();
+      ctx.strokeStyle = '#6b7280';
+      ctx.lineWidth = 1.5;
+      ctx.beginPath();
+      ctx.moveTo(PL, PT);
+      ctx.lineTo(PL, PT + ph + 1);
+      ctx.lineTo(PL + pw, PT + ph + 1);
+      ctx.stroke();
+      ctx.restore();
+
+      // ── Axis titles ──
+      ctx.save();
+      ctx.fillStyle = '#9ca3af';
+      ctx.font = FONT_SM;
+      ctx.textAlign = 'center';
+      ctx.fillText('Wortrang (logarithmisch)', PL + pw / 2, H - 6);
+      ctx.translate(12, PT + ph / 2);
+      ctx.rotate(-Math.PI / 2);
+      ctx.fillText('Häufigkeit (logarithmisch)', 0, 0);
+      ctx.restore();
+
+      if (t < 1) rafId = requestAnimationFrame(frame);
+    }
+
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(frame);
+  }
+
+  // ── Stage 3 ─────────────────────────────────────────────────────────────────
+  function goStage3() {
+    hideSection('stage2');
+    showSection('stage3');
+    markDot(2, 'done'); markLine(2); markDot(3, 'active');
+    track('sim_zipf_stage3', {});
+  }
+
+  const FB3 = {
+    '500':   { cls: 'wrong',   msg: '<span class="concept-tag">Corpus-Linguistik</span><br><strong>Nicht ganz.</strong> 500 Wörter (A1-Niveau) ergeben etwa <strong>65 % Abdeckung</strong> – du würdest jeden dritten Satz kaum verstehen. Für 90 % brauchst du deutlich mehr.' },
+    '1000':  { cls: 'wrong',   msg: '<span class="concept-tag">Corpus-Linguistik</span><br><strong>Knapp daneben.</strong> 1.000 Wörter (ca. B1-Niveau) erreichen etwa <strong>78 % Abdeckung</strong> – ein guter Start, aber noch nicht genug für komfortables Textverständnis. Für 90 % fehlen noch ca. 2.000 häufige Wörter.' },
+    '3000':  { cls: 'correct', msg: '<span class="concept-tag">Corpus-Linguistik · Zipf\'sches Gesetz</span><br><strong>Genau!</strong> Die <strong>3.000 häufigsten Lemmata</strong> decken laut Corpus-Linguistik (Nation, 2001; SUBTLEX-DE) ca. 90 % eines typischen deutschen Textes ab. Das ist dein realistisches Lernziel für alltägliches Textverständnis.' },
+    '10000': { cls: 'wrong',   msg: '<span class="concept-tag">Corpus-Linguistik · Zipf\'sches Gesetz</span><br><strong>Zu konservativ!</strong> 10.000 Wörter geben dir zwar ~98 % Abdeckung – aber für 90 % genügen bereits 3.000. Das Zipf\'sche Gesetz zeigt: Der Grenznutzen weiterer Wörter nimmt nach 3.000 stark ab.' },
+  };
+
+  function answer3(btn) {
+    if (s3done) return;
+    s3done = true;
+    const v = btn.dataset.v;
+    const ok = (v === '3000');
+
+    document.querySelectorAll('#opts3 .option-btn').forEach(b => {
+      b.disabled = true;
+      if (b.dataset.v === '3000') b.classList.add('correct');
+    });
+    if (!ok) btn.classList.add('wrong');
+
+    const fb = document.getElementById('fb3');
+    fb.style.display = 'block';
+    const info = FB3[v] || FB3['3000'];
+    fb.className = 'feedback ' + info.cls;
+    fb.innerHTML = info.msg;
+
+    markDot(3, 'done');
+    document.getElementById('btnTips').style.display = 'inline-flex';
+    track('sim_zipf_answer3', { answer: v, correct: ok });
+  }
+
+  function showTips() {
+    showSection('tipsSection');
+    document.getElementById('tipsSection').scrollIntoView({ behavior: 'smooth' });
+    track('sim_zipf_tips', {});
+  }
+</script>
+</body>
+</html>

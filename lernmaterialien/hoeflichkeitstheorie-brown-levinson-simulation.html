@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Höflichkeitstheorie nach Brown &amp; Levinson – interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Berechne mit Schiebereglern den FTA-Wert W = D + P + Rx und finde die passende Höflichkeitsstrategie nach Brown &amp; Levinson. Interaktive Simulation für die Pragmatik.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Höflichkeitstheorie, Brown Levinson, Face-Threatening Act, Höflichkeitsstrategien, negatives Gesicht, Pragmatik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/hoeflichkeitstheorie-brown-levinson-simulation.html">
+  <meta property="og:title" content="Höflichkeitstheorie nach Brown &amp; Levinson – Simulation">
+  <meta property="og:description" content="Berechne mit Schiebereglern den FTA-Wert W = D + P + Rx und finde die passende Höflichkeitsstrategie nach Brown &amp; Levinson.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/hoeflichkeitstheorie-brown-levinson-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Höflichkeitstheorie nach Brown & Levinson – interaktive Simulation",
+  "description":"Berechne mit Schiebereglern den FTA-Wert W = D + P + Rx und finde die passende Höflichkeitsstrategie nach Brown & Levinson. Interaktive Simulation für die Pragmatik.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/hoeflichkeitstheorie-brown-levinson-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <!-- Privacy-sicheres Tracking (keine personenbezogenen Daten) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    document.addEventListener('DOMContentLoaded', function() {
+      window.dataLayer.push({
+        event: 'asset_view',
+        asset_type: 'simulation',
+        topic_cluster: 'pragmatik'
+      });
+    });
+  </script>
+
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    a { color: var(--blue); }
+
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    h1 {
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 600px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* Stages */
+    .stage { display: none; }
+    .stage.active { display: block; }
+
+    /* Step indicator */
+    .steps {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
+
+    .step-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.4s;
+    }
+    .step-dot.done    { background: var(--blue); }
+    .step-dot.current { background: var(--cyan); }
+
+    .step-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-left: 0.5rem;
+    }
+
+    /* Card */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 1.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .stage-label {
+      font-size: 0.73rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .card h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .card p:last-child { margin-bottom: 0; }
+
+    /* Canvas */
+    .canvas-wrap {
+      background: #eef2f8;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+      height: auto;
+    }
+
+    /* Scenario cards */
+    .scenario-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    @media (max-width: 480px) {
+      .scenario-grid { grid-template-columns: 1fr; }
+    }
+
+    .scenario-card {
+      background: #f0f5fb;
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 1.1rem 1rem;
+      transition: border-color 0.2s;
+    }
+
+    .scenario-card .sc-label {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.4rem;
+    }
+
+    .scenario-card .sc-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--ink);
+    }
+
+    .scenario-card .sc-text {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .bubble {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.55rem 0.75rem;
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--ink);
+      margin-top: 0.75rem;
+      position: relative;
+    }
+
+    .bubble::before {
+      content: "";
+      position: absolute;
+      top: -8px;
+      left: 14px;
+      border: 4px solid transparent;
+      border-bottom-color: var(--line);
+    }
+
+    /* Figures */
+    .figures {
+      display: flex;
+      gap: 0.5rem;
+      align-items: flex-end;
+      margin-bottom: 0.5rem;
+    }
+
+    .figure {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 0.72rem;
+      color: var(--muted);
+      gap: 3px;
+    }
+
+    .figure svg {
+      width: 32px;
+      height: 36px;
+    }
+
+    /* Option buttons */
+    .option-group {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .option-btn {
+      background: #fff;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      color: var(--ink);
+    }
+
+    .option-btn:hover { border-color: var(--blue); }
+    .option-btn.selected { border-color: var(--blue); background: #e8f0fc; }
+    .option-btn.correct  { border-color: var(--green); background: #e6f6f0; }
+    .option-btn.wrong    { border-color: var(--red);   background: #fdecea; }
+    .option-btn:disabled { cursor: default; }
+
+    /* Feedback box */
+    .feedback {
+      display: none;
+      border-radius: 10px;
+      padding: 1.1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.93rem;
+      line-height: 1.6;
+    }
+
+    .feedback.correct { display: block; background: #e6f6f0; border: 1px solid #a2d9c6; }
+    .feedback.wrong   { display: block; background: #fdecea; border: 1px solid #f0b4b0; }
+
+    .feedback strong { display: block; margin-bottom: 0.4rem; }
+
+    .concept-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.73rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      margin-right: 0.35rem;
+      margin-bottom: 0.4rem;
+    }
+
+    /* Sliders */
+    .slider-group {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .slider-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .slider-header label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .slider-header .slider-val {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--blue);
+      min-width: 1.5rem;
+      text-align: right;
+    }
+
+    .slider-desc {
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--blue);
+      height: 6px;
+      cursor: pointer;
+    }
+
+    /* Strategy display */
+    .strategy-box {
+      background: #f0f5fb;
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .strategy-box.s1 { border-color: #0b8f6a; background: #e8f8f2; }
+    .strategy-box.s2 { border-color: #0f5fa8; background: #e6f0fc; }
+    .strategy-box.s3 { border-color: #b87700; background: #fdf6e3; }
+    .strategy-box.s4 { border-color: #6b21a8; background: #f3e8ff; }
+
+    .strategy-name {
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.3rem;
+    }
+
+    .strategy-example {
+      font-size: 0.88rem;
+      font-style: italic;
+      color: var(--muted);
+    }
+
+    .formula-display {
+      font-family: "Courier New", monospace;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--ink);
+      background: #f0f5fb;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 1.25rem;
+      text-align: center;
+    }
+
+    /* Stage 2 scenario */
+    .scenario-box {
+      background: #fef9ec;
+      border: 1px solid #ead890;
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .scenario-box .sc-title2 {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #8a6400;
+      margin-bottom: 0.4rem;
+    }
+
+    .scenario-box p {
+      font-size: 0.93rem;
+      color: #4a3800;
+      margin-bottom: 0;
+    }
+
+    /* Strategy choice */
+    .strategy-choice {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .strategy-opt {
+      background: #fff;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.65rem 1rem;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: border-color 0.2s, background 0.2s;
+      text-align: left;
+      color: var(--ink);
+    }
+
+    .strategy-opt:hover  { border-color: var(--blue); }
+    .strategy-opt.correct { border-color: var(--green); background: #e6f6f0; }
+    .strategy-opt.wrong   { border-color: var(--red);   background: #fdecea; }
+    .strategy-opt:disabled { cursor: default; }
+
+    /* Primary button */
+    .btn-primary {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.65rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover { background: #0d4f8e; }
+    .btn-primary:disabled { background: var(--muted); cursor: default; }
+
+    /* W value big display */
+    .w-value {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: var(--blue);
+      margin-bottom: 0.25rem;
+      line-height: 1;
+    }
+
+    .w-label {
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* Info box */
+    .info-box {
+      background: #f0f5fb;
+      border-left: 3px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.88rem;
+      color: var(--muted);
+    }
+
+    .info-box strong { color: var(--ink); }
+
+    /* Summary table */
+    .summary-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .summary-table th {
+      background: var(--blue);
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+      font-weight: 700;
+    }
+
+    .summary-table td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .summary-table tr:nth-child(even) td { background: #f5f8fc; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="pragmatik">
+
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <p class="eyebrow">Linguistik · Pragmatik · Klasse 10–13</p>
+  <h1>Höflichkeitstheorie nach Brown &amp; Levinson</h1>
+  <p class="subtitle">Interaktive Simulation: Berechne den FTA-Bedrohungswert W = D + P + R<sub>x</sub> und finde die passende Höflichkeitsstrategie.</p>
+</header>
+
+<main>
+
+  <!-- Step indicator -->
+  <div class="steps" id="steps">
+    <div class="step-dot current" id="dot1"></div>
+    <div class="step-dot" id="dot2"></div>
+    <span class="step-label" id="step-label">Stufe 1 von 2 – Vorhersage</span>
+  </div>
+
+  <!-- =================== STUFE 1 =================== -->
+  <div class="stage active" id="stage1">
+
+    <div class="card">
+      <p class="stage-label">Stufe 1 – Vorhersage</p>
+      <h2>Welche Bitte bedroht das Gesicht stärker?</h2>
+
+      <div class="info-box">
+        <strong>Hintergrund:</strong> Nach Brown &amp; Levinson (1987) hat jede Person ein <em>Gesicht</em> (<em>face</em>): das <strong>positive Gesicht</strong> (Wunsch nach Anerkennung) und das <strong>negative Gesicht</strong> (Wunsch nach Autonomie). Sprachliche Bitten können das Gesicht des Hörers bedrohen – das nennt man einen <strong>Face-Threatening Act (FTA)</strong>.
+      </div>
+
+      <p>Zwei Personen stellen dieselbe Bitte: „Kannst du mir kurz mit diesem schweren Koffer helfen?" – aber in unterschiedlichen sozialen Situationen.</p>
+
+      <div class="scenario-grid">
+        <div class="scenario-card">
+          <div class="sc-label">Szenario A</div>
+          <div class="figures">
+            <div class="figure">
+              <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="8" r="7" fill="#0f5fa8"/>
+                <rect x="6" y="17" width="20" height="19" rx="4" fill="#0f5fa8"/>
+              </svg>
+              <span>Du</span>
+            </div>
+            <div class="figure">
+              <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="8" r="7" fill="#0894aa"/>
+                <rect x="6" y="17" width="20" height="19" rx="4" fill="#0894aa"/>
+              </svg>
+              <span>Freund/in</span>
+            </div>
+          </div>
+          <div class="sc-title">Bitte an beste/n Freund/in</div>
+          <div class="sc-text">Ihr kennt euch seit Jahren, seid gleichgestellt, der Gefallen ist nicht groß.</div>
+          <div class="bubble">„Hey, kannst du kurz mit dem Koffer helfen?"</div>
+        </div>
+
+        <div class="scenario-card">
+          <div class="sc-label">Szenario B</div>
+          <div class="figures">
+            <div class="figure">
+              <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="8" r="7" fill="#0f5fa8"/>
+                <rect x="6" y="17" width="20" height="19" rx="4" fill="#0f5fa8"/>
+              </svg>
+              <span>Du</span>
+            </div>
+            <div class="figure">
+              <svg viewBox="0 0 32 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="16" cy="8" r="7" fill="#617087"/>
+                <rect x="6" y="17" width="20" height="19" rx="4" fill="#617087"/>
+              </svg>
+              <span>Fremde/r</span>
+            </div>
+          </div>
+          <div class="sc-title">Bitte an eine fremde Person</div>
+          <div class="sc-text">Bahnhof, unbekannte Person, keine Beziehung, körperlicher Einsatz nötig.</div>
+          <div class="bubble">„Entschuldigung, würden Sie mir vielleicht mit dem Koffer helfen?"</div>
+        </div>
+      </div>
+
+      <p><strong>Deine Vorhersage:</strong> Bei welchem Szenario ist der Face-Threatening Act (FTA-Wert W) höher?</p>
+
+      <div class="option-group" id="s1-options">
+        <button class="option-btn" id="opt-A" onclick="checkStage1('A')">Szenario A – Freund/in</button>
+        <button class="option-btn" id="opt-B" onclick="checkStage1('B')">Szenario B – Fremde Person</button>
+      </div>
+
+      <div class="feedback" id="feedback-s1"></div>
+
+      <!-- Canvas: animierter W-Gauge für beide Szenarien -->
+      <div class="canvas-wrap" id="canvas-wrap-1" style="display:none;">
+        <canvas id="gauge1" width="400" height="220"></canvas>
+        <p style="font-size:0.8rem;color:var(--muted);padding:0.5rem 1rem 0.75rem;">FTA-Wert W für Szenario A (blau) und Szenario B (lila)</p>
+      </div>
+
+      <button class="btn-primary" id="btn-next1" style="display:none;" onclick="goStage2()">Weiter zu Stufe 2 →</button>
+    </div>
+
+  </div><!-- /stage1 -->
+
+
+  <!-- =================== STUFE 2 =================== -->
+  <div class="stage" id="stage3">
+
+    <div class="card">
+      <p class="stage-label">Stufe 2 – Interaktive Formelexploration</p>
+      <h2>Berechne den FTA-Wert und wähle die richtige Strategie</h2>
+
+      <div class="info-box">
+        <strong>Die Formel:</strong> W(FTA) = <strong>D</strong> (Soziale Distanz) + <strong>P</strong> (Macht des Hörers) + <strong>R<sub>x</sub></strong> (Schwere der Zumutung)
+        <br>Je höher W, desto mehr Höflichkeitsarbeit ist nötig.
+      </div>
+
+      <div class="scenario-box">
+        <div class="sc-title2">Dein Szenario</div>
+        <p>Du möchtest deinen <strong>Vorgesetzten</strong> bitten, morgen <strong>zwei Stunden früher gehen</strong> zu dürfen, weil du einen wichtigen Arzttermin hast. Ihr habt eine professionelle, aber respektvolle Beziehung.</p>
+      </div>
+
+      <p>Schätze die drei Variablen ein:</p>
+
+      <div class="slider-group">
+        <div class="slider-row">
+          <div class="slider-header">
+            <label for="slider-D"><strong>D</strong> – Soziale Distanz</label>
+            <span class="slider-val" id="val-D">3</span>
+          </div>
+          <div class="slider-desc">1 = sehr nah (enge Freundschaft) · 5 = sehr weit (Fremde)</div>
+          <input type="range" id="slider-D" min="1" max="5" value="3" oninput="updateFormula()">
+        </div>
+
+        <div class="slider-row">
+          <div class="slider-header">
+            <label for="slider-P"><strong>P</strong> – Macht des Hörers</label>
+            <span class="slider-val" id="val-P">4</span>
+          </div>
+          <div class="slider-desc">1 = kein Machtgefälle · 5 = starkes Gefälle (z.B. Vorgesetzte/r)</div>
+          <input type="range" id="slider-P" min="1" max="5" value="4" oninput="updateFormula()">
+        </div>
+
+        <div class="slider-row">
+          <div class="slider-header">
+            <label for="slider-R"><strong>R<sub>x</sub></strong> – Schwere der Zumutung</label>
+            <span class="slider-val" id="val-R">3</span>
+          </div>
+          <div class="slider-desc">1 = winzige Bitte · 5 = große Zumutung / Einschränkung</div>
+          <input type="range" id="slider-R" min="1" max="5" value="3" oninput="updateFormula()">
+        </div>
+      </div>
+
+      <div class="formula-display" id="formula-display">W = 3 + 4 + 3 = <strong>10</strong></div>
+
+      <div class="w-value" id="w-value">10</div>
+      <div class="w-label">FTA-Bedrohungswert W</div>
+
+      <!-- Canvas: animierter Gauge für W -->
+      <div class="canvas-wrap">
+        <canvas id="gauge2" width="400" height="220"></canvas>
+      </div>
+
+      <div class="strategy-box" id="strategy-display">
+        <div class="strategy-name" id="strategy-name">Strategie 3: Negative Höflichkeit</div>
+        <div class="strategy-example" id="strategy-example">„Entschuldigung, wäre es vielleicht möglich, dass ich morgen früher gehen darf?"</div>
+      </div>
+
+      <p><strong>Welche Höflichkeitsstrategie ist in diesem Szenario am angemessensten?</strong></p>
+      <p style="color:var(--muted);font-size:0.88rem;margin-bottom:1rem;">Achte auf den W-Wert, den du berechnet hast.</p>
+
+      <div class="strategy-choice" id="strategy-opts">
+        <button class="strategy-opt" onclick="checkStage2(1)">
+          <strong>Strategie 1 – Direkt (bald on record):</strong> „Chef, ich gehe morgen früher."
+        </button>
+        <button class="strategy-opt" onclick="checkStage2(2)">
+          <strong>Strategie 2 – Positive Höflichkeit:</strong> „Du weißt ja, wie zuverlässig ich bin – ich bräuchte morgen früher Schluss."
+        </button>
+        <button class="strategy-opt" onclick="checkStage2(3)">
+          <strong>Strategie 3 – Negative Höflichkeit:</strong> „Wäre es vielleicht möglich, dass ich morgen ausnahmsweise früher gehen darf?"
+        </button>
+        <button class="strategy-opt" onclick="checkStage2(4)">
+          <strong>Strategie 4 – Indirekt (off record):</strong> „Ich habe morgen ja diesen Termin, und der Weg dahin ist ziemlich weit..."
+        </button>
+      </div>
+
+      <div class="feedback" id="feedback-s2"></div>
+    </div>
+
+    <!-- Zusammenfassung -->
+    <div class="card" id="summary-card" style="display:none;">
+      <p class="stage-label">Zusammenfassung</p>
+      <h2>Die vier Höflichkeitsstrategien im Überblick</h2>
+
+      <table class="summary-table">
+        <thead>
+          <tr>
+            <th>W-Wert</th>
+            <th>Strategie</th>
+            <th>Merkmal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3–5</td>
+            <td><strong>Strategie 1</strong> – Direkt</td>
+            <td>Keine Absicherung, klar &amp; direkt</td>
+          </tr>
+          <tr>
+            <td>6–8</td>
+            <td><strong>Strategie 2</strong> – Positive Höflichkeit</td>
+            <td>Solidarität, Nähe betonen</td>
+          </tr>
+          <tr>
+            <td>9–11</td>
+            <td><strong>Strategie 3</strong> – Negative Höflichkeit</td>
+            <td>Absicherung, Einschränkung, Entschuldigung</td>
+          </tr>
+          <tr>
+            <td>12–15</td>
+            <td><strong>Strategie 4</strong> – Indirekt</td>
+            <td>Implikaturen, Andeutungen</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p><strong>Kerngedanke:</strong> Das Modell von Brown &amp; Levinson zeigt, dass Höflichkeit kein subjektives Gefühl ist, sondern durch soziale Parameter systematisch erklärbar wird. Je höher der FTA-Wert W, desto indirekter muss die Sprache werden – um das <em>negative Gesicht</em> des Hörers zu schützen.</p>
+    </div>
+
+  </div><!-- /stage3 -->
+
+</main>
+
+<script>
+// ==================== GAUGE DRAWING ====================
+
+const TAU = Math.PI;
+const GAUGE_MIN = 3;
+const GAUGE_MAX = 15;
+
+function drawGauge(canvasId, values, labels, colors) {
+  const canvas = document.getElementById(canvasId);
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width;
+  const H = canvas.height;
+
+  ctx.clearRect(0, 0, W, H);
+
+  const cx = W / 2;
+  const cy = H - 30;
+  const r  = Math.min(W / 2 - 30, H - 60);
+
+  // Background arc
+  ctx.beginPath();
+  ctx.arc(cx, cy, r, TAU, 0, false);
+  ctx.lineWidth = 18;
+  ctx.strokeStyle = '#e0e8f4';
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  // Color zones
+  const zones = [
+    { from: 3,  to: 5,  color: '#0b8f6a' },
+    { from: 5,  to: 8,  color: '#0f5fa8' },
+    { from: 8,  to: 11, color: '#b87700' },
+    { from: 11, to: 15, color: '#6b21a8' },
+  ];
+
+  function valToAngle(v) {
+    return TAU + (v - GAUGE_MIN) / (GAUGE_MAX - GAUGE_MIN) * TAU;
+  }
+
+  zones.forEach(z => {
+    ctx.beginPath();
+    ctx.arc(cx, cy, r, valToAngle(z.from), valToAngle(z.to), false);
+    ctx.lineWidth = 18;
+    ctx.strokeStyle = z.color + '55';
+    ctx.stroke();
+  });
+
+  // Needle(s)
+  values.forEach((val, i) => {
+    const angle = valToAngle(val);
+    const nx = cx + (r - 5) * Math.cos(angle);
+    const ny = cy + (r - 5) * Math.sin(angle);
+
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(nx, ny);
+    ctx.lineWidth = 3;
+    ctx.strokeStyle = colors[i];
+    ctx.lineCap = 'round';
+    ctx.stroke();
+
+    // Needle tip dot
+    ctx.beginPath();
+    ctx.arc(nx, ny, 5, 0, Math.PI * 2);
+    ctx.fillStyle = colors[i];
+    ctx.fill();
+
+    // Value label near needle
+    const lx = cx + (r + 20) * Math.cos(angle);
+    const ly = cy + (r + 20) * Math.sin(angle);
+    ctx.font = 'bold 14px Inter, sans-serif';
+    ctx.fillStyle = colors[i];
+    ctx.textAlign = 'center';
+    ctx.fillText(labels[i], lx, ly);
+  });
+
+  // Center hub
+  ctx.beginPath();
+  ctx.arc(cx, cy, 8, 0, Math.PI * 2);
+  ctx.fillStyle = '#172033';
+  ctx.fill();
+
+  // Scale labels
+  const scalePts = [3, 6, 9, 12, 15];
+  ctx.font = '11px Inter, sans-serif';
+  ctx.fillStyle = '#617087';
+  ctx.textAlign = 'center';
+  scalePts.forEach(v => {
+    const a = valToAngle(v);
+    const sx = cx + (r - 28) * Math.cos(a);
+    const sy = cy + (r - 28) * Math.sin(a);
+    ctx.fillText(v, sx, sy);
+  });
+
+  // Strategy labels
+  ctx.font = 'bold 10px Inter, sans-serif';
+  const strategyLabels = [
+    { v: 4,   text: 'Direkt',    color: '#0b8f6a' },
+    { v: 7,   text: 'Positiv',   color: '#0f5fa8' },
+    { v: 10,  text: 'Negativ',   color: '#b87700' },
+    { v: 13.5,text: 'Indirekt',  color: '#6b21a8' },
+  ];
+  strategyLabels.forEach(s => {
+    const a = valToAngle(s.v);
+    const sx = cx + (r + 38) * Math.cos(a);
+    const sy = cy + (r + 38) * Math.sin(a);
+    // Clip label if out of bounds
+    if (sx > 0 && sx < W && sy > 0 && sy < H) {
+      ctx.fillStyle = s.color;
+      ctx.fillText(s.text, sx, sy);
+    }
+  });
+
+  // Bottom label
+  ctx.font = '11px Inter, sans-serif';
+  ctx.fillStyle = '#617087';
+  ctx.textAlign = 'center';
+  ctx.fillText('W (FTA-Bedrohungswert)', cx, H - 8);
+}
+
+// ==================== ANIMATION ====================
+
+let gauge2AnimTarget = 10;
+let gauge2AnimCurrent = 3;
+let gauge2RAF = null;
+
+function animateGauge2() {
+  if (gauge2RAF) cancelAnimationFrame(gauge2RAF);
+  function step() {
+    const diff = gauge2AnimTarget - gauge2AnimCurrent;
+    if (Math.abs(diff) < 0.05) {
+      gauge2AnimCurrent = gauge2AnimTarget;
+      drawGauge('gauge2', [gauge2AnimCurrent], ['W=' + Math.round(gauge2AnimCurrent)], [getStrategyColor(gauge2AnimCurrent)]);
+      return;
+    }
+    gauge2AnimCurrent += diff * 0.12;
+    drawGauge('gauge2', [gauge2AnimCurrent], ['W=' + Math.round(gauge2AnimCurrent)], [getStrategyColor(gauge2AnimCurrent)]);
+    gauge2RAF = requestAnimationFrame(step);
+  }
+  gauge2RAF = requestAnimationFrame(step);
+}
+
+function getStrategyColor(w) {
+  if (w <= 5)  return '#0b8f6a';
+  if (w <= 8)  return '#0f5fa8';
+  if (w <= 11) return '#b87700';
+  return '#6b21a8';
+}
+
+// ==================== STAGE 1 ====================
+
+let stage1Done = false;
+
+function checkStage1(choice) {
+  if (stage1Done) return;
+  stage1Done = true;
+
+  const optA = document.getElementById('opt-A');
+  const optB = document.getElementById('opt-B');
+  optA.disabled = true;
+  optB.disabled = true;
+
+  const fb = document.getElementById('feedback-s1');
+  const wrapCanvas = document.getElementById('canvas-wrap-1');
+  const btnNext = document.getElementById('btn-next1');
+
+  if (choice === 'B') {
+    optB.classList.add('correct');
+    fb.className = 'feedback correct';
+    fb.innerHTML = `
+      <strong>Richtig! Szenario B hat den höheren FTA-Wert.</strong>
+      <span class="concept-tag">FTA</span>
+      <span class="concept-tag">Negatives Gesicht</span>
+      <span class="concept-tag">Brown &amp; Levinson</span>
+      <p>Nach der Formel W = D + P + R<sub>x</sub>:<br>
+      <strong>Szenario A (Freund/in):</strong> D=2, P=1, R=2 → W = <strong>5</strong><br>
+      <strong>Szenario B (Fremde Person):</strong> D=5, P=2, R=3 → W = <strong>10</strong></p>
+      <p>Die große soziale Distanz (D=5) und die höhere Zumutung bei einer fremden Person (R=3) führen zu einem doppelt so hohen FTA-Wert. Das <strong>negative Gesicht</strong> des Hörers (Wunsch nach Autonomie) wird stärker bedroht – deshalb benötigt Szenario B mehr Höflichkeitsarbeit (Strategie 3: negative Höflichkeit).</p>
+    `;
+  } else {
+    optA.classList.add('wrong');
+    optB.classList.add('correct');
+    fb.className = 'feedback wrong';
+    fb.innerHTML = `
+      <strong>Nicht ganz – Szenario B hat den höheren FTA-Wert.</strong>
+      <span class="concept-tag">FTA</span>
+      <span class="concept-tag">Brown &amp; Levinson</span>
+      <p>Häufiges Missverständnis: Bitten an Freunde fühlen sich zwar einfacher an, aber das liegt daran, dass der W-Wert niedrig ist – nicht weil Höflichkeit unwichtig wäre.</p>
+      <p>W = D + P + R<sub>x</sub>:<br>
+      <strong>Szenario A:</strong> D=2 + P=1 + R=2 = W <strong>5</strong> (geringe Bedrohung)<br>
+      <strong>Szenario B:</strong> D=5 + P=2 + R=3 = W <strong>10</strong> (mittlere Bedrohung)</p>
+      <p>Bei Fremden ist die soziale Distanz D hoch – das erhöht den FTA-Wert deutlich und erfordert die Strategie der <strong>negativen Höflichkeit</strong> (Entschuldigungen, Absicherungen).</p>
+    `;
+  }
+
+  // Show canvas with animation
+  wrapCanvas.style.display = 'block';
+  // Draw initial state
+  drawGauge('gauge1', [3, 3], ['A: W=5', 'B: W=10'], ['#0f5fa8', '#6b21a8']);
+
+  // Animate to final values
+  let aA = 3, aB = 3;
+  const targetA = 5, targetB = 10;
+  let raf1 = null;
+  function animStep1() {
+    const dA = targetA - aA;
+    const dB = targetB - aB;
+    if (Math.abs(dA) < 0.05 && Math.abs(dB) < 0.05) {
+      aA = targetA; aB = targetB;
+      drawGauge('gauge1', [aA, aB], ['A: W=5', 'B: W=10'], ['#0f5fa8', '#6b21a8']);
+      return;
+    }
+    aA += dA * 0.1;
+    aB += dB * 0.1;
+    drawGauge('gauge1', [aA, aB], ['A: W=5', 'B: W=10'], ['#0f5fa8', '#6b21a8']);
+    raf1 = requestAnimationFrame(animStep1);
+  }
+  requestAnimationFrame(animStep1);
+
+  btnNext.style.display = 'inline-block';
+}
+
+// ==================== STAGE 2 ====================
+
+function updateFormula() {
+  const D = parseInt(document.getElementById('slider-D').value);
+  const P = parseInt(document.getElementById('slider-P').value);
+  const R = parseInt(document.getElementById('slider-R').value);
+  const W = D + P + R;
+
+  document.getElementById('val-D').textContent = D;
+  document.getElementById('val-P').textContent = P;
+  document.getElementById('val-R').textContent = R;
+  document.getElementById('formula-display').innerHTML =
+    'W = ' + D + ' + ' + P + ' + ' + R + ' = <strong>' + W + '</strong>';
+  document.getElementById('w-value').textContent = W;
+
+  // Strategy
+  const strat = getStrategy(W);
+  const box = document.getElementById('strategy-display');
+  box.className = 'strategy-box ' + strat.cls;
+  document.getElementById('strategy-name').textContent = strat.name;
+  document.getElementById('strategy-example').textContent = strat.example;
+
+  // Animate gauge
+  gauge2AnimTarget = W;
+  animateGauge2();
+}
+
+function getStrategy(w) {
+  if (w <= 5)  return { cls: 's1', name: 'Strategie 1 – Direkt (bald on record)', example: '„Mach das Fenster zu." / „Leih mir das Buch."' };
+  if (w <= 8)  return { cls: 's2', name: 'Strategie 2 – Positive Höflichkeit', example: '„Als Freunde helfen wir uns doch – könntest du...?"' };
+  if (w <= 11) return { cls: 's3', name: 'Strategie 3 – Negative Höflichkeit', example: '„Entschuldigung, wäre es vielleicht möglich, dass...?"' };
+  return          { cls: 's4', name: 'Strategie 4 – Indirekt (off record)', example: '„Dieser Weg ist so weit, und es ist schon spät..."' };
+}
+
+let stage2Done = false;
+
+function checkStage2(choice) {
+  if (stage2Done) return;
+
+  const opts = document.querySelectorAll('.strategy-opt');
+  opts.forEach(o => { o.disabled = true; });
+
+  const fb = document.getElementById('feedback-s2');
+  // Correct answer: Strategie 3 (W≈10, Vorgesetzter)
+  const correct = 3;
+
+  if (choice === correct) {
+    opts[choice - 1].classList.add('correct');
+    fb.className = 'feedback correct';
+    fb.innerHTML = `
+      <strong>Richtig! Strategie 3 – Negative Höflichkeit ist hier angemessen.</strong>
+      <span class="concept-tag">Negatives Gesicht</span>
+      <span class="concept-tag">FTA-Gewichtung</span>
+      <span class="concept-tag">Brown &amp; Levinson</span>
+      <p>Mit einem W-Wert von etwa 10–11 (D=3, P=4, R=3–4) liegt die Situation im Bereich der <strong>negativen Höflichkeit</strong>. Die Autonomie und Autorität des Vorgesetzten (hohes P) verlangen sprachliche Absicherung: Entschuldigungen, Konjunktiv II, Einschränkungen und Rücksichtnahme auf mögliche Ablehnung.</p>
+      <p>Strategie 1 wäre zu direkt und würde das negative Gesicht des Vorgesetzten verletzen. Strategie 4 wäre so indirekt, dass die Bitte unklar bleibt.</p>
+    `;
+    stage2Done = true;
+    document.getElementById('summary-card').style.display = 'block';
+  } else {
+    opts[choice - 1].classList.add('wrong');
+    opts[correct - 1].classList.add('correct');
+    fb.className = 'feedback wrong';
+    fb.innerHTML = `
+      <strong>Nicht ganz – die beste Strategie wäre Strategie 3.</strong>
+      <span class="concept-tag">Negatives Gesicht</span>
+      <span class="concept-tag">Brown &amp; Levinson</span>
+      <p>Bei einem W-Wert von ca. 10 (Vorgesetzter, mittlere Distanz, deutliches Machtgefälle) empfiehlt die Höflichkeitstheorie die <strong>negative Höflichkeit</strong>: Absicherungen, Konjunktiv, Entschuldigungen – zum Schutz des negativen Gesichts des Hörers (sein Recht, abzulehnen, wird anerkannt).</p>
+    `;
+    stage2Done = true;
+    document.getElementById('summary-card').style.display = 'block';
+  }
+}
+
+// ==================== NAVIGATION ====================
+
+function goStage2() {
+  document.getElementById('stage1').classList.remove('active');
+  document.getElementById('stage3').classList.add('active');
+  document.getElementById('dot1').classList.remove('current');
+  document.getElementById('dot1').classList.add('done');
+  document.getElementById('dot2').classList.add('current');
+  document.getElementById('step-label').textContent = 'Stufe 2 von 2 – Formelexploration';
+
+  // Initialize gauge2 and formula
+  updateFormula();
+}
+
+// ==================== INIT ====================
+
+document.addEventListener('DOMContentLoaded', function() {
+  // gauge2 initialisieren (in Stage 2 sichtbar, sobald dorthin navigiert wird)
+  // gauge1 wird erst beim Aufdecken gezeichnet – kein unnötiges Rendern auf verstecktem Canvas
+});
+</script>
+
+</body>
+</html>

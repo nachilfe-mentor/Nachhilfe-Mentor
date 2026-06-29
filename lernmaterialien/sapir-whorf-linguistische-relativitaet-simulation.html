@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Sapir-Whorf-Hypothese: Sprache und Wahrnehmung interaktiv erleben | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zur Sapir-Whorf-Hypothese: Sage das Farbwahrnehmungs-Experiment vorher, kategorisiere Blautöne wie ein russischer Muttersprachler und verstehe linguistische Relativität.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sapir-Whorf-Hypothese, linguistische Relativität, Sprache und Wahrnehmung, Sprachdeterminismus, Farbwahrnehmung, Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sapir-whorf-linguistische-relativitaet-simulation.html">
+  <meta property="og:title" content="Sapir-Whorf-Hypothese interaktiv erleben">
+  <meta property="og:description" content="Interaktive Simulation zur Sapir-Whorf-Hypothese: Sage das Farbwahrnehmungs-Experiment vorher, kategorisiere Blautöne wie ein russischer Muttersprachler und verstehe linguistische Relativität.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sapir-whorf-linguistische-relativitaet-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sapir-Whorf-Hypothese: Sprache und Wahrnehmung interaktiv erleben",
+  "description":"Interaktive Simulation zur Sapir-Whorf-Hypothese: Sage das Farbwahrnehmungs-Experiment vorher, kategorisiere Blautöne wie ein russischer Muttersprachler und verstehe linguistische Relativität.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sapir-whorf-linguistische-relativitaet-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+
+  <style>
+    :root {
+      --ink:     #172033;
+      --muted:   #617087;
+      --line:    #d8e1ed;
+      --blue:    #0f5fa8;
+      --cyan:    #0894aa;
+      --green:   #0b8f6a;
+      --red:     #b5281e;
+      --amber:   #b87700;
+      --purple:  #6b21a8;
+      --bg:      #f5f8fc;
+      --panel:   #ffffff;
+      --siniy:   #0d3080;
+      --goluboy: #5badd6;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Header ── */
+    header {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 1.5rem;
+    }
+    .eyebrow {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+    }
+    header h1 {
+      font-size: clamp(1.4rem, 4vw, 1.9rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+    header p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      max-width: 600px;
+    }
+
+    /* ── Main ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 1.25rem 4rem;
+    }
+
+    /* ── Karte / Panel ── */
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .stage-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+    .card h2 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: var(--ink);
+      margin-bottom: 1rem;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    /* ── Kontext-Box ── */
+    .info-box {
+      background: #eef4fb;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+      font-size: 0.92rem;
+    }
+    .info-box strong { color: var(--blue); }
+
+    /* ── Russische Wörter ── */
+    .ru {
+      font-style: italic;
+      font-weight: 600;
+      color: var(--purple);
+    }
+
+    /* ── Canvas ── */
+    canvas {
+      display: block;
+      width: 100%;
+      height: 160px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Vorhersage ── */
+    .prediction-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.6rem;
+    }
+    .question {
+      font-size: 1.02rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      line-height: 1.45;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .option-btn {
+      display: block;
+      width: 100%;
+      text-align: left;
+      background: var(--bg);
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      font-size: 0.93rem;
+      font-family: inherit;
+      color: var(--ink);
+      cursor: pointer;
+      transition: border-color 0.15s, background 0.15s;
+      line-height: 1.45;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eef4fb;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #e8f8f3;
+      color: #054d38;
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fdf0ef;
+      color: #6b1a15;
+    }
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Feedback-Panel ── */
+    .feedback {
+      display: none;
+      background: #f0f9f5;
+      border: 1.5px solid var(--green);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .feedback.wrong-fb {
+      background: #fdf6ef;
+      border-color: var(--amber);
+    }
+    .feedback h3 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: var(--green);
+    }
+    .feedback.wrong-fb h3 { color: var(--amber); }
+    .feedback p {
+      font-size: 0.92rem;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+    .feedback p:last-child { margin-bottom: 0; }
+
+    /* ── Concept-Tags ── */
+    .concept-tag {
+      display: inline-block;
+      background: var(--purple);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.2em 0.6em;
+      border-radius: 4px;
+      letter-spacing: 0.04em;
+      margin: 0 2px;
+      vertical-align: middle;
+    }
+    .concept-tag.blue-tag { background: var(--blue); }
+    .concept-tag.green-tag { background: var(--green); }
+
+    /* ── Weiter-Button ── */
+    .btn-next {
+      display: none;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem 1.75rem;
+      font-size: 0.97rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.15s;
+    }
+    .btn-next:hover { opacity: 0.88; }
+
+    /* ── Stage 2: Farbchips ── */
+    .chip-grid {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+      justify-content: center;
+    }
+    .chip-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .color-chip {
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      border: 3px solid var(--line);
+      cursor: pointer;
+      transition: transform 0.1s, border-color 0.15s;
+      flex-shrink: 0;
+    }
+    .color-chip:hover { transform: scale(1.07); }
+    .color-chip.selected-siniy  { border-color: var(--siniy); box-shadow: 0 0 0 3px rgba(13,48,128,0.25); }
+    .color-chip.selected-goluboy { border-color: var(--goluboy); box-shadow: 0 0 0 3px rgba(91,173,214,0.3); }
+    .chip-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-align: center;
+    }
+    .chip-label.lbl-siniy  { color: var(--siniy); }
+    .chip-label.lbl-goluboy { color: #2a7faa; }
+
+    .chip-legend {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .chip-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+    }
+    .legend-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+    }
+
+    /* ── Stage-Sektionen ── */
+    #stage1, #stage2 { display: block; }
+    #stage2 { display: none; }
+
+    /* ── Reflexionsfrage ── */
+    .reflex-section {
+      display: none;
+      margin-top: 1.5rem;
+    }
+    .reflex-section h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    /* ── Abschluss ── */
+    .final-box {
+      display: none;
+      background: #eef4fb;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .final-box h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--blue);
+    }
+    .final-box p {
+      font-size: 0.93rem;
+      margin-bottom: 0.6rem;
+    }
+    .final-box ul {
+      font-size: 0.93rem;
+      padding-left: 1.2rem;
+      margin-bottom: 0.6rem;
+    }
+    .final-box li { margin-bottom: 0.3rem; }
+
+    /* ── Submit-Button Stufe 2 ── */
+    .btn-submit {
+      background: var(--cyan);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.7rem 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: opacity 0.15s;
+      margin-bottom: 1rem;
+    }
+    .btn-submit:hover { opacity: 0.88; }
+
+    /* ── Ergebnis Stufe 2 ── */
+    .chip-result {
+      display: none;
+      margin-top: 1.25rem;
+    }
+    .result-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+    }
+    .result-chip {
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+    .result-mark {
+      font-size: 1rem;
+    }
+    .result-text { color: var(--ink); }
+
+    /* ── Site-Nav ── */
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    /* ── Footer ── */
+    footer {
+      max-width: 760px;
+      margin: 2rem auto 0;
+      padding: 1.5rem 1.25rem;
+      border-top: 1px solid var(--line);
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body data-asset-type="lernsimulation" data-topic-cluster="sprachen">
+
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header>
+    <p class="eyebrow">Linguistik · Klasse 10–13</p>
+    <h1>Sapir-Whorf-Hypothese: Beeinflusst Sprache unsere Wahrnehmung?</h1>
+    <p>Entdecke in zwei Schritten, wie sprachliche Kategorien die Farbwahrnehmung messbar verändern – und was das für die linguistische Relativität bedeutet.</p>
+  </header>
+
+  <main>
+
+    <!-- ══════════════════════ STAGE 1 ══════════════════════ -->
+    <section id="stage1">
+
+      <div class="card">
+        <p class="stage-label">Stufe 1 von 2 — Das Experiment</p>
+        <h2>Zwei Wörter für Blau: Was steckt dahinter?</h2>
+
+        <div class="info-box">
+          <strong>Sprachlicher Befund:</strong> Das Russische unterscheidet obligatorisch zwei Grundwörter für Blau:
+          <span class="ru">синий</span> (siniy) für dunkles Blau und
+          <span class="ru">голубой</span> (goluboy) für helles Blau.
+          Im Deutschen und Englischen gibt es nur einen Grundbegriff – „blau" bzw. „blue".
+          Wissenschaftler fragten sich: Schärft diese Unterscheidung tatsächlich die visuelle Wahrnehmung?
+        </div>
+
+        <p>
+          Im Experiment von <strong>Winawer et al. (2007)</strong> sahen Versuchspersonen drei blaue Farbfelder:
+          eines oben als Ziel, zwei unten als Alternativen. Aufgabe: Welche Alternative stimmt mit dem Ziel überein?
+          Die Zeitspanne bis zur richtigen Antwort wurde gemessen.
+        </p>
+
+        <canvas id="canvas1" aria-label="Blaues Farbspektrum mit синий- und голубой-Bereichen und animierter Reaktionszeitdarstellung"></canvas>
+
+        <p class="prediction-label">Deine Vorhersage</p>
+        <p class="question">
+          Was glaubst du: Hat die sprachliche Kategorie einen Einfluss auf die Reaktionsgeschwindigkeit?
+        </p>
+
+        <div class="options" id="options1">
+          <button class="option-btn" data-val="A">
+            A) Nein – Wahrnehmung ist universell. Ob Russisch oder Deutsch: Die Reaktionszeiten sind gleich.
+          </button>
+          <button class="option-btn" data-val="B">
+            B) Ja – Russische Sprecher sind schneller, wenn die Farben genau an der <span class="ru">синий</span>/<span class="ru">голубой</span>-Grenze liegen.
+          </button>
+          <button class="option-btn" data-val="C">
+            C) Ja – Russische Sprecher sind generell bei allen Farbaufgaben schneller als Englisch- oder Deutschsprachige.
+          </button>
+        </div>
+
+        <div class="feedback" id="feedback1-correct">
+          <h3>Richtig! Das Experiment bestätigt genau das.</h3>
+          <p>
+            Russische Muttersprachler waren in der Winawer-Studie <strong>124 ms schneller</strong>,
+            wenn das zu erkennende Farbpaar an der <span class="concept-tag">синий/голубой-Grenze</span> lag.
+            Bei Farbpaaren innerhalb derselben russischen Kategorie gab es <em>keinen</em> Geschwindigkeitsvorteil.
+          </p>
+          <p>
+            Englischsprachige zeigten keinen solchen Grenzeffekt (nur ~15 ms Unterschied, nicht signifikant).
+            Das Ergebnis gilt als starke Evidenz für die
+            <span class="concept-tag">Linguistische Relativität</span>
+            (schwache Sapir-Whorf-Hypothese):
+            Sprachkategorien schärfen die Wahrnehmung an Kategoriengrenzen.
+          </p>
+          <p>
+            <strong>Kontrollbedingung:</strong> Als Sprecher gleichzeitig einen Lauttext nachsprechen mussten
+            (verbales Shadowing), verschwand der Effekt – ein Zeichen, dass sprachliche Enkodierung der
+            Schlüsselmechanismus ist.
+          </p>
+        </div>
+
+        <div class="feedback wrong-fb" id="feedback1-wrong-a">
+          <h3>Knapp daneben – schau dir die Daten an!</h3>
+          <p>
+            Das Experiment zeigt das Gegenteil: Russische Sprecher reagierten
+            <strong>124 ms schneller</strong> bei Farbpaaren an der
+            <span class="concept-tag">синий/голубой-Grenze</span>
+            als bei Paaren innerhalb derselben Kategorie.
+            <span class="concept-tag">Linguistische Relativität</span> bedeutet:
+            Sprache beeinflusst Wahrnehmung – zumindest im Bereich der Kategorisierungsgeschwindigkeit.
+          </p>
+        </div>
+
+        <div class="feedback wrong-fb" id="feedback1-wrong-c">
+          <h3>Fast – aber nicht ganz!</h3>
+          <p>
+            Russische Sprecher sind <em>nicht generell</em> schneller bei Farbaufgaben.
+            Der Vorteil tritt nur auf, wenn ein Farbpaar die
+            <span class="concept-tag">синий/голубой-Grenze</span> überschreitet.
+            Bei Paaren innerhalb derselben russischen Kategorie gibt es keinen Unterschied.
+            Das ist das Entscheidende an der
+            <span class="concept-tag">Linguistischen Relativität</span>:
+            Sprachliche Kategorien wirken selektiv an Kategoriengrenzen.
+          </p>
+        </div>
+
+        <button class="btn-next" id="btn-next1">Weiter zu Stufe 2 →</button>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════ STAGE 2 ══════════════════════ -->
+    <section id="stage2">
+
+      <div class="card">
+        <p class="stage-label">Stufe 2 von 2 — Kategorisiere wie ein russischer Muttersprachler</p>
+        <h2>Wo liegt die Grenze zwischen <span class="ru">синий</span> und <span class="ru">голубой</span>?</h2>
+
+        <p>
+          Hier siehst du sechs Blautöne – von Dunkelblau bis Himmelblau.
+          Klicke auf jeden Farbchip und entscheide: Ist dieser Blauton
+          <strong>синий</strong> (dunkelblau) oder <strong>голубой</strong> (hellblau)?
+        </p>
+
+        <div class="chip-legend">
+          <div class="chip-legend-item">
+            <div class="legend-dot" style="background:#0d3080; border: 2px solid #0d3080;"></div>
+            <span><strong class="ru">синий</strong> = dunkles Blau</span>
+          </div>
+          <div class="chip-legend-item">
+            <div class="legend-dot" style="background:#5badd6; border: 2px solid #3d8db8;"></div>
+            <span><strong class="ru">голубой</strong> = helles Blau</span>
+          </div>
+        </div>
+
+        <div class="chip-grid" id="chip-grid">
+          <!-- Chips werden per JS erzeugt -->
+        </div>
+
+        <div class="chip-grid" id="chip-label-row">
+          <!-- Labels werden per JS erzeugt -->
+        </div>
+
+        <button class="btn-submit" id="btn-submit2">Meine Kategorisierung prüfen</button>
+
+        <div class="chip-result" id="chip-result">
+          <p style="font-weight:600; margin-bottom:0.75rem;">
+            So kategorisieren typische russische Muttersprachler:
+          </p>
+          <div id="result-rows"></div>
+
+          <div class="feedback" id="feedback2" style="display:none; margin-top:1.25rem;">
+            <h3>Auswertung deiner Kategorisierung</h3>
+            <p id="feedback2-text"></p>
+            <p>
+              Die Grenze zwischen <span class="concept-tag">синий</span> und
+              <span class="concept-tag">голубой</span> liegt im Russischen bei einem
+              mittleren Blauton (Chips 3→4 in dieser Reihe).
+              Genau an dieser Grenze zeigt sich der Reaktionszeitvorteil aus Stufe 1.
+            </p>
+          </div>
+        </div>
+
+        <!-- Reflexionsfrage -->
+        <div class="reflex-section" id="reflex-section">
+          <h3>Abschlussfrage: Starke oder schwache Hypothese?</h3>
+          <p class="question">
+            Die <span class="ru">Sapir-Whorf-Hypothese</span> existiert in zwei Versionen.
+            Was behauptet die <strong>schwache Version</strong> (Linguistische Relativität)?
+          </p>
+          <div class="options" id="options2">
+            <button class="option-btn" data-val="X">
+              X) Sprache bestimmt Denken. Menschen können nur das denken, wofür ihre Sprache Wörter kennt (Sprachdeterminismus).
+            </button>
+            <button class="option-btn" data-val="Y">
+              Y) Sprache beeinflusst und schärft Wahrnehmung und Denken in bestimmten Bereichen, ohne es vollständig zu bestimmen.
+            </button>
+            <button class="option-btn" data-val="Z">
+              Z) Alle Sprachen teilen die Welt gleich auf. Sprachliche Kategorien sind universell und beeinflussen die Wahrnehmung nicht.
+            </button>
+          </div>
+
+          <div class="final-box" id="final-box">
+            <h3>Zusammenfassung: Sapir-Whorf heute</h3>
+            <p>
+              Die <span class="concept-tag">schwache Sapir-Whorf-Hypothese</span>
+              (= <span class="concept-tag">Linguistische Relativität</span>) gilt als empirisch gut gestützt.
+              Die starke Version (<span class="concept-tag blue-tag">Sprachdeterminismus</span>) ist widerlegt:
+              Sprecher des Pirahã – einer Sprache ohne exakte Zahlwörter – können trotzdem Mengen wahrnehmen
+              und unterscheiden, auch wenn ihre Sprache keine präzisen Zahlbegriffe bietet.
+            </p>
+            <p>Was das синий/голубой-Experiment zeigt:</p>
+            <ul>
+              <li>Sprachliche Kategorien wirken als <em>Wahrnehmungsfilter</em> – nicht als Mauern.</li>
+              <li>Der Effekt ist <em>real und messbar</em> (124 ms Vorteil an der Kategoriengrenze).</li>
+              <li>Er ist <em>sprachabhängig</em>, wie die Shadowing-Kontrollbedingung bestätigt.</li>
+              <li>Er widerlegt die universalistische These: Nicht alle Sprachen teilen die Welt gleich auf.</li>
+            </ul>
+            <p>
+              Für den Unterricht: Die Hypothese öffnet Fragen über Sprache, Kognition und Kultur –
+              und zeigt, warum Linguistik weit mehr ist als Grammatikregeln.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Nachhilfe Mentor · Lernsimulation ·
+       Quelle: Winawer et al. (2007), <em>Russian blues reveal effects of language on color discrimination</em>, PNAS.</p>
+  </footer>
+
+  <script>
+    // ─── DataLayer ────────────────────────────────────────────────
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'asset_view',
+      asset_type: 'lernsimulation',
+      topic_cluster: 'sprachen',
+      simulation_id: 'sapir-whorf-linguistische-relativitaet'
+    });
+
+    // ─── Farbdaten ────────────────────────────────────────────────
+    const CHIPS = [
+      { hex: '#0b2060', label: '1', siniy: true  },
+      { hex: '#1035a8', label: '2', siniy: true  },
+      { hex: '#1e52cc', label: '3', siniy: true  },
+      { hex: '#3a88d8', label: '4', siniy: false },
+      { hex: '#65b2e8', label: '5', siniy: false },
+      { hex: '#93cefc', label: '6', siniy: false },
+    ];
+
+    // ─── Canvas Stage 1 ──────────────────────────────────────────
+    const canvas = document.getElementById('canvas1');
+    const ctx    = canvas.getContext('2d');
+    let   raf, startTime;
+    let   showBars = false;
+    let   barProgress = 0;
+
+    function resizeCanvas() {
+      const dpr = window.devicePixelRatio || 1;
+      const w   = canvas.clientWidth;
+      const h   = canvas.clientHeight;
+      canvas.width  = w * dpr;
+      canvas.height = h * dpr;
+      ctx.scale(dpr, dpr);
+    }
+
+    function drawSpectrum(W, H) {
+      // Farbverlauf von Dunkelblau bis Himmelblau
+      const grad = ctx.createLinearGradient(0, 0, W, 0);
+      grad.addColorStop(0,    '#0b2060');
+      grad.addColorStop(0.28, '#1035a8');
+      grad.addColorStop(0.48, '#1e52cc');
+      grad.addColorStop(0.58, '#3a88d8'); // Grenze
+      grad.addColorStop(0.72, '#65b2e8');
+      grad.addColorStop(0.88, '#93cefc');
+      grad.addColorStop(1,    '#b8e4ff');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 20, W, 72);
+
+      // Bereichs-Labels
+      ctx.font = '600 12px Inter, sans-serif';
+      ctx.fillStyle = 'rgba(255,255,255,0.92)';
+      ctx.fillText('синий', W * 0.18, 62);
+      ctx.fillText('голубой', W * 0.68, 62);
+
+      // Kategorienbeschriftung oben
+      ctx.font = '11px Inter, sans-serif';
+      ctx.fillStyle = '#617087';
+      ctx.fillText('dunkelblau (Russisch: синий)', 4, 14);
+      ctx.fillText('hellblau (Russisch: голубой)', W * 0.6, 14);
+    }
+
+    function drawBoundaryLine(W, t) {
+      const x     = W * 0.585;
+      const alpha = 0.45 + 0.45 * Math.sin(t * 0.003);
+      ctx.save();
+      ctx.strokeStyle = `rgba(255,255,255,${alpha})`;
+      ctx.lineWidth   = 2.5;
+      ctx.setLineDash([4, 3]);
+      ctx.beginPath();
+      ctx.moveTo(x, 20);
+      ctx.lineTo(x, 92);
+      ctx.stroke();
+      ctx.restore();
+
+      // Grenz-Label
+      ctx.save();
+      ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+      ctx.font = 'bold 10px Inter, sans-serif';
+      ctx.fillText('Grenze', x - 22, 108);
+      ctx.restore();
+    }
+
+    function drawTimingBars(W, H, progress) {
+      // Reaktionszeit-Balken
+      const barY    = 20;
+      const barH    = 30;
+      const gap     = 12;
+      const maxW    = (W - 160) * 0.9;
+
+      // Normierte Werte: Russisch Grenze = kürzeste Zeit (396 ms → schmalster Balken hier aber BEACHTE:
+      // kürzere Zeit = schneller → in Balken: kleinere Breite = schneller (ungünstig)
+      // Besser: INVERTIEREN → Balken zeigt Geschwindigkeit (=Länge des Balkens ~ 1/Zeit)
+      // Wir normieren: Basiszeit 520 ms, kürzeste 396 ms
+      // Geschwindigkeit-Score = 520 / Zeit → Russisch Grenze: 520/396 = 1.31, alles andere ~1.0
+      const data = [
+        { label: 'Russisch – gleiche Kategorie',  time: 520, color: '#1035a8' },
+        { label: 'Russisch – Kategorienwechsel',  time: 396, color: '#22bb88' },
+        { label: 'Englisch – gleiche Kategorie',  time: 520, color: '#9ba8c0' },
+        { label: 'Englisch – Kategorienwechsel',  time: 505, color: '#b0bcd0' },
+      ];
+      const maxTime = 520;
+
+      ctx.font = '11px Inter, sans-serif';
+
+      data.forEach((d, i) => {
+        const y   = barY + i * (barH + gap);
+        const frac = ((maxTime - d.time) / 200) * progress; // normiert auf Δ max 200ms
+        const bw  = Math.max(4, frac * maxW + (d.time / maxTime) * maxW * 0.6 * progress);
+        // Vereinfacht: Balken wächst auf time/maxTime * maxW
+        const w   = (d.time / maxTime) * maxW * Math.min(1, progress);
+
+        // Balken-Hintergrund
+        ctx.fillStyle = '#eef3f9';
+        ctx.fillRect(150, y, maxW, barH);
+
+        // Balken
+        ctx.fillStyle = d.color;
+        ctx.fillRect(150, y, w, barH);
+
+        // Label
+        ctx.fillStyle = '#172033';
+        ctx.fillText(d.label, 0, y + barH / 2 + 4);
+
+        // Zeit-Wert
+        if (progress >= 1) {
+          ctx.fillStyle = '#444';
+          ctx.fillText(`${d.time} ms`, 150 + w + 6, y + barH / 2 + 4);
+        }
+      });
+
+      // Legende
+      if (progress >= 1) {
+        ctx.font = 'bold 10px Inter, sans-serif';
+        ctx.fillStyle = '#0b8f6a';
+        ctx.fillText('★ +124 ms schneller an der синий/голубой-Grenze', 150, barY + 4 * (barH + gap) + 14);
+      }
+    }
+
+    function frame(ts) {
+      if (!startTime) startTime = ts;
+      const t = ts - startTime;
+      const W = canvas.clientWidth;
+      const H = canvas.clientHeight;
+      ctx.clearRect(0, 0, W, H);
+
+      if (!showBars) {
+        drawSpectrum(W, H);
+        drawBoundaryLine(W, t);
+      } else {
+        barProgress = Math.min(1, barProgress + 0.018);
+        drawTimingBars(W, H, barProgress);
+      }
+
+      raf = requestAnimationFrame(frame);
+    }
+
+    function initCanvas() {
+      resizeCanvas();
+      startTime = null;
+      raf = requestAnimationFrame(frame);
+    }
+    window.addEventListener('resize', () => { resizeCanvas(); startTime = null; });
+    initCanvas();
+
+    // ─── Stage-1-Buttons ──────────────────────────────────────────
+    document.querySelectorAll('#options1 .option-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const val = this.dataset.val;
+
+        // Alle Buttons deaktivieren
+        document.querySelectorAll('#options1 .option-btn').forEach(b => {
+          b.disabled = true;
+          if (b.dataset.val === 'B') b.classList.add('correct');
+          else b.classList.add('wrong');
+        });
+
+        // Richtiges Feedback anzeigen
+        if (val === 'B') {
+          document.getElementById('feedback1-correct').style.display = 'block';
+        } else if (val === 'A') {
+          document.getElementById('feedback1-wrong-a').style.display = 'block';
+        } else {
+          document.getElementById('feedback1-wrong-c').style.display = 'block';
+        }
+
+        // Canvas zu Balken wechseln
+        showBars    = true;
+        barProgress = 0;
+        startTime   = null;
+
+        // Weiter-Button einblenden
+        const btnNext = document.getElementById('btn-next1');
+        btnNext.style.display = 'inline-block';
+
+        window.dataLayer.push({
+          event: 'simulation_answer',
+          step: 'stage1',
+          answer: val,
+          correct: val === 'B'
+        });
+      });
+    });
+
+    document.getElementById('btn-next1').addEventListener('click', () => {
+      document.getElementById('stage1').style.display = 'none';
+      document.getElementById('stage2').style.display = 'block';
+      cancelAnimationFrame(raf);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      buildChips();
+    });
+
+    // ─── Stage 2: Chips aufbauen ──────────────────────────────────
+    const chipGrid = document.getElementById('chip-grid');
+    const userChoices = {};
+
+    function buildChips() {
+      chipGrid.innerHTML = '';
+
+      CHIPS.forEach((chip, i) => {
+        const wrapper = document.createElement('div');
+        wrapper.className = 'chip-wrapper';
+
+        const el = document.createElement('div');
+        el.className   = 'color-chip';
+        el.style.background = chip.hex;
+        el.dataset.idx = i;
+        el.title = `Chip ${chip.label}: Klicke 1x für синий, 2x für голубой, 3x um zurückzusetzen`;
+
+        // Klick-Logik: umschalten zwischen siniy → goluboy → zurück
+        el.addEventListener('click', () => {
+          const cur = userChoices[i];
+          if (!cur) {
+            userChoices[i] = 'siniy';
+            el.classList.remove('selected-goluboy');
+            el.classList.add('selected-siniy');
+            label.textContent  = 'синий';
+            label.className    = 'chip-label lbl-siniy';
+          } else if (cur === 'siniy') {
+            userChoices[i] = 'goluboy';
+            el.classList.remove('selected-siniy');
+            el.classList.add('selected-goluboy');
+            label.textContent = 'голубой';
+            label.className   = 'chip-label lbl-goluboy';
+          } else {
+            delete userChoices[i];
+            el.classList.remove('selected-siniy', 'selected-goluboy');
+            label.textContent = '?';
+            label.className   = 'chip-label';
+          }
+        });
+
+        const label = document.createElement('div');
+        label.className = 'chip-label';
+        label.textContent = '?';
+
+        wrapper.appendChild(el);
+        wrapper.appendChild(label);
+        chipGrid.appendChild(wrapper);
+      });
+    }
+
+    // ─── Stage 2: Auswertung ──────────────────────────────────────
+    document.getElementById('btn-submit2').addEventListener('click', () => {
+      const resultDiv  = document.getElementById('chip-result');
+      const rowsDiv    = document.getElementById('result-rows');
+      const fb2        = document.getElementById('feedback2');
+      const fb2text    = document.getElementById('feedback2-text');
+
+      // Ergebnis-Zeilen aufbauen
+      rowsDiv.innerHTML = '';
+      let correct = 0;
+
+      CHIPS.forEach((chip, i) => {
+        const correctLabel = chip.siniy ? 'siniy' : 'goluboy';
+        const userLabel    = userChoices[i];
+        const isCorrect    = userLabel === correctLabel;
+        if (isCorrect) correct++;
+
+        const row  = document.createElement('div');
+        row.className = 'result-row';
+
+        const swatch = document.createElement('div');
+        swatch.className = 'result-chip';
+        swatch.style.background = chip.hex;
+
+        const mark = document.createElement('span');
+        mark.className = 'result-mark';
+        mark.textContent = isCorrect ? '✓' : (userLabel ? '✗' : '–');
+        mark.style.color  = isCorrect ? '#0b8f6a' : '#b5281e';
+
+        const txt = document.createElement('span');
+        txt.className = 'result-text';
+        txt.innerHTML = `Chip ${chip.label}: Richtig wäre <strong style="color:${chip.siniy ? '#0d3080' : '#2a7faa'}">${chip.siniy ? 'синий' : 'голубой'}</strong>` +
+          (userLabel ? ` — du hast <em>${userLabel === 'siniy' ? 'синий' : 'голубой'}</em> gewählt` : ' — nicht bewertet');
+
+        row.appendChild(swatch);
+        row.appendChild(mark);
+        row.appendChild(txt);
+        rowsDiv.appendChild(row);
+      });
+
+      // Feedback-Text
+      const score = correct;
+      if (score >= 5) {
+        fb2text.textContent = `Ausgezeichnet! Du hast ${score} von 6 Chips korrekt kategorisiert – sehr nah an der Wahrnehmung russischer Muttersprachler.`;
+      } else if (score >= 3) {
+        fb2text.textContent = `Du hast ${score} von 6 Chips korrekt kategorisiert. Die Grenze zwischen синий und голубой liegt bei Chip 3→4. Für Deutschsprachige ist diese Grenze ungewohnt, weil wir keinen obligatorischen Unterschied machen.`;
+      } else {
+        fb2text.textContent = `Du hast ${score} von 6 Chips korrekt. Das ist typisch für Sprecher ohne синий/голубой-Distinktion – die Grenze fühlt sich künstlich an, ist aber für Russisch-Muttersprachler intuitiv.`;
+      }
+
+      resultDiv.style.display   = 'block';
+      fb2.style.display         = 'block';
+      document.getElementById('btn-submit2').disabled = true;
+      document.getElementById('reflex-section').style.display = 'block';
+
+      window.dataLayer.push({
+        event: 'simulation_answer',
+        step: 'stage2_chips',
+        correct_count: score
+      });
+    });
+
+    // ─── Stage 2: Reflexionsfrage ─────────────────────────────────
+    document.querySelectorAll('#options2 .option-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const val = this.dataset.val;
+
+        document.querySelectorAll('#options2 .option-btn').forEach(b => {
+          b.disabled = true;
+          if (b.dataset.val === 'Y') b.classList.add('correct');
+          else b.classList.add('wrong');
+        });
+
+        document.getElementById('final-box').style.display = 'block';
+
+        window.dataLayer.push({
+          event: 'simulation_answer',
+          step: 'stage2_reflex',
+          answer: val,
+          correct: val === 'Y'
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>

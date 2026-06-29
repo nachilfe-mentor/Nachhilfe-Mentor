@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow">
+  <title>Sprachtypologie: Agglutinierend, Flektierend, Isolierend üben | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zur Sprachtypologie: Morpheme von Türkisch, Latein und Chinesisch zerlegen und isolierende, agglutinierende und flektierende Sprachen klassifizieren.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sprachtypologie, agglutinierend, flektierend, isolierend, Morphologie, Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachtypologie-agglutinierend-flektierend-simulation.html">
+  <meta property="og:title" content="Sprachtypologie: Agglutinierend, Flektierend, Isolierend">
+  <meta property="og:description" content="Interaktive Simulation zur Sprachtypologie: Morpheme von Türkisch, Latein und Chinesisch zerlegen und isolierende, agglutinierende und flektierende Sprachen klassifizieren.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachtypologie-agglutinierend-flektierend-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprachtypologie: Agglutinierend, Flektierend, Isolierend üben",
+  "description":"Interaktive Simulation zur Sprachtypologie: Morpheme von Türkisch, Latein und Chinesisch zerlegen und isolierende, agglutinierende und flektierende Sprachen klassifizieren.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachtypologie-agglutinierend-flektierend-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --blau: #2563EB;
+      --blau-hell: #DBEAFE;
+      --gruen: #16A34A;
+      --gruen-hell: #DCFCE7;
+      --orange: #EA580C;
+      --orange-hell: #FED7AA;
+      --lila: #7C3AED;
+      --lila-hell: #EDE9FE;
+      --rot: #DC2626;
+      --rot-hell: #FEE2E2;
+      --gelb: #D97706;
+      --gelb-hell: #FEF3C7;
+      --grau: #6B7280;
+      --grau-hell: #F3F4F6;
+      --text: #111827;
+      --rand: #E5E7EB;
+      --weiss: #FFFFFF;
+      --radius: 10px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #F9FAFB;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    /* ── Site-Header ── */
+    .site-header {
+      background: var(--weiss);
+      border-bottom: 1px solid var(--rand);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .site-logo {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--blau);
+      text-decoration: none;
+    }
+    .breadcrumb { font-size: 0.8rem; color: #9CA3AF; }
+    .breadcrumb a { color: var(--grau); text-decoration: none; }
+    .breadcrumb a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
+    }
+
+    /* ── Seitenüberschrift ── */
+    .seiten-kopf {
+      margin-bottom: 2rem;
+    }
+    .badge {
+      display: inline-block;
+      background: #EEF2FF;
+      color: #4338CA;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      text-transform: uppercase;
+      margin-bottom: 0.75rem;
+    }
+    h1 {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      font-weight: 700;
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+    .untertitel {
+      color: var(--grau);
+      font-size: 0.95rem;
+    }
+
+    /* ── Fortschritts-Anzeige ── */
+    .schritt-fortschritt {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 0.5rem;
+    }
+    .schritt-punkt {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--grau-hell);
+      border: 2px solid var(--rand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--grau);
+      flex-shrink: 0;
+      transition: background 0.3s, color 0.3s, border-color 0.3s;
+    }
+    .schritt-punkt.aktiv { background: var(--blau); color: white; border-color: var(--blau); }
+    .schritt-punkt.fertig { background: var(--gruen); color: white; border-color: var(--gruen); }
+    .schritt-linie {
+      flex: 1;
+      height: 2px;
+      background: var(--rand);
+      transition: background 0.3s;
+    }
+    .schritt-linie.fertig { background: var(--gruen); }
+    .schritt-bezeichnungen {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    .schritt-bezeichnungen span {
+      font-size: 0.72rem;
+      color: #9CA3AF;
+      flex: 1;
+      text-align: center;
+    }
+    .schritt-bezeichnungen span:first-child { text-align: left; }
+    .schritt-bezeichnungen span:last-child { text-align: right; }
+
+    /* ── Karten ── */
+    .karte {
+      background: var(--weiss);
+      border: 1px solid var(--rand);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .karte-titel {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .schritt-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      font-size: 0.8rem;
+      font-weight: 700;
+      background: var(--blau);
+      color: white;
+      flex-shrink: 0;
+    }
+
+    /* ── Vorhersage-Abschnitt ── */
+    .vorhersage-frage {
+      font-size: 0.97rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+      line-height: 1.5;
+    }
+    .vorhersage-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-bottom: 1rem;
+    }
+    .vorhersage-btn {
+      flex: 1;
+      min-width: 120px;
+      padding: 0.7rem 1rem;
+      border: 2px solid var(--rand);
+      border-radius: 8px;
+      background: white;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: center;
+    }
+    .vorhersage-btn:hover:not(:disabled) {
+      border-color: var(--blau);
+      background: var(--blau-hell);
+      color: var(--blau);
+    }
+    .vorhersage-btn.richtig { border-color: var(--gruen); background: var(--gruen-hell); color: #166534; }
+    .vorhersage-btn.falsch  { border-color: var(--rot);   background: var(--rot-hell);   color: #991B1B; }
+    .vorhersage-btn.korrekt-zeigen { border-color: var(--gruen); background: var(--gruen-hell); color: #166534; }
+    .vorhersage-btn:disabled { cursor: default; }
+
+    /* ── Visualizer Tabs ── */
+    .tab-leiste {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.25rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      flex: 1;
+      min-width: 100px;
+      padding: 0.5rem 0.75rem;
+      border: 2px solid var(--rand);
+      border-radius: 8px;
+      background: var(--grau-hell);
+      color: var(--text);
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: center;
+    }
+    .tab-btn:hover { border-color: var(--blau); }
+    .tab-btn.aktiv { border-color: var(--blau); background: var(--blau-hell); color: var(--blau); }
+    .tab-inhalt { display: none; }
+    .tab-inhalt.aktiv { display: block; }
+
+    /* ── Morphem-Block-Visualizer ── */
+    .morphem-szenario {
+      background: #F8FAFF;
+      border: 1px solid #C7D7FD;
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .morphem-beschriftung {
+      font-size: 0.8rem;
+      color: var(--grau);
+      margin-bottom: 0.75rem;
+    }
+    .morphem-kette {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-items: flex-end;
+      min-height: 80px;
+      margin-bottom: 0.75rem;
+    }
+    .morphem-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .morphem-wort {
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border: 2px solid transparent;
+      text-align: center;
+      min-width: 48px;
+    }
+    .morphem-label {
+      font-size: 0.7rem;
+      color: var(--grau);
+      text-align: center;
+      max-width: 80px;
+    }
+
+    /* Morphem-Farben */
+    .m-stamm    { background: var(--blau-hell);   color: var(--blau);   border-color: #93C5FD; }
+    .m-plural   { background: var(--gruen-hell);  color: var(--gruen);  border-color: #86EFAC; }
+    .m-possessiv{ background: var(--lila-hell);   color: var(--lila);   border-color: #C4B5FD; }
+    .m-kasus    { background: var(--orange-hell); color: var(--orange); border-color: #FDBA74; }
+    .m-verb     { background: var(--rot-hell);    color: var(--rot);    border-color: #FCA5A5; }
+    .m-komplex  { background: var(--gelb-hell);   color: var(--gelb);   border-color: #FDE68A; }
+    .m-neutral  { background: var(--grau-hell);   color: var(--text);   border-color: #D1D5DB; }
+
+    .morphem-separator {
+      font-size: 1.1rem;
+      color: var(--grau);
+      font-weight: 700;
+      padding-bottom: 0.5rem;
+      align-self: flex-end;
+      opacity: 0;
+      transition: opacity 0.2s ease 0.15s;
+    }
+    .morphem-kette.sichtbar .morphem-separator { opacity: 1; }
+
+    /* Animation: Blöcke einblenden */
+    .morphem-kette .morphem-block {
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 0.35s ease, transform 0.35s ease;
+    }
+    .morphem-kette.sichtbar .morphem-block { opacity: 1; transform: translateY(0); }
+    .morphem-kette .morphem-block:nth-child(1)  { transition-delay: 0.00s; }
+    .morphem-kette .morphem-block:nth-child(2)  { transition-delay: 0.05s; }
+    .morphem-kette .morphem-block:nth-child(3)  { transition-delay: 0.12s; }
+    .morphem-kette .morphem-block:nth-child(4)  { transition-delay: 0.19s; }
+    .morphem-kette .morphem-block:nth-child(5)  { transition-delay: 0.26s; }
+    .morphem-kette .morphem-block:nth-child(6)  { transition-delay: 0.33s; }
+    .morphem-kette .morphem-block:nth-child(7)  { transition-delay: 0.40s; }
+    .morphem-kette .morphem-block:nth-child(8)  { transition-delay: 0.47s; }
+    .morphem-kette .morphem-block:nth-child(9)  { transition-delay: 0.54s; }
+    .morphem-kette .morphem-block:nth-child(10) { transition-delay: 0.61s; }
+
+    .typ-info {
+      background: #F0F9FF;
+      border-left: 3px solid var(--blau);
+      padding: 0.75rem 1rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.88rem;
+      margin-top: 0.5rem;
+    }
+    .endung-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.5rem;
+    }
+    .endung-tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 600;
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .btn-primaer { background: var(--blau); color: white; }
+    .btn-primaer:hover { background: #1D4ED8; }
+    .btn-primaer:disabled { background: #93C5FD; cursor: not-allowed; }
+    .btn-sekundaer { background: var(--grau-hell); color: var(--text); border: 1px solid var(--rand); }
+    .btn-sekundaer:hover { background: var(--rand); }
+
+    /* ── Legende ── */
+    .legende {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .legende-item { display: flex; align-items: center; gap: 0.3rem; font-size: 0.75rem; }
+    .legende-farbe { width: 12px; height: 12px; border-radius: 3px; }
+
+    /* ── Quiz ── */
+    .fortschritt-leiste {
+      height: 6px;
+      background: var(--rand);
+      border-radius: 3px;
+      margin-bottom: 1.25rem;
+      overflow: hidden;
+    }
+    .fortschritt-fill {
+      height: 100%;
+      background: var(--blau);
+      border-radius: 3px;
+      transition: width 0.4s ease;
+    }
+    .frage-container { margin-bottom: 1rem; }
+    .frage-nummer {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--grau);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+    .frage-wort {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 0.2rem;
+    }
+    .frage-sprache { font-size: 0.85rem; color: var(--grau); margin-bottom: 1rem; }
+    .antwort-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .antwort-btn {
+      flex: 1;
+      min-width: 120px;
+      padding: 0.6rem 0.75rem;
+      border: 2px solid var(--rand);
+      border-radius: 8px;
+      background: white;
+      color: var(--text);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: center;
+    }
+    .antwort-btn:hover:not(:disabled) { border-color: var(--blau); background: var(--blau-hell); }
+    .antwort-btn.richtig { border-color: var(--gruen); background: var(--gruen-hell); color: #166534; }
+    .antwort-btn.falsch  { border-color: var(--rot);   background: var(--rot-hell);   color: #991B1B; }
+    .antwort-btn.korrekt-markiert { border-color: var(--gruen); background: var(--gruen-hell); color: #166534; }
+    .antwort-btn:disabled { cursor: default; }
+
+    /* ── Feedback-Boxen ── */
+    .feedback-box {
+      display: none;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      line-height: 1.55;
+    }
+    .feedback-box.richtig { background: var(--gruen-hell); border: 1px solid #86EFAC; color: #166534; }
+    .feedback-box.falsch  { background: var(--rot-hell);   border: 1px solid #FCA5A5; color: #991B1B; }
+    .feedback-box.sichtbar { display: block; }
+
+    /* ── Ergebnis ── */
+    .ergebnis-box {
+      text-align: center;
+      padding: 1.25rem;
+      background: var(--gruen-hell);
+      border: 1px solid #86EFAC;
+      border-radius: 8px;
+      margin-bottom: 1.25rem;
+    }
+    .ergebnis-zahl { font-size: 2rem; font-weight: 800; color: var(--gruen); }
+    .ergebnis-text { font-size: 0.9rem; color: #166534; margin-top: 0.25rem; }
+
+    /* ── Step 2: Morphem-Zerlegung ── */
+    .zerlegung-wort { font-size: 1.6rem; font-weight: 800; text-align: center; margin-bottom: 0.25rem; }
+    .zerlegung-info { text-align: center; font-size: 0.9rem; color: var(--grau); margin-bottom: 1.25rem; }
+    .zerlegung-optionen { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1rem; }
+    .zerlegung-option {
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--rand);
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: left;
+    }
+    .zerlegung-option:hover:not(:disabled) { border-color: var(--blau); background: var(--blau-hell); }
+    .zerlegung-option .option-code { font-weight: 700; font-size: 1rem; margin-bottom: 0.2rem; }
+    .zerlegung-option .option-bedeutung { font-size: 0.8rem; color: var(--grau); }
+    .zerlegung-option.richtig { border-color: var(--gruen); background: var(--gruen-hell); }
+    .zerlegung-option.falsch  { border-color: var(--rot);   background: var(--rot-hell); }
+    .zerlegung-option.korrekt-markiert { border-color: var(--gruen); background: var(--gruen-hell); }
+    .zerlegung-option:disabled { cursor: default; }
+
+    /* ── Abschluss ── */
+    .abschluss-box {
+      background: linear-gradient(135deg, #EEF2FF 0%, #F0FDF4 100%);
+      border: 1px solid #C7D2FE;
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      text-align: center;
+      margin-bottom: 1.25rem;
+    }
+    .abschluss-titel { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .abschluss-text { font-size: 0.9rem; color: var(--grau); max-width: 520px; margin: 0 auto; }
+
+    .typen-uebersicht {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .typ-karte { background: white; border: 1px solid var(--rand); border-radius: 8px; padding: 0.85rem; }
+    .typ-karte-titel { font-weight: 700; font-size: 0.9rem; margin-bottom: 0.25rem; }
+    .typ-karte-sprachen { font-size: 0.8rem; color: var(--grau); margin-bottom: 0.4rem; }
+    .typ-karte-merkmal { font-size: 0.8rem; line-height: 1.4; }
+
+    .hinweis-box {
+      background: var(--gelb-hell);
+      border: 1px solid #FDE68A;
+      border-radius: 8px;
+      padding: 0.85rem 1rem;
+      font-size: 0.85rem;
+      color: #92400E;
+      margin-bottom: 1.25rem;
+    }
+
+    .interne-links {
+      font-size: 0.82rem;
+      color: #9CA3AF;
+      margin-top: 0.5rem;
+    }
+    .interne-links a { color: var(--blau); text-decoration: none; }
+    .interne-links a:hover { text-decoration: underline; }
+
+    /* ── Hilfselemente ── */
+    .versteckt { display: none; }
+    hr { border: none; border-top: 1px solid var(--rand); margin: 1.5rem 0; }
+
+    @media (max-width: 480px) {
+      .tab-btn { font-size: 0.8rem; padding: 0.45rem 0.5rem; }
+      .frage-wort { font-size: 1.1rem; }
+      .zerlegung-wort { font-size: 1.3rem; }
+      .morphem-wort { font-size: 0.95rem; padding: 0.4rem 0.55rem; }
+      .karte { padding: 1.25rem; }
+    }
+  </style>
+</head>
+<body
+  data-subject="Sprachen"
+  data-grade-level="9-13"
+  data-asset-type="simulation"
+  data-topic-cluster="sprachtypologie"
+  data-primary-keyword="sprachen">
+
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header class="site-header">
+    <a class="site-logo" href="/">Nachhilfe Mentor</a>
+    <span class="breadcrumb">
+      / <a href="/lernmaterialien/">Lernmaterialien</a>
+      / <a href="/lernmaterialien/lernsimulationen/">Simulationen</a>
+      / Sprachtypologie
+    </span>
+  </header>
+
+  <div class="container">
+
+    <!-- Seitenüberschrift -->
+    <div class="seiten-kopf">
+      <div class="badge">Linguistik · Klasse 9–13</div>
+      <h1>Sprachtypologie: Isolierend, Agglutinierend, Flektierend</h1>
+      <p class="untertitel">Warum kann ein türkisches Wort alles enthalten, was auf Deutsch einen ganzen Satz braucht?</p>
+    </div>
+
+    <!-- Schritt-Fortschritt -->
+    <div class="schritt-fortschritt">
+      <div class="schritt-punkt aktiv" id="sp1">1</div>
+      <div class="schritt-linie" id="sl12"></div>
+      <div class="schritt-punkt" id="sp2">2</div>
+      <div class="schritt-linie" id="sl23"></div>
+      <div class="schritt-punkt" id="sp3">3</div>
+    </div>
+    <div class="schritt-bezeichnungen">
+      <span>Vorhersage</span>
+      <span>Klassifikation</span>
+      <span>Zusammenfassung</span>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- SCHRITT 0: Vorhersage (vor dem Visualizer)             -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <div class="karte" id="vorhersage-karte">
+      <div class="karte-titel">
+        Schritt 1: Vorhersage
+      </div>
+      <p style="font-size:0.9rem;color:var(--grau);margin-bottom:1.25rem;">
+        Bevor du die Simulation siehst – beantworte diese Frage aus dem Bauch heraus:
+      </p>
+      <p class="vorhersage-frage">
+        Das türkische Wort <strong>evlerimdeyim</strong> bedeutet auf Deutsch
+        „Ich bin in meinen Häusern". Wie viele eigenständige Bedeutungseinheiten
+        (Morpheme) stecken deiner Schätzung nach in diesem einzigen Wort?
+      </p>
+      <div class="vorhersage-buttons" id="vorhersage-buttons">
+        <button class="vorhersage-btn" data-wahl="1" onclick="pruefeVorhersage(this)">1 – Morphem</button>
+        <button class="vorhersage-btn" data-wahl="3" onclick="pruefeVorhersage(this)">3 – Morpheme</button>
+        <button class="vorhersage-btn" data-wahl="5" onclick="pruefeVorhersage(this)">5 – Morpheme</button>
+      </div>
+      <div class="feedback-box" id="vorhersage-feedback"></div>
+      <div class="versteckt" id="vorhersage-weiter" style="margin-top:1rem;">
+        <button class="btn btn-primaer" onclick="starteVisualizer()">
+          Morpheme im Visualizer ansehen →
+        </button>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- VISUALIZER                                              -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <div class="karte versteckt" id="visualizer-karte">
+      <div class="karte-titel">Morphem-Block-Visualizer</div>
+      <p style="font-size:0.88rem;color:var(--grau);margin-bottom:1.25rem;">
+        Wähle einen Sprachtyp und klicke auf „Morpheme anzeigen", um die Bausteine auseinanderzuziehen:
+      </p>
+
+      <div class="tab-leiste">
+        <button class="tab-btn aktiv" onclick="zeigeTab('isolierend', this)">Isolierend</button>
+        <button class="tab-btn" onclick="zeigeTab('agglutinierend', this)">Agglutinierend</button>
+        <button class="tab-btn" onclick="zeigeTab('flektierend', this)">Flektierend</button>
+      </div>
+
+      <!-- Tab: Isolierend -->
+      <div id="tab-isolierend" class="tab-inhalt aktiv">
+        <div class="morphem-szenario">
+          <div class="morphem-beschriftung">Mandarin-Chinesisch · „Ich liebe dich" (wǒ ài nǐ)</div>
+          <div id="kette-isolierend" class="morphem-kette">
+            <div class="morphem-block">
+              <div class="morphem-wort m-stamm">我</div>
+              <div class="morphem-label">ich</div>
+            </div>
+            <div class="morphem-block">
+              <div class="morphem-wort m-stamm">爱</div>
+              <div class="morphem-label">liebe</div>
+            </div>
+            <div class="morphem-block">
+              <div class="morphem-wort m-stamm">你</div>
+              <div class="morphem-label">dich</div>
+            </div>
+          </div>
+          <div class="typ-info">
+            <strong>Isolierender Typ:</strong> Jedes Zeichen ist ein eigenständiges Morphem –
+            keine Endungen, keine Suffixe. Die Grammatik entsteht durch Wortstellung und Partikel.
+            Ein Zeichen = eine Bedeutung.
+          </div>
+          <div class="legende" style="margin-top:0.75rem;">
+            <div class="legende-item">
+              <div class="legende-farbe" style="background:var(--blau-hell);border:1px solid #93C5FD"></div>
+              Freies Morphem (Stamm)
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primaer" onclick="animiereKette('isolierend')">Morpheme anzeigen</button>
+      </div>
+
+      <!-- Tab: Agglutinierend -->
+      <div id="tab-agglutinierend" class="tab-inhalt">
+        <div class="morphem-szenario">
+          <div class="morphem-beschriftung">Türkisch · <em>evlerimdeyim</em> = „Ich bin in meinen Häusern"</div>
+          <div id="kette-agglutinierend" class="morphem-kette">
+            <div class="morphem-block">
+              <div class="morphem-wort m-stamm">ev</div>
+              <div class="morphem-label">Haus</div>
+            </div>
+            <div class="morphem-separator">+</div>
+            <div class="morphem-block">
+              <div class="morphem-wort m-plural">-ler</div>
+              <div class="morphem-label">Plural</div>
+            </div>
+            <div class="morphem-separator">+</div>
+            <div class="morphem-block">
+              <div class="morphem-wort m-possessiv">-im</div>
+              <div class="morphem-label">mein (1. Sg.)</div>
+            </div>
+            <div class="morphem-separator">+</div>
+            <div class="morphem-block">
+              <div class="morphem-wort m-kasus">-de</div>
+              <div class="morphem-label">in (Lokativ)</div>
+            </div>
+            <div class="morphem-separator">+</div>
+            <div class="morphem-block">
+              <div class="morphem-wort m-verb">-yim</div>
+              <div class="morphem-label">bin (1. Sg.)</div>
+            </div>
+          </div>
+          <div class="typ-info">
+            <strong>Agglutinierend</strong> (lat. <em>agglutinare</em> = ankleben):
+            Jedes Suffix trägt genau <em>eine</em> grammatische Bedeutung.
+            Die Morphemgrenzen sind immer klar erkennbar – wie Legobausteine.
+          </div>
+          <div class="legende" style="margin-top:0.75rem;">
+            <div class="legende-item"><div class="legende-farbe" style="background:var(--blau-hell);border:1px solid #93C5FD"></div>Stamm</div>
+            <div class="legende-item"><div class="legende-farbe" style="background:var(--gruen-hell);border:1px solid #86EFAC"></div>Plural</div>
+            <div class="legende-item"><div class="legende-farbe" style="background:var(--lila-hell);border:1px solid #C4B5FD"></div>Possessiv</div>
+            <div class="legende-item"><div class="legende-farbe" style="background:var(--orange-hell);border:1px solid #FDBA74"></div>Kasus</div>
+            <div class="legende-item"><div class="legende-farbe" style="background:var(--rot-hell);border:1px solid #FCA5A5"></div>Verb</div>
+          </div>
+        </div>
+        <button class="btn btn-primaer" onclick="animiereKette('agglutinierend')">Morpheme anzeigen</button>
+      </div>
+
+      <!-- Tab: Flektierend -->
+      <div id="tab-flektierend" class="tab-inhalt">
+        <div class="morphem-szenario">
+          <div class="morphem-beschriftung">Latein · <em>puellam</em> = „das Mädchen" (Akkusativ, Feminin, Singular)</div>
+          <div id="kette-flektierend" class="morphem-kette">
+            <div class="morphem-block">
+              <div class="morphem-wort m-stamm">puell-</div>
+              <div class="morphem-label">Stamm: Mädchen</div>
+            </div>
+            <div class="morphem-separator">+</div>
+            <div class="morphem-block">
+              <div class="morphem-wort m-komplex">-am</div>
+              <div class="morphem-label">3 Infos auf einmal</div>
+            </div>
+          </div>
+          <div class="typ-info">
+            <strong>Flektierend:</strong> Die Endung <strong>-am</strong> kodiert
+            gleichzeitig drei grammatische Kategorien in einem einzigen Morphem:
+            <div class="endung-info">
+              <span class="endung-tag" style="background:var(--orange-hell);color:var(--orange);">Kasus: Akkusativ</span>
+              <span class="endung-tag" style="background:var(--lila-hell);color:var(--lila);">Genus: Femininum</span>
+              <span class="endung-tag" style="background:var(--gruen-hell);color:var(--gruen);">Numerus: Singular</span>
+            </div>
+            <p style="margin-top:0.5rem;font-size:0.85rem;">
+              Im Deutschen ähnlich: <em>„dem"</em> = Dativ + Maskulinum + Singular – alles in einer Form.
+            </p>
+          </div>
+          <div class="legende" style="margin-top:0.75rem;">
+            <div class="legende-item"><div class="legende-farbe" style="background:var(--blau-hell);border:1px solid #93C5FD"></div>Stamm</div>
+            <div class="legende-item"><div class="legende-farbe" style="background:var(--gelb-hell);border:1px solid #FDE68A"></div>Fusionierte Endung (mehrere Bedeutungen)</div>
+          </div>
+        </div>
+        <button class="btn btn-primaer" onclick="animiereKette('flektierend')">Morpheme anzeigen</button>
+      </div>
+
+      <hr>
+      <div style="text-align:center;">
+        <button class="btn btn-primaer" onclick="starteQuiz()">Weiter zur Klassifikation →</button>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- SCHRITT 1: Klassifikation                               -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <div class="karte versteckt" id="schritt1">
+      <div class="karte-titel">
+        <span class="schritt-badge">2</span>
+        Klassifikation: Welcher Sprachtyp ist es?
+      </div>
+      <p style="font-size:0.88rem;color:var(--grau);margin-bottom:1rem;">
+        Analysiere jedes Beispiel und ordne es dem richtigen morphologischen Typ zu.
+      </p>
+      <div class="fortschritt-leiste">
+        <div class="fortschritt-fill" id="fortschritt-fill" style="width:0%"></div>
+      </div>
+      <div id="quiz-container"></div>
+      <div id="quiz-ergebnis" class="versteckt">
+        <div class="ergebnis-box">
+          <div class="ergebnis-zahl" id="ergebnis-zahl"></div>
+          <div class="ergebnis-text" id="ergebnis-text"></div>
+        </div>
+        <button class="btn btn-primaer" onclick="zeigeSchritt2()">Weiter zu Schritt 3 →</button>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- SCHRITT 2: Morphem-Zerlegung                            -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <div class="karte versteckt" id="schritt2">
+      <div class="karte-titel">
+        <span class="schritt-badge">3</span>
+        Morphem-Zerlegung: Teile das Wort auf
+      </div>
+      <p style="font-size:0.88rem;color:var(--grau);margin-bottom:1.25rem;">
+        Hier ist ein türkisches Wort. Welche Zerlegung in Morpheme ist korrekt?
+      </p>
+
+      <div class="zerlegung-wort">kitaplarımda</div>
+      <div class="zerlegung-info">Türkisch · Bedeutung: „in meinen Büchern"</div>
+
+      <div class="zerlegung-optionen">
+        <button class="zerlegung-option" onclick="pruefZerlegung('a', this)">
+          <div class="option-code">A) kitap + -lar + -ım + -da</div>
+          <div class="option-bedeutung">Buch &nbsp;|&nbsp; Plural &nbsp;|&nbsp; mein (1. Sg.) &nbsp;|&nbsp; in (Lokativ)</div>
+        </button>
+        <button class="zerlegung-option" onclick="pruefZerlegung('b', this)">
+          <div class="option-code">B) kita + -plar + -ım + -da</div>
+          <div class="option-bedeutung">kita (?) &nbsp;|&nbsp; plar (?) &nbsp;|&nbsp; ım &nbsp;|&nbsp; da</div>
+        </button>
+        <button class="zerlegung-option" onclick="pruefZerlegung('c', this)">
+          <div class="option-code">C) kitap + -larım + -da</div>
+          <div class="option-bedeutung">Buch &nbsp;|&nbsp; (Plural + Possessiv zusammen?) &nbsp;|&nbsp; in</div>
+        </button>
+      </div>
+
+      <div id="zerlegung-feedback" class="feedback-box"></div>
+      <div id="schritt2-weiter" class="versteckt" style="margin-top:1rem;">
+        <button class="btn btn-primaer" onclick="zeigeAbschluss()">Zusammenfassung ansehen →</button>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════════ -->
+    <!-- ABSCHLUSS                                               -->
+    <!-- ════════════════════════════════════════════════════════ -->
+    <div class="karte versteckt" id="abschluss">
+      <div class="abschluss-box">
+        <div class="abschluss-titel">Simulation abgeschlossen</div>
+        <p class="abschluss-text">
+          Du hast alle drei morphologischen Sprachtypen analysiert und klassifiziert.
+          Hier ist deine Merkhilfe:
+        </p>
+      </div>
+
+      <div class="typen-uebersicht">
+        <div class="typ-karte">
+          <div class="typ-karte-titel" style="color:var(--blau);">Isolierend (analytisch)</div>
+          <div class="typ-karte-sprachen">Chinesisch, Vietnamesisch</div>
+          <div class="typ-karte-merkmal">1 Wort = 1 Morphem. Keine Flexionsendungen. Grammatik durch Wortstellung und Partikel.</div>
+        </div>
+        <div class="typ-karte">
+          <div class="typ-karte-titel" style="color:var(--gruen);">Agglutinierend</div>
+          <div class="typ-karte-sprachen">Türkisch, Finnisch, Ungarisch, Swahili</div>
+          <div class="typ-karte-merkmal">Suffixe werden angeheftet. Jedes Suffix = genau 1 Bedeutung. Klare Morphemgrenzen.</div>
+        </div>
+        <div class="typ-karte">
+          <div class="typ-karte-titel" style="color:var(--orange);">Flektierend (fusionierend)</div>
+          <div class="typ-karte-sprachen">Latein, Deutsch, Russisch, Altgriechisch</div>
+          <div class="typ-karte-merkmal">Endungen kodieren mehrere Kategorien gleichzeitig (Kasus + Genus + Numerus in einem Morphem).</div>
+        </div>
+      </div>
+
+      <div class="hinweis-box">
+        <strong>Wichtig:</strong> Diese Typen sind Idealtypen – keine reale Sprache ist „rein".
+        Deutsch ist primär flektierend, kennt aber auch Komposita (<em>Haustür</em>).
+        Englisch hat sich vom Altenglischen (flektierend) zum modernen Englisch (stärker isolierend) gewandelt.
+      </div>
+
+      <div style="text-align:center;margin-bottom:1rem;">
+        <button class="btn btn-sekundaer" onclick="neustarten()">Nochmal versuchen</button>
+      </div>
+
+      <div class="interne-links">
+        Weiter erkunden:
+        <a href="/lernmaterialien/lernsimulationen/sprachfamilien-indoeuropaeisch-simulation.html">Sprachfamilien</a> ·
+        <a href="/lernmaterialien/lernsimulationen/lautverschiebung-englisch-deutsch-simulation.html">Lautverschiebung</a> ·
+        <a href="/lernmaterialien/lernsimulationen/spracherwerbstheorien-simulation.html">Spracherwerbstheorien</a>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    // ── Quiz-Daten ──
+    var quizDaten = [
+      {
+        id: 1,
+        wort: 'evlerimdeyim',
+        sprache: 'Türkisch',
+        uebersetzung: '„Ich bin in meinen Häusern"',
+        richtigerTyp: 'agglutinierend',
+        feedbackRichtig: 'Korrekt! Türkisch ist agglutinierend: Das Wort setzt sich aus ev (Haus) + -ler (Plural) + -im (mein, Possessiv 1. Sg.) + -de (Lokativ: in) + -yim (bin, 1. Sg.) zusammen – jedes Suffix trägt genau eine grammatische Bedeutung.',
+        feedbackFalsch: 'Nicht ganz. Türkisch ist agglutinierend: Die Morpheme ev + -ler + -im + -de + -yim sind klar trennbar, und jedes Suffix trägt exakt eine Funktion. Das ist das Kern-Merkmal agglutinierenden Sprachen.'
+      },
+      {
+        id: 2,
+        wort: '我 爱 你',
+        sprache: 'Mandarin-Chinesisch',
+        uebersetzung: '„Ich liebe dich" (wǒ ài nǐ)',
+        richtigerTyp: 'isolierend',
+        feedbackRichtig: 'Korrekt! Chinesisch ist isolierend: Jedes Zeichen ist ein freies Morphem (我 = ich, 爱 = liebe, 你 = dich). Es gibt keine Flexionsendungen – die Grammatik entsteht allein durch die Wortstellung.',
+        feedbackFalsch: 'Nicht ganz. Chinesisch ist isolierend: Jedes Zeichen steht für sich allein (1 Zeichen = 1 Morphem = 1 Bedeutung). Es gibt keine angehefteten Suffixe und keine fusionierten Endungen.'
+      },
+      {
+        id: 3,
+        wort: 'puellam',
+        sprache: 'Latein',
+        uebersetzung: '„das Mädchen" (Akkusativ, Singular)',
+        richtigerTyp: 'flektierend',
+        feedbackRichtig: 'Korrekt! Latein ist flektierend: Die Endung -am in puell-am kodiert gleichzeitig Kasus (Akkusativ) + Genus (Femininum) + Numerus (Singular) – drei Informationen in einem einzigen Morphem. Das nennt man Fusion.',
+        feedbackFalsch: 'Nicht ganz. Latein ist flektierend: Die Endung -am trägt gleichzeitig Akkusativ + Femininum + Singular – das ist Fusion (mehrere Bedeutungen in einem Morphem). Agglutinierende Sprachen würden dafür drei separate Suffixe verwenden.'
+      },
+      {
+        id: 4,
+        wort: 'des guten Mannes',
+        sprache: 'Deutsch',
+        uebersetzung: '(Genitiv, Maskulinum, Singular)',
+        richtigerTyp: 'flektierend',
+        feedbackRichtig: 'Korrekt! Deutsch ist primär flektierend: Die Endung -es in „Mannes" kodiert gleichzeitig Genitiv + Maskulinum + Singular. Obwohl Deutsch auch Komposita kennt (Haustür, Schulbuch), ist der Grundtyp flektierend.',
+        feedbackFalsch: 'Nicht ganz. Deutsch ist flektierend: Die Endung -es in „Mannes" trägt gleichzeitig Genitiv, Maskulinum und Singular – ein typisches Merkmal flektierender Sprachen. Vorsicht: Deutsch kennt zwar Nominalkomposita, ist aber kein agglutinierend aufgebauter Sprachtyp.'
+      }
+    ];
+
+    var typenLabel = {
+      isolierend: 'Isolierend',
+      agglutinierend: 'Agglutinierend',
+      flektierend: 'Flektierend'
+    };
+
+    // ── State ──
+    var aktuelleFrageIndex = 0;
+    var richtigCount = 0;
+    var animiertKette = { isolierend: false, agglutinierend: false, flektierend: false };
+
+    // ── Vorhersage ──
+    function pruefeVorhersage(btn) {
+      var wahl = btn.getAttribute('data-wahl');
+      var richtig = wahl === '5';
+      var btns = document.querySelectorAll('.vorhersage-btn');
+      btns.forEach(function(b) {
+        b.disabled = true;
+        if (b.getAttribute('data-wahl') === '5') b.classList.add('richtig');
+        else if (b === btn && !richtig) b.classList.add('falsch');
+      });
+
+      var fb = document.getElementById('vorhersage-feedback');
+      if (richtig) {
+        fb.className = 'feedback-box richtig sichtbar';
+        fb.innerHTML =
+          'Richtig! <em>evlerimdeyim</em> enthält <strong>5 Morpheme</strong>: ' +
+          'ev + -ler + -im + -de + -yim. Das ist das Prinzip ' +
+          '<strong>agglutinierender</strong> Sprachen wie Türkisch: ' +
+          'Jeder Baustein trägt genau eine Bedeutung und lässt sich klar abgrenzen.';
+      } else {
+        fb.className = 'feedback-box falsch sichtbar';
+        fb.innerHTML =
+          'Tatsächlich sind es <strong>5 Morpheme</strong>: ' +
+          'ev (Haus) + -ler (Plural) + -im (mein) + -de (in) + -yim (ich bin). ' +
+          'Das macht <strong>agglutinierende</strong> Sprachen wie Türkisch so kompakt: ' +
+          'Viele Bedeutungen, ein einziges Wort.';
+      }
+
+      document.getElementById('vorhersage-weiter').classList.remove('versteckt');
+      window.dataLayer.push({ event: 'sim_sprachtypologie_vorhersage', wahl: wahl, richtig: richtig });
+    }
+
+    function starteVisualizer() {
+      document.getElementById('vorhersage-karte').classList.add('versteckt');
+      document.getElementById('visualizer-karte').classList.remove('versteckt');
+      setzteSchritt(1);
+      // Isolierend-Kette sofort sichtbar machen als Einführung
+      setTimeout(function() {
+        document.getElementById('kette-isolierend').classList.add('sichtbar');
+      }, 300);
+      window.dataLayer.push({ event: 'sim_sprachtypologie_visualizer_start' });
+    }
+
+    // ── Tab-Steuerung ──
+    function zeigeTab(typ, btn) {
+      document.querySelectorAll('.tab-inhalt').forEach(function(t) { t.classList.remove('aktiv'); });
+      document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('aktiv'); });
+      document.getElementById('tab-' + typ).classList.add('aktiv');
+      btn.classList.add('aktiv');
+    }
+
+    // ── Morphem-Animation ──
+    function animiereKette(typ) {
+      var kette = document.getElementById('kette-' + typ);
+      kette.classList.add('sichtbar');
+      animiertKette[typ] = true;
+      window.dataLayer.push({ event: 'sim_sprachtypologie_morphem_anzeigen', typ: typ });
+    }
+
+    // ── Quiz starten ──
+    function starteQuiz() {
+      document.getElementById('visualizer-karte').classList.add('versteckt');
+      document.getElementById('schritt1').classList.remove('versteckt');
+      setzteSchritt(2);
+      renderFrage(0);
+      window.dataLayer.push({ event: 'sim_sprachtypologie_quiz_start' });
+    }
+
+    // ── Quiz-Rendering ──
+    function renderFrage(index) {
+      var container = document.getElementById('quiz-container');
+      if (index >= quizDaten.length) {
+        container.innerHTML = '';
+        var fill = Math.round((richtigCount / quizDaten.length) * 100);
+        document.getElementById('fortschritt-fill').style.width = fill + '%';
+        var ergebnisBox = document.getElementById('quiz-ergebnis');
+        var zahl = document.getElementById('ergebnis-zahl');
+        var text = document.getElementById('ergebnis-text');
+        zahl.textContent = richtigCount + ' / ' + quizDaten.length + ' richtig';
+        if (richtigCount === quizDaten.length) {
+          text.textContent = 'Ausgezeichnet! Du hast alle Sprachtypen korrekt identifiziert.';
+        } else if (richtigCount >= 3) {
+          text.textContent = 'Gut gemacht! Die Unterschiede zwischen den Typen werden klarer.';
+        } else {
+          text.textContent = 'Lies nochmal die Erklärungen in den Feedback-Boxen – dann weiter zu Schritt 3.';
+        }
+        ergebnisBox.classList.remove('versteckt');
+        window.dataLayer.push({ event: 'sim_sprachtypologie_quiz_ende', richtig: richtigCount, gesamt: quizDaten.length });
+        return;
+      }
+
+      var frage = quizDaten[index];
+      var fortschritt = Math.round((index / quizDaten.length) * 100);
+      document.getElementById('fortschritt-fill').style.width = fortschritt + '%';
+
+      var typen = ['isolierend', 'agglutinierend', 'flektierend'];
+      var btnHtml = typen.map(function(t) {
+        return '<button class="antwort-btn" onclick="pruefeAntwort(\'' + t + '\', this, ' + index + ')">' + typenLabel[t] + '</button>';
+      }).join('');
+
+      container.innerHTML =
+        '<div class="frage-container">' +
+        '<div class="frage-nummer">Frage ' + (index + 1) + ' von ' + quizDaten.length + '</div>' +
+        '<div class="frage-wort">' + frage.wort + '</div>' +
+        '<div class="frage-sprache">' + frage.sprache + ' &middot; ' + frage.uebersetzung + '</div>' +
+        '<div class="antwort-buttons">' + btnHtml + '</div>' +
+        '<div id="feedback-aktuell" class="feedback-box"></div>' +
+        '<div id="weiter-btn-container" class="versteckt" style="margin-top:0.75rem;">' +
+        '<button class="btn btn-primaer" onclick="naechsteFrage()">Nächste Frage →</button>' +
+        '</div>' +
+        '</div>';
+    }
+
+    function pruefeAntwort(gewaehlterTyp, btn, frageIndex) {
+      var frage = quizDaten[frageIndex];
+      var alleButtons = document.querySelectorAll('.antwort-btn');
+      alleButtons.forEach(function(b) { b.disabled = true; });
+
+      var feedbackBox = document.getElementById('feedback-aktuell');
+      var weiterContainer = document.getElementById('weiter-btn-container');
+      var richtig = gewaehlterTyp === frage.richtigerTyp;
+
+      if (richtig) {
+        btn.classList.add('richtig');
+        feedbackBox.className = 'feedback-box richtig sichtbar';
+        feedbackBox.textContent = frage.feedbackRichtig;
+        richtigCount++;
+      } else {
+        btn.classList.add('falsch');
+        feedbackBox.className = 'feedback-box falsch sichtbar';
+        feedbackBox.textContent = frage.feedbackFalsch;
+        alleButtons.forEach(function(b) {
+          if (b.textContent === typenLabel[frage.richtigerTyp]) {
+            b.classList.add('korrekt-markiert');
+          }
+        });
+      }
+
+      window.dataLayer.push({
+        event: 'sim_sprachtypologie_antwort',
+        frage: frageIndex + 1,
+        sprache: frage.sprache,
+        richtig: richtig
+      });
+
+      if (frageIndex < quizDaten.length - 1) {
+        weiterContainer.classList.remove('versteckt');
+      } else {
+        setTimeout(function() {
+          aktuelleFrageIndex = quizDaten.length;
+          renderFrage(aktuelleFrageIndex);
+        }, 1800);
+      }
+    }
+
+    function naechsteFrage() {
+      aktuelleFrageIndex++;
+      renderFrage(aktuelleFrageIndex);
+    }
+
+    // ── Schritt 2: Morphem-Zerlegung ──
+    function zeigeSchritt2() {
+      document.getElementById('schritt2').classList.remove('versteckt');
+      document.getElementById('schritt2').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.dataLayer.push({ event: 'sim_sprachtypologie_zerlegung_start' });
+    }
+
+    function pruefZerlegung(option, btn) {
+      var optionen = document.querySelectorAll('.zerlegung-option');
+      optionen.forEach(function(o) { o.disabled = true; });
+
+      var feedbackBox = document.getElementById('zerlegung-feedback');
+      var weiter = document.getElementById('schritt2-weiter');
+
+      if (option === 'a') {
+        btn.classList.add('richtig');
+        feedbackBox.className = 'feedback-box richtig sichtbar';
+        feedbackBox.textContent = 'Korrekt! Die Zerlegung kitap + -lar + -ım + -da ist richtig. Das Agglutinationsprinzip: Jedes Morphem trägt exakt eine grammatische Bedeutung. -lar bedeutet immer Plural, -ım immer 1. Person Singular Possessiv und -da immer Lokativ – unabhängig vom Kontext. Die Morphemgrenzen sind in agglutinierenden Sprachen immer klar erkennbar.';
+        window.dataLayer.push({ event: 'sim_sprachtypologie_zerlegung', richtig: true });
+      } else {
+        btn.classList.add('falsch');
+        feedbackBox.className = 'feedback-box falsch sichtbar';
+        optionen.forEach(function(o) {
+          if (o.querySelector('.option-code').textContent.charAt(0) === 'A') {
+            o.classList.add('korrekt-markiert');
+          }
+        });
+        feedbackBox.textContent = 'Nicht ganz. Die korrekte Zerlegung ist kitap + -lar + -ım + -da (Buch + Plural + 1. Sg. Possessiv + Lokativ). Agglutinierende Suffixe dürfen niemals getrennt werden: -lar ist immer das Plural-Suffix, es beginnt direkt nach dem Stamm kitap.';
+        window.dataLayer.push({ event: 'sim_sprachtypologie_zerlegung', richtig: false });
+      }
+
+      weiter.classList.remove('versteckt');
+    }
+
+    // ── Abschluss ──
+    function zeigeAbschluss() {
+      document.getElementById('abschluss').classList.remove('versteckt');
+      setzteSchritt(3);
+      document.getElementById('abschluss').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      window.dataLayer.push({ event: 'sim_sprachtypologie_abschluss' });
+    }
+
+    // ── Neustart ──
+    function neustarten() {
+      aktuelleFrageIndex = 0;
+      richtigCount = 0;
+      animiertKette = { isolierend: false, agglutinierend: false, flektierend: false };
+
+      document.getElementById('quiz-ergebnis').classList.add('versteckt');
+      document.getElementById('schritt1').classList.add('versteckt');
+      document.getElementById('schritt2').classList.add('versteckt');
+      document.getElementById('abschluss').classList.add('versteckt');
+      document.getElementById('visualizer-karte').classList.add('versteckt');
+      document.getElementById('vorhersage-karte').classList.remove('versteckt');
+
+      // Vorhersage zurücksetzen
+      document.querySelectorAll('.vorhersage-btn').forEach(function(b) {
+        b.disabled = false;
+        b.className = 'vorhersage-btn';
+      });
+      document.getElementById('vorhersage-feedback').className = 'feedback-box';
+      document.getElementById('vorhersage-weiter').classList.add('versteckt');
+
+      // Morphem-Ketten zurücksetzen
+      ['isolierend', 'agglutinierend', 'flektierend'].forEach(function(t) {
+        var k = document.getElementById('kette-' + t);
+        if (k) k.classList.remove('sichtbar');
+      });
+
+      // Zerlegung zurücksetzen
+      document.querySelectorAll('.zerlegung-option').forEach(function(o) {
+        o.disabled = false;
+        o.className = 'zerlegung-option';
+      });
+      document.getElementById('zerlegung-feedback').className = 'feedback-box';
+      document.getElementById('schritt2-weiter').classList.add('versteckt');
+
+      document.getElementById('fortschritt-fill').style.width = '0%';
+      setzteSchritt(1);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      window.dataLayer.push({ event: 'sim_sprachtypologie_neustart' });
+    }
+
+    // ── Schritt-Anzeige ──
+    function setzteSchritt(n) {
+      [1, 2, 3].forEach(function(i) {
+        var p = document.getElementById('sp' + i);
+        p.className = 'schritt-punkt' + (i < n ? ' fertig' : i === n ? ' aktiv' : '');
+      });
+      ['sl12', 'sl23'].forEach(function(id, i) {
+        document.getElementById(id).className = 'schritt-linie' + (i + 1 < n ? ' fertig' : '');
+      });
+    }
+
+    // Init
+    setzteSchritt(1);
+    window.dataLayer.push({ event: 'sim_sprachtypologie_start' });
+  </script>
+</body>
+</html>

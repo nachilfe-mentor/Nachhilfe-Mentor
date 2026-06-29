@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Spracherwerbsphasen bei Kindern: Interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zu den Spracherwerbsphasen bei Kindern: Ordne Äußerungen den Phasen von der Lallphase bis zur komplexen Syntax zu und erkenne Übergeneralisierungen.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Spracherwerbsphasen, Erstspracherwerb, Übergeneralisierung, Holophrase, telegrafische Phase, Zweiwortsatz">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/spracherwerbsphasen-kinder-simulation.html">
+  <meta property="og:title" content="Spracherwerbsphasen bei Kindern: Interaktive Simulation">
+  <meta property="og:description" content="Interaktive Simulation zu den Spracherwerbsphasen bei Kindern: Ordne Äußerungen den Phasen von der Lallphase bis zur komplexen Syntax zu und erkenne Übergeneralisierungen.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/spracherwerbsphasen-kinder-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Spracherwerbsphasen bei Kindern: Interaktive Simulation",
+  "description":"Interaktive Simulation zu den Spracherwerbsphasen bei Kindern: Ordne Äußerungen den Phasen von der Lallphase bis zur komplexen Syntax zu und erkenne Übergeneralisierungen.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/spracherwerbsphasen-kinder-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+
+      /* Phasenfarben */
+      --ph0: #7c8fa6;   /* vorsprachlich */
+      --ph1: #0894aa;   /* Einwortphase */
+      --ph2: #0b8f6a;   /* Zweiwortsatz */
+      --ph3: #b87700;   /* telegrafisch */
+      --ph4: #6b21a8;   /* Übergeneralisierung */
+      --ph5: #0f5fa8;   /* komplexe Syntax */
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 1rem 1.5rem;
+    }
+    .site-name {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+    h1 {
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    .meta-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+    .badge {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 0.1rem 0.5rem;
+      font-weight: 500;
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .intro-box {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .intro-box p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+
+    /* ── Zeitstrahl ─────────────────────────────────────────── */
+    .timeline-section {
+      margin-bottom: 2.5rem;
+    }
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .timeline-wrapper {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      overflow-x: auto;
+    }
+
+    .timeline-svg-container {
+      min-width: 560px;
+    }
+
+    .phase-card {
+      display: none;
+      background: var(--panel);
+      border: 2px solid var(--line);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.25rem;
+      animation: fadeIn 0.25s ease;
+    }
+    .phase-card.active { display: block; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .phase-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .phase-age {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .phase-features {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+    .speech-bubbles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .bubble {
+      border-radius: 16px 16px 16px 4px;
+      padding: 0.4rem 0.85rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    /* ── Stufe 1 ─────────────────────────────────────────────── */
+    .stage-section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .stage-section h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .stage-intro {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .utterance-display {
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 1.25rem;
+      color: var(--ink);
+    }
+
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 480px) {
+      .options-grid { grid-template-columns: 1fr; }
+    }
+
+    .option-btn {
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      padding: 0.6rem 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: var(--panel);
+      color: var(--ink);
+      text-align: left;
+      transition: border-color 0.15s, background 0.15s;
+      line-height: 1.3;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eef4fb;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #e8f7f2;
+      color: var(--green);
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fdf0ef;
+      color: var(--red);
+    }
+    .option-btn:disabled { cursor: default; }
+
+    .feedback-box {
+      display: none;
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-top: 0.75rem;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .feedback-box.show { display: block; animation: fadeIn 0.2s ease; }
+    .feedback-box.ok {
+      background: #e8f7f2;
+      border: 1px solid #9fd8c4;
+      color: #085c43;
+    }
+    .feedback-box.err {
+      background: #fdf0ef;
+      border: 1px solid #e8a09b;
+      color: #7a1a14;
+    }
+
+    .concept-tag {
+      display: inline-block;
+      background: var(--ink);
+      color: #fff;
+      border-radius: 4px;
+      padding: 0.1rem 0.45rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-right: 0.25rem;
+    }
+
+    .progress-row {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+    .progress-dots {
+      display: flex;
+      gap: 0.4rem;
+    }
+    .dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      background: var(--line);
+      transition: background 0.2s;
+    }
+    .dot.done { background: var(--green); }
+    .dot.current { background: var(--blue); }
+
+    .nav-btn {
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.55rem 1.2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 0.75rem;
+      display: none;
+    }
+    .nav-btn:hover { background: #0a4d8a; }
+    .nav-btn.show { display: inline-block; }
+
+    /* ── Stufe 2 ─────────────────────────────────────────────── */
+    #stage2 { display: none; }
+    #stage2.show { display: block; }
+
+    .ueber-intro {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .ueber-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+    .ueber-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 500;
+      background: var(--panel);
+      transition: border-color 0.15s, background 0.15s;
+      user-select: none;
+    }
+    .ueber-item:hover:not(.locked) {
+      border-color: var(--blue);
+      background: #eef4fb;
+    }
+    .ueber-item.selected {
+      border-color: var(--purple);
+      background: #f5effe;
+    }
+    .ueber-item.correct-mark {
+      border-color: var(--green);
+      background: #e8f7f2;
+    }
+    .ueber-item.wrong-mark {
+      border-color: var(--red);
+      background: #fdf0ef;
+    }
+    .ueber-item.locked { cursor: default; }
+
+    .check-icon {
+      width: 22px; height: 22px;
+      border: 2px solid var(--line);
+      border-radius: 4px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      transition: all 0.15s;
+    }
+    .ueber-item.selected .check-icon {
+      background: var(--purple);
+      border-color: var(--purple);
+      color: #fff;
+    }
+    .ueber-item.correct-mark .check-icon {
+      background: var(--green);
+      border-color: var(--green);
+      color: #fff;
+    }
+    .ueber-item.wrong-mark .check-icon {
+      background: var(--red);
+      border-color: var(--red);
+      color: #fff;
+    }
+
+    .submit-btn {
+      background: var(--purple);
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 0.6rem 1.4rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .submit-btn:hover:not(:disabled) { background: #55198a; }
+    .submit-btn:disabled { background: var(--muted); cursor: default; }
+
+    /* ── Abschluss ───────────────────────────────────────────── */
+    .completion-box {
+      display: none;
+      background: linear-gradient(135deg, #e8f7f2 0%, #eef4fb 100%);
+      border: 2px solid var(--green);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .completion-box.show { display: block; animation: fadeIn 0.3s ease; }
+    .completion-box h3 { margin-bottom: 0.5rem; color: var(--green); }
+    .completion-box p { font-size: 0.9rem; color: var(--muted); }
+
+    .related-links {
+      margin-top: 2rem;
+    }
+    .related-links h3 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+    .link-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .link-row a {
+      color: var(--blue);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.3rem 0.7rem;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--panel);
+      transition: border-color 0.15s;
+    }
+    .link-row a:hover { border-color: var(--blue); }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="spracherwerb">
+<nav class="site-nav" aria-label="Sitenavigation">
+  <a class="nav-home" href="/">Nachhilfe Mentor</a>
+  <a href="/blog/">Blog</a>
+  <a href="/lernmaterialien/">Lernmaterialien</a>
+</nav>
+
+<header>
+  <div class="site-name">Nachhilfe Mentor</div>
+  <h1>Spracherwerbsphasen – Interaktive Simulation</h1>
+  <div class="meta-row">
+    <span class="badge">Klasse 10–13</span>
+    <span class="badge">Linguistik</span>
+    <span class="badge">Erstspracherwerb</span>
+  </div>
+</header>
+
+<main>
+
+  <div class="intro-box">
+    <strong>Was lernst du hier?</strong>
+    <p>Kinder erwerben ihre Muttersprache in universellen Phasen – von den ersten Lautäußerungen bis zur komplexen Grammatik. Entdecke, wie Kinder Sprache nicht imitieren, sondern Regeln aktiv konstruieren.</p>
+    <p style="margin-top:0.75rem;font-size:0.88rem;color:var(--muted);">
+      <strong style="color:var(--ink);">Kernthese:</strong> Übergeneralisierungsfehler wie „Ich habe gegeht" beweisen, dass Kinder aktiv Regeln bilden – nicht bloß nachahmen (Argument gegen Skinners Behaviorismus).
+    </p>
+  </div>
+
+  <!-- Zeitstrahl -->
+  <div class="timeline-section">
+    <div class="section-label">Zeitstrahl der Sprachentwicklung</div>
+    <p style="font-size:0.85rem;color:var(--muted);margin-bottom:1rem;">Klicke auf einen farbigen Abschnitt, um die Details zur jeweiligen Phase zu sehen.</p>
+    <div class="timeline-wrapper">
+      <div class="timeline-svg-container">
+        <svg viewBox="0 0 700 130" width="100%" role="img" aria-label="Zeitstrahl des Spracherwerbs">
+          <!-- Achse -->
+          <line x1="40" y1="65" x2="680" y2="65" stroke="#d8e1ed" stroke-width="3" stroke-linecap="round"/>
+
+          <!-- Phasensegmente -->
+          <!-- Phase 0: 0-12 Mo (px: 40–145) -->
+          <rect x="40" y="50" width="105" height="30" rx="6" fill="var(--ph0)" opacity="0.85"
+                class="phase-seg" data-phase="0" style="cursor:pointer" role="button" tabindex="0" aria-label="Vorsprachliche Phase"/>
+          <text x="92" y="69" text-anchor="middle" font-size="9" fill="#fff" font-weight="600" pointer-events="none">0–12 Mo.</text>
+
+          <!-- Phase 1: 12-18 Mo (px: 145–210) -->
+          <rect x="147" y="50" width="65" height="30" rx="6" fill="var(--ph1)" opacity="0.85"
+                class="phase-seg" data-phase="1" style="cursor:pointer" role="button" tabindex="0" aria-label="Einwortphase"/>
+          <text x="179" y="69" text-anchor="middle" font-size="9" fill="#fff" font-weight="600" pointer-events="none">12–18 Mo.</text>
+
+          <!-- Phase 2: 18-24 Mo (px: 214–274) -->
+          <rect x="214" y="50" width="62" height="30" rx="6" fill="var(--ph2)" opacity="0.85"
+                class="phase-seg" data-phase="2" style="cursor:pointer" role="button" tabindex="0" aria-label="Zweiwortsatz-Phase"/>
+          <text x="245" y="69" text-anchor="middle" font-size="9" fill="#fff" font-weight="600" pointer-events="none">18–24 Mo.</text>
+
+          <!-- Phase 3: 24-36 Mo (px: 278–368) -->
+          <rect x="278" y="50" width="90" height="30" rx="6" fill="var(--ph3)" opacity="0.85"
+                class="phase-seg" data-phase="3" style="cursor:pointer" role="button" tabindex="0" aria-label="Telegrafische Phase"/>
+          <text x="323" y="69" text-anchor="middle" font-size="9" fill="#fff" font-weight="600" pointer-events="none">24–36 Mo.</text>
+
+          <!-- Phase 4: 30-48 Mo (px: 345–460) -->
+          <rect x="370" y="44" width="95" height="18" rx="4" fill="var(--ph4)" opacity="0.6"
+                class="phase-seg" data-phase="4" style="cursor:pointer" role="button" tabindex="0" aria-label="Übergeneralisierung"/>
+          <text x="417" y="55" text-anchor="middle" font-size="8" fill="#fff" font-weight="600" pointer-events="none">Übergener.</text>
+          <rect x="370" y="68" width="95" height="18" rx="4" fill="var(--ph4)" opacity="0.85"
+                class="phase-seg" data-phase="4" style="cursor:pointer"/>
+          <text x="417" y="80" text-anchor="middle" font-size="8" fill="#fff" font-weight="600" pointer-events="none">30–48 Mo.</text>
+
+          <!-- Phase 5: 48+ Mo (px: 467–670) -->
+          <rect x="467" y="50" width="213" height="30" rx="6" fill="var(--ph5)" opacity="0.85"
+                class="phase-seg" data-phase="5" style="cursor:pointer" role="button" tabindex="0" aria-label="Komplexe Syntax"/>
+          <text x="573" y="69" text-anchor="middle" font-size="9" fill="#fff" font-weight="600" pointer-events="none">Ab 48 Mo. – komplexe Syntax</text>
+
+          <!-- Zeitmarken -->
+          <text x="40"  y="98" text-anchor="middle" font-size="9" fill="#617087">0</text>
+          <text x="147" y="98" text-anchor="middle" font-size="9" fill="#617087">12</text>
+          <text x="214" y="98" text-anchor="middle" font-size="9" fill="#617087">18</text>
+          <text x="278" y="98" text-anchor="middle" font-size="9" fill="#617087">24</text>
+          <text x="370" y="98" text-anchor="middle" font-size="9" fill="#617087">30</text>
+          <text x="467" y="98" text-anchor="middle" font-size="9" fill="#617087">48</text>
+          <text x="680" y="98" text-anchor="middle" font-size="9" fill="#617087">60+</text>
+          <text x="360" y="118" text-anchor="middle" font-size="9" fill="#617087">Monate</text>
+        </svg>
+      </div>
+
+      <!-- Phasen-Infokarten -->
+      <div id="phase-card-0" class="phase-card" style="border-color: var(--ph0)">
+        <h3 style="color:var(--ph0)">Vorsprachliche Phase (Lallphase)</h3>
+        <div class="phase-age">0–12 Monate</div>
+        <div class="phase-features">
+          Kinder üben die Artikulationsorgane: Schreien → Gurren (2–4 Mon.) → kanonisches Lallen ab dem 6. Monat (CV-Silbenwiederholungen). Das Lallen klingt universell – auch gehörlose Kinder lallen zunächst, hören dann aber auf.
+        </div>
+        <div class="speech-bubbles">
+          <span class="bubble" style="background:var(--ph0)">„babababa"</span>
+          <span class="bubble" style="background:var(--ph0)">„dadadada"</span>
+          <span class="bubble" style="background:var(--ph0)">„mamama"</span>
+        </div>
+      </div>
+
+      <div id="phase-card-1" class="phase-card" style="border-color: var(--ph1)">
+        <h3 style="color:var(--ph1)">Einwortphase – Holophrasen</h3>
+        <div class="phase-age">12–18 Monate</div>
+        <div class="phase-features">
+          Ein einzelnes Wort steht für einen vollständigen Satz (<em>Holophrase</em>). Die Bedeutung hängt stark vom Kontext ab. Erste stabile Wörter entstehen (typisch: Objekte, Personen, Handlungen).
+        </div>
+        <div class="speech-bubbles">
+          <span class="bubble" style="background:var(--ph1)">„Mama!" (= Mama, komm her)</span>
+          <span class="bubble" style="background:var(--ph1)">„Ball!" (= Gib mir den Ball)</span>
+          <span class="bubble" style="background:var(--ph1)">„Weg!" (= Das ist weggegangen)</span>
+        </div>
+      </div>
+
+      <div id="phase-card-2" class="phase-card" style="border-color: var(--ph2)">
+        <h3 style="color:var(--ph2)">Zweiwortsatz-Phase</h3>
+        <div class="phase-age">18–24 Monate</div>
+        <div class="phase-features">
+          Kinder kombinieren erstmals zwei Wörter. Proto-syntaktische Strukturen entstehen. Funktionswörter (Artikel, Hilfsverben) fehlen noch. Die Wortstellung ist noch variabel.
+        </div>
+        <div class="speech-bubbles">
+          <span class="bubble" style="background:var(--ph2)">„Mama da"</span>
+          <span class="bubble" style="background:var(--ph2)">„Ball weg"</span>
+          <span class="bubble" style="background:var(--ph2)">„Mehr Milch"</span>
+          <span class="bubble" style="background:var(--ph2)">„Auto kaputt"</span>
+        </div>
+      </div>
+
+      <div id="phase-card-3" class="phase-card" style="border-color: var(--ph3)">
+        <h3 style="color:var(--ph3)">Telegrafische Phase</h3>
+        <div class="phase-age">24–36 Monate</div>
+        <div class="phase-features">
+          Mehrwörtige Äußerungen entstehen. Inhaltswörter (Substantive, Verben, Adjektive) dominieren; Funktionswörter und Flexionsmorpheme (Artikel, Konjugationsendungen) fehlen noch – wie bei einem Telegramm.
+        </div>
+        <div class="speech-bubbles">
+          <span class="bubble" style="background:var(--ph3)">„Mama Ball haben"</span>
+          <span class="bubble" style="background:var(--ph3)">„Ich haben Keks"</span>
+          <span class="bubble" style="background:var(--ph3)">„Papa Auto fahren"</span>
+        </div>
+      </div>
+
+      <div id="phase-card-4" class="phase-card" style="border-color: var(--ph4)">
+        <h3 style="color:var(--ph4)">Regelinternalisierung und Übergeneralisierung</h3>
+        <div class="phase-age">30–48 Monate (überlappend)</div>
+        <div class="phase-features">
+          Kinder internalisieren grammatische Regeln und wenden sie <em>produktiv</em> an – auch auf Ausnahmen. Diese <strong>Übergeneralisierungsfehler</strong> beweisen, dass Kinder Sprache nicht nur imitieren, sondern Regeln konstruieren.
+        </div>
+        <div class="speech-bubbles">
+          <span class="bubble" style="background:var(--ph4)">„Ich habe gegeht."</span>
+          <span class="bubble" style="background:var(--ph4)">„Die Mäuse haben geessen."</span>
+          <span class="bubble" style="background:var(--ph4)">„Er hat geschlaft."</span>
+        </div>
+      </div>
+
+      <div id="phase-card-5" class="phase-card" style="border-color: var(--ph5)">
+        <h3 style="color:var(--ph5)">Komplexe Syntax</h3>
+        <div class="phase-age">Ab 48 Monate</div>
+        <div class="phase-features">
+          Nebensätze, Kasusmarkierung und korrekte Verbkongruenz entstehen. Kinder nähern sich der Zielsprachennorm. Irrtümer werden seltener; der Wortschatz wächst rasant (Wortschatzexplosion).
+        </div>
+        <div class="speech-bubbles">
+          <span class="bubble" style="background:var(--ph5)">„Weil ich Hunger habe, will ich essen."</span>
+          <span class="bubble" style="background:var(--ph5)">„Mama hat gesagt, dass du kommst."</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── STUFE 1 ── -->
+  <div id="stage1" class="stage-section">
+    <div class="section-label">Stufe 1 von 2</div>
+    <h2>Äußerung einer Erwerbsphase zuordnen</h2>
+    <p class="stage-intro">Lies die Äußerung und wähle die passende Spracherwerbsphase.</p>
+
+    <div class="progress-row">
+      <div class="progress-dots" id="dots1"></div>
+      <span id="progress-text1" style="font-size:0.8rem;color:var(--muted)"></span>
+    </div>
+
+    <div class="utterance-display" id="utterance-display">…</div>
+
+    <div class="options-grid" id="options-grid"></div>
+
+    <div class="feedback-box" id="feedback1"></div>
+
+    <button class="nav-btn" id="next-btn1">Weiter →</button>
+  </div>
+
+  <!-- ── STUFE 2 ── -->
+  <div id="stage2" class="stage-section">
+    <div class="section-label">Stufe 2 von 2 – Übergeneralisierung</div>
+    <h2>Übergeneralisierungen erkennen</h2>
+    <p class="ueber-intro">
+      Kinder lernen Sprache nicht durch bloße Nachahmung. Ein starkes Argument dafür sind Übergeneralisierungsfehler:
+      Das Kind wendet eine korrekte Regel auf eine Ausnahme an – und erzeugt eine Form, die es nie gehört haben kann.
+    </p>
+    <p class="ueber-intro" style="margin-top:0.5rem;">
+      Welche der folgenden Äußerungen sind <strong>Übergeneralisierungsfehler</strong>? Wähle alle zutreffenden aus.
+    </p>
+
+    <ul class="ueber-list" id="ueber-list"></ul>
+
+    <button class="submit-btn" id="submit-ueber">Auswahl prüfen</button>
+
+    <div class="feedback-box" id="feedback2" style="margin-top:1rem;"></div>
+
+    <div class="completion-box" id="completion">
+      <h3>Simulation abgeschlossen!</h3>
+      <p>Du kennst jetzt die Phasen des Erstspracherwerbs und weißt, warum Übergeneralisierungen ein Zeichen von Sprachkompetenz sind – nicht von Fehlern.</p>
+    </div>
+  </div>
+
+  <div class="related-links">
+    <h3>Verwandte Simulationen</h3>
+    <div class="link-row">
+      <a href="/lernmaterialien/lernsimulationen/kritische-periode-spracherwerb-simulation.html">Kritische Periode des Spracherwerbs</a>
+      <a href="/lernmaterialien/lernsimulationen/spracherwerbstheorien-simulation.html">Spracherwerbstheorien (Chomsky, Skinner, Piaget)</a>
+      <a href="/lernmaterialien/lernsimulationen/sprachinterferenz-simulation.html">Sprachinterferenz beim Fremdsprachlernen</a>
+    </div>
+  </div>
+
+</main>
+
+<script>
+  // ── Tracking ──
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: 'simulation_view',
+    assetType: 'simulation',
+    topicCluster: 'spracherwerb',
+    simulationName: 'spracherwerbsphasen-kinder'
+  });
+
+  // ── Zeitstrahl ──
+  document.querySelectorAll('.phase-seg').forEach(seg => {
+    seg.addEventListener('click', () => {
+      const phase = seg.dataset.phase;
+      document.querySelectorAll('.phase-card').forEach(c => c.classList.remove('active'));
+      const card = document.getElementById('phase-card-' + phase);
+      if (card) { card.classList.add('active'); card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    });
+    seg.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); seg.click(); } });
+  });
+
+  // ── Stufe 1: Daten ──
+  const questions = [
+    {
+      utterance: '„babababa"',
+      correct: 0,
+      options: [
+        'Vorsprachliche Phase (Lallphase)',
+        'Einwortphase (Holophrase)',
+        'Zweiwortsatz-Phase',
+        'Telegrafische Phase'
+      ],
+      feedback_ok: '<span class="concept-tag">Lallphase</span> Richtig! Kanonisches Lallen (CV-Silbenwiederholungen wie „ba-ba-ba") tritt ab dem 6. Monat auf und ist universell – unabhängig von der Zielsprache.',
+      feedback_err: '<span class="concept-tag">Lallphase</span> Das ist die <strong>Vorsprachliche Phase</strong>. CV-Wiederholungen wie „babababa" nennt man kanonisches Lallen – sie treten ab ca. dem 6. Monat auf.'
+    },
+    {
+      utterance: '„Mama!" (= Mama, komm her!)',
+      correct: 1,
+      options: [
+        'Vorsprachliche Phase (Lallphase)',
+        'Einwortphase (Holophrase)',
+        'Zweiwortsatz-Phase',
+        'Komplexe Syntax'
+      ],
+      feedback_ok: '<span class="concept-tag">Holophrase</span> Richtig! Ein einzelnes Wort trägt die Bedeutung eines vollständigen Satzes. Das nennt man <strong>Holophrase</strong> – charakteristisch für die Einwortphase (12–18 Monate).',
+      feedback_err: '<span class="concept-tag">Holophrase</span> Das ist die <strong>Einwortphase</strong>. Ein Wort wie „Mama!" steht für einen ganzen Satz – das nennt man Holophrase.'
+    },
+    {
+      utterance: '„Ball weg"',
+      correct: 2,
+      options: [
+        'Vorsprachliche Phase',
+        'Einwortphase (Holophrase)',
+        'Zweiwortsatz-Phase',
+        'Telegrafische Phase'
+      ],
+      feedback_ok: '<span class="concept-tag">Zweiwortsatz</span> Genau! Zwei Inhaltswörter ohne Funktionswörter (kein Artikel, kein Hilfsverb) – typisch für die <strong>Zweiwortsatz-Phase</strong> (18–24 Monate).',
+      feedback_err: '<span class="concept-tag">Zweiwortsatz</span> Das ist die <strong>Zweiwortsatz-Phase</strong>. Zwei Inhaltswörter werden kombiniert – Funktionswörter fehlen noch.'
+    },
+    {
+      utterance: '„Ich habe gegeht."',
+      correct: 3,
+      options: [
+        'Telegrafische Phase',
+        'Zweiwortsatz-Phase',
+        'Komplexe Syntax',
+        'Regelinternalisierung / Übergeneralisierung'
+      ],
+      feedback_ok: '<span class="concept-tag">Übergeneralisierung</span> Perfekt! „gegeht" hat das Kind nie gehört – es wendet die Regel der schwachen Verbkonjugation (ge-…-t) auf das starke Verb „gehen" an. Das beweist produktive Regelkompetenz!',
+      feedback_err: '<span class="concept-tag">Übergeneralisierung</span> Das ist ein <strong>Übergeneralisierungsfehler</strong>: Das Kind wendet die ge-…-t-Regel auf das starke Verb „gehen" an – eine Form, die es nie gehört haben kann.'
+    },
+    {
+      utterance: '„Weil ich Hunger habe, will ich essen."',
+      correct: 4,
+      options: [
+        'Einwortphase',
+        'Zweiwortsatz-Phase',
+        'Telegrafische Phase',
+        'Regelinternalisierung',
+        'Komplexe Syntax'
+      ],
+      feedback_ok: '<span class="concept-tag">Komplexe Syntax</span> Richtig! Kausaler Nebensatz mit korrekter Verbendstellung – das ist <strong>komplexe Syntax</strong>, die ab ca. 48 Monaten auftritt.',
+      feedback_err: '<span class="concept-tag">Komplexe Syntax</span> Das ist <strong>komplexe Syntax</strong>: Ein Kausalsatz mit korrekter Verbendstellung im Nebensatz – typisch ab 48 Monaten.'
+    }
+  ];
+
+  let currentQ = 0;
+  const dotsEl = document.getElementById('dots1');
+  const progressText = document.getElementById('progress-text1');
+  const utteranceEl = document.getElementById('utterance-display');
+  const optionsEl = document.getElementById('options-grid');
+  const feedbackEl = document.getElementById('feedback1');
+  const nextBtn = document.getElementById('next-btn1');
+
+  function buildDots() {
+    dotsEl.innerHTML = '';
+    questions.forEach((_, i) => {
+      const d = document.createElement('div');
+      d.className = 'dot' + (i < currentQ ? ' done' : i === currentQ ? ' current' : '');
+      dotsEl.appendChild(d);
+    });
+    progressText.textContent = (currentQ + 1) + ' / ' + questions.length;
+  }
+
+  function renderQuestion(idx) {
+    const q = questions[idx];
+    utteranceEl.textContent = q.utterance;
+    optionsEl.innerHTML = '';
+    feedbackEl.className = 'feedback-box';
+    feedbackEl.innerHTML = '';
+    nextBtn.classList.remove('show');
+
+    q.options.forEach((opt, i) => {
+      const btn = document.createElement('button');
+      btn.className = 'option-btn';
+      btn.textContent = opt;
+      btn.addEventListener('click', () => handleAnswer(i, q, btn));
+      optionsEl.appendChild(btn);
+    });
+    buildDots();
+  }
+
+  function handleAnswer(chosen, q, clickedBtn) {
+    const allBtns = optionsEl.querySelectorAll('.option-btn');
+    allBtns.forEach(b => b.disabled = true);
+
+    if (chosen === q.correct) {
+      clickedBtn.classList.add('correct');
+      feedbackEl.className = 'feedback-box ok show';
+      feedbackEl.innerHTML = '✓ ' + q.feedback_ok;
+    } else {
+      clickedBtn.classList.add('wrong');
+      allBtns[q.correct].classList.add('correct');
+      feedbackEl.className = 'feedback-box err show';
+      feedbackEl.innerHTML = '✗ ' + q.feedback_err;
+    }
+
+    nextBtn.classList.add('show');
+  }
+
+  nextBtn.addEventListener('click', () => {
+    currentQ++;
+    if (currentQ < questions.length) {
+      renderQuestion(currentQ);
+    } else {
+      // Stufe 1 abgeschlossen → Stufe 2 zeigen
+      document.getElementById('stage1').style.opacity = '0.6';
+      document.getElementById('stage1').style.pointerEvents = 'none';
+      const s2 = document.getElementById('stage2');
+      s2.classList.add('show');
+      s2.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      renderUeber();
+    }
+  });
+
+  renderQuestion(0);
+
+  // ── Stufe 2: Übergeneralisierung ──
+  const ueberItems = [
+    { text: '„Ich habe gegeht."', isUeber: true,  note: 'ge-…-t auf das starke Verb „gehen" angewendet – nie gehört, also selbst konstruiert.' },
+    { text: '„Die Katzen haben geschlafen."', isUeber: false, note: 'Korrekte Pluralform und Partizip – kein Übergeneralisierungsfehler.' },
+    { text: '„Er hat geschlaft."', isUeber: true,  note: 'ge-…-t auf das starke Verb „schlafen" angewendet (korrekt wäre: geschlafen).' },
+    { text: '„Mama kommt gleich."', isUeber: false, note: 'Grammatisch korrekte Aussage – kein Übergeneralisierungsfehler.' },
+    { text: '„Die Mäuse haben geessen."', isUeber: true,  note: 'ge-…-t auf das starke Verb „essen" angewendet (korrekt: gegessen). Nie gehörte Form – produktive Regelanwendung.' },
+    { text: '„Das Kind schläft."', isUeber: false, note: 'Korrekte Form des starken Verbs – kein Übergeneralisierungsfehler.' },
+  ];
+
+  const ueberList = document.getElementById('ueber-list');
+  const submitUeber = document.getElementById('submit-ueber');
+  const feedback2 = document.getElementById('feedback2');
+  const completion = document.getElementById('completion');
+
+  function renderUeber() {
+    ueberList.innerHTML = '';
+    ueberItems.forEach((item, i) => {
+      const li = document.createElement('li');
+      li.className = 'ueber-item';
+      li.dataset.idx = i;
+      li.innerHTML = '<div class="check-icon"></div><span>' + item.text + '</span>';
+      li.addEventListener('click', () => {
+        if (li.classList.contains('locked')) return;
+        li.classList.toggle('selected');
+        const checked = li.querySelector('.check-icon');
+        checked.textContent = li.classList.contains('selected') ? '✓' : '';
+      });
+      ueberList.appendChild(li);
+    });
+  }
+
+  submitUeber.addEventListener('click', () => {
+    const items = ueberList.querySelectorAll('.ueber-item');
+    let correct = 0, total = ueberItems.filter(x => x.isUeber).length;
+    let explanations = [];
+
+    items.forEach((li, i) => {
+      li.classList.add('locked');
+      const selected = li.classList.contains('selected');
+      const isUeber = ueberItems[i].isUeber;
+
+      if (isUeber && selected) {
+        li.classList.add('correct-mark');
+        correct++;
+      } else if (!isUeber && selected) {
+        li.classList.add('wrong-mark');
+      } else if (isUeber && !selected) {
+        li.classList.add('wrong-mark');
+      } else {
+        li.classList.add('correct-mark');
+      }
+
+      if (isUeber) {
+        explanations.push('<strong>' + ueberItems[i].text + '</strong> → ' + ueberItems[i].note);
+      }
+    });
+
+    submitUeber.disabled = true;
+    const allCorrect = correct === total && ueberList.querySelectorAll('.wrong-mark').length === 0;
+
+    if (allCorrect) {
+      feedback2.className = 'feedback-box ok show';
+      feedback2.innerHTML = '✓ <strong>Alle Übergeneralisierungen richtig erkannt!</strong><br><br>' +
+        '<span class="concept-tag">Übergeneralisierung</span> Diese Fehler beweisen: Kinder imitieren Sprache <em>nicht</em>, sondern konstruieren aktiv Regeln. ' +
+        'Formen wie „gegeht" oder „geessen" konnten sie nie hören – sie wurden selbst gebildet.<br><br>' +
+        '<em>Übergeneralisierungen:</em><ul style="margin:0.5rem 0 0 1rem;font-size:0.88rem;">' +
+        explanations.map(e => '<li style="margin-bottom:0.35rem">' + e + '</li>').join('') + '</ul>';
+    } else {
+      feedback2.className = 'feedback-box err show';
+      feedback2.innerHTML = '✗ Nicht ganz. Markiert in Rot sind Fehler. <span class="concept-tag">Übergeneralisierung</span> liegt vor, wenn eine korrekte grammatische Regel auf eine unregelmäßige Form angewendet wird – und dabei eine Form entsteht, die das Kind nie gehört haben kann.<br><br>' +
+        '<em>Richtige Übergeneralisierungen:</em><ul style="margin:0.5rem 0 0 1rem;font-size:0.88rem;">' +
+        explanations.map(e => '<li style="margin-bottom:0.35rem">' + e + '</li>').join('') + '</ul>';
+    }
+
+    completion.classList.add('show');
+    window.dataLayer.push({ event: 'simulation_complete', simulationName: 'spracherwerbsphasen-kinder', allCorrect });
+  });
+</script>
+
+</body>
+</html>

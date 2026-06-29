@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Sprachgeschichte: Von Althochdeutsch zu Neuhochdeutsch – Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zur deutschen Sprachgeschichte: Ordne Originaltexte den Sprachstufen zu und wende die Neuhochdeutsche Diphthongierung selbst an.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Sprachgeschichte, Althochdeutsch, Mittelhochdeutsch, Neuhochdeutsche Diphthongierung, Lautwandel, Sprachstufen Deutsch">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/sprachgeschichte-althochdeutsch-neuhochdeutsch-simulation.html">
+  <meta property="og:title" content="Sprachgeschichte: Althochdeutsch bis Neuhochdeutsch">
+  <meta property="og:description" content="Interaktive Simulation zur deutschen Sprachgeschichte: Ordne Originaltexte den Sprachstufen zu und wende die Neuhochdeutsche Diphthongierung selbst an.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/sprachgeschichte-althochdeutsch-neuhochdeutsch-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Sprachgeschichte: Von Althochdeutsch zu Neuhochdeutsch – Simulation",
+  "description":"Interaktive Simulation zur deutschen Sprachgeschichte: Ordne Originaltexte den Sprachstufen zu und wende die Neuhochdeutsche Diphthongierung selbst an.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/sprachgeschichte-althochdeutsch-neuhochdeutsch-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --green:  #0b8f6a;
+      --amber:  #b87700;
+      --red:    #b5281e;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+
+      /* Epochenfarben */
+      --c-ahd:  #7c3aed;
+      --c-mhd:  #0f5fa8;
+      --c-fnhd: #0894aa;
+      --c-nhd:  #0b8f6a;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 0.75rem 1.25rem;
+    }
+    .site-header a {
+      font-size: 0.875rem;
+      color: var(--blue);
+      text-decoration: none;
+    }
+    .site-header a:hover { text-decoration: underline; }
+
+    /* ── Layout ── */
+    .page-wrap {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+
+    .page-title {
+      font-size: clamp(1.25rem, 4vw, 1.75rem);
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .page-subtitle {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 2rem;
+    }
+
+    /* ── Canvas Zeitstrahl ── */
+    .timeline-wrap {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 0.75rem;
+      padding: 1.5rem 1.25rem 1rem;
+      margin-bottom: 2rem;
+      overflow: hidden;
+    }
+
+    .timeline-wrap h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 1rem;
+    }
+
+    canvas#timeline {
+      width: 100%;
+      height: 90px;
+      display: block;
+    }
+
+    /* ── Stufen-Karte ── */
+    .stage-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 0.75rem;
+      padding: 1.75rem 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .stage-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: #eff4ff;
+      border: 1px solid #bfcfed;
+      color: var(--blue);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 0.2rem 0.65rem;
+      border-radius: 2rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .stage-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .stage-instruction {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .round-counter {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Textprobe ── */
+    .text-sample {
+      background: #f9f4ff;
+      border-left: 3px solid var(--c-ahd);
+      border-radius: 0 0.5rem 0.5rem 0;
+      padding: 1.25rem 1.25rem 1rem;
+      margin-bottom: 1.75rem;
+      font-size: 1rem;
+    }
+
+    .text-sample.era-mhd  { background: #eff4ff; border-left-color: var(--c-mhd); }
+    .text-sample.era-fnhd { background: #e8f8fb; border-left-color: var(--c-fnhd); }
+    .text-sample.era-nhd  { background: #edfaf4; border-left-color: var(--c-nhd); }
+
+    .text-sample blockquote {
+      font-style: italic;
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      font-family: Georgia, serif;
+    }
+
+    .text-sample .source {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* ── Word-Pair ── */
+    .word-pair {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 0.5rem;
+      padding: 1.25rem;
+      margin-bottom: 1.75rem;
+      flex-wrap: nowrap;
+    }
+
+    @media (max-width: 380px) {
+      .word-pair {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      .arrow-symbol { transform: rotate(90deg); align-self: center; }
+    }
+
+    .word-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.2rem;
+    }
+
+    .word-val {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: Georgia, serif;
+    }
+
+    .word-val.mhd-word { color: var(--c-mhd); }
+
+    .arrow-symbol {
+      font-size: 1.5rem;
+      color: var(--muted);
+      flex-shrink: 0;
+      align-self: center;
+      margin-top: 1rem;
+    }
+
+    .word-nhd .word-val {
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    /* ── Buttons ── */
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 0;
+    }
+
+    @media (max-width: 420px) {
+      .options-grid { grid-template-columns: 1fr; }
+    }
+
+    .option-btn {
+      background: var(--panel);
+      border: 1.5px solid var(--line);
+      border-radius: 0.5rem;
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--ink);
+      cursor: pointer;
+      text-align: left;
+      transition: border-color 0.15s, background 0.15s;
+      line-height: 1.4;
+    }
+
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      background: #eff4ff;
+    }
+
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #edfaf4;
+      color: var(--green);
+    }
+
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fef2f2;
+      color: var(--red);
+    }
+
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Feedback ── */
+    .feedback-box {
+      margin-top: 1.5rem;
+      padding: 1.25rem;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      display: none;
+    }
+
+    .feedback-box.correct { background: #edfaf4; border: 1px solid #9bdfc8; }
+    .feedback-box.wrong   { background: #fef2f2; border: 1px solid #f5b4b0; }
+    .feedback-box.show    { display: block; }
+
+    .concept-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.15rem 0.55rem;
+      border-radius: 0.25rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.03em;
+    }
+
+    .concept-tag.era-ahd  { background: var(--c-ahd); }
+    .concept-tag.era-mhd  { background: var(--c-mhd); }
+    .concept-tag.era-fnhd { background: var(--c-fnhd); }
+    .concept-tag.era-nhd  { background: var(--c-nhd); }
+    .concept-tag.law      { background: var(--amber); }
+
+    /* ── Weiter-Button ── */
+    .btn-next {
+      display: none;
+      margin-top: 1.25rem;
+      padding: 0.7rem 1.5rem;
+      background: var(--blue);
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+    .btn-next:hover { background: #0d4f8c; }
+    .btn-next.show  { display: inline-block; }
+
+    /* ── Ergebnis ── */
+    .result-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 0.75rem;
+      padding: 2rem 1.5rem;
+      text-align: center;
+    }
+
+    .result-score {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--blue);
+      margin-bottom: 0.25rem;
+    }
+
+    .result-label {
+      font-size: 1rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .result-summary {
+      font-size: 0.9rem;
+      color: var(--ink);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    .btn-restart {
+      padding: 0.7rem 1.5rem;
+      background: var(--green);
+      color: #fff;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn-restart:hover { background: #097a5a; }
+
+    /* ── Info-Box ── */
+    .info-box {
+      background: #fffbea;
+      border: 1px solid #f0d060;
+      border-radius: 0.5rem;
+      padding: 1rem 1.125rem;
+      font-size: 0.875rem;
+      color: #5c4a00;
+      margin-top: 1.5rem;
+      line-height: 1.6;
+    }
+
+    /* ── Footer ── */
+    .page-footer {
+      margin-top: 3rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    .page-footer a { color: var(--muted); }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header class="site-header">
+    <a href="/">&#8592; Nachhilfe Mentor</a>
+  </header>
+
+  <main class="page-wrap">
+
+    <h1 class="page-title">Sprachgeschichte: Von Althochdeutsch zu Neuhochdeutsch</h1>
+    <p class="page-subtitle">
+      Erkenne Texte aus verschiedenen Sprachstufen und lerne, wie sich das Deutsche
+      über 1200 Jahre verändert hat.
+    </p>
+
+    <!-- Canvas Zeitstrahl -->
+    <div class="timeline-wrap">
+      <h2>Zeitstrahl der deutschen Sprachstufen</h2>
+      <canvas id="timeline" width="800" height="90" aria-label="Zeitstrahl der deutschen Sprachstufen"></canvas>
+    </div>
+
+    <!-- ══════════════════════════════════════
+         STAGE 1: Epochenzuordnung
+    ══════════════════════════════════════ -->
+    <section id="stage1" class="stage-card">
+      <div class="stage-badge">&#9679; Stufe 1 von 2</div>
+      <h2 class="stage-title">Epochenzuordnung</h2>
+      <p class="stage-instruction">
+        Vorhersage: Lesen Sie den Textausschnitt und ordnen Sie ihn der richtigen Sprachstufe zu –
+        bevor Sie die Lösung sehen.
+      </p>
+      <p class="round-counter" id="s1-counter">Runde 1 von 3</p>
+
+      <div class="text-sample" id="s1-text">
+        <!-- wird per JS befüllt -->
+      </div>
+
+      <div class="options-grid" id="s1-options">
+        <button class="option-btn" data-value="ahd" onclick="checkEpoch(this)">Althochdeutsch<br><small>(ca. 750–1050)</small></button>
+        <button class="option-btn" data-value="mhd" onclick="checkEpoch(this)">Mittelhochdeutsch<br><small>(ca. 1050–1350)</small></button>
+        <button class="option-btn" data-value="fnhd" onclick="checkEpoch(this)">Frühneuhochdeutsch<br><small>(ca. 1350–1650)</small></button>
+        <button class="option-btn" data-value="nhd" onclick="checkEpoch(this)">Neuhochdeutsch<br><small>(ab ca. 1650)</small></button>
+      </div>
+
+      <div class="feedback-box" id="s1-feedback"></div>
+      <button class="btn-next" id="s1-next" onclick="nextRound1()">Weiter &#8594;</button>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         STAGE 3: Diphthongierung
+    ══════════════════════════════════════ -->
+    <section id="stage3" class="stage-card" hidden>
+      <div class="stage-badge">&#9679; Stufe 2 von 2</div>
+      <h2 class="stage-title">Neuhochdeutsche Diphthongierung</h2>
+      <p class="stage-instruction">
+        Vorhersage: Welche neuhochdeutsche Form entstand aus dem mittelhochdeutschen Wort?
+        Wenden Sie das Lautgesetz an, bevor Sie nachschauen.
+      </p>
+      <p class="round-counter" id="s3-counter">Runde 1 von 3</p>
+
+      <div class="word-pair" id="s3-pair">
+        <!-- wird per JS befüllt -->
+      </div>
+
+      <div class="options-grid" id="s3-options">
+        <!-- wird per JS befüllt -->
+      </div>
+
+      <div class="feedback-box" id="s3-feedback"></div>
+      <button class="btn-next" id="s3-next" onclick="nextRound3()">Weiter &#8594;</button>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         Ergebnis
+    ══════════════════════════════════════ -->
+    <section id="stage-result" class="result-card" hidden>
+      <div class="result-score" id="result-score">—</div>
+      <div class="result-label">von 6 Aufgaben richtig</div>
+      <div class="result-summary">
+        <strong>Was Sie geübt haben:</strong>
+        <ul style="margin-top: 0.75rem; padding-left: 1.25rem; line-height: 2;">
+          <li><strong>Stufe 1</strong> – Sprachstufen erkennen: Althochdeutsch ist für heutige Leser fast unverständlich. Mittelhochdeutsch ist erkennbar, aber ohne Diphthonge. Frühneuhochdeutsch zeigt alte Schreibkonventionen (v für u/f).</li>
+          <li><strong>Stufe 2</strong> – Neuhochdeutsche Diphthongierung: MHD î → NHD ei (mîn → mein), MHD û → NHD au (hûs → Haus), MHD iu → NHD eu (liute → Leute). Dieses Lautgesetz ist streng systematisch.</li>
+        </ul>
+      </div>
+      <button class="btn-restart" onclick="restart()">Nochmal starten</button>
+
+      <div class="info-box" style="margin-top: 2rem; text-align: left;">
+        <strong>Weiterführend:</strong> Die Neuhochdeutsche Diphthongierung ist eng verwandt mit der
+        Zweiten Lautverschiebung, die das Hochdeutsche vom Niederdeutschen und vom Englischen trennt.
+        &#8594; <a href="/lernmaterialien/lernsimulationen/lautverschiebung-englisch-deutsch-simulation.html"
+          style="color: #5c4a00;">Simulation: Lautverschiebung Englisch-Deutsch</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer">
+    <p>Nachhilfe Mentor &mdash; Interaktive Lernmaterialien</p>
+  </footer>
+
+  <script>
+    /* ─────────────────────────────────────────
+       Tracking
+    ───────────────────────────────────────── */
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'simulation_loaded',
+      'data-asset-type': 'simulation',
+      'data-topic-cluster': 'sprachen',
+      simulation_name: 'sprachgeschichte-althochdeutsch-neuhochdeutsch'
+    });
+
+    /* ─────────────────────────────────────────
+       Canvas-Zeitstrahl
+    ───────────────────────────────────────── */
+    const canvas  = document.getElementById('timeline');
+    const ctx     = canvas.getContext('2d');
+
+    const EPOCHS = [
+      { key: 'ahd',  label: 'AHD',  year: '750',  color: '#7c3aed', full: 'Althochdeutsch' },
+      { key: 'mhd',  label: 'MHD',  year: '1050', color: '#0f5fa8', full: 'Mittelhochdeutsch' },
+      { key: 'fnhd', label: 'FNHD', year: '1350', color: '#0894aa', full: 'Frühneuhochdeutsch' },
+      { key: 'nhd',  label: 'NHD',  year: '1650', color: '#0b8f6a', full: 'Neuhochdeutsch' },
+    ];
+
+    let activeEpochKey = 'ahd';
+    let pulseT = 0;
+
+    function drawTimeline(ts) {
+      pulseT = (ts / 1000) % (Math.PI * 2);
+      const W = canvas.clientWidth  || canvas.width;
+      const H = canvas.clientHeight || canvas.height;
+
+      ctx.save();
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.restore();
+
+      const margin = 48;
+      const lineY  = H * 0.42;
+      const step   = (W - margin * 2) / (EPOCHS.length - 1);
+
+      // Verbindungslinie
+      ctx.strokeStyle = '#d8e1ed';
+      ctx.lineWidth   = 3;
+      ctx.beginPath();
+      ctx.moveTo(margin, lineY);
+      ctx.lineTo(W - margin, lineY);
+      ctx.stroke();
+
+      EPOCHS.forEach((ep, i) => {
+        const x   = margin + i * step;
+        const act = ep.key === activeEpochKey;
+        const r   = act ? 12 + Math.sin(pulseT * 2) * 2 : 8;
+
+        // Leuchthof bei aktiver Epoche
+        if (act) {
+          ctx.beginPath();
+          ctx.arc(x, lineY, r + 8, 0, Math.PI * 2);
+          const grd = ctx.createRadialGradient(x, lineY, r, x, lineY, r + 8);
+          grd.addColorStop(0, ep.color + '55');
+          grd.addColorStop(1, ep.color + '00');
+          ctx.fillStyle = grd;
+          ctx.fill();
+        }
+
+        // Kreis
+        ctx.beginPath();
+        ctx.arc(x, lineY, r, 0, Math.PI * 2);
+        ctx.fillStyle   = act ? ep.color : '#ffffff';
+        ctx.strokeStyle = ep.color;
+        ctx.lineWidth   = 2.5;
+        ctx.fill();
+        ctx.stroke();
+
+        // Epochen-Kürzel
+        ctx.fillStyle  = act ? '#ffffff' : ep.color;
+        ctx.font       = `${act ? 700 : 600} ${act ? 11 : 9}px system-ui, sans-serif`;
+        ctx.textAlign  = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(ep.label, x, lineY);
+
+        // Jahresangabe unten
+        ctx.fillStyle    = '#617087';
+        ctx.font         = '10px system-ui, sans-serif';
+        ctx.textBaseline = 'top';
+        ctx.fillText('ab ' + ep.year, x, lineY + r + 6);
+
+        // Name oben
+        ctx.fillStyle    = act ? ep.color : '#617087';
+        ctx.font         = `${act ? 600 : 400} 10px system-ui, sans-serif`;
+        ctx.textBaseline = 'bottom';
+        ctx.fillText(ep.full, x, lineY - r - 4);
+      });
+
+      requestAnimationFrame(drawTimeline);
+    }
+
+    // Canvas-Auflösung anpassen (HiDPI-sicher)
+    (function resizeCanvas() {
+      const wrap = canvas.parentElement;
+      const dpr  = window.devicePixelRatio || 1;
+      const cssW = Math.max(wrap.clientWidth - 40, 280);
+      const cssH = 90;
+      canvas.width  = Math.round(cssW * dpr);
+      canvas.height = Math.round(cssH * dpr);
+      canvas.style.width  = cssW + 'px';
+      canvas.style.height = cssH + 'px';
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);  // einmalig skalieren
+    })();
+
+    requestAnimationFrame(drawTimeline);
+
+    /* ─────────────────────────────────────────
+       Aufgaben-Daten
+    ───────────────────────────────────────── */
+
+    // Stufe 1: Epochenzuordnung
+    const s1Tasks = [
+      {
+        epochKey: 'mhd',
+        html: '<blockquote>„Uns ist in alten mæren wunders vil geseit<br>von helden lobebæren, von grôzer arebeit …"</blockquote><p class="source">Nibelungenlied, ca. 1200 (mittelhochdeutsch)</p>',
+        cssClass: 'era-mhd',
+        answer: 'mhd',
+        feedbackCorrect: '<span class="concept-tag era-mhd">Mittelhochdeutsch (1050–1350)</span><br>Richtig! Typische MHD-Merkmale: Das <em>æ</em>-Zeichen (Umlaut), die Dehnungszeichen <em>ô</em> und <em>â</em>, und – wichtig – noch kein Diphthong: Es heißt noch <em>mîn</em>, nicht <em>mein</em>.',
+        feedbackWrong: '<span class="concept-tag era-mhd">Mittelhochdeutsch</span> ist die richtige Antwort. Das <em>æ</em>-Zeichen und die Langvokal-Markierungen (ô, î) sind typisch für MHD. Die Diphthongierung (î → ei) fand erst ab ca. 1250 statt.'
+      },
+      {
+        epochKey: 'ahd',
+        html: '<blockquote>„Ik gihorta ðat seggen,<br>dat sih urhettun ænon muotin …"</blockquote><p class="source">Hildebrandslied, ca. 820 (althochdeutsch)</p>',
+        cssClass: 'era-ahd',
+        answer: 'ahd',
+        feedbackCorrect: '<span class="concept-tag era-ahd">Althochdeutsch (750–1050)</span><br>Richtig! Das <em>ð</em> (stimmhaftes th) und die Schreibung <em>ik</em> statt <em>ich</em> sind deutliche AHD-Merkmale. Althochdeutsch ist für heutige Muttersprachler nahezu unverständlich.',
+        feedbackWrong: '<span class="concept-tag era-ahd">Althochdeutsch</span> ist die richtige Antwort. Das <em>ð</em>-Zeichen (altes Zahnlaut-Schriftzeichen) und <em>ik</em> statt <em>ich</em> sind typische AHD-Merkmale, die schon im Mittelhochdeutschen verschwanden.'
+      },
+      {
+        epochKey: 'fnhd',
+        html: '<blockquote>„Am anfang schuff Gott Himel vnd Erden.<br>Vnd die Erde war wüst vnd leer …"</blockquote><p class="source">Lutherbibel, 1534 (frühneuhochdeutsch)</p>',
+        cssClass: 'era-fnhd',
+        answer: 'fnhd',
+        feedbackCorrect: '<span class="concept-tag era-fnhd">Frühneuhochdeutsch (1350–1650)</span><br>Richtig! Typisch FNHD: <em>v</em> steht sowohl für den u-Laut als auch für f (<em>vnd</em> = und), Großschreibung von Gott, aber <em>Himel</em> ohne -mm-. Luthers Bibel prägte die neuhochdeutsche Standardsprache maßgeblich.',
+        feedbackWrong: '<span class="concept-tag era-fnhd">Frühneuhochdeutsch</span> ist richtig. Erkennungsmerkmal: <em>v</em> für u-Laut (<em>vnd</em> = und), <em>schuff</em> statt <em>schuf</em>. Das FNHD ist bereits erkennbar modernes Deutsch, aber mit alten Schreibkonventionen.'
+      }
+    ];
+
+    // Stufe 2: Diphthongierung
+    const s3Tasks = [
+      {
+        mhd: 'mîn',
+        rule: 'î → ei',
+        answer: 'mein',
+        options: ['min', 'mein', 'miene', 'mihn'],
+        feedbackCorrect: '<span class="concept-tag law">Neuhochdeutsche Diphthongierung</span><br>Richtig! MHD <em>î</em> → NHD <em>ei</em>: Der Langvokal î wurde zum Diphthong ei. Weitere Beispiele: <em>wîp</em> → <em>Weib</em>, <em>zît</em> → <em>Zeit</em>.',
+        feedbackWrong: '<span class="concept-tag law">Neuhochdeutsche Diphthongierung</span><br>Die richtige Antwort ist <em>mein</em>. Lautgesetz: MHD î → NHD ei. Dieser systematische Wandel betrifft alle Wörter mit langem î: wîp → Weib, zît → Zeit, mîn → mein.'
+      },
+      {
+        mhd: 'hûs',
+        rule: 'û → au',
+        answer: 'Haus',
+        options: ['hus', 'Haus', 'hüs', 'Hüs'],
+        feedbackCorrect: '<span class="concept-tag law">Neuhochdeutsche Diphthongierung</span><br>Richtig! MHD <em>û</em> → NHD <em>au</em>: Der Langvokal û wurde zum Diphthong au. Weitere Beispiele: <em>mûs</em> → <em>Maus</em>, <em>brût</em> → <em>Braut</em>.',
+        feedbackWrong: '<span class="concept-tag law">Neuhochdeutsche Diphthongierung</span><br>Die richtige Antwort ist <em>Haus</em>. Lautgesetz: MHD û → NHD au. Alle langen û-Vokale wurden diphthongiert: mûs → Maus, brût → Braut, hûs → Haus.'
+      },
+      {
+        mhd: 'liute',
+        rule: 'iu → eu',
+        answer: 'Leute',
+        options: ['lite', 'lüte', 'Leute', 'Läute'],
+        feedbackCorrect: '<span class="concept-tag law">Neuhochdeutsche Diphthongierung</span><br>Richtig! MHD <em>iu</em> (= langer ü-Laut) → NHD <em>eu</em>: Aus dem Langvokal iu wurde der Diphthong eu. Weitere Beispiele: <em>niuwes</em> → <em>Neues</em>, <em>hiute</em> → <em>heute</em>.',
+        feedbackWrong: '<span class="concept-tag law">Neuhochdeutsche Diphthongierung</span><br>Die richtige Antwort ist <em>Leute</em>. Lautgesetz: MHD iu (langer ü-Laut) → NHD eu. Auch: niuwes → Neues, hiute → heute. Nicht verwechseln mit der Monophthongierung uo → u (bruoder → Bruder).'
+      }
+    ];
+
+    /* ─────────────────────────────────────────
+       Status
+    ───────────────────────────────────────── */
+    let s1Round   = 0;
+    let s3Round   = 0;
+    let totalCorrect = 0;
+
+    const epochOrder = ['ahd', 'mhd', 'fnhd', 'nhd'];
+
+    /* ─────────────────────────────────────────
+       Stufe 1 Logik
+    ───────────────────────────────────────── */
+    function loadS1Round() {
+      if (s1Round >= s1Tasks.length) {
+        startStage3();
+        return;
+      }
+      const t = s1Tasks[s1Round];
+      document.getElementById('s1-counter').textContent = 'Runde ' + (s1Round + 1) + ' von ' + s1Tasks.length;
+
+      // Text
+      const textEl = document.getElementById('s1-text');
+      textEl.className = 'text-sample ' + t.cssClass;
+      textEl.innerHTML = t.html;
+
+      // Buttons zurücksetzen
+      const btns = document.querySelectorAll('#s1-options .option-btn');
+      btns.forEach(b => {
+        b.classList.remove('correct', 'wrong');
+        b.disabled = false;
+      });
+
+      // Feedback zurücksetzen
+      const fb = document.getElementById('s1-feedback');
+      fb.className = 'feedback-box';
+      fb.innerHTML = '';
+
+      const nextBtn = document.getElementById('s1-next');
+      nextBtn.classList.remove('show');
+      nextBtn.textContent = s1Round < s1Tasks.length - 1 ? 'Weiter →' : 'Zu Stufe 2 →';
+
+      // Timeline
+      activeEpochKey = t.epochKey;
+    }
+
+    function checkEpoch(btn) {
+      const t = s1Tasks[s1Round];
+      const chosen = btn.getAttribute('data-value');
+      const btns   = document.querySelectorAll('#s1-options .option-btn');
+      btns.forEach(b => b.disabled = true);
+
+      const fb = document.getElementById('s1-feedback');
+
+      if (chosen === t.answer) {
+        btn.classList.add('correct');
+        fb.className = 'feedback-box correct show';
+        fb.innerHTML = '✓ ' + t.feedbackCorrect;
+        totalCorrect++;
+        window.dataLayer.push({ event: 'answer_correct', stage: 1, round: s1Round + 1 });
+      } else {
+        btn.classList.add('wrong');
+        // Richtige Antwort markieren
+        btns.forEach(b => {
+          if (b.getAttribute('data-value') === t.answer) b.classList.add('correct');
+        });
+        fb.className = 'feedback-box wrong show';
+        fb.innerHTML = '✗ ' + t.feedbackWrong;
+        window.dataLayer.push({ event: 'answer_wrong', stage: 1, round: s1Round + 1 });
+      }
+
+      const nextBtn = document.getElementById('s1-next');
+      nextBtn.textContent = s1Round < s1Tasks.length - 1 ? 'Weiter →' : 'Zu Stufe 2 →';
+      nextBtn.classList.add('show');
+    }
+
+    function nextRound1() {
+      s1Round++;
+      loadS1Round();
+    }
+
+    /* ─────────────────────────────────────────
+       Übergang Stage 1 → Stage 3
+    ───────────────────────────────────────── */
+    function startStage3() {
+      document.getElementById('stage1').hidden = true;
+      document.getElementById('stage3').hidden = false;
+      activeEpochKey = 'nhd';
+      loadS3Round();
+    }
+
+    /* ─────────────────────────────────────────
+       Stufe 2 Logik
+    ───────────────────────────────────────── */
+    function loadS3Round() {
+      if (s3Round >= s3Tasks.length) {
+        showResult();
+        return;
+      }
+      const t = s3Tasks[s3Round];
+      document.getElementById('s3-counter').textContent = 'Runde ' + (s3Round + 1) + ' von ' + s3Tasks.length;
+
+      // Word-Pair
+      const pairEl = document.getElementById('s3-pair');
+      pairEl.innerHTML =
+        '<div class="word-mhd"><div class="word-label">Mittelhochdeutsch</div><div class="word-val mhd-word">' + t.mhd + '</div></div>' +
+        '<div class="arrow-symbol">→</div>' +
+        '<div class="word-nhd"><div class="word-label">Neuhochdeutsch</div><div class="word-val">?</div></div>';
+
+      // Options-Buttons
+      const optionsEl = document.getElementById('s3-options');
+      optionsEl.innerHTML = '';
+      t.options.forEach(opt => {
+        const b = document.createElement('button');
+        b.className = 'option-btn';
+        b.textContent = opt;
+        b.setAttribute('data-value', opt);
+        b.onclick = function() { checkDiphthong(this, t); };
+        optionsEl.appendChild(b);
+      });
+
+      // Feedback + Weiter-Button zurücksetzen
+      const fb = document.getElementById('s3-feedback');
+      fb.className = 'feedback-box';
+      fb.innerHTML = '';
+
+      const nextBtn = document.getElementById('s3-next');
+      nextBtn.classList.remove('show');
+      nextBtn.textContent = s3Round < s3Tasks.length - 1 ? 'Weiter →' : 'Ergebnis anzeigen →';
+    }
+
+    function checkDiphthong(btn, t) {
+      const chosen = btn.getAttribute('data-value');
+      const btns   = document.querySelectorAll('#s3-options .option-btn');
+      btns.forEach(b => b.disabled = true);
+
+      const fb = document.getElementById('s3-feedback');
+
+      // NHD-Form im Wortpaar aufdecken
+      const pairEl = document.getElementById('s3-pair');
+      const nhd = pairEl.querySelector('.word-nhd .word-val');
+      nhd.textContent = t.answer;
+      nhd.style.color = 'var(--c-nhd)';
+
+      if (chosen === t.answer) {
+        btn.classList.add('correct');
+        fb.className = 'feedback-box correct show';
+        fb.innerHTML = '✓ ' + t.feedbackCorrect;
+        totalCorrect++;
+        window.dataLayer.push({ event: 'answer_correct', stage: 3, round: s3Round + 1 });
+      } else {
+        btn.classList.add('wrong');
+        btns.forEach(b => {
+          if (b.getAttribute('data-value') === t.answer) b.classList.add('correct');
+        });
+        fb.className = 'feedback-box wrong show';
+        fb.innerHTML = '✗ ' + t.feedbackWrong;
+        window.dataLayer.push({ event: 'answer_wrong', stage: 3, round: s3Round + 1 });
+      }
+
+      const nextBtn = document.getElementById('s3-next');
+      nextBtn.textContent = s3Round < s3Tasks.length - 1 ? 'Weiter →' : 'Ergebnis anzeigen →';
+      nextBtn.classList.add('show');
+    }
+
+    function nextRound3() {
+      s3Round++;
+      loadS3Round();
+    }
+
+    /* ─────────────────────────────────────────
+       Ergebnis
+    ───────────────────────────────────────── */
+    function showResult() {
+      document.getElementById('stage3').hidden = true;
+      document.getElementById('stage-result').hidden = false;
+      document.getElementById('result-score').textContent = totalCorrect + ' / 6';
+      window.dataLayer.push({
+        event: 'simulation_complete',
+        score: totalCorrect,
+        max_score: 6
+      });
+    }
+
+    function restart() {
+      s1Round      = 0;
+      s3Round      = 0;
+      totalCorrect = 0;
+      document.getElementById('stage-result').hidden = true;
+      document.getElementById('stage3').hidden = true;
+      document.getElementById('stage1').hidden = false;
+      loadS1Round();
+    }
+
+    /* ─────────────────────────────────────────
+       Init
+    ───────────────────────────────────────── */
+    loadS1Round();
+  </script>
+
+</body>
+</html>

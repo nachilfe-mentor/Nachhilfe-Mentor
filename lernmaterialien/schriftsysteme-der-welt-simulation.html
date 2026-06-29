@@ -1,0 +1,892 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <title>Schriftsysteme der Welt – Interaktive Simulation | Nachhilfe Mentor</title>
+  <meta name="description" content="Interaktive Simulation zu den 5 Schriftsystemen der Welt: Klassifiziere echte Zeichen, von Logographie über Abjad bis zum Alphabet, und verstehe die Unterschiede.">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="keywords" content="Schriftsysteme, Schrifttypen, Logographie, Abjad, Abugida, Alphabet, Linguistik">
+  <link rel="canonical" href="https://nachhilfe-mentor.de/lernmaterialien/schriftsysteme-der-welt-simulation.html">
+  <meta property="og:title" content="Schriftsysteme der Welt – Interaktive Simulation">
+  <meta property="og:description" content="Interaktive Simulation zu den 5 Schriftsystemen der Welt: Klassifiziere echte Zeichen, von Logographie über Abjad bis zum Alphabet, und verstehe die Unterschiede.">
+  <meta property="og:url" content="https://nachhilfe-mentor.de/lernmaterialien/schriftsysteme-der-welt-simulation.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nachhilfe Mentor">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJGS7V6113"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EJGS7V6113');</script>
+  <script type="application/ld+json">{
+  "@context":"https://schema.org",
+  "@type":"LearningResource",
+  "name":"Schriftsysteme der Welt – Interaktive Simulation",
+  "description":"Interaktive Simulation zu den 5 Schriftsystemen der Welt: Klassifiziere echte Zeichen, von Logographie über Abjad bis zum Alphabet, und verstehe die Unterschiede.",
+  "url":"https://nachhilfe-mentor.de/lernmaterialien/schriftsysteme-der-welt-simulation.html",
+  "inLanguage":"de",
+  "educationalUse":"practice",
+  "interactivityType":"active",
+  "learningResourceType":"interactiveResource",
+  "audience":{"@type":"EducationalAudience","educationalRole":"student"},
+  "provider":{"@type":"Organization","name":"Nachhilfe Mentor","url":"https://nachhilfe-mentor.de"}
+  }</script>
+  <style>
+    .site-nav{background:#172033;padding:12px 22px;display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+    .site-nav a{color:#c8d8ec;text-decoration:none;font-size:.9rem;font-weight:600}
+    .site-nav .nav-home{color:#59d5ff;font-weight:800;font-size:1rem}
+    .site-nav a:hover{color:#fff}
+    :root {
+      --ink:    #172033;
+      --muted:  #617087;
+      --line:   #d8e1ed;
+      --blue:   #0f5fa8;
+      --cyan:   #0894aa;
+      --green:  #0b8f6a;
+      --red:    #b5281e;
+      --amber:  #b87700;
+      --purple: #6b21a8;
+      --bg:     #f5f8fc;
+      --panel:  #ffffff;
+
+      --logo:   #c26b00;
+      --syll:   #0894aa;
+      --alpha:  #0f5fa8;
+      --abjad:  #0b8f6a;
+      --abugi:  #6b21a8;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: var(--blue); }
+
+    /* ── Header ──────────────────────────────────── */
+    .site-header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--line);
+      padding: 0.75rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .site-header .logo-text {
+      font-weight: 700;
+      font-size: 1rem;
+      color: var(--ink);
+      text-decoration: none;
+    }
+
+    /* ── Layout ──────────────────────────────────── */
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 1.5rem 1rem 3rem;
+    }
+
+    .page-title {
+      font-size: 1.45rem;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 0.5rem;
+    }
+    .page-subtitle {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ── Schriftrad-SVG ──────────────────────────── */
+    .wheel-section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .wheel-section h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+    .wheel-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .wheel-svg {
+      width: 200px;
+      height: 200px;
+      flex-shrink: 0;
+    }
+    .wheel-legend {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: left;
+    }
+    .wheel-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      padding: 0.3rem 0.5rem;
+      border-radius: 6px;
+      transition: background 0.15s;
+    }
+    .wheel-legend-item:hover,
+    .wheel-legend-item.active {
+      background: var(--bg);
+    }
+    .wheel-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .wheel-legend-item strong { font-weight: 600; }
+    .wheel-legend-item span.example-script {
+      font-size: 1.1rem;
+      margin-left: auto;
+      padding-left: 0.5rem;
+    }
+
+    /* ── Stufen-Navigation ───────────────────────── */
+    .stage-nav {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .stage-tab {
+      padding: 0.45rem 1rem;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--muted);
+      transition: all 0.15s;
+    }
+    .stage-tab.active {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: #eef5fd;
+    }
+    .stage-tab:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+
+    /* ── Stage-Container ─────────────────────────── */
+    .stage { display: none; }
+    .stage.visible { display: block; }
+
+    /* ── Karten-Flip-Animation ───────────────────── */
+    .flip-card-wrapper {
+      perspective: 900px;
+      margin-bottom: 1.5rem;
+    }
+    .flip-card {
+      position: relative;
+      width: 100%;
+      min-height: 210px;
+      transform-style: preserve-3d;
+      transition: transform 0.55s cubic-bezier(.4,0,.2,1);
+    }
+    .flip-card.flipped { transform: rotateY(180deg); }
+
+    .flip-face {
+      position: absolute;
+      inset: 0;
+      backface-visibility: hidden;
+      -webkit-backface-visibility: hidden;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      gap: 0.75rem;
+    }
+    .flip-face.back {
+      transform: rotateY(180deg);
+    }
+    .flip-face .script-glyph {
+      font-size: 4rem;
+      line-height: 1;
+      font-weight: 400;
+    }
+    .flip-face .script-label {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    .flip-face .script-question {
+      font-size: 1rem;
+      font-weight: 600;
+      text-align: center;
+      color: var(--ink);
+      max-width: 380px;
+    }
+    .flip-face .result-type {
+      font-size: 1.5rem;
+      font-weight: 700;
+    }
+    .flip-face .result-explanation {
+      font-size: 0.9rem;
+      text-align: center;
+      max-width: 380px;
+      line-height: 1.55;
+    }
+
+    /* ── Optionen-Buttons ────────────────────────── */
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .option-btn {
+      padding: 0.65rem 0.75rem;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--ink);
+      transition: all 0.15s;
+      text-align: center;
+    }
+    .option-btn:hover:not(:disabled) {
+      border-color: var(--blue);
+      color: var(--blue);
+      background: #eef5fd;
+    }
+    .option-btn.correct {
+      border-color: var(--green);
+      background: #e6f5f0;
+      color: var(--green);
+    }
+    .option-btn.wrong {
+      border-color: var(--red);
+      background: #fdeeed;
+      color: var(--red);
+    }
+    .option-btn:disabled { cursor: default; }
+
+    /* ── Feedback-Box ────────────────────────────── */
+    .feedback {
+      display: none;
+      padding: 1rem 1.25rem;
+      border-radius: 10px;
+      margin-bottom: 1.25rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .feedback.show { display: block; }
+    .feedback.ok { background: #e6f5f0; border-left: 4px solid var(--green); }
+    .feedback.err { background: #fdeeed; border-left: 4px solid var(--red); }
+
+    .concept-tag {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 700;
+      border-radius: 5px;
+      padding: 0.15rem 0.55rem;
+      margin-right: 0.3rem;
+      vertical-align: middle;
+    }
+
+    /* ── Fortschrittsanzeige ─────────────────────── */
+    .progress-bar-wrap {
+      background: var(--line);
+      border-radius: 99px;
+      height: 6px;
+      margin-bottom: 1.25rem;
+      overflow: hidden;
+    }
+    .progress-bar-inner {
+      height: 6px;
+      border-radius: 99px;
+      background: var(--blue);
+      transition: width 0.3s;
+    }
+    .progress-label {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .next-btn {
+      padding: 0.6rem 1.4rem;
+      border-radius: 8px;
+      border: none;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+      display: none;
+    }
+    .next-btn.show { display: inline-block; }
+    .next-btn:hover { background: #0d52930; }
+
+    /* ── Stufe 2 Zuordnung ───────────────────────── */
+    .matching-section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .matching-section h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .matching-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    .matching-property {
+      flex: 1 1 220px;
+      background: var(--bg);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0.65rem 0.85rem;
+      font-size: 0.875rem;
+      line-height: 1.5;
+    }
+    .matching-select {
+      flex: 0 0 auto;
+      padding: 0.5rem 0.75rem;
+      border-radius: 8px;
+      border: 2px solid var(--line);
+      background: var(--panel);
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--ink);
+      min-width: 160px;
+      appearance: auto;
+    }
+    .matching-select.correct { border-color: var(--green); background: #e6f5f0; }
+    .matching-select.wrong   { border-color: var(--red);   background: #fdeeed; }
+
+    .check-btn {
+      padding: 0.65rem 1.5rem;
+      border-radius: 8px;
+      border: none;
+      background: var(--blue);
+      color: #fff;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+      margin-top: 0.5rem;
+    }
+    .check-btn:hover { background: #0d5293; }
+
+    /* ── Abschluss ───────────────────────────────── */
+    .completion-box {
+      display: none;
+      background: #e6f5f0;
+      border: 1px solid var(--green);
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+    .completion-box.show { display: block; }
+    .completion-box h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+    .completion-box p { font-size: 0.9rem; color: var(--ink); margin-bottom: 0.35rem; }
+
+    /* ── Info-Box ────────────────────────────────── */
+    .info-box {
+      background: #f0f6ff;
+      border-left: 4px solid var(--blue);
+      border-radius: 0 8px 8px 0;
+      padding: 0.9rem 1.1rem;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      color: var(--ink);
+    }
+
+    /* ── Vorhersage-Label ────────────────────────── */
+    .prediction-label {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Responsiv ───────────────────────────────── */
+    @media (max-width: 480px) {
+      .wheel-container { flex-direction: column; }
+      .options-grid { grid-template-columns: 1fr 1fr; }
+      .matching-row { flex-direction: column; }
+      .matching-select { min-width: 100%; }
+    }
+  </style>
+</head>
+<body data-asset-type="simulation" data-topic-cluster="sprachen">
+  <nav class="site-nav" aria-label="Sitenavigation">
+    <a class="nav-home" href="/">Nachhilfe Mentor</a>
+    <a href="/blog/">Blog</a>
+    <a href="/lernmaterialien/">Lernmaterialien</a>
+  </nav>
+
+  <header class="site-header">
+    <a href="/" class="logo-text">Nachhilfe Mentor</a>
+  </header>
+
+  <main>
+    <h1 class="page-title">Schriftsysteme der Welt</h1>
+    <p class="page-subtitle">Klasse 10–13 · Linguistik · ~10 Minuten</p>
+
+    <!-- Schriftrad -->
+    <div class="wheel-section">
+      <h2>Die 5 Schrifttypen im Überblick</h2>
+      <div class="wheel-container">
+        <svg class="wheel-svg" viewBox="0 0 200 200" aria-hidden="true" id="schriftrad">
+          <!-- Logographie (72°, startet bei -90°) -->
+          <path id="seg-logo" d="M100,100 L100,10 A90,90 0 0,1 185.5,55 Z" fill="#c26b00" opacity="0.85" style="cursor:pointer;transition:opacity 0.2s"/>
+          <!-- Syllabarie (72°) -->
+          <path id="seg-syll" d="M100,100 L185.5,55 A90,90 0 0,1 155.8,169.1 Z" fill="#0894aa" opacity="0.85" style="cursor:pointer;transition:opacity 0.2s"/>
+          <!-- Alphabet (72°) -->
+          <path id="seg-alpha" d="M100,100 L155.8,169.1 A90,90 0 0,1 44.2,169.1 Z" fill="#0f5fa8" opacity="0.85" style="cursor:pointer;transition:opacity 0.2s"/>
+          <!-- Abjad (72°) -->
+          <path id="seg-abjad" d="M100,100 L44.2,169.1 A90,90 0 0,1 14.5,55 Z" fill="#0b8f6a" opacity="0.85" style="cursor:pointer;transition:opacity 0.2s"/>
+          <!-- Abugida (72°) -->
+          <path id="seg-abugi" d="M100,100 L14.5,55 A90,90 0 0,1 100,10 Z" fill="#6b21a8" opacity="0.85" style="cursor:pointer;transition:opacity 0.2s"/>
+          <!-- Mittelpunkt -->
+          <circle cx="100" cy="100" r="30" fill="#fff"/>
+          <text x="100" y="105" text-anchor="middle" font-size="11" fill="#172033" font-weight="600">Schrift</text>
+        </svg>
+        <div class="wheel-legend" id="wheel-legend">
+          <div class="wheel-legend-item" data-seg="logo">
+            <span class="wheel-dot" style="background:#c26b00"></span>
+            <span><strong>Logographie</strong> – Bedeutungszeichen</span>
+            <span class="example-script">水</span>
+          </div>
+          <div class="wheel-legend-item" data-seg="syll">
+            <span class="wheel-dot" style="background:#0894aa"></span>
+            <span><strong>Syllabarie</strong> – Silbenzeichen</span>
+            <span class="example-script">み</span>
+          </div>
+          <div class="wheel-legend-item" data-seg="alpha">
+            <span class="wheel-dot" style="background:#0f5fa8"></span>
+            <span><strong>Alphabet</strong> – Lautzeichen</span>
+            <span class="example-script">A</span>
+          </div>
+          <div class="wheel-legend-item" data-seg="abjad">
+            <span class="wheel-dot" style="background:#0b8f6a"></span>
+            <span><strong>Abjad</strong> – Konsonantenschrift</span>
+            <span class="example-script">ب</span>
+          </div>
+          <div class="wheel-legend-item" data-seg="abugi">
+            <span class="wheel-dot" style="background:#6b21a8"></span>
+            <span><strong>Abugida</strong> – Konsonant + Vokal</span>
+            <span class="example-script">क</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stufen-Navigation -->
+    <div class="stage-nav">
+      <button class="stage-tab active" id="tab1">Stufe 1: Klassifikation</button>
+      <button class="stage-tab" id="tab2" disabled>Stufe 2: Eigenschaften</button>
+    </div>
+
+    <!-- ── STUFE 1 ──────────────────────────────── -->
+    <div class="stage visible" id="stage1">
+
+      <div class="info-box">
+        <strong>Vorhersage-Aufgabe:</strong> Dir werden nacheinander 5 echte Schriftzeichen aus verschiedenen Schriftsystemen gezeigt. Lies die Beschreibung und wähle den passenden Schrifttyp – bevor du die Erklärung siehst.
+      </div>
+
+      <div class="progress-label" id="s1-label">Zeichen 1 von 5</div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-inner" id="s1-bar" style="width:20%"></div>
+      </div>
+
+      <!-- Karten-Flip -->
+      <div class="flip-card-wrapper">
+        <div class="flip-card" id="flip-card">
+          <div class="flip-face front" id="card-front">
+            <div class="script-glyph" id="card-glyph">水</div>
+            <div class="script-label" id="card-lang">Chinesisch (Mandarin)</div>
+            <div class="script-question" id="card-question">Dieses Zeichen bedeutet „Wasser" (shuǐ). Es hat keine direkte Lautentsprechung aus seinen Bestandteilen. Welcher Schrifttyp ist das?</div>
+          </div>
+          <div class="flip-face back" id="card-back">
+            <div class="result-type" id="card-result-type" style="color: var(--logo)">Logographie</div>
+            <div class="result-explanation" id="card-result-text">Das Zeichen 水 steht für das Morphem „Wasser". Es codiert eine <em>Bedeutungseinheit</em>, nicht einen Laut – typisch für eine <strong>Logographie</strong>. Chinesisch nutzt über 50 000 solcher Zeichen.</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="prediction-label">Deine Vorhersage</p>
+      <div class="options-grid" id="s1-options">
+        <button class="option-btn" data-val="logo">Logographie</button>
+        <button class="option-btn" data-val="syll">Syllabarie</button>
+        <button class="option-btn" data-val="alpha">Alphabet</button>
+        <button class="option-btn" data-val="abjad">Abjad</button>
+        <button class="option-btn" data-val="abugi">Abugida</button>
+      </div>
+
+      <div class="feedback" id="s1-feedback"></div>
+      <button class="next-btn" id="s1-next">Nächstes Zeichen →</button>
+
+      <div class="completion-box" id="s1-complete">
+        <h3>Stufe 1 abgeschlossen!</h3>
+        <p>Du hast alle 5 Schriftzeichen klassifiziert.</p>
+        <p>Weiter zu Stufe 2: Verstehe die definierende Eigenschaft jedes Typs.</p>
+        <button class="check-btn" onclick="activateStage2()">Zu Stufe 2 →</button>
+      </div>
+    </div>
+
+    <!-- ── STUFE 2 ──────────────────────────────── -->
+    <div class="stage" id="stage2">
+
+      <div class="info-box">
+        <strong>Eigenschaften zuordnen:</strong> Jede Beschreibung passt genau zu einem Schrifttyp. Wähle die richtige Zuordnung und klicke auf „Überprüfen".
+      </div>
+
+      <div class="matching-section">
+        <h3>Welcher Schrifttyp hat diese Eigenschaft?</h3>
+
+        <div class="matching-row">
+          <div class="matching-property">Jedes Zeichen steht für eine <strong>Bedeutungseinheit</strong> (Morphem oder Wort), nicht für einen Laut.</div>
+          <select class="matching-select" id="m1">
+            <option value="">– bitte wählen –</option>
+            <option value="logo">Logographie</option>
+            <option value="syll">Syllabarie</option>
+            <option value="alpha">Alphabet</option>
+            <option value="abjad">Abjad</option>
+            <option value="abugi">Abugida</option>
+          </select>
+        </div>
+
+        <div class="matching-row">
+          <div class="matching-property">Jedes Zeichen steht für eine <strong>Silbe</strong>. Ein Zeichen für „ka", ein anderes für „ki".</div>
+          <select class="matching-select" id="m2">
+            <option value="">– bitte wählen –</option>
+            <option value="logo">Logographie</option>
+            <option value="syll">Syllabarie</option>
+            <option value="alpha">Alphabet</option>
+            <option value="abjad">Abjad</option>
+            <option value="abugi">Abugida</option>
+          </select>
+        </div>
+
+        <div class="matching-row">
+          <div class="matching-property">Jedes Zeichen steht für ein einzelnes <strong>Phonem</strong> – Konsonanten und Vokale haben je ein eigenes Zeichen.</div>
+          <select class="matching-select" id="m3">
+            <option value="">– bitte wählen –</option>
+            <option value="logo">Logographie</option>
+            <option value="syll">Syllabarie</option>
+            <option value="alpha">Alphabet</option>
+            <option value="abjad">Abjad</option>
+            <option value="abugi">Abugida</option>
+          </select>
+        </div>
+
+        <div class="matching-row">
+          <div class="matching-property">Zeichen stehen für <strong>Konsonanten</strong>; Vokale werden normalerweise weggelassen oder als optionale Diakritika ergänzt.</div>
+          <select class="matching-select" id="m4">
+            <option value="">– bitte wählen –</option>
+            <option value="logo">Logographie</option>
+            <option value="syll">Syllabarie</option>
+            <option value="alpha">Alphabet</option>
+            <option value="abjad">Abjad</option>
+            <option value="abugi">Abugida</option>
+          </select>
+        </div>
+
+        <div class="matching-row">
+          <div class="matching-property">Jedes Zeichen steht für einen <strong>Konsonanten mit einem Standardvokal</strong>. Andere Vokale werden durch Modifikation des Grundzeichens ausgedrückt (z. B. क → कि → कु).</div>
+          <select class="matching-select" id="m5">
+            <option value="">– bitte wählen –</option>
+            <option value="logo">Logographie</option>
+            <option value="syll">Syllabarie</option>
+            <option value="alpha">Alphabet</option>
+            <option value="abjad">Abjad</option>
+            <option value="abugi">Abugida</option>
+          </select>
+        </div>
+
+        <button class="check-btn" onclick="checkMatching()">Überprüfen</button>
+      </div>
+
+      <div class="feedback" id="s2-feedback"></div>
+
+      <div class="completion-box" id="s2-complete">
+        <h3>Simulation abgeschlossen!</h3>
+        <p>Du kennst jetzt die 5 Grundtypen von Schriftsystemen und ihre definierenden Merkmale.</p>
+        <p><strong>Wichtig:</strong> Kein Schrifttyp ist „besser" oder „primitiver" – jeder ist ein funktionales System, das Millionen oder Milliarden Menschen täglich nutzen.</p>
+        <p style="margin-top:0.75rem; color: var(--muted); font-size:0.85rem;">Quellen: Crystal (2010) <em>The Cambridge Encyclopedia of Language</em>; Coulmas (2003) <em>Writing Systems of the World</em>.</p>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // ── Tracking ──────────────────────────────────
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+
+    function track(event, params) {
+      dataLayer.push(Object.assign({ event }, params));
+    }
+
+    // ── Schriftrad-Interaktion ────────────────────
+    const segments = ['logo','syll','alpha','abjad','abugi'];
+
+    segments.forEach(id => {
+      const seg = document.getElementById('seg-' + id);
+      if (!seg) return;
+      seg.addEventListener('mouseenter', () => { seg.style.opacity = '1'; });
+      seg.addEventListener('mouseleave', () => { seg.style.opacity = '0.85'; });
+    });
+
+    document.getElementById('wheel-legend').addEventListener('click', e => {
+      const item = e.target.closest('[data-seg]');
+      if (!item) return;
+      document.querySelectorAll('.wheel-legend-item').forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+      const seg = document.getElementById('seg-' + item.dataset.seg);
+      if (seg) {
+        seg.style.opacity = '1';
+        setTimeout(() => { seg.style.opacity = '0.85'; }, 600);
+      }
+    });
+
+    // ── Stufe-1-Daten ─────────────────────────────
+    const items = [
+      {
+        glyph: '水',
+        lang: 'Chinesisch (Mandarin)',
+        question: 'Dieses Zeichen bedeutet „Wasser" (shuǐ). Es hat keine direkte Lautentsprechung aus seinen Bestandteilen. Welcher Schrifttyp ist das?',
+        correct: 'logo',
+        resultColor: 'var(--logo)',
+        resultType: 'Logographie',
+        resultText: 'Das Zeichen 水 codiert das Morphem „Wasser" – eine Bedeutungseinheit, keinen Laut. Das ist das Kernmerkmal einer Logographie. Chinesisch nutzt Tausende solcher Zeichen.',
+        feedback_ok: 'Richtig! <span class="concept-tag">Logographie</span> bedeutet: 1 Zeichen = 1 Bedeutungseinheit (Morphem oder Wort). Das Zeichen sieht aus wie stilisiertes fließendes Wasser.',
+        feedback_err: 'Nicht ganz. Das ist eine <span class="concept-tag">Logographie</span>. Das Zeichen 水 steht für das Morphem „Wasser", nicht für einen Laut oder eine Silbe. Beim Alphabet, Syllabarie oder Abjad würde das Zeichen für einen Laut bzw. eine Silbe stehen.'
+      },
+      {
+        glyph: 'み',
+        lang: 'Japanisches Hiragana',
+        question: 'Das japanische Hiragana-Zeichen み (mi) steht immer für die Silbe /mi/ – egal, in welchem Wort es auftaucht. Welcher Schrifttyp?',
+        correct: 'syll',
+        resultColor: 'var(--syll)',
+        resultType: 'Syllabarie',
+        resultText: 'み steht für die Silbe /mi/. Hiragana ist ein Syllabarie: Jedes der 46 Grundzeichen entspricht genau einer Silbe. Keine Mehrdeutigkeit, keine fehlenden Vokale.',
+        feedback_ok: 'Korrekt! <span class="concept-tag">Syllabarie</span>: Jedes Zeichen entspricht einer Silbe. Japanisches Hiragana hat 46 Grundzeichen – je eines pro möglicher Silbe im Japanischen.',
+        feedback_err: 'Das stimmt nicht ganz. Es ist eine <span class="concept-tag">Syllabarie</span>. Das Zeichen み steht für die Silbe /mi/. Im Gegensatz zum Alphabet hat das Hiragana-System kein separates Zeichen für „m" und ein anderes für „i" – es gibt nur das eine Zeichen für die komplette Silbe.'
+      },
+      {
+        glyph: 'ب',
+        lang: 'Arabisch',
+        question: 'Das arabische Zeichen ب (bāʾ) steht für den Konsonanten /b/. In arabischen Texten werden Vokale oft weggelassen. Welcher Schrifttyp?',
+        correct: 'abjad',
+        resultColor: 'var(--abjad)',
+        resultType: 'Abjad',
+        resultText: 'Arabisch ist ein Abjad: Die Schrift notiert primär Konsonanten. Vokale können als optionale Diakritika ergänzt werden, werden aber im Alltag oft weggelassen. Erfahrene Lesende erschließen die Vokale aus dem Kontext.',
+        feedback_ok: 'Sehr gut! <span class="concept-tag">Abjad</span>: Die Schrift codiert Konsonanten; Vokale sind optional. Das erklärt, warum arabische und hebräische Texte so dicht und vokalarm wirken.',
+        feedback_err: 'Nicht korrekt. Das ist ein <span class="concept-tag">Abjad</span>. Arabisch schreibt primär Konsonanten; Vokale werden im Fließtext meist weggelassen. Das unterscheidet ein Abjad von einem Alphabet, das für Konsonanten und Vokale je eigene Zeichen hat.'
+      },
+      {
+        glyph: 'क',
+        lang: 'Devanagari (Hindi/Sanskrit)',
+        question: 'Das Devanagari-Zeichen क (ka) enthält bereits den Vokal /a/. Es kann zu कि (ki) oder कु (ku) verändert werden. Welcher Typ?',
+        correct: 'abugi',
+        resultColor: 'var(--abugi)',
+        resultType: 'Abugida',
+        resultText: 'Devanagari ist eine Abugida: Jedes Grundzeichen steht für einen Konsonanten mit dem Standardvokal /a/. Andere Vokale werden durch Diakritika ausgedrückt (क → कि = ki, क → कु = ku). Über 1,6 Milliarden Menschen nutzen Abugida-Schriften.',
+        feedback_ok: 'Perfekt! <span class="concept-tag">Abugida</span>: Konsonant mit eingebautem Standardvokal; andere Vokale als Modifikation. Devanagari ist dafür ein klassisches Beispiel.',
+        feedback_err: 'Leider falsch. Es ist eine <span class="concept-tag">Abugida</span>. Der entscheidende Unterschied zu einem Alphabet: Der Vokal ist im Konsonanten-Zeichen bereits „eingebaut" (Standardvokal /a/) und wird nur bei Abweichung markiert – im Gegensatz zum Alphabet, wo Vokal und Konsonant immer separate Zeichen sind.'
+      },
+      {
+        glyph: 'A',
+        lang: 'Lateinisches Alphabet',
+        question: 'Das lateinische „A" steht für den Vokal /a/. Konsonanten und Vokale haben je ein eigenes Zeichen. Welcher Schrifttyp?',
+        correct: 'alpha',
+        resultColor: 'var(--alpha)',
+        resultType: 'Alphabet',
+        resultText: 'Das lateinische Alphabet ist eine alphabetische Schrift: Sowohl Konsonanten als auch Vokale erhalten ein eigenes Zeichen. Mit ~26 Buchstaben deckt es alle Phoneme des Deutschen ab – sehr effizient für phonologisch transparente Sprachen.',
+        feedback_ok: 'Richtig! <span class="concept-tag">Alphabet</span>: Konsonanten und Vokale haben je eigene Zeichen. Das lateinische Alphabet ist das weltweit meistgenutzte Schriftsystem.',
+        feedback_err: 'Das ist nicht korrekt. Das A gehört zum <span class="concept-tag">Alphabet</span>. Das Unterscheidungsmerkmal: Im Alphabet gibt es separate Zeichen für Konsonanten und Vokale. Beim Abjad fehlen die Vokalzeichen; bei der Abugida sind sie in die Konsonantenzeichen integriert.'
+      }
+    ];
+
+    let currentItem = 0;
+    let answered = false;
+
+    function renderItem(idx) {
+      const item = items[idx];
+      answered = false;
+
+      document.getElementById('card-glyph').textContent = item.glyph;
+      document.getElementById('card-lang').textContent = item.lang;
+      document.getElementById('card-question').textContent = item.question;
+      document.getElementById('card-result-type').textContent = item.resultType;
+      document.getElementById('card-result-type').style.color = item.resultColor;
+      document.getElementById('card-result-text').innerHTML = item.resultText;
+
+      const card = document.getElementById('flip-card');
+      card.classList.remove('flipped');
+
+      document.getElementById('s1-label').textContent = 'Zeichen ' + (idx + 1) + ' von ' + items.length;
+      document.getElementById('s1-bar').style.width = ((idx + 1) / items.length * 100) + '%';
+
+      const opts = document.querySelectorAll('#s1-options .option-btn');
+      opts.forEach(btn => {
+        btn.disabled = false;
+        btn.classList.remove('correct', 'wrong');
+      });
+
+      const fb = document.getElementById('s1-feedback');
+      fb.className = 'feedback';
+      fb.innerHTML = '';
+
+      document.getElementById('s1-next').classList.remove('show');
+    }
+
+    document.getElementById('s1-options').addEventListener('click', e => {
+      const btn = e.target.closest('.option-btn');
+      if (!btn || answered) return;
+      answered = true;
+
+      const val = btn.dataset.val;
+      const item = items[currentItem];
+      const isCorrect = val === item.correct;
+
+      document.querySelectorAll('#s1-options .option-btn').forEach(b => {
+        b.disabled = true;
+        if (b.dataset.val === item.correct) b.classList.add('correct');
+      });
+      if (!isCorrect) btn.classList.add('wrong');
+
+      const fb = document.getElementById('s1-feedback');
+      fb.className = 'feedback show ' + (isCorrect ? 'ok' : 'err');
+      fb.innerHTML = isCorrect ? item.feedback_ok : item.feedback_err;
+
+      document.getElementById('flip-card').classList.add('flipped');
+      document.getElementById('s1-next').classList.add('show');
+
+      track('s1_answer', {
+        item: currentItem + 1,
+        correct: isCorrect,
+        type: item.correct
+      });
+    });
+
+    document.getElementById('s1-next').addEventListener('click', () => {
+      currentItem++;
+      if (currentItem < items.length) {
+        renderItem(currentItem);
+      } else {
+        document.getElementById('s1-next').classList.remove('show');
+        document.getElementById('s1-complete').classList.add('show');
+        track('s1_complete', {});
+      }
+    });
+
+    // ── Stufe 2 aktivieren ────────────────────────
+    function activateStage2() {
+      document.getElementById('tab2').disabled = false;
+      document.getElementById('tab1').classList.remove('active');
+      document.getElementById('tab2').classList.add('active');
+      document.getElementById('stage1').classList.remove('visible');
+      document.getElementById('stage2').classList.add('visible');
+      track('stage2_enter', {});
+    }
+
+    document.getElementById('tab1').addEventListener('click', () => {
+      document.getElementById('tab1').classList.add('active');
+      document.getElementById('tab2').classList.remove('active');
+      document.getElementById('stage1').classList.add('visible');
+      document.getElementById('stage2').classList.remove('visible');
+    });
+    document.getElementById('tab2').addEventListener('click', () => {
+      if (document.getElementById('tab2').disabled) return;
+      document.getElementById('tab2').classList.add('active');
+      document.getElementById('tab1').classList.remove('active');
+      document.getElementById('stage2').classList.add('visible');
+      document.getElementById('stage1').classList.remove('visible');
+    });
+
+    // ── Stufe 2 Überprüfung ───────────────────────
+    const matchAnswers = { m1: 'logo', m2: 'syll', m3: 'alpha', m4: 'abjad', m5: 'abugi' };
+
+    function checkMatching() {
+      let allCorrect = true;
+      let missing = false;
+
+      Object.entries(matchAnswers).forEach(([id, correct]) => {
+        const sel = document.getElementById(id);
+        if (!sel.value) { missing = true; return; }
+        sel.classList.remove('correct', 'wrong');
+        if (sel.value === correct) {
+          sel.classList.add('correct');
+        } else {
+          sel.classList.add('wrong');
+          allCorrect = false;
+        }
+      });
+
+      const fb = document.getElementById('s2-feedback');
+
+      if (missing) {
+        fb.className = 'feedback show err';
+        fb.innerHTML = 'Bitte wähle für alle 5 Eigenschaften einen Schrifttyp aus.';
+        return;
+      }
+
+      if (allCorrect) {
+        fb.className = 'feedback show ok';
+        fb.innerHTML = '<strong>Alle 5 Zuordnungen korrekt!</strong> Du hast die definierenden Merkmale aller Schrifttypen verstanden.<br><br>' +
+          '<span class="concept-tag">Logographie</span> = Bedeutungseinheit &nbsp;' +
+          '<span class="concept-tag">Syllabarie</span> = Silbe &nbsp;' +
+          '<span class="concept-tag">Alphabet</span> = Phonem (K+V) &nbsp;' +
+          '<span class="concept-tag">Abjad</span> = Konsonant &nbsp;' +
+          '<span class="concept-tag">Abugida</span> = K + Standardvokal';
+        document.getElementById('s2-complete').classList.add('show');
+        track('s2_complete', { allCorrect: true });
+      } else {
+        fb.className = 'feedback show err';
+        fb.innerHTML = 'Einige Zuordnungen stimmen nicht. Die falsch zugeordneten Felder sind rot markiert. Tipp: Überlege, was die <em>kleinste kodierte Einheit</em> in jedem System ist.';
+        track('s2_complete', { allCorrect: false });
+      }
+    }
+
+    // Init
+    renderItem(0);
+  </script>
+</body>
+</html>
