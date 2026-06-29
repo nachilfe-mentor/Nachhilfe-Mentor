@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 249
-- Letzte Veröffentlichung: 2026-06-28
+- Gesamtzahl Artikel: 250
+- Letzte Veröffentlichung: 2026-06-29
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 250 | 2026-06-29 | kommasetzung-lernen-tipps | Kommasetzung lernen: Die wichtigsten Komma-Regeln einfach erklärt | Kommasetzung lernen, Komma-Regeln einfach erklärt, Kommasetzung Übungen, Komma vor und, Kommaregeln Deutsch Schule | Schule & Studium | Umfassender Ratgeber zur deutschen Kommasetzung für Schüler. Erklärt die sieben wichtigsten Komma-Regeln: Aufzählungen, Komma zwischen Hauptsätzen, Nebensätze (weil/dass/obwohl), Infinitivgruppen mit zu (um/ohne/statt), Einschübe und Appositionen, Anreden/Ausrufe sowie Vergleiche mit als/wie. Jede Regel mit konkreten Beispielsätzen und Eselsbrücken. Zusätzlich praktische Übungstipps (Sätze analysieren, eigene Texte prüfen, laut lesen) und ein Abschnitt zu häufigen Fehlern (Komma vor jedem und, vergessenes Nebensatz-Komma, Komma nach Satzlänge). Grammatik-/Deutsch-Cluster, hohes Evergreen-Suchvolumen Klasse 5-10. Interne Links zu aufsatz-ueberarbeiten-tipps und rechtschreibung-verbessern-tipps. App einmal natürlich erwähnt. |
 | 249 | 2026-06-28 | schlechte-note-was-tun | Schlechte Note: Was tun? 8 Schritte für Schüler und Eltern | schlechte Note was tun, schlechte Note Schule, schlechte Note bekommen Tipps, Note verbessern Schüler, schlechte Klassenarbeit was jetzt | Schule & Studium | Artikel für Schüler, die eine schlechte Note bekommen haben. 8-Schritte-Anleitung: Durchatmen, Fehleranalyse, Ursachenforschung, Lehrergespräch, Verbesserungsplan, aktives Lernen, Elterngespräch, langfristige Lehren. Zielgruppe: Schüler ab Klasse 5, Eltern. Focus Keyword: schlechte Note was tun. Interne Links: noten-verbessern-schule-tipps, lernmotivation-steigern-tipps. |
 | 248 | 2026-06-28 | rechtschreibung-verbessern-tipps | Rechtschreibung verbessern: Tipps und Übungen für Schüler | Rechtschreibung verbessern, Rechtschreibung üben Tipps, Rechtschreibung lernen Schule, Rechtschreibfehler vermeiden, bessere Rechtschreibung Schüler | Schule & Studium | Artikel über das Verbessern der Rechtschreibung für Schüler aller Klassen. Erklärt die häufigsten Fehlerquellen (ss/ß, das/dass, Groß-Kleinschreibung, Fremdwörter), bietet praktische Übungsmethoden (Fehleranalyse, Diktate, Abschreiben, Karteikarten) und einen Wochenplan. Empfiehlt die Nachhilfe Mentor App für gezieltes Feedback. Interner Link zu aufsatz-ueberarbeiten-tipps. |
 | 247 | 2026-06-27 | aufsatz-ueberarbeiten-tipps | Aufsatz überarbeiten: Tipps, Checkliste und häufige Fehler | Aufsatz überarbeiten, Aufsatz verbessern Tipps, Aufsatz überarbeiten Checkliste, Text überarbeiten Schule, Aufsatz korrigieren Tipps | Schule & Studium | Vollständiger Leitfaden zum systematischen Überarbeiten von Schulaufsätzen. Erklärt die drei Überarbeitungsebenen: Inhalt (Aufgabenstellung, Belege, These), Struktur (Einleitung, Übergänge, Schluss) und Sprache (Satzbau, Füllwörter, Stil). 5-Schritte-Plan: Abstand nehmen, laut lesen, Checkliste durchgehen, gezielt verbessern, Rechtschreibung zuletzt. Vollständige Überarbeitungs-Checkliste mit 4 Bereichen (Inhalt, Struktur, Sprache, Formales). Häufige Fehler: zu schnell lesen, nur Rechtschreibung prüfen, nicht kritisch lesen, Schluss vernachlässigen. App-Erwähnung: gezieltes Feedback zu Inhalt und Struktur. Crosslinks zu gliederung-erstellen-tipps und stilmittel-liste-beispiele. Füllt Lücke im Schreibaufgaben-Cluster: Überarbeitungskompetenz als eigenständige Fertigkeit. |
@@ -1526,3 +1527,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - schlechte-note-was-tun -> noten-verbessern-schule-tipps (Systematische Notenverbesserung als Ergänzung)
 - schlechte-note-was-tun -> lernmotivation-steigern-tipps (Motivation nach schlechter Note aufbauen)
 - noten-verbessern-schule-tipps -> schlechte-note-was-tun (Rückverlinkung bei Erwähnung von schlechten Noten als Ausgangssituation)
+
+## Interne Verlinkungen (Artikel 250)
+- kommasetzung-lernen-tipps -> aufsatz-ueberarbeiten-tipps (Kommakontrolle als Teil des Überarbeitens)
+- kommasetzung-lernen-tipps -> rechtschreibung-verbessern-tipps (weiterführende Rechtschreibübungen)
+- rechtschreibung-verbessern-tipps -> kommasetzung-lernen-tipps (Rückverlinkung beim Punkt Kommas vor dass/Nebensätzen)
