@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 250
+- Gesamtzahl Artikel: 251
 - Letzte Veröffentlichung: 2026-06-29
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 251 | 2026-06-29 | satzglieder-bestimmen-tipps | Satzglieder bestimmen: Subjekt, Prädikat und Objekt einfach erklärt | Satzglieder bestimmen, Subjekt Prädikat Objekt, Satzglieder Deutsch, Umstellprobe Satzglieder, Satzglieder Übungen | Schule & Studium | Ausführlicher Grammatik-Ratgeber zum Bestimmen von Satzgliedern für die Mittelstufe (Klasse 5-9). Erklärt den Unterschied zwischen Satzgliedern und Wortarten, die Umstellprobe als zentrales Werkzeug, sowie Subjekt (Wer/Was?), Prädikat (inkl. zweiteiliges Prädikat/Satzklammer), die vier Objektarten (Akkusativ, Dativ, Genitiv, Präpositional) mit Fragefällen und adverbiale Bestimmungen (Ort, Zeit, Art und Weise, Grund). Enthält eine Schritt-für-Schritt-Anleitung und eine Liste häufiger Fehler. Interne Links zu kommasetzung-lernen-tipps und satzanfaenge-variieren-tipps. App einmal natürlich im Fließtext erwähnt. Ergänzt den wachsenden Grammatik-Cluster (Kommasetzung, Rechtschreibung). |
 | 250 | 2026-06-29 | kommasetzung-lernen-tipps | Kommasetzung lernen: Die wichtigsten Komma-Regeln einfach erklärt | Kommasetzung lernen, Komma-Regeln einfach erklärt, Kommasetzung Übungen, Komma vor und, Kommaregeln Deutsch Schule | Schule & Studium | Umfassender Ratgeber zur deutschen Kommasetzung für Schüler. Erklärt die sieben wichtigsten Komma-Regeln: Aufzählungen, Komma zwischen Hauptsätzen, Nebensätze (weil/dass/obwohl), Infinitivgruppen mit zu (um/ohne/statt), Einschübe und Appositionen, Anreden/Ausrufe sowie Vergleiche mit als/wie. Jede Regel mit konkreten Beispielsätzen und Eselsbrücken. Zusätzlich praktische Übungstipps (Sätze analysieren, eigene Texte prüfen, laut lesen) und ein Abschnitt zu häufigen Fehlern (Komma vor jedem und, vergessenes Nebensatz-Komma, Komma nach Satzlänge). Grammatik-/Deutsch-Cluster, hohes Evergreen-Suchvolumen Klasse 5-10. Interne Links zu aufsatz-ueberarbeiten-tipps und rechtschreibung-verbessern-tipps. App einmal natürlich erwähnt. |
 | 249 | 2026-06-28 | schlechte-note-was-tun | Schlechte Note: Was tun? 8 Schritte für Schüler und Eltern | schlechte Note was tun, schlechte Note Schule, schlechte Note bekommen Tipps, Note verbessern Schüler, schlechte Klassenarbeit was jetzt | Schule & Studium | Artikel für Schüler, die eine schlechte Note bekommen haben. 8-Schritte-Anleitung: Durchatmen, Fehleranalyse, Ursachenforschung, Lehrergespräch, Verbesserungsplan, aktives Lernen, Elterngespräch, langfristige Lehren. Zielgruppe: Schüler ab Klasse 5, Eltern. Focus Keyword: schlechte Note was tun. Interne Links: noten-verbessern-schule-tipps, lernmotivation-steigern-tipps. |
 | 248 | 2026-06-28 | rechtschreibung-verbessern-tipps | Rechtschreibung verbessern: Tipps und Übungen für Schüler | Rechtschreibung verbessern, Rechtschreibung üben Tipps, Rechtschreibung lernen Schule, Rechtschreibfehler vermeiden, bessere Rechtschreibung Schüler | Schule & Studium | Artikel über das Verbessern der Rechtschreibung für Schüler aller Klassen. Erklärt die häufigsten Fehlerquellen (ss/ß, das/dass, Groß-Kleinschreibung, Fremdwörter), bietet praktische Übungsmethoden (Fehleranalyse, Diktate, Abschreiben, Karteikarten) und einen Wochenplan. Empfiehlt die Nachhilfe Mentor App für gezieltes Feedback. Interner Link zu aufsatz-ueberarbeiten-tipps. |
@@ -1532,3 +1533,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - kommasetzung-lernen-tipps -> aufsatz-ueberarbeiten-tipps (Kommakontrolle als Teil des Überarbeitens)
 - kommasetzung-lernen-tipps -> rechtschreibung-verbessern-tipps (weiterführende Rechtschreibübungen)
 - rechtschreibung-verbessern-tipps -> kommasetzung-lernen-tipps (Rückverlinkung beim Punkt Kommas vor dass/Nebensätzen)
+
+## Interne Verlinkungen (Artikel 251)
+- satzglieder-bestimmen-tipps -> kommasetzung-lernen-tipps (Komma-Regeln bauen auf Satzgliedern und Satzstruktur auf)
+- satzglieder-bestimmen-tipps -> satzanfaenge-variieren-tipps (Abwechslungsreiche Satzanfänge nutzen die Umstellbarkeit von Satzgliedern)
+- kommasetzung-lernen-tipps -> satzglieder-bestimmen-tipps (Rückverlinkung an Stelle zu Satzstruktur/Satzgliedern)
