@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Mon, 29 Jun 2026 14:50:24 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 14:51:31 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Kommasetzung lernen: Die wichtigsten Komma-Regeln einfach erklärt</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/kommasetzung-lernen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/kommasetzung-lernen-tipps.html</guid>
+      <pubDate>Mon, 29 Jun 2026 14:50:56 +0000</pubDate>
+      <description>Kommasetzung lernen leicht gemacht: Die 7 wichtigsten Komma-Regeln mit Beispielen, Eselsbrücken und Übungstipps für Schule und Aufsatz.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Rechtschreibung verbessern: Tipps und Übungen für Schüler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/rechtschreibung-verbessern-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/rechtschreibung-verbessern-tipps.html</guid>
+      <pubDate>Mon, 29 Jun 2026 14:50:45 +0000</pubDate>
+      <description>Rechtschreibung verbessern leicht gemacht: Praktische Tipps, einfache Übungen und die häufigsten Fehlerquellen für Schüler aller Klassen.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Noten verbessern: 8 Tipps für bessere Schulnoten</title>
       <link>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</link>
@@ -21,14 +37,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/schlechte-note-was-tun.html</guid>
       <pubDate>Sun, 28 Jun 2026 22:47:40 +0000</pubDate>
       <description>Schlechte Note bekommen? Keine Panik! 8 konkrete Schritte, wie du jetzt richtig reagierst, Ursachen findest und deine Note verbesserst.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Rechtschreibung verbessern: Tipps und Übungen für Schüler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/rechtschreibung-verbessern-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/rechtschreibung-verbessern-tipps.html</guid>
-      <pubDate>Sun, 28 Jun 2026 14:44:18 +0000</pubDate>
-      <description>Rechtschreibung verbessern leicht gemacht: Praktische Tipps, einfache Übungen und die häufigsten Fehlerquellen für Schüler aller Klassen.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Mon, 22 Jun 2026 21:59:45 +0000</pubDate>
       <description>Musik Abitur meistern: Musiktheorie, Gehörbildung, Werkanalyse und Musikgeschichte gezielt vorbereiten. Praxistipps für schriftliche und mündliche Prüfung.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Mündliche Prüfung: 7 Tipps, mit denen du souverän antwortest</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/muendliche-pruefung-vorbereiten.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/muendliche-pruefung-vorbereiten.html</guid>
-      <pubDate>Mon, 22 Jun 2026 13:56:42 +0000</pubDate>
-      <description>Mündliche Prüfung vorbereiten: 7 Tipps, mit denen du souverän antwortest, Lampenfieber überwindest und auch bei schwierigen Fragen überzeugst.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
