@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 252
+- Gesamtzahl Artikel: 253
 - Letzte Veröffentlichung: 2026-06-30
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 253 | 2026-06-30 | woertliche-rede-schreiben-tipps | Wörtliche Rede: Zeichensetzung und Regeln einfach erklärt | wörtliche Rede, wörtliche Rede Zeichensetzung, wörtliche Rede Regeln, Anführungszeichen setzen, wörtliche Rede Übungen Klasse 5 6 | Schule & Studium | Umfassender Grammatik- und Zeichensetzungs-Ratgeber zur wörtlichen Rede für Klasse 5 bis 7. Erklärt Anführungszeichen, Redebegleitsatz und die vier Satzbaupläne (Begleitsatz vorne mit Doppelpunkt, hinten mit Komma, in der Mitte mit Kommas, umschließend) mit vielen Beispielen. Enthält Regelübersicht, Tipps für abwechslungsreiche Verben des Sagens, häufige Fehler und eine Übung mit Lösungen. Interne Links zu erzaehlung-schreiben-tipps, kurzgeschichte-schreiben-tipps und kommasetzung-lernen-tipps. Ergänzt den Grammatik-/Zeichensetzungs-Cluster (kommasetzung, satzglieder, wortarten, rechtschreibung). |
 | 252 | 2026-06-30 | wortarten-bestimmen-tipps | Wortarten bestimmen: Die 10 Wortarten einfach erklärt mit Übungen | Wortarten bestimmen, Wortarten Deutsch, Wortarten Übersicht, die 10 Wortarten, Wortarten erkennen Übungen | Schule & Studium | Umfassender Grammatik-Artikel zum Bestimmen der 10 deutschen Wortarten. Erklärt die 4 veränderbaren Wortarten (Nomen, Verb, Adjektiv, Artikel) und 6 unveränderlichen (Pronomen, Adverb, Präposition, Konjunktion, Numerale, Interjektion) mit jeweiliger Erkennungsfrage und Beispielen. Enthält Schritt-für-Schritt-Vorgehen, eine durchgerechnete Übung (Der kleine Hund läuft schnell durch den Garten), häufige Fehler (Adjektiv vs. Adverb, Präposition vs. Adverb) und Eselsbrücken. Interne Links zu satzglieder-bestimmen-tipps und deutsch-grammatik-lernen-tipps. Teil des wachsenden Grammatik-Unterclusters (Satzglieder, Kommasetzung, Rechtschreibung). |
 | 251 | 2026-06-29 | satzglieder-bestimmen-tipps | Satzglieder bestimmen: Subjekt, Prädikat und Objekt einfach erklärt | Satzglieder bestimmen, Subjekt Prädikat Objekt, Satzglieder Deutsch, Umstellprobe Satzglieder, Satzglieder Übungen | Schule & Studium | Ausführlicher Grammatik-Ratgeber zum Bestimmen von Satzgliedern für die Mittelstufe (Klasse 5-9). Erklärt den Unterschied zwischen Satzgliedern und Wortarten, die Umstellprobe als zentrales Werkzeug, sowie Subjekt (Wer/Was?), Prädikat (inkl. zweiteiliges Prädikat/Satzklammer), die vier Objektarten (Akkusativ, Dativ, Genitiv, Präpositional) mit Fragefällen und adverbiale Bestimmungen (Ort, Zeit, Art und Weise, Grund). Enthält eine Schritt-für-Schritt-Anleitung und eine Liste häufiger Fehler. Interne Links zu kommasetzung-lernen-tipps und satzanfaenge-variieren-tipps. App einmal natürlich im Fließtext erwähnt. Ergänzt den wachsenden Grammatik-Cluster (Kommasetzung, Rechtschreibung). |
 | 250 | 2026-06-29 | kommasetzung-lernen-tipps | Kommasetzung lernen: Die wichtigsten Komma-Regeln einfach erklärt | Kommasetzung lernen, Komma-Regeln einfach erklärt, Kommasetzung Übungen, Komma vor und, Kommaregeln Deutsch Schule | Schule & Studium | Umfassender Ratgeber zur deutschen Kommasetzung für Schüler. Erklärt die sieben wichtigsten Komma-Regeln: Aufzählungen, Komma zwischen Hauptsätzen, Nebensätze (weil/dass/obwohl), Infinitivgruppen mit zu (um/ohne/statt), Einschübe und Appositionen, Anreden/Ausrufe sowie Vergleiche mit als/wie. Jede Regel mit konkreten Beispielsätzen und Eselsbrücken. Zusätzlich praktische Übungstipps (Sätze analysieren, eigene Texte prüfen, laut lesen) und ein Abschnitt zu häufigen Fehlern (Komma vor jedem und, vergessenes Nebensatz-Komma, Komma nach Satzlänge). Grammatik-/Deutsch-Cluster, hohes Evergreen-Suchvolumen Klasse 5-10. Interne Links zu aufsatz-ueberarbeiten-tipps und rechtschreibung-verbessern-tipps. App einmal natürlich erwähnt. |
@@ -1543,3 +1544,9 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 252)
 - wortarten-bestimmen-tipps -> satzglieder-bestimmen-tipps (Wortarten sind Grundlage fuer Satzgliedanalyse)
 - wortarten-bestimmen-tipps -> deutsch-grammatik-lernen-tipps (weiterfuehrende allgemeine Grammatik-Tipps)
+
+## Interne Verlinkungen (Artikel 253)
+- woertliche-rede-schreiben-tipps -> erzaehlung-schreiben-tipps (Wörtliche Rede macht Erzählungen lebendig)
+- woertliche-rede-schreiben-tipps -> kurzgeschichte-schreiben-tipps (Dialoge in Kurzgeschichten)
+- woertliche-rede-schreiben-tipps -> kommasetzung-lernen-tipps (Zeichensetzung-Vertiefung Komma)
+- kommasetzung-lernen-tipps -> woertliche-rede-schreiben-tipps (Rückverlinkung im Zeichensetzungs-Kontext)
