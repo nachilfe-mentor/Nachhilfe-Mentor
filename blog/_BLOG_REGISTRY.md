@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 251
-- Letzte Veröffentlichung: 2026-06-29
+- Gesamtzahl Artikel: 252
+- Letzte Veröffentlichung: 2026-06-30
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 252 | 2026-06-30 | wortarten-bestimmen-tipps | Wortarten bestimmen: Die 10 Wortarten einfach erklärt mit Übungen | Wortarten bestimmen, Wortarten Deutsch, Wortarten Übersicht, die 10 Wortarten, Wortarten erkennen Übungen | Schule & Studium | Umfassender Grammatik-Artikel zum Bestimmen der 10 deutschen Wortarten. Erklärt die 4 veränderbaren Wortarten (Nomen, Verb, Adjektiv, Artikel) und 6 unveränderlichen (Pronomen, Adverb, Präposition, Konjunktion, Numerale, Interjektion) mit jeweiliger Erkennungsfrage und Beispielen. Enthält Schritt-für-Schritt-Vorgehen, eine durchgerechnete Übung (Der kleine Hund läuft schnell durch den Garten), häufige Fehler (Adjektiv vs. Adverb, Präposition vs. Adverb) und Eselsbrücken. Interne Links zu satzglieder-bestimmen-tipps und deutsch-grammatik-lernen-tipps. Teil des wachsenden Grammatik-Unterclusters (Satzglieder, Kommasetzung, Rechtschreibung). |
 | 251 | 2026-06-29 | satzglieder-bestimmen-tipps | Satzglieder bestimmen: Subjekt, Prädikat und Objekt einfach erklärt | Satzglieder bestimmen, Subjekt Prädikat Objekt, Satzglieder Deutsch, Umstellprobe Satzglieder, Satzglieder Übungen | Schule & Studium | Ausführlicher Grammatik-Ratgeber zum Bestimmen von Satzgliedern für die Mittelstufe (Klasse 5-9). Erklärt den Unterschied zwischen Satzgliedern und Wortarten, die Umstellprobe als zentrales Werkzeug, sowie Subjekt (Wer/Was?), Prädikat (inkl. zweiteiliges Prädikat/Satzklammer), die vier Objektarten (Akkusativ, Dativ, Genitiv, Präpositional) mit Fragefällen und adverbiale Bestimmungen (Ort, Zeit, Art und Weise, Grund). Enthält eine Schritt-für-Schritt-Anleitung und eine Liste häufiger Fehler. Interne Links zu kommasetzung-lernen-tipps und satzanfaenge-variieren-tipps. App einmal natürlich im Fließtext erwähnt. Ergänzt den wachsenden Grammatik-Cluster (Kommasetzung, Rechtschreibung). |
 | 250 | 2026-06-29 | kommasetzung-lernen-tipps | Kommasetzung lernen: Die wichtigsten Komma-Regeln einfach erklärt | Kommasetzung lernen, Komma-Regeln einfach erklärt, Kommasetzung Übungen, Komma vor und, Kommaregeln Deutsch Schule | Schule & Studium | Umfassender Ratgeber zur deutschen Kommasetzung für Schüler. Erklärt die sieben wichtigsten Komma-Regeln: Aufzählungen, Komma zwischen Hauptsätzen, Nebensätze (weil/dass/obwohl), Infinitivgruppen mit zu (um/ohne/statt), Einschübe und Appositionen, Anreden/Ausrufe sowie Vergleiche mit als/wie. Jede Regel mit konkreten Beispielsätzen und Eselsbrücken. Zusätzlich praktische Übungstipps (Sätze analysieren, eigene Texte prüfen, laut lesen) und ein Abschnitt zu häufigen Fehlern (Komma vor jedem und, vergessenes Nebensatz-Komma, Komma nach Satzlänge). Grammatik-/Deutsch-Cluster, hohes Evergreen-Suchvolumen Klasse 5-10. Interne Links zu aufsatz-ueberarbeiten-tipps und rechtschreibung-verbessern-tipps. App einmal natürlich erwähnt. |
 | 249 | 2026-06-28 | schlechte-note-was-tun | Schlechte Note: Was tun? 8 Schritte für Schüler und Eltern | schlechte Note was tun, schlechte Note Schule, schlechte Note bekommen Tipps, Note verbessern Schüler, schlechte Klassenarbeit was jetzt | Schule & Studium | Artikel für Schüler, die eine schlechte Note bekommen haben. 8-Schritte-Anleitung: Durchatmen, Fehleranalyse, Ursachenforschung, Lehrergespräch, Verbesserungsplan, aktives Lernen, Elterngespräch, langfristige Lehren. Zielgruppe: Schüler ab Klasse 5, Eltern. Focus Keyword: schlechte Note was tun. Interne Links: noten-verbessern-schule-tipps, lernmotivation-steigern-tipps. |
@@ -1538,3 +1539,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - satzglieder-bestimmen-tipps -> kommasetzung-lernen-tipps (Komma-Regeln bauen auf Satzgliedern und Satzstruktur auf)
 - satzglieder-bestimmen-tipps -> satzanfaenge-variieren-tipps (Abwechslungsreiche Satzanfänge nutzen die Umstellbarkeit von Satzgliedern)
 - kommasetzung-lernen-tipps -> satzglieder-bestimmen-tipps (Rückverlinkung an Stelle zu Satzstruktur/Satzgliedern)
+
+## Interne Verlinkungen (Artikel 252)
+- wortarten-bestimmen-tipps -> satzglieder-bestimmen-tipps (Wortarten sind Grundlage fuer Satzgliedanalyse)
+- wortarten-bestimmen-tipps -> deutsch-grammatik-lernen-tipps (weiterfuehrende allgemeine Grammatik-Tipps)
