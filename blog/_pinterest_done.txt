@@ -203,6 +203,7 @@ sachtextanalyse-schreiben-tipps
 sage-schreiben-tipps
 satire-schreiben-tipps
 satzanfaenge-variieren-tipps
+satzglieder-bestimmen-tipps
 schaubild-beschreiben-tipps
 schlaf-und-lernen-tipps
 schlechte-note-was-tun
