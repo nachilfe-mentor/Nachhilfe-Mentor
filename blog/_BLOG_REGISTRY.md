@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 253
-- Letzte Veröffentlichung: 2026-06-30
+- Gesamtzahl Artikel: 254
+- Letzte Veröffentlichung: 2026-07-01
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 254 | 2026-07-01 | das-dass-unterscheiden-tipps | das oder dass? Die Regel einfach erklärt mit Übungen | das oder dass, das dass unterscheiden, das dass Regel, das oder dass Übungen, das dass Ersatzprobe | Schule & Studium | Artikel zur sicheren Unterscheidung von das und dass für Schüler ab Klasse 5. Erklärt die Ersatzprobe (dieses/jenes/welches), die drei Funktionen von das (Artikel, Demonstrativ- und Relativpronomen), dass als Konjunktion mit Signalwörtern und Komma, zwei einprägsame Merksätze, häufige Stolperfallen (so dass, das dass, Satzanfang) sowie fünf Übungen mit Lösungen. Erwähnt die Nachhilfe Mentor App einmal. Interne Links zu satzglieder-bestimmen-tipps und rechtschreibung-verbessern-tipps. Teil des wachsenden Grammatik-/Rechtschreib-Clusters. |
 | 253 | 2026-06-30 | woertliche-rede-schreiben-tipps | Wörtliche Rede: Zeichensetzung und Regeln einfach erklärt | wörtliche Rede, wörtliche Rede Zeichensetzung, wörtliche Rede Regeln, Anführungszeichen setzen, wörtliche Rede Übungen Klasse 5 6 | Schule & Studium | Umfassender Grammatik- und Zeichensetzungs-Ratgeber zur wörtlichen Rede für Klasse 5 bis 7. Erklärt Anführungszeichen, Redebegleitsatz und die vier Satzbaupläne (Begleitsatz vorne mit Doppelpunkt, hinten mit Komma, in der Mitte mit Kommas, umschließend) mit vielen Beispielen. Enthält Regelübersicht, Tipps für abwechslungsreiche Verben des Sagens, häufige Fehler und eine Übung mit Lösungen. Interne Links zu erzaehlung-schreiben-tipps, kurzgeschichte-schreiben-tipps und kommasetzung-lernen-tipps. Ergänzt den Grammatik-/Zeichensetzungs-Cluster (kommasetzung, satzglieder, wortarten, rechtschreibung). |
 | 252 | 2026-06-30 | wortarten-bestimmen-tipps | Wortarten bestimmen: Die 10 Wortarten einfach erklärt mit Übungen | Wortarten bestimmen, Wortarten Deutsch, Wortarten Übersicht, die 10 Wortarten, Wortarten erkennen Übungen | Schule & Studium | Umfassender Grammatik-Artikel zum Bestimmen der 10 deutschen Wortarten. Erklärt die 4 veränderbaren Wortarten (Nomen, Verb, Adjektiv, Artikel) und 6 unveränderlichen (Pronomen, Adverb, Präposition, Konjunktion, Numerale, Interjektion) mit jeweiliger Erkennungsfrage und Beispielen. Enthält Schritt-für-Schritt-Vorgehen, eine durchgerechnete Übung (Der kleine Hund läuft schnell durch den Garten), häufige Fehler (Adjektiv vs. Adverb, Präposition vs. Adverb) und Eselsbrücken. Interne Links zu satzglieder-bestimmen-tipps und deutsch-grammatik-lernen-tipps. Teil des wachsenden Grammatik-Unterclusters (Satzglieder, Kommasetzung, Rechtschreibung). |
 | 251 | 2026-06-29 | satzglieder-bestimmen-tipps | Satzglieder bestimmen: Subjekt, Prädikat und Objekt einfach erklärt | Satzglieder bestimmen, Subjekt Prädikat Objekt, Satzglieder Deutsch, Umstellprobe Satzglieder, Satzglieder Übungen | Schule & Studium | Ausführlicher Grammatik-Ratgeber zum Bestimmen von Satzgliedern für die Mittelstufe (Klasse 5-9). Erklärt den Unterschied zwischen Satzgliedern und Wortarten, die Umstellprobe als zentrales Werkzeug, sowie Subjekt (Wer/Was?), Prädikat (inkl. zweiteiliges Prädikat/Satzklammer), die vier Objektarten (Akkusativ, Dativ, Genitiv, Präpositional) mit Fragefällen und adverbiale Bestimmungen (Ort, Zeit, Art und Weise, Grund). Enthält eine Schritt-für-Schritt-Anleitung und eine Liste häufiger Fehler. Interne Links zu kommasetzung-lernen-tipps und satzanfaenge-variieren-tipps. App einmal natürlich im Fließtext erwähnt. Ergänzt den wachsenden Grammatik-Cluster (Kommasetzung, Rechtschreibung). |
@@ -1550,3 +1551,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - woertliche-rede-schreiben-tipps -> kurzgeschichte-schreiben-tipps (Dialoge in Kurzgeschichten)
 - woertliche-rede-schreiben-tipps -> kommasetzung-lernen-tipps (Zeichensetzung-Vertiefung Komma)
 - kommasetzung-lernen-tipps -> woertliche-rede-schreiben-tipps (Rückverlinkung im Zeichensetzungs-Kontext)
+
+## Interne Verlinkungen (Artikel 254)
+- das-dass-unterscheiden-tipps -> satzglieder-bestimmen-tipps (Verbstellung im dass-Nebensatz, Verweis auf Satzglieder)
+- das-dass-unterscheiden-tipps -> rechtschreibung-verbessern-tipps (Weitere Übungsstrategien zur Rechtschreibung)
+- rechtschreibung-verbessern-tipps -> das-dass-unterscheiden-tipps (Rückverlinkung im Abschnitt 'Das und dass nie mehr verwechseln')
