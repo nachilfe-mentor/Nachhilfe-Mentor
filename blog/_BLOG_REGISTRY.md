@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 254
+- Gesamtzahl Artikel: 255
 - Letzte Veröffentlichung: 2026-07-01
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 255 | 2026-07-01 | gross-und-kleinschreibung-tipps | Groß- und Kleinschreibung: Die wichtigsten Regeln einfach erklärt | Groß- und Kleinschreibung, Großschreibung Regeln, Kleinschreibung Deutsch, Nomen erkennen, Groß- und Kleinschreibung Übungen | Schule & Studium | Umfassender Ratgeber zur Groß- und Kleinschreibung im Deutschen. Erklaert die Grundregel (Nomen, Satzanfang, Eigennamen), die Nomenprobe mit Artikelprobe, Nominalisierungen und ihre Signalwoerter (Artikel, etwas/nichts/viel, Praeposition mit Artikel), Adjektive und ihre Nominalisierung, Tageszeiten und Zeitangaben (heute Morgen vs. morgens) sowie die haeufigsten Fehler (hoefliche Anrede Sie/du, feste Verbverbindungen, Zahladjektive, zusammengesetzte Nomen). Mit Uebungstipps und Fazit. Grammatik-/Rechtschreib-Cluster, Klasse 3-8, hohes Suchvolumen. Interne Links zu wortarten-bestimmen-tipps und rechtschreibung-verbessern-tipps. |
 | 254 | 2026-07-01 | das-dass-unterscheiden-tipps | das oder dass? Die Regel einfach erklärt mit Übungen | das oder dass, das dass unterscheiden, das dass Regel, das oder dass Übungen, das dass Ersatzprobe | Schule & Studium | Artikel zur sicheren Unterscheidung von das und dass für Schüler ab Klasse 5. Erklärt die Ersatzprobe (dieses/jenes/welches), die drei Funktionen von das (Artikel, Demonstrativ- und Relativpronomen), dass als Konjunktion mit Signalwörtern und Komma, zwei einprägsame Merksätze, häufige Stolperfallen (so dass, das dass, Satzanfang) sowie fünf Übungen mit Lösungen. Erwähnt die Nachhilfe Mentor App einmal. Interne Links zu satzglieder-bestimmen-tipps und rechtschreibung-verbessern-tipps. Teil des wachsenden Grammatik-/Rechtschreib-Clusters. |
 | 253 | 2026-06-30 | woertliche-rede-schreiben-tipps | Wörtliche Rede: Zeichensetzung und Regeln einfach erklärt | wörtliche Rede, wörtliche Rede Zeichensetzung, wörtliche Rede Regeln, Anführungszeichen setzen, wörtliche Rede Übungen Klasse 5 6 | Schule & Studium | Umfassender Grammatik- und Zeichensetzungs-Ratgeber zur wörtlichen Rede für Klasse 5 bis 7. Erklärt Anführungszeichen, Redebegleitsatz und die vier Satzbaupläne (Begleitsatz vorne mit Doppelpunkt, hinten mit Komma, in der Mitte mit Kommas, umschließend) mit vielen Beispielen. Enthält Regelübersicht, Tipps für abwechslungsreiche Verben des Sagens, häufige Fehler und eine Übung mit Lösungen. Interne Links zu erzaehlung-schreiben-tipps, kurzgeschichte-schreiben-tipps und kommasetzung-lernen-tipps. Ergänzt den Grammatik-/Zeichensetzungs-Cluster (kommasetzung, satzglieder, wortarten, rechtschreibung). |
 | 252 | 2026-06-30 | wortarten-bestimmen-tipps | Wortarten bestimmen: Die 10 Wortarten einfach erklärt mit Übungen | Wortarten bestimmen, Wortarten Deutsch, Wortarten Übersicht, die 10 Wortarten, Wortarten erkennen Übungen | Schule & Studium | Umfassender Grammatik-Artikel zum Bestimmen der 10 deutschen Wortarten. Erklärt die 4 veränderbaren Wortarten (Nomen, Verb, Adjektiv, Artikel) und 6 unveränderlichen (Pronomen, Adverb, Präposition, Konjunktion, Numerale, Interjektion) mit jeweiliger Erkennungsfrage und Beispielen. Enthält Schritt-für-Schritt-Vorgehen, eine durchgerechnete Übung (Der kleine Hund läuft schnell durch den Garten), häufige Fehler (Adjektiv vs. Adverb, Präposition vs. Adverb) und Eselsbrücken. Interne Links zu satzglieder-bestimmen-tipps und deutsch-grammatik-lernen-tipps. Teil des wachsenden Grammatik-Unterclusters (Satzglieder, Kommasetzung, Rechtschreibung). |
@@ -1556,3 +1557,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - das-dass-unterscheiden-tipps -> satzglieder-bestimmen-tipps (Verbstellung im dass-Nebensatz, Verweis auf Satzglieder)
 - das-dass-unterscheiden-tipps -> rechtschreibung-verbessern-tipps (Weitere Übungsstrategien zur Rechtschreibung)
 - rechtschreibung-verbessern-tipps -> das-dass-unterscheiden-tipps (Rückverlinkung im Abschnitt 'Das und dass nie mehr verwechseln')
+
+## Interne Verlinkungen (Artikel 255)
+- gross-und-kleinschreibung-tipps -> wortarten-bestimmen-tipps (Nomen und Wortarten erkennen als Voraussetzung)
+- gross-und-kleinschreibung-tipps -> rechtschreibung-verbessern-tipps (allgemeine Rechtschreibung als Kontext)
+- rechtschreibung-verbessern-tipps -> gross-und-kleinschreibung-tipps (Rückverlinkung bei Rechtschreib-Themen)
