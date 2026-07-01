@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 255
+- Gesamtzahl Artikel: 256
 - Letzte Veröffentlichung: 2026-07-01
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 256 | 2026-07-01 | zeitformen-bestimmen-tipps | Zeitformen bestimmen: Die 6 Zeitformen im Deutschen einfach erklärt | Zeitformen bestimmen, Zeitformen Deutsch, die 6 Zeitformen, Zeitformen Übungen, Tempus bestimmen Deutsch | Schule & Studium | Umfassender Grammatik-Ratgeber zum Bestimmen der sechs deutschen Zeitformen (Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I und II). Erklärt jede Zeitform mit Beispielen am Verb lernen, nennt Signalwörter und die Bildung mit Hilfsverben haben/sein/werden. Bietet eine 3-Schritt-Methode zum Bestimmen (Verb finden, Hilfsverben prüfen, Partizip/Infinitiv checken), listet häufige Fehler (Perfekt vs. Präteritum, Futur vs. Präsens, werden im Passiv) und schließt mit einer Übung inklusive Lösungen. Zielgruppe Klasse 5-8. Interne Links zu satzglieder-bestimmen-tipps und wortarten-bestimmen-tipps. |
 | 255 | 2026-07-01 | gross-und-kleinschreibung-tipps | Groß- und Kleinschreibung: Die wichtigsten Regeln einfach erklärt | Groß- und Kleinschreibung, Großschreibung Regeln, Kleinschreibung Deutsch, Nomen erkennen, Groß- und Kleinschreibung Übungen | Schule & Studium | Umfassender Ratgeber zur Groß- und Kleinschreibung im Deutschen. Erklaert die Grundregel (Nomen, Satzanfang, Eigennamen), die Nomenprobe mit Artikelprobe, Nominalisierungen und ihre Signalwoerter (Artikel, etwas/nichts/viel, Praeposition mit Artikel), Adjektive und ihre Nominalisierung, Tageszeiten und Zeitangaben (heute Morgen vs. morgens) sowie die haeufigsten Fehler (hoefliche Anrede Sie/du, feste Verbverbindungen, Zahladjektive, zusammengesetzte Nomen). Mit Uebungstipps und Fazit. Grammatik-/Rechtschreib-Cluster, Klasse 3-8, hohes Suchvolumen. Interne Links zu wortarten-bestimmen-tipps und rechtschreibung-verbessern-tipps. |
 | 254 | 2026-07-01 | das-dass-unterscheiden-tipps | das oder dass? Die Regel einfach erklärt mit Übungen | das oder dass, das dass unterscheiden, das dass Regel, das oder dass Übungen, das dass Ersatzprobe | Schule & Studium | Artikel zur sicheren Unterscheidung von das und dass für Schüler ab Klasse 5. Erklärt die Ersatzprobe (dieses/jenes/welches), die drei Funktionen von das (Artikel, Demonstrativ- und Relativpronomen), dass als Konjunktion mit Signalwörtern und Komma, zwei einprägsame Merksätze, häufige Stolperfallen (so dass, das dass, Satzanfang) sowie fünf Übungen mit Lösungen. Erwähnt die Nachhilfe Mentor App einmal. Interne Links zu satzglieder-bestimmen-tipps und rechtschreibung-verbessern-tipps. Teil des wachsenden Grammatik-/Rechtschreib-Clusters. |
 | 253 | 2026-06-30 | woertliche-rede-schreiben-tipps | Wörtliche Rede: Zeichensetzung und Regeln einfach erklärt | wörtliche Rede, wörtliche Rede Zeichensetzung, wörtliche Rede Regeln, Anführungszeichen setzen, wörtliche Rede Übungen Klasse 5 6 | Schule & Studium | Umfassender Grammatik- und Zeichensetzungs-Ratgeber zur wörtlichen Rede für Klasse 5 bis 7. Erklärt Anführungszeichen, Redebegleitsatz und die vier Satzbaupläne (Begleitsatz vorne mit Doppelpunkt, hinten mit Komma, in der Mitte mit Kommas, umschließend) mit vielen Beispielen. Enthält Regelübersicht, Tipps für abwechslungsreiche Verben des Sagens, häufige Fehler und eine Übung mit Lösungen. Interne Links zu erzaehlung-schreiben-tipps, kurzgeschichte-schreiben-tipps und kommasetzung-lernen-tipps. Ergänzt den Grammatik-/Zeichensetzungs-Cluster (kommasetzung, satzglieder, wortarten, rechtschreibung). |
@@ -1562,3 +1563,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - gross-und-kleinschreibung-tipps -> wortarten-bestimmen-tipps (Nomen und Wortarten erkennen als Voraussetzung)
 - gross-und-kleinschreibung-tipps -> rechtschreibung-verbessern-tipps (allgemeine Rechtschreibung als Kontext)
 - rechtschreibung-verbessern-tipps -> gross-und-kleinschreibung-tipps (Rückverlinkung bei Rechtschreib-Themen)
+
+## Interne Verlinkungen (Artikel 256)
+- zeitformen-bestimmen-tipps -> satzglieder-bestimmen-tipps (Verweis auf Prädikat/Verb finden im Satz)
+- zeitformen-bestimmen-tipps -> wortarten-bestimmen-tipps (Verweis auf Erkennen der Verben)
+- satzglieder-bestimmen-tipps -> zeitformen-bestimmen-tipps (Rückverlink im Prädikat-Abschnitt (Satzklammer/zweiteiliges Prädikat))

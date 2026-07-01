@@ -245,6 +245,123 @@ def task_from_recommendation(rec: Recommendation) -> CodingTask | None:
     return None
 
 
+def build_tasks_from_interactive_queue(db: Database, limit: int = 5) -> list[CodingTask]:
+    """Convert queued interactive_page_tasks into Codex coding tasks.
+
+    These tasks are created by the Goal Agent's scoring pipeline but were
+    previously never executed. This bridges the gap between opportunity
+    detection and actual page creation.
+    """
+    rows = db.query(
+        """
+        select ipt.*
+        from interactive_page_tasks ipt
+        where ipt.status = 'queued'
+          and ipt.seo_risk_score <= 0.35
+          and ipt.expected_value_score >= 0.40
+        order by ipt.expected_value_score desc
+        limit ?
+        """,
+        (limit,),
+    )
+    tasks: list[CodingTask] = []
+    for row in rows:
+        # Skip if a coding task already exists and is active or done for this source
+        existing = db.query(
+            "select status from coding_tasks where source_recommendation_id=?",
+            (row["id"],),
+        )
+        if existing and existing[0]["status"] in {"queued", "running", "completed"}:
+            continue
+        keyword = row["primary_keyword"] or row["topic_cluster"] or "lernen"
+        tasks.append(CodingTask(
+            id=_task_id(f"interactive:{row['id']}"),
+            source_recommendation_id=row["id"],
+            task_type="practice_page",
+            title=f"Build practice asset: {keyword}",
+            goal=row["spec_markdown"],
+            context_summary=(
+                f"Goal Agent practice opportunity. "
+                f"Expected value: {row['expected_value_score']:.2f}. "
+                f"Topic: {row['topic_cluster']}. "
+                f"Target slug: {row['target_slug']}."
+            ),
+            allowed_paths=[
+                "docs/goal-agent/LEARNING_ASSET_PATTERNS.md",
+                "lernmaterialien/entwuerfe/",
+                "lernmaterialien/lernsimulationen/",
+                "lernmaterialien/deutsch/",
+                "lernmaterialien/assets/",
+                "goal_agent/exports/",
+                "tests/goal_agent/",
+            ],
+            forbidden_paths=[
+                "auto-blog.sh", "blog/posts/", "blog/articles/",
+                ".env", "/etc/nachhilfe-mentor", "*service-account*.json", ".git/",
+            ],
+            acceptance_criteria=[
+                "Page is created under lernmaterialien/entwuerfe/ as a noindex draft.",
+                "Learners must provide active input or make a real decision — no passive content only.",
+                "Feedback after wrong answers names the specific concept that was missed.",
+                "All German text uses correct umlauts (ä, ö, ü, Ä, Ö, Ü, ß); ASCII replacements are forbidden.",
+                "A QA note exists in lernmaterialien/entwuerfe/<slug>-qa.md with usefulness, interaction, mobile, and promotion assessment.",
+                "noindex is set; no push or deploy.",
+                "Tests pass: python3 -m pytest tests/goal_agent -q",
+            ],
+            safety_constraints=COMMON_SAFETY,
+            test_commands=["python3 -m pytest tests/goal_agent -q"],
+            mode="draft_only",
+            publish_policy="draft_noindex_only",
+            priority=int(row["expected_value_score"] * 100),
+        ))
+    return tasks
+
+
+def build_tasks_from_held_drafts(held_results: list) -> list[CodingTask]:
+    """Create quality-fix Codex tasks for drafts that failed the promotion gate.
+
+    Instead of silently leaving held drafts in noindex forever, this creates a
+    targeted Codex task with the exact failure reasons as acceptance criteria so
+    the issue can be addressed in the next autonomous run.
+    """
+    tasks: list[CodingTask] = []
+    for result in held_results:
+        if result.status == "promoted":
+            continue
+        reasons = result.reasons or ["quality gate failed"]
+        draft_name = result.draft_path.name
+        task_id = _task_id(f"held_draft_fix:{draft_name}")
+        relative_path = str(result.draft_path).split("lernmaterialien/", 1)[-1]
+        tasks.append(CodingTask(
+            id=task_id,
+            source_recommendation_id=None,
+            task_type="quality_fix",
+            title=f"Fix held draft: {draft_name}",
+            goal=(
+                f"The draft at lernmaterialien/{relative_path} failed the promotion quality gate "
+                f"with these specific problems:\n\n"
+                + "\n".join(f"- {r}" for r in reasons)
+                + "\n\nFix ALL listed problems so the draft passes the promotion gate on the next Goal Agent run. "
+                "Do not move or rename the file. Do not make it indexable. "
+                "After fixing, run python3 -m pytest tests/goal_agent -q to verify."
+            ),
+            context_summary=f"Held draft: lernmaterialien/{relative_path}. Problems: {'; '.join(reasons[:3])}",
+            allowed_paths=[f"lernmaterialien/{relative_path}", "goal_agent/exports/", "tests/goal_agent/"],
+            forbidden_paths=["auto-blog.sh", "blog/posts/", "blog/articles/", ".env", "/etc/nachhilfe-mentor", "*service-account*.json", ".git/"],
+            acceptance_criteria=[
+                *[f"Fixed: {r}" for r in reasons],
+                "The file remains in its current location as a noindex draft.",
+                "Tests pass: python3 -m pytest tests/goal_agent -q",
+            ],
+            safety_constraints=COMMON_SAFETY,
+            test_commands=["python3 -m pytest tests/goal_agent -q"],
+            mode="modify_repo",
+            publish_policy="never_publish",
+            priority=60,
+        ))
+    return tasks
+
+
 def build_tasks_from_recommendations(recommendations: list[Recommendation], limit: int = 10) -> list[CodingTask]:
     tasks = [task for rec in recommendations for task in [task_from_recommendation(rec)] if task is not None]
     return sorted(tasks, key=lambda task: task.priority, reverse=True)[:limit]

@@ -18,11 +18,11 @@ from .context_builder import build_context
 from .draft_promotion import promote_drafts
 from .experiments import create_experiment
 from .notifications import notify_daily_update
-from .queue import export_blog_tasks, store_blog_tasks, task_from_opportunity
+from .queue import export_blog_tasks, store_blog_tasks, task_from_opportunity, tasks_from_subagent_recs
 from .publishing import AdaptivePublishingThrottle
 from .reports import generate_daily_report
 from .scanners import build_internal_link_graph, read_blog_registry, scan_content
-from .scoring import build_gsc_practice_opportunities, build_opportunities_from_inventory, dedupe_opportunities
+from .scoring import build_gsc_keyword_gap_opportunities, build_gsc_practice_opportunities, build_opportunities_from_inventory, dedupe_opportunities
 from .self_improvement import maybe_update_scoring, store_learning
 from .storage import Database, json_dumps, utc_now, write_migration_file
 from .subagents.orchestrator import GoalOrchestrator
@@ -274,9 +274,10 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
         gsc = GSCConnector(settings).analyze()
         serp = SerpConnector().analyze()
         metrics = page_conversion_scores(posthog.summary)
-        inventory_opportunities = build_opportunities_from_inventory(content_rows, metrics={})
+        inventory_opportunities = build_opportunities_from_inventory(content_rows, metrics=metrics)
         gsc_opportunities = build_gsc_practice_opportunities(gsc.summary.get("queries", []), content_rows) if gsc.ok else []
-        opportunities_by_id = {opp["id"]: opp for opp in [*inventory_opportunities, *gsc_opportunities]}
+        gsc_gap_opportunities = build_gsc_keyword_gap_opportunities(gsc.summary.get("queries", []), content_rows) if gsc.ok else []
+        opportunities_by_id = {opp["id"]: opp for opp in [*inventory_opportunities, *gsc_opportunities, *gsc_gap_opportunities]}
         opportunities = dedupe_opportunities(list(opportunities_by_id.values()))
         publishing_decisions = {
             item.opportunity_id: item
@@ -337,6 +338,9 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
         ]
         if settings.mode in {"dry_run", "queue_only", "write_safe", "autonomous_full"}:
             store_blog_tasks(db, top_tasks)
+            subagent_blog_tasks = tasks_from_subagent_recs(db, run_id)
+            if subagent_blog_tasks:
+                store_blog_tasks(db, subagent_blog_tasks)
             jsonl_path, md_path = export_blog_tasks(db, settings.repo_root)
             decision_id = _log_decision(db, run_id, "queue_blog_tasks", "Export Blog Agent task suggestions", "Structured queue keeps Blog Agent pure while improving priorities.", [{"source": "opportunity_scoring", "count": len(top_tasks)}], 0.8, 0.1)
             _log_action(db, run_id, decision_id, "export_blog_tasks", "queue", None, "completed", [str(jsonl_path.relative_to(settings.repo_root)), str(md_path.relative_to(settings.repo_root))], ["No blog source files modified", "No secrets included"])
@@ -454,8 +458,9 @@ def run_cycle(cycle_type: str = "daily", settings: Settings | None = None, queue
                 [],
                 [f"Retired stale pre-pattern Codex tasks: {retired_codex_tasks}", "New tasks are regenerated from current Pattern Library"],
             )
+        held_drafts = [r for r in promotion_results if r.status != "promoted"]
         if queue_codex_tasks or settings.mode == "autonomous_full":
-            codex_tasks_created = build_and_store_tasks(db, limit=settings.max_actions_per_run)
+            codex_tasks_created = build_and_store_tasks(db, limit=settings.max_actions_per_run, held_drafts=held_drafts)
             _log_action(db, run_id, None, "queue_codex_coding_tasks", "coding_tasks", None, "completed", [], ["Codex tasks queued only", "Codex execution remains separately gated"],)
             if settings.mode == "autonomous_full" and settings.codex_enabled:
                 executed = 0

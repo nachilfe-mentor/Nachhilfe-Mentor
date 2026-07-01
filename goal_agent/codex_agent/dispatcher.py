@@ -3,13 +3,17 @@ from __future__ import annotations
 from ..config import Settings
 from ..storage import Database
 from .codex_cli_runner import CodexCliRunner, CodexRunResult
-from .task_builder import build_tasks_from_state, retire_obsolete_coding_tasks, store_coding_tasks
+from .task_builder import build_tasks_from_held_drafts, build_tasks_from_interactive_queue, build_tasks_from_state, retire_obsolete_coding_tasks, store_coding_tasks
 from .task_schema import CodingTask, task_from_row
 
 
-def build_and_store_tasks(db: Database, limit: int = 10) -> int:
+def build_and_store_tasks(db: Database, limit: int = 10, held_drafts: list | None = None) -> int:
     retire_obsolete_coding_tasks(db)
-    stored = store_coding_tasks(db, build_tasks_from_state(db, limit))
+    tasks = build_tasks_from_state(db, limit)
+    tasks += build_tasks_from_interactive_queue(db, limit=max(1, limit // 2))
+    if held_drafts:
+        tasks += build_tasks_from_held_drafts(held_drafts)
+    stored = store_coding_tasks(db, tasks)
     retire_obsolete_coding_tasks(db)
     return stored
 

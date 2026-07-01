@@ -36,9 +36,10 @@ class CodexCliRunner:
         if problems:
             return self._record_blocked(task, "; ".join(problems))
         if not (self.settings.codex_enabled or force_enabled) and not dry_run:
-            return self._record_blocked(task, "Codex execution disabled. Set GOAL_AGENT_CODEX_ENABLED=true or use explicit CLI flag.")
-        if shutil.which(self.settings.codex_bin) is None:
-            return self._record_blocked(task, f"Codex binary not found: {self.settings.codex_bin}")
+            return self._record_blocked(task, "Claude execution disabled. Set GOAL_AGENT_CODEX_ENABLED=true or use explicit CLI flag.")
+        claude_bin = shutil.which("claude") or "/home/opc/.local/bin/claude"
+        if not Path(claude_bin).exists():
+            return self._record_blocked(task, f"Claude binary not found: {claude_bin}")
         if not (allow_dirty_worktree or self.settings.codex_allow_dirty_worktree):
             blockers = dirty_worktree_blockers(self.settings.repo_root, self.settings.codex_dirty_allowed_paths)
             if blockers:
@@ -49,14 +50,11 @@ class CodexCliRunner:
         if self.settings.codex_create_branch:
             subprocess.run(["git", "switch", "-c", f"goal-agent/codex-task-{task.id}"], cwd=self.settings.repo_root, check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
         cmd = [
-            self.settings.codex_bin,
-            "exec",
-            "--cd",
-            str(self.settings.repo_root),
-            "--sandbox",
-            self.settings.codex_sandbox_mode,
-            "--json",
-            "-",
+            claude_bin,
+            "-p",
+            "--dangerously-skip-permissions",
+            "--add-dir", str(self.settings.repo_root),
+            "--model", "claude-sonnet-4-6",
         ]
         started = utc_now()
         try:
@@ -69,13 +67,15 @@ class CodexCliRunner:
                 timeout=self.settings.codex_timeout_seconds,
                 check=False,
             )
-            parsed = parse_result(self.settings.repo_root, proc.stdout, proc.stderr, proc.returncode)
-            status = "completed" if proc.returncode == 0 and not parsed.failure_reason else "failed"
-            safety_blocked = parsed.safety_blocked if status != "completed" else False
-            return self._record_run(task, status, proc.returncode, parsed.stdout_summary, parsed.stderr_summary, parsed.changed_files, parsed.failure_reason, safety_blocked, started)
+            stdout_summary = (proc.stdout or "")[:2000]
+            stderr_summary = (proc.stderr or "")[:500]
+            changed_files = git_status_short(self.settings.repo_root).splitlines() if proc.returncode == 0 else []
+            failure_reason = "" if proc.returncode == 0 else f"exit_code={proc.returncode}"
+            status = "completed" if proc.returncode == 0 else "failed"
+            return self._record_run(task, status, proc.returncode, stdout_summary, stderr_summary, changed_files, failure_reason, False, started)
         except subprocess.TimeoutExpired as exc:
-            parsed = parse_result(self.settings.repo_root, exc.stdout or "", exc.stderr or "", None, timed_out=True)
-            return self._record_run(task, "failed", None, parsed.stdout_summary, parsed.stderr_summary, parsed.changed_files, "timeout", parsed.safety_blocked, started)
+            stdout_summary = ((exc.stdout or "")[:2000]) if hasattr(exc, "stdout") else ""
+            return self._record_run(task, "failed", None, stdout_summary, "", [], "timeout", False, started)
 
     def _record_blocked(self, task: CodingTask, reason: str) -> CodexRunResult:
         return self._record_run(task, "blocked_by_safety", None, "", "", [], reason, True)

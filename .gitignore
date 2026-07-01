@@ -16,3 +16,6 @@ goal_agent/exports/*.md
 goal_agent/queues/*.jsonl
 lernmaterialien/entwuerfe/
 lernmaterialien/lernsimulationen/
+.gstack/
+
+gsc-sa.json

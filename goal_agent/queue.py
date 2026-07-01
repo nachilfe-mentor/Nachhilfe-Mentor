@@ -35,10 +35,19 @@ def validate_blog_task(task: dict[str, Any]) -> list[str]:
 
 
 def task_from_opportunity(opportunity: dict[str, Any], run_id: str) -> dict[str, Any]:
-    task_type = "article_refresh" if opportunity["type"] == "content_refresh" else "internal_link_insertion_request"
-    if opportunity["type"] == "practice_asset_opportunity":
+    opp_type = opportunity["type"]
+    if opp_type == "content_refresh":
+        task_type = "article_refresh"
+    elif opp_type == "practice_asset_opportunity":
         task_type = "cluster_expansion"
+    elif opp_type == "new_blog_article":
+        task_type = "new_topic"
+    elif opp_type == "ctr_gap":
+        task_type = "article_refresh"
+    else:
+        task_type = "internal_link_insertion_request"
     slug = (opportunity.get("target_url") or "").rsplit("/", 1)[-1].replace(".html", "")
+    angle = opportunity.get("recommended_angle") or "Refresh or link this page based on current SEO evidence; keep the Blog Agent responsible for article writing."
     return {
         "task_id": "blog_task_" + opportunity["id"].replace("opp_", ""),
         "task_type": task_type,
@@ -48,7 +57,7 @@ def task_from_opportunity(opportunity: dict[str, Any], run_id: str) -> dict[str,
         "secondary_keywords": [],
         "search_intent": opportunity.get("intent") or "informational",
         "topic_cluster": opportunity.get("topic_cluster") or "allgemein",
-        "recommended_angle": "Refresh or link this page based on current SEO evidence; keep the Blog Agent responsible for article writing.",
+        "recommended_angle": angle,
         "template_version": "blog-task-v1",
         "required_internal_links": [],
         "recommended_cta": "Natural single mention of Nachhilfe Mentor app when useful.",
@@ -59,6 +68,54 @@ def task_from_opportunity(opportunity: dict[str, Any], run_id: str) -> dict[str,
         "status": "queued",
         "target_slug": slug,
     }
+
+
+def tasks_from_subagent_recs(db: Database, run_id: str) -> list[dict[str, Any]]:
+    """Convert actionable subagent recommendations into blog tasks.
+
+    Subagents like ContentGapAgent produce content_refresh and similar recs
+    that were previously stored in the DB but never forwarded to the Blog Agent.
+    This bridges that gap for non-Codex recommendation types.
+    """
+    ELIGIBLE_TYPES = ("content_refresh", "update_existing_content", "create_blog_brief")
+    rows = db.query(
+        """
+        select * from subagent_recommendations
+        where status = 'queued'
+          and recommendation_type in ('content_refresh', 'update_existing_content', 'create_blog_brief')
+          and safety_risk != 'high'
+          and priority >= 40
+        order by priority desc
+        limit 5
+        """,
+    )
+    tasks: list[dict[str, Any]] = []
+    for row in rows:
+        rec_type = row["recommendation_type"]
+        task_type = "article_refresh" if rec_type in {"content_refresh", "update_existing_content"} else "new_topic"
+        slug = (row["target_url"] or "").rsplit("/", 1)[-1].replace(".html", "")
+        task_id = "blog_task_sa_" + row["id"].replace("rec_", "")[:24]
+        tasks.append({
+            "task_id": task_id,
+            "task_type": task_type,
+            "priority": min(100, int(row["priority"])),
+            "topic": row["target_topic"] or slug or "allgemein",
+            "primary_keyword": row["target_topic"] or slug or "",
+            "secondary_keywords": [],
+            "search_intent": "informational",
+            "topic_cluster": row["target_topic"] or "allgemein",
+            "recommended_angle": row["rationale"] or "",
+            "template_version": "blog-task-v1",
+            "required_internal_links": [],
+            "recommended_cta": "Natural single mention of Nachhilfe Mentor app when useful.",
+            "evidence": [{"source": f"subagent:{row['source_agent']}", "summary": row["title"]}],
+            "expected_metric": "Organic entrances and app CTA clicks after 28 days.",
+            "due_window": "next_7_days",
+            "source_agent_run_id": run_id,
+            "status": "queued",
+            "target_slug": slug,
+        })
+    return tasks
 
 
 def store_blog_tasks(db: Database, tasks: list[dict[str, Any]]) -> None:

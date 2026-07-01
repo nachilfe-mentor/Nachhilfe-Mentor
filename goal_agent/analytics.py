@@ -143,35 +143,50 @@ class GSCConnector:
             return ConnectorResult(True, False, {"queries": []}, f"GSC query failed: {detail}")
         return ConnectorResult(True, True, {"queries": rows, "row_count": len(rows)})
 
-    def _query_search_analytics(self, days: int = 28, row_limit: int = 250) -> list[dict[str, Any]]:
+    def _query_search_analytics(self, days: int = 90, page_size: int = 1000, max_rows: int = 5000) -> list[dict[str, Any]]:
+        """Fetch GSC search analytics with pagination.
+
+        90-day window (vs. the old 28) captures seasonal patterns and
+        lower-frequency queries. Pagination gets up to max_rows results
+        instead of being capped at a single page of 250.
+        """
         credentials = self._load_credentials()
         credentials.refresh(self._google_request())
         end = date.today() - timedelta(days=2)
         start = end - timedelta(days=days)
-        payload = {
-            "startDate": start.isoformat(),
-            "endDate": end.isoformat(),
-            "dimensions": ["query", "page"],
-            "rowLimit": row_limit,
-            "startRow": 0,
-        }
-        data = json.dumps(payload).encode("utf-8")
         site = quote(self.settings.gsc_site_url, safe="")
-        req = urllib.request.Request(
-            f"https://searchconsole.googleapis.com/webmasters/v3/sites/{site}/searchAnalytics/query",
-            data=data,
-            method="POST",
-            headers={
-                "Content-Type": "application/json",
-                "Authorization": f"Bearer {credentials.token}",
-            },
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=20) as resp:  # noqa: S310 - Google API endpoint
-                body = json.loads(resp.read().decode("utf-8"))
-        except urllib.error.HTTPError as exc:
-            raise RuntimeError(f"http_{exc.code}") from exc
-        return parse_gsc_rows(body)
+        url = f"https://searchconsole.googleapis.com/webmasters/v3/sites/{site}/searchAnalytics/query"
+
+        all_rows: list[dict[str, Any]] = []
+        start_row = 0
+        while True:
+            payload = {
+                "startDate": start.isoformat(),
+                "endDate": end.isoformat(),
+                "dimensions": ["query", "page"],
+                "rowLimit": page_size,
+                "startRow": start_row,
+            }
+            req = urllib.request.Request(
+                url,
+                data=json.dumps(payload).encode("utf-8"),
+                method="POST",
+                headers={
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {credentials.token}",
+                },
+            )
+            try:
+                with urllib.request.urlopen(req, timeout=20) as resp:  # noqa: S310 - Google API endpoint
+                    body = json.loads(resp.read().decode("utf-8"))
+            except urllib.error.HTTPError as exc:
+                raise RuntimeError(f"http_{exc.code}") from exc
+            page = parse_gsc_rows(body)
+            all_rows.extend(page)
+            if len(page) < page_size or len(all_rows) >= max_rows:
+                break
+            start_row += page_size
+        return all_rows[:max_rows]
 
     def _load_credentials(self):
         mode = self.settings.gsc_auth_mode
