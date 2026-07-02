@@ -8,7 +8,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -399,6 +399,12 @@
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/facharbeit-schreiben-tipps.html</loc>
     <lastmod>2026-06-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/faelle-bestimmen-tipps.html</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1256,7 +1262,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/satzglieder-bestimmen-tipps.html</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1508,7 +1514,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/wortarten-bestimmen-tipps.html</loc>
-    <lastmod>2026-06-30</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
