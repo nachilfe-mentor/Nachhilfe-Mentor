@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 02 Jul 2026 15:17:08 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 23:19:31 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Bericht schreiben: Aufbau, Tipps und häufige Fehler</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/bericht-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/bericht-schreiben-tipps.html</guid>
+      <pubDate>Thu, 02 Jul 2026 23:19:12 +0000</pubDate>
+      <description>Bericht schreiben leicht gemacht: Aufbau, die sieben W-Fragen, die richtige Zeitform und 6 häufige Fehler. Mit Beispiel und Checkliste für die Schule.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Unfallbericht schreiben: Aufbau, W-Fragen und Beispiel für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/unfallbericht-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/unfallbericht-schreiben-tipps.html</guid>
+      <pubDate>Thu, 02 Jul 2026 23:19:05 +0000</pubDate>
+      <description>Unfallbericht schreiben leicht gemacht: W-Fragen, Aufbau, Zeitform und ein fertiges Beispiel. So beschreibst du einen Unfall sachlich und korrekt.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Nachricht schreiben: Aufbau, W-Fragen und Beispiel einfach erklärt</title>
       <link>https://nachhilfe-mentor.de/blog/posts/nachricht-schreiben-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 25 Jun 2026 22:29:51 +0000</pubDate>
       <description>Bruchrechnung lernen leicht gemacht: Verstehe Zähler und Nenner, lerne Kürzen, Erweitern, Addieren, Subtrahieren und Multiplizieren von Brüchen mit klaren Beispielen.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Prozentrechnung lernen: Formeln, Tipps und Übungen für Klasse 5–9</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/prozentrechnung-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/prozentrechnung-lernen-tipps.html</guid>
-      <pubDate>Thu, 25 Jun 2026 22:29:31 +0000</pubDate>
-      <description>Prozentrechnung lernen leicht gemacht: Grundformel, Prozentwert, Prozentsatz und Grundwert einfach erklärt mit Tipps, Beispielen und Übungen für die Schule.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Buchvorstellung schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/buchvorstellung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/buchvorstellung-schreiben-tipps.html</guid>
-      <pubDate>Thu, 25 Jun 2026 14:25:31 +0000</pubDate>
-      <description>Buchvorstellung schreiben leicht gemacht: Aufbau, Inhalt, Sprache und Vortrag Schritt für Schritt erklärt, inklusive Beispiel und typischer Fehler.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
