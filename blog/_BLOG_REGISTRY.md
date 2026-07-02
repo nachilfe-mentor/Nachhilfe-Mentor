@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 256
-- Letzte Veröffentlichung: 2026-07-01
+- Gesamtzahl Artikel: 257
+- Letzte Veröffentlichung: 2026-07-02
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 257 | 2026-07-02 | faelle-bestimmen-tipps | Die vier Fälle bestimmen: Nominativ, Genitiv, Dativ, Akkusativ einfach erklärt | Fälle bestimmen, die vier Fälle Deutsch, Nominativ Genitiv Dativ Akkusativ, Fälle bestimmen Übungen, Kasus bestimmen Deutsch | Schule & Studium | Ausführlicher Grammatik-Ratgeber zum Bestimmen der vier deutschen Fälle (Kasus): Nominativ, Genitiv, Dativ, Akkusativ. Erklärt die Fragewörter (Wer/was, Wessen, Wem, Wen/was) als zentrales Werkzeug, gibt zu jedem Fall Definition und Beispiel, eine Schritt-für-Schritt-Anleitung, eine durchgerechnete Übung mit allen vier Fällen in einem Satz sowie häufige Fehler und Eselsbrücken. Zielgruppe Klasse 4-8. Ergänzt den Grammatik-Cluster (Wortarten, Satzglieder, Zeitformen). Interne Links auf satzglieder-bestimmen-tipps und wortarten-bestimmen-tipps. App einmal natürlich erwähnt. |
 | 256 | 2026-07-01 | zeitformen-bestimmen-tipps | Zeitformen bestimmen: Die 6 Zeitformen im Deutschen einfach erklärt | Zeitformen bestimmen, Zeitformen Deutsch, die 6 Zeitformen, Zeitformen Übungen, Tempus bestimmen Deutsch | Schule & Studium | Umfassender Grammatik-Ratgeber zum Bestimmen der sechs deutschen Zeitformen (Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I und II). Erklärt jede Zeitform mit Beispielen am Verb lernen, nennt Signalwörter und die Bildung mit Hilfsverben haben/sein/werden. Bietet eine 3-Schritt-Methode zum Bestimmen (Verb finden, Hilfsverben prüfen, Partizip/Infinitiv checken), listet häufige Fehler (Perfekt vs. Präteritum, Futur vs. Präsens, werden im Passiv) und schließt mit einer Übung inklusive Lösungen. Zielgruppe Klasse 5-8. Interne Links zu satzglieder-bestimmen-tipps und wortarten-bestimmen-tipps. |
 | 255 | 2026-07-01 | gross-und-kleinschreibung-tipps | Groß- und Kleinschreibung: Die wichtigsten Regeln einfach erklärt | Groß- und Kleinschreibung, Großschreibung Regeln, Kleinschreibung Deutsch, Nomen erkennen, Groß- und Kleinschreibung Übungen | Schule & Studium | Umfassender Ratgeber zur Groß- und Kleinschreibung im Deutschen. Erklaert die Grundregel (Nomen, Satzanfang, Eigennamen), die Nomenprobe mit Artikelprobe, Nominalisierungen und ihre Signalwoerter (Artikel, etwas/nichts/viel, Praeposition mit Artikel), Adjektive und ihre Nominalisierung, Tageszeiten und Zeitangaben (heute Morgen vs. morgens) sowie die haeufigsten Fehler (hoefliche Anrede Sie/du, feste Verbverbindungen, Zahladjektive, zusammengesetzte Nomen). Mit Uebungstipps und Fazit. Grammatik-/Rechtschreib-Cluster, Klasse 3-8, hohes Suchvolumen. Interne Links zu wortarten-bestimmen-tipps und rechtschreibung-verbessern-tipps. |
 | 254 | 2026-07-01 | das-dass-unterscheiden-tipps | das oder dass? Die Regel einfach erklärt mit Übungen | das oder dass, das dass unterscheiden, das dass Regel, das oder dass Übungen, das dass Ersatzprobe | Schule & Studium | Artikel zur sicheren Unterscheidung von das und dass für Schüler ab Klasse 5. Erklärt die Ersatzprobe (dieses/jenes/welches), die drei Funktionen von das (Artikel, Demonstrativ- und Relativpronomen), dass als Konjunktion mit Signalwörtern und Komma, zwei einprägsame Merksätze, häufige Stolperfallen (so dass, das dass, Satzanfang) sowie fünf Übungen mit Lösungen. Erwähnt die Nachhilfe Mentor App einmal. Interne Links zu satzglieder-bestimmen-tipps und rechtschreibung-verbessern-tipps. Teil des wachsenden Grammatik-/Rechtschreib-Clusters. |
@@ -1568,3 +1569,9 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - zeitformen-bestimmen-tipps -> satzglieder-bestimmen-tipps (Verweis auf Prädikat/Verb finden im Satz)
 - zeitformen-bestimmen-tipps -> wortarten-bestimmen-tipps (Verweis auf Erkennen der Verben)
 - satzglieder-bestimmen-tipps -> zeitformen-bestimmen-tipps (Rückverlink im Prädikat-Abschnitt (Satzklammer/zweiteiliges Prädikat))
+
+## Interne Verlinkungen (Artikel 257)
+- faelle-bestimmen-tipps -> satzglieder-bestimmen-tipps (Subjekt und Objekt hängen eng mit den Fällen zusammen)
+- faelle-bestimmen-tipps -> wortarten-bestimmen-tipps (nur Nomen, Artikel und Pronomen verändern sich mit dem Fall)
+- satzglieder-bestimmen-tipps -> faelle-bestimmen-tipps (Rückverlinkung bei Objekten (Dativ-/Akkusativobjekt))
+- wortarten-bestimmen-tipps -> faelle-bestimmen-tipps (Rückverlinkung bei Deklination der Nomen)
