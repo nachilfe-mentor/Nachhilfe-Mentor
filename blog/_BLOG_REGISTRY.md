@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 259
-- Letzte Veröffentlichung: 2026-07-02
+- Gesamtzahl Artikel: 260
+- Letzte Veröffentlichung: 2026-07-03
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 260 | 2026-07-03 | aktiv-passiv-unterscheiden-tipps | Aktiv und Passiv unterscheiden: Regeln, Beispiele und Umformung einfach erklärt | Aktiv und Passiv unterscheiden, Aktiv Passiv Deutsch, Passiv bilden, Aktivsatz Passivsatz umformen, Aktiv Passiv Übungen | Schule & Studium | Erklärt den Unterschied zwischen Aktiv- und Passivsätzen, die Bildung des Passivs mit werden plus Partizip II, den Unterschied zwischen Vorgangspassiv und Zustandspassiv, die schrittweise Umformung von Aktiv- in Passivsätze sowie typische Fehler und eine Übung. Ergänzt den Grammatik-Cluster (Wortarten, Satzglieder, Fälle, Zeitformen) um das Thema Aktiv/Passiv. |
 | 259 | 2026-07-02 | unfallbericht-schreiben-tipps | Unfallbericht schreiben: Aufbau, W-Fragen und Beispiel für die Schule | Unfallbericht schreiben, Unfallbericht Aufbau, Unfallbericht Beispiel, Unfallbericht Schule | Schule & Studium | Unfallbericht schreiben: Aufbau (Einleitung, Hauptteil, Schluss), W-Fragen (was, wer, wann, wo, wie, welche Folgen), Präteritum, sachlicher Ton ohne Wertung, vollständiges Beispiel eines Schulhof-Unfalls, 5 häufige Fehler, Checkliste vor Abgabe. Verlinkt zu bericht-schreiben-tipps. |
 | 258 | 2026-07-02 | nachricht-schreiben-tipps | Nachricht schreiben: Aufbau, W-Fragen und Beispiel einfach erklärt | Nachricht schreiben, Nachricht Aufbau, W-Fragen Nachricht, Nachricht schreiben Beispiel | Schule & Studium | Erklärt die journalistische Textsorte Nachricht: W-Fragen (wer, was, wann, wo, wie, warum), Aufbau nach dem Prinzip der umgekehrten Pyramide (Überschrift, Lead-Satz, Hauptteil), Sprachregeln (sachlich, kurze Sätze, keine Wertung), Schritt-für-Schritt-Anleitung, Beispieltext und Checkliste. Ergänzt den Zeitungsartikel/Reportage/Kommentar-Cluster um die kompakteste journalistische Grundform. Verlinkt zu zeitungsartikel-schreiben-tipps.html und tagebucheintrag-schreiben-tipps.html; Rückverlinkung von zeitungsartikel-schreiben-tipps.html gesetzt. |
 | 257 | 2026-07-02 | faelle-bestimmen-tipps | Die vier Fälle bestimmen: Nominativ, Genitiv, Dativ, Akkusativ einfach erklärt | Fälle bestimmen, die vier Fälle Deutsch, Nominativ Genitiv Dativ Akkusativ, Fälle bestimmen Übungen, Kasus bestimmen Deutsch | Schule & Studium | Ausführlicher Grammatik-Ratgeber zum Bestimmen der vier deutschen Fälle (Kasus): Nominativ, Genitiv, Dativ, Akkusativ. Erklärt die Fragewörter (Wer/was, Wessen, Wem, Wen/was) als zentrales Werkzeug, gibt zu jedem Fall Definition und Beispiel, eine Schritt-für-Schritt-Anleitung, eine durchgerechnete Übung mit allen vier Fällen in einem Satz sowie häufige Fehler und Eselsbrücken. Zielgruppe Klasse 4-8. Ergänzt den Grammatik-Cluster (Wortarten, Satzglieder, Zeitformen). Interne Links auf satzglieder-bestimmen-tipps und wortarten-bestimmen-tipps. App einmal natürlich erwähnt. |
@@ -1585,3 +1586,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Interne Verlinkungen (Artikel 259)
 - unfallbericht-schreiben-tipps -> bericht-schreiben-tipps (Vertiefung zu allgemeinem Bericht-Aufbau und W-Fragen)
+
+## Interne Verlinkungen (Artikel 260)
+- aktiv-passiv-unterscheiden-tipps -> wortarten-bestimmen-tipps (Verweis auf Verbformen und Wortarten als verwandtes Grammatikthema)
+- wortarten-bestimmen-tipps -> aktiv-passiv-unterscheiden-tipps (Rückverlinkung im Abschnitt zum Verb (Tunwort))
