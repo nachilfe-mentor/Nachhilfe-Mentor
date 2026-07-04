@@ -5,22 +5,30 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Fri, 03 Jul 2026 23:28:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 07:32:09 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Diskussion schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/diskussion-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/diskussion-schreiben-tipps.html</guid>
+      <pubDate>Sat, 04 Jul 2026 07:31:48 +0000</pubDate>
+      <description>Diskussion schreiben leicht gemacht: Aufbau, Pro-Kontra-Argumente und Formulierungen für eine überzeugende Diskussion in der Schule.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Streitgespräch schreiben: Aufbau, Regeln und Beispiele für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/streitgespraech-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/streitgespraech-schreiben-tipps.html</guid>
+      <pubDate>Sat, 04 Jul 2026 07:31:31 +0000</pubDate>
+      <description>Streitgespräch schreiben leicht gemacht: Aufbau, typische Formulierungen und ein Beispiel-Dialog für Deutsch in der Schule.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Erörterung schreiben: Aufbau, Tipps und häufige Fehler</title>
       <link>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/eroerterung-schreiben-tipps.html</guid>
       <pubDate>Fri, 03 Jul 2026 23:28:33 +0000</pubDate>
       <description>Erörterung schreiben leicht gemacht: Aufbau, Argumente mit dem Dreischritt und die häufigsten Fehler, die du vermeiden solltest. Mit praktischen Beispielen für Klasse 8-12.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Diskussion schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/diskussion-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/diskussion-schreiben-tipps.html</guid>
-      <pubDate>Fri, 03 Jul 2026 23:28:23 +0000</pubDate>
-      <description>Diskussion schreiben leicht gemacht: Aufbau, Pro-Kontra-Argumente und Formulierungen für eine überzeugende Diskussion in der Schule.</description>
       <category>Schule &amp; Studium</category>
     </item>
     <item>
@@ -158,14 +166,6 @@
       <pubDate>Sun, 28 Jun 2026 22:47:53 +0000</pubDate>
       <description>Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch bessere Schulnoten, ohne nächtelang zu pauken.</description>
       <category>Prüfungsvorbereitung</category>
-    </item>
-    <item>
-      <title>Schlechte Note: Was tun? 8 Schritte für Schüler und Eltern</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/schlechte-note-was-tun.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/schlechte-note-was-tun.html</guid>
-      <pubDate>Sun, 28 Jun 2026 22:47:40 +0000</pubDate>
-      <description>Schlechte Note bekommen? Keine Panik! 8 konkrete Schritte, wie du jetzt richtig reagierst, Ursachen findest und deine Note verbesserst.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
