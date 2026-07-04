@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 263
+- Gesamtzahl Artikel: 264
 - Letzte Veröffentlichung: 2026-07-04
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 264 | 2026-07-04 | satzarten-bestimmen-tipps | Satzarten bestimmen: Aussage-, Frage-, Ausrufe- und Aufforderungssatz einfach erklärt | Satzarten bestimmen, Satzarten Deutsch, Aussagesatz Fragesatz Ausrufesatz Aufforderungssatz, Satzarten Übungen, Satzzeichen Satzarten | Schule & Studium | Grundlagenartikel zum Bestimmen der vier Satzarten im Deutschen (Aussagesatz, Fragesatz, Ausrufesatz, Aufforderungssatz). Erklärt Merkmale wie Satzzeichen, Verbstellung und Sprechmelodie, geht auf typische Fehler ein (rhetorische Fragen, Aufforderung mit Punkt) und zeigt, wie Satzarten bewusst beim eigenen Schreiben eingesetzt werden können. Ergänzt den Grammatik-Cluster (Wortarten, Satzglieder, Zeitformen, Fälle) um ein weiteres Grundschule/Unterstufe-Thema. |
 | 263 | 2026-07-04 | streitgespraech-schreiben-tipps | Streitgespräch schreiben: Aufbau, Regeln und Beispiele für die Schule | Streitgespräch schreiben, Streitgespräch Aufbau, Streitgespräch Beispiel Deutsch | Schule & Studium | Streitgespräch schreiben: Textform der Dialogdebatte, häufig ab Klasse 8 im Deutschunterricht. Artikel erklärt Definition, fünfteiligen Aufbau (Situation, Einstieg, wechselseitige Argumentation, Zuspitzung, Abschluss), sprachliche Mittel für realistische Dialoge (Unterbrechungen, rhetorische Fragen, Abtönungspartikel, Regieanweisungen), liefert ein vollständiges Beispiel-Streitgespräch zum Thema Hausaufgaben-Abschaffung und listet typische Fehler. Verlinkt zu dialektische-eroerterung-schreiben-tipps und dialog-schreiben-tipps. |
 | 262 | 2026-07-03 | diskussion-schreiben-tipps | Diskussion schreiben: Aufbau, Tipps und Beispiele für die Schule | Diskussion schreiben, Diskussion Aufbau, Pro und Kontra Diskussion, Diskussion Deutsch Schule | Schule & Studium | Diskussion schreiben: Aufbau (Einleitung, Hauptteil mit Blockmethode/Sanduhrmethode, Schluss), Formulierungshilfen für Pro- und Kontra-Argumente, häufige Fehler und Checkliste. Abgrenzung zur Erörterung als einfachere, alltagsnähere Argumentationsform für die Mittelstufe. Verlinkt auf eroerterung-schreiben-tipps und stellungnahme-schreiben-tipps. |
 | 261 | 2026-07-03 | dialog-schreiben-tipps | Dialog schreiben: Aufbau, Regeln und Beispiele für lebendige Texte | Dialog schreiben, Dialog Aufbau Schule, Dialog schreiben Tipps, wörtliche Rede im Dialog, Dialog Beispiel Klasse 6 7 8 | Schule & Studium | Erklärt den Aufbau eines Dialogs (Redebegleitsatz vor/nach/mitten in wörtlicher Rede), gibt Schritt-für-Schritt-Anleitung zum Dialog schreiben (Szene vorbereiten, natürlich formulieren, Redebegleitsätze sparsam nutzen, Handlung einweben), zeigt ein Beispiel und listet 5 häufige Fehler auf. Verlinkt auf woertliche-rede-schreiben-tipps und kurzgeschichte-schreiben-tipps. |
@@ -1608,3 +1609,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - streitgespraech-schreiben-tipps -> dialektische-eroerterung-schreiben-tipps (gleiche Argumentationslogik, höhere Klassenstufe)
 - streitgespraech-schreiben-tipps -> dialog-schreiben-tipps (verwandte Dialogtechnik in erzählenden Texten)
 - streitgespraech-schreiben-tipps -> diskussion-schreiben-tipps (Abgrenzung Fließtext-Diskussion vs. Dialogform)
+
+## Interne Verlinkungen (Artikel 264)
+- satzarten-bestimmen-tipps -> satzglieder-bestimmen-tipps (Abgrenzung Satzarten vs. Satzglieder im Fließtext erklärt)
+- satzarten-bestimmen-tipps -> erzaehlung-schreiben-tipps (Verweis auf Anwendung von Satzarten beim Geschichtenschreiben)
