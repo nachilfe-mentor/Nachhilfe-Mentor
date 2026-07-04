@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 264
+- Gesamtzahl Artikel: 265
 - Letzte Veröffentlichung: 2026-07-04
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 265 | 2026-07-04 | indirekte-rede-bilden-tipps | Indirekte Rede bilden: Konjunktiv I und II einfach erklärt | indirekte Rede bilden, Konjunktiv I und II, indirekte Rede Konjunktiv, wörtliche Rede in indirekte Rede umwandeln, Konjunktiv Deutsch Grammatik | Schule & Studium | Erklärt, wie man indirekte Rede bildet: Grundregel Konjunktiv I, Ausweichregel Konjunktiv II bei Formengleichheit mit dem Indikativ, Anpassung von Pronomen/Orts- und Zeitangaben/Satzart bei Fragen und Aufforderungen, typische Fehler und Übungssätze mit Lösungen. Verlinkt auf den Konjunktiv-II-Simulator. |
 | 264 | 2026-07-04 | satzarten-bestimmen-tipps | Satzarten bestimmen: Aussage-, Frage-, Ausrufe- und Aufforderungssatz einfach erklärt | Satzarten bestimmen, Satzarten Deutsch, Aussagesatz Fragesatz Ausrufesatz Aufforderungssatz, Satzarten Übungen, Satzzeichen Satzarten | Schule & Studium | Grundlagenartikel zum Bestimmen der vier Satzarten im Deutschen (Aussagesatz, Fragesatz, Ausrufesatz, Aufforderungssatz). Erklärt Merkmale wie Satzzeichen, Verbstellung und Sprechmelodie, geht auf typische Fehler ein (rhetorische Fragen, Aufforderung mit Punkt) und zeigt, wie Satzarten bewusst beim eigenen Schreiben eingesetzt werden können. Ergänzt den Grammatik-Cluster (Wortarten, Satzglieder, Zeitformen, Fälle) um ein weiteres Grundschule/Unterstufe-Thema. |
 | 263 | 2026-07-04 | streitgespraech-schreiben-tipps | Streitgespräch schreiben: Aufbau, Regeln und Beispiele für die Schule | Streitgespräch schreiben, Streitgespräch Aufbau, Streitgespräch Beispiel Deutsch | Schule & Studium | Streitgespräch schreiben: Textform der Dialogdebatte, häufig ab Klasse 8 im Deutschunterricht. Artikel erklärt Definition, fünfteiligen Aufbau (Situation, Einstieg, wechselseitige Argumentation, Zuspitzung, Abschluss), sprachliche Mittel für realistische Dialoge (Unterbrechungen, rhetorische Fragen, Abtönungspartikel, Regieanweisungen), liefert ein vollständiges Beispiel-Streitgespräch zum Thema Hausaufgaben-Abschaffung und listet typische Fehler. Verlinkt zu dialektische-eroerterung-schreiben-tipps und dialog-schreiben-tipps. |
 | 262 | 2026-07-03 | diskussion-schreiben-tipps | Diskussion schreiben: Aufbau, Tipps und Beispiele für die Schule | Diskussion schreiben, Diskussion Aufbau, Pro und Kontra Diskussion, Diskussion Deutsch Schule | Schule & Studium | Diskussion schreiben: Aufbau (Einleitung, Hauptteil mit Blockmethode/Sanduhrmethode, Schluss), Formulierungshilfen für Pro- und Kontra-Argumente, häufige Fehler und Checkliste. Abgrenzung zur Erörterung als einfachere, alltagsnähere Argumentationsform für die Mittelstufe. Verlinkt auf eroerterung-schreiben-tipps und stellungnahme-schreiben-tipps. |
@@ -1613,3 +1614,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 264)
 - satzarten-bestimmen-tipps -> satzglieder-bestimmen-tipps (Abgrenzung Satzarten vs. Satzglieder im Fließtext erklärt)
 - satzarten-bestimmen-tipps -> erzaehlung-schreiben-tipps (Verweis auf Anwendung von Satzarten beim Geschichtenschreiben)
+
+## Interne Verlinkungen (Artikel 265)
+- indirekte-rede-bilden-tipps -> woertliche-rede-schreiben-tipps (thematisch verwandt: wörtliche Rede als Ausgangspunkt der Umwandlung)
+- woertliche-rede-schreiben-tipps -> indirekte-rede-bilden-tipps (Rückverlinkung im Fazit als weiterführender Grammatik-Artikel)
