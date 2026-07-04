@@ -5,8 +5,16 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 04 Jul 2026 07:32:09 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 15:35:04 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Satzarten bestimmen: Aussage-, Frage-, Ausrufe- und Aufforderungssatz einfach erklärt</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/satzarten-bestimmen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/satzarten-bestimmen-tipps.html</guid>
+      <pubDate>Sat, 04 Jul 2026 15:34:44 +0000</pubDate>
+      <description>Satzarten bestimmen leicht gemacht: Erkenne Aussagesatz, Fragesatz, Ausrufesatz und Aufforderungssatz sicher an Satzzeichen und Wortstellung. Mit Beispielen und Übungen.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Diskussion schreiben: Aufbau, Tipps und Beispiele für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/diskussion-schreiben-tipps.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 30 Jun 2026 23:00:12 +0000</pubDate>
       <description>Kommasetzung lernen leicht gemacht: Die 7 wichtigsten Komma-Regeln mit Beispielen, Eselsbrücken und Übungstipps für Schule und Aufsatz.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Noten verbessern: 8 Tipps für bessere Schulnoten</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/noten-verbessern-schule-tipps.html</guid>
-      <pubDate>Sun, 28 Jun 2026 22:47:53 +0000</pubDate>
-      <description>Noten verbessern ist kein Zufall. Mit diesen 8 Tipps bekommst du systematisch bessere Schulnoten, ohne nächtelang zu pauken.</description>
-      <category>Prüfungsvorbereitung</category>
     </item>
   </channel>
 </rss>
