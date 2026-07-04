@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 262
-- Letzte Veröffentlichung: 2026-07-03
+- Gesamtzahl Artikel: 263
+- Letzte Veröffentlichung: 2026-07-04
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 263 | 2026-07-04 | streitgespraech-schreiben-tipps | Streitgespräch schreiben: Aufbau, Regeln und Beispiele für die Schule | Streitgespräch schreiben, Streitgespräch Aufbau, Streitgespräch Beispiel Deutsch | Schule & Studium | Streitgespräch schreiben: Textform der Dialogdebatte, häufig ab Klasse 8 im Deutschunterricht. Artikel erklärt Definition, fünfteiligen Aufbau (Situation, Einstieg, wechselseitige Argumentation, Zuspitzung, Abschluss), sprachliche Mittel für realistische Dialoge (Unterbrechungen, rhetorische Fragen, Abtönungspartikel, Regieanweisungen), liefert ein vollständiges Beispiel-Streitgespräch zum Thema Hausaufgaben-Abschaffung und listet typische Fehler. Verlinkt zu dialektische-eroerterung-schreiben-tipps und dialog-schreiben-tipps. |
 | 262 | 2026-07-03 | diskussion-schreiben-tipps | Diskussion schreiben: Aufbau, Tipps und Beispiele für die Schule | Diskussion schreiben, Diskussion Aufbau, Pro und Kontra Diskussion, Diskussion Deutsch Schule | Schule & Studium | Diskussion schreiben: Aufbau (Einleitung, Hauptteil mit Blockmethode/Sanduhrmethode, Schluss), Formulierungshilfen für Pro- und Kontra-Argumente, häufige Fehler und Checkliste. Abgrenzung zur Erörterung als einfachere, alltagsnähere Argumentationsform für die Mittelstufe. Verlinkt auf eroerterung-schreiben-tipps und stellungnahme-schreiben-tipps. |
 | 261 | 2026-07-03 | dialog-schreiben-tipps | Dialog schreiben: Aufbau, Regeln und Beispiele für lebendige Texte | Dialog schreiben, Dialog Aufbau Schule, Dialog schreiben Tipps, wörtliche Rede im Dialog, Dialog Beispiel Klasse 6 7 8 | Schule & Studium | Erklärt den Aufbau eines Dialogs (Redebegleitsatz vor/nach/mitten in wörtlicher Rede), gibt Schritt-für-Schritt-Anleitung zum Dialog schreiben (Szene vorbereiten, natürlich formulieren, Redebegleitsätze sparsam nutzen, Handlung einweben), zeigt ein Beispiel und listet 5 häufige Fehler auf. Verlinkt auf woertliche-rede-schreiben-tipps und kurzgeschichte-schreiben-tipps. |
 | 260 | 2026-07-03 | aktiv-passiv-unterscheiden-tipps | Aktiv und Passiv unterscheiden: Regeln, Beispiele und Umformung einfach erklärt | Aktiv und Passiv unterscheiden, Aktiv Passiv Deutsch, Passiv bilden, Aktivsatz Passivsatz umformen, Aktiv Passiv Übungen | Schule & Studium | Erklärt den Unterschied zwischen Aktiv- und Passivsätzen, die Bildung des Passivs mit werden plus Partizip II, den Unterschied zwischen Vorgangspassiv und Zustandspassiv, die schrittweise Umformung von Aktiv- in Passivsätze sowie typische Fehler und eine Übung. Ergänzt den Grammatik-Cluster (Wortarten, Satzglieder, Fälle, Zeitformen) um das Thema Aktiv/Passiv. |
@@ -1602,3 +1603,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - diskussion-schreiben-tipps -> eroerterung-schreiben-tipps (Verwandte, anspruchsvollere Argumentationsform für höhere Klassen)
 - diskussion-schreiben-tipps -> stellungnahme-schreiben-tipps (Vertiefung zur persönlichen Meinungsäußerung)
 - eroerterung-schreiben-tipps -> diskussion-schreiben-tipps (Rückverlinkung im Fazit als einfachere Vorstufe zur Erörterung)
+
+## Interne Verlinkungen (Artikel 263)
+- streitgespraech-schreiben-tipps -> dialektische-eroerterung-schreiben-tipps (gleiche Argumentationslogik, höhere Klassenstufe)
+- streitgespraech-schreiben-tipps -> dialog-schreiben-tipps (verwandte Dialogtechnik in erzählenden Texten)
+- streitgespraech-schreiben-tipps -> diskussion-schreiben-tipps (Abgrenzung Fließtext-Diskussion vs. Dialogform)
