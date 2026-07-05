@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 267
+- Gesamtzahl Artikel: 268
 - Letzte Veröffentlichung: 2026-07-05
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 268 | 2026-07-05 | pronomen-bestimmen-tipps | Pronomen bestimmen: Die Pronomen-Arten im Deutschen einfach erklärt | Pronomen bestimmen, Pronomen Arten Deutsch, Personalpronomen Possessivpronomen, Relativpronomen erkennen, Pronomen Übungen | Schule & Studium | Grammatik-Ratgeber zum Bestimmen der Pronomen-Arten im Deutschen: Personalpronomen, Possessivpronomen, Relativpronomen, Demonstrativpronomen und Indefinitpronomen. Erklärt jede Art mit Erkennungsmerkmal und Beispiel, gibt eine Schritt-für-Schritt-Anleitung, eine durchgerechnete Übung mit mehreren Pronomen in einem kurzen Text sowie häufige Fehler (Possessivpronomen vs. Artikel, Relativpronomen vs. Artikel) und eine Eselsbrücke. Zielgruppe Klasse 5-9. Ergänzt den Grammatik-Cluster (Wortarten, Fälle, Hauptsatz/Nebensatz). Interne Links auf hauptsatz-nebensatz-unterscheiden-tipps und wortarten-bestimmen-tipps. App einmal natürlich erwähnt. |
 | 267 | 2026-07-05 | hauptsatz-nebensatz-unterscheiden-tipps | Hauptsatz und Nebensatz unterscheiden: Regeln, Beispiele und Übungen | Hauptsatz und Nebensatz unterscheiden, Hauptsatz Nebensatz Deutsch, Nebensatz erkennen, Satzgefüge Satzreihe, Konjunktionen Nebensatz | Schule & Studium | Erklärt den Unterschied zwischen Hauptsatz und Nebensatz: Verbstellung (Position 2 vs. Satzende), Signalwörter (weil, dass, wenn, obwohl, Relativpronomen), Satzreihe vs. Satzgefüge, Schritt-für-Schritt-Methode zum Bestimmen, häufige Fehler und Übungsbeispiele. Verlinkt auf kommasetzung-lernen-tipps und satzglieder-bestimmen-tipps. |
 | 266 | 2026-07-05 | adjektive-steigern-tipps | Adjektive steigern: Komparativ und Superlativ einfach erklärt | Adjektive steigern, Komparativ und Superlativ, Steigerung der Adjektive, Adjektive steigern Übungen, Positiv Komparativ Superlativ | Schule & Studium | Grammatik-Ratgeber zur Steigerung der Adjektive (Positiv, Komparativ, Superlativ) für Klasse 4-8. Erklärt die Grundregel (-er, am -sten), Umlautbildung bei einsilbigen Adjektiven (alt-älter, groß-größer), unregelmäßige Formen (gut-besser-am besten, viel-mehr-am meisten), nicht steigerbare absolute Adjektive (tot, einzigartig, rund) sowie den häufigen Fehler als/wie beim Vergleich. Enthält eine Übung mit Lösungen. Teil des wachsenden Grammatik-Clusters (Wortarten, Satzglieder, Fälle, Zeitformen). Interne Links zu wortarten-bestimmen-tipps und satzglieder-bestimmen-tipps. App einmal natürlich erwähnt. |
 | 265 | 2026-07-04 | indirekte-rede-bilden-tipps | Indirekte Rede bilden: Konjunktiv I und II einfach erklärt | indirekte Rede bilden, Konjunktiv I und II, indirekte Rede Konjunktiv, wörtliche Rede in indirekte Rede umwandeln, Konjunktiv Deutsch Grammatik | Schule & Studium | Erklärt, wie man indirekte Rede bildet: Grundregel Konjunktiv I, Ausweichregel Konjunktiv II bei Formengleichheit mit dem Indikativ, Anpassung von Pronomen/Orts- und Zeitangaben/Satzart bei Fragen und Aufforderungen, typische Fehler und Übungssätze mit Lösungen. Verlinkt auf den Konjunktiv-II-Simulator. |
@@ -1630,3 +1631,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - hauptsatz-nebensatz-unterscheiden-tipps -> kommasetzung-lernen-tipps (Nebensätze werden durch Komma abgetrennt)
 - hauptsatz-nebensatz-unterscheiden-tipps -> satzglieder-bestimmen-tipps (Zusammenhang zwischen Satzgefüge und Satzgliedern)
 - kommasetzung-lernen-tipps -> hauptsatz-nebensatz-unterscheiden-tipps (Rückverlinkung im Fazit bei Erwähnung von Haupt- und Nebensätzen)
+
+## Interne Verlinkungen (Artikel 268)
+- pronomen-bestimmen-tipps -> hauptsatz-nebensatz-unterscheiden-tipps (Relativsätze sind Nebensätze, eingeleitet durch Relativpronomen)
+- pronomen-bestimmen-tipps -> wortarten-bestimmen-tipps (Pronomen als eine der 10 Wortarten wieder aufgreifen)
+- wortarten-bestimmen-tipps -> pronomen-bestimmen-tipps (Rückverlinkung beim Abschnitt zu Pronomen als Wortart)
