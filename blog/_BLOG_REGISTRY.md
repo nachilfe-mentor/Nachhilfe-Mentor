@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 266
+- Gesamtzahl Artikel: 267
 - Letzte Veröffentlichung: 2026-07-05
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 267 | 2026-07-05 | hauptsatz-nebensatz-unterscheiden-tipps | Hauptsatz und Nebensatz unterscheiden: Regeln, Beispiele und Übungen | Hauptsatz und Nebensatz unterscheiden, Hauptsatz Nebensatz Deutsch, Nebensatz erkennen, Satzgefüge Satzreihe, Konjunktionen Nebensatz | Schule & Studium | Erklärt den Unterschied zwischen Hauptsatz und Nebensatz: Verbstellung (Position 2 vs. Satzende), Signalwörter (weil, dass, wenn, obwohl, Relativpronomen), Satzreihe vs. Satzgefüge, Schritt-für-Schritt-Methode zum Bestimmen, häufige Fehler und Übungsbeispiele. Verlinkt auf kommasetzung-lernen-tipps und satzglieder-bestimmen-tipps. |
 | 266 | 2026-07-05 | adjektive-steigern-tipps | Adjektive steigern: Komparativ und Superlativ einfach erklärt | Adjektive steigern, Komparativ und Superlativ, Steigerung der Adjektive, Adjektive steigern Übungen, Positiv Komparativ Superlativ | Schule & Studium | Grammatik-Ratgeber zur Steigerung der Adjektive (Positiv, Komparativ, Superlativ) für Klasse 4-8. Erklärt die Grundregel (-er, am -sten), Umlautbildung bei einsilbigen Adjektiven (alt-älter, groß-größer), unregelmäßige Formen (gut-besser-am besten, viel-mehr-am meisten), nicht steigerbare absolute Adjektive (tot, einzigartig, rund) sowie den häufigen Fehler als/wie beim Vergleich. Enthält eine Übung mit Lösungen. Teil des wachsenden Grammatik-Clusters (Wortarten, Satzglieder, Fälle, Zeitformen). Interne Links zu wortarten-bestimmen-tipps und satzglieder-bestimmen-tipps. App einmal natürlich erwähnt. |
 | 265 | 2026-07-04 | indirekte-rede-bilden-tipps | Indirekte Rede bilden: Konjunktiv I und II einfach erklärt | indirekte Rede bilden, Konjunktiv I und II, indirekte Rede Konjunktiv, wörtliche Rede in indirekte Rede umwandeln, Konjunktiv Deutsch Grammatik | Schule & Studium | Erklärt, wie man indirekte Rede bildet: Grundregel Konjunktiv I, Ausweichregel Konjunktiv II bei Formengleichheit mit dem Indikativ, Anpassung von Pronomen/Orts- und Zeitangaben/Satzart bei Fragen und Aufforderungen, typische Fehler und Übungssätze mit Lösungen. Verlinkt auf den Konjunktiv-II-Simulator. |
 | 264 | 2026-07-04 | satzarten-bestimmen-tipps | Satzarten bestimmen: Aussage-, Frage-, Ausrufe- und Aufforderungssatz einfach erklärt | Satzarten bestimmen, Satzarten Deutsch, Aussagesatz Fragesatz Ausrufesatz Aufforderungssatz, Satzarten Übungen, Satzzeichen Satzarten | Schule & Studium | Grundlagenartikel zum Bestimmen der vier Satzarten im Deutschen (Aussagesatz, Fragesatz, Ausrufesatz, Aufforderungssatz). Erklärt Merkmale wie Satzzeichen, Verbstellung und Sprechmelodie, geht auf typische Fehler ein (rhetorische Fragen, Aufforderung mit Punkt) und zeigt, wie Satzarten bewusst beim eigenen Schreiben eingesetzt werden können. Ergänzt den Grammatik-Cluster (Wortarten, Satzglieder, Zeitformen, Fälle) um ein weiteres Grundschule/Unterstufe-Thema. |
@@ -1624,3 +1625,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - adjektive-steigern-tipps -> wortarten-bestimmen-tipps (Adjektive sind eine der 10 Wortarten, natürliche Verlinkung im Grammatik-Cluster)
 - adjektive-steigern-tipps -> satzglieder-bestimmen-tipps (Adjektive als Attribut/Teil von Satzgliedern, ergänzt den Grammatik-Cluster)
 - wortarten-bestimmen-tipps -> adjektive-steigern-tipps (Verlinkung an der Stelle, wo die Steigerung des Adjektivs erwähnt wird)
+
+## Interne Verlinkungen (Artikel 267)
+- hauptsatz-nebensatz-unterscheiden-tipps -> kommasetzung-lernen-tipps (Nebensätze werden durch Komma abgetrennt)
+- hauptsatz-nebensatz-unterscheiden-tipps -> satzglieder-bestimmen-tipps (Zusammenhang zwischen Satzgefüge und Satzgliedern)
+- kommasetzung-lernen-tipps -> hauptsatz-nebensatz-unterscheiden-tipps (Rückverlinkung im Fazit bei Erwähnung von Haupt- und Nebensätzen)
