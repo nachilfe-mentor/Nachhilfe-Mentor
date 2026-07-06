@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 268
-- Letzte Veröffentlichung: 2026-07-05
+- Gesamtzahl Artikel: 269
+- Letzte Veröffentlichung: 2026-07-06
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 269 | 2026-07-06 | praepositionen-dativ-akkusativ-tipps | Präpositionen mit Dativ und Akkusativ: Regeln, Wechselpräpositionen und Übungen | Präpositionen mit Dativ und Akkusativ, Wechselpräpositionen, Präpositionen Dativ Liste, Präpositionen Akkusativ Liste, Präpositionen Übungen Deutsch | Schule & Studium | Artikel erklärt Präpositionen mit Dativ und Akkusativ im Deutschen: feste Dativ-Präpositionen (aus, bei, mit, nach, seit, von, zu) und feste Akkusativ-Präpositionen (durch, für, gegen, ohne, um) jeweils mit Eselsbrücke, sowie die neun Wechselpräpositionen (an, auf, hinter, in, neben, über, unter, vor, zwischen) mit der Wo-Wohin-Regel zur Fallbestimmung. Enthält typische Fehlerquellen (Verschmelzungen wie im/am/ans, Verwechslung von Bewegungs- und Zustandsverben) sowie eine Übung mit vier Beispielsätzen und Lösung. Verlinkt intern auf faelle-bestimmen-tipps.html und erwähnt die Nachhilfe Mentor App als Übungsquelle. |
 | 268 | 2026-07-05 | pronomen-bestimmen-tipps | Pronomen bestimmen: Die Pronomen-Arten im Deutschen einfach erklärt | Pronomen bestimmen, Pronomen Arten Deutsch, Personalpronomen Possessivpronomen, Relativpronomen erkennen, Pronomen Übungen | Schule & Studium | Grammatik-Ratgeber zum Bestimmen der Pronomen-Arten im Deutschen: Personalpronomen, Possessivpronomen, Relativpronomen, Demonstrativpronomen und Indefinitpronomen. Erklärt jede Art mit Erkennungsmerkmal und Beispiel, gibt eine Schritt-für-Schritt-Anleitung, eine durchgerechnete Übung mit mehreren Pronomen in einem kurzen Text sowie häufige Fehler (Possessivpronomen vs. Artikel, Relativpronomen vs. Artikel) und eine Eselsbrücke. Zielgruppe Klasse 5-9. Ergänzt den Grammatik-Cluster (Wortarten, Fälle, Hauptsatz/Nebensatz). Interne Links auf hauptsatz-nebensatz-unterscheiden-tipps und wortarten-bestimmen-tipps. App einmal natürlich erwähnt. |
 | 267 | 2026-07-05 | hauptsatz-nebensatz-unterscheiden-tipps | Hauptsatz und Nebensatz unterscheiden: Regeln, Beispiele und Übungen | Hauptsatz und Nebensatz unterscheiden, Hauptsatz Nebensatz Deutsch, Nebensatz erkennen, Satzgefüge Satzreihe, Konjunktionen Nebensatz | Schule & Studium | Erklärt den Unterschied zwischen Hauptsatz und Nebensatz: Verbstellung (Position 2 vs. Satzende), Signalwörter (weil, dass, wenn, obwohl, Relativpronomen), Satzreihe vs. Satzgefüge, Schritt-für-Schritt-Methode zum Bestimmen, häufige Fehler und Übungsbeispiele. Verlinkt auf kommasetzung-lernen-tipps und satzglieder-bestimmen-tipps. |
 | 266 | 2026-07-05 | adjektive-steigern-tipps | Adjektive steigern: Komparativ und Superlativ einfach erklärt | Adjektive steigern, Komparativ und Superlativ, Steigerung der Adjektive, Adjektive steigern Übungen, Positiv Komparativ Superlativ | Schule & Studium | Grammatik-Ratgeber zur Steigerung der Adjektive (Positiv, Komparativ, Superlativ) für Klasse 4-8. Erklärt die Grundregel (-er, am -sten), Umlautbildung bei einsilbigen Adjektiven (alt-älter, groß-größer), unregelmäßige Formen (gut-besser-am besten, viel-mehr-am meisten), nicht steigerbare absolute Adjektive (tot, einzigartig, rund) sowie den häufigen Fehler als/wie beim Vergleich. Enthält eine Übung mit Lösungen. Teil des wachsenden Grammatik-Clusters (Wortarten, Satzglieder, Fälle, Zeitformen). Interne Links zu wortarten-bestimmen-tipps und satzglieder-bestimmen-tipps. App einmal natürlich erwähnt. |
@@ -1636,3 +1637,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - pronomen-bestimmen-tipps -> hauptsatz-nebensatz-unterscheiden-tipps (Relativsätze sind Nebensätze, eingeleitet durch Relativpronomen)
 - pronomen-bestimmen-tipps -> wortarten-bestimmen-tipps (Pronomen als eine der 10 Wortarten wieder aufgreifen)
 - wortarten-bestimmen-tipps -> pronomen-bestimmen-tipps (Rückverlinkung beim Abschnitt zu Pronomen als Wortart)
+
+## Interne Verlinkungen (Artikel 269)
+- praepositionen-dativ-akkusativ-tipps -> faelle-bestimmen-tipps (Verweis auf Grundlagenartikel zu den vier Fällen, da Präpositionen-Bestimmung sichere Kasus-Kenntnisse voraussetzt)
+- faelle-bestimmen-tipps -> praepositionen-dativ-akkusativ-tipps (Rückverlinkung an der Stelle, wo Satzglieder/Fälle-Zusammenhang erklärt wird, als weiterführender Artikel zu Präpositionen)
