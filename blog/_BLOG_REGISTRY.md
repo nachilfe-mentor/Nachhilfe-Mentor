@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 270
+- Gesamtzahl Artikel: 271
 - Letzte Veröffentlichung: 2026-07-06
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 271 | 2026-07-06 | textvergleich-schreiben-tipps | Textvergleich schreiben: Aufbau, Methode und Beispiel für die Oberstufe | Textvergleich schreiben, Textvergleich Aufbau, Textvergleich Deutsch Abitur, vergleichende Textanalyse, Textvergleich Beispiel | Schule & Studium | Textvergleich schreiben: Erklärt den Unterschied zwischen Blockmethode und Reißverschlussmethode, sinnvolle Vergleichskriterien (Thema, Aufbau, Sprache, Argumentation, Perspektive), Formulierungshilfen für vergleichende Sätze sowie häufige Fehler (getrennte Analysen ohne echten Vergleich, zu viele Kriterien, fehlende Belege, fehlende Bewertung im Schluss). Enthält ein Beispiel für einen Vergleichsabschnitt. Zielgruppe Oberstufe/Abitur, ergänzt sachtextanalyse-schreiben-tipps und werkvergleich-schreiben-tipps im Analyse-Cluster. |
 | 270 | 2026-07-06 | adverbialsaetze-bestimmen-tipps | Adverbialsätze bestimmen: Kausal-, Konditional- und Konzessivsätze einfach erklärt | Adverbialsätze bestimmen, Nebensatzarten, Konditionalsatz, Kausalsatz, Konzessivsatz | Schule & Studium | Erklärt, wie man Adverbialsätze bestimmt (Kausal-, Konditional-, Konzessiv-, Final-, Temporal-, Konsekutiv-, Modal- und Lokalsatz) anhand von Signalwörtern, mit Schritt-für-Schritt-Methode, häufigen Fehlern und Übungsbeispielen. |
 | 269 | 2026-07-06 | praepositionen-dativ-akkusativ-tipps | Präpositionen mit Dativ und Akkusativ: Regeln, Wechselpräpositionen und Übungen | Präpositionen mit Dativ und Akkusativ, Wechselpräpositionen, Präpositionen Dativ Liste, Präpositionen Akkusativ Liste, Präpositionen Übungen Deutsch | Schule & Studium | Artikel erklärt Präpositionen mit Dativ und Akkusativ im Deutschen: feste Dativ-Präpositionen (aus, bei, mit, nach, seit, von, zu) und feste Akkusativ-Präpositionen (durch, für, gegen, ohne, um) jeweils mit Eselsbrücke, sowie die neun Wechselpräpositionen (an, auf, hinter, in, neben, über, unter, vor, zwischen) mit der Wo-Wohin-Regel zur Fallbestimmung. Enthält typische Fehlerquellen (Verschmelzungen wie im/am/ans, Verwechslung von Bewegungs- und Zustandsverben) sowie eine Übung mit vier Beispielsätzen und Lösung. Verlinkt intern auf faelle-bestimmen-tipps.html und erwähnt die Nachhilfe Mentor App als Übungsquelle. |
 | 268 | 2026-07-05 | pronomen-bestimmen-tipps | Pronomen bestimmen: Die Pronomen-Arten im Deutschen einfach erklärt | Pronomen bestimmen, Pronomen Arten Deutsch, Personalpronomen Possessivpronomen, Relativpronomen erkennen, Pronomen Übungen | Schule & Studium | Grammatik-Ratgeber zum Bestimmen der Pronomen-Arten im Deutschen: Personalpronomen, Possessivpronomen, Relativpronomen, Demonstrativpronomen und Indefinitpronomen. Erklärt jede Art mit Erkennungsmerkmal und Beispiel, gibt eine Schritt-für-Schritt-Anleitung, eine durchgerechnete Übung mit mehreren Pronomen in einem kurzen Text sowie häufige Fehler (Possessivpronomen vs. Artikel, Relativpronomen vs. Artikel) und eine Eselsbrücke. Zielgruppe Klasse 5-9. Ergänzt den Grammatik-Cluster (Wortarten, Fälle, Hauptsatz/Nebensatz). Interne Links auf hauptsatz-nebensatz-unterscheiden-tipps und wortarten-bestimmen-tipps. App einmal natürlich erwähnt. |
@@ -1646,3 +1647,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 270)
 - adverbialsaetze-bestimmen-tipps -> hauptsatz-nebensatz-unterscheiden-tipps (Grundlage Haupt-/Nebensatz-Unterscheidung im Text erwähnt)
 - hauptsatz-nebensatz-unterscheiden-tipps -> adverbialsaetze-bestimmen-tipps (Rückverlinkung nach den Übungsbeispielen im Fazitabschnitt)
+
+## Interne Verlinkungen (Artikel 271)
+- textvergleich-schreiben-tipps -> sachtextanalyse-schreiben-tipps (Sachtextanalyse als Grundlage für die Einzelanalyse vor dem Vergleich)
