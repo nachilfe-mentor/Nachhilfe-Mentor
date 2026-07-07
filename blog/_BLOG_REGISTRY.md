@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 271
-- Letzte Veröffentlichung: 2026-07-06
+- Gesamtzahl Artikel: 272
+- Letzte Veröffentlichung: 2026-07-07
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 272 | 2026-07-07 | lineare-eroerterung-schreiben-tipps | Lineare Erörterung schreiben: Aufbau, Methode und Beispiel | lineare Erörterung schreiben, lineare Erörterung Aufbau, steigernde Argumentation | Schule & Studium | Erklärt die lineare (steigernde) Erörterung als eigenständige Aufsatzform mit klarer Einweg-These statt Pro-Contra-Abwägung. Behandelt Aufbau (Einleitung, Hauptteil, Schluss), den Dreischritt Behauptung-Begründung-Beispiel je Argument, die Steigerungslogik vom schwächsten zum stärksten Argument, ein konkretes Beispiel (Einleitung + ein Argument zum Thema Mitspracherecht von Schülern), häufige Fehler (Gegenargumente einbauen, fehlende Steigerung, fehlende Beispiele, späte Positionierung) und eine Abgabe-Checkliste. Grenzt sich bewusst von dialektischer und textgebundener Erörterung ab. |
 | 271 | 2026-07-06 | textvergleich-schreiben-tipps | Textvergleich schreiben: Aufbau, Methode und Beispiel für die Oberstufe | Textvergleich schreiben, Textvergleich Aufbau, Textvergleich Deutsch Abitur, vergleichende Textanalyse, Textvergleich Beispiel | Schule & Studium | Textvergleich schreiben: Erklärt den Unterschied zwischen Blockmethode und Reißverschlussmethode, sinnvolle Vergleichskriterien (Thema, Aufbau, Sprache, Argumentation, Perspektive), Formulierungshilfen für vergleichende Sätze sowie häufige Fehler (getrennte Analysen ohne echten Vergleich, zu viele Kriterien, fehlende Belege, fehlende Bewertung im Schluss). Enthält ein Beispiel für einen Vergleichsabschnitt. Zielgruppe Oberstufe/Abitur, ergänzt sachtextanalyse-schreiben-tipps und werkvergleich-schreiben-tipps im Analyse-Cluster. |
 | 270 | 2026-07-06 | adverbialsaetze-bestimmen-tipps | Adverbialsätze bestimmen: Kausal-, Konditional- und Konzessivsätze einfach erklärt | Adverbialsätze bestimmen, Nebensatzarten, Konditionalsatz, Kausalsatz, Konzessivsatz | Schule & Studium | Erklärt, wie man Adverbialsätze bestimmt (Kausal-, Konditional-, Konzessiv-, Final-, Temporal-, Konsekutiv-, Modal- und Lokalsatz) anhand von Signalwörtern, mit Schritt-für-Schritt-Methode, häufigen Fehlern und Übungsbeispielen. |
 | 269 | 2026-07-06 | praepositionen-dativ-akkusativ-tipps | Präpositionen mit Dativ und Akkusativ: Regeln, Wechselpräpositionen und Übungen | Präpositionen mit Dativ und Akkusativ, Wechselpräpositionen, Präpositionen Dativ Liste, Präpositionen Akkusativ Liste, Präpositionen Übungen Deutsch | Schule & Studium | Artikel erklärt Präpositionen mit Dativ und Akkusativ im Deutschen: feste Dativ-Präpositionen (aus, bei, mit, nach, seit, von, zu) und feste Akkusativ-Präpositionen (durch, für, gegen, ohne, um) jeweils mit Eselsbrücke, sowie die neun Wechselpräpositionen (an, auf, hinter, in, neben, über, unter, vor, zwischen) mit der Wo-Wohin-Regel zur Fallbestimmung. Enthält typische Fehlerquellen (Verschmelzungen wie im/am/ans, Verwechslung von Bewegungs- und Zustandsverben) sowie eine Übung mit vier Beispielsätzen und Lösung. Verlinkt intern auf faelle-bestimmen-tipps.html und erwähnt die Nachhilfe Mentor App als Übungsquelle. |
@@ -1650,3 +1651,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Interne Verlinkungen (Artikel 271)
 - textvergleich-schreiben-tipps -> sachtextanalyse-schreiben-tipps (Sachtextanalyse als Grundlage für die Einzelanalyse vor dem Vergleich)
+
+## Interne Verlinkungen (Artikel 272)
+- lineare-eroerterung-schreiben-tipps -> dialektische-eroerterung-schreiben-tipps (Abgrenzung linear vs. dialektisch direkt im Definitionsabsatz)
+- lineare-eroerterung-schreiben-tipps -> textgebundene-eroerterung-schreiben-tipps (Verweis im Übungsabschnitt auf die textgebundene Variante)
+- dialektische-eroerterung-schreiben-tipps -> lineare-eroerterung-schreiben-tipps (Rückverlinkung im Definitionsabsatz (Abgrenzung linear vs. dialektisch))
