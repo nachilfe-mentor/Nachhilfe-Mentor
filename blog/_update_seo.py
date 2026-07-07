@@ -140,6 +140,8 @@ def scan_pages():
     posts_dir = os.path.join(SITE_DIR, "blog", "posts")
     if os.path.isdir(posts_dir):
         for f in sorted(glob.glob(os.path.join(posts_dir, "*.html"))):
+            if has_noindex(f):
+                continue
             basename = os.path.basename(f)
             path = f"blog/posts/{basename}"
             pages["blog_posts"].append((path, f, 0.7, "monthly"))
