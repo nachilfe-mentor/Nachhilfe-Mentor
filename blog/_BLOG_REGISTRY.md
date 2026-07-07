@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 272
+- Gesamtzahl Artikel: 273
 - Letzte Veröffentlichung: 2026-07-07
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 273 | 2026-07-07 | oberbegriffe-unterbegriffe-bestimmen-tipps | Oberbegriffe und Unterbegriffe bestimmen: Tipps mit Beispielen | Oberbegriffe und Unterbegriffe, Oberbegriff bestimmen, Unterbegriffe Deutsch, Wortfeld, Wortschatz erweitern | Schule & Studium | Erklärt Oberbegriffe und Unterbegriffe (Hyponymie/Hyperonymie) mit Definition, zahlreichen Alltagsbeispielen, Abgrenzung zur Teil-Ganzes-Beziehung (Meronymie), Schritt-für-Schritt-Methode, einer Übung mit Lösung sowie häufigen Fehlern. Richtet sich an Grundschüler und Mittelstufenschüler im Deutschunterricht (Wortschatzarbeit). |
 | 272 | 2026-07-07 | lineare-eroerterung-schreiben-tipps | Lineare Erörterung schreiben: Aufbau, Methode und Beispiel | lineare Erörterung schreiben, lineare Erörterung Aufbau, steigernde Argumentation | Schule & Studium | Erklärt die lineare (steigernde) Erörterung als eigenständige Aufsatzform mit klarer Einweg-These statt Pro-Contra-Abwägung. Behandelt Aufbau (Einleitung, Hauptteil, Schluss), den Dreischritt Behauptung-Begründung-Beispiel je Argument, die Steigerungslogik vom schwächsten zum stärksten Argument, ein konkretes Beispiel (Einleitung + ein Argument zum Thema Mitspracherecht von Schülern), häufige Fehler (Gegenargumente einbauen, fehlende Steigerung, fehlende Beispiele, späte Positionierung) und eine Abgabe-Checkliste. Grenzt sich bewusst von dialektischer und textgebundener Erörterung ab. |
 | 271 | 2026-07-06 | textvergleich-schreiben-tipps | Textvergleich schreiben: Aufbau, Methode und Beispiel für die Oberstufe | Textvergleich schreiben, Textvergleich Aufbau, Textvergleich Deutsch Abitur, vergleichende Textanalyse, Textvergleich Beispiel | Schule & Studium | Textvergleich schreiben: Erklärt den Unterschied zwischen Blockmethode und Reißverschlussmethode, sinnvolle Vergleichskriterien (Thema, Aufbau, Sprache, Argumentation, Perspektive), Formulierungshilfen für vergleichende Sätze sowie häufige Fehler (getrennte Analysen ohne echten Vergleich, zu viele Kriterien, fehlende Belege, fehlende Bewertung im Schluss). Enthält ein Beispiel für einen Vergleichsabschnitt. Zielgruppe Oberstufe/Abitur, ergänzt sachtextanalyse-schreiben-tipps und werkvergleich-schreiben-tipps im Analyse-Cluster. |
 | 270 | 2026-07-06 | adverbialsaetze-bestimmen-tipps | Adverbialsätze bestimmen: Kausal-, Konditional- und Konzessivsätze einfach erklärt | Adverbialsätze bestimmen, Nebensatzarten, Konditionalsatz, Kausalsatz, Konzessivsatz | Schule & Studium | Erklärt, wie man Adverbialsätze bestimmt (Kausal-, Konditional-, Konzessiv-, Final-, Temporal-, Konsekutiv-, Modal- und Lokalsatz) anhand von Signalwörtern, mit Schritt-für-Schritt-Methode, häufigen Fehlern und Übungsbeispielen. |
@@ -1656,3 +1657,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - lineare-eroerterung-schreiben-tipps -> dialektische-eroerterung-schreiben-tipps (Abgrenzung linear vs. dialektisch direkt im Definitionsabsatz)
 - lineare-eroerterung-schreiben-tipps -> textgebundene-eroerterung-schreiben-tipps (Verweis im Übungsabschnitt auf die textgebundene Variante)
 - dialektische-eroerterung-schreiben-tipps -> lineare-eroerterung-schreiben-tipps (Rückverlinkung im Definitionsabsatz (Abgrenzung linear vs. dialektisch))
+
+## Interne Verlinkungen (Artikel 273)
+- oberbegriffe-unterbegriffe-bestimmen-tipps -> wortarten-bestimmen-tipps (Verweis auf Nomen und Wortarten als Grundlage der Wortschatzarbeit)
+- wortarten-bestimmen-tipps -> oberbegriffe-unterbegriffe-bestimmen-tipps (Rückverlinkung im Abschnitt zu Nomen (Substantiv))
