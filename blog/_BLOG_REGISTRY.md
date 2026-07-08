@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 273
-- Letzte Veröffentlichung: 2026-07-07
+- Gesamtzahl Artikel: 274
+- Letzte Veröffentlichung: 2026-07-08
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 274 | 2026-07-08 | konjunktionen-bestimmen-tipps | Konjunktionen bestimmen: Nebenordnende und unterordnende Konjunktionen einfach erklärt | Konjunktionen bestimmen, nebenordnende Konjunktionen, unterordnende Konjunktionen, Konjunktionen Deutsch, Konjunktionen Übungen | Schule & Studium | Grammatik-Artikel im Bestimmen-Cluster: erklärt den Unterschied zwischen nebenordnenden Konjunktionen (und, oder, aber, denn, sondern) und unterordnenden Konjunktionen (weil, dass, obwohl, während), inkl. 3-Schritte-Methode über die Verb-Position, Kommaregeln und häufige Fehler. Ergänzt adverbialsaetze-bestimmen-tipps und wortarten-bestimmen-tipps im Grammatik-Cluster. |
 | 273 | 2026-07-07 | oberbegriffe-unterbegriffe-bestimmen-tipps | Oberbegriffe und Unterbegriffe bestimmen: Tipps mit Beispielen | Oberbegriffe und Unterbegriffe, Oberbegriff bestimmen, Unterbegriffe Deutsch, Wortfeld, Wortschatz erweitern | Schule & Studium | Erklärt Oberbegriffe und Unterbegriffe (Hyponymie/Hyperonymie) mit Definition, zahlreichen Alltagsbeispielen, Abgrenzung zur Teil-Ganzes-Beziehung (Meronymie), Schritt-für-Schritt-Methode, einer Übung mit Lösung sowie häufigen Fehlern. Richtet sich an Grundschüler und Mittelstufenschüler im Deutschunterricht (Wortschatzarbeit). |
 | 272 | 2026-07-07 | lineare-eroerterung-schreiben-tipps | Lineare Erörterung schreiben: Aufbau, Methode und Beispiel | lineare Erörterung schreiben, lineare Erörterung Aufbau, steigernde Argumentation | Schule & Studium | Erklärt die lineare (steigernde) Erörterung als eigenständige Aufsatzform mit klarer Einweg-These statt Pro-Contra-Abwägung. Behandelt Aufbau (Einleitung, Hauptteil, Schluss), den Dreischritt Behauptung-Begründung-Beispiel je Argument, die Steigerungslogik vom schwächsten zum stärksten Argument, ein konkretes Beispiel (Einleitung + ein Argument zum Thema Mitspracherecht von Schülern), häufige Fehler (Gegenargumente einbauen, fehlende Steigerung, fehlende Beispiele, späte Positionierung) und eine Abgabe-Checkliste. Grenzt sich bewusst von dialektischer und textgebundener Erörterung ab. |
 | 271 | 2026-07-06 | textvergleich-schreiben-tipps | Textvergleich schreiben: Aufbau, Methode und Beispiel für die Oberstufe | Textvergleich schreiben, Textvergleich Aufbau, Textvergleich Deutsch Abitur, vergleichende Textanalyse, Textvergleich Beispiel | Schule & Studium | Textvergleich schreiben: Erklärt den Unterschied zwischen Blockmethode und Reißverschlussmethode, sinnvolle Vergleichskriterien (Thema, Aufbau, Sprache, Argumentation, Perspektive), Formulierungshilfen für vergleichende Sätze sowie häufige Fehler (getrennte Analysen ohne echten Vergleich, zu viele Kriterien, fehlende Belege, fehlende Bewertung im Schluss). Enthält ein Beispiel für einen Vergleichsabschnitt. Zielgruppe Oberstufe/Abitur, ergänzt sachtextanalyse-schreiben-tipps und werkvergleich-schreiben-tipps im Analyse-Cluster. |
@@ -1661,3 +1662,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 273)
 - oberbegriffe-unterbegriffe-bestimmen-tipps -> wortarten-bestimmen-tipps (Verweis auf Nomen und Wortarten als Grundlage der Wortschatzarbeit)
 - wortarten-bestimmen-tipps -> oberbegriffe-unterbegriffe-bestimmen-tipps (Rückverlinkung im Abschnitt zu Nomen (Substantiv))
+
+## Interne Verlinkungen (Artikel 274)
+- konjunktionen-bestimmen-tipps -> adverbialsaetze-bestimmen-tipps (Adverbialsätze werden meist von unterordnenden Konjunktionen eingeleitet)
+- adverbialsaetze-bestimmen-tipps -> konjunktionen-bestimmen-tipps (Rückverlinkung in der Einleitung auf Konjunktionsarten)
