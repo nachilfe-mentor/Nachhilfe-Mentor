@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 274
+- Gesamtzahl Artikel: 275
 - Letzte Veröffentlichung: 2026-07-08
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 275 | 2026-07-08 | relativsaetze-bestimmen-tipps | Relativsätze bestimmen: Regeln, Relativpronomen und Beispiele einfach erklärt | Relativsätze bestimmen, Relativpronomen, Relativsatz Beispiel, Relativsatz Komma, Nebensatz Deutsch | Schule & Studium | Relativsätze bestimmen: Regeln zur Erkennung von Relativsätzen, Übersicht der Relativpronomen nach Genus, Numerus und Kasus, Kommasetzungsregeln, Abgrenzung zu Adverbialsätzen und Hauptsatz/Nebensatz, mit Übungsbeispielen inkl. Lösungen. Ergänzt das Grammatik-Bestimmen-Cluster (Satzglieder, Hauptsatz/Nebensatz, Adverbialsätze, Pronomen). |
 | 274 | 2026-07-08 | konjunktionen-bestimmen-tipps | Konjunktionen bestimmen: Nebenordnende und unterordnende Konjunktionen einfach erklärt | Konjunktionen bestimmen, nebenordnende Konjunktionen, unterordnende Konjunktionen, Konjunktionen Deutsch, Konjunktionen Übungen | Schule & Studium | Grammatik-Artikel im Bestimmen-Cluster: erklärt den Unterschied zwischen nebenordnenden Konjunktionen (und, oder, aber, denn, sondern) und unterordnenden Konjunktionen (weil, dass, obwohl, während), inkl. 3-Schritte-Methode über die Verb-Position, Kommaregeln und häufige Fehler. Ergänzt adverbialsaetze-bestimmen-tipps und wortarten-bestimmen-tipps im Grammatik-Cluster. |
 | 273 | 2026-07-07 | oberbegriffe-unterbegriffe-bestimmen-tipps | Oberbegriffe und Unterbegriffe bestimmen: Tipps mit Beispielen | Oberbegriffe und Unterbegriffe, Oberbegriff bestimmen, Unterbegriffe Deutsch, Wortfeld, Wortschatz erweitern | Schule & Studium | Erklärt Oberbegriffe und Unterbegriffe (Hyponymie/Hyperonymie) mit Definition, zahlreichen Alltagsbeispielen, Abgrenzung zur Teil-Ganzes-Beziehung (Meronymie), Schritt-für-Schritt-Methode, einer Übung mit Lösung sowie häufigen Fehlern. Richtet sich an Grundschüler und Mittelstufenschüler im Deutschunterricht (Wortschatzarbeit). |
 | 272 | 2026-07-07 | lineare-eroerterung-schreiben-tipps | Lineare Erörterung schreiben: Aufbau, Methode und Beispiel | lineare Erörterung schreiben, lineare Erörterung Aufbau, steigernde Argumentation | Schule & Studium | Erklärt die lineare (steigernde) Erörterung als eigenständige Aufsatzform mit klarer Einweg-These statt Pro-Contra-Abwägung. Behandelt Aufbau (Einleitung, Hauptteil, Schluss), den Dreischritt Behauptung-Begründung-Beispiel je Argument, die Steigerungslogik vom schwächsten zum stärksten Argument, ein konkretes Beispiel (Einleitung + ein Argument zum Thema Mitspracherecht von Schülern), häufige Fehler (Gegenargumente einbauen, fehlende Steigerung, fehlende Beispiele, späte Positionierung) und eine Abgabe-Checkliste. Grenzt sich bewusst von dialektischer und textgebundener Erörterung ab. |
@@ -1666,3 +1667,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 274)
 - konjunktionen-bestimmen-tipps -> adverbialsaetze-bestimmen-tipps (Adverbialsätze werden meist von unterordnenden Konjunktionen eingeleitet)
 - adverbialsaetze-bestimmen-tipps -> konjunktionen-bestimmen-tipps (Rückverlinkung in der Einleitung auf Konjunktionsarten)
+
+## Interne Verlinkungen (Artikel 275)
+- relativsaetze-bestimmen-tipps -> satzglieder-bestimmen-tipps (Verweis auf Grundlagen der Satzgliedbestimmung)
+- relativsaetze-bestimmen-tipps -> hauptsatz-nebensatz-unterscheiden-tipps (Verweis zur Abgrenzung Nebensatz-Erkennung)
+- relativsaetze-bestimmen-tipps -> adverbialsaetze-bestimmen-tipps (Verweis zur Abgrenzung anderer Nebensatzarten)
