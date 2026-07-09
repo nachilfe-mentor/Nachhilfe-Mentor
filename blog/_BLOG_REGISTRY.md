@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 275
-- Letzte Veröffentlichung: 2026-07-08
+- Gesamtzahl Artikel: 276
+- Letzte Veröffentlichung: 2026-07-09
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 276 | 2026-07-09 | konjunktiv-1-und-2-unterscheiden-tipps | Konjunktiv 1 und 2 unterscheiden: Regeln, Bildung und Beispiele einfach erklärt | Konjunktiv 1 und 2 unterscheiden, Konjunktiv I bilden, Konjunktiv II bilden, Konjunktiv Deutsch Grammatik, Konjunktiv Beispiele | Schule & Studium | Grammatikartikel zum Unterschied zwischen Konjunktiv 1 und Konjunktiv 2: Bildung (Präsensstamm vs. Präteritumstamm), Verwendung (indirekte Rede vs. Irrealis/Wunsch/Höflichkeit), Eselsbrücke zur Unterscheidung, würde-Form, häufige Fehler und Übungstipps inkl. Verweis auf die Konjunktiv-II-Simulation und den Artikel zur indirekten Rede. |
 | 275 | 2026-07-08 | relativsaetze-bestimmen-tipps | Relativsätze bestimmen: Regeln, Relativpronomen und Beispiele einfach erklärt | Relativsätze bestimmen, Relativpronomen, Relativsatz Beispiel, Relativsatz Komma, Nebensatz Deutsch | Schule & Studium | Relativsätze bestimmen: Regeln zur Erkennung von Relativsätzen, Übersicht der Relativpronomen nach Genus, Numerus und Kasus, Kommasetzungsregeln, Abgrenzung zu Adverbialsätzen und Hauptsatz/Nebensatz, mit Übungsbeispielen inkl. Lösungen. Ergänzt das Grammatik-Bestimmen-Cluster (Satzglieder, Hauptsatz/Nebensatz, Adverbialsätze, Pronomen). |
 | 274 | 2026-07-08 | konjunktionen-bestimmen-tipps | Konjunktionen bestimmen: Nebenordnende und unterordnende Konjunktionen einfach erklärt | Konjunktionen bestimmen, nebenordnende Konjunktionen, unterordnende Konjunktionen, Konjunktionen Deutsch, Konjunktionen Übungen | Schule & Studium | Grammatik-Artikel im Bestimmen-Cluster: erklärt den Unterschied zwischen nebenordnenden Konjunktionen (und, oder, aber, denn, sondern) und unterordnenden Konjunktionen (weil, dass, obwohl, während), inkl. 3-Schritte-Methode über die Verb-Position, Kommaregeln und häufige Fehler. Ergänzt adverbialsaetze-bestimmen-tipps und wortarten-bestimmen-tipps im Grammatik-Cluster. |
 | 273 | 2026-07-07 | oberbegriffe-unterbegriffe-bestimmen-tipps | Oberbegriffe und Unterbegriffe bestimmen: Tipps mit Beispielen | Oberbegriffe und Unterbegriffe, Oberbegriff bestimmen, Unterbegriffe Deutsch, Wortfeld, Wortschatz erweitern | Schule & Studium | Erklärt Oberbegriffe und Unterbegriffe (Hyponymie/Hyperonymie) mit Definition, zahlreichen Alltagsbeispielen, Abgrenzung zur Teil-Ganzes-Beziehung (Meronymie), Schritt-für-Schritt-Methode, einer Übung mit Lösung sowie häufigen Fehlern. Richtet sich an Grundschüler und Mittelstufenschüler im Deutschunterricht (Wortschatzarbeit). |
@@ -1672,3 +1673,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - relativsaetze-bestimmen-tipps -> satzglieder-bestimmen-tipps (Verweis auf Grundlagen der Satzgliedbestimmung)
 - relativsaetze-bestimmen-tipps -> hauptsatz-nebensatz-unterscheiden-tipps (Verweis zur Abgrenzung Nebensatz-Erkennung)
 - relativsaetze-bestimmen-tipps -> adverbialsaetze-bestimmen-tipps (Verweis zur Abgrenzung anderer Nebensatzarten)
+
+## Interne Verlinkungen (Artikel 276)
+- konjunktiv-1-und-2-unterscheiden-tipps -> indirekte-rede-bilden-tipps (Konjunktiv 1/2 wird bei der Bildung der indirekten Rede praktisch angewendet)
+- indirekte-rede-bilden-tipps -> konjunktiv-1-und-2-unterscheiden-tipps (Rückverlinkung im Abschnitt über Konjunktiv II statt Konjunktiv I)
