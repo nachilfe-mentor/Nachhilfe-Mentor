@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 277
+- Gesamtzahl Artikel: 278
 - Letzte Veröffentlichung: 2026-07-09
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 278 | 2026-07-09 | rollenbiografie-schreiben-tipps | Rollenbiografie schreiben: Aufbau, Tipps und Beispiel für die Dramenanalyse | Rollenbiografie schreiben, Rollenbiografie Aufbau, Rollenbiografie Beispiel, Rollenbiografie Dramenanalyse, fiktionale Biografie Deutsch | Schule & Studium | Rollenbiografie schreiben: Erklärt Aufgabe und Aufbau einer fiktionalen Rollenbiografie zu einer Dramenfigur (Herkunft, Wendepunkte, Beziehungen, innere Konflikte, aktueller Zustand), Tipps zur konsequenten Ich-Perspektive und zum textnahen Belegen ohne Widerspruch zum Drama, inkl. Beispieltext. Ergänzt den Dramenanalyse-/Charakterisierung-Cluster (Analyse-Textsorten mit hohem Engagement). |
 | 277 | 2026-07-09 | attribute-bestimmen-tipps | Attribute bestimmen: Genitivattribut, Adjektivattribut und Apposition einfach erklärt | Attribute bestimmen, Genitivattribut, Adjektivattribut, Apposition Deutsch, Attribut Satzglied | Schule & Studium | Artikel erklärt das Bestimmen von Attributen im Deutschunterricht: Adjektivattribut, Genitivattribut, Präpositionalattribut und Apposition. Enthält eine Schritt-für-Schritt-Methode, Beispiele mit verschachtelten Attributen, häufige Fehler und einen Trick zur Unterscheidung von Genitiv- und Präpositionalattribut über die Umformung mit 'von'. Ergänzt den Grammatik-Cluster rund um Satzglieder bestimmen. |
 | 276 | 2026-07-09 | konjunktiv-1-und-2-unterscheiden-tipps | Konjunktiv 1 und 2 unterscheiden: Regeln, Bildung und Beispiele einfach erklärt | Konjunktiv 1 und 2 unterscheiden, Konjunktiv I bilden, Konjunktiv II bilden, Konjunktiv Deutsch Grammatik, Konjunktiv Beispiele | Schule & Studium | Grammatikartikel zum Unterschied zwischen Konjunktiv 1 und Konjunktiv 2: Bildung (Präsensstamm vs. Präteritumstamm), Verwendung (indirekte Rede vs. Irrealis/Wunsch/Höflichkeit), Eselsbrücke zur Unterscheidung, würde-Form, häufige Fehler und Übungstipps inkl. Verweis auf die Konjunktiv-II-Simulation und den Artikel zur indirekten Rede. |
 | 275 | 2026-07-08 | relativsaetze-bestimmen-tipps | Relativsätze bestimmen: Regeln, Relativpronomen und Beispiele einfach erklärt | Relativsätze bestimmen, Relativpronomen, Relativsatz Beispiel, Relativsatz Komma, Nebensatz Deutsch | Schule & Studium | Relativsätze bestimmen: Regeln zur Erkennung von Relativsätzen, Übersicht der Relativpronomen nach Genus, Numerus und Kasus, Kommasetzungsregeln, Abgrenzung zu Adverbialsätzen und Hauptsatz/Nebensatz, mit Übungsbeispielen inkl. Lösungen. Ergänzt das Grammatik-Bestimmen-Cluster (Satzglieder, Hauptsatz/Nebensatz, Adverbialsätze, Pronomen). |
@@ -1683,3 +1684,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - attribute-bestimmen-tipps -> satzglieder-bestimmen-tipps (Attribute setzen Wissen über Satzglieder voraus, direkter Einstieg im ersten Absatz)
 - attribute-bestimmen-tipps -> aufsatz-ueberarbeiten-tipps (Attribute sinnvoll einzusetzen verbessert die Textqualität beim Überarbeiten)
 - satzglieder-bestimmen-tipps -> attribute-bestimmen-tipps (Rückverlinkung im Fazit als vertiefende Ergänzung zu Satzgliedern)
+
+## Interne Verlinkungen (Artikel 278)
+- rollenbiografie-schreiben-tipps -> dramenanalyse-schreiben-tipps (Rollenbiografie als produktionsorientierte Ergänzung zur Dramenanalyse)
+- rollenbiografie-schreiben-tipps -> charakterisierung-schreiben-tipps (Abgrenzung Ich-Perspektive vs. klassische Charakterisierung)
