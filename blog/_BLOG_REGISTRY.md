@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 276
+- Gesamtzahl Artikel: 277
 - Letzte Veröffentlichung: 2026-07-09
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 277 | 2026-07-09 | attribute-bestimmen-tipps | Attribute bestimmen: Genitivattribut, Adjektivattribut und Apposition einfach erklärt | Attribute bestimmen, Genitivattribut, Adjektivattribut, Apposition Deutsch, Attribut Satzglied | Schule & Studium | Artikel erklärt das Bestimmen von Attributen im Deutschunterricht: Adjektivattribut, Genitivattribut, Präpositionalattribut und Apposition. Enthält eine Schritt-für-Schritt-Methode, Beispiele mit verschachtelten Attributen, häufige Fehler und einen Trick zur Unterscheidung von Genitiv- und Präpositionalattribut über die Umformung mit 'von'. Ergänzt den Grammatik-Cluster rund um Satzglieder bestimmen. |
 | 276 | 2026-07-09 | konjunktiv-1-und-2-unterscheiden-tipps | Konjunktiv 1 und 2 unterscheiden: Regeln, Bildung und Beispiele einfach erklärt | Konjunktiv 1 und 2 unterscheiden, Konjunktiv I bilden, Konjunktiv II bilden, Konjunktiv Deutsch Grammatik, Konjunktiv Beispiele | Schule & Studium | Grammatikartikel zum Unterschied zwischen Konjunktiv 1 und Konjunktiv 2: Bildung (Präsensstamm vs. Präteritumstamm), Verwendung (indirekte Rede vs. Irrealis/Wunsch/Höflichkeit), Eselsbrücke zur Unterscheidung, würde-Form, häufige Fehler und Übungstipps inkl. Verweis auf die Konjunktiv-II-Simulation und den Artikel zur indirekten Rede. |
 | 275 | 2026-07-08 | relativsaetze-bestimmen-tipps | Relativsätze bestimmen: Regeln, Relativpronomen und Beispiele einfach erklärt | Relativsätze bestimmen, Relativpronomen, Relativsatz Beispiel, Relativsatz Komma, Nebensatz Deutsch | Schule & Studium | Relativsätze bestimmen: Regeln zur Erkennung von Relativsätzen, Übersicht der Relativpronomen nach Genus, Numerus und Kasus, Kommasetzungsregeln, Abgrenzung zu Adverbialsätzen und Hauptsatz/Nebensatz, mit Übungsbeispielen inkl. Lösungen. Ergänzt das Grammatik-Bestimmen-Cluster (Satzglieder, Hauptsatz/Nebensatz, Adverbialsätze, Pronomen). |
 | 274 | 2026-07-08 | konjunktionen-bestimmen-tipps | Konjunktionen bestimmen: Nebenordnende und unterordnende Konjunktionen einfach erklärt | Konjunktionen bestimmen, nebenordnende Konjunktionen, unterordnende Konjunktionen, Konjunktionen Deutsch, Konjunktionen Übungen | Schule & Studium | Grammatik-Artikel im Bestimmen-Cluster: erklärt den Unterschied zwischen nebenordnenden Konjunktionen (und, oder, aber, denn, sondern) und unterordnenden Konjunktionen (weil, dass, obwohl, während), inkl. 3-Schritte-Methode über die Verb-Position, Kommaregeln und häufige Fehler. Ergänzt adverbialsaetze-bestimmen-tipps und wortarten-bestimmen-tipps im Grammatik-Cluster. |
@@ -1677,3 +1678,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 276)
 - konjunktiv-1-und-2-unterscheiden-tipps -> indirekte-rede-bilden-tipps (Konjunktiv 1/2 wird bei der Bildung der indirekten Rede praktisch angewendet)
 - indirekte-rede-bilden-tipps -> konjunktiv-1-und-2-unterscheiden-tipps (Rückverlinkung im Abschnitt über Konjunktiv II statt Konjunktiv I)
+
+## Interne Verlinkungen (Artikel 277)
+- attribute-bestimmen-tipps -> satzglieder-bestimmen-tipps (Attribute setzen Wissen über Satzglieder voraus, direkter Einstieg im ersten Absatz)
+- attribute-bestimmen-tipps -> aufsatz-ueberarbeiten-tipps (Attribute sinnvoll einzusetzen verbessert die Textqualität beim Überarbeiten)
+- satzglieder-bestimmen-tipps -> attribute-bestimmen-tipps (Rückverlinkung im Fazit als vertiefende Ergänzung zu Satzgliedern)
