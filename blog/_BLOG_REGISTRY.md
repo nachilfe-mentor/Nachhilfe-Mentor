@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 278
-- Letzte Veröffentlichung: 2026-07-09
+- Gesamtzahl Artikel: 279
+- Letzte Veröffentlichung: 2026-07-10
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 279 | 2026-07-10 | partizip-1-und-2-bilden-tipps | Partizip I und II bilden: Regeln, Bildung und Beispiele einfach erklärt | Partizip I und II bilden, Partizip Präsens bilden, Partizip Perfekt bilden, Partizip Deutsch Grammatik, Partizip Beispiele | Schule & Studium | Artikel erklärt die Bildung von Partizip I (Präsens, Infinitiv+d, gleichzeitige Handlung) und Partizip II (Perfekt, ge+Stamm+t/en, abgeschlossene Handlung), inklusive Regeln für regelmäßige/unregelmäßige sowie trennbare/untrennbare Verben, Verwendung im Satz (Perfekt, Passiv, Adjektiv) und häufige Fehler mit Übungstipps. Teil des stark performenden Deutsch-Grammatik-Clusters (Kasus, Satzglieder, Wortarten, Konjunktiv etc.). |
 | 278 | 2026-07-09 | rollenbiografie-schreiben-tipps | Rollenbiografie schreiben: Aufbau, Tipps und Beispiel für die Dramenanalyse | Rollenbiografie schreiben, Rollenbiografie Aufbau, Rollenbiografie Beispiel, Rollenbiografie Dramenanalyse, fiktionale Biografie Deutsch | Schule & Studium | Rollenbiografie schreiben: Erklärt Aufgabe und Aufbau einer fiktionalen Rollenbiografie zu einer Dramenfigur (Herkunft, Wendepunkte, Beziehungen, innere Konflikte, aktueller Zustand), Tipps zur konsequenten Ich-Perspektive und zum textnahen Belegen ohne Widerspruch zum Drama, inkl. Beispieltext. Ergänzt den Dramenanalyse-/Charakterisierung-Cluster (Analyse-Textsorten mit hohem Engagement). |
 | 277 | 2026-07-09 | attribute-bestimmen-tipps | Attribute bestimmen: Genitivattribut, Adjektivattribut und Apposition einfach erklärt | Attribute bestimmen, Genitivattribut, Adjektivattribut, Apposition Deutsch, Attribut Satzglied | Schule & Studium | Artikel erklärt das Bestimmen von Attributen im Deutschunterricht: Adjektivattribut, Genitivattribut, Präpositionalattribut und Apposition. Enthält eine Schritt-für-Schritt-Methode, Beispiele mit verschachtelten Attributen, häufige Fehler und einen Trick zur Unterscheidung von Genitiv- und Präpositionalattribut über die Umformung mit 'von'. Ergänzt den Grammatik-Cluster rund um Satzglieder bestimmen. |
 | 276 | 2026-07-09 | konjunktiv-1-und-2-unterscheiden-tipps | Konjunktiv 1 und 2 unterscheiden: Regeln, Bildung und Beispiele einfach erklärt | Konjunktiv 1 und 2 unterscheiden, Konjunktiv I bilden, Konjunktiv II bilden, Konjunktiv Deutsch Grammatik, Konjunktiv Beispiele | Schule & Studium | Grammatikartikel zum Unterschied zwischen Konjunktiv 1 und Konjunktiv 2: Bildung (Präsensstamm vs. Präteritumstamm), Verwendung (indirekte Rede vs. Irrealis/Wunsch/Höflichkeit), Eselsbrücke zur Unterscheidung, würde-Form, häufige Fehler und Übungstipps inkl. Verweis auf die Konjunktiv-II-Simulation und den Artikel zur indirekten Rede. |
@@ -1688,3 +1689,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 278)
 - rollenbiografie-schreiben-tipps -> dramenanalyse-schreiben-tipps (Rollenbiografie als produktionsorientierte Ergänzung zur Dramenanalyse)
 - rollenbiografie-schreiben-tipps -> charakterisierung-schreiben-tipps (Abgrenzung Ich-Perspektive vs. klassische Charakterisierung)
+
+## Interne Verlinkungen (Artikel 279)
+- partizip-1-und-2-bilden-tipps -> vorgangsbeschreibung-schreiben-tipps (Partizipien werden in Sachtexten wie Vorgangsbeschreibungen häufig genutzt)
