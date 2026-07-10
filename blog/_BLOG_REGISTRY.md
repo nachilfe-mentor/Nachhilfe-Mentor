@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 280
+- Gesamtzahl Artikel: 281
 - Letzte Veröffentlichung: 2026-07-10
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 281 | 2026-07-10 | spracherwerbstheorien-tipps | Spracherwerbstheorien einfach erklärt: Behaviorismus, Nativismus und Interaktionismus | Spracherwerbstheorien, Behaviorismus Spracherwerb, Nativismus Chomsky, Interaktionismus Sprache, Spracherwerb Theorien Vergleich | Schule & Studium | Erklärt die drei zentralen Spracherwerbstheorien (Behaviorismus nach Skinner, Nativismus nach Chomsky mit Language Acquisition Device und Poverty-of-Stimulus-Argument, Interaktionismus nach Bruner/Wygotski mit Scaffolding und Motherese) im Vergleich, mit dem 'gegeht'-Beispiel zur Illustration von Übergeneralisierung. Zielgruppe: Studierende Anglistik/Germanistik/Lehramt sowie Oberstufenschüler mit Sprachwissenschaft-Bezug. Verlinkt die bestehende Simulation lernmaterialien/spracherwerbstheorien-simulation.html (füllte zuvor eine Lücke ohne passenden Artikel) und die Nachhilfe Mentor App im Fließtext. |
 | 280 | 2026-07-10 | adjektivdeklination-tipps | Adjektivdeklination: Starke, schwache und gemischte Deklination einfach erklärt | Adjektivdeklination, Adjektivdeklination Regeln, starke schwache gemischte Deklination, Adjektivendungen Deutsch, Adjektiv deklinieren Übungen | Schule & Studium | Erklärt die drei Typen der Adjektivdeklination im Deutschen (stark, schwach, gemischt) mit Endungstabellen für alle vier Fälle, einer Schritt-für-Schritt-Anleitung, einer Lückenübung mit Lösung und den häufigsten Fehlerquellen wie der Verwechslung von 'ein' und 'der'. Verlinkt auf faelle-bestimmen-tipps als Voraussetzung. |
 | 279 | 2026-07-10 | partizip-1-und-2-bilden-tipps | Partizip I und II bilden: Regeln, Bildung und Beispiele einfach erklärt | Partizip I und II bilden, Partizip Präsens bilden, Partizip Perfekt bilden, Partizip Deutsch Grammatik, Partizip Beispiele | Schule & Studium | Artikel erklärt die Bildung von Partizip I (Präsens, Infinitiv+d, gleichzeitige Handlung) und Partizip II (Perfekt, ge+Stamm+t/en, abgeschlossene Handlung), inklusive Regeln für regelmäßige/unregelmäßige sowie trennbare/untrennbare Verben, Verwendung im Satz (Perfekt, Passiv, Adjektiv) und häufige Fehler mit Übungstipps. Teil des stark performenden Deutsch-Grammatik-Clusters (Kasus, Satzglieder, Wortarten, Konjunktiv etc.). |
 | 278 | 2026-07-09 | rollenbiografie-schreiben-tipps | Rollenbiografie schreiben: Aufbau, Tipps und Beispiel für die Dramenanalyse | Rollenbiografie schreiben, Rollenbiografie Aufbau, Rollenbiografie Beispiel, Rollenbiografie Dramenanalyse, fiktionale Biografie Deutsch | Schule & Studium | Rollenbiografie schreiben: Erklärt Aufgabe und Aufbau einer fiktionalen Rollenbiografie zu einer Dramenfigur (Herkunft, Wendepunkte, Beziehungen, innere Konflikte, aktueller Zustand), Tipps zur konsequenten Ich-Perspektive und zum textnahen Belegen ohne Widerspruch zum Drama, inkl. Beispieltext. Ergänzt den Dramenanalyse-/Charakterisierung-Cluster (Analyse-Textsorten mit hohem Engagement). |
@@ -1697,3 +1698,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 280)
 - adjektivdeklination-tipps -> faelle-bestimmen-tipps (Kasusbestimmung als Voraussetzung für die Adjektivdeklination)
 - faelle-bestimmen-tipps -> adjektivdeklination-tipps (Rückverlinkung im Fazit: Kasus als Voraussetzung für Adjektivendungen)
+
+## Interne Verlinkungen (Artikel 281)
+- spracherwerbstheorien-tipps -> englisch-lernen-tipps (Verweis für Leser, die sich für die Wissenschaft hinter effektivem Sprachenlernen interessieren)
+- englisch-lernen-tipps -> spracherwerbstheorien-tipps (Rückverlinkung im Einleitungsabsatz zu 'Warum fällt Englisch lernen vielen so schwer')
