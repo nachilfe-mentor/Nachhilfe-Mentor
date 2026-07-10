@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 279
+- Gesamtzahl Artikel: 280
 - Letzte Veröffentlichung: 2026-07-10
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 280 | 2026-07-10 | adjektivdeklination-tipps | Adjektivdeklination: Starke, schwache und gemischte Deklination einfach erklärt | Adjektivdeklination, Adjektivdeklination Regeln, starke schwache gemischte Deklination, Adjektivendungen Deutsch, Adjektiv deklinieren Übungen | Schule & Studium | Erklärt die drei Typen der Adjektivdeklination im Deutschen (stark, schwach, gemischt) mit Endungstabellen für alle vier Fälle, einer Schritt-für-Schritt-Anleitung, einer Lückenübung mit Lösung und den häufigsten Fehlerquellen wie der Verwechslung von 'ein' und 'der'. Verlinkt auf faelle-bestimmen-tipps als Voraussetzung. |
 | 279 | 2026-07-10 | partizip-1-und-2-bilden-tipps | Partizip I und II bilden: Regeln, Bildung und Beispiele einfach erklärt | Partizip I und II bilden, Partizip Präsens bilden, Partizip Perfekt bilden, Partizip Deutsch Grammatik, Partizip Beispiele | Schule & Studium | Artikel erklärt die Bildung von Partizip I (Präsens, Infinitiv+d, gleichzeitige Handlung) und Partizip II (Perfekt, ge+Stamm+t/en, abgeschlossene Handlung), inklusive Regeln für regelmäßige/unregelmäßige sowie trennbare/untrennbare Verben, Verwendung im Satz (Perfekt, Passiv, Adjektiv) und häufige Fehler mit Übungstipps. Teil des stark performenden Deutsch-Grammatik-Clusters (Kasus, Satzglieder, Wortarten, Konjunktiv etc.). |
 | 278 | 2026-07-09 | rollenbiografie-schreiben-tipps | Rollenbiografie schreiben: Aufbau, Tipps und Beispiel für die Dramenanalyse | Rollenbiografie schreiben, Rollenbiografie Aufbau, Rollenbiografie Beispiel, Rollenbiografie Dramenanalyse, fiktionale Biografie Deutsch | Schule & Studium | Rollenbiografie schreiben: Erklärt Aufgabe und Aufbau einer fiktionalen Rollenbiografie zu einer Dramenfigur (Herkunft, Wendepunkte, Beziehungen, innere Konflikte, aktueller Zustand), Tipps zur konsequenten Ich-Perspektive und zum textnahen Belegen ohne Widerspruch zum Drama, inkl. Beispieltext. Ergänzt den Dramenanalyse-/Charakterisierung-Cluster (Analyse-Textsorten mit hohem Engagement). |
 | 277 | 2026-07-09 | attribute-bestimmen-tipps | Attribute bestimmen: Genitivattribut, Adjektivattribut und Apposition einfach erklärt | Attribute bestimmen, Genitivattribut, Adjektivattribut, Apposition Deutsch, Attribut Satzglied | Schule & Studium | Artikel erklärt das Bestimmen von Attributen im Deutschunterricht: Adjektivattribut, Genitivattribut, Präpositionalattribut und Apposition. Enthält eine Schritt-für-Schritt-Methode, Beispiele mit verschachtelten Attributen, häufige Fehler und einen Trick zur Unterscheidung von Genitiv- und Präpositionalattribut über die Umformung mit 'von'. Ergänzt den Grammatik-Cluster rund um Satzglieder bestimmen. |
@@ -1692,3 +1693,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Interne Verlinkungen (Artikel 279)
 - partizip-1-und-2-bilden-tipps -> vorgangsbeschreibung-schreiben-tipps (Partizipien werden in Sachtexten wie Vorgangsbeschreibungen häufig genutzt)
+
+## Interne Verlinkungen (Artikel 280)
+- adjektivdeklination-tipps -> faelle-bestimmen-tipps (Kasusbestimmung als Voraussetzung für die Adjektivdeklination)
+- faelle-bestimmen-tipps -> adjektivdeklination-tipps (Rückverlinkung im Fazit: Kasus als Voraussetzung für Adjektivendungen)
