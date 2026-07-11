@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 281
-- Letzte Veröffentlichung: 2026-07-10
+- Gesamtzahl Artikel: 282
+- Letzte Veröffentlichung: 2026-07-11
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 282 | 2026-07-11 | figurenkonstellation-analysieren-tipps | Figurenkonstellation analysieren: Aufbau, Beziehungsdiagramm und Formulierungen | Figurenkonstellation, Figurenkonstellation analysieren, Beziehungsdiagramm Deutsch, Deutsch Klausur Drama | Schule & Studium | Artikel erklärt, wie man eine Figurenkonstellation analysiert: Definition, Abgrenzung zur Figurenanalyse, Schritt-für-Schritt-Anleitung zum Erstellen eines Beziehungsdiagramms, Aufbau der schriftlichen Analyse, typische Formulierungen und häufige Fehler. Zielgruppe: Oberstufenschüler bei Drama- und Romananalysen in Deutsch. |
 | 281 | 2026-07-10 | spracherwerbstheorien-tipps | Spracherwerbstheorien einfach erklärt: Behaviorismus, Nativismus und Interaktionismus | Spracherwerbstheorien, Behaviorismus Spracherwerb, Nativismus Chomsky, Interaktionismus Sprache, Spracherwerb Theorien Vergleich | Schule & Studium | Erklärt die drei zentralen Spracherwerbstheorien (Behaviorismus nach Skinner, Nativismus nach Chomsky mit Language Acquisition Device und Poverty-of-Stimulus-Argument, Interaktionismus nach Bruner/Wygotski mit Scaffolding und Motherese) im Vergleich, mit dem 'gegeht'-Beispiel zur Illustration von Übergeneralisierung. Zielgruppe: Studierende Anglistik/Germanistik/Lehramt sowie Oberstufenschüler mit Sprachwissenschaft-Bezug. Verlinkt die bestehende Simulation lernmaterialien/spracherwerbstheorien-simulation.html (füllte zuvor eine Lücke ohne passenden Artikel) und die Nachhilfe Mentor App im Fließtext. |
 | 280 | 2026-07-10 | adjektivdeklination-tipps | Adjektivdeklination: Starke, schwache und gemischte Deklination einfach erklärt | Adjektivdeklination, Adjektivdeklination Regeln, starke schwache gemischte Deklination, Adjektivendungen Deutsch, Adjektiv deklinieren Übungen | Schule & Studium | Erklärt die drei Typen der Adjektivdeklination im Deutschen (stark, schwach, gemischt) mit Endungstabellen für alle vier Fälle, einer Schritt-für-Schritt-Anleitung, einer Lückenübung mit Lösung und den häufigsten Fehlerquellen wie der Verwechslung von 'ein' und 'der'. Verlinkt auf faelle-bestimmen-tipps als Voraussetzung. |
 | 279 | 2026-07-10 | partizip-1-und-2-bilden-tipps | Partizip I und II bilden: Regeln, Bildung und Beispiele einfach erklärt | Partizip I und II bilden, Partizip Präsens bilden, Partizip Perfekt bilden, Partizip Deutsch Grammatik, Partizip Beispiele | Schule & Studium | Artikel erklärt die Bildung von Partizip I (Präsens, Infinitiv+d, gleichzeitige Handlung) und Partizip II (Perfekt, ge+Stamm+t/en, abgeschlossene Handlung), inklusive Regeln für regelmäßige/unregelmäßige sowie trennbare/untrennbare Verben, Verwendung im Satz (Perfekt, Passiv, Adjektiv) und häufige Fehler mit Übungstipps. Teil des stark performenden Deutsch-Grammatik-Clusters (Kasus, Satzglieder, Wortarten, Konjunktiv etc.). |
@@ -1702,3 +1703,6 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 281)
 - spracherwerbstheorien-tipps -> englisch-lernen-tipps (Verweis für Leser, die sich für die Wissenschaft hinter effektivem Sprachenlernen interessieren)
 - englisch-lernen-tipps -> spracherwerbstheorien-tipps (Rückverlinkung im Einleitungsabsatz zu 'Warum fällt Englisch lernen vielen so schwer')
+
+## Interne Verlinkungen (Artikel 282)
+- figurenkonstellation-analysieren-tipps -> figurenanalyse-schreiben-tipps (Abgrenzung Figurenkonstellation vs. Figurenanalyse erklärt)
