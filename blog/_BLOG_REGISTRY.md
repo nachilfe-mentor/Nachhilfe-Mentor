@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 285
+- Gesamtzahl Artikel: 286
 - Letzte Veröffentlichung: 2026-07-12
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 286 | 2026-07-12 | fehleranalyse-fremdsprache-tipps | Fehleranalyse beim Fremdsprachenlernen: Eigene Fehler erkennen und verbessern | Fehleranalyse Fremdsprache, Fehler beim Sprachenlernen, eigene Fehler erkennen, Interlanguage, Fehler analysieren lernen | Schule & Studium | Artikel erklärt Fehleranalyse (Interlanguage-Konzept) beim Fremdsprachenlernen: drei Fehlertypen (Interferenz, Übergeneralisierung, Entwicklungsfehler), vierstufige Methode zum Sammeln/Beschreiben/Mustersuchen/gezielten Üben eigener Fehler, plus Hinweis auf App-Unterstützung. Füllt Lücke für die unverlinkte Simulation lernmaterialien/interlanguage-fehleranalyse-simulation.html im Sprachen-/Grammatik-Cluster. |
 | 285 | 2026-07-12 | podcast-skript-schreiben-tipps | Podcast-Skript schreiben: Aufbau, Struktur und Tipps für dein Schulprojekt | Podcast-Skript schreiben, Podcast Schule, Skript für Podcast, Podcast Aufbau | Schule & Studium | Erklärt den Aufbau eines Podcast-Skripts für Schulprojekte (Deutsch/Medienkunde) in drei Bausteinen (Intro, Hauptteil, Outro), gibt eine Schritt-für-Schritt-Anleitung (Thema eingrenzen, Stichpunkte statt Fließtext, Sprechpausen markieren, Übergänge planen, laut vorlesen), listet 5 häufige Fehler auf und geht speziell auf Interview-Podcasts ein. Verlinkt zu interview-schreiben-tipps und referat-halten-tipps, erwähnt die Nachhilfe Mentor App für Projektplanung. |
 | 284 | 2026-07-11 | teilchenbewegung-temperatur-tipps | Teilchenbewegung und Temperatur einfach erklärt: Das Teilchenmodell verstehen | Teilchenbewegung, Teilchenmodell Physik, Temperatur Teilchen, kinetische Gastheorie, Aggregatzustände einfach erklärt | Schule & Studium | Erklärt das Teilchenmodell (kinetische Gastheorie): Zusammenhang zwischen Teilchenbewegung und Temperatur, die drei Aggregatzustände aus Teilchensicht, warum sich Gase bei Erwärmung ausdehnen, typische Denkfehler und Lernstrategien. Physik/Chemie-Fachcluster, füllt eine explizit dokumentierte Content-Lücke zur bestehenden Simulation lernmaterialien/teilchenbewegung-temperatur-simulation.html. Verlinkt intern zu physik-lernen-tipps und chemie-lernen-tipps. |
 | 283 | 2026-07-11 | modalverben-bestimmen-tipps | Modalverben bestimmen: Bedeutung, Konjugation und Beispiele einfach erklärt | Modalverben bestimmen, Modalverben Bedeutung, Modalverben konjugieren, Modalverben Deutsch Liste, Modalverben Beispiele | Schule & Studium | Modalverben-bestimmen-tipps erklärt die sechs deutschen Modalverben (können, müssen, dürfen, sollen, wollen, mögen), ihre Bedeutung, Konjugation im Präsens, die Bildung des Ersatzinfinitivs im Perfekt sowie die Erkennung im Satz anhand Position und Bedeutung. Enthält Tipps zur Unterscheidung von sollen und wollen sowie zum Einsatz von Modalverben in Erörterungen. |
@@ -1723,3 +1724,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - podcast-skript-schreiben-tipps -> interview-schreiben-tipps (Interview-Podcast-Format braucht vorbereitete Fragen, verweist auf Interview-Guide)
 - podcast-skript-schreiben-tipps -> referat-halten-tipps (Analogie freies Sprechen vs. Ablesen)
 - interview-schreiben-tipps -> podcast-skript-schreiben-tipps (Rückverlinkung im Schlussabschnitt: Interview für Audioformat vorbereiten)
+
+## Interne Verlinkungen (Artikel 286)
+- fehleranalyse-fremdsprache-tipps -> vokabeln-lernen-tipps (Kombination von Fehleranalyse mit Vokabellernstrategien)
+- fehleranalyse-fremdsprache-tipps -> englisch-lernen-tipps (Vertiefung aktiver Übung als Ergänzung zur Fehleranalyse)
+- englisch-lernen-tipps -> fehleranalyse-fremdsprache-tipps (Rückverlinkung im Abschnitt Grammatik durch Beispiele verstehen)
