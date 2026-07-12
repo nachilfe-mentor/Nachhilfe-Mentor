@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 284
-- Letzte Veröffentlichung: 2026-07-11
+- Gesamtzahl Artikel: 285
+- Letzte Veröffentlichung: 2026-07-12
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 285 | 2026-07-12 | podcast-skript-schreiben-tipps | Podcast-Skript schreiben: Aufbau, Struktur und Tipps für dein Schulprojekt | Podcast-Skript schreiben, Podcast Schule, Skript für Podcast, Podcast Aufbau | Schule & Studium | Erklärt den Aufbau eines Podcast-Skripts für Schulprojekte (Deutsch/Medienkunde) in drei Bausteinen (Intro, Hauptteil, Outro), gibt eine Schritt-für-Schritt-Anleitung (Thema eingrenzen, Stichpunkte statt Fließtext, Sprechpausen markieren, Übergänge planen, laut vorlesen), listet 5 häufige Fehler auf und geht speziell auf Interview-Podcasts ein. Verlinkt zu interview-schreiben-tipps und referat-halten-tipps, erwähnt die Nachhilfe Mentor App für Projektplanung. |
 | 284 | 2026-07-11 | teilchenbewegung-temperatur-tipps | Teilchenbewegung und Temperatur einfach erklärt: Das Teilchenmodell verstehen | Teilchenbewegung, Teilchenmodell Physik, Temperatur Teilchen, kinetische Gastheorie, Aggregatzustände einfach erklärt | Schule & Studium | Erklärt das Teilchenmodell (kinetische Gastheorie): Zusammenhang zwischen Teilchenbewegung und Temperatur, die drei Aggregatzustände aus Teilchensicht, warum sich Gase bei Erwärmung ausdehnen, typische Denkfehler und Lernstrategien. Physik/Chemie-Fachcluster, füllt eine explizit dokumentierte Content-Lücke zur bestehenden Simulation lernmaterialien/teilchenbewegung-temperatur-simulation.html. Verlinkt intern zu physik-lernen-tipps und chemie-lernen-tipps. |
 | 283 | 2026-07-11 | modalverben-bestimmen-tipps | Modalverben bestimmen: Bedeutung, Konjugation und Beispiele einfach erklärt | Modalverben bestimmen, Modalverben Bedeutung, Modalverben konjugieren, Modalverben Deutsch Liste, Modalverben Beispiele | Schule & Studium | Modalverben-bestimmen-tipps erklärt die sechs deutschen Modalverben (können, müssen, dürfen, sollen, wollen, mögen), ihre Bedeutung, Konjugation im Präsens, die Bildung des Ersatzinfinitivs im Perfekt sowie die Erkennung im Satz anhand Position und Bedeutung. Enthält Tipps zur Unterscheidung von sollen und wollen sowie zum Einsatz von Modalverben in Erörterungen. |
 | 282 | 2026-07-11 | figurenkonstellation-analysieren-tipps | Figurenkonstellation analysieren: Aufbau, Beziehungsdiagramm und Formulierungen | Figurenkonstellation, Figurenkonstellation analysieren, Beziehungsdiagramm Deutsch, Deutsch Klausur Drama | Schule & Studium | Artikel erklärt, wie man eine Figurenkonstellation analysiert: Definition, Abgrenzung zur Figurenanalyse, Schritt-für-Schritt-Anleitung zum Erstellen eines Beziehungsdiagramms, Aufbau der schriftlichen Analyse, typische Formulierungen und häufige Fehler. Zielgruppe: Oberstufenschüler bei Drama- und Romananalysen in Deutsch. |
@@ -1717,3 +1718,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - teilchenbewegung-temperatur-tipps -> physik-lernen-tipps (Vertiefender Link zum allgemeinen Physik-Lernartikel)
 - teilchenbewegung-temperatur-tipps -> chemie-lernen-tipps (Aggregatzustände sind auch Chemie-relevant)
 - physik-lernen-tipps -> teilchenbewegung-temperatur-tipps (Rückverlinkung im Fazit als Beispiel für Verständnis-statt-Auswendiglernen-Prinzip)
+
+## Interne Verlinkungen (Artikel 285)
+- podcast-skript-schreiben-tipps -> interview-schreiben-tipps (Interview-Podcast-Format braucht vorbereitete Fragen, verweist auf Interview-Guide)
+- podcast-skript-schreiben-tipps -> referat-halten-tipps (Analogie freies Sprechen vs. Ablesen)
+- interview-schreiben-tipps -> podcast-skript-schreiben-tipps (Rückverlinkung im Schlussabschnitt: Interview für Audioformat vorbereiten)
