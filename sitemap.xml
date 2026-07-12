@@ -463,6 +463,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://nachhilfe-mentor.de/blog/posts/feature-schreiben-tipps.html</loc>
+    <lastmod>2026-07-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/fehleranalyse-fremdsprache-tipps.html</loc>
     <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
@@ -1334,7 +1340,7 @@
   </url>
   <url>
     <loc>https://nachhilfe-mentor.de/blog/posts/reportage-schreiben-tipps.html</loc>
-    <lastmod>2026-06-17</lastmod>
+    <lastmod>2026-07-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
