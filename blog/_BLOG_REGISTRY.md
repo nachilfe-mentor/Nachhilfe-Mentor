@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 288
+- Gesamtzahl Artikel: 289
 - Letzte Veröffentlichung: 2026-07-13
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 289 | 2026-07-13 | kunst-lernen-tipps | Kunst lernen: Tipps für Bildbetrachtung, Epochen und die Klausur | Kunst lernen, Kunstunterricht Tipps, Bildbetrachtung Kunst | Schule & Studium | Lerntipps-Artikel für das Schulfach Kunst (Kunstunterricht, Kunstgeschichte, Bildbetrachtung), Klasse 8-13. Erklärt, warum Kunst sowohl praktisches Gestalten als auch theoretisches Wissen erfordert und wie man für Klausuren gezielt lernt. Strategien zum Merken von Epochen und Künstlern (Zeitleiste, Leitbild pro Epoche, Merkmale statt Auswendiglernen, Künstler-Werk-Verknüpfung). Dreistufiges Bildanalyseschema (Beschreibung, Formanalyse, Deutung) analog zu Karikaturanalyse/Sachtextanalyse. Praktische Lernstrategien (bebilderte Karteikarten, Üben an unbekannten Bildern, Fachbegriffe sammeln, Museumsbesuche). 4 häufige Fehler, 5-Punkte-Checkliste. App-Erwähnung (Nachhilfe Mentor App zur Wissensabfrage). Crosslink zu karikaturanalyse-schreiben-tipps (gleiches Beschreibung-Deutung-Prinzip). Neuer Fachcluster-Artikel, schließt Lücke im Fachspezifisch-Cluster (Kunst war bisher nicht abgedeckt, anders als Musik, Sport, Religion-Nachbarfach Ethik/Philosophie). |
 | 288 | 2026-07-13 | nominalisierung-tipps | Nominalisierung: Verben und Adjektive in Nomen umwandeln einfach erklärt | Nominalisierung, Nominalisierung Deutsch, Verben nominalisieren, Adjektive nominalisieren, Nominalisierung Regeln | Schule & Studium | Erklärt Nominalisierung im Deutschen: substantivierter Infinitiv bei Verben, typische Adjektiv-Endungen (-heit, -keit, -e), häufige Rechtschreibfehler (Großschreibung, fehlender Artikel, Nominalisierungsketten) und eine Übung mit Lösung. Verlinkt auf Groß- und Kleinschreibung, Erörterung schreiben; erwähnt die Nachhilfe Mentor App als Übungshilfe. |
 | 287 | 2026-07-12 | feature-schreiben-tipps | Feature schreiben: Aufbau, Merkmale und Beispiel für die Schule | Feature schreiben, Feature Aufbau, Feature Merkmale, journalistische Textsorten, Feature Beispiel Deutsch | Schule & Studium | Erklärt die journalistische Textsorte Feature: Merkmale (Thema statt Ereignis, mehrere Perspektiven, erzählerische Elemente, Recherchebasis), dreiteiligen Aufbau (Einstieg, Hauptteil, Schluss), Sprache/Stil, ein Beispiel-Einstieg, Abgrenzung zu Reportage und Kommentar, häufige Fehler und eine Checkliste. Verlinkt reportage-schreiben-tipps, kommentar-schreiben-tipps und interview-schreiben-tipps. |
 | 286 | 2026-07-12 | fehleranalyse-fremdsprache-tipps | Fehleranalyse beim Fremdsprachenlernen: Eigene Fehler erkennen und verbessern | Fehleranalyse Fremdsprache, Fehler beim Sprachenlernen, eigene Fehler erkennen, Interlanguage, Fehler analysieren lernen | Schule & Studium | Artikel erklärt Fehleranalyse (Interlanguage-Konzept) beim Fremdsprachenlernen: drei Fehlertypen (Interferenz, Übergeneralisierung, Entwicklungsfehler), vierstufige Methode zum Sammeln/Beschreiben/Mustersuchen/gezielten Üben eigener Fehler, plus Hinweis auf App-Unterstützung. Füllt Lücke für die unverlinkte Simulation lernmaterialien/interlanguage-fehleranalyse-simulation.html im Sprachen-/Grammatik-Cluster. |
@@ -1742,3 +1743,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - nominalisierung-tipps -> gross-und-kleinschreibung-tipps (Großschreibregeln gelten auch für nominalisierte Wörter)
 - nominalisierung-tipps -> eroerterung-schreiben-tipps (Nominalisierung als Stilmittel in der Erörterung)
 - wortarten-bestimmen-tipps -> nominalisierung-tipps (Rückverlinkung im Nomen-Abschnitt: Nomen entstehen oft durch Nominalisierung)
+
+## Interne Verlinkungen (Artikel 289)
+- kunst-lernen-tipps -> karikaturanalyse-schreiben-tipps (Gleiches Prinzip: Beschreibung vor Deutung trennen)
+- karikaturanalyse-schreiben-tipps -> kunst-lernen-tipps (Rückverlinkung als verwandtes Analyseprinzip in der Bildbetrachtung)
