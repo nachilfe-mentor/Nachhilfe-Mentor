@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 287
-- Letzte Veröffentlichung: 2026-07-12
+- Gesamtzahl Artikel: 288
+- Letzte Veröffentlichung: 2026-07-13
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 288 | 2026-07-13 | nominalisierung-tipps | Nominalisierung: Verben und Adjektive in Nomen umwandeln einfach erklärt | Nominalisierung, Nominalisierung Deutsch, Verben nominalisieren, Adjektive nominalisieren, Nominalisierung Regeln | Schule & Studium | Erklärt Nominalisierung im Deutschen: substantivierter Infinitiv bei Verben, typische Adjektiv-Endungen (-heit, -keit, -e), häufige Rechtschreibfehler (Großschreibung, fehlender Artikel, Nominalisierungsketten) und eine Übung mit Lösung. Verlinkt auf Groß- und Kleinschreibung, Erörterung schreiben; erwähnt die Nachhilfe Mentor App als Übungshilfe. |
 | 287 | 2026-07-12 | feature-schreiben-tipps | Feature schreiben: Aufbau, Merkmale und Beispiel für die Schule | Feature schreiben, Feature Aufbau, Feature Merkmale, journalistische Textsorten, Feature Beispiel Deutsch | Schule & Studium | Erklärt die journalistische Textsorte Feature: Merkmale (Thema statt Ereignis, mehrere Perspektiven, erzählerische Elemente, Recherchebasis), dreiteiligen Aufbau (Einstieg, Hauptteil, Schluss), Sprache/Stil, ein Beispiel-Einstieg, Abgrenzung zu Reportage und Kommentar, häufige Fehler und eine Checkliste. Verlinkt reportage-schreiben-tipps, kommentar-schreiben-tipps und interview-schreiben-tipps. |
 | 286 | 2026-07-12 | fehleranalyse-fremdsprache-tipps | Fehleranalyse beim Fremdsprachenlernen: Eigene Fehler erkennen und verbessern | Fehleranalyse Fremdsprache, Fehler beim Sprachenlernen, eigene Fehler erkennen, Interlanguage, Fehler analysieren lernen | Schule & Studium | Artikel erklärt Fehleranalyse (Interlanguage-Konzept) beim Fremdsprachenlernen: drei Fehlertypen (Interferenz, Übergeneralisierung, Entwicklungsfehler), vierstufige Methode zum Sammeln/Beschreiben/Mustersuchen/gezielten Üben eigener Fehler, plus Hinweis auf App-Unterstützung. Füllt Lücke für die unverlinkte Simulation lernmaterialien/interlanguage-fehleranalyse-simulation.html im Sprachen-/Grammatik-Cluster. |
 | 285 | 2026-07-12 | podcast-skript-schreiben-tipps | Podcast-Skript schreiben: Aufbau, Struktur und Tipps für dein Schulprojekt | Podcast-Skript schreiben, Podcast Schule, Skript für Podcast, Podcast Aufbau | Schule & Studium | Erklärt den Aufbau eines Podcast-Skripts für Schulprojekte (Deutsch/Medienkunde) in drei Bausteinen (Intro, Hauptteil, Outro), gibt eine Schritt-für-Schritt-Anleitung (Thema eingrenzen, Stichpunkte statt Fließtext, Sprechpausen markieren, Übergänge planen, laut vorlesen), listet 5 häufige Fehler auf und geht speziell auf Interview-Podcasts ein. Verlinkt zu interview-schreiben-tipps und referat-halten-tipps, erwähnt die Nachhilfe Mentor App für Projektplanung. |
@@ -1736,3 +1737,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - feature-schreiben-tipps -> kommentar-schreiben-tipps (Vergleich mit dem meinungsbetonten Kommentar)
 - feature-schreiben-tipps -> interview-schreiben-tipps (Hinweis auf Interviews als Rechercheinstrument für Features)
 - reportage-schreiben-tipps -> feature-schreiben-tipps (Rückverlinkung in der Checkliste, um das Repertoire journalistischer Textsorten zu ergänzen)
+
+## Interne Verlinkungen (Artikel 288)
+- nominalisierung-tipps -> gross-und-kleinschreibung-tipps (Großschreibregeln gelten auch für nominalisierte Wörter)
+- nominalisierung-tipps -> eroerterung-schreiben-tipps (Nominalisierung als Stilmittel in der Erörterung)
+- wortarten-bestimmen-tipps -> nominalisierung-tipps (Rückverlinkung im Nomen-Abschnitt: Nomen entstehen oft durch Nominalisierung)
