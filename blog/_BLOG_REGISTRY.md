@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 290
-- Letzte Veröffentlichung: 2026-07-13
+- Gesamtzahl Artikel: 291
+- Letzte Veröffentlichung: 2026-07-14
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 291 | 2026-07-14 | praeteritum-bilden-tipps | Präteritum bilden: Regeln, starke und schwache Verben einfach erklärt | Präteritum bilden, Präteritum Regeln, starke und schwache Verben, Präteritum Beispiele, Präteritum Deutsch Übungen | Schule & Studium | Grammatikartikel zum Präteritum bilden: erklärt die Bildung bei schwachen Verben (-te-Endung), starken Verben (Stammvokalwechsel) und gemischten Verben (denken/dachte), listet Signalwörter für die einfache Vergangenheit, behandelt sein/haben im Präteritum, häufige Fehler und eine Übung. Ergänzt den erfolgreichen Grammatik-Subcluster (Zeitformen, Modalverben, Konjunktiv, Aktiv/Passiv) um ein Kernthema mit hohem Suchvolumen für Klasse 5-8. |
 | 290 | 2026-07-13 | email-schreiben-tipps | E-Mail schreiben: Aufbau, Formulierungen und Beispiel für Schule und Ausbildung | E-Mail schreiben, E-Mail Aufbau, formelle E-Mail schreiben, E-Mail an Lehrer schreiben, E-Mail Beispiel Schule | Schule & Studium | E-Mail schreiben: Aufbau (Betreff, Anrede, Einleitung, Hauptteil, Schluss, Grußformel), höfliche Formulierungen, ein vollständiges Beispiel für eine E-Mail an eine Lehrkraft, typische Fehler (fehlender Betreff, zu lockerer Ton, fehlende Signatur, Rechtschreibfehler), situationsabhängige Tonalität (Lehrer, Ausbildungsbetrieb, Universität) und eine Checkliste vor dem Absenden. Verlinkt auf formellen-brief-schreiben-tipps wegen ähnlichem Aufbau. |
 | 289 | 2026-07-13 | kunst-lernen-tipps | Kunst lernen: Tipps für Bildbetrachtung, Epochen und die Klausur | Kunst lernen, Kunstunterricht Tipps, Bildbetrachtung Kunst | Schule & Studium | Lerntipps-Artikel für das Schulfach Kunst (Kunstunterricht, Kunstgeschichte, Bildbetrachtung), Klasse 8-13. Erklärt, warum Kunst sowohl praktisches Gestalten als auch theoretisches Wissen erfordert und wie man für Klausuren gezielt lernt. Strategien zum Merken von Epochen und Künstlern (Zeitleiste, Leitbild pro Epoche, Merkmale statt Auswendiglernen, Künstler-Werk-Verknüpfung). Dreistufiges Bildanalyseschema (Beschreibung, Formanalyse, Deutung) analog zu Karikaturanalyse/Sachtextanalyse. Praktische Lernstrategien (bebilderte Karteikarten, Üben an unbekannten Bildern, Fachbegriffe sammeln, Museumsbesuche). 4 häufige Fehler, 5-Punkte-Checkliste. App-Erwähnung (Nachhilfe Mentor App zur Wissensabfrage). Crosslink zu karikaturanalyse-schreiben-tipps (gleiches Beschreibung-Deutung-Prinzip). Neuer Fachcluster-Artikel, schließt Lücke im Fachspezifisch-Cluster (Kunst war bisher nicht abgedeckt, anders als Musik, Sport, Religion-Nachbarfach Ethik/Philosophie). |
 | 288 | 2026-07-13 | nominalisierung-tipps | Nominalisierung: Verben und Adjektive in Nomen umwandeln einfach erklärt | Nominalisierung, Nominalisierung Deutsch, Verben nominalisieren, Adjektive nominalisieren, Nominalisierung Regeln | Schule & Studium | Erklärt Nominalisierung im Deutschen: substantivierter Infinitiv bei Verben, typische Adjektiv-Endungen (-heit, -keit, -e), häufige Rechtschreibfehler (Großschreibung, fehlender Artikel, Nominalisierungsketten) und eine Übung mit Lösung. Verlinkt auf Groß- und Kleinschreibung, Erörterung schreiben; erwähnt die Nachhilfe Mentor App als Übungshilfe. |
@@ -1752,3 +1753,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 290)
 - email-schreiben-tipps -> formellen-brief-schreiben-tipps (Ähnlicher Aufbau formeller Schriftstücke, natürliche Ergänzung am Artikelende)
 - formellen-brief-schreiben-tipps -> email-schreiben-tipps (Rückverlinkung als moderne Alternative zum formellen Brief)
+
+## Interne Verlinkungen (Artikel 291)
+- praeteritum-bilden-tipps -> zeitformen-bestimmen-tipps (Signalwörter fürs Zeitformen bestimmen als vertiefende Verlinkung)
+- zeitformen-bestimmen-tipps -> praeteritum-bilden-tipps (Vertiefende Verlinkung im Abschnitt zum Präteritum als einfache Vergangenheit)
