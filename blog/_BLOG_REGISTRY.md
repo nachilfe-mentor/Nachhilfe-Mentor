@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 291
+- Gesamtzahl Artikel: 292
 - Letzte Veröffentlichung: 2026-07-14
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 292 | 2026-07-14 | songtext-schreiben-tipps | Songtext schreiben: Tipps für deinen eigenen Text in Deutsch und Musik | Songtext schreiben, Songtext Aufbau, eigener Song Text, Refrain schreiben | Schule & Studium | Anleitung zum Songtext schreiben: Themenfindung, klassischer Aufbau (Strophe, Refrain, Bridge), Reimschema (Paarreim, Kreuzreim), Stilmittel (Metapher, Anapher, Wiederholung) und Rhythmus. Enthält Checkliste und häufige Fehler. Richtet sich an Schüler in Deutsch- oder Musikunterricht. |
 | 291 | 2026-07-14 | praeteritum-bilden-tipps | Präteritum bilden: Regeln, starke und schwache Verben einfach erklärt | Präteritum bilden, Präteritum Regeln, starke und schwache Verben, Präteritum Beispiele, Präteritum Deutsch Übungen | Schule & Studium | Grammatikartikel zum Präteritum bilden: erklärt die Bildung bei schwachen Verben (-te-Endung), starken Verben (Stammvokalwechsel) und gemischten Verben (denken/dachte), listet Signalwörter für die einfache Vergangenheit, behandelt sein/haben im Präteritum, häufige Fehler und eine Übung. Ergänzt den erfolgreichen Grammatik-Subcluster (Zeitformen, Modalverben, Konjunktiv, Aktiv/Passiv) um ein Kernthema mit hohem Suchvolumen für Klasse 5-8. |
 | 290 | 2026-07-13 | email-schreiben-tipps | E-Mail schreiben: Aufbau, Formulierungen und Beispiel für Schule und Ausbildung | E-Mail schreiben, E-Mail Aufbau, formelle E-Mail schreiben, E-Mail an Lehrer schreiben, E-Mail Beispiel Schule | Schule & Studium | E-Mail schreiben: Aufbau (Betreff, Anrede, Einleitung, Hauptteil, Schluss, Grußformel), höfliche Formulierungen, ein vollständiges Beispiel für eine E-Mail an eine Lehrkraft, typische Fehler (fehlender Betreff, zu lockerer Ton, fehlende Signatur, Rechtschreibfehler), situationsabhängige Tonalität (Lehrer, Ausbildungsbetrieb, Universität) und eine Checkliste vor dem Absenden. Verlinkt auf formellen-brief-schreiben-tipps wegen ähnlichem Aufbau. |
 | 289 | 2026-07-13 | kunst-lernen-tipps | Kunst lernen: Tipps für Bildbetrachtung, Epochen und die Klausur | Kunst lernen, Kunstunterricht Tipps, Bildbetrachtung Kunst | Schule & Studium | Lerntipps-Artikel für das Schulfach Kunst (Kunstunterricht, Kunstgeschichte, Bildbetrachtung), Klasse 8-13. Erklärt, warum Kunst sowohl praktisches Gestalten als auch theoretisches Wissen erfordert und wie man für Klausuren gezielt lernt. Strategien zum Merken von Epochen und Künstlern (Zeitleiste, Leitbild pro Epoche, Merkmale statt Auswendiglernen, Künstler-Werk-Verknüpfung). Dreistufiges Bildanalyseschema (Beschreibung, Formanalyse, Deutung) analog zu Karikaturanalyse/Sachtextanalyse. Praktische Lernstrategien (bebilderte Karteikarten, Üben an unbekannten Bildern, Fachbegriffe sammeln, Museumsbesuche). 4 häufige Fehler, 5-Punkte-Checkliste. App-Erwähnung (Nachhilfe Mentor App zur Wissensabfrage). Crosslink zu karikaturanalyse-schreiben-tipps (gleiches Beschreibung-Deutung-Prinzip). Neuer Fachcluster-Artikel, schließt Lücke im Fachspezifisch-Cluster (Kunst war bisher nicht abgedeckt, anders als Musik, Sport, Religion-Nachbarfach Ethik/Philosophie). |
@@ -1757,3 +1758,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 291)
 - praeteritum-bilden-tipps -> zeitformen-bestimmen-tipps (Signalwörter fürs Zeitformen bestimmen als vertiefende Verlinkung)
 - zeitformen-bestimmen-tipps -> praeteritum-bilden-tipps (Vertiefende Verlinkung im Abschnitt zum Präteritum als einfache Vergangenheit)
+
+## Interne Verlinkungen (Artikel 292)
+- songtext-schreiben-tipps -> liedtextanalyse-schreiben-tipps (Verweis auf Stilmittel-Analyse als Ergänzung zum eigenen Schreiben)
+- liedtextanalyse-schreiben-tipps -> songtext-schreiben-tipps (Rückverlinkung im Fazit als kreative Ergänzung zur Analyse)
