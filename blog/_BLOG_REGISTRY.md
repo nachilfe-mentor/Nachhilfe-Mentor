@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 292
-- Letzte Veröffentlichung: 2026-07-14
+- Gesamtzahl Artikel: 293
+- Letzte Veröffentlichung: 2026-07-15
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 293 | 2026-07-15 | hyponymie-hyperonymie-tipps | Hyponymie und Hyperonymie einfach erklärt: Wortbedeutungen im Deutschunterricht | Hyponymie und Hyperonymie, Hyponymie einfach erklärt, Hyperonymie Beispiele, Meronymie Deutsch, semantische Relationen | Schule & Studium | Erklärt die linguistischen Grundbegriffe Hyponymie (Unterbegriff), Hyperonymie (Oberbegriff), Kohyponymie (Begriffe gleicher Ebene) und Meronymie (Teil-Ganzes-Beziehung) mit Testsätzen zur Unterscheidung, Beispielen und einer Übung. Richtet sich an Oberstufenschüler in Sprachanalyse/Linguistik-Kursen. Verlinkt zu oberbegriffe-unterbegriffe-bestimmen-tipps und wird von dort zurückverlinkt (Meronymie-Abschnitt). Schließt die im Lernmaterial-Kontext als 'KEINER GEFUNDEN' markierte Lücke für die Simulation hyponymie-hyperonymie-semantik-simulation.html. |
 | 292 | 2026-07-14 | songtext-schreiben-tipps | Songtext schreiben: Tipps für deinen eigenen Text in Deutsch und Musik | Songtext schreiben, Songtext Aufbau, eigener Song Text, Refrain schreiben | Schule & Studium | Anleitung zum Songtext schreiben: Themenfindung, klassischer Aufbau (Strophe, Refrain, Bridge), Reimschema (Paarreim, Kreuzreim), Stilmittel (Metapher, Anapher, Wiederholung) und Rhythmus. Enthält Checkliste und häufige Fehler. Richtet sich an Schüler in Deutsch- oder Musikunterricht. |
 | 291 | 2026-07-14 | praeteritum-bilden-tipps | Präteritum bilden: Regeln, starke und schwache Verben einfach erklärt | Präteritum bilden, Präteritum Regeln, starke und schwache Verben, Präteritum Beispiele, Präteritum Deutsch Übungen | Schule & Studium | Grammatikartikel zum Präteritum bilden: erklärt die Bildung bei schwachen Verben (-te-Endung), starken Verben (Stammvokalwechsel) und gemischten Verben (denken/dachte), listet Signalwörter für die einfache Vergangenheit, behandelt sein/haben im Präteritum, häufige Fehler und eine Übung. Ergänzt den erfolgreichen Grammatik-Subcluster (Zeitformen, Modalverben, Konjunktiv, Aktiv/Passiv) um ein Kernthema mit hohem Suchvolumen für Klasse 5-8. |
 | 290 | 2026-07-13 | email-schreiben-tipps | E-Mail schreiben: Aufbau, Formulierungen und Beispiel für Schule und Ausbildung | E-Mail schreiben, E-Mail Aufbau, formelle E-Mail schreiben, E-Mail an Lehrer schreiben, E-Mail Beispiel Schule | Schule & Studium | E-Mail schreiben: Aufbau (Betreff, Anrede, Einleitung, Hauptteil, Schluss, Grußformel), höfliche Formulierungen, ein vollständiges Beispiel für eine E-Mail an eine Lehrkraft, typische Fehler (fehlender Betreff, zu lockerer Ton, fehlende Signatur, Rechtschreibfehler), situationsabhängige Tonalität (Lehrer, Ausbildungsbetrieb, Universität) und eine Checkliste vor dem Absenden. Verlinkt auf formellen-brief-schreiben-tipps wegen ähnlichem Aufbau. |
@@ -1762,3 +1763,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 292)
 - songtext-schreiben-tipps -> liedtextanalyse-schreiben-tipps (Verweis auf Stilmittel-Analyse als Ergänzung zum eigenen Schreiben)
 - liedtextanalyse-schreiben-tipps -> songtext-schreiben-tipps (Rückverlinkung im Fazit als kreative Ergänzung zur Analyse)
+
+## Interne Verlinkungen (Artikel 293)
+- hyponymie-hyperonymie-tipps -> oberbegriffe-unterbegriffe-bestimmen-tipps (Vertiefung zur Schritt-für-Schritt-Methode bei Ober-/Unterbegriffen)
+- oberbegriffe-unterbegriffe-bestimmen-tipps -> hyponymie-hyperonymie-tipps (Rückverlinkung im Meronymie-Abschnitt auf die Fachbegriffe Hyponymie/Hyperonymie)
