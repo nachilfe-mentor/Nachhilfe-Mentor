@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Wed, 15 Jul 2026 17:10:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 01:13:21 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Adverbien bestimmen: Die Adverb-Arten einfach erklärt mit Beispielen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/adverbien-bestimmen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/adverbien-bestimmen-tipps.html</guid>
+      <pubDate>Thu, 16 Jul 2026 01:12:57 +0000</pubDate>
+      <description>Adverbien bestimmen leicht gemacht: Erkennungsfragen, alle Adverb-Arten mit Beispielen und der Unterschied zu Adjektiven einfach erklärt.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Wortarten bestimmen: Die 10 Wortarten einfach erklärt mit Übungen</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/wortarten-bestimmen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/wortarten-bestimmen-tipps.html</guid>
+      <pubDate>Thu, 16 Jul 2026 01:12:15 +0000</pubDate>
+      <description>Wortarten bestimmen leicht gemacht: Alle 10 Wortarten mit Erklärung, Beispielen, Eselsbrücken und Übungen. So erkennst du Nomen, Verb, Adjektiv und Co.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Hyponymie und Hyperonymie einfach erklärt: Wortbedeutungen im Deutschunterricht</title>
       <link>https://nachhilfe-mentor.de/blog/posts/hyponymie-hyperonymie-tipps.html</link>
@@ -96,14 +112,6 @@
       <category>Schule &amp; Studium</category>
     </item>
     <item>
-      <title>Wortarten bestimmen: Die 10 Wortarten einfach erklärt mit Übungen</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/wortarten-bestimmen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/wortarten-bestimmen-tipps.html</guid>
-      <pubDate>Mon, 13 Jul 2026 00:50:57 +0000</pubDate>
-      <description>Wortarten bestimmen leicht gemacht: Alle 10 Wortarten mit Erklärung, Beispielen, Eselsbrücken und Übungen. So erkennst du Nomen, Verb, Adjektiv und Co.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
       <title>Feature schreiben: Aufbau, Merkmale und Beispiel für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/feature-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/feature-schreiben-tipps.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 11 Jul 2026 16:39:31 +0000</pubDate>
       <description>Teilchenbewegung und Temperatur einfach erklärt: Wie das Teilchenmodell Aggregatzustände, Druck und Wärme erklärt. Mit Beispielen und Lerntipps für Physik &amp; Chemie.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Physik lernen: 7 Tipps, mit denen du Physik endlich verstehst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/physik-lernen-tipps.html</guid>
-      <pubDate>Sat, 11 Jul 2026 16:38:20 +0000</pubDate>
-      <description>Physik lernen leicht gemacht: 7 bewährte Tipps, die dir helfen, Formeln zu verstehen statt auswendig zu pauken. Praktisch, direkt umsetzbar und für Schüler und Studenten.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
