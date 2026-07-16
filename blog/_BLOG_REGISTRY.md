@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 293
-- Letzte Veröffentlichung: 2026-07-15
+- Gesamtzahl Artikel: 294
+- Letzte Veröffentlichung: 2026-07-16
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 294 | 2026-07-16 | adverbien-bestimmen-tipps | Adverbien bestimmen: Die Adverb-Arten einfach erklärt mit Beispielen | Adverbien bestimmen, Adverb Arten, Adverbien Beispiele, Adverb oder Adjektiv, Umstandswort Deutsch | Schule & Studium | Grammatik-Artikel zum Bestimmen von Adverbien: erklärt die vier Hauptarten (Lokal-, Temporal-, Modal-, Kausaladverbien) mit Beispielen, zeigt Erkennungsfragen und grenzt Adverbien klar von Adjektiven und Präpositionen ab. Enthält Übungssatz und Verweis auf die Nachhilfe Mentor App. |
 | 293 | 2026-07-15 | hyponymie-hyperonymie-tipps | Hyponymie und Hyperonymie einfach erklärt: Wortbedeutungen im Deutschunterricht | Hyponymie und Hyperonymie, Hyponymie einfach erklärt, Hyperonymie Beispiele, Meronymie Deutsch, semantische Relationen | Schule & Studium | Erklärt die linguistischen Grundbegriffe Hyponymie (Unterbegriff), Hyperonymie (Oberbegriff), Kohyponymie (Begriffe gleicher Ebene) und Meronymie (Teil-Ganzes-Beziehung) mit Testsätzen zur Unterscheidung, Beispielen und einer Übung. Richtet sich an Oberstufenschüler in Sprachanalyse/Linguistik-Kursen. Verlinkt zu oberbegriffe-unterbegriffe-bestimmen-tipps und wird von dort zurückverlinkt (Meronymie-Abschnitt). Schließt die im Lernmaterial-Kontext als 'KEINER GEFUNDEN' markierte Lücke für die Simulation hyponymie-hyperonymie-semantik-simulation.html. |
 | 292 | 2026-07-14 | songtext-schreiben-tipps | Songtext schreiben: Tipps für deinen eigenen Text in Deutsch und Musik | Songtext schreiben, Songtext Aufbau, eigener Song Text, Refrain schreiben | Schule & Studium | Anleitung zum Songtext schreiben: Themenfindung, klassischer Aufbau (Strophe, Refrain, Bridge), Reimschema (Paarreim, Kreuzreim), Stilmittel (Metapher, Anapher, Wiederholung) und Rhythmus. Enthält Checkliste und häufige Fehler. Richtet sich an Schüler in Deutsch- oder Musikunterricht. |
 | 291 | 2026-07-14 | praeteritum-bilden-tipps | Präteritum bilden: Regeln, starke und schwache Verben einfach erklärt | Präteritum bilden, Präteritum Regeln, starke und schwache Verben, Präteritum Beispiele, Präteritum Deutsch Übungen | Schule & Studium | Grammatikartikel zum Präteritum bilden: erklärt die Bildung bei schwachen Verben (-te-Endung), starken Verben (Stammvokalwechsel) und gemischten Verben (denken/dachte), listet Signalwörter für die einfache Vergangenheit, behandelt sein/haben im Präteritum, häufige Fehler und eine Übung. Ergänzt den erfolgreichen Grammatik-Subcluster (Zeitformen, Modalverben, Konjunktiv, Aktiv/Passiv) um ein Kernthema mit hohem Suchvolumen für Klasse 5-8. |
@@ -1767,3 +1768,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 293)
 - hyponymie-hyperonymie-tipps -> oberbegriffe-unterbegriffe-bestimmen-tipps (Vertiefung zur Schritt-für-Schritt-Methode bei Ober-/Unterbegriffen)
 - oberbegriffe-unterbegriffe-bestimmen-tipps -> hyponymie-hyperonymie-tipps (Rückverlinkung im Meronymie-Abschnitt auf die Fachbegriffe Hyponymie/Hyperonymie)
+
+## Interne Verlinkungen (Artikel 294)
+- adverbien-bestimmen-tipps -> adjektive-steigern-tipps (Verweis beim Vergleich Adverb/Adjektiv auf den Steigerungsartikel)
+- wortarten-bestimmen-tipps -> adverbien-bestimmen-tipps (Rückverlinkung im Abschnitt zur Wortart Adverb)
