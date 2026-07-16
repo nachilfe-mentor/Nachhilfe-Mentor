@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 16 Jul 2026 09:16:39 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 17:20:12 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Hörspiel schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/hoerspiel-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/hoerspiel-schreiben-tipps.html</guid>
+      <pubDate>Thu, 16 Jul 2026 17:19:54 +0000</pubDate>
+      <description>Hörspiel schreiben lernen: Aufbau, Regieanweisungen, Geräusche und ein Beispiel. So gelingt dein Hörspiel-Skript für Deutsch in der Schule.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Dialog schreiben: Aufbau, Regeln und Beispiele für lebendige Texte</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/dialog-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/dialog-schreiben-tipps.html</guid>
+      <pubDate>Thu, 16 Jul 2026 17:18:31 +0000</pubDate>
+      <description>Dialog schreiben lernen: Regeln für wörtliche Rede, Redebegleitsätze und Aufbau mit Beispielen für Kurzgeschichten und Erzählungen in der Schule.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Genus bestimmen: der, die oder das? Regeln und Eselsbrücken einfach erklärt</title>
       <link>https://nachhilfe-mentor.de/blog/posts/genus-bestimmen-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sun, 12 Jul 2026 08:44:56 +0000</pubDate>
       <description>Englisch lernen leicht gemacht: 8 bewährte Tipps für Schüler und Studenten. Von Vokabeln über Grammatik bis zum freien Sprechen.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Podcast-Skript schreiben: Aufbau, Struktur und Tipps für dein Schulprojekt</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/podcast-skript-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/podcast-skript-schreiben-tipps.html</guid>
-      <pubDate>Sun, 12 Jul 2026 00:42:52 +0000</pubDate>
-      <description>Podcast-Skript schreiben leicht gemacht: So baust du dein Skript auf, formulierst natürlich gesprochene Sätze und strukturierst dein Schulprojekt in Deutsch oder Medienkunde.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Interview schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/interview-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/interview-schreiben-tipps.html</guid>
-      <pubDate>Sun, 12 Jul 2026 00:41:46 +0000</pubDate>
-      <description>Interview schreiben für die Schule: So strukturierst du Fragen, Einleitung und Antworten richtig. Mit Aufbau, Tipps und Beispiel für Klasse 7–10.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
