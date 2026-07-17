@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 296
-- Letzte Veröffentlichung: 2026-07-16
+- Gesamtzahl Artikel: 297
+- Letzte Veröffentlichung: 2026-07-17
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 297 | 2026-07-17 | wortbildung-tipps | Wortbildung: Komposition, Derivation und Konversion einfach erklärt | Wortbildung, Wortbildung Deutsch, Komposition Derivation, Wortbildungsarten, Konversion Deutsch | Schule & Studium | Erklärt die drei zentralen Wortbildungsarten im Deutschen (Komposition, Derivation, Konversion) mit Beispielen, Eselsbrücke zum Kopf von Komposita und einer Zuordnungsübung. Verweist auf nominalisierung-tipps als spezielleren Teilbereich und verlinkt die Komposita-Simulation. |
 | 296 | 2026-07-16 | hoerspiel-schreiben-tipps | Hörspiel schreiben: Aufbau, Tipps und Beispiel für die Schule | Hörspiel schreiben, Hörspiel Aufbau Schule, Hörspiel schreiben Tipps, Hörspiel Beispiel Deutsch, Regieanweisungen Hörspiel | Schule & Studium | Vollständige Anleitung zum Hörspiel schreiben für die Schule: Erklärt den Unterschied zum bildbasierten Erzählen (nur Stimme, Geräusch, Musik), Aufbau (Exposition, Spannungsaufbau, Höhepunkt, Auflösung), vier Bausteine des Skripts (Dialog, Regieanweisungen, Geräusche/Atmo, Musik), 6-Schritte-Vorgehen (Idee, Figuren mit unterschiedlichen Stimmen, Szenenplan, Dialoge schreiben, Geräusche einplanen, laut vorlesen und überarbeiten), Beispiel-Szene mit Regen/Donner/Schritten, 5 häufige Fehler (zu viel Beschreibung im Dialog, zu lange Sätze, Figuren klingen gleich, vage Geräusche, kein Vorlesetest), Tipps für die Aufnahme im Schulprojekt (Smartphone, Alltagsgegenstände als Geräuschquelle). App-Erwähnung (Skript hochladen, Rückfragen zu Aufbau und Spannungskurve vor der Aufnahme). Crosslinks zu dialog-schreiben-tipps und podcast-skript-schreiben-tipps. Rückverlinkung von dialog-schreiben-tipps (Fazit). |
 | 295 | 2026-07-16 | genus-bestimmen-tipps | Genus bestimmen: der, die oder das? Regeln und Eselsbrücken einfach erklärt | Genus bestimmen, der die das Regeln, Genus Deutsch, grammatikalisches Geschlecht, Artikel bestimmen Deutsch | Schule & Studium | Erklärt, wie man das grammatikalische Geschlecht (Genus: der/die/das) deutscher Nomen bestimmt. Behandelt Suffix-Regeln für Maskulinum (-er, -ling, -ismus), Femininum (-heit, -keit, -ung, -schaft, -tion) und Neutrum (-chen, -lein, -um, -ment), sowie Muster für Wochentage, zusammengesetzte Nomen und Verkleinerungsformen. Enthält Eselsbrücken für Ausnahmen und eine Übungsanleitung mit Karteikarten-Farbcodierung. Verlinkt auf die Genus-Regeln- und Genus-Suffixregeln-Simulationen sowie auf wortarten-bestimmen-tipps. |
 | 294 | 2026-07-16 | adverbien-bestimmen-tipps | Adverbien bestimmen: Die Adverb-Arten einfach erklärt mit Beispielen | Adverbien bestimmen, Adverb Arten, Adverbien Beispiele, Adverb oder Adjektiv, Umstandswort Deutsch | Schule & Studium | Grammatik-Artikel zum Bestimmen von Adverbien: erklärt die vier Hauptarten (Lokal-, Temporal-, Modal-, Kausaladverbien) mit Beispielen, zeigt Erkennungsfragen und grenzt Adverbien klar von Adjektiven und Präpositionen ab. Enthält Übungssatz und Verweis auf die Nachhilfe Mentor App. |
@@ -1783,3 +1784,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - hoerspiel-schreiben-tipps -> dialog-schreiben-tipps (Vertiefung der Dialogtechnik, die im Hörspiel besonders wichtig ist)
 - hoerspiel-schreiben-tipps -> podcast-skript-schreiben-tipps (Verwandtes audio-basiertes Skriptformat mit ähnlichem Aufbau)
 - dialog-schreiben-tipps -> hoerspiel-schreiben-tipps (Rückverlinkung im Fazit auf hörbare Dialoge im Hörspiel)
+
+## Interne Verlinkungen (Artikel 297)
+- wortbildung-tipps -> nominalisierung-tipps (Nominalisierung als spezielle Form der Derivation erwähnt und verlinkt)
+- nominalisierung-tipps -> wortbildung-tipps (Rückverlinkung im Fazit-Absatz auf den übergeordneten Wortbildungs-Artikel)
