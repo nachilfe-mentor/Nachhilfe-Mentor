@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 16 Jul 2026 17:20:12 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Jul 2026 01:22:50 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Wortbildung: Komposition, Derivation und Konversion einfach erklärt</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/wortbildung-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/wortbildung-tipps.html</guid>
+      <pubDate>Fri, 17 Jul 2026 01:22:32 +0000</pubDate>
+      <description>Wortbildung einfach erklärt: Wie Komposition, Derivation und Konversion neue Wörter im Deutschen erzeugen. Mit Beispielen, Übung und Eselsbrücken.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Nominalisierung: Verben und Adjektive in Nomen umwandeln einfach erklärt</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/nominalisierung-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/nominalisierung-tipps.html</guid>
+      <pubDate>Fri, 17 Jul 2026 01:21:22 +0000</pubDate>
+      <description>Nominalisierung leicht erklärt: So verwandelst du Verben und Adjektive in Nomen, erkennst typische Endungen und vermeidest Rechtschreibfehler. Mit Übungen.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Hörspiel schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/hoerspiel-schreiben-tipps.html</link>
@@ -128,14 +144,6 @@
       <category>Schule &amp; Studium</category>
     </item>
     <item>
-      <title>Nominalisierung: Verben und Adjektive in Nomen umwandeln einfach erklärt</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/nominalisierung-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/nominalisierung-tipps.html</guid>
-      <pubDate>Mon, 13 Jul 2026 00:52:27 +0000</pubDate>
-      <description>Nominalisierung leicht erklärt: So verwandelst du Verben und Adjektive in Nomen, erkennst typische Endungen und vermeidest Rechtschreibfehler. Mit Übungen.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
       <title>Feature schreiben: Aufbau, Merkmale und Beispiel für die Schule</title>
       <link>https://nachhilfe-mentor.de/blog/posts/feature-schreiben-tipps.html</link>
       <guid>https://nachhilfe-mentor.de/blog/posts/feature-schreiben-tipps.html</guid>
@@ -158,14 +166,6 @@
       <pubDate>Sun, 12 Jul 2026 08:46:27 +0000</pubDate>
       <description>Fehleranalyse hilft dir, typische Fehler beim Fremdsprachenlernen zu erkennen und gezielt zu beheben. Mit Beispielen und einer einfachen Schritt-für-Schritt-Methode.</description>
       <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Englisch lernen: 8 Tipps, mit denen du schnell besser wirst</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/englisch-lernen-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/englisch-lernen-tipps.html</guid>
-      <pubDate>Sun, 12 Jul 2026 08:44:56 +0000</pubDate>
-      <description>Englisch lernen leicht gemacht: 8 bewährte Tipps für Schüler und Studenten. Von Vokabeln über Grammatik bis zum freien Sprechen.</description>
-      <category>Fachspezifische Lerntipps</category>
     </item>
   </channel>
 </rss>
