@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 300
+- Gesamtzahl Artikel: 301
 - Letzte Veröffentlichung: 2026-07-18
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 301 | 2026-07-18 | quadratische-gleichungen-loesen-tipps | Quadratische Gleichungen lösen: pq-Formel, Mitternachtsformel & Tipps | quadratische Gleichungen lösen, pq-Formel, Mitternachtsformel, Diskriminante | Schule & Studium | Mathe-Longtail-Artikel zu quadratischen Gleichungen (Klasse 9/10): erklärt reinquadratische, ohne Absolutglied und gemischtquadratische Gleichungen, pq-Formel, Mitternachtsformel, Diskriminante, Ausklammern/binomische Formeln als Abkürzung, häufigste Fehler und Übungstipps. Verlinkt zu kurvendiskussion-tipps und binomische-formeln-lernen (mit Rückverlinkung dort). Erwähnt Nachhilfe Mentor App einmal im Fließtext für Übungsaufgaben. |
 | 300 | 2026-07-18 | gegenstandsbeschreibung-schreiben-tipps | Gegenstandsbeschreibung schreiben: Aufbau, Merkmale und Beispiel einfach erklärt | Gegenstandsbeschreibung schreiben, Gegenstandsbeschreibung Aufbau, Gegenstandsbeschreibung Beispiel, Gegenstandsbeschreibung Merkmale, Beschreibung schreiben Deutsch | Schule & Studium | Erklärt die Gegenstandsbeschreibung als Textsorte für Klasse 5-7: Aufbau (Einleitung, Hauptteil vom Groben zum Detail, Schluss), Merkmale (Präsens, sachlicher Stil, Fachbegriffe, präzise Angaben), ein vollständiges Beispiel (Bleistift-Beschreibung), 5 häufige Fehler und eine Abgabe-Checkliste. Ergänzt den Beschreibungs-Cluster neben Vorgangsbeschreibung, Personenbeschreibung, Tierbeschreibung und Wegbeschreibung. |
 | 299 | 2026-07-17 | perfekt-bilden-tipps | Perfekt bilden: Regeln, haben oder sein und Beispiele einfach erklärt | Perfekt bilden, Perfekt Deutsch Regeln, haben oder sein Perfekt, Partizip II Perfekt, Perfekt Beispiele Deutsch | Schule & Studium | Artikel erklärt die Bildung des Perfekts im Deutschen: Aufbau aus Hilfsverb (haben oder sein) und Partizip II, klare Regeln zur Wahl des Hilfsverbs (Ortsveränderung, Zustandsveränderung vs. übrige Verben), Partizip-II-Bildung bei regelmäßigen/unregelmäßigen sowie trennbaren/untrennbaren Verben, Wortstellung im Satz, Abgrenzung zum Präteritum und häufige Fehler mit Übungstipps. Teil des stark performenden Deutsch-Grammatik-Clusters (Partizip, Präteritum, Zeitformen, Konjunktiv etc.). |
 | 298 | 2026-07-17 | sonett-analysieren-tipps | Sonett analysieren: Aufbau, Merkmale und Beispiel einfach erklärt | Sonett analysieren, Sonett Aufbau, Sonett Merkmale, Sonett Reimschema, Sonett Beispiel Deutsch | Schule & Studium | Anleitung zum Analysieren eines Sonetts: formaler Aufbau mit zwei Quartetten und zwei Terzetten, typisches Reimschema (umarmender Reim, meist abba abba), Metrum (fünfhebiger Jambus, im Barock oft Alexandriner), die inhaltliche Wendung (Volte) am Übergang zu den Terzetten, Beispiel anhand von Gryphius' Barock-Sonett, relevante Stilmittel (Antithesen, Metaphern, Anaphern, Enjambements) sowie eine Gliederung für die schriftliche Analyse und häufige Fehler. Ergänzt den stark performenden Gedicht-/Analyse-Cluster (gedichtanalyse-schreiben-tipps, ballade-analysieren-tipps, gedichtvergleich-schreiben-tipps) um eine bislang fehlende, formstrenge Gedichtform für Oberstufe und Abitur. |
@@ -1805,3 +1806,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 300)
 - gegenstandsbeschreibung-schreiben-tipps -> vorgangsbeschreibung-schreiben-tipps (verwandte Beschreibungsart, gleiches Prinzip auf Abläufe übertragen)
 - gegenstandsbeschreibung-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Hub-Seite mit Überblick über alle Aufsatzformen)
+
+## Interne Verlinkungen (Artikel 301)
+- quadratische-gleichungen-loesen-tipps -> kurvendiskussion-tipps (Nullstellenbestimmung in der Kurvendiskussion nutzt quadratische Gleichungen)
+- quadratische-gleichungen-loesen-tipps -> binomische-formeln-lernen (Binomische Formeln als Abkürzung beim Lösen erwähnt)
+- binomische-formeln-lernen -> quadratische-gleichungen-loesen-tipps (Rückverlinkung im Abschnitt über weiterführende Mathematik)
