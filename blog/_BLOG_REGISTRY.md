@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 299
-- Letzte Veröffentlichung: 2026-07-17
+- Gesamtzahl Artikel: 300
+- Letzte Veröffentlichung: 2026-07-18
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 300 | 2026-07-18 | gegenstandsbeschreibung-schreiben-tipps | Gegenstandsbeschreibung schreiben: Aufbau, Merkmale und Beispiel einfach erklärt | Gegenstandsbeschreibung schreiben, Gegenstandsbeschreibung Aufbau, Gegenstandsbeschreibung Beispiel, Gegenstandsbeschreibung Merkmale, Beschreibung schreiben Deutsch | Schule & Studium | Erklärt die Gegenstandsbeschreibung als Textsorte für Klasse 5-7: Aufbau (Einleitung, Hauptteil vom Groben zum Detail, Schluss), Merkmale (Präsens, sachlicher Stil, Fachbegriffe, präzise Angaben), ein vollständiges Beispiel (Bleistift-Beschreibung), 5 häufige Fehler und eine Abgabe-Checkliste. Ergänzt den Beschreibungs-Cluster neben Vorgangsbeschreibung, Personenbeschreibung, Tierbeschreibung und Wegbeschreibung. |
 | 299 | 2026-07-17 | perfekt-bilden-tipps | Perfekt bilden: Regeln, haben oder sein und Beispiele einfach erklärt | Perfekt bilden, Perfekt Deutsch Regeln, haben oder sein Perfekt, Partizip II Perfekt, Perfekt Beispiele Deutsch | Schule & Studium | Artikel erklärt die Bildung des Perfekts im Deutschen: Aufbau aus Hilfsverb (haben oder sein) und Partizip II, klare Regeln zur Wahl des Hilfsverbs (Ortsveränderung, Zustandsveränderung vs. übrige Verben), Partizip-II-Bildung bei regelmäßigen/unregelmäßigen sowie trennbaren/untrennbaren Verben, Wortstellung im Satz, Abgrenzung zum Präteritum und häufige Fehler mit Übungstipps. Teil des stark performenden Deutsch-Grammatik-Clusters (Partizip, Präteritum, Zeitformen, Konjunktiv etc.). |
 | 298 | 2026-07-17 | sonett-analysieren-tipps | Sonett analysieren: Aufbau, Merkmale und Beispiel einfach erklärt | Sonett analysieren, Sonett Aufbau, Sonett Merkmale, Sonett Reimschema, Sonett Beispiel Deutsch | Schule & Studium | Anleitung zum Analysieren eines Sonetts: formaler Aufbau mit zwei Quartetten und zwei Terzetten, typisches Reimschema (umarmender Reim, meist abba abba), Metrum (fünfhebiger Jambus, im Barock oft Alexandriner), die inhaltliche Wendung (Volte) am Übergang zu den Terzetten, Beispiel anhand von Gryphius' Barock-Sonett, relevante Stilmittel (Antithesen, Metaphern, Anaphern, Enjambements) sowie eine Gliederung für die schriftliche Analyse und häufige Fehler. Ergänzt den stark performenden Gedicht-/Analyse-Cluster (gedichtanalyse-schreiben-tipps, ballade-analysieren-tipps, gedichtvergleich-schreiben-tipps) um eine bislang fehlende, formstrenge Gedichtform für Oberstufe und Abitur. |
 | 297 | 2026-07-17 | wortbildung-tipps | Wortbildung: Komposition, Derivation und Konversion einfach erklärt | Wortbildung, Wortbildung Deutsch, Komposition Derivation, Wortbildungsarten, Konversion Deutsch | Schule & Studium | Erklärt die drei zentralen Wortbildungsarten im Deutschen (Komposition, Derivation, Konversion) mit Beispielen, Eselsbrücke zum Kopf von Komposita und einer Zuordnungsübung. Verweist auf nominalisierung-tipps als spezielleren Teilbereich und verlinkt die Komposita-Simulation. |
@@ -1800,3 +1801,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - perfekt-bilden-tipps -> partizip-1-und-2-bilden-tipps (Vertiefende Erklärung der Partizip-II-Bildung, die für das Perfekt benötigt wird)
 - perfekt-bilden-tipps -> praeteritum-bilden-tipps (Abgrenzung Perfekt vs. Präteritum als weiterführender Link)
 - partizip-1-und-2-bilden-tipps -> perfekt-bilden-tipps (Rückverlinkung an der Stelle, an der Partizip II im Kontext des Perfekts erwähnt wird)
+
+## Interne Verlinkungen (Artikel 300)
+- gegenstandsbeschreibung-schreiben-tipps -> vorgangsbeschreibung-schreiben-tipps (verwandte Beschreibungsart, gleiches Prinzip auf Abläufe übertragen)
+- gegenstandsbeschreibung-schreiben-tipps -> deutsch-aufsatz-schreiben-tipps (Hub-Seite mit Überblick über alle Aufsatzformen)
