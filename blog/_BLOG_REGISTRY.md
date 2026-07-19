@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 302
-- Letzte Veröffentlichung: 2026-07-18
+- Gesamtzahl Artikel: 303
+- Letzte Veröffentlichung: 2026-07-19
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 303 | 2026-07-19 | drehbuch-schreiben-tipps | Drehbuch schreiben: Aufbau, Format und Tipps für die Schule | Drehbuch schreiben, Drehbuch Aufbau, Drehbuch Format Schule | Schule & Studium | Anleitung zum Drehbuch schreiben für Schule/Medienunterricht: Szenenformat (Slugline, Regieanweisung, Figurenname, Dialog, Parenthetical), Schritt-für-Schritt-Vorgehen von Idee über Treatment zu Szenen, Regel 'Zeigen statt erzählen', Beispielszene, häufige Fehler. Verlinkt zu dialog-schreiben-tipps und hoerspiel-schreiben-tipps. |
 | 302 | 2026-07-18 | satz-des-pythagoras-tipps | Satz des Pythagoras: Formel, Beweis und Beispiele einfach erklärt | Satz des Pythagoras, Satz des Pythagoras Formel, Pythagoras berechnen, Hypotenuse berechnen, Satz des Pythagoras Beispiel | Schule & Studium | Erklärt den Satz des Pythagoras (a² + b² = c²) für rechtwinklige Dreiecke: Formel, anschauliche Beweisidee über Flächenvergleich, Rechenbeispiel für die Hypotenuse (3-4-5-Dreieck), Rechenbeispiel für eine Kathete (13-5-12), Liste typischer Fehler (falsche Hypotenuse, Addieren statt Subtrahieren, Wurzel vergessen, Anwendung bei nicht-rechtwinkligen Dreiecken) und Anwendungsbereiche in Alltag, Trigonometrie und Abitur. Verlinkt auf trigonometrie-lernen-tipps.html. |
 | 301 | 2026-07-18 | quadratische-gleichungen-loesen-tipps | Quadratische Gleichungen lösen: pq-Formel, Mitternachtsformel & Tipps | quadratische Gleichungen lösen, pq-Formel, Mitternachtsformel, Diskriminante | Schule & Studium | Mathe-Longtail-Artikel zu quadratischen Gleichungen (Klasse 9/10): erklärt reinquadratische, ohne Absolutglied und gemischtquadratische Gleichungen, pq-Formel, Mitternachtsformel, Diskriminante, Ausklammern/binomische Formeln als Abkürzung, häufigste Fehler und Übungstipps. Verlinkt zu kurvendiskussion-tipps und binomische-formeln-lernen (mit Rückverlinkung dort). Erwähnt Nachhilfe Mentor App einmal im Fließtext für Übungsaufgaben. |
 | 300 | 2026-07-18 | gegenstandsbeschreibung-schreiben-tipps | Gegenstandsbeschreibung schreiben: Aufbau, Merkmale und Beispiel einfach erklärt | Gegenstandsbeschreibung schreiben, Gegenstandsbeschreibung Aufbau, Gegenstandsbeschreibung Beispiel, Gegenstandsbeschreibung Merkmale, Beschreibung schreiben Deutsch | Schule & Studium | Erklärt die Gegenstandsbeschreibung als Textsorte für Klasse 5-7: Aufbau (Einleitung, Hauptteil vom Groben zum Detail, Schluss), Merkmale (Präsens, sachlicher Stil, Fachbegriffe, präzise Angaben), ein vollständiges Beispiel (Bleistift-Beschreibung), 5 häufige Fehler und eine Abgabe-Checkliste. Ergänzt den Beschreibungs-Cluster neben Vorgangsbeschreibung, Personenbeschreibung, Tierbeschreibung und Wegbeschreibung. |
@@ -1816,3 +1817,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 302)
 - satz-des-pythagoras-tipps -> trigonometrie-lernen-tipps (Pythagoras als Grundlage für Sinus/Kosinus/Tangens am rechtwinkligen Dreieck)
 - trigonometrie-lernen-tipps -> satz-des-pythagoras-tipps (Rückverlinkung bei der Erklärung von Kathete und Hypotenuse in Tipp 1)
+
+## Interne Verlinkungen (Artikel 303)
+- drehbuch-schreiben-tipps -> dialog-schreiben-tipps (Dialoge sind Kernbestandteil von Drehbuchszenen)
+- drehbuch-schreiben-tipps -> hoerspiel-schreiben-tipps (verwandtes dramatisches Schreibformat ohne Bild)
