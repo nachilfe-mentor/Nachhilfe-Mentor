@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 303
+- Gesamtzahl Artikel: 304
 - Letzte Veröffentlichung: 2026-07-19
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 304 | 2026-07-19 | potenzgesetze-tipps | Potenzgesetze: Regeln, Beispiele und Übungen einfach erklärt | Potenzgesetze, Potenzgesetze Regeln, Potenzen rechnen, Potenzgesetze Beispiele, Potenzgesetze Übungen | Schule & Studium | Mathe-Longtail-Artikel (Klasse 7-9) zu Potenzgesetzen: erklärt Basis/Exponent-Grundlagen, die fünf klassischen Potenzgesetze (gleiche Basis multiplizieren/dividieren, gleicher Exponent multiplizieren/dividieren, Potenz einer Potenz), negative und gebrochene Exponenten sowie deren Bezug zum Wurzelziehen, häufigste Fehler und Übungstipps. Verlinkt zu quadratische-gleichungen-loesen-tipps (mit Rückverlinkung dort zum Thema Wurzelziehen). Erwähnt Nachhilfe Mentor App einmal im Fließtext für Übungsaufgaben. |
 | 303 | 2026-07-19 | drehbuch-schreiben-tipps | Drehbuch schreiben: Aufbau, Format und Tipps für die Schule | Drehbuch schreiben, Drehbuch Aufbau, Drehbuch Format Schule | Schule & Studium | Anleitung zum Drehbuch schreiben für Schule/Medienunterricht: Szenenformat (Slugline, Regieanweisung, Figurenname, Dialog, Parenthetical), Schritt-für-Schritt-Vorgehen von Idee über Treatment zu Szenen, Regel 'Zeigen statt erzählen', Beispielszene, häufige Fehler. Verlinkt zu dialog-schreiben-tipps und hoerspiel-schreiben-tipps. |
 | 302 | 2026-07-18 | satz-des-pythagoras-tipps | Satz des Pythagoras: Formel, Beweis und Beispiele einfach erklärt | Satz des Pythagoras, Satz des Pythagoras Formel, Pythagoras berechnen, Hypotenuse berechnen, Satz des Pythagoras Beispiel | Schule & Studium | Erklärt den Satz des Pythagoras (a² + b² = c²) für rechtwinklige Dreiecke: Formel, anschauliche Beweisidee über Flächenvergleich, Rechenbeispiel für die Hypotenuse (3-4-5-Dreieck), Rechenbeispiel für eine Kathete (13-5-12), Liste typischer Fehler (falsche Hypotenuse, Addieren statt Subtrahieren, Wurzel vergessen, Anwendung bei nicht-rechtwinkligen Dreiecken) und Anwendungsbereiche in Alltag, Trigonometrie und Abitur. Verlinkt auf trigonometrie-lernen-tipps.html. |
 | 301 | 2026-07-18 | quadratische-gleichungen-loesen-tipps | Quadratische Gleichungen lösen: pq-Formel, Mitternachtsformel & Tipps | quadratische Gleichungen lösen, pq-Formel, Mitternachtsformel, Diskriminante | Schule & Studium | Mathe-Longtail-Artikel zu quadratischen Gleichungen (Klasse 9/10): erklärt reinquadratische, ohne Absolutglied und gemischtquadratische Gleichungen, pq-Formel, Mitternachtsformel, Diskriminante, Ausklammern/binomische Formeln als Abkürzung, häufigste Fehler und Übungstipps. Verlinkt zu kurvendiskussion-tipps und binomische-formeln-lernen (mit Rückverlinkung dort). Erwähnt Nachhilfe Mentor App einmal im Fließtext für Übungsaufgaben. |
@@ -1821,3 +1822,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 303)
 - drehbuch-schreiben-tipps -> dialog-schreiben-tipps (Dialoge sind Kernbestandteil von Drehbuchszenen)
 - drehbuch-schreiben-tipps -> hoerspiel-schreiben-tipps (verwandtes dramatisches Schreibformat ohne Bild)
+
+## Interne Verlinkungen (Artikel 304)
+- potenzgesetze-tipps -> quadratische-gleichungen-loesen-tipps (Bezug zwischen gebrochenen Exponenten und Wurzelziehen bei quadratischen Gleichungen)
+- quadratische-gleichungen-loesen-tipps -> potenzgesetze-tipps (Rückverlinkung beim Wurzelziehen der reinquadratischen Gleichung)
