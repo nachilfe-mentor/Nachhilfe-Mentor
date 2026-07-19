@@ -240,6 +240,7 @@ russisch-lernen-tipps
 sachtextanalyse-schreiben-tipps
 sage-schreiben-tipps
 satire-schreiben-tipps
+satz-des-pythagoras-tipps
 satzanfaenge-variieren-tipps
 satzarten-bestimmen-tipps
 satzglieder-bestimmen-tipps
