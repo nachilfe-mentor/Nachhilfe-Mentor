@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 306
+- Gesamtzahl Artikel: 307
 - Letzte Veröffentlichung: 2026-07-20
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 307 | 2026-07-20 | forschungsfrage-formulieren-tipps | Forschungsfrage formulieren: Schritt für Schritt zur perfekten Fragestellung | Forschungsfrage formulieren, Forschungsfrage Beispiele, Fragestellung wissenschaftliche Arbeit, Forschungsfrage Facharbeit, gute Forschungsfrage | Schule & Studium | Praxisnaher Ratgeber, wie man eine wissenschaftliche Forschungsfrage formuliert: 5 Kriterien (offen, präzise, beantwortbar, angemessener Umfang, relevant), 4-Schritte-Methode (Themenfeld eingrenzen, Machbarkeits-Recherche, W-Fragen, Gegenprobe mit Fazit), Beispiele guter/schlechter Fragestellungen, typische Fehler. Zielgruppe: Schüler und Studierende bei Facharbeit, Seminararbeit, Bachelorarbeit. Verlinkt mit mindmap-erstellen-lernen und facharbeit-schreiben-tipps. |
 | 306 | 2026-07-20 | futur-bilden-tipps | Futur bilden: Futur I und Futur II einfach erklärt | Futur bilden, Futur I und Futur II, Futur Deutsch Regeln, Zukunftsform Verben, Futur Beispiele | Schule & Studium | Grammatik-Artikel zur Bildung von Futur I und Futur II im Deutschen: Regeln (werden + Infinitiv bzw. werden + Partizip II + haben/sein), Verwendung, häufige Fehler und Übung. Ergänzt die bestehende Zeitformen-Serie (Perfekt, Präteritum, Zeitformen bestimmen). |
 | 305 | 2026-07-19 | reimschema-bestimmen-tipps | Reimschema bestimmen: Paarreim, Kreuzreim & Co. einfach erklärt | Reimschema bestimmen, Kreuzreim Paarreim umarmender Reim, Reimschema Gedicht, Reimschema Buchstaben, Reimarten Deutsch | Schule & Studium | Praxisnaher Leitfaden zum Reimschema bestimmen: Buchstabensystem (A, B, C...), die vier Hauptreimarten Paarreim (AABB), Kreuzreim (ABAB), umarmender Reim (ABBA) und Haufenreim (AAAA) mit Beispielen, Hinweise zu reinen/unreinen Reimen, Wirkung des Reimschemas für die Gedichtanalyse, typische Fehler und Übungshinweise. Ergänzt gedichtanalyse-schreiben-tipps und gedichtvergleich-schreiben-tipps im Lyrik-Analyse-Cluster. |
 | 304 | 2026-07-19 | potenzgesetze-tipps | Potenzgesetze: Regeln, Beispiele und Übungen einfach erklärt | Potenzgesetze, Potenzgesetze Regeln, Potenzen rechnen, Potenzgesetze Beispiele, Potenzgesetze Übungen | Schule & Studium | Mathe-Longtail-Artikel (Klasse 7-9) zu Potenzgesetzen: erklärt Basis/Exponent-Grundlagen, die fünf klassischen Potenzgesetze (gleiche Basis multiplizieren/dividieren, gleicher Exponent multiplizieren/dividieren, Potenz einer Potenz), negative und gebrochene Exponenten sowie deren Bezug zum Wurzelziehen, häufigste Fehler und Übungstipps. Verlinkt zu quadratische-gleichungen-loesen-tipps (mit Rückverlinkung dort zum Thema Wurzelziehen). Erwähnt Nachhilfe Mentor App einmal im Fließtext für Übungsaufgaben. |
@@ -1838,3 +1839,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - futur-bilden-tipps -> zeitformen-bestimmen-tipps (Verweis auf Überblick aller sechs Zeitformen)
 - futur-bilden-tipps -> perfekt-bilden-tipps (Vergleich zur Bildung des Perfekts (haben/sein-Entscheidung))
 - zeitformen-bestimmen-tipps -> futur-bilden-tipps (Rückverlinkung im Abschnitt zu Futur I und II)
+
+## Interne Verlinkungen (Artikel 307)
+- forschungsfrage-formulieren-tipps -> mindmap-erstellen-lernen (Mindmap zur Themeneingrenzung als Hilfsmittel erwähnt)
+- facharbeit-schreiben-tipps -> forschungsfrage-formulieren-tipps (Rückverlinkung in Phase 1: Thema eingrenzen und Fragestellung entwickeln)
