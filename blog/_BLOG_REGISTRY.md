@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 307
+- Gesamtzahl Artikel: 308
 - Letzte Veröffentlichung: 2026-07-20
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 308 | 2026-07-20 | plusquamperfekt-bilden-tipps | Plusquamperfekt bilden: Regeln, Beispiele und Übungen einfach erklärt | Plusquamperfekt bilden, Plusquamperfekt Regeln, Vorvergangenheit Deutsch, Plusquamperfekt Beispiele, Plusquamperfekt Übungen | Schule & Studium | Grammatik-Ratgeber zum Plusquamperfekt (Vorvergangenheit): Bildung mit hatte/war + Partizip II, Zusammenspiel mit Präteritum über Signalwörter wie nachdem/bevor/als, häufige Fehler (Hilfsverbwahl, Wortstellung) und Übungstipps. Ergänzt die bestehende Zeitformen-Serie (Präteritum, Futur, Perfekt). |
 | 307 | 2026-07-20 | forschungsfrage-formulieren-tipps | Forschungsfrage formulieren: Schritt für Schritt zur perfekten Fragestellung | Forschungsfrage formulieren, Forschungsfrage Beispiele, Fragestellung wissenschaftliche Arbeit, Forschungsfrage Facharbeit, gute Forschungsfrage | Schule & Studium | Praxisnaher Ratgeber, wie man eine wissenschaftliche Forschungsfrage formuliert: 5 Kriterien (offen, präzise, beantwortbar, angemessener Umfang, relevant), 4-Schritte-Methode (Themenfeld eingrenzen, Machbarkeits-Recherche, W-Fragen, Gegenprobe mit Fazit), Beispiele guter/schlechter Fragestellungen, typische Fehler. Zielgruppe: Schüler und Studierende bei Facharbeit, Seminararbeit, Bachelorarbeit. Verlinkt mit mindmap-erstellen-lernen und facharbeit-schreiben-tipps. |
 | 306 | 2026-07-20 | futur-bilden-tipps | Futur bilden: Futur I und Futur II einfach erklärt | Futur bilden, Futur I und Futur II, Futur Deutsch Regeln, Zukunftsform Verben, Futur Beispiele | Schule & Studium | Grammatik-Artikel zur Bildung von Futur I und Futur II im Deutschen: Regeln (werden + Infinitiv bzw. werden + Partizip II + haben/sein), Verwendung, häufige Fehler und Übung. Ergänzt die bestehende Zeitformen-Serie (Perfekt, Präteritum, Zeitformen bestimmen). |
 | 305 | 2026-07-19 | reimschema-bestimmen-tipps | Reimschema bestimmen: Paarreim, Kreuzreim & Co. einfach erklärt | Reimschema bestimmen, Kreuzreim Paarreim umarmender Reim, Reimschema Gedicht, Reimschema Buchstaben, Reimarten Deutsch | Schule & Studium | Praxisnaher Leitfaden zum Reimschema bestimmen: Buchstabensystem (A, B, C...), die vier Hauptreimarten Paarreim (AABB), Kreuzreim (ABAB), umarmender Reim (ABBA) und Haufenreim (AAAA) mit Beispielen, Hinweise zu reinen/unreinen Reimen, Wirkung des Reimschemas für die Gedichtanalyse, typische Fehler und Übungshinweise. Ergänzt gedichtanalyse-schreiben-tipps und gedichtvergleich-schreiben-tipps im Lyrik-Analyse-Cluster. |
@@ -1843,3 +1844,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 307)
 - forschungsfrage-formulieren-tipps -> mindmap-erstellen-lernen (Mindmap zur Themeneingrenzung als Hilfsmittel erwähnt)
 - facharbeit-schreiben-tipps -> forschungsfrage-formulieren-tipps (Rückverlinkung in Phase 1: Thema eingrenzen und Fragestellung entwickeln)
+
+## Interne Verlinkungen (Artikel 308)
+- plusquamperfekt-bilden-tipps -> perfekt-bilden-tipps (Verweis auf haben-oder-sein-Regel, die beim Plusquamperfekt identisch gilt)
+- perfekt-bilden-tipps -> plusquamperfekt-bilden-tipps (Rückverlinkung im Fazit als nächster Schritt bei zwei Vergangenheitshandlungen im Satz)
