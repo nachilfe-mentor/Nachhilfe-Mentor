@@ -5,8 +5,24 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Tue, 21 Jul 2026 10:05:56 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jul 2026 18:09:43 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Passiv bilden: Vorgangspassiv, Zustandspassiv und Umformung einfach erklärt</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/passiv-bilden-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/passiv-bilden-tipps.html</guid>
+      <pubDate>Tue, 21 Jul 2026 18:09:25 +0000</pubDate>
+      <description>Passiv bilden leicht gemacht: Regeln für alle Zeitformen, Modalverben, Passiversatzformen und Beispiele einfach erklärt für Schule und Übungen.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
+    <item>
+      <title>Aktiv und Passiv unterscheiden: Regeln, Beispiele und Umformung einfach erklärt</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/aktiv-passiv-unterscheiden-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/aktiv-passiv-unterscheiden-tipps.html</guid>
+      <pubDate>Tue, 21 Jul 2026 18:07:56 +0000</pubDate>
+      <description>Aktiv und Passiv unterscheiden leicht gemacht: Erkennungsmerkmale, Bildung, Beispiele und Umformungstipps für Schule und Übungen.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Zeitformen im Deutschen: Präsens, Präteritum, Perfekt, Plusquamperfekt und Futur im Überblick</title>
       <link>https://nachhilfe-mentor.de/blog/posts/zeitformen-uebersicht-tipps.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sat, 18 Jul 2026 09:34:22 +0000</pubDate>
       <description>Binomische Formeln endlich verstehen: Die 3 Formeln einfach erklärt, mit Beispielen und typischen Aufgaben für Klasse 8-10. Plus: Die häufigsten Fehler vermeiden.</description>
       <category>Fachspezifische Lerntipps</category>
-    </item>
-    <item>
-      <title>Vorgangsbeschreibung schreiben: Aufbau, Tipps und häufige Fehler</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/vorgangsbeschreibung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/vorgangsbeschreibung-schreiben-tipps.html</guid>
-      <pubDate>Sat, 18 Jul 2026 01:32:25 +0000</pubDate>
-      <description>Vorgangsbeschreibung schreiben leicht gemacht: Aufbau, Sprache, Beispiele und häufige Fehler. Mit Schritt-für-Schritt-Anleitung und Checkliste für die Schule.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Gegenstandsbeschreibung schreiben: Aufbau, Merkmale und Beispiel einfach erklärt</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/gegenstandsbeschreibung-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/gegenstandsbeschreibung-schreiben-tipps.html</guid>
-      <pubDate>Sat, 18 Jul 2026 01:32:13 +0000</pubDate>
-      <description>Gegenstandsbeschreibung schreiben leicht gemacht: Aufbau, Merkmale, Fachbegriffe und ein Beispiel für Klasse 5 bis 7 einfach erklärt.</description>
-      <category>Schule &amp; Studium</category>
     </item>
   </channel>
 </rss>
