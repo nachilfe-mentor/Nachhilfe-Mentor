@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 – Seite nicht gefunden | Nachhilfe Mentor</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="/styles/local-fonts.css">
+  <link rel="stylesheet" href="/styles/modern-tech.css">
+  <script src="/scripts/posthog-tracking.js" defer></script>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <style>
+    .nf-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 120px 24px 80px;
+      position: relative;
+      overflow: hidden;
+    }
+    .nf-glow {
+      position: absolute;
+      width: 560px; height: 560px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(124,58,237,0.16) 0%, rgba(79,172,254,0.08) 45%, transparent 70%);
+      top: 50%; left: 50%;
+      transform: translate(-50%, -55%);
+      pointer-events: none;
+      filter: blur(8px);
+    }
+    .nf-code {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(96px, 22vw, 200px);
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      background: var(--grad-mixed);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+      margin-bottom: 8px;
+    }
+    .nf-eyebrow {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8b5cf6;
+      margin-bottom: 18px;
+    }
+    .nf-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: clamp(24px, 4.5vw, 40px);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin: 0 0 14px;
+    }
+    .nf-sub {
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #94a3b8;
+      max-width: 480px;
+      margin: 0 auto 36px;
+    }
+    .nf-actions { display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; }
+    .nf-btn {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 15px; font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+      display: inline-flex; align-items: center; gap: 8px;
+    }
+    .nf-btn-primary {
+      background: var(--grad-mixed);
+      color: #fff;
+      box-shadow: 0 8px 28px rgba(124,58,237,0.35);
+    }
+    .nf-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 34px rgba(124,58,237,0.5); }
+    .nf-btn-ghost {
+      background: var(--bg-card);
+      border: 1px solid rgba(255,255,255,0.1);
+      color: var(--text-primary);
+    }
+    .nf-btn-ghost:hover { background: var(--bg-card-hover); transform: translateY(-2px); }
+    .nf-card {
+      position: absolute;
+      font-size: 30px;
+      opacity: 0.5;
+      animation: nf-float 7s ease-in-out infinite;
+      pointer-events: none;
+      user-select: none;
+    }
+    .nf-card:nth-child(1) { top: 18%; left: 12%; animation-delay: 0s; }
+    .nf-card:nth-child(2) { top: 24%; right: 14%; animation-delay: 1.4s; }
+    .nf-card:nth-child(3) { bottom: 22%; left: 18%; animation-delay: 2.8s; }
+    .nf-card:nth-child(4) { bottom: 18%; right: 12%; animation-delay: 4.2s; }
+    .nf-card:nth-child(5) { top: 55%; left: 6%; animation-delay: 5.6s; font-size: 24px; }
+    .nf-card:nth-child(6) { top: 60%; right: 7%; animation-delay: 3.5s; font-size: 24px; }
+    @keyframes nf-float {
+      0%, 100% { transform: translateY(0) rotate(-4deg); }
+      50%      { transform: translateY(-18px) rotate(4deg); }
+    }
+    @media (prefers-reduced-motion: reduce) { .nf-card { animation: none; } }
+    .nf-hint {
+      margin-top: 42px;
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .nf-hint a { color: #64748b; text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar scrolled" id="navbar">
+  <div class="nav-container">
+    <a href="/index.html" class="nav-logo">
+      <img src="/onewebmedia/logo-ghost.png" alt="Nachhilfe Mentor">
+      <span class="nav-logo-text">Nachhilfe Mentor</span>
+    </a>
+    <div class="nav-links">
+      <a href="/index.html#features" class="nav-link">Features</a>
+      <a href="/index.html#showcase" class="nav-link">App</a>
+      <a href="/index.html#download" class="nav-link">Download</a>
+      <a href="/blog/" class="nav-link">Blog</a>
+    </div>
+    <button class="mobile-toggle" aria-label="Menü öffnen">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="/index.html" class="nav-link">Startseite</a>
+  <a href="/index.html#features" class="nav-link">Features</a>
+  <a href="/index.html#download" class="nav-link">Download</a>
+  <a href="/blog/" class="nav-link">Blog</a>
+</nav>
+
+<main class="nf-wrap">
+  <div class="nf-glow" aria-hidden="true"></div>
+  <span class="nf-card" aria-hidden="true">📚</span>
+  <span class="nf-card" aria-hidden="true">🗂️</span>
+  <span class="nf-card" aria-hidden="true">✏️</span>
+  <span class="nf-card" aria-hidden="true">🧠</span>
+  <span class="nf-card" aria-hidden="true">💡</span>
+  <span class="nf-card" aria-hidden="true">🎓</span>
+
+  <div class="nf-eyebrow">Fehler 404</div>
+  <div class="nf-code">404</div>
+  <h1 class="nf-title">Diese Seite steht nicht im Lehrplan.</h1>
+  <p class="nf-sub">
+    Die gesuchte Seite wurde verschoben, umbenannt oder hat den Kurs
+    geschwänzt. Kein Problem – zurück zur Startseite oder stöbere in
+    unseren Lernartikeln.
+  </p>
+  <div class="nf-actions">
+    <a href="/index.html" class="nf-btn nf-btn-primary">🏠 Zur Startseite</a>
+    <a href="/blog/" class="nf-btn nf-btn-ghost">📖 Zum Blog</a>
+  </div>
+  <p class="nf-hint">
+    Tippfehler in der Adresse? Oder schreib uns an
+    <a href="mailto:support@nachhilfe-mentor.de">support@nachhilfe-mentor.de</a>
+  </p>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;padding-top:0;">
+      <p class="footer-copy">&copy; 2026 Thümmler AI GmbH. Alle Rechte vorbehalten.</p>
+      <div class="footer-meta">
+        <a href="/datenschutzerklaerung.html" style="color:var(--text-muted);font-size:13px;">Datenschutz</a>
+        <a href="/nutzungsbedingungen.html" style="color:var(--text-muted);font-size:13px;">Nutzungsbedingungen</a>
+        <a href="/impressum.html" style="color:var(--text-muted);font-size:13px;">Impressum</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="/scripts/modern-tech.js"></script>
+</body>
+</html>
