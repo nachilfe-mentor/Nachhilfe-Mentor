@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 308
-- Letzte Veröffentlichung: 2026-07-20
+- Gesamtzahl Artikel: 309
+- Letzte Veröffentlichung: 2026-07-21
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 309 | 2026-07-21 | werbeanalyse-schreiben-tipps | Werbeanalyse schreiben: Aufbau, Methode und Beispiel einfach erklärt | Werbeanalyse schreiben, Werbeanalyse Aufbau, Werbung analysieren, Werbestrategien erkennen, Werbeanalyse Beispiel | Schule & Studium | Werbeanalyse schreiben: Vollständiger Leitfaden zur Analyse von Werbeanzeigen für Deutsch- und Sozialkunde-Klausuren. Erklärt den dreiteiligen Aufbau (Einleitung, Hauptteil, Schluss), Bildanalyse (Blickführung, Farben, Perspektive), typische Werbestrategien (Emotionalisierung, Testimonial, Humor, Statuswerbung, Problem-Lösungs-Schema), Formulierungshilfen und ein konkretes Kurzbeispiel. Ergänzt den Analyse-/Sachtextanalyse-Cluster (Kommentaranalyse, Redeanalyse, Karikaturanalyse, Sachtextanalyse) um eine bisher fehlende, häufig unterrichtete Textsorte. |
 | 308 | 2026-07-20 | plusquamperfekt-bilden-tipps | Plusquamperfekt bilden: Regeln, Beispiele und Übungen einfach erklärt | Plusquamperfekt bilden, Plusquamperfekt Regeln, Vorvergangenheit Deutsch, Plusquamperfekt Beispiele, Plusquamperfekt Übungen | Schule & Studium | Grammatik-Ratgeber zum Plusquamperfekt (Vorvergangenheit): Bildung mit hatte/war + Partizip II, Zusammenspiel mit Präteritum über Signalwörter wie nachdem/bevor/als, häufige Fehler (Hilfsverbwahl, Wortstellung) und Übungstipps. Ergänzt die bestehende Zeitformen-Serie (Präteritum, Futur, Perfekt). |
 | 307 | 2026-07-20 | forschungsfrage-formulieren-tipps | Forschungsfrage formulieren: Schritt für Schritt zur perfekten Fragestellung | Forschungsfrage formulieren, Forschungsfrage Beispiele, Fragestellung wissenschaftliche Arbeit, Forschungsfrage Facharbeit, gute Forschungsfrage | Schule & Studium | Praxisnaher Ratgeber, wie man eine wissenschaftliche Forschungsfrage formuliert: 5 Kriterien (offen, präzise, beantwortbar, angemessener Umfang, relevant), 4-Schritte-Methode (Themenfeld eingrenzen, Machbarkeits-Recherche, W-Fragen, Gegenprobe mit Fazit), Beispiele guter/schlechter Fragestellungen, typische Fehler. Zielgruppe: Schüler und Studierende bei Facharbeit, Seminararbeit, Bachelorarbeit. Verlinkt mit mindmap-erstellen-lernen und facharbeit-schreiben-tipps. |
 | 306 | 2026-07-20 | futur-bilden-tipps | Futur bilden: Futur I und Futur II einfach erklärt | Futur bilden, Futur I und Futur II, Futur Deutsch Regeln, Zukunftsform Verben, Futur Beispiele | Schule & Studium | Grammatik-Artikel zur Bildung von Futur I und Futur II im Deutschen: Regeln (werden + Infinitiv bzw. werden + Partizip II + haben/sein), Verwendung, häufige Fehler und Übung. Ergänzt die bestehende Zeitformen-Serie (Perfekt, Präteritum, Zeitformen bestimmen). |
@@ -1848,3 +1849,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 308)
 - plusquamperfekt-bilden-tipps -> perfekt-bilden-tipps (Verweis auf haben-oder-sein-Regel, die beim Plusquamperfekt identisch gilt)
 - perfekt-bilden-tipps -> plusquamperfekt-bilden-tipps (Rückverlinkung im Fazit als nächster Schritt bei zwei Vergangenheitshandlungen im Satz)
+
+## Interne Verlinkungen (Artikel 309)
+- werbeanalyse-schreiben-tipps -> kommentaranalyse-schreiben-tipps (Verweis auf verwandte Sachtextanalyse-Methode im Fazit)
+- kommentaranalyse-schreiben-tipps -> werbeanalyse-schreiben-tipps (Rückverlinkung im Fazit als verwandte Sachtextanalyse)
