@@ -5,7 +5,7 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 313
+- Gesamtzahl Artikel: 314
 - Letzte Veröffentlichung: 2026-07-22
 - Nächster geplanter Post: TBD
 
@@ -13,6 +13,7 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 314 | 2026-07-22 | literaturepochen-uebersicht-tipps | Literaturepochen im Überblick: Alle Epochen mit Merkmalen einfach erklärt | Literaturepochen, Literaturepochen Übersicht, Epochen Deutsch, Literaturepochen Merkmale, Epochen erkennen | Schule & Studium | Kompletter Überblick über die deutschen Literaturepochen von Barock bis Gegenwartsliteratur. Zeitstrahl mit allen Epochen (Barock, Aufklärung, Sturm und Drang, Weimarer Klassik, Romantik, Vormärz/Biedermeier, Realismus, Naturalismus, Expressionismus, Nachkriegs- und Gegenwartsliteratur), je mit zentralen Motiven (Vanitas, Sapere aude, blaue Blume, Großstadt/Ich-Zerfall), typischen Formen und Ankerautoren. Praxisteil: 4-Schritte-Methode zur begründeten Epochenzuordnung unbekannter Texte in der Klausur (Motive, Form, Sprache, Weltbild) plus Formulierungstipp. Lernteil: Epochen als Kontrastpaare lernen, Ankerwerke nutzen, Zuordnung an unbekannten Texten üben. Interne Links auf Gedichtanalyse und Sonett-Analyse. Zielgruppe: Oberstufe/Abitur, auch Klasse 9-10. |
 | 313 | 2026-07-22 | metrum-bestimmen-tipps | Metrum bestimmen: Jambus, Trochäus, Daktylus und Anapäst einfach erklärt | Metrum bestimmen, Jambus Trochäus Daktylus Anapäst, Versmaß bestimmen, Metrum Gedicht, Kadenz bestimmen | Schule & Studium | Schritt-für-Schritt-Anleitung zum Bestimmen des Metrums in Gedichten. Erklärt die vier Versfüße Jambus, Trochäus, Daktylus und Anapäst mit Merkwörtern (Gedicht, Dichter, Königin, Paradies) und Beispielversen, die Fünf-Schritte-Methode (Silben trennen, laut lesen, Betonungen markieren, Muster erkennen, Hebungen zählen), männliche und weibliche Kadenzen, die Wirkungsdeutung der Versmaße sowie typische Fehler (Auftakt übersehen, leise lesen, nur einen Vers prüfen). Ergänzt den Lyrik-Cluster um das letzte fehlende Grundlagen-Formmerkmal neben Reimschema und Stilmitteln. Interne Links: reimschema-bestimmen-tipps, gedichtanalyse-schreiben-tipps. |
 | 312 | 2026-07-22 | imperativ-bilden-tipps | Imperativ bilden: Regeln, Beispiele und Ausnahmen einfach erklärt | Imperativ bilden, Imperativ Deutsch Regeln, Befehlsform bilden, Imperativ Beispiele, Imperativ Übungen | Schule & Studium | Kompletter Leitfaden zum Bilden des Imperativs (Befehlsform) im Deutschen. Erklärt den Imperativ als dritten Modus neben Indikativ und Konjunktiv. Behandelt alle drei Formen: du-Form (Präsensstamm ohne -st, optionales/pflichtiges -e nach -d/-t/-ig/Konsonant+m/n), ihr-Form (Präsens Plural ohne Pronomen), Sie-Form (Infinitiv + nachgestelltes Sie). Kernregeln: Vokalwechsel e zu i bleibt erhalten (Nimm!, Gib!, Lies!), Umlaut a zu ä entfällt (Fahr!, Schlaf!). Ausnahmen: sein (Sei!/Seien Sie!), haben, werden, wissen, trennbare Verben (Vorsilbe ans Ende), Verben auf -eln (Lächle!). Abschnitt zu typischen Fehlern (Nehme!, Fähr!, Infinitiv statt Imperativ) und höflichen Alternativen (bitte/doch/mal, Fragen, Konjunktiv 2). Übungsideen: Rezept-Methode, Verbliste mit Vokalwechsel-Verben, Fehlersuche. Interne Links auf Konjunktiv-1-und-2-Artikel und Zeitformen-Übersicht. Zielgruppe Klasse 5-8 plus DaF. Komplettiert die Verbformen-Serie (Perfekt, Präteritum, Futur, Plusquamperfekt, Passiv, Konjunktiv, Partizip). |
 | 311 | 2026-07-21 | passiv-bilden-tipps | Passiv bilden: Vorgangspassiv, Zustandspassiv und Umformung einfach erklärt | Passiv bilden, Vorgangspassiv Zustandspassiv, Passiv Zeitformen, Passiv mit Modalverben, Passiversatzformen | Schule & Studium | Ausführlicher Grammatikartikel zur Bildung des Passivs (Vorgangspassiv/Zustandspassiv, alle Zeitformen, Passiv mit Modalverben, Passiversatzformen wie 'sich lassen' und 'sein zu'). Ergänzt den bestehenden Artikel aktiv-passiv-unterscheiden-tipps um die vertiefte Bildungsregel, unterschiedliche Suchintention (bilden statt unterscheiden). |
@@ -1876,3 +1877,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - metrum-bestimmen-tipps -> reimschema-bestimmen-tipps (Kadenzen wirken am Versende mit dem Reimschema zusammen)
 - metrum-bestimmen-tipps -> gedichtanalyse-schreiben-tipps (Metrum als Formmerkmal der vollständigen Gedichtanalyse)
 - reimschema-bestimmen-tipps -> metrum-bestimmen-tipps (Rückverlinkung im Crosslink-Absatz, wo Metrum bereits erwähnt wird)
+
+## Interne Verlinkungen (Artikel 314)
+- literaturepochen-uebersicht-tipps -> gedichtanalyse-schreiben-tipps (Epochenzuordnung ist Teil jeder Gedichtanalyse, Hub-Seite mit starkem Engagement)
+- literaturepochen-uebersicht-tipps -> sonett-analysieren-tipps (Sonett ist die typische Barock-Form, direkte thematische Ergänzung)
+- gedichtanalyse-schreiben-tipps -> literaturepochen-uebersicht-tipps (Rückverlinkung an der Stelle zur Epocheneinordnung)
