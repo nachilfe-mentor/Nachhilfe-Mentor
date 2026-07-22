@@ -180,8 +180,8 @@ données d'utilisation sont collectées automatiquement lors de l'accès à
 l'application.
 
 • 2.3.3 Services externes : nous utilisons des services externes tels que
-Firebase (authentification, base de données Firestore), Google ML Kit
-(extraction de texte à partir d'images) et Google Gemini (IA générative)
+Firebase (authentification, base de données Firestore) et Google Gemini
+(IA générative, y compris l'analyse des images téléversées)
 ainsi qu'OpenAI (fonctions d'IA). Ces services peuvent traiter des données
 conformément à leurs propres politiques de confidentialité.
 
@@ -236,8 +236,9 @@ offrir un environnement d'apprentissage personnalisé.
 
 • 3.1.3 Fonction de chat : vos messages dans le chat (y compris les images
 ou fichiers téléversés) sont traités afin de vous offrir une assistance
-interactive par l'IA intégrée (OpenAI). Le texte extrait des images (via
-Google ML Kit) est également utilisé pour répondre à vos demandes. En mode
+interactive par l'IA intégrée (OpenAI). Les images téléversées sont transmises à
+notre service d'IA Google Gemini pour analyse (p. ex. reconnaissance de
+texte) afin de répondre à vos demandes. En mode
 chat vocal (après autorisation du microphone), votre saisie vocale est
 enregistrée et convertie en texte par reconnaissance vocale IA (p. ex.
 OpenAI Whisper). Remarque : vous pouvez désactiver à tout moment l'accès à
@@ -322,8 +323,9 @@ clairement définis, toujours dans le strict respect du RGPD et de la BDSG.
 vos données, notifications push et correction d'erreurs. Plus
 d'informations : https://firebase.google.com/support/privacy
 
-• 4.1.2 Google ML Kit : extraction de texte à partir d'images
-téléversées. Détails : https://developers.google.com/ml-kit/terms
+• 4.1.2 Analyse d'images via Google Gemini : lorsque vous téléversez des
+images pour en extraire du texte ou du contenu, celles-ci sont transmises au
+service d'IA Google Gemini (voir aussi 4.1.5).
 
 • 4.1.3 OpenAI : création de résumés, de flashcards et d'autres contenus.
 Politique de confidentialité : https://openai.com/policies/privacy-policy

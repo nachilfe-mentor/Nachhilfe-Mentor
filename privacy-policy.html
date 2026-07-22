@@ -166,8 +166,8 @@ content.
 collected automatically when accessing the app.
 
 • 2.3.3 External services: We use external services such as Firebase
-(authentication, Firestore database), Google ML Kit (text extraction from
-images) and Google Gemini (generative AI) as well as OpenAI (AI features).
+(authentication, Firestore database) and Google Gemini (generative AI,
+including the analysis of uploaded images) as well as OpenAI (AI features).
 These services may process data in accordance with their own privacy
 policies.
 
@@ -235,8 +235,9 @@ and test questions are used to create multiple-choice tests.
 
 • 3.1.3 Chat function: Your messages in the chat (including uploaded
 images or files) are processed to provide you with interactive support
-through the integrated AI (OpenAI). Text extracted from images (via Google
-ML Kit) is also used to answer your requests. In addition, in voice chat
+through the integrated AI (OpenAI). Uploaded images are transmitted to our AI
+service Google Gemini for analysis (e.g. text recognition) in order to
+answer your requests. In addition, in voice chat
 mode (after you grant microphone access), your speech input is recorded and
 converted into text by AI speech recognition (e.g. OpenAI Whisper), which is
 then processed like a normal chat message. Note: You can deactivate camera
@@ -356,9 +357,10 @@ notifications and error resolution. Firebase is committed to protecting your
 data in accordance with strict data protection standards. More in the
 Firebase Privacy Notice: https://firebase.google.com/support/privacy
 
-• 4.1.2 Google ML Kit: When you upload images to extract text from them,
-we use Google ML Kit. Your images may be temporarily sent to Google. Details
-can be found in the Google ML Kit Terms: https://developers.google.com/ml-kit/terms
+• 4.1.2 Image analysis via Google Gemini: When you upload images to have
+text or content extracted from them, these images are transmitted to the AI
+service Google Gemini (see also 4.1.5). Your images may be temporarily sent
+to Google in the process.
 
 • 4.1.3 OpenAI: For the creation of summaries, flashcards and other
 content, we use OpenAI. Your text inputs are sent to OpenAI to enable these
@@ -664,9 +666,6 @@ app:
 • Firebase (Google LLC): Our authentication, database (Firestore),
 storage solutions (Firebase Storage), push notifications and error reporting
 (Crashlytics) are provided by Google, a company based in the USA.
-• Google ML Kit: For text recognition from images (e.g. when uploading
-documents in the chat function), data may be transmitted to Google servers
-in the USA.
 • OpenAI: The AI features for generating flashcards, test questions and
 summaries are provided by OpenAI, a company based in the USA.
 • Google Gemini: Certain additional AI features (e.g. generated learning
@@ -724,7 +723,7 @@ our instructions and the statutory requirements.
 Your data may be transferred in particular to the following countries:
 
 • 7.4.1 United States (USA):
-• Firebase, Google ML Kit, Google Gemini, OpenAI and Apple are based in
+• Firebase, Google Gemini, OpenAI and Apple are based in
 the USA. Following the invalidation of the Privacy Shield, we rely on
 Standard Contractual Clauses and additional security measures to ensure the
 protection of your data. Since 2023, the EU-U.S. Data Privacy Framework also
@@ -790,7 +789,7 @@ necessary to reflect the new data processing operations.
 
 • 8.1.3 Technical improvements:
 • Changes to our security measures (e.g. new encryption methods) or
-third-party providers (e.g. Firebase, Google ML Kit) may require an update.
+third-party providers (e.g. Firebase, Google Gemini) may require an update.
 
 8.2 Change Process
 
@@ -939,8 +938,8 @@ supervisory authority (see 5.8).
 
 • 9.6.1 External contact:
 
-For data processing by third-party providers such as Firebase, Google ML
-Kit, OpenAI, Google Gemini or Apple (Sign-In), we refer to their privacy
+For data processing by third-party providers such as Firebase,
+OpenAI, Google Gemini or Apple (Sign-In), we refer to their privacy
 policies (see Section 4). If you have questions about them, you can still
 contact us and we will support you in forwarding your request.
 

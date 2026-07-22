@@ -167,8 +167,9 @@ senden oder andere Inhalte hochladen.
 Nutzungsdaten werden automatisch beim Zugriff auf die App erhoben.
 
 • 2.3.3 Externe Dienste: Wir nutzen externe Dienste wie Firebase
-(Authentifizierung, Firestore-Datenbank), Google ML Kit (Textauslesung aus
-Bildern) und Google Gemini (generative KI) sowie OpenAI (KI-Funktionen).
+(Authentifizierung, Firestore-Datenbank) und Google Gemini (generative KI,
+einschließlich der Auswertung hochgeladener Bilder) sowie OpenAI
+(KI-Funktionen).
 Diese Dienste können Daten gemäß ihren eigenen Datenschutzrichtlinien
 verarbeiten.
 
@@ -243,8 +244,8 @@ zur Erstellung von Multiple-Choice-Tests verwendet.
 • 3.1.3 Chatfunktion: Ihre Nachrichten im Chat (inklusive
 hochgeladener Bilder oder Dateien) werden verarbeitet, um Ihnen eine
 interaktive Unterstützung durch die integrierte KI (OpenAI) zu ermöglichen.
-Extrahierter Text aus Bildern (via Google ML Kit) wird ebenfalls genutzt, um Ihre
-Anfragen zu beantworten. Zusätzlich wird im Sprach-Chat-Modus (nach
+Hochgeladene Bilder werden zur Auswertung (z. B. Texterkennung) an unseren
+KI-Dienst Google Gemini übermittelt, um Ihre Anfragen zu beantworten. Zusätzlich wird im Sprach-Chat-Modus (nach
 Ihrer Mikrofonfreigabe) Ihre Spracheingabe aufgezeichnet und per KI-
 Spracherkennung (z. B. OpenAI Whisper) in Text umgewandelt, der dann
 wie eine normale Chat-Nachricht verarbeitet wird. Hinweis: Sie können
@@ -374,10 +375,10 @@ Fehlerbehebung. Firebase hat sich verpflichtet, Ihre Daten gemäß strengen
 Datenschutzstandards zu schützen. Mehr dazu in der Firebase-
 Datenschutzerklärung: https://firebase.google.com/support/privacy
 
-• 4.1.2 Google ML Kit: Wenn Sie Bilder hochladen, um Text daraus zu
-extrahieren, nutzen wir Google ML Kit. Dabei können Ihre Bilder vorübergehend
-an Google gesendet werden. Details finden Sie in den Google-ML-Kit-
-Nutzungsbedingungen: https://developers.google.com/ml-kit/terms
+• 4.1.2 Bildauswertung über Google Gemini: Wenn Sie Bilder hochladen, um
+Text oder Inhalte daraus auszuwerten, werden diese Bilder an den KI-Dienst
+Google Gemini übermittelt (siehe auch 4.1.5). Dabei können Ihre Bilder
+vorübergehend an Google gesendet werden.
 
 • 4.1.3 OpenAI: Für die Erstellung von Zusammenfassungen,
 Flashcards und anderen Inhalten nutzen wir OpenAI. Ihre Texteingaben werden
@@ -708,9 +709,6 @@ gewährleisten:
 (Firestore), Speicherlösungen (Firebase Storage), Push-Benachrichtigungen
 und Fehlerberichterstattung (Crashlytics) werden von Google bereitgestellt,
 einem Unternehmen mit Sitz in den USA.
-• Google ML Kit: Für die Texterkennung aus Bildern (z. B. beim
-Hochladen von Dokumenten in der Chatfunktion) können Daten an Google-
-Server in den USA übermittelt werden.
 • OpenAI: Die KI-Funktionen zur Generierung von Flashcards,
 Testfragen und Zusammenfassungen (z. B. in OpenAIService) werden von
 OpenAI bereitgestellt, einem Unternehmen mit Sitz in den USA.
@@ -770,7 +768,7 @@ Vorgaben verarbeitet werden.
 
 Ihre Daten können insbesondere in die folgenden Länder übertragen werden:
 • 7.4.1 Vereinigte Staaten (USA):
-• Firebase, Google ML Kit, Google Gemini, OpenAI und Apple haben
+• Firebase, Google Gemini, OpenAI und Apple haben
 ihren Sitz in den USA. Nach dem Wegfall des Privacy Shield stützen wir uns auf
 Standardvertragsklauseln und zusätzliche Sicherheitsmaßnahmen, um den
 Schutz Ihrer Daten zu gewährleisten. Seit 2023 existiert zudem das EU-U.S.
@@ -842,7 +840,7 @@ Datenverarbeitungsprozesse abzubilden.
 
 • 8.1.3 Technische Verbesserungen:
 • Änderungen an unseren Sicherheitsmaßnahmen (z. B. neue
-Verschlüsselungsmethoden) oder Drittanbietern (z. B. Firebase, Google ML Kit)
+Verschlüsselungsmethoden) oder Drittanbietern (z. B. Firebase, Google Gemini)
 können eine Aktualisierung erfordern.
 
 8.2 Prozess der Änderung
@@ -994,7 +992,7 @@ Datenschutzaufsichtsbehörde wenden (siehe 5.8).
 9.6 Verantwortung für Drittanbieter
 • 9.6.1 Externer Kontakt:
 
-Für Datenverarbeitungen durch Drittanbieter wie Firebase, Google ML Kit,
+Für Datenverarbeitungen durch Drittanbieter wie Firebase,
 OpenAI, Google Gemini oder Apple (Sign-In) verweisen wir auf deren
 Datenschutzerklärungen (siehe Abschnitt 4). Bei Fragen dazu können Sie uns
 dennoch kontaktieren, und wir unterstützen Sie bei der Weiterleitung Ihrer
