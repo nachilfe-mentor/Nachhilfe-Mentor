@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 311
-- Letzte Veröffentlichung: 2026-07-21
+- Gesamtzahl Artikel: 312
+- Letzte Veröffentlichung: 2026-07-22
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 312 | 2026-07-22 | imperativ-bilden-tipps | Imperativ bilden: Regeln, Beispiele und Ausnahmen einfach erklärt | Imperativ bilden, Imperativ Deutsch Regeln, Befehlsform bilden, Imperativ Beispiele, Imperativ Übungen | Schule & Studium | Kompletter Leitfaden zum Bilden des Imperativs (Befehlsform) im Deutschen. Erklärt den Imperativ als dritten Modus neben Indikativ und Konjunktiv. Behandelt alle drei Formen: du-Form (Präsensstamm ohne -st, optionales/pflichtiges -e nach -d/-t/-ig/Konsonant+m/n), ihr-Form (Präsens Plural ohne Pronomen), Sie-Form (Infinitiv + nachgestelltes Sie). Kernregeln: Vokalwechsel e zu i bleibt erhalten (Nimm!, Gib!, Lies!), Umlaut a zu ä entfällt (Fahr!, Schlaf!). Ausnahmen: sein (Sei!/Seien Sie!), haben, werden, wissen, trennbare Verben (Vorsilbe ans Ende), Verben auf -eln (Lächle!). Abschnitt zu typischen Fehlern (Nehme!, Fähr!, Infinitiv statt Imperativ) und höflichen Alternativen (bitte/doch/mal, Fragen, Konjunktiv 2). Übungsideen: Rezept-Methode, Verbliste mit Vokalwechsel-Verben, Fehlersuche. Interne Links auf Konjunktiv-1-und-2-Artikel und Zeitformen-Übersicht. Zielgruppe Klasse 5-8 plus DaF. Komplettiert die Verbformen-Serie (Perfekt, Präteritum, Futur, Plusquamperfekt, Passiv, Konjunktiv, Partizip). |
 | 311 | 2026-07-21 | passiv-bilden-tipps | Passiv bilden: Vorgangspassiv, Zustandspassiv und Umformung einfach erklärt | Passiv bilden, Vorgangspassiv Zustandspassiv, Passiv Zeitformen, Passiv mit Modalverben, Passiversatzformen | Schule & Studium | Ausführlicher Grammatikartikel zur Bildung des Passivs (Vorgangspassiv/Zustandspassiv, alle Zeitformen, Passiv mit Modalverben, Passiversatzformen wie 'sich lassen' und 'sein zu'). Ergänzt den bestehenden Artikel aktiv-passiv-unterscheiden-tipps um die vertiefte Bildungsregel, unterschiedliche Suchintention (bilden statt unterscheiden). |
 | 310 | 2026-07-21 | zeitformen-uebersicht-tipps | Zeitformen im Deutschen: Präsens, Präteritum, Perfekt, Plusquamperfekt und Futur im Überblick | Zeitformen Deutsch, Zeitformen Übersicht, Tempora Deutsch, deutsche Zeitformen Beispiele, Zeitformen bestimmen | Schule & Studium | Übersichtsartikel zu allen sechs deutschen Zeitformen (Präsens, Präteritum, Perfekt, Plusquamperfekt, Futur I, Futur II) mit Bildungsregeln, Beispielsätzen und einer Schritt-für-Schritt-Anleitung zum Bestimmen der Zeitform. Fungiert als Hub-Seite und verlinkt auf die bestehenden Einzelartikel zu Präteritum und Perfekt bilden. |
 | 309 | 2026-07-21 | werbeanalyse-schreiben-tipps | Werbeanalyse schreiben: Aufbau, Methode und Beispiel einfach erklärt | Werbeanalyse schreiben, Werbeanalyse Aufbau, Werbung analysieren, Werbestrategien erkennen, Werbeanalyse Beispiel | Schule & Studium | Werbeanalyse schreiben: Vollständiger Leitfaden zur Analyse von Werbeanzeigen für Deutsch- und Sozialkunde-Klausuren. Erklärt den dreiteiligen Aufbau (Einleitung, Hauptteil, Schluss), Bildanalyse (Blickführung, Farben, Perspektive), typische Werbestrategien (Emotionalisierung, Testimonial, Humor, Statuswerbung, Problem-Lösungs-Schema), Formulierungshilfen und ein konkretes Kurzbeispiel. Ergänzt den Analyse-/Sachtextanalyse-Cluster (Kommentaranalyse, Redeanalyse, Karikaturanalyse, Sachtextanalyse) um eine bisher fehlende, häufig unterrichtete Textsorte. |
@@ -1864,3 +1865,8 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 ## Interne Verlinkungen (Artikel 311)
 - passiv-bilden-tipps -> aktiv-passiv-unterscheiden-tipps (Verweis auf den Grundlagenartikel zur Unterscheidung von Aktiv und Passiv)
 - aktiv-passiv-unterscheiden-tipps -> passiv-bilden-tipps (Rückverlinkung im Fazit auf vertiefenden Artikel zur Passiv-Bildung)
+
+## Interne Verlinkungen (Artikel 312)
+- imperativ-bilden-tipps -> konjunktiv-1-und-2-unterscheiden-tipps (Konjunktiv 2 als höfliche Alternative zum Imperativ, Modus-Verwandtschaft)
+- imperativ-bilden-tipps -> zeitformen-uebersicht-tipps (Imperativ steht im Präsens, Verweis auf Tempora-Übersicht im Übungsteil)
+- konjunktiv-1-und-2-unterscheiden-tipps -> imperativ-bilden-tipps (Rückverlinkung im Fazit: Imperativ als dritter Modus)
