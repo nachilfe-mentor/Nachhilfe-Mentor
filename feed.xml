@@ -5,8 +5,16 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 23 Jul 2026 02:25:58 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 07:35:30 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Satzglieder bestimmen: So findest du Subjekt, Prädikat und Objekt sofort</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/satzglieder-bestimmen-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/satzglieder-bestimmen-tipps.html</guid>
+      <pubDate>Thu, 23 Jul 2026 07:35:10 +0000</pubDate>
+      <description>Satzglieder bestimmen mit der Umstellprobe: So erkennst du Subjekt, Prädikat, Objekt und adverbiale Bestimmung sofort. Mit Fragen, Beispielen und Checkliste für die Klassenarbeit.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Handout erstellen: Aufbau, Inhalt und Beispiel für dein Referat</title>
       <link>https://nachhilfe-mentor.de/blog/posts/handout-erstellen-tipps.html</link>
@@ -157,14 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/genus-bestimmen-tipps.html</guid>
       <pubDate>Wed, 22 Jul 2026 11:39:22 +0000</pubDate>
       <description>Genus bestimmen leicht gemacht: Mit diesen Regeln, Suffix-Tricks und Eselsbrücken weißt du sofort, ob ein Nomen der, die oder das heißt.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Hörspiel schreiben: Aufbau, Tipps und Beispiel für die Schule</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/hoerspiel-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/hoerspiel-schreiben-tipps.html</guid>
-      <pubDate>Wed, 22 Jul 2026 11:39:22 +0000</pubDate>
-      <description>Hörspiel schreiben lernen: Aufbau, Regieanweisungen, Geräusche und ein Beispiel. So gelingt dein Hörspiel-Skript für Deutsch in der Schule.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
