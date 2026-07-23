@@ -5,8 +5,16 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Thu, 23 Jul 2026 15:40:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 23:41:52 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Argumentation schreiben mit dem Dreischritt: In 3 Schritten zum Argument</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/argumentation-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/argumentation-schreiben-tipps.html</guid>
+      <pubDate>Thu, 23 Jul 2026 23:41:34 +0000</pubDate>
+      <description>Mit nur 3 Schritten (Behauptung, Begründung, Beispiel) baust du jedes Argument wasserdicht auf. Aufbau, Formulierungen und die 6 häufigsten Fehler im Überblick.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Dreisatz berechnen: Aufbau, Formel und Beispiele einfach erklärt</title>
       <link>https://nachhilfe-mentor.de/blog/posts/dreisatz-berechnen-tipps.html</link>
@@ -157,14 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/drehbuch-schreiben-tipps.html</guid>
       <pubDate>Wed, 22 Jul 2026 11:39:22 +0000</pubDate>
       <description>Drehbuch schreiben leicht gemacht: Szenenformat, Dialoge, Regieanweisungen und ein Beispiel. So gelingt dein Drehbuch für Deutsch- oder Medienunterricht.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>E-Mail schreiben: Aufbau, Formulierungen und Beispiel für Schule und Ausbildung</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/email-schreiben-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/email-schreiben-tipps.html</guid>
-      <pubDate>Wed, 22 Jul 2026 11:39:22 +0000</pubDate>
-      <description>E-Mail schreiben lernen: Aufbau, höfliche Formulierungen, Betreffzeile und ein fertiges Beispiel für Lehrer, Ausbildungsbetrieb oder Bewerbung.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
