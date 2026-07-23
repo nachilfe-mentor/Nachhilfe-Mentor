@@ -5,14 +5,15 @@ Es dient als Gedächtnis: welche Artikel existieren, welche Themen abgedeckt sin
 und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 
 ## Statistik
-- Gesamtzahl Artikel: 314
-- Letzte Veröffentlichung: 2026-07-22
+- Gesamtzahl Artikel: 315
+- Letzte Veröffentlichung: 2026-07-23
 - Nächster geplanter Post: TBD
 
 ## Artikel-Index
 
 | # | Datum | Slug | Titel | Keywords | Tag | Zusammenfassung |
 |---|-------|------|-------|----------|-----|----------------|
+| 315 | 2026-07-23 | handout-erstellen-tipps | Handout erstellen: Aufbau, Inhalt und Beispiel für dein Referat | Handout erstellen, Handout Aufbau, Handout Referat, Handout Beispiel, Handout schreiben Schule | Schule & Studium | Kompletter Leitfaden zum Handout erstellen für Referate in Schule und Studium. Erklärt Zweck (Orientierung, Gedächtnisstütze, Nachweis), den Standard-Aufbau (Kopfzeile, Titel, Gliederung, stichpunktartiger Inhaltsteil, Quellenverzeichnis), eine 5-Schritte-Anleitung (Referat zuerst fertigstellen, Kernaussagen filtern, Stichpunkte statt Fließtext, Quellen angeben, Korrektur lesen), Formatierungsregeln (Schrift, Zeilenabstand, Fettdruck sparsam) und häufige Fehler (zu viel Text, Handout ablesen, fehlende Quellen, falscher Austeilzeitpunkt). Abgrenzung Handout vs. Thesenpapier. Interne Links zu referat-halten-tipps, richtig-zitieren-tipps und thesenpapier-schreiben-tipps. Zielgruppe: Klasse 7 bis Studium. |
 | 314 | 2026-07-22 | literaturepochen-uebersicht-tipps | Literaturepochen im Überblick: Alle Epochen mit Merkmalen einfach erklärt | Literaturepochen, Literaturepochen Übersicht, Epochen Deutsch, Literaturepochen Merkmale, Epochen erkennen | Schule & Studium | Kompletter Überblick über die deutschen Literaturepochen von Barock bis Gegenwartsliteratur. Zeitstrahl mit allen Epochen (Barock, Aufklärung, Sturm und Drang, Weimarer Klassik, Romantik, Vormärz/Biedermeier, Realismus, Naturalismus, Expressionismus, Nachkriegs- und Gegenwartsliteratur), je mit zentralen Motiven (Vanitas, Sapere aude, blaue Blume, Großstadt/Ich-Zerfall), typischen Formen und Ankerautoren. Praxisteil: 4-Schritte-Methode zur begründeten Epochenzuordnung unbekannter Texte in der Klausur (Motive, Form, Sprache, Weltbild) plus Formulierungstipp. Lernteil: Epochen als Kontrastpaare lernen, Ankerwerke nutzen, Zuordnung an unbekannten Texten üben. Interne Links auf Gedichtanalyse und Sonett-Analyse. Zielgruppe: Oberstufe/Abitur, auch Klasse 9-10. |
 | 313 | 2026-07-22 | metrum-bestimmen-tipps | Metrum bestimmen: Jambus, Trochäus, Daktylus und Anapäst einfach erklärt | Metrum bestimmen, Jambus Trochäus Daktylus Anapäst, Versmaß bestimmen, Metrum Gedicht, Kadenz bestimmen | Schule & Studium | Schritt-für-Schritt-Anleitung zum Bestimmen des Metrums in Gedichten. Erklärt die vier Versfüße Jambus, Trochäus, Daktylus und Anapäst mit Merkwörtern (Gedicht, Dichter, Königin, Paradies) und Beispielversen, die Fünf-Schritte-Methode (Silben trennen, laut lesen, Betonungen markieren, Muster erkennen, Hebungen zählen), männliche und weibliche Kadenzen, die Wirkungsdeutung der Versmaße sowie typische Fehler (Auftakt übersehen, leise lesen, nur einen Vers prüfen). Ergänzt den Lyrik-Cluster um das letzte fehlende Grundlagen-Formmerkmal neben Reimschema und Stilmitteln. Interne Links: reimschema-bestimmen-tipps, gedichtanalyse-schreiben-tipps. |
 | 312 | 2026-07-22 | imperativ-bilden-tipps | Imperativ bilden: Regeln, Beispiele und Ausnahmen einfach erklärt | Imperativ bilden, Imperativ Deutsch Regeln, Befehlsform bilden, Imperativ Beispiele, Imperativ Übungen | Schule & Studium | Kompletter Leitfaden zum Bilden des Imperativs (Befehlsform) im Deutschen. Erklärt den Imperativ als dritten Modus neben Indikativ und Konjunktiv. Behandelt alle drei Formen: du-Form (Präsensstamm ohne -st, optionales/pflichtiges -e nach -d/-t/-ig/Konsonant+m/n), ihr-Form (Präsens Plural ohne Pronomen), Sie-Form (Infinitiv + nachgestelltes Sie). Kernregeln: Vokalwechsel e zu i bleibt erhalten (Nimm!, Gib!, Lies!), Umlaut a zu ä entfällt (Fahr!, Schlaf!). Ausnahmen: sein (Sei!/Seien Sie!), haben, werden, wissen, trennbare Verben (Vorsilbe ans Ende), Verben auf -eln (Lächle!). Abschnitt zu typischen Fehlern (Nehme!, Fähr!, Infinitiv statt Imperativ) und höflichen Alternativen (bitte/doch/mal, Fragen, Konjunktiv 2). Übungsideen: Rezept-Methode, Verbliste mit Vokalwechsel-Verben, Fehlersuche. Interne Links auf Konjunktiv-1-und-2-Artikel und Zeitformen-Übersicht. Zielgruppe Klasse 5-8 plus DaF. Komplettiert die Verbformen-Serie (Perfekt, Präteritum, Futur, Plusquamperfekt, Passiv, Konjunktiv, Partizip). |
@@ -1882,3 +1883,10 @@ und welche Keywords verwendet wurden. NICHT MANUELL BEARBEITEN.
 - literaturepochen-uebersicht-tipps -> gedichtanalyse-schreiben-tipps (Epochenzuordnung ist Teil jeder Gedichtanalyse, Hub-Seite mit starkem Engagement)
 - literaturepochen-uebersicht-tipps -> sonett-analysieren-tipps (Sonett ist die typische Barock-Form, direkte thematische Ergänzung)
 - gedichtanalyse-schreiben-tipps -> literaturepochen-uebersicht-tipps (Rückverlinkung an der Stelle zur Epocheneinordnung)
+
+## Interne Verlinkungen (Artikel 315)
+- handout-erstellen-tipps -> referat-halten-tipps (Handout ist die schriftliche Ergänzung zum Referat, Schritt 1 verweist auf Vortragsvorbereitung)
+- handout-erstellen-tipps -> richtig-zitieren-tipps (Quellenverzeichnis im Handout erfordert korrektes Zitieren)
+- handout-erstellen-tipps -> thesenpapier-schreiben-tipps (Abgrenzung der beiden verwandten Einseiter-Formate)
+- referat-halten-tipps -> handout-erstellen-tipps (Bestehende Handout-Erwähnung im Text verlinkt)
+- thesenpapier-schreiben-tipps -> handout-erstellen-tipps (Rückverlinkung im Fazit (Abgrenzung Thesenpapier vs. Handout))
