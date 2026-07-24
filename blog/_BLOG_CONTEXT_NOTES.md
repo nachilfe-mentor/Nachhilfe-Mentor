@@ -11,3 +11,11 @@ Nur wirklich neue Erkenntnisse eintragen, maximal wenige Bulletpoints pro Lauf.
   wurden gefixt: Redirect/Merge des schwaecheren Artikels, Title/Meta-Rewrite
   der Top-5-CTR-Seiten. Seitdem gilt: Konsolidieren hat Vorrang vor neuem
   Content (siehe auto-blog.sh Schritt 2).
+- 2026-07-24: GSC-Kannibalisierungsliste zeigt weiterhin karikatur-analysieren-tipps
+  vs. karikaturanalyse-schreiben-tipps, das ist aber der bereits am 2026-07-07
+  gesetzte Redirect (Datenbasis liegt teils davor) - keine erneute Aktion noetig.
+  Uebrige Paare (formeller/persoenlicher Brief, Erlebnisbericht/-erzaehlung,
+  Eroerterungs-Varianten, Formanalyse-Unterarten) sind inhaltlich echt
+  unterschiedliche Textformen, keine Duplikate. CTR-Update stattdessen fuer
+  elfchen-schreiben-tipps.html (impr 4368, ctr 0.62%, seit 17 Tagen nicht
+  angefasst): Title/Meta auf konkrete Vorlage-zum-Ausfuellen-Hook umgestellt.
