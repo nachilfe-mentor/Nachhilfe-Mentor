@@ -19,3 +19,9 @@ Nur wirklich neue Erkenntnisse eintragen, maximal wenige Bulletpoints pro Lauf.
   unterschiedliche Textformen, keine Duplikate. CTR-Update stattdessen fuer
   elfchen-schreiben-tipps.html (impr 4368, ctr 0.62%, seit 17 Tagen nicht
   angefasst): Title/Meta auf konkrete Vorlage-zum-Ausfuellen-Hook umgestellt.
+- 2026-07-25: Erneut kein neues Kannibalisierungspaar (alle Paare im Report
+  sind Haupt- vs. Uebungsseite oder inhaltlich verschiedene Textformen, siehe
+  Note vom 2026-07-24). CTR-Update fuer zeitungsartikel-schreiben-tipps.html
+  (impr 3003, ctr 0.60%, pos 7.8, Title/Meta seit Erstellung nie ueberarbeitet):
+  Title/Meta auf konkreten "6 W-Fragen + Pyramidenprinzip"-Hook umgestellt statt
+  generischem "Aufbau, Tipps und haeufige Fehler".
