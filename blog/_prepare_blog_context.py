@@ -60,28 +60,51 @@ def all_slugs(registry: str) -> list[str]:
     return slugs
 
 
-def latest_analytics(strategy: str, limit: int = 7) -> list[str]:
+def latest_analytics(strategy: str, limit: int = 4, max_chars: int = 400) -> list[str]:
+    # Jeder Eintrag ist ein Fliesstext-Absatz; ungekuerzt waren das ~10 KB, die in
+    # JEDEM Turn des Agenten erneut im Kontext liegen. Die Kernaussage steht vorn.
     learnings = section(strategy, "Learnings / Analytics")
     bullets = [line for line in learnings.splitlines() if line.startswith("- Stand ")]
-    return bullets[-limit:]
+    return [b if len(b) <= max_chars else b[:max_chars].rstrip() + " …" for b in bullets[-limit:]]
 
 
 def lernmaterialien_section(registry_path: Path) -> str:
-    """Extract just the live-simulations section from the content registry for the blog agent."""
+    """Kompakte Liste der Live-Simulationen für interne Verlinkung.
+
+    Die Registry führt pro Eintrag Überschrift + Pfad + passende Blog-Artikel über
+    mehrere Zeilen (~33 KB gesamt). Der Agent braucht beim Schreiben nur: welcher
+    Pfad deckt welches Thema ab. Eine Zeile pro Eintrag reicht dafür — Details
+    stehen weiterhin in der Registry und sind per Grep erreichbar.
+    """
     if not registry_path.exists():
         return "- Keine Lernmaterialien-Daten vorhanden. Führe blog/_update_content_registry.py aus."
     text = registry_path.read_text(encoding="utf-8", errors="ignore")
-    # Extract only the "Live & indexiert" block — skip the rest (blog post list is already in compact context)
     start = text.find("### Live & indexiert")
     end = text.find("### Noch nicht indexiert")
     if start == -1:
         return "- Keine Live-Lernmaterialien vorhanden."
-    snippet = text[start: end if end != -1 else start + 4000].strip()
-    # Also append the "Lücken" section if present (blog agent should know what to write next)
+    block = text[start: end if end != -1 else len(text)]
+
+    rows, title = [], None
+    for line in block.splitlines():
+        line = line.strip()
+        if line.startswith("#### "):
+            title = line[5:].split("|")[0].strip()
+        elif line.startswith("- Pfad:") and title:
+            path = line.split("`")[1] if "`" in line else line[7:].strip()
+            rows.append(f"- `/{path.lstrip('/')}` — {title}")
+            title = None
+
+    out = ["### Live & indexiert — für interne Links nutzbar",
+           "Ein Eintrag pro Zeile: Pfad — Thema. Volle Details (passende Blog-Artikel je "
+           "Simulation) stehen in blog/_CONTENT_REGISTRY.md — dort gezielt greppen, "
+           "nicht vollständig lesen.", ""]
+    out += rows or ["- Keine Live-Lernmaterialien vorhanden."]
+
     luecken_start = text.find("## Lücken")
     if luecken_start != -1:
-        snippet += "\n\n" + text[luecken_start:luecken_start + 1500].strip()
-    return snippet
+        out.append("\n" + text[luecken_start:luecken_start + 1200].strip())
+    return "\n".join(out)
 
 
 def compact_goal_agent_file(path: Path, max_chars: int = 5000) -> str:
