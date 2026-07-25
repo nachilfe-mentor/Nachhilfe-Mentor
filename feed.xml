@@ -5,8 +5,16 @@
     <link>https://nachhilfe-mentor.de/blog/</link>
     <description>Lerntipps, Lernmethoden und Strategien fuer Schueler und Studenten</description>
     <language>de-de</language>
-    <lastBuildDate>Sat, 25 Jul 2026 07:51:59 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 25 Jul 2026 13:47:38 +0000</lastBuildDate>
     <atom:link href="https://nachhilfe-mentor.de/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Leserbrief schreiben in 5 Schritten: Vom Lesen zum fertigen Text</title>
+      <link>https://nachhilfe-mentor.de/blog/posts/leserbrief-schreiben-tipps.html</link>
+      <guid>https://nachhilfe-mentor.de/blog/posts/leserbrief-schreiben-tipps.html</guid>
+      <pubDate>Sat, 25 Jul 2026 13:47:13 +0000</pubDate>
+      <description>Leserbrief schreiben in 5 klaren Schritten: Ausgangstext verstehen, Position finden, Argumente sammeln. Mit Checkliste für Klasse 7-10.</description>
+      <category>Schule &amp; Studium</category>
+    </item>
     <item>
       <title>Zeitungsartikel schreiben: Die 6 W-Fragen + Pyramidenprinzip</title>
       <link>https://nachhilfe-mentor.de/blog/posts/zeitungsartikel-schreiben-tipps.html</link>
@@ -157,14 +165,6 @@
       <guid>https://nachhilfe-mentor.de/blog/posts/passiv-bilden-tipps.html</guid>
       <pubDate>Wed, 22 Jul 2026 11:39:22 +0000</pubDate>
       <description>Passiv bilden leicht gemacht: Regeln für alle Zeitformen, Modalverben, Passiversatzformen und Beispiele einfach erklärt für Schule und Übungen.</description>
-      <category>Schule &amp; Studium</category>
-    </item>
-    <item>
-      <title>Plusquamperfekt bilden: Regeln, Beispiele und Übungen einfach erklärt</title>
-      <link>https://nachhilfe-mentor.de/blog/posts/plusquamperfekt-bilden-tipps.html</link>
-      <guid>https://nachhilfe-mentor.de/blog/posts/plusquamperfekt-bilden-tipps.html</guid>
-      <pubDate>Wed, 22 Jul 2026 11:39:22 +0000</pubDate>
-      <description>Plusquamperfekt bilden lernen: Regeln für hatte/war + Partizip II, Beispiele und Übungstipps für Klassenarbeit und Aufsatz einfach erklärt.</description>
       <category>Schule &amp; Studium</category>
     </item>
   </channel>
