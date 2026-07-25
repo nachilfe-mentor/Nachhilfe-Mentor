@@ -25,3 +25,9 @@ Nur wirklich neue Erkenntnisse eintragen, maximal wenige Bulletpoints pro Lauf.
   (impr 3003, ctr 0.60%, pos 7.8, Title/Meta seit Erstellung nie ueberarbeitet):
   Title/Meta auf konkreten "6 W-Fragen + Pyramidenprinzip"-Hook umgestellt statt
   generischem "Aufbau, Tipps und haeufige Fehler".
+- 2026-07-25 (2): Kein neues Kannibalisierungspaar in dieser Runde (gleiche
+  Einschaetzung wie oben). CTR-Update fuer leserbrief-schreiben-tipps.html
+  (impr 1044, ctr 0.10% statt erwarteten ~1%, pos 12.2, Title/Meta seit
+  Erstellung am 2026-04-30 nie ueberarbeitet): Title/Meta auf konkreten
+  "5-Schritte"-Hook umgestellt statt generischem "Aufbau, Tipps und haeufige
+  Fehler".
